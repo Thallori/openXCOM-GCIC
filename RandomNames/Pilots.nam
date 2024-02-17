@@ -1,0 +1,10 @@
+lookWeights:
+  - 25
+  - 25
+  - 25
+  - 25
+maleFirst: &FIRST_NAMES
+  - Exa
+femaleFirst: *FIRST_NAMES
+#maleLast: &LAST_NAMES
+#femaleLast: *LAST_NAMES

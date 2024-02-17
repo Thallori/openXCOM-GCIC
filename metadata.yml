@@ -1,0 +1,7 @@
+name: "Global Contracts"
+version: "0.1"
+author: "Thallori"
+description: "Global Contracts"
+id: global_contracts
+master: xcom1
+requiredExtendedVersion: "7.4.3"
