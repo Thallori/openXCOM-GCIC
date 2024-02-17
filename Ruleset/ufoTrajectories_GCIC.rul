@@ -1,0 +1,6 @@
+﻿
+ufoTrajectories:
+  - id: AM_SPAWN
+    groundTimer: 0
+    waypoints:
+      - [0, 0, 0]

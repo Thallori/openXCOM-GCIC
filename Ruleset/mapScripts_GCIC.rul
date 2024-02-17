@@ -1,0 +1,41 @@
+﻿mapScripts:
+  - type: HANGAR_DRONES
+    commands:
+    - type: addUFO
+      rects:
+        - [0, 0, 2, 2]
+    - type: addCraft
+    - type: addLine
+      direction: vertical
+      blocks: [9, 10, 11, 12, 13, 14]
+      maxUses: [1, 1, 1, 1, 1, 1]
+#drone spawns
+    - type: addBlock
+      terrain: HANGAR_DRONES_1
+      size: [1, 2]
+      label: 1
+      executionChances: 33
+    - type: addBlock
+      terrain: HANGAR_DRONES_1
+      size: 2
+      label: 2
+      executionChances: 50
+      conditionals: [-1]
+    - type: addBlock
+      terrain: HANGAR_DRONES_1
+      conditionals: [-1, -2]
+#rest of the owl
+    - type: addBlock
+      size: [1, 2]
+      conditionals: [-1]
+    - type: addBlock
+      size: 2
+      conditionals: [-2]
+    - type: fillArea
+      blocks: [3, 4, 5, 6]
+      maxUses: [1, 1, 1, 1]
+
+  - type: SINGLE_BLOCK_LZ
+    commands:
+    - type: addBlock
+      size: 2

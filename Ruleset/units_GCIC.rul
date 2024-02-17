@@ -1,0 +1,226 @@
+units:
+#drone spawns
+      # base stats
+      # tu: 45
+      # stamina: 40
+      # health: 25
+      # bravery: 50
+      # reactions: 30
+      # firing: 35
+      # throwing: 35
+      # melee: 35
+      # strength: 20
+      # psiStrength: 0
+      # psiSkill: 0
+      # mana: 25
+
+  - type: STR_DRONE_HYBRID_1
+    race: STR_HYBRID
+    civilianRecoveryType: STR_DRONE_HYBRID_ITEM
+    stats:
+      tu: 45
+      stamina: 40
+      health: 25
+      bravery: 50
+      reactions: 35
+      firing: 40
+      throwing: 35
+      melee: 35
+      strength: 10
+      psiStrength: 0
+      psiSkill: 0
+      mana: 25
+    armor: STR_PLEX_DRONE_HYBRID_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 1
+    deathSound: [41, 42, 43]
+    energyRecovery: 25
+    builtInWeaponSets:
+      -
+        - STR_WRENCH
+      -
+        - STR_MULTITOOL
+      -
+        - STR_ELECTRIC_NAILER
+        - STR_ELECTRIC_NAILER_AMMO
+      -
+        - STR_SURVEY_KNOCKER
+        - STR_KNOCK_FLARE_AMMO
+
+  - type: STR_DRONE_HUMAN_1
+    race: STR_HUMAN
+    civilianRecoveryType: STR_DRONE_HUMAN_ITEM
+    stats:
+      tu: 40
+      stamina: 45
+      health: 25
+      bravery: 50
+      reactions: 30
+      firing: 35
+      throwing: 40
+      melee: 30
+      strength: 20
+      psiStrength: 0
+      psiSkill: 0
+      mana: 25
+    armor: STR_PLEX_DRONE_HUMAN_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 1
+    deathSound: [41, 42, 43]
+    energyRecovery: 25
+    builtInWeaponSets:
+      -
+        - STR_WRENCH
+      -
+        - STR_MULTITOOL
+      -
+        - STR_ELECTRIC_NAILER
+        - STR_ELECTRIC_NAILER_AMMO
+      -
+        - STR_SURVEY_KNOCKER
+        - STR_KNOCK_FLARE_AMMO
+
+  - type: STR_DRONE_SHARK_1
+    race: STR_SHARK
+    civilianRecoveryType: STR_DRONE_SHARK_ITEM
+    stats:
+      tu: 45
+      stamina: 40
+      health: 25
+      bravery: 50
+      reactions: 30
+      firing: 30
+      throwing: 30
+      melee: 40
+      strength: 25
+      psiStrength: 0
+      psiSkill: 0
+      mana: 25
+    armor: STR_PLEX_DRONE_SHARK_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 1
+    deathSound: [41, 42, 43]
+    energyRecovery: 25
+    builtInWeaponSets:
+      -
+        - STR_WRENCH
+      -
+        - STR_MULTITOOL
+      -
+        - STR_ELECTRIC_NAILER
+        - STR_ELECTRIC_NAILER_AMMO
+      -
+        - STR_SURVEY_KNOCKER
+        - STR_KNOCK_FLARE_AMMO
+      -
+        - STR_SURVEY_KNOCKER
+        - STR_KNOCK_BOLT_AMMO
+
+#criminal faction
+  - type: STR_BOOSTER_PUBLIC
+    race: STR_IRONEYES
+    rank: STR_LIVE_SOLDIER
+    liveAlien: STR_BOUNTY_1
+    stats:
+      tu: 40
+      stamina: 60
+      health: 50
+      bravery: 70
+      reactions: 30
+      firing: 40
+      throwing: 40
+      melee: 30
+      strength: 30
+      psiStrength: 40
+      psiSkill: 0
+      mana: 30
+    armor: BOOSTER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 1
+    deathSound: [41, 42, 43]
+    energyRecovery: 30
+    intelligence: 3
+    aggression: 3
+    spotter: 1
+    canSurrender: true
+
+#hacker faction
+  - type: STR_FREELANCER_PRIVATE
+    race: STR_NETRUNNERS
+    rank: STR_LIVE_SOLDIER
+    liveAlien: STR_FREELANCER_LIVE
+    stats:
+      tu: 40
+      stamina: 60
+      health: 30
+      bravery: 50
+      reactions: 30
+      firing: 40
+      throwing: 40
+      melee: 30
+      strength: 30
+      psiStrength: 40
+      psiSkill: 0
+      mana: 30
+    armor: BOOSTER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: -5
+    deathSound: [41, 42, 43]
+    energyRecovery: 30
+    intelligence: 3
+    aggression: 3
+    spotter: 1
+    canSurrender: true
+
+#clients
+  - type: STR_CLIENT_1
+    race: STR_CIVILIAN
+    civilianRecoveryType: STR_BRAND_LOYALTY
+    vip: true
+    ignoredByAI: true
+    stats:
+      tu: 1
+      stamina: 50
+      health: 30
+      bravery: 80
+      reactions: 30
+      firing: 30
+      throwing: 30
+      melee: 30
+      strength: 15
+      psiStrength: 5
+      psiSkill: 0
+      mana: 30
+    armor: CLIENT_1_ARMOR
+    standHeight: 14
+    value: 15
+    deathSound: [41, 42, 43]
+    energyRecovery: 30
+
+  - type: STR_HUMAN_M_CIVILIAN
+    race: STR_CIVILIAN
+    stats:
+      tu: 35
+      stamina: 50
+      health: 30
+      bravery: 80
+      reactions: 30
+      firing: 30
+      throwing: 30
+      melee: 30
+      strength: 15
+      psiStrength: 5
+      psiSkill: 0
+      mana: 30
+    armor: HUMAN_M_CIVILIAN_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 10
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]

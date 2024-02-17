@@ -1,0 +1,434 @@
+
+customPalettes:
+  - type: PAL_GEOSCAPE_NEW
+    target: PAL_GEOSCAPE
+    file: Resources/Palettes/geoscape_hybrid.pal
+  - type: PAL_BATTLEPEDIA_NEW
+    target: PAL_BATTLEPEDIA
+    file: Resources/Palettes/battlepedia_juicy.pal
+  - type: PAL_BATTLESCAPE_NEW
+    target: PAL_BATTLESCAPE
+    file: Resources/Palettes/battlescape_juicy.pal
+#  - type: PAL_BATTLESCAPE_1L83
+#    target: PAL_BATTLESCAPE_1
+#    file: Resources/Pals/seadepth1.jasc
+#  - type: PAL_BATTLESCAPE_2L83
+#    target: PAL_BATTLESCAPE_2
+#    file: Resources/Pals/seadepth2.jasc
+#  - type: PAL_BATTLESCAPE_3L83
+#    target: PAL_BATTLESCAPE_3
+#    file: Resources/Pals/seadepth3.jasc
+
+extraSprites:
+  - type: TEXTURE.DAT
+    width: 896
+    height: 96
+    subX: 32
+    subY: 32
+    files:
+      0: Resources/Globe/textures_GCIC.png
+
+  - type: BIGOBS.PCK
+    files:
+      100: Resources/Armors/Pilots/FlyingCore/pilot_core_corpse_bigob.png
+      101: Resources/Armors/Pilots/FlyingCore/pilot_core_bigob.png
+      102: Resources/Items/Tools/wrench_bigob.png
+      103: Resources/Items/Melee/knife_bigob.png
+      104: Resources/Items/Kinetic/busbox_bigob.png
+      105: Resources/Items/Kinetic/Ammo/comball_bigob.png
+      106: Resources/Items/Kinetic/Ammo/papershot_bigob.png
+      107: Resources/Items/Laser/xn_pistol_bigob.png
+      108: Resources/Items/Builtins/fist_bigob.png
+      109: Resources/Items/Utility/medispray_bigob.png
+      110: Resources/Items/Containers/trunk_bigob.png
+      111: Resources/Factions/Clients/human_civilian_m0_bigob.png
+      112: Resources/Factions/Ironeyes/booster_bigob.png
+      113: Resources/Items/Tools/survey_knocker_bigob.png
+      114: Resources/Items/Tools/Ammo/survey_knocker_flare_ammo_bigob.png
+      115: Resources/Items/Tools/Ammo/survey_knocker_bolt_ammo_bigob.png
+      116: Resources/Items/Tools/nailer_bigob.png
+      117: Resources/Items/Tools/Ammo/nailer_ammo_bigob.png
+      118: Resources/Items/Tools/multitool_bigob.png
+      119: Resources/Items/Utility/chemflare_bigob.png
+      120: Resources/Items/Utility/medikit_bigob.png
+      121: Resources/Items/Utility/motionscanner_bigob.png
+      122: Resources/Items/Explosives/pipebomb_bigob.png
+      123: Resources/Items/Kinetic/9mm_bigob.png
+      124: Resources/Items/Kinetic/Ammo/9mm_ammo_bigob.png
+      125: Resources/Items/Kinetic/disposable_smg_bigob.png
+      126: Resources/Items/Kinetic/9mm_rifle_bigob.png
+      127: Resources/Items/Laser/xn_rifle_bigob.png
+      128: Resources/Items/Laser/xn_shotgun_bigob.png
+      129: Resources/Items/Laser/xn_smg_bigob.png
+      130: Resources/Items/Laser/xn_sniper_bigob.png
+      131: Resources/Items/Builtins/sharkattack_bigob.png
+      132: Resources/Items/Laser/xn_cannon_bigob.png
+      133: Resources/Items/Containers/lockbox_bigob.png
+      134: Resources/UI/Voids/null_1x2.png
+      135: Resources/UI/Voids/null_2x1.png
+      136: Resources/UI/Voids/null_3x3.png
+      137: Resources/UI/Voids/null_belt.png
+      138: Resources/Armors/Anthros/Worksuit/worksuit_corpse_bigob.png
+      139: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_bigob.png
+      140: Resources/Items/Aquatic/dartpistol_bigob.png
+      141: Resources/Items/Aquatic/Ammo/dart_ammo_bigob.png
+      142: Resources/Items/Aquatic/Ammo/dart_foam_ammo_bigob.png
+      143: Resources/Items/Tools/extinguisher_bigob.png
+
+  - type: FLOOROB.PCK
+    files:
+      100: Resources/Armors/Pilots/FlyingCore/pilot_core_corpse_floorob.png
+      102: Resources/Items/Tools/wrench_floorob.png
+      103: Resources/Items/Melee/knife_floorob.png
+      104: Resources/Items/Kinetic/busbox_floorob.png
+      105: Resources/Items/Kinetic/Ammo/comball_floorob.png
+      106: Resources/Items/Kinetic/Ammo/papershot_floorob.png
+      107: Resources/Items/Laser/xn_pistol_floorob.png
+      108: Resources/Items/Utility/medispray_floorob.png
+      109: Resources/Items/Containers/trunk_floorob.png
+      110: Resources/Factions/Clients/human_civilian_m0_floorob.png
+      111: Resources/Factions/Ironeyes/booster_floorob.png
+      112: Resources/Items/Tools/survey_knocker_floorob.png
+      113: Resources/Items/Tools/Ammo/survey_knocker_flare_ammo_floorob.png
+      114: Resources/Items/Tools/Ammo/survey_knocker_bolt_ammo_floorob.png
+      115: Resources/Items/Tools/nailer_floorob.png
+      116: Resources/Items/Tools/Ammo/nailer_ammo_floorob.png
+      117: Resources/Items/Tools/multitool_floorob.png
+      118: Resources/Items/Utility/chemflare_floorob.png
+      119: Resources/Items/Utility/medikit_floorob.png
+      120: Resources/Items/Utility/motionscanner_floorob.png
+      121: Resources/Items/Explosives/pipebomb_floorob.png
+      122: Resources/Items/Kinetic/9mm_floorob.png
+      123: Resources/Items/Kinetic/Ammo/9mm_ammo_floorob.png
+      124: Resources/Items/Kinetic/disposable_smg_floorob.png
+      125: Resources/Items/Kinetic/9mm_rifle_floorob.png
+      126: Resources/Items/Laser/xn_rifle_floorob.png
+      127: Resources/Items/Laser/xn_shotgun_floorob.png
+      128: Resources/Items/Laser/xn_smg_floorob.png
+      129: Resources/Items/Laser/xn_sniper_floorob.png
+      130: Resources/Items/Laser/xn_cannon_floorob.png
+      131: Resources/Items/Containers/lockbox_floorob.png
+      132: Resources/Armors/Anthros/Worksuit/worksuit_corpse_floorob.png
+      133: Resources/Armors/Anthros/Worksuit/worksuit_corpse_shark_floorob.png
+      134: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_shark_floorob.png
+      135: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_shark_floorob.png
+      136: Resources/Items/Aquatic/dartpistol_floorob.png
+      137: Resources/Items/Aquatic/Ammo/dart_ammo_floorob.png
+      138: Resources/Items/Aquatic/Ammo/dart_foam_ammo_floorob.png
+      139: Resources/Items/Tools/extinguisher_floorob.png
+
+  - type: HANDOB.PCK
+    height: 40
+    width: 256
+    subX: 32
+    subY: 40
+    files:
+      128: Resources/Items/Tools/wrench_handob.png
+      136: Resources/Items/Melee/knife_handob.png
+      144: Resources/Items/Kinetic/busbox_handob.png
+      152: Resources/Items/Laser/xn_pistol_handob.png
+      160: Resources/Items/Tools/survey_knocker_handob.png
+      168: Resources/Items/Tools/nailer_handob.png
+      176: Resources/Items/Tools/multitool_handob.png
+      184: Resources/Items/Utility/chemflare_handob.png
+      192: Resources/Items/Utility/electroflare_handob.png
+      200: Resources/Items/Utility/medikit_handob.png
+      208: Resources/Items/Utility/motionscanner_handob.png
+      216: Resources/Items/Explosives/pipebomb_handob.png
+      224: Resources/Items/Kinetic/9mm_handob.png
+      232: Resources/Items/Kinetic/disposable_smg_handob.png
+      240: Resources/Items/Kinetic/9mm_rifle_handob.png
+      248: Resources/Items/Laser/xn_rifle_handob.png
+      256: Resources/Items/Laser/xn_shotgun_handob.png
+      264: Resources/Items/Laser/xn_smg_handob.png
+      272: Resources/Items/Laser/xn_sniper_handob.png
+      280: Resources/Items/Laser/xn_cannon_handob.png
+      288: Resources/Items/Aquatic/dartpistol_handob.png
+      296: Resources/Items/Tools/extinguisher_handob.png
+
+  - type: BASEBITS.PCK
+    files:
+      0: Resources/BaseBits/basebits00.png
+      1: Resources/BaseBits/basebits01.png
+      2: Resources/BaseBits/basebits02.png
+      3: Resources/BaseBits/basebits03.png
+      7: Resources/BaseBits/basebits07.png
+      8: Resources/BaseBits/basebits08.png
+      300: Resources/BaseBits/basebits_access.png
+      301: Resources/BaseBits/basebits_garage.png
+      302: Resources/BaseBits/basebits_racks.png
+      303: Resources/BaseBits/basebits_datacenter.png
+      304: Resources/BaseBits/basebits_cells.png
+      305: Resources/BaseBits/basebits_storeroom.png
+      306: Resources/BaseBits/basebits_depot.png
+      307: Resources/BaseBits/basebits_corridor.png
+      433: Resources/Crafts/bicube_basebit.png
+      434: Resources/Crafts/crossover_basebit.png
+      649: Resources/Crafts/Hardpoints/economy_basebit.png
+      650: Resources/Crafts/Hardpoints/sport_basebit.png
+      651: Resources/Crafts/Hardpoints/batbox_basebit.png
+
+  - type: INTICON.PCK
+    files:
+      400: Resources/Crafts/bicube_mini_inticon.png
+      401: Resources/Crafts/crossover_mini_inticon.png
+      411: Resources/Crafts/bicube_dogfight_inticon.png
+      412: Resources/Crafts/crossover_dogfight_inticon.png
+      606: Resources/Crafts/Hardpoints/economy_inticon.png
+      607: Resources/Crafts/Hardpoints/sport_inticon.png
+      608: Resources/Crafts/Hardpoints/batbox_inticon.png
+
+  - type: HIT.PCK
+    height: 40
+    width: 128
+    subX: 32
+    subY: 40
+    files:
+      12: Resources/Animations/electric_splat.png
+      16: Resources/Animations/white_slash.png
+      20: Resources/Animations/red_claws.png
+
+  - type: Projectiles
+    height: 3
+    width: 65
+    subX: 3
+    subY: 3
+    files:
+      385: Resources/Animations/Projectiles/laser_bullet.png
+      420: Resources/Animations/Projectiles/bolt_bullet.png
+      455: Resources/Animations/Projectiles/grenade_bullet.png
+      490: Resources/Animations/Projectiles/taser_bullet.png
+
+#paperdolls
+#human
+  - typeSingle: HUMAN__2__F0_SHELL
+    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_F0.png
+  - typeSingle: HUMAN__2__F1_SHELL
+    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_F1.png
+  - typeSingle: HUMAN__2__F2_SHELL
+    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_F2.png
+  - typeSingle: HUMAN__2__F3_SHELL
+    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_F3.png
+
+  - typeSingle: HUMAN__2__M0_SHELL
+    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_M0.png
+  - typeSingle: HUMAN__2__M1_SHELL
+    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_M1.png
+  - typeSingle: HUMAN__2__M2_SHELL
+    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_M2.png
+  - typeSingle: HUMAN__2__M3_SHELL
+    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_M3.png
+#hybrid
+  - typeSingle: HYBRID__2__F0_SHELL
+    fileSingle: Resources/Armors/Bodies/Shells/Hybrids/HYBRID_F0.png
+  - typeSingle: HYBRID__2__M0_SHELL
+    fileSingle: Resources/Armors/Bodies/Shells/Hybrids/HYBRID_M0.png
+#shark
+  - typeSingle: SHARK__2__F0_SHELL
+    fileSingle: Resources/Armors/Bodies/Shells/Sharks/SHARK_F0.png
+  - typeSingle: SHARK__2__F1_SHELL
+    fileSingle: Resources/Armors/Bodies/Shells/Sharks/SHARK_F1.png
+  - typeSingle: SHARK__2__M0_SHELL
+    fileSingle: Resources/Armors/Bodies/Shells/Sharks/SHARK_M0.png
+  - typeSingle: SHARK__2__M1_SHELL
+    fileSingle: Resources/Armors/Bodies/Shells/Sharks/SHARK_M1.png
+
+#armor
+#worksuit
+  - typeSingle: HUMAN__7__WORKSUIT
+    fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_inventory.png
+  - typeSingle: HYBRID__7__WORKSUIT
+    fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_inventory.png
+  - typeSingle: SHARK__7__WORKSUIT
+    fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_inventory.png
+  - type: WORKSUIT_HUMAN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Worksuit/worksuit_sprite_human.png
+  - type: WORKSUIT_HYBRID.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Worksuit/worksuit_sprite_hybrid.png
+  - type: WORKSUIT_SHARK.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Worksuit/worksuit_sprite_shark.png
+#jumpsuit
+  - typeSingle: HUMAN__7__JUMPSUIT
+    fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory.png
+  - typeSingle: HYBRID__7__JUMPSUIT
+    fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory.png
+  - typeSingle: SHARK__7__JUMPSUIT
+    fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory.png
+  - type: JUMPSUIT_HUMAN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Jumpsuit/jumpsuit_sprite_human.png
+  - type: JUMPSUIT_HYBRID.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Jumpsuit/jumpsuit_sprite_hybrid.png
+  - type: JUMPSUIT_SHARK.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Jumpsuit/jumpsuit_sprite_shark.png
+
+#pilot
+  - typeSingle: PILOT_CORE.SPK
+    fileSingle: Resources/Armors/Pilots/FlyingCore/pilot_core_inventory.png
+
+  - type: PILOT_CORE.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Armors/Pilots/FlyingCore/pilot_core_sheet.png
+
+#ironeyes
+  - typeSingle: BOOSTER.SPK
+    fileSingle: Resources/Factions/Ironeyes/booster_inventory.png
+
+  - type: BOOSTER.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 680
+    files:
+      0: Resources/Factions/Ironeyes/booster_sheet.png
+
+#clients
+  - typeSingle: CLIENT_1.SPK
+    fileSingle: Resources/Factions/Clients/client_1_inventory.png
+  - type: CLIENT_1.PCK
+    subX: 32
+    subY: 40
+    width: 352
+    height: 40
+    files:
+      0: Resources/Factions/Clients/client_1_sheet.png
+
+  - typeSingle: HUMAN_CIVILIAN_M0.SPK
+    fileSingle: Resources/Factions/Clients/human_civilian_m0_inventory.png
+  - type: HUMAN_CIVILIAN_M0.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 680
+    files:
+      0: Resources/Factions/Clients/human_civilian_m0_sheet.png
+
+#ufopedia
+  - typeSingle: ALIGN_TEST_CPAL
+    fileSingle: Resources/Pedia/align_test_CPAL.png
+  - typeSingle: VENDOR_PRINT
+    fileSingle: Resources/Pedia/vendor_print.png
+  - typeSingle: VENDOR_MEDI
+    fileSingle: Resources/Pedia/vendor_medi.png
+  - typeSingle: VENDOR_BUILDER
+    fileSingle: Resources/Pedia/vendor_builder.png
+  - typeSingle: VENDOR_P2P
+    fileSingle: Resources/Pedia/vendor_p2p.png
+# crafts
+  - typeSingle: CRAFT_BICUBE_CPAL
+    fileSingle: Resources/Pedia/craft_bicube_CPAL.png
+  - typeSingle: CRAFT_CROSSOVER_CPAL
+    fileSingle: Resources/Pedia/craft_crossover_CPAL.png
+# armament
+  - typeSingle: BATBOX.SPK
+    fileSingle: Resources/Crafts/Hardpoints/batbox_pedia.png
+# drones
+  - typeSingle: SHARK_CPAL
+    fileSingle: Resources/Pedia/shark_CPAL.png
+# armors
+  - typeSingle: ARMOR_PLEX_CPAL
+    fileSingle: Resources/Pedia/armor_plex_CPAL.png
+  - typeSingle: ARMOR_DURA_CPAL
+    fileSingle: Resources/Pedia/armor_dura_CPAL.png
+
+#intercept window
+  - typeSingle: interception_jammed
+    fileSingle: Resources/Interwin/jammed_interwin.png
+
+#day/night icons
+  - type: DayNightIndicator
+    width: 72
+    height: 24
+    subX: 24
+    subY: 24
+    files:
+      0: Resources/UI/daynight.png
+
+#battle icons
+  - typeSingle: BigBurnIndicator
+    fileSingle: Resources/UI/icon_burn.png
+  - typeSingle: BigStunIndicator
+    fileSingle: Resources/UI/icon_stun.png
+  - typeSingle: BigWoundIndicator
+    fileSingle: Resources/UI/icon_bleed.png
+  - typeSingle: BigShockIndicator
+    fileSingle: Resources/UI/icon_shock.png
+
+  - typeSingle: FloorBurnIndicator
+    fileSingle: Resources/UI/icon_burn.png
+  - typeSingle: FloorStunIndicator
+    fileSingle: Resources/UI/icon_stun.png
+  - typeSingle: FloorWoundIndicator
+    fileSingle: Resources/UI/icon_bleed.png
+  - typeSingle: FloorShockIndicator
+    fileSingle: Resources/UI/icon_shock.png
+
+#commendations
+  - type: Commendations
+    width: 31
+    height: 48
+    subX: 31
+    subY: 8
+    files:
+      0: Resources/UI/commendations_medals.png
+  - type: CommendationDecorations
+    width: 31
+    height: 80
+    subX: 31
+    subY: 8
+    files:
+      0: Resources/UI/commendations_decorations.png
+
+#motion scanner
+  - type: DETBLOB.DAT
+    width: 240
+    height: 16
+    subX: 16
+    subY: 16
+    files:
+      0: Resources/UI/DETBLOB.png
+  - typeSingle: DETBORD.PCK
+    fileSingle: Resources/UI/DETBORD.png
+  - typeSingle: DETBORD2.PCK
+    fileSingle: Resources/UI/DETBORD2.png
+
+#backgrounds
+  - typeSingle: BACK08.SCR
+    fileSingle: Resources/Backgrounds/pedia_item.png
+  - typeSingle: BACK09.SCR
+    fileSingle: Resources/Backgrounds/pedia_facility.png
+  - typeSingle: BACK10.SCR
+    fileSingle: Resources/Backgrounds/pedia_research.png

@@ -1,0 +1,9 @@
+
+arcScripts:
+  - type: mezonicstart
+    xcomBaseInRegionTriggers:
+       STR_MEZONIC_RIFTS: true
+    sequentialArcs:
+      - STR_BEGIN_MEZONIC
+    lastMonth: 0
+    maxArcs: 1

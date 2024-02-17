@@ -1,0 +1,87 @@
+﻿itemCategories:
+  - type: STR_CRAFTS_CATEGORY
+    listOrder: 1
+  - type: STR_CRAFT_SYSTEMS_CATEGORY
+    listOrder: 2
+  - type: STR_HWP_CATEGORY
+    listOrder: 4
+  - type: STR_OUTFITS_CATEGORY
+    listOrder: 5
+  - type: STR_PISTOLS_CATEGORY
+    listOrder: 10
+  - type: STR_SMGS_CATEGORY
+    listOrder: 20
+  - type: STR_ASSAULT_RIFLES_CATEGORY
+    listOrder: 30
+  - type: STR_SNIPER_RIFLES_CATEGORY
+    listOrder: 40
+  - type: STR_MACHINE_GUNS_CATEGORY
+    listOrder: 50
+  - type: STR_CANNONS_CATEGORY
+    listOrder: 60
+  - type: STR_SHOTGUNS_CATEGORY
+    listOrder: 70
+  - type: STR_LAUNCHERS_CATEGORY
+    listOrder: 80
+  - type: STR_BOWS_CATEGORY
+    listOrder: 80
+  - type: STR_EXPLOSIVES_CATEGORY
+    listOrder: 85
+  - type: STR_GRENADES_CATEGORY
+    listOrder: 90
+  - type: STR_PSI_CATEGORY
+    listOrder: 100
+  - type: STR_MELEE_CATEGORY
+    listOrder: 110
+  - type: STR_STUN_CATEGORY
+    listOrder: 119
+  - type: STR_UTILITY_CATEGORY
+    listOrder: 120
+  - type: STR_MEDICAL_CATEGORY
+    listOrder: 130
+  - type: STR_CONVENTIONAL_CATEGORY
+    listOrder: 400
+  - type: STR_SECURITY_CATEGORY
+    listOrder: 410
+  - type: STR_MILTEC_CATEGORY
+    listOrder: 420
+  - type: STR_REPUBLIC_CATEGORY
+    listOrder: 430
+  - type: STR_INFILTRATION_CATEGORY
+    listOrder: 500
+  - type: STR_TOOLS_CATEGORY
+    listOrder: 510
+  - type: STR_KINETIC_CATEGORY
+    listOrder: 600
+  - type: STR_LASER_CATEGORY
+    listOrder: 601
+  - type: STR_ELECTRIC_CATEGORY
+    listOrder: 602
+  - type: STR_BIOLOGIC_CATEGORY
+    listOrder: 603
+  - type: STR_VACUUM_RATED_CATEGORY
+    listOrder: 700
+  - type: STR_AQUATIC_CATEGORY
+    listOrder: 710
+  - type: STR_RESOURCES_CATEGORY
+    listOrder: 800
+  - type: STR_BOUNTIES_CATEGORY
+    listOrder: 810
+  - type: STR_CONTAINERS_CATEGORY
+    listOrder: 820
+  - type: STR_DATA_CATEGORY
+    listOrder: 830
+  - type: STR_DRONES_CATEGORY
+    listOrder: 840
+  - type: STR_SPECIMENS_CATEGORY
+    listOrder: 850
+  - type: STR_REMAINS_CATEGORY
+    listOrder: 860
+  - type: STR_ARMOR_CATEGORY
+    listOrder: 996
+  - type: STR_BUILT_INS_CATEGORY
+    listOrder: 997
+  - type: STR_VOIDS_CATEGORY
+    listOrder: 998
+  - type: STR_DEBUG_CATEGORY
+    listOrder: 999

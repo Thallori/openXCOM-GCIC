@@ -1,0 +1,61 @@
+
+extraGlobeLabels:
+#lands, colour 90 'yellow-green'
+  - type: STR_MEZONIC_RIFTS_GLOBELABEL
+    labelLon: 112
+    labelLat: 24
+    labelColor: 90
+    zoomLevel: 1
+  - type: STR_MOSSWAY_COMMONS_GLOBELABEL
+    labelLon: 1
+    labelLat: 48
+    labelColor: 90
+    zoomLevel: 1
+  - type: STR_GOLDEN_REACH_GLOBELABEL
+    labelLon: 221
+    labelLat: 51
+    labelColor: 90
+    zoomLevel: 1
+  - type: STR_TWINGATES_GLOBELABEL
+    labelLon: 302
+    labelLat: 17
+    labelColor: 90
+    zoomLevel: 1
+  - type: STR_AZATAL_TERRACE_GLOBELABEL
+    labelLon: 55
+    labelLat: 14
+    labelColor: 90
+    zoomLevel: 1
+#deserts, colour 90 'yellow-green'
+  - type: STR_KAPISI_DESERT_GLOBELABEL
+    labelLon: 75
+    labelLat: -34
+    labelColor: 90
+    zoomLevel: 1
+  - type: STR_HEIGARA_DESERT_GLOBELABEL
+    labelLon: 219
+    labelLat: -8
+    labelColor: 90
+    zoomLevel: 1
+#seas, colour 245 'blue'
+  - type: STR_GLEAMING_SEAS_GLOBELABEL
+    labelLon: 172
+    labelLat: -44
+    labelColor: 245
+    zoomLevel: 1
+  - type: STR_CAYESAND_BASIN_GLOBELABEL
+    labelLon: 325
+    labelLat: -46
+    labelColor: 245
+    zoomLevel: 1
+#poles, colour 245 'blue'
+  - type: STR_ICEFIELDS_GLOBELABEL
+    labelLon: 144
+    labelLat: -90
+    labelColor: 245
+    zoomLevel: 1
+  - type: STR_RIMEARCH_GLOBELABEL
+    labelLon: 131
+    labelLat: 90
+    labelColor: 245
+    zoomLevel: 1

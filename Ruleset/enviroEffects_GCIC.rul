@@ -1,0 +1,6 @@
+
+enviroEffects:
+  - type: STR_UNDERWATER_ENVIRO
+    mapBackgroundColor: 141
+    paletteTransformations:
+      PAL_BATTLESCAPE: PAL_BATTLESCAPE_1

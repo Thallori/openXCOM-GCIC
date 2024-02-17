@@ -1,0 +1,58 @@
+
+#1440 mintutes in a day
+#7200 minutes in a week
+#43200 minutes in a month
+
+missionScripts:
+  - type: Rescue1a
+    # researchTriggers:
+    #   STR_TODO: false
+    missionWeights:
+      0:
+        STR_RESCUE_1: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 7200
+
+  - type: Rescue1b
+    # researchTriggers:
+    #   STR_TODO: false
+    missionWeights:
+      0:
+        STR_RESCUE_1: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: Rescue1c
+    # researchTriggers:
+    #   STR_TODO: false
+    missionWeights:
+      0:
+        STR_RESCUE_1: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: Rescue1d
+    # researchTriggers:
+    #   STR_TODO: false
+    missionWeights:
+      0:
+        STR_RESCUE_1: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: TradeMeetingEarly
+    # researchTriggers:
+    #   STR_TODO: false
+    firstMonth: 0
+    lastMonth: 0
+    targetBaseOdds: 100
+    missionWeights:
+      0:
+        STR_TRADE_MEETING_EARLY: 100
+    useTable: false
+    startDelay: 15000
+    randomDelay: 7200

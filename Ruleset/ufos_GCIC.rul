@@ -1,0 +1,44 @@
+
+ufos:
+  - type: STR_HOUSE_GARAGE
+    modSprite: interception_jammed
+    battlescapeTerrainData:
+      name: STR_HOUSE_GARAGE
+      mapDataSets:
+        - BLANKS
+        - FLOOR_URBAN
+        - STRUCTURE_WOOD
+        - STRUCTURE_WAREHOUSE
+        - STRUCTURE_PANELS2
+        - STRUCTURE_CORRUGATED1
+        - FENCE_CHAINLINK
+        - FURNITURE_SLUMS1
+        - BATHROOM_SLUM
+        - ROOFS_BITS
+        - BITS_CONTRABAND
+        - BITS_CRATES1
+        - BITS_TRASH
+        - BITS_POTTED_PLANTS
+      mapBlocks:
+        - name: HOUSE_GARAGE1
+          revealedFloors: 0
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_CLIENT_1:
+              - [6, 6, 0]
+            STR_CRIMINAL_CONTAINER_1:
+              - [3, 1, 0]
+          fuseTimers:
+            STR_SPAWN_CLIENT_1: [0, 0]
+        - name: HOUSE_GARAGE2
+          revealedFloors: 0
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_CLIENT_1:
+              - [2, 2, 0]
+            STR_CRIMINAL_CONTAINER_1:
+              - [1, 5, 0]
+          fuseTimers:
+            STR_SPAWN_CLIENT_1: [0, 0]

@@ -1,0 +1,156 @@
+﻿
+alienDeployments:
+  - type: STR_RESCUE_1
+    width: 30
+    length: 30
+    height: 5
+    alert: STR_RESCUE_1_ALERT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_RESCUE_1_ALERT_DESCRIPTION
+    markerName: STR_RESCUE_1_MARKER
+    duration: [48, 72]
+    despawnPenalty: 20
+    briefing:
+      palette: 3
+#      background: BACK16.SCR
+#      music: PLACEHOLDERMUSIC1
+      title: STR_RESCUE_1_TITLE
+      desc: STR_RESCUE_1_BRIEFING
+      # showTarget: false
+      # showCraft: false
+    customUfo: STR_HOUSE_GARAGE
+    terrains:
+      - HANGAR
+#    music:
+#      - SW_MONSTER
+    data:
+      - alienRank: 5
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_9MM_PISTOL
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+          -
+            - STR_9MM_PISTOL
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+          -
+            - STR_9MM_PISTOL
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+          -
+            - STR_9MM_RIFLE
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+          -
+            - STR_DISPOSABLE_SMG
+          -
+            - STR_DISPOSABLE_SMG
+
+  - type: STR_TRADE_MEETING_EARLY
+    width: 20
+    length: 20
+    height: 5
+    alert: STR_TRADE_MEETING_EARLY_ALERT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_TRADE_MEETING_EARLY_ALERT_DESCRIPTION
+    markerName: STR_TRADE_MEETING_EARLY_MARKER
+    duration: [96, 144]
+    despawnPenalty: 0
+    abortPenalty: 0
+#    startingCondition: STR_INFILTRATION_GEAR_INFILTRATION_CRAFT
+    briefing:
+#      palette: 2
+#      background: BACK16.SCR
+#      music: PLACEHOLDERMUSIC1
+      title: STR_TRADE_MEETING_EARLY_TITLE
+      desc: STR_TRADE_MEETING_EARLY_BRIEFING
+      # showTarget: false
+      # showCraft: false
+    terrains:
+      - CLUB
+#    music:
+#      - SW_MONSTER
+    data:
+      - alienRank: 5
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_DART_PISTOL
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+          -
+            - STR_DART_PISTOL
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+          -
+            - STR_DART_PISTOL
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+          -
+            - STR_DART_PISTOL
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+          -
+            - STR_TASER_PISTOL
+            - STR_TASER_AMMO
+            - STR_TASER_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_TASER_PISTOL
+            - STR_TASER_AMMO
+            - STR_TASER_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_TASER_PISTOL
+            - STR_TASER_AMMO
+            - STR_TASER_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_TASER_PISTOL
+            - STR_TASER_AMMO
+            - STR_TASER_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_DISPOSABLE_SMG
+            - STR_MULTITOOL
+          -
+            - STR_DISPOSABLE_SMG
+            - STR_MULTITOOL

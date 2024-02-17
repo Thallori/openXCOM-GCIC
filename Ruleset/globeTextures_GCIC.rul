@@ -1,0 +1,155 @@
+
+globe:
+  lineColor: 160 #grey
+  oceanShading: false
+  oceanPalette: 10
+  textures: 
+    - id: 1 #not used, cleaning this up will take a while
+    - id: 2
+    - id: 10
+    - id: 20
+    - id: 23
+    - id: 25
+
+    - id: 0 #forest/med habitation, cold
+      terrain:
+          - name: FOREST
+            weight: 20
+
+    - id: 3 #garden/prairie/high habitation, temperate
+      terrain:
+        - name: FOREST
+          weight: 40
+
+    - id: 4 #steppe/med habitation, warm
+      terrain:
+        - name: FOREST
+          weight: 50
+
+    - id: 5 #rock mountain/low habitation, temperate
+      terrain:
+          - name: FOREST
+            weight: 80
+
+    - id: 6 #island/med habitation, warm
+      terrain:
+          - name: FOREST
+            weight: 50
+
+    - id: 7 #sand desert, hot
+      terrain:
+          - name: FOREST
+            weight: 40
+
+    - id: 8 #deep desert, scorching
+      terrain:
+          - name: FOREST
+            weight: 30
+
+    - id: 9 #polar, freezing
+      terrain:
+          - name: FOREST
+            weight: 50
+
+    - id: 11 #xenoform, acid
+      terrain:
+          - name: FOREST
+            weight: 20
+
+    - id: 12 #icefield, cold
+      terrain:
+          - name: FOREST
+            weight: 50
+
+    - id: 13 #shallow, water
+      fakeUnderwater: true
+      terrain:
+          - name: FOREST
+            weight: 20
+
+    - id: 14 #deep, water
+      fakeUnderwater: true
+      terrain:
+          - name: FOREST
+            weight: 10
+
+    - id: 15 #not used
+      fakeUnderwater: true
+      terrain:
+          - name: FOREST
+            weight: 10
+
+    - id: 16 #coral, water
+      fakeUnderwater: true
+      terrain:
+          - name: FOREST
+            weight: 30
+
+    - id: 17 #lake, water
+      fakeUnderwater: true
+      terrain:
+          - name: FOREST
+            weight: 10
+
+    - id: 18 #tundra/low habitation, cold
+      terrain:
+          - name: FOREST
+            weight: 80
+
+    - id: 19 #heathland/low habitation, cold
+      terrain:
+          - name: FOREST
+            weight: 40
+
+    - id: 21 #mediterranean/med habitation, hot
+      terrain:
+          - name: FOREST
+            weight: 10
+
+    - id: 22 #rainforest/low habitation, hot
+      terrain:
+          - name: FOREST
+            weight: 25
+
+    - id: 24 #deepest desert, scorching
+      terrain:
+          - name: FOREST
+            weight: 70
+
+    - id: 26 #snow mountain/low habitation, cold
+      terrain:
+          - name: FOREST
+            weight: 80
+
+    - id: 27 #taiga/low habitation, cold
+      terrain:
+          - name: FOREST
+            weight: 80
+
+    # - id: -1 #rich city
+    #   deployments: 
+    #     - STR_TERROR_MISSION: 90
+    # - id: -2 #poor city
+    #   deployments: 
+    #     - STR_TERROR_MISSION: 90
+    # - id: -3 #arid city
+    #   deployments: 
+    #     - STR_TERROR_MISSION: 90
+    # - id: -4 #cold city
+    #   deployments: 
+    #     - STR_TERROR_MISSION: 90
+    # - id: -5 #tropical city
+    #   deployments: 
+    #     - STR_TERROR_MISSION: 90
+    # - id: -6 #warm port
+    #   deployments: 
+    #     - STR_TERROR_MISSION: 90
+    # - id: -7 #cold port
+    #   deployments: 
+    #     - STR_TERROR_MISSION: 90
+    # - id: -8 #lake port
+    #   deployments:
+    #     - STR_TERROR_MISSION: 90
+    # - id: -9 #coral port
+    #   deployments:
+    #     - STR_TERROR_MISSION: 90

@@ -1,0 +1,1551 @@
+
+soldierBonuses:
+#  - name: STR_TEMPLATE
+#    visibilityAtDark: 99 #+99 tiles
+#    frontArmor: 99
+#    sideArmor: 99
+#    rearArmor: 99
+#    underArmor: 99
+#    stats:
+#      tu: 99
+#      stamina: 99
+#      health: 99
+#      bravery: 99
+#      reactions: 99
+#      firing: 99
+#      throwing: 99
+#      melee: 99
+#      strength: 99
+#      psiStrength: 99
+#      psiSkill: 99
+#      mana: 99
+#    recovery:
+#      time:
+#        flatOne: 99
+#      energy:
+#        flatOne: 99
+#      morale:
+#        flatOne: 99
+#      health:
+#        flatOne: 99
+#      mana:
+#        flatOne: 99
+#      stun:
+#        flatOne: 99
+
+#transformations
+  - name: STR_SKIRMISHER_SPECIALIST
+    stats:
+      firing: 12
+      reactions: 6
+
+  - name: STR_RANGER_SPECIALIST
+    stats:
+      throwing: 12
+      stamina: 6
+
+  - name: STR_SCOUT_SPECIALIST
+    stats:
+      melee: 12
+      tu: 6
+
+  - name: STR_BREACHER_SPECIALIST
+    stats:
+      reactions: 12
+      tu: 6
+
+  - name: STR_HEAVY_SPECIALIST
+    stats:
+      strength: 12
+      health: 6
+
+#commendations
+  - name: STR_MEDAL_ORIGINAL
+    stats:
+      tu: 1
+      stamina: 1
+      health: 1
+      reactions: 1
+      firing: 1
+      throwing: 1
+      melee: 1
+      strength: 1
+
+
+  - name: STR_MEDAL_SERVICE_TIME_1
+    stats:
+      stamina: 1
+      health: 1
+      strength: 1
+      mana: 1
+  - name: STR_MEDAL_SERVICE_TIME_2
+    stats:
+      stamina: 2
+      health: 2
+      strength: 2
+      mana: 2
+  - name: STR_MEDAL_SERVICE_TIME_3
+    stats:
+      stamina: 3
+      health: 3
+      strength: 3
+      mana: 3
+  - name: STR_MEDAL_SERVICE_TIME_4
+    stats:
+      stamina: 4
+      health: 4
+      strength: 4
+      mana: 4
+
+  - name: STR_MEDAL_STATGAIN_1
+    stats:
+      stamina: 2
+  - name: STR_MEDAL_STATGAIN_2
+    stats:
+      stamina: 2
+      health: 2
+  - name: STR_MEDAL_STATGAIN_3
+    stats:
+      stamina: 2
+      health: 2
+      strength: 2
+  - name: STR_MEDAL_STATGAIN_4
+    stats:
+      stamina: 2
+      health: 2
+      reactions: 2
+      strength: 2
+  - name: STR_MEDAL_STATGAIN_5
+    stats:
+      stamina: 2
+      health: 2
+      reactions: 2
+      strength: 2
+      mana: 2
+  - name: STR_MEDAL_STATGAIN_6
+    stats:
+      stamina: 4
+      health: 2
+      reactions: 2
+      strength: 2
+      mana: 2
+  - name: STR_MEDAL_STATGAIN_7
+    stats:
+      stamina: 4
+      health: 4
+      reactions: 2
+      strength: 2
+      mana: 2
+  - name: STR_MEDAL_STATGAIN_8
+    stats:
+      stamina: 4
+      health: 4
+      reactions: 2
+      strength: 4
+      mana: 2
+  - name: STR_MEDAL_STATGAIN_9
+    stats:
+      stamina: 4
+      health: 4
+      reactions: 4
+      strength: 4
+      mana: 2
+  - name: STR_MEDAL_STATGAIN_10
+    stats:
+      stamina: 4
+      health: 4
+      reactions: 4
+      strength: 4
+      mana: 4
+
+  - name: STR_MEDAL_CARREER_MISSIONS_1
+    stats:
+      health: 1
+      mana: 1
+  - name: STR_MEDAL_CARREER_MISSIONS_2
+    stats:
+      health: 2
+      mana: 2
+  - name: STR_MEDAL_CARREER_MISSIONS_3
+    stats:
+      health: 3
+      mana: 3
+  - name: STR_MEDAL_CARREER_MISSIONS_4
+    stats:
+      health: 4
+      mana: 4
+  - name: STR_MEDAL_CARREER_MISSIONS_5
+    stats:
+      health: 5
+      mana: 5
+  - name: STR_MEDAL_CARREER_MISSIONS_6
+    stats:
+      health: 6
+      mana: 6
+  - name: STR_MEDAL_CARREER_MISSIONS_7
+    stats:
+      health: 7
+      mana: 7
+  - name: STR_MEDAL_CARREER_MISSIONS_8
+    stats:
+      health: 8
+      mana: 8
+  - name: STR_MEDAL_CARREER_MISSIONS_9
+    stats:
+      health: 9
+      mana: 9
+  - name: STR_MEDAL_CARREER_MISSIONS_10
+    stats:
+      health: 10
+      mana: 10
+
+  - name: STR_MEDAL_NIGHTOPS_1
+    visibilityAtDark: 1
+  - name: STR_MEDAL_NIGHTOPS_2
+    visibilityAtDark: 1
+    stats:
+      mana: 2
+  - name: STR_MEDAL_NIGHTOPS_3
+    visibilityAtDark: 1
+    stats:
+      mana: 4
+  - name: STR_MEDAL_NIGHTOPS_4
+    visibilityAtDark: 2
+    stats:
+      mana: 6
+
+  - name: STR_MEDAL_BASE_DEFENSE
+    stats:
+      health: 2
+
+#  - name: STR_MEDAL_ALIEN_BASE_ASSAULT
+#    stats:
+#      tu: 2
+
+#  - name: STR_MEDAL_AQUANAUT_1
+#    recovery:
+#      morale:
+#        flatOne: 1
+#  - name: STR_MEDAL_AQUANAUT_2
+#    stats:
+#      bravery: 10
+#    recovery:
+#      morale:
+#        flatOne: 1
+#  - name: STR_MEDAL_AQUANAUT_3
+#    stats:
+#      bravery: 10
+#    recovery:
+#      morale:
+#        flatOne: 2
+#  - name: STR_MEDAL_AQUANAUT_4
+#    stats:
+#      bravery: 20
+#    recovery:
+#      morale:
+#        flatOne: 2
+
+  - name: STR_MEDAL_CAMPAIGN_RIBBON
+    stats:
+      mana: 2
+
+  - name: STR_MEDAL_CARREER_KILLS_1
+    stats:
+      psiStrength: 1
+  - name: STR_MEDAL_CARREER_KILLS_2
+    stats:
+      psiStrength: 2
+  - name: STR_MEDAL_CARREER_KILLS_3
+    stats:
+      psiStrength: 3
+  - name: STR_MEDAL_CARREER_KILLS_4
+    stats:
+      psiStrength: 4
+  - name: STR_MEDAL_CARREER_KILLS_5
+    stats:
+      psiStrength: 5
+  - name: STR_MEDAL_CARREER_KILLS_6
+    stats:
+      psiStrength: 6
+  - name: STR_MEDAL_CARREER_KILLS_7
+    stats:
+      psiStrength: 7
+  - name: STR_MEDAL_CARREER_KILLS_8
+    stats:
+      psiStrength: 8
+  - name: STR_MEDAL_CARREER_KILLS_9
+    stats:
+      psiStrength: 9
+  - name: STR_MEDAL_CARREER_KILLS_10
+    stats:
+      psiStrength: 10
+
+  - name: STR_MEDAL_CARREER_CAPTURES_1
+    stats:
+      psiSkill: 1
+  - name: STR_MEDAL_CARREER_CAPTURES_2
+    stats:
+      psiSkill: 2
+  - name: STR_MEDAL_CARREER_CAPTURES_3
+    stats:
+      psiSkill: 3
+  - name: STR_MEDAL_CARREER_CAPTURES_4
+    stats:
+      psiSkill: 4
+  - name: STR_MEDAL_CARREER_CAPTURES_5
+    stats:
+      psiSkill: 5
+  - name: STR_MEDAL_CARREER_CAPTURES_6
+    stats:
+      psiSkill: 6
+  - name: STR_MEDAL_CARREER_CAPTURES_7
+    stats:
+      psiSkill: 7
+  - name: STR_MEDAL_CARREER_CAPTURES_8
+    stats:
+      psiSkill: 8
+  - name: STR_MEDAL_CARREER_CAPTURES_9
+    stats:
+      psiSkill: 9
+  - name: STR_MEDAL_CARREER_CAPTURES_10
+    stats:
+      psiSkill: 10
+
+  - name: STR_MEDAL_BOUNTYHUNTER
+    stats:
+      psiSkill: 2
+
+  - name: STR_MEDAL_SLAVEKILLS
+    stats:
+      psiStrength: 2
+
+  - name: STR_MEDAL_IDOL_1
+    stats:
+      reactions: 1
+  - name: STR_MEDAL_IDOL_2
+    stats:
+      reactions: 2
+  - name: STR_MEDAL_IDOL_3
+    stats:
+      reactions: 3
+  - name: STR_MEDAL_IDOL_4
+    stats:
+      reactions: 4
+
+  - name: STR_MEDAL_MISSION_KILLS_5_1
+    stats:
+      stamina: 2
+  - name: STR_MEDAL_MISSION_KILLS_5_2
+    stats:
+      stamina: 4
+  - name: STR_MEDAL_MISSION_KILLS_5_3
+    stats:
+      stamina: 6
+  - name: STR_MEDAL_MISSION_KILLS_5_4
+    stats:
+      stamina: 8
+
+  - name: STR_MEDAL_MISSION_KILLS_11_1
+    stats:
+      health: 2
+  - name: STR_MEDAL_MISSION_KILLS_11_2
+    stats:
+      health: 4
+  - name: STR_MEDAL_MISSION_KILLS_11_3
+    stats:
+      health: 6
+  - name: STR_MEDAL_MISSION_KILLS_11_4
+    stats:
+      health: 8
+
+  - name: STR_MEDAL_DBLKILL_1
+    stats:
+      tu: 1
+  - name: STR_MEDAL_DBLKILL_2
+    stats:
+      tu: 2
+  - name: STR_MEDAL_DBLKILL_3
+    stats:
+      tu: 3
+  - name: STR_MEDAL_DBLKILL_4
+    stats:
+      tu: 4
+
+  - name: STR_MEDAL_QUADKILL_1
+    stats:
+      tu: 1
+  - name: STR_MEDAL_QUADKILL_2
+    stats:
+      tu: 2
+  - name: STR_MEDAL_QUADKILL_3
+    stats:
+      tu: 3
+  - name: STR_MEDAL_QUADKILL_4
+    stats:
+      tu: 4
+
+  - name: STR_MEDAL_7V7KILL_1
+    stats:
+      tu: 1
+  - name: STR_MEDAL_7V7KILL_2
+    stats:
+      tu: 2
+  - name: STR_MEDAL_7V7KILL_3
+    stats:
+      tu: 3
+  - name: STR_MEDAL_7V7KILL_4
+    stats:
+      tu: 4
+
+  - name: STR_MEDAL_SHARPSHOOTER_1
+    stats:
+      tu: 1
+      firing: 1
+  - name: STR_MEDAL_SHARPSHOOTER_2
+    stats:
+      tu: 2
+      firing: 2
+  - name: STR_MEDAL_SHARPSHOOTER_3
+    stats:
+      tu: 3
+      firing: 3
+  - name: STR_MEDAL_SHARPSHOOTER_4
+    stats:
+      tu: 4
+      firing: 4
+
+  - name: STR_MEDAL_CHAMPION_1
+    stats:
+      tu: 1
+      throwing: 1
+  - name: STR_MEDAL_CHAMPION_2
+    stats:
+      tu: 2
+      throwing: 2
+  - name: STR_MEDAL_CHAMPION_3
+    stats:
+      tu: 3
+      throwing: 3
+  - name: STR_MEDAL_CHAMPION_4
+    stats:
+      tu: 4
+      throwing: 4
+
+  - name: STR_MEDAL_WHIRLWIND_1
+    stats:
+      tu: 1
+      melee: 1
+  - name: STR_MEDAL_WHIRLWIND_2
+    stats:
+      tu: 2
+      melee: 2
+  - name: STR_MEDAL_WHIRLWIND_3
+    stats:
+      tu: 3
+      melee: 3
+  - name: STR_MEDAL_WHIRLWIND_4
+    stats:
+      tu: 4
+      melee: 4
+
+  - name: STR_MEDAL_REACTIONFIRE_1
+    stats:
+      reactions: 1
+  - name: STR_MEDAL_REACTIONFIRE_2
+    stats:
+      reactions: 2
+  - name: STR_MEDAL_REACTIONFIRE_3
+    stats:
+      reactions: 3
+  - name: STR_MEDAL_REACTIONFIRE_4
+    stats:
+      reactions: 4
+  - name: STR_MEDAL_REACTIONFIRE_5
+    stats:
+      reactions: 5
+  - name: STR_MEDAL_REACTIONFIRE_6
+    stats:
+      reactions: 6
+  - name: STR_MEDAL_REACTIONFIRE_7
+    stats:
+      reactions: 7
+  - name: STR_MEDAL_REACTIONFIRE_8
+    stats:
+      reactions: 8
+  - name: STR_MEDAL_REACTIONFIRE_9
+    stats:
+      reactions: 9
+  - name: STR_MEDAL_REACTIONFIRE_10
+    stats:
+      reactions: 10
+
+  - name: STR_MEDAL_PURPLE_HEART_1
+    stats:
+      health: 1
+  - name: STR_MEDAL_PURPLE_HEART_2
+    stats:
+      health: 2
+  - name: STR_MEDAL_PURPLE_HEART_3
+    stats:
+      health: 3
+  - name: STR_MEDAL_PURPLE_HEART_4
+    stats:
+      health: 4
+
+  - name: STR_MEDAL_CRIMSON_HEART_1
+    recovery:
+      stun:
+        flatOne: 1
+  - name: STR_MEDAL_CRIMSON_HEART_2
+    recovery:
+      stun:
+        flatOne: 2
+  - name: STR_MEDAL_CRIMSON_HEART_3
+    recovery:
+      stun:
+        flatOne: 3
+  - name: STR_MEDAL_CRIMSON_HEART_4
+    recovery:
+      stun:
+        flatOne: 4
+
+  - name: STR_MEDAL_HEALER
+    stats:
+      bravery: 10
+
+  - name: STR_MEDAL_GLOBETROTTER
+    stats:
+      tu: 3
+
+  - name: STR_MEDAL_BETRAYER
+    stats:
+      psiSkill: 2
+      bravery: -10
+
+  - name: STR_MEDAL_CIV_KILLS
+    stats:
+      psiSkill: 2
+      reactions: -2
+
+  - name: STR_MEDAL_LONESURVIVOR
+    recovery:
+      morale:
+        flatOne: 1
+
+  - name: STR_MEDAL_MONSTER_1
+    stats:
+      strength: 1
+      health: 1
+  - name: STR_MEDAL_MONSTER_2
+    stats:
+      strength: 2
+      health: 2
+  - name: STR_MEDAL_MONSTER_3
+    stats:
+      strength: 3
+      health: 3
+  - name: STR_MEDAL_MONSTER_4
+    stats:
+      strength: 4
+      health: 4
+
+#  - name: STR_MEDAL_CHOKER_1
+#  - name: STR_MEDAL_CHOKER_2
+#  - name: STR_MEDAL_CHOKER_3
+#  - name: STR_MEDAL_CHOKER_4
+
+  - name: STR_MEDAL_PHYSICS_1
+    stats:
+      strength: 1
+  - name: STR_MEDAL_PHYSICS_2
+    stats:
+      strength: 2
+  - name: STR_MEDAL_PHYSICS_3
+    stats:
+      strength: 3
+  - name: STR_MEDAL_PHYSICS_4
+    stats:
+      strength: 4
+      bravery: 10
+
+  - name: STR_MEDAL_RADIANT_1
+    stats:
+      firing: 1
+  - name: STR_MEDAL_RADIANT_2
+    stats:
+      firing: 2
+  - name: STR_MEDAL_RADIANT_3
+    stats:
+      firing: 3
+  - name: STR_MEDAL_RADIANT_4
+    stats:
+      firing: 4
+      bravery: 10
+
+  - name: STR_MEDAL_NOVA_1
+    stats:
+      psiSkill: 1
+  - name: STR_MEDAL_NOVA_2
+    stats:
+      psiSkill: 2
+  - name: STR_MEDAL_NOVA_3
+    stats:
+      psiSkill: 3
+  - name: STR_MEDAL_NOVA_4
+    stats:
+      psiSkill: 4
+      bravery: 10
+
+  - name: STR_MEDAL_PURIFIER_1
+    stats:
+      stamina: 1
+  - name: STR_MEDAL_PURIFIER_2
+    stats:
+      stamina: 2
+  - name: STR_MEDAL_PURIFIER_3
+    stats:
+      stamina: 3
+  - name: STR_MEDAL_PURIFIER_4
+    stats:
+      stamina: 4
+      bravery: 10
+
+  - name: STR_MEDAL_DISSOLVER_1
+    stats:
+      health: 1
+  - name: STR_MEDAL_DISSOLVER_2
+    stats:
+      health: 2
+  - name: STR_MEDAL_DISSOLVER_3
+    stats:
+      health: 3
+  - name: STR_MEDAL_DISSOLVER_4
+    stats:
+      health: 4
+      bravery: 10
+
+  - name: STR_MEDAL_ZAPPER_1
+    stats:
+      reactions: 1
+  - name: STR_MEDAL_ZAPPER_2
+    stats:
+      reactions: 2
+  - name: STR_MEDAL_ZAPPER_3
+    stats:
+      reactions: 3
+  - name: STR_MEDAL_ZAPPER_4
+    stats:
+      reactions: 4
+      bravery: 10
+
+  - name: STR_MEDAL_HARMONIC_1
+    stats:
+      mana: 1
+  - name: STR_MEDAL_HARMONIC_2
+    stats:
+      mana: 2
+  - name: STR_MEDAL_HARMONIC_3
+    stats:
+      mana: 3
+  - name: STR_MEDAL_HARMONIC_4
+    stats:
+      mana: 4
+      bravery: 10
+
+  - name: STR_MEDAL_ORGANISM_1
+    recovery:
+      stun:
+        flatOne: 1
+  - name: STR_MEDAL_ORGANISM_2
+    recovery:
+      stun:
+        flatOne: 2
+  - name: STR_MEDAL_ORGANISM_3
+    recovery:
+      stun:
+        flatOne: 3
+  - name: STR_MEDAL_ORGANISM_4
+    stats:
+      bravery: 10
+    recovery:
+      stun:
+        flatOne: 4
+
+  - name: STR_MEDAL_GRENADIER_1
+    stats:
+      throwing: 1
+      strength: 1
+  - name: STR_MEDAL_GRENADIER_2
+    stats:
+      throwing: 2
+      strength: 2
+  - name: STR_MEDAL_GRENADIER_3
+    stats:
+      throwing: 3
+      strength: 3
+  - name: STR_MEDAL_GRENADIER_4
+    stats:
+      throwing: 4
+      strength: 4
+      bravery: 10
+
+  - name: STR_MEDAL_WEAPON_PROFICIENCY_1
+    stats:
+      firing: 1
+      throwing: 1
+      melee: 1
+  - name: STR_MEDAL_WEAPON_PROFICIENCY_2
+    stats:
+      firing: 2
+      throwing: 2
+      melee: 2
+  - name: STR_MEDAL_WEAPON_PROFICIENCY_3
+    stats:
+      firing: 3
+      throwing: 3
+      melee: 3
+  - name: STR_MEDAL_WEAPON_PROFICIENCY_4
+    stats:
+      firing: 4
+      throwing: 4
+      melee: 4
+      bravery: 10
+
+  - name: STR_MEDAL_WRESTLER_1
+    stats:
+      melee: 1
+      reactions: 1
+      strength: 1
+    recovery:
+      energy:
+        flatOne: 1
+  - name: STR_MEDAL_WRESTLER_2
+    stats:
+      melee: 2
+      reactions: 2
+      strength: 2
+    recovery:
+      energy:
+        flatOne: 2
+  - name: STR_MEDAL_WRESTLER_3
+    stats:
+      melee: 3
+      reactions: 3
+      strength: 3
+    recovery:
+      energy:
+        flatOne: 3
+  - name: STR_MEDAL_WRESTLER_4
+    stats:
+      melee: 4
+      reactions: 4
+      strength: 4
+      bravery: 10
+    recovery:
+      energy:
+        flatOne: 4
+
+  - name: STR_MEDAL_MAULER_1
+    stats:
+      melee: 1
+      reactions: 1
+      strength: 1
+    recovery:
+      energy:
+        flatOne: 1
+  - name: STR_MEDAL_MAULER_2
+    stats:
+      melee: 2
+      reactions: 2
+      strength: 2
+    recovery:
+      energy:
+        flatOne: 2
+  - name: STR_MEDAL_MAULER_3
+    stats:
+      melee: 3
+      reactions: 3
+      strength: 3
+    recovery:
+      energy:
+        flatOne: 3
+  - name: STR_MEDAL_MAULER_4
+    stats:
+      melee: 4
+      reactions: 4
+      strength: 4
+    recovery:
+      energy:
+        flatOne: 4
+
+  - name: STR_MEDAL_HUNTER_KILLER_1
+    stats:
+      tu: 1
+      reactions: 1
+      firing: 1
+    recovery:
+      energy:
+        flatOne: 1
+  - name: STR_MEDAL_HUNTER_KILLER_2
+    stats:
+      tu: 2
+      reactions: 2
+      firing: 2
+    recovery:
+      energy:
+        flatOne: 2
+  - name: STR_MEDAL_HUNTER_KILLER_3
+    stats:
+      tu: 3
+      reactions: 3
+      firing: 3
+    recovery:
+      energy:
+        flatOne: 3
+  - name: STR_MEDAL_HUNTER_KILLER_4
+    stats:
+      tu: 4
+      reactions: 4
+      firing: 4
+    recovery:
+      energy:
+        flatOne: 4
+
+  - name: STR_MEDAL_SHOTGUN_SURGEON_1
+    stats:
+      tu: 1
+      reactions: 1
+  - name: STR_MEDAL_SHOTGUN_SURGEON_2
+    stats:
+      tu: 1
+      reactions: 1
+  - name: STR_MEDAL_SHOTGUN_SURGEON_3
+    stats:
+      tu: 1
+      reactions: 1
+  - name: STR_MEDAL_SHOTGUN_SURGEON_4
+    stats:
+      tu: 1
+      reactions: 1
+  - name: STR_MEDAL_SHOTGUN_SURGEON_5
+    stats:
+      tu: 2
+      reactions: 2
+  - name: STR_MEDAL_SHOTGUN_SURGEON_6
+    stats:
+      tu: 2
+      reactions: 2
+  - name: STR_MEDAL_SHOTGUN_SURGEON_7
+    stats:
+      tu: 2
+      reactions: 2
+  - name: STR_MEDAL_SHOTGUN_SURGEON_8
+    stats:
+      tu: 2
+      reactions: 2
+  - name: STR_MEDAL_SHOTGUN_SURGEON_9
+    stats:
+      tu: 2
+      reactions: 2
+  - name: STR_MEDAL_SHOTGUN_SURGEON_10
+    stats:
+      tu: 3
+      reactions: 3
+
+  - name: STR_MEDAL_GUNSLINGER_1
+    stats:
+      reactions: 1
+      firing: 1
+  - name: STR_MEDAL_GUNSLINGER_2
+    stats:
+      reactions: 1
+      firing: 1
+  - name: STR_MEDAL_GUNSLINGER_3
+    stats:
+      reactions: 1
+      firing: 1
+  - name: STR_MEDAL_GUNSLINGER_4
+    stats:
+      reactions: 1
+      firing: 1
+  - name: STR_MEDAL_GUNSLINGER_5
+    stats:
+      reactions: 2
+      firing: 2
+  - name: STR_MEDAL_GUNSLINGER_6
+    stats:
+      reactions: 2
+      firing: 2
+  - name: STR_MEDAL_GUNSLINGER_7
+    stats:
+      reactions: 2
+      firing: 2
+  - name: STR_MEDAL_GUNSLINGER_8
+    stats:
+      reactions: 2
+      firing: 2
+  - name: STR_MEDAL_GUNSLINGER_9
+    stats:
+      reactions: 2
+      firing: 2
+  - name: STR_MEDAL_GUNSLINGER_10
+    stats:
+      reactions: 3
+      firing: 3
+
+  - name: STR_MEDAL_ASSAULTER_1
+    stats:
+      tu: 1
+      firing: 1
+  - name: STR_MEDAL_ASSAULTER_2
+    stats:
+      tu: 1
+      firing: 1
+  - name: STR_MEDAL_ASSAULTER_3
+    stats:
+      tu: 1
+      firing: 1
+  - name: STR_MEDAL_ASSAULTER_4
+    stats:
+      tu: 1
+      firing: 1
+  - name: STR_MEDAL_ASSAULTER_5
+    stats:
+      tu: 2
+      firing: 2
+  - name: STR_MEDAL_ASSAULTER_6
+    stats:
+      tu: 2
+      firing: 2
+  - name: STR_MEDAL_ASSAULTER_7
+    stats:
+      tu: 2
+      firing: 2
+  - name: STR_MEDAL_ASSAULTER_8
+    stats:
+      tu: 2
+      firing: 2
+  - name: STR_MEDAL_ASSAULTER_9
+    stats:
+      tu: 2
+      firing: 2
+  - name: STR_MEDAL_ASSAULTER_10
+    stats:
+      tu: 3
+      firing: 3
+
+  - name: STR_MEDAL_TROOPER_1
+    stats:
+      firing: 1
+      stamina: 1
+  - name: STR_MEDAL_TROOPER_2
+    stats:
+      firing: 1
+      stamina: 1
+  - name: STR_MEDAL_TROOPER_3
+    stats:
+      firing: 1
+      stamina: 1
+  - name: STR_MEDAL_TROOPER_4
+    stats:
+      firing: 1
+      stamina: 1
+  - name: STR_MEDAL_TROOPER_5
+    stats:
+      firing: 2
+      stamina: 2
+  - name: STR_MEDAL_TROOPER_6
+    stats:
+      firing: 2
+      stamina: 2
+  - name: STR_MEDAL_TROOPER_7
+    stats:
+      firing: 2
+      stamina: 2
+  - name: STR_MEDAL_TROOPER_8
+    stats:
+      firing: 2
+      stamina: 2
+  - name: STR_MEDAL_TROOPER_9
+    stats:
+      firing: 2
+      stamina: 2
+  - name: STR_MEDAL_TROOPER_10
+    stats:
+      firing: 3
+      stamina: 3
+
+  - name: STR_MEDAL_SNIPER_1
+    stats:
+      firing: 2
+  - name: STR_MEDAL_SNIPER_2
+    stats:
+      firing: 2
+  - name: STR_MEDAL_SNIPER_3
+    stats:
+      firing: 3
+      reactions: 3
+  - name: STR_MEDAL_SNIPER_4
+    stats:
+      firing: 2
+  - name: STR_MEDAL_SNIPER_5
+    stats:
+      firing: 4
+  - name: STR_MEDAL_SNIPER_6
+    stats:
+      firing: 4
+  - name: STR_MEDAL_SNIPER_7
+    stats:
+      firing: 4
+  - name: STR_MEDAL_SNIPER_8
+    stats:
+      firing: 4
+  - name: STR_MEDAL_SNIPER_9
+    stats:
+      firing: 4
+  - name: STR_MEDAL_SNIPER_10
+    stats:
+      firing: 6
+
+  - name: STR_MEDAL_GUNNER_1
+    stats:
+      firing: 1
+      strength: 1
+  - name: STR_MEDAL_GUNNER_2
+    stats:
+      firing: 1
+      strength: 1
+  - name: STR_MEDAL_GUNNER_3
+    stats:
+      firing: 1
+      strength: 1
+  - name: STR_MEDAL_GUNNER_4
+    stats:
+      firing: 1
+      strength: 1
+  - name: STR_MEDAL_GUNNER_5
+    stats:
+      firing: 2
+      strength: 2
+  - name: STR_MEDAL_GUNNER_6
+    stats:
+      firing: 2
+      strength: 2
+  - name: STR_MEDAL_GUNNER_7
+    stats:
+      firing: 2
+      strength: 2
+  - name: STR_MEDAL_GUNNER_8
+    stats:
+      firing: 2
+      strength: 2
+  - name: STR_MEDAL_GUNNER_9
+    stats:
+      firing: 2
+      strength: 2
+  - name: STR_MEDAL_GUNNER_10
+    stats:
+      firing: 3
+      strength: 3
+
+  - name: STR_MEDAL_CANNONEER_1
+    stats:
+      strength: 2
+  - name: STR_MEDAL_CANNONEER_2
+    stats:
+      strength: 2
+  - name: STR_MEDAL_CANNONEER_3
+    stats:
+      strength: 2
+  - name: STR_MEDAL_CANNONEER_4
+    stats:
+      strength: 2
+  - name: STR_MEDAL_CANNONEER_5
+    stats:
+      strength: 4
+  - name: STR_MEDAL_CANNONEER_6
+    stats:
+      strength: 4
+  - name: STR_MEDAL_CANNONEER_7
+    stats:
+      strength: 4
+  - name: STR_MEDAL_CANNONEER_8
+    stats:
+      strength: 4
+  - name: STR_MEDAL_CANNONEER_9
+    stats:
+      strength: 4
+  - name: STR_MEDAL_CANNONEER_10
+    stats:
+      strength: 6
+
+  - name: STR_MEDAL_BOMBARDIER_1
+    stats:
+      throwing: 1
+      mana: 1
+  - name: STR_MEDAL_BOMBARDIER_2
+    stats:
+      throwing: 1
+      mana: 1
+  - name: STR_MEDAL_BOMBARDIER_3
+    stats:
+      throwing: 1
+      mana: 1
+  - name: STR_MEDAL_BOMBARDIER_4
+    stats:
+      throwing: 1
+      mana: 1
+  - name: STR_MEDAL_BOMBARDIER_5
+    stats:
+      throwing: 2
+      mana: 2
+  - name: STR_MEDAL_BOMBARDIER_6
+    stats:
+      throwing: 2
+      mana: 2
+  - name: STR_MEDAL_BOMBARDIER_7
+    stats:
+      throwing: 2
+      mana: 2
+  - name: STR_MEDAL_BOMBARDIER_8
+    stats:
+      throwing: 2
+      mana: 2
+  - name: STR_MEDAL_BOMBARDIER_9
+    stats:
+      throwing: 2
+      mana: 2
+  - name: STR_MEDAL_BOMBARDIER_10
+    stats:
+      throwing: 3
+      mana: 3
+
+  - name: STR_MEDAL_ROCKET_SCIENTIST_1
+    stats:
+      strength: 1
+      mana: 1
+  - name: STR_MEDAL_ROCKET_SCIENTIST_2
+    stats:
+      strength: 1
+      mana: 1
+  - name: STR_MEDAL_ROCKET_SCIENTIST_3
+    stats:
+      strength: 1
+      mana: 1
+  - name: STR_MEDAL_ROCKET_SCIENTIST_4
+    stats:
+      strength: 1
+      mana: 1
+  - name: STR_MEDAL_ROCKET_SCIENTIST_5
+    stats:
+      strength: 2
+      mana: 2
+  - name: STR_MEDAL_ROCKET_SCIENTIST_6
+    stats:
+      strength: 2
+      mana: 2
+  - name: STR_MEDAL_ROCKET_SCIENTIST_7
+    stats:
+      strength: 2
+      mana: 2
+  - name: STR_MEDAL_ROCKET_SCIENTIST_8
+    stats:
+      strength: 2
+      mana: 2
+  - name: STR_MEDAL_ROCKET_SCIENTIST_9
+    stats:
+      strength: 2
+      mana: 2
+  - name: STR_MEDAL_ROCKET_SCIENTIST_10
+    stats:
+      strength: 3
+      mana: 3
+
+  - name: STR_MEDAL_SORCERER_1
+    stats:
+      stamina: 1
+      psiSkill: 1
+  - name: STR_MEDAL_SORCERER_2
+    stats:
+      stamina: 1
+      psiSkill: 1
+  - name: STR_MEDAL_SORCERER_3
+    stats:
+      stamina: 1
+      psiSkill: 1
+  - name: STR_MEDAL_SORCERER_4
+    stats:
+      stamina: 1
+      psiSkill: 1
+  - name: STR_MEDAL_SORCERER_5
+    stats:
+      stamina: 2
+      psiSkill: 2
+  - name: STR_MEDAL_SORCERER_6
+    stats:
+      stamina: 2
+      psiSkill: 2
+  - name: STR_MEDAL_SORCERER_7
+    stats:
+      stamina: 2
+      psiSkill: 2
+  - name: STR_MEDAL_SORCERER_8
+    stats:
+      stamina: 2
+      psiSkill: 2
+  - name: STR_MEDAL_SORCERER_9
+    stats:
+      stamina: 2
+      psiSkill: 2
+  - name: STR_MEDAL_SORCERER_10
+    stats:
+      stamina: 3
+      psiSkill: 3
+
+  - name: STR_MEDAL_TECHNICIAN_1
+    stats:
+      stamina: 1
+      strength: 1
+  - name: STR_MEDAL_TECHNICIAN_2
+    stats:
+      stamina: 1
+      strength: 1
+  - name: STR_MEDAL_TECHNICIAN_3
+    stats:
+      stamina: 1
+      strength: 1
+  - name: STR_MEDAL_TECHNICIAN_4
+    stats:
+      stamina: 1
+      strength: 1
+  - name: STR_MEDAL_TECHNICIAN_5
+    stats:
+      stamina: 2
+      strength: 2
+  - name: STR_MEDAL_TECHNICIAN_6
+    stats:
+      stamina: 2
+      strength: 2
+  - name: STR_MEDAL_TECHNICIAN_7
+    stats:
+      stamina: 2
+      strength: 2
+  - name: STR_MEDAL_TECHNICIAN_8
+    stats:
+      stamina: 2
+      strength: 2
+  - name: STR_MEDAL_TECHNICIAN_9
+    stats:
+      stamina: 2
+      strength: 2
+  - name: STR_MEDAL_TECHNICIAN_10
+    stats:
+      stamina: 3
+      strength: 3
+
+  - name: STR_MEDAL_WARRIOR_1
+    stats:
+      tu: 1
+      melee: 1
+  - name: STR_MEDAL_WARRIOR_2
+    stats:
+      tu: 1
+      melee: 1
+  - name: STR_MEDAL_WARRIOR_3
+    stats:
+      tu: 1
+      melee: 1
+  - name: STR_MEDAL_WARRIOR_4
+    stats:
+      tu: 1
+      melee: 1
+  - name: STR_MEDAL_WARRIOR_5
+    stats:
+      tu: 2
+      melee: 2
+  - name: STR_MEDAL_WARRIOR_6
+    stats:
+      tu: 2
+      melee: 2
+  - name: STR_MEDAL_WARRIOR_7
+    stats:
+      tu: 2
+      melee: 2
+  - name: STR_MEDAL_WARRIOR_8
+    stats:
+      tu: 2
+      melee: 2
+  - name: STR_MEDAL_WARRIOR_9
+    stats:
+      tu: 2
+      melee: 2
+  - name: STR_MEDAL_WARRIOR_10
+    stats:
+      tu: 3
+      melee: 3
+
+  - name: STR_MEDAL_TRADITIONALIST_1
+    stats:
+      stamina: 1
+      firing: 1
+      throwing: 1
+  - name: STR_MEDAL_TRADITIONALIST_2
+    stats:
+      stamina: 1
+      firing: 1
+      throwing: 1
+  - name: STR_MEDAL_TRADITIONALIST_3
+    stats:
+      stamina: 1
+      firing: 1
+      throwing: 1
+  - name: STR_MEDAL_TRADITIONALIST_4
+    stats:
+      stamina: 1
+      firing: 1
+      throwing: 1
+  - name: STR_MEDAL_TRADITIONALIST_5
+    stats:
+      stamina: 2
+      firing: 2
+      throwing: 2
+  - name: STR_MEDAL_TRADITIONALIST_6
+    stats:
+      stamina: 2
+      firing: 2
+      throwing: 2
+  - name: STR_MEDAL_TRADITIONALIST_7
+    stats:
+      stamina: 2
+      firing: 2
+      throwing: 2
+  - name: STR_MEDAL_TRADITIONALIST_8
+    stats:
+      stamina: 2
+      firing: 2
+      throwing: 2
+  - name: STR_MEDAL_TRADITIONALIST_9
+    stats:
+      stamina: 2
+      firing: 2
+      throwing: 2
+  - name: STR_MEDAL_TRADITIONALIST_10
+    stats:
+      stamina: 3
+      firing: 3
+      throwing: 3
+
+  - name: STR_MEDAL_PRIMAL_1
+    stats:
+      tu: 1
+      stamina: 1
+      throwing: 1
+  - name: STR_MEDAL_PRIMAL_2
+    stats:
+      tu: 1
+      stamina: 1
+      throwing: 1
+  - name: STR_MEDAL_PRIMAL_3
+    stats:
+      tu: 1
+      stamina: 1
+      throwing: 1
+  - name: STR_MEDAL_PRIMAL_4
+    stats:
+      tu: 1
+      stamina: 1
+      throwing: 1
+  - name: STR_MEDAL_PRIMAL_5
+    stats:
+      tu: 2
+      stamina: 2
+      throwing: 2
+  - name: STR_MEDAL_PRIMAL_6
+    stats:
+      tu: 2
+      stamina: 2
+      throwing: 2
+  - name: STR_MEDAL_PRIMAL_7
+    stats:
+      tu: 2
+      stamina: 2
+      throwing: 2
+  - name: STR_MEDAL_PRIMAL_8
+    stats:
+      tu: 2
+      stamina: 2
+      throwing: 2
+  - name: STR_MEDAL_PRIMAL_9
+    stats:
+      tu: 2
+      stamina: 2
+      throwing: 2
+  - name: STR_MEDAL_PRIMAL_10
+    stats:
+      tu: 3
+      stamina: 3
+      throwing: 3
+
+  - name: STR_MEDAL_INCAPACITATOR_1
+    stats:
+      reactions: 1
+      mana: 1
+  - name: STR_MEDAL_INCAPACITATOR_2
+    stats:
+      reactions: 1
+      mana: 1
+  - name: STR_MEDAL_INCAPACITATOR_3
+    stats:
+      reactions: 1
+      mana: 1
+  - name: STR_MEDAL_INCAPACITATOR_4
+    stats:
+      reactions: 1
+      mana: 1
+  - name: STR_MEDAL_INCAPACITATOR_5
+    stats:
+      reactions: 2
+      mana: 2
+  - name: STR_MEDAL_INCAPACITATOR_6
+    stats:
+      reactions: 2
+      mana: 2
+  - name: STR_MEDAL_INCAPACITATOR_7
+    stats:
+      reactions: 2
+      mana: 2
+  - name: STR_MEDAL_INCAPACITATOR_8
+    stats:
+      reactions: 2
+      mana: 2
+  - name: STR_MEDAL_INCAPACITATOR_9
+    stats:
+      reactions: 2
+      mana: 2
+  - name: STR_MEDAL_INCAPACITATOR_10
+    stats:
+      reactions: 3
+      mana: 3
+
+  - name: STR_MEDAL_TASEMASTER_1
+    stats:
+      tu: 1
+      mana: 1
+  - name: STR_MEDAL_TASEMASTER_2
+    stats:
+      tu: 1
+      mana: 1
+  - name: STR_MEDAL_TASEMASTER_3
+    stats:
+      tu: 1
+      mana: 1
+  - name: STR_MEDAL_TASEMASTER_4
+    stats:
+      tu: 1
+      mana: 1
+  - name: STR_MEDAL_TASEMASTER_5
+    stats:
+      tu: 2
+      mana: 2
+  - name: STR_MEDAL_TASEMASTER_6
+    stats:
+      tu: 2
+      mana: 2
+  - name: STR_MEDAL_TASEMASTER_7
+    stats:
+      tu: 2
+      mana: 2
+  - name: STR_MEDAL_TASEMASTER_8
+    stats:
+      tu: 2
+      mana: 2
+  - name: STR_MEDAL_TASEMASTER_9
+    stats:
+      tu: 2
+      mana: 2
+  - name: STR_MEDAL_TASEMASTER_10
+    stats:
+      tu: 3
+      mana: 3
+
+  - name: STR_MEDAL_SLEEPER_1
+    stats:
+      psiSkill: 1
+      mana: 1
+  - name: STR_MEDAL_SLEEPER_2
+    stats:
+      psiSkill: 1
+      mana: 1
+  - name: STR_MEDAL_SLEEPER_3
+    stats:
+      psiSkill: 1
+      mana: 1
+  - name: STR_MEDAL_SLEEPER_4
+    stats:
+      psiSkill: 1
+      mana: 1
+  - name: STR_MEDAL_SLEEPER_5
+    stats:
+      psiSkill: 2
+      mana: 2
+  - name: STR_MEDAL_SLEEPER_6
+    stats:
+      psiSkill: 2
+      mana: 2
+  - name: STR_MEDAL_SLEEPER_7
+    stats:
+      psiSkill: 2
+      mana: 2
+  - name: STR_MEDAL_SLEEPER_8
+    stats:
+      psiSkill: 2
+      mana: 2
+  - name: STR_MEDAL_SLEEPER_9
+    stats:
+      psiSkill: 2
+      mana: 2
+  - name: STR_MEDAL_SLEEPER_10
+    stats:
+      psiSkill: 3
+      mana: 3
+
+  - name: STR_MEDAL_REVOLVINGDOOR_1
+    stats:
+      mana: 1
+      bravery: 10
+  - name: STR_MEDAL_REVOLVINGDOOR_2
+    stats:
+      mana: 2
+      bravery: 10
+  - name: STR_MEDAL_REVOLVINGDOOR_3
+    stats:
+      mana: 3
+      bravery: 10
+  - name: STR_MEDAL_REVOLVINGDOOR_4
+    stats:
+      mana: 4
+      bravery: 10
+  - name: STR_MEDAL_REVOLVINGDOOR_5
+    stats:
+      mana: 5
+      bravery: 20
+  - name: STR_MEDAL_REVOLVINGDOOR_6
+    stats:
+      mana: 6
+      bravery: 20
+  - name: STR_MEDAL_REVOLVINGDOOR_7
+    stats:
+      mana: 7
+      bravery: 20
+  - name: STR_MEDAL_REVOLVINGDOOR_8
+    stats:
+      mana: 8
+      bravery: 20
+  - name: STR_MEDAL_REVOLVINGDOOR_9
+    stats:
+      mana: 9
+      bravery: 20
+  - name: STR_MEDAL_REVOLVINGDOOR_10
+    stats:
+      mana: 10
+      bravery: 30

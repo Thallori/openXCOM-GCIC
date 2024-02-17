@@ -1,0 +1,16 @@
+
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      100: Resources/Sounds/Impacts/wrench_hit.wav
+      101: Resources/Sounds/Impacts/stab_hit.wav
+      102: Resources/Sounds/Impacts/club_hit.wav
+      103: Resources/Sounds/inject.wav
+      104: Resources/Sounds/Fire/crossbow_fire.wav
+      105: Resources/Sounds/Impacts/electricburn_hit.wav
+      106: Resources/Sounds/Impacts/flesh_hit.wav
+      107: Resources/Sounds/Animals/short_growl.ogg
+      108: Resources/Sounds/Fire/taser_fire.wav
+      109: Resources/Sounds/Fire/dart_fire.wav
+      110: Resources/Sounds/Impacts/harpoon_hit.wav
+      111: Resources/Sounds/Fire/fire_fire.wav

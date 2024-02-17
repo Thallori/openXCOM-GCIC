@@ -1,0 +1,28 @@
+
+craftWeapons:
+  - type: STR_HD_EXPRESS_ENGINE
+    launcher: STR_HD_EXPRESS_ENGINE
+    weaponType: 1
+    sprite: 602
+    stats:
+      fuelMax: 200
+      speedMax: 400
+    hidePediaInfo: true
+
+  - type: STR_HD_ECONOMY_ENGINE
+    launcher: STR_HD_ECONOMY_ENGINE
+    weaponType: 1
+    sprite: 601
+    stats:
+      fuelMax: 400
+      speedMax: 100
+    hidePediaInfo: true
+
+  - type: STR_BATBOX
+    launcher: STR_BATBOX
+    weaponType: 1
+    sprite: 603
+    stats:
+      fuelMax: 1200
+      speedMax: -25
+    hidePediaInfo: true

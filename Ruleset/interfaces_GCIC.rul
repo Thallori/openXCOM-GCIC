@@ -1,0 +1,112 @@
+
+interfaces:
+  - type: geoscape
+    elements:
+      - id: slackingIndicator
+        color: 244   # even lighter blue
+        color2: 133  # minty green
+        custom: -22  # above Intercept button
+
+  - type: inventory
+    elements:
+      - id: textStatLine1
+        custom: 11
+        color: 64
+        color2: 16
+      - id: textStatLine2
+        custom: 12
+        color: 64
+        color2: 16
+      - id: textStatLine3
+        custom: 13
+        color: 64
+        color2: 16
+      - id: textStatLine4
+        custom: 14
+        color: 64
+        color2: 16
+
+  - type: articleText
+    elements:
+      - id: button
+        color: 80    # very light grey
+      - id: title
+        color: 244   # light blue
+      - id: text
+        color: 239   # grey
+        color2: 244  # light blue
+
+  - type: articleTextImage
+    elements:
+      - id: button
+        color: 224   # light grey
+      - id: title
+        color: 244   # light blue
+      - id: text
+        color: 239   # grey
+        color2: 244  # light blue
+
+  - type: articleArmor
+    elements:
+      - id: button
+        color: 15    # orange
+      - id: text
+        color: 239   # grey
+        color2: 244  # light blue
+      - id: list
+        color: 239   # grey
+        color2: 244  # light blue
+
+  - type: articleCraftWeapon
+    elements:
+      - id: button
+        color: 16    # orange
+      - id: text
+        color: 239   # grey
+        color2: 244  # light blue
+      - id: list
+        color: 239   # grey
+        color2: 244  # light blue
+
+  - type: articleItem
+    elements:
+      - id: button
+        color: 224   # light grey
+      - id: text
+        color: 239   # grey
+        color2: 244  # light blue
+      - id: list
+        color: 239   # grey
+        color2: 244  # light blue
+      - id: ammoColor
+        color: 32    #red: none
+      - id: ammoColorDTAP
+        color: 112    #steel: kinetic
+      - id: ammoColorDTIN
+        color: 17    #orange: incendiary
+      - id: ammoColorDTHE
+        color: 35    #red: explosive
+      - id: ammoColorDTLaser
+        color: 97    #orange: radiant
+      - id: ammoColorDTPlasma
+        color: 49    #green: plasma
+      - id: ammoColorDTStun
+        color: 84    #soap: blunt
+      - id: ammoColorDTMelee
+        color: 2    #pale: mechanical
+      - id: ammoColorDTAcid
+        color: 64    #lime: chemical
+      - id: ammoColorDTSmoke
+        color: 161    #brown: smoke
+      - id: ammoColorDT10
+        color: 127    #electric: electric
+      - id: ammoColorDT11
+        color: 32    #todo: sonic
+      - id: ammoColorDT12
+        color: 179    #fleshy: biological
+      - id: ammoColorDT13
+        color: 193    #purple: psionic
+      - id: ammoColorDT14
+        color: 32    #todo: heat
+      - id: ammoColorDT15
+        color: 32    #todo: cold

@@ -1,0 +1,258 @@
+terrains:
+  - name: HANGAR
+    script: HANGAR_DRONES
+    mapDataSets:
+      - BLANKS
+      - FLOOR_ASPHALT
+      - FLOOR_URBAN
+      - FLORA_URBAN
+      - STRUCTURE_CORRUGATED1
+      - STRUCTURE_CORRUGATED2
+      - STRUCTURE_PANELS
+      - STRUCTURE_PANELS2
+      - STRUCTURE_WAREHOUSE
+      - STRUCTURE_WOOD
+      - STAIRS_METAL
+      - LADDER
+      - BITS_POTTED_PLANTS
+      - ROOFS_BITS
+      - FENCE_ARROWS
+      - FENCE_CHAINLINK
+      - LIGHTS_STREET1
+      - BITS_WAREHOUSE
+      - BITS_CRATES1
+      - BITS_CRATES2
+      - BITS_CRATES3
+      - BITS_TECH
+      - BITS_TRASH
+      - BITS_BARRELS
+      - BITS_SERVERS
+      - BITS_FILING_CABINETS_GREY
+      - SIGNS_COMMERCIAL
+      - SIGNS_TECH1
+      - SIGNS_WARNING
+      - BLOCKS_PORT
+      - BLOCK_PORT_CRANE
+      - FURNITURE_OUTDOORS
+      - FURNITURE_DESKS1
+      - FURNITURE_DESKS2
+      - BATHROOM_SLUM
+      - SKIP
+      - HOLOGRAMS
+    mapBlocks:
+      - name: HANGAR_00LZ
+        width: 10
+        length: 10
+        groups: 1
+      - name: HANGAR_01LZ
+        width: 10
+        length: 10
+        groups: 1
+      - name: HANGAR_02
+        width: 20
+        length: 20
+      - name: HANGAR_03S
+        width: 10
+        length: 10
+      - name: HANGAR_04S
+        width: 10
+        length: 10
+      - name: HANGAR_05S
+        width: 10
+        length: 10
+      - name: HANGAR_06S
+        width: 10
+        length: 10
+      - name: HANGAR_07
+        width: 10
+        length: 20
+      - name: HANGAR_08S
+        width: 10
+        length: 10
+      - name: HANGAR_09NS
+        width: 10
+        length: 10
+        groups: 3
+      - name: HANGAR_10NS
+        width: 10
+        length: 10
+        groups: 3
+      - name: HANGAR_11NS
+        width: 10
+        length: 10
+        groups: 3
+      - name: HANGAR_12NS
+        width: 10
+        length: 10
+        groups: 3
+      - name: HANGAR_13NS
+        width: 10
+        length: 10
+        groups: 3
+      - name: HANGAR_14NS
+        width: 10
+        length: 10
+        groups: 3
+      - name: HANGAR_15NS
+        width: 10
+        length: 10
+        groups: 3
+      - name: HANGAR_16NS
+        width: 10
+        length: 10
+        groups: 3
+      - name: HANGAR_17NS
+        width: 10
+        length: 10
+        groups: 3
+      - name: HANGAR_18NS
+        width: 10
+        length: 10
+        groups: 3
+      - name: HANGAR_19S
+        width: 10
+        length: 10
+      - name: HANGAR_20
+        width: 10
+        length: 20
+
+  - name: HANGAR_DRONES_1
+    mapDataSets:
+      - BLANKS
+      - FLOOR_ASPHALT
+      - FLOOR_URBAN
+      - FLORA_URBAN
+      - STRUCTURE_CORRUGATED1
+      - STRUCTURE_CORRUGATED2
+      - STRUCTURE_PANELS
+      - STRUCTURE_PANELS2
+      - STRUCTURE_WAREHOUSE
+      - STRUCTURE_WOOD
+      - STAIRS_METAL
+      - LADDER
+      - BITS_POTTED_PLANTS
+      - ROOFS_BITS
+      - FENCE_ARROWS
+      - FENCE_CHAINLINK
+      - LIGHTS_STREET1
+      - BITS_WAREHOUSE
+      - BITS_CRATES1
+      - BITS_CRATES2
+      - BITS_CRATES3
+      - BITS_TECH
+      - BITS_TRASH
+      - BITS_BARRELS
+      - BITS_SERVERS
+      - BITS_FILING_CABINETS_GREY
+      - SIGNS_COMMERCIAL
+      - SIGNS_TECH1
+      - SIGNS_WARNING
+      - BLOCKS_PORT
+      - BLOCK_PORT_CRANE
+      - FURNITURE_OUTDOORS
+      - FURNITURE_DESKS1
+      - FURNITURE_DESKS2
+      - BATHROOM_SLUM
+      - SKIP
+      - HOLOGRAMS
+    mapBlocks:
+      - name: HANGAR_02
+        width: 20
+        length: 20
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [9, 2, 0]
+          - [10, 3, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+      - name: HANGAR_03S
+        width: 10
+        length: 10
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [2, 7, 0]
+          - [5, 6, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+      - name: HANGAR_04S
+        width: 10
+        length: 10
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [2, 6, 0]
+          - [4, 4, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+      - name: HANGAR_05S
+        width: 10
+        length: 10
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [2, 2, 0]
+          - [7, 1, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+      - name: HANGAR_06S
+        width: 10
+        length: 10
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [4, 2, 0]
+          - [4, 3, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+      - name: HANGAR_07
+        width: 10
+        length: 20
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [7, 2, 0]
+          - [7, 6, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+      - name: HANGAR_08S
+        width: 10
+        length: 10
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [6, 1, 0]
+          - [6, 3, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+
+  - name: CLUB
+    script: SINGLE_BLOCK_LZ
+    mapDataSets:
+      - BLANKS
+      - LIFTER
+      - FLOOR_URBAN
+      - STRUCTURE_LUX
+      - STRUCTURE_GLASS
+      - STRUCTURE_PANELS2
+      - STRUCTURE_SLUMS1
+      - STAIRS_METAL
+      - FLOOR_ASPHALT
+      - FURNITURE_TABLES_CHAIRS
+      - LADDER
+      - BITS_CONTRABAND
+      - BITS_SERVERS
+      - BITS_TECH
+      - SIGNS_TECH1
+      - HOLOGRAMS
+      - FURNITURE_BAR
+      - FURNITURE_DESKS1
+      - FURNITURE_SLUMS1
+      - FURNITURE_SLUMS2
+      - FURNITURE_BEDS_LUX
+      - ENTRY
+    mapBlocks:
+      - name: CLUB_00LZ
+        width: 20
+        length: 20
+        items:
+          STR_CRIMINAL_CONTAINER_1:
+            - [7, 14, 0]
+            - [15, 15, 0]
+            - [2, 2, 1]
+          STR_XN_CONTAINER_1:
+            - [3, 1, 0]

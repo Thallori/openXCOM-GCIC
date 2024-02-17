@@ -1,0 +1,333 @@
+soldiers:
+  - type: STR_PILOT
+    requires:
+      - STR_TODO
+    costBuy: 250000
+    costSalary: 100000
+    costSalarySquaddie: 100000
+    costSalarySergeant: 100000
+    costSalaryCaptain: 100000
+    costSalaryColonel: 100000
+    costSalaryCommander: 100000
+    minStats:
+      tu: 20
+      stamina: 40
+      health: 15
+      bravery: 10
+      reactions: 0
+      firing: 40
+      throwing: 0
+      melee: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      mana: 40
+    maxStats:
+      tu: 20
+      stamina: 40
+      health: 15
+      bravery: 10
+      reactions: 0
+      firing: 40
+      throwing: 0
+      melee: 0
+      strength: 0
+      psiStrength: 100
+      psiSkill: 8
+      mana: 40
+    statCaps:
+      tu: 60
+      stamina: 60
+      health: 15
+      bravery: 50
+      reactions: 50
+      firing: 80
+      throwing: 80
+      melee: 80
+      strength: 0
+      psiStrength: 100
+      psiSkill: 40
+      mana: 80
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    armor: STR_PILOT_CORE_ARMOR #TODO: pilot
+    standHeight: 20
+    kneelHeight: 20
+    floatHeight: 12
+    value: 1
+    transferTime: 72
+    allowPiloting: true
+    rankStrings:
+      - STR_RANK_PILOT_0
+      - STR_RANK_PILOT_1
+      - STR_RANK_PILOT_2
+      - STR_RANK_PILOT_3
+      - STR_RANK_PILOT_4
+      - STR_RANK_PILOT_5
+    soldierNames:
+      - delete
+      - RandomNames/Pilots.nam
+    deathMale: [41, 42, 43] #TODO
+    deathFemale: [44, 45, 46] #TODO
+
+  - type: STR_CRACKED_HYBRID_DRONE
+    costSalary: 200
+    costSalarySquaddie: 200
+    costSalarySergeant: 200
+    costSalaryCaptain: 200
+    costSalaryColonel: 200
+    costSalaryCommander: 200
+    minStats:
+      tu: 45
+      stamina: 40
+      health: 25
+      bravery: 10
+      reactions: 35
+      firing: 40
+      throwing: 35
+      melee: 35
+      strength: 10
+      psiStrength: 0
+      psiSkill: 0
+      mana: 25
+    maxStats:
+      tu: 60
+      stamina: 55
+      health: 40
+      bravery: 60
+      reactions: 55
+      firing: 55
+      throwing: 50
+      melee: 50
+      strength: 25
+      psiStrength: 60
+      psiSkill: 12
+      mana: 35
+    statCaps:
+      tu: 50
+      stamina: 45
+      health: 30
+      bravery: 60
+      reactions: 40
+      firing: 45
+      throwing: 40
+      melee: 40
+      strength: 15
+      psiStrength: 60
+      psiSkill: 60
+      mana: 60
+    trainingStatCaps:
+      psiSkill: 40
+    armor: STR_PLEX_DRONE_HYBRID_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 1
+    transferTime: 72
+    allowPiloting: false
+    rankStrings:
+      - STR_RANK_HYBRID_DRONE_0
+      - STR_RANK_HYBRID_DRONE_1
+      - STR_RANK_HYBRID_DRONE_2
+      - STR_RANK_HYBRID_DRONE_3
+      - STR_RANK_HYBRID_DRONE_4
+      - STR_RANK_HYBRID_DRONE_5
+    soldierNames:
+      - delete
+      - RandomNames/Hacked.nam
+    deathMale: [41, 42, 43]
+    deathFemale: [44, 45, 46]
+
+  - type: STR_CRACKED_HUMAN_DRONE
+    costSalary: 250
+    costSalarySquaddie: 250
+    costSalarySergeant: 250
+    costSalaryCaptain: 250
+    costSalaryColonel: 250
+    costSalaryCommander: 250
+    minStats:
+      tu: 40
+      stamina: 45
+      health: 25
+      bravery: 10
+      reactions: 30
+      firing: 35
+      throwing: 40
+      melee: 30
+      strength: 20
+      psiStrength: 0
+      psiSkill: 0
+      mana: 25
+    maxStats:
+      tu: 55
+      stamina: 60
+      health: 40
+      bravery: 60
+      reactions: 45
+      firing: 50
+      throwing: 55
+      melee: 45
+      strength: 35
+      psiStrength: 60
+      psiSkill: 12
+      mana: 35
+    statCaps:
+      tu: 45
+      stamina: 50
+      health: 30
+      bravery: 60
+      reactions: 35
+      firing: 40
+      throwing: 45
+      melee: 35
+      strength: 25
+      psiStrength: 60
+      psiSkill: 60
+      mana: 60
+    trainingStatCaps:
+      psiSkill: 40
+    armor: STR_PLEX_DRONE_HUMAN_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 1
+    transferTime: 72
+    allowPiloting: false
+    rankStrings:
+      - STR_RANK_HUMAN_DRONE_0
+      - STR_RANK_HUMAN_DRONE_1
+      - STR_RANK_HUMAN_DRONE_2
+      - STR_RANK_HUMAN_DRONE_3
+      - STR_RANK_HUMAN_DRONE_4
+      - STR_RANK_HUMAN_DRONE_5
+    soldierNames:
+      - delete
+      - RandomNames/Hacked.nam
+    deathMale: [41, 42, 43]
+    deathFemale: [44, 45, 46]
+
+  - type: STR_CRACKED_SHARK_DRONE
+    costSalary: 400
+    costSalarySquaddie: 400
+    costSalarySergeant: 400
+    costSalaryCaptain: 400
+    costSalaryColonel: 400
+    costSalaryCommander: 400
+    minStats:
+      tu: 45
+      stamina: 40
+      health: 25
+      bravery: 10
+      reactions: 30
+      firing: 30
+      throwing: 30
+      melee: 40
+      strength: 25
+      psiStrength: 0
+      psiSkill: 0
+      mana: 25
+    maxStats:
+      tu: 60
+      stamina: 55
+      health: 40
+      bravery: 60
+      reactions: 45
+      firing: 45
+      throwing: 45
+      melee: 55
+      strength: 40
+      psiStrength: 60
+      psiSkill: 12
+      mana: 35
+    statCaps:
+      tu: 50
+      stamina: 45
+      health: 30
+      bravery: 60
+      reactions: 35
+      firing: 35
+      throwing: 35
+      melee: 45
+      strength: 30
+      psiStrength: 60
+      psiSkill: 60
+      mana: 60
+    trainingStatCaps:
+      psiSkill: 40
+    armor: STR_PLEX_DRONE_SHARK_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 1
+    transferTime: 72
+    allowPiloting: false
+    rankStrings:
+      - STR_RANK_SHARK_DRONE_0
+      - STR_RANK_SHARK_DRONE_1
+      - STR_RANK_SHARK_DRONE_2
+      - STR_RANK_SHARK_DRONE_3
+      - STR_RANK_SHARK_DRONE_4
+      - STR_RANK_SHARK_DRONE_5
+    soldierNames:
+      - delete
+      - RandomNames/Hacked.nam
+    deathMale: [41, 42, 43]
+    deathFemale: [44, 45, 46]
+
+#  - type: STR_CRACKED_PLACEHOLDER_DRONE
+#    requires:
+#      - STR_DEBUG
+#    costBuy: 99
+#    costSalary: 250
+#    minStats:
+#      tu: 45
+#      stamina: 40
+#      health: 25
+#      bravery: 10
+#      reactions: 30
+#      firing: 35
+#      throwing: 35
+#      melee: 35
+#      strength: 20
+#      psiStrength: 0
+#      psiSkill: 0
+#      mana: 25
+#    maxStats:
+#      tu: 60
+#      stamina: 55
+#      health: 40
+#      bravery: 60
+#      reactions: 45
+#      firing: 50
+#      throwing: 50
+#      melee: 50
+#      strength: 35
+#      psiStrength: 60
+#      psiSkill: 12
+#      mana: 35
+#    statCaps:
+#      tu: 50
+#      stamina: 45
+#      health: 30
+#      bravery: 60
+#      reactions: 35
+#      firing: 40
+#      throwing: 40
+#      melee: 40
+#      strength: 25
+#      psiStrength: 60
+#      psiSkill: 60
+#      mana: 60
+#    armor: STR_PLEX_DRONE_HYBRID_ARMOR
+#    standHeight: 22
+#    kneelHeight: 14
+#    value: 1
+#    transferTime: 72
+#    allowPromotion: false
+#    allowPiloting: false
+#    rankStrings:
+#      - STR_RANK_PLACEHOLDER_DRONE_0
+#    soldierNames:
+#      - delete
+#      - RandomNames/Hacked.nam
+#    deathMale: [41, 42, 43]
+#    deathFemale: [44, 45, 46]

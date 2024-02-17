@@ -1,0 +1,96 @@
+
+crafts:
+  - type: STR_HD_CROSSOVER
+    sprite: 401
+    damageMax: 15
+    armor: 2
+    speedMax: 350
+    accel: 2
+    fuelMax: 500
+    refuelRate: 200
+    radarRange: 200
+    radarChance: 80
+    soldiers: 2
+    vehicles: 0
+    maxSmallUnits: 2
+    maxLargeUnits: 0
+    costBuy: 29999
+    costRent: 350
+    costSell: 7500
+    transferTime: 12
+    score: 10
+    requires:
+      - STR_VENDOR_HD
+    weapons: 1
+    weaponTypes:
+      - [1]
+    weaponStrings:
+      - STR_ELECTRIC_ENGINE
+      - STR_BLANK_TOKEN
+      - STR_BLANK_TOKEN
+      - STR_BLANK_TOKEN
+    keepCraftAfterFailedMission: true
+    battlescapeTerrainData:
+      name: CRAFT_CROSSOVER
+      mapDataSets: &mapDataSetsXcomCraft
+        - BLANKS
+        - HOVERCRAFT_BITS
+        - HOVERCRAFT_RED1
+        - HOVERCRAFT_RED2
+      mapBlocks:
+        - name: CRAFT_CROSSOVER
+          width: 10
+          length: 10
+    craftInventoryTile: [5, 5, 0]
+    deployment:
+      - [5, 5, 0, 2]
+      - [3, 5, 0, 6]
+
+  - type: STR_USC_BICUBE
+    sprite: 400
+    damageMax: 20
+    armor: 1
+    speedMax: 150
+    accel: 1
+    fuelMax: 400
+    refuelRate: 100
+    radarRange: 200
+    radarChance: 80
+    soldiers: 4
+    vehicles: 1
+    maxSmallUnits: 4
+    maxLargeUnits: 1
+    costBuy: 7999
+    costRent: 200
+    costSell: 2000
+    transferTime: 12
+    score: 5
+    requires:
+      - STR_VENDOR_USC
+    weapons: 1
+    weaponTypes:
+      - [1]
+    weaponStrings:
+      - STR_ELECTRIC_ENGINE
+      - STR_BLANK_TOKEN
+      - STR_BLANK_TOKEN
+      - STR_BLANK_TOKEN
+    keepCraftAfterFailedMission: true
+    undetectable: true
+    battlescapeTerrainData:
+      name: CRAFT_BICUBE
+      mapDataSets: &mapDataSetsXcomCraft
+        - BLANKS
+        - HOVERCRAFT_BITS
+        - HOVERCRAFT_WHITE1
+        - HOVERCRAFT_WHITE2
+      mapBlocks:
+        - name: CRAFT_BICUBE
+          width: 10
+          length: 10
+    craftInventoryTile: [5, 4, 0]
+    deployment:
+      - [5, 4, 0, 2]
+      - [5, 5, 0, 2]
+      - [4, 4, 0, 2]
+      - [4, 5, 0, 2]

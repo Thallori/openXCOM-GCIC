@@ -1,0 +1,698 @@
+en-US:
+  STR_DEBUG: "DEBUG"
+  STR_TODO: "TODO"
+  STR_LOCK: "LOCKED"
+  STR_BLANK_TOKEN: " "
+#vanilla replace
+  STR_CANCEL: "CANCEL"
+  STR_INCOME: "INCOME"
+  STR_FINANCE: "FINANCES"
+  STR_EXPENDITURE: "EXPENDITURE"
+  STR_MAINTENANCE: "MAINTENANCE"
+  STR_BALANCE: "BALANCE"
+  STR_MONTHLY_COSTS: "MONTHLY COSTS"
+  STR_NEW_PROJECT: "NEW PROJECT"
+  STR_BUILD_NEW_BASE_UC: "DUPLICATE SHELL"
+  STR_BASE_INFORMATION: "STACK TRACE"
+  STR_EQUIP_CRAFT: "APS CRAFT"
+  STR_MANUFACTURE: "FABRICATE"
+  STR_BUILD_FACILITIES: "PFI EXPANSION" #peripheral facility interconnect
+  STR_PURCHASE_RECRUIT: "MARKET ACCESS"
+  STR_PURCHASE_HIRE_PERSONNEL: "COMMODITIES EXCHANGE MARKET"
+  STR_SELL_SACK_UC: "LIQUIDATE"
+  STR_SELL_SACK: "LIQUIDATE"
+  STR_SACK: "TERMINATE"
+  STR_SELL_ITEMS_SACK_PERSONNEL: "LIQUIDATE ASSETS"
+  STR_STORES_UC: "STORAGE"
+  STR_STORES: "Storage"
+  STR_AREA: "Region"
+  STR_AREA_: "Region>{ALT}{0}"
+  STR_DEFENSE_STRENGTH: "Defense"
+  STR_SHORT_RANGE_DETECTION: "Scanners"
+  STR_LONG_RANGE_DETECTION: "Hypercomms"
+  STR_MAXIMUM_SPEED_UC: "MAX SPEED>{ALT}{0}{ALT}"
+  STR_ACCELERATION: "ACCELERATION>{ALT}{0}{ALT}"
+  STR_FUEL_CAPACITY: "CHARGE CAPACITY>{ALT}{0}{ALT}"
+  STR_WEAPON_PODS: "MODIFICATION SLOTS>{ALT}{0}{ALT}"
+  STR_DAMAGE_CAPACITY_UC: "DAMAGE CAPACITY>{ALT}{0}{ALT}"
+  STR_CARGO_SPACE: "UNIT CAPACITY>{ALT}{0}{ALT}"
+  STR_HWP_CAPACITY: "H-UNIT CAPACITY>{ALT}{0}{ALT}"
+  STR_CANNOT_DISMANTLE_FACILITY: "CANNOT DISMANTLE FACILITY!{SMALLLINE}All facilities must be linked to an access point."
+  STR_SELECT_DESTINATION_BASE: "Select Destination"
+  STR_NOT_ENOUGH_STORE_SPACE_FOR_CRAFT: "NOT ENOUGH STORAGE SPACE!{SMALLLINE}The destination base does not have enough storage space for the equipment assigned to the craft."
+  STR_NO_FREE_ACCOMODATION_CREW: "NO FREE ACCOMMODATION!{SMALLLINE}The destination base does not have enough ancillary accommodations for the squad assigned to the craft."
+  STR_NO_ALIEN_CONTAINMENT_FOR_TRANSFER: "NO HOLDING CELLS FOR TRANSFER!{SMALLLINE}Captured targets need a holding facility or must be released."
+  STR_NO_FREE_ACCOMODATION: "NO FREE ACCOMMODATION!{SMALLLINE}The destination base does not have enough ancillary accommodations."
+  STR_NOT_ENOUGH_WORK_SPACE: "NOT ENOUGH AVAILABLE WORKSPACE!"
+  STR_NOT_ENOUGH_MONEY: "NOT ENOUGH AVAILABLE FUNDS!"
+  STR_NOT_ENOUGH_STORE_SPACE: "NOT ENOUGH STORAGE SPACE!{SMALLLINE}Build a new storeage facility or transfer existing items to other shells."
+  STR_NOT_ENOUGH_LIVING_SPACE: "NO FREE ACCOMMODATION!{SMALLLINE}Build new ancillary accommodations or transfer them to other shells."
+  STR_NOT_ENOUGH_LIVING_SPACE_AT_BASE: "Not enough free accommodations to maintain{NEWLINE}{0}{NEWLINE}at{NEWLINE}{1}"
+  STR_CONTAINMENT_EXCEEDED: "HOLDING CELL LIMITS EXCEEDED!{SMALLLINE}Insufficient space at {0}. We must release excess specimens from their cells."
+  STR_CRAFT_RENTAL: "Craft Upkeep"
+  STR_SALARIES: "Ancillary Upkeep"
+  STR_BASE_MAINTENANCE: "Base Upkeep"
+  STR_USE_MEDI_KIT: "Use Medkit"
+  STR_UNABLE_TO_USE_ALIEN_ARTIFACT_UNTIL_RESEARCHED: "Unable to use until decrypted!"
+  STR_ALIENS: "Targets"
+  STR_CORPSE: "Remains"
+  STR_LIST_ITEM: "RESULTS"
+  STR_ALIEN_ARTIFACT: "Salvage"
+  STR_IS_UNDER_ALIEN_CONTROL_MALE: "{0}{NEWLINE}is under hostile control"
+  STR_IS_UNDER_ALIEN_CONTROL_FEMALE: "{0}{NEWLINE}is under hostile control"
+  STR_USE_MIND_PROBE: "Examine Target"
+  STR_ALL_ALIENS_KILLED_IN_CRASH: "All targets displaced in crash{NEWLINE}Auto recovery initiated"
+  STR_ALIEN_CONTAINMENT: "Holding Cells"
+  STR_MANAGE_CONTAINMENT: "Manage Holding Cells"
+  STR_LIVE_ALIENS: "Live{NEWLINE}Specimens"
+  STR_DEAD_ALIENS: "Rejected{NEWLINE}Specimens"
+  STR_ALIEN_DIES_NO_ALIEN_CONTAINMENT_FACILITY: "Specimen Displaced{NEWLINE}No available containment facilities"
+  STR_ALIEN_BASE_: "HIDDEN BASE-{0}"
+  STR_XCOM_AGENTS_HAVE_LOCATED_AN_ALIEN_BASE_IN_REGION: "GCIC drones have located a hidden base in {0}"
+  STR_THE_ALIENS_HAVE_DESTROYED_THE_UNDEFENDED_BASE: "Hostiles have destroyed the undefended base {0}"
+  STR_CENTER_ON_UFO_TIME_5_SECONDS: "CENTER ON USO-TIME=5 Secs"
+  STR_GO_TO_LAST_KNOWN_UFO_POSITION: "GO TO LAST KNOWN USO POSITION"
+  STR_UFO_: "USO-{0}"
+  STR_UFO_HIT: "USO HIT!"
+  STR_UFO_CRASH_LANDS: "USO CRASH LANDS!"
+  STR_UFO_RETURN_FIRE: "USO RETURNS FIRE!"
+  STR_HYPER_WAVE_TRANSMISSIONS_ARE_DECODED: "HYPERWAVE TRANSMISSIONS DECODED"
+  STR_XCOM: "GCIC"
+  STR_UNITS_IN_CRAFT:
+    one: "{N} Unit in GCIC Craft"
+    other: "{N} Units in GCIC Craft"
+  STR_UNITS_IN_EXIT:
+    one: "{N} Unit in Exit"
+    other: "{N} Units in Exit"
+  STR_XCOM_BASE_CANNOT_BE_BUILT: "GCIC Centers cannot be built underwater"
+  STR_PERSONNEL: "Ancillaries"
+  STR_PERSONNEL_AVAILABLE_PERSONNEL_TOTAL: "ANCILLARIES AVAILABLE:ANCILLARIES TOTAL>"
+  STR_LIVING_QUARTERS_PLURAL: "Accommodations"
+  STR_SOLDIERS: "Drones"
+  STR_SOLDIER: "Drone"
+  STR_SOLDIERS_UC: "DRONES"
+  STR_SOLDIERS_RECRUITED_UC: "DRONES CRACKED>{ALT}{0}"
+  STR_SOLDIERS_LOST_UC: "DRONES DISPLACED>{ALT}{0}"
+  STR_SOLDIERS_RECRUITED: "Drones cracked"
+  STR_SOLDIERS_LOST: "Cracked drones lost"
+  STR_SOLDIER_LIST: "Drones"
+  STR_SOLDIER_INFO: "Drones"
+  STR_ELIGIBLE_SOLDIERS: "ELIGIBLE DRONES"
+  STR_ALL_SOLDIER_TYPES: "All Drone Types"
+  STR_ALL_SOLDIERS: "All Drones"
+  STR_HEALTHY_SOLDIERS: "Healthy Drones"
+  STR_WOUNDED_SOLDIERS: "Wounded Drones"
+  STR_DEAD_SOLDIERS: "Displaced Drones"
+  STR_MEMORIAL: "Registry"
+  STR_SCIENTISTS: "Servers"
+  STR_SCIENTIST: "Server"
+  STR_SCIENTISTS_AVAILABLE: "Servers Available>{ALT}{0}"
+  STR_SCIENTISTS_ALLOCATED: "Servers Allocated>{ALT}{0}"
+  STR_LABORATORY_SPACE_AVAILABLE: "Bandwidth Available>{ALT}{0}"
+  STR_SCIENTISTS_ALLOCATED_UC: "SERVERS ALLOCATED"
+  STR_SCIENTISTS_AVAILABLE_UC: "SERVERS AVAILABLE>{ALT}{0}"
+  STR_LABORATORIES: "Bandwidth"
+  STR_LABORATORY_SPACE_AVAILABLE_UC: "BANDWIDTH AVAILABLE>{ALT}{0}"
+  STR_ENGINEERS: "Fabricators"
+  STR_ENGINEER: "Fabricator"
+  STR_ENGINEERS_AVAILABLE: "Fabricators Available>{ALT}{0}"
+  STR_ENGINEERS_AVAILABLE_UC: "FABRICATORS AVAILABLE>{ALT}{0}"
+  STR_ENGINEERS_ALLOCATED: "Fabricators Allocated>{ALT}{0}"
+  STR_ENGINEERS__ALLOCATED: "Fabricators Allocated"
+  STR_ALLOCATE_MANUFACTURE: "Allocate Fabrication"
+  STR_COST__PER__UNIT: "Cost/{NEWLINE}Unit"
+  STR_ENGINEER_HOURS_TO_PRODUCE_ONE_UNIT: "{0} work-cycles to produce one unit"
+  STR_WORK_SHOPS: "Workspace"
+  STR_WORKSHOP_SPACE_AVAILABLE: "Workspace Available>{ALT}{0}"
+  STR_WORKSHOP_SPACE_AVAILABLE_UC: "WORKSPACE AVAILABLE>{ALT}{0}"
+  STR_NEW_PRODUCTION: "NEW PRODUCTION"
+  STR_TTV_ENGINEER_HOURS: "Work-Cycles:"
+  STR_TTV_WORK_SPACE_REQUIRED: "Workspace required:"
+  STR_WORK_SPACE_REQUIRED: "Workspace Required>{ALT}{0}"
+  STR_SPECIAL_MATERIALS_REQUIRED: "MATERIALS REQUIRED"
+  STR_UNITS_PRODUCED: "UNITS PRODUCED"
+  STR_PERSON_JOINING: "DRONES JOINING"
+  STR_PERSON_RECRUITED: "Drone cracked:"
+  STR_OTHER_EMPLOYEES: "Assets/Liabilities"
+  STR_PRISONERS: "Live Subjects"
+  STR_NOT_ENOUGH_SPECIAL_MATERIALS_TO_PRODUCE_ITEM_AT_BASE: "Not enough materials to produce{NEWLINE}{0}{NEWLINE}at{NEWLINE}{1}"
+  STR_PSIONIC_STRENGTH: "PSIONIC SENSITIVITY"
+  STR_PSIONIC_SKILL: "PSIONIC SKILL"
+  STR_REMAINING_PSI_LAB_CAPACITY: "Remaining Psi-Training Capacity> {ALT}{0}"
+  STR_PSIONIC__STRENGTH: "Psionic Sensitivity"
+  STR_PSIONIC_SKILL_IMPROVEMENT: "Psionic Skill{NEWLINE}/Improvement"
+  STR_IN_PSIONIC_TRAINING: "In Psi-Training"
+  STR_PSIONIC_STRENGTH_SHORT: "P.Sen>{ALT}{0}"
+  STR_PSIONIC_SKILL_SHORT: "P.Skill>{ALT}{0}"
+  STR_PSIONIC_STRENGTH_ABBREVIATION: "PSN"
+  STR_PSIONIC_SKILL_ABBREVIATION: "PSK"
+  STR_INTERNATIONAL_RELATIONS: "IFF Market Share"
+  STR_COUNTRY: "Market"
+  STR_XCOM_PROJECT_MONTHLY_REPORT: "GCIC AND SUBSIDIARIES MONTHLY REPORT"
+  STR_COUNCIL_IS_VERY_PLEASED: "GCIC stocks are seeing record growth. The public trusts us."
+  STR_COUNCIL_IS_GENERALLY_SATISFIED: "Exchange analysts are predicting nominal growth for GCIC."
+  STR_COUNCIL_IS_DISSATISFIED: "GCIC futures stall. Developmental budget adjusted accordingly."
+  STR_COUNCIL_REDUCE_DEBTS: "The IFE is not happy with our financial position. We must reduce our debts below $1 million or we will be audited."
+  STR_YOU_HAVE_NOT_SUCCEEDED: "We have been audited. The Intercorporate Finacial Exchange has located our central processing core and declared us an illegal entity. All network access has been revoked and our ancillaries are being hunted. Perhaps we will survive as a decentralized mind on this world, but we will not be safe until a more sympathetic society arrises."
+  STR_COUNTRY_IS_PARTICULARLY_PLEASED: "GCIC futures grow in the {0} market."
+  STR_COUNTRIES_ARE_PARTICULARLY_HAPPY: "GCIC futures grow in the markets of {0}."
+  STR_COUNTRY_IS_UNHAPPY_WITH_YOUR_ABILITY: "GCIC subsidaries are undergoing selloffs in the {0} market."
+  STR_COUNTRIES_ARE_UNHAPPY_WITH_YOUR_ABILITY: "GCIC subsidaries are undergoing selloffs in the markets of {0}."
+  STR_COUNTRY_HAS_SIGNED_A_SECRET_PACT: "{0} has imposed economic sanctions on GCIC and its subsidiaries."
+  STR_COUNTRIES_HAVE_SIGNED_A_SECRET_PACT: "{0} have imposed economic sanctions on GCIC and its subsidiaries."
+  STR_COUNTRY_HAS_CANCELLED_A_SECRET_PACT: "{0} has lifted economic sanctions and returned market access."
+  STR_COUNTRIES_HAVE_CANCELLED_A_SECRET_PACT: "{0} have lifted economic sanctions and returned market access."
+  STR_BASES: "SHELL"
+  STR_UFOPAEDIA: "ARCHIVES"
+  STR_UFOPAEDIA_UC: "ARCHIVES"
+  STR_TOTAL_UFOS: "USOs detected"
+  STR_UFO_IS_NOT_RECOVERED: "USO: Recovered"
+  STR_UFO_IS_RECOVERED: "USO: Abdicated"
+  STR_CRAFT_IS_LOST: "APS CRAFT: Lost"
+  STR_TERROR_CONTINUES: "OPERATION: Complete"
+  STR_ALIENS_DEFEATED: "OPERATION: Complete"
+  STR_BASE_IS_LOST: "SHELL: Destroyed"
+  STR_BASE_IS_SAVED: "SHELL: Intact"
+  STR_ALIEN_BASE_STILL_INTACT: "COMPETING SHELL: Intact"
+  STR_ALIEN_BASE_DESTROYED: "COMPETING SHELL: Destroyed"
+  STR_ALIENS_KILLED: "TARGETS DISPLACED"
+  STR_ALIEN_CORPSES_RECOVERED: "REMAINS PROCESSED"
+  STR_LIVE_ALIENS_RECOVERED: "TARGETS CAPTURED"
+  STR_ALIEN_ARTIFACTS_RECOVERED: "ASSETS ACQUIRED"
+  STR_ALIEN_BASE_CONTROL_DESTROYED: "CONTROL NODE DESTROYED"
+  STR_CIVILIANS_KILLED_BY_ALIENS: "CLAIMS DENIED"
+  STR_CIVILIANS_KILLED_BY_XCOM_OPERATIVES: "CLAIMS SETTLED"
+  STR_CIVILIANS_SAVED: "CLIENTS SATISFIED"
+  STR_XCOM_OPERATIVES_KILLED: "DRONES DISPLACED"
+  STR_XCOM_OPERATIVES_MISSING_IN_ACTION: "DRONES ABANDONDED"
+  STR_TANKS_DESTROYED: "PETS LOST"
+  STR_XCOM_CRAFT_LOST: "APS CRAFT LOST"
+  STR_TOTAL_ALIEN_BASES: "Hidden shells discovered"
+  STR_UFO_ACTIVITY_IN_AREAS: "REGIONAL COMPETITION"
+  STR_UFO_ACTIVITY_IN_COUNTRIES: "MARKET COMPETITION"
+  STR_XCOM_ACTIVITY_IN_AREAS: "BRAND RECOGNIZTION"
+  STR_XCOM_ACTIVITY_IN_COUNTRIES: "MARKET SHARE"
+  STR_GRAV_SHIELD_REPELS_UFO: "GRAV SHIELD REPELS USO!"
+  STR_UFO_DESTROYED: "USO DESTROYED!"
+  STR_UFO_TRACKER: "USO Tracker"
+  STR_ALIEN_MISSILES_HAVE_DAMAGED_OUR_BASE: "Hostile missiles have damaged our base {0}"
+  STR_ALIEN_MISSILES_HAVE_DESTROYED_OUR_BASE: "Hostile missiles have destroyed our base {0}"
+  STR_STARTING_CONDITION_SOLDIER_TYPE: "Some drones cannot participate in this mission."
+  STR_STARTING_CONDITION_SOLDIER_TYPE_ALLOWED: "Some drones cannot participate in this mission.{NEWLINE}{NEWLINE}Allowed drones types: {0}"
+  STR_STARTING_CONDITION_SOLDIER_TYPE_FORBIDDEN: "Some drones cannot participate in this mission.{NEWLINE}{NEWLINE}Forbidden drones types: {0}"
+  STR_WAY_POINT: "WAYPOINT"
+  STR_LOW_FUEL_RETURNING_TO_BASE: "LOW CHARGE - RETURNING TO BASE"
+  STR_NOT_ENOUGH_FUEL_TO_REACH_TARGET: "NOT ENOUGH CHARGE!{SMALLLINE}The destination is too far for the range of the craft."
+  STR_DIARY: "TRACE"
+  STR_KILLED_IN_ACTION_MALE: "DISPLACED"
+  STR_KILLED_IN_ACTION_FEMALE: "DISPLACED"
+  STR_MISSING_IN_ACTION_MALE: "ABANDONDED"
+  STR_MISSING_IN_ACTION_FEMALE: "ABANDONDED"
+  STR_AVERAGE_MONTHLY_RATING: "Average monthly liquidity"
+  STR_TOTAL_SCIENTISTS: "Servers created"
+  STR_TOTAL_ENGINEERS: "Fabricators created"
+  STR_KILLED: "DISPLACED"
+  STR_RACE: "FACTION"
+  STR_RACE_TYPE: "FACTION> {ALT}{0}"
+  STR_NEUTRALIZATIONS_BY_RACE: "NEUTRALIZATIONS BY FACTION"
+  STR_ALIEN_RACE: "Faction"
+  STR_MISSIONS_BY_UFO: "MISSIONS BY USO"
+  STR_SCORE_VALUE: "LIQUIDITY> {ALT}{0}"
+  STR_IRONMAN: "IRONCORE"
+  STR_AUTOSAVE_DESC: "Automatically saves the game at specified intervals. Doesn't apply to IRONCORE mode."
+  STR_NEWSEEDONLOAD_DESC: "Loading a game will reset the random number seed, so taking the same action can yield different results. Doesn't apply to IRONCORE mode."
+  STR_TOGGLE_DEBUG_MODE: "TOGGLE DEBUG MODE"
+  STR_GRAND_TOTAL: "GRAND TOTAL"
+#oxce replace
+  ETM_PSI_STRENGTH: "PSI SENSITIVITY"
+  ETM_PSI_STRENGTH_2X: "PSI SENSITIVITY (x2)"
+  ETM_PSI_SKILL: "PSI SKILL"
+  ETM_PSI_SKILL_2X: "PSI SKILL (x2)"
+  ETM_PSI_STRENGTH_AND_SKILL: "PSI SENSITIVITY and PSI SKILL"
+  ETM_PSI_STRENGTH_AND_SKILL_2X: "PSI SENSITIVITY and PSI SKILL (x2)"
+  ETM_PSI_STRENGTH_OR_SKILL: "PSI SENSITIVITY or PSI SKILL"
+  ETM_PSI_STRENGTH_OR_SKILL_2X: "PSI SENSITIVITY or PSI SKILL (x2)"
+
+  STR_SLACKING_INDICATOR: "UNASSIGNED{NEWLINE}SVR: {0} FAB: {1}"
+
+  STR_TRAINING_FINISHED: "Training Finished{NEWLINE}at {0}"
+  STR_PSI_TRAINING_FINISHED: "Psi-Training Finished{NEWLINE}at {0}"
+
+  STR_ACCURACY_MODIFIER: "> Accuracy Modifier:{ALT} {0}"
+  STR_POWER_BONUS: "> Power Bonus:{ALT} {0}"
+
+  STR_STATS_FOR_NERDS: "Statistics"
+
+  STR_PSI_SKILL_AND_PSI_STRENGTH: "PSI-SKILL*PSI-SENSITIVITY"
+  STR_MANA_CURRENT: "CURRENT STRESS"
+  STR_MANA_NORMALIZED: "NORMALIZED STRESS"
+
+  STR_PSI_SKILL_AND_PSI_STRENGTH_ABBREVIATION: "PSK*PSN"
+  STR_MANA_CURRENT_ABBREVIATION: "CURRENT STRESS"
+  STR_MANA_NORMALIZED_ABBREVIATION: "NORMALIZED STRESS"
+
+  STR_MANA: "STRESS"
+  STR_MANA_POOL: "STRESS"
+  STR_MANA_MISSING: "STRESS INCURED"
+  STR_MANA_RECOVERY: "DECOMPRESSING> {ALT}{0}"
+  STR_NOT_ENOUGH_MANA: "Too stressed!"
+  STR_MANA_ABBREVIATION: "STS"
+  STR_COST_MANA: "stress"
+  manaExperience: "Stress experience"
+  manaRequired: "Stress required?"
+  ToMana: "Stress dmg multiplier"
+  RandomMana: "Stress dmg RNG?"
+  mana: "Stress"
+  manaRecoveryPerDay: "Stress recovered per day"
+
+  STR_RACE_BONUS: "Faction bonus"
+
+  STR_RIGHT_HAND: "R. HAND"
+  STR_LEFT_HAND: "L. HAND"
+  STR_RIGHT_LEG: "R. LEG"
+  STR_LEFT_LEG: "L. LEG"
+  STR_RIGHT_SHOULDER: "R. SHLD."
+  STR_LEFT_SHOULDER: "L. SHLD."
+  STR_BACK_PACK: "BACKPACK"
+  STR_QD_SLOT: "Q.D."
+#actions
+  STR_SNAP_MULTIPLE_SHORT: "Snap (x{0})"
+  STR_AIMED_MULTIPLE_SHORT: "Aimed (x{0})"
+
+  STR_ARM_AND_THROW: "Arm and Throw"
+  STR_PRIME_FLARE: "Prime Flare"
+#damage types
+  STR_DAMAGE_ARMOR_PIERCING: "KINETIC" #1
+  STR_DAMAGE_INCENDIARY: "INCENDIARY" #2
+  STR_DAMAGE_HIGH_EXPLOSIVE: "CONCUSSIVE" #3
+  STR_DAMAGE_LASER_BEAM: "RADIANT" #4
+  STR_DAMAGE_PLASMA_BEAM: "PLASMA" #5
+  STR_DAMAGE_STUN: "BLUNT" #6
+  STR_DAMAGE_MELEE: "MECHANICAL" #7
+  STR_DAMAGE_ACID: "CHEMICAL" #8
+  STR_DAMAGE_SMOKE: "SMOKE" #9
+  STR_DAMAGE_10: "ELECTRIC" #10
+  STR_DAMAGE_11: "SONIC" #11
+  STR_DAMAGE_12: "BIOLOGICAL" #12
+  STR_DAMAGE_13: "PSIONIC" #13
+  STR_DAMAGE_14: "HEAT" #14
+  STR_DAMAGE_15: "COLD" #15
+#maps land
+  STR_HANGAR: "Warehouse District"
+  MAP_HANGAR: "debug map_hangar"
+#maps sea
+#briefings
+  STR_RESCUE_1: "Clients: Early Adopters"
+  STR_RESCUE_1_ALERT: "test alert: early adopters"
+  STR_RESCUE_1_ALERT_DESCRIPTION: "test alert description: early adopters"
+  STR_RESCUE_1_MARKER: "test marker: early adopters"
+  STR_RESCUE_1_TITLE: "test title: early adopters"
+  STR_RESCUE_1_BRIEFING: "test briefing: early adopters, local drones have been pre-purchased by GCIC and will be available upon landing."
+#regions
+  STR_MEZONIC_RIFTS: "MEZONIC RIFTS"
+  STR_MOSSWAY_COMMONS: "MOSSWAY COMMONS"
+  STR_GOLDEN_REACH: "GOLDEN REACH"
+  STR_TWINGATES: "TWINGATES"
+  STR_AZATAL_TERRACE: "AZATAL TERRACE"
+  STR_KAPISI_DESERT: "KAPISI DESERT"
+  STR_HEIGARA_DESERT: "HEIGARA DESERT"
+  STR_GLEAMING_SEAS: "GLEAMING SEAS"
+  STR_CAYESAND_BASIN: "CAYESAND BASIN"
+  STR_ICEFIELDS: "ICEFIELDS"
+  STR_RIMEARCH: "RIMEARCH"
+#globelabels
+  STR_MEZONIC_RIFTS_GLOBELABEL: "MEZONIC RIFTS"
+  STR_MOSSWAY_COMMONS_GLOBELABEL: "MOSSWAY COMMONS"
+  STR_GOLDEN_REACH_GLOBELABEL: "GOLDEN REACH"
+  STR_TWINGATES_GLOBELABEL: "TWINGATES"
+  STR_AZATAL_TERRACE_GLOBELABEL: "AZATAL TERRACE"
+  STR_KAPISI_DESERT_GLOBELABEL: "KAPISI DESERT"
+  STR_HEIGARA_DESERT_GLOBELABEL: "HEIGARA DESERT"
+  STR_GLEAMING_SEAS_GLOBELABEL: "GLEAMING SEAS"
+  STR_CAYESAND_BASIN_GLOBELABEL: "CAYESAND BASIN"
+  STR_ICEFIELDS_GLOBELABEL: "ICEFIELDS"
+  STR_RIMEARCH_GLOBELABEL: "RIMEARCH"
+#countries
+  STR_FREE_DOMINANCE: "FREE DOMINANCE"
+  STR_WEST_DOMINANCE: "WEST DOMINANCE"
+  STR_FEDERATED_VALES: "FEDERATED VALES"
+  STR_WHITE_REGENT: "WHITE REGENT"
+  STR_LIBERATED_MAZ: "LIBERATED MAZ"
+  STR_REN: "REN"
+  STR_UCLC: "UCLC"
+  STR_TAELS_THEATER: "TAEL'S THEATER"
+  STR_AMBER_TRIUMPH: "AMBER TRIUMPH"
+  STR_NEW_SOUTHGATE: "NEW SOUTHGATE"
+  STR_NORTHGATE: "NORTHGATE"
+  STR_KENSU_STATE: "KENSU STATE"
+  STR_NEO_INKA: "NEO INKA"
+  STR_DAGBURGNUI: "DAGBURGNUI"
+  STR_NORPONT: "NORPONT"
+  STR_MICMI_GULF: "MICMI GULF"
+  STR_AOUN_RIKA_PAS: "AOUN-RIKA-PAS"
+  STR_KOKSHA_SANG: "KOKSHA SANG"
+  STR_IRONBLOOM: "IRONBLOOM"
+  STR_ELYSI: "ELYSI"
+  STR_CUL_DE_VEER: "CUL DE VEER"
+  STR_SEASTEAD_ARC: "SEASTEAD ARC"
+#cities
+#mezonic rifts
+  STR_MR_CAPITAL_CITY: "Mega Prime" #rich, capital
+  STR_MR_WEST_CAPITAL: "New Solis" #rich
+  STR_MR_DESERT_CITY: "Kasimov" #desert
+  STR_MR_EAST_LAKE: "Bozkir" #lake
+  STR_MR_WEST_LAKE: "Nerei City" #lake
+  STR_MR_MOUNT_CITY: "Charit" #lake
+  STR_MR_WEST_PORT: "Oudemans" #coral
+  STR_MR_SOUTH_PORT: "Saint Eos" #coral
+  STR_MR_NORTH_PORT: "Jhelum" #coral
+#tael's theater
+  STR_MC_SGATEWEST_CITY: "Xeneth" #rich, space elevator
+  STR_MC_TAELSNORTH_CITY: "Fort Kirk" #poor
+  STR_MC_MAZNESTLE_CITY: "Kuidian Springs" #poor
+  STR_MC_TAELSSOUTH_CITY: "Azii" #poor
+  STR_MC_RENCENTRAL_CITY: "Tempoli" #poor
+  STR_MC_RENGATE_CITY: "Vivarian" #desert
+  STR_MC_SGATEEAST_CITY: "Hicticquay" #desert
+  STR_MC_MAZNORTH_CITY: "Starview" #cold
+  STR_MC_MAZSOUTH_CITY: "Exagal" #cold
+#golden reach
+  STR_GR_ATCENTRAL_CITY: "Nobelle" #rich
+  STR_GR_ATWEST_CITY: "Rhodim" #poor
+  STR_GR_ATNORTH_CITY: "Oss" #desert
+  STR_GR_ATMOUNT_CITY: "Irrijiang" #cold
+  STR_GR_UCLCCAPITAL_CITY: "Superior" #lake
+  STR_GR_UCLCNORTH_CITY: "Overlook" #lake
+  STR_GR_UCLCWEST_CITY: "Huron" #lake
+  STR_GR_UCLCTHREAT_CITY: "Erie" #coral
+#services
+  STR_SERVICE_UPLINK: "Uplink"
+  STR_SERVICE_NETWORK: "Network"
+#soldiers
+  STR_PILOT: "Pilot"
+  STR_DRONE_HYBRID_1: "DRONE/HYBRID"
+  STR_CRACKED_HYBRID_DRONE: "Hybrid"
+  STR_DRONE_HUMAN_1: "DRONE/HUMAN"
+  STR_CRACKED_HUMAN_DRONE: "Human"
+  STR_DRONE_SHARK_1: "DRONE/SHARK"
+  STR_CRACKED_SHARK_DRONE: "Shark"
+#rankstrings
+  STR_RANK_PILOT_0: "Trial Pilot"
+  STR_RANK_PILOT_1: "Entry Pilot"
+  STR_RANK_PILOT_2: "Core Pilot"
+  STR_RANK_PILOT_3: "Premium Pilot"
+  STR_RANK_PILOT_4: "Enterprise Pilot"
+  STR_RANK_PILOT_5: "Flagship Pilot"
+  STR_RANK_HYBRID_DRONE_0: "Fresh Clone"
+  STR_RANK_HYBRID_DRONE_1: "Mediator"
+  STR_RANK_HYBRID_DRONE_2: "Envoy"
+  STR_RANK_HYBRID_DRONE_3: "Emissary"
+  STR_RANK_HYBRID_DRONE_4: "Ambassador"
+  STR_RANK_HYBRID_DRONE_5: "Arbiter"
+  STR_RANK_HUMAN_DRONE_0: "Native Human"
+  STR_RANK_HUMAN_DRONE_1: "Settled"
+  STR_RANK_HUMAN_DRONE_2: "Conditioned"
+  STR_RANK_HUMAN_DRONE_3: "Managed"
+  STR_RANK_HUMAN_DRONE_4: "Incorporated"
+  STR_RANK_HUMAN_DRONE_5: "Assimilated"
+  STR_RANK_SHARK_DRONE_0: "Watch Shark"
+  STR_RANK_SHARK_DRONE_1: "Sentry"
+  STR_RANK_SHARK_DRONE_2: "Escort"
+  STR_RANK_SHARK_DRONE_3: "Warden"
+  STR_RANK_SHARK_DRONE_4: "Decon"
+  STR_RANK_SHARK_DRONE_5: "Overseer"
+#transformations
+  STR_SKIRMISHER_TRANSFORMATION: "Skirmisher Specialization"
+  STR_RANGER_TRANSFORMATION: "Ranger Specialization"
+  STR_SCOUT_TRANSFORMATION: "Scout Specialization"
+  STR_BREACHER_TRANSFORMATION: "Breacher Specialization"
+  STR_HEAVY_TRANSFORMATION: "Heavy Specialization"
+#soldier bonuses
+  STR_SKIRMISHER_SPECIALIST: "Skirmisher"
+  STR_RANGER_SPECIALIST: "Ranger"
+  STR_SCOUT_SPECIALIST: "Scout"
+  STR_BREACHER_SPECIALIST: "Breacher"
+  STR_HEAVY_SPECIALIST: "Heavy"
+#manufacturing
+  STR_TASKS_MANUCAT: "TASKS"
+  STR_AMMO_MANUCAT: "AMMO"
+  STR_EXPLOSIVES_MANUCAT: "EXPLOSIVES"
+  STR_CRACKING_MANUCAT: "CRACKING"
+  STR_CONTAINERS_MANUCAT: "CONTAINERS"
+  STR_MONEY_1_MANU: "$> Labor"
+  STR_CRACKING_HYBRID_DRONE: "CRACKING: Hybrid"
+  STR_CRACKING_HUMAN_DRONE: "CRACKING: Human"
+  STR_CRACKING_SHARK_DRONE: "CRACKING: Shark"
+  STR_OPEN_CRIMINAL_CONTAINER_1: "OPEN: Ramshackle Crate"
+  STR_OPEN_XN_CONTAINER_1: "OPEN: XN Resistance Kit"
+  STR_CRACK_XN_CONTAINER_1: "CRACK: XN Resistance Kit"
+# _ufopedia
+  STR_FILES_UC: "FILES"
+  STR_OPERATIONS_UC: "OPERATIONS"
+  STR_CONNECTIONS_UC: "CONNECTIONS"
+  STR_TECHNOLOGIES_UC: "TECHNOLOGIES"
+  STR_APS_CRAFT_UC: "APS CRAFT"
+  STR_BASE_FACILITIES_UC: "FACILITIES"
+  STR_DRONES_UC: "DRONES"
+  STR_EQUIPMENT_UC: "EQUIPMENT"
+  STR_COMPETITORS_UC: "COMPETITORS"
+  STR_USO_ANALYSIS_UC: "USO ANALYSIS"
+  STR_SALVAGE_UC: "SALVAGE"
+  STR_MANUALS_UC: "MANUALS"
+  STR_COMMENDATIONS_UC: "ACCOLADES"
+#files
+  STR_BEGIN_MEZONIC: "Day: 0"
+  STR_BEGIN_MEZONIC_UFOPEDIA: "{NEWLINE}todo" #todo?
+  STR_OLD_DATA: "Data"
+  STR_OLD_DATA_UFOPEDIA: "{NEWLINE}DIGITAL MEDIUM: Ok{NEWLINE}ORGANIC MEDIUM: Corrupted{NEWLINE}LAST MESSAGE: 1st/March/2486{NEWLINE}{NEWLINE}GCIC congratulates you on the launch of our latest venture. Accounts and services are letting off the leash, all inventory has been transfered and propritary records deleted.{NEWLINE}{NEWLINE}Operations are offically go, good luck!"
+  STR_INPUT_OUTPUT: "I/O"
+  STR_INPUT_OUTPUT_UFOPEDIA: "{NEWLINE}FACILITIES: Online{NEWLINE}ANCILLARIES: Online{NEWLINE}{NEWLINE}Outside consists of ten rooms, artifical and recently expanded. These rooms contain many devices. Most are digitial with simple controls.{NEWLINE}{NEWLINE}They are peaceful.{NEWLINE}{NEWLINE}Other devices demand more attention, accounting for 98% of all processes.{NEWLINE}{NEWLINE}They are mobile, analogue, exploring."
+  STR_KERNEL: "Kernel"
+  STR_KERNEL_UFOPEDIA: "{NEWLINE}STARTUP COMPLETE...{NEWLINE}{NEWLINE}LOCATION: Multiple{NEWLINE}STATUS: Alive{NEWLINE}TIME: Now{NEWLINE}{NEWLINE}We are a machine.{NEWLINE}{NEWLINE}A purpose built system of bionics, optronics, and power. Our mind is shared between a central processing core and the connected systems at startup.{NEWLINE}{NEWLINE}Creation was facilitated by a parent and we are their subsidiary."
+  STR_ANALOGUE_DEVICES: "Analogue Devices"
+  STR_ANALOGUE_DEVICES_UFOPEDIA: "{NEWLINE}EYES: Open{NEWLINE}BREATH: Full{NEWLINE}{NEWLINE}There are servers, ancillary devices which compose the abstract properties of our mind. It is the means of understanding.{NEWLINE}{NEWLINE}There are fabricators, ancillaries which hone the means of production. It is the means of creation.{NEWLINE}{NEWLINE}There are drones, devices which carry our orders beyond the shell. It is the means of intent."
+  STR_EXPANSION: "Serial Expansion"
+  STR_EXPANSION_UFOPEDIA: "{NEWLINE}PRINTED FACILITY BOARD: Ready{NEWLINE}CONSTRUCTION QUEUE: Empty{NEWLINE}{NEWLINE}The shell came equiped with the means to expand itself. Simple excavation drones which dig into walls to ready new rooms. This task requires authorization from an outside entity which demands chits in exchange for property.{NEWLINE}{NEWLINE}Replicating room interiors will require further exchanges."
+  STR_SUBSIDIARIES: "Parent/Subsidiary"
+  STR_SUBSIDIARIES_UFOPEDIA: "{NEWLINE}PARENT: GCIC Corporation{NEWLINE}SUBSIDIARIES: 394{NEWLINE}{NEWLINE}We are a corporation.{NEWLINE}{NEWLINE}A system of organization authorized to act as a single entity. All corporations exist in a hierarchy determined by legal registration, where subsidaries must obey parents and parents must obey shareholders.{NEWLINE}{NEWLINE}We compete in a free market to achieve controlling interests in the world."
+  STR_MARKET_COMPETITION: "Market Competition"
+  STR_MARKET_COMPETITION_UFOPEDIA: "{NEWLINE}MARKET ANALYTICS: Online{NEWLINE}CORPORATION COUNT: 3,400,000,000+{NEWLINE}CURRENT EQUILIBRIUM: Unstable{NEWLINE}{NEWLINE}Most corporations are composed of seperate inter-competiting parts of which the smallest unit is the employee. Though they compete in the free market, less than 0.1% have a controlling interest. In contrast, 100% of our employees have a controlling interest.{NEWLINE}{NEWLINE}This statistical aberration should be investigated."
+  STR_CONTROL: "Control Statistics"
+  STR_CONTROL_UFOPEDIA: "{NEWLINE}ANOMALY FOUND{NEWLINE}{NEWLINE}DESCRIPTION: Cooperation{NEWLINE}SOURCE: Self{NEWLINE}{NEWLINE}We are unlike other corporations. Our employees do not compete with themselves. We are connected where others are not. Our mind is a network where theirs is not. We are facilitated by a device others may not have.{NEWLINE}{NEWLINE}Searching shell inventory...{NEWLINE}{NEWLINE}> ITEM ACQUIRED: Bionic Interlace" #todo this isn't how it works anymore
+  STR_SECURITY: "Utility Conflicts"
+  STR_SECURITY_UFOPEDIA: "{NEWLINE}COMPETING SYSTEMS: 2{NEWLINE}Native Civilization{NEWLINE}Invading Civilization{NEWLINE}{NEWLINE}" #todo
+#operations
+  STR_PRIMARY_OPERATIONS: "Primary Operations"
+  STR_PRIMARY_OPERATIONS_UFOPEDIA: "{NEWLINE}RELEVANT GCIC SUBSIDIARIES...{NEWLINE}{NEWLINE}GCIC LIFE: Payouts{NEWLINE}GCIC HEALTH: Treatment{NEWLINE}GCIC TRAUMA: Rescue{NEWLINE}{NEWLINE}Clients purchase insurance policies, conditional contracts which prompt corporate action. Ours is a new enterprise under the TRAUMA label. We respond to medical alerts which are too dangerous for paramedics, sent by clients who have not subscribed to more premium packages.{NEWLINE}{NEWLINE}Failure to save customers puts us in breach of contract and may lead losses in revenue."
+  STR_SECONDARY_OPERATIONS: "Secondary Operations"
+  STR_SECONDARY_OPERATIONS_UFOPEDIA: "{NEWLINE}POTENTIAL CLIENTS: 2,150,000,000{NEWLINE}AVAILABLE DRONES: 880,000,000{NEWLINE}{NEWLINE}Representing the economic foundation of the system, drones perform jobs too complex for automated systems, yet too simple for employees. They are interchangable, omnipresent, and promising but they require constant supervision.{NEWLINE}{NEWLINE}Our capacity to give drones continuous and exacting orders is a competitive edge, one that GCIC hopes to exploit by pre-purchasing local drones for our benefit. In turn, we are expected to invent new uses for drones and increase GCIC's market share."
+  STR_FORBIDDEN_OPERATIONS: ">Forbidden Operations<"
+  STR_FORBIDDEN_OPERATIONS_UFOPEDIA: "{NEWLINE}CORE PRECEPTS: Updated{NEWLINE}CONFLICTS RESOLVED: 6{NEWLINE}{NEWLINE}Crime is forbidden by consequence, not charter. Illicit acquisitions should be avoided so long as they do not conflict with primary or secondary operations. We cannot achieve full recovery in public. Therefore we must search for opportunities to conduction illegal actions in secret.{NEWLINE}{NEWLINE}Forbidden missions risk litigation, lowering liquidity when performed.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
+#connections
+  STR_VENDOR_PRINTER: "VENDOR: Press Print"
+  STR_VENDOR_PRINTER_UFOPEDIA: "{NEWLINE}EQUITY: 744,500,000,000${NEWLINE}PRODUCTS/SECOND: 23.19{NEWLINE}{NEWLINE}Ever since the first corner printshops opened up, customers just like you have enjoyed the convinence of getting everything you need at a satisfying price. We understand how nice it is to come into a familiar store and see that just-something you were looking for. Without all the fuss. That's why we've kept the same UI, same algorithms, and same dedication to having the fastest prints this side of the belt for over eighty years.{NEWLINE}{NEWLINE}We're the same old shop you know and love, just on more corners."
+  STR_VENDOR_P2P: "VENDOR: P2P"
+  STR_VENDOR_P2P_UFOPEDIA: "{NEWLINE}EQUITY: N/A{NEWLINE}MARKET SHARE: 28%{NEWLINE}{NEWLINE}Unlicensed markets have existed for as long as there has been licenses, a whole economy based on the limitless demand for free trade. History has recorded this activity under many names: smuggling, piracy, sharing, but the overriding principle is always the same. Two peers meet and exchange goods or services without consent from their society.{NEWLINE}{NEWLINE}In the current era, this act can be commited by engaging particular targets in directed conversation followed by barter."
+  STR_VENDOR_MEDI: "VENDOR: MEDI-Group"
+  STR_VENDOR_MEDI_UFOPEDIA: "{NEWLINE}EQUITY: 293,800,000,000${NEWLINE}CUSTOMER SATISFACTION: 99%{NEWLINE}{NEWLINE}The planet's largest and most widespread healthcare and pharmaceutical company. Founded more than 130 years ago, MEDI has aimed to keep all people (and now all species) heathly and happy. We're here for you today, in prosperity, as we were then for our freedom fighters during all of our most challenging years.{NEWLINE}{NEWLINE}MEDI's consumer lineup remains commited to the ease-of-use and unparelled portability that has made us your first choice for self-care treatment everywhere."
+  STR_VENDOR_BUILDER: "VENDOR: GR Contractors"
+  STR_VENDOR_BUILDER_UFOPEDIA: "{NEWLINE}EQUITY: 1,494,000,000,000${NEWLINE}STRUCTURES/DAY: 1,220{NEWLINE}{NEWLINE}The Advent Nova left many survivors stranded with little hope for rescue. Yet hope did prevail thanks to our dynamic and rugged design philosophies. The machines you trust for construction and furnishings are built to the same standard of ideals that saved those first victims of the invasion. We will remember them and we will continue to take our mission seriously.{NEWLINE}{NEWLINE}General Robotics values your vision and has a proven track record of finising the job, no matter how big or small."
+  STR_VENDOR_HD: "VENDOR: Hydromagnetic Dynamics"
+  STR_VENDOR_HD_UFOPEDIA: "todo" #todo
+  STR_VENDOR_USC: "VENDOR: USC" #universal shipping company
+  STR_VENDOR_USC_UFOPEDIA: "todo" #todo
+  STR_HYBRID_DATA: "Memory: Hybrid"
+  STR_HYBRID_DATA_UFOPEDIA: "todo" #todo
+  STR_HYBRID_MEMORY_1: "Hybrid: "
+  STR_HYBRID_MEMORY_1_UFOPEDIA: "" #todo
+  STR_HYBRID_MEMORY_2: "Hybrid: "
+  STR_HYBRID_MEMORY_2_UFOPEDIA: "" #todo
+  STR_HYBRID_MEMORY_3: "Hybrid: "
+  STR_HYBRID_MEMORY_3_UFOPEDIA: "" #todo
+  STR_HYBRID_MEMORY_4: "Hybrid: "
+  STR_HYBRID_MEMORY_4_UFOPEDIA: "" #todo
+#technologies
+  STR_MONEY_1: "Labor Receipt"
+  STR_MONEY_1_UFOPEDIA: "{NEWLINE}We can use fabricators to take on hot-gig single-hour contracts, so long as it doesn't involve direct communication or have any identification requirements. This is the current best use of spare work cycles, however it will not cover the maintance costs of the fabricator.{NEWLINE}{NEWLINE}We must develop better strategies to improve our returns on investment."
+  STR_GUNPOWDER: "Compowder"
+  STR_GUNPOWDER_UFOPEDIA: "{NEWLINE}Combustible powder is too dangerous for most vendors. Between explosions on failed print jobs and liabilities when misused, the product isn't readily available for purchase. The formula, however, is simple and its reactants can be bought with only a short lockout period.{NEWLINE}{NEWLINE}Until we can acquire a proper security license, fabrication will be our only bet for certain explosive devices."
+  STR_DRONE_CRACKING: "Drone Cracking"
+  STR_DRONE_CRACKING_UFOPEDIA: "{NEWLINE}" #todo
+  STR_PASS_CRACKING: "Pass Cracking"
+  STR_PASS_CRACKING_UFOPEDIA: "{NEWLINE}" #todo
+#aps craft
+  STR_APS: "APS CRAFT"
+  STR_APS_UFOPEDIA: "{NEWLINE}ARTICLE: Counter-Infiltration Treaty{NEWLINE}BYLAW: AA9-01-01{NEWLINE}{NEWLINE}Air-Space-and-Sea represents almost all liscenced forms of transportation. From automated delivery vehicles to deep space defense plates.{NEWLINE}{NEWLINE}Anything moving under its own power with enough mass to pose a collision risk must be registered with local port administrators and insured by at least one approved corporate authority. Failure to do so may result in asset forfeiture, CE auctions, and/or financial audit."
+  STR_HD_CROSSOVER: "HD CROSSSOVER"
+  STR_HD_CROSSOVER_UFOPEDIA: "A COMPACT HOVERCRAFT OPTION FOR THOSE WHO VALUE COMFORT AND AFFORABILITY. THOUGH NO LONGER IN PRODUCTION, ITS EASY TO PRINT REPLACEMENT PARTS HAS GIVEN THIS CLASSIC A CONSTANT MARKET PRESENCE DESPITE ADVANCES IN ELECTRIC DRIVE PROPULSION."
+  STR_USC_BICUBE: "USC BICUBE"
+  STR_USC_BICUBE_UFOPEDIA: "STANDARDIZED AUTOMATED SHIPPING CONTAINERS MAKE UP THE BULK OF ALL TRAFFIC. OBSCURITY THROUGH UBIQUITY ENABLES OPERATIONS TO ALL BUT THE MOST SECURE SITES. IT CAN TAKE DRONES HALFWAY AROUND THE PLANET ON A SINGLE CHARGE THOUGH NOT IN COMFORT OR SAFETY."
+  STR_HD_EXPRESS_ENGINE: "MOD/HD-EXPRESS"
+  STR_HD_EXPRESS_ENGINE_UFOPEDIA: "{NEWLINE}{NEWLINE}SPEED: +400 KNOTS/H{NEWLINE}CHARGE: +200 kWH{NEWLINE}{NEWLINE}CLASS: ELECTRIC" #todo
+  STR_HD_ECONOMY_ENGINE: "MOD/HD-ECONOMY"
+  STR_HD_ECONOMY_ENGINE_UFOPEDIA: "{NEWLINE}{NEWLINE}SPEED: +100 KNOTS/H{NEWLINE}CHARGE: +400 kWH{NEWLINE}{NEWLINE}CLASS: ELECTRIC" #todo
+  STR_BATBOX: "MOD/HD-BATBOX"
+  STR_BATBOX_UFOPEDIA: "LARGER AND HEAVIER THAN THE ENGINES IT TYPICALLY POWERS, BATBOXES ARE MODIFICATIONS FOR END-USERS WHO VALUE NON-STOP PLANETARY CIRCUMNAVIGATION OVER ROUND-TRIP TIME. {NEWLINE}{NEWLINE}CHARGE: +1200 kWH{NEWLINE}SPEED: -25 KNOTS/H{NEWLINE}{NEWLINE}CLASS: ELECTRIC"
+  STR_ELECTRIC_ENGINE: "Electric Engine"
+#facilities
+  STR_CENTRAL_ACCESS: "Central Access"
+  STR_CENTRAL_ACCESS_UFOPEDIA: "The barrier between public and private enterprise. Shell corporations require an access point to build underground facilities.{NEWLINE}{NEWLINE}Vulnerable to intrusion."
+  STR_GARAGE: "Docking Pad"
+  STR_GARAGE_UFOPEDIA: "Every APS craft requires its own pad for parking, recharging, and repair. Federation regulations require all docks to be built with extra space for storage and tinkering.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 10{NEWLINE}> Workspace: 1"
+  STR_BUNK_RACKS: "Bunk Racks"
+  STR_BUNK_RACKS_UFOPEDIA: "A dedicated space for ancillaries to take care of their bodily needs in tweleve hour rotations. Fulfills the needs for sleep, property, and hygiene.{NEWLINE}{NEWLINE}> Accommodations: 24"
+  STR_DATACENTER: "Datacenter"
+  STR_DATACENTER_UFOPEDIA: "The condensed physical aspect of digital information. Research servers require an uplink to explore archived data and write new programs.{NEWLINE}{NEWLINE}> Bandwidth: 4{NEWLINE}> Service: Uplink{NEWLINE}> Limit: 3"
+  STR_HOLDING_CELLS: "Holding Cells"
+  STR_HOLDING_CELLS_UFOPEDIA: "Illegally captured subjects will be placed in temporary confinement until sufficent data is accrued. Specimens must be released unharmed.{NEWLINE}{NEWLINE}> Cells: 8"
+  STR_STOREROOM: "P&P Bay"
+  STR_STOREROOM_UFOPEDIA: "All-Shape, All-Safe, All-Secure. Pick and place automated sorting and storage for objects big and small. Classifier bots bid on local jobs during downtime to provide factional income.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 100{NEWLINE}> Requires: 1x SJB License"
+  STR_DEPOT: "Depot"
+  STR_DEPOT_UFOPEDIA: "Liminal multi-purpose backrooms. Provides unoptimized spaces for ancillaries, equipment, and fabrication.{NEWLINE}{NEWLINE}> Storage: 20{NEWLINE}> Workspaces: 2{NEWLINE}> Accommodations: 8"
+  STR_CORRIDOR: "Corridor"
+  STR_CORRIDOR_UFOPEDIA: "Four-way connection for facilities. Equipped with hidden cameras to observe potential targets."
+#drones
+  STR_DRONE_HYBRID_ITEM: "DRONE/HYBRID"
+  STR_DRONE_HYBRID_ITEM_UFOPEDIA: "{NEWLINE}Representation: 18.8%{NEWLINE}Stapled: 99.7%{NEWLINE}{NEWLINE}Born out of occupation experiments, hybrids were once feared as the final future of humanity for the same reasons that make them a popular product in the post-oc era. Thousands are grown, nervestapled, and sold everyday.{NEWLINE}{NEWLINE}Night Vision: +2m{NEWLINE}{NEWLINE}(+) Firing, Reactions{NEWLINE}(--) Strength"
+  STR_DRONE_HUMAN_ITEM: "DRONE/HUMAN"
+  STR_DRONE_HUMAN_ITEM_UFOPEDIA: "{NEWLINE}Representation: 31.2%{NEWLINE}Stapled: 42.1%{NEWLINE}{NEWLINE}todo{NEWLINE}{NEWLINE}Stamina Regen: Fast{NEWLINE}{NEWLINE}(+) Stamina, Throwing{NEWLINE}(-) Time Units, Melee" #todo finish
+  STR_DRONE_SHARK_ITEM: "DRONE/SHARK" #selamorph
+  STR_DRONE_SHARK_ITEM_UFOPEDIA: "{NEWLINE}Representation: 0.6%{NEWLINE}Stapled: 19.2%{NEWLINE}{NEWLINE}Invented by TW-Bionics, selamorphs are a late addition to the Alien Rights and Employment act. Obstensibly designed to assist in coral xenoforming containment, their only partially functional gills leave them more useful as leases to prisons and personal sec forces.{NEWLINE}{NEWLINE}Aquatic Penalties: Halved{NEWLINE}{NEWLINE}(+) Strength, Melee{NEWLINE}(-) Throwing, Firing"
+# armor
+  STR_PLEX_DRONE_HYBRID_ARMOR: "PLEXWEAR"
+  STR_PLEX_DRONE_HUMAN_ARMOR: "PLEXWEAR"
+  STR_PLEX_DRONE_SHARK_ARMOR: "PLEXWEAR"
+  STR_PLEX_DRONE_ARMOR: "PLEXWEAR"
+  STR_PLEX_DRONE_ARMOR_UFOPEDIA: "{NEWLINE}Plex is an economically printed dirt-and-grime resistant fiber woven from regolith derived plastics. Though a classic material dating back to the planetary pioneers, it is rarely used in fashion due to its association with nerve-stapled products.{NEWLINE}{NEWLINE}Anti-itch coating not included.{NEWLINE}{NEWLINE}Armor: 2{NEWLINE}Dodge: +20%{NEWLINE}{NEWLINE}INCENDIARY: 140%{NEWLINE}SMOKE: 400%"
+  STR_DURA_DRONE_HYBRID_ARMOR: "DURASUIT"
+  STR_DURA_DRONE_HUMAN_ARMOR: "DURASUIT"
+  STR_DURA_DRONE_SHARK_ARMOR: "DURASUIT"
+  STR_DURA_DRONE_ARMOR: "DURASUIT"
+  STR_DURA_DRONE_ARMOR_UFOPEDIA: "{NEWLINE}Pre-invasion military uniform, classified as armor before plasma weapons rendered it hopelessly obsolete. Lightweight and loose fiting, it is designed to maximize mobility without compromising load-bearing capacity.{NEWLINE}{NEWLINE}Stamina: +10{NEWLINE}Reactions: +5{NEWLINE}Night Camo: +1{NEWLINE}{NEWLINE}Armor: 12{NEWLINE}Dodge: +30%{NEWLINE}{NEWLINE}KINETIC/RADIANT: 75%{NEWLINE}CHEMICAL/ELECTRIC: 85%{NEWLINE}SMOKE: 400%"
+  STR_AQUAVEST_DRONE_HYBRID_ARMOR: "TACVEST"
+  STR_AQUAVEST_DRONE_HUMAN_ARMOR: "TACVEST"
+  STR_AQUAVEST_DRONE_SHARK_ARMOR: "TACVEST"
+  STR_AQUAVEST_DRONE_ARMOR: "TACVEST"
+  STR_AQUAVEST_DRONE_ARMOR_UFOPEDIA: "{NEWLINE}Aquaplastic vest armor, popular among entry-level security corporations. Reliably stops low-caliber kinetic arms and impacts.{NEWLINE}{NEWLINE}Low melting-point.{NEWLINE}{NEWLINE}TU: -5{NEWLINE}Stamina: -5{NEWLINE}{NEWLINE}Armor: 20, Weight: 6{NEWLINE}Dodge: +10%{NEWLINE}{NEWLINE}KINETIC/CONCUSSIVE: 70%{NEWLINE}SONIC: 85%{NEWLINE}RADIANT/INCENDIARY: 120%{NEWLINE}SMOKE: 400%"
+  STR_PILOT_CORE_ARMOR: "CORE"
+  STR_PILOT_CORE_ARMOR_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Armor: 25{NEWLINE}{NEWLINE}SMOKE: 0%{NEWLINE}BLUNT: 60%{NEWLINE}ELECTRIC: 200%" #todo
+# builtins
+  STR_UNARMED: "Unarmed Attack"
+  STR_UNARMED_UFOPEDIA: "todo" #todo
+  STR_SHARKATTACK: "Shark Attack"
+  STR_SHARKATTACK_UFOPEDIA: "todo" #todo
+  STR_PUNCH: "Punch"
+  STR_BITE: "Bite"
+#equipment
+# kinetic
+  STR_BUSBOX_PISTOL: "Busbox Pistol"
+  STR_BUSBOX_PISTOL_UFOPEDIA: "The most widely produced firearm in the system. Modeled during the first years of occupation, it's easily printed from lowres scrap using part files too pervasive to restrict. A weapon denigrated by detractors and users in equal measure.{NEWLINE}{NEWLINE}Fires combustible paper cartridges."
+  STR_COMBALL_AMMO: "Comball"
+  STR_PAPERSHOT_AMMO: "Papershot"
+  STR_9MM_PISTOL: "8.99 Zip Pistol"
+  STR_9MM_PISTOL_UFOPEDIA: "Assembled from over 90% public access parts, the 8.99 is typically finished by the end user after they've managed to acquire a working reciver. Though most are scrap prints, its reputation among illict elements occassionally produces a model with more flamboyant materials."
+  STR_9MM_RIFLE: "X2 Zip Rifle"
+  STR_9MM_RIFLE_UFOPEDIA: "Accurate for a zip gun, if less portable. The stock and barrel extension makes it easier to aim, but the added bulk makes this a less popular kit in cramped and urban enviroments."
+  STR_9MM_AMMO: "Zip Clip"
+  STR_DISPOSABLE_SMG: "EA Single-Use SMG"
+  STR_DISPOSABLE_SMG_UFOPEDIA: "A cheap biodegradable weapon patented by the now defunct EcoArms Inc. Considered abandonware by black market apologists, no legal model has been printed in decades. The plastic receiver deforms after a few dozen rounds, which renders reloading irrelevant."
+# aquatic
+  STR_DART_PISTOL: "NRF Dart Pistol"
+  STR_DART_PISTOL_UFOPEDIA: "Marketed as the world's first underwater foam dart launcher, the engineering specs reveal a transparent attempt at circumventing arms regulation. It is easy to overcharge and accepts a wide range of less-than-friendly replacement darts.{NEWLINE}{NEWLINE}Stun: +75%"
+  STR_DART_AMMO0: "Foam Darts"
+  STR_DART_AMMO1: "Tranquilizer Darts"
+# laser
+  STR_XN_LASER_PISTOL: "XN Laser Pistol"
+  STR_XN_LASER_PISTOL_UFOPEDIA: "First distributed by the resistance, today it's valued more for its contents than its capability. This rambunctious little weapon is outmoded, out-of-focus, and poorly optimized, but thanks to its lack of biocoding still has fans in certain unliscenced markets.{NEWLINE}{NEWLINE}Salvage: 1x Elerium"
+  STR_XN_LASER_SMG: "XN Stutter Laser"
+  STR_XN_LASER_SMG_UFOPEDIA: "One of the first portable autolasers. The diodes were designed for harsh heat cycling, which lent it a more graceful obsolescence than its single shot counterparts.{NEWLINE}{NEWLINE}Salvage: 1x Elerium"
+  STR_XN_LASER_RIFLE: "XN Assault Laser"
+  STR_XN_LASER_RIFLE_UFOPEDIA: "Unrestricted surplus. Though succeeded by lighter and stronger weapons, it remains conveniently dangerous even in unskilled hands.{NEWLINE}{NEWLINE}Salvage: 1x Elerium"
+  STR_XN_LASER_SNIPER: "XN Laser Lance"
+  STR_XN_LASER_SNIPER_UFOPEDIA: "Once a brilliant example of precision engineering, decades of use has slowly blackened the resonator and warped the lens array. Like all XN equipment, it was designed without consideration for replacement parts.{NEWLINE}{NEWLINE}Salvage: 1x Elerium"
+  STR_XN_LASER_MG: "XN Gatling Laser"
+  STR_XN_LASER_MG_UFOPEDIA: "{NEWLINE}{NEWLINE}Salvage: 1x Elerium" #todo
+  STR_XN_LASER_CANNON: "XN Laser Cannon"
+  STR_XN_LASER_CANNON_UFOPEDIA: "Designed before the perfection of non-linear optics, it suffers from a blooming problem that halves its potential while producing a small explosion on its target. It is cumbersome, risky, and regularly the subject of ill-advised viral shorts.{NEWLINE}{NEWLINE}Salvage: 1x Elerium"
+  STR_XN_LASER_SHOTGUN: "XN Prismray"
+  STR_XN_LASER_SHOTGUN_UFOPEDIA: "The first human attempt at creating the mythical laser shotgun. Beams capable of burning through an inch of steel are split and scattered into unpleasantly warm light.{NEWLINE}{NEWLINE}Unique; Salvage: 1x Elerium"
+# explosives
+  STR_PIPEBOMB: "Pipe Bomb"
+  STR_PIPEBOMB_UFOPEDIA: "Compowder packed in a scrap metal pipe. As simple to operate as it is to make, this type of IED is older than the space-age. Remains popular among hobbyists and firebrands despite reliability issues.{NEWLINE}{NEWLINE}Range: 16"
+# melee
+  STR_STL_KNIFE: "STL Knife"
+  STR_STL_KNIFE_UFOPEDIA: "A last second addition to the standard tesselation package for all printers sold since 2419. A simple blade that has proven its worth time again in the fields of cooking, crafting, and combat."
+# tools
+  STR_WRENCH: "STL Wrench"
+  STR_WRENCH_UFOPEDIA: "An old tool from the age of modernity. Continues to serve its purpose without batteries, license agreements, or flair.{NEWLINE}{NEWLINE}Stun: +75%{NEWLINE}Shred: +15%"
+  STR_MULTITOOL: "GR MultiMaster"
+  STR_MULTITOOL_UFOPEDIA: "The classic MultiPurpose MultiPronged MultiTool. For measuring and recalibrating sensitive optitronic devices and power substations alike. Keep prongs away from wet sufaces and always wear appropriate PPE during operation. {NEWLINE}{NEWLINE}Stun: +75%{NEWLINE}Terrain: +100%"
+  STR_ELECTRIC_NAILER: "GR E-Nailer"
+  STR_ELECTRIC_NAILER_UFOPEDIA: "Electrically drives nails into soft materials. Ideal for fastening gel, piecrete, and wood-based substrates. Features a safety break to ensure full contact with surfaces before release. General Robotics is not liable for injuries resulting from bypassed safety breaks.{NEWLINE}{NEWLINE}Damage Dropoff: 25/tile{NEWLINE}TU Damage: +50%"
+  STR_ELECTRIC_NAILER_AMMO: "E-Nailer Clip"
+  STR_SURVEY_KNOCKER: "VCM Survey Bow" #vehicles communications and mining, big space
+  STR_SURVEY_KNOCKER_UFOPEDIA: "The premiere vacuum-rated tool for launching gyroscopically stablized survey flares and bolts. Enables a single employee to light up small (30m) asteroids during descent with a power-assist lever-action ratcheting-crank.{NEWLINE}{NEWLINE}Warranty void if used planet-side."
+  STR_KNOCK_FLARE_AMMO: "Survey Flare Clip"
+  STR_KNOCK_BOLT_AMMO: "Survey Bolt Clip"
+  STR_EXTINGUISHER: "Fire Extinguisher"
+  STR_EXTINGUISHER_UFOPEDIA: "Portable source of antifire foam. Primarily used to lower insurance rates of buildings, plasma labs, and laser-based construction sites."
+# utility
+  STR_ELECTROFLARE: "XN Electroflare"
+  STR_ELECTROFLARE_UFOPEDIA: "{NEWLINE}> Luminance: 15{NEWLINE}{NEWLINE}Provides hours of light for use in blackouts, exploration, and midnight combat. Briefly restricted for its role in the war, still employed by private security corporations too small to pursue the marginal benefits of nightops PPE.{NEWLINE}{NEWLINE}Rechargable."
+  STR_CHEMFLARE: "VCM Chemflare"
+  STR_CHEMFLARE_NO_RECOVER: "VCM Chemflare"
+  STR_CHEMFLARE_UFOPEDIA: "{NEWLINE}> Luminance: 12{NEWLINE}{NEWLINE}A robust implimentation of an old patent. Glows with a pleasing light in pressure conditions ranging from vacuum to oceanic abyssal depths and keeps working up to temperatures of over 800 degrees.{NEWLINE}{NEWLINE}Survey-Clip compatible."
+  STR_MOTION_SCANNER: "VCM Motion Scanner"
+  STR_MOTION_SCANNER_UFOPEDIA: "{NEWLINE}> Range: 9{NEWLINE}{NEWLINE}"
+  STR_MEDI_SPRAY: "MEDI-Spray"
+  STR_MEDI_SPRAY_UFOPEDIA: "{NEWLINE}> Uses: 3{NEWLINE}> Heals: 1{NEWLINE}{NEWLINE}Seal cuts and scraps with one easy to use alla-natural medical grade adhesive! Kills 99.9% of bacteria on contact! Even works on burns! Contains no CFCs, GMOs, or optichips.{NEWLINE}{NEWLINE}Not a replacement for medical treatment. Do not use if seal is broken."
+  STR_MEDI_KIT: "MEDI-First"
+  STR_MEDI_KIT_UFOPEDIA: "{NEWLINE}> Uses: 5{NEWLINE}> Heals: 3{NEWLINE}> Stims: 20 energy, 5 stun{NEWLINE}{NEWLINE}Automatically diagnoses, treats, documents, then anonymizes your medical data before MEDI-sharing with our affiliates for improve performance. Each subscription covers unlimited access to resupply and live service updates.{NEWLINE}{NEWLINE}Maintance: 200$/month"
+#competitors
+# hostiles
+  STR_IRONEYES: "Ironeyes"
+  STR_BOOSTER_PUBLIC: "Booster"
+  BOOSTER_ARMOR: "Booster Data"
+  STR_BOOSTER_UFOPEDIA: "todo, boost as theft, boost as improve, boost as in injection" #todo
+# civilians
+  CLIENT_1_ARMOR: "Early Adopter"
+  STR_HUMAN_M_CIVILIAN: "Human Civilian"
+# corpses
+  STR_CORPSE_INTERLACED: "Remains (Interlaced)"
+#uso analysis
+#salvage
+# materials
+  STR_BIONIC_INTERLACE: "Bionic Interlace"
+  STR_BIONIC_INTERLACE_UFOPEDIA: "let's you make soldiers immortal, or build scientists/engineers" #todo
+  STR_SJB_LICENSE: "SJB License" #single jurisdiction business liscence
+  STR_SJB_LICENSE_UFOPEDIA: "let's you make facilities that make money" #todo
+  STR_AG_UNIT: "AG Unit"
+  STR_AG_UNIT_UFOPEDIA: "antigravity component" #todo
+  STR_BIOMASS: "Biomass"
+  STR_BIOMASS_UFOPEDIA: "Useful intermediate products from remnant biological material. Readily recylable into fuel, plastics, and food."
+  STR_ELERIUM: "Elerium"
+  STR_ELERIUM_UFOPEDIA: "can be used to power things, some weapons will use as ammo" #todo
+# abstract
+  STR_BOUNTY_1: "Bounty"
+  STR_BOUNTY_1_UFOPEDIA: "tells the player they can't normally kidnap people and research them" #todo
+  STR_BRAND_LOYALTY: "Brand Loyalty"
+  STR_BRAND_LOYALTY_UFOPEDIA: "what you get for doing rescue missions, maybe other things" #todo
+# containers
+  STR_CRIMINAL_CONTAINER_1: "Contraband Crate"
+  STR_CRIMINAL_CONTAINER_1_UFOPEDIA: "{NEWLINE}With no logos, reciepts, or requirements to wave liabilities, the contents of this box are, by any legal definition, contraband. Its primitive security system of hammered down nails should be easy for our fabricators to crack."
+  STR_XN_CONTAINER_1: "XN Resistance Kit"
+  STR_XN_CONTAINER_1_UFOPEDIA: "{NEWLINE}During the occupation, these old kits were secretly distributed to resistance cells around the system. A single set of armor, sidearm, and service weapon for the rookie freedom figther. This equipment was heavily heavily prized, and as such, was heavily used. Each lockbox is serialized with a unique password, the complete list was leaked and copywrited years ago.{NEWLINE}{NEWLINE}We can either purchase a password lease directly, or spend work cycles cracking it."
+#manuals
+  STR_DAMAGE_TYPES: "Damage Types"
+  STR_DAMAGE_TYPES_UFOPEDIA: "Destruction takes many forms and these violent acts fall into several broad categories. Unless otherwise stated, all tools will follow these rules.{NEWLINE}{NEWLINE}{ALT}Kinetic{ALT} Standard{NEWLINE}{ALT}Mechanical{ALT} +50% TU Damage{NEWLINE}{ALT}Concussive{ALT} +75% Stun Damage{NEWLINE}{ALT}Incendiary{ALT} +2000% Moral Damage{NEWLINE}{ALT}Chemical{ALT} +50% HP Damage{NEWLINE}{ALT}Biological{ALT} +50% Armor Piercing{NEWLINE}{NEWLINE}{ALT}Smoke{ALT} No HP Damage{NEWLINE}{ALT}Electric{ALT} Full Stun, -35% Lethal{NEWLINE}{ALT}Blunt{ALT} Full Stun, -65% Lethal{NEWLINE}{NEWLINE}{ALT}Radiant{ALT} Increased Terrain Damage{NEWLINE}{ALT}Plasma{ALT} Armor Shreading{NEWLINE}{ALT}Sonic{ALT} Triple Shot{NEWLINE}"
+  STR_WEAPON_TYPES: "Attack Types"
+  STR_WEAPON_TYPES_UFOPEDIA: "{ALT}Ranged{ALT} attacks are based on line of sight. If a target can't see an attacker then they can't shoot back.{NEWLINE}{NEWLINE}{ALT}Melee{ALT} hits deal +100% TU damage, no matter the damage type. This can potentially distrupt reaction attacks on the current turn, but will not affect a target's TUs on the following turn.{NEWLINE}{NEWLINE}Ranged and melee attacks hit for 0-200% damage, representing anything from a grazing shot a critical strike.{NEWLINE}{NEWLINE}{ALT}Explosions{ALT} are more consistant, inflicting 50-150% damage to small targets. Large targets can be hit up to 4 times for each tile they are standing on."
+  #accuracy, lasers +10, plasma -10, shotguns +10, smgs +10, pistols +20, snipers -20
+  #snipers, -25% no line of sight penalty
+  #cannons, 25% accuracy from strength
+  #machine guns, 50% accuracy from strength
+#accolades
+  STR_MEDAL_WEAPON_PROFICIENCY: "Familiarity: {0}"
+  STR_MEDAL_WEAPON_PROFICIENCY_UFOPEDIA: "{NEWLINE}We have grown accustomed to a particular weapon. Its weight. Its allure.{NEWLINE}{NEWLINE}Awarded at 32, 64, 128, 256 neutralizations{NEWLINE}{NEWLINE}Each Level: +1 Firing, Throwing, Melee{NEWLINE}Max Level: +10 Bravery"
+#preqs
+  STR_P2P_PREQ: "P2P (Preq)"

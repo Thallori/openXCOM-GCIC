@@ -1,0 +1,155 @@
+
+manufacture:
+  - name: STR_MONEY_1_MANU
+    category: STR_TASKS_MANUCAT
+    time: 1
+    producedItems:
+      STR_MONEY_1: 1
+
+  - name: STR_PIPEBOMB
+    category: STR_EXPLOSIVES_MANUCAT
+    requires:
+      - STR_GUNPOWDER
+    time: 6
+    cost: 40
+    refund: true
+
+  - name: STR_CRACKING_HYBRID_DRONE
+    category: STR_CRACKING_MANUCAT
+    requires:
+      - STR_DRONE_CRACKING
+    time: 1
+    refund: true
+    requiredItems:
+      STR_DRONE_HYBRID_ITEM: 1
+    spawnedPersonType: STR_CRACKED_HYBRID_DRONE
+    producedItems:
+      STR_HYBRID_DATA: 1
+
+  - name: STR_SALVAGE_XN_LASER_PISTOL
+    category: STR_SALVAGE_MANUCAT
+    requires:
+      - STR_XN_LASER_PISTOL
+    time: 24
+    refund: true
+    requiredItems:
+      STR_XN_LASER_PISTOL: 1
+    producedItems:
+      STR_ELERIUM: 1
+
+  - name: STR_SALVAGE_XN_LASER_SMG
+    category: STR_SALVAGE_MANUCAT
+    requires:
+      - STR_XN_LASER_SMG
+    time: 24
+    refund: true
+    requiredItems:
+      STR_XN_LASER_SMG: 1
+    producedItems:
+      STR_ELERIUM: 1
+
+  - name: STR_SALVAGE_XN_LASER_RIFLE
+    category: STR_SALVAGE_MANUCAT
+    requires:
+      - STR_XN_LASER_RIFLE
+    time: 24
+    refund: true
+    requiredItems:
+      STR_XN_LASER_RIFLE: 1
+    producedItems:
+      STR_ELERIUM: 1
+
+  - name: STR_SALVAGE_XN_LASER_SNIPER
+    category: STR_SALVAGE_MANUCAT
+    requires:
+      - STR_XN_LASER_SNIPER
+    time: 24
+    refund: true
+    requiredItems:
+      STR_XN_LASER_SNIPER: 1
+    producedItems:
+      STR_ELERIUM: 1
+
+  - name: STR_SALVAGE_XN_LASER_MG
+    category: STR_SALVAGE_MANUCAT
+    requires:
+      - STR_XN_LASER_MG
+    time: 24
+    refund: true
+    requiredItems:
+      STR_XN_LASER_MG: 1
+    producedItems:
+      STR_ELERIUM: 1
+
+  - name: STR_SALVAGE_XN_LASER_CANNON
+    category: STR_SALVAGE_MANUCAT
+    requires:
+      - STR_XN_LASER_CANNON
+    time: 24
+    refund: true
+    requiredItems:
+      STR_XN_LASER_CANNON: 1
+    producedItems:
+      STR_ELERIUM: 1
+
+  - name: STR_SALVAGE_XN_LASER_SHOTGUN
+    category: STR_SALVAGE_MANUCAT
+    requires:
+      - STR_XN_LASER_SHOTGUN
+    time: 24
+    refund: true
+    requiredItems:
+      STR_XN_LASER_SHOTGUN: 1
+    producedItems:
+      STR_ELERIUM: 1
+
+  - name: STR_OPEN_CRIMINAL_CONTAINER_1
+    category: STR_CONTAINERS_MANUCAT
+    requires:
+      - STR_CRIMINAL_CONTAINER_1
+    time: 1
+    refund: true
+    requiredItems:
+      STR_CRIMINAL_CONTAINER_1: 1
+    producedItems: {} #empty
+    randomProducedItems:
+      - [1, {STR_BUSBOX_PISTOL: 3, STR_COMBALL_AMMO: 3}]
+      - [1, {STR_BUSBOX_PISTOL: 3, STR_PAPERSHOT_AMMO: 3}]
+      - [1, {STR_9MM_PISTOL: 1, STR_9MM_AMMO: 4}]
+      - [1, {STR_9MM_RIFLE: 1, STR_9MM_AMMO: 3}]
+      - [1, {STR_DISPOSABLE_SMG: 3}]
+      - [1, {STR_PIPEBOMB: 3}]
+
+  - name: STR_OPEN_XN_CONTAINER_1
+    category: STR_CONTAINERS_MANUCAT
+    requires:
+      - STR_XN_CONTAINER_1
+    time: 4
+    cost: 150000
+    refund: true
+    requiredItems:
+      STR_XN_CONTAINER_1: 1
+    producedItems: {STR_DURA_DRONE_ARMOR: 1, STR_XN_LASER_PISTOL: 1}
+    randomProducedItems:
+      - [1, {STR_XN_LASER_SMG: 1}]
+      - [1, {STR_XN_LASER_RIFLE: 1}]
+      - [1, {STR_XN_LASER_SNIPER: 1}]
+      - [1, {STR_XN_LASER_MG: 1}]
+      - [1, {STR_XN_LASER_CANNON: 1}]
+
+  - name: STR_CRACK_XN_CONTAINER_1
+    category: STR_CONTAINERS_MANUCAT
+    requires:
+      - STR_XN_CONTAINER_1
+      - STR_PASS_CRACKING
+    time: 1200
+    refund: true
+    requiredItems:
+      STR_XN_CONTAINER_1: 1
+    producedItems: {STR_DURA_DRONE_ARMOR: 1, STR_XN_LASER_PISTOL: 1}
+    randomProducedItems:
+      - [1, {STR_XN_LASER_SMG: 1}]
+      - [1, {STR_XN_LASER_RIFLE: 1}]
+      - [1, {STR_XN_LASER_SNIPER: 1}]
+      - [1, {STR_XN_LASER_MG: 1}]
+      - [1, {STR_XN_LASER_CANNON: 1}]

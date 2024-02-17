@@ -1,0 +1,572 @@
+commendations:
+  - type: STR_MEDAL_IMPORTANT_MISSIONS_NAME #non-small craft, hardcoded
+    description: STR_MEDAL_IMPORTANT_MISSIONS_UFOPEDIA
+    sprite: 2
+    criteria:
+      totalLongDistanceHits: [9999]
+
+  - type: STR_MEDAL_ORIGINAL8_NAME #original team, hardcoded
+    description: STR_MEDAL_ORIGINAL_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_ORIGINAL]
+    sprite: 0
+    criteria:
+      totalLongDistanceHits: [9999]
+
+  - type: STR_MEDAL_SERVICE_TIME_NAME #every 3 months of service
+    description: STR_MEDAL_SERVICE_TIME_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_SERVICE_TIME_1, STR_MEDAL_SERVICE_TIME_2, STR_MEDAL_SERVICE_TIME_3, STR_MEDAL_SERVICE_TIME_4]
+    sprite: 5
+    criteria:
+      totalMonthlyService: [3, 6, 9, 12]
+
+  - type: STR_MEDAL_STATGAIN_NAME #hopefully, still works after stat caps
+    description: STR_MEDAL_STATGAIN_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_STATGAIN_1, STR_MEDAL_STATGAIN_2, STR_MEDAL_STATGAIN_3, STR_MEDAL_STATGAIN_4, STR_MEDAL_STATGAIN_5, STR_MEDAL_STATGAIN_6, STR_MEDAL_STATGAIN_7, STR_MEDAL_STATGAIN_8, STR_MEDAL_STATGAIN_9, STR_MEDAL_STATGAIN_10]
+    sprite: 5
+    criteria:
+      totalStatGain: [25, 50, 75, 100, 150, 200, 250, 300, 350, 400]
+
+  - type: STR_MEDAL_CARREER_MISSIONS_NAME #number of missions won
+    description: STR_MEDAL_CARREER_MISSIONS_UFOPEDIA
+    sprite: 5
+    soldierBonusTypes: [STR_MEDAL_CARREER_MISSIONS_1, STR_MEDAL_CARREER_MISSIONS_2, STR_MEDAL_CARREER_MISSIONS_3, STR_MEDAL_CARREER_MISSIONS_4, STR_MEDAL_CARREER_MISSIONS_5, STR_MEDAL_CARREER_MISSIONS_6, STR_MEDAL_CARREER_MISSIONS_7, STR_MEDAL_CARREER_MISSIONS_8, STR_MEDAL_CARREER_MISSIONS_9, STR_MEDAL_CARREER_MISSIONS_10]
+    criteria:
+      totalWins: [5, 10, 20, 30, 50, 70, 100, 150, 250, 350]
+
+  - type: STR_MEDAL_NIGHTOPS_NAME #number of night missions
+    description: STR_MEDAL_NIGHTOPS_NAME_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_NIGHTOPS_1, STR_MEDAL_NIGHTOPS_2, STR_MEDAL_NIGHTOPS_3, STR_MEDAL_NIGHTOPS_4]
+    sprite: 2
+    criteria:
+      totalNightMissions: [3, 6, 9, 12]
+
+  - type: STR_MEDAL_BASE_DEFENSE_NAME #base defense
+    description: STR_MEDAL_BASE_DEFENSE_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_BASE_DEFENSE]
+    sprite: 2
+    criteria:
+      totalBaseDefenseMissions: [1]
+
+#  - type: STR_MEDAL_ALIEN_BASE_ASSAULT_NAME #base assault
+#    description: STR_MEDAL_ALIEN_BASE_ASSAULT_UFOPEDIA
+#    soldierBonusTypes: [STR_MEDAL_ALIEN_BASE_ASSAULT]
+#    sprite: 2
+#    missionTypeFilter: ["STR_ALIEN_BASE_ASSAULT", "STR_ALIEN_BASE_ASSAULT_SECTOID"]
+#    criteria:
+#      totalMissions: [1]
+
+#  - type: STR_MEDAL_AQUANAUT_NAME #underwater missions
+#    description: STR_MEDAL_AQUANAUT_UFOPEDIA
+#    soldierBonusTypes: [STR_MEDAL_AQUANAUT_1, STR_MEDAL_AQUANAUT_2, STR_MEDAL_AQUANAUT_3, STR_MEDAL_AQUANAUT_4]
+#    sprite: 2
+#    missionMarkerFilter: ["STR_USOP", "STR_ATLANTIS_TEMPLE"]
+#    criteria:
+#      totalMissions: [1, 3, 6, 9]
+
+  - type: STR_MEDAL_CAMPAIGN_RIBBON_NAME #missions in a region
+    description: STR_MEDAL_CAMPAIGN_RIBBON_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_CAMPAIGN_RIBBON]
+    sprite: 2
+    criteria:
+      totalMissionsInARegion: [10]
+
+  - type: STR_MEDAL_CARREER_KILLS_NAME #total kills
+    description: STR_MEDAL_CARREER_KILLS_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_CARREER_KILLS_1, STR_MEDAL_CARREER_KILLS_2, STR_MEDAL_CARREER_KILLS_3, STR_MEDAL_CARREER_KILLS_4, STR_MEDAL_CARREER_KILLS_5, STR_MEDAL_CARREER_KILLS_6, STR_MEDAL_CARREER_KILLS_7, STR_MEDAL_CARREER_KILLS_8, STR_MEDAL_CARREER_KILLS_9, STR_MEDAL_CARREER_KILLS_10]
+    sprite: 3
+    criteria:
+      killsWithCriteriaCareer: [25, 50, 75, 100, 150, 250, 350, 500, 650, 888]
+    killCriteria:
+      - - [1, ["STATUS_DEAD", "FACTION_HOSTILE"]]
+      - - [1, ["STATUS_DEAD", "FACTION_NEUTRAL"]]
+      - - [1, ["STATUS_DEAD", "FACTION_PLAYER"]]
+
+  - type: STR_MEDAL_CARREER_CAPTURES_NAME #total stuns
+    description: STR_MEDAL_CARREER_CAPTURES_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_CARREER_CAPTURES_1, STR_MEDAL_CARREER_CAPTURES_2, STR_MEDAL_CARREER_CAPTURES_3, STR_MEDAL_CARREER_CAPTURES_4, STR_MEDAL_CARREER_CAPTURES_5, STR_MEDAL_CARREER_CAPTURES_6, STR_MEDAL_CARREER_CAPTURES_7, STR_MEDAL_CARREER_CAPTURES_8, STR_MEDAL_CARREER_CAPTURES_9, STR_MEDAL_CARREER_CAPTURES_10]
+    sprite: 4
+    criteria:
+      killsWithCriteriaCareer: [10, 20, 30, 50, 70, 100, 150, 200, 300, 500]
+    killCriteria:
+      - - [1, ["FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+
+  - type: STR_MEDAL_BOUNTYHUNTER_NAME #captured bounties
+    description: STR_MEDAL_BOUNTYHUNTER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_BOUNTYHUNTER]
+    sprite: 3
+    criteria:
+      killsWithCriteriaCareer: [10]
+    killCriteria:
+      - - [1, ["STR_IRONEYES", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+
+  - type: STR_MEDAL_SLAVEKILLS_NAME #kills through mind controlled units
+    description: STR_MEDAL_SLAVEKILLS_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_SLAVEKILLS]
+    sprite: 3
+    criteria:
+      totalSlaveKills: [5]
+
+  - type: STR_MEDAL_IDOL_NAME #3 stuns in a mission
+    description: STR_MEDAL_IDOL_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_IDOL_1, STR_MEDAL_IDOL_2, STR_MEDAL_IDOL_3, STR_MEDAL_IDOL_4]
+    sprite: 4
+    criteria:
+      killsWithCriteriaMission: [1, 4, 16, 32]
+    killCriteria:
+      - - [3, ["FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+
+  - type: STR_MEDAL_MISSION_KILLS_5_NAME #5 kills in a mission
+    description: STR_MEDAL_MISSION_KILLS_5_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_MISSION_KILLS_5_1, STR_MEDAL_MISSION_KILLS_5_2, STR_MEDAL_MISSION_KILLS_5_3, STR_MEDAL_MISSION_KILLS_5_4]
+    sprite: 3
+    criteria:
+      killsWithCriteriaMission: [1, 4, 16, 32]
+    killCriteria:
+      - - [5, ["STATUS_DEAD", "FACTION_HOSTILE"]]
+
+  - type: STR_MEDAL_MISSION_KILLS_11_NAME #11 kills in a mission
+    description: STR_MEDAL_MISSION_KILLS_11_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_MISSION_KILLS_11_1, STR_MEDAL_MISSION_KILLS_11_2, STR_MEDAL_MISSION_KILLS_11_3, STR_MEDAL_MISSION_KILLS_11_4]
+    sprite: 3
+    criteria:
+      killsWithCriteriaMission: [1, 4, 16, 32]
+    killCriteria:
+      - - [11, ["STATUS_DEAD", "FACTION_HOSTILE"]]
+
+  - type: STR_MEDAL_DBLKILL_NAME #2 kills in a turn
+    description: STR_MEDAL_DBLKILL_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_DBLKILL_1, STR_MEDAL_DBLKILL_2, STR_MEDAL_DBLKILL_3, STR_MEDAL_DBLKILL_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaTurn: [1, 4, 16, 32]
+    killCriteria:
+      - - [2, ["STATUS_DEAD", "FACTION_HOSTILE"]]
+
+  - type: STR_MEDAL_QUADKILL_NAME #4 kills in a turn
+    description: STR_MEDAL_QUADKILL_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_QUADKILL_1, STR_MEDAL_QUADKILL_2, STR_MEDAL_QUADKILL_3, STR_MEDAL_QUADKILL_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaTurn: [1, 4, 16, 32]
+    killCriteria:
+      - - [4, ["STATUS_DEAD", "FACTION_HOSTILE"]]
+
+  - type: STR_MEDAL_7V7KILL_NAME #7 kills in a turn
+    description: STR_MEDAL_7V7KILL_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_7V7KILL_1, STR_MEDAL_7V7KILL_2, STR_MEDAL_7V7KILL_3, STR_MEDAL_7V7KILL_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaTurn: [1, 4, 16, 32]
+    killCriteria:
+      - - [7, ["STATUS_DEAD", "FACTION_HOSTILE"]]
+
+  - type: STR_MEDAL_SHARPSHOOTER_NAME #killing 3 in a turn with firearm, battletype 1
+    description: STR_MEDAL_SHARPSHOOTER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_SHARPSHOOTER_1, STR_MEDAL_SHARPSHOOTER_2, STR_MEDAL_SHARPSHOOTER_3, STR_MEDAL_SHARPSHOOTER_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaTurn: [1, 4, 16, 32]
+    killCriteria:
+      - - [3, ["BT_FIREARM", "DT_AP", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [3, ["BT_FIREARM", "DT_LASER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [3, ["BT_FIREARM", "DT_PLASMA", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [3, ["BT_FIREARM", "DT_STUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [3, ["BT_FIREARM", "DT_ACID", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [3, ["BT_FIREARM", "DT_10", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [3, ["BT_FIREARM", "DT_11", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [3, ["BT_FIREARM", "DT_12", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [3, ["BT_FIREARM", "DT_13", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_CHAMPION_NAME #killing 3 in a turn with thrown weapons, bows, or sporting equipment
+    description: STR_MEDAL_CHAMPION_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_CHAMPION_1, STR_MEDAL_CHAMPION_2, STR_MEDAL_CHAMPION_3, STR_MEDAL_CHAMPION_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaTurn: [1, 4, 16, 32]
+    killCriteria:
+      - - [3, ["STR_SURVEY_KNOCKER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_WHIRLWIND_NAME #3 kills/stuns in a turn with a melee weapon, battletype 3
+    description: STR_MEDAL_WHIRLWIND_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_WHIRLWIND_1, STR_MEDAL_WHIRLWIND_2, STR_MEDAL_WHIRLWIND_3, STR_MEDAL_WHIRLWIND_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaTurn: [1, 4, 16, 32]
+    killCriteria:
+      - - [3, ["BT_MELEE", "DT_MELEE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [3, ["BT_MELEE", "DT_STUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [3, ["BT_MELEE", "DT_HE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [3, ["BT_MELEE", "DT_LASER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [3, ["BT_MELEE", "DT_PLASMA", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [3, ["BT_MELEE", "DT_MELEE", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      - - [3, ["BT_MELEE", "DT_STUN", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      - - [3, ["BT_MELEE", "DT_HE", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      - - [3, ["BT_MELEE", "DT_LASER", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      - - [3, ["BT_MELEE", "DT_PLASMA", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+
+  - type: STR_MEDAL_REACTIONFIRE_NAME #reaction fire instances
+    description: STR_MEDAL_REACTIONFIRE_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_REACTIONFIRE_1, STR_MEDAL_REACTIONFIRE_2, STR_MEDAL_REACTIONFIRE_3, STR_MEDAL_REACTIONFIRE_4, STR_MEDAL_REACTIONFIRE_5, STR_MEDAL_REACTIONFIRE_6, STR_MEDAL_REACTIONFIRE_7, STR_MEDAL_REACTIONFIRE_8, STR_MEDAL_REACTIONFIRE_9, STR_MEDAL_REACTIONFIRE_10]
+    sprite: 3
+    criteria:
+      totalReactionFire: [10, 20, 30, 50, 70, 100, 150, 200, 300, 500]
+
+  - type: STR_MEDAL_PURPLE_HEART_NAME #missions wounded
+    description: STR_MEDAL_PURPLE_HEART_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_PURPLE_HEART_1, STR_MEDAL_PURPLE_HEART_2, STR_MEDAL_PURPLE_HEART_3, STR_MEDAL_PURPLE_HEART_4]
+    sprite: 0
+    criteria:
+      totalTimesWounded: [1, 4, 16, 32]
+
+  - type: STR_MEDAL_CRIMSON_HEART_NAME #number of days wounded
+    description: STR_MEDAL_CRIMSON_HEART_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_CRIMSON_HEART_1, STR_MEDAL_CRIMSON_HEART_2, STR_MEDAL_CRIMSON_HEART_3, STR_MEDAL_CRIMSON_HEART_4]
+    sprite: 0
+    criteria:
+      totalDaysWounded: [32, 64, 128, 256]
+
+  - type: STR_MEDAL_HEALER_NAME  #wounds healed
+    description: STR_MEDAL_HEALER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_HEALER]
+    sprite: 0
+    criteria:
+      totalWoundsHealed: [10]
+
+  - type: STR_MEDAL_GLOBETROTTER_NAME #one mission in each region
+    description: STR_MEDAL_GLOBETROTTER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_GLOBETROTTER]
+    sprite: 2
+    criteria:
+      globeTrotter: [1]
+
+  - type: STR_MEDAL_BETRAYER_NAME #friendly kills
+    description: STR_MEDAL_BETRAYER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_BETRAYER]
+    sprite: 3
+    criteria:
+      killsWithCriteriaCareer: [1]
+    killCriteria:
+      - - [1, ["STATUS_DEAD", "FACTION_PLAYER"]]
+
+  - type: STR_MEDAL_CIV_KILLS_NAME #client kills
+    description: STR_MEDAL_CIV_KILLS_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_CIV_KILLS]
+    sprite: 3
+    criteria:
+      killsWithCriteriaCareer: [1]
+    killCriteria:
+      - - [1, ["STATUS_DEAD", "FACTION_NEUTRAL"]]
+
+  - type: STR_MEDAL_LONESURVIVOR_NAME #lone survivor of any mission
+    description: STR_MEDAL_LONESURVIVOR_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_LONESURVIVOR]
+    sprite: 3
+    criteria:
+      total_lone_survivor: [1]
+
+  - type: STR_MEDAL_MONSTER_NAME #kills with stun damage
+    description: STR_MEDAL_MONSTER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_MONSTER_1, STR_MEDAL_MONSTER_2, STR_MEDAL_MONSTER_3, STR_MEDAL_MONSTER_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [1, 4, 16, 32]
+    killCriteria:
+      - - [1, ["DT_STUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["DT_STUN", "FACTION_NEUTRAL", "STATUS_DEAD"]]
+      - - [1, ["DT_STUN", "FACTION_PLAYER", "STATUS_DEAD"]]
+
+#  - type: STR_MEDAL_CHOKER_NAME #kills with smoke damage
+#    description: STR_MEDAL_CHOKER_UFOPEDIA
+#    soldierBonusTypes: [STR_MEDAL_CHOKER_1, STR_MEDAL_CHOKER_2, STR_MEDAL_CHOKER_3, STR_MEDAL_CHOKER_4]
+#    sprite: 1
+#    criteria:
+#      killsWithCriteriaCareer: [1, 4, 16, 32]
+#    killCriteria:
+#      - - [1, ["STR_DAMAGE_SMOKE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+#      - - [1, ["STR_DAMAGE_SMOKE", "FACTION_NEUTRAL", "STATUS_DEAD"]]
+#      - - [1, ["STR_DAMAGE_SMOKE", "FACTION_PLAYER", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_PHYSICS_NAME #kills with armor piercing damage
+    description: STR_MEDAL_PHYSICS_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_PHYSICS_1, STR_MEDAL_PHYSICS_2, STR_MEDAL_PHYSICS_3, STR_MEDAL_PHYSICS_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [32, 64, 128, 256]
+    killCriteria:
+      - - [1, ["DT_AP", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_RADIANT_NAME #kills with laser damage
+    description: STR_MEDAL_RADIANT_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_RADIANT_1, STR_MEDAL_RADIANT_2, STR_MEDAL_RADIANT_3, STR_MEDAL_RADIANT_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [32, 64, 128, 256]
+    killCriteria:
+      - - [1, ["DT_LASER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_NOVA_NAME #kills with plasma damage
+    description: STR_MEDAL_NOVA_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_NOVA_1, STR_MEDAL_NOVA_2, STR_MEDAL_NOVA_3, STR_MEDAL_NOVA_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [32, 64, 128, 256]
+    killCriteria:
+      - - [1, ["DT_PLASMA", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_PURIFIER_NAME #kills with fire damage
+    description: STR_MEDAL_PURIFIER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_PURIFIER_1, STR_MEDAL_PURIFIER_2, STR_MEDAL_PURIFIER_3, STR_MEDAL_PURIFIER_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [32, 64, 128, 256]
+    killCriteria:
+      - - [1, ["DT_IN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_DISSOLVER_NAME #kills with acid damage
+    description: STR_MEDAL_DISSOLVER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_DISSOLVER_1, STR_MEDAL_DISSOLVER_2, STR_MEDAL_DISSOLVER_3, STR_MEDAL_DISSOLVER_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [32, 64, 128, 256]
+    killCriteria:
+      - - [1, ["DT_ACID", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_ZAPPER_NAME #kills with electric damage
+    description: STR_MEDAL_ZAPPER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_ZAPPER_1, STR_MEDAL_ZAPPER_2, STR_MEDAL_ZAPPER_3, STR_MEDAL_ZAPPER_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [32, 64, 128, 256]
+    killCriteria:
+      - - [1, ["STR_DAMAGE_10", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_HARMONIC_NAME #kills with sonic damage
+    description: STR_MEDAL_HARMONIC_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_HARMONIC_1, STR_MEDAL_HARMONIC_2, STR_MEDAL_HARMONIC_3, STR_MEDAL_HARMONIC_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [32, 64, 128, 256]
+    killCriteria:
+      - - [1, ["STR_DAMAGE_11", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_ORGANISM_NAME #kills/stuns with bio damage
+    description: STR_MEDAL_ORGANISM_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_ORGANISM_1, STR_MEDAL_ORGANISM_2, STR_MEDAL_ORGANISM_3, STR_MEDAL_ORGANISM_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [32, 64, 128, 256]
+    killCriteria:
+      - - [1, ["STR_DAMAGE_12", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_DAMAGE_12", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+
+  - type: STR_MEDAL_GRENADIER_NAME #kills with grenades
+    description: STR_MEDAL_GRENADIER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_GRENADIER_1, STR_MEDAL_GRENADIER_2, STR_MEDAL_GRENADIER_3, STR_MEDAL_GRENADIER_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [32, 64, 128, 256]
+    killCriteria:
+      - - [1, ["STR_PIPEBOMB", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_WEAPON_PROFICIENCY_NAME #kills by weapon
+    description: STR_MEDAL_WEAPON_PROFICIENCY_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_WEAPON_PROFICIENCY_1, STR_MEDAL_WEAPON_PROFICIENCY_2, STR_MEDAL_WEAPON_PROFICIENCY_3, STR_MEDAL_WEAPON_PROFICIENCY_4]
+    sprite: 2
+    criteria:
+      totalKillsWithAWeapon: [32, 64, 128, 256]
+
+  - type: STR_MEDAL_WRESTLER_NAME #stuns with special use empty hand melee attack
+    description: STR_MEDAL_WRESTLER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_WRESTLER_1, STR_MEDAL_WRESTLER_2, STR_MEDAL_WRESTLER_3, STR_MEDAL_WRESTLER_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [1, 4, 16, 32]
+    killCriteria:
+      - - [1, ["STR_UNARMED", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+
+  - type: STR_MEDAL_MAULER_NAME #kills with animal builtins
+    description: STR_MEDAL_MAULER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_MAULER_1, STR_MEDAL_MAULER_2, STR_MEDAL_MAULER_3, STR_MEDAL_MAULER_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [32, 64, 128, 256]
+    killCriteria:
+      - - [1, ["STR_SHARK_BITE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_HUNTER_KILLER_NAME #kills with machine builtins
+    description: STR_MEDAL_HUNTER_KILLER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_HUNTER_KILLER_1, STR_MEDAL_HUNTER_KILLER_2, STR_MEDAL_HUNTER_KILLER_3, STR_MEDAL_HUNTER_KILLER_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [32, 64, 128, 256]
+    killCriteria:
+      - - [1, ["STR_ALIEN_DRONE_WEAPON", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_GUNSLINGER_NAME #kills with pistols
+    description: STR_MEDAL_GUNSLINGER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_GUNSLINGER_1, STR_MEDAL_GUNSLINGER_2, STR_MEDAL_GUNSLINGER_3, STR_MEDAL_GUNSLINGER_4, STR_MEDAL_GUNSLINGER_5, STR_MEDAL_GUNSLINGER_6, STR_MEDAL_GUNSLINGER_7, STR_MEDAL_GUNSLINGER_8, STR_MEDAL_GUNSLINGER_9, STR_MEDAL_GUNSLINGER_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_BUSBOX_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_9MM_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_XN_LASER_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_ASSAULTER_NAME #kills with smgs
+    description: STR_MEDAL_ASSAULTER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_ASSAULTER_1, STR_MEDAL_ASSAULTER_2, STR_MEDAL_ASSAULTER_3, STR_MEDAL_ASSAULTER_4, STR_MEDAL_ASSAULTER_5, STR_MEDAL_ASSAULTER_6, STR_MEDAL_ASSAULTER_7, STR_MEDAL_ASSAULTER_8, STR_MEDAL_ASSAULTER_9, STR_MEDAL_ASSAULTER_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_DISPOSABLE_SMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_XN_LASER_SMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_TROOPER_NAME #kills with rifles
+    description: STR_MEDAL_TROOPER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_TROOPER_1, STR_MEDAL_TROOPER_2, STR_MEDAL_TROOPER_3, STR_MEDAL_TROOPER_4, STR_MEDAL_TROOPER_5, STR_MEDAL_TROOPER_6, STR_MEDAL_TROOPER_7, STR_MEDAL_TROOPER_8, STR_MEDAL_TROOPER_9, STR_MEDAL_TROOPER_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_9MM_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_XN_LASER_RIFLE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_SNIPER_NAME #kills with sniper rifles
+    description: STR_MEDAL_SNIPER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_SNIPER_1, STR_MEDAL_SNIPER_2, STR_MEDAL_SNIPER_3, STR_MEDAL_SNIPER_4, STR_MEDAL_SNIPER_5, STR_MEDAL_SNIPER_6, STR_MEDAL_SNIPER_7, STR_MEDAL_SNIPER_8, STR_MEDAL_SNIPER_9, STR_MEDAL_SNIPER_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_XN_LASER_SNIPER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_GUNNER_NAME #kills with machine guns
+    description: STR_MEDAL_GUNNER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_GUNNER_1, STR_MEDAL_GUNNER_2, STR_MEDAL_GUNNER_3, STR_MEDAL_GUNNER_4, STR_MEDAL_GUNNER_5, STR_MEDAL_GUNNER_6, STR_MEDAL_GUNNER_7, STR_MEDAL_GUNNER_8, STR_MEDAL_GUNNER_9, STR_MEDAL_GUNNER_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_XN_LASER_MG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_CANNONEER_NAME #kills with cannons
+    description: STR_MEDAL_CANNONEER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_CANNONEER_1, STR_MEDAL_CANNONEER_2, STR_MEDAL_CANNONEER_3, STR_MEDAL_CANNONEER_4, STR_MEDAL_CANNONEER_5, STR_MEDAL_CANNONEER_6, STR_MEDAL_CANNONEER_7, STR_MEDAL_CANNONEER_8, STR_MEDAL_CANNONEER_9, STR_MEDAL_CANNONEER_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_XN_LASER_CANNON", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_SHOTGUN_SURGEON_NAME #kills with shotguns
+    description: STR_MEDAL_SHOTGUN_SURGEON_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_SHOTGUN_SURGEON_1, STR_MEDAL_SHOTGUN_SURGEON_2, STR_MEDAL_SHOTGUN_SURGEON_3, STR_MEDAL_SHOTGUN_SURGEON_4, STR_MEDAL_SHOTGUN_SURGEON_5, STR_MEDAL_SHOTGUN_SURGEON_6, STR_MEDAL_SHOTGUN_SURGEON_7, STR_MEDAL_SHOTGUN_SURGEON_8, STR_MEDAL_SHOTGUN_SURGEON_9, STR_MEDAL_SHOTGUN_SURGEON_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_XN_LASER_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_BOMBARDIER_NAME #kills with launchers
+    description: STR_MEDAL_BOMBARDIER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_BOMBARDIER_1, STR_MEDAL_BOMBARDIER_2, STR_MEDAL_BOMBARDIER_3, STR_MEDAL_BOMBARDIER_4, STR_MEDAL_BOMBARDIER_5, STR_MEDAL_BOMBARDIER_6, STR_MEDAL_BOMBARDIER_7, STR_MEDAL_BOMBARDIER_8, STR_MEDAL_BOMBARDIER_9, STR_MEDAL_BOMBARDIER_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_GRENADE_LAUNCHER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_MORTAR", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_ROCKET_SCIENTIST_NAME #kills with rocket launchers
+    description: STR_MEDAL_ROCKET_SCIENTIST_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_ROCKET_SCIENTIST_1, STR_MEDAL_ROCKET_SCIENTIST_2, STR_MEDAL_ROCKET_SCIENTIST_3, STR_MEDAL_ROCKET_SCIENTIST_4, STR_MEDAL_ROCKET_SCIENTIST_5, STR_MEDAL_ROCKET_SCIENTIST_6, STR_MEDAL_ROCKET_SCIENTIST_7, STR_MEDAL_ROCKET_SCIENTIST_8, STR_MEDAL_ROCKET_SCIENTIST_9, STR_MEDAL_ROCKET_SCIENTIST_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_ROCKET_LAUNCHER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_SORCERER_NAME #kills with psi weapons
+    description: STR_MEDAL_SORCERER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_SORCERER_1, STR_MEDAL_SORCERER_2, STR_MEDAL_SORCERER_3, STR_MEDAL_SORCERER_4, STR_MEDAL_SORCERER_5, STR_MEDAL_SORCERER_6, STR_MEDAL_SORCERER_7, STR_MEDAL_SORCERER_8, STR_MEDAL_SORCERER_9, STR_MEDAL_SORCERER_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_PSICLONE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_FLAME_GLOVE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_TECHNICIAN_NAME #kills with tools
+    description: STR_MEDAL_TECHNICIAN_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_TECHNICIAN_1, STR_MEDAL_TECHNICIAN_2, STR_MEDAL_TECHNICIAN_3, STR_MEDAL_TECHNICIAN_4, STR_MEDAL_TECHNICIAN_5, STR_MEDAL_TECHNICIAN_6, STR_MEDAL_TECHNICIAN_7, STR_MEDAL_TECHNICIAN_8, STR_MEDAL_TECHNICIAN_9, STR_MEDAL_TECHNICIAN_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_WRENCH", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_MULTITOOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_ELECTRIC_NAILER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_SURVEY_KNOCKER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_WARRIOR_NAME #kills with contemporary melee weapons
+    description: STR_MEDAL_WARRIOR_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_WARRIOR_1, STR_MEDAL_WARRIOR_2, STR_MEDAL_WARRIOR_3, STR_MEDAL_WARRIOR_4, STR_MEDAL_WARRIOR_5, STR_MEDAL_WARRIOR_6, STR_MEDAL_WARRIOR_7, STR_MEDAL_WARRIOR_8, STR_MEDAL_WARRIOR_9, STR_MEDAL_WARRIOR_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_STL_KNIFE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_TRADITIONALIST_NAME #kills with archaic weapons
+    description: STR_MEDAL_TRADITIONALIST_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_TRADITIONALIST_1, STR_MEDAL_TRADITIONALIST_2, STR_MEDAL_TRADITIONALIST_3, STR_MEDAL_TRADITIONALIST_4, STR_MEDAL_TRADITIONALIST_5, STR_MEDAL_TRADITIONALIST_6, STR_MEDAL_TRADITIONALIST_7, STR_MEDAL_TRADITIONALIST_8, STR_MEDAL_TRADITIONALIST_9, STR_MEDAL_TRADITIONALIST_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_COMPOUND_BOW", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_PRIMAL_NAME #kills with ancient weapons
+    description: STR_MEDAL_PRIMAL_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_PRIMAL_1, STR_MEDAL_PRIMAL_2, STR_MEDAL_PRIMAL_3, STR_MEDAL_PRIMAL_4, STR_MEDAL_PRIMAL_5, STR_MEDAL_PRIMAL_6, STR_MEDAL_PRIMAL_7, STR_MEDAL_PRIMAL_8, STR_MEDAL_PRIMAL_9, STR_MEDAL_PRIMAL_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_BOW", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_INCAPACITATOR_NAME #stuns with non-electric stunning weapons
+    description: STR_MEDAL_INCAPACITATOR_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_INCAPACITATOR_1, STR_MEDAL_INCAPACITATOR_2, STR_MEDAL_INCAPACITATOR_3, STR_MEDAL_INCAPACITATOR_4, STR_MEDAL_INCAPACITATOR_5, STR_MEDAL_INCAPACITATOR_6, STR_MEDAL_INCAPACITATOR_7, STR_MEDAL_INCAPACITATOR_8, STR_MEDAL_INCAPACITATOR_9, STR_MEDAL_INCAPACITATOR_10]
+    sprite: 4
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_TONFA", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+
+  - type: STR_MEDAL_TASEMASTER_NAME #stuns with electric weapons
+    description: STR_MEDAL_TASEMASTER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_TASEMASTER_1, STR_MEDAL_TASEMASTER_2, STR_MEDAL_TASEMASTER_3, STR_MEDAL_TASEMASTER_4, STR_MEDAL_TASEMASTER_5, STR_MEDAL_TASEMASTER_6, STR_MEDAL_TASEMASTER_7, STR_MEDAL_TASEMASTER_8, STR_MEDAL_TASEMASTER_9, STR_MEDAL_TASEMASTER_10]
+    sprite: 4
+    criteria:
+      killsWithCriteriaCareer: [2, 4, 7, 10, 15, 20, 25, 30, 40, 50]
+    killCriteria:
+      - - [1, ["STR_MULTITOOL", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+
+  - type: STR_MEDAL_SLEEPER_NAME #stuns with psi weapons
+    description: STR_MEDAL_SLEEPER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_SLEEPER_1, STR_MEDAL_SLEEPER_2, STR_MEDAL_SLEEPER_3, STR_MEDAL_SLEEPER_4, STR_MEDAL_SLEEPER_5, STR_MEDAL_SLEEPER_6, STR_MEDAL_SLEEPER_7, STR_MEDAL_SLEEPER_8, STR_MEDAL_SLEEPER_9, STR_MEDAL_SLEEPER_10]
+    sprite: 4
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_PSICLONE", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+
+  - type: STR_MEDAL_REVOLVINGDOOR_NAME #dying more than once
+    description: STR_MEDAL_REVOLVINGDOOR_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_REVOLVINGDOOR_1, STR_MEDAL_REVOLVINGDOOR_2, STR_MEDAL_REVOLVINGDOOR_3, STR_MEDAL_REVOLVINGDOOR_4, STR_MEDAL_REVOLVINGDOOR_5, STR_MEDAL_REVOLVINGDOOR_6, STR_MEDAL_REVOLVINGDOOR_7, STR_MEDAL_REVOLVINGDOOR_8, STR_MEDAL_REVOLVINGDOOR_9, STR_MEDAL_REVOLVINGDOOR_10]
+    sprite: 0
+    criteria:
+      isDead: [2, 4, 8, 16, 24, 32, 64, 96, 128, 256]

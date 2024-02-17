@@ -1,0 +1,409 @@
+research:
+#debug
+  - name: STR_LOCK
+    needItem: true
+
+  - name: STR_DEBUG
+#    needItem: true
+    cost: 1
+
+  - name: STR_TODO
+#    needItem: true
+    cost: 1
+    unlockFinalMission: true
+
+#files
+  - name: STR_BEGIN_MEZONIC
+    dependencies:
+      - STR_LOCK
+
+  - name: STR_OLD_DATA
+    requiresBaseFunc:
+      - STR_SERVICE_UPLINK
+    cost: 1
+
+  - name: STR_INPUT_OUTPUT
+    cost: 3
+
+  - name: STR_KERNEL
+    cost: 3
+
+  - name: STR_ANALOGUE_DEVICES
+    dependencies:
+      - STR_INPUT_OUTPUT
+    cost: 3
+
+  - name: STR_EXPANSION
+    dependencies:
+      - STR_INPUT_OUTPUT
+    cost: 3
+
+  - name: STR_SUBSIDIARIES
+    dependencies:
+      - STR_KERNEL
+    cost: 3
+
+  - name: STR_MARKET_COMPETITION
+    dependencies:
+      - STR_SUBSIDIARIES
+    cost: 3
+
+  - name: STR_CONTROL
+    dependencies:
+      - STR_MARKET_COMPETITION
+    cost: 5
+
+  - name: STR_SECURITY
+    dependencies:
+      - STR_KERNEL
+      - STR_PRIMARY_OPERATIONS
+    cost: 3
+
+#operations
+  - name: STR_PRIMARY_OPERATIONS
+    dependencies:
+      - STR_OLD_DATA
+    cost: 3
+
+  - name: STR_SECONDARY_OPERATIONS
+    dependencies:
+      - STR_OLD_DATA
+    cost: 3
+
+  - name: STR_FORBIDDEN_OPERATIONS
+    dependencies:
+      - STR_SECURITY
+      - STR_EXPANSION
+    getOneFree:
+      - STR_HOLDING_CELLS
+    cost: 6
+
+#communications
+  - name: STR_VENDOR_PRINTER
+    dependencies:
+      - STR_SUBSIDIARIES
+    cost: 5
+
+  - name: STR_VENDOR_P2P
+    dependencies:
+      - STR_SUBSIDIARIES
+      - STR_P2P_PREQ
+    cost: 15
+
+  - name: STR_VENDOR_MEDI
+    dependencies:
+      - STR_SUBSIDIARIES
+    cost: 5
+    getOneFree:
+      - STR_MEDI_KIT
+
+  - name: STR_VENDOR_BUILDER
+    dependencies:
+      - STR_SUBSIDIARIES
+      - STR_EXPANSION
+    cost: 5
+
+  - name: STR_VENDOR_HD
+    dependencies:
+      - STR_SUBSIDIARIES
+      - STR_TODO
+    cost: 10
+
+  - name: STR_VENDOR_USC
+    dependencies:
+      - STR_SUBSIDIARIES
+      - STR_TODO
+    cost: 15
+
+  - name: STR_HYBRID_DATA
+    needItem: true
+    cost: 4
+    getOneFree:
+      - STR_HYBRID_MEMORY_1
+      - STR_HYBRID_MEMORY_2
+      - STR_HYBRID_MEMORY_3
+      - STR_HYBRID_MEMORY_4
+
+  - name: STR_HYBRID_MEMORY_1
+    dependencies:
+      - STR_HYBRID_DATA
+    points: 10
+  - name: STR_HYBRID_MEMORY_2
+    dependencies:
+      - STR_HYBRID_DATA
+    points: 10
+  - name: STR_HYBRID_MEMORY_3
+    dependencies:
+      - STR_HYBRID_DATA
+    points: 10
+  - name: STR_HYBRID_MEMORY_4
+    dependencies:
+      - STR_HYBRID_DATA
+    points: 10
+
+#technologies
+  - name: STR_GUNPOWDER
+    dependencies:
+      - STR_VENDOR_PRINTER
+    cost: 10
+    getOneFree:
+      - STR_PIPEBOMB
+
+  - name: STR_DRONE_CRACKING
+    dependencies:
+      - STR_DC_PREQ
+    cost: 7
+
+  - name: STR_PASS_CRACKING
+    dependencies:
+      - STR_LI_PREQ
+    cost: 10
+    getOneFree:
+      - STR_LOCAL_INTERFACE
+
+#asp craft
+#facilities
+  - name: STR_HOLDING_CELLS
+    dependencies:
+      - STR_FORBIDDEN_OPERATIONS
+
+  - name: STR_LOCAL_INTERFACE
+    dependencies:
+      - STR_PASS_CRACKING
+
+#equipment
+# kinetic
+  - name: STR_BUSBOX_PISTOL
+    unlocks:
+      - STR_COMBALL_AMMO
+      - STR_PAPERSHOT_AMMO
+
+  - name: STR_COMBALL_AMMO
+    dependencies:
+      - STR_BUSBOX_PISTOL
+
+  - name: STR_PAPERSHOT_AMMO
+    dependencies:
+      - STR_BUSBOX_PISTOL
+
+  - name: STR_9MM_PISTOL
+    needItem: true
+    cost: 2
+    unlocks:
+      - STR_9MM_AMMO
+      - STR_P2P_PREQ
+
+  - name: STR_9MM_RIFLE
+    needItem: true
+    cost: 2
+    unlocks:
+      - STR_9MM_AMMO
+      - STR_P2P_PREQ
+
+  - name: STR_9MM_AMMO
+    dependencies:
+      - STR_9MM_PISTOL
+      - STR_9MM_RIFLE
+
+  - name: STR_DISPOSABLE_SMG
+    needItem: true
+    cost: 2
+    unlocks:
+      - STR_P2P_PREQ
+
+  - name: STR_DART_PISTOL
+    needItem: true
+    cost: 2
+    unlocks:
+      - STR_DART_AMMO0
+      - STR_DART_AMMO1
+
+  - name: STR_DART_AMMO0
+    dependencies:
+      - STR_DART_PISTOL
+
+  - name: STR_DART_AMMO1
+    dependencies:
+      - STR_DART_PISTOL
+
+# laser
+  - name: STR_XN_LASER_PISTOL
+
+  - name: STR_XN_LASER_SMG
+    needItem: true
+    cost: 5
+
+  - name: STR_XN_LASER_RIFLE
+    needItem: true
+    cost: 5
+
+  - name: STR_XN_LASER_SNIPER
+    needItem: true
+    cost: 5
+
+  - name: STR_XN_LASER_MG
+    needItem: true
+    cost: 5
+
+  - name: STR_XN_LASER_CANNON
+    needItem: true
+    cost: 5
+
+  - name: STR_XN_LASER_SHOTGUN
+    needItem: true
+    cost: 5
+
+# grenades
+  - name: STR_PIPEBOMB
+    needItem: true
+    cost: 2
+
+# melee
+  - name: STR_STL_KNIFE
+
+# tools
+  - name: STR_WRENCH
+    needItem: true
+    cost: 2
+
+  - name: STR_MULTITOOL
+    needItem: true
+    cost: 2
+
+  - name: STR_ELECTRIC_NAILER
+    needItem: true
+    cost: 2
+    unlocks:
+      - STR_ELECTRIC_NAILER_AMMO
+
+  - name: STR_ELECTRIC_NAILER_AMMO
+    dependencies:
+      - STR_ELECTRIC_NAILER
+
+  - name: STR_SURVEY_KNOCKER
+    needItem: true
+    cost: 2
+    unlocks:
+      - STR_KNOCK_FLARE_AMMO
+      - STR_KNOCK_BOLT_AMMO
+      - STR_CHEMFLARE
+
+  - name: STR_KNOCK_FLARE_AMMO
+    dependencies:
+      - STR_SURVEY_KNOCKER
+
+  - name: STR_KNOCK_BOLT_AMMO
+    dependencies:
+      - STR_SURVEY_KNOCKER
+
+  - name: STR_EXTINGUISHER
+    needItem: true
+    cost: 2
+
+# utilities
+  - name: STR_ELECTROFLARE
+
+  - name: STR_CHEMFLARE
+    dependencies:
+      - STR_SURVEY_KNOCKER
+
+  - name: STR_MEDI_SPRAY
+
+  - name: STR_MEDI_KIT
+    dependencies:
+      - STR_VENDOR_MEDI
+
+#drones
+  - name: STR_DRONE_HYBRID_ITEM
+    needItem: true
+    cost: 4
+    unlocks:
+      - STR_DC_PREQ
+
+  - name: STR_DRONE_HUMAN_ITEM
+    needItem: true
+    cost: 4
+    unlocks:
+      - STR_DC_PREQ
+
+  - name: STR_DRONE_SHARK_ITEM
+    needItem: true
+    cost: 4
+    unlocks:
+      - STR_DC_PREQ
+
+# armor
+  - name: STR_PLEX_DRONE_ARMOR
+
+  - name: STR_DURA_DRONE_ARMOR
+    needItem: true
+    cost: 4
+
+  - name: STR_AQUAVEST_DRONE_ARMOR
+    needItem: true
+    cost: 4
+
+#potential targets
+#uso analysis
+#salvage
+# materials
+  - name: STR_BIONIC_INTERLACE
+    needItem: true
+    cost: 5
+
+  - name: STR_SJB_LICENSE
+    needItem: true
+    cost: 3
+
+  - name: STR_AG_UNIT
+    needItem: true
+    cost: 15
+
+  - name: STR_BIOMASS
+    needItem: true
+    cost: 3
+
+  - name: STR_ELERIUM
+    needItem: true
+    cost: 25
+
+# abstract
+  - name: STR_BOUNTY_1
+    needItem: true
+    cost: 2
+
+  - name: STR_BRAND_LOYALTY
+    needItem: true
+    cost: 2
+
+# containers
+  - name: STR_CRIMINAL_CONTAINER_1
+    needItem: true
+    cost: 2
+    unlocks:
+      - STR_P2P_PREQ
+
+  - name: STR_XN_CONTAINER_1
+    needItem: true
+    cost: 3
+    unlocks:
+      - STR_LI_PREQ
+
+#manuals
+#accolades
+#preqs
+  - name: STR_DC_PREQ
+    dependencies:
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HUMAN_ITEM
+      - STR_DRONE_SHARK_ITEM
+
+  - name: STR_P2P_PREQ
+    dependencies:
+      - STR_CRIMINAL_CONTAINER_1
+      - STR_9MM_PISTOL
+      - STR_DISPOSABLE_SMG
+
+  - name: STR_LI_PREQ
+    dependencies:
+      - STR_XN_CONTAINER_1

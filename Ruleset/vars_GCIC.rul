@@ -1,0 +1,187 @@
+
+startingTime:
+  second: 0
+  minute: 0
+  hour: 12
+  weekday: 6
+  day: 1
+  month: 3
+  year: 2486
+startingDifficulty: 1
+difficultyCoefficient: [-2, 0, 2, 4, 6]
+statGrowthMultipliers:
+  tu: 4
+  stamina: 4
+  health: 2
+  bravery: 0
+  reactions: 6
+  firing: 6
+  throwing: 2
+  strength: 2
+  psiStrength: 4
+  psiSkill: 4
+  melee: 6
+aimMultipliers: [0.5, 1.0, 1.0, 1.0, 1.0]
+armorMultipliers: [0.75, 1.0, 1.0, 1.0, 1.0]
+sellPriceCoefficient: [100, 100, 100, 75, 50]
+difficultyCoefficientOverrides:
+  monthlyRatingThresholds: [-999999, -999999, -999999, -999999, -999999]
+  ufoFiringRateCoefficients: [150, 100, 100, 85, 80]
+  ufoEscapeCountdownCoefficients: [150, 100, 100, 85, 80]
+  retaliationTriggerOdds: [4, 12, 12, 12, 12]
+  retaliationBaseRegionOdds: [25, 50, 50, 65, 75]
+  aliensFacingCraftOdds: [0, 25, 25, 80, 100]
+#flagByKills: [1,5,10,25,50,75,100]
+costEngineer: 25000
+costScientist: 40000
+hireEngineersUnlockResearch: STR_DEBUG
+hireScientistsUnlockResearch: STR_DEBUG
+shortRadarRange: 2000
+timePersonnel: 72
+initialFunding: 188
+performanceBonusFactor: 100
+#monthlyRatings:
+#   21600: STR_MT_RATING_EXEMPLARY
+#   7200: STR_MT_RATING_EXCELLENT
+#   2400: STR_MT_RATING_GREAT
+#   800: STR_MT_RATING_GOOD
+#   0: STR_MT_RATING_OK
+#   -799: STR_MT_RATING_POOR
+#   -2399: STR_MT_RATING_BAD
+#   -5599: STR_MT_RATING_TERRIBLE
+#   -99999: STR_MT_RATING_ABOMINABLE
+#missionRatings:
+#   3000: STR_MT_RATING_EXEMPLARY
+#   1400: STR_MT_RATING_EXCELLENT
+#   600: STR_MT_RATING_GREAT
+#   200: STR_MT_RATING_GOOD
+#   -15: STR_MT_RATING_OK
+#   -50: STR_MT_RATING_POOR
+#   -200: STR_MT_RATING_BAD
+#   -800: STR_MT_RATING_TERRIBLE
+#   -10000: STR_MT_RATING_ABOMINABLE
+defeatScore: -999999
+defeatFunds: -1000000
+maxLookVariant: 8
+turnAIUseGrenade: 1
+turnAIUseBlaster: 1
+surrenderMode: 2
+chanceToStopRetaliation: 70
+tooMuchSmokeThreshold: 13
+bughuntMinTurn: 15
+bughuntMaxEnemies: 2
+bughuntRank: 0
+bughuntLowMorale: 70
+bughuntTimeUnitsLeft: 35
+ufoGlancingHitThreshold: 5
+ufoBeamWidthParameter: 50
+pilotAccuracyZeroPoint: 50
+pilotAccuracyRange: 50
+pilotReactionsZeroPoint: 50
+pilotReactionsRange: 50
+pilotBraveryThresholds: [100, 80, 40]
+escortRange: 50
+drawEnemyRadarCircles: 2
+crewEmergencyEvacuationSurvivalChance: 100
+buildTimeReductionScaling: 75
+displayCustomCategories: 1
+extraNerdyPediaInfoType: 2
+pediaReplaceCraftFuelWithRangeType: 0
+minReactionAccuracy: 10
+kneelBonusGlobal: 100
+oneHandedPenaltyGlobal: 100
+maxViewDistance: 30
+noLOSAccuracyPenaltyGlobal: 50
+baseDefenseMapFromLocation: 1
+stunningImprovesMorale: true
+enableNewResearchSorting: true
+statisticalBulletConservation: true
+showDogfightDistanceInKm: true
+showFullNameInAlienInventory: true
+giveScoreAlsoForResearchedArtifacts: true
+buildInfiltrationBaseCloseToTheCountry: true
+lessAliensDuringBaseDefense: false
+fakeUnderwaterBaseUnlockResearch: STR_TODO
+psiUnlockResearch: STR_TODO
+mana:
+  enabled: true
+  battleUI: true
+  unlockResearch: STR_TODO
+  trainingPrimary: true
+  trainingSecondary: true
+  replenishAfterMission: false
+alienFuel: [STR_ELERIUM, 25]
+fontName: AmigaFont.dat
+lighting:
+  enhanced: 3
+
+
+fixedUserOptions:
+  battleUFOExtenderAccuracy: true
+  canSellLiveAliens: true
+  retainCorpses: false
+
+recommendedUserOptions:
+  customInitialBase: false
+  weaponSelfDestruction: false
+  soldierDiaries: true
+  storageLimitsEnforced: true
+  craftLaunchAlways: true
+  canTransferCraftsWhileAirborne: true
+  showMoreStatsInInventoryView: true
+  showAllCommendations: false
+  strafe: true
+  forceFire: true
+  globeSeasons: true
+  globeAllRadarsOnBaseBuild: true
+  alienBleeding: true
+  noAlienPanicMessages: true
+  allowPsionicCapture: true
+  allowPsiStrengthImprovement: false
+  psiStrengthEval: true
+  battleInstantGrenade: false
+  battleExplosionHeight: 2
+  oxcePlayBriefingMusicDuringEquipment: true
+  oxceRememberDisabledCraftWeapons: true
+  oxceUfoLandingAlert: false
+  oxceStartUpTextMode: 1
+  battleAutoEnd: true
+  oxceAutoSell: true
+  oxceManufactureScrollSpeed: 1
+  oxceManufactureScrollSpeedWithCtrl: 5
+  oxceResearchScrollSpeed: 1
+  oxceResearchScrollSpeedWithCtrl: 5
+  oxceHighlightNewTopics: true
+  oxceEnableOffCentreShooting: true
+  anytimePsiTraining: true
+  oxceWoundedDefendBaseIf: 70
+#  oxceNightVisionColor: 2
+#  oxceAutoNightVisionThreshold: 7
+
+constants:
+#  explosionOffset: 8
+#  underwaterSmokeOffset: 8
+  extendedItemReloadCost: true
+  extendedRunningCost: true
+  extendedHwpLoadOrder: true
+  extendedMeleeReactions: 2
+  extendedTerrainMelee: 4
+  extendedUnderwaterThrowFactor: 50
+
+ai:
+  extendedFireModeChoice: true
+  pickUpWeaponsMoreActively: true
+  pickUpWeaponsMoreActivelyCiv: true
+  destroyBaseFacilities: true
+  fireChoiceIntelCoeff: 5
+  fireChoiceAggroCoeff: 5
+
+alienItemLevels:
+  - [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+transparencyLUTs:
+  - colors:
+      - [  8,  8, 12, 2 ] #white
+      - [ 16,  8,  0, 2 ] #orange
+      - [  0, 12, 12, 2 ] #cyan
+      - [  4, 16,  4, 2 ] #green

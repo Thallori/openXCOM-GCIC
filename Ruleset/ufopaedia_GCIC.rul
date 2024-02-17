@@ -1,0 +1,710 @@
+ufopaedia:
+#files
+  - id: STR_BEGIN_MEZONIC
+    requires:
+      - STR_BEGIN_MEZONIC
+    text: STR_BEGIN_MEZONIC_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_OLD_DATA
+    requires:
+      - STR_OLD_DATA
+    text: STR_OLD_DATA_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_INPUT_OUTPUT
+    requires:
+      - STR_INPUT_OUTPUT
+    text: STR_INPUT_OUTPUT_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_ANALOGUE_DEVICES
+    requires:
+      - STR_ANALOGUE_DEVICES
+    text: STR_ANALOGUE_DEVICES_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_EXPANSION
+    requires:
+      - STR_EXPANSION
+    text: STR_EXPANSION_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_KERNEL
+    requires:
+      - STR_KERNEL
+    text: STR_KERNEL_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_SUBSIDIARIES
+    requires:
+      - STR_SUBSIDIARIES
+    text: STR_SUBSIDIARIES_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MARKET_COMPETITION
+    requires:
+      - STR_MARKET_COMPETITION
+    text: STR_MARKET_COMPETITION_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_CONTROL
+    requires:
+      - STR_CONTROL
+    text: STR_CONTROL_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_SECURITY
+    requires:
+      - STR_SECURITY
+    text: STR_SECURITY_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+#operations
+  - id: STR_PRIMARY_OPERATIONS
+    requires:
+      - STR_PRIMARY_OPERATIONS
+    text: STR_PRIMARY_OPERATIONS_UFOPEDIA
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_SECONDARY_OPERATIONS
+    requires:
+      - STR_SECONDARY_OPERATIONS
+    text: STR_SECONDARY_OPERATIONS_UFOPEDIA
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_FORBIDDEN_OPERATIONS
+    requires:
+      - STR_FORBIDDEN_OPERATIONS
+    text: STR_FORBIDDEN_OPERATIONS_UFOPEDIA
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+#connections
+  - id: STR_VENDOR_PRINTER
+    requires:
+      - STR_VENDOR_PRINTER
+    text: STR_VENDOR_PRINTER_UFOPEDIA
+    section: STR_CONNECTIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_PRINT
+
+  - id: STR_VENDOR_P2P
+    requires:
+      - STR_VENDOR_P2P
+    text: STR_VENDOR_P2P_UFOPEDIA
+    section: STR_CONNECTIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_P2P
+
+  - id: STR_VENDOR_MEDI
+    requires:
+      - STR_VENDOR_MEDI
+    text: STR_VENDOR_MEDI_UFOPEDIA
+    section: STR_CONNECTIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_MEDI
+
+  - id: STR_VENDOR_BUILDER
+    requires:
+      - STR_VENDOR_BUILDER
+    text: STR_VENDOR_BUILDER_UFOPEDIA
+    section: STR_CONNECTIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_BUILDER
+
+  - id: STR_VENDOR_HD
+    requires:
+      - STR_VENDOR_HD
+    text: STR_VENDOR_HD_UFOPEDIA
+    section: STR_CONNECTIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_VENDOR_USC
+    requires:
+      - STR_VENDOR_USC
+    text: STR_VENDOR_USC_UFOPEDIA
+    section: STR_CONNECTIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_HYBRID_DATA
+    requires:
+      - STR_HYBRID_DATA
+    text: STR_HYBRID_DATA_UFOPEDIA
+    section: STR_SALVAGE_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_HYBRID_MEMORY_1
+    requires:
+      - STR_HYBRID_MEMORY_1
+    text: STR_HYBRID_MEMORY_1_UFOPEDIA
+    section: STR_CONNECTIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_HYBRID_MEMORY_2
+    requires:
+      - STR_HYBRID_MEMORY_2
+    text: STR_HYBRID_MEMORY_2_UFOPEDIA
+    section: STR_CONNECTIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_HYBRID_MEMORY_3
+    requires:
+      - STR_HYBRID_MEMORY_3
+    text: STR_HYBRID_MEMORY_3_UFOPEDIA
+    section: STR_CONNECTIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_HYBRID_MEMORY_4
+    requires:
+      - STR_HYBRID_MEMORY_4
+    text: STR_HYBRID_MEMORY_4_UFOPEDIA
+    section: STR_CONNECTIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+#technologies
+  - id: STR_MONEY_1
+    text: STR_MONEY_1_UFOPEDIA
+    section: STR_TECHNOLOGIES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_GUNPOWDER
+    requires:
+      - STR_GUNPOWDER
+    text: STR_GUNPOWDER_UFOPEDIA
+    section: STR_TECHNOLOGIES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_DRONE_CRACKING
+    requires:
+      - STR_DRONE_CRACKING
+    text: STR_DRONE_CRACKING_UFOPEDIA
+    section: STR_TECHNOLOGIES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_PASS_CRACKING
+    requires:
+      - STR_PASS_CRACKING
+    text: STR_PASS_CRACKING_UFOPEDIA
+    section: STR_TECHNOLOGIES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+#asp craft
+  - id: STR_APS
+    text: STR_APS_UFOPEDIA
+    section: STR_APS_CRAFT_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_HD_CROSSOVER
+    text: STR_HD_CROSSOVER_UFOPEDIA
+    section: STR_APS_CRAFT_UC
+    type_id: 1
+    image_id: CRAFT_CROSSOVER_CPAL
+    rect_text:
+      x: 5
+      y: 45
+      width: 145
+      height: 100
+    rect_stats:
+      x: 5
+      y: 140
+      width: 140
+      height: 60
+
+  - id: STR_USC_BICUBE
+    requires:
+      - STR_VENDOR_USC
+    text: STR_USC_BICUBE_UFOPEDIA
+    section: STR_APS_CRAFT_UC
+    type_id: 1
+    image_id: CRAFT_BICUBE_CPAL
+    rect_text:
+      x: 5
+      y: 45
+      width: 145
+      height: 100
+    rect_stats:
+      x: 5
+      y: 140
+      width: 140
+      height: 60
+
+#hardpoints
+  - id: STR_BATBOX
+    text: STR_BATBOX_UFOPEDIA
+    section: STR_APS_CRAFT_UC
+    type_id: 2
+    image_id: BATBOX.SPK
+
+#facilities
+  - id: STR_CENTRAL_ACCESS
+    text: STR_CENTRAL_ACCESS_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
+  - id: STR_GARAGE
+    text: STR_GARAGE_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
+  - id: STR_BUNK_RACKS
+    text: STR_BUNK_RACKS_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
+  - id: STR_DATACENTER
+    text: STR_DATACENTER_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
+  - id: STR_HOLDING_CELLS
+    requires:
+      - STR_HOLDING_CELLS
+    text: STR_HOLDING_CELLS_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
+  - id: STR_STOREROOM
+    text: STR_STOREROOM_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
+  - id: STR_DEPOT
+    text: STR_DEPOT_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
+  - id: STR_CORRIDOR
+    text: STR_CORRIDOR_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
+#equipment
+# kinetic
+  - id: STR_BUSBOX_PISTOL
+    text: STR_BUSBOX_PISTOL_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_COMBALL_AMMO
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_PAPERSHOT_AMMO
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_9MM_PISTOL
+    requires:
+      - STR_9MM_PISTOL
+    text: STR_9MM_PISTOL_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_9MM_RIFLE
+    requires:
+      - STR_9MM_RIFLE
+    text: STR_9MM_RIFLE_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_9MM_AMMO
+    requires:
+      - STR_9MM_AMMO
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_DISPOSABLE_SMG
+    requires:
+      - STR_DISPOSABLE_SMG
+    text: STR_DISPOSABLE_SMG_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+# aquatic
+  - id: STR_DART_PISTOL
+    requires:
+      - STR_DART_PISTOL
+    text: STR_DART_PISTOL_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_DART_AMMO0
+    requires:
+      - STR_DART_AMMO0
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_DART_AMMO1
+    requires:
+      - STR_DART_AMMO1
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+# laser
+  - id: STR_XN_LASER_PISTOL
+    requires:
+      - STR_XN_LASER_PISTOL
+    text: STR_XN_LASER_PISTOL_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_XN_LASER_SMG
+    requires:
+      - STR_XN_LASER_SMG
+    text: STR_XN_LASER_SMG_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_XN_LASER_RIFLE
+    requires:
+      - STR_XN_LASER_RIFLE
+    text: STR_XN_LASER_RIFLE_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_XN_LASER_SNIPER
+    requires:
+      - STR_XN_LASER_SNIPER
+    text: STR_XN_LASER_SNIPER_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_XN_LASER_MG
+    requires:
+      - STR_XN_LASER_MG
+    text: STR_XN_LASER_MG_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_XN_LASER_CANNON
+    requires:
+      - STR_XN_LASER_CANNON
+    text: STR_XN_LASER_CANNON_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_XN_LASER_SHOTGUN
+    requires:
+      - STR_XN_LASER_SHOTGUN
+    text: STR_XN_LASER_SHOTGUN_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+# grenades
+  - id: STR_PIPEBOMB
+    requires:
+      - STR_PIPEBOMB
+    text: STR_PIPEBOMB_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+# melee
+  - id: STR_STL_KNIFE
+    text: STR_STL_KNIFE_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+# tools
+  - id: STR_WRENCH
+    requires:
+      - STR_WRENCH
+    text: STR_WRENCH_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_MULTITOOL
+    requires:
+      - STR_MULTITOOL
+    text: STR_MULTITOOL_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_ELECTRIC_NAILER
+    requires:
+      - STR_ELECTRIC_NAILER
+    text: STR_ELECTRIC_NAILER_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_ELECTRIC_NAILER_AMMO
+    requires:
+      - STR_ELECTRIC_NAILER
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_SURVEY_KNOCKER
+    requires:
+      - STR_SURVEY_KNOCKER
+    text: STR_SURVEY_KNOCKER_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_KNOCK_FLARE_AMMO
+    requires:
+      - STR_SURVEY_KNOCKER
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_KNOCK_BOLT_AMMO
+    requires:
+      - STR_SURVEY_KNOCKER
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_EXTINGUISHER
+    requires:
+      - STR_EXTINGUISHER
+    text: STR_EXTINGUISHER_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+# utility
+  - id: STR_ELECTROFLARE
+    text: STR_ELECTROFLARE_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_CHEMFLARE
+    requires:
+      - STR_SURVEY_KNOCKER
+    text: STR_CHEMFLARE_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_MEDI_SPRAY
+    text: STR_MEDI_SPRAY_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_MEDI_KIT
+    requires:
+      - STR_MEDI_KIT
+    text: STR_MEDI_KIT_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+#drones
+  - id: STR_DRONE_HYBRID_ITEM
+    requires:
+      - STR_DRONE_HYBRID_ITEM
+    text: STR_DRONE_HYBRID_ITEM_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_DRONE_HUMAN_ITEM
+    requires:
+      - STR_DRONE_HUMAN_ITEM
+    text: STR_DRONE_HUMAN_ITEM_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_DRONE_SHARK_ITEM
+    requires:
+      - STR_DRONE_SHARK_ITEM
+    text: STR_DRONE_SHARK_ITEM_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: SHARK_CPAL
+
+# armor
+  - id: STR_PLEX_DRONE_ARMOR
+    requires:
+      - STR_PLEX_DRONE_ARMOR
+    text: STR_PLEX_DRONE_ARMOR_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ARMOR_PLEX_CPAL
+
+  - id: STR_DURA_DRONE_ARMOR
+    requires:
+      - STR_DURA_DRONE_ARMOR
+    text: STR_DURA_DRONE_ARMOR_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ARMOR_DURA_CPAL
+
+  - id: STR_AQUAVEST_DRONE_ARMOR
+    requires:
+      - STR_AQUAVEST_DRONE_ARMOR
+    text: STR_AQUAVEST_DRONE_ARMOR_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+# builtins
+  - id: STR_UNARMED
+    text: STR_UNARMED_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 4
+
+  - id: STR_SHARKATTACK
+    requires:
+      - STR_DRONE_SHARK_ITEM
+    text: STR_SHARKATTACK_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 4
+
+#potential targets
+#uso analysis
+#salvage
+# materials
+  - id: STR_BIONIC_INTERLACE
+    requires:
+      - STR_BIONIC_INTERLACE
+    text: STR_BIONIC_INTERLACE_UFOPEDIA
+    section: STR_SALVAGE_UC
+    type_id: 4
+
+  - id: STR_SJB_LICENSE
+    requires:
+      - STR_SJB_LICENSE
+    text: STR_SJB_LICENSE_UFOPEDIA
+    section: STR_SALVAGE_UC
+    type_id: 4
+
+  - id: STR_AG_UNIT
+    requires:
+      - STR_AG_UNIT
+    text: STR_AG_UNIT_UFOPEDIA
+    section: STR_SALVAGE_UC
+    type_id: 4
+
+  - id: STR_BIOMASS
+    requires:
+      - STR_BIOMASS
+    text: STR_BIOMASS_UFOPEDIA
+    section: STR_SALVAGE_UC
+    type_id: 4
+
+  - id: STR_ELERIUM
+    requires:
+      - STR_ELERIUM
+    text: STR_ELERIUM_UFOPEDIA
+    section: STR_SALVAGE_UC
+    type_id: 4
+
+# abstract
+  - id: STR_BOUNTY_1
+    requires:
+      - STR_BOUNTY_1
+    text: STR_BOUNTY_1_UFOPEDIA
+    section: STR_SALVAGE_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_BRAND_LOYALTY
+    requires:
+      - STR_BRAND_LOYALTY
+    text: STR_BRAND_LOYALTY_UFOPEDIA
+    section: STR_SALVAGE_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+# containers
+  - id: STR_CRIMINAL_CONTAINER_1
+    requires:
+      - STR_CRIMINAL_CONTAINER_1
+    text: STR_CRIMINAL_CONTAINER_1_UFOPEDIA
+    section: STR_SALVAGE_UC
+    type_id: 4
+
+  - id: STR_XN_CONTAINER_1
+    requires:
+      - STR_XN_CONTAINER_1
+    text: STR_XN_CONTAINER_1_UFOPEDIA
+    section: STR_SALVAGE_UC
+    type_id: 4
+
+#manuals
+  - id: STR_DAMAGE_TYPES
+    text: STR_DAMAGE_TYPES_UFOPEDIA
+    section: STR_MANUALS_UC
+    type_id: 8
+
+  - id: STR_WEAPON_TYPES
+    text: STR_WEAPON_TYPES_UFOPEDIA
+    section: STR_MANUALS_UC
+    type_id: 8
+
+#accolades
+  - id: STR_MEDAL_WEAPON_PROFICIENCY
+    text: STR_MEDAL_WEAPON_PROFICIENCY_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+#    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
