@@ -1,7 +1,9 @@
-name: "Global Contracts"
+name: "X-Com: GCIC"
 version: "0.1"
 author: "Thallori"
-description: "Global Contracts"
+description: "Global Contracts and Insurance Corporation"
 id: global_contracts
+isMaster: true
 master: xcom1
 requiredExtendedVersion: "7.4.3"
+reservedSpace: 3

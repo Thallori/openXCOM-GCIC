@@ -540,10 +540,10 @@ ufopaedia:
     section: STR_EQUIPMENT_UC
     type_id: 4
 
-  - id: STR_MEDI_KIT
+  - id: STR_MEDI_FIRST
     requires:
-      - STR_MEDI_KIT
-    text: STR_MEDI_KIT_UFOPEDIA
+      - STR_MEDI_FIRST
+    text: STR_MEDI_FIRST_UFOPEDIA
     section: STR_EQUIPMENT_UC
     type_id: 4
 
@@ -704,7 +704,7 @@ ufopaedia:
   - id: STR_MEDAL_WEAPON_PROFICIENCY
     text: STR_MEDAL_WEAPON_PROFICIENCY_UFOPEDIA
     section: STR_COMMENDATIONS_UC
-#    hiddenCommendation: true
+    hiddenCommendation: true
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image

@@ -339,14 +339,14 @@ extraSprites:
 #ufopedia
   - typeSingle: ALIGN_TEST_CPAL
     fileSingle: Resources/Pedia/align_test_CPAL.png
-  - typeSingle: VENDOR_PRINT
-    fileSingle: Resources/Pedia/vendor_print.png
-  - typeSingle: VENDOR_MEDI
-    fileSingle: Resources/Pedia/vendor_medi.png
-  - typeSingle: VENDOR_BUILDER
-    fileSingle: Resources/Pedia/vendor_builder.png
-  - typeSingle: VENDOR_P2P
-    fileSingle: Resources/Pedia/vendor_p2p.png
+  - typeSingle: VENDOR_PRINT_CPAL
+    fileSingle: Resources/Pedia/vendor_print_CPAL.png
+  - typeSingle: VENDOR_MEDI_CPAL
+    fileSingle: Resources/Pedia/vendor_medi_CPAL.png
+  - typeSingle: VENDOR_BUILDER_CPAL
+    fileSingle: Resources/Pedia/vendor_builder_CPAL.png
+  - typeSingle: VENDOR_P2P_CPAL
+    fileSingle: Resources/Pedia/vendor_p2p_CPAL.png
 # crafts
   - typeSingle: CRAFT_BICUBE_CPAL
     fileSingle: Resources/Pedia/craft_bicube_CPAL.png

@@ -95,7 +95,7 @@ research:
       - STR_SUBSIDIARIES
     cost: 5
     getOneFree:
-      - STR_MEDI_KIT
+      - STR_MEDI_FIRST
 
   - name: STR_VENDOR_BUILDER
     dependencies:
@@ -309,7 +309,7 @@ research:
 
   - name: STR_MEDI_SPRAY
 
-  - name: STR_MEDI_KIT
+  - name: STR_MEDI_FIRST
     dependencies:
       - STR_VENDOR_MEDI
 
