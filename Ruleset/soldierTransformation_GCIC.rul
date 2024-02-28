@@ -1,7 +1,37 @@
 soldierTransformation:
+  - name: STR_DRONE_KEYING_TRANSFORMATION
+    requires:
+      - STR_DRONE_IMMORTALITY
+    requiredItems:
+      STR_BIONIC_INTERLACE: 1
+    recoveryTime: 1
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_CRACKED_HYBRID_DRONE
+      - STR_CRACKED_HUMAN_DRONE
+      - STR_CRACKED_SHARK_DRONE
+    forbiddenPreviousTransformations:
+      - STR_DRONE_KEYING_TRANSFORMATION
+
+  - name: STR_DRONE_REPLACEMENT_TRANSFORMATION
+    requires:
+      - STR_DRONE_IMMORTALITY
+    cost: 65000
+    transferTime: 7
+    rerollStats:
+      mana: 1
+    allowsDeadSoldiers: true
+    needsCorpseRecovered: false
+    allowedSoldierTypes:
+      - STR_CRACKED_HYBRID_DRONE
+      - STR_CRACKED_HUMAN_DRONE
+      - STR_CRACKED_SHARK_DRONE
+    requiredPreviousTransformations:
+      - STR_DRONE_KEYING_TRANSFORMATION
+
   - name: STR_SKIRMISHER_TRANSFORMATION
-#    requires:
-#      - STR_SPECIALIZATION_TRANSFORMATION
+    requires:
+      - STR_SPECIALIZATION_TRAINING
     recoveryTime: 7
     keepSoldierArmor: true
     allowsLiveSoldiers: true
@@ -16,8 +46,8 @@ soldierTransformation:
       - STR_HEAVY_TRANSFORMATION
 
   - name: STR_RANGER_TRANSFORMATION
-#    requires:
-#      - STR_SPECIALIZATION_TRANSFORMATION
+    requires:
+      - STR_SPECIALIZATION_TRAINING
     recoveryTime: 7
     keepSoldierArmor: true
     allowsLiveSoldiers: true
@@ -32,8 +62,8 @@ soldierTransformation:
       - STR_HEAVY_TRANSFORMATION
 
   - name: STR_SCOUT_TRANSFORMATION
-#    requires:
-#      - STR_SPECIALIZATION_TRANSFORMATION
+    requires:
+      - STR_SPECIALIZATION_TRAINING
     recoveryTime: 7
     keepSoldierArmor: true
     allowsLiveSoldiers: true
@@ -48,8 +78,8 @@ soldierTransformation:
       - STR_HEAVY_TRANSFORMATION
 
   - name: STR_BREACHER_TRANSFORMATION
-#    requires:
-#      - STR_SPECIALIZATION_TRANSFORMATION
+    requires:
+      - STR_SPECIALIZATION_TRAINING
     recoveryTime: 7
     keepSoldierArmor: true
     allowsLiveSoldiers: true
@@ -64,8 +94,8 @@ soldierTransformation:
       - STR_HEAVY_TRANSFORMATION
 
   - name: STR_HEAVY_TRANSFORMATION
-#    requires:
-#      - STR_SPECIALIZATION_TRANSFORMATION
+    requires:
+      - STR_SPECIALIZATION_TRAINING
     recoveryTime: 7
     keepSoldierArmor: true
     allowsLiveSoldiers: true

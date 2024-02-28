@@ -42,3 +42,36 @@ ufos:
               - [1, 5, 0]
           fuseTimers:
             STR_SPAWN_CLIENT_1: [0, 0]
+
+  - type: STR_SABOTAGE_OFFICE
+    modSprite: interception_jammed
+    battlescapeTerrainData:
+      name: STR_SABOTAGE_OFFICE
+      mapDataSets:
+        - BLANKS
+        - FLOOR_ASPHALT
+        - FLOOR_URBAN
+        - FLOOR_TILES
+        - FLOOR_PLAIN
+        - FLORA_URBAN
+        - FLORA_FOREST_SMALL
+        - STRUCTURE_DRYWALL1
+        - STRUCTURE_DRYWALL2
+        - STRUCTURE_WAREHOUSE
+        - STRUCTURE_GLASS2
+        - STAIRS_PLAIN
+        - FENCE_PLAIN
+        - FENCE_IRON
+        - FURNITURE_OFFICE1
+        - SIGNS_COMMERCIAL
+        - SIGNS_TECH2
+        - BITS_BOOKS1
+        - BITS_SERVERS
+        - HOLOGRAMS
+        - OBJECTIVE_COMPUTER
+        - BITS_CRATES1
+        - ROOFS_BITS
+      mapBlocks:
+        - name: SABOTAGE_OFFICE1
+          width: 20
+          length: 20

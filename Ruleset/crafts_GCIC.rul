@@ -22,8 +22,7 @@ crafts:
     requires:
       - STR_VENDOR_HD
     weapons: 1
-    weaponTypes:
-      - [1]
+    weaponTypes: [1]
     weaponStrings:
       - STR_ELECTRIC_ENGINE
       - STR_BLANK_TOKEN
@@ -32,7 +31,7 @@ crafts:
     keepCraftAfterFailedMission: true
     battlescapeTerrainData:
       name: CRAFT_CROSSOVER
-      mapDataSets: &mapDataSetsXcomCraft
+      mapDataSets:
         - BLANKS
         - HOVERCRAFT_BITS
         - HOVERCRAFT_RED1
@@ -68,8 +67,7 @@ crafts:
     requires:
       - STR_VENDOR_USC
     weapons: 1
-    weaponTypes:
-      - [1]
+    weaponTypes: [1]
     weaponStrings:
       - STR_ELECTRIC_ENGINE
       - STR_BLANK_TOKEN
@@ -79,7 +77,7 @@ crafts:
     undetectable: true
     battlescapeTerrainData:
       name: CRAFT_BICUBE
-      mapDataSets: &mapDataSetsXcomCraft
+      mapDataSets:
         - BLANKS
         - HOVERCRAFT_BITS
         - HOVERCRAFT_WHITE1

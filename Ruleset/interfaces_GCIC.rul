@@ -7,6 +7,27 @@ interfaces:
         color2: 133  # minty green
         custom: -22  # above Intercept button
 
+  - type: battlescape
+    palette: PAL_BATTLESCAPE
+    elements:
+      - id: textName
+        color: 125
+      - id: barTUs
+        color: 65
+      - id: barEnergy
+        color: 17
+      - id: barHealth
+        color: 34
+        color2: 177
+      - id: barMorale
+        color: 193
+      - id: barMana
+        color: 209
+      - id: actionMenu
+        # color: 222
+        color2: 239
+        border: 228
+
   - type: inventory
     elements:
       - id: textStatLine1
@@ -77,7 +98,7 @@ interfaces:
       - id: ammoColorDTSmoke
         color: 161    #brown: smoke
       - id: ammoColorDT10
-        color: 127    #electric: electric
+        color: 129    #electric: electric
       - id: ammoColorDT11
         color: 32    #todo: sonic
       - id: ammoColorDT12

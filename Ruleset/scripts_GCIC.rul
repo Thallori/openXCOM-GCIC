@@ -2,43 +2,8 @@
 #from kzer-za
 # randomized tus on first turn
 
-#from meridian
-# no budget change if no alien activity
-
 extended:
   scripts:
-    newMonthCountry:
-      - offset: 10 #from meridian, no budget change if no alien activity
-        code: |
-          var int alienScore;
-          var int inPact;
-
-          country.getCurrentActivityAlien alienScore;
-          country.getPact inPact;
-
-          #debug_log "getCurrentActivityAlien" alienScore;
-          #debug_log "fundingChange" fundingChange;
-          #debug_log "satisfaction" satisfaction;
-          #debug_log "formPact" formPact;
-          #debug_log "getPact" inPact;
-
-          # (alienScore = 0) and (fundingChange > 0) and (satisfaction in [unhappy, satisfied or happy]) and (not about to form a pact) and (not in pact already)
-          if eq alienScore 0;
-            if gt fundingChange 0;
-              if gt satisfaction SATISFACTION_ALIENPACT;
-                if eq formPact 0;
-                  if eq inPact 0;
-                    #debug_log "NO BUDGET RAISE FROM ME!";
-                    set fundingChange 0;
-                    set satisfaction SATISFACTION_SATISIFIED;
-                  end;
-                end;
-              end;
-            end;
-          end;
-
-          return fundingChange satisfaction formPact cancelPact;
-
     createUnit:
       - offset: 41 #from kzer-za, randomized tus on first turn
         code: |

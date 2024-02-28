@@ -74,6 +74,20 @@ extraSprites:
       141: Resources/Items/Aquatic/Ammo/dart_ammo_bigob.png
       142: Resources/Items/Aquatic/Ammo/dart_foam_ammo_bigob.png
       143: Resources/Items/Tools/extinguisher_bigob.png
+      144: Resources/Items/Electric/taser_bigob.png
+      145: Resources/Items/Electric/Ammo/taser_ammo_bigob.png
+      146: Resources/Items/Materials/interlace_bigob.png
+      147: Resources/Factions/Netrunners/freelancer_bigob.png
+      148: Resources/Items/Laser/xn_gatling_bigob.png
+      149: Resources/Items/Melee/baton_bigob.png
+      150: Resources/Items/Kinetic/12mm_bigob.png
+      151: Resources/Items/Kinetic/Ammo/12mm_ammo_bigob.png
+      152: Resources/Items/Materials/sjb_bigob.png
+      153: Resources/Items/Materials/biomass_bigob.png
+      154: Resources/Items/Materials/elerium_bigob.png
+      155: Resources/Items/Explosives/eleriumbomb_bigob.png
+      156: Resources/Factions/SSP/sspguard_floorob.png
+      157: Resources/Items/Materials/personal_bigob.png
 
   - type: FLOOROB.PCK
     files:
@@ -116,6 +130,17 @@ extraSprites:
       137: Resources/Items/Aquatic/Ammo/dart_ammo_floorob.png
       138: Resources/Items/Aquatic/Ammo/dart_foam_ammo_floorob.png
       139: Resources/Items/Tools/extinguisher_floorob.png
+      140: Resources/Items/Electric/taser_floorob.png
+      141: Resources/Items/Electric/Ammo/taser_ammo_floorob.png
+      142: Resources/Items/Materials/interlace_floorob.png
+      143: Resources/Factions/Netrunners/freelancer_floorob.png
+      144: Resources/Items/Laser/xn_gatling_floorob.png
+      145: Resources/Items/Melee/baton_floorob.png
+      146: Resources/Items/Kinetic/12mm_floorob.png
+      147: Resources/Items/Kinetic/Ammo/12mm_ammo_floorob.png
+      148: Resources/Items/Materials/elerium_floorob.png
+      149: Resources/Items/Explosives/eleriumbomb_floorob.png
+      150: Resources/Factions/SSP/sspguard_floorob.png
 
   - type: HANDOB.PCK
     height: 40
@@ -145,6 +170,11 @@ extraSprites:
       280: Resources/Items/Laser/xn_cannon_handob.png
       288: Resources/Items/Aquatic/dartpistol_handob.png
       296: Resources/Items/Tools/extinguisher_handob.png
+      304: Resources/Items/Electric/taser_handob.png
+      312: Resources/Items/Laser/xn_gatling_handob.png
+      320: Resources/Items/Melee/baton_handob.png
+      328: Resources/Items/Kinetic/12mm_handob.png
+      336: Resources/Items/Explosives/eleriumbomb_handob.png
 
   - type: BASEBITS.PCK
     files:
@@ -162,6 +192,7 @@ extraSprites:
       305: Resources/BaseBits/basebits_storeroom.png
       306: Resources/BaseBits/basebits_depot.png
       307: Resources/BaseBits/basebits_corridor.png
+      308: Resources/BaseBits/basebits_local.png
       433: Resources/Crafts/bicube_basebit.png
       434: Resources/Crafts/crossover_basebit.png
       649: Resources/Crafts/Hardpoints/economy_basebit.png
@@ -177,6 +208,15 @@ extraSprites:
       606: Resources/Crafts/Hardpoints/economy_inticon.png
       607: Resources/Crafts/Hardpoints/sport_inticon.png
       608: Resources/Crafts/Hardpoints/batbox_inticon.png
+
+  - type: X1.PCK
+    width: 1024
+    height: 64
+    subX: 128
+    subY: 64
+    files:
+      80: Resources/Animations/grey_skull.png
+      88: Resources/Animations/green_skull.png
 
   - type: HIT.PCK
     height: 40
@@ -202,36 +242,36 @@ extraSprites:
 #paperdolls
 #human
   - typeSingle: HUMAN__2__F0_SHELL
-    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_F0.png
+    fileSingle: Resources/Armors/Bodies/Humans/HUMAN_F0.png
   - typeSingle: HUMAN__2__F1_SHELL
-    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_F1.png
+    fileSingle: Resources/Armors/Bodies/Humans/HUMAN_F1.png
   - typeSingle: HUMAN__2__F2_SHELL
-    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_F2.png
+    fileSingle: Resources/Armors/Bodies/Humans/HUMAN_F2.png
   - typeSingle: HUMAN__2__F3_SHELL
-    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_F3.png
+    fileSingle: Resources/Armors/Bodies/Humans/HUMAN_F3.png
 
   - typeSingle: HUMAN__2__M0_SHELL
-    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_M0.png
+    fileSingle: Resources/Armors/Bodies/Humans/HUMAN_M0.png
   - typeSingle: HUMAN__2__M1_SHELL
-    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_M1.png
+    fileSingle: Resources/Armors/Bodies/Humans/HUMAN_M1.png
   - typeSingle: HUMAN__2__M2_SHELL
-    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_M2.png
+    fileSingle: Resources/Armors/Bodies/Humans/HUMAN_M2.png
   - typeSingle: HUMAN__2__M3_SHELL
-    fileSingle: Resources/Armors/Bodies/Shells/Humans/HUMAN_M3.png
+    fileSingle: Resources/Armors/Bodies/Humans/HUMAN_M3.png
 #hybrid
   - typeSingle: HYBRID__2__F0_SHELL
-    fileSingle: Resources/Armors/Bodies/Shells/Hybrids/HYBRID_F0.png
+    fileSingle: Resources/Armors/Bodies/Hybrids/HYBRID_F0.png
   - typeSingle: HYBRID__2__M0_SHELL
-    fileSingle: Resources/Armors/Bodies/Shells/Hybrids/HYBRID_M0.png
+    fileSingle: Resources/Armors/Bodies/Hybrids/HYBRID_M0.png
 #shark
   - typeSingle: SHARK__2__F0_SHELL
-    fileSingle: Resources/Armors/Bodies/Shells/Sharks/SHARK_F0.png
+    fileSingle: Resources/Armors/Bodies/Sharks/SHARK_F0.png
   - typeSingle: SHARK__2__F1_SHELL
-    fileSingle: Resources/Armors/Bodies/Shells/Sharks/SHARK_F1.png
+    fileSingle: Resources/Armors/Bodies/Sharks/SHARK_F1.png
   - typeSingle: SHARK__2__M0_SHELL
-    fileSingle: Resources/Armors/Bodies/Shells/Sharks/SHARK_M0.png
+    fileSingle: Resources/Armors/Bodies/Sharks/SHARK_M0.png
   - typeSingle: SHARK__2__M1_SHELL
-    fileSingle: Resources/Armors/Bodies/Shells/Sharks/SHARK_M1.png
+    fileSingle: Resources/Armors/Bodies/Sharks/SHARK_M1.png
 
 #armor
 #worksuit
@@ -294,7 +334,6 @@ extraSprites:
 #pilot
   - typeSingle: PILOT_CORE.SPK
     fileSingle: Resources/Armors/Pilots/FlyingCore/pilot_core_inventory.png
-
   - type: PILOT_CORE.PCK
     subX: 32
     subY: 40
@@ -304,16 +343,43 @@ extraSprites:
       0: Resources/Armors/Pilots/FlyingCore/pilot_core_sheet.png
 
 #ironeyes
+  - typeSingle: BOOSTER_CPAL
+    fileSingle: Resources/Factions/Ironeyes/booster_CPAL.png
   - typeSingle: BOOSTER.SPK
     fileSingle: Resources/Factions/Ironeyes/booster_inventory.png
-
   - type: BOOSTER.PCK
     subX: 32
     subY: 40
     width: 512
     height: 680
     files:
-      0: Resources/Factions/Ironeyes/booster_sheet.png
+      0: Resources/Factions/Ironeyes/booster_sprite.png
+
+#netrunners
+  - typeSingle: FREELANCER_CPAL
+    fileSingle: Resources/Factions/Netrunners/freelancer_CPAL.png
+  - typeSingle: FREELANCER.SPK
+    fileSingle: Resources/Factions/Netrunners/freelancer_inventory.png
+  - type: FREELANCER.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 680
+    files:
+      0: Resources/Factions/Netrunners/freelancer_sprite.png
+
+#ssp
+  - typeSingle: SSPGUARD_CPAL
+    fileSingle: Resources/Factions/SSP/sspguard_CPAL.png
+  - typeSingle: SSPGUARD.SPK
+    fileSingle: Resources/Factions/SSP/sspguard_inventory.png
+  - type: SSPGUARD.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 680
+    files:
+      0: Resources/Factions/SSP/sspguard_sprite.png
 
 #clients
   - typeSingle: CLIENT_1.SPK
@@ -347,6 +413,8 @@ extraSprites:
     fileSingle: Resources/Pedia/vendor_builder_CPAL.png
   - typeSingle: VENDOR_P2P_CPAL
     fileSingle: Resources/Pedia/vendor_p2p_CPAL.png
+  - typeSingle: VENDOR_HD_CPAL
+    fileSingle: Resources/Pedia/vendor_hd_CPAL.png
 # crafts
   - typeSingle: CRAFT_BICUBE_CPAL
     fileSingle: Resources/Pedia/craft_bicube_CPAL.png
@@ -356,6 +424,10 @@ extraSprites:
   - typeSingle: BATBOX.SPK
     fileSingle: Resources/Crafts/Hardpoints/batbox_pedia.png
 # drones
+  - typeSingle: HYBRID_CPAL
+    fileSingle: Resources/Pedia/hybrid_CPAL.png
+  - typeSingle: HUMAN_CPAL
+    fileSingle: Resources/Pedia/human_CPAL.png
   - typeSingle: SHARK_CPAL
     fileSingle: Resources/Pedia/shark_CPAL.png
 # armors

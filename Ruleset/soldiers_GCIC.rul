@@ -97,7 +97,7 @@ soldiers:
       stamina: 55
       health: 40
       bravery: 60
-      reactions: 55
+      reactions: 50
       firing: 55
       throwing: 50
       melee: 50
@@ -124,7 +124,6 @@ soldiers:
     standHeight: 22
     kneelHeight: 14
     value: 1
-    transferTime: 72
     allowPiloting: false
     rankStrings:
       - STR_RANK_HYBRID_DRONE_0
@@ -136,8 +135,8 @@ soldiers:
     soldierNames:
       - delete
       - RandomNames/Hacked.nam
-    deathMale: [41, 42, 43]
-    deathFemale: [44, 45, 46]
+    deathMale: [10]
+    deathFemale: [10]
 
   - type: STR_CRACKED_HUMAN_DRONE
     costSalary: 250
@@ -147,40 +146,40 @@ soldiers:
     costSalaryColonel: 250
     costSalaryCommander: 250
     minStats:
-      tu: 40
+      tu: 45
       stamina: 45
       health: 25
       bravery: 10
       reactions: 30
       firing: 35
       throwing: 40
-      melee: 30
+      melee: 25
       strength: 20
       psiStrength: 0
       psiSkill: 0
       mana: 25
     maxStats:
-      tu: 55
+      tu: 60
       stamina: 60
       health: 40
       bravery: 60
       reactions: 45
       firing: 50
       throwing: 55
-      melee: 45
+      melee: 40
       strength: 35
       psiStrength: 60
       psiSkill: 12
       mana: 35
     statCaps:
-      tu: 45
+      tu: 50
       stamina: 50
       health: 30
       bravery: 60
       reactions: 35
       firing: 40
       throwing: 45
-      melee: 35
+      melee: 30
       strength: 25
       psiStrength: 60
       psiSkill: 60
@@ -220,7 +219,7 @@ soldiers:
       bravery: 10
       reactions: 30
       firing: 30
-      throwing: 30
+      throwing: 25
       melee: 40
       strength: 25
       psiStrength: 0
@@ -233,7 +232,7 @@ soldiers:
       bravery: 60
       reactions: 45
       firing: 45
-      throwing: 45
+      throwing: 40
       melee: 55
       strength: 40
       psiStrength: 60
@@ -246,7 +245,7 @@ soldiers:
       bravery: 60
       reactions: 35
       firing: 35
-      throwing: 35
+      throwing: 30
       melee: 45
       strength: 30
       psiStrength: 60
@@ -270,8 +269,8 @@ soldiers:
     soldierNames:
       - delete
       - RandomNames/Hacked.nam
-    deathMale: [41, 42, 43]
-    deathFemale: [44, 45, 46]
+    deathMale: [113, 114, 115]
+    deathFemale: [113, 114, 115]
 
 #  - type: STR_CRACKED_PLACEHOLDER_DRONE
 #    requires:
@@ -321,7 +320,6 @@ soldiers:
 #    standHeight: 22
 #    kneelHeight: 14
 #    value: 1
-#    transferTime: 72
 #    allowPromotion: false
 #    allowPiloting: false
 #    rankStrings:

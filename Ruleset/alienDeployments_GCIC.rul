@@ -1,35 +1,38 @@
 ﻿
 alienDeployments:
   - type: STR_RESCUE_1
+    script: HANGAR_DRONES_3X3
     width: 30
     length: 30
     height: 5
     alert: STR_RESCUE_1_ALERT
     alertBackground: BACK03.SCR
     alertDescription: STR_RESCUE_1_ALERT_DESCRIPTION
-    markerName: STR_RESCUE_1_MARKER
-    duration: [48, 72]
+    markerName: STR_RESCUE_1
+    duration: [24, 48]
     despawnPenalty: 20
+    # startingCondition: LOWSPEC_GEAR
     briefing:
-      palette: 3
-#      background: BACK16.SCR
-#      music: PLACEHOLDERMUSIC1
-      title: STR_RESCUE_1_TITLE
-      desc: STR_RESCUE_1_BRIEFING
+      showTarget: false
+      # palette: 3
+      # background: BACK16.SCR
+      # music: PLACEHOLDERMUSIC1
       # showTarget: false
       # showCraft: false
     customUfo: STR_HOUSE_GARAGE
     terrains:
       - HANGAR
-#    music:
-#      - SW_MONSTER
+    # music:
+    #   - SW_MONSTER
     data:
       - alienRank: 5
-        lowQty: 3
-        medQty: 3
-        highQty: 4
+        lowQty: 2
+        medQty: 2
+        highQty: 3
         dQty: 0
         percentageOutsideUfo: 50
+        extraRandomItems: &personalData7
+          - [STR_PERSONAL_DATA, STR_NONE, STR_NONE, STR_NONE, STR_NONE, STR_NONE, STR_NONE]
         itemSets:
           -
             - STR_BUSBOX_PISTOL
@@ -59,24 +62,23 @@ alienDeployments:
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
-          -
-            - STR_9MM_PISTOL
-            - STR_9MM_AMMO
-            - STR_9MM_AMMO
-          -
-            - STR_9MM_PISTOL
-            - STR_9MM_AMMO
             - STR_9MM_AMMO
           -
             - STR_9MM_RIFLE
             - STR_9MM_AMMO
             - STR_9MM_AMMO
+            - STR_9MM_AMMO
           -
             - STR_DISPOSABLE_SMG
           -
             - STR_DISPOSABLE_SMG
+          -
+            - STR_STL_KNIFE
+          -
+            - STR_STL_KNIFE
 
   - type: STR_TRADE_MEETING_EARLY
+    script: SINGLE_BLOCK_2X2
     width: 20
     length: 20
     height: 5
@@ -87,70 +89,240 @@ alienDeployments:
     duration: [96, 144]
     despawnPenalty: 0
     abortPenalty: 0
-#    startingCondition: STR_INFILTRATION_GEAR_INFILTRATION_CRAFT
+    # startingCondition: LOWSPEC_GEAR_INFILTRATION_CRAFT
     briefing:
-#      palette: 2
-#      background: BACK16.SCR
-#      music: PLACEHOLDERMUSIC1
-      title: STR_TRADE_MEETING_EARLY_TITLE
-      desc: STR_TRADE_MEETING_EARLY_BRIEFING
-      # showTarget: false
-      # showCraft: false
+      showTarget: false
+      # palette: 2
+      # background: BACK16.SCR
+      # music: PLACEHOLDERMUSIC1
+    missionBountyItem: STR_BIONIC_INTERLACE
     terrains:
       - CLUB
-#    music:
-#      - SW_MONSTER
+    # music:
+    #   - SW_MONSTER
     data:
-      - alienRank: 5
+      - alienRank: 6
         lowQty: 2
         medQty: 2
         highQty: 3
         dQty: 0
-        percentageOutsideUfo: 20
+        percentageOutsideUfo: 0
+        extraRandomItems: &personalData6
+          - [STR_PERSONAL_DATA, STR_NONE, STR_NONE, STR_NONE, STR_NONE, STR_NONE]
+        itemSets: &netrunnerEarlySet
+          -
+            - STR_DART_PISTOL
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+          -
+            - STR_DART_PISTOL
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+          -
+            - STR_DART_PISTOL
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+          -
+            - STR_DART_PISTOL
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+          -
+            - STR_TASER_PISTOL_CODED
+            - STR_TASER_AMMO
+            - STR_TASER_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_TASER_PISTOL_CODED
+            - STR_TASER_AMMO
+            - STR_TASER_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_TASER_PISTOL_CODED
+            - STR_TASER_AMMO
+            - STR_TASER_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_TASER_PISTOL_CODED
+            - STR_TASER_AMMO
+            - STR_TASER_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_MULTITOOL
+          -
+            - STR_MULTITOOL
+
+  - type: STR_TRADE_MEETING_1
+    script: CLUB_LANDING
+    width: 20
+    length: 30
+    height: 5
+    alert: STR_TRADE_MEETING_1_ALERT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_TRADE_MEETING_1_ALERT_DESCRIPTION
+    markerName: STR_TRADE_MEETING_1_MARKER
+    duration: [96, 144]
+    despawnPenalty: 0
+    abortPenalty: 0
+    # startingCondition: LOWSPEC_GEAR_INFILTRATION_CRAFT
+    briefing:
+      showTarget: false
+    #  palette: 2
+    #  background: BACK16.SCR
+    #  music: PLACEHOLDERMUSIC1
+    missionBountyItem: STR_BIONIC_INTERLACE
+    terrains:
+      - CLUB_LANDING
+    # music:
+    #   - SW_MONSTER
+    data:
+      - alienRank: 6
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 0
+        extraRandomItems: *personalData6
+        itemSets: *netrunnerEarlySet
+
+  - type: STR_GCIC_SABOTAGE_1
+    script: COMMERCIAL_3X3
+    width: 30
+    length: 30
+    height: 5
+    alert: STR_GCIC_SABOTAGE_1_ALERT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION
+    markerName: STR_GCIC_SABOTAGE_1_MARKER
+    duration: [96, 120]
+    despawnPenalty: 50
+    despawnEvents:
+      STR_EVENT_CLAIM_SECURED: 100
+    failureEvents:
+      STR_EVENT_CLAIM_SECURED: 100
+    # startingCondition: LOWSPEC_GEAR_INFILTRATION_CRAFT
+    briefing:
+      showTarget: false
+      # palette: 2
+      # background: BACK16.SCR
+      # music: PLACEHOLDERMUSIC1
+    missionBountyItem: STR_SHARES_GCIC
+    missionBountyItemCount: 5
+    customUfo: STR_SABOTAGE_OFFICE
+    terrains:
+      - COMMERCIAL
+    # music:
+    #   - SW_MONSTER
+    objectiveType: 20
+    objectivesRequired: 1
+    objectiveComplete: [STR_SABOTAGE_DESTROYED_COMPLETE, 50]
+    objectiveFailed: [STR_SABOTAGE_DESTROYED_FAILED, -50]
+    objectivePopup: STR_SABOTAGE_DESTROYED_POPUP
+    turnLimit: 10
+    chronoTrigger: 1
+    data:
+      - alienRank: 6
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 0
+        extraRandomItems: *personalData7
         itemSets:
           -
-            - STR_DART_PISTOL
-            - STR_DART_AMMO1
-            - STR_DART_AMMO1
-            - STR_DART_AMMO1
+            - STR_BATON
+            - STR_45_PISTOL
+            - STR_45_AMMO
+            - STR_45_AMMO
+            - STR_45_AMMO
           -
-            - STR_DART_PISTOL
-            - STR_DART_AMMO1
-            - STR_DART_AMMO1
-            - STR_DART_AMMO1
+            - STR_BATON
+            - STR_45_PISTOL
+            - STR_45_AMMO
+            - STR_45_AMMO
+            - STR_45_AMMO
           -
-            - STR_DART_PISTOL
-            - STR_DART_AMMO1
-            - STR_DART_AMMO1
-            - STR_DART_AMMO1
+            - STR_BATON
+            - STR_45_PISTOL
+            - STR_45_AMMO
+            - STR_45_AMMO
+            - STR_45_AMMO
           -
-            - STR_DART_PISTOL
-            - STR_DART_AMMO1
-            - STR_DART_AMMO1
-            - STR_DART_AMMO1
+            - STR_BATON
+            - STR_45_PISTOL
+            - STR_45_AMMO
+            - STR_45_AMMO
+            - STR_45_AMMO
           -
+            - STR_BATON
+            - STR_SINGLESHOT_LASER_PISTOL
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
+          -
+            - STR_BATON
+            - STR_SINGLESHOT_LASER_PISTOL
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
+          -
+            - STR_BATON
+            - STR_SINGLESHOT_LASER_PISTOL
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
+          -
+            - STR_BATON
+            - STR_SINGLESHOT_LASER_PISTOL
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
+          -
+            - STR_BATON
             - STR_TASER_PISTOL
             - STR_TASER_AMMO
             - STR_TASER_AMMO
-            - STR_STL_KNIFE
           -
+            - STR_BATON
             - STR_TASER_PISTOL
             - STR_TASER_AMMO
             - STR_TASER_AMMO
-            - STR_STL_KNIFE
+      - alienRank: 6
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_HYBRID
+        itemSets: &AnchorEmptyInventory
           -
-            - STR_TASER_PISTOL
-            - STR_TASER_AMMO
-            - STR_TASER_AMMO
-            - STR_STL_KNIFE
+            []
           -
-            - STR_TASER_PISTOL
-            - STR_TASER_AMMO
-            - STR_TASER_AMMO
-            - STR_STL_KNIFE
+            []
           -
-            - STR_DISPOSABLE_SMG
-            - STR_MULTITOOL
+            []
           -
-            - STR_DISPOSABLE_SMG
-            - STR_MULTITOOL
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 100
+        customUnitType: STR_DRONE_ENEMY_HUMAN
+        itemSets: *AnchorEmptyInventory

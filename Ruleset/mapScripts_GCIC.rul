@@ -1,5 +1,5 @@
 ﻿mapScripts:
-  - type: HANGAR_DRONES
+  - type: HANGAR_DRONES_3X3
     commands:
     - type: addUFO
       rects:
@@ -7,8 +7,6 @@
     - type: addCraft
     - type: addLine
       direction: vertical
-      blocks: [9, 10, 11, 12, 13, 14]
-      maxUses: [1, 1, 1, 1, 1, 1]
 #drone spawns
     - type: addBlock
       terrain: HANGAR_DRONES_1
@@ -32,10 +30,30 @@
       size: 2
       conditionals: [-2]
     - type: fillArea
-      blocks: [3, 4, 5, 6]
-      maxUses: [1, 1, 1, 1]
 
-  - type: SINGLE_BLOCK_LZ
+  - type: CLUB_LANDING
+    commands:
+    - type: addCraft
+      rects:
+        - [0, 2, 1, 1]
+    - type: addBlock
+      size: [2, 3]
+
+  - type: SINGLE_BLOCK_2X2
     commands:
     - type: addBlock
       size: 2
+
+  - type: COMMERCIAL_3X3
+    commands:
+    - type: addUFO
+      rects:
+        - [0, 0, 2, 2]
+    - type: addCraft
+    - type: addLine
+      direction: horizontal
+    - type: addBlock
+      size: [2, 1]
+    - type: addBlock
+      size: 2
+    - type: fillArea

@@ -45,8 +45,10 @@
     listOrder: 410
   - type: STR_MILTEC_CATEGORY
     listOrder: 420
-  - type: STR_REPUBLIC_CATEGORY
+  - type: STR_EXOTIC_CATEGORY
     listOrder: 430
+  - type: STR_LOCKED_CATEGORY
+    listOrder: 490
   - type: STR_INFILTRATION_CATEGORY
     listOrder: 500
   - type: STR_TOOLS_CATEGORY

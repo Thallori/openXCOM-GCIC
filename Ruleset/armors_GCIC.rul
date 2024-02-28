@@ -19,7 +19,7 @@ armors:
       - STR_NULL_BACK_PACK
     allowsKneeling: true
     visibilityAtDay: 30
-    visibilityAtDark: 11
+    visibilityAtDark: 12
     personalLight: 5
     frontArmor: 2
     sideArmor: 2
@@ -49,21 +49,20 @@ armors:
       psiStrength: -1.0
       psiSkill: 2.0
       moraleCurrent: 0.5
-      bravery: 0.5
     recovery:
       health: &HealthRecoveryTypical
         stunNormalized: -0.10
       stun: &StunRecoveryMaxHealth180
         healthNormalized: 6
-        stunCurrent: -0.033
+        stunCurrent: -0.03
       energy: &EnergyRecoveryTypical
-        stamina: 0.30
-        healthCurrent: 0.30
-        stunCurrent: -0.25
+        stamina: 0.1
+        flatHundred: 0.16
+        stunNormalized: -16
       morale: &MoraleRecoveryTypical
-        flatHundred: -0.1
-        manaNormalized: 14.0
-        moraleCurrent: -0.09
+        flatOne: -0.1
+        moraleCurrent: -0.14
+        manaNormalized: 6
         bravery: 0.1
     overKill: 1.5
     units:
@@ -111,9 +110,9 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryMaxHealth180
       energy: &EnergyRecoveryHumanTypical
-        stamina: 0.35
-        healthCurrent: 0.35
-        stunCurrent: -0.30
+        stamina: 0.1
+        flatHundred: 0.20
+        stunNormalized: 20
       morale: *MoraleRecoveryTypical
     overKill: 1.5
     units:
@@ -127,10 +126,14 @@ armors:
     layersDefinition:
       F0: ["", "", "F0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
+      F2: ["", "", "F0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
+      F3: ["", "", "F1_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
+      M2: ["", "", "M0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
+      M3: ["", "", "M1_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
     spriteFaceGroup: 11
-    spriteFaceColor: &SpriteFaceColorShark [176, 224, 80, 112] #M0 F0 M1 F1
+    spriteFaceColor: &SpriteFaceColorShark [176, 224, 80, 112, 176, 224, 80, 112]
     corpseBattle:
       - STR_PLEX_DRONE_SHARK_CORPSE
     storeItem: STR_NONE
@@ -180,12 +183,14 @@ armors:
       - STR_NULL_BACK_PACK
     allowsKneeling: true
     visibilityAtDay: 30
-    visibilityAtDark: 11
+    visibilityAtDark: 12
     personalLight: 5
-    camouflageAtDark: -1
+    camouflageAtDay: -2
+    camouflageAtDark: -2
     stats:
       stamina: +10
       reactions: +5
+      tu: +5
     frontArmor: 12
     sideArmor: 12
     rearArmor: 12
@@ -235,9 +240,9 @@ armors:
       M2: ["", "", "M2_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       M3: ["", "", "M3_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
     spriteFaceGroup: 6
-    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteFaceColor: *SpriteFaceColorHuman
     spriteHairGroup: 9
-    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairColor: *SpriteHairColorHuman
     corpseBattle:
       - STR_DURA_DRONE_HUMAN_CORPSE
     storeItem: STR_DURA_DRONE_ARMOR
@@ -248,10 +253,12 @@ armors:
     visibilityAtDay: 30
     visibilityAtDark: 9
     personalLight: 5
-    camouflageAtDark: -1
+    camouflageAtDay: -2
+    camouflageAtDark: -2
     stats:
       stamina: +10
       reactions: +5
+      tu: +5
     frontArmor: 12
     sideArmor: 12
     rearArmor: 12
@@ -276,10 +283,14 @@ armors:
     layersDefinition:
       F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F2: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F3: ["", "", "F1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M2: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M3: ["", "", "M1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
     spriteFaceGroup: 11
-    spriteFaceColor: &SpriteFaceColorShark [176, 224, 80, 112] #M0 F0 M1 F1
+    spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
       - STR_DURA_DRONE_SHARK_CORPSE
     storeItem: STR_DURA_DRONE_ARMOR
@@ -290,10 +301,12 @@ armors:
     visibilityAtDay: 30
     visibilityAtDark: 9
     personalLight: 5
-    camouflageAtDark: -1
+    camouflageAtDay: -2
+    camouflageAtDark: -2
     stats:
       stamina: +10
       reactions: +5
+      tu: +5
     frontArmor: 12
     sideArmor: 12
     rearArmor: 12
@@ -325,20 +338,20 @@ armors:
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDay: 30
-    visibilityAtDark: 11
+    visibilityAtDark: 12
     personalLight: 5
     stats:
       tu: -5
       stamina: -5
-    frontArmor: 24
-    sideArmor: 24
-    rearArmor: 24
-    underArmor: 24
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
     damageModifier: &OrganicAquavestResists
       - 1.0 #0 none
       - 0.7 #1 kinetic
       - 1.2 #2 incendiary
-      - 0.7 #3 concussive
+      - 0.8 #3 concussive
       - 1.2 #4 radiant
       - 1.0 #5 plasma
       - 1.0 #6 blunt
@@ -373,9 +386,9 @@ armors:
     spriteInv: MAN_0
     spriteSheet: XCOM_0.PCK
     spriteFaceGroup: 6
-    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteFaceColor: *SpriteFaceColorHuman
     spriteHairGroup: 9
-    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairColor: *SpriteHairColorHuman
     corpseBattle:
       - STR_AQUAVEST_DRONE_HUMAN_CORPSE
     storeItem: STR_AQUAVEST_DRONE_ARMOR
@@ -387,10 +400,10 @@ armors:
     stats:
       tu: -5
       stamina: -5
-    frontArmor: 24
-    sideArmor: 24
-    rearArmor: 24
-    underArmor: 24
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
     damageModifier: *OrganicAquavestResists
     meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical
@@ -412,9 +425,7 @@ armors:
     spriteInv: MAN_0
     spriteSheet: XCOM_0.PCK
     spriteFaceGroup: 6
-    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
-    spriteHairGroup: 9
-    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
       - STR_AQUAVEST_DRONE_SHARK_CORPSE
     storeItem: STR_AQUAVEST_DRONE_ARMOR
@@ -426,10 +437,10 @@ armors:
     stats:
       tu: -5
       stamina: -5
-    frontArmor: 24
-    sideArmor: 24
-    rearArmor: 24
-    underArmor: 24
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
     damageModifier: *OrganicAquavestResists
     meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical
@@ -507,19 +518,78 @@ armors:
     loftempsSet: [ 3 ]
 
 #enemies
-  - type: BOOSTER_ARMOR
+#ironeyes
+  - type: STR_BOOSTER_ARMOR
     spriteInv: BOOSTER.SPK
     spriteSheet: BOOSTER.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorHuman
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorHuman
+    forcedTorso: 1
     corpseBattle:
       - STR_BOOSTER_CORPSE
     # specialWeapon: STR_UNARMED
-    allowsKneeling: true #todo?
+    allowsKneeling: true
     visibilityAtDay: 30
-    visibilityAtDark: 10
-    frontArmor: 6
-    sideArmor: 6
-    rearArmor: 6
-    underArmor: 6
+    visibilityAtDark: 12
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    damageModifier: *OrganicUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryMaxHealth180
+      energy: *EnergyRecoveryHumanTypical
+      morale: *MoraleRecoveryTypical
+    loftempsSet: [ 3 ]
+
+#netrunners
+  - type: STR_FREELANCER_ARMOR
+    spriteInv: FREELANCER.SPK
+    spriteSheet: FREELANCER.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorHuman
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorHuman
+    corpseBattle:
+      - STR_FREELANCER_CORPSE
+    # specialWeapon: STR_UNARMED
+    allowsKneeling: true
+    visibilityAtDay: 30
+    visibilityAtDark: 9
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: *OrganicUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryMaxHealth180
+      energy: *EnergyRecoveryHumanTypical
+      morale: *MoraleRecoveryTypical
+    loftempsSet: [ 3 ]
+
+  - type: STR_SSPGUARD_ARMOR
+    spriteInv: SSPGUARD.SPK
+    spriteSheet: SSPGUARD.PCK
+    spriteFaceGroup: 11
+    spriteFaceColor: *SpriteFaceColorShark
+    corpseBattle:
+      - STR_SSPGUARD_CORPSE
+    specialWeapon: STR_SHARKATTACK
+    allowsKneeling: true
+    visibilityAtDay: 30
+    visibilityAtDark: 9
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
     damageModifier: *OrganicUnarmoredResists
     meleeDodge: *MeleeDodgeTypical
     psiDefence: *PsiDefenseTypical
@@ -531,9 +601,13 @@ armors:
     loftempsSet: [ 3 ]
 
 #civilians
-  - type: CLIENT_1_ARMOR
+  - type: STR_CLIENT_1_ARMOR
     spriteInv: CLIENT_1.SPK
     spriteSheet: CLIENT_1.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorHuman
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorHuman
     corpseBattle:
       - STR_HUMAN_M0_CIVILIAN_CORPSE
     allowsKneeling: false
@@ -555,9 +629,13 @@ armors:
       morale: *MoraleRecoveryTypical
     loftempsSet: [ 3 ]
 
-  - type: HUMAN_M_CIVILIAN_ARMOR
+  - type: STR_HUMAN_M_CIVILIAN_ARMOR
     spriteInv: HUMAN_CIVILIAN_M0.SPK
     spriteSheet: HUMAN_CIVILIAN_M0.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorHuman
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorHuman
     corpseBattle:
       - STR_HUMAN_M0_CIVILIAN_CORPSE
     # specialWeapon: STR_UNARMED

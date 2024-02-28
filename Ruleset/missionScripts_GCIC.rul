@@ -1,18 +1,31 @@
 
 #1440 mintutes in a day
-#7200 minutes in a week
+#10080 minutes in a week
 #43200 minutes in a month
 
 missionScripts:
-  - type: Rescue1a
+  - type: Rescue1Early
     # researchTriggers:
     #   STR_TODO: false
+    lastMonth: 0
     missionWeights:
       0:
         STR_RESCUE_1: 100
     useTable: false
     startDelay: 30
     randomDelay: 7200
+
+  - type: Rescue1a
+    # researchTriggers:
+    #   STR_TODO: false
+    firstMonth: 1
+    targetBaseOdds: 100
+    missionWeights:
+      0:
+        STR_RESCUE_1: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
 
   - type: Rescue1b
     # researchTriggers:
@@ -37,6 +50,18 @@ missionScripts:
   - type: Rescue1d
     # researchTriggers:
     #   STR_TODO: false
+    executionOdds: 50
+    missionWeights:
+      0:
+        STR_RESCUE_1: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: Rescue1e
+    # researchTriggers:
+    #   STR_TODO: false
+    executionOdds: 50
     missionWeights:
       0:
         STR_RESCUE_1: 100
@@ -45,9 +70,6 @@ missionScripts:
     randomDelay: 43000
 
   - type: TradeMeetingEarly
-    # researchTriggers:
-    #   STR_TODO: false
-    firstMonth: 0
     lastMonth: 0
     targetBaseOdds: 100
     missionWeights:
@@ -56,3 +78,44 @@ missionScripts:
     useTable: false
     startDelay: 15000
     randomDelay: 7200
+
+  - type: TradeMeeting1
+    firstMonth: 1
+    researchTriggers:
+      STR_FORBIDDEN_OPERATIONS: true
+    missionWeights:
+      0:
+        STR_TRADE_MEETING_1: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: GCIC1Early
+    lastMonth: 0
+    targetBaseOdds: 100
+    missionWeights:
+      0:
+        STR_GCIC_SABOTAGE_1: 100
+    useTable: false
+    startDelay: 30000
+    randomDelay: 7200
+
+  - type: GCIC1a
+    firstMonth: 1
+    executionOdds: 50
+    missionWeights:
+      0:
+        STR_GCIC_SABOTAGE_1: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: GCIC1b
+    firstMonth: 1
+    executionOdds: 50
+    missionWeights:
+      0:
+        STR_GCIC_SABOTAGE_1: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000

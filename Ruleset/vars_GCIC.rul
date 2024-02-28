@@ -50,16 +50,20 @@ performanceBonusFactor: 100
 #   -2399: STR_MT_RATING_BAD
 #   -5599: STR_MT_RATING_TERRIBLE
 #   -99999: STR_MT_RATING_ABOMINABLE
-#missionRatings:
-#   3000: STR_MT_RATING_EXEMPLARY
-#   1400: STR_MT_RATING_EXCELLENT
-#   600: STR_MT_RATING_GREAT
-#   200: STR_MT_RATING_GOOD
-#   -15: STR_MT_RATING_OK
-#   -50: STR_MT_RATING_POOR
-#   -200: STR_MT_RATING_BAD
-#   -800: STR_MT_RATING_TERRIBLE
-#   -10000: STR_MT_RATING_ABOMINABLE
+missionRatings:
+  1000: STR_MS_RATING_1000
+  750: STR_MS_RATING_750
+  500: STR_MS_RATING_500
+  350: STR_MS_RATING_350
+  150: STR_MS_RATING_150
+  75: STR_MS_RATING_75
+  15: STR_MS_RATING_15
+  -15: STR_MS_RATING_N15
+  -50: STR_MS_RATING_N50
+  -200: STR_MS_RATING_N200
+  -350: STR_MS_RATING_N350
+  -500: STR_MS_RATING_N500
+  -1000: STR_MS_RATING_N1000
 defeatScore: -999999
 defeatFunds: -1000000
 maxLookVariant: 8
@@ -72,14 +76,14 @@ bughuntMinTurn: 15
 bughuntMaxEnemies: 2
 bughuntRank: 0
 bughuntLowMorale: 70
-bughuntTimeUnitsLeft: 35
+bughuntTimeUnitsLeft: 60
 ufoGlancingHitThreshold: 5
 ufoBeamWidthParameter: 50
 pilotAccuracyZeroPoint: 50
 pilotAccuracyRange: 50
 pilotReactionsZeroPoint: 50
 pilotReactionsRange: 50
-pilotBraveryThresholds: [100, 80, 40]
+pilotBraveryThresholds: [90, 80, 30]
 escortRange: 50
 drawEnemyRadarCircles: 2
 crewEmergencyEvacuationSurvivalChance: 100
@@ -92,7 +96,7 @@ kneelBonusGlobal: 100
 oneHandedPenaltyGlobal: 100
 maxViewDistance: 30
 noLOSAccuracyPenaltyGlobal: 50
-baseDefenseMapFromLocation: 1
+baseDefenseMapFromLocation: 0
 stunningImprovesMorale: true
 enableNewResearchSorting: true
 statisticalBulletConservation: true
@@ -100,7 +104,7 @@ showDogfightDistanceInKm: true
 showFullNameInAlienInventory: true
 giveScoreAlsoForResearchedArtifacts: true
 buildInfiltrationBaseCloseToTheCountry: true
-lessAliensDuringBaseDefense: false
+lessAliensDuringBaseDefense: true
 fakeUnderwaterBaseUnlockResearch: STR_TODO
 psiUnlockResearch: STR_TODO
 mana:
@@ -110,11 +114,10 @@ mana:
   trainingPrimary: true
   trainingSecondary: true
   replenishAfterMission: false
-alienFuel: [STR_ELERIUM, 25]
+alienFuel: [STR_NONE, 0]
 fontName: AmigaFont.dat
 lighting:
-  enhanced: 3
-
+  enhanced: 1
 
 fixedUserOptions:
   battleUFOExtenderAccuracy: true
@@ -171,7 +174,7 @@ constants:
 ai:
   extendedFireModeChoice: true
   pickUpWeaponsMoreActively: true
-  pickUpWeaponsMoreActivelyCiv: true
+  pickUpWeaponsMoreActivelyCiv: false
   destroyBaseFacilities: true
   fireChoiceIntelCoeff: 5
   fireChoiceAggroCoeff: 5

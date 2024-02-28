@@ -3,12 +3,12 @@
     costs:
       STR_QD_SLOT: 12
       STR_BACK_PACK: 20
-      STR_BELT: 12
+      STR_BELT: 13
       STR_LEFT_HAND: 10
-      STR_LEFT_LEG: 12
+      STR_LEFT_LEG: 14
       STR_LEFT_SHOULDER: 18
       STR_RIGHT_HAND: 10
-      STR_RIGHT_LEG: 12
+      STR_RIGHT_LEG: 14
       STR_RIGHT_SHOULDER: 18
   - id: STR_RIGHT_HAND
     costs:

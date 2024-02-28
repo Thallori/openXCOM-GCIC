@@ -1,6 +1,5 @@
 terrains:
   - name: HANGAR
-    script: HANGAR_DRONES
     mapDataSets:
       - BLANKS
       - FLOOR_ASPHALT
@@ -32,7 +31,7 @@ terrains:
       - SIGNS_TECH1
       - SIGNS_WARNING
       - BLOCKS_PORT
-      - BLOCK_PORT_CRANE
+      - BLOCKS_PORT_CRANE
       - FURNITURE_OUTDOORS
       - FURNITURE_DESKS1
       - FURNITURE_DESKS2
@@ -148,7 +147,7 @@ terrains:
       - SIGNS_TECH1
       - SIGNS_WARNING
       - BLOCKS_PORT
-      - BLOCK_PORT_CRANE
+      - BLOCKS_PORT_CRANE
       - FURNITURE_OUTDOORS
       - FURNITURE_DESKS1
       - FURNITURE_DESKS2
@@ -162,66 +161,79 @@ terrains:
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [9, 2, 0]
+          STR_SPAWN_DRONE_HUMAN_1:
           - [10, 3, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_HUMAN_1: [0, 0]
       - name: HANGAR_03S
         width: 10
         length: 10
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [2, 7, 0]
+          STR_SPAWN_DRONE_HUMAN_1:
           - [5, 6, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_HUMAN_1: [0, 0]
       - name: HANGAR_04S
         width: 10
         length: 10
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [2, 6, 0]
+          STR_SPAWN_DRONE_HUMAN_1:
           - [4, 4, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_HUMAN_1: [0, 0]
       - name: HANGAR_05S
         width: 10
         length: 10
         items:
           STR_SPAWN_DRONE_HYBRID_1:
-          - [2, 2, 0]
-          - [7, 1, 0]
+          - [3, 1, 0]
+          STR_SPAWN_DRONE_HUMAN_1:
+          - [7, 2, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_HUMAN_1: [0, 0]
       - name: HANGAR_06S
         width: 10
         length: 10
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [4, 2, 0]
-          - [4, 3, 0]
+          STR_SPAWN_DRONE_HUMAN_1:
+          - [3, 4, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_HUMAN_1: [0, 0]
       - name: HANGAR_07
         width: 10
         length: 20
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [7, 2, 0]
-          - [7, 6, 0]
+          STR_SPAWN_DRONE_SHARK_1:
+          - [6, 4, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_SHARK_1: [0, 0]
       - name: HANGAR_08S
         width: 10
         length: 10
         items:
           STR_SPAWN_DRONE_HYBRID_1:
-          - [6, 1, 0]
-          - [6, 3, 0]
+          - [5, 1, 0]
+          STR_SPAWN_DRONE_HUMAN_1:
+          - [6, 2, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_HUMAN_1: [0, 0]
 
-  - name: CLUB
-    script: SINGLE_BLOCK_LZ
+  - name: CLUB_LANDING
     mapDataSets:
       - BLANKS
       - LIFTER
@@ -246,7 +258,45 @@ terrains:
       - FURNITURE_BEDS_LUX
       - ENTRY
     mapBlocks:
-      - name: CLUB_00LZ
+      - name: CLUB_LANDING_01LZ
+        width: 20
+        length: 30
+        items:
+          STR_CRIMINAL_CONTAINER_1:
+            - [7, 14, 0]
+            - [2, 2, 1]
+        randomizedItems:
+          - position: [3, 1, 0]
+            amount: 1
+            mixed: true
+            itemList: [STR_XN_CONTAINER_1, STR_CRIMINAL_CONTAINER_1]
+
+  - name: CLUB
+    mapDataSets:
+      - BLANKS
+      - LIFTER
+      - FLOOR_URBAN
+      - STRUCTURE_LUX
+      - STRUCTURE_GLASS
+      - STRUCTURE_PANELS2
+      - STRUCTURE_SLUMS1
+      - STAIRS_METAL
+      - FLOOR_ASPHALT
+      - FURNITURE_TABLES_CHAIRS
+      - LADDER
+      - BITS_CONTRABAND
+      - BITS_SERVERS
+      - BITS_TECH
+      - SIGNS_TECH1
+      - HOLOGRAMS
+      - FURNITURE_BAR
+      - FURNITURE_DESKS1
+      - FURNITURE_SLUMS1
+      - FURNITURE_SLUMS2
+      - FURNITURE_BEDS_LUX
+      - ENTRY
+    mapBlocks:
+      - name: CLUB_00
         width: 20
         length: 20
         items:
@@ -256,3 +306,115 @@ terrains:
             - [2, 2, 1]
           STR_XN_CONTAINER_1:
             - [3, 1, 0]
+
+  - name: COMMERCIAL
+    mapDataSets:
+      - BLANKS
+      - FLOOR_ASPHALT
+      - FLOOR_URBAN
+      - FLOOR_TILES
+      - FLORA_FOREST_SMALL
+      - FLORA_URBAN
+      - STRUCTURE_DRYWALL1
+      - STRUCTURE_DRYWALL2
+      - STRUCTURE_WAREHOUSE
+      - STRUCTURE_TILES1
+      - STRUCTURE_GLASS2
+      - FENCE_CHAINLINK
+      - STAIRS_PLAIN
+      - LADDER
+      - ROOFS_BITS
+      - LIGHTS_STREET1
+      - SHOPS_CLOTHES
+      - SHOPS_SHELVES
+      - SHOPS_FOOD
+      - FURNITURE_OFFICE1
+      - BATHROOM
+      - FURNITURE_OUTDOORS
+      - SIGNS_COMMERCIAL
+      - SIGNS_TECH2
+      - HOLOGRAMS
+      - BITS_CRATES3
+      - FURNITURE_TABLES_CHAIRS2
+      - BITS_BOOKS1
+      - BITS_SERVERS
+      - FENCE_PLAIN
+      - FENCE_IRON
+      - FLOOR_PLAIN
+    mapBlocks:
+      - name: COMMERCIAL_00LZ
+        width: 10
+        length: 10
+        groups: 1
+      - name: COMMERCIAL_01LZ
+        width: 10
+        length: 10
+        groups: 1
+      - name: COMMERCIAL_02
+        width: 20
+        length: 20
+      - name: COMMERCIAL_03S
+        width: 10
+        length: 10
+      - name: COMMERCIAL_04S
+        width: 10
+        length: 10
+      - name: COMMERCIAL_05S
+        width: 10
+        length: 10
+      - name: COMMERCIAL_06S
+        width: 10
+        length: 10
+      - name: COMMERCIAL_07
+        width: 20
+        length: 20
+      - name: COMMERCIAL_08S
+        width: 10
+        length: 10
+      - name: COMMERCIAL_09S
+        width: 10
+        length: 10
+      - name: COMMERCIAL_10S
+        width: 10
+        length: 10
+      - name: COMMERCIAL_11S
+        width: 10
+        length: 10
+      - name: COMMERCIAL_12EW
+        width: 10
+        length: 10
+        groups: 2
+      - name: COMMERCIAL_13EW
+        width: 10
+        length: 10
+        groups: 2
+      - name: COMMERCIAL_14EW
+        width: 10
+        length: 10
+        groups: 2
+      - name: COMMERCIAL_15EW
+        width: 10
+        length: 10
+        groups: 2
+      - name: COMMERCIAL_16EW
+        width: 10
+        length: 10
+        groups: 2
+      - name: COMMERCIAL_17EW
+        width: 10
+        length: 10
+        groups: 2
+      - name: COMMERCIAL_18EW
+        width: 10
+        length: 10
+        groups: 2
+      - name: COMMERCIAL_19EW
+        width: 10
+        length: 10
+        groups: 2
+      - name: COMMERCIAL_20
+        width: 20
+        length: 10
+      - name: COMMERCIAL_21
+        width: 20
+        length: 10

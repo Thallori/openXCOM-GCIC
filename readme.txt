@@ -23,11 +23,12 @@ Falko				OXC, Falko's Tools
 Assets credits are by source first, listed author may not be the true originator!
 Please contact thallori for corrections.
 								(earliest known source)
-Community Map Pack			[source/team]
+Community Map Pack			[mod]
+ OXC					[authors]
   Map Sprites				[wholecloth, touchup]	(ufo, tftd)
   Globe Textures			[wholecloth, touchup]	(ufo)
 
-X-Com Files/Final Mod Pack		[source]
+X-Com Files/Final Mod Pack		[mod]
  Solarius Scorch			[project lead]
  Meridian
  Dioxine
@@ -45,43 +46,45 @@ X-Com Files/Final Mod Pack		[source]
   Spray Sound				[wholecloth]
   Flying Drone Chassis			[cleanup, recolour]	(xenonauts)
   Civilians				[wholecloth]
-  Bandit				[redraw]
-  Hybrid				[base]
+  Bandit				[recolour]
+  Police Officer			[recolour]
+  Hybrid				[wholecloth]
   HitFX	Script				[wholecloth]
   Crate					[wholecloth, recolour]
   Taser					[wholecloth]
   Fire Extinguisher			[touchup, recolour]
 
-X-Com Files Resound			[source]
+X-Com Files Resound			[mod]
  Ksenni					[author]
   Wrench SFX				[wholecloth]
   Neonbow SFX				[wholecloth]
 
-From the Ashes
- Finnik
+From the Ashes				[mod]
+ Finnik					[author]
   Military Guns				[wholecloth]		(zdoom)
 
-From the Apocalypse			[source]
+From the Apocalypse			[mod]
  Robin					[author]
   Aircar Map Sprites			[wholecloth, recolour]	(original)
   Tech, Bath, and Wall Map Sprites	[wholecloth, touchup]	(original)
+  Hologram Sprites			[wholecloth]		(original)
   Civilians				[wholecloth]		(original)
   Medikit				[touchup, recolour]
-  Motion Sensor				[wholecloth, logo]
+  Motion Sensor				[wholecloth]
 
-Delicious Colors
- RSSWizard
-  Pallet				[colour targets]
+Delicious Colors			[mod]
+ RSSWizard				[author]
+  Pallet				[recolour]
 
-Amiga Fonts				[wholecloth]
+Amiga Fonts				[mod]
  Hythlodaeus				[author]		(ufo)
 
-First Turn Enemy TU Randomizer		[source]
+First Turn Enemy TU Randomizer		[mod]
  Kzer-Za, Starving Poet			[authors]
   Script				[wholecloth]
 
-Sharkquanaut Combat Divers
- Hans Woofington
+Sharkquanaut Combat Divers		[mod]
+ Hans Woofington			[author]
   Sharks				[redraw]		(original)
 
 
@@ -94,7 +97,7 @@ X-Com Files/FMP
  Bounty system. Spawning 'disposable' allies at mission start. Recoil/strength requirements. The power of scripting in general. Redoing the geoscape to tell a completely different story. Outpost mechanics and base defense missions. Facility art direction.
 
 X-Piratez
- Item and facility based income/storage mechanics. Balancing the metaprogression around money and number of scientists. Purchasing based progression. Different bonuses depending on starting location. Radically different soldier types. Negative score missions. Enviromental effects. Energy management. Freshness. Space.
+ Item and facility based income/storage mechanics. Balancing the metaprogression around money and number of scientists. Purchasing based progression. Different bonuses depending on starting location. Different soldier types. Negative score missions. Enviromental effects. Energy management. Freshness. Hacking. Space.
 
 Reaver's Harmony
  Geoscape ship mechanics, ship upgrades being compatible with weapon slots. Salvaging equipment into components. Scout reports.

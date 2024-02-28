@@ -1,6 +1,6 @@
 
 alienDeployments:
-  - delete: STR_CRAFT_DEPLOYMENT_PREVIEW
+  # - delete: STR_CRAFT_DEPLOYMENT_PREVIEW
   - delete: STR_SMALL_SCOUT
   - delete: STR_MEDIUM_SCOUT
   - delete: STR_LARGE_SCOUT

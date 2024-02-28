@@ -1,6 +1,8 @@
 
 facilities:
   - type: STR_CENTRAL_ACCESS
+    requires:
+      - STR_TODO
     lift: true
     fakeUnderwater: 0
     spriteShape: 2
@@ -28,7 +30,7 @@ facilities:
 
   - type: STR_BUNK_RACKS
     requires:
-      - STR_TODO
+      - STR_VENDOR_BUILDER
     spriteShape: 1
     spriteFacility: 302
     buildTime: 12
@@ -49,8 +51,37 @@ facilities:
     buildCost: 750000
     refundValue: 500000
     monthlyCost: 30000
-    maxAllowedPerBase: 3
+    maxAllowedPerBase: 1
     labs: 4
+    mapName: XBASE_02
+
+  - type: STR_LOCAL_INTERFACE
+    requires:
+      - STR_LOCAL_INTERFACE
+    provideBaseFunc: [STR_SERVICE_PORT] #for hacking things you've got
+    spriteShape: 1
+    spriteFacility: 308
+    buildTime: 13
+    buildCost: 450000
+    refundValue: 300000
+    monthlyCost: 20000
+    maxAllowedPerBase: 1
+    workshops: 3
+    labs: 3
+    mapName: XBASE_02
+
+  - type: STR_PUBLIC_GATEWAY
+    requires:
+      - STR_TODO
+    provideBaseFunc: [STR_SERVICE_NETWORK] #for hacking things you've don't got
+#    spriteShape: 1
+#    spriteFacility: 303
+    buildTime: 15
+    buildCost: 900000
+    refundValue: 750000
+    monthlyCost: 6500
+    maxAllowedPerBase: 3
+    labs: 1
     mapName: XBASE_02
 
   - type: STR_HOLDING_CELLS
@@ -95,8 +126,6 @@ facilities:
     storage: 20
     personnel: 8
     workshops: 2
-    aliens: 1
-    prisonType: 0
     mapName: XBASE_07
 
   - type: STR_CORRIDOR
@@ -111,38 +140,10 @@ facilities:
     monthlyCost: 200
     mapName: XBASE_07
 
-  - type: STR_PUBLIC_GATEWAY
-    requires:
-      - STR_TODO
-    provideBaseFunc: [STR_SERVICE_NETWORK]
-#    spriteShape: 1
-#    spriteFacility: 303
-    buildTime: 15
-    buildCost: 90000
-    refundValue: 75000
-    monthlyCost: 2000
-    maxAllowedPerBase: 1
-    labs: 1
-    mapName: XBASE_02
-
-  - type: STR_LOCAL_INTERFACE
-    requires:
-      - STR_LOCAL_INTERFACE
-    provideBaseFunc: [STR_SERVICE_PORT]
-#    spriteShape: 1
-#    spriteFacility: 303
-    buildTime: 13
-    buildCost: 80000
-    refundValue: 65000
-    monthlyCost: 20000
-    maxAllowedPerBase: 1
-    labs: 1
-    mapName: XBASE_02
-
   - type: STR_REMEDITION_OFFICE
     requires:
       - STR_TODO
-    provideBaseFunc: [STR_SERVICE_PROJECTS]
+    provideBaseFunc: [STR_SERVICE_PROJECTS] #drone personal projects
 #    spriteShape: 1
 #    spriteFacility: 303
     buildTime: 14

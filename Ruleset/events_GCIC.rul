@@ -1,0 +1,4 @@
+events:
+  - name: STR_EVENT_CLAIM_SECURED
+    description: STR_EVENT_CLAIM_SECURED_DESCRIPTION
+    everyItemList: [STR_BRAND_LOYALTY]

@@ -1,0 +1,29 @@
+startingConditions:
+  - type: LOWSPEC_GEAR
+    # defaultArmor:
+    #   STR_CRACKED_HYBRID_DRONE:
+    #     STR_PLEX_DRONE_HYBRID_ARMOR: 100
+    #   STR_CRACKED_HUMAN_DRONE:
+    #     STR_PLEX_DRONE_HUMAN_ARMOR: 100
+    #   STR_CRACKED_SHARK_DRONE:
+    #     STR_PLEX_DRONE_SHARK_ARMOR: 100
+    allowedArmors:
+      - STR_PLEX_DRONE_HYBRID_ARMOR
+      - STR_PLEX_DRONE_HUMAN_ARMOR
+      - STR_PLEX_DRONE_SHARK_ARMOR
+      - STR_DURA_DRONE_HYBRID_ARMOR
+      - STR_DURA_DRONE_HUMAN_ARMOR
+      - STR_DURA_DRONE_SHARK_ARMOR
+      - STR_AQUAVEST_DRONE_HYBRID_ARMOR
+      - STR_AQUAVEST_DRONE_HUMAN_ARMOR
+      - STR_AQUAVEST_DRONE_SHARK_ARMOR
+    allowedItemCategories:
+      - STR_CONVENTIONAL_CATEGORY
+      - STR_SECURITY_CATEGORY
+    # allowedVehicles:
+    #   - STR_NONE
+    allowedCraft:
+      - STR_HD_CROSSOVER
+      - STR_USC_BICUBE
+    # forbiddenSoldierTypes:
+    #   - STR_PILOT
