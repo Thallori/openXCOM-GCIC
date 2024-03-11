@@ -17,7 +17,7 @@ soldierTransformation:
     requires:
       - STR_DRONE_IMMORTALITY
     cost: 65000
-    transferTime: 7
+    recoveryTime: 32
     rerollStats:
       mana: 1
     allowsDeadSoldiers: true
@@ -32,79 +32,96 @@ soldierTransformation:
   - name: STR_SKIRMISHER_TRANSFORMATION
     requires:
       - STR_SPECIALIZATION_TRAINING
+    percentGainedStatChange:
+      mana: -100
+    cost: 25000
     recoveryTime: 7
     keepSoldierArmor: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_CRACKED_HYBRID_DRONE
+      - STR_CRACKED_HUMAN_DRONE
+      - STR_CRACKED_SHARK_DRONE
     soldierBonusType: STR_SKIRMISHER_SPECIALIST
     forbiddenPreviousTransformations:
       - STR_SKIRMISHER_TRANSFORMATION
       - STR_RANGER_TRANSFORMATION
       - STR_SCOUT_TRANSFORMATION
-      - STR_BREACHER_TRANSFORMATION
-      - STR_HEAVY_TRANSFORMATION
 
   - name: STR_RANGER_TRANSFORMATION
     requires:
       - STR_SPECIALIZATION_TRAINING
+    percentGainedStatChange:
+      mana: -100
+    cost: 25000
     recoveryTime: 7
     keepSoldierArmor: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_CRACKED_HYBRID_DRONE
+      - STR_CRACKED_HUMAN_DRONE
+      - STR_CRACKED_SHARK_DRONE
     soldierBonusType: STR_RANGER_SPECIALIST
     forbiddenPreviousTransformations:
       - STR_SKIRMISHER_TRANSFORMATION
       - STR_RANGER_TRANSFORMATION
       - STR_SCOUT_TRANSFORMATION
-      - STR_BREACHER_TRANSFORMATION
-      - STR_HEAVY_TRANSFORMATION
 
   - name: STR_SCOUT_TRANSFORMATION
     requires:
       - STR_SPECIALIZATION_TRAINING
+    percentGainedStatChange:
+      mana: -100
+    cost: 25000
     recoveryTime: 7
     keepSoldierArmor: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_CRACKED_HYBRID_DRONE
+      - STR_CRACKED_HUMAN_DRONE
+      - STR_CRACKED_SHARK_DRONE
     soldierBonusType: STR_SCOUT_SPECIALIST
     forbiddenPreviousTransformations:
       - STR_SKIRMISHER_TRANSFORMATION
       - STR_RANGER_TRANSFORMATION
       - STR_SCOUT_TRANSFORMATION
-      - STR_BREACHER_TRANSFORMATION
-      - STR_HEAVY_TRANSFORMATION
 
-  - name: STR_BREACHER_TRANSFORMATION
+  - name: STR_AGILITY_TRANSFORMATION
     requires:
-      - STR_SPECIALIZATION_TRAINING
-    recoveryTime: 7
+      - STR_TODO
+    requiredMinStats:
+      mana: 40
+    percentGainedStatChange:
+      mana: -100
+    cost: 40000
+    recoveryTime: 10
     keepSoldierArmor: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_CRACKED_HYBRID_DRONE
-    soldierBonusType: STR_BREACHER_SPECIALIST
+      - STR_CRACKED_HUMAN_DRONE
+      - STR_CRACKED_SHARK_DRONE
+    soldierBonusType: STR_AGILITY_MUSCLES
     forbiddenPreviousTransformations:
-      - STR_SKIRMISHER_TRANSFORMATION
-      - STR_RANGER_TRANSFORMATION
-      - STR_SCOUT_TRANSFORMATION
-      - STR_BREACHER_TRANSFORMATION
+      - STR_AGILITY_TRANSFORMATION
       - STR_HEAVY_TRANSFORMATION
 
   - name: STR_HEAVY_TRANSFORMATION
     requires:
-      - STR_SPECIALIZATION_TRAINING
-    recoveryTime: 7
+      - STR_TODO
+    requiredMinStats:
+      mana: 40
+    percentGainedStatChange:
+      mana: -100
+    cost: 40000
+    recoveryTime: 10
     keepSoldierArmor: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_CRACKED_HYBRID_DRONE
-    soldierBonusType: STR_HEAVY_SPECIALIST
+      - STR_CRACKED_HUMAN_DRONE
+      - STR_CRACKED_SHARK_DRONE
+    soldierBonusType: STR_HEAVY_MUSCLES
     forbiddenPreviousTransformations:
-      - STR_SKIRMISHER_TRANSFORMATION
-      - STR_RANGER_TRANSFORMATION
-      - STR_SCOUT_TRANSFORMATION
-      - STR_BREACHER_TRANSFORMATION
+      - STR_AGILITY_TRANSFORMATION
       - STR_HEAVY_TRANSFORMATION

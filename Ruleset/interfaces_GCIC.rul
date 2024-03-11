@@ -50,7 +50,7 @@ interfaces:
   - type: articleText
     elements:
       - id: button
-        color: 80
+        color: 82
       - id: title
         color: 244
       - id: text
@@ -60,7 +60,7 @@ interfaces:
   - type: articleTextImage
     elements:
       - id: button
-        color: 224
+        color: 82
       - id: title
         color: 244
       - id: text

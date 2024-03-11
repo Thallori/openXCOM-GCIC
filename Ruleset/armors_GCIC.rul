@@ -3,6 +3,7 @@ armors:
 #drones
   - type: STR_PLEX_DRONE_HYBRID_ARMOR
     ufopediaType: STR_PLEX_DRONE_ARMOR
+    customArmorPreviewIndex: 0
     spriteSheet: WORKSUIT_HYBRID.PCK
     layersDefaultPrefix: HYBRID
     layersDefinition:
@@ -11,7 +12,7 @@ armors:
     corpseBattle:
       - STR_PLEX_DRONE_HYBRID_CORPSE
     storeItem: STR_NONE
-    # specialWeapon: STR_UNARMED
+    specialWeapon: STR_UNARMED
     builtInWeapons:
       - STR_NULL_LEFT_SHOULDER
       - STR_NULL_RIGHT_SHOULDER
@@ -52,18 +53,16 @@ armors:
     recovery:
       health: &HealthRecoveryTypical
         stunNormalized: -0.10
-      stun: &StunRecoveryMaxHealth180
-        healthNormalized: 6
-        stunCurrent: -0.03
+      stun: &StunRecoveryTypical
+        healthNormalized: 4
+        stunNormalized: -2
       energy: &EnergyRecoveryTypical
         stamina: 0.1
         flatHundred: 0.16
         stunNormalized: -16
       morale: &MoraleRecoveryTypical
-        flatOne: -0.1
-        moraleCurrent: -0.14
-        manaNormalized: 6
         bravery: 0.1
+        moraleCurrent: -0.12
     overKill: 1.5
     units:
       - STR_CRACKED_HYBRID_DRONE
@@ -71,6 +70,7 @@ armors:
 
   - type: STR_PLEX_DRONE_HUMAN_ARMOR
     ufopediaType: STR_PLEX_DRONE_ARMOR
+    customArmorPreviewIndex: 1
     spriteSheet: WORKSUIT_HUMAN.PCK
     layersDefaultPrefix: HUMAN
     layersDefinition:
@@ -89,7 +89,7 @@ armors:
     corpseBattle:
       - STR_PLEX_DRONE_HUMAN_CORPSE
     storeItem: STR_NONE
-    # specialWeapon: STR_UNARMED
+    specialWeapon: STR_UNARMED
     builtInWeapons:
       - STR_NULL_LEFT_SHOULDER
       - STR_NULL_RIGHT_SHOULDER
@@ -108,11 +108,11 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryMaxHealth180
+      stun: *StunRecoveryTypical
       energy: &EnergyRecoveryHumanTypical
         stamina: 0.1
         flatHundred: 0.20
-        stunNormalized: 20
+        stunNormalized: -20
       morale: *MoraleRecoveryTypical
     overKill: 1.5
     units:
@@ -121,6 +121,7 @@ armors:
 
   - type: STR_PLEX_DRONE_SHARK_ARMOR
     ufopediaType: STR_PLEX_DRONE_ARMOR
+    customArmorPreviewIndex: 2
     spriteSheet: WORKSUIT_SHARK.PCK
     layersDefaultPrefix: SHARK
     layersDefinition:
@@ -156,7 +157,7 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryMaxHealth180
+      stun: *StunRecoveryTypical
       energy: *EnergyRecoveryTypical
       morale: *MoraleRecoveryTypical
     overKill: 1.5
@@ -166,6 +167,7 @@ armors:
 
   - type: STR_DURA_DRONE_HYBRID_ARMOR
     ufopediaType: STR_DURA_DRONE_ARMOR
+    customArmorPreviewIndex: 3
     spriteSheet: JUMPSUIT_HYBRID.PCK
     layersDefaultPrefix: HYBRID
     layersDefinition:
@@ -178,9 +180,7 @@ armors:
     corpseBattle:
       - STR_DURA_DRONE_HYBRID_CORPSE
     storeItem: STR_DURA_DRONE_ARMOR
-    # specialWeapon: STR_UNARMED
-    builtInWeapons:
-      - STR_NULL_BACK_PACK
+    specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDay: 30
     visibilityAtDark: 12
@@ -218,7 +218,7 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryMaxHealth180
+      stun: *StunRecoveryTypical
       energy: *EnergyRecoveryTypical
       morale: *MoraleRecoveryTypical
     overKill: 1.5
@@ -228,6 +228,7 @@ armors:
 
   - type: STR_DURA_DRONE_HUMAN_ARMOR
     ufopediaType: STR_DURA_DRONE_ARMOR
+    customArmorPreviewIndex: 4
     spriteSheet: JUMPSUIT_HUMAN.PCK
     layersDefaultPrefix: HUMAN
     layersDefinition:
@@ -246,9 +247,7 @@ armors:
     corpseBattle:
       - STR_DURA_DRONE_HUMAN_CORPSE
     storeItem: STR_DURA_DRONE_ARMOR
-    # specialWeapon: STR_UNARMED
-    builtInWeapons:
-      - STR_NULL_BACK_PACK
+    specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDay: 30
     visibilityAtDark: 9
@@ -268,7 +267,7 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryMaxHealth180
+      stun: *StunRecoveryTypical
       energy: *EnergyRecoveryHumanTypical
       morale: *MoraleRecoveryTypical
     overKill: 1.5
@@ -278,6 +277,7 @@ armors:
 
   - type: STR_DURA_DRONE_SHARK_ARMOR
     ufopediaType: STR_DURA_DRONE_ARMOR
+    customArmorPreviewIndex: 5
     spriteSheet: JUMPSUIT_SHARK.PCK
     layersDefaultPrefix: SHARK
     layersDefinition:
@@ -295,8 +295,6 @@ armors:
       - STR_DURA_DRONE_SHARK_CORPSE
     storeItem: STR_DURA_DRONE_ARMOR
     specialWeapon: STR_SHARKATTACK
-    builtInWeapons:
-      - STR_NULL_BACK_PACK
     allowsKneeling: true
     visibilityAtDay: 30
     visibilityAtDark: 9
@@ -316,7 +314,7 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryMaxHealth180
+      stun: *StunRecoveryTypical
       energy: *EnergyRecoveryTypical
       morale: *MoraleRecoveryTypical
     overKill: 1.5
@@ -370,7 +368,7 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryMaxHealth180
+      stun: *StunRecoveryTypical
       energy: &EnergyRecoveryPoor
         stamina: 0.25
         healthCurrent: 0.25
@@ -409,7 +407,7 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryMaxHealth180
+      stun: *StunRecoveryTypical
       energy: &EnergyRecoveryHumanPoor
         stamina: 0.30
         healthCurrent: 0.30
@@ -446,7 +444,7 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryMaxHealth180
+      stun: *StunRecoveryTypical
       energy: *EnergyRecoveryPoor
       morale: *MoraleRecoveryTypical
     overKill: 1.5
@@ -505,7 +503,7 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryMaxHealth180
+      stun: *StunRecoveryTypical
       energy: *EnergyRecoveryTypical
       morale: *MoraleRecoveryTypical
     drawingRoutine: 4
@@ -518,7 +516,7 @@ armors:
     loftempsSet: [ 3 ]
 
 #enemies
-#ironeyes
+# ironeyes
   - type: STR_BOOSTER_ARMOR
     spriteInv: BOOSTER.SPK
     spriteSheet: BOOSTER.PCK
@@ -529,25 +527,25 @@ armors:
     forcedTorso: 1
     corpseBattle:
       - STR_BOOSTER_CORPSE
-    # specialWeapon: STR_UNARMED
+    specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDay: 30
     visibilityAtDark: 12
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
+    frontArmor: 6
+    sideArmor: 6
+    rearArmor: 6
+    underArmor: 6
     damageModifier: *OrganicUnarmoredResists
     meleeDodge: *MeleeDodgeTypical
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryMaxHealth180
+      stun: &StunRecoveryEnemy
+        flatHundred: 0
       energy: *EnergyRecoveryHumanTypical
-      morale: *MoraleRecoveryTypical
     loftempsSet: [ 3 ]
 
-#netrunners
+# netrunners
   - type: STR_FREELANCER_ARMOR
     spriteInv: FREELANCER.SPK
     spriteSheet: FREELANCER.PCK
@@ -557,7 +555,7 @@ armors:
     spriteHairColor: *SpriteHairColorHuman
     corpseBattle:
       - STR_FREELANCER_CORPSE
-    # specialWeapon: STR_UNARMED
+    specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDay: 30
     visibilityAtDark: 9
@@ -570,11 +568,11 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryMaxHealth180
+      stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryHumanTypical
-      morale: *MoraleRecoveryTypical
     loftempsSet: [ 3 ]
 
+# ssp
   - type: STR_SSPGUARD_ARMOR
     spriteInv: SSPGUARD.SPK
     spriteSheet: SSPGUARD.PCK
@@ -595,9 +593,8 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryMaxHealth180
+      stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryTypical
-      morale: *MoraleRecoveryTypical
     loftempsSet: [ 3 ]
 
 #civilians
@@ -624,7 +621,7 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryMaxHealth180
+      stun: *StunRecoveryTypical
       energy: *EnergyRecoveryTypical
       morale: *MoraleRecoveryTypical
     loftempsSet: [ 3 ]
@@ -651,7 +648,7 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryMaxHealth180
+      stun: *StunRecoveryTypical
       energy: *EnergyRecoveryTypical
       morale: *MoraleRecoveryTypical
     loftempsSet: [ 3 ]

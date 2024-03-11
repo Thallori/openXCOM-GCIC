@@ -6,19 +6,20 @@ crafts:
     armor: 2
     speedMax: 350
     accel: 2
-    fuelMax: 500
+    fuelMax: 350
     refuelRate: 200
     radarRange: 200
     radarChance: 80
     soldiers: 2
-    vehicles: 0
+    vehicles: -1
     maxSmallUnits: 2
-    maxLargeUnits: 0
+    maxLargeUnits: -1
     costBuy: 29999
     costRent: 350
     costSell: 7500
     transferTime: 12
     score: 10
+    keepCraftAfterFailedMission: true
     requires:
       - STR_VENDOR_HD
     weapons: 1
@@ -28,7 +29,6 @@ crafts:
       - STR_BLANK_TOKEN
       - STR_BLANK_TOKEN
       - STR_BLANK_TOKEN
-    keepCraftAfterFailedMission: true
     battlescapeTerrainData:
       name: CRAFT_CROSSOVER
       mapDataSets:
@@ -45,7 +45,7 @@ crafts:
       - [5, 5, 0, 2]
       - [3, 5, 0, 6]
 
-  - type: STR_USC_BICUBE
+  - type: STR_VCM_BICUBE
     sprite: 400
     damageMax: 20
     armor: 1
@@ -64,8 +64,10 @@ crafts:
     costSell: 2000
     transferTime: 12
     score: 5
+    keepCraftAfterFailedMission: true
+    undetectable: true
     requires:
-      - STR_VENDOR_USC
+      - STR_VENDOR_VCM
     weapons: 1
     weaponTypes: [1]
     weaponStrings:
@@ -73,8 +75,6 @@ crafts:
       - STR_BLANK_TOKEN
       - STR_BLANK_TOKEN
       - STR_BLANK_TOKEN
-    keepCraftAfterFailedMission: true
-    undetectable: true
     battlescapeTerrainData:
       name: CRAFT_BICUBE
       mapDataSets:

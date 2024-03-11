@@ -1,3 +1,14 @@
+musics:
+  - type: GMSTORY
+  - type: GMGEO3
+  - type: HACKER_INTRO
+  - type: HACKER1
+  - type: HACKER2
+  - type: BREACH_INTRO
+  - type: BREACH1
+  - type: BREACH2
+  - type: SHADOW_INTRO
+  - type: SHADOW1
 
 extraSounds:
   - type: BATTLE.CAT

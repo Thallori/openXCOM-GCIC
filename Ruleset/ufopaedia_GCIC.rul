@@ -1,13 +1,13 @@
 ufopaedia:
 #files
-  - id: STR_BEGIN_MEZONIC
-    requires:
-      - STR_BEGIN_MEZONIC
-    text: STR_BEGIN_MEZONIC_UFOPEDIA
-    section: STR_FILES_UC
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+  # - id: STR_BEGIN_MEZONIC
+  #   requires:
+  #     - STR_BEGIN_MEZONIC
+  #   text: STR_BEGIN_MEZONIC_UFOPEDIA
+  #   section: STR_FILES_UC
+  #   type_id: 7
+  #   text_width: 180
+  #   image_id: ALIGN_TEST_CPAL #TODO image
 
   - id: STR_OLD_DATA
     requires:
@@ -16,7 +16,7 @@ ufopaedia:
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: DATA1_CPAL
 
   - id: STR_INPUT_OUTPUT
     requires:
@@ -25,7 +25,7 @@ ufopaedia:
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: DATA1_CPAL
 
   - id: STR_ANALOGUE_DEVICES
     requires:
@@ -34,7 +34,7 @@ ufopaedia:
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: DATA1_CPAL
 
   - id: STR_EXPANSION
     requires:
@@ -43,7 +43,7 @@ ufopaedia:
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: DATA2_CPAL
 
   - id: STR_KERNEL
     requires:
@@ -52,7 +52,7 @@ ufopaedia:
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: DATA2_CPAL
 
   - id: STR_SUBSIDIARIES
     requires:
@@ -61,25 +61,25 @@ ufopaedia:
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: DATA2_CPAL
 
-  - id: STR_MARKET_COMPETITION
-    requires:
-      - STR_MARKET_COMPETITION
-    text: STR_MARKET_COMPETITION_UFOPEDIA
-    section: STR_FILES_UC
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+  # - id: STR_MARKET_COMPETITION
+  #   requires:
+  #     - STR_MARKET_COMPETITION
+  #   text: STR_MARKET_COMPETITION_UFOPEDIA
+  #   section: STR_FILES_UC
+  #   type_id: 7
+  #   text_width: 180
+  #   image_id: ALIGN_TEST_CPAL #TODO image
 
-  - id: STR_CONTROL
-    requires:
-      - STR_CONTROL
-    text: STR_CONTROL_UFOPEDIA
-    section: STR_FILES_UC
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+  # - id: STR_CONTROL
+  #   requires:
+  #     - STR_CONTROL
+  #   text: STR_CONTROL_UFOPEDIA
+  #   section: STR_FILES_UC
+  #   type_id: 7
+  #   text_width: 180
+  #   image_id: ALIGN_TEST_CPAL #TODO image
 
   - id: STR_SECURITY
     requires:
@@ -88,7 +88,7 @@ ufopaedia:
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: DATA3_CPAL
 
   - id: STR_NON_CLIENTS
     requires:
@@ -97,18 +97,9 @@ ufopaedia:
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: DATA3_CPAL
 
 # memories
-  # - id: STR_HYBRID_DATA
-  #   requires:
-  #     - STR_HYBRID_DATA
-  #   text: STR_HYBRID_DATA_UFOPEDIA
-  #   section: STR_CONNECTIONS_UC
-  #   type_id: 7
-  #   text_width: 180
-  #   image_id: ALIGN_TEST_CPAL #TODO image
-
   # - id: STR_HYBRID_MEMORY_1
   #   requires:
   #     - STR_HYBRID_MEMORY_1
@@ -153,7 +144,7 @@ ufopaedia:
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: OPERATIONS1_CPAL
 
   - id: STR_SECONDARY_OPERATIONS
     requires:
@@ -162,7 +153,7 @@ ufopaedia:
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: OPERATIONS2_CPAL
 
   - id: STR_FORBIDDEN_OPERATIONS
     requires:
@@ -171,7 +162,7 @@ ufopaedia:
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: OPERATIONS3_CPAL
 
   - id: STR_SUBCONTRACTING_OPERATIONS
     requires:
@@ -180,7 +171,7 @@ ufopaedia:
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: OPERATIONS4_CPAL
 
   # - id: STR_MEDI_MISSIONS
   #   requires:
@@ -190,6 +181,15 @@ ufopaedia:
   #   type_id: 7
   #   text_width: 180
   #   image_id: VENDOR_MEDI_CPAL
+
+  # - id: STR_SSP_MISSIONS
+  #   requires:
+  #     - STR_SSP_MISSIONS
+  #   text: STR_SSP_MISSIONS_UFOPEDIA
+  #   section: STR_OPERATIONS_UC
+  #   type_id: 7
+  #   text_width: 180
+  #   image_id: VENDOR_SSP_CPAL
 
 #connections
   - id: STR_VENDOR_PRINTER
@@ -237,14 +237,23 @@ ufopaedia:
     text_width: 180
     image_id: VENDOR_HD_CPAL
 
-  - id: STR_VENDOR_USC
+  - id: STR_VENDOR_VCM
     requires:
-      - STR_VENDOR_USC
-    text: STR_VENDOR_USC_UFOPEDIA
+      - STR_VENDOR_VCM
+    text: STR_VENDOR_VCM_UFOPEDIA
     section: STR_CONNECTIONS_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: VENDOR_VCM_CPAL
+
+  - id: STR_VENDOR_SSP
+    requires:
+      - STR_VENDOR_SSP
+    text: STR_VENDOR_SSP_UFOPEDIA
+    section: STR_CONNECTIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_SSP_CPAL
 
 #technologies
   - id: STR_MONEY_1
@@ -252,7 +261,7 @@ ufopaedia:
     section: STR_TECHNOLOGIES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: RECEIPT_CPAL
 
   - id: STR_GUNPOWDER
     requires:
@@ -261,7 +270,7 @@ ufopaedia:
     section: STR_TECHNOLOGIES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: GUNPOWDER_CPAL
 
   - id: STR_LASER_AMMO_PRINTING
     requires:
@@ -270,7 +279,16 @@ ufopaedia:
     section: STR_TECHNOLOGIES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: NBCELL_CPAL
+
+  - id: STR_BIOCODING
+    requires:
+      - STR_BIOCODING
+    text: STR_BIOCODING_UFOPEDIA
+    section: STR_TECHNOLOGIES_UC
+    type_id: 7
+    text_width: 180
+    image_id: BIOCODE_CPAL
 
   - id: STR_DRONE_CRACKING
     requires:
@@ -279,7 +297,7 @@ ufopaedia:
     section: STR_TECHNOLOGIES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: STAPLE_CPAL
 
   - id: STR_PASS_CRACKING
     requires:
@@ -288,20 +306,38 @@ ufopaedia:
     section: STR_TECHNOLOGIES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: PASS_CPAL
 
-  - id: STR_SSP_CRACK
-    requires:
-      - STR_SSP_CRACK
-    text: STR_SSP_CRACK_UFOPEDIA
-    section: STR_TECHNOLOGIES_UC
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+  # - id: STR_SSP_CRACK
+  #   requires:
+  #     - STR_SSP_CRACK
+  #   text: STR_SSP_CRACK_UFOPEDIA
+  #   section: STR_TECHNOLOGIES_UC
+  #   type_id: 8 #todo, type 7 image?
 
 #facilities
   - id: STR_CENTRAL_ACCESS
     text: STR_CENTRAL_ACCESS_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
+  - id: STR_CORRIDOR
+    text: STR_CORRIDOR_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
+  - id: STR_DEPOT
+    text: STR_DEPOT_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
+  - id: STR_STORAGE_1
+    text: STR_STORAGE_1_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
+  - id: STR_STOREROOM
+    text: STR_STOREROOM_UFOPEDIA
     section: STR_BASE_FACILITIES_UC
     type_id: 6
 
@@ -312,6 +348,13 @@ ufopaedia:
 
   - id: STR_BUNK_RACKS
     text: STR_BUNK_RACKS_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
+  - id: STR_HOLDING_CELLS
+    requires:
+      - STR_HOLDING_CELLS
+    text: STR_HOLDING_CELLS_UFOPEDIA
     section: STR_BASE_FACILITIES_UC
     type_id: 6
 
@@ -328,39 +371,24 @@ ufopaedia:
     type_id: 6
 
   - id: STR_LOCAL_INTERFACE
+    requires:
+      - STR_LOCAL_INTERFACE
     text: STR_LOCAL_INTERFACE_UFOPEDIA
     section: STR_BASE_FACILITIES_UC
     type_id: 6
 
-  - id: STR_HOLDING_CELLS
-    requires:
-      - STR_HOLDING_CELLS
-    text: STR_HOLDING_CELLS_UFOPEDIA
-    section: STR_BASE_FACILITIES_UC
-    type_id: 6
-
-  - id: STR_STOREROOM
-    text: STR_STOREROOM_UFOPEDIA
-    section: STR_BASE_FACILITIES_UC
-    type_id: 6
-
-  - id: STR_DEPOT
-    text: STR_DEPOT_UFOPEDIA
-    section: STR_BASE_FACILITIES_UC
-    type_id: 6
-
-  - id: STR_CORRIDOR
-    text: STR_CORRIDOR_UFOPEDIA
-    section: STR_BASE_FACILITIES_UC
-    type_id: 6
+  # - id: STR_PRINTSHOP #todo
+  #   requires:
+  #     - STR_PRINTSHOP
+  #   text: STR_PRINTSHOP_UFOPEDIA
+  #   section: STR_BASE_FACILITIES_UC
+  #   type_id: 6
 
 #asp craft
   - id: STR_APS
     text: STR_APS_UFOPEDIA
     section: STR_APS_CRAFT_UC
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    type_id: 8 #todo, type 7 image?
 
   - id: STR_HD_CROSSOVER
     text: STR_HD_CROSSOVER_UFOPEDIA
@@ -378,10 +406,10 @@ ufopaedia:
       width: 140
       height: 60
 
-  - id: STR_USC_BICUBE
+  - id: STR_VCM_BICUBE
     requires:
-      - STR_VENDOR_USC
-    text: STR_USC_BICUBE_UFOPEDIA
+      - STR_VENDOR_VCM
+    text: STR_VCM_BICUBE_UFOPEDIA
     section: STR_APS_CRAFT_UC
     type_id: 1
     image_id: CRAFT_BICUBE_CPAL
@@ -398,12 +426,16 @@ ufopaedia:
 
 #hardpoints
   - id: STR_HD_ECONOMY_ENGINE
+    requires:
+      - STR_HD_ECONOMY_ENGINE
     text: STR_HD_ECONOMY_ENGINE_UFOPEDIA
     section: STR_APS_CRAFT_UC
     type_id: 2
     image_id: BATBOX.SPK #todo
 
   - id: STR_HD_EXPRESS_ENGINE
+    requires:
+      - STR_HD_EXPRESS_ENGINE
     text: STR_HD_EXPRESS_ENGINE_UFOPEDIA
     section: STR_APS_CRAFT_UC
     type_id: 2
@@ -451,7 +483,7 @@ ufopaedia:
     section: STR_DRONES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL
+    image_id: IMMORTAL_CPAL
 
   - id: STR_SPECIALIZATION_TRAINING
     requires:
@@ -460,7 +492,16 @@ ufopaedia:
     section: STR_DRONES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL
+    image_id: IMPLANTS_CPAL
+
+  - id: STR_NEURACHEM
+    requires:
+      - STR_NEURACHEM
+    text: STR_NEURACHEM_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: NEURACHEM_CPAL
 
 # armor
   - id: STR_PLEX_DRONE_ARMOR
@@ -544,12 +585,12 @@ ufopaedia:
   #   section: STR_DRONES_UC
   #   type_id: 4
 
-  - id: STR_SHARKATTACK
-    requires:
-      - STR_DRONE_SHARK_ITEM
-    text: STR_SHARKATTACK_UFOPEDIA
-    section: STR_DRONES_UC
-    type_id: 4
+  # - id: STR_SHARKATTACK
+  #   requires:
+  #     - STR_DRONE_SHARK_ITEM
+  #   text: STR_SHARKATTACK_UFOPEDIA
+  #   section: STR_DRONES_UC
+  #   type_id: 4
 
 #equipment
 # kinetic
@@ -820,35 +861,35 @@ ufopaedia:
     requires:
       - STR_BIONIC_INTERLACE
     text: STR_BIONIC_INTERLACE_UFOPEDIA
-    section: STR_SALVAGE_UC
+    section: STR_RESOURCES_UC
     type_id: 4
 
   - id: STR_SJB_LICENSE
     requires:
       - STR_SJB_LICENSE
     text: STR_SJB_LICENSE_UFOPEDIA
-    section: STR_SALVAGE_UC
+    section: STR_RESOURCES_UC
     type_id: 4
 
   # - id: STR_AG_UNIT #todo
   #   requires:
   #     - STR_AG_UNIT
   #   text: STR_AG_UNIT_UFOPEDIA
-  #   section: STR_SALVAGE_UC
+  #   section: STR_RESOURCES_UC
   #   type_id: 4
 
   - id: STR_BIOMASS
     requires:
       - STR_BIOMASS
     text: STR_BIOMASS_UFOPEDIA
-    section: STR_SALVAGE_UC
+    section: STR_RESOURCES_UC
     type_id: 4
 
   - id: STR_ELERIUM_CORE
     requires:
       - STR_ELERIUM_CORE
     text: STR_ELERIUM_CORE_UFOPEDIA
-    section: STR_SALVAGE_UC
+    section: STR_RESOURCES_UC
     type_id: 4
 
 # data
@@ -856,7 +897,7 @@ ufopaedia:
     requires:
       - STR_PERSONAL_DATA
     text: STR_PERSONAL_DATA_UFOPEDIA
-    section: STR_SALVAGE_UC
+    section: STR_RESOURCES_UC
     type_id: 4
 
 # abstract
@@ -864,55 +905,40 @@ ufopaedia:
     requires:
       - STR_SHARES_GCIC
     text: STR_SHARES_GCIC_UFOPEDIA
-    section: STR_SALVAGE_UC
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    section: STR_RESOURCES_UC
+    type_id: 8
 
   - id: STR_BRAND_LOYALTY
     requires:
       - STR_BRAND_LOYALTY
     text: STR_BRAND_LOYALTY_UFOPEDIA
-    section: STR_SALVAGE_UC
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    section: STR_RESOURCES_UC
+    type_id: 8
 
   - id: STR_BOUNTY_1
     requires:
       - STR_BOUNTY_1
     text: STR_BOUNTY_1_UFOPEDIA
-    section: STR_SALVAGE_UC
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    section: STR_RESOURCES_UC
+    type_id: 8
 
 # containers
   - id: STR_CRIMINAL_CONTAINER_1
     requires:
       - STR_CRIMINAL_CONTAINER_1
     text: STR_CRIMINAL_CONTAINER_1_UFOPEDIA
-    section: STR_SALVAGE_UC
+    section: STR_RESOURCES_UC
     type_id: 4
 
   - id: STR_XN_CONTAINER_1
     requires:
       - STR_XN_CONTAINER_1
     text: STR_XN_CONTAINER_1_UFOPEDIA
-    section: STR_SALVAGE_UC
+    section: STR_RESOURCES_UC
     type_id: 4
 
 #potential targets
 # ironeyes
-  - id: STR_IRONEYES
-    requires:
-      - STR_IRONEYES
-    text: STR_IRONEYES_UFOPEDIA
-    section: STR_COMPETITORS_UC
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_BOOSTERS
     requires:
       - STR_BOOSTER_PRIVATE
@@ -935,15 +961,6 @@ ufopaedia:
     type_id: 5
 
 # netrunners
-  - id: STR_NETRUNNERS
-    requires:
-      - STR_NETRUNNERS
-    text: STR_NETRUNNERS_UFOPEDIA
-    section: STR_COMPETITORS_UC
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_FREELANCERS
     requires:
       - STR_FREELANCER_PRIVATE
@@ -965,14 +982,14 @@ ufopaedia:
     type_id: 5
 
 # ssp
-  - id: STR_SSP
-    requires:
-      - STR_SSP
-    text: STR_SSP_UFOPEDIA
-    section: STR_COMPETITORS_UC
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+  # - id: STR_SSP_NETWORK
+  #   requires:
+  #     - STR_SSP_NETWORK
+  #   text: STR_SSP_NETWORK_UFOPEDIA
+  #   section: STR_COMPETITORS_UC
+  #   type_id: 7
+  #   text_width: 180
+  #   image_id: VENDOR_SSP_CPAL
 
   - id: STR_SSPGUARDS
     requires:
@@ -1006,8 +1023,76 @@ ufopaedia:
     section: STR_MANUALS_UC
     type_id: 8
 
+  - id: STR_GUN_TYPES
+    text: STR_GUN_TYPES_UFOPEDIA
+    section: STR_MANUALS_UC
+    type_id: 8
+
+  - id: STR_LIQUIDITY
+    text: STR_LIQUIDITY_UFOPEDIA
+    section: STR_MANUALS_UC
+    type_id: 7
+    text_width: 180
+    image_id: LIQUIDITY_CPAL
+
 #accolades
-  - id: STR_MEDAL_WEAPON_PROFICIENCY
+  - id: STR_MEDAL_ORIGINAL8_NAME
+    text: STR_MEDAL_ORIGINAL8_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: false
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_SERVICE_TIME_NAME
+    text: STR_MEDAL_SERVICE_TIME_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_STATGAIN_NAME
+    text: STR_MEDAL_STATGAIN_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_CARREER_MISSIONS_NAME
+    text: STR_MEDAL_CARREER_MISSIONS_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_NIGHTOPS_NAME
+    text: STR_MEDAL_NIGHTOPS_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_CAMPAIGN_RIBBON_NAME
+    text: STR_MEDAL_CAMPAIGN_RIBBON_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_CARREER_KILLS_NAME
+    text: STR_MEDAL_CARREER_KILLS_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_WEAPON_PROFICIENCY_NAME
     text: STR_MEDAL_WEAPON_PROFICIENCY_UFOPEDIA
     section: STR_COMMENDATIONS_UC
     hiddenCommendation: true

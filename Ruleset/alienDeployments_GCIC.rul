@@ -9,21 +9,22 @@ alienDeployments:
     alertBackground: BACK03.SCR
     alertDescription: STR_RESCUE_1_ALERT_DESCRIPTION
     markerName: STR_RESCUE_1
-    duration: [24, 48]
-    despawnPenalty: 20
+    duration: [48, 72]
+    despawnPenalty: 200
+    abortPenalty: 185
+    vipSurvivalPercentage: 100
     # startingCondition: LOWSPEC_GEAR
     briefing:
       showTarget: false
+      music: BREACH_INTRO
       # palette: 3
       # background: BACK16.SCR
-      # music: PLACEHOLDERMUSIC1
-      # showTarget: false
-      # showCraft: false
+    unlockedResearch: STR_TRG_BO_PREQ
     customUfo: STR_HOUSE_GARAGE
     terrains:
       - HANGAR
-    # music:
-    #   - SW_MONSTER
+    music:
+      - BREACH1
     data:
       - alienRank: 5
         lowQty: 2
@@ -92,14 +93,15 @@ alienDeployments:
     # startingCondition: LOWSPEC_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
+      music: HACKER_INTRO
       # palette: 2
       # background: BACK16.SCR
-      # music: PLACEHOLDERMUSIC1
     missionBountyItem: STR_BIONIC_INTERLACE
+    unlockedResearch: STR_TRG_FL_PREQ
     terrains:
       - CLUB
-    # music:
-    #   - SW_MONSTER
+    music:
+      - HACKER1
     data:
       - alienRank: 6
         lowQty: 2
@@ -134,22 +136,22 @@ alienDeployments:
             - STR_TASER_PISTOL_CODED
             - STR_TASER_AMMO
             - STR_TASER_AMMO
-            - STR_STL_KNIFE
+            - STR_MULTITOOL
           -
             - STR_TASER_PISTOL_CODED
             - STR_TASER_AMMO
             - STR_TASER_AMMO
-            - STR_STL_KNIFE
+            - STR_MULTITOOL
           -
             - STR_TASER_PISTOL_CODED
             - STR_TASER_AMMO
             - STR_TASER_AMMO
-            - STR_STL_KNIFE
+            - STR_MULTITOOL
           -
             - STR_TASER_PISTOL_CODED
             - STR_TASER_AMMO
             - STR_TASER_AMMO
-            - STR_STL_KNIFE
+            - STR_MULTITOOL
           -
             - STR_MULTITOOL
           -
@@ -170,14 +172,15 @@ alienDeployments:
     # startingCondition: LOWSPEC_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
+      music: HACKER_INTRO
     #  palette: 2
     #  background: BACK16.SCR
-    #  music: PLACEHOLDERMUSIC1
     missionBountyItem: STR_BIONIC_INTERLACE
+    unlockedResearch: STR_TRG_FL_PREQ
     terrains:
       - CLUB_LANDING
-    # music:
-    #   - SW_MONSTER
+    music:
+      - HACKER1
     data:
       - alienRank: 6
         lowQty: 3
@@ -197,8 +200,8 @@ alienDeployments:
     alertBackground: BACK03.SCR
     alertDescription: STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION
     markerName: STR_GCIC_SABOTAGE_1_MARKER
-    duration: [96, 120]
-    despawnPenalty: 50
+    duration: [96, 144]
+    despawnPenalty: 150
     despawnEvents:
       STR_EVENT_CLAIM_SECURED: 100
     failureEvents:
@@ -206,20 +209,21 @@ alienDeployments:
     # startingCondition: LOWSPEC_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
+      music: SHADOW_INTRO
       # palette: 2
       # background: BACK16.SCR
-      # music: PLACEHOLDERMUSIC1
     missionBountyItem: STR_SHARES_GCIC
     missionBountyItemCount: 5
+    unlockedResearch: STR_TRG_SG_PREQ
     customUfo: STR_SABOTAGE_OFFICE
     terrains:
       - COMMERCIAL
-    # music:
-    #   - SW_MONSTER
+    music:
+      - SHADOW1
     objectiveType: 20
     objectivesRequired: 1
-    objectiveComplete: [STR_SABOTAGE_DESTROYED_COMPLETE, 50]
-    objectiveFailed: [STR_SABOTAGE_DESTROYED_FAILED, -50]
+    objectiveComplete: [STR_SABOTAGE_DESTROYED_COMPLETE, 5]
+    objectiveFailed: [STR_SABOTAGE_DESTROYED_FAILED, -150]
     objectivePopup: STR_SABOTAGE_DESTROYED_POPUP
     turnLimit: 10
     chronoTrigger: 1
@@ -234,60 +238,60 @@ alienDeployments:
         itemSets:
           -
             - STR_BATON
-            - STR_45_PISTOL
+            - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
             - STR_45_AMMO
           -
             - STR_BATON
-            - STR_45_PISTOL
+            - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
             - STR_45_AMMO
           -
             - STR_BATON
-            - STR_45_PISTOL
+            - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
             - STR_45_AMMO
           -
             - STR_BATON
-            - STR_45_PISTOL
+            - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
             - STR_45_AMMO
           -
             - STR_BATON
-            - STR_SINGLESHOT_LASER_PISTOL
+            - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
           -
             - STR_BATON
-            - STR_SINGLESHOT_LASER_PISTOL
+            - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
           -
             - STR_BATON
-            - STR_SINGLESHOT_LASER_PISTOL
+            - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
           -
             - STR_BATON
-            - STR_SINGLESHOT_LASER_PISTOL
+            - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
           -
             - STR_BATON
-            - STR_TASER_PISTOL
+            - STR_TASER_PISTOL_CODED
             - STR_TASER_AMMO
             - STR_TASER_AMMO
           -
             - STR_BATON
-            - STR_TASER_PISTOL
+            - STR_TASER_PISTOL_CODED
             - STR_TASER_AMMO
             - STR_TASER_AMMO
       - alienRank: 6

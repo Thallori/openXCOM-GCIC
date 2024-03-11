@@ -24,6 +24,6 @@ startingConditions:
     #   - STR_NONE
     allowedCraft:
       - STR_HD_CROSSOVER
-      - STR_USC_BICUBE
+      - STR_VCM_BICUBE
     # forbiddenSoldierTypes:
     #   - STR_PILOT

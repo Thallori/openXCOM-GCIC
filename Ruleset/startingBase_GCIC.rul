@@ -32,7 +32,7 @@ startingBase:
   crafts:
     - type: STR_HD_CROSSOVER
       id: 1
-      fuel: 1700
+      fuel: 1550
       damage: 0
       weapons:
         - type: STR_BATBOX
@@ -45,6 +45,7 @@ startingBase:
         STR_MEDI_SPRAY: 2
       status: STR_READY
   items:
+    STR_BUSBOX_PISTOL: 1
     STR_COMBALL_AMMO: 10
     STR_STL_KNIFE: 2
     STR_ELECTROFLARE: 8

@@ -6,22 +6,7 @@ manufacture:
     producedItems:
       STR_MONEY_1: 1
 
-  - name: STR_COMBALL_AMMO
-    category: STR_AMMO_MANUCAT
-    requires:
-      - STR_BUSBOX_AMMO_M
-    time: 2
-    cost: 5
-    refund: true
-
-  - name: STR_PAPERSHOT_AMMO
-    category: STR_AMMO_MANUCAT
-    requires:
-      - STR_BUSBOX_AMMO_M
-    time: 2
-    cost: 5
-    refund: true
-
+#ammo
   - name: STR_45_AMMO
     category: STR_AMMO_MANUCAT
     requires:
@@ -43,11 +28,12 @@ manufacture:
     requires:
       - STR_ELERIUM_BOMB_M
     time: 6
-    cost: 125
+    cost: 150
     refund: true
     requiredItems:
       STR_ELERIUM_CORE: 1
 
+#upgrades
   - name: STR_SSP_LASER_PISTOL_MANU
     category: STR_UPGRADES_MANUCAT
     requires:
@@ -61,6 +47,30 @@ manufacture:
     producedItems:
       STR_SINGLESHOT_LASER_PISTOL_ELERIUM: 1
 
+#drones
+  - name: STR_SCIENTIST_MANU
+    category: STR_EXPANSION_MANUCAT
+    requires:
+      - STR_BIONIC_INTERLACE
+    time: 1
+    refund: true
+    requiredItems:
+      STR_BIONIC_INTERLACE: 1
+    spawnedPersonType: STR_SCIENTIST
+    producedItems: {} #empty
+
+  - name: STR_ENGINEER_MANU
+    category: STR_EXPANSION_MANUCAT
+    requires:
+      - STR_BIONIC_INTERLACE
+    time: 1
+    refund: true
+    requiredItems:
+      STR_BIONIC_INTERLACE: 1
+    spawnedPersonType: STR_ENGINEER
+    producedItems: {} #empty
+
+#drones
   - name: STR_CRACKING_HYBRID_DRONE
     category: STR_CRACKING_MANUCAT
     requires:
@@ -71,10 +81,9 @@ manufacture:
       STR_DRONE_HYBRID_ITEM: 1
     spawnedPersonType: STR_CRACKED_HYBRID_DRONE
     randomProducedItems:
-      - [80, {STR_NONE: 0}]
-      - [20, {STR_HYBRID_DATA: 1}]
-    producedItems:
-      STR_NONE: 0
+      - [70, {}] #empty
+      - [30, {STR_HYBRID_DATA: 1}]
+    producedItems: {} #empty
 
   - name: STR_CRACKING_HUMAN_DRONE
     category: STR_CRACKING_MANUCAT
@@ -86,10 +95,9 @@ manufacture:
       STR_DRONE_HUMAN_ITEM: 1
     spawnedPersonType: STR_CRACKED_HUMAN_DRONE
     randomProducedItems:
-      - [80, {STR_NONE: 0}]
-      - [20, {STR_HUMAN_DATA: 1}]
-    producedItems:
-      STR_NONE: 0
+      - [70, {}] #empty
+      - [30, {STR_HUMAN_DATA: 1}]
+    producedItems: {} #empty
 
   - name: STR_CRACKING_SHARK_DRONE
     category: STR_CRACKING_MANUCAT
@@ -101,15 +109,16 @@ manufacture:
       STR_DRONE_SHARK_ITEM: 1
     spawnedPersonType: STR_CRACKED_SHARK_DRONE
     randomProducedItems:
-      - [80, {STR_NONE: 0}]
-      - [20, {STR_SHARK_DATA: 1}]
-    producedItems:
-      STR_NONE: 0
+      - [70, {}] #empty
+      - [30, {STR_SHARK_DATA: 1}]
+    producedItems: {} #empty
 
+#cracking
   - name: STR_45_PISTOL_CODED_DECODED
     category: STR_CRACKING_MANUCAT
     requires:
       - STR_45_PISTOL_CODED
+      - STR_LOCAL_INTERFACE
       - STR_BIOCODING
     requiresBaseFunc:
       - STR_SERVICE_PORT
@@ -124,6 +133,7 @@ manufacture:
     category: STR_CRACKING_MANUCAT
     requires:
       - STR_TASER_PISTOL_CODED
+      - STR_LOCAL_INTERFACE
       - STR_BIOCODING
     requiresBaseFunc:
       - STR_SERVICE_PORT
@@ -138,6 +148,7 @@ manufacture:
     category: STR_CRACKING_MANUCAT
     requires:
       - STR_SINGLESHOT_LASER_PISTOL_CODED
+      - STR_LOCAL_INTERFACE
       - STR_BIOCODING
     requiresBaseFunc:
       - STR_SERVICE_PORT
@@ -148,11 +159,11 @@ manufacture:
     producedItems:
       STR_SINGLESHOT_LASER_PISTOL: 1
 
-  - name: STR_SALVAGE_SINGLESHOT_LASER_PISTOL_ELERIUM_MANU
+#salvage
+  - name: STR_SALVAGE_SINGLESHOT_LASER_PISTOL_ELERIUM
     category: STR_SALVAGE_MANUCAT
     requires:
-      - STR_SINGLESHOT_LASER_PISTOL
-      - STR_ELERIUM_CORE
+      - STR_SINGLESHOT_LASER_PISTOL_ELERIUM
     time: 12
     refund: true
     requiredItems:
@@ -238,6 +249,7 @@ manufacture:
     producedItems:
       STR_ELERIUM_CORE: 1
 
+#containers
   - name: STR_OPEN_CRIMINAL_CONTAINER_1
     category: STR_CONTAINERS_MANUCAT
     requires:
@@ -273,6 +285,8 @@ manufacture:
 
   - name: STR_CRACK_XN_CONTAINER_1
     category: STR_CONTAINERS_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
     requires:
       - STR_XN_CONTAINER_1
       - STR_PASS_CRACKING

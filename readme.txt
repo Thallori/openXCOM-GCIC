@@ -4,7 +4,7 @@ Details here: https://creativecommons.org/licenses/by-nc/4.0/deed.en
 
 All assets made by thallori are free to use without giving credit, though since so many assets in this package are modifications of other assets and some may have even be outright ripped from commercial sources it isn't exactly possible to give blanket permission.
 
-This mod would not be possible without the kind documentation on the OpenXCom Wiki, the existance of MapView2/PCKView, and OpenXCom Extended itself.
+This mod would not be possible without the documentation on the OpenXCom Wiki, the existance of MapView2/PCKView, and OpenXCom Extended itself.
 
 SupSuper			OXC
 Warboy1982			OXC
@@ -51,7 +51,7 @@ X-Com Files/Final Mod Pack		[mod]
   Hybrid				[wholecloth]
   HitFX	Script				[wholecloth]
   Crate					[wholecloth, recolour]
-  Taser					[wholecloth]
+  Taser					[wholecloth]		(Ryskeliini)
   Fire Extinguisher			[touchup, recolour]
 
 X-Com Files Resound			[mod]
@@ -71,6 +71,7 @@ From the Apocalypse			[mod]
   Civilians				[wholecloth]		(original)
   Medikit				[touchup, recolour]
   Motion Sensor				[wholecloth]
+  Soldier/Base Stats			[recolour]
 
 Delicious Colors			[mod]
  RSSWizard				[author]
@@ -86,6 +87,10 @@ First Turn Enemy TU Randomizer		[mod]
 Sharkquanaut Combat Divers		[mod]
  Hans Woofington			[author]
   Sharks				[redraw]		(original)
+
+BigGeoscape				[mod]
+ XOps					[author]
+  Starry Background			[wholecloth]
 
 
 Inspiration comes from many sources, too many to list. Ranging from decades old fan fiction that could have been done better to scientific journals. However, the ideas taken from the OpenXCom community are listed here.

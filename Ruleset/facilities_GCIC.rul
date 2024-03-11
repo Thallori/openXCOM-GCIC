@@ -1,8 +1,6 @@
 
 facilities:
   - type: STR_CENTRAL_ACCESS
-    requires:
-      - STR_TODO
     lift: true
     fakeUnderwater: 0
     spriteShape: 2
@@ -12,9 +10,76 @@ facilities:
     monthlyCost: 5000
     mapName: XBASE_00
 
+  - type: STR_CORRIDOR
+    requires:
+      - STR_VENDOR_BUILDER
+    canBeBuiltOver: true
+    spriteShape: 3
+    spriteFacility: 307
+    buildTime: 4
+    buildCost: 12000
+    refundValue: 10000
+    monthlyCost: 200
+    mapName: XBASE_07
+
+  - type: STR_DEPOT
+    requires:
+      - STR_EXPANSION
+    canBeBuiltOver: true
+    spriteShape: 1
+    spriteFacility: 306
+    buildTime: 8
+    buildCost: 10000
+    refundValue: 8000
+    monthlyCost: 50
+    storage: 20
+    personnel: 8
+    manaRecoveryPerDay: 1
+    mapName: XBASE_07
+
+  - type: STR_STORAGE_1
+    requires:
+      - STR_VENDOR_BUILDER
+    canBeBuiltOver: true
+    buildOverFacilities:
+      - STR_STOREROOM
+    leavesBehindOnSell:
+      - STR_DEPOT
+    fakeUnderwater: 0
+    spriteShape: 1
+    spriteFacility: 305
+    buildTime: 9
+    buildCost: 150000
+    refundValue: 110000
+    monthlyCost: 450
+    storage: 75
+    mapName: XBASE_07
+
+  - type: STR_STOREROOM
+    requires:
+      - STR_VENDOR_BUILDER
+      - STR_SJB_LICENSE
+    leavesBehindOnSell:
+      - STR_STORAGE_1
+    fakeUnderwater: 0
+    spriteShape: 1
+    spriteFacility: 309
+    buildTime: 14
+    buildCost: 325000
+    refundValue: 250000
+    buildCostItems:
+      STR_SJB_LICENSE:
+        build: 1
+        refund: 1
+    monthlyCost: -12000
+    storage: 250
+    mapName: XBASE_07
+
   - type: STR_GARAGE
     requires:
       - STR_VENDOR_BUILDER
+    leavesBehindOnSell:
+      - STR_DEPOT
     fakeUnderwater: 0
     size: 1
     spriteShape: 1
@@ -31,19 +96,75 @@ facilities:
   - type: STR_BUNK_RACKS
     requires:
       - STR_VENDOR_BUILDER
+    leavesBehindOnSell:
+      - STR_DEPOT
     spriteShape: 1
     spriteFacility: 302
     buildTime: 12
-    buildCost: 40000
-    refundValue: 30000
+    buildCost: 200000
+    refundValue: 150000
     monthlyCost: 800
     personnel: 24
     manaRecoveryPerDay: 1
     mapName: XBASE_01
 
+  - type: STR_REMEDITION_OFFICE
+    requires:
+      - STR_VENDOR_BUILDER
+      - STR_REMEDITION_OFFICE
+    leavesBehindOnSell:
+      - STR_DEPOT
+    provideBaseFunc: [STR_SERVICE_PROJECTS] #drone personal projects
+#    spriteShape: 1
+#    spriteFacility: 303
+    buildTime: 14
+    buildCost: 275000
+    refundValue: 200000
+    monthlyCost: 14000
+    maxAllowedPerBase: 1
+    manaRecoveryPerDay: 3
+    storage: 10
+    mapName: XBASE_07
+
+  - type: STR_MEDI_BAY
+    requires:
+      - STR_VENDOR_BUILDER
+      - STR_MEDI_BAY
+    leavesBehindOnSell:
+      - STR_DEPOT
+    provideBaseFunc: [STR_SERVICE_MEDICAL]
+#    spriteShape: 1
+#    spriteFacility: 303
+    buildTime: 20
+    buildCost: 450000
+    refundValue: 325000
+    monthlyCost: 60000
+    sickBayAbsoluteBonus: 0.25
+    sickBayRelativeBonus: 0.5
+    maxAllowedPerBase: 1
+    rightClickActionType: 0
+    mapName: XBASE_07
+
+  - type: STR_HOLDING_CELLS
+    requires:
+      - STR_VENDOR_BUILDER
+      - STR_HOLDING_CELLS
+    leavesBehindOnSell:
+      - STR_DEPOT
+    spriteShape: 1
+    spriteFacility: 304
+    buildTime: 16
+    buildCost: 80000
+    refundValue: 60000
+    monthlyCost: 12000
+    aliens: 8
+    mapName: XBASE_08
+
   - type: STR_DATACENTER
     requires:
-      - STR_TODO
+      - STR_VENDOR_BUILDER
+    leavesBehindOnSell:
+      - STR_DEPOT
     provideBaseFunc: [STR_SERVICE_UPLINK]
     spriteShape: 1
     spriteFacility: 303
@@ -51,28 +172,34 @@ facilities:
     buildCost: 750000
     refundValue: 500000
     monthlyCost: 30000
-    maxAllowedPerBase: 1
     labs: 4
+    maxAllowedPerBase: 1
     mapName: XBASE_02
 
   - type: STR_LOCAL_INTERFACE
     requires:
+      - STR_VENDOR_BUILDER
       - STR_LOCAL_INTERFACE
+    leavesBehindOnSell:
+      - STR_DEPOT
     provideBaseFunc: [STR_SERVICE_PORT] #for hacking things you've got
     spriteShape: 1
     spriteFacility: 308
     buildTime: 13
-    buildCost: 450000
-    refundValue: 300000
+    buildCost: 250000
+    refundValue: 175000
     monthlyCost: 20000
-    maxAllowedPerBase: 1
-    workshops: 3
+    workshops: 1
     labs: 3
+    maxAllowedPerBase: 1
     mapName: XBASE_02
 
   - type: STR_PUBLIC_GATEWAY
     requires:
-      - STR_TODO
+      - STR_VENDOR_BUILDER
+      - STR_PUBLIC_GATEWAY
+    leavesBehindOnSell:
+      - STR_DEPOT
     provideBaseFunc: [STR_SERVICE_NETWORK] #for hacking things you've don't got
 #    spriteShape: 1
 #    spriteFacility: 303
@@ -80,77 +207,26 @@ facilities:
     buildCost: 900000
     refundValue: 750000
     monthlyCost: 6500
-    maxAllowedPerBase: 3
     labs: 1
+    maxAllowedPerBase: 3
     mapName: XBASE_02
 
-  - type: STR_HOLDING_CELLS
+  - type: STR_PRINTSHOP
     requires:
-      - STR_HOLDING_CELLS
-    spriteShape: 1
-    spriteFacility: 304
-    buildTime: 16
-    buildCost: 60000
-    refundValue: 40000
-    monthlyCost: 12000
-    aliens: 8
-    mapName: XBASE_08
-
-  - type: STR_STOREROOM
-    requires:
-      - STR_TODO
-    fakeUnderwater: 0
-    spriteShape: 1
-    spriteFacility: 305
-    buildTime: 14
-    buildCost: 100000
-    refundValue: 75000
+      - STR_VENDOR_BUILDER
+      - STR_PRINTSHOP
+    leavesBehindOnSell:
+      - STR_DEPOT
+    provideBaseFunc: [STR_SERVICE_PRINTING]
+#    spriteShape: 1
+#    spriteFacility: 303
+    buildTime: 22
+    buildCost: 700000
+    refundValue: 525000
     buildCostItems:
       STR_SJB_LICENSE:
         build: 1
         refund: 1
-    monthlyCost: -2000
-    storage: 100
-    mapName: XBASE_07
-
-  - type: STR_DEPOT
-    requires:
-      - STR_EXPANSION
-    canBeBuiltOver: true
-    spriteShape: 1
-    spriteFacility: 306
-    buildTime: 8
-    buildCost: 10000
-    refundValue: 8000
-    monthlyCost: 50
-    storage: 20
-    personnel: 8
-    workshops: 2
-    mapName: XBASE_07
-
-  - type: STR_CORRIDOR
-    requires:
-      - STR_VENDOR_BUILDER
-    canBeBuiltOver: true
-    spriteShape: 3
-    spriteFacility: 307
-    buildTime: 4
-    buildCost: 12000
-    refundValue: 10000
-    monthlyCost: 200
-    mapName: XBASE_07
-
-  - type: STR_REMEDITION_OFFICE
-    requires:
-      - STR_TODO
-    provideBaseFunc: [STR_SERVICE_PROJECTS] #drone personal projects
-#    spriteShape: 1
-#    spriteFacility: 303
-    buildTime: 14
-    buildCost: 55000
-    refundValue: 45000
-    monthlyCost: 14000
-    maxAllowedPerBase: 1
-    manaRecoveryPerDay: 3
-    storage: 10
-    mapName: XBASE_07
+    monthlyCost: -25000
+    workshops: 3
+    mapName: XBASE_02

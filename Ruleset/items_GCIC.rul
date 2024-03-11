@@ -1,7 +1,10 @@
+#monthlySalary is always negative
+#monthlyMaintenance is always positive
+#this ensures parity for the "Assets/Liabilities" screen.
 
 items:
 #craftpods
-  - type: STR_HD_ECONOMY_ENGINE #TODO resources tech
+  - type: STR_HD_ECONOMY_ENGINE #TODO resources
     categories: [STR_CRAFT_SYSTEMS_CATEGORY]
     requiresBuy:
       - STR_VENDOR_HD
@@ -10,7 +13,7 @@ items:
     costSell: 3000
     transferTime: 12
 
-  - type: STR_HD_EXPRESS_ENGINE #TODO resources tech
+  - type: STR_HD_EXPRESS_ENGINE #TODO resources
     categories: [STR_CRAFT_SYSTEMS_CATEGORY]
     requiresBuy:
       - STR_VENDOR_HD
@@ -182,7 +185,7 @@ items:
 
 #kinetic
   - type: STR_BUSBOX_PISTOL
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_KINETIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
       - STR_VENDOR_PRINTER
     size: 0.1
@@ -220,9 +223,9 @@ items:
     armor: 30
 
   - type: STR_COMBALL_AMMO
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_KINETIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_VENDOR_P2P
     size: 0.01
     costBuy: 4
     costSell: 2
@@ -246,9 +249,9 @@ items:
     armor: 20
 
   - type: STR_PAPERSHOT_AMMO
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_KINETIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_VENDOR_P2P
     size: 0.01
     costBuy: 6
     costSell: 2
@@ -275,7 +278,7 @@ items:
     armor: 20
 
   - type: STR_9MM_PISTOL
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_KINETIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
       - STR_VENDOR_P2P
       - STR_9MM_PISTOL
@@ -312,7 +315,7 @@ items:
     armor: 30
 
   - type: STR_9MM_RIFLE
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_KINETIC_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
     requiresBuy:
       - STR_VENDOR_P2P
       - STR_9MM_RIFLE
@@ -350,7 +353,7 @@ items:
     armor: 30
 
   - type: STR_9MM_AMMO
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_KINETIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
     requiresBuy:
       - STR_VENDOR_P2P
       - STR_9MM_AMMO
@@ -374,7 +377,7 @@ items:
     armor: 20
 
   - type: STR_45_PISTOL_CODED
-    categories: [STR_SECURITY_CATEGORY, STR_KINETIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_LOCKED_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_LOCKED_CATEGORY]
     ufopediaType: STR_45_PISTOL
     requires:
       - STR_SSP_CRACK
@@ -409,9 +412,10 @@ items:
     armor: 30
 
   - type: STR_45_PISTOL
-    categories: [STR_SECURITY_CATEGORY, STR_KINETIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
       - STR_TODO
+      - STR_VENDOR_SSP
       - STR_45_PISTOL
     size: 0.1
     costBuy: 1499
@@ -446,9 +450,10 @@ items:
     armor: 30
 
   - type: STR_45_AMMO
-    categories: [STR_SECURITY_CATEGORY, STR_KINETIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_SMGS_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_SMGS_CATEGORY]
     requiresBuy:
       - STR_TODO
+      - STR_VENDOR_SSP
       - STR_45_PISTOL
     size: 0.01
     costBuy: 39
@@ -463,14 +468,14 @@ items:
     costThrow:
       energy: 6
     power: 24
-    clipSize: 9
+    clipSize: 12
     damageBonus:
       reactions: 0.05
     damageType: 1
     armor: 20
 
   - type: STR_DISPOSABLE_SMG
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_KINETIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
     requiresBuy:
       - STR_VENDOR_P2P
       - STR_DISPOSABLE_SMG
@@ -521,7 +526,7 @@ items:
 
 #electric
   - type: STR_TASER_PISTOL_CODED
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_ELECTRIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY, STR_LOCKED_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY, STR_LOCKED_CATEGORY]
     ufopediaType: STR_TASER_PISTOL
     requires:
       - STR_SSP_CRACK
@@ -557,9 +562,10 @@ items:
     armor: 30
 
   - type: STR_TASER_PISTOL
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_ELECTRIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
     requiresBuy:
       - STR_TODO
+      - STR_VENDOR_SSP
       - STR_TASER_PISTOL
     size: 0.1
     costBuy: 1999
@@ -593,8 +599,9 @@ items:
     armor: 30
 
   - type: STR_TASER_AMMO
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_ELECTRIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
     requiresBuy:
+      - STR_TODO
       - STR_VENDOR_SSP
       - STR_TASER_PISTOL
     size: 0.01
@@ -609,7 +616,7 @@ items:
     weight: 2
     costThrow:
       energy: 6
-    power: 25
+    power: 32
     damageBonus:
       reactions: 0.05
     damageType: 10
@@ -617,7 +624,7 @@ items:
       RandomType: 6
       ToWound: 0.0
       RandomWound: false
-      ToHealth: 0.65
+      ToHealth: 0.35
       ToStun: 1.0
       RandomStun: false
       IgnoreSelfDestruct: true
@@ -630,7 +637,7 @@ items:
 
 #aquatic
   - type: STR_DART_PISTOL
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_BIOLOGIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
     requiresBuy:
       - STR_VENDOR_PRINTER
       - STR_DART_PISTOL
@@ -692,7 +699,7 @@ items:
     damageType: 6
     damageAlter:
       RandomType: 6
-      ToHealth: 0.35
+      ToHealth: 0.20
       ToStun: 1.0
       RandomStun: false
       IgnoreSelfDestruct: false
@@ -702,7 +709,7 @@ items:
     armor: 20
 
   - type: STR_DART_AMMO1
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_BIOLOGIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
     requiresBuy:
       - STR_TODO
       - STR_DART_PISTOL
@@ -737,16 +744,18 @@ items:
 
 #laser
   - type: STR_SINGLESHOT_LASER_PISTOL_ELERIUM
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_LASER_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     ufopediaType: STR_SINGLESHOT_LASER_PISTOL
     size: 0.05
     costSell: 200000
-    bigSprite: 107 #todo
-    floorSprite: 107 #todo
-    handSprite: 152 #todo
+    bigSprite: 159
+    floorSprite: 152
+    handSprite: 352
     bulletSprite: 11
     bulletSpeed: 60
     fireSound: 11
+    hitSound: 19
+    hitAnimation: 36
     invWidth: 1
     invHeight: 2
     battleType: 1
@@ -776,18 +785,18 @@ items:
     dropoff: 3
     kneelBonus: 110
     attraction: 15
-    armor: 45
+    armor: 120
 
   - type: STR_SINGLESHOT_LASER_PISTOL_CODED
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_LASER_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_LOCKED_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_LOCKED_CATEGORY]
     ufopediaType: STR_SINGLESHOT_LASER_PISTOL
     requires:
       - STR_SSP_CRACK
     size: 0.05
     costSell: 1300
-    bigSprite: 107 #todo
-    floorSprite: 107 #todo
-    handSprite: 152 #todo
+    bigSprite: 158
+    floorSprite: 151
+    handSprite: 344
     bulletSprite: 11
     bulletSpeed: 60
     fireSound: 11
@@ -816,16 +825,18 @@ items:
     armor: 30
 
   - type: STR_SINGLESHOT_LASER_PISTOL
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_LASER_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
       - STR_TODO
+      - STR_VENDOR_SSP
+      - STR_SINGLESHOT_LASER_PISTOL
     size: 0.05
     costBuy: 12999
     costSell: 3250
     transferTime: 4
-    bigSprite: 107 #todo
-    floorSprite: 107 #todo
-    handSprite: 152 #todo
+    bigSprite: 158
+    floorSprite: 151
+    handSprite: 344
     bulletSprite: 11
     bulletSpeed: 60
     fireSound: 11
@@ -854,15 +865,15 @@ items:
     armor: 30
 
   - type: STR_SINGLESHOT_LASER_AMMO
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_LASER_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
       - STR_LASER_AMMO_PRINTING
     size: 0.01
-    costBuy: 19
-    costSell: 5
+    costBuy: 89
+    costSell: 20
     transferTime: 4
-    bigSprite: 124 #todo
-    floorSprite: 123 #todo
+    bigSprite: 160
+    floorSprite: 153
     hitSound: 19
     hitAnimation: 36
     battleType: 2
@@ -878,20 +889,21 @@ items:
       RandomWound: false
       FireThreshold: 50
       ToTile: 0.65
-    clipSize: 1
+    clipSize: 2
     armor: 20
 
   - type: STR_MULTISHOT_LASER_AMMO
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_LASER_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
       - STR_TODO
+      - STR_VENDOR_SSP
       - STR_SINGLESHOT_LASER_PISTOL
     size: 0.01
     costBuy: 719
     costSell: 180
     transferTime: 4
-    bigSprite: 124 #todo
-    floorSprite: 123 #todo
+    bigSprite: 161
+    floorSprite: 154
     hitSound: 19
     hitAnimation: 36
     battleType: 2
@@ -911,7 +923,7 @@ items:
     armor: 30
 
   - type: STR_XN_LASER_PISTOL
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_LASER_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
       - STR_TODO
     size: 0.05
@@ -952,10 +964,10 @@ items:
     dropoff: 4
     kneelBonus: 110
     attraction: 15
-    armor: 45
+    armor: 120
 
   - type: STR_XN_LASER_SMG
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_LASER_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
     requiresBuy:
       - STR_TODO
     size: 0.1
@@ -1005,10 +1017,10 @@ items:
     twoHanded: true
     oneHandedPenalty: 85
     attraction: 15
-    armor: 45
+    armor: 120
 
   - type: STR_XN_LASER_RIFLE
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_LASER_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
     requiresBuy:
       - STR_TODO
     size: 0.2
@@ -1056,10 +1068,10 @@ items:
     twoHanded: true
     oneHandedPenalty: 50
     attraction: 15
-    armor: 45
+    armor: 120
 
   - type: STR_XN_LASER_SNIPER
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_LASER_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
     requiresBuy:
       - STR_TODO
     size: 0.25
@@ -1101,15 +1113,15 @@ items:
     snapRange: 20
     aimRange: 28
     dropoff: 2
-    kneelBonus: 125
+    kneelBonus: 120
     noLOSAccuracyPenalty: 75
     twoHanded: true
     oneHandedPenalty: 50
     attraction: 15
-    armor: 45
+    armor: 120
 
   - type: STR_XN_LASER_MG
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_LASER_CATEGORY, STR_MACHINE_GUNS_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_MACHINE_GUNS_CATEGORY]
     requiresBuy:
       - STR_TODO
     size: 0.4
@@ -1161,10 +1173,10 @@ items:
     twoHanded: true
     oneHandedPenalty: 35
     attraction: 15
-    armor: 45
+    armor: 120
 
   - type: STR_XN_LASER_CANNON
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_LASER_CATEGORY, STR_CANNONS_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_CANNONS_CATEGORY]
     requiresBuy:
       - STR_TODO
     size: 0.45
@@ -1210,15 +1222,15 @@ items:
     snapRange: 10
     aimRange: 18
     dropoff: 3
-    kneelBonus: 140
+    kneelBonus: 150
     twoHanded: true
-    oneHandedPenalty: 50
+    oneHandedPenalty: 35
     experienceTrainingMode: 19
     attraction: 15
-    armor: 45
+    armor: 120
 
   - type: STR_XN_LASER_SHOTGUN
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_LASER_CATEGORY, STR_SHOTGUNS_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_SHOTGUNS_CATEGORY]
     size: 0.2
     costSell: 200000
     bigSprite: 128
@@ -1262,16 +1274,12 @@ items:
     twoHanded: true
     oneHandedPenalty: 75
     attraction: 10
-    armor: 45
+    armor: 120
 
 #grenades
   - type: STR_PIPEBOMB
     categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_EXPLOSIVES_CATEGORY]
-    requiresBuy:
-      - STR_TODO
-      - STR_PIPEBOMB
     size: 0.1
-    costBuy: 199
     costSell: 50
     transferTime: 4
     bigSprite: 122
@@ -1291,14 +1299,14 @@ items:
       IgnoreOverKill: false
       IgnoreSelfDestruct: false
     tuPrime: 30
-    tuUnprime: 4
+    tuUnprime: 5
     tuThrow: 25
     fuseType: 0
     attraction: 15
-    armor: 30
+    armor: 45
 
   - type: STR_ELERIUM_BOMB
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_EXPLOSIVES_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_EXPLOSIVES_CATEGORY]
     size: 0.1
     costSell: 200000
     recoveryPoints: 1
@@ -1317,11 +1325,11 @@ items:
       FixRadius: 6
       RandomType: 9
       ToItem: 0.5
-      ToArmorPre: 0.025
+      ToStun: 0.75
       IgnoreOverKill: false
       IgnoreSelfDestruct: false
     tuPrime: 30
-    tuUnprime: 4
+    tuUnprime: 5
     tuThrow: 25
     fuseType: 0
     attraction: 15
@@ -1371,9 +1379,9 @@ items:
     armor: 30
 
   - type: STR_BATON
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_TOOLS_CATEGORY, STR_MELEE_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MELEE_CATEGORY, STR_STUN_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_VENDOR_SSP
       - STR_BATON
     size: 0.1
     costBuy: 239
@@ -1400,7 +1408,7 @@ items:
       ToTime: 1.0
       ToWound: 0
       RandomWound: false
-      ToHealth: 0.35
+      ToHealth: 0.20
       ToStun: 1.0
       RandomStun: false
       IgnoreSelfDestruct: false
@@ -1421,7 +1429,7 @@ items:
 
 #tools
   - type: STR_WRENCH
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_TOOLS_CATEGORY, STR_MELEE_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MELEE_CATEGORY]
     requiresBuy:
       - STR_VENDOR_PRINTER
       - STR_WRENCH
@@ -1465,7 +1473,7 @@ items:
     armor: 30
 
   - type: STR_MULTITOOL
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_ELECTRIC_CATEGORY, STR_TOOLS_CATEGORY, STR_MELEE_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MELEE_CATEGORY]
     requiresBuy:
       - STR_VENDOR_PRINTER
       - STR_MULTITOOL
@@ -1492,7 +1500,7 @@ items:
       RandomType: 6
       ToArmorPre: 0.05
       ToTime: 1.0
-      ToHealth: 0.65
+      ToHealth: 0.35
       ToStun: 1.0
       RandomStun: false
       IgnoreSelfDestruct: true
@@ -1514,7 +1522,7 @@ items:
   - type: STR_ELECTRIC_NAILER
     categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY]
     requiresBuy:
-      - STR_VENDOR_PRINTER
+      - STR_VENDOR_BUILDER
       - STR_ELECTRIC_NAILER
     size: 0.2
     costBuy: 249
@@ -1585,9 +1593,9 @@ items:
     armor: 20
 
   - type: STR_SURVEY_KNOCKER
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY,STR_TOOLS_CATEGORY, STR_BOWS_CATEGORY, STR_STUN_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY,STR_TOOLS_CATEGORY, STR_BOWS_CATEGORY]
     requiresBuy:
-      - STR_VENDOR_PRINTER
+      - STR_VENDOR_VCM
       - STR_SURVEY_KNOCKER
     size: 0.15
     costBuy: 149
@@ -1605,8 +1613,6 @@ items:
     weight: 6
     costThrow: 
       energy: 10
-    twoHanded: true
-    blockBothHands: true
     arcingShot: true
     compatibleAmmo:
       - STR_KNOCK_FLARE_AMMO
@@ -1618,22 +1624,25 @@ items:
       flatHundred: 0.20
     costSnap:
       time: 24
-      energy: 10
+      energy: 12
     costAimed:
       time: 32
-      energy: 10
+      energy: 12
     tuLoad: 20
     flatRate: true
     snapRange: 12
-    aimRange: 20
+    aimRange: 16
+    maxRange: 32
     dropoff: 4
     kneelBonus: 110
+    twoHanded: true
+    blockBothHands: true
     experienceTrainingMode: 7
     attraction: 10
     armor: 30
 
   - type: STR_KNOCK_FLARE_AMMO
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_BOWS_CATEGORY, STR_STUN_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_BOWS_CATEGORY]
     requiresBuy:
       - STR_VENDOR_PRINTER
       - STR_SURVEY_KNOCKER
@@ -1655,18 +1664,18 @@ items:
     power: 8
     damageType: 6
     damageBonus:
-      throwing: 0.4
+      throwing: 0.3
     damageAlter:
       RandomType: 6
       ToWound: 0
       RandomWound: false
-      ToHealth: 0.35
+      ToHealth: 0.20
       ToStun: 1.0
       RandomStun: false
       IgnoreSelfDestruct: false
       IgnorePainImmunity: false
       FixRadius: 0
-      ToTile: 0.35
+      ToTile: 0.25
     clipSize: 6
     armor: 20
 
@@ -1692,16 +1701,17 @@ items:
     power: 12
     damageType: 7
     damageBonus:
-      throwing: 0.4
+      throwing: 0.3
     damageAlter:
       RandomType: 6
       ToTime: 0.50
       IgnoreSelfDestruct: false
+      ToTile: 0.25
     clipSize: 6
     armor: 20
 
   - type: STR_EXTINGUISHER
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_TOOLS_CATEGORY, STR_UTILITY_CATEGORY, STR_MELEE_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY, STR_MELEE_CATEGORY]
     requiresBuy:
       - STR_VENDOR_PRINTER
       - STR_EXTINGUISHER
@@ -1763,9 +1773,9 @@ items:
 
 #utility
   - type: STR_ELECTROFLARE
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
     requiresBuy:
-      - STR_VENDOR_PRINTER
+      - STR_VENDOR_VCM
     size: 0.01
     costBuy: 39
     costSell: 10
@@ -1779,8 +1789,8 @@ items:
       time: 15
       energy: 6
     power: 15
-    tuPrime: 4
-    tuUnload: 4
+    tuPrime: 5
+    tuUnload: 5
     primeActionName: STR_PRIME_FLARE
     unprimeActionName: STR_UNPRIME_FLARE
     fuseType: -2
@@ -1790,9 +1800,9 @@ items:
     armor: 8
 
   - type: STR_CHEMFLARE
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
     requiresBuy:
-      - STR_VENDOR_PRINTER
+      - STR_VENDOR_VCM
       - STR_SURVEY_KNOCKER
     size: 0.01
     costBuy: 4
@@ -1814,7 +1824,7 @@ items:
     armor: 30
 
   - type: STR_CHEMFLARE_NO_RECOVER
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
     ufopediaType: STR_CHEMFLARE
     recover: false
     bigSprite: 119
@@ -1829,8 +1839,9 @@ items:
     armor: 30
 
   - type: STR_MOTION_DETECTOR
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
     requiresBuy:
+      - STR_VENDOR_VCM
       - STR_TODO
     size: 0.1
     costBuy: 34999
@@ -1846,7 +1857,7 @@ items:
     armor: 30
 
   - type: STR_MEDI_SPRAY
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
     requiresBuy:
       - STR_VENDOR_MEDI
     size: 0.025
@@ -1876,7 +1887,7 @@ items:
     armor: 20
 
   - type: STR_MEDI_FIRST
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
     requiresBuy:
       - STR_VENDOR_MEDI
     size: 0.5
@@ -1897,7 +1908,7 @@ items:
     stimulant: 5
     woundRecovery: 1
     healthRecovery: 3
-    stunRecovery: 10
+    stunRecovery: 8
     energyRecovery: 5
     medikitTargetMatrix: 31
     costUse:
@@ -1923,16 +1934,70 @@ items:
       energy: 6
     armor: 200
 
+  - type: STR_ELERIUM_CORE
+    categories: [STR_RESOURCES_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+    size: 0.1
+    costBuy: 200000
+    costSell: 200000
+    transferTime: 72
+    bigSprite: 154
+    floorSprite: 148
+    ignoreInCraftEquip: true
+    recoveryPoints: 3
+    battleType: 10
+    weight: 5
+    costThrow:
+      energy: 6
+    # hidePower: true
+    # power: 80
+    # damageType: 5
+    # damageAlter:
+    #   ToArmorPre: 0.025
+    #   FireThreshold: 50
+    # clipSize: 100
+    armor: 120
+
   - type: STR_SJB_LICENSE
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
       - STR_SJB_LICENSE
     size: 0
-    costBuy: 1500000
-    costSell: 1500000
+    costBuy: 400000
+    costSell: 0
     transferTime: 4
     bigSprite: 152
     ignoreInCraftEquip: true
+    battleType: 10
+    weight: 2
+    costThrow:
+      energy: 6
+
+  - type: STR_SEC_CYBERNETICS_CODED #TODO resources tech
+    categories: [STR_RESOURCES_CATEGORY]
+    size: 0.1
+    costSell: 2500
+    transferTime: 4
+    # bigSprite: ?
+    invWidth: 1
+    invHeight: 1
+    battleType: 10
+    weight: 2
+    costThrow:
+      energy: 6
+
+  - type: STR_SEC_CYBERNETICS #TODO resources tech
+    categories: [STR_RESOURCES_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+    size: 0.1
+    costBuy: 24999
+    costSell: 6250
+    transferTime: 4
+    # bigSprite: ?
+    invWidth: 1
+    invHeight: 1
     battleType: 10
     weight: 2
     costThrow:
@@ -1948,7 +2013,7 @@ items:
     transferTime: 4
     # bigSprite: ?
     invWidth: 2
-    invHeight: 1
+    invHeight: 2
     battleType: 10
     weight: -4
     costThrow:
@@ -1969,30 +2034,6 @@ items:
     costThrow:
       energy: 12
 
-  - type: STR_ELERIUM_CORE
-    categories: [STR_RESOURCES_CATEGORY, STR_EXOTIC_CATEGORY, STR_VACUUM_RATED_CATEGORY]
-    requiresBuy:
-      - STR_TODO
-    size: 0.1
-    costBuy: 200000
-    costSell: 200000
-    transferTime: 72
-    bigSprite: 154
-    floorSprite: 148
-    recoveryPoints: 4
-    battleType: 2
-    weight: 5
-    costThrow:
-      energy: 6
-    hidePower: true
-    power: 80
-    damageType: 5
-    damageAlter:
-      ToArmorPre: 0.025
-      FireThreshold: 50
-    clipSize: 100
-    armor: 120
-
 #data
   - type: STR_PERSONAL_DATA
     categories: [STR_DATA_CATEGORY]
@@ -2005,7 +2046,6 @@ items:
     weight: 2
     costThrow:
       energy: 6
-    armor: 30
 
   - type: STR_HYBRID_DATA #todo resources tech
     categories: [STR_DATA_CATEGORY]
@@ -2026,12 +2066,12 @@ items:
     categories: [STR_BOUNTIES_CATEGORY]
     specialType: 198
     costSell: 12000
-    monthlyMaintenance: -1200
+    monthlySalary: -1200
     recoveryPoints: 1
 
   - type: STR_BRAND_LOYALTY
     categories: [STR_BOUNTIES_CATEGORY]
-    monthlyMaintenance: -800
+    monthlySalary: -800
     recoveryPoints: 1
 
   - type: STR_BOUNTY_1
@@ -2087,7 +2127,7 @@ items:
 
 #armor
   - type: STR_DURA_DRONE_ARMOR
-    categories: [STR_ARMOR_CATEGORY, STR_SECURITY_CATEGORY]
+    categories: [STR_OUTFITS_CATEGORY, STR_SECURITY_CATEGORY]
     requiresBuy:
       - STR_TODO
     size: 0.25
@@ -2096,7 +2136,7 @@ items:
     transferTime: 4
 
   - type: STR_AQUAVEST_DRONE_ARMOR #TODO resources
-    categories: [STR_ARMOR_CATEGORY, STR_SECURITY_CATEGORY]
+    categories: [STR_OUTFITS_CATEGORY, STR_SECURITY_CATEGORY]
     requiresBuy:
       - STR_TODO
     size: 0.25

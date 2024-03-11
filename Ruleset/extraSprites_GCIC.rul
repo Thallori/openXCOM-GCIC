@@ -88,6 +88,10 @@ extraSprites:
       155: Resources/Items/Explosives/eleriumbomb_bigob.png
       156: Resources/Factions/SSP/sspguard_floorob.png
       157: Resources/Items/Materials/personal_bigob.png
+      158: Resources/Items/Laser/ssp_pistol_bigob.png
+      159: Resources/Items/Laser/ssp_epistol_bigob.png
+      160: Resources/Items/Laser/Ammo/ssp2_ammo_bigob.png
+      161: Resources/Items/Laser/Ammo/ssp9_ammo_bigob.png
 
   - type: FLOOROB.PCK
     files:
@@ -124,7 +128,7 @@ extraSprites:
       131: Resources/Items/Containers/lockbox_floorob.png
       132: Resources/Armors/Anthros/Worksuit/worksuit_corpse_floorob.png
       133: Resources/Armors/Anthros/Worksuit/worksuit_corpse_shark_floorob.png
-      134: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_shark_floorob.png
+      134: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_floorob.png
       135: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_shark_floorob.png
       136: Resources/Items/Aquatic/dartpistol_floorob.png
       137: Resources/Items/Aquatic/Ammo/dart_ammo_floorob.png
@@ -141,6 +145,10 @@ extraSprites:
       148: Resources/Items/Materials/elerium_floorob.png
       149: Resources/Items/Explosives/eleriumbomb_floorob.png
       150: Resources/Factions/SSP/sspguard_floorob.png
+      151: Resources/Items/Laser/ssp_pistol_floorob.png
+      152: Resources/Items/Laser/ssp_epistol_floorob.png
+      153: Resources/Items/Laser/Ammo/ssp2_ammo_floorob.png
+      154: Resources/Items/Laser/Ammo/ssp9_ammo_floorob.png
 
   - type: HANDOB.PCK
     height: 40
@@ -175,6 +183,8 @@ extraSprites:
       320: Resources/Items/Melee/baton_handob.png
       328: Resources/Items/Kinetic/12mm_handob.png
       336: Resources/Items/Explosives/eleriumbomb_handob.png
+      344: Resources/Items/Laser/ssp_pistol_handob.png
+      352: Resources/Items/Laser/ssp_epistol_handob.png
 
   - type: BASEBITS.PCK
     files:
@@ -193,6 +203,7 @@ extraSprites:
       306: Resources/BaseBits/basebits_depot.png
       307: Resources/BaseBits/basebits_corridor.png
       308: Resources/BaseBits/basebits_local.png
+      309: Resources/BaseBits/basebits_pnpbay.png
       433: Resources/Crafts/bicube_basebit.png
       434: Resources/Crafts/crossover_basebit.png
       649: Resources/Crafts/Hardpoints/economy_basebit.png
@@ -274,6 +285,13 @@ extraSprites:
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_M1.png
 
 #armor
+  - type: CustomArmorPreviews
+    width: 108
+    height: 32
+    subX: 12
+    subY: 20
+    files:
+      0: Resources/UI/tiny_armors.png
 #worksuit
   - typeSingle: HUMAN__7__WORKSUIT
     fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_inventory.png
@@ -405,6 +423,25 @@ extraSprites:
 #ufopedia
   - typeSingle: ALIGN_TEST_CPAL
     fileSingle: Resources/Pedia/align_test_CPAL.png
+  - typeSingle: ALIGN_TEST2_CPAL
+    fileSingle: Resources/Pedia/align_test2_CPAL.png
+
+  - typeSingle: DATA1_CPAL
+    fileSingle: Resources/Pedia/data1_CPAL.png
+  - typeSingle: DATA2_CPAL
+    fileSingle: Resources/Pedia/data2_CPAL.png
+  - typeSingle: DATA3_CPAL
+    fileSingle: Resources/Pedia/data3_CPAL.png
+
+  - typeSingle: OPERATIONS1_CPAL
+    fileSingle: Resources/Pedia/operations1_CPAL.png
+  - typeSingle: OPERATIONS2_CPAL
+    fileSingle: Resources/Pedia/operations2_CPAL.png
+  - typeSingle: OPERATIONS3_CPAL
+    fileSingle: Resources/Pedia/operations3_CPAL.png
+  - typeSingle: OPERATIONS4_CPAL
+    fileSingle: Resources/Pedia/operations4_CPAL.png
+
   - typeSingle: VENDOR_PRINT_CPAL
     fileSingle: Resources/Pedia/vendor_print_CPAL.png
   - typeSingle: VENDOR_MEDI_CPAL
@@ -415,6 +452,33 @@ extraSprites:
     fileSingle: Resources/Pedia/vendor_p2p_CPAL.png
   - typeSingle: VENDOR_HD_CPAL
     fileSingle: Resources/Pedia/vendor_hd_CPAL.png
+  - typeSingle: VENDOR_VCM_CPAL
+    fileSingle: Resources/Pedia/vendor_vcm_CPAL.png
+  - typeSingle: VENDOR_SSP_CPAL
+    fileSingle: Resources/Pedia/vendor_ssp_CPAL.png
+
+  - typeSingle: RECEIPT_CPAL
+    fileSingle: Resources/Pedia/receipt_CPAL.png
+  - typeSingle: GUNPOWDER_CPAL
+    fileSingle: Resources/Pedia/gunpowder_CPAL.png
+  - typeSingle: NBCELL_CPAL
+    fileSingle: Resources/Pedia/nbcell_CPAL.png
+  - typeSingle: BIOCODE_CPAL
+    fileSingle: Resources/Pedia/biocode_CPAL.png
+  - typeSingle: STAPLE_CPAL
+    fileSingle: Resources/Pedia/staple_CPAL.png
+  - typeSingle: PASS_CPAL
+    fileSingle: Resources/Pedia/pass_CPAL.png
+
+  - typeSingle: IMMORTAL_CPAL
+    fileSingle: Resources/Pedia/immortal_CPAL.png
+  - typeSingle: IMPLANTS_CPAL
+    fileSingle: Resources/Pedia/implants_CPAL.png
+  - typeSingle: NEURACHEM_CPAL
+    fileSingle: Resources/Pedia/neurachem_CPAL.png
+
+  - typeSingle: LIQUIDITY_CPAL
+    fileSingle: Resources/Pedia/liquidity_CPAL.png
 # crafts
   - typeSingle: CRAFT_BICUBE_CPAL
     fileSingle: Resources/Pedia/craft_bicube_CPAL.png
@@ -498,6 +562,36 @@ extraSprites:
     fileSingle: Resources/UI/DETBORD2.png
 
 #backgrounds
+  - typeSingle: ALTGEOBORD.SCR
+    fileSingle: Resources/Backgrounds/GEOBORD.png
+
+  - typeSingle: BACK01.SCR
+    fileSingle: Resources/Backgrounds/back_main.png
+  - typeSingle: BACK02.SCR
+    fileSingle: Resources/Backgrounds/back_test.png
+  - typeSingle: BACK03.SCR
+    fileSingle: Resources/Backgrounds/back_test.png
+  - typeSingle: BACK04.SCR
+    fileSingle: Resources/Backgrounds/back_test.png
+  - typeSingle: BACK05.SCR
+    fileSingle: Resources/Backgrounds/back_servers.png
+  - typeSingle: BACK12.SCR
+    fileSingle: Resources/Backgrounds/back_test.png
+  - typeSingle: BACK13.SCR
+    fileSingle: Resources/Backgrounds/back_market.png
+  - typeSingle: BACK14.SCR
+    fileSingle: Resources/Backgrounds/back_test.png
+  - typeSingle: BACK15.SCR
+    fileSingle: Resources/Backgrounds/back_test.png
+  - typeSingle: BACK16.SCR
+    fileSingle: Resources/Backgrounds/back_test.png
+  - typeSingle: BACK17.SCR
+    fileSingle: Resources/Backgrounds/back_factory.png
+
+  - typeSingle: BACK06.SCR
+    fileSingle: Resources/Backgrounds/soldier_info.png
+  - typeSingle: ALTBACK07.SCR
+    fileSingle: Resources/Backgrounds/base_info.png
   - typeSingle: BACK08.SCR
     fileSingle: Resources/Backgrounds/pedia_item.png
   - typeSingle: BACK09.SCR

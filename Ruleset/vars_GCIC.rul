@@ -1,12 +1,12 @@
 
 startingTime:
-  second: 0
+  second: 30
   minute: 0
-  hour: 12
-  weekday: 6
+  hour: 0
+  weekday: 2
   day: 1
-  month: 3
-  year: 2486
+  month: 1
+  year: 2480
 startingDifficulty: 1
 difficultyCoefficient: [-2, 0, 2, 4, 6]
 statGrowthMultipliers:
@@ -23,7 +23,7 @@ statGrowthMultipliers:
   melee: 6
 aimMultipliers: [0.5, 1.0, 1.0, 1.0, 1.0]
 armorMultipliers: [0.75, 1.0, 1.0, 1.0, 1.0]
-sellPriceCoefficient: [100, 100, 100, 75, 50]
+sellPriceCoefficient: [100, 100, 100, 100, 100]
 difficultyCoefficientOverrides:
   monthlyRatingThresholds: [-999999, -999999, -999999, -999999, -999999]
   ufoFiringRateCoefficients: [150, 100, 100, 85, 80]
@@ -51,6 +51,10 @@ performanceBonusFactor: 100
 #   -5599: STR_MT_RATING_TERRIBLE
 #   -99999: STR_MT_RATING_ABOMINABLE
 missionRatings:
+  4000: STR_MS_RATING_4000
+  3000: STR_MS_RATING_3000
+  2000: STR_MS_RATING_2000
+  1500: STR_MS_RATING_1500
   1000: STR_MS_RATING_1000
   750: STR_MS_RATING_750
   500: STR_MS_RATING_500
@@ -59,7 +63,7 @@ missionRatings:
   75: STR_MS_RATING_75
   15: STR_MS_RATING_15
   -15: STR_MS_RATING_N15
-  -50: STR_MS_RATING_N50
+  -75: STR_MS_RATING_N75
   -200: STR_MS_RATING_N200
   -350: STR_MS_RATING_N350
   -500: STR_MS_RATING_N500
@@ -75,7 +79,7 @@ tooMuchSmokeThreshold: 13
 bughuntMinTurn: 15
 bughuntMaxEnemies: 2
 bughuntRank: 0
-bughuntLowMorale: 70
+bughuntLowMorale: 40
 bughuntTimeUnitsLeft: 60
 ufoGlancingHitThreshold: 5
 ufoBeamWidthParameter: 50
@@ -83,7 +87,7 @@ pilotAccuracyZeroPoint: 50
 pilotAccuracyRange: 50
 pilotReactionsZeroPoint: 50
 pilotReactionsRange: 50
-pilotBraveryThresholds: [90, 80, 30]
+pilotBraveryThresholds: [90, 60, 30]
 escortRange: 50
 drawEnemyRadarCircles: 2
 crewEmergencyEvacuationSurvivalChance: 100
@@ -110,7 +114,6 @@ psiUnlockResearch: STR_TODO
 mana:
   enabled: true
   battleUI: true
-  unlockResearch: STR_TODO
   trainingPrimary: true
   trainingSecondary: true
   replenishAfterMission: false
@@ -123,16 +126,19 @@ fixedUserOptions:
   battleUFOExtenderAccuracy: true
   canSellLiveAliens: true
   retainCorpses: false
+  weaponSelfDestruction: false
+  storageLimitsEnforced: true
+  battleExplosionHeight: 2
+  playIntro: false
 
 recommendedUserOptions:
   customInitialBase: false
-  weaponSelfDestruction: false
+  battleInstantGrenade: false
+  showAllCommendations: false
   soldierDiaries: true
-  storageLimitsEnforced: true
   craftLaunchAlways: true
   canTransferCraftsWhileAirborne: true
   showMoreStatsInInventoryView: true
-  showAllCommendations: false
   strafe: true
   forceFire: true
   globeSeasons: true
@@ -142,21 +148,20 @@ recommendedUserOptions:
   allowPsionicCapture: true
   allowPsiStrengthImprovement: false
   psiStrengthEval: true
-  battleInstantGrenade: false
-  battleExplosionHeight: 2
-  oxcePlayBriefingMusicDuringEquipment: true
-  oxceRememberDisabledCraftWeapons: true
-  oxceUfoLandingAlert: false
-  oxceStartUpTextMode: 1
+  anytimePsiTraining: true
   battleAutoEnd: true
+  oxcePlayBriefingMusicDuringEquipment: true
+  oxceUfoLandingAlert: false
   oxceAutoSell: true
-  oxceManufactureScrollSpeed: 1
-  oxceManufactureScrollSpeedWithCtrl: 5
+  oxceManufactureScrollSpeed: 5
+  oxceManufactureScrollSpeedWithCtrl: 10
   oxceResearchScrollSpeed: 1
   oxceResearchScrollSpeedWithCtrl: 5
   oxceHighlightNewTopics: true
   oxceEnableOffCentreShooting: true
-  anytimePsiTraining: true
+  oxceEnableSlackingIndicator: true
+  oxceGeoscapeEventsInstantDelivery: true
+  oxceShowETAMode: 2
   oxceWoundedDefendBaseIf: 70
 #  oxceNightVisionColor: 2
 #  oxceAutoNightVisionThreshold: 7
@@ -165,11 +170,13 @@ constants:
 #  explosionOffset: 8
 #  underwaterSmokeOffset: 8
   extendedItemReloadCost: true
+  extendedInventorySlotSorting: true
   extendedRunningCost: true
   extendedHwpLoadOrder: true
   extendedMeleeReactions: 2
   extendedTerrainMelee: 4
   extendedUnderwaterThrowFactor: 50
+  damageRange: 100
 
 ai:
   extendedFireModeChoice: true

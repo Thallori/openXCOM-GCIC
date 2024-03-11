@@ -63,12 +63,28 @@ commendations:
 #    criteria:
 #      totalMissions: [1, 3, 6, 9]
 
+#  - type: STR_MEDAL_ASTRONAUT_NAME #orbital missions
+#    description: STR_MEDAL_ASTRONAUT_UFOPEDIA
+#    soldierBonusTypes: [STR_MEDAL_ASTRONAUT_1, STR_MEDAL_ASTRONAUT_2, STR_MEDAL_ASTRONAUT_3, STR_MEDAL_ASTRONAUT_4]
+#    sprite: 2
+#    missionMarkerFilter: ["STR_USOP", "STR_ATLANTIS_TEMPLE"]
+#    criteria:
+#      totalMissions: [1, 3, 6, 9]
+
+#  - type: STR_MEDAL_INFILTRATOR_NAME #infiltration missions
+#    description: STR_MEDAL_INFILTRATOR_UFOPEDIA
+#    soldierBonusTypes: [STR_MEDAL_INFILTRATOR_1, STR_MEDAL_INFILTRATOR_2, STR_MEDAL_INFILTRATOR_3, STR_MEDAL_INFILTRATOR_4]
+#    sprite: 2
+#    missionMarkerFilter: ["STR_USOP", "STR_ATLANTIS_TEMPLE"]
+#    criteria:
+#      totalMissions: [1, 3, 6, 9]
+
   - type: STR_MEDAL_CAMPAIGN_RIBBON_NAME #missions in a region
     description: STR_MEDAL_CAMPAIGN_RIBBON_UFOPEDIA
     soldierBonusTypes: [STR_MEDAL_CAMPAIGN_RIBBON]
     sprite: 2
     criteria:
-      totalMissionsInARegion: [10]
+      totalMissionsInARegion: [15]
 
   - type: STR_MEDAL_CARREER_KILLS_NAME #total kills
     description: STR_MEDAL_CARREER_KILLS_UFOPEDIA
@@ -80,15 +96,6 @@ commendations:
       - - [1, ["STATUS_DEAD", "FACTION_HOSTILE"]]
       - - [1, ["STATUS_DEAD", "FACTION_NEUTRAL"]]
       - - [1, ["STATUS_DEAD", "FACTION_PLAYER"]]
-
-  - type: STR_MEDAL_CARREER_CAPTURES_NAME #total stuns
-    description: STR_MEDAL_CARREER_CAPTURES_UFOPEDIA
-    soldierBonusTypes: [STR_MEDAL_CARREER_CAPTURES_1, STR_MEDAL_CARREER_CAPTURES_2, STR_MEDAL_CARREER_CAPTURES_3, STR_MEDAL_CARREER_CAPTURES_4, STR_MEDAL_CARREER_CAPTURES_5, STR_MEDAL_CARREER_CAPTURES_6, STR_MEDAL_CARREER_CAPTURES_7, STR_MEDAL_CARREER_CAPTURES_8, STR_MEDAL_CARREER_CAPTURES_9, STR_MEDAL_CARREER_CAPTURES_10]
-    sprite: 4
-    criteria:
-      killsWithCriteriaCareer: [10, 20, 30, 50, 70, 100, 150, 200, 300, 500]
-    killCriteria:
-      - - [1, ["FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
 
   - type: STR_MEDAL_BOUNTYHUNTER_NAME #captured bounties
     description: STR_MEDAL_BOUNTYHUNTER_UFOPEDIA
@@ -105,15 +112,6 @@ commendations:
     sprite: 3
     criteria:
       totalSlaveKills: [5]
-
-  - type: STR_MEDAL_IDOL_NAME #3 stuns in a mission
-    description: STR_MEDAL_IDOL_UFOPEDIA
-    soldierBonusTypes: [STR_MEDAL_IDOL_1, STR_MEDAL_IDOL_2, STR_MEDAL_IDOL_3, STR_MEDAL_IDOL_4]
-    sprite: 4
-    criteria:
-      killsWithCriteriaMission: [1, 4, 16, 32]
-    killCriteria:
-      - - [3, ["FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
 
   - type: STR_MEDAL_MISSION_KILLS_5_NAME #5 kills in a mission
     description: STR_MEDAL_MISSION_KILLS_5_UFOPEDIA
@@ -275,16 +273,16 @@ commendations:
       - - [1, ["DT_STUN", "FACTION_NEUTRAL", "STATUS_DEAD"]]
       - - [1, ["DT_STUN", "FACTION_PLAYER", "STATUS_DEAD"]]
 
-#  - type: STR_MEDAL_CHOKER_NAME #kills with smoke damage
-#    description: STR_MEDAL_CHOKER_UFOPEDIA
-#    soldierBonusTypes: [STR_MEDAL_CHOKER_1, STR_MEDAL_CHOKER_2, STR_MEDAL_CHOKER_3, STR_MEDAL_CHOKER_4]
-#    sprite: 1
-#    criteria:
-#      killsWithCriteriaCareer: [1, 4, 16, 32]
-#    killCriteria:
-#      - - [1, ["STR_DAMAGE_SMOKE", "FACTION_HOSTILE", "STATUS_DEAD"]]
-#      - - [1, ["STR_DAMAGE_SMOKE", "FACTION_NEUTRAL", "STATUS_DEAD"]]
-#      - - [1, ["STR_DAMAGE_SMOKE", "FACTION_PLAYER", "STATUS_DEAD"]]
+  - type: STR_MEDAL_CHOKER_NAME #kills with smoke damage
+    description: STR_MEDAL_CHOKER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_CHOKER_1, STR_MEDAL_CHOKER_2, STR_MEDAL_CHOKER_3, STR_MEDAL_CHOKER_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [1, 4, 16, 32]
+    killCriteria:
+      - - [1, ["STR_DAMAGE_SMOKE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_DAMAGE_SMOKE", "FACTION_NEUTRAL", "STATUS_DEAD"]]
+      - - [1, ["STR_DAMAGE_SMOKE", "FACTION_PLAYER", "STATUS_DEAD"]]
 
   - type: STR_MEDAL_PHYSICS_NAME #kills with armor piercing damage
     description: STR_MEDAL_PHYSICS_UFOPEDIA
@@ -349,7 +347,7 @@ commendations:
     killCriteria:
       - - [1, ["STR_DAMAGE_11", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
-  - type: STR_MEDAL_ORGANISM_NAME #kills/stuns with bio damage
+  - type: STR_MEDAL_ORGANISM_NAME #kills with bio damage
     description: STR_MEDAL_ORGANISM_UFOPEDIA
     soldierBonusTypes: [STR_MEDAL_ORGANISM_1, STR_MEDAL_ORGANISM_2, STR_MEDAL_ORGANISM_3, STR_MEDAL_ORGANISM_4]
     sprite: 1
@@ -357,7 +355,6 @@ commendations:
       killsWithCriteriaCareer: [32, 64, 128, 256]
     killCriteria:
       - - [1, ["STR_DAMAGE_12", "FACTION_HOSTILE", "STATUS_DEAD"]]
-      - - [1, ["STR_DAMAGE_12", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
 
   - type: STR_MEDAL_GRENADIER_NAME #kills with grenades
     description: STR_MEDAL_GRENADIER_UFOPEDIA
@@ -367,6 +364,7 @@ commendations:
       killsWithCriteriaCareer: [32, 64, 128, 256]
     killCriteria:
       - - [1, ["STR_PIPEBOMB", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_ELERIUM_BOMB", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
   - type: STR_MEDAL_WEAPON_PROFICIENCY_NAME #kills by weapon
     description: STR_MEDAL_WEAPON_PROFICIENCY_UFOPEDIA
@@ -412,6 +410,11 @@ commendations:
       - - [1, ["STR_BUSBOX_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
       - - [1, ["STR_9MM_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
       - - [1, ["STR_XN_LASER_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_45_PISTOL_CODED", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_45_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_SINGLESHOT_LASER_PISTOL_ELERIUM", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_SINGLESHOT_LASER_PISTOL_CODED", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_SINGLESHOT_LASER_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
   - type: STR_MEDAL_ASSAULTER_NAME #kills with smgs
     description: STR_MEDAL_ASSAULTER_UFOPEDIA
@@ -488,6 +491,15 @@ commendations:
     killCriteria:
       - - [1, ["STR_ROCKET_LAUNCHER", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
+  - type: STR_MEDAL_ARCHER_NAME #kills with bows
+    description: STR_MEDAL_ARCHER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_ARCHER_1, STR_MEDAL_ARCHER_2, STR_MEDAL_ARCHER_3, STR_MEDAL_ARCHER_4, STR_MEDAL_ARCHER_5, STR_MEDAL_ARCHER_6, STR_MEDAL_ARCHER_7, STR_MEDAL_ARCHER_8, STR_MEDAL_ARCHER_9, STR_MEDAL_ARCHER_10]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
+    killCriteria:
+      - - [1, ["STR_SURVEY_KNOCKER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
   - type: STR_MEDAL_SORCERER_NAME #kills with psi weapons
     description: STR_MEDAL_SORCERER_UFOPEDIA
     soldierBonusTypes: [STR_MEDAL_SORCERER_1, STR_MEDAL_SORCERER_2, STR_MEDAL_SORCERER_3, STR_MEDAL_SORCERER_4, STR_MEDAL_SORCERER_5, STR_MEDAL_SORCERER_6, STR_MEDAL_SORCERER_7, STR_MEDAL_SORCERER_8, STR_MEDAL_SORCERER_9, STR_MEDAL_SORCERER_10]
@@ -508,7 +520,6 @@ commendations:
       - - [1, ["STR_WRENCH", "FACTION_HOSTILE", "STATUS_DEAD"]]
       - - [1, ["STR_MULTITOOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
       - - [1, ["STR_ELECTRIC_NAILER", "FACTION_HOSTILE", "STATUS_DEAD"]]
-      - - [1, ["STR_SURVEY_KNOCKER", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
   - type: STR_MEDAL_WARRIOR_NAME #kills with contemporary melee weapons
     description: STR_MEDAL_WARRIOR_UFOPEDIA
@@ -537,14 +548,14 @@ commendations:
     killCriteria:
       - - [1, ["STR_BOW", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
-  - type: STR_MEDAL_INCAPACITATOR_NAME #stuns with non-electric stunning weapons
+  - type: STR_MEDAL_INCAPACITATOR_NAME #stuns with blunt weapons
     description: STR_MEDAL_INCAPACITATOR_UFOPEDIA
     soldierBonusTypes: [STR_MEDAL_INCAPACITATOR_1, STR_MEDAL_INCAPACITATOR_2, STR_MEDAL_INCAPACITATOR_3, STR_MEDAL_INCAPACITATOR_4, STR_MEDAL_INCAPACITATOR_5, STR_MEDAL_INCAPACITATOR_6, STR_MEDAL_INCAPACITATOR_7, STR_MEDAL_INCAPACITATOR_8, STR_MEDAL_INCAPACITATOR_9, STR_MEDAL_INCAPACITATOR_10]
     sprite: 4
     criteria:
       killsWithCriteriaCareer: [5, 10, 20, 30, 50, 75, 100, 150, 200, 300]
     killCriteria:
-      - - [1, ["STR_TONFA", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      - - [1, ["STR_BATON", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
 
   - type: STR_MEDAL_TASEMASTER_NAME #stuns with electric weapons
     description: STR_MEDAL_TASEMASTER_UFOPEDIA
@@ -553,6 +564,8 @@ commendations:
     criteria:
       killsWithCriteriaCareer: [2, 4, 7, 10, 15, 20, 25, 30, 40, 50]
     killCriteria:
+      - - [1, ["STR_TASER_PISTOL_CODED", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      - - [1, ["STR_TASER_PISTOL", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
       - - [1, ["STR_MULTITOOL", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
 
   - type: STR_MEDAL_SLEEPER_NAME #stuns with psi weapons
@@ -566,7 +579,7 @@ commendations:
 
   - type: STR_MEDAL_REVOLVINGDOOR_NAME #dying more than once
     description: STR_MEDAL_REVOLVINGDOOR_UFOPEDIA
-    soldierBonusTypes: [STR_MEDAL_REVOLVINGDOOR_1, STR_MEDAL_REVOLVINGDOOR_2, STR_MEDAL_REVOLVINGDOOR_3, STR_MEDAL_REVOLVINGDOOR_4, STR_MEDAL_REVOLVINGDOOR_5, STR_MEDAL_REVOLVINGDOOR_6, STR_MEDAL_REVOLVINGDOOR_7, STR_MEDAL_REVOLVINGDOOR_8, STR_MEDAL_REVOLVINGDOOR_9, STR_MEDAL_REVOLVINGDOOR_10]
+    soldierBonusTypes: [STR_MEDAL_REVOLVINGDOOR_1]
     sprite: 0
     criteria:
-      isDead: [2, 4, 8, 16, 24, 32, 64, 96, 128, 256]
+      isDead: [2]

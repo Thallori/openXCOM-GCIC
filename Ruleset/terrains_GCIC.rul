@@ -269,7 +269,7 @@ terrains:
           - position: [3, 1, 0]
             amount: 1
             mixed: true
-            itemList: [STR_XN_CONTAINER_1, STR_CRIMINAL_CONTAINER_1]
+            itemList: [STR_XN_CONTAINER_1, STR_ELERIUM_BOMB]
 
   - name: CLUB
     mapDataSets:

@@ -91,7 +91,7 @@ soldiers:
       strength: 10
       psiStrength: 0
       psiSkill: 0
-      mana: 25
+      mana: 20
     maxStats:
       tu: 60
       stamina: 55
@@ -104,7 +104,7 @@ soldiers:
       strength: 25
       psiStrength: 60
       psiSkill: 12
-      mana: 35
+      mana: 30
     statCaps:
       tu: 50
       stamina: 45
@@ -157,7 +157,7 @@ soldiers:
       strength: 20
       psiStrength: 0
       psiSkill: 0
-      mana: 25
+      mana: 20
     maxStats:
       tu: 60
       stamina: 60
@@ -170,7 +170,7 @@ soldiers:
       strength: 35
       psiStrength: 60
       psiSkill: 12
-      mana: 35
+      mana: 30
     statCaps:
       tu: 50
       stamina: 50
@@ -224,7 +224,7 @@ soldiers:
       strength: 25
       psiStrength: 0
       psiSkill: 0
-      mana: 25
+      mana: 20
     maxStats:
       tu: 60
       stamina: 55
@@ -237,7 +237,7 @@ soldiers:
       strength: 40
       psiStrength: 60
       psiSkill: 12
-      mana: 35
+      mana: 30
     statCaps:
       tu: 50
       stamina: 45
@@ -289,7 +289,7 @@ soldiers:
 #      strength: 20
 #      psiStrength: 0
 #      psiSkill: 0
-#      mana: 25
+#      mana: 20
 #    maxStats:
 #      tu: 60
 #      stamina: 55
@@ -302,7 +302,7 @@ soldiers:
 #      strength: 35
 #      psiStrength: 60
 #      psiSkill: 12
-#      mana: 35
+#      mana: 30
 #    statCaps:
 #      tu: 50
 #      stamina: 45

@@ -49,15 +49,21 @@ soldierBonuses:
       melee: 12
       tu: 6
 
-  - name: STR_BREACHER_SPECIALIST
+  - name: STR_AGILITY_MUSCLES
     stats:
-      reactions: 12
-      tu: 6
+      tu: 8
+      reactions: 8
+      stamina: 10
+      strength: 5
+      health: 10
 
-  - name: STR_HEAVY_SPECIALIST
+  - name: STR_HEAVY_MUSCLES
     stats:
-      strength: 12
-      health: 6
+      tu: 4
+      reactions: 4
+      stamina: 10
+      strength: 10
+      health: 15
 
 #commendations
   - name: STR_MEDAL_ORIGINAL
@@ -70,7 +76,6 @@ soldierBonuses:
       throwing: 1
       melee: 1
       strength: 1
-
 
   - name: STR_MEDAL_SERVICE_TIME_1
     stats:
@@ -200,19 +205,17 @@ soldierBonuses:
       mana: 10
 
   - name: STR_MEDAL_NIGHTOPS_1
-    visibilityAtDark: 1
+    stats:
+      mana: 1
   - name: STR_MEDAL_NIGHTOPS_2
-    visibilityAtDark: 1
     stats:
       mana: 2
   - name: STR_MEDAL_NIGHTOPS_3
-    visibilityAtDark: 1
+    stats:
+      mana: 3
+  - name: STR_MEDAL_NIGHTOPS_4
     stats:
       mana: 4
-  - name: STR_MEDAL_NIGHTOPS_4
-    visibilityAtDark: 2
-    stats:
-      mana: 6
 
   - name: STR_MEDAL_BASE_DEFENSE
     stats:
@@ -245,69 +248,48 @@ soldierBonuses:
 #      morale:
 #        flatOne: 2
 
+#  - name: STR_MEDAL_ASTRONAUT_1
+#  - name: STR_MEDAL_ASTRONAUT_2
+#  - name: STR_MEDAL_ASTRONAUT_3
+#  - name: STR_MEDAL_ASTRONAUT_4
+
+#  - name: STR_MEDAL_INFILTRATOR_1
+#  - name: STR_MEDAL_INFILTRATOR_2
+#  - name: STR_MEDAL_INFILTRATOR_3
+#  - name: STR_MEDAL_INFILTRATOR_4
+
   - name: STR_MEDAL_CAMPAIGN_RIBBON
     stats:
       mana: 2
 
   - name: STR_MEDAL_CARREER_KILLS_1
     stats:
-      psiStrength: 1
+      psiSkill: 1
   - name: STR_MEDAL_CARREER_KILLS_2
     stats:
-      psiStrength: 2
+      psiSkill: 2
   - name: STR_MEDAL_CARREER_KILLS_3
     stats:
-      psiStrength: 3
+      psiSkill: 3
   - name: STR_MEDAL_CARREER_KILLS_4
     stats:
-      psiStrength: 4
+      psiSkill: 4
   - name: STR_MEDAL_CARREER_KILLS_5
     stats:
-      psiStrength: 5
+      psiSkill: 5
   - name: STR_MEDAL_CARREER_KILLS_6
     stats:
-      psiStrength: 6
+      psiSkill: 6
   - name: STR_MEDAL_CARREER_KILLS_7
     stats:
-      psiStrength: 7
+      psiSkill: 7
   - name: STR_MEDAL_CARREER_KILLS_8
     stats:
-      psiStrength: 8
+      psiSkill: 8
   - name: STR_MEDAL_CARREER_KILLS_9
     stats:
-      psiStrength: 9
-  - name: STR_MEDAL_CARREER_KILLS_10
-    stats:
-      psiStrength: 10
-
-  - name: STR_MEDAL_CARREER_CAPTURES_1
-    stats:
-      psiSkill: 1
-  - name: STR_MEDAL_CARREER_CAPTURES_2
-    stats:
-      psiSkill: 2
-  - name: STR_MEDAL_CARREER_CAPTURES_3
-    stats:
-      psiSkill: 3
-  - name: STR_MEDAL_CARREER_CAPTURES_4
-    stats:
-      psiSkill: 4
-  - name: STR_MEDAL_CARREER_CAPTURES_5
-    stats:
-      psiSkill: 5
-  - name: STR_MEDAL_CARREER_CAPTURES_6
-    stats:
-      psiSkill: 6
-  - name: STR_MEDAL_CARREER_CAPTURES_7
-    stats:
-      psiSkill: 7
-  - name: STR_MEDAL_CARREER_CAPTURES_8
-    stats:
-      psiSkill: 8
-  - name: STR_MEDAL_CARREER_CAPTURES_9
-    stats:
       psiSkill: 9
-  - name: STR_MEDAL_CARREER_CAPTURES_10
+  - name: STR_MEDAL_CARREER_KILLS_10
     stats:
       psiSkill: 10
 
@@ -318,19 +300,6 @@ soldierBonuses:
   - name: STR_MEDAL_SLAVEKILLS
     stats:
       psiStrength: 2
-
-  - name: STR_MEDAL_IDOL_1
-    stats:
-      reactions: 1
-  - name: STR_MEDAL_IDOL_2
-    stats:
-      reactions: 2
-  - name: STR_MEDAL_IDOL_3
-    stats:
-      reactions: 3
-  - name: STR_MEDAL_IDOL_4
-    stats:
-      reactions: 4
 
   - name: STR_MEDAL_MISSION_KILLS_5_1
     stats:
@@ -549,10 +518,10 @@ soldierBonuses:
       strength: 4
       health: 4
 
-#  - name: STR_MEDAL_CHOKER_1
-#  - name: STR_MEDAL_CHOKER_2
-#  - name: STR_MEDAL_CHOKER_3
-#  - name: STR_MEDAL_CHOKER_4
+  - name: STR_MEDAL_CHOKER_1
+  - name: STR_MEDAL_CHOKER_2
+  - name: STR_MEDAL_CHOKER_3
+  - name: STR_MEDAL_CHOKER_4
 
   - name: STR_MEDAL_PHYSICS_1
     stats:
@@ -709,7 +678,6 @@ soldierBonuses:
       firing: 4
       throwing: 4
       melee: 4
-      bravery: 10
 
   - name: STR_MEDAL_WRESTLER_1
     stats:
@@ -1161,6 +1129,47 @@ soldierBonuses:
       strength: 3
       mana: 3
 
+  - name: STR_MEDAL_ARCHER_1
+    stats:
+      stamina: 1
+      strength: 1
+  - name: STR_MEDAL_ARCHER_2
+    stats:
+      stamina: 1
+      strength: 1
+  - name: STR_MEDAL_ARCHER_3
+    stats:
+      stamina: 1
+      strength: 1
+  - name: STR_MEDAL_ARCHER_4
+    stats:
+      stamina: 1
+      strength: 1
+  - name: STR_MEDAL_ARCHER_5
+    stats:
+      stamina: 2
+      strength: 2
+  - name: STR_MEDAL_ARCHER_6
+    stats:
+      stamina: 2
+      strength: 2
+  - name: STR_MEDAL_ARCHER_7
+    stats:
+      stamina: 2
+      strength: 2
+  - name: STR_MEDAL_ARCHER_8
+    stats:
+      stamina: 2
+      strength: 2
+  - name: STR_MEDAL_ARCHER_9
+    stats:
+      stamina: 2
+      strength: 2
+  - name: STR_MEDAL_ARCHER_10
+    stats:
+      stamina: 3
+      strength: 3
+
   - name: STR_MEDAL_SORCERER_1
     stats:
       stamina: 1
@@ -1511,41 +1520,5 @@ soldierBonuses:
 
   - name: STR_MEDAL_REVOLVINGDOOR_1
     stats:
-      mana: 1
-      bravery: 10
-  - name: STR_MEDAL_REVOLVINGDOOR_2
-    stats:
       mana: 2
       bravery: 10
-  - name: STR_MEDAL_REVOLVINGDOOR_3
-    stats:
-      mana: 3
-      bravery: 10
-  - name: STR_MEDAL_REVOLVINGDOOR_4
-    stats:
-      mana: 4
-      bravery: 10
-  - name: STR_MEDAL_REVOLVINGDOOR_5
-    stats:
-      mana: 5
-      bravery: 20
-  - name: STR_MEDAL_REVOLVINGDOOR_6
-    stats:
-      mana: 6
-      bravery: 20
-  - name: STR_MEDAL_REVOLVINGDOOR_7
-    stats:
-      mana: 7
-      bravery: 20
-  - name: STR_MEDAL_REVOLVINGDOOR_8
-    stats:
-      mana: 8
-      bravery: 20
-  - name: STR_MEDAL_REVOLVINGDOOR_9
-    stats:
-      mana: 9
-      bravery: 20
-  - name: STR_MEDAL_REVOLVINGDOOR_10
-    stats:
-      mana: 10
-      bravery: 30

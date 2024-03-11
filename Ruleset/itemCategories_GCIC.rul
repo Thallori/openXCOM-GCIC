@@ -26,8 +26,6 @@
   - type: STR_BOWS_CATEGORY
     listOrder: 80
   - type: STR_EXPLOSIVES_CATEGORY
-    listOrder: 85
-  - type: STR_GRENADES_CATEGORY
     listOrder: 90
   - type: STR_PSI_CATEGORY
     listOrder: 100
@@ -39,6 +37,12 @@
     listOrder: 120
   - type: STR_MEDICAL_CATEGORY
     listOrder: 130
+  - type: STR_TOOLS_CATEGORY
+    listOrder: 370
+  - type: STR_SPORT_CATEGORY
+    listOrder: 380
+  - type: STR_INFILTRATION_CATEGORY
+    listOrder: 390
   - type: STR_CONVENTIONAL_CATEGORY
     listOrder: 400
   - type: STR_SECURITY_CATEGORY
@@ -47,24 +51,16 @@
     listOrder: 420
   - type: STR_EXOTIC_CATEGORY
     listOrder: 430
-  - type: STR_LOCKED_CATEGORY
-    listOrder: 490
-  - type: STR_INFILTRATION_CATEGORY
-    listOrder: 500
-  - type: STR_TOOLS_CATEGORY
-    listOrder: 510
-  - type: STR_KINETIC_CATEGORY
-    listOrder: 600
-  - type: STR_LASER_CATEGORY
-    listOrder: 601
-  - type: STR_ELECTRIC_CATEGORY
-    listOrder: 602
-  - type: STR_BIOLOGIC_CATEGORY
-    listOrder: 603
   - type: STR_VACUUM_RATED_CATEGORY
-    listOrder: 700
+    listOrder: 440
   - type: STR_AQUATIC_CATEGORY
-    listOrder: 710
+    listOrder: 450
+  - type: STR_LOCKED_CATEGORY
+    listOrder: 590
+  # - type: STR_KINETIC_CATEGORY
+  #   listOrder: 600
+  # - type: STR_LASER_CATEGORY
+  #   listOrder: 601
   - type: STR_RESOURCES_CATEGORY
     listOrder: 800
   - type: STR_BOUNTIES_CATEGORY
@@ -79,8 +75,6 @@
     listOrder: 850
   - type: STR_REMAINS_CATEGORY
     listOrder: 860
-  - type: STR_ARMOR_CATEGORY
-    listOrder: 996
   - type: STR_BUILT_INS_CATEGORY
     listOrder: 997
   - type: STR_VOIDS_CATEGORY
