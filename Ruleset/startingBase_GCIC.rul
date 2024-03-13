@@ -26,7 +26,7 @@ startingBase:
     - type: STR_DEPOT
       x: 3
       y: 3
-    - type: STR_STOREROOM
+    - type: STR_STORAGE_1
       x: 1
       y: 3
   crafts:
@@ -38,8 +38,8 @@ startingBase:
         - type: STR_BATBOX
       items:
         STR_XN_LASER_PISTOL: 1
-        STR_BUSBOX_PISTOL: 1
-        STR_COMBALL_AMMO: 3
+        STR_BUSBOX_PISTOL: 2
+        STR_COMBALL_AMMO: 6
         STR_STL_KNIFE: 1
         STR_ELECTROFLARE: 2
         STR_MEDI_SPRAY: 2

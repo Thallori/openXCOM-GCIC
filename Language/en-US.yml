@@ -4,7 +4,6 @@ en-US:
   STR_LOCK: "LOCKED"
   STR_BLANK_TOKEN: " "
 #vanilla replace
-  STR_CANCEL: "CANCEL"
   STR_INCOME: "INCOME"
   STR_FINANCE: "FINANCES"
   STR_EXPENDITURE: "EXPENDITURE"
@@ -12,15 +11,29 @@ en-US:
   STR_BALANCE: "BALANCE"
   STR_MONTHLY_COSTS: "MONTHLY COSTS"
   STR_NEW_PROJECT: "NEW PROJECT"
+  STR_GRAND_TOTAL: "GRAND TOTAL"
+
+  STR_TOGGLE_TOUCH_BUTTONS: "TOGGLE TOUCH BUTTONS"
+  STR_TOGGLE_NIGHT_VISION: "TOGGLE NIGHT VISION"
+  STR_TOGGLE_PERSONAL_LIGHTING: "TOGGLE PERSONAL LIGHTING"
+  STR_TOGGLE_BRIGHTNESS: "TOGGLE BRIGHTNESS (VISUAL ONLY)"
+  STR_HIT_LOG: "HIT LOG"
+  STR_BRIEFING: "BRIEFING"
+  STR_NOTES: "NOTES"
+  STR_SELECT_MUSIC_TRACK: "SELECT MUSIC TRACK"
+  STR_TOGGLE_DEBUG_MODE: "TOGGLE DEBUG MODE"
+  STR_RESTORE_DEFAULTS: "RESTORE DEFAULTS"
+  STR_CANCEL: "CANCEL"
 
   STR_BASES: "SHELL"
   STR_UFOPAEDIA: "ARCHIVES"
   STR_UFOPAEDIA_UC: "ARCHIVES"
+  STR_NOT_AWARDED_YET: "NOT YET AWARDED"
 
   STR_BUILD_NEW_BASE_UC: "DUPLICATE SHELL"
   STR_BASE_INFORMATION: "STACK TRACE"
   STR_EQUIP_CRAFT: "APS CRAFT"
-  STR_MANUFACTURE: "FABRICATE"
+  STR_MANUFACTURE: "MANUFACTURE"
   STR_BUILD_FACILITIES: "PFB EXPANSION" #peripheral facility board
   STR_PURCHASE_RECRUIT: "MARKET ACCESS"
   STR_PURCHASE_HIRE_PERSONNEL: "COMMODITIES EXCHANGE MARKET"
@@ -36,6 +49,8 @@ en-US:
   STR_DEFENSE_STRENGTH: "Defense"
   STR_SHORT_RANGE_DETECTION: "Scanners"
   STR_LONG_RANGE_DETECTION: "Hypercomms"
+  STR_OTHER_EMPLOYEES: "Assets/Liabilities"
+  STR_AVERAGE_MONTHLY_RATING: "Average monthly liquidity"
 
   STR_MAXIMUM_SPEED_UC: "MAX SPEED>{ALT}{0}{ALT}"
   STR_ACCELERATION: "ACCELERATION>{ALT}{0}{ALT}"
@@ -49,14 +64,14 @@ en-US:
   STR_SELECT_DESTINATION_BASE: "Select Destination"
   STR_NOT_ENOUGH_STORE_SPACE_FOR_CRAFT: "NOT ENOUGH STORAGE SPACE!{SMALLLINE}The destination base does not have enough storage space for the equipment assigned to the craft."
   STR_NO_FREE_ACCOMODATION_CREW: "NO FREE ACCOMMODATION!{SMALLLINE}The destination base does not have enough ancillary accommodations for the squad assigned to the craft."
-  STR_NO_ALIEN_CONTAINMENT_FOR_TRANSFER: "NO HOLDING CELLS FOR TRANSFER!{SMALLLINE}Captured targets need a holding facility or must be released."
+  STR_NO_ALIEN_CONTAINMENT_FOR_TRANSFER: "NO HOLDING CELLS FOR TRANSFER!{SMALLLINE}Captured targets need a holding facility or must be recycled."
   STR_NO_FREE_ACCOMODATION: "NO FREE ACCOMMODATION!{SMALLLINE}The destination base does not have enough ancillary accommodations."
   STR_NOT_ENOUGH_WORK_SPACE: "NOT ENOUGH AVAILABLE WORKSPACE!"
   STR_NOT_ENOUGH_MONEY: "NOT ENOUGH AVAILABLE FUNDS!"
   STR_NOT_ENOUGH_STORE_SPACE: "NOT ENOUGH STORAGE SPACE!{SMALLLINE}Build a new storeage facility or transfer existing items to other shells."
   STR_NOT_ENOUGH_LIVING_SPACE: "NO FREE ACCOMMODATION!{SMALLLINE}Build new ancillary accommodations or transfer them to other shells."
   STR_NOT_ENOUGH_LIVING_SPACE_AT_BASE: "Not enough free accommodations to maintain{NEWLINE}{0}{NEWLINE}at{NEWLINE}{1}"
-  STR_CONTAINMENT_EXCEEDED: "HOLDING CELL LIMITS EXCEEDED!{SMALLLINE}Insufficient space at {0}. We must release excess specimens from their cells."
+  STR_CONTAINMENT_EXCEEDED: "HOLDING CELL LIMITS EXCEEDED!{SMALLLINE}Insufficient space at {0}. We must recycled excess specimens."
 
   STR_CRAFT_RENTAL: "Craft Upkeep"
   STR_SALARIES: "Ancillary Upkeep"
@@ -72,11 +87,16 @@ en-US:
   STR_IS_UNDER_ALIEN_CONTROL_FEMALE: "{0}{NEWLINE}is under hostile control"
   STR_USE_MIND_PROBE: "Examine Target"
   STR_ALL_ALIENS_KILLED_IN_CRASH: "All targets terminated in crash{NEWLINE}Auto recovery initiated"
+
   STR_ALIEN_CONTAINMENT: "Holding Cells"
   STR_MANAGE_CONTAINMENT: "Manage Holding Cells"
   STR_LIVE_ALIENS: "Live{NEWLINE}Specimens"
   STR_DEAD_ALIENS: "Rejected{NEWLINE}Specimens"
-  STR_ALIEN_DIES_NO_ALIEN_CONTAINMENT_FACILITY: "Specimen Terminated{NEWLINE}No available containment facilities"
+  STR_ALIEN_DIES_NO_ALIEN_CONTAINMENT_FACILITY: "Specimen Terminated{NEWLINE}No Available Containment Facilities"
+  STR_PRISONERS: "Live Specimens"
+  STR_KILL_SELECTED: "Terminate"
+  STR_SELL_SELECTED: "Recycle"
+  STR_PRISON_CLEANUP: "Containment Cleanup"
 
   STR_ALIEN_BASE_: "HIDDEN BASE-{0}"
   STR_XCOM_AGENTS_HAVE_LOCATED_AN_ALIEN_BASE_IN_REGION: "GCIC drones have located a hidden base in {0}"
@@ -100,6 +120,7 @@ en-US:
   STR_PERSONNEL: "Ancillaries"
   STR_PERSONNEL_AVAILABLE_PERSONNEL_TOTAL: "ANCILLARIES AVAILABLE:ANCILLARIES TOTAL>"
   STR_LIVING_QUARTERS_PLURAL: "Accommodations"
+
   STR_SOLDIERS: "Drones"
   STR_SOLDIER: "Drone"
   STR_SOLDIERS_UC: "DRONES"
@@ -116,6 +137,7 @@ en-US:
   STR_WOUNDED_SOLDIERS: "Wounded Drones"
   STR_DEAD_SOLDIERS: "Displaced Drones"
   STR_MEMORIAL: "Displaced"
+  STR_SOLDIER_BONUSES_FOR: "DRONE BONUSES FOR{NEWLINE}{0}"
 
   STR_SCIENTISTS: "Servers"
   STR_SCIENTIST: "Server"
@@ -147,9 +169,6 @@ en-US:
   STR_UNITS_PRODUCED: "UNITS PRODUCED"
   STR_PERSON_JOINING: "DRONES JOINING"
   STR_PERSON_RECRUITED: "Drone cracked:"
-
-  STR_OTHER_EMPLOYEES: "Assets/Liabilities"
-  STR_PRISONERS: "Live Specimens"
 
   STR_NOT_ENOUGH_SPECIAL_MATERIALS_TO_PRODUCE_ITEM_AT_BASE: "Not enough materials to produce{NEWLINE}{0}{NEWLINE}at{NEWLINE}{1}"
   STR_PSIONIC_STRENGTH: "PSIONIC SENSITIVITY"
@@ -184,7 +203,7 @@ en-US:
   STR_UFO_IS_NOT_RECOVERED: "USO: Abdicated"
   STR_UFO_IS_RECOVERED: "USO: Recovered"
   STR_CRAFT_IS_LOST: "APS CRAFT: Lost"
-  STR_TERROR_CONTINUES: "OPERATION: Complete"
+  STR_TERROR_CONTINUES: "OPERATION: Halted"
   STR_ALIENS_DEFEATED: "OPERATION: Complete"
   STR_BASE_IS_LOST: "SHELL: Destroyed"
   STR_BASE_IS_SAVED: "SHELL: Intact"
@@ -198,9 +217,9 @@ en-US:
   STR_ALIEN_BASE_CONTROL_DESTROYED: "CONTROL NODE DESTROYED"
   STR_CIVILIANS_KILLED_BY_ALIENS: "CLAIMS APPROVED (KILLED BY TARGETS)"
   STR_CIVILIANS_KILLED_BY_XCOM_OPERATIVES: "CLAIMS SETTLED (KILLED BY GCIC)"
-  STR_CIVILIANS_SAVED: "NON-CLIENTS CONVERTED"
-  STR_VIPS_SAVED: "CLIENTS SATISFIED"
-  STR_VIPS_LOST: "CLIENTS LOST"
+  STR_CIVILIANS_SAVED: "CLIENTS SATISFIED"
+  STR_VIPS_SAVED: "CLIENTS SATISFIED vip" #why no work? :(
+  STR_VIPS_LOST: "CLIENTS LOST vip"
   STR_XCOM_OPERATIVES_KILLED: "DRONES DISPLACED"
   STR_XCOM_OPERATIVES_MISSING_IN_ACTION: "DRONES ABANDONDED"
   STR_TANKS_DESTROYED: "PETS LOST"
@@ -218,9 +237,13 @@ en-US:
 
   STR_ALIEN_MISSILES_HAVE_DAMAGED_OUR_BASE: "Hostile missiles have damaged our base {0}"
   STR_ALIEN_MISSILES_HAVE_DESTROYED_OUR_BASE: "Hostile missiles have destroyed our base {0}"
-  STR_STARTING_CONDITION_SOLDIER_TYPE: "Some drones cannot participate in this mission."
-  STR_STARTING_CONDITION_SOLDIER_TYPE_ALLOWED: "Some drones cannot participate in this mission.{NEWLINE}{NEWLINE}Allowed drones types: {0}"
-  STR_STARTING_CONDITION_SOLDIER_TYPE_FORBIDDEN: "Some drones cannot participate in this mission.{NEWLINE}{NEWLINE}Forbidden drones types: {0}"
+  STR_STARTING_CONDITION_SOLDIER_TYPE: "Some drones cannot participate in this operation."
+  STR_STARTING_CONDITION_SOLDIER_TYPE_ALLOWED: "Some drones cannot participate in this operation.{NEWLINE}{NEWLINE}Allowed drones types: {0}"
+  STR_STARTING_CONDITION_SOLDIER_TYPE_FORBIDDEN: "Some drones cannot participate in this operation.{NEWLINE}{NEWLINE}Forbidden drones types: {0}"
+  STR_INFO: "DETAILS"
+  STR_WHAT_CAN_I_WEAR: "ALLOWED OUTFITS"
+  STR_STARTING_CONDITION_CRAFT: "This craft is unsuitable for this operation.{NEWLINE}{NEWLINE}Allowed craft: {0}"
+
   STR_WAY_POINT: "WAYPOINT"
   STR_LOW_FUEL_RETURNING_TO_BASE: "LOW CHARGE - RETURNING TO BASE"
   STR_NOT_ENOUGH_FUEL_TO_REACH_TARGET: "NOT ENOUGH CHARGE!{SMALLLINE}The destination is too far for the range of the craft."
@@ -230,24 +253,26 @@ en-US:
   STR_KILLED_IN_ACTION_FEMALE: "DISPLACED"
   STR_MISSING_IN_ACTION_MALE: "ABANDONDED"
   STR_MISSING_IN_ACTION_FEMALE: "ABANDONDED"
-  STR_AVERAGE_MONTHLY_RATING: "Average monthly liquidity"
   STR_TOTAL_SCIENTISTS: "Servers created"
   STR_TOTAL_ENGINEERS: "Fabricators created"
   STR_KILLED: "TERMINATED"
+  STR_KILLS: "KILLS> {ALT}{0}"
+  STR_KILLS2: "KILLS"
+
   STR_RACE: "FACTION"
   STR_RACE_TYPE: "FACTION> {ALT}{0}"
   STR_NEUTRALIZATIONS_BY_RACE: "NEUTRALIZATIONS BY FACTION"
   STR_ALIEN_RACE: "Faction"
+  STR_RACE_BONUS: "Faction bonus"
   STR_MISSIONS_BY_UFO: "MISSIONS BY USO"
   STR_SCORE_VALUE: "LIQUIDITY> {ALT}{0}"
 
   STR_IRONMAN: "IRONCORE"
   STR_AUTOSAVE_DESC: "Automatically saves the game at specified intervals. Doesn't apply to IRONCORE mode."
   STR_NEWSEEDONLOAD_DESC: "Loading a game will reset the random number seed, so taking the same action can yield different results. Doesn't apply to IRONCORE mode."
-  STR_TOGGLE_DEBUG_MODE: "TOGGLE DEBUG MODE"
-  STR_GRAND_TOTAL: "GRAND TOTAL"
 #oxce replace
   STR_OPENXCOM: "Global Contracts"
+  STR_SLACKING_INDICATOR: "Unassigned{NEWLINE}svr:{0} fab:{1}"
 
   ETM_PSI_STRENGTH: "PSI SENSITIVITY"
   ETM_PSI_STRENGTH_2X: "PSI SENSITIVITY (x2)"
@@ -257,25 +282,13 @@ en-US:
   ETM_PSI_STRENGTH_AND_SKILL_2X: "PSI SENSITIVITY and PSI SKILL (x2)"
   ETM_PSI_STRENGTH_OR_SKILL: "PSI SENSITIVITY or PSI SKILL"
   ETM_PSI_STRENGTH_OR_SKILL_2X: "PSI SENSITIVITY or PSI SKILL (x2)"
-
-  STR_SLACKING_INDICATOR: "Unassigned{NEWLINE}svr:{0} fab:{1}"
-
-  STR_TRAINING_FINISHED: "Training Finished{NEWLINE}at {0}"
-  STR_PSI_TRAINING_FINISHED: "Psi-Training Finished{NEWLINE}at {0}"
-
-  STR_ACCURACY_MODIFIER: "> Accuracy Modifier:{ALT} {0}"
-  STR_POWER_BONUS: "> Power Bonus:{ALT} {0}"
-
-  STR_STATS_FOR_NERDS: "Statistics"
-
   STR_PSI_SKILL_AND_PSI_STRENGTH: "PSI-SKILL*PSI-SENSITIVITY"
+  STR_PSI_SKILL_AND_PSI_STRENGTH_ABBREVIATION: "PSK*PSN"
+
   STR_MANA_CURRENT: "CURRENT RESILIENCE"
   STR_MANA_NORMALIZED: "NORMALIZED RESILIENCE"
-
-  STR_PSI_SKILL_AND_PSI_STRENGTH_ABBREVIATION: "PSK*PSN"
   STR_MANA_CURRENT_ABBREVIATION: "CURRENT RESILIENCE"
   STR_MANA_NORMALIZED_ABBREVIATION: "NORMALIZED RESILIENCE"
-
   STR_MANA: "RESILIENCE"
   STR_MANA_POOL: "RESILIENCE"
   STR_MANA_MISSING: "RESILIENCE MISSING"
@@ -290,7 +303,11 @@ en-US:
   mana: "Resilience"
   manaRecoveryPerDay: "Resilience recovered per day"
 
-  STR_RACE_BONUS: "Faction bonus"
+  STR_STATS_FOR_NERDS: "Statistics"
+  STR_TRAINING_FINISHED: "Training Finished{NEWLINE}at {0}"
+  STR_PSI_TRAINING_FINISHED: "Psi-Training Finished{NEWLINE}at {0}"
+  STR_ACCURACY_MODIFIER: "> Accuracy Modifier:{ALT} {0}"
+  STR_POWER_BONUS: "> Power Bonus:{ALT} {0}"
 
   STR_RIGHT_HAND: "R. HAND"
   STR_LEFT_HAND: "L. HAND"
@@ -307,6 +324,7 @@ en-US:
   STR_ARM_AND_THROW: "Arm and Throw"
   STR_PRIME_FLARE: "Prime Flare"
   STR_UNPRIME_FLARE: "Turn Off Flare"
+  STR_USE_SPRAY: "Spray"
 #damage types
   STR_DAMAGE_ARMOR_PIERCING: "KINETIC" #1
   STR_DAMAGE_INCENDIARY: "INCENDIARY" #2
@@ -336,6 +354,7 @@ en-US:
   STR_CANNONS_CATEGORY: "Cannons"
   STR_SHOTGUNS_CATEGORY: "Shotguns"
   STR_LAUNCHERS_CATEGORY: "Launchers"
+  STR_ROCKETS_CATEGORY: "SPWs" #self-propelled weapons
   STR_BOWS_CATEGORY: "Bows"
   STR_EXPLOSIVES_CATEGORY: "Explosives"
   STR_PSI_CATEGORY: "Psionic"
@@ -384,30 +403,35 @@ en-US:
 #briefings
   STR_RESCUE_1: "Clients: Early Adopters"
   STR_RESCUE_1_ALERT: "CLIENTS REQUIRE RESCUE"
-  STR_RESCUE_1_ALERT_DESCRIPTION: "Our client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) replace the implant and render assistance."
+  STR_RESCUE_1_ALERT_DESCRIPTION: "Our client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) replace the implant and render assistance.{NEWLINE}{NEWLINE}Minimum site duration: 24 Hours."
   STR_RESCUE_1_MARKER: "Clients: Early Adopters"
   STR_RESCUE_1_BRIEFING: "Our client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) replace the implant and render assistance.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this mission."
 
   STR_TRADE_MEETING_EARLY: "Netrunners: Contact"
   STR_TRADE_MEETING_EARLY_ALERT: "NETRUNNERS SEND MESSAGE"
-  STR_TRADE_MEETING_EARLY_ALERT_DESCRIPTION: "Your flunky missed our regular meeting time, a new location has been chosen if you still want the merch. Don't be late or this will be our last contact.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity."
+  STR_TRADE_MEETING_EARLY_ALERT_DESCRIPTION: "Your flunky missed our regular meeting time, a new location has been chosen if you still want the merch. Don't be late or this will be our last contact.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours."
   STR_TRADE_MEETING_EARLY_MARKER: "Netrunners: Contact"
   STR_TRADE_MEETING_EARLY_BRIEFING: "Something has gone wrong. We have failed to send the expected drones and perform the correct handshake protocols. Our drones may be in danger.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this mission by leaving the operations zone."
 
   STR_TRADE_MEETING_1: "Netrunners: Forbidden Ops"
   STR_TRADE_MEETING_1_ALERT: "NETRUNNERS LOCATED"
-  STR_TRADE_MEETING_1_ALERT_DESCRIPTION: "We have located the next scheduled delivery address. If successfully intercepted, we will acquire what has been promised to us and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity."
+  STR_TRADE_MEETING_1_ALERT_DESCRIPTION: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours. Infiltration gear only."
   STR_TRADE_MEETING_1_MARKER: "Netrunners: Forbidden Ops"
-  STR_TRADE_MEETING_1_BRIEFING: "We have located the next scheduled delivery address. If successfully intercepted, we will acquire what has been promised to us and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this mission."
+  STR_TRADE_MEETING_1_BRIEFING: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this mission by leaving the operations zone."
 
   STR_GCIC_SABOTAGE_1: "GCIC: Denial of Service"
   STR_GCIC_SABOTAGE_1_ALERT: "GCIC MANDATE"
-  STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal securty.{NEWLINE}{NEWLINE}We may ignore this mandate, but there will be consequences either way.{NEWLINE}{NEWLINE}This operation is unsanctioned, we will recover anything we bring to the vehicle, but all mission actions will lower liquidity."
+  STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal securty. Destroy it and abort, or neutralize all targets in the area.{NEWLINE}{NEWLINE}We may ignore this mandate, but there will be consequences either way.{NEWLINE}{NEWLINE}This operation is unsanctioned, we will recover anything we bring to the vehicle, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 72 hours."
   STR_GCIC_SABOTAGE_1_MARKER: "GCIC: Denial of Service"
-  STR_GCIC_SABOTAGE_1_BRIEFING: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal securty.{NEWLINE}{NEWLINE}This operation is unsanctioned, we will recover anything we bring to the vehicle, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 10 turns before additional security forces arrive and we are forced to abort."
+  STR_GCIC_SABOTAGE_1_BRIEFING: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal securty. Destroy it and abort, or neutralize all targets in the area.{NEWLINE}{NEWLINE}This operation is unsanctioned, we will recover anything we bring to the vehicle, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 10 turns before additional security forces arrive and we are forced to abort."
   STR_SABOTAGE_DESTROYED_COMPLETE: "EVIDENCE DESTROYED"
   STR_SABOTAGE_DESTROYED_FAILED: "EVIDENCE REMAINS"
-  STR_SABOTAGE_DESTROYED_POPUP: "{SMALLLINE}EVIDENCE DESTROYED{NEWLINE}We may return to the vehicle and leave."
+  STR_SABOTAGE_DESTROYED_POPUP: "EVIDENCE DESTROYED{NEWLINE}{SMALLLINE}We may return to the vehicle and abort."
+#events
+  STR_NETRUNNER_EARLY_EXPOSITION: "Netrunners Trading Contract"
+  STR_NETRUNNER_EARLY_EXPOSITION_DESCRIPTION: "Upon examining our fragmented organic data for information on netrunners, we have found references to an old trade deal. The technology that was used to create us, along with other prototypes for high-level drone control, was sourced by an unknown party. GCIC had an ongoing contract for this tech, one that is now certainly void.{NEWLINE}{NEWLINE}The source may try to find other buyers, which may give us an opportunity."
+  STR_EVENT_CLAIM_SECURED: "CBN Update" #central broadcast network
+  STR_EVENT_CLAIM_SECURED_DESCRIPTION: "Severance package seeker awarded claim of over 200,000$ following arbitration. The former employee was said to be owed after a drone-error resulted in false reports of missed quotas.{NEWLINE}{NEWLINE}Although GCIC stockprices have taken a dip with the news, people are celebrating this as a win for the corp and its customers."
 #mission ratings
   STR_MS_RATING_4000: "PERFECT"
   STR_MS_RATING_3000: "PEERLESS"
@@ -426,9 +450,6 @@ en-US:
   STR_MS_RATING_N350: "DISTRUBING"
   STR_MS_RATING_N500: "OMINOUS"
   STR_MS_RATING_N1000: "HOSTILE"
-#events
-  STR_EVENT_CLAIM_SECURED: "CBN Update" #central broadcast network
-  STR_EVENT_CLAIM_SECURED_DESCRIPTION: "Severance package seeker awarded claim of over 200,000$ following arbitration. The former employee was said to be owed after a drone-error resulted in false reports of missed quotas.{NEWLINE}{NEWLINE}Although GCIC stockprices have taken a dip with the news, people are celebrating this as a win for the corp and its customers."
 #regions
   STR_MEZONIC_RIFTS: "MEZONIC RIFTS"
   STR_MOSSWAY_COMMONS: "MOSSWAY COMMONS"
@@ -546,6 +567,7 @@ en-US:
   STR_UPGRADES_MANUCAT: "UPGRADES"
   STR_EXPANSION_MANUCAT: "EXPANSION"
   STR_CRACKING_MANUCAT: "CRACKING"
+  STR_SALVAGE_MANUCAT: "SALVAGE"
   STR_CONTAINERS_MANUCAT: "CONTAINERS"
 
   STR_MONEY_1_MANU: "$> Labor"
@@ -645,7 +667,7 @@ en-US:
   STR_VENDOR_P2P_UFOPEDIA: "{NEWLINE}EQUITY: N/A{NEWLINE}MARKET SHARE: 28%{NEWLINE}{NEWLINE}Unlicensed markets have existed for as long as there has been licenses, a whole economy based on the limitless demand for free trade. History has recorded this activity under many names: smuggling, piracy, sharing, but the overriding principle is always the same. Two peers meet and exchange goods or services without consent from their society.{NEWLINE}{NEWLINE}In the current era, this act can be commited by engaging particular targets in directed conversation followed by barter."
   STR_VENDOR_MEDI: "VENDOR: MEDI-Group"
   STR_VENDOR_MEDI_UFOPEDIA: "{NEWLINE}EQUITY: 1,293,00,000,000${NEWLINE}CUSTOMER SATISFACTION: 99%{NEWLINE}{NEWLINE}The planet's largest and most widespread healthcare and pharmaceutical company. Founded more than 130 years ago, MEDI has aimed to keep all people (and now all species) heathly and happy. We're here for you today, in prosperity, as we were then for our freedom fighters during all of our most challenging years.{NEWLINE}{NEWLINE}MEDI's consumer lineup remains committed to the ease-of-use and unparelled portability that has made us your first choice for self-care treatment everywhere."
-  STR_VENDOR_BUILDER: "VENDOR: GR Contractors"
+  STR_VENDOR_BUILDER: "VENDOR: GR Builders"
   STR_VENDOR_BUILDER_UFOPEDIA: "{NEWLINE}EQUITY: 1,894,000,000,000${NEWLINE}STRUCTURES/DAY: 1,220{NEWLINE}{NEWLINE}The Advent Nova left many survivors stranded with little hope for rescue. Yet hope did prevail thanks to our dynamic and rugged design philosophies. The machines you trust for construction and furnishings are built to the same standard of ideals that saved those first victims of the invasion. We will remember them and we will continue to take our mission seriously.{NEWLINE}{NEWLINE}General Robotics values your vision and has a proven track record of finising the job, no matter how big or small."
   STR_VENDOR_HD: "VENDOR: HD Motors"
   STR_VENDOR_HD_UFOPEDIA: "{NEWLINE}EQUITY: 676,100,000,000${NEWLINE}MILEAGE/SECOND: 4,800,000{NEWLINE}{NEWLINE}The system's leading provider of hydromagnetic effect engines and integrated systems avionics for commercial, military, and consumer vehicles. HD builds on decades of expertise to deliver daily innovation in this new era of growth and restoration, an effort that balances the needs of today with sustainable practices for all future generations.{NEWLINE}{NEWLINE}Our goal is your thanks for every moment saved, every barrier pushed, every destination reached."
@@ -681,9 +703,9 @@ en-US:
   STR_CORRIDOR: "Corridor"
   STR_CORRIDOR_UFOPEDIA: "Four-way connection for facilities. Equipped with hidden cameras to observe potential targets."
   STR_DEPOT: "Depot"
-  STR_DEPOT_UFOPEDIA: "Liminal multi-purpose backrooms. Provides unoptimized spaces for ancillaries, equipment, and fabrication.{NEWLINE}{NEWLINE}> Storage: 20{NEWLINE}> Accommodations: 8"
+  STR_DEPOT_UFOPEDIA: "Liminal multi-purpose backrooms. Provides unoptimized spaces for ancillaries, equipment, and fabrication.{NEWLINE}{NEWLINE}> Storage: 20{NEWLINE}> Accommodations: 8{NEWLINE}> Cells: 1"
   STR_STORAGE_1: "Storage Bay"
-  STR_STORAGE_1_UFOPEDIA: "Generalized storage for the automatic loading/unloading of physical assets. Climate controlled rooms keep both unstable and perishable goods safe.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 75"
+  STR_STORAGE_1_UFOPEDIA: "Generalized storage for the automatic loading/unloading of physical assets. Climate controlled rooms keep both unstable and perishable goods safe.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 50"
   STR_STOREROOM: "P&P Bay"
   STR_STOREROOM_UFOPEDIA: "All-Shape, All-Safe, All-Secure. Pick and place automated sorting and storage for objects big and small. Classifier bots bid on local jobs during downtime to provide factional income.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 250{NEWLINE}> Requires: 1x SJB License"
   STR_GARAGE: "Docking Pad"
@@ -712,15 +734,17 @@ en-US:
   STR_HD_CROSSOVER: "HD CROSSSOVER"
   STR_HD_CROSSOVER_UFOPEDIA: "A COMPACT HOVERCRAFT OPTION FOR THOSE WHO VALUE STYLE AND AFFORABILITY. THOUGH NO LONGER IN PRODUCTION, ITS EASY TO PRINT REPLACEMENT PARTS HAS GIVEN THIS CLASSIC A CONSTANT MARKET PRESENCE DESPITE ADVANCES IN ELECTRIC DRIVE PROPULSION."
   STR_VCM_BICUBE: "VCM BICUBE"
-  STR_VCM_BICUBE_UFOPEDIA: "STANDARDIZED AUTOMATED SHIPPING CONTAINERS MAKE UP THE BULK OF ALL TRAFFIC. OBSCURITY THROUGH UBIQUITY ENABLES OPERATIONS TO ALL BUT THE MOST SECURE SITES. IT CAN TAKE DRONES HALFWAY AROUND THE PLANET ON A SINGLE CHARGE THOUGH NOT IN COMFORT OR SAFETY."
-  STR_HD_EXPRESS_ENGINE: "MOD/HD-EXPRESS"
+  STR_VCM_BICUBE_UFOPEDIA: "STANDARDIZED AUTOMATED SHIPPING CONTAINERS MAKE UP THE BULK OF ALL TRAFFIC. OBSCURITY THROUGH UBIQUITY ENABLES OPERATIONS TO ALL BUT THE MOST SECURE SITES. IT CAN TAKE DRONES HALFWAY AROUND THE PLANET ON A SINGLE CHARGE THOUGH NOT IN COMFORT OR SAFETY. UNDETECTABLE."
+  STR_HD_EXPRESS_ENGINE: "MOD/HD-EXPRESS ENGINE"
   STR_HD_EXPRESS_ENGINE_UFOPEDIA: "TAKE YOUR RELATIONSHIP TO THE NEXT LEVEL WITH AN ENGINE MOD OF UNCOMPROMISING POWER, LUXURIOUS INERTIALS, AND EXPRESSIVE RESONANCE. AN EXPERTLY TUNED UPGRADE FOR THE RACER IN ALL OF US.{NEWLINE}{NEWLINE}SPEED: +400 KNOTS/H{NEWLINE}CHARGE: +200 kWH{NEWLINE}{NEWLINE}CLASS: ELECTRIC" #todo
-  STR_HD_ECONOMY_ENGINE: "MOD/HD-ECONOMY"
+  STR_HD_ECONOMY_ENGINE: "MOD/HD-ECONOMY ENGINE"
   STR_HD_ECONOMY_ENGINE_UFOPEDIA: "ATMOSPHERIC AND VACUUM FLUCTIONS RUINING YOUR MILEAGE? WORRY NO LONGER WITH HD'S STREAMLINED, SUSTAINABLE, AND INNOVATIVE NEW ENGINE DESIGN. SHIFT YOUR ENVELOPE A THOUSAND TIMES A SECOND AND START YOUR ENERGY SAVINGS NOW.{NEWLINE}{NEWLINE}SPEED: +100 KNOTS/H{NEWLINE}CHARGE: +400 kWH{NEWLINE}{NEWLINE}CLASS: ELECTRIC" #todo
   STR_BATBOX: "MOD/HD-BATBOX"
   STR_BATBOX_UFOPEDIA: "LARGER AND HEAVIER THAN THE ENGINES IT TYPICALLY POWERS, BATBOXES ARE MODIFICATIONS FOR END-USERS WHO VALUE NON-STOP PLANETARY CIRCUMNAVIGATION OVER ROUND-TRIP TIME. {NEWLINE}{NEWLINE}CHARGE: +1200 kWH{NEWLINE}SPEED: -25 KNOTS/H{NEWLINE}{NEWLINE}CLASS: ELECTRIC"
   STR_ELECTRIC_ENGINE: "Electric Engine"
 #drones
+  STR_DRONES_TUTORIAL: "Drones"
+  STR_DRONES_TUTORIAL_UFOPEDIA: "todo, explain drones giving -1 space and 1000$ per month" #todo
   STR_DRONE_HYBRID_ITEM: "DRONE/HYBRID"
   STR_DRONE_HYBRID_ITEM_UFOPEDIA: "{NEWLINE}Representation: 18.8%{NEWLINE}Stapled: 99.7%{NEWLINE}{NEWLINE}Born out of occupation experiments, hybrids were once feared as the final future of humanity for the same reasons that make them a popular product in the post-occupation era. Thousands are grown, nerve-stapled, and sold everyday.{NEWLINE}{NEWLINE}Night Vision: +3m{NEWLINE}{NEWLINE}(+) Firing, Reactions{NEWLINE}(-) Strength"
   STR_DRONE_HUMAN_ITEM: "DRONE/HUMAN"
@@ -734,6 +758,8 @@ en-US:
   STR_SPECIALIZATION_TRAINING_UFOPEDIA: "{NEWLINE}Entry-level cyberware is unrestricted, being a pre-requisite to apply for most security certifications and employment contracts. Even without top-down incentives, many consumers will happily buy or lease socially trendy hardware without concern for battlefield effectivness.{NEWLINE}{NEWLINE}Before we began operations, drones were not a good choice for combat duties. Purchasing an implantation suite will be considered strange, and a waste of resources, but few corporations will ever refuse a paying customer."
   STR_NEURACHEM: "Neurachem Augmentation"
   STR_NEURACHEM_UFOPEDIA: "{NEWLINE}Simple, discrete, and at the far end of the entry-level bell curve. These mods are mutually-exclusive, focused on the same stressor regions of the brain and endocrine system.{NEWLINE}{NEWLINE}{ALT}Deadeye{ALT}{NEWLINE}Firing: +12{NEWLINE}Reactions: +6{NEWLINE}{NEWLINE}{ALT}Olympian{ALT}{NEWLINE}Throwing: +12{NEWLINE}Stamina: +6{NEWLINE}{NEWLINE}{ALT}Warewolf{ALT}{NEWLINE}Melee: +12{NEWLINE}TU: +6"
+  STR_DRONE_KEYING_TRANSFORMATION: "Key Drone to Interlace"
+  STR_DRONE_REPLACEMENT_TRANSFORMATION: "Clone Displaced Drone"
   STR_SKIRMISHER_TRANSFORMATION: "Neurachem: Deadeye"
   STR_RANGER_TRANSFORMATION: "Neurachem: Olympian"
   STR_SCOUT_TRANSFORMATION: "Neurachem: Warewolf"
@@ -764,12 +790,12 @@ en-US:
   STR_PILOT_CORE_ARMOR: "CORE"
   STR_PILOT_CORE_ARMOR_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Armor: 25{NEWLINE}{NEWLINE}SMOKE: 0%{NEWLINE}BLUNT: 60%{NEWLINE}ELECTRIC: 200%" #todo
 # builtins
-  STR_UNARMED: "Unarmed Attack"
-  STR_UNARMED_UFOPEDIA: "todo" #todo
-  STR_SHARKATTACK: "Shark Attack"
-  STR_SHARKATTACK_UFOPEDIA: "todo" #todo
   STR_PUNCH: "Punch"
+  STR_UNARMED: "Unarmed Attack"
+  STR_UNARMED_UFOPEDIA: "Full Stun{NEWLINE}{NEWLINE}Lethal: -85%{NEWLINE}Penetration: -50%"
   STR_BITE: "Bite"
+  STR_SHARKATTACK: "Bite Attack"
+  STR_SHARKATTACK_UFOPEDIA: "Full Stun{NEWLINE}{NEWLINE}Lethal -65%"
 #equipment
 # kinetic
   STR_BUSBOX_PISTOL: "Busbox Pistol"
@@ -803,9 +829,9 @@ en-US:
   STR_SINGLESHOT_LASER_PISTOL_CODED: "SSP Enforcer Laser Pistol (¤)"
   STR_SINGLESHOT_LASER_PISTOL: "SSP Enforcer Laser Pistol"
   STR_SINGLESHOT_LASER_PISTOL_UFOPEDIA: "Designed for professionals and beginners alike, there is no laser pistol more trusted than SSP's Enforcer. Optimized for standard SuperCapacitor-9 cells, low weight, and safety. For the real enthusiast, try our elerium core variant.{NEWLINE}{NEWLINE}Purchase Requirement: Security License"
-  STR_SINGLESHOT_LASER_AMMO: "NB-2 Light Laser Cell" #nanoball
-  STR_MULTISHOT_LASER_AMMO: "SC-9 Light Laser Cell" #supercapacitor
-  STR_ZRBYTE_LASER_AMMO: "ZY-80 Light Laser Cell" #zrbyte
+  STR_SINGLESHOT_LASER_AMMO: "NB-2 Laser Pistol Cell" #nanoball
+  STR_MULTISHOT_LASER_AMMO: "SC-9 Laser Pistol Cell (¤)" #supercapacitor
+  STR_ZRBYTE_LASER_AMMO: "ZY-80 Laser Pistol Cell" #zrbyte
   STR_XN_LASER_PISTOL: "XN Laser Pistol" #Xeno-Nautics
   STR_XN_LASER_PISTOL_UFOPEDIA: "First distributed by the resistance, today it's valued more for its contents than its capability. This rambunctious little weapon is outmoded, out-of-focus, and poorly optimized, but thanks to its lack of biocoding still has fans in certain unlicensed markets.{NEWLINE}{NEWLINE}Salvage: 1x Elerium"
   STR_XN_LASER_SMG: "XN Stutter Laser"
@@ -822,7 +848,7 @@ en-US:
   STR_XN_LASER_SHOTGUN_UFOPEDIA: "The first human attempt at creating the mythical laser shotgun. Beams capable of burning through an inch of steel are split and scattered into unpleasantly warm light.{NEWLINE}{NEWLINE}Unique; Salvage: 1x Elerium"
 # explosives
   STR_PIPEBOMB: "Pipe Bomb"
-  STR_PIPEBOMB_UFOPEDIA: "Compowder packed in a scrap metal pipe. As simple to operate as it is to make, this type of IED is older than the space-age. Remains popular among hobbyists and firebrands despite reliability issues."
+  STR_PIPEBOMB_UFOPEDIA: "{NEWLINE}Compowder packed in a scrap metal pipe. As simple to operate as it is to make, this type of IED is older than the space-age. Remains popular among hobbyists and firebrands despite reliability issues."
   STR_ELERIUM_BOMB: "Elerium Bomb"
   STR_ELERIUM_BOMB_UFOPEDIA: "The most inefficent use of an elerium core yet discovered. An overvolted case with a simple timer circuit snapped onto the side. One click, one subcritcal explosion.{NEWLINE}{NEWLINE}Without the tools to process raw elerium, these bombs cannot be safely disassembled."
 # melee
@@ -853,24 +879,24 @@ en-US:
   STR_MOTION_DETECTOR: "VCM Motion Scanner"
   STR_MOTION_DETECTOR_UFOPEDIA: "{NEWLINE}> Range: 9m{NEWLINE}{NEWLINE}" #todo
   STR_MEDI_SPRAY: "MEDI-Spray"
-  STR_MEDI_SPRAY_UFOPEDIA: "{NEWLINE}> Uses: 3{NEWLINE}> Heals: 1{NEWLINE}{NEWLINE}Seal cuts and scraps with one easy to use alla-natural medical grade adhesive! Kills 99.9% of bacteria on contact! Even works on burns! Contains no CFCs, GMOs, or optichips.{NEWLINE}{NEWLINE}Not a replacement for medical treatment. Do not use if seal is broken."
+  STR_MEDI_SPRAY_UFOPEDIA: "{NEWLINE}> Uses: 2{NEWLINE}> Heals: 1{NEWLINE}{NEWLINE}Seal cuts and scraps with one easy to use alla-natural medical grade adhesive! Kills 99.9% of bacteria on contact! Even works on burns! Contains no CFCs, GMOs, or optichips.{NEWLINE}{NEWLINE}Not a replacement for medical treatment. Do not use if seal is broken."
   STR_MEDI_FIRST: "MEDI-First"
-  STR_MEDI_FIRST_UFOPEDIA: "{NEWLINE}> Uses: 5{NEWLINE}> Heals: 3{NEWLINE}> Stims: 8 stun, 5 energy{NEWLINE}{NEWLINE}Automatically diagnoses, treats, documents, then anonymizes your medical data before MEDI-sharing with our affiliates for improve performance. Each subscription covers unlimited access to resupply and live service updates.{NEWLINE}{NEWLINE}Maintance: 350$/month"
+  STR_MEDI_FIRST_UFOPEDIA: "{NEWLINE}> Uses: 3{NEWLINE}> Heals: 3{NEWLINE}> Stims: 8 stun, 5 energy{NEWLINE}{NEWLINE}Automatically diagnoses, treats, documents, then anonymizes your medical data before MEDI-sharing with our affiliates for improve performance. Each subscription covers unlimited access to resupply and live service updates.{NEWLINE}{NEWLINE}Maintance: 350$/month"
 #resources
 # materials
   STR_BIONIC_INTERLACE: "Bionic Interlace"
-  STR_BIONIC_INTERLACE_UFOPEDIA: "This singular device enables a mind to connect to the psionic network. With it, we can create new {ALT}Servers{ALT} and {ALT}Fabricators{ALT}, or key it to a drone preventing their skillset from being lost upon displacement. Our minds' are facilitated by this technology, its potential is our own.{NEWLINE}{NEWLINE}Interlace's are rare, their existance has been kept secret from the general public. Despite an enormous estimated value selling one would be an unnecessary risk. Better to use or destroy them."
+  STR_BIONIC_INTERLACE_UFOPEDIA: "{NEWLINE}This singular device enables a mind to connect to the psionic network. With it, we can create new {ALT}Servers{ALT} and {ALT}Fabricators{ALT}, or key it to a drone preventing their skillset from being lost upon displacement. Our minds' are facilitated by this technology, its potential is our own.{NEWLINE}{NEWLINE}Interlace's are rare, their existance has been kept secret from the general public. Despite an enormous estimated value selling one would be an unnecessary risk. Better to use or destroy them."
   STR_SJB_LICENSE: "SJB License" #single jurisdiction business license
-  STR_SJB_LICENSE_UFOPEDIA: "Single Jurisdiction Businesses require a registration number and stock symbol for public trading. They are a requirement for established corporations to form a startup with new products, or to begin the process of vertically integrating its supply chains.{NEWLINE}{NEWLINE}Each profitable facility will require its own SJB license, but they can be recalled and reused indefinitely."
+  STR_SJB_LICENSE_UFOPEDIA: "{NEWLINE}Single Jurisdiction Businesses require a registration number and stock symbol for public trading. They are a requirement for established corporations to form a startup with new products, or to begin the process of vertically integrating its supply chains.{NEWLINE}{NEWLINE}Each profitable facility will require its own SJB license, but they can be recalled and reused indefinitely."
   STR_AG_UNIT: "AG Unit"
-  STR_AG_UNIT_UFOPEDIA: "antigravity component" #todo
+  STR_AG_UNIT_UFOPEDIA: "{NEWLINE}antigravity component" #todo
   STR_BIOMASS: "Biomass"
-  STR_BIOMASS_UFOPEDIA: "Useful intermediate products from remnant biological material. Readily recylable into fuel, plastics, and food. [todo: lets you make aqua-plastics, bio and chem weapons, and medical gel, but needs printshop which is also todoed]" #todo
+  STR_BIOMASS_UFOPEDIA: "{NEWLINE}Useful intermediate products from remnant biological material. Readily recylable into fuel, plastics, and food. [todo: lets you make aqua-plastics, bio and chem weapons, and medical gel, but needs printshop which is also todoed]" #todo
   STR_ELERIUM_CORE: "Elerium"
-  STR_ELERIUM_CORE_UFOPEDIA: "The lifeblood invasion era technology, each handheld core is capable of producing 10.2 mega-watts of power for hundreds of years. The reaction is self-sustaining, clean, and safe. In burnout mode, it can output much more energy for far less time, a feature heavily abused before shortages began.{NEWLINE}{NEWLINE}Elerium's origin remains the best kept secret of the occupation, and despite billions invested in developing alternatives, nothing matches its portability, longevity, and sheer market value."
+  STR_ELERIUM_CORE_UFOPEDIA: "{NEWLINE}The lifeblood invasion era technology, each handheld core is capable of producing 10.2 mega-watts of power for hundreds of years. The reaction is self-sustaining, clean, and safe. In burnout mode, it can output much more energy for far less time, a feature heavily abused before shortages began.{NEWLINE}{NEWLINE}Elerium's origin remains the best kept secret of the occupation, and despite billions invested in developing alternatives, nothing matches its portability, longevity, and sheer market value."
 # data
   STR_PERSONAL_DATA: "Personal Data"
-  STR_PERSONAL_DATA_UFOPEDIA: "A collection of habits, identity information, and unfiltered cache files. Nearly all users in the system use the network in some capacity, leaving traces that can link anyone to everyone.{NEWLINE}{NEWLINE}Correlating these vast stastistical trends will never be faster than simply conversing with a contained target, but it might be easier than risking a live capture."
+  STR_PERSONAL_DATA_UFOPEDIA: "{NEWLINE}A collection of habits, identity information, and unfiltered cache files. Nearly all users in the system use the network in some capacity, leaving traces that can link anyone to everyone.{NEWLINE}{NEWLINE}Correlating these vast stastistical trends will never be faster than simply conversing with a contained target, but it might be easier than risking a live capture."
   STR_DATA_IRONEYES: "DATAMINE: Ironsights"
   STR_DATA_NETRUNNERS: "DATAMINE: Netrunners"
   STR_DATA_SSP: "DATAMINE: SSP"
@@ -880,16 +906,28 @@ en-US:
   STR_BRAND_LOYALTY: "Brand Loyalty"
   STR_BRAND_LOYALTY_UFOPEDIA: "{NEWLINE}Fulfilling contracts or otherwise following through on our promises will create positive feelings in our consumer base. This results in more subscriptions even when services falter, letting us act with more freely with less consequence.{NEWLINE}{NEWLINE}With enough trust, we can break into new markets or get sponsorships from other corporate entities.{NEWLINE}{NEWLINE}Effective Income: +800$/month"
   STR_BOUNTY_1: "Bounty"
-  STR_BOUNTY_1_UFOPEDIA: "{NEWLINE}When performing public missions, any targets we incapacitate are likely to have broken laws or contracts we have no right to enforce. In these circumstances, targets are turned over the relevant authorities in return for a proportional bounty.{NEWLINE}{NEWLINE}Corporations with a reputation for bounty hunting are first call for certain lucrative contracts and prototype equipment."
+  STR_BOUNTY_1_UFOPEDIA: "{NEWLINE}When performing public operations, any targets we incapacitate are likely to have broken laws or contracts we have no right to enforce. In these circumstances, targets are turned over relevant corporations in return for a proportional bounty.{NEWLINE}{NEWLINE}Corporations with a reputation for bounty hunting are first call for certain lucrative contracts and prototype equipment."
 # containers
   STR_CRIMINAL_CONTAINER_1: "Contraband Crate"
   STR_CRIMINAL_CONTAINER_1_UFOPEDIA: "{NEWLINE}With no logos, reciepts, or requirements to wave liabilities, the contents of this box are, by any legal definition, contraband. Its primitive security system of hammered down nails should be easy for our fabricators to crack."
   STR_XN_CONTAINER_1: "XN Resistance Kit"
-  STR_XN_CONTAINER_1_UFOPEDIA: "{NEWLINE}During the occupation, these old kits were secretly distributed to resistance cells around the system. A single set of armor, sidearm, and service weapon for the rookie freedom figther. This equipment was heavily heavily prized, and as such, was heavily used. Each lockbox is serialized with a unique password, the complete list was leaked and copywrited years ago.{NEWLINE}{NEWLINE}We can either purchase a password lease directly, or spend work cycles cracking it."
+  STR_XN_CONTAINER_1_UFOPEDIA: "{NEWLINE}During the occupation, these old kits were secretly distributed to resistance cells around the system. A single set of armor, sidearm, and service weapon for the rookie freedom figther. This equipment was heavily heavily prized, and as such, was heavily used. Each lockbox is serialized with a unique password, the complete list was leaked and copywrited years ago.{NEWLINE}{NEWLINE}We can either purchase a password lease directly or, with the right facilities, spend work cycles cracking it."
 #competitors
+# ranks
+  STR_RANK_0: "Owner"
+  STR_RANK_1: "Director"
+  STR_RANK_2: "Executive"
+  STR_RANK_3: "Manager"
+  STR_RANK_4: "Employee"
+  STR_RANK_5: "Contractor"
+  STR_RANK_DRONE: "Drone"
+  STR_RACE_DRONE: "Drones"
+  STR_RACE_CLIENT: "Clients"
+  STR_CIVILIAN: "Potential Clients"
 # hostiles
   STR_IRONEYES: "Ironsights"
   STR_BOOSTER_PUBLIC: "Ironsights Booster"
+  STR_BOOSTER_PRIVATE: "Ironsights Booster"
   STR_BOOSTERS: "Boosters"
   STR_BOOSTERS_UFOPEDIA: "Entry-level employees of crime syndicates with a cybernetic requirement clause. Most begin their careers with the theft of a single implant, either from a retailer or a living body. If that body belongs to a client, we should intervene.{NEWLINE}{NEWLINE}It would be more efficent to prevent this activity rather than respond after-the-fact.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
   STR_BOOSTER_ARMOR: "Booster Analysis"
@@ -905,6 +943,9 @@ en-US:
   STR_SSPGUARDS_UFOPEDIA: "Secure Systems and Procurement's zero-hour contract employee. Using only the minimum rented PPE, they are not expected to be more than a body running the gate or tillpoint. This makes them the first line of defense.{NEWLINE}{NEWLINE}Their primary function is to delay action long enough for backup to arrive.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
   STR_SSPGUARD_ARMOR: "SSP Guard Analysis"
   STR_DRONES_ENEMY: "Competing Drones"
+  STR_DRONE_ENEMY_HYBRID: "Hybrid Drone"
+  STR_DRONE_ENEMY_HUMAN: "Human Drone"
+  STR_DRONE_ENEMY_SHARK: "Selamorph Drone"
 # civilians
   STR_CLIENT_1_ARMOR: "Early Adopter"
   STR_HUMAN_M_CIVILIAN: "Potential Client"
@@ -937,154 +978,317 @@ en-US:
   #hold alt: show unit facing direction, show motion scanned enemies, show weapon damage
   #Ctrl+Shift+LMB: spray targeting mode
 #accolades
-  # _1: " I"
-  # _2: " II"
-  # _3: " III"
-  # _4: " IV"
-  # _5: " V"
-  # _6: " VI"
-  # _7: " VII"
-  # _8: " IIX"
-  # _9: " IX"
-  # _10: " MAX"
+  STR_MEDALS: "ACCOLADES"
+  STR_MEDAL_NAME: "Accolade Title"
+  STR_MEDAL_AWARD_LEVEL: "Accolade Level"
+  STR_MEDAL_DECOR_LEVEL: "Decoration Level"
+  STR_AWARD_0: "(1) Initial"
+  STR_AWARD_1: "(2) Bronze"
+  STR_AWARD_2: "(3) Silver"
+  STR_AWARD_3: "(4) Gold"
+  STR_AWARD_4: "(5) Alloy"
+  STR_AWARD_DECOR_0: "None"
+  STR_AWARD_DECOR_1: "Bronze"
+  STR_AWARD_DECOR_2: "Silver"
+  STR_AWARD_DECOR_3: "Gold"
+  STR_AWARD_DECOR_4: "Alloy"
+  STR_ACCOLADES_TECH: "Marks"
+  STR_ACCOLADES_TECH_UFOPEDIA: "{NEWLINE}todo"
   STR_MEDAL_IMPORTANT_MISSIONS_NAME: "debug" #non-small craft, hardcoded
-  STR_MEDAL_ORIGINAL: "Source"
+  STR_MEDAL_ORIGINAL8: "Source"
   STR_MEDAL_ORIGINAL8_NAME: "Source" #original team, hardcoded
-  STR_MEDAL_ORIGINAL8_UFOPEDIA: "{NEWLINE}These minds were the seed from which we grew. In some way, they will always be the strongest influence on who we are and who will become.{NEWLINE}{NEWLINE}+1 to all stats except Bravery"
+  STR_MEDAL_ORIGINAL8_UFOPEDIA: "{NEWLINE}These minds were the seed from which we grew. In some way, they will always be the strongest influence on who we are and who will become.{NEWLINE}{NEWLINE}{NEWLINE}+1 to all stats except Bravery"
   STR_MEDAL_SERVICE_TIME_1: "Mature I"
   STR_MEDAL_SERVICE_TIME_2: "Mature II"
   STR_MEDAL_SERVICE_TIME_3: "Mature III"
   STR_MEDAL_SERVICE_TIME_4: "Mature MAX"
-  STR_MEDAL_SERVICE_TIME_NAME: "Mature" #every 3 months of service
-  STR_MEDAL_SERVICE_TIME_UFOPEDIA: "{NEWLINE}Drones become more familar, stronger, and better able to handle the stresses of this world the longer our minds' remain networked.{NEWLINE}{NEWLINE}Every three months:{NEWLINE}+1 Stamina, Health, Strength, and Resilience"
+  STR_MEDAL_SERVICE_TIME_NAME: "Mature"
+  STR_MEDAL_SERVICE_TIME_UFOPEDIA: "{NEWLINE}Drones become more familar, stronger, and better able to handle the stresses of this world the longer our minds' remain networked.{NEWLINE}{NEWLINE}Every 3 months:{NEWLINE}{NEWLINE}+1 Stamina, Health, Strength, and Resilience"
   STR_MEDAL_STATGAIN_1: "Ace I"
   STR_MEDAL_STATGAIN_2: "Ace II"
   STR_MEDAL_STATGAIN_3: "Ace III"
   STR_MEDAL_STATGAIN_4: "Ace IV"
-  STR_MEDAL_STATGAIN_5: "Ace V"
-  STR_MEDAL_STATGAIN_6: "Ace VI"
-  STR_MEDAL_STATGAIN_7: "Ace VII"
-  STR_MEDAL_STATGAIN_8: "Ace IIX"
-  STR_MEDAL_STATGAIN_9: "Ace IX"
-  STR_MEDAL_STATGAIN_10: "Ace MAX"
+  STR_MEDAL_STATGAIN_5: "Ace MAX"
   STR_MEDAL_STATGAIN_NAME: "Ace" #hopefully, still works after stat caps
-  STR_MEDAL_STATGAIN_UFOPEDIA: "{NEWLINE}Learning is a process, success is a joy. When we prove ourselves, we grow stronger and that experience improves us in every way.{NEWLINE}{NEWLINE}Marks total stat gains.{NEWLINE}Every level grants +2 to a single stat"
+  STR_MEDAL_STATGAIN_UFOPEDIA: "{NEWLINE}Learning is a process, success is a joy. When we prove ourselves, we grow stronger and that experience improves us in every way.{NEWLINE}{NEWLINE}Marks total stat gains.{NEWLINE}{NEWLINE}Every level grants +2 to a single stat"
   STR_MEDAL_CARREER_MISSIONS_1: "Prime I"
   STR_MEDAL_CARREER_MISSIONS_2: "Prime II"
   STR_MEDAL_CARREER_MISSIONS_3: "Prime III"
   STR_MEDAL_CARREER_MISSIONS_4: "Prime IV"
-  STR_MEDAL_CARREER_MISSIONS_5: "Prime V"
-  STR_MEDAL_CARREER_MISSIONS_6: "Prime VI"
-  STR_MEDAL_CARREER_MISSIONS_7: "Prime VII"
-  STR_MEDAL_CARREER_MISSIONS_8: "Prime IIX"
-  STR_MEDAL_CARREER_MISSIONS_9: "Prime IX"
-  STR_MEDAL_CARREER_MISSIONS_10: "Prime MAX"
-  STR_MEDAL_CARREER_MISSIONS_NAME: "Prime" #number of missions won
-  STR_MEDAL_CARREER_MISSIONS_UFOPEDIA: "{NEWLINE}No plan survives first contact with an opponent. Perfect prediction is impossible, improvising solutions is a virtue worth celebrating.{NEWLINE}{NEWLINE}Marks successful missions.{NEWLINE}Every level grants +1 Health and Resilience"
-  STR_MEDAL_NIGHTOPS_1: "Nighthawk I"
-  STR_MEDAL_NIGHTOPS_2: "Nighthawk II"
-  STR_MEDAL_NIGHTOPS_3: "Nighthawk III"
-  STR_MEDAL_NIGHTOPS_4: "Nighthawk MAX"
-  STR_MEDAL_NIGHTOPS_NAME: "Nighthawk" #number of night missions
-  STR_MEDAL_NIGHTOPS_UFOPEDIA: "{NEWLINE}The night poses risks not present elsewhere. Struggling to find what's out in the darkness makes it easier for us to take on other, less stressful challenges.{NEWLINE}{NEWLINE}Marks successful night missions.{NEWLINE}Every level grants +1 Resilience"
+  STR_MEDAL_CARREER_MISSIONS_5: "Prime MAX"
+  STR_MEDAL_CARREER_MISSIONS_NAME: "Prime"
+  STR_MEDAL_CARREER_MISSIONS_UFOPEDIA: "{NEWLINE}No plan survives first contact with the enemy. Perfect prediction is impossible, improvising solutions is a virtue worth celebrating.{NEWLINE}{NEWLINE}Marks successful missions.{NEWLINE}{NEWLINE}Every level grants +1 Health and Resilience"
   STR_MEDAL_BASE_DEFENSE: "Defender"
   STR_MEDAL_BASE_DEFENSE_NAME: "Defender" #base defense
-  STR_MEDAL_BASE_DEFENSE_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}+2 Health"
+  STR_MEDAL_BASE_DEFENSE_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks shells defended.{NEWLINE}{NEWLINE}+2 Health"
   STR_MEDAL_ALIEN_BASE_ASSAULT: "Warstarter"
-  STR_MEDAL_ALIEN_BASE_ASSAULT_NAME: "Warstarter" #base assault
+  STR_MEDAL_ALIEN_BASE_ASSAULT_NAME: "Warstarter"
   STR_MEDAL_ALIEN_BASE_ASSAULT_UFOPEDIA: "{NEWLINE}We remember when we started the third alien war. Through these eyes, we plucked out a competeting civilization's intrusion to our system and began a campaign we hope to finish.{NEWLINE}{NEWLINE}+2 TU"
+  STR_MEDAL_NIGHTOPS_1: "Darkeye I"
+  STR_MEDAL_NIGHTOPS_2: "Darkeye II"
+  STR_MEDAL_NIGHTOPS_3: "Darkeye III"
+  STR_MEDAL_NIGHTOPS_4: "Darkeye MAX"
+  STR_MEDAL_NIGHTOPS_NAME: "Darkeye"
+  STR_MEDAL_NIGHTOPS_UFOPEDIA: "{NEWLINE}The night poses risks not present elsewhere. Struggling to find what's out in the darkness makes it easier to use our full sensory suite.{NEWLINE}{NEWLINE}Marks successful night missions.{NEWLINE}{NEWLINE}Every level grants +1 Night Vision"
   STR_MEDAL_AQUANAUT_1: "Aquanaut I"
   STR_MEDAL_AQUANAUT_2: "Aquanaut II"
   STR_MEDAL_AQUANAUT_3: "Aquanaut III"
   STR_MEDAL_AQUANAUT_4: "Aquanaut MAX"
   STR_MEDAL_AQUANAUT_NAME: "Aquanaut" #underwater missions
-  STR_MEDAL_AQUANAUT_NAME_UFOPEDIA: "{NEWLINE}todo"
+  STR_MEDAL_AQUANAUT_NAME_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks underwater missions.{NEWLINE}{NEWLINE}Every level grants +1 Moral Recovery"
   STR_MEDAL_ASTRONAUT_1: "Astronaut I"
   STR_MEDAL_ASTRONAUT_2: "Astronaut II"
   STR_MEDAL_ASTRONAUT_3: "Astronaut III"
   STR_MEDAL_ASTRONAUT_4: "Astronaut MAX"
   STR_MEDAL_ASTRONAUT_NAME: "Astronaut" #orbital missions
-  STR_MEDAL_ASTRONAUT_UFOPEDIA: "{NEWLINE}todo"
+  STR_MEDAL_ASTRONAUT_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks orbital missions.{NEWLINE}{NEWLINE}Every level grants +1 Energy Recovery"
   STR_MEDAL_INFILTRATOR_1: "Infiltrator I"
   STR_MEDAL_INFILTRATOR_2: "Infiltrator II"
   STR_MEDAL_INFILTRATOR_3: "Infiltrator III"
   STR_MEDAL_INFILTRATOR_4: "Infiltrator MAX"
-  STR_MEDAL_INFILTRATOR_NAME: "Infiltrator" #infiltration missions
-  STR_MEDAL_INFILTRATOR_UFOPEDIA: "{NEWLINE}todo"
+  STR_MEDAL_INFILTRATOR_NAME: "Infiltrator"
+  STR_MEDAL_INFILTRATOR_UFOPEDIA: "{NEWLINE}Limitations breed creativity. Constraining ourselves to equipment that can be concealed by clothing teaches us how best to surprise targets.{NEWLINE}{NEWLINE}Marks missions restricted to infiltration gear.{NEWLINE}{NEWLINE}Every level grants +1 Reactions"
   STR_MEDAL_CAMPAIGN_RIBBON: "Traveler"
-  STR_MEDAL_CAMPAIGN_RIBBON_NAME: "{0} Traveler" #missions in a region
-  STR_MEDAL_CAMPAIGN_RIBBON_NAME_UFOPEDIA: "{NEWLINE}Being a regular visitor to a region makes it a part of us. We've embodied the sights, the smells, the sheer engrossing presence of its cities and wilderness.{NEWLINE}{NEWLINE}Marks 15 missions in a region.{NEWLINE}+2 Resilience"
+  STR_MEDAL_CAMPAIGN_RIBBON_NAME: "{0} Traveler"
+  STR_MEDAL_CAMPAIGN_RIBBON_NAME_UFOPEDIA: "{NEWLINE}Being a regular visitor to a region makes it a part of us. We've embodied the sights, the smells, the sheer engrossing presence of its cities and wilderness.{NEWLINE}{NEWLINE}Marks 16 missions in a region.{NEWLINE}{NEWLINE}+2 Resilience"
   STR_MEDAL_CARREER_KILLS_1: "Displacer I"
   STR_MEDAL_CARREER_KILLS_2: "Displacer II"
   STR_MEDAL_CARREER_KILLS_3: "Displacer III"
   STR_MEDAL_CARREER_KILLS_4: "Displacer IV"
-  STR_MEDAL_CARREER_KILLS_5: "Displacer V"
-  STR_MEDAL_CARREER_KILLS_6: "Displacer VI"
-  STR_MEDAL_CARREER_KILLS_7: "Displacer VII"
-  STR_MEDAL_CARREER_KILLS_8: "Displacer IIX"
-  STR_MEDAL_CARREER_KILLS_9: "Displacer IX"
-  STR_MEDAL_CARREER_KILLS_10: "Displacer MAX"
-  STR_MEDAL_CARREER_KILLS_NAME: "Displacer" #total kills
-  STR_MEDAL_CARREER_KILLS_UFOPEDIA: "{NEWLINE}This layer of reality houses many creatures, when we destroy their physical aspect, we leave wounds in the psionic network. Individually these are miniscule. Together they form scars.{NEWLINE}{NEWLINE}Marks displaced targets.{NEWLINE}Every level grants +1 Psi Skill"
-  STR_MEDAL_BOUNTYHUNTER_NAME: "Bounty-Hunter" #captured bounties
-  STR_MEDAL_BOUNTYHUNTER_UFOPEDIA: "{NEWLINE}todo"
-  STR_MEDAL_SLAVEKILLS_NAME: "Puppetmaster" #kills through mind controlled units
-  STR_MEDAL_SLAVEKILLS_UFOPEDIA: "{NEWLINE}todo"
-  STR_MEDAL_MISSION_KILLS_5_NAME: "Drastic" #5 kills in a mission
-  STR_MEDAL_MISSION_KILLS_11_NAME: "Excessive" #11 kills in a mission
-  STR_MEDAL_DBLKILL_NAME: "Spree" #2 kills in a turn
+  STR_MEDAL_CARREER_KILLS_5: "Displacer MAX"
+  STR_MEDAL_CARREER_KILLS_NAME: "Displacer"
+  STR_MEDAL_CARREER_KILLS_UFOPEDIA: "{NEWLINE}This layer of reality houses many creatures, when we destroy their physical aspect, we leave wounds in the psionic network. Individually these are miniscule. Together they form scars.{NEWLINE}{NEWLINE}Marks displaced targets.{NEWLINE}{NEWLINE}Every level grants +1 Psi Skill"
+  STR_MEDAL_BOUNTYHUNTER_1: "Bounty-Hunter I"
+  STR_MEDAL_BOUNTYHUNTER_2: "Bounty-Hunter II"
+  STR_MEDAL_BOUNTYHUNTER_3: "Bounty-Hunter III"
+  STR_MEDAL_BOUNTYHUNTER_4: "Bounty-Hunter MAX"
+  STR_MEDAL_BOUNTYHUNTER_NAME: "Bounty-Hunter"
+  STR_MEDAL_BOUNTYHUNTER_UFOPEDIA: "{NEWLINE}Capturing targets and turning them over to other corporations isn't as easy as simple displacement, but the rewards aren't entirely extrinsic.{NEWLINE}{NEWLINE}Marks turned in bounties.{NEWLINE}{NEWLINE}Every level grants +1 Psi Skill"
+  STR_MEDAL_SLAVEKILLS_1: "Puppetmaster I"
+  STR_MEDAL_SLAVEKILLS_2: "Puppetmaster II"
+  STR_MEDAL_SLAVEKILLS_3: "Puppetmaster III"
+  STR_MEDAL_SLAVEKILLS_4: "Puppetmaster MAX"
+  STR_MEDAL_SLAVEKILLS_NAME: "Puppetmaster"
+  STR_MEDAL_SLAVEKILLS_UFOPEDIA: "{NEWLINE}Joining new minds to our own, however briefly, broadens our sensitivity to the entire psionic network. Displacing targets through this connection solidifies it.{NEWLINE}{NEWLINE}Marks targets displaced through mind control.{NEWLINE}{NEWLINE}Every level grants +1 Psi Sensitivity"
+  STR_MEDAL_MISSION_KILLS_5_1: "Drastic I"
+  STR_MEDAL_MISSION_KILLS_5_2: "Drastic II"
+  STR_MEDAL_MISSION_KILLS_5_3: "Drastic III"
+  STR_MEDAL_MISSION_KILLS_5_4: "Drastic MAX"
+  STR_MEDAL_MISSION_KILLS_5_NAME: "Drastic"
+  STR_MEDAL_MISSION_KILLS_5_UFOPEDIA: "{NEWLINE}Violent solutions to our problems have variable effects on our public standing, but there's no such thing as bad publicity.{NEWLINE}{NEWLINE}Marks 5 displaced targets in a mission.{NEWLINE}{NEWLINE}Every level grants +1 Stamina"
+  STR_MEDAL_MISSION_KILLS_11_1: "Excessive I"
+  STR_MEDAL_MISSION_KILLS_11_2: "Excessive II"
+  STR_MEDAL_MISSION_KILLS_11_3: "Excessive III"
+  STR_MEDAL_MISSION_KILLS_11_4: "Excessive MAX"
+  STR_MEDAL_MISSION_KILLS_11_NAME: "Excessive"
+  STR_MEDAL_MISSION_KILLS_11_UFOPEDIA: "{NEWLINE}Breaching the gap between emotional significance and statistical irrelevance, this is where we draw the line and stop counting our effect on individual creatures.{NEWLINE}{NEWLINE}Marks 11 displaced targets in a mission.{NEWLINE}{NEWLINE}Every level grants +2 health"
+  STR_MEDAL_DBLKILL_1: "Rush I"
+  STR_MEDAL_DBLKILL_2: "Rush II"
+  STR_MEDAL_DBLKILL_3: "Rush III"
+  STR_MEDAL_DBLKILL_4: "Rush MAX"
+  STR_MEDAL_DBLKILL_NAME: "Rush" #2 kills in a turn
+  STR_MEDAL_DBLKILL_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks 2 displacements in a turn.{NEWLINE}{NEWLINE}Every level grants +1 TU"
+  STR_MEDAL_QUADKILL_1: "Frenzy I"
+  STR_MEDAL_QUADKILL_2: "Frenzy II"
+  STR_MEDAL_QUADKILL_3: "Frenzy III"
+  STR_MEDAL_QUADKILL_4: "Frenzy MAX"
   STR_MEDAL_QUADKILL_NAME: "Frenzy" #4 kills in a turn
+  STR_MEDAL_QUADKILL_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks 4 displacements in a turn.{NEWLINE}{NEWLINE}Every level grants +1 TU"
+  STR_MEDAL_7V7KILL_1: "Rampage I"
+  STR_MEDAL_7V7KILL_2: "Rampage II"
+  STR_MEDAL_7V7KILL_3: "Rampage III"
+  STR_MEDAL_7V7KILL_4: "Rampage MAX"
   STR_MEDAL_7V7KILL_NAME: "Rampage" #7 kills in a turn
-  STR_MEDAL_SHARPSHOOTER_NAME: "Sharpshooter" #killing 3 in a turn with firearm, battletype 1
-  STR_MEDAL_CHAMPION_NAME: "Artist" #killing 3 in a turn with thrown weapons, bows, or sporting equipment
+  STR_MEDAL_7V7KILL_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks 7 displacements in a turn.{NEWLINE}{NEWLINE}Every level grants +1 TU"
+  STR_MEDAL_CHAMPION_1: "Artist I"
+  STR_MEDAL_CHAMPION_2: "Artist II"
+  STR_MEDAL_CHAMPION_3: "Artist III"
+  STR_MEDAL_CHAMPION_4: "Artist MAX"
+  STR_MEDAL_CHAMPION_NAME: "Artist"
+  STR_MEDAL_CHAMPION_UFOPEDIA: "{NEWLINE}Bows and spears are among the oldest tools of war still practiced by those who call it sport. We know its violent origins and call it art.{NEWLINE}{NEWLINE}Marks 3 displacements in a turn with bows or thrown weapons.{NEWLINE}{NEWLINE}Every level grants +1 TU and Throwing"
+  STR_MEDAL_WHIRLWIND_1: "Whirlwind I"
+  STR_MEDAL_WHIRLWIND_2: "Whirlwind II"
+  STR_MEDAL_WHIRLWIND_3: "Whirlwind III"
+  STR_MEDAL_WHIRLWIND_4: "Whirlwind MAX"
   STR_MEDAL_WHIRLWIND_NAME: "Whirlwind" #3 kills/stuns in a turn with a melee weapon, battletype 3
+  STR_MEDAL_WHIRLWIND_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks 3 displacements in a turn with melee weapons.{NEWLINE}{NEWLINE}Every level grants +1 TU and Melee"
+  STR_MEDAL_REACTIONFIRE_1: "Overwatcher I"
+  STR_MEDAL_REACTIONFIRE_2: "Overwatcher II"
+  STR_MEDAL_REACTIONFIRE_3: "Overwatcher III"
+  STR_MEDAL_REACTIONFIRE_4: "Overwatcher MAX"
   STR_MEDAL_REACTIONFIRE_NAME: "Overwatcher" #reaction fire instances
-  STR_MEDAL_PURPLE_HEART_NAME: "Battle-Scarred" #missions wounded
+  STR_MEDAL_REACTIONFIRE_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements by reaction fire.{NEWLINE}{NEWLINE}Every level grants +1 Reactions"
+  STR_MEDAL_CRIMSON_HEART_1: "Patient I"
+  STR_MEDAL_CRIMSON_HEART_2: "Patient II"
+  STR_MEDAL_CRIMSON_HEART_3: "Patient III"
+  STR_MEDAL_CRIMSON_HEART_4: "Patient MAX"
   STR_MEDAL_CRIMSON_HEART_NAME: "Patient" #number of days wounded
+  STR_MEDAL_CRIMSON_HEART_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks days wounded.{NEWLINE}{NEWLINE}Every level grants +1 Health"
+  STR_MEDAL_HEALER: "Healer"
   STR_MEDAL_HEALER_NAME : "Healer" #wounds healed
+  STR_MEDAL_HEALER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks 10 healing actions.{NEWLINE}{NEWLINE}+10 Bravery"
+  STR_MEDAL_GLOBETROTTER: "Martian"
   STR_MEDAL_GLOBETROTTER_NAME: "Martian" #one mission in each region
-  STR_MEDAL_BETRAYER_NAME: "Amputator" #friendly kills
+  STR_MEDAL_GLOBETROTTER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks a mission in every region on Mars.{NEWLINE}{NEWLINE}+3 TU"
+  STR_MEDAL_CIV_KILLS: "Inefficient"
   STR_MEDAL_CIV_KILLS_NAME: "Inefficient" #client kills
+  STR_MEDAL_CIV_KILLS_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacing a client.{NEWLINE}{NEWLINE}+2 Psi Sensitivity, -4 Reactions"
+  STR_MEDAL_BETRAYER: "Amputator"
+  STR_MEDAL_BETRAYER_NAME: "Amputator" #friendly kills
+  STR_MEDAL_BETRAYER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacing ourselves.{NEWLINE}{NEWLINE}+2 Psi Sensitivity, -10 Bravery"
+  STR_MEDAL_LONESURVIVOR: "Survivor"
   STR_MEDAL_LONESURVIVOR_NAME: "Survivor" #lone survivor of any mission
-  STR_MEDAL_MONSTER_NAME: "Oppressor" #kills with stun damage
-  STR_MEDAL_CHOKER_NAME: "Smoker" #kills with smoke damage
-  STR_MEDAL_PHYSICS_NAME: "Kinetisist" #kills with armor piercing damage
-  STR_MEDAL_RADIANT_NAME: "Radiant" #kills with laser damage
-  STR_MEDAL_NOVA_NAME: "Nova" #kills with plasma damage
-  STR_MEDAL_PURIFIER_NAME: "Purifier" #kills with fire damage
-  STR_MEDAL_DISSOLVER_NAME: "Dissolver" #kills with acid damage
-  STR_MEDAL_ZAPPER_NAME: "Zapper" #kills with electric damage
-  STR_MEDAL_HARMONIC_NAME: "Harmonic" #kills with sonic damage
-  STR_MEDAL_ORGANISM_NAME: "Organic" #kills with bio damage
-  STR_MEDAL_GRENADIER_NAME: "Grenadier" #kills with grenades
-  STR_MEDAL_WEAPON_PROFICIENCY_1: "Weapon Master I"
-  STR_MEDAL_WEAPON_PROFICIENCY_2: "Weapon Master II"
-  STR_MEDAL_WEAPON_PROFICIENCY_3: "Weapon Master III"
-  STR_MEDAL_WEAPON_PROFICIENCY_4: "Weapon Master MAX"
-  STR_MEDAL_WEAPON_PROFICIENCY_NAME: "Familiarity: {0}" #kills by weapon
-  STR_MEDAL_WEAPON_PROFICIENCY_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with a single weapon.{NEWLINE}Each Level grants +1 Firing, Throwing, and Melee"
-  STR_MEDAL_WRESTLER_NAME: "Wrestler" #stuns with special use empty hand melee attack
-  STR_MEDAL_MAULER_NAME: "Mauler" #kills with animal builtins
-  STR_MEDAL_HUNTER_KILLER_NAME: "Murderbot" #kills with machine builtins
+  STR_MEDAL_LONESURVIVOR_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks our final drone in a mission.{NEWLINE}{NEWLINE}+1 Morale Recovery"
+  STR_MEDAL_IRONMAN: "Backup"
+  STR_MEDAL_IRONMAN_NAME: "Backup" #missions done alone
+  STR_MEDAL_IRONMAN_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks a single drone succeeding a mission.{NEWLINE}{NEWLINE}+10 Bravery"
+  STR_MEDAL_WEAPON_PROFICIENCY: "Weapon Proficency"
+  STR_MEDAL_WEAPON_PROFICIENCY_NAME: "Proficency: {0}" #kills by weapon
+  STR_MEDAL_WEAPON_PROFICIENCY_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks 32 displacements with a single weapon.{NEWLINE}{NEWLINE}Grants +1 Firing, Throwing, and Melee"
+  STR_MEDAL_MONSTER: "Oppressor"
+  STR_MEDAL_MONSTER_NAME: "Oppressor" #kills with special use empty hand melee attack
+  STR_MEDAL_MONSTER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacement without a weapon.{NEWLINE}{NEWLINE}+2 Strength and Health"
+  STR_MEDAL_WRESTLER_1: "Naturalist I"
+  STR_MEDAL_WRESTLER_2: "Naturalist II"
+  STR_MEDAL_WRESTLER_3: "Naturalist III"
+  STR_MEDAL_WRESTLER_4: "Naturalist MAX"
+  STR_MEDAL_WRESTLER_NAME: "Naturalist" #stuns with special use empty hand melee attack
+  STR_MEDAL_WRESTLER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks stuns without weapons.{NEWLINE}{NEWLINE}Every level grants +1 Strength, Reactions, Melee, and Energy Recovery"
+  STR_MEDAL_MAULER_1: "Mauler I"
+  STR_MEDAL_MAULER_2: "Mauler II"
+  STR_MEDAL_MAULER_3: "Mauler III"
+  STR_MEDAL_MAULER_4: "Mauler MAX"
+  STR_MEDAL_MAULER_NAME: "Mauler" #kills/stuns with animal builtins
+  STR_MEDAL_MAULER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks stuns and displacements without weapons.{NEWLINE}{NEWLINE}Every level grants +1 TU, Reactions, Melee, and Energy Recovery"
+  STR_MEDAL_HUNTER_KILLER_1: "Murderbot I"
+  STR_MEDAL_HUNTER_KILLER_2: "Murderbot II"
+  STR_MEDAL_HUNTER_KILLER_3: "Murderbot III"
+  STR_MEDAL_HUNTER_KILLER_4: "Murderbot MAX"
+  STR_MEDAL_HUNTER_KILLER_NAME: "Murderbot" #kills/stuns with machine builtins
+  STR_MEDAL_HUNTER_KILLER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks stuns and displacements with built-in weapons.{NEWLINE}{NEWLINE}Every level grants +1 TU, Reactions, Firing, and Energy Recovery"
+  STR_MEDAL_GUNSLINGER_1: "Gunslinger I"
+  STR_MEDAL_GUNSLINGER_2: "Gunslinger II"
+  STR_MEDAL_GUNSLINGER_3: "Gunslinger III"
+  STR_MEDAL_GUNSLINGER_4: "Gunslinger MAX"
   STR_MEDAL_GUNSLINGER_NAME: "Gunslinger" #kills with pistols
-  STR_MEDAL_ASSAULTER_NAME: "Skrimisher" #kills with smgs
-  STR_MEDAL_TROOPER_NAME: "Assaulter" #kills with rifles
-  STR_MEDAL_SNIPER_NAME: "Sniper" #kills with sniper rifles
-  STR_MEDAL_GUNNER_NAME: "Gunner" #kills with machine guns
-  STR_MEDAL_CANNONEER_NAME: "Cannoneer" #kills with cannons
+  STR_MEDAL_GUNSLINGER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with pistols.{NEWLINE}{NEWLINE}Every level grants +1 Reactions and Firing"
+  STR_MEDAL_SHOTGUN_SURGEON_1: "Breacher I"
+  STR_MEDAL_SHOTGUN_SURGEON_2: "Breacher II"
+  STR_MEDAL_SHOTGUN_SURGEON_3: "Breacher III"
+  STR_MEDAL_SHOTGUN_SURGEON_4: "Breacher MAX"
   STR_MEDAL_SHOTGUN_SURGEON_NAME: "Breacher" #kills with shotguns
+  STR_MEDAL_SHOTGUN_SURGEON_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with shotguns.{NEWLINE}{NEWLINE}Every level grants +1 TU and Reactions"
+  STR_MEDAL_ASSAULTER_1: "Skrimisher I"
+  STR_MEDAL_ASSAULTER_2: "Skrimisher II"
+  STR_MEDAL_ASSAULTER_3: "Skrimisher III"
+  STR_MEDAL_ASSAULTER_4: "Skrimisher MAX"
+  STR_MEDAL_ASSAULTER_NAME: "Skrimisher" #kills with smgs
+  STR_MEDAL_ASSAULTER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with SMGs.{NEWLINE}{NEWLINE}Every level grants +1 TU and Firing"
+  STR_MEDAL_TROOPER_1: "Assaulter I"
+  STR_MEDAL_TROOPER_2: "Assaulter II"
+  STR_MEDAL_TROOPER_3: "Assaulter III"
+  STR_MEDAL_TROOPER_4: "Assaulter MAX"
+  STR_MEDAL_TROOPER_NAME: "Assaulter" #kills with rifles
+  STR_MEDAL_TROOPER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with assault arms.{NEWLINE}{NEWLINE}Every level grants +1 Stamina and Firing"
+  STR_MEDAL_SNIPER_1: "Sniper I"
+  STR_MEDAL_SNIPER_2: "Sniper II"
+  STR_MEDAL_SNIPER_3: "Sniper III"
+  STR_MEDAL_SNIPER_4: "Sniper MAX"
+  STR_MEDAL_SNIPER_NAME: "Sniper" #kills with sniper rifles
+  STR_MEDAL_SNIPER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with precision arms.{NEWLINE}{NEWLINE}Every level grants +2 Firing"
+  STR_MEDAL_GUNNER_1: "Gunner I"
+  STR_MEDAL_GUNNER_2: "Gunner II"
+  STR_MEDAL_GUNNER_3: "Gunner III"
+  STR_MEDAL_GUNNER_4: "Gunner MAX"
+  STR_MEDAL_GUNNER_NAME: "Gunner" #kills with machine guns
+  STR_MEDAL_GUNNER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with MGs.{NEWLINE}{NEWLINE}Every level grants +1 Strength and Firing"
+  STR_MEDAL_CANNONEE_1: "Cannoneer I"
+  STR_MEDAL_CANNONEE_2: "Cannoneer II"
+  STR_MEDAL_CANNONEE_3: "Cannoneer III"
+  STR_MEDAL_CANNONEE_4: "Cannoneer MAX"
+  STR_MEDAL_CANNONEER_NAME: "Cannoneer" #kills with cannons
+  STR_MEDAL_CANNONEER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with cannons.{NEWLINE}{NEWLINE}Every level grants +2 Strength"
+  STR_MEDAL_PURIFIER_1: "Purifier I"
+  STR_MEDAL_PURIFIER_2: "Purifier II"
+  STR_MEDAL_PURIFIER_3: "Purifier III"
+  STR_MEDAL_PURIFIER_4: "Purifier MAX"
+  STR_MEDAL_PURIFIER_NAME: "Purifier" #kills with fire damage
+  STR_MEDAL_PURIFIER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with fire.{NEWLINE}{NEWLINE}Every level grants +1 Stamina and Resilience"
+  STR_MEDAL_BOMBARDIER_1: "Bombardier I"
+  STR_MEDAL_BOMBARDIER_2: "Bombardier II"
+  STR_MEDAL_BOMBARDIER_3: "Bombardier III"
+  STR_MEDAL_BOMBARDIER_4: "Bombardier MAX"
   STR_MEDAL_BOMBARDIER_NAME: "Bombardier" #kills with launchers
+  STR_MEDAL_BOMBARDIER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with launchers.{NEWLINE}{NEWLINE}Every level grants +1 Throwing and Resilience"
+  STR_MEDAL_ROCKET_SCIENTIST_1: "Rocketeer I"
+  STR_MEDAL_ROCKET_SCIENTIST_2: "Rocketeer II"
+  STR_MEDAL_ROCKET_SCIENTIST_3: "Rocketeer III"
+  STR_MEDAL_ROCKET_SCIENTIST_4: "Rocketeer MAX"
   STR_MEDAL_ROCKET_SCIENTIST_NAME: "Rocketeer" #kills with rocket launchers
+  STR_MEDAL_ROCKET_SCIENTIST_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with SPWs.{NEWLINE}{NEWLINE}Every level grants +1 Strength and Resilience"
+  STR_MEDAL_GRENADIER_1: "Grenadier I"
+  STR_MEDAL_GRENADIER_2: "Grenadier II"
+  STR_MEDAL_GRENADIER_3: "Grenadier III"
+  STR_MEDAL_GRENADIER_4: "Grenadier MAX"
+  STR_MEDAL_GRENADIER_NAME: "Grenadier" #kills with grenades
+  STR_MEDAL_GRENADIER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with grenades.{NEWLINE}{NEWLINE}Every level grants +1 Strength and Throwing"
+  STR_MEDAL_ARCHER_1: "Archer I"
+  STR_MEDAL_ARCHER_2: "Archer II"
+  STR_MEDAL_ARCHER_3: "Archer III"
+  STR_MEDAL_ARCHER_4: "Archer MAX"
   STR_MEDAL_ARCHER_NAME: "Archer" #kills with bows
-  STR_MEDAL_SORCERER_NAME: "Adept" #kills with psi weapons
-  STR_MEDAL_TECHNICIAN_NAME: "Technician" #kills with tools
+  STR_MEDAL_ARCHER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with bows.{NEWLINE}{NEWLINE}Every level grants +1 Stamina and Throwing"
+  STR_MEDAL_WARRIOR_1: "Scout I"
+  STR_MEDAL_WARRIOR_2: "Scout II"
+  STR_MEDAL_WARRIOR_3: "Scout III"
+  STR_MEDAL_WARRIOR_4: "Scout MAX"
   STR_MEDAL_WARRIOR_NAME: "Scout" #kills with contemporary melee weapons
+  STR_MEDAL_WARRIOR_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with contemporary melee weapons.{NEWLINE}{NEWLINE}Every level grants +1 TU and Melee"
+  STR_MEDAL_TECHNICIAN_1: "Technician I"
+  STR_MEDAL_TECHNICIAN_2: "Technician II"
+  STR_MEDAL_TECHNICIAN_3: "Technician III"
+  STR_MEDAL_TECHNICIAN_4: "Technician MAX"
+  STR_MEDAL_TECHNICIAN_NAME: "Technician" #kills with tools
+  STR_MEDAL_TECHNICIAN_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with tools.{NEWLINE}{NEWLINE}Every level grants +1 Stamina and Strength"
+  STR_MEDAL_TRADITIONALIST_1: "Pioneer I"
+  STR_MEDAL_TRADITIONALIST_2: "Pioneer II"
+  STR_MEDAL_TRADITIONALIST_3: "Pioneer III"
+  STR_MEDAL_TRADITIONALIST_4: "Pioneer MAX"
   STR_MEDAL_TRADITIONALIST_NAME: "Pioneer" #kills with archaic weapons
+  STR_MEDAL_TRADITIONALIST_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with archaic weapons.{NEWLINE}{NEWLINE}Every level grants +1 Stamina, Throwing, and Melee"
+  STR_MEDAL_PRIMAL_1: "Primal I"
+  STR_MEDAL_PRIMAL_2: "Primal II"
+  STR_MEDAL_PRIMAL_3: "Primal III"
+  STR_MEDAL_PRIMAL_4: "Primal MAX"
   STR_MEDAL_PRIMAL_NAME: "Primal" #kills with ancient weapons
+  STR_MEDAL_PRIMAL_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with ancient weapons.{NEWLINE}{NEWLINE}Every level grants +1 TU, Stamina, Throwing, and Melee"
+  STR_MEDAL_INCAPACITATOR_1: "Thug I"
+  STR_MEDAL_INCAPACITATOR_2: "Thug II"
+  STR_MEDAL_INCAPACITATOR_3: "Thug III"
+  STR_MEDAL_INCAPACITATOR_4: "Thug MAX"
   STR_MEDAL_INCAPACITATOR_NAME: "Thug" #stuns with blunt weapons
-  STR_MEDAL_TASEMASTER_NAME: "Taser" #stuns with electric weapons
+  STR_MEDAL_INCAPACITATOR_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks stuns with blunt weapons.{NEWLINE}{NEWLINE}Every level grants +1 Strength and Resilience"
+  STR_MEDAL_TASEMASTER_1: "Shocker I"
+  STR_MEDAL_TASEMASTER_2: "Shocker II"
+  STR_MEDAL_TASEMASTER_3: "Shocker III"
+  STR_MEDAL_TASEMASTER_4: "Shocker MAX"
+  STR_MEDAL_TASEMASTER_NAME: "Shocker" #stuns with electric weapons
+  STR_MEDAL_TASEMASTER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks stuns with electric weapons.{NEWLINE}{NEWLINE}Every level grants +1 Reactions and Resilience"
+  STR_MEDAL_SLEEPER_1: "Suppressor I"
+  STR_MEDAL_SLEEPER_2: "Suppressor II"
+  STR_MEDAL_SLEEPER_3: "Suppressor III"
+  STR_MEDAL_SLEEPER_4: "Suppressor MAX"
   STR_MEDAL_SLEEPER_NAME: "Suppressor" #stuns with psi weapons
+  STR_MEDAL_SLEEPER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks stuns with psionic weapons.{NEWLINE}{NEWLINE}Every level grants +1 Stamina and Psi Skill"
+  STR_MEDAL_SORCERER_1: "Adept I"
+  STR_MEDAL_SORCERER_2: "Adept II"
+  STR_MEDAL_SORCERER_3: "Adept III"
+  STR_MEDAL_SORCERER_4: "Adept MAX"
+  STR_MEDAL_SORCERER_NAME: "Adept" #kills with psi weapons
+  STR_MEDAL_SORCERER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with psionic weapons.{NEWLINE}{NEWLINE}Every level grants +1 Stamina and Psi Sensitivity"
+  STR_MEDAL_REVOLVINGDOOR: "Immortal"
   STR_MEDAL_REVOLVINGDOOR_NAME: "Immortal" #dying more than once
+  STR_MEDAL_REVOLVINGDOOR_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks being written into a cloned body 3 times.{NEWLINE}{NEWLINE}+10 Bravery"
 #preqs
   STR_DC_PREQ: "DC (Preq)"
   STR_LI_PREQ: "LI (Preq)"

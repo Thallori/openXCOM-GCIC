@@ -99,25 +99,21 @@ research:
   - name: STR_HYBRID_MEMORY_1
     dependencies:
       - STR_LOCK
-      - STR_HYBRID_DATA
     points: 10
 
   - name: STR_HYBRID_MEMORY_2
     dependencies:
       - STR_LOCK
-      - STR_HYBRID_DATA
     points: 10
 
   - name: STR_HYBRID_MEMORY_3
     dependencies:
       - STR_LOCK
-      - STR_HYBRID_DATA
     points: 10
 
   - name: STR_HYBRID_MEMORY_4
     dependencies:
       - STR_LOCK
-      - STR_HYBRID_DATA
     points: 10
 
 #operations
@@ -149,6 +145,8 @@ research:
     dependencies:
       - STR_NON_CLIENTS
       - STR_SECONDARY_OPERATIONS
+      - STR_VENDOR_BUILDER
+      - STR_VENDOR_PRINTER
     cost: 4
 
   - name: STR_MEDI_MISSIONS
@@ -222,12 +220,14 @@ research:
     dependencies:
       - STR_FORBIDDEN_OPERATIONS
       - STR_VENDOR_PRINTER
+      - STR_VENDOR_BUILDER
     cost: 6
 
   - name: STR_LASER_AMMO_PRINTING
     dependencies:
       - STR_AL_PREQ
       - STR_VENDOR_PRINTER
+      - STR_LOCAL_INTERFACE
     cost: 9
     unlocks:
       - STR_SINGLESHOT_LASER_AMMO
@@ -235,6 +235,7 @@ research:
   - name: STR_BIOCODING
     dependencies:
       - STR_BC_PREQ
+      - STR_VENDOR_BUILDER
     cost: 5
     unlocks:
       - STR_LI_PREQ
@@ -247,6 +248,7 @@ research:
   - name: STR_PASS_CRACKING
     dependencies:
       - STR_PC_PREQ
+      - STR_VENDOR_BUILDER
     cost: 5
     unlocks:
       - STR_LI_PREQ
@@ -280,9 +282,17 @@ research:
       - STR_ELERIUM_BOMB
 
 #facilities
+  - name: STR_STOREROOM
+    dependencies:
+      - STR_VENDOR_BUILDER
+      - STR_VENDOR_PRINTER
+      - STR_SJB_LICENSE
+    cost: 10
+
   - name: STR_HOLDING_CELLS
     dependencies:
       - STR_VENDOR_BUILDER
+      - STR_VENDOR_PRINTER
       - STR_FORBIDDEN_OPERATIONS
     cost: 10
 
@@ -296,13 +306,14 @@ research:
     dependencies:
       - STR_LI_PREQ
       - STR_VENDOR_BUILDER
+      - STR_VENDOR_PRINTER
     cost: 15
 
   - name: STR_PRINTSHOP
     dependencies:
       - STR_VENDOR_BUILDER
       - STR_TODO
-    cost: 20
+    cost: 15
 
 #asp craft
   - name: STR_HD_CROSSOVER
@@ -317,10 +328,12 @@ research:
   - name: STR_HD_ECONOMY_ENGINE
     dependencies:
       - STR_VENDOR_HD
+    cost: 4
 
   - name: STR_HD_EXPRESS_ENGINE
     dependencies:
       - STR_VENDOR_HD
+    cost: 4
 
   - name: STR_BATBOX
     dependencies:
@@ -350,18 +363,20 @@ research:
     dependencies:
       - STR_DRONE_CRACKING
       - STR_BIONIC_INTERLACE
+      - STR_NON_CLIENTS
     cost: 10
 
   - name: STR_SPECIALIZATION_TRAINING
-    # dependencies:
-    #   - STR_DRONE_CRACKING
-    #   - STR_NON_CLIENTS
-    # cost: 5
+    dependencies:
+      - STR_DRONE_CRACKING
+      - STR_NON_CLIENTS
+    getOneFree:
+      - STR_NEURACHEM
+    cost: 15
 
   - name: STR_NEURACHEM
-    # dependencies:
-    #   - STR_SPECIALIZATION_TRAINING
-    # cost: 8
+    dependencies:
+      - STR_SPECIALIZATION_TRAINING
 
 
 # armor
@@ -455,7 +470,7 @@ research:
 # aquatic
   - name: STR_DART_PISTOL
     needItem: true
-    cost: 2
+    cost: 3
     unlocks:
       - STR_DART_AMMO0
       - STR_DART_AMMO1
@@ -715,7 +730,6 @@ research:
   - name: STR_BOOSTER_PRIVATE
     needItem: true
     destroyItem: true
-    spawnedItem: STR_BIOMASS
     cost: 6
     unlocks:
       - STR_TRG_BO_PREQ
@@ -735,7 +749,6 @@ research:
   - name: STR_FREELANCER_PRIVATE
     needItem: true
     destroyItem: true
-    spawnedItem: STR_BIOMASS
     cost: 10
     unlocks:
       - STR_TRG_FL_PREQ
@@ -754,7 +767,6 @@ research:
   - name: STR_SSPGUARD_PRIVATE
     needItem: true
     destroyItem: true
-    spawnedItem: STR_BIOMASS
     cost: 5
     unlocks:
       - STR_TRG_SG_PREQ
@@ -777,40 +789,47 @@ research:
 #preqs
   - name: STR_DC_PREQ #drone cracking
     dependencies:
+      - STR_LOCK
       - STR_DRONE_HYBRID_ITEM
       - STR_DRONE_HUMAN_ITEM
       - STR_DRONE_SHARK_ITEM
 
   - name: STR_LI_PREQ #local interface
     dependencies:
+      - STR_LOCK
       - STR_BIOCODING
       - STR_PASS_CRACKING
 
   - name: STR_BC_PREQ #biocoding
     dependencies:
+      - STR_LOCK
       - STR_45_PISTOL_CODED
       - STR_TASER_PISTOL_CODED
       - STR_SINGLESHOT_LASER_PISTOL_CODED
 
   - name: STR_PC_PREQ #pass cracking
     dependencies:
+      - STR_LOCK
       - STR_PERSONAL_DATA
       - STR_XN_CONTAINER_1
 
   - name: STR_AL_PREQ #ammoed laser
     dependencies:
+      - STR_LOCK
       - STR_SINGLESHOT_LASER_PISTOL_CODED
       - STR_SINGLESHOT_LASER_PISTOL
 
 #vendor preqs
   - name: STR_P2P_PREQ #peer 2 peer
     dependencies:
+      - STR_LOCK
       - STR_9MM_PISTOL
       - STR_DISPOSABLE_SMG
       - STR_CRIMINAL_CONTAINER_1
 
   - name: STR_V_SSP_PREQ #ssp
     dependencies:
+      - STR_LOCK
       - STR_BATON
       - STR_45_PISTOL_CODED
       - STR_TASER_PISTOL_CODED

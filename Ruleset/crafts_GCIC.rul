@@ -10,10 +10,9 @@ crafts:
     refuelRate: 200
     radarRange: 200
     radarChance: 80
-    soldiers: 2
-    vehicles: -1
-    maxSmallUnits: 2
-    maxLargeUnits: -1
+    soldiers: 3
+    maxSmallUnits: 3
+    maxLargeUnits: 0
     costBuy: 29999
     costRent: 350
     costSell: 7500
@@ -43,6 +42,7 @@ crafts:
     craftInventoryTile: [5, 5, 0]
     deployment:
       - [5, 5, 0, 2]
+      - [4, 5, 0, 4]
       - [3, 5, 0, 6]
 
   - type: STR_VCM_BICUBE

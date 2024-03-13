@@ -4,6 +4,7 @@ armors:
   - type: STR_PLEX_DRONE_HYBRID_ARMOR
     ufopediaType: STR_PLEX_DRONE_ARMOR
     customArmorPreviewIndex: 0
+    spriteInv: DRONEHYBRID.SPK
     spriteSheet: WORKSUIT_HYBRID.PCK
     layersDefaultPrefix: HYBRID
     layersDefinition:
@@ -54,7 +55,8 @@ armors:
       health: &HealthRecoveryTypical
         stunNormalized: -0.10
       stun: &StunRecoveryTypical
-        healthNormalized: 4
+        healthNormalized: 3
+        flatHundred: 0.02
         stunNormalized: -2
       energy: &EnergyRecoveryTypical
         stamina: 0.1
@@ -71,6 +73,7 @@ armors:
   - type: STR_PLEX_DRONE_HUMAN_ARMOR
     ufopediaType: STR_PLEX_DRONE_ARMOR
     customArmorPreviewIndex: 1
+    spriteInv: DRONEHUMAN.SPK
     spriteSheet: WORKSUIT_HUMAN.PCK
     layersDefaultPrefix: HUMAN
     layersDefinition:
@@ -122,6 +125,7 @@ armors:
   - type: STR_PLEX_DRONE_SHARK_ARMOR
     ufopediaType: STR_PLEX_DRONE_ARMOR
     customArmorPreviewIndex: 2
+    spriteInv: DRONESHARK.SPK
     spriteSheet: WORKSUIT_SHARK.PCK
     layersDefaultPrefix: SHARK
     layersDefinition:
@@ -582,6 +586,70 @@ armors:
       - STR_SSPGUARD_CORPSE
     specialWeapon: STR_SHARKATTACK
     allowsKneeling: true
+    visibilityAtDay: 30
+    visibilityAtDark: 9
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: *OrganicUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryTypical
+    loftempsSet: [ 3 ]
+
+# enemy drones
+  - type: STR_DRONEHYBRID_ARMOR
+    ufopediaType: STR_PLEX_DRONE_ARMOR
+    spriteInv: DRONEHYBRID.SPK
+    spriteSheet: WORKSUIT_HYBRID.PCK
+    corpseBattle:
+      - STR_PLEX_DRONE_HYBRID_CORPSE
+    visibilityAtDay: 30
+    visibilityAtDark: 12
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: *OrganicUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryTypical
+    loftempsSet: [ 3 ]
+
+  - type: STR_DRONEHUMAN_ARMOR
+    ufopediaType: STR_PLEX_DRONE_ARMOR
+    spriteInv: DRONEHUMAN.SPK
+    spriteSheet: WORKSUIT_HUMAN.PCK
+    corpseBattle:
+      - STR_PLEX_DRONE_HUMAN_CORPSE
+    visibilityAtDay: 30
+    visibilityAtDark: 9
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: *OrganicUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryHumanTypical
+    loftempsSet: [ 3 ]
+
+  - type: STR_DRONESHARK_ARMOR
+    ufopediaType: STR_PLEX_DRONE_ARMOR
+    spriteInv: DRONESHARK.SPK
+    spriteSheet: WORKSUIT_SHARK.PCK
+    corpseBattle:
+      - STR_PLEX_DRONE_SHARK_CORPSE
     visibilityAtDay: 30
     visibilityAtDark: 9
     frontArmor: 2

@@ -8,6 +8,7 @@ items:
     categories: [STR_CRAFT_SYSTEMS_CATEGORY]
     requiresBuy:
       - STR_VENDOR_HD
+      - STR_HD_ECONOMY_ENGINE
     size: 4.0
     costBuy: 11999
     costSell: 3000
@@ -17,6 +18,7 @@ items:
     categories: [STR_CRAFT_SYSTEMS_CATEGORY]
     requiresBuy:
       - STR_VENDOR_HD
+      - STR_HD_EXPRESS_ENGINE
     size: 4.0
     costBuy: 27999
     costSell: 7000
@@ -149,7 +151,7 @@ items:
     categories: [STR_BUILT_INS_CATEGORY]
     bigSprite: 131
     meleeSound: 112
-    meleeHitSound: 107
+    meleeHitSound: 106
     meleeAnimation: 0
     invWidth: 2
     invHeight: 3
@@ -174,7 +176,7 @@ items:
     confMelee:
       name: STR_BITE
     costMelee:
-      time: 8
+      time: 9
       energy: 4
     flatRate: true
     clipSize: -1
@@ -319,7 +321,7 @@ items:
     requiresBuy:
       - STR_VENDOR_P2P
       - STR_9MM_RIFLE
-    size: 0.2
+    size: 0.25
     costBuy: 419
     costSell: 105
     transferTime: 12
@@ -369,7 +371,7 @@ items:
     weight: 2
     costThrow:
       energy: 6
-    power: 18
+    power: 22
     clipSize: 14
     damageBonus:
       firing: 0.05
@@ -452,7 +454,6 @@ items:
   - type: STR_45_AMMO
     categories: [STR_SECURITY_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_SMGS_CATEGORY]
     requiresBuy:
-      - STR_TODO
       - STR_VENDOR_SSP
       - STR_45_PISTOL
     size: 0.01
@@ -467,7 +468,7 @@ items:
     weight: 2
     costThrow:
       energy: 6
-    power: 24
+    power: 28
     clipSize: 12
     damageBonus:
       reactions: 0.05
@@ -521,6 +522,7 @@ items:
     kneelBonus: 115
     twoHanded: true
     oneHandedPenalty: 85
+    experienceTrainingMode: 5
     attraction: 15
     armor: 30
 
@@ -746,7 +748,7 @@ items:
   - type: STR_SINGLESHOT_LASER_PISTOL_ELERIUM
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     ufopediaType: STR_SINGLESHOT_LASER_PISTOL
-    size: 0.05
+    size: 0.1
     costSell: 200000
     bigSprite: 159
     floorSprite: 152
@@ -792,7 +794,7 @@ items:
     ufopediaType: STR_SINGLESHOT_LASER_PISTOL
     requires:
       - STR_SSP_CRACK
-    size: 0.05
+    size: 0.1
     costSell: 1300
     bigSprite: 158
     floorSprite: 151
@@ -807,7 +809,6 @@ items:
     costThrow:
       energy: 8
     compatibleAmmo:
-      - STR_SINGLESHOT_LASER_AMMO
       - STR_MULTISHOT_LASER_AMMO
     accuracySnap: 65
     accuracyAimed: 75
@@ -830,7 +831,7 @@ items:
       - STR_TODO
       - STR_VENDOR_SSP
       - STR_SINGLESHOT_LASER_PISTOL
-    size: 0.05
+    size: 0.1
     costBuy: 12999
     costSell: 3250
     transferTime: 4
@@ -847,7 +848,6 @@ items:
     costThrow:
       energy: 8
     compatibleAmmo:
-      - STR_SINGLESHOT_LASER_AMMO
       - STR_MULTISHOT_LASER_AMMO
     accuracySnap: 65
     accuracyAimed: 75
@@ -866,10 +866,7 @@ items:
 
   - type: STR_SINGLESHOT_LASER_AMMO
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
-    requiresBuy:
-      - STR_LASER_AMMO_PRINTING
     size: 0.01
-    costBuy: 89
     costSell: 20
     transferTime: 4
     bigSprite: 160
@@ -882,7 +879,7 @@ items:
       energy: 6
     power: 30
     damageBonus:
-      firing: 0.05
+      reactions: 0.05
     damageType: 4
     damageAlter:
       ToWound: 0.025
@@ -893,14 +890,16 @@ items:
     armor: 20
 
   - type: STR_MULTISHOT_LASER_AMMO
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_LOCKED_CATEGORY]
+    requires:
+      - STR_SSP_CRACK
     requiresBuy:
       - STR_TODO
       - STR_VENDOR_SSP
       - STR_SINGLESHOT_LASER_PISTOL
     size: 0.01
     costBuy: 719
-    costSell: 180
+    costSell: 72
     transferTime: 4
     bigSprite: 161
     floorSprite: 154
@@ -912,7 +911,7 @@ items:
       energy: 6
     power: 30
     damageBonus:
-      firing: 0.05
+      reactions: 0.05
     damageType: 4
     damageAlter:
       ToWound: 0.025
@@ -944,7 +943,7 @@ items:
       energy: 8
     power: 19
     damageBonus:
-      firing: 0.05
+      reactions: 0.05
     damageType: 4
     damageAlter:
       ToWound: 0.025
@@ -1016,6 +1015,7 @@ items:
     kneelBonus: 115
     twoHanded: true
     oneHandedPenalty: 85
+    experienceTrainingMode: 5
     attraction: 15
     armor: 120
 
@@ -1023,7 +1023,7 @@ items:
     categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
     requiresBuy:
       - STR_TODO
-    size: 0.2
+    size: 0.25
     costBuy: 259999
     costSell: 200000
     transferTime: 12
@@ -1124,7 +1124,7 @@ items:
     categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_MACHINE_GUNS_CATEGORY]
     requiresBuy:
       - STR_TODO
-    size: 0.4
+    size: 0.5
     costBuy: 279999
     costSell: 200000
     transferTime: 12
@@ -1172,6 +1172,7 @@ items:
     kneelBonus: 150
     twoHanded: true
     oneHandedPenalty: 35
+    experienceTrainingMode: 6
     attraction: 15
     armor: 120
 
@@ -1179,7 +1180,7 @@ items:
     categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_CANNONS_CATEGORY]
     requiresBuy:
       - STR_TODO
-    size: 0.45
+    size: 0.5
     costBuy: 249999
     costSell: 200000
     transferTime: 12
@@ -1225,13 +1226,12 @@ items:
     kneelBonus: 150
     twoHanded: true
     oneHandedPenalty: 35
-    experienceTrainingMode: 19
     attraction: 15
     armor: 120
 
   - type: STR_XN_LASER_SHOTGUN
     categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_SHOTGUNS_CATEGORY]
-    size: 0.2
+    size: 0.25
     costSell: 200000
     bigSprite: 128
     floorSprite: 127
@@ -1340,7 +1340,7 @@ items:
     categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MELEE_CATEGORY]
     requiresBuy:
       - STR_VENDOR_PRINTER
-    size: 0.05
+    size: 0.1
     costBuy: 19
     costSell: 5
     transferTime: 4
@@ -1374,7 +1374,7 @@ items:
       time: 7
       energy: 2
     flatRate: true
-    experienceTrainingMode: 13
+    experienceTrainingMode: 16
     attraction: 15
     armor: 30
 
@@ -1423,7 +1423,7 @@ items:
       energy: 6
     flatRate: true
     clipSize: -1
-    experienceTrainingMode: 13
+    experienceTrainingMode: 16
     attraction: 15
     armor: 30
 
@@ -1524,7 +1524,7 @@ items:
     requiresBuy:
       - STR_VENDOR_BUILDER
       - STR_ELECTRIC_NAILER
-    size: 0.2
+    size: 0.25
     costBuy: 249
     costSell: 60
     transferTime: 4
@@ -1597,7 +1597,7 @@ items:
     requiresBuy:
       - STR_VENDOR_VCM
       - STR_SURVEY_KNOCKER
-    size: 0.15
+    size: 0.25
     costBuy: 149
     costSell: 40
     transferTime: 4
@@ -1715,7 +1715,7 @@ items:
     requiresBuy:
       - STR_VENDOR_PRINTER
       - STR_EXTINGUISHER
-    size: 0.2
+    size: 0.25
     costBuy: 79
     costSell: 20
     transferTime: 4
@@ -1860,7 +1860,7 @@ items:
     categories: [STR_CONVENTIONAL_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
     requiresBuy:
       - STR_VENDOR_MEDI
-    size: 0.025
+    size: 0.05
     costBuy: 24
     costSell: 6
     transferTime: 4
@@ -1874,7 +1874,7 @@ items:
     weight: 2
     costThrow:
       energy: 6
-    heal: 3
+    heal: 2
     woundRecovery: 1
     healthRecovery: 1
     medikitTargetMatrix: 31
@@ -1890,7 +1890,7 @@ items:
     categories: [STR_CONVENTIONAL_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
     requiresBuy:
       - STR_VENDOR_MEDI
-    size: 0.5
+    size: 0.25
     costBuy: 2499
     costSell: 600
     monthlyMaintenance: 350
@@ -1903,9 +1903,9 @@ items:
     weight: 6
     costThrow:
       energy: 10
-    painKiller: 5
-    heal: 5
-    stimulant: 5
+    painKiller: 3
+    heal: 3
+    stimulant: 3
     woundRecovery: 1
     healthRecovery: 3
     stunRecovery: 8
@@ -1976,7 +1976,7 @@ items:
 
   - type: STR_SEC_CYBERNETICS_CODED #TODO resources tech
     categories: [STR_RESOURCES_CATEGORY]
-    size: 0.1
+    size: 0.25
     costSell: 2500
     transferTime: 4
     # bigSprite: ?
@@ -1991,7 +1991,7 @@ items:
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
       - STR_TODO
-    size: 0.1
+    size: 0.25
     costBuy: 24999
     costSell: 6250
     transferTime: 4
@@ -2023,7 +2023,7 @@ items:
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
       - STR_TODO
-    size: 0.25
+    size: 0.5
     costBuy: 49
     costSell: -100
     transferTime: 4
@@ -2139,7 +2139,7 @@ items:
     categories: [STR_OUTFITS_CATEGORY, STR_SECURITY_CATEGORY]
     requiresBuy:
       - STR_TODO
-    size: 0.25
+    size: 0.5
     costBuy: 11999
     costSell: 3000
     transferTime: 4
@@ -2367,6 +2367,34 @@ items:
     recoveryTransformations:
       STR_BIOMASS: [1]
     armor: 30
+
+#enemy drones
+  - type: STR_DRONE_ENEMY_HYBRID
+    categories: [STR_DEBUG_CATEGORY]
+    recoveryTransformations:
+      STR_DRONE_HYBRID_ITEM: [1]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 4
+
+  - type: STR_DRONE_ENEMY_HUMAN
+    categories: [STR_DEBUG_CATEGORY]
+    recoveryTransformations:
+      STR_DRONE_HUMAN_ITEM: [1]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 4
+
+  - type: STR_DRONE_ENEMY_SHARK
+    categories: [STR_DEBUG_CATEGORY]
+    recoveryTransformations:
+      STR_DRONE_SHARK_ITEM: [1]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 4
 
 #civilians
   - type: STR_HUMAN_M0_CIVILIAN_CORPSE

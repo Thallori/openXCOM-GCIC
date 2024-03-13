@@ -42,7 +42,7 @@ X-Com Files/Final Mod Pack		[mod]
   Crossbow				[redraw]
   Prison Facility			[redraw]
   Punch!				[wholecloth]
-  Magnum Projectile			[wholecloth]
+  Bullet Animations			[wholecloth]
   Spray Sound				[wholecloth]
   Flying Drone Chassis			[cleanup, recolour]	(xenonauts)
   Civilians				[wholecloth]
@@ -72,6 +72,7 @@ From the Apocalypse			[mod]
   Medikit				[touchup, recolour]
   Motion Sensor				[wholecloth]
   Soldier/Base Stats			[recolour]
+  Bite					[wholecloth]
 
 Delicious Colors			[mod]
  RSSWizard				[author]
@@ -105,13 +106,13 @@ X-Piratez
  Item and facility based income/storage mechanics. Balancing the metaprogression around money and number of scientists. Purchasing based progression. Different bonuses depending on starting location. Different soldier types. Negative score missions. Enviromental effects. Energy management. Freshness. Hacking. Space.
 
 Reaver's Harmony
- Geoscape ship mechanics, ship upgrades being compatible with weapon slots. Salvaging equipment into components. Scout reports.
+ Geoscape ship mechanics, ship upgrades being compatible with weapon slots. Salvaging equipment into components.
 
 From the Ashes
  Soldier specialization. Reminding me how much more fun base defense missions are when you don't build defensively.
 
 From the Apocalypse
- Aircars.
+ Aircars. Happy gumball techno future. 
 
 Xeno Operations
  Highlighted choice for earning money from engineering projects.

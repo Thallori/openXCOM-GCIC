@@ -15,6 +15,14 @@ manufacture:
     cost: 20
     refund: true
 
+  - name: STR_SINGLESHOT_LASER_AMMO
+    category: STR_AMMO_MANUCAT
+    requires:
+      - STR_LASER_AMMO_PRINTING
+    time: 4
+    cost: 80
+    refund: true
+
   - name: STR_PIPEBOMB
     category: STR_EXPLOSIVES_MANUCAT
     requires:
@@ -47,7 +55,7 @@ manufacture:
     producedItems:
       STR_SINGLESHOT_LASER_PISTOL_ELERIUM: 1
 
-#drones
+#expansions
   - name: STR_SCIENTIST_MANU
     category: STR_EXPANSION_MANUCAT
     requires:
@@ -75,46 +83,49 @@ manufacture:
     category: STR_CRACKING_MANUCAT
     requires:
       - STR_DRONE_CRACKING
+      - STR_DRONE_HYBRID_ITEM
     time: 1
     refund: true
     requiredItems:
       STR_DRONE_HYBRID_ITEM: 1
     spawnedPersonType: STR_CRACKED_HYBRID_DRONE
     randomProducedItems:
-      - [70, {}] #empty
-      - [30, {STR_HYBRID_DATA: 1}]
+      - [80, {}] #empty
+      - [20, {STR_HYBRID_DATA: 1}]
     producedItems: {} #empty
 
   - name: STR_CRACKING_HUMAN_DRONE
     category: STR_CRACKING_MANUCAT
     requires:
       - STR_DRONE_CRACKING
+      - STR_DRONE_HUMAN_ITEM
     time: 1
     refund: true
     requiredItems:
       STR_DRONE_HUMAN_ITEM: 1
     spawnedPersonType: STR_CRACKED_HUMAN_DRONE
     randomProducedItems:
-      - [70, {}] #empty
-      - [30, {STR_HUMAN_DATA: 1}]
+      - [80, {}] #empty
+      - [20, {STR_HUMAN_DATA: 1}]
     producedItems: {} #empty
 
   - name: STR_CRACKING_SHARK_DRONE
     category: STR_CRACKING_MANUCAT
     requires:
       - STR_DRONE_CRACKING
+      - STR_DRONE_SHARK_ITEM
     time: 1
     refund: true
     requiredItems:
       STR_DRONE_SHARK_ITEM: 1
     spawnedPersonType: STR_CRACKED_SHARK_DRONE
     randomProducedItems:
-      - [70, {}] #empty
-      - [30, {STR_SHARK_DATA: 1}]
+      - [80, {}] #empty
+      - [20, {STR_SHARK_DATA: 1}]
     producedItems: {} #empty
 
 #cracking
-  - name: STR_45_PISTOL_CODED_DECODED
+  - name: STR_45_PISTOL_DECODED
     category: STR_CRACKING_MANUCAT
     requires:
       - STR_45_PISTOL_CODED

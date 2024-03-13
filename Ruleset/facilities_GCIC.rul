@@ -34,6 +34,7 @@ facilities:
     monthlyCost: 50
     storage: 20
     personnel: 8
+    aliens: 1
     manaRecoveryPerDay: 1
     mapName: XBASE_07
 
@@ -52,13 +53,13 @@ facilities:
     buildCost: 150000
     refundValue: 110000
     monthlyCost: 450
-    storage: 75
+    storage: 50
     mapName: XBASE_07
 
   - type: STR_STOREROOM
     requires:
       - STR_VENDOR_BUILDER
-      - STR_SJB_LICENSE
+      - STR_STOREROOM
     leavesBehindOnSell:
       - STR_STORAGE_1
     fakeUnderwater: 0

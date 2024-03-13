@@ -23,8 +23,10 @@
     listOrder: 70
   - type: STR_LAUNCHERS_CATEGORY
     listOrder: 80
+  - type: STR_ROCKETS_CATEGORY
+    listOrder: 82
   - type: STR_BOWS_CATEGORY
-    listOrder: 80
+    listOrder: 85
   - type: STR_EXPLOSIVES_CATEGORY
     listOrder: 90
   - type: STR_PSI_CATEGORY
@@ -41,20 +43,27 @@
     listOrder: 370
   - type: STR_SPORT_CATEGORY
     listOrder: 380
+    hidden: true
   - type: STR_INFILTRATION_CATEGORY
     listOrder: 390
   - type: STR_CONVENTIONAL_CATEGORY
     listOrder: 400
+    hidden: true
   - type: STR_SECURITY_CATEGORY
     listOrder: 410
+    hidden: true
   - type: STR_MILTEC_CATEGORY
     listOrder: 420
+    hidden: true
   - type: STR_EXOTIC_CATEGORY
     listOrder: 430
+    hidden: true
   - type: STR_VACUUM_RATED_CATEGORY
     listOrder: 440
+    hidden: true
   - type: STR_AQUATIC_CATEGORY
     listOrder: 450
+    hidden: true
   - type: STR_LOCKED_CATEGORY
     listOrder: 590
   # - type: STR_KINETIC_CATEGORY
@@ -77,7 +86,10 @@
     listOrder: 860
   - type: STR_BUILT_INS_CATEGORY
     listOrder: 997
+    hidden: true
   - type: STR_VOIDS_CATEGORY
     listOrder: 998
+    hidden: true
   - type: STR_DEBUG_CATEGORY
     listOrder: 999
+    hidden: true

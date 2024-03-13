@@ -15,7 +15,7 @@ units:
       # mana: 25
 
   - type: STR_DRONE_HYBRID_1
-    race: STR_HYBRID
+    race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_HYBRID_ITEM
     stats:
       tu: 45
@@ -50,7 +50,7 @@ units:
         - STR_KNOCK_FLARE_AMMO
 
   - type: STR_DRONE_HUMAN_1
-    race: STR_HUMAN
+    race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_HUMAN_ITEM
     stats:
       tu: 45
@@ -73,7 +73,7 @@ units:
     builtInWeaponSets: *drone1Tools
 
   - type: STR_DRONE_SHARK_1
-    race: STR_SHARK
+    race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_SHARK_ITEM
     stats:
       tu: 45
@@ -98,7 +98,7 @@ units:
 #criminal faction
   - type: STR_BOOSTER_PUBLIC
     race: STR_IRONEYES
-    rank: STR_LIVE_SOLDIER
+    rank: STR_RANK_5
     liveAlien: STR_BOUNTY_1
     stats:
       tu: 45
@@ -128,7 +128,7 @@ units:
 #hacker faction
   - type: STR_FREELANCER_PRIVATE
     race: STR_NETRUNNERS
-    rank: STR_LIVE_SOLDIER
+    rank: STR_RANK_5
     stats:
       tu: 50
       stamina: 50
@@ -157,7 +157,7 @@ units:
 #security faction
   - type: STR_SSPGUARD_PRIVATE
     race: STR_SSP
-    rank: STR_LIVE_SOLDIER
+    rank: STR_RANK_5
     liveAlien: STR_SSPGUARD_PRIVATE
     stats:
       tu: 55
@@ -186,9 +186,8 @@ units:
 
 #enemy drones
   - type: STR_DRONE_ENEMY_HYBRID
-    race: STR_HYBRID
-    rank: STR_ENEMY_DRONE
-    liveAlien: STR_DRONE_HYBRID_ITEM
+    race: STR_RACE_DRONE
+    rank: STR_RANK_DRONE
     stats:
       tu: 45
       stamina: 40
@@ -202,7 +201,7 @@ units:
       psiStrength: 0
       psiSkill: 0
       mana: 25
-    armor: STR_PLEX_DRONE_HYBRID_ARMOR
+    armor: STR_DRONEHYBRID_ARMOR
     standHeight: 22
     kneelHeight: 14
     moraleLossWhenKilled: 10
@@ -211,9 +210,8 @@ units:
     deathSound: [10]
 
   - type: STR_DRONE_ENEMY_HUMAN
-    race: STR_HUMAN
-    rank: STR_ENEMY_DRONE
-    liveAlien: STR_DRONE_HUMAN_ITEM
+    race: STR_RACE_DRONE
+    rank: STR_RANK_DRONE
     stats:
       tu: 45
       stamina: 45
@@ -227,7 +225,7 @@ units:
       psiStrength: 0
       psiSkill: 0
       mana: 25
-    armor: STR_PLEX_DRONE_HUMAN_ARMOR
+    armor: STR_DRONEHUMAN_ARMOR
     standHeight: 22
     kneelHeight: 14
     moraleLossWhenKilled: 10
@@ -236,9 +234,8 @@ units:
     deathSound: [41, 42, 43]
 
   - type: STR_DRONE_ENEMY_SHARK
-    race: STR_SHARK
-    rank: STR_ENEMY_DRONE
-    liveAlien: STR_DRONE_SHARK_ITEM
+    race: STR_RACE_DRONE
+    rank: STR_RANK_DRONE
     stats:
       tu: 45
       stamina: 40
@@ -252,7 +249,7 @@ units:
       psiStrength: 0
       psiSkill: 0
       mana: 25
-    armor: STR_PLEX_DRONE_SHARK_ARMOR
+    armor: STR_DRONESHARK_ARMOR
     standHeight: 22
     kneelHeight: 14
     moraleLossWhenKilled: 10
@@ -262,7 +259,7 @@ units:
 
 #clients
   - type: STR_CLIENT_1
-    race: STR_CIVILIAN
+    race: STR_RACE_CLIENT
     civilianRecoveryType: STR_BRAND_LOYALTY
     vip: true
     ignoredByAI: true

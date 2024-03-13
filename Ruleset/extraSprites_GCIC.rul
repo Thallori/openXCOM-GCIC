@@ -61,7 +61,7 @@ extraSprites:
       128: Resources/Items/Laser/xn_shotgun_bigob.png
       129: Resources/Items/Laser/xn_smg_bigob.png
       130: Resources/Items/Laser/xn_sniper_bigob.png
-      131: Resources/Items/Builtins/sharkattack_bigob.png
+      131: Resources/Items/Builtins/bite_bigob.png
       132: Resources/Items/Laser/xn_cannon_bigob.png
       133: Resources/Items/Containers/lockbox_bigob.png
       134: Resources/UI/Voids/null_1x2.png
@@ -398,6 +398,14 @@ extraSprites:
     height: 680
     files:
       0: Resources/Factions/SSP/sspguard_sprite.png
+
+#enemy drones
+  - typeSingle: DRONEHYBRID.SPK
+    fileSingle: Resources/Factions/Drones/dronehybrid_inventory.png
+  - typeSingle: DRONEHUMAN.SPK
+    fileSingle: Resources/Factions/Drones/dronehuman_inventory.png
+  - typeSingle: DRONESHARK.SPK
+    fileSingle: Resources/Factions/Drones/droneshark_inventory.png
 
 #clients
   - typeSingle: CLIENT_1.SPK

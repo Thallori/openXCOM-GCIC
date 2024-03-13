@@ -337,6 +337,8 @@ ufopaedia:
     type_id: 6
 
   - id: STR_STOREROOM
+    requires:
+      - STR_STOREROOM
     text: STR_STOREROOM_UFOPEDIA
     section: STR_BASE_FACILITIES_UC
     type_id: 6
@@ -580,17 +582,15 @@ ufopaedia:
     type_id: 5
 
 # builtins
-  # - id: STR_UNARMED
-  #   text: STR_UNARMED_UFOPEDIA
-  #   section: STR_DRONES_UC
-  #   type_id: 4
+  - id: STR_UNARMED
+    text: STR_UNARMED_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 4
 
-  # - id: STR_SHARKATTACK
-  #   requires:
-  #     - STR_DRONE_SHARK_ITEM
-  #   text: STR_SHARKATTACK_UFOPEDIA
-  #   section: STR_DRONES_UC
-  #   type_id: 4
+  - id: STR_SHARKATTACK
+    text: STR_SHARKATTACK_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 4
 
 #equipment
 # kinetic
@@ -982,15 +982,6 @@ ufopaedia:
     type_id: 5
 
 # ssp
-  # - id: STR_SSP_NETWORK
-  #   requires:
-  #     - STR_SSP_NETWORK
-  #   text: STR_SSP_NETWORK_UFOPEDIA
-  #   section: STR_COMPETITORS_UC
-  #   type_id: 7
-  #   text_width: 180
-  #   image_id: VENDOR_SSP_CPAL
-
   - id: STR_SSPGUARDS
     requires:
       - STR_SSPGUARD_PRIVATE
@@ -1036,6 +1027,13 @@ ufopaedia:
     image_id: LIQUIDITY_CPAL
 
 #accolades
+  - id: STR_ACCOLADES_TECH
+    text: STR_ACCOLADES_TECH_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
   - id: STR_MEDAL_ORIGINAL8_NAME
     text: STR_MEDAL_ORIGINAL8_UFOPEDIA
     section: STR_COMMENDATIONS_UC
@@ -1076,6 +1074,30 @@ ufopaedia:
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
 
+  - id: STR_MEDAL_AQUANAUT_NAME
+    text: STR_MEDAL_AQUANAUT_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_ASTRONAUT_NAME
+    text: STR_MEDAL_ASTRONAUT_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_INFILTRATOR_NAME
+    text: STR_MEDAL_INFILTRATOR_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
   - id: STR_MEDAL_CAMPAIGN_RIBBON_NAME
     text: STR_MEDAL_CAMPAIGN_RIBBON_UFOPEDIA
     section: STR_COMMENDATIONS_UC
@@ -1092,8 +1114,344 @@ ufopaedia:
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
 
+  - id: STR_MEDAL_BOUNTYHUNTER_NAME
+    text: STR_MEDAL_BOUNTYHUNTER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_SLAVEKILLS_NAME
+    text: STR_MEDAL_SLAVEKILLS_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_MISSION_KILLS_5_NAME
+    text: STR_MEDAL_MISSION_KILLS_5_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_MISSION_KILLS_11_NAME
+    text: STR_MEDAL_MISSION_KILLS_11_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_DBLKILL_NAME
+    text: STR_MEDAL_DBLKILL_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_QUADKILL_NAME
+    text: STR_MEDAL_QUADKILL_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_7V7KILL_NAME
+    text: STR_MEDAL_7V7KILL_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_CHAMPION_NAME
+    text: STR_MEDAL_CHAMPION_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_WHIRLWIND_NAME
+    text: STR_MEDAL_WHIRLWIND_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_REACTIONFIRE_NAME
+    text: STR_MEDAL_REACTIONFIRE_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_CRIMSON_HEART_NAME
+    text: STR_MEDAL_CRIMSON_HEART_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_HEALER_NAME
+    text: STR_MEDAL_HEALER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_GLOBETROTTER_NAME
+    text: STR_MEDAL_GLOBETROTTER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_CIV_KILLS_NAME
+    text: STR_MEDAL_CIV_KILLS_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_BETRAYER_NAME
+    text: STR_MEDAL_BETRAYER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_LONESURVIVOR_NAME
+    text: STR_MEDAL_LONESURVIVOR_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_IRONMAN_NAME
+    text: STR_MEDAL_IRONMAN_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
   - id: STR_MEDAL_WEAPON_PROFICIENCY_NAME
     text: STR_MEDAL_WEAPON_PROFICIENCY_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_MONSTER_NAME
+    text: STR_MEDAL_MONSTER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_WRESTLER_NAME
+    text: STR_MEDAL_WRESTLER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_MAULER_NAME
+    text: STR_MEDAL_MAULER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_HUNTER_KILLER_NAME
+    text: STR_MEDAL_HUNTER_KILLER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_GUNSLINGER_NAME
+    text: STR_MEDAL_GUNSLINGER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_SHOTGUN_SURGEON_NAME
+    text: STR_MEDAL_SHOTGUN_SURGEON_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_ASSAULTER_NAME
+    text: STR_MEDAL_ASSAULTER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_TROOPER_NAME
+    text: STR_MEDAL_TROOPER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_SNIPER_NAME
+    text: STR_MEDAL_SNIPER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_GUNNER_NAME
+    text: STR_MEDAL_GUNNER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_CANNONEER_NAME
+    text: STR_MEDAL_CANNONEER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_PURIFIER_NAME
+    text: STR_MEDAL_PURIFIER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_BOMBARDIER_NAME
+    text: STR_MEDAL_BOMBARDIER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_ROCKET_SCIENTIST_NAME
+    text: STR_MEDAL_ROCKET_SCIENTIST_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_GRENADIER_NAME
+    text: STR_MEDAL_GRENADIER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_ARCHER_NAME
+    text: STR_MEDAL_ARCHER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_WARRIOR_NAME
+    text: STR_MEDAL_WARRIOR_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_TECHNICIAN_NAME
+    text: STR_MEDAL_TECHNICIAN_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_TRADITIONALIST_NAME
+    text: STR_MEDAL_TRADITIONALIST_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_PRIMAL_NAME
+    text: STR_MEDAL_PRIMAL_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_INCAPACITATOR_NAME
+    text: STR_MEDAL_INCAPACITATOR_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_TASEMASTER_NAME
+    text: STR_MEDAL_TASEMASTER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_SLEEPER_NAME
+    text: STR_MEDAL_SLEEPER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_SORCERER_NAME
+    text: STR_MEDAL_SORCERER_UFOPEDIA
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_MEDAL_REVOLVINGDOOR_NAME
+    text: STR_MEDAL_REVOLVINGDOOR_UFOPEDIA
     section: STR_COMMENDATIONS_UC
     hiddenCommendation: true
     type_id: 7
