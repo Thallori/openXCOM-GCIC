@@ -5,8 +5,6 @@
 
 missionScripts:
   - type: Rescue1Early
-    # researchTriggers:
-    #   STR_TODO: false
     lastMonth: 0
     missionWeights:
       0:
@@ -16,8 +14,8 @@ missionScripts:
     randomDelay: 7200
 
   - type: Rescue1a
-    # researchTriggers:
-    #   STR_TODO: false
+    researchTriggers:
+      STR_RAPID_RESPONSE_MISSIONS: false
     firstMonth: 1
     targetBaseOdds: 100
     missionWeights:
@@ -65,6 +63,27 @@ missionScripts:
     missionWeights:
       0:
         STR_RESCUE_1: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: RescueRRa
+    researchTriggers:
+      STR_RAPID_RESPONSE_MISSIONS: true
+    missionWeights:
+      0:
+        STR_RESCUE_RR: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: RescueRRb
+    researchTriggers:
+      STR_RAPID_RESPONSE_MISSIONS: true
+    executionOdds: 74
+    missionWeights:
+      0:
+        STR_RESCUE_RR: 100
     useTable: false
     startDelay: 30
     randomDelay: 43000

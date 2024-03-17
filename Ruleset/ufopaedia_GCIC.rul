@@ -146,6 +146,15 @@ ufopaedia:
     text_width: 180
     image_id: OPERATIONS1_CPAL
 
+  - id: STR_RAPID_RESPONSE_MISSIONS
+    requires:
+      - STR_RAPID_RESPONSE_MISSIONS
+    text: STR_RAPID_RESPONSE_MISSIONS_UFOPEDIA
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: OPERATIONS1_CPAL
+
   - id: STR_SECONDARY_OPERATIONS
     requires:
       - STR_SECONDARY_OPERATIONS
@@ -408,9 +417,25 @@ ufopaedia:
       width: 140
       height: 60
 
+  - id: STR_HD_HOVERBIKE
+    text: STR_HD_HOVERBIKE_UFOPEDIA
+    section: STR_APS_CRAFT_UC
+    type_id: 1
+    image_id: CRAFT_HOVERBIKE_CPAL
+    rect_text:
+      x: 5
+      y: 45
+      width: 145
+      height: 100
+    rect_stats:
+      x: 5
+      y: 140
+      width: 140
+      height: 60
+
   - id: STR_VCM_BICUBE
-    requires:
-      - STR_VENDOR_VCM
+    # requires:
+    #   - STR_VENDOR_VCM
     text: STR_VCM_BICUBE_UFOPEDIA
     section: STR_APS_CRAFT_UC
     type_id: 1
@@ -614,6 +639,12 @@ ufopaedia:
     section: STR_EQUIPMENT_UC
     type_id: 4
 
+  - id: STR_9MM_AMMO
+    requires:
+      - STR_9MM_PISTOL
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
   - id: STR_9MM_RIFLE
     requires:
       - STR_9MM_RIFLE
@@ -621,9 +652,9 @@ ufopaedia:
     section: STR_EQUIPMENT_UC
     type_id: 4
 
-  - id: STR_9MM_AMMO
+  - id: STR_9MM_RIFLE_AMMO
     requires:
-      - STR_9MM_AMMO
+      - STR_9MM_RIFLE
     section: STR_NOT_AVAILABLE
     type_id: 4
 
@@ -657,7 +688,7 @@ ufopaedia:
 
   - id: STR_TASER_AMMO
     requires:
-      - STR_TASER_AMMO
+      - STR_TASER_PISTOL
     section: STR_NOT_AVAILABLE
     type_id: 4
 
@@ -671,13 +702,13 @@ ufopaedia:
 
   - id: STR_DART_AMMO0
     requires:
-      - STR_DART_AMMO0
+      - STR_DART_PISTOL
     section: STR_NOT_AVAILABLE
     type_id: 4
 
   - id: STR_DART_AMMO1
     requires:
-      - STR_DART_AMMO1
+      - STR_DART_PISTOL
     section: STR_NOT_AVAILABLE
     type_id: 4
 
@@ -697,7 +728,7 @@ ufopaedia:
 
   - id: STR_MULTISHOT_LASER_AMMO
     requires:
-      - STR_MULTISHOT_LASER_AMMO
+      - STR_SINGLESHOT_LASER_PISTOL
     section: STR_NOT_AVAILABLE
     type_id: 4
 
@@ -864,6 +895,13 @@ ufopaedia:
     section: STR_RESOURCES_UC
     type_id: 4
 
+  - id: STR_CONSUMER_CYBERNETICS
+    requires:
+      - STR_CONSUMER_CYBERNETICS
+    text: STR_CONSUMER_CYBERNETICS_UFOPEDIA
+    section: STR_RESOURCES_UC
+    type_id: 4
+
   - id: STR_SJB_LICENSE
     requires:
       - STR_SJB_LICENSE
@@ -959,6 +997,33 @@ ufopaedia:
     text: STR_BOOSTER_ARMOR_UFOPEDIA
     section: STR_COMPETITORS_UC
     type_id: 5
+
+  - id: STR_RIPPERS
+    requires:
+      - STR_RIPPER_PRIVATE
+    text: STR_RIPPERS_UFOPEDIA
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: RIPPER_CPAL
+
+  - id: STR_RIPPER_ARMOR
+    requires:
+      - STR_RIPPER_ARMOR
+    text: STR_RIPPER_ARMOR_UFOPEDIA
+    section: STR_COMPETITORS_UC
+    type_id: 5
+
+  - id: STR_RIPP
+    requires:
+      - STR_RIPP
+    section: STR_COMPETITORS_UC
+    type_id: 4
 
 # netrunners
   - id: STR_FREELANCERS

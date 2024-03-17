@@ -34,7 +34,9 @@ soldierTransformation:
       - STR_SPECIALIZATION_TRAINING
     percentGainedStatChange:
       mana: -100
-    cost: 25000
+    cost: 5000
+    requiredItems:
+      STR_CONSUMER_CYBERNETICS: 3
     recoveryTime: 7
     keepSoldierArmor: true
     allowsLiveSoldiers: true
@@ -53,7 +55,9 @@ soldierTransformation:
       - STR_SPECIALIZATION_TRAINING
     percentGainedStatChange:
       mana: -100
-    cost: 25000
+    cost: 5000
+    requiredItems:
+      STR_CONSUMER_CYBERNETICS: 3
     recoveryTime: 7
     keepSoldierArmor: true
     allowsLiveSoldiers: true
@@ -72,7 +76,9 @@ soldierTransformation:
       - STR_SPECIALIZATION_TRAINING
     percentGainedStatChange:
       mana: -100
-    cost: 25000
+    cost: 5000
+    requiredItems:
+      STR_CONSUMER_CYBERNETICS: 3
     recoveryTime: 7
     keepSoldierArmor: true
     allowsLiveSoldiers: true

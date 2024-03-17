@@ -1,10 +1,22 @@
 
 manufacture:
+#tasks
   - name: STR_MONEY_1_MANU
-    category: STR_TASKS_MANUCAT
+    category: STR_PROJECTS_MANUCAT
     time: 1
     producedItems:
       STR_MONEY_1: 1
+
+#projects
+  - name: STR_RRM_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_RRM_LOCK
+    time: 1
+    requiredItems:
+      STR_BRAND_LOYALTY: 8
+    producedItems:
+      STR_RRM_ITEM: 1
 
 #ammo
   - name: STR_45_AMMO
@@ -125,6 +137,21 @@ manufacture:
     producedItems: {} #empty
 
 #cracking
+  - name: STR_CONSUMER_CYBERNETICS_DECODED
+    category: STR_CRACKING_MANUCAT
+    requires:
+      - STR_CONSUMER_CYBERNETICS_CODED
+      - STR_LOCAL_INTERFACE
+      - STR_BIOCODING
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
+    time: 48
+    refund: true
+    requiredItems:
+      STR_CONSUMER_CYBERNETICS_CODED: 1
+    producedItems:
+      STR_CONSUMER_CYBERNETICS: 1
+
   - name: STR_45_PISTOL_DECODED
     category: STR_CRACKING_MANUCAT
     requires:
@@ -271,11 +298,12 @@ manufacture:
       STR_CRIMINAL_CONTAINER_1: 1
     producedItems: {} #empty
     randomProducedItems:
-      - [1, {STR_BUSBOX_PISTOL: 3, STR_COMBALL_AMMO: 3}]
-      - [1, {STR_BUSBOX_PISTOL: 3, STR_PAPERSHOT_AMMO: 3}]
-      - [1, {STR_9MM_PISTOL: 1, STR_9MM_AMMO: 4}]
-      - [1, {STR_9MM_RIFLE: 1, STR_9MM_AMMO: 3}]
-      - [1, {STR_DISPOSABLE_SMG: 3}]
+      - [20, {STR_BUSBOX_PISTOL: 3, STR_COMBALL_AMMO: 3}]
+      - [20, {STR_BUSBOX_PISTOL: 3, STR_PAPERSHOT_AMMO: 3}]
+      - [20, {STR_9MM_PISTOL: 1, STR_9MM_AMMO: 4}]
+      - [10, {STR_9MM_SMG: 1, STR_9MM_SMG_AMMO: 4}]
+      - [20, {STR_9MM_RIFLE: 1, STR_9MM_RIFLE_AMMO: 4}]
+      - [20, {STR_DISPOSABLE_SMG: 3}]
 
   - name: STR_OPEN_XN_CONTAINER_1
     category: STR_CONTAINERS_MANUCAT

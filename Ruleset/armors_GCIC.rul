@@ -21,7 +21,7 @@ armors:
       - STR_NULL_BACK_PACK
     allowsKneeling: true
     visibilityAtDay: 30
-    visibilityAtDark: 12
+    visibilityAtDark: 11
     personalLight: 5
     frontArmor: 2
     sideArmor: 2
@@ -100,7 +100,7 @@ armors:
       - STR_NULL_BACK_PACK
     allowsKneeling: true
     visibilityAtDay: 30
-    visibilityAtDark: 9
+    visibilityAtDark: 8
     personalLight: 5
     frontArmor: 2
     sideArmor: 2
@@ -150,7 +150,7 @@ armors:
       - STR_NULL_BACK_PACK
     allowsKneeling: true
     visibilityAtDay: 30
-    visibilityAtDark: 9
+    visibilityAtDark: 8
     personalLight: 5
     frontArmor: 2
     sideArmor: 2
@@ -187,7 +187,7 @@ armors:
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDay: 30
-    visibilityAtDark: 12
+    visibilityAtDark: 11
     personalLight: 5
     camouflageAtDay: -2
     camouflageAtDark: -2
@@ -254,7 +254,7 @@ armors:
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDay: 30
-    visibilityAtDark: 9
+    visibilityAtDark: 8
     personalLight: 5
     camouflageAtDay: -2
     camouflageAtDark: -2
@@ -301,7 +301,7 @@ armors:
     specialWeapon: STR_SHARKATTACK
     allowsKneeling: true
     visibilityAtDay: 30
-    visibilityAtDark: 9
+    visibilityAtDark: 8
     personalLight: 5
     camouflageAtDay: -2
     camouflageAtDark: -2
@@ -345,10 +345,10 @@ armors:
     stats:
       tu: -5
       stamina: -5
-    frontArmor: 20
-    sideArmor: 20
-    rearArmor: 20
-    underArmor: 20
+    frontArmor: 18
+    sideArmor: 18
+    rearArmor: 18
+    underArmor: 18
     damageModifier: &OrganicAquavestResists
       - 1.0 #0 none
       - 0.7 #1 kinetic
@@ -402,10 +402,10 @@ armors:
     stats:
       tu: -5
       stamina: -5
-    frontArmor: 20
-    sideArmor: 20
-    rearArmor: 20
-    underArmor: 20
+    frontArmor: 18
+    sideArmor: 18
+    rearArmor: 18
+    underArmor: 18
     damageModifier: *OrganicAquavestResists
     meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical
@@ -439,10 +439,10 @@ armors:
     stats:
       tu: -5
       stamina: -5
-    frontArmor: 20
-    sideArmor: 20
-    rearArmor: 20
-    underArmor: 20
+    frontArmor: 18
+    sideArmor: 18
+    rearArmor: 18
+    underArmor: 18
     damageModifier: *OrganicAquavestResists
     meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical
@@ -539,7 +539,67 @@ armors:
     sideArmor: 6
     rearArmor: 6
     underArmor: 6
-    damageModifier: *OrganicUnarmoredResists
+    damageModifier: 
+      - 1.0 #0 none
+      - 1.0 #1 kinetic
+      - 1.4 #2 incendiary
+      - 1.0 #3 concussive
+      - 1.0 #4 radiant
+      - 1.0 #5 plasma
+      - 1.0 #6 blunt
+      - 1.0 #7 mechanical
+      - 1.0 #8 chemical
+      - 3.5 #9 smoke
+      - 1.0 #10 electric
+      - 1.0 #11 sonic
+      - 1.0 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: &StunRecoveryEnemy
+        flatHundred: 0
+      energy: *EnergyRecoveryHumanTypical
+    loftempsSet: [ 3 ]
+
+  - type: STR_RIPPER_ARMOR
+    spriteInv: RIPPER.SPK
+    spriteSheet: RIPPER.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorHuman
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorHuman
+    forcedTorso: 1
+    corpseBattle:
+      - STR_RIPPER_CORPSE
+    specialWeapon: STR_RIPP
+    allowsKneeling: true
+    visibilityAtDay: 30
+    visibilityAtDark: 12
+    frontArmor: 6
+    sideArmor: 6
+    rearArmor: 6
+    underArmor: 6
+    damageModifier:
+      - 1.0 #0 none
+      - 1.0 #1 kinetic
+      - 1.4 #2 incendiary
+      - 1.0 #3 concussive
+      - 1.0 #4 radiant
+      - 1.0 #5 plasma
+      - 1.0 #6 blunt
+      - 1.0 #7 mechanical
+      - 1.0 #8 chemical
+      - 1.5 #9 smoke
+      - 1.0 #10 electric
+      - 1.0 #11 sonic
+      - 1.0 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
     meleeDodge: *MeleeDodgeTypical
     psiDefence: *PsiDefenseTypical
     recovery:
@@ -674,7 +734,7 @@ armors:
     spriteHairGroup: 9
     spriteHairColor: *SpriteHairColorHuman
     corpseBattle:
-      - STR_HUMAN_M0_CIVILIAN_CORPSE
+      - STR_CLIENT_1_CORPSE
     allowsKneeling: false
     alwaysVisible: true
     visibilityAtDay: 30
@@ -694,17 +754,17 @@ armors:
       morale: *MoraleRecoveryTypical
     loftempsSet: [ 3 ]
 
-  - type: STR_HUMAN_M_CIVILIAN_ARMOR
-    spriteInv: HUMAN_CIVILIAN_M0.SPK
-    spriteSheet: HUMAN_CIVILIAN_M0.PCK
-    spriteFaceGroup: 6
-    spriteFaceColor: *SpriteFaceColorHuman
-    spriteHairGroup: 9
-    spriteHairColor: *SpriteHairColorHuman
+  - type: STR_CLIENT_RR_ARMOR
+    spriteInv: CLIENT_RR.SPK
+    spriteSheet: CLIENT_RR.PCK
+    spriteFaceGroup: 10
+    spriteFaceColor: [160, 160, 161, 161, 162, 162, 163, 163]
+    spriteHairGroup: 6
+    spriteHairColor: [96, 96, 160, 160, 112, 112, 240, 240]
     corpseBattle:
-      - STR_HUMAN_M0_CIVILIAN_CORPSE
-    # specialWeapon: STR_UNARMED
+      - STR_CLIENT_RR_CORPSE
     allowsKneeling: false
+    alwaysVisible: true
     visibilityAtDay: 30
     visibilityAtDark: 9
     frontArmor: 2

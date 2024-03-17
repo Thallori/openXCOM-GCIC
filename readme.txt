@@ -68,11 +68,11 @@ From the Apocalypse			[mod]
   Aircar Map Sprites			[wholecloth, recolour]	(original)
   Tech, Bath, and Wall Map Sprites	[wholecloth, touchup]	(original)
   Hologram Sprites			[wholecloth]		(original)
-  Civilians				[wholecloth]		(original)
+  Civilians				[wholecloth, remix]	(original)
   Medikit				[touchup, recolour]
   Motion Sensor				[wholecloth]
   Soldier/Base Stats			[recolour]
-  Bite					[wholecloth]
+  Bite Sprite				[wholecloth]
 
 Delicious Colors			[mod]
  RSSWizard				[author]

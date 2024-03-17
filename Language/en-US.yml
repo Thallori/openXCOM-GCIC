@@ -55,7 +55,7 @@ en-US:
   STR_MAXIMUM_SPEED_UC: "MAX SPEED>{ALT}{0}{ALT}"
   STR_ACCELERATION: "ACCELERATION>{ALT}{0}{ALT}"
   STR_FUEL_CAPACITY: "CHARGE CAPACITY>{ALT}{0}{ALT}"
-  STR_WEAPON_PODS: "MODIFICATION SLOTS>{ALT}{0}{ALT}"
+  STR_WEAPON_PODS: "MOD SLOTS>{ALT}{0}{ALT}"
   STR_DAMAGE_CAPACITY_UC: "HULL RATING>{ALT}{0}{ALT}"
   STR_CARGO_SPACE: "PASSENGERS>{ALT}{0}{ALT}"
   STR_HWP_CAPACITY: "BULK CARGO>{ALT}{0}{ALT}"
@@ -108,6 +108,12 @@ en-US:
   STR_UFO_CRASH_LANDS: "USO CRASH LANDS!"
   STR_UFO_RETURN_FIRE: "USO RETURNS FIRE!"
   STR_HYPER_WAVE_TRANSMISSIONS_ARE_DECODED: "HYPERWAVE TRANSMISSIONS DECODED"
+
+  STR_COWARDLY: "Hesitant (-50%)"
+  STR_NORMAL: "Steady"
+  STR_BOLD: "Eager (+50%)"
+  STR_VERY_BOLD: "Enthusiastic (+100%)"
+
   STR_XCOM: "GCIC"
   STR_UNITS_IN_CRAFT:
     one: "{N} Unit in GCIC Craft"
@@ -374,9 +380,9 @@ en-US:
   # STR_KINETIC_CATEGORY: "Kinetic"
   # STR_LASER_CATEGORY: "Laser"
   STR_RESOURCES_CATEGORY: "Resources"
-  STR_BOUNTIES_CATEGORY: "Bounties"
-  STR_CONTAINERS_CATEGORY: "Containers"
   STR_DATA_CATEGORY: "Data"
+  STR_PERKS_CATEGORY: "Perks"
+  STR_CONTAINERS_CATEGORY: "Containers"
   STR_DRONES_CATEGORY: "Drones"
   STR_SPECIMENS_CATEGORY: "Specimens"
   STR_REMAINS_CATEGORY: "Remains"
@@ -403,26 +409,27 @@ en-US:
 #briefings
   STR_RESCUE_1: "Clients: Early Adopters"
   STR_RESCUE_1_ALERT: "CLIENTS REQUIRE RESCUE"
-  STR_RESCUE_1_ALERT_DESCRIPTION: "Our client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) replace the implant and render assistance.{NEWLINE}{NEWLINE}Minimum site duration: 24 Hours."
-  STR_RESCUE_1_MARKER: "Clients: Early Adopters"
-  STR_RESCUE_1_BRIEFING: "Our client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) replace the implant and render assistance.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this mission."
+  STR_RESCUE_1_ALERT_DESCRIPTION: "A client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) replace the implant and render assistance.{NEWLINE}{NEWLINE}Minimum site duration: 48 Hours."
+  STR_RESCUE_1_BRIEFING: "A client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) replace the implant and render assistance.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this mission."
+  
+  STR_RESCUE_RR: "Clients: Rapid Response"
+  STR_RESCUE_RR_ALERT: "CLIENTS REQUIRE RESCUE"
+  STR_RESCUE_RR_ALERT_DESCRIPTION: "An emergency request has been triggered. We are tracking a client's current vitals and location. So far they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Minimum site duration: 24 Hours."
+  STR_RESCUE_RR_BRIEFING: "An emergency request has been triggered. We are tracking a client's current vitals and location. So far they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this mission."
 
   STR_TRADE_MEETING_EARLY: "Netrunners: Contact"
   STR_TRADE_MEETING_EARLY_ALERT: "NETRUNNERS SEND MESSAGE"
   STR_TRADE_MEETING_EARLY_ALERT_DESCRIPTION: "Your flunky missed our regular meeting time, a new location has been chosen if you still want the merch. Don't be late or this will be our last contact.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours."
-  STR_TRADE_MEETING_EARLY_MARKER: "Netrunners: Contact"
   STR_TRADE_MEETING_EARLY_BRIEFING: "Something has gone wrong. We have failed to send the expected drones and perform the correct handshake protocols. Our drones may be in danger.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this mission by leaving the operations zone."
 
   STR_TRADE_MEETING_1: "Netrunners: Forbidden Ops"
   STR_TRADE_MEETING_1_ALERT: "NETRUNNERS LOCATED"
   STR_TRADE_MEETING_1_ALERT_DESCRIPTION: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours. Infiltration gear only."
-  STR_TRADE_MEETING_1_MARKER: "Netrunners: Forbidden Ops"
   STR_TRADE_MEETING_1_BRIEFING: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this mission by leaving the operations zone."
 
   STR_GCIC_SABOTAGE_1: "GCIC: Denial of Service"
   STR_GCIC_SABOTAGE_1_ALERT: "GCIC MANDATE"
   STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal securty. Destroy it and abort, or neutralize all targets in the area.{NEWLINE}{NEWLINE}We may ignore this mandate, but there will be consequences either way.{NEWLINE}{NEWLINE}This operation is unsanctioned, we will recover anything we bring to the vehicle, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 72 hours."
-  STR_GCIC_SABOTAGE_1_MARKER: "GCIC: Denial of Service"
   STR_GCIC_SABOTAGE_1_BRIEFING: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal securty. Destroy it and abort, or neutralize all targets in the area.{NEWLINE}{NEWLINE}This operation is unsanctioned, we will recover anything we bring to the vehicle, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 10 turns before additional security forces arrive and we are forced to abort."
   STR_SABOTAGE_DESTROYED_COMPLETE: "EVIDENCE DESTROYED"
   STR_SABOTAGE_DESTROYED_FAILED: "EVIDENCE REMAINS"
@@ -443,8 +450,8 @@ en-US:
   STR_MS_RATING_350: "GREAT"
   STR_MS_RATING_150: "GOOD"
   STR_MS_RATING_75: "SATISFACTORY"
-  STR_MS_RATING_15: "SUFFICIENT"
-  STR_MS_RATING_N15: "OK"
+  STR_MS_RATING_25: "SUFFICIENT"
+  STR_MS_RATING_N25: "OK"
   STR_MS_RATING_N75: "CONCERNING"
   STR_MS_RATING_N200: "TROUBLING"
   STR_MS_RATING_N350: "DISTRUBING"
@@ -561,7 +568,7 @@ en-US:
   STR_RANK_SHARK_DRONE_4: "Decon"
   STR_RANK_SHARK_DRONE_5: "Overseer"
 #manufacturing
-  STR_TASKS_MANUCAT: "TASKS"
+  STR_PROJECTS_MANUCAT: "PROJECTS"
   STR_AMMO_MANUCAT: "AMMUNITION"
   STR_EXPLOSIVES_MANUCAT: "EXPLOSIVES"
   STR_UPGRADES_MANUCAT: "UPGRADES"
@@ -581,6 +588,7 @@ en-US:
   STR_CRACKING_HUMAN_DRONE: "CRACKING: Human"
   STR_CRACKING_SHARK_DRONE: "CRACKING: Shark"
 
+  STR_CONSUMER_CYBERNETICS_DECODED: "CRACK: Consumer Cyberware"
   STR_45_PISTOL_DECODED: "CRACK: SSP 12mm Pistol"
   STR_TASER_PISTOL_DECODED: "CRACK: SSP Taser Pistol"
   STR_SSP_LASER_PISTOL_DECODED: "CRACK: SSP Single-Ray Pistol"
@@ -634,18 +642,26 @@ en-US:
   STR_SECURITY_UFOPEDIA: "{NEWLINE}COMPETING SYSTEMS: 2{NEWLINE}Native Civilization{NEWLINE}Invading Civilization{NEWLINE}{NEWLINE}Our primary mission, to save GCIC insurance client and ensure continued payments, is likely to encounter obstacles. Non-clients represent an immediate threat to our mission, indirect dangers are more difficult to remove.{NEWLINE}{NEWLINE}Maximing the chances of client survival will eventually require a restructuring of the competition."
   STR_NON_CLIENTS: "Non-Clients"
   STR_NON_CLIENTS_UFOPEDIA: "{NEWLINE}THREAT ASSESSOR: Online{NEWLINE}NEGLIABLE: 1,350,000,000{NEWLINE}RELEVANT: 95,000,000+{NEWLINE}{NEWLINE}The greatest danger to our customers are targets who (for reasons outside of our current influence) wish to do them harm. Given time, capital, and enough public trust, we may be able to find less risky solutions to these problem. Until then, the easiest answer is the simpliest one.{NEWLINE}{NEWLINE}If violent conflict is envitable, we must find ways to improve the odds."
-  STR_HYBRID_DATA: "Memory: Hybrid"
-  STR_HYBRID_MEMORY_1: "Memory: "
+  STR_HYBRID_DATA: "MEMORY: Hybrid"
+  STR_HYBRID_MEMORY_1: "MEMORY: "
   STR_HYBRID_MEMORY_1_UFOPEDIA: "{NEWLINE}todo" #todo
-  STR_HYBRID_MEMORY_2: "Memory: "
+  STR_HYBRID_MEMORY_2: "MEMORY: "
   STR_HYBRID_MEMORY_2_UFOPEDIA: "{NEWLINE}todo" #todo
-  STR_HYBRID_MEMORY_3: "Memory: "
+  STR_HYBRID_MEMORY_3: "MEMORY: "
   STR_HYBRID_MEMORY_3_UFOPEDIA: "{NEWLINE}todo" #todo
-  STR_HYBRID_MEMORY_4: "Memory: "
+  STR_HYBRID_MEMORY_4: "MEMORY: "
   STR_HYBRID_MEMORY_4_UFOPEDIA: "{NEWLINE}todo" #todo
 #operations
   STR_PRIMARY_OPERATIONS: "Primary Operations"
   STR_PRIMARY_OPERATIONS_UFOPEDIA: "{NEWLINE}RELEVANT GCIC SUBSIDIARIES...{NEWLINE}{NEWLINE}GCIC LIFE: Payouts{NEWLINE}GCIC HEALTH: Treatment{NEWLINE}GCIC TRAUMA: Rescue{NEWLINE}{NEWLINE}Clients purchase insurance policies, conditional contracts which prompt corporate action. Ours is a new enterprise under the TRAUMA label. We respond to medical alerts which are too dangerous for paramedics, sent by customers who have not subscribed to more premium packages.{NEWLINE}{NEWLINE}Failure to save clients puts us in breach of contract and may lead lost revenue."
+  STR_RRM_LOCK: "P:RMM (preq)"
+  STR_RRM_ITEM: "PROJECT: Rapid Response"
+  STR_RAPID_RESPONSE_MISSIONS: ">PROJECT: Rapid Reponse<"
+  STR_RAPID_RESPONSE_MISSIONS_UFOPEDIA: "{NEWLINE}MARKET POTENTIAL: 25,000$/CLIENT{NEWLINE}AVG. ASSIGNMENTS: 1.74/MONTH{NEWLINE}{NEWLINE}Arriving before any permanent damage is done is a more attractive service than saving a client after-the-fact. Offering a 24 hour guarantee to regions a mere thousand kilometers away isn't difficult, but expanding our service to every major metropolitan area on the planet will require faster craft.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
+  STR_FT_LOCK: "P:FT (preq)"
+  STR_FT_ITEM: "PROJECT: Free Trial"
+  STR_FREE_TRIAL_MISSIONS: ">PROJECT: Free Trial<"
+  STR_FREE_TRIAL_MISSIONS_UFOPEDIA: "{NEWLINE}save multiple people from mass casualty event, step on ssp's toes" #todo
   STR_SECONDARY_OPERATIONS: "Secondary Operations"
   STR_SECONDARY_OPERATIONS_UFOPEDIA: "{NEWLINE}POTENTIAL CLIENTS: 2,150,000,000{NEWLINE}AVAILABLE DRONES: 880,000,000{NEWLINE}{NEWLINE}Representing the economic foundation of the system, drones perform jobs too complex for automated systems, yet too simple for employees. They are interchangable, omnipresent, and promising but they require constant supervision.{NEWLINE}{NEWLINE}Our capacity to give drones continuous and exacting orders is a competitive edge, one that GCIC hopes to exploit by pre-purchasing local drones for our benefit. In turn, we are expected to invent new uses for drones and increase GCIC's market share."
   STR_FORBIDDEN_OPERATIONS: ">Forbidden Operations<"
@@ -721,7 +737,7 @@ en-US:
   STR_LOCAL_INTERFACE: "Local Interface"
   STR_LOCAL_INTERFACE_UFOPEDIA: "A suite of instruments and tools to facilitate the physical intrusion of airgaped devices. Required for cracking equipment, datapads, and cybernetics.{NEWLINE}{NEWLINE}> Service: Decoding{NEWLINE}> Bandwidth: 3{NEWLINE}> Workspace: 1{NEWLINE}> Limit: 1"
   STR_PRINTSHOP: "Printshop"
-  STR_PRINTSHOP_UFOPEDIA: "todo, turn biomass into stuff, improve illegal weapons{NEWLINE}{NEWLINE}> Service: Printing{NEWLINE}> Workspace: 3{NEWLINE}> Requires: 1x SJB License"
+  STR_PRINTSHOP_UFOPEDIA: "todo, turn biomass into stuff, improve illegal weapons{NEWLINE}{NEWLINE}> Service: Printing{NEWLINE}> Workspace: 3{NEWLINE}> Requires: 1x SJB License" #todo
 #services
   STR_SERVICE_MEDICAL: "Medical"
   STR_SERVICE_UPLINK: "Uplink"
@@ -732,15 +748,17 @@ en-US:
   STR_APS: "APS CRAFT"
   STR_APS_UFOPEDIA: "{NEWLINE}ARTICLE: Counter-Infiltration Treaty{NEWLINE}BYLAW: AA9-01-01{NEWLINE}{NEWLINE}Air-Space-and-Sea represents almost all licensed forms of transportation. From automated delivery vehicles to deep space defense plates.{NEWLINE}{NEWLINE}Anything moving under its own power with enough mass to pose a collision risk must be registered with local port administrators and insured by at least one approved corporate authority. Failure to do so may result in asset forfeiture, CE auctions, and/or financial audit."
   STR_HD_CROSSOVER: "HD CROSSSOVER"
-  STR_HD_CROSSOVER_UFOPEDIA: "A COMPACT HOVERCRAFT OPTION FOR THOSE WHO VALUE STYLE AND AFFORABILITY. THOUGH NO LONGER IN PRODUCTION, ITS EASY TO PRINT REPLACEMENT PARTS HAS GIVEN THIS CLASSIC A CONSTANT MARKET PRESENCE DESPITE ADVANCES IN ELECTRIC DRIVE PROPULSION."
+  STR_HD_CROSSOVER_UFOPEDIA: "A COMPACT HOVERCRAFT OPTION FOR THOSE WHO VALUE STYLE AND AFFORABILITY. THOUGH NO LONGER IN PRODUCTION, ITS EASY TO PRINT REPLACEMENT PARTS HAS GIVEN THIS CLASSIC A CONSTANT MARKET PRESENCE DESPITE ADVANCES IN ELECTRIC DRIVE PROPULSION.{NEWLINE}{NEWLINE}EVASION: +5%"
+  STR_HD_HOVERBIKE: "HD RIDER"
+  STR_HD_HOVERBIKE_UFOPEDIA: "SLEEK, INSURABLE, AND MODDER FRIENDLY. OFFERS ASPIRING MOTERISTS A TASTE OF MACH SPEEDS WITHOUT THE ASSOCIATED DANGERS OF MANUAL PILOTING. FOR LOWER PREMIUMS, ONLY USE REGISTERED HD AFTERMARKET RETAILERS.{NEWLINE}{NEWLINE}EVASION: +15%"
   STR_VCM_BICUBE: "VCM BICUBE"
-  STR_VCM_BICUBE_UFOPEDIA: "STANDARDIZED AUTOMATED SHIPPING CONTAINERS MAKE UP THE BULK OF ALL TRAFFIC. OBSCURITY THROUGH UBIQUITY ENABLES OPERATIONS TO ALL BUT THE MOST SECURE SITES. IT CAN TAKE DRONES HALFWAY AROUND THE PLANET ON A SINGLE CHARGE THOUGH NOT IN COMFORT OR SAFETY. UNDETECTABLE."
-  STR_HD_EXPRESS_ENGINE: "MOD/HD-EXPRESS ENGINE"
-  STR_HD_EXPRESS_ENGINE_UFOPEDIA: "TAKE YOUR RELATIONSHIP TO THE NEXT LEVEL WITH AN ENGINE MOD OF UNCOMPROMISING POWER, LUXURIOUS INERTIALS, AND EXPRESSIVE RESONANCE. AN EXPERTLY TUNED UPGRADE FOR THE RACER IN ALL OF US.{NEWLINE}{NEWLINE}SPEED: +400 KNOTS/H{NEWLINE}CHARGE: +200 kWH{NEWLINE}{NEWLINE}CLASS: ELECTRIC" #todo
+  STR_VCM_BICUBE_UFOPEDIA: "STANDARDIZED AUTOMATED SHIPPING CONTAINERS MAKE UP THE BULK OF ALL TRAFFIC. OBSCURITY THROUGH UBIQUITY ENABLES OPERATIONS TO ALL BUT THE MOST SECURE SITES. IT CAN TAKE DRONES HALFWAY AROUND THE PLANET ON A SINGLE CHARGE THOUGH NOT IN COMFORT OR SAFETY. {NEWLINE}UNDETECTABLE"
   STR_HD_ECONOMY_ENGINE: "MOD/HD-ECONOMY ENGINE"
-  STR_HD_ECONOMY_ENGINE_UFOPEDIA: "ATMOSPHERIC AND VACUUM FLUCTIONS RUINING YOUR MILEAGE? WORRY NO LONGER WITH HD'S STREAMLINED, SUSTAINABLE, AND INNOVATIVE NEW ENGINE DESIGN. SHIFT YOUR ENVELOPE A THOUSAND TIMES A SECOND AND START YOUR ENERGY SAVINGS NOW.{NEWLINE}{NEWLINE}SPEED: +100 KNOTS/H{NEWLINE}CHARGE: +400 kWH{NEWLINE}{NEWLINE}CLASS: ELECTRIC" #todo
+  STR_HD_ECONOMY_ENGINE_UFOPEDIA: "ATMOSPHERIC AND VACUUM FLUCTIONS RUINING YOUR MILEAGE? WORRY NO LONGER WITH HD'S STREAMLINED, SUSTAINABLE, AND INNOVATIVE NEW ENGINE DESIGN. SHIFT YOUR ENVELOPE A THOUSAND TIMES A SECOND AND START YOUR ENERGY SAVINGS NOW.{NEWLINE}{NEWLINE}SPEED: +100 KNOTS/H{NEWLINE}CHARGE: +400 kWH{NEWLINE}EVASION: +3%{NEWLINE}{NEWLINE}CLASS: ELECTRIC"
+  STR_HD_EXPRESS_ENGINE: "MOD/HD-EXPRESS ENGINE"
+  STR_HD_EXPRESS_ENGINE_UFOPEDIA: "TAKE YOUR RELATIONSHIP TO THE NEXT LEVEL WITH AN ENGINE MOD OF UNCOMPROMISING POWER, LUXURIOUS INERTIALS, AND EXPRESSIVE RESONANCE. AN EXPERTLY TUNED UPGRADE FOR THE RACER IN ALL OF US.{NEWLINE}{NEWLINE}ACCELERATION: +1{NEWLINE}SPEED: +300 KNOTS/H{NEWLINE}CHARGE: +100 kWH{NEWLINE}EVASION: +6%{NEWLINE}{NEWLINE}CLASS: ELECTRIC"
   STR_BATBOX: "MOD/HD-BATBOX"
-  STR_BATBOX_UFOPEDIA: "LARGER AND HEAVIER THAN THE ENGINES IT TYPICALLY POWERS, BATBOXES ARE MODIFICATIONS FOR END-USERS WHO VALUE NON-STOP PLANETARY CIRCUMNAVIGATION OVER ROUND-TRIP TIME. {NEWLINE}{NEWLINE}CHARGE: +1200 kWH{NEWLINE}SPEED: -25 KNOTS/H{NEWLINE}{NEWLINE}CLASS: ELECTRIC"
+  STR_BATBOX_UFOPEDIA: "LARGER AND HEAVIER THAN THE ENGINES IT TYPICALLY POWERS, BATBOXES ARE MODIFICATIONS FOR END-USERS WHO VALUE NON-STOP PLANETARY CIRCUMNAVIGATION OVER ROUND-TRIP TIME. {NEWLINE}{NEWLINE}CHARGE: +850 kWH{NEWLINE}SPEED: -35 KNOTS/H{NEWLINE}{NEWLINE}CLASS: ELECTRIC"
   STR_ELECTRIC_ENGINE: "Electric Engine"
 #drones
   STR_DRONES_TUTORIAL: "Drones"
@@ -755,7 +773,7 @@ en-US:
   STR_DRONE_IMMORTALITY: "Drone Immortality"
   STR_DRONE_IMMORTALITY_UFOPEDIA: "{NEWLINE}Baseline drones begin as clumsy extensions of our minds' and bodies, tools that take time for us to learn how to wield effectively. Because each mind is unique, our total skillset cannot be easily transferred between neural networks. When a drone is displaced, everything we've learned through them is lost.{NEWLINE}{NEWLINE}If we become reliant on a single drone, we can key them to a bionic interlace. Allowing us to order a custom clone and rewrite the brain with the backup."
   STR_SPECIALIZATION_TRAINING: "Drone Implants"
-  STR_SPECIALIZATION_TRAINING_UFOPEDIA: "{NEWLINE}Entry-level cyberware is unrestricted, being a pre-requisite to apply for most security certifications and employment contracts. Even without top-down incentives, many consumers will happily buy or lease socially trendy hardware without concern for battlefield effectivness.{NEWLINE}{NEWLINE}Before we began operations, drones were not a good choice for combat duties. Purchasing an implantation suite will be considered strange, and a waste of resources, but few corporations will ever refuse a paying customer."
+  STR_SPECIALIZATION_TRAINING_UFOPEDIA: "{NEWLINE}Entry-level cyberware is unrestricted, being a pre-requisite to apply for most security certifications and employment contracts. Even without top-down incentives, many consumers will happily buy or lease socially trendy hardware without concern for battlefield effectivness.{NEWLINE}{NEWLINE}Before we began operations, drones were not a good choice for combat duties. Installing an implantation suite will be considered strange, and a waste of resources, but few corporations will ever refuse a paying customer."
   STR_NEURACHEM: "Neurachem Augmentation"
   STR_NEURACHEM_UFOPEDIA: "{NEWLINE}Simple, discrete, and at the far end of the entry-level bell curve. These mods are mutually-exclusive, focused on the same stressor regions of the brain and endocrine system.{NEWLINE}{NEWLINE}{ALT}Deadeye{ALT}{NEWLINE}Firing: +12{NEWLINE}Reactions: +6{NEWLINE}{NEWLINE}{ALT}Olympian{ALT}{NEWLINE}Throwing: +12{NEWLINE}Stamina: +6{NEWLINE}{NEWLINE}{ALT}Warewolf{ALT}{NEWLINE}Melee: +12{NEWLINE}TU: +6"
   STR_DRONE_KEYING_TRANSFORMATION: "Key Drone to Interlace"
@@ -786,16 +804,18 @@ en-US:
   STR_AQUAVEST_DRONE_HUMAN_ARMOR: "TACVEST"
   STR_AQUAVEST_DRONE_SHARK_ARMOR: "TACVEST"
   STR_AQUAVEST_DRONE_ARMOR: "TACVEST"
-  STR_AQUAVEST_DRONE_ARMOR_UFOPEDIA: "{NEWLINE}Aquaplastic vest armor, popular among entry-level security corporations. Reliably stops low-caliber kinetic arms and impacts.{NEWLINE}{NEWLINE}TU: -5{NEWLINE}Stamina: -5{NEWLINE}{NEWLINE}Armor: 20, Weight: 6{NEWLINE}Dodge: +10%{NEWLINE}{NEWLINE}KINETIC: 70%{NEWLINE}SONIC/CONCUSSIVE: 80%{NEWLINE}RADIANT/INCENDIARY: 120%{NEWLINE}SMOKE: 400%"
+  STR_AQUAVEST_DRONE_ARMOR_UFOPEDIA: "{NEWLINE}Aquaplastic vest armor, popular among entry-level security corporations. Reliably stops low-caliber kinetic arms and impacts.{NEWLINE}{NEWLINE}TU: -5{NEWLINE}Stamina: -5{NEWLINE}{NEWLINE}Armor: 18, Weight: 6{NEWLINE}Dodge: +10%{NEWLINE}{NEWLINE}KINETIC: 70%{NEWLINE}SONIC/CONCUSSIVE: 80%{NEWLINE}RADIANT/INCENDIARY: 120%{NEWLINE}SMOKE: 400%"
   STR_PILOT_CORE_ARMOR: "CORE"
   STR_PILOT_CORE_ARMOR_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Armor: 25{NEWLINE}{NEWLINE}SMOKE: 0%{NEWLINE}BLUNT: 60%{NEWLINE}ELECTRIC: 200%" #todo
 # builtins
-  STR_PUNCH: "Punch"
+  STR_PUNCH: "Punch!"
   STR_UNARMED: "Unarmed Attack"
   STR_UNARMED_UFOPEDIA: "Full Stun{NEWLINE}{NEWLINE}Lethal: -85%{NEWLINE}Penetration: -50%"
-  STR_BITE: "Bite"
+  STR_BITE: "Bite!"
   STR_SHARKATTACK: "Bite Attack"
   STR_SHARKATTACK_UFOPEDIA: "Full Stun{NEWLINE}{NEWLINE}Lethal -65%"
+  STR_RIPP_AWAY: "Rip!"
+  STR_RIPP: "Docgrip"
 #equipment
 # kinetic
   STR_BUSBOX_PISTOL: "Busbox Pistol"
@@ -804,9 +824,13 @@ en-US:
   STR_PAPERSHOT_AMMO: "Papershot"
   STR_9MM_PISTOL: "8.99 Zip Pistol"
   STR_9MM_PISTOL_UFOPEDIA: "Assembled from over 90% public access parts, the 8.99 is typically finished by the end user after they've managed to acquire a working reciver. Though most are scrap prints, its reputation among illict elements occassionally produces a model with more flamboyant materials."
+  STR_9MM_AMMO: "Zip Pistol Clip"
+  STR_9MM_SMG: "3AM Zip SMG"
+  STR_9MM_SMG_UFOPEDIA: "todo"
+  STR_9MM_SMG_AMMO: "Zip SMG Clip"
   STR_9MM_RIFLE: "X2 Zip Rifle"
   STR_9MM_RIFLE_UFOPEDIA: "Accurate for a zip gun, if less portable. The stock and barrel extension makes it easier to aim, but the added bulk makes this a less popular kit in cramped and urban enviroments."
-  STR_9MM_AMMO: "Zip Clip"
+  STR_9MM_RIFLE_AMMO: "Zip Rifle Clip"
   STR_45_PISTOL_CODED: "SSP 12mm Pistol (¤)"
   STR_45_PISTOL: "SSP 12mm Pistol" #security systems and procedures
   STR_45_PISTOL_UFOPEDIA: "Low-cost defensive equipment for effective kinetic defeat. Safety features include low-risk rounds, anti-bump auto-locks, and internally developed biocoding to prevent fallen arms from turning on you and your property.{NEWLINE}{NEWLINE}Purchase Requirement: Security License"
@@ -879,19 +903,22 @@ en-US:
   STR_MOTION_DETECTOR: "VCM Motion Scanner"
   STR_MOTION_DETECTOR_UFOPEDIA: "{NEWLINE}> Range: 9m{NEWLINE}{NEWLINE}" #todo
   STR_MEDI_SPRAY: "MEDI-Spray"
-  STR_MEDI_SPRAY_UFOPEDIA: "{NEWLINE}> Uses: 2{NEWLINE}> Heals: 1{NEWLINE}{NEWLINE}Seal cuts and scraps with one easy to use alla-natural medical grade adhesive! Kills 99.9% of bacteria on contact! Even works on burns! Contains no CFCs, GMOs, or optichips.{NEWLINE}{NEWLINE}Not a replacement for medical treatment. Do not use if seal is broken."
+  STR_MEDI_SPRAY_UFOPEDIA: "{NEWLINE}> Uses: 2{NEWLINE}> Heals: 1 HP{NEWLINE}{NEWLINE}Seal cuts and scraps with one easy to use alla-natural medical grade adhesive! Kills 99.9% of bacteria on contact! Even works on burns! Contains no CFCs, GMOs, or optichips.{NEWLINE}{NEWLINE}Not a replacement for medical treatment. Do not use if seal is broken."
   STR_MEDI_FIRST: "MEDI-First"
-  STR_MEDI_FIRST_UFOPEDIA: "{NEWLINE}> Uses: 3{NEWLINE}> Heals: 3{NEWLINE}> Stims: 8 stun, 5 energy{NEWLINE}{NEWLINE}Automatically diagnoses, treats, documents, then anonymizes your medical data before MEDI-sharing with our affiliates for improve performance. Each subscription covers unlimited access to resupply and live service updates.{NEWLINE}{NEWLINE}Maintance: 350$/month"
+  STR_MEDI_FIRST_UFOPEDIA: "{NEWLINE}> Uses: 3{NEWLINE}> Heals: 3 HP{NEWLINE}> Stims: 8 stun, 5 energy{NEWLINE}{NEWLINE}Automatically diagnoses, treats, documents, then anonymizes your medical data before MEDI-sharing with our affiliates for improve performance. Each subscription covers unlimited access to resupply and live service updates.{NEWLINE}{NEWLINE}Maintance: 350$/month"
 #resources
 # materials
   STR_BIONIC_INTERLACE: "Bionic Interlace"
   STR_BIONIC_INTERLACE_UFOPEDIA: "{NEWLINE}This singular device enables a mind to connect to the psionic network. With it, we can create new {ALT}Servers{ALT} and {ALT}Fabricators{ALT}, or key it to a drone preventing their skillset from being lost upon displacement. Our minds' are facilitated by this technology, its potential is our own.{NEWLINE}{NEWLINE}Interlace's are rare, their existance has been kept secret from the general public. Despite an enormous estimated value selling one would be an unnecessary risk. Better to use or destroy them."
   STR_SJB_LICENSE: "SJB License" #single jurisdiction business license
   STR_SJB_LICENSE_UFOPEDIA: "{NEWLINE}Single Jurisdiction Businesses require a registration number and stock symbol for public trading. They are a requirement for established corporations to form a startup with new products, or to begin the process of vertically integrating its supply chains.{NEWLINE}{NEWLINE}Each profitable facility will require its own SJB license, but they can be recalled and reused indefinitely."
+  STR_CONSUMER_CYBERNETICS_CODED: "Consumer Cyberware (¤)"
+  STR_CONSUMER_CYBERNETICS: "Consumer Cyberware"
+  STR_CONSUMER_CYBERNETICS_UFOPEDIA: "{NEWLINE}Conventional hardware for sensory recording, neural interfacing, hormone regulation, geolocating, surface detailing, memory pruning, and more. This is the ground level of in-system technology with much of it pre-dating invasion-era advances.{NEWLINE}{NEWLINE}Most cybernetics are keyed to a single user, making it difficult to steal and sell. Jailbreaking these devices requires specific tools and a clean workspace free of errant DNA."
   STR_AG_UNIT: "AG Unit"
   STR_AG_UNIT_UFOPEDIA: "{NEWLINE}antigravity component" #todo
   STR_BIOMASS: "Biomass"
-  STR_BIOMASS_UFOPEDIA: "{NEWLINE}Useful intermediate products from remnant biological material. Readily recylable into fuel, plastics, and food. [todo: lets you make aqua-plastics, bio and chem weapons, and medical gel, but needs printshop which is also todoed]" #todo
+  STR_BIOMASS_UFOPEDIA: "{NEWLINE}A useful intermediate product derived from remnant biological material. Highres printshops could recycle this substance into fuel, plastics, or food. Without a waste or mortuary license, no vendor will accept the commission.{NEWLINE}{NEWLINE}Unless we start our own printshop, we will have to pay for the privilege of removing this resource from our stores."
   STR_ELERIUM_CORE: "Elerium"
   STR_ELERIUM_CORE_UFOPEDIA: "{NEWLINE}The lifeblood invasion era technology, each handheld core is capable of producing 10.2 mega-watts of power for hundreds of years. The reaction is self-sustaining, clean, and safe. In burnout mode, it can output much more energy for far less time, a feature heavily abused before shortages began.{NEWLINE}{NEWLINE}Elerium's origin remains the best kept secret of the occupation, and despite billions invested in developing alternatives, nothing matches its portability, longevity, and sheer market value."
 # data
@@ -904,7 +931,7 @@ en-US:
   STR_SHARES_GCIC: "SHARES: GCIC"
   STR_SHARES_GCIC_UFOPEDIA: "{NEWLINE}Representitive fractional ownership in our parent company. These are awarded as an incentive to perform activities that are not legally enforcable. In this sense, shares are a crude measure of how loyal we are to GCIC's less reputable needs.{NEWLINE}{NEWLINE}As a shareholder, we'll recieve dividends. As a subsidiary, we'll recieve extra leeway in how we conduct business.{NEWLINE}{NEWLINE}Effective Income: +1200$/month"
   STR_BRAND_LOYALTY: "Brand Loyalty"
-  STR_BRAND_LOYALTY_UFOPEDIA: "{NEWLINE}Fulfilling contracts or otherwise following through on our promises will create positive feelings in our consumer base. This results in more subscriptions even when services falter, letting us act with more freely with less consequence.{NEWLINE}{NEWLINE}With enough trust, we can break into new markets or get sponsorships from other corporate entities.{NEWLINE}{NEWLINE}Effective Income: +800$/month"
+  STR_BRAND_LOYALTY_UFOPEDIA: "{NEWLINE}Fulfilling contracts or otherwise following through on our promises will create positive feelings in our consumer base. This results in more subscriptions even when services falter, letting us act with more freely with less consequence.{NEWLINE}{NEWLINE}With enough trust, we can break into new markets or get sponsorships from other corporate entities. When all requirements are met, the available PROJECT will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: +800$/month"
   STR_BOUNTY_1: "Bounty"
   STR_BOUNTY_1_UFOPEDIA: "{NEWLINE}When performing public operations, any targets we incapacitate are likely to have broken laws or contracts we have no right to enforce. In these circumstances, targets are turned over relevant corporations in return for a proportional bounty.{NEWLINE}{NEWLINE}Corporations with a reputation for bounty hunting are first call for certain lucrative contracts and prototype equipment."
 # containers
@@ -922,8 +949,6 @@ en-US:
   STR_RANK_5: "Contractor"
   STR_RANK_DRONE: "Drone"
   STR_RACE_DRONE: "Drones"
-  STR_RACE_CLIENT: "Clients"
-  STR_CIVILIAN: "Potential Clients"
 # hostiles
   STR_IRONEYES: "Ironsights"
   STR_BOOSTER_PUBLIC: "Ironsights Booster"
@@ -932,6 +957,12 @@ en-US:
   STR_BOOSTERS_UFOPEDIA: "Entry-level employees of crime syndicates with a cybernetic requirement clause. Most begin their careers with the theft of a single implant, either from a retailer or a living body. If that body belongs to a client, we should intervene.{NEWLINE}{NEWLINE}It would be more efficent to prevent this activity rather than respond after-the-fact.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
   STR_BOOSTER_ARMOR: "Booster Analysis"
   STR_BOOSTER_ARMOR_UFOPEDIA: "Night Vision: +3m"
+  STR_RIPPER_PUBLIC: "Ironsights Ripper"
+  STR_RIPPER_PRIVATE: "Ironsights Ripper"
+  STR_RIPPERS: "Rippers"
+  STR_RIPPERS_UFOPEDIA: "Unlicensced medical practioners in an exclusivity contract with one of many locally sourced gangs. Most of their day-to-day activities involve consentual immu-checkups and cyberware repair, but the highest paid positions are for those who can rip out installed hardware quickly, quietly, and without damaging the assets.{NEWLINE}{NEWLINE}Loss of limb and ware may lower a client's capital flow and lead to canceled subscriptions. Further intervention will be good for business.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
+  STR_RIPPER_ARMOR: "Ripper Analysis"
+  STR_RIPPER_ARMOR_UFOPEDIA: "Night Vision: +3m"
   STR_NETRUNNERS: "Netrunners"
   STR_FREELANCER_PRIVATE: "Netrunner Freelancer"
   STR_FREELANCERS: "Freelancers"
@@ -947,7 +978,12 @@ en-US:
   STR_DRONE_ENEMY_HUMAN: "Human Drone"
   STR_DRONE_ENEMY_SHARK: "Selamorph Drone"
 # civilians
-  STR_CLIENT_1_ARMOR: "Early Adopter"
+  STR_RACE_CLIENT: "Clients"
+  STR_CIVILIAN: "Potential Clients"
+  STR_CLIENT_1: "Client"
+  STR_CLIENT_1_ARMOR: "Client"
+  STR_CLIENT_RR: "Client"
+  STR_CLIENT_RR_ARMOR: "Client"
   STR_HUMAN_M_CIVILIAN: "Potential Client"
 #uso analysis
 #manuals
@@ -959,6 +995,8 @@ en-US:
   STR_GUN_TYPES_UFOPEDIA: "Weapon styles vary by design, philosophy, and ease of use. The following is not a comprehensive list, but will cover most equipment we can use.{NEWLINE}{NEWLINE}{ALT}Flat Accuracy{ALT} Pistols +20, SMGs/Shotguns +10, Precision -20{NEWLINE}{NEWLINE}{ALT}Kneeling Accuracy{ALT} Pistols/Bows +10%, SMGs/Shotguns +15%, Assault/Precision +20%, Cannons/MGs +50%{NEWLINE}{NEWLINE}{ALT}One-Handed Accuracy{ALT} SMGs -15%, Shotguns -25%, Assault/Precision -50%, Cannons/MGs -65%{NEWLINE}{NEWLINE}{ALT}Precision Arms{ALT} +25% no-sight accuracy, +50% minimum damage{NEWLINE}{ALT}Cannons{ALT} 25% accuracy from strength{NEWLINE}{ALT}MGs{ALT} 50% accuracy from strength{NEWLINE}{NEWLINE}{ALT}Launchers{ALT} have variable modifiers, depending on size and weight"
   STR_LIQUIDITY: "Liquidity"
   STR_LIQUIDITY_UFOPEDIA: "{NEWLINE}The ease of which a corporate entity can trade its assets without drastically affecting market prices. Performing missions that engender public trust will cause our share prices to rise, allowing us to take out loans, shrink dividens, and enjoy more relaxed tax rates.{NEWLINE}{NEWLINE}Conversely, stories of rogue drones and failures to fulfill our contracts will tie up our more indirect assets, effectively lowering monthly income.{NEWLINE}{NEWLINE}It is not possible for a corporation to become insolvant from a lack of liquidity alone. A good reputation isn't necessary for a profitable business."
+  #resiliance
+  #neuroplasticity, how much someone has adapted to their own body and mind. implanting new cybernetics resets progress, some transformations need higher level than base stats. some weapons or enviroments attack resiliance directly.
   #geoscape
   #middle mouse button: examine
   #F5: save equipment template
@@ -992,7 +1030,7 @@ en-US:
   STR_AWARD_DECOR_2: "Silver"
   STR_AWARD_DECOR_3: "Gold"
   STR_AWARD_DECOR_4: "Alloy"
-  STR_ACCOLADES_TECH: "Marks"
+  STR_ACCOLADES_TECH: "ACCOLADES"
   STR_ACCOLADES_TECH_UFOPEDIA: "{NEWLINE}todo"
   STR_MEDAL_IMPORTANT_MISSIONS_NAME: "debug" #non-small craft, hardcoded
   STR_MEDAL_ORIGINAL8: "Source"
@@ -1202,10 +1240,10 @@ en-US:
   STR_MEDAL_GUNNER_4: "Gunner MAX"
   STR_MEDAL_GUNNER_NAME: "Gunner" #kills with machine guns
   STR_MEDAL_GUNNER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with MGs.{NEWLINE}{NEWLINE}Every level grants +1 Strength and Firing"
-  STR_MEDAL_CANNONEE_1: "Cannoneer I"
-  STR_MEDAL_CANNONEE_2: "Cannoneer II"
-  STR_MEDAL_CANNONEE_3: "Cannoneer III"
-  STR_MEDAL_CANNONEE_4: "Cannoneer MAX"
+  STR_MEDAL_CANNONEER_1: "Cannoneer I"
+  STR_MEDAL_CANNONEER_2: "Cannoneer II"
+  STR_MEDAL_CANNONEER_3: "Cannoneer III"
+  STR_MEDAL_CANNONEER_4: "Cannoneer MAX"
   STR_MEDAL_CANNONEER_NAME: "Cannoneer" #kills with cannons
   STR_MEDAL_CANNONEER_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks displacements with cannons.{NEWLINE}{NEWLINE}Every level grants +2 Strength"
   STR_MEDAL_PURIFIER_1: "Purifier I"
@@ -1298,5 +1336,6 @@ en-US:
   STR_P2P_PREQ: "V:P2P (Preq)"
   STR_V_SSP_PREQ: "V:SSP (Preq)"
   STR_TRG_BO_PREQ: "T:BO (Preq)"
+  STR_TRG_RI_PREQ: "T:RI (Preq)"
   STR_TRG_FL_PREQ: "T:FL (Preq)"
   STR_TRG_SG_PREQ: "T:SG (Preq)"

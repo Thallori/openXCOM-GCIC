@@ -102,13 +102,13 @@ units:
     liveAlien: STR_BOUNTY_1
     stats:
       tu: 45
-      stamina: 60
+      stamina: 55
       health: 45
-      bravery: 40
+      bravery: 50
       reactions: 35
-      firing: 50
+      firing: 45
       throwing: 40
-      melee: 50
+      melee: 45
       strength: 40
       psiStrength: 0
       psiSkill: 0
@@ -122,6 +122,35 @@ units:
     intelligence: 3
     aggression: 4
     spotter: 0
+    sniper: 0
+    canSurrender: true
+
+  - type: STR_RIPPER_PUBLIC
+    race: STR_IRONEYES
+    rank: STR_RANK_4
+    liveAlien: STR_BOUNTY_1
+    stats:
+      tu: 55
+      stamina: 60
+      health: 50
+      bravery: 60
+      reactions: 40
+      firing: 50
+      throwing: 40
+      melee: 50
+      strength: 40
+      psiStrength: 0
+      psiSkill: 0
+      mana: 30
+    armor: STR_RIPPER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 3
+    deathSound: [44, 45, 46]
+    energyRecovery: 30
+    intelligence: 3
+    aggression: 5
+    spotter: 1
     sniper: 0
     canSurrender: true
 
@@ -278,15 +307,17 @@ units:
       mana: 30
     armor: STR_CLIENT_1_ARMOR
     standHeight: 14
+    moraleLossWhenKilled: 0
     value: 15
     deathSound: [41, 42, 43]
     energyRecovery: 30
 
-  - type: STR_HUMAN_M_CIVILIAN
-    race: STR_CIVILIAN
+  - type: STR_CLIENT_RR
+    race: STR_RACE_CLIENT
     civilianRecoveryType: STR_BRAND_LOYALTY
+    vip: true
     stats:
-      tu: 35
+      tu: 8
       stamina: 50
       health: 30
       bravery: 80
@@ -298,10 +329,9 @@ units:
       psiStrength: 0
       psiSkill: 0
       mana: 30
-    armor: STR_HUMAN_M_CIVILIAN_ARMOR
-    standHeight: 21
-    kneelHeight: 14
-    value: 10
-    intelligence: 4
-    energyRecovery: 20
-    deathSound: [41, 42, 43]
+    armor: STR_CLIENT_RR_ARMOR
+    standHeight: 14
+    moraleLossWhenKilled: 0
+    value: 25
+    deathSound: [44, 45, 46]
+    energyRecovery: 30

@@ -9,7 +9,7 @@ alienDeployments:
     # alertBackground: BACK03.SCR
     alertDescription: STR_RESCUE_1_ALERT_DESCRIPTION
     markerName: STR_RESCUE_1
-    duration: [24, 48]
+    duration: [48, 72]
     despawnPenalty: 200
     abortPenalty: 185
     # startingCondition: LOWSPEC_GEAR
@@ -34,7 +34,7 @@ alienDeployments:
         percentageOutsideUfo: 60
         extraRandomItems: &personalData7
           - [STR_PERSONAL_DATA, STR_NONE, STR_NONE, STR_NONE, STR_NONE, STR_NONE, STR_NONE]
-        itemSets:
+        itemSets: &boosterSet
           -
             - STR_BUSBOX_PISTOL
             - STR_COMBALL_AMMO
@@ -63,14 +63,93 @@ alienDeployments:
             - STR_9MM_AMMO
           -
             - STR_9MM_RIFLE
-            - STR_9MM_AMMO
-            - STR_9MM_AMMO
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+          -
+            - STR_DISPOSABLE_SMG
           -
             - STR_DISPOSABLE_SMG
           -
             - STR_STL_KNIFE
+
+  - type: STR_RESCUE_RR
+    script: HANGAR_DRONES_4X4
+    width: 40
+    length: 40
+    height: 5
+    alert: STR_RESCUE_RR_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_RESCUE_RR_ALERT_DESCRIPTION
+    markerName: STR_RESCUE_RR
+    duration: [24, 36]
+    despawnPenalty: 200
+    abortPenalty: 175
+    # startingCondition: LOWSPEC_GEAR
+    briefing:
+      showTarget: false
+      title: STR_RESCUE_RR
+      music: BREACH_INTRO
+      palette: 0
+      # background: BACK16.SCR
+    unlockedResearch: STR_TRG_RI_PREQ
+    customUfo: STR_HOUSE_GARAGE_RR
+    terrains:
+      - HANGAR
+    music:
+      - BREACH1
+    data:
+      - alienRank: 4
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        extraRandomItems: *personalData7
+        itemSets: &ripperSet
           -
-            - STR_STL_KNIFE
+            - STR_BUSBOX_PISTOL
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+          -
+            - STR_9MM_PISTOL
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+          -
+            - STR_DISPOSABLE_SMG
+          -
+            - STR_DISPOSABLE_SMG
+      - alienRank: 5
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 2
+        percentageOutsideUfo: 50
+        extraRandomItems: *personalData7
+        itemSets: *boosterSet
 
   - type: STR_TRADE_MEETING_EARLY
     script: SINGLE_BLOCK_2X2
@@ -80,7 +159,7 @@ alienDeployments:
     alert: STR_TRADE_MEETING_EARLY_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_TRADE_MEETING_EARLY_ALERT_DESCRIPTION
-    markerName: STR_TRADE_MEETING_EARLY_MARKER
+    markerName: STR_TRADE_MEETING_EARLY
     duration: [48, 72]
     despawnPenalty: 0
     abortPenalty: 0
@@ -93,7 +172,7 @@ alienDeployments:
     # startingCondition: LOWSPEC_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
-      title: STR_TRADE_MEETING_EARLY_MARKER
+      title: STR_TRADE_MEETING_EARLY
       music: HACKER_INTRO
       palette: 2
       # background: BACK16.SCR
@@ -190,14 +269,14 @@ alienDeployments:
     alert: STR_TRADE_MEETING_1_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_TRADE_MEETING_1_ALERT_DESCRIPTION
-    markerName: STR_TRADE_MEETING_1_MARKER
+    markerName: STR_TRADE_MEETING_1
     duration: [48, 72]
     despawnPenalty: 0
     abortPenalty: 0
     startingCondition: INFILTRATION_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
-      title: STR_TRADE_MEETING_1_MARKER
+      title: STR_TRADE_MEETING_1
       music: HACKER_INTRO
       palette: 2
     #  background: BACK16.SCR
@@ -241,7 +320,7 @@ alienDeployments:
     alert: STR_GCIC_SABOTAGE_1_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION
-    markerName: STR_GCIC_SABOTAGE_1_MARKER
+    markerName: STR_GCIC_SABOTAGE_1
     duration: [72, 96]
     despawnPenalty: 150
     despawnEvents:
@@ -251,7 +330,7 @@ alienDeployments:
     # startingCondition: LOWSPEC_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
-      title: STR_GCIC_SABOTAGE_1_MARKER
+      title: STR_GCIC_SABOTAGE_1
       music: SHADOW_INTRO
       palette: 2
       # background: BACK16.SCR

@@ -92,6 +92,11 @@ extraSprites:
       159: Resources/Items/Laser/ssp_epistol_bigob.png
       160: Resources/Items/Laser/Ammo/ssp2_ammo_bigob.png
       161: Resources/Items/Laser/Ammo/ssp9_ammo_bigob.png
+      162: Resources/Items/Kinetic/Ammo/9mm_rifle_ammo_bigob.png
+      163: Resources/Items/Materials/cware_bigob.png
+      164: Resources/Factions/Clients/client_rr_bigob.png
+      165: Resources/Factions/Ironeyes/ripper_bigob.png
+      166: Resources/Items/Builtins/docgrip_bigob.png
 
   - type: FLOOROB.PCK
     files:
@@ -149,6 +154,9 @@ extraSprites:
       152: Resources/Items/Laser/ssp_epistol_floorob.png
       153: Resources/Items/Laser/Ammo/ssp2_ammo_floorob.png
       154: Resources/Items/Laser/Ammo/ssp9_ammo_floorob.png
+      155: Resources/Items/Kinetic/Ammo/9mm_rifle_ammo_floorob.png
+      156: Resources/Factions/Clients/client_rr_floorob.png
+      157: Resources/Factions/Ironeyes/ripper_floorob.png
 
   - type: HANDOB.PCK
     height: 40
@@ -206,6 +214,7 @@ extraSprites:
       309: Resources/BaseBits/basebits_pnpbay.png
       433: Resources/Crafts/bicube_basebit.png
       434: Resources/Crafts/crossover_basebit.png
+      435: Resources/Crafts/rider_basebit.png
       649: Resources/Crafts/Hardpoints/economy_basebit.png
       650: Resources/Crafts/Hardpoints/sport_basebit.png
       651: Resources/Crafts/Hardpoints/batbox_basebit.png
@@ -214,8 +223,10 @@ extraSprites:
     files:
       400: Resources/Crafts/bicube_mini_inticon.png
       401: Resources/Crafts/crossover_mini_inticon.png
+      402: Resources/Crafts/rider_mini_inticon.png
       411: Resources/Crafts/bicube_dogfight_inticon.png
       412: Resources/Crafts/crossover_dogfight_inticon.png
+      413: Resources/Crafts/rider_dogfight_inticon.png
       606: Resources/Crafts/Hardpoints/economy_inticon.png
       607: Resources/Crafts/Hardpoints/sport_inticon.png
       608: Resources/Crafts/Hardpoints/batbox_inticon.png
@@ -358,7 +369,7 @@ extraSprites:
     width: 512
     height: 200
     files:
-      0: Resources/Armors/Pilots/FlyingCore/pilot_core_sheet.png
+      0: Resources/Armors/Pilots/FlyingCore/pilot_core_sprite.png
 
 #ironeyes
   - typeSingle: BOOSTER_CPAL
@@ -372,6 +383,18 @@ extraSprites:
     height: 680
     files:
       0: Resources/Factions/Ironeyes/booster_sprite.png
+
+  - typeSingle: RIPPER_CPAL
+    fileSingle: Resources/Factions/Ironeyes/ripper_CPAL.png
+  - typeSingle: RIPPER.SPK
+    fileSingle: Resources/Factions/Ironeyes/ripper_inventory.png
+  - type: RIPPER.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 680
+    files:
+      0: Resources/Factions/Ironeyes/ripper_sprite.png
 
 #netrunners
   - typeSingle: FREELANCER_CPAL
@@ -416,17 +439,17 @@ extraSprites:
     width: 352
     height: 40
     files:
-      0: Resources/Factions/Clients/client_1_sheet.png
+      0: Resources/Factions/Clients/client_1_sprite.png
 
-  - typeSingle: HUMAN_CIVILIAN_M0.SPK
-    fileSingle: Resources/Factions/Clients/human_civilian_m0_inventory.png
-  - type: HUMAN_CIVILIAN_M0.PCK
+  - typeSingle: CLIENT_RR.SPK
+    fileSingle: Resources/Factions/Clients/client_rr_inventory.png
+  - type: CLIENT_RR.PCK
     subX: 32
     subY: 40
     width: 512
     height: 680
     files:
-      0: Resources/Factions/Clients/human_civilian_m0_sheet.png
+      0: Resources/Factions/Clients/client_rr_sprite.png
 
 #ufopedia
   - typeSingle: ALIGN_TEST_CPAL
@@ -490,6 +513,8 @@ extraSprites:
 # crafts
   - typeSingle: CRAFT_BICUBE_CPAL
     fileSingle: Resources/Pedia/craft_bicube_CPAL.png
+  - typeSingle: CRAFT_HOVERBIKE_CPAL
+    fileSingle: Resources/Pedia/craft_hoverbike_CPAL.png
   - typeSingle: CRAFT_CROSSOVER_CPAL
     fileSingle: Resources/Pedia/craft_crossover_CPAL.png
 # armament
@@ -588,7 +613,7 @@ extraSprites:
   - typeSingle: BACK13.SCR
     fileSingle: Resources/Backgrounds/back_market.png
   - typeSingle: BACK14.SCR
-    fileSingle: Resources/Backgrounds/back_test.png
+    fileSingle: Resources/Backgrounds/back_locker.png
   - typeSingle: BACK15.SCR
     fileSingle: Resources/Backgrounds/back_test.png
   - typeSingle: BACK16.SCR

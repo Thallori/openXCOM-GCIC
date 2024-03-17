@@ -1,13 +1,19 @@
+#max total speed: 6500
+#max total avoidance: 45%
+#max craft avoidance: 30%
+#max aux avoidance: 15%
 
 crafts:
   - type: STR_HD_CROSSOVER
     sprite: 401
-    damageMax: 15
+    damageMax: 30
     armor: 2
+    avoidBonus: 5
+    accel: 2 #0-2, half disengagement speed
     speedMax: 350
-    accel: 2
     fuelMax: 350
     refuelRate: 200
+    sightRange: 750
     radarRange: 200
     radarChance: 80
     soldiers: 3
@@ -17,7 +23,7 @@ crafts:
     costRent: 350
     costSell: 7500
     transferTime: 12
-    score: 10
+    score: 5
     keepCraftAfterFailedMission: true
     requires:
       - STR_VENDOR_HD
@@ -45,14 +51,62 @@ crafts:
       - [4, 5, 0, 4]
       - [3, 5, 0, 6]
 
+  - type: STR_HD_HOVERBIKE
+    sprite: 402
+    damageMax: 25
+    armor: 2
+    avoidBonus: 15
+    accel: 3 #3-5 normal disengagement speed
+    speedMax: 670
+    fuelMax: 350
+    refuelRate: 200
+    sightRange: 750
+    radarRange: 200
+    radarChance: 80
+    soldiers: 2
+    maxSmallUnits: 2
+    maxLargeUnits: 0
+    costBuy: 119999
+    costRent: 1700
+    costSell: 30000
+    transferTime: 12
+    score: 10
+    keepCraftAfterFailedMission: true
+    requires:
+      - STR_VENDOR_HD
+      - STR_HD_HOVERBIKE
+    weapons: 2
+    weaponTypes: [1, 1]
+    weaponStrings:
+      - STR_ELECTRIC_ENGINE
+      - STR_BLANK_TOKEN
+      - STR_BLANK_TOKEN
+      - STR_BLANK_TOKEN
+    battlescapeTerrainData:
+      name: CRAFT_HOVERBIKE
+      mapDataSets:
+        - BLANKS
+        - HOVERCRAFT_BITS
+        - HOVERCRAFT_RED1
+        - HOVERCRAFT_RED2
+      mapBlocks:
+        - name: CRAFT_HOVERBIKE
+          width: 10
+          length: 10
+    craftInventoryTile: [4, 4, 0]
+    deployment:
+      - [4, 4, 0, 2]
+      - [4, 5, 0, 2]
+
   - type: STR_VCM_BICUBE
     sprite: 400
-    damageMax: 20
+    damageMax: 40
     armor: 1
-    speedMax: 150
-    accel: 1
+    accel: 1 #0-2, half disengagement speed
+    speedMax: 140
     fuelMax: 400
     refuelRate: 100
+    sightRange: 750
     radarRange: 200
     radarChance: 80
     soldiers: 4

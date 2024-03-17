@@ -43,6 +43,49 @@ ufos:
           fuseTimers:
             STR_SPAWN_CLIENT_1: [0, 0]
 
+  - type: STR_HOUSE_GARAGE_RR
+    modSprite: interception_jammed
+    battlescapeTerrainData:
+      name: STR_HOUSE_GARAGE_RR
+      mapDataSets:
+        - BLANKS
+        - FLOOR_URBAN
+        - STRUCTURE_WOOD
+        - STRUCTURE_WAREHOUSE
+        - STRUCTURE_PANELS2
+        - STRUCTURE_CORRUGATED1
+        - FENCE_CHAINLINK
+        - FURNITURE_SLUMS1
+        - BATHROOM_SLUM
+        - ROOFS_BITS
+        - BITS_CONTRABAND
+        - BITS_CRATES1
+        - BITS_TRASH
+        - BITS_POTTED_PLANTS
+      mapBlocks:
+        - name: HOUSE_GARAGE_RR1
+          revealedFloors: 0
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_CLIENT_RR:
+              - [2, 7, 0]
+            STR_CRIMINAL_CONTAINER_1:
+              - [1, 4, 0]
+          fuseTimers:
+            STR_SPAWN_CLIENT_RR: [0, 0]
+        - name: HOUSE_GARAGE_RR2
+          revealedFloors: 0
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_CLIENT_RR:
+              - [6, 2, 0]
+            STR_CRIMINAL_CONTAINER_1:
+              - [1, 2, 0]
+          fuseTimers:
+            STR_SPAWN_CLIENT_RR: [0, 0]
+
   - type: STR_SABOTAGE_OFFICE
     modSprite: interception_jammed
     battlescapeTerrainData:

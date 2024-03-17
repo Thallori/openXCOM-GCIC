@@ -124,6 +124,22 @@ research:
       - STR_OLD_DATA
     cost: 3
 
+  - name: STR_RAPID_RESPONSE_MISSIONS
+    neededItem: STR_RRM_ITEM
+    needItem: true
+    destroyItem: true
+    cost: 15
+    points: 75
+    disables:
+      - STR_RRM_LOCK
+
+  - name: STR_RRM_LOCK
+    dependencies:
+      - STR_PRIMARY_OPERATIONS
+      - STR_NON_CLIENTS
+      - STR_VENDOR_HD
+      - STR_BRAND_LOYALTY
+
   - name: STR_SECONDARY_OPERATIONS
     requiresBaseFunc:
       - STR_SERVICE_UPLINK
@@ -289,12 +305,10 @@ research:
       - STR_SJB_LICENSE
     cost: 10
 
-  - name: STR_HOLDING_CELLS
+  - name: STR_REMEDITION_OFFICE
     dependencies:
-      - STR_VENDOR_BUILDER
-      - STR_VENDOR_PRINTER
-      - STR_FORBIDDEN_OPERATIONS
-    cost: 10
+      - STR_TODO
+    cost: 15
 
   - name: STR_MEDI_BAY
     dependencies:
@@ -302,11 +316,23 @@ research:
       - STR_MEDI_MISSIONS
     cost: 15
 
+  - name: STR_HOLDING_CELLS
+    dependencies:
+      - STR_VENDOR_BUILDER
+      - STR_VENDOR_PRINTER
+      - STR_FORBIDDEN_OPERATIONS
+    cost: 10
+
   - name: STR_LOCAL_INTERFACE
     dependencies:
       - STR_LI_PREQ
       - STR_VENDOR_BUILDER
       - STR_VENDOR_PRINTER
+    cost: 15
+
+  - name: STR_PUBLIC_GATEWAY
+    dependencies:
+      - STR_TODO
     cost: 15
 
   - name: STR_PRINTSHOP
@@ -319,6 +345,12 @@ research:
   - name: STR_HD_CROSSOVER
     dependencies:
       - STR_VENDOR_HD
+
+  - name: STR_HD_HOVERBIKE
+    dependencies:
+      - STR_VENDOR_HD
+      - STR_RAPID_RESPONSE_MISSIONS
+    cost: 4
 
   - name: STR_VCM_BICUBE
     dependencies:
@@ -370,6 +402,7 @@ research:
     dependencies:
       - STR_DRONE_CRACKING
       - STR_NON_CLIENTS
+      - STR_CONSUMER_CYBERNETICS
     getOneFree:
       - STR_NEURACHEM
     cost: 15
@@ -377,7 +410,6 @@ research:
   - name: STR_NEURACHEM
     dependencies:
       - STR_SPECIALIZATION_TRAINING
-
 
 # armor
   - name: STR_PLEX_DRONE_ARMOR
@@ -393,36 +425,24 @@ research:
 #equipment
 # kinetic
   - name: STR_BUSBOX_PISTOL
-    unlocks:
-      - STR_COMBALL_AMMO
-      - STR_PAPERSHOT_AMMO
-
-  - name: STR_COMBALL_AMMO
-    dependencies:
-      - STR_BUSBOX_PISTOL
-
-  - name: STR_PAPERSHOT_AMMO
-    dependencies:
-      - STR_BUSBOX_PISTOL
 
   - name: STR_9MM_PISTOL
     needItem: true
     cost: 2
     unlocks:
       - STR_P2P_PREQ
-      - STR_9MM_AMMO
+
+  - name: STR_9MM_SMG
+    needItem: true
+    cost: 2
+    unlocks:
+      - STR_P2P_PREQ
 
   - name: STR_9MM_RIFLE
     needItem: true
     cost: 2
     unlocks:
       - STR_P2P_PREQ
-      - STR_9MM_AMMO
-
-  - name: STR_9MM_AMMO
-    dependencies:
-      - STR_9MM_PISTOL
-      - STR_9MM_RIFLE
 
   - name: STR_DISPOSABLE_SMG
     needItem: true
@@ -438,15 +458,10 @@ research:
       - STR_BC_PREQ
       - STR_V_SSP_PREQ
       - STR_45_PISTOL
-      - STR_45_AMMO
 
   - name: STR_45_PISTOL
     dependencies:
       - STR_45_PISTOL_CODED
-
-  - name: STR_45_AMMO
-    dependencies:
-      - STR_45_PISTOL
 
 # electric
   - name: STR_TASER_PISTOL_CODED
@@ -457,31 +472,15 @@ research:
       - STR_BC_PREQ
       - STR_V_SSP_PREQ
       - STR_TASER_PISTOL
-      - STR_TASER_AMMO
 
   - name: STR_TASER_PISTOL
     dependencies:
       - STR_TASER_PISTOL_CODED
 
-  - name: STR_TASER_AMMO
-    dependencies:
-      - STR_TASER_PISTOL
-
 # aquatic
   - name: STR_DART_PISTOL
     needItem: true
     cost: 3
-    unlocks:
-      - STR_DART_AMMO0
-      - STR_DART_AMMO1
-
-  - name: STR_DART_AMMO0
-    dependencies:
-      - STR_DART_PISTOL
-
-  - name: STR_DART_AMMO1
-    dependencies:
-      - STR_DART_PISTOL
 
 # laser
   - name: STR_SINGLESHOT_LASER_PISTOL_ELERIUM
@@ -499,7 +498,6 @@ research:
       - STR_V_SSP_PREQ
       - STR_SINGLESHOT_LASER_PISTOL_ELERIUM
       - STR_SINGLESHOT_LASER_PISTOL
-      - STR_MULTISHOT_LASER_AMMO
 
   - name: STR_SINGLESHOT_LASER_PISTOL
     dependencies:
@@ -509,10 +507,6 @@ research:
     dependencies:
       - STR_LASER_AMMO_PRINTING
       - STR_SINGLESHOT_LASER_PISTOL_CODED
-
-  - name: STR_MULTISHOT_LASER_AMMO
-    dependencies:
-      - STR_SINGLESHOT_LASER_PISTOL
 
   - name: STR_XN_LASER_PISTOL
 
@@ -570,28 +564,12 @@ research:
   - name: STR_ELECTRIC_NAILER
     needItem: true
     cost: 2
-    unlocks:
-      - STR_ELECTRIC_NAILER_AMMO
-
-  - name: STR_ELECTRIC_NAILER_AMMO
-    dependencies:
-      - STR_ELECTRIC_NAILER
 
   - name: STR_SURVEY_KNOCKER
     needItem: true
     cost: 2
     unlocks:
-      - STR_KNOCK_FLARE_AMMO
-      - STR_KNOCK_BOLT_AMMO
       - STR_CHEMFLARE
-
-  - name: STR_KNOCK_FLARE_AMMO
-    dependencies:
-      - STR_SURVEY_KNOCKER
-
-  - name: STR_KNOCK_BOLT_AMMO
-    dependencies:
-      - STR_SURVEY_KNOCKER
 
   - name: STR_EXTINGUISHER
     needItem: true
@@ -615,6 +593,18 @@ research:
   - name: STR_BIONIC_INTERLACE
     needItem: true
     cost: 8
+
+  - name: STR_CONSUMER_CYBERNETICS_CODED
+    lookup: STR_CONSUMER_CYBERNETICS
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_BC_PREQ
+      - STR_CONSUMER_CYBERNETICS
+
+  - name: STR_CONSUMER_CYBERNETICS
+    dependencies:
+      - STR_CONSUMER_CYBERNETICS_CODED
 
   - name: STR_SJB_LICENSE
     needItem: true
@@ -644,6 +634,7 @@ research:
     requiresBaseFunc:
       - STR_SERVICE_PORT
     neededItem: STR_PERSONAL_DATA
+    needItem: true
     destroyItem: true
     cost: 15
     dependencies:
@@ -659,11 +650,17 @@ research:
       - STR_PIPEBOMB
       - STR_STL_KNIFE
       - STR_EXTINGUISHER
+    getOneFreeProtected:
+      STR_TRG_RI_PREQ:
+        - STR_RIPPER_PRIVATE
+        - STR_RIPPER_ARMOR
+        - STR_9MM_SMG
 
   - name: STR_DATA_NETRUNNERS
     requiresBaseFunc:
       - STR_SERVICE_PORT
     neededItem: STR_PERSONAL_DATA
+    needItem: true
     destroyItem: true
     cost: 20
     dependencies:
@@ -682,6 +679,7 @@ research:
     requiresBaseFunc:
       - STR_SERVICE_PORT
     neededItem: STR_PERSONAL_DATA
+    needItem: true
     destroyItem: true
     cost: 15
     dependencies:
@@ -745,6 +743,24 @@ research:
     dependencies:
       - STR_BOOSTER_PRIVATE
 
+  - name: STR_RIPPER_PRIVATE
+    needItem: true
+    destroyItem: true
+    cost: 7
+    unlocks:
+      - STR_TRG_BO_PREQ
+      - STR_BOOSTER_ARMOR
+    getOneFree:
+      - STR_9MM_PISTOL
+      - STR_9MM_RIFLE
+      - STR_DISPOSABLE_SMG
+      - STR_PIPEBOMB
+      - STR_STL_KNIFE
+
+  - name: STR_RIPPER_ARMOR
+    dependencies:
+      - STR_RIPPER_PRIVATE
+
 #netrunners
   - name: STR_FREELANCER_PRIVATE
     needItem: true
@@ -803,6 +819,7 @@ research:
   - name: STR_BC_PREQ #biocoding
     dependencies:
       - STR_LOCK
+      - STR_CONSUMER_CYBERNETICS_CODED
       - STR_45_PISTOL_CODED
       - STR_TASER_PISTOL_CODED
       - STR_SINGLESHOT_LASER_PISTOL_CODED
@@ -840,6 +857,11 @@ research:
     dependencies:
       - STR_LOCK
       - STR_BOOSTER_PRIVATE
+
+  - name: STR_TRG_RI_PREQ #ripper
+    dependencies:
+      - STR_LOCK
+      - STR_RIPPER_PRIVATE
 
   - name: STR_TRG_FL_PREQ #freelancers
     dependencies:

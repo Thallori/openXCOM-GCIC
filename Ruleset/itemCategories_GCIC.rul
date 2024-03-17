@@ -72,11 +72,11 @@
   #   listOrder: 601
   - type: STR_RESOURCES_CATEGORY
     listOrder: 800
-  - type: STR_BOUNTIES_CATEGORY
+  - type: STR_PERKS_CATEGORY
     listOrder: 810
-  - type: STR_CONTAINERS_CATEGORY
-    listOrder: 820
   - type: STR_DATA_CATEGORY
+    listOrder: 820
+  - type: STR_CONTAINERS_CATEGORY
     listOrder: 830
   - type: STR_DRONES_CATEGORY
     listOrder: 840
