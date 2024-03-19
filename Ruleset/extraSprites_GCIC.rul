@@ -97,7 +97,7 @@ extraSprites:
       164: Resources/Factions/Clients/client_rr_bigob.png
       165: Resources/Factions/Ironeyes/ripper_bigob.png
       166: Resources/Items/Builtins/docgrip_bigob.png
-      900: Resources/Items/temp_bigob.png
+      900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
     files:
@@ -158,7 +158,7 @@ extraSprites:
       155: Resources/Items/Kinetic/Ammo/9mm_rifle_ammo_floorob.png
       156: Resources/Factions/Clients/client_rr_floorob.png
       157: Resources/Factions/Ironeyes/ripper_floorob.png
-      900: Resources/Items/temp_floorob.png
+      900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
     height: 40
@@ -195,7 +195,7 @@ extraSprites:
       336: Resources/Items/Explosives/eleriumbomb_handob.png
       344: Resources/Items/Laser/ssp_pistol_handob.png
       352: Resources/Items/Laser/ssp_epistol_handob.png
-      900: Resources/Items/temp_handob.png
+      900: Resources/temp_handob.png
 
   - type: BASEBITS.PCK
     files:
@@ -459,6 +459,8 @@ extraSprites:
     fileSingle: Resources/Pedia/align_test_CPAL.png
   - typeSingle: ALIGN_TEST2_CPAL
     fileSingle: Resources/Pedia/align_test2_CPAL.png
+  - typeSingle: TEMPHARDPOINT.SPK
+    fileSingle: Resources/temphardpoint_pedia.png
 
   - typeSingle: DATA1_CPAL
     fileSingle: Resources/Pedia/data1_CPAL.png

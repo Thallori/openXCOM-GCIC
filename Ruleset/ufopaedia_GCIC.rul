@@ -463,7 +463,7 @@ ufopaedia:
     text: STR_HD_ECONOMY_ENGINE_UFOPEDIA
     section: STR_APS_CRAFT_UC
     type_id: 2
-    image_id: BATBOX.SPK #todo
+    image_id: TEMPHARDPOINT.SPK #todo
 
   - id: STR_HD_EXPRESS_ENGINE
     requires:
@@ -471,7 +471,7 @@ ufopaedia:
     text: STR_HD_EXPRESS_ENGINE_UFOPEDIA
     section: STR_APS_CRAFT_UC
     type_id: 2
-    image_id: BATBOX.SPK #todo
+    image_id: TEMPHARDPOINT.SPK #todo
 
   - id: STR_BATBOX
     text: STR_BATBOX_UFOPEDIA
