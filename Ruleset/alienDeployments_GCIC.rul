@@ -17,8 +17,8 @@ alienDeployments:
       showTarget: false
       title: STR_RESCUE_1
       music: BREACH_INTRO
+      background: BACK16.SCR
       palette: 0
-      # background: BACK16.SCR
     unlockedResearch: STR_TRG_BO_PREQ
     customUfo: STR_HOUSE_GARAGE
     terrains:
@@ -81,7 +81,7 @@ alienDeployments:
     # alertBackground: BACK03.SCR
     alertDescription: STR_RESCUE_RR_ALERT_DESCRIPTION
     markerName: STR_RESCUE_RR
-    duration: [24, 36]
+    duration: [16, 24]
     despawnPenalty: 200
     abortPenalty: 175
     # startingCondition: LOWSPEC_GEAR
@@ -89,8 +89,8 @@ alienDeployments:
       showTarget: false
       title: STR_RESCUE_RR
       music: BREACH_INTRO
+      background: BACK16.SCR
       palette: 0
-      # background: BACK16.SCR
     unlockedResearch: STR_TRG_RI_PREQ
     customUfo: STR_HOUSE_GARAGE_RR
     terrains:
@@ -174,8 +174,8 @@ alienDeployments:
       showTarget: false
       title: STR_TRADE_MEETING_EARLY
       music: HACKER_INTRO
+      background: BACK16.SCR
       palette: 2
-      # background: BACK16.SCR
     missionBountyItem: STR_BIONIC_INTERLACE
     unlockedResearch: STR_TRG_FL_PREQ
     terrains:
@@ -278,8 +278,8 @@ alienDeployments:
       showTarget: false
       title: STR_TRADE_MEETING_1
       music: HACKER_INTRO
+      background: BACK16.SCR
       palette: 2
-    #  background: BACK16.SCR
     missionBountyItem: STR_BIONIC_INTERLACE
     unlockedResearch: STR_TRG_FL_PREQ
     terrains:
@@ -332,8 +332,8 @@ alienDeployments:
       showTarget: false
       title: STR_GCIC_SABOTAGE_1
       music: SHADOW_INTRO
+      background: BACK16.SCR
       palette: 2
-      # background: BACK16.SCR
     missionBountyItem: STR_SHARES_GCIC
     missionBountyItemCount: 5
     unlockedResearch: STR_TRG_SG_PREQ

@@ -387,9 +387,9 @@ items:
     costBuy: 1899
     costSell: 475
     transferTime: 12
-    bigSprite: 123 #todo
-    floorSprite: 122 #todo
-    handSprite: 224 #todo
+    bigSprite: 900 #todo
+    floorSprite: 900 #todo
+    handSprite: 900 #todo
     bulletSprite: 1
     bulletSpeed: 20
     fireSound: 4
@@ -432,8 +432,8 @@ items:
     costBuy: 14
     costSell: 4
     transferTime: 12
-    bigSprite: 124 #todo
-    floorSprite: 123 #todo
+    bigSprite: 900 #todo
+    floorSprite: 900 #todo
     hitSound: 13
     hitAnimation: -1
     battleType: 2
@@ -2250,19 +2250,19 @@ items:
     categories: [STR_DRONES_CATEGORY]
     size: -1.0
     costSell: 10000
-    monthlySalary: -1000
+    monthlySalary: -750
 
   - type: STR_DRONE_HUMAN_ITEM
     categories: [STR_DRONES_CATEGORY]
     size: -1.0
     costSell: 10000
-    monthlySalary: -1000
+    monthlySalary: -750
 
   - type: STR_DRONE_SHARK_ITEM
     categories: [STR_DRONES_CATEGORY]
     size: -1.0
     costSell: 10000
-    monthlySalary: -1000
+    monthlySalary: -750
 
 #armor
   - type: STR_DURA_DRONE_ARMOR

@@ -377,18 +377,24 @@ research:
     cost: 4
     unlocks:
       - STR_DC_PREQ
+    getOneFree:
+      - STR_DRONES_TUTORIAL
 
   - name: STR_DRONE_HUMAN_ITEM
     needItem: true
     cost: 4
     unlocks:
       - STR_DC_PREQ
+    getOneFree:
+      - STR_DRONES_TUTORIAL
 
   - name: STR_DRONE_SHARK_ITEM
     needItem: true
     cost: 4
     unlocks:
       - STR_DC_PREQ
+    getOneFree:
+      - STR_DRONES_TUTORIAL
 
 # transformations
   - name: STR_DRONE_IMMORTALITY
@@ -509,6 +515,8 @@ research:
       - STR_SINGLESHOT_LASER_PISTOL_CODED
 
   - name: STR_XN_LASER_PISTOL
+    needItem: true
+    cost: 5
 
   - name: STR_XN_LASER_SMG
     needItem: true
@@ -801,7 +809,12 @@ research:
 
 #uso analysis
 #manuals
-#accolades
+  - name: STR_DRONES_TUTORIAL
+    dependencies:
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HUMAN_ITEM
+      - STR_DRONE_SHARK_ITEM
+
 #preqs
   - name: STR_DC_PREQ #drone cracking
     dependencies:

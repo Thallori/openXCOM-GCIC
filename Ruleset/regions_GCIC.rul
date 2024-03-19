@@ -56,8 +56,8 @@ regions:
         - [22.9472, 22.9472, 42.7167, 42.7167, -2, STR_MC_MAZNESTLE_CITY] #poor
         - [312.4781, 312.4781, 58.1618, 58.1618, -3, STR_MC_TAELSSOUTH_CITY] #poor
         - [350.8921, 350.8921, 57.5203, 57.5203, -3, STR_MC_RENCENTRAL_CITY] #poor
-        - [1.5484, 1.5484, 41.2137, 41.2137, -3, STR_MC_RENGATE_CITY] #desert
-        - [323.1671, 323.1671, 48.3072, 48.3072, -3, STR_MC_SGATEEAST_CITY] #desert
+        - [1.5484, 1.5484, 41.2137, 41.2137, -3, STR_MC_RENGATE_CITY] #arid
+        - [323.1671, 323.1671, 48.3072, 48.3072, -3, STR_MC_SGATEEAST_CITY] #arid
         - [52.4119, 52.4119, 44.4601, 44.4601, -4, STR_MC_MAZNORTH_CITY] #cold
         - [24.1116, 24.1116, 55.8386, 55.8386, -4, STR_MC_MAZSOUTH_CITY] #cold
   - type: STR_GOLDEN_REACH
@@ -84,7 +84,14 @@ regions:
       - [290.1338, 308.9621, -13.78358, 2.831806]
       - [308.9621, 342.019, -4.813084, 2.831806]
     missionZones: 
-      []
+      - - [26, 26, 4, 4]
+      - - [36, 36, 4, 4]
+      - - [46, 46, 4, 4]
+      - - [310.8031, 310.8031, 2.1964, 2.1964, -2, STR_TG_NGWEST_CITY] #poor
+        - [324.5671, 324.5671, -2.2899, -2.2899, -6, STR_TG_NGEAST_CITY] #warm port
+        - [323.2032, 323.2032, 7.5891, 7.5891, -3, STR_TG_NGSOUTH_CITY] #arid
+        - [287.2962, 287.2962, 14.1234, 14.1234, -3, STR_TG_OASISWEST_CITY] #arid
+        - [303.5731, 303.5731, 21.0054, 21.0054, -3, STR_TG_OASISEAST_CITY] #arid
   - type: STR_AZATAL_TERRACE
     cost: 1200000
     areas: 

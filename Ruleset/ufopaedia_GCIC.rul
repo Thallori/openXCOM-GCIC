@@ -325,6 +325,11 @@ ufopaedia:
   #   type_id: 8 #todo, type 7 image?
 
 #facilities
+  - id: STR_PFB
+    text: STR_PFB_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 8 #todo, type 7 image?
+
   - id: STR_CENTRAL_ACCESS
     text: STR_CENTRAL_ACCESS_UFOPEDIA
     section: STR_BASE_FACILITIES_UC
@@ -475,6 +480,11 @@ ufopaedia:
     image_id: BATBOX.SPK
 
 #drones
+  - id: STR_DRONE_ARTICLE
+    text: STR_DRONE_ARTICLE_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 8 #todo, type 7 image?
+
   - id: STR_DRONE_HYBRID_ITEM
     requires:
       - STR_DRONE_HYBRID_ITEM
@@ -1069,6 +1079,30 @@ ufopaedia:
 
 #uso analysis
 #manuals
+  - id: STR_OPERATIONS_TUTORIAL
+    text: STR_OPERATIONS_TUTORIAL_UFOPEDIA
+    section: STR_MANUALS_UC
+    type_id: 8
+
+  - id: STR_DRONES_TUTORIAL
+    requires:
+      - STR_DRONES_TUTORIAL
+    text: STR_DRONES_TUTORIAL_UFOPEDIA
+    section: STR_MANUALS_UC
+    type_id: 8
+
+  - id: STR_RESILIANCE_TUTORIAL
+    text: STR_RESILIANCE_TUTORIAL_UFOPEDIA
+    section: STR_MANUALS_UC
+    type_id: 8
+
+  - id: STR_LIQUIDITY
+    text: STR_LIQUIDITY_UFOPEDIA
+    section: STR_MANUALS_UC
+    type_id: 7
+    text_width: 180
+    image_id: LIQUIDITY_CPAL
+
   - id: STR_DAMAGE_TYPES
     text: STR_DAMAGE_TYPES_UFOPEDIA
     section: STR_MANUALS_UC
@@ -1083,13 +1117,6 @@ ufopaedia:
     text: STR_GUN_TYPES_UFOPEDIA
     section: STR_MANUALS_UC
     type_id: 8
-
-  - id: STR_LIQUIDITY
-    text: STR_LIQUIDITY_UFOPEDIA
-    section: STR_MANUALS_UC
-    type_id: 7
-    text_width: 180
-    image_id: LIQUIDITY_CPAL
 
 #accolades
   - id: STR_ACCOLADES_TECH

@@ -3,9 +3,11 @@ interfaces:
   - type: geoscape
     elements:
       - id: slackingIndicator
-        color: 244   # even lighter blue
+        color: 245   # even lighter blue
         color2: 133  # minty green
         custom: -22  # above Intercept button
+      - id: text
+        color: 82   # even lighter blue
 
   - type: battlescape
     palette: PAL_BATTLESCAPE
@@ -110,32 +112,43 @@ interfaces:
       - id: ammoColorDT15
         color: 32    #todo: cold
 
-  - type: craftEquipment
-    backgroundImage: BACK14.SCR
-  - type: craftEquipmentSave
-    backgroundImage: BACK14.SCR
-  - type: craftEquipmentLoad
-    backgroundImage: BACK14.SCR
   - type: craftSoldiers
     backgroundImage: BACK14.SCR
   - type: craftPilots
     backgroundImage: BACK14.SCR
   - type: craftPilotsSelect
     backgroundImage: BACK14.SCR
+
+  - type: craftArmor
+    backgroundImage: BACK04.SCR
+  - type: craftEquipment
+    backgroundImage: BACK04.SCR
+  - type: craftEquipmentSave
+    backgroundImage: BACK04.SCR
+  - type: craftEquipmentLoad
+    backgroundImage: BACK04.SCR
+
   - type: soldierList
-    backgroundImage: BACK14.SCR
+    backgroundImage: BACK04.SCR
   - type: soldierDiary
-    backgroundImage: BACK14.SCR
+    backgroundImage: BACK04.SCR
   - type: soldierDiaryPerformance
-    backgroundImage: BACK14.SCR
+    backgroundImage: BACK04.SCR
+  - type: soldierBonus
+    backgroundImage: BACK04.SCR
+  - type: soldierRank
+    backgroundImage: BACK04.SCR
+  - type: soldierAvatar
+    backgroundImage: BACK04.SCR
+
   - type: trainingFinished
-    backgroundImage: BACK14.SCR
+    backgroundImage: BACK04.SCR
   - type: martialTraining
-    backgroundImage: BACK14.SCR
+    backgroundImage: BACK04.SCR
   - type: allocateMartial
-    backgroundImage: BACK14.SCR
+    backgroundImage: BACK04.SCR
 
   - type: soldierTransformation
-    backgroundImage: BACK14.SCR
+    backgroundImage: BACK04.SCR
   - type: transformationList
-    backgroundImage: BACK14.SCR
+    backgroundImage: BACK04.SCR

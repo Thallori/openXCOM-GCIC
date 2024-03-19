@@ -409,12 +409,12 @@ en-US:
 #briefings
   STR_RESCUE_1: "Clients: Early Adopters"
   STR_RESCUE_1_ALERT: "CLIENTS REQUIRE RESCUE"
-  STR_RESCUE_1_ALERT_DESCRIPTION: "A client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) replace the implant and render assistance.{NEWLINE}{NEWLINE}Minimum site duration: 48 Hours."
-  STR_RESCUE_1_BRIEFING: "A client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) replace the implant and render assistance.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this mission."
+  STR_RESCUE_1_ALERT_DESCRIPTION: "A client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Minimum site duration: 48 Hours."
+  STR_RESCUE_1_BRIEFING: "A client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this mission."
   
   STR_RESCUE_RR: "Clients: Rapid Response"
   STR_RESCUE_RR_ALERT: "CLIENTS REQUIRE RESCUE"
-  STR_RESCUE_RR_ALERT_DESCRIPTION: "An emergency request has been triggered. We are tracking a client's current vitals and location. So far they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Minimum site duration: 24 Hours."
+  STR_RESCUE_RR_ALERT_DESCRIPTION: "An emergency request has been triggered. We are tracking a client's current vitals and location. So far they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Minimum site duration: 16 Hours."
   STR_RESCUE_RR_BRIEFING: "An emergency request has been triggered. We are tracking a client's current vitals and location. So far they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this mission."
 
   STR_TRADE_MEETING_EARLY: "Netrunners: Contact"
@@ -450,8 +450,8 @@ en-US:
   STR_MS_RATING_350: "GREAT"
   STR_MS_RATING_150: "GOOD"
   STR_MS_RATING_75: "SATISFACTORY"
-  STR_MS_RATING_25: "SUFFICIENT"
-  STR_MS_RATING_N25: "OK"
+  STR_MS_RATING_15: "SUFFICIENT"
+  STR_MS_RATING_N15: "OK"
   STR_MS_RATING_N75: "CONCERNING"
   STR_MS_RATING_N200: "TROUBLING"
   STR_MS_RATING_N350: "DISTRUBING"
@@ -534,6 +534,12 @@ en-US:
   STR_GR_UCLCNORTH_CITY: "Overlook" #lake
   STR_GR_UCLCWEST_CITY: "Huron" #lake
   STR_GR_UCLCTHREAT_CITY: "Erie" #coral
+#twingates
+  STR_TG_NGWEST_CITY: "Gaiknik" #poor
+  STR_TG_NGEAST_CITY: "New Sopot" #warm port
+  STR_TG_NGSOUTH_CITY: "Nadzir" #arid
+  STR_TG_OASISWEST_CITY: "Thule" #arid
+  STR_TG_OASISEAST_CITY: "Midway" #arid
 #soldiers
   STR_PILOT: "Pilot"
   STR_DRONE_HYBRID_1: "DRONE/HYBRID"
@@ -549,18 +555,21 @@ en-US:
   STR_RANK_PILOT_3: "Premium Pilot"
   STR_RANK_PILOT_4: "Enterprise Pilot"
   STR_RANK_PILOT_5: "Flagship Pilot"
+
   STR_RANK_HYBRID_DRONE_0: "Fresh Clone"
   STR_RANK_HYBRID_DRONE_1: "Mediator"
   STR_RANK_HYBRID_DRONE_2: "Envoy"
   STR_RANK_HYBRID_DRONE_3: "Emissary"
   STR_RANK_HYBRID_DRONE_4: "Ambassador"
   STR_RANK_HYBRID_DRONE_5: "Arbiter"
+
   STR_RANK_HUMAN_DRONE_0: "Native Human"
   STR_RANK_HUMAN_DRONE_1: "Supervisor"
   STR_RANK_HUMAN_DRONE_2: "Manager"
   STR_RANK_HUMAN_DRONE_3: "Director"
   STR_RANK_HUMAN_DRONE_4: "Incorporator"
   STR_RANK_HUMAN_DRONE_5: "Assimilator"
+
   STR_RANK_SHARK_DRONE_0: "Watch Shark"
   STR_RANK_SHARK_DRONE_1: "Sentry"
   STR_RANK_SHARK_DRONE_2: "Guard"
@@ -657,7 +666,7 @@ en-US:
   STR_RRM_LOCK: "P:RMM (preq)"
   STR_RRM_ITEM: "PROJECT: Rapid Response"
   STR_RAPID_RESPONSE_MISSIONS: ">PROJECT: Rapid Reponse<"
-  STR_RAPID_RESPONSE_MISSIONS_UFOPEDIA: "{NEWLINE}MARKET POTENTIAL: 25,000$/CLIENT{NEWLINE}AVG. ASSIGNMENTS: 1.74/MONTH{NEWLINE}{NEWLINE}Arriving before any permanent damage is done is a more attractive service than saving a client after-the-fact. Offering a 24 hour guarantee to regions a mere thousand kilometers away isn't difficult, but expanding our service to every major metropolitan area on the planet will require faster craft.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
+  STR_RAPID_RESPONSE_MISSIONS_UFOPEDIA: "{NEWLINE}MARKET POTENTIAL: 25,000$/CLIENT{NEWLINE}AVG. ASSIGNMENTS: 1.74/MONTH{NEWLINE}{NEWLINE}Arriving before any permanent damage is done is a more attractive service than saving a client after-the-fact. Offering a same-day guarantee to regions a mere thousand kilometers away isn't difficult, but expanding our service to every major metropolitan area on the planet will require faster craft.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_FT_LOCK: "P:FT (preq)"
   STR_FT_ITEM: "PROJECT: Free Trial"
   STR_FREE_TRIAL_MISSIONS: ">PROJECT: Free Trial<"
@@ -714,6 +723,8 @@ en-US:
   STR_PIPEBOMB_M: "Pipe Bomb Fabrication"
   STR_ELERIUM_BOMB_M: "Elerium Bomb Fabrication"
 #facilities
+  STR_PFB: "PRINTED FACILITY BOARD"
+  STR_PFB_UFOPEDIA: "{NEWLINE}ARTICLE: Non-Disclosed Constructions{NEWLINE}SERVICE: Restored Automation{NEWLINE}{NEWLINE}Satellite renewal programs have reached the point where it is no longer possible for corporations to pursue proprietary R&D in the open air. Yet underground construction projects are costly, dangerous, and most importantly require skilled labor which risks infosec leaks.{NEWLINE}{NEWLINE}Thankfully, robotics tech has also continued to adapt. Buying, running, then destorying construction bots may be worth the price of admission if the risk-benifit analysis deems it so."
   STR_CENTRAL_ACCESS: "Central Access"
   STR_CENTRAL_ACCESS_UFOPEDIA: "The barrier between public and private enterprise. Shell corporations require an access point to build underground facilities.{NEWLINE}{NEWLINE}Vulnerable to intrusion."
   STR_CORRIDOR: "Corridor"
@@ -761,8 +772,8 @@ en-US:
   STR_BATBOX_UFOPEDIA: "LARGER AND HEAVIER THAN THE ENGINES IT TYPICALLY POWERS, BATBOXES ARE MODIFICATIONS FOR END-USERS WHO VALUE NON-STOP PLANETARY CIRCUMNAVIGATION OVER ROUND-TRIP TIME. {NEWLINE}{NEWLINE}CHARGE: +850 kWH{NEWLINE}SPEED: -35 KNOTS/H{NEWLINE}{NEWLINE}CLASS: ELECTRIC"
   STR_ELECTRIC_ENGINE: "Electric Engine"
 #drones
-  STR_DRONES_TUTORIAL: "Drones"
-  STR_DRONES_TUTORIAL_UFOPEDIA: "todo, explain drones giving -1 space and 1000$ per month" #todo
+  STR_DRONE_ARTICLE: "DRONES"
+  STR_DRONE_ARTICLE_UFOPEDIA: "{NEWLINE}ARTICLE: Carter of Drone Rights{NEWLINE}SECTION: Justifications{NEWLINE}{NEWLINE}Drones are the result of an invader-sourced implant initially used as an alternative to involuntary incarceration after the reintroduction of the police and prison system.{NEWLINE}{NEWLINE}Despite its reputation, the procedure is proven to be completely safe. A multi-species ethics committee has deemed the continued use of drones preferable to their loss or destruction."
   STR_DRONE_HYBRID_ITEM: "DRONE/HYBRID"
   STR_DRONE_HYBRID_ITEM_UFOPEDIA: "{NEWLINE}Representation: 18.8%{NEWLINE}Stapled: 99.7%{NEWLINE}{NEWLINE}Born out of occupation experiments, hybrids were once feared as the final future of humanity for the same reasons that make them a popular product in the post-occupation era. Thousands are grown, nerve-stapled, and sold everyday.{NEWLINE}{NEWLINE}Night Vision: +3m{NEWLINE}{NEWLINE}(+) Firing, Reactions{NEWLINE}(-) Strength"
   STR_DRONE_HUMAN_ITEM: "DRONE/HUMAN"
@@ -929,11 +940,11 @@ en-US:
   STR_DATA_SSP: "DATAMINE: SSP"
 # abstract
   STR_SHARES_GCIC: "SHARES: GCIC"
-  STR_SHARES_GCIC_UFOPEDIA: "{NEWLINE}Representitive fractional ownership in our parent company. These are awarded as an incentive to perform activities that are not legally enforcable. In this sense, shares are a crude measure of how loyal we are to GCIC's less reputable needs.{NEWLINE}{NEWLINE}As a shareholder, we'll recieve dividends. As a subsidiary, we'll recieve extra leeway in how we conduct business.{NEWLINE}{NEWLINE}Effective Income: +1200$/month"
+  STR_SHARES_GCIC_UFOPEDIA: "{NEWLINE}Representitive fractional ownership in our parent company. These are awarded as an incentive to perform activities that are not legally enforcable. In this sense, shares are a crude measure of how loyal we are to GCIC's less reputable needs.{NEWLINE}{NEWLINE}As a shareholder, we'll recieve dividends. As a subsidiary, we'll recieve extra leeway in how we conduct business. When all requirements are met, available PROJECTS will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: +1200$/month"
   STR_BRAND_LOYALTY: "Brand Loyalty"
-  STR_BRAND_LOYALTY_UFOPEDIA: "{NEWLINE}Fulfilling contracts or otherwise following through on our promises will create positive feelings in our consumer base. This results in more subscriptions even when services falter, letting us act with more freely with less consequence.{NEWLINE}{NEWLINE}With enough trust, we can break into new markets or get sponsorships from other corporate entities. When all requirements are met, the available PROJECT will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: +800$/month"
+  STR_BRAND_LOYALTY_UFOPEDIA: "{NEWLINE}Fulfilling contracts or otherwise following through on our promises will create positive feelings in our consumer base. This results in more subscriptions even when services falter, letting us act with more freely with less consequence.{NEWLINE}{NEWLINE}With enough trust, we can break into new markets or get sponsorships from other corporate entities. When all requirements are met, available PROJECTS will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: +800$/month"
   STR_BOUNTY_1: "Bounty"
-  STR_BOUNTY_1_UFOPEDIA: "{NEWLINE}When performing public operations, any targets we incapacitate are likely to have broken laws or contracts we have no right to enforce. In these circumstances, targets are turned over relevant corporations in return for a proportional bounty.{NEWLINE}{NEWLINE}Corporations with a reputation for bounty hunting are first call for certain lucrative contracts and prototype equipment."
+  STR_BOUNTY_1_UFOPEDIA: "{NEWLINE}When performing public operations, any targets we incapacitate are likely to have broken laws or contracts we have no right to enforce. In these circumstances, targets are turned over relevant corporations in return for a proportional bounty.{NEWLINE}{NEWLINE}Corporations with a reputation for bounty hunting are first call for certain lucrative contracts and prototype equipment. When all requirements are met, available PROJECTS will appear in manufacturing."
 # containers
   STR_CRIMINAL_CONTAINER_1: "Contraband Crate"
   STR_CRIMINAL_CONTAINER_1_UFOPEDIA: "{NEWLINE}With no logos, reciepts, or requirements to wave liabilities, the contents of this box are, by any legal definition, contraband. Its primitive security system of hammered down nails should be easy for our fabricators to crack."
@@ -987,34 +998,20 @@ en-US:
   STR_HUMAN_M_CIVILIAN: "Potential Client"
 #uso analysis
 #manuals
+  STR_OPERATIONS_TUTORIAL: "Projects"
+  STR_OPERATIONS_TUTORIAL_UFOPEDIA: "Research topics marked by {ALT}>arrows<{ALT} will unlock new missions and therefore, new opportunities. This is the best (and usually only) way to make progress.{NEWLINE}{NEWLINE}Some projects will make themselves available through researching its prerequisites. In the research screen, a topic can be {ALT}examined{ALT} [middle-click] to see what it might unlock.{NEWLINE}{NEWLINE}Other projects will require {ALT}manufacturing{ALT}, representing an exchange of items for possibilities. Each project only needs one production, which then must be researched."
+  STR_DRONES_TUTORIAL: "Drones"
+  STR_DRONES_TUTORIAL_UFOPEDIA: "Certain missions will have drones ready somewhere on the map. If these drones {ALT}survive{ALT} the mission, they will be added to storage.{NEWLINE}{NEWLINE}Drones which haven't been pre-purchased or hacked will be marked as a target, even when they are incapable of combat. If {ALT}captured{ALT}, ownership transfer is easy enough to be automatic.{NEWLINE}{NEWLINE}Drones in storage will perform small jobs out in the world, providing an effective income of {ALT}+750$/Month{ALT} and {ALT}+1 storage space{ALT}."
+  STR_RESILIANCE_TUTORIAL: "Resiliance"
+  STR_RESILIANCE_TUTORIAL_UFOPEDIA: "How much a given mind has adapted to their own body. Knowing how strong a hand can grip, or how fast legs can run. All creatures become acclimated to their corporeal existance, whether it's made of flesh or steel. Modifying the shell of that existance means a mind has to relearn its body, resetting resiliance to its base level.{NEWLINE}{NEWLINE}Similarly, modifying the mind means the body has to relearn its brain. Being subjected to psionic intrusions (or even accessing the psionic network at all) lowers resiliance. However, the body is much faster at learning than the mind, recovering in weeks rather than months.{NEWLINE}{NEWLINE}High resiliance increases {ALT}psionic defense{ALT}, missing resiliance lowers {ALT}TU recovery{ALT}."
+  STR_LIQUIDITY: "Liquidity"
+  STR_LIQUIDITY_UFOPEDIA: "The ease of which a corporate entity can trade its assets without drastically affecting market prices. Performing missions that engender public trust will cause share prices to rise, making it easier take out loans, shrink dividens, and enjoy more relaxed tax rates.{NEWLINE}{NEWLINE}Conversely, stories of rogue drones and failures to fulfill contracts will tie up indirect assets, effectively lowering monthly income.{NEWLINE}{NEWLINE}It is not possible for a corporation to become insolvant having too much negative liquidity. A good reputation isn't necessary for a profitable business."
   STR_DAMAGE_TYPES: "Damage Types"
   STR_DAMAGE_TYPES_UFOPEDIA: "Destruction takes many forms and these violent acts fall into several broad categories. Unless otherwise stated, all equipment will follow these rules.{NEWLINE}{NEWLINE}{ALT}Kinetic{ALT} Standard{NEWLINE}{ALT}Mechanical{ALT} +50% TU Damage{NEWLINE}{ALT}Concussive{ALT} +75% Stun Damage{NEWLINE}{ALT}Incendiary{ALT} +2000% Moral Damage{NEWLINE}{ALT}Chemical{ALT} Armor Shreading{NEWLINE}{ALT}Biological{ALT} +50% Armor Piercing{NEWLINE}{NEWLINE}{ALT}Smoke{ALT} No HP Damage{NEWLINE}{ALT}Electric{ALT} Full Stun, -65% Lethal{NEWLINE}{ALT}Blunt{ALT} Full Stun, -80% Lethal{NEWLINE}{NEWLINE}{ALT}Radiant{ALT} Increased Terrain Damage, +10 Accuracy{NEWLINE}{ALT}Plasma{ALT} +50% Stun Damage, -10 Accuracy{NEWLINE}{ALT}Sonic{ALT} AoE Damage, +25% Armor Piercing"
   STR_WEAPON_TYPES: "Attack Types"
   STR_WEAPON_TYPES_UFOPEDIA: "{ALT}Ranged and Melee{ALT} attacks hit for 0-200% damage, representing anything from a grazing shot to a critical strike. They will also randomly deal up to 25% of their damage as stun.{NEWLINE}{NEWLINE}{ALT}Melee{ALT} hits remove TUs equal to 100% of the damage dealt, no matter the damage type. This can potentially distrupt reaction attacks on the current turn, but will not affect a target's TUs on the following turn.{NEWLINE}{NEWLINE}{ALT}Explosions{ALT} are more consistant, inflicting 50-150% damage to small targets. Large targets can be hit up to 4 times for each tile they are standing on.{NEWLINE}{NEWLINE}{ALT}Stun{ALT} weapons will never wound a target and deal 100% of their damage as stun, but damage types other than blunt/electric still deal full health damage."
   STR_GUN_TYPES: "Ranged Modifiers"
   STR_GUN_TYPES_UFOPEDIA: "Weapon styles vary by design, philosophy, and ease of use. The following is not a comprehensive list, but will cover most equipment we can use.{NEWLINE}{NEWLINE}{ALT}Flat Accuracy{ALT} Pistols +20, SMGs/Shotguns +10, Precision -20{NEWLINE}{NEWLINE}{ALT}Kneeling Accuracy{ALT} Pistols/Bows +10%, SMGs/Shotguns +15%, Assault/Precision +20%, Cannons/MGs +50%{NEWLINE}{NEWLINE}{ALT}One-Handed Accuracy{ALT} SMGs -15%, Shotguns -25%, Assault/Precision -50%, Cannons/MGs -65%{NEWLINE}{NEWLINE}{ALT}Precision Arms{ALT} +25% no-sight accuracy, +50% minimum damage{NEWLINE}{ALT}Cannons{ALT} 25% accuracy from strength{NEWLINE}{ALT}MGs{ALT} 50% accuracy from strength{NEWLINE}{NEWLINE}{ALT}Launchers{ALT} have variable modifiers, depending on size and weight"
-  STR_LIQUIDITY: "Liquidity"
-  STR_LIQUIDITY_UFOPEDIA: "{NEWLINE}The ease of which a corporate entity can trade its assets without drastically affecting market prices. Performing missions that engender public trust will cause our share prices to rise, allowing us to take out loans, shrink dividens, and enjoy more relaxed tax rates.{NEWLINE}{NEWLINE}Conversely, stories of rogue drones and failures to fulfill our contracts will tie up our more indirect assets, effectively lowering monthly income.{NEWLINE}{NEWLINE}It is not possible for a corporation to become insolvant from a lack of liquidity alone. A good reputation isn't necessary for a profitable business."
-  #resiliance
-  #neuroplasticity, how much someone has adapted to their own body and mind. implanting new cybernetics resets progress, some transformations need higher level than base stats. some weapons or enviroments attack resiliance directly.
-  #geoscape
-  #middle mouse button: examine
-  #F5: save equipment template
-  #F9: load equipment template
-  #x: clear inventory/armor
-  #right mouse button: hide item
-  #battlescape
-  #middle mouse button: examine
-  #right mouse button: halt movement, open doors, set preferred weapon for reaction fire 
-  #ctrl+rmb: set weapon safety
-  #r: reload
-  #m: minimap
-  #k: kneel
-  #l: toggle personal lighting
-  #space: night vision
-  #hold ctrl: sprint move, strafe move, force fire, quick equip/drop
-  #hold alt: show unit facing direction, show motion scanned enemies, show weapon damage
-  #Ctrl+Shift+LMB: spray targeting mode
 #accolades
   STR_MEDALS: "ACCOLADES"
   STR_MEDAL_NAME: "Accolade Title"

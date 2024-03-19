@@ -31,3 +31,11 @@ extraSounds:
       115: Resources/Sounds/Deaths/DogeDeath3.wav
       116: Resources/Sounds/Fire/acid_fire.wav
       117: Resources/Sounds/Fire/chainsaw_fire.wav
+
+  - type: GEO.CAT
+    files:
+      0: Resources/Sounds/switch.wav
+      1: Resources/Sounds/place.wav
+      2: Resources/Sounds/place.wav
+      3: Resources/Sounds/place.wav
+      6: Resources/Sounds/switch.wav

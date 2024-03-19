@@ -89,10 +89,14 @@ Sharkquanaut Combat Divers		[mod]
  Hans Woofington			[author]
   Sharks				[redraw]		(original)
 
-BigGeoscape				[mod]
- XOps					[author]
+TFTD: Vanilla Plus			[mod]
+ Daev					[author]
   Starry Background			[wholecloth]
 
+Kenny.nl				[site]
+ SFX Set				[pack]
+  Switch29				[wholecloth]
+  BookPlace1				[wholecloth]
 
 Inspiration comes from many sources, too many to list. Ranging from decades old fan fiction that could have been done better to scientific journals. However, the ideas taken from the OpenXCom community are listed here.
 

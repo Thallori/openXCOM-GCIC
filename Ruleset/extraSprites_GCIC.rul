@@ -97,6 +97,7 @@ extraSprites:
       164: Resources/Factions/Clients/client_rr_bigob.png
       165: Resources/Factions/Ironeyes/ripper_bigob.png
       166: Resources/Items/Builtins/docgrip_bigob.png
+      900: Resources/Items/temp_bigob.png
 
   - type: FLOOROB.PCK
     files:
@@ -157,6 +158,7 @@ extraSprites:
       155: Resources/Items/Kinetic/Ammo/9mm_rifle_ammo_floorob.png
       156: Resources/Factions/Clients/client_rr_floorob.png
       157: Resources/Factions/Ironeyes/ripper_floorob.png
+      900: Resources/Items/temp_floorob.png
 
   - type: HANDOB.PCK
     height: 40
@@ -193,6 +195,7 @@ extraSprites:
       336: Resources/Items/Explosives/eleriumbomb_handob.png
       344: Resources/Items/Laser/ssp_pistol_handob.png
       352: Resources/Items/Laser/ssp_epistol_handob.png
+      900: Resources/Items/temp_handob.png
 
   - type: BASEBITS.PCK
     files:
@@ -595,29 +598,32 @@ extraSprites:
     fileSingle: Resources/UI/DETBORD2.png
 
 #backgrounds
-  - typeSingle: ALTGEOBORD.SCR
+#replace
+  # - typeSingle: ALTGEOBORD.SCR
+  #   fileSingle: Resources/Backgrounds/GEOBORD.png
+  - typeSingle: GEOBORD.SCR
     fileSingle: Resources/Backgrounds/GEOBORD.png
 
   - typeSingle: BACK01.SCR
     fileSingle: Resources/Backgrounds/back_main.png
   - typeSingle: BACK02.SCR
-    fileSingle: Resources/Backgrounds/back_test.png
+    fileSingle: Resources/Backgrounds/back_soylent.png
   - typeSingle: BACK03.SCR
     fileSingle: Resources/Backgrounds/back_test.png
   - typeSingle: BACK04.SCR
-    fileSingle: Resources/Backgrounds/back_test.png
+    fileSingle: Resources/Backgrounds/back_locker.png
   - typeSingle: BACK05.SCR
     fileSingle: Resources/Backgrounds/back_servers.png
   - typeSingle: BACK12.SCR
-    fileSingle: Resources/Backgrounds/back_test.png
+    fileSingle: Resources/Backgrounds/back_aircar.png
   - typeSingle: BACK13.SCR
     fileSingle: Resources/Backgrounds/back_market.png
   - typeSingle: BACK14.SCR
-    fileSingle: Resources/Backgrounds/back_locker.png
+    fileSingle: Resources/Backgrounds/back_loading.png
   - typeSingle: BACK15.SCR
     fileSingle: Resources/Backgrounds/back_test.png
   - typeSingle: BACK16.SCR
-    fileSingle: Resources/Backgrounds/back_test.png
+    fileSingle: Resources/Backgrounds/back_destination.png
   - typeSingle: BACK17.SCR
     fileSingle: Resources/Backgrounds/back_factory.png
 
