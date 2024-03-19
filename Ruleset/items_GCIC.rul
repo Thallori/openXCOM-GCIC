@@ -387,9 +387,9 @@ items:
     costBuy: 1899
     costSell: 475
     transferTime: 12
-    bigSprite: 900 #todo
-    floorSprite: 900 #todo
-    handSprite: 900 #todo
+    bigSprite: 167
+    floorSprite: 158
+    handSprite: 360
     bulletSprite: 1
     bulletSpeed: 20
     fireSound: 4
@@ -432,8 +432,8 @@ items:
     costBuy: 14
     costSell: 4
     transferTime: 12
-    bigSprite: 900 #todo
-    floorSprite: 900 #todo
+    bigSprite: 168
+    floorSprite: 159
     hitSound: 13
     hitAnimation: -1
     battleType: 2
@@ -600,7 +600,7 @@ items:
     weight: 2
     costThrow:
       energy: 6
-    power: 26
+    power: 28
     clipSize: 12
     damageBonus:
       reactions: 0.05

@@ -655,6 +655,19 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     type_id: 4
 
+  - id: STR_9MM_SMG
+    requires:
+      - STR_9MM_SMG
+    text: STR_9MM_SMG_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_9MM_SMG_AMMO
+    requires:
+      - STR_9MM_SMG
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
   - id: STR_9MM_RIFLE
     requires:
       - STR_9MM_RIFLE
@@ -668,6 +681,13 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     type_id: 4
 
+  - id: STR_DISPOSABLE_SMG
+    requires:
+      - STR_DISPOSABLE_SMG
+    text: STR_DISPOSABLE_SMG_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
   - id: STR_45_PISTOL
     requires:
       - STR_45_PISTOL
@@ -679,13 +699,6 @@ ufopaedia:
     requires:
       - STR_45_PISTOL
     section: STR_NOT_AVAILABLE
-    type_id: 4
-
-  - id: STR_DISPOSABLE_SMG
-    requires:
-      - STR_DISPOSABLE_SMG
-    text: STR_DISPOSABLE_SMG_UFOPEDIA
-    section: STR_EQUIPMENT_UC
     type_id: 4
 
 # electric
