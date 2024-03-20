@@ -701,6 +701,19 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     type_id: 4
 
+  - id: STR_SSP_SHOTGUN
+    requires:
+      - STR_SSP_SHOTGUN
+    text: STR_SSP_SHOTGUN_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_SSP_SHOTGUN_BS
+    requires:
+      - STR_SSP_SHOTGUN
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
 # electric
   - id: STR_TASER_PISTOL
     requires:
@@ -1087,6 +1100,26 @@ ufopaedia:
   - id: STR_SSPGUARD_ARMOR
     requires:
       - STR_SSPGUARD_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+
+  - id: STR_SSPOFFICERS
+    requires:
+      - STR_SSPOFFICER_PRIVATE
+    text: STR_SSPOFFICERS_UFOPEDIA
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: SSPOFFICER_CPAL
+
+  - id: STR_SSPOFFICER_ARMOR
+    requires:
+      - STR_SSPOFFICER_ARMOR
     section: STR_COMPETITORS_UC
     type_id: 5
 

@@ -213,6 +213,35 @@ units:
     sniper: 0
     canSurrender: true
 
+  - type: STR_SSPOFFICER_PRIVATE
+    race: STR_SSP
+    rank: STR_RANK_4
+    liveAlien: STR_SSPOFFICER_PRIVATE
+    stats:
+      tu: 50
+      stamina: 50
+      health: 40
+      bravery: 40
+      reactions: 40
+      firing: 50
+      throwing: 30
+      melee: 50
+      strength: 40
+      psiStrength: 0
+      psiSkill: 0
+      mana: 40
+    armor: STR_SSPOFFICER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: -15
+    deathSound: [113, 114, 115]
+    energyRecovery: 30
+    intelligence: 3
+    aggression: 2
+    spotter: 1
+    sniper: 0
+    canSurrender: true
+
 #enemy drones
   - type: STR_DRONE_ENEMY_HYBRID
     race: STR_RACE_DRONE

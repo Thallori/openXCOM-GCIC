@@ -87,3 +87,17 @@
     - type: addBlock
       size: 2
     - type: fillArea
+
+  - type: COMMERCIAL_4X4
+    commands:
+    - type: addUFO
+      rects:
+        - [0, 0, 3, 3]
+    - type: addCraft
+    - type: addLine
+      direction: horizontal
+    - type: addBlock
+      size: [2, 1]
+    - type: addBlock
+      size: 2
+    - type: fillArea

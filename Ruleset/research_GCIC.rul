@@ -155,6 +155,37 @@ research:
       - STR_EXPANSION
     cost: 6
 
+  - name: STR_GCIC_BACKCHANNEL_MISSIONS
+    neededItem: STR_PBI_ITEM
+    needItem: true
+    destroyItem: true
+    cost: 5
+    points: 25
+    disables:
+      - STR_PBI_LOCK
+
+  - name: STR_PBI_LOCK
+    dependencies:
+      - STR_FORBIDDEN_OPERATIONS
+      - STR_NON_CLIENTS
+      - STR_SHARES_GCIC
+
+  - name: STR_PTS_LOCK
+    dependencies:
+      - STR_GCIC_BACKCHANNEL_MISSIONS
+
+  - name: STR_GCIC_INDEPENDENCE
+    neededItem: STR_PBI_ITEM
+    needItem: true
+    destroyItem: true
+    cost: 125
+    disables:
+      - STR_PIN_LOCK
+  
+  - name: STR_PIN_LOCK
+    dependencies:
+      - STR_SHARES_GCIC
+
   - name: STR_SUBCONTRACTING_OPERATIONS
     requiresBaseFunc:
       - STR_SERVICE_UPLINK
@@ -469,6 +500,19 @@ research:
     dependencies:
       - STR_45_PISTOL_CODED
 
+  - name: STR_SSP_SHOTGUN_CODED
+    lookup: STR_SSP_SHOTGUN
+    needItem: true
+    cost: 4
+    unlocks:
+      - STR_BC_PREQ
+      - STR_V_SSP_PREQ
+      - STR_SSP_SHOTGUN
+
+  - name: STR_SSP_SHOTGUN
+    dependencies:
+      - STR_SSP_SHOTGUN_CODED
+
 # electric
   - name: STR_TASER_PISTOL_CODED
     lookup: STR_TASER_PISTOL
@@ -614,10 +658,6 @@ research:
     dependencies:
       - STR_CONSUMER_CYBERNETICS_CODED
 
-  - name: STR_SJB_LICENSE
-    needItem: true
-    cost: 5
-
   # - name: STR_AG_UNIT
   #   needItem: true
   #   cost: 15
@@ -626,9 +666,17 @@ research:
     needItem: true
     cost: 3
 
+  - name: STR_PLASTICS
+    needItem: true
+    cost: 15
+
   - name: STR_ELERIUM_CORE
     needItem: true
     cost: 15
+
+  - name: STR_SJB_LICENSE
+    needItem: true
+    cost: 5
 
 # data
   - name: STR_PERSONAL_DATA
@@ -637,6 +685,13 @@ research:
     cost: 5
     unlocks:
       - STR_PC_PREQ
+
+  - name: STR_GCIC_SABOTAGE_2_DATA_DISC
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
+    needItem: true
+    destroyItem: true
+    cost: 2
 
   - name: STR_DATA_IRONEYES
     requiresBaseFunc:
@@ -651,7 +706,6 @@ research:
       - STR_LOCAL_INTERFACE
     getOneFree:
       - STR_BOOSTER_PRIVATE
-      - STR_BOOSTER_ARMOR
       - STR_9MM_PISTOL
       - STR_9MM_RIFLE
       - STR_DISPOSABLE_SMG
@@ -661,7 +715,6 @@ research:
     getOneFreeProtected:
       STR_TRG_RI_PREQ:
         - STR_RIPPER_PRIVATE
-        - STR_RIPPER_ARMOR
         - STR_9MM_SMG
 
   - name: STR_DATA_NETRUNNERS
@@ -677,7 +730,6 @@ research:
       - STR_LOCAL_INTERFACE
     getOneFree:
       - STR_FREELANCER_PRIVATE
-      - STR_FREELANCER_ARMOR
       - STR_TASER_PISTOL
       - STR_DART_PISTOL
       - STR_MULTITOOL
@@ -698,12 +750,15 @@ research:
       - STR_VENDOR_SSP
     getOneFree:
       - STR_SSPGUARD_PRIVATE
-      - STR_SSPGUARD_ARMOR
       - STR_45_PISTOL
       - STR_TASER_PISTOL
       - STR_SINGLESHOT_LASER_PISTOL
       - STR_BATON
       - STR_EXTINGUISHER
+    getOneFreeProtected:
+      STR_TRG_SO_PREQ:
+        - STR_SSPOFFICER_PRIVATE
+        - STR_SSP_SHOTGUN
 
 # abstract
   - name: STR_SHARES_GCIC
@@ -739,7 +794,6 @@ research:
     cost: 6
     unlocks:
       - STR_TRG_BO_PREQ
-      - STR_BOOSTER_ARMOR
     getOneFree:
       - STR_9MM_PISTOL
       - STR_9MM_RIFLE
@@ -757,7 +811,6 @@ research:
     cost: 7
     unlocks:
       - STR_TRG_BO_PREQ
-      - STR_BOOSTER_ARMOR
     getOneFree:
       - STR_9MM_PISTOL
       - STR_9MM_RIFLE
@@ -776,7 +829,6 @@ research:
     cost: 10
     unlocks:
       - STR_TRG_FL_PREQ
-      - STR_FREELANCER_ARMOR
     getOneFree:
       - STR_TASER_PISTOL_CODED
       - STR_DART_PISTOL
@@ -795,7 +847,6 @@ research:
     unlocks:
       - STR_TRG_SG_PREQ
       - STR_VENDOR_SSP
-      - STR_SSPGUARD_ARMOR
     getOneFree:
       - STR_45_PISTOL_CODED
       - STR_TASER_PISTOL_CODED
@@ -806,6 +857,23 @@ research:
   - name: STR_SSPGUARD_ARMOR
     dependencies:
       - STR_SSPGUARD_PRIVATE
+
+  - name: STR_SSPOFFICER_PRIVATE
+    needItem: true
+    destroyItem: true
+    cost: 5
+    unlocks:
+      - STR_TRG_SO_PREQ
+      - STR_VENDOR_SSP
+    getOneFree:
+      - STR_45_PISTOL_CODED
+      - STR_SINGLESHOT_LASER_PISTOL_CODED
+      - STR_BATON
+      - STR_EXTINGUISHER
+
+  - name: STR_SSPOFFICER_ARMOR
+    dependencies:
+      - STR_SSPOFFICER_PRIVATE
 
 #uso analysis
 #manuals
@@ -866,6 +934,7 @@ research:
       - STR_SINGLESHOT_LASER_PISTOL_CODED
 
 #factions preqs
+# ironsights
   - name: STR_TRG_BO_PREQ #boosters
     dependencies:
       - STR_LOCK
@@ -876,12 +945,19 @@ research:
       - STR_LOCK
       - STR_RIPPER_PRIVATE
 
+# netrunners
   - name: STR_TRG_FL_PREQ #freelancers
     dependencies:
       - STR_LOCK
       - STR_FREELANCER_PRIVATE
 
-  - name: STR_TRG_SG_PREQ #ssp guards
+# ssp
+  - name: STR_TRG_SG_PREQ #guards
     dependencies:
       - STR_LOCK
       - STR_SSPGUARD_PRIVATE
+
+  - name: STR_TRG_SO_PREQ #officers
+    dependencies:
+      - STR_LOCK
+      - STR_SSPOFFICER_PRIVATE

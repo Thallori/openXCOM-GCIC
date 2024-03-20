@@ -304,7 +304,7 @@ items:
     weight: 3
     costThrow:
       energy: 6
-    power: 12
+    power: 18
     damageBonus:
       reactions: 0.05
     damageType: 1
@@ -312,7 +312,7 @@ items:
       ArmorEffectiveness: 1.4
       ToStun: 0.50
     clipSize: 4
-    shotgunPellets: 6
+    shotgunPellets: 4
     shotgunSpread: 25
     shotgunBehavior: 1
     armor: 20
@@ -417,7 +417,7 @@ items:
     autoRange: 9
     dropoff: 3
     kneelBonus: 115
-    twoHanded: true
+    # twoHanded: true
     oneHandedPenalty: 85
     experienceTrainingMode: 5
     attraction: 15
@@ -473,7 +473,7 @@ items:
     accuracyAimed: 90
     accuracyMultiplier:
       firing: 1.0
-    tuSnap: 30
+    tuSnap: 40
     tuAimed: 65
     tuLoad: 15
     snapRange: 16
@@ -583,7 +583,7 @@ items:
     armor: 30
 
   - type: STR_45_AMMO
-    categories: [STR_SECURITY_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_SMGS_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
       - STR_TODO
       - STR_VENDOR_SSP
@@ -605,6 +605,113 @@ items:
     damageBonus:
       reactions: 0.05
     damageType: 1
+    armor: 20
+
+  - type: STR_SSP_SHOTGUN_CODED
+    categories: [STR_SECURITY_CATEGORY, STR_SHOTGUNS_CATEGORY, STR_LOCKED_CATEGORY]
+    ufopediaType: STR_SSP_SHOTGUN
+    requires:
+      - STR_SSP_CRACK
+    size: 0.25
+    costSell: 440
+    bigSprite: 900 #todo
+    floorSprite: 900 #todo
+    handSprite: 900 #todo
+    fireSound: 4 #todo
+    invWidth: 1
+    invHeight: 3
+    battleType: 1
+    weight: 12
+    costThrow:
+      energy: 16
+    compatibleAmmo:
+      - STR_SSP_SHOTGUN_BS
+    accuracySnap: 80
+    accuracyAimed: 110
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.10
+    shotgunChoke: 85
+    tuSnap: 35
+    tuAimed: 60
+    tuLoad: 25
+    snapRange: 8
+    aimRange: 12
+    dropoff: 3
+    kneelBonus: 115
+    twoHanded: true
+    oneHandedPenalty: 75
+    attraction: 15
+    armor: 30
+
+  - type: STR_SSP_SHOTGUN
+    categories: [STR_SECURITY_CATEGORY, STR_SHOTGUNS_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_VENDOR_SSP
+      - STR_SSP_SHOTGUN
+    size: 0.25
+    costBuy: 4399
+    costSell: 1100
+    transferTime: 4
+    bigSprite: 900 #todo
+    floorSprite: 900 #todo
+    handSprite: 900 #todo
+    fireSound: 4 #todo
+    invWidth: 1
+    invHeight: 3
+    battleType: 1
+    weight: 12
+    costThrow:
+      energy: 16
+    compatibleAmmo:
+      - STR_SSP_SHOTGUN_BS
+    accuracySnap: 80
+    accuracyAimed: 110
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.10
+    shotgunChoke: 85
+    tuSnap: 35
+    tuAimed: 60
+    tuLoad: 25
+    snapRange: 8
+    aimRange: 12
+    dropoff: 3
+    kneelBonus: 115
+    twoHanded: true
+    oneHandedPenalty: 75
+    attraction: 15
+    armor: 30
+
+  - type: STR_SSP_SHOTGUN_BS
+    categories: [STR_SECURITY_CATEGORY, STR_SHOTGUNS_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_VENDOR_SSP
+      - STR_SSP_SHOTGUN
+    size: 0.01
+    costBuy: 34
+    costSell: 8
+    transferTime: 4
+    bigSprite: 900 #todo
+    floorSprite: 900 #todo
+    hitSound: 13
+    hitAnimation: 26
+    battleType: 2
+    weight: 3
+    costThrow:
+      energy: 6
+    power: 14
+    clipSize: 6
+    shotgunPellets: 6
+    shotgunSpread: 25
+    shotgunBehavior: 1
+    damageType: 1
+    damageBonus:
+      reactions: 0.05
+    damageAlter:
+      ToStun: 0.50
     armor: 20
 
   - type: STR_DISPOSABLE_SMG
@@ -652,7 +759,7 @@ items:
     autoRange: 7
     dropoff: 3
     kneelBonus: 115
-    twoHanded: true
+    # twoHanded: true
     oneHandedPenalty: 85
     experienceTrainingMode: 5
     attraction: 15
@@ -821,7 +928,7 @@ items:
     transferTime: 4
     bigSprite: 142
     floorSprite: 138
-    hitSound: 13
+    hitSound: 110
     hitAnimation: 26
     battleType: 2
     weight: 1
@@ -838,6 +945,7 @@ items:
       RandomStun: false
       IgnoreSelfDestruct: false
       IgnorePainImmunity: false
+      FixRadius: 0
       ToTile: 0.0
     clipSize: 8
     armor: 20
@@ -1024,9 +1132,7 @@ items:
     armor: 20
 
   - type: STR_MULTISHOT_LASER_AMMO
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_LOCKED_CATEGORY]
-    requires:
-      - STR_SSP_CRACK
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
       - STR_TODO
       - STR_VENDOR_SSP
@@ -1147,7 +1253,7 @@ items:
     autoRange: 7
     dropoff: 3
     kneelBonus: 115
-    twoHanded: true
+    # twoHanded: true
     oneHandedPenalty: 85
     experienceTrainingMode: 5
     attraction: 15
@@ -2096,46 +2202,6 @@ items:
     costThrow:
       energy: 6
 
-  - type: STR_ELERIUM_CORE
-    categories: [STR_RESOURCES_CATEGORY]
-    requiresBuy:
-      - STR_TODO
-    size: 0.1
-    costBuy: 200000
-    costSell: 200000
-    transferTime: 72
-    bigSprite: 154
-    floorSprite: 148
-    ignoreInCraftEquip: true
-    recoveryPoints: 3
-    battleType: 10
-    weight: 5
-    costThrow:
-      energy: 6
-    # hidePower: true
-    # power: 80
-    # damageType: 5
-    # damageAlter:
-    #   ToArmorPre: 0.025
-    #   FireThreshold: 50
-    # clipSize: 100
-    armor: 120
-
-  - type: STR_SJB_LICENSE
-    categories: [STR_RESOURCES_CATEGORY]
-    requiresBuy:
-      - STR_SJB_LICENSE
-    size: 0
-    costBuy: 400000
-    costSell: 0
-    transferTime: 4
-    bigSprite: 152
-    ignoreInCraftEquip: true
-    battleType: 10
-    weight: 2
-    costThrow:
-      energy: 6
-
   - type: STR_AG_UNIT #TODO resources tech
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
@@ -2169,6 +2235,56 @@ items:
     costThrow:
       energy: 12
 
+  - type: STR_PLASTICS #TODO resources tech
+    categories: [STR_RESOURCES_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+    size: 0.2
+    costBuy: 8000
+    costSell: 2000
+    transferTime: 4
+    bigSprite: 153 #todo
+    ignoreInCraftEquip: true
+    invWidth: 2
+    invHeight: 2
+    battleType: 10
+    weight: 4
+    costThrow:
+      energy: 6
+
+  - type: STR_ELERIUM_CORE
+    categories: [STR_RESOURCES_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+    size: 0.1
+    costBuy: 200000
+    costSell: 200000
+    transferTime: 72
+    bigSprite: 154
+    floorSprite: 148
+    ignoreInCraftEquip: true
+    recoveryPoints: 3
+    battleType: 10
+    weight: 5
+    costThrow:
+      energy: 6
+    armor: 120
+
+  - type: STR_SJB_LICENSE
+    categories: [STR_RESOURCES_CATEGORY]
+    requiresBuy:
+      - STR_SJB_LICENSE
+    size: 0
+    costBuy: 400000
+    costSell: 0
+    transferTime: 4
+    bigSprite: 152
+    ignoreInCraftEquip: true
+    battleType: 10
+    weight: 2
+    costThrow:
+      energy: 6
+
 #data
   - type: STR_PERSONAL_DATA
     categories: [STR_DATA_CATEGORY]
@@ -2181,6 +2297,16 @@ items:
     weight: 2
     costThrow:
       energy: 6
+
+  - type: STR_GCIC_SABOTAGE_2_DATA
+    categories: [STR_DATA_CATEGORY]
+    specialType: 197
+    costSell: 80000
+    recoveryPoints: -15
+
+  - type: STR_GCIC_SABOTAGE_2_DATA_DISC
+    categories: [STR_DATA_CATEGORY]
+    costSell: 125000
 
   - type: STR_HYBRID_DATA
     categories: [STR_DATA_CATEGORY]
@@ -2199,11 +2325,20 @@ items:
 #projects
   - type: STR_RRM_ITEM
     categories: [STR_PERKS_CATEGORY]
+  - type: STR_PBI_ITEM
+    categories: [STR_PERKS_CATEGORY]
+  - type: STR_PTS_ITEM
+    categories: [STR_PERKS_CATEGORY]
+  - type: STR_PROJECT_INDEPENDENCE_ITEM
+    categories: [STR_PERKS_CATEGORY]
 
 #abstract
   - type: STR_SHARES_GCIC
     categories: [STR_PERKS_CATEGORY]
+    requiresBuy:
+      - STR_SHARES_GCIC
     specialType: 198
+    costBuy: 60000
     costSell: 12000
     monthlySalary: -1200
     recoveryPoints: 1
@@ -2525,6 +2660,27 @@ items:
     battleType: 11
     recoveryTransformations:
       STR_BIOMASS: [1]
+    armor: 30
+
+  - type: STR_SSPOFFICER_PRIVATE
+    categories: [STR_SPECIMENS_CATEGORY]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: -1000
+
+  - type: STR_SSPOFFICER_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    weight: 22
+    bigSprite: 169
+    floorSprite: 160
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_PLASTICS: [1]
     armor: 30
 
 #enemy drones

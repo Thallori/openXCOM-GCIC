@@ -163,6 +163,7 @@ recommendedUserOptions:
   oxceGeoscapeEventsInstantDelivery: true
   oxceShowETAMode: 2
   oxceWoundedDefendBaseIf: 70
+  lazyLoadResources: true
 #  oxceNightVisionColor: 2
 #  oxceAutoNightVisionThreshold: 7
 

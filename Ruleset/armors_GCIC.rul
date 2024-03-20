@@ -534,6 +534,7 @@ armors:
 #enemies
 # ironeyes
   - type: STR_BOOSTER_ARMOR
+    ufopediaType: STR_BOOSTER_ARMOR
     spriteInv: BOOSTER.SPK
     spriteSheet: BOOSTER.PCK
     spriteFaceGroup: 6
@@ -543,7 +544,6 @@ armors:
     forcedTorso: 1
     corpseBattle:
       - STR_BOOSTER_CORPSE
-    specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDay: 30
     visibilityAtDark: 12
@@ -578,6 +578,7 @@ armors:
     loftempsSet: [ 3 ]
 
   - type: STR_RIPPER_ARMOR
+    ufopediaType: STR_RIPPER_ARMOR
     spriteInv: RIPPER.SPK
     spriteSheet: RIPPER.PCK
     spriteFaceGroup: 6
@@ -623,6 +624,7 @@ armors:
 
 # netrunners
   - type: STR_FREELANCER_ARMOR
+    ufopediaType: STR_FREELANCER_ARMOR
     spriteInv: FREELANCER.SPK
     spriteSheet: FREELANCER.PCK
     spriteFaceGroup: 6
@@ -631,7 +633,6 @@ armors:
     spriteHairColor: *SpriteHairColorHuman
     corpseBattle:
       - STR_FREELANCER_CORPSE
-    specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDay: 30
     visibilityAtDark: 9
@@ -650,10 +651,12 @@ armors:
 
 # ssp
   - type: STR_SSPGUARD_ARMOR
+    ufopediaType: STR_SSPGUARD_ARMOR
     spriteInv: SSPGUARD.SPK
     spriteSheet: SSPGUARD.PCK
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
+    forcedTorso: 1
     corpseBattle:
       - STR_SSPGUARD_CORPSE
     specialWeapon: STR_SHARKATTACK
@@ -673,9 +676,35 @@ armors:
       energy: *EnergyRecoveryTypical
     loftempsSet: [ 3 ]
 
+  - type: STR_SSPOFFICER_ARMOR
+    ufopediaType: STR_SSPOFFICER_ARMOR
+    spriteInv: SSPOFFICER.SPK
+    spriteSheet: SSPOFFICER.PCK
+    spriteFaceGroup: 11
+    spriteFaceColor: *SpriteFaceColorShark
+    forcedTorso: 1
+    corpseBattle:
+      - STR_SSPOFFICER_CORPSE
+    specialWeapon: STR_SHARKATTACK
+    allowsKneeling: true
+    visibilityAtDay: 30
+    visibilityAtDark: 9
+    frontArmor: 18
+    sideArmor: 18
+    rearArmor: 18
+    underArmor: 18
+    damageModifier: *OrganicAquavestResists
+    meleeDodge: *MeleeDodgePoor
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryPoor
+    loftempsSet: [ 3 ]
+
 # enemy drones
   - type: STR_DRONEHYBRID_ARMOR
-    ufopediaType: STR_PLEX_DRONE_ARMOR
+    ufopediaType: STR_DRONE_HYBRID_ITEM
     spriteInv: DRONEHYBRID.SPK
     spriteSheet: WORKSUIT_HYBRID.PCK
     corpseBattle:
@@ -696,7 +725,7 @@ armors:
     loftempsSet: [ 3 ]
 
   - type: STR_DRONEHUMAN_ARMOR
-    ufopediaType: STR_PLEX_DRONE_ARMOR
+    ufopediaType: STR_DRONE_HUMAN_ITEM
     spriteInv: DRONEHUMAN.SPK
     spriteSheet: WORKSUIT_HUMAN.PCK
     corpseBattle:
@@ -717,7 +746,7 @@ armors:
     loftempsSet: [ 3 ]
 
   - type: STR_DRONESHARK_ARMOR
-    ufopediaType: STR_PLEX_DRONE_ARMOR
+    ufopediaType: STR_DRONE_SHARK_ITEM
     spriteInv: DRONESHARK.SPK
     spriteSheet: WORKSUIT_SHARK.PCK
     corpseBattle:

@@ -17,7 +17,6 @@ missionScripts:
     researchTriggers:
       STR_RAPID_RESPONSE_MISSIONS: false
     firstMonth: 1
-    targetBaseOdds: 100
     missionWeights:
       0:
         STR_RESCUE_1: 100
@@ -120,6 +119,20 @@ missionScripts:
     randomDelay: 7200
 
   - type: GCIC1a
+    researchTriggers:
+      STR_GCIC_BACKCHANNEL_MISSIONS: false
+      STR_GCIC_INDEPENDENCE: false
+    firstMonth: 1
+    missionWeights:
+      0:
+        STR_GCIC_SABOTAGE_1: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: GCIC1b
+    researchTriggers:
+      STR_GCIC_INDEPENDENCE: false
     firstMonth: 1
     executionOdds: 50
     missionWeights:
@@ -129,12 +142,25 @@ missionScripts:
     startDelay: 30
     randomDelay: 43000
 
-  - type: GCIC1b
-    firstMonth: 1
-    executionOdds: 50
+  - type: GCIC2a
+    researchTriggers:
+      STR_GCIC_BACKCHANNEL_MISSIONS: true
+      STR_GCIC_INDEPENDENCE: false
     missionWeights:
       0:
-        STR_GCIC_SABOTAGE_1: 100
+        STR_GCIC_SABOTAGE_2: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: GCIC2b
+    researchTriggers:
+      STR_GCIC_BACKCHANNEL_MISSIONS: true
+      STR_GCIC_INDEPENDENCE: false
+    executionOdds: 41
+    missionWeights:
+      0:
+        STR_GCIC_SABOTAGE_2: 100
     useTable: false
     startDelay: 30
     randomDelay: 43000

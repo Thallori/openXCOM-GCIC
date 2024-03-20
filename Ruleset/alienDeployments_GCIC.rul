@@ -317,7 +317,7 @@ alienDeployments:
     width: 30
     length: 30
     height: 5
-    alert: STR_GCIC_SABOTAGE_1_ALERT
+    alert: STR_GCIC_SABOTAGE_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION
     markerName: STR_GCIC_SABOTAGE_1
@@ -357,7 +357,7 @@ alienDeployments:
         dQty: 1
         percentageOutsideUfo: 0
         extraRandomItems: *personalData7
-        itemSets:
+        itemSets: &sspGuard
           -
             - STR_BATON
             - STR_45_PISTOL_CODED
@@ -398,6 +398,113 @@ alienDeployments:
             - STR_BATON
             - STR_TASER_PISTOL_CODED
             - STR_TASER_AMMO
+      - alienRank: 6
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_HYBRID
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 100
+        customUnitType: STR_DRONE_ENEMY_HUMAN
+        itemSets: *AnchorEmptyInventory
+
+  - type: STR_GCIC_SABOTAGE_2
+    script: COMMERCIAL_4X4
+    width: 40
+    length: 40
+    height: 5
+    alert: STR_GCIC_SABOTAGE_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION
+    markerName: STR_GCIC_SABOTAGE_2
+    duration: [72, 96]
+    despawnPenalty: 100
+    abortPenalty: -100
+    despawnEvents:
+      STR_EVENT_CLAIM_SECURED: 100
+    failureEvents:
+      STR_EVENT_CLAIM_SECURED: 100
+    # startingCondition: LOWSPEC_GEAR_INFILTRATION_CRAFT
+    briefing:
+      showTarget: false
+      title: STR_GCIC_SABOTAGE_2
+      music: SHADOW_INTRO
+      background: BACK16.SCR
+      palette: 2
+    missionBountyItem: STR_GCIC_SABOTAGE_2_DATA
+    missionBountyItemCount: 1
+    unlockedResearch: STR_TRG_SO_PREQ
+    customUfo: STR_SABOTAGE_OFFICE
+    terrains:
+      - COMMERCIAL
+    music:
+      - SHADOW1
+    turnLimit: 15
+    chronoTrigger: 1
+    data:
+      - alienRank: 7
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 0
+        extraRandomItems: *personalData7
+        itemSets: &sspOfficer
+          -
+            - STR_BATON
+            - STR_45_PISTOL_CODED
+            - STR_45_AMMO
+          -
+            - STR_BATON
+            - STR_45_PISTOL_CODED
+            - STR_45_AMMO
+          -
+            - STR_BATON
+            - STR_45_PISTOL_CODED
+            - STR_45_AMMO
+          -
+            - STR_BATON
+            - STR_SINGLESHOT_LASER_PISTOL_CODED
+            - STR_MULTISHOT_LASER_AMMO
+          -
+            - STR_BATON
+            - STR_SINGLESHOT_LASER_PISTOL_CODED
+            - STR_MULTISHOT_LASER_AMMO
+          -
+            - STR_BATON
+            - STR_SINGLESHOT_LASER_PISTOL_CODED
+            - STR_MULTISHOT_LASER_AMMO
+          -
+            - STR_SSP_SHOTGUN
+            - STR_SSP_SHOTGUN_BS
+            - STR_SSP_SHOTGUN_BS
+          -
+            - STR_SSP_SHOTGUN
+            - STR_SSP_SHOTGUN_BS
+            - STR_SSP_SHOTGUN_BS
+          -
+            - STR_SSP_SHOTGUN
+            - STR_SSP_SHOTGUN_SLUG
+            - STR_SSP_SHOTGUN_SLUG
+          -
+            - STR_SSP_SHOTGUN
+            - STR_SSP_SHOTGUN_SLUG
+            - STR_SSP_SHOTGUN_SLUG
+      - alienRank: 6
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 50
+        extraRandomItems: *personalData7
+        itemSets: *sspGuard
       - alienRank: 6
         lowQty: 1
         medQty: 1

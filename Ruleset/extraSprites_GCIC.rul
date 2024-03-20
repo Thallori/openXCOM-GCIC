@@ -86,7 +86,7 @@ extraSprites:
       153: Resources/Items/Materials/biomass_bigob.png
       154: Resources/Items/Materials/elerium_bigob.png
       155: Resources/Items/Explosives/eleriumbomb_bigob.png
-      156: Resources/Factions/SSP/sspguard_floorob.png
+      156: Resources/Factions/SSP/sspguard_bigob.png
       157: Resources/Items/Materials/personal_bigob.png
       158: Resources/Items/Laser/ssp_pistol_bigob.png
       159: Resources/Items/Laser/ssp_epistol_bigob.png
@@ -99,6 +99,7 @@ extraSprites:
       166: Resources/Items/Builtins/docgrip_bigob.png
       167: Resources/Items/Kinetic/9mm_smg_bigob.png
       168: Resources/Items/Kinetic/Ammo/9mm_smg_ammo_bigob.png
+      169: Resources/Factions/SSP/sspofficer_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -162,6 +163,7 @@ extraSprites:
       157: Resources/Factions/Ironeyes/ripper_floorob.png
       158: Resources/Items/Kinetic/9mm_smg_floorob.png
       159: Resources/Items/Kinetic/Ammo/9mm_smg_ammo_floorob.png
+      160: Resources/Factions/SSP/sspofficer_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -429,6 +431,18 @@ extraSprites:
     height: 680
     files:
       0: Resources/Factions/SSP/sspguard_sprite.png
+
+  - typeSingle: SSPOFFICER_CPAL
+    fileSingle: Resources/Factions/SSP/sspofficer_CPAL.png
+  - typeSingle: SSPOFFICER.SPK
+    fileSingle: Resources/Factions/SSP/sspofficer_inventory.png
+  - type: SSPOFFICER.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 680
+    files:
+      0: Resources/Factions/SSP/sspofficer_sprite.png
 
 #enemy drones
   - typeSingle: DRONEHYBRID.SPK

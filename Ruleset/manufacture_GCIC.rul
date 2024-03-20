@@ -2,10 +2,30 @@
 manufacture:
 #tasks
   - name: STR_MONEY_1_MANU
-    category: STR_PROJECTS_MANUCAT
+    category: STR_TASKS_MANUCAT
     time: 1
     producedItems:
       STR_MONEY_1: 1
+
+  - name: STR_GCIC_SABOTAGE_2_MANU
+    category: STR_TASKS_MANUCAT
+    requires:
+      - STR_GCIC_BACKCHANNEL_MISSIONS
+    time: 1
+    requiredItems:
+      STR_GCIC_SABOTAGE_2_DATA: 1
+    producedItems:
+      STR_SHARES_GCIC: 8
+
+  - name: STR_GCIC_SABOTAGE_2_CRACK_MANU
+    category: STR_CRACKING_MANUCAT
+    requires:
+      - STR_GCIC_BACKCHANNEL_MISSIONS
+    time: 800
+    requiredItems:
+      STR_GCIC_SABOTAGE_2_DATA: 1
+    producedItems:
+      STR_GCIC_SABOTAGE_2_DATA_DISC: 1
 
 #projects
   - name: STR_RRM_ITEM
@@ -14,9 +34,43 @@ manufacture:
       - STR_RRM_LOCK
     time: 1
     requiredItems:
-      STR_BRAND_LOYALTY: 8
+      STR_BRAND_LOYALTY: 6
     producedItems:
       STR_RRM_ITEM: 1
+
+  - name: STR_PBI_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_PBI_LOCK
+    time: 1
+    cost: -30000
+    requiredItems:
+      STR_SHARES_GCIC: 5
+    producedItems:
+      STR_PBI_ITEM: 1
+
+  - name: STR_PTS_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_PTS_LOCK
+    time: 1
+    cost: -270000
+    requiredItems:
+      STR_SHARES_GCIC: 45
+    producedItems:
+      STR_PTS_ITEM: 1
+
+  - name: STR_PROJECT_BUYOUT_MANU
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_PIN_LOCK
+    time: 1
+    cost: 72000000
+    requiredItems:
+      STR_SHARES_GCIC: 1000
+    producedItems:
+      STR_SHARES_GCIC: 2000
+      STR_PROJECT_INDEPENDENCE_ITEM: 1
 
 #ammo
   - name: STR_45_AMMO
@@ -53,6 +107,17 @@ manufacture:
     requiredItems:
       STR_ELERIUM_CORE: 1
 
+#resources
+  - name: STR_PLASTICS
+    category: STR_RESOURCES_MANUCAT
+    requires:
+      - STR_PLASTICS
+    time: 100
+    cost: 400
+    refund: true
+    requiredItems:
+      STR_BIOMASS: 1
+
 #upgrades
   - name: STR_SSP_LASER_PISTOL_MANU
     category: STR_UPGRADES_MANUCAT
@@ -73,6 +138,7 @@ manufacture:
     requires:
       - STR_BIONIC_INTERLACE
     time: 1
+    cost: 10000
     refund: true
     requiredItems:
       STR_BIONIC_INTERLACE: 1
@@ -84,6 +150,7 @@ manufacture:
     requires:
       - STR_BIONIC_INTERLACE
     time: 1
+    cost: 10000
     refund: true
     requiredItems:
       STR_BIONIC_INTERLACE: 1
