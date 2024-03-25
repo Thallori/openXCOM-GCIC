@@ -183,10 +183,6 @@ armors:
     layersDefinition:
       F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-    spriteFaceGroup: 6
-    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
-    spriteHairGroup: 9
-    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
     corpseBattle:
       - STR_DURA_DRONE_HYBRID_CORPSE
     storeItem: STR_DURA_DRONE_ARMOR
@@ -335,35 +331,40 @@ armors:
       - STR_CRACKED_SHARK_DRONE
     loftempsSet: [ 3 ]
 
-  - type: STR_AQUAVEST_DRONE_HYBRID_ARMOR #TODO resources
+  - type: STR_AQUAVEST_DRONE_HYBRID_ARMOR
     ufopediaType: STR_AQUAVEST_DRONE_ARMOR
-    spriteInv: MAN_0
-    spriteSheet: XCOM_0.PCK
-    spriteFaceGroup: 6
-    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
-    spriteHairGroup: 9
-    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    customArmorPreviewIndex: 6
+    spriteSheet: AQUAVEST_HYBRID.PCK
+    layersDefaultPrefix: HYBRID
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
     corpseBattle:
       - STR_AQUAVEST_DRONE_HYBRID_CORPSE
     storeItem: STR_AQUAVEST_DRONE_ARMOR
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_BACK_PACK
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDay: 30
     visibilityAtDark: 12
     personalLight: 5
+    weight: 6
     stats:
       tu: -5
       stamina: -5
-    frontArmor: 18
-    sideArmor: 18
-    rearArmor: 18
-    underArmor: 18
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
     damageModifier: &OrganicAquavestResists
       - 1.0 #0 none
       - 0.7 #1 kinetic
-      - 1.2 #2 incendiary
+      - 1.1 #2 incendiary
       - 0.8 #3 concussive
-      - 1.2 #4 radiant
+      - 1.1 #4 radiant
       - 1.0 #5 plasma
       - 1.0 #6 blunt
       - 1.0 #7 mechanical
@@ -384,19 +385,29 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryPoor
-        stamina: 0.25
-        healthCurrent: 0.25
-        stunCurrent: -0.25
+        stamina: 0.1
+        healthCurrent: 0.12
+        stunCurrent: -0.12
       morale: *MoraleRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_HYBRID_DRONE
     loftempsSet: [ 3 ]
 
-  - type: STR_AQUAVEST_DRONE_HUMAN_ARMOR #TODO resources
+  - type: STR_AQUAVEST_DRONE_HUMAN_ARMOR
     ufopediaType: STR_AQUAVEST_DRONE_ARMOR
-    spriteInv: MAN_0
-    spriteSheet: XCOM_0.PCK
+    customArmorPreviewIndex: 7
+    spriteSheet: AQUAVEST_HUMAN.PCK
+    layersDefaultPrefix: HUMAN
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
     spriteFaceGroup: 6
     spriteFaceColor: *SpriteFaceColorHuman
     spriteHairGroup: 9
@@ -404,18 +415,23 @@ armors:
     corpseBattle:
       - STR_AQUAVEST_DRONE_HUMAN_CORPSE
     storeItem: STR_AQUAVEST_DRONE_ARMOR
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_BACK_PACK
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDay: 30
     visibilityAtDark: 9
     personalLight: 5
+    weight: 6
     stats:
       tu: -5
       stamina: -5
-    frontArmor: 18
-    sideArmor: 18
-    rearArmor: 18
-    underArmor: 18
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
     damageModifier: *OrganicAquavestResists
     meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical
@@ -424,38 +440,205 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryHumanPoor
-        stamina: 0.30
-        healthCurrent: 0.30
-        stunCurrent: -0.30
+        stamina: 0.1
+        healthCurrent: 0.16
+        stunCurrent: -0.16
       morale: *MoraleRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_HUMAN_DRONE
     loftempsSet: [ 3 ]
 
-  - type: STR_AQUAVEST_DRONE_SHARK_ARMOR #TODO resources
+  - type: STR_AQUAVEST_DRONE_SHARK_ARMOR
     ufopediaType: STR_AQUAVEST_DRONE_ARMOR
-    spriteInv: MAN_0
-    spriteSheet: XCOM_0.PCK
-    spriteFaceGroup: 6
+    customArmorPreviewIndex: 8
+    spriteSheet: AQUAVEST_SHARK.PCK
+    layersDefaultPrefix: SHARK
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F2: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F3: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M2: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M3: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+    spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
       - STR_AQUAVEST_DRONE_SHARK_CORPSE
     storeItem: STR_AQUAVEST_DRONE_ARMOR
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_BACK_PACK
     specialWeapon: STR_SHARKATTACK
     allowsKneeling: true
     visibilityAtDay: 30
     visibilityAtDark: 9
     personalLight: 5
+    weight: 6
     stats:
       tu: -5
       stamina: -5
-    frontArmor: 18
-    sideArmor: 18
-    rearArmor: 18
-    underArmor: 18
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
     damageModifier: *OrganicAquavestResists
     meleeDodge: *MeleeDodgePoor
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      time: *TimeRecoveryTypical
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryTypical
+      energy: *EnergyRecoveryPoor
+      morale: *MoraleRecoveryTypical
+    overKill: 1.5
+    units:
+      - STR_CRACKED_SHARK_DRONE
+    loftempsSet: [ 3 ]
+
+  - type: STR_AQUAVEST_DRONE_HYBRID_ARMOR_S
+    ufopediaType: STR_AQUAVEST_DRONE_ARMOR_S
+    customArmorPreviewIndex: 9
+    spriteSheet: AQUAVEST_HYBRID.PCK
+    layersDefaultPrefix: HYBRID
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+    corpseBattle:
+      - STR_AQUAVEST_DRONE_HYBRID_CORPSE
+    storeItem: STR_AQUAVEST_DRONE_ARMOR
+    builtInWeapons:
+      - STR_RIOT_SHIELD
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_BACK_PACK
+    specialWeapon: STR_UNARMED
+    allowsKneeling: true
+    visibilityAtDay: 30
+    visibilityAtDark: 12
+    personalLight: 5
+    weight: 6
+    stats:
+      tu: -10
+      stamina: -10
+      reactions: -5
+    frontArmor: 28
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
+    damageModifier: *OrganicAquavestResists
+    meleeDodge: &MeleeDodgePoorS
+      melee: 0.2
+      reactions: 0.1
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      time: *TimeRecoveryTypical
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryTypical
+      energy: *EnergyRecoveryPoor
+      morale: *MoraleRecoveryTypical
+    overKill: 1.5
+    units:
+      - STR_CRACKED_HYBRID_DRONE
+    loftempsSet: [ 3 ]
+
+  - type: STR_AQUAVEST_DRONE_HUMAN_ARMOR_S
+    ufopediaType: STR_AQUAVEST_DRONE_ARMOR_S
+    customArmorPreviewIndex: 10
+    spriteSheet: AQUAVEST_HUMAN.PCK
+    layersDefaultPrefix: HUMAN
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorHuman
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorHuman
+    corpseBattle:
+      - STR_AQUAVEST_DRONE_HUMAN_CORPSE
+    storeItem: STR_AQUAVEST_DRONE_ARMOR
+    builtInWeapons:
+      - STR_RIOT_SHIELD
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_BACK_PACK
+    specialWeapon: STR_UNARMED
+    allowsKneeling: true
+    visibilityAtDay: 30
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 6
+    stats:
+      tu: -10
+      stamina: -10
+      reactions: -5
+    frontArmor: 28
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
+    damageModifier: *OrganicAquavestResists
+    meleeDodge: *MeleeDodgePoorS
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      time: *TimeRecoveryTypical
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryTypical
+      energy: *EnergyRecoveryHumanPoor
+      morale: *MoraleRecoveryTypical
+    overKill: 1.5
+    units:
+      - STR_CRACKED_HUMAN_DRONE
+    loftempsSet: [ 3 ]
+
+  - type: STR_AQUAVEST_DRONE_SHARK_ARMOR_S
+    ufopediaType: STR_AQUAVEST_DRONE_ARMOR_S
+    customArmorPreviewIndex: 11
+    spriteSheet: AQUAVEST_SHARK.PCK
+    layersDefaultPrefix: SHARK
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      F2: ["", "", "F0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      F3: ["", "", "F1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      M2: ["", "", "M0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      M3: ["", "", "M1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+    spriteFaceGroup: 11
+    spriteFaceColor: *SpriteFaceColorShark
+    corpseBattle:
+      - STR_AQUAVEST_DRONE_SHARK_CORPSE
+    storeItem: STR_AQUAVEST_DRONE_ARMOR
+    builtInWeapons:
+      - STR_RIOT_SHIELD
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_BACK_PACK
+    specialWeapon: STR_SHARKATTACK
+    allowsKneeling: true
+    visibilityAtDay: 30
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 6
+    stats:
+      tu: -10
+      stamina: -10
+      reactions: -5
+    frontArmor: 28
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
+    damageModifier: *OrganicAquavestResists
+    meleeDodge: *MeleeDodgePoorS
     psiDefence: *PsiDefenseTypical
     recovery:
       time: *TimeRecoveryTypical
@@ -689,10 +872,10 @@ armors:
     allowsKneeling: true
     visibilityAtDay: 30
     visibilityAtDark: 9
-    frontArmor: 18
-    sideArmor: 18
-    rearArmor: 18
-    underArmor: 18
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
     damageModifier: *OrganicAquavestResists
     meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical

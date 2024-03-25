@@ -42,22 +42,24 @@ X-Com Files/Final Mod Pack		[mod]
   Crossbow				[redraw]
   Prison Facility			[redraw]
   Punch!				[wholecloth]
-  Bullet Animations			[wholecloth]
+  Bullet and Hit Animations		[wholecloth, redraw]
   Spray Sound				[wholecloth]
   Flying Drone Chassis			[cleanup, recolour]	(xenonauts)
   Civilians				[wholecloth]
   Bandit				[recolour]
   Police Officer			[recolour]
   Hybrid				[wholecloth]
-  HitFX	Script				[wholecloth]
+  HitFX	Script				[wholecloth]		(Mistar Red)
   Crate					[wholecloth, recolour]
   Taser					[wholecloth]		(Ryskeliini)
   Fire Extinguisher			[touchup, recolour]
+  Armored Vest				[touchup, recolour]
 
 X-Com Files Resound			[mod]
  Ksenni					[author]
   Wrench SFX				[wholecloth]
   Neonbow SFX				[wholecloth]
+  Shotgun SFX				[wholecloth]
 
 From the Ashes				[mod]
  Finnik					[author]
@@ -97,6 +99,10 @@ Kenny.nl				[site]
  SFX Set				[pack]
   Switch29				[wholecloth]
   BookPlace1				[wholecloth]
+
+Hardmode Expansion			[mod]
+ hellrazor				[author]
+  Sniper Rifle SFX			[wholecloth]		(oshiaki2115)
 
 Inspiration comes from many sources, too many to list. Ranging from decades old fan fiction that could have been done better to scientific journals. However, the ideas taken from the OpenXCom community are listed here.
 

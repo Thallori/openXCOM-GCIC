@@ -129,7 +129,6 @@ research:
     needItem: true
     destroyItem: true
     cost: 15
-    points: 75
     disables:
       - STR_RRM_LOCK
 
@@ -160,7 +159,6 @@ research:
     needItem: true
     destroyItem: true
     cost: 5
-    points: 25
     disables:
       - STR_PBI_LOCK
 
@@ -198,10 +196,9 @@ research:
 
   - name: STR_MEDI_MISSIONS
     dependencies:
-      - STR_TODO
       - STR_VENDOR_MEDI
       - STR_SUBCONTRACTING_OPERATIONS
-    cost: 10
+    cost: 15
     unlocks:
       - STR_MEDI_BAY
 
@@ -210,7 +207,7 @@ research:
       - STR_TODO
       - STR_VENDOR_SSP
       - STR_SUBCONTRACTING_OPERATIONS
-    cost: 10
+    cost: 15
 
 #communications
   - name: STR_VENDOR_PRINTER
@@ -275,9 +272,18 @@ research:
       - STR_AL_PREQ
       - STR_VENDOR_PRINTER
       - STR_LOCAL_INTERFACE
+      - STR_BIOCODING
     cost: 9
     unlocks:
       - STR_SINGLESHOT_LASER_AMMO
+
+  - name: STR_BIOLOGY
+    dependencies:
+      - STR_VENDOR_PRINTER
+      - STR_VENDOR_BUILDER
+      - STR_VENDOR_MEDI
+      - STR_NON_CLIENTS
+    cost: 7
 
   - name: STR_BIOCODING
     dependencies:
@@ -308,12 +314,6 @@ research:
     cost: 100
 
 #manufacturing
-  - name: STR_45_AMMO_M
-    dependencies:
-      - STR_GUNPOWDER
-      - STR_45_PISTOL
-    cost: 7
-
   - name: STR_PIPEBOMB_M
     dependencies:
       - STR_GUNPOWDER
@@ -456,8 +456,10 @@ research:
     cost: 4
 
   - name: STR_AQUAVEST_DRONE_ARMOR
-    needItem: true
-    cost: 4
+    cost: 15
+    dependencies:
+      - STR_NON_CLIENTS
+      - STR_PLASTICS
 
 #equipment
 # kinetic
@@ -668,7 +670,7 @@ research:
 
   - name: STR_PLASTICS
     needItem: true
-    cost: 15
+    cost: 10
 
   - name: STR_ELERIUM_CORE
     needItem: true

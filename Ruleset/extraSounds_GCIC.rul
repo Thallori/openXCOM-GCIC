@@ -31,6 +31,14 @@ extraSounds:
       115: Resources/Sounds/Deaths/DogeDeath3.wav
       116: Resources/Sounds/Fire/acid_fire.wav
       117: Resources/Sounds/Fire/chainsaw_fire.wav
+      118: Resources/Sounds/Fire/shotgun_fire.wav
+      119: Resources/Sounds/Fire/sniper_fire.wav
+      120: Resources/Sounds/Reloads/shotgun_reload.wav
+      121: Resources/Sounds/Fire/laser1_fire.wav
+      122: Resources/Sounds/Fire/laser2_fire.wav
+      123: Resources/Sounds/Fire/laser3_fire.wav
+      124: Resources/Sounds/Fire/pistol_fire.wav
+      125: Resources/Sounds/Reloads/battery_reload.wav
 
   - type: GEO.CAT
     files:

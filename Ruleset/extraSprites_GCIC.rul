@@ -100,6 +100,11 @@ extraSprites:
       167: Resources/Items/Kinetic/9mm_smg_bigob.png
       168: Resources/Items/Kinetic/Ammo/9mm_smg_ammo_bigob.png
       169: Resources/Factions/SSP/sspofficer_bigob.png
+      170: Resources/Items/Materials/plastic_bigob.png
+      171: Resources/Items/Kinetic/ssp_shotgun_bigob.png
+      172: Resources/Items/Kinetic/Ammo/ssp_bs_ammo_bigob.png
+      173: Resources/Items/Kinetic/Ammo/ssp_slug_ammo_bigob.png
+      174: Resources/Items/Builtins/riotshield_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -164,6 +169,9 @@ extraSprites:
       158: Resources/Items/Kinetic/9mm_smg_floorob.png
       159: Resources/Items/Kinetic/Ammo/9mm_smg_ammo_floorob.png
       160: Resources/Factions/SSP/sspofficer_floorob.png
+      161: Resources/Items/Kinetic/ssp_shotgun_floorob.png
+      162: Resources/Items/Kinetic/Ammo/ssp_bs_ammo_floorob.png
+      163: Resources/Items/Kinetic/Ammo/ssp_slug_ammo_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -202,6 +210,8 @@ extraSprites:
       344: Resources/Items/Laser/ssp_pistol_handob.png
       352: Resources/Items/Laser/ssp_epistol_handob.png
       360: Resources/Items/Kinetic/9mm_smg_handob.png
+      368: Resources/Items/Kinetic/ssp_shotgun_handob.png
+      376: Resources/Items/Builtins/riotshield_handob.png
       900: Resources/temp_handob.png
 
   - type: BASEBITS.PCK
@@ -250,6 +260,15 @@ extraSprites:
       80: Resources/Animations/grey_skull.png
       88: Resources/Animations/green_skull.png
 
+  - type: SMOKE.PCK
+    height: 80
+    width: 160
+    subX: 32
+    subY: 40
+    files:
+      56: Resources/Animations/electric_hit.png
+      66: Resources/Animations/redlaser_hit.png
+
   - type: HIT.PCK
     height: 40
     width: 128
@@ -266,10 +285,17 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      385: Resources/Animations/Projectiles/laser_bullet.png
+      35: Resources/Animations/Projectiles/pistol_bullet.png
+      70: Resources/Animations/Projectiles/rifle_bullet.png
+      385: Resources/Animations/Projectiles/redlaser_bullet.png
       420: Resources/Animations/Projectiles/bolt_bullet.png
-      # 455: Resources/Animations/Projectiles/grenade_bullet.png
+      455: Resources/Animations/Projectiles/yellowlaser_bullet.png
       490: Resources/Animations/Projectiles/taser_bullet.png
+      525: Resources/Animations/Projectiles/bigredlaser_bullet.png
+      560: Resources/Animations/Projectiles/smg_bullet.png
+      595: Resources/Animations/Projectiles/lmg_bullet.png
+      630: Resources/Animations/Projectiles/sniper_bullet.png
+      665: Resources/Animations/Projectiles/slug_bullet.png
 
 #paperdolls
 #human
@@ -369,6 +395,40 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Jumpsuit/jumpsuit_sprite_shark.png
+#aquavest
+  - typeSingle: HUMAN__7__AQUAVEST
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory.png
+  - typeSingle: HYBRID__7__AQUAVEST
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory.png
+  - typeSingle: SHARK__7__AQUAVEST
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory.png
+  - typeSingle: HUMAN__7__AQUAVESTSHIELD
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_s_inventory.png
+  - typeSingle: HYBRID__7__AQUAVESTSHIELD
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_s_inventory.png
+  - typeSingle: SHARK__7__AQUAVESTSHIELD
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_s_inventory.png
+  - type: AQUAVEST_HUMAN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Aquavest/aquavest_sprite_human.png
+  - type: AQUAVEST_HYBRID.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Aquavest/aquavest_sprite_hybrid.png
+  - type: AQUAVEST_SHARK.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Aquavest/aquavest_sprite_shark.png
 
 #pilot
   - typeSingle: PILOT_CORE.SPK
@@ -556,6 +616,10 @@ extraSprites:
     fileSingle: Resources/Pedia/armor_plex_CPAL.png
   - typeSingle: ARMOR_DURA_CPAL
     fileSingle: Resources/Pedia/armor_dura_CPAL.png
+  - typeSingle: ARMOR_AQUAVEST_CPAL
+    fileSingle: Resources/Pedia/armor_aquavest_CPAL.png
+  - typeSingle: ARMOR_AQUAVESTSHIELD_CPAL
+    fileSingle: Resources/Pedia/armor_aquavestshield_CPAL.png
 
 #intercept window
   - typeSingle: interception_jammed
@@ -624,6 +688,9 @@ extraSprites:
   #   fileSingle: Resources/Backgrounds/GEOBORD.png
   - typeSingle: GEOBORD.SCR
     fileSingle: Resources/Backgrounds/GEOBORD.png
+
+  - typeSingle: TAC00.SCR
+    fileSingle: Resources/Backgrounds/hidden.png
 
   - typeSingle: BACK01.SCR
     fileSingle: Resources/Backgrounds/back_main.png

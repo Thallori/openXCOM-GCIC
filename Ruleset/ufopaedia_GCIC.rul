@@ -104,7 +104,7 @@ ufopaedia:
   #   requires:
   #     - STR_HYBRID_MEMORY_1
   #   text: STR_HYBRID_MEMORY_1_UFOPEDIA
-  #   section: STR_CONNECTIONS_UC
+  #   section: STR_FILES_UC
   #   type_id: 7
   #   text_width: 180
   #   image_id: ALIGN_TEST_CPAL #TODO image
@@ -113,7 +113,7 @@ ufopaedia:
   #   requires:
   #     - STR_HYBRID_MEMORY_2
   #   text: STR_HYBRID_MEMORY_2_UFOPEDIA
-  #   section: STR_CONNECTIONS_UC
+  #   section: STR_FILES_UC
   #   type_id: 7
   #   text_width: 180
   #   image_id: ALIGN_TEST_CPAL #TODO image
@@ -122,7 +122,7 @@ ufopaedia:
   #   requires:
   #     - STR_HYBRID_MEMORY_3
   #   text: STR_HYBRID_MEMORY_3_UFOPEDIA
-  #   section: STR_CONNECTIONS_UC
+  #   section: STR_FILES_UC
   #   type_id: 7
   #   text_width: 180
   #   image_id: ALIGN_TEST_CPAL #TODO image
@@ -131,10 +131,19 @@ ufopaedia:
   #   requires:
   #     - STR_HYBRID_MEMORY_4
   #   text: STR_HYBRID_MEMORY_4_UFOPEDIA
-  #   section: STR_CONNECTIONS_UC
+  #   section: STR_FILES_UC
   #   type_id: 7
   #   text_width: 180
   #   image_id: ALIGN_TEST_CPAL #TODO image
+
+  - id: STR_GCIC_INDEPENDENCE
+    requires:
+      - STR_GCIC_INDEPENDENCE
+    text: STR_GCIC_INDEPENDENCE_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL
 
 #operations
   - id: STR_PRIMARY_OPERATIONS
@@ -168,6 +177,15 @@ ufopaedia:
     requires:
       - STR_FORBIDDEN_OPERATIONS
     text: STR_FORBIDDEN_OPERATIONS_UFOPEDIA
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: OPERATIONS3_CPAL
+
+  - id: STR_GCIC_BACKCHANNEL_MISSIONS
+    requires:
+      - STR_GCIC_BACKCHANNEL_MISSIONS
+    text: STR_GCIC_BACKCHANNEL_MISSIONS_UFOPEDIA
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
@@ -598,7 +616,7 @@ ufopaedia:
     section: STR_DRONES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    image_id: ARMOR_AQUAVEST_CPAL
 
   - id: STR_AQUAVEST_DRONE_HYBRID_ARMOR
     requires:
@@ -616,6 +634,31 @@ ufopaedia:
     section: STR_DRONES_UC
     type_id: 5
 
+  - id: STR_AQUAVEST_DRONE_ARMOR_S
+    requires:
+      - STR_AQUAVEST_DRONE_ARMOR
+    text: STR_AQUAVEST_DRONE_ARMOR_S_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ARMOR_AQUAVESTSHIELD_CPAL
+
+  - id: STR_AQUAVEST_DRONE_HYBRID_ARMOR_S
+    requires:
+      - STR_DEBUG
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_AQUAVEST_DRONE_HUMAN_ARMOR_S
+    requires:
+      - STR_DEBUG
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_AQUAVEST_DRONE_SHARK_ARMOR_S
+    requires:
+      - STR_DEBUG
+    section: STR_DRONES_UC
+    type_id: 5
+
 # builtins
   - id: STR_UNARMED
     text: STR_UNARMED_UFOPEDIA
@@ -624,6 +667,13 @@ ufopaedia:
 
   - id: STR_SHARKATTACK
     text: STR_SHARKATTACK_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 4
+
+  - id: STR_RIOT_SHIELD
+    requires:
+      - STR_AQUAVEST_DRONE_ARMOR
+    text: STR_RIOT_SHIELD_UFOPEDIA
     section: STR_DRONES_UC
     type_id: 4
 
@@ -708,7 +758,13 @@ ufopaedia:
     section: STR_EQUIPMENT_UC
     type_id: 4
 
-  - id: STR_SSP_SHOTGUN_BS
+  - id: STR_SSP_SHOTGUN_AMMO_BS
+    requires:
+      - STR_SSP_SHOTGUN
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_SSP_SHOTGUN_AMMO_SLUG
     requires:
       - STR_SSP_SHOTGUN
     section: STR_NOT_AVAILABLE
@@ -956,6 +1012,13 @@ ufopaedia:
     requires:
       - STR_BIOMASS
     text: STR_BIOMASS_UFOPEDIA
+    section: STR_RESOURCES_UC
+    type_id: 4
+
+  - id: STR_PLASTICS
+    requires:
+      - STR_PLASTICS
+    text: STR_PLASTICS_UFOPEDIA
     section: STR_RESOURCES_UC
     type_id: 4
 

@@ -126,10 +126,12 @@ items:
       RandomType: 6
       FixRadius: 0
       IgnoreDirection: false
-      ArmorEffectiveness: 1.5
+      ArmorEffectiveness: 1.4
       ToHealth: 0.15
       ToStun: 1.0
       RandomStun: false
+      IgnoreSelfDestruct: false
+      IgnorePainImmunity: false
       ToTime: 1.0
     accuracyMelee: 100
     meleeMultiplier:
@@ -165,9 +167,11 @@ items:
       reactions: 0.1
     damageAlter:
       RandomType: 6
-      ToHealth: 0.35
+      ToHealth: 0.30
       ToStun: 1.0
       RandomStun: false
+      IgnoreSelfDestruct: false
+      IgnorePainImmunity: false
       ToTime: 1.0
     accuracyMelee: 100
     meleeMultiplier:
@@ -203,9 +207,11 @@ items:
       reactions: 0.2
     damageAlter:
       RandomType: 6
-      ToHealth: 0.35
+      ToHealth: 0.30
       ToStun: 1.0
       RandomStun: false
+      IgnoreSelfDestruct: false
+      IgnorePainImmunity: false
       ToTime: 1.0
     accuracyMelee: 100
     meleeMultiplier:
@@ -223,6 +229,45 @@ items:
     specialUseEmptyHandShow: true
     recover: false
 
+  - type: STR_RIOT_SHIELD
+    categories: [STR_BUILT_INS_CATEGORY]
+    bigSprite: 174
+    handSprite: 376
+    meleeHitSound: 102
+    meleeAnimation: 0
+    invWidth: 2
+    invHeight: 3
+    defaultInventorySlot: STR_LEFT_HAND
+    battleType: 3
+    weight: 6
+    power: 8
+    damageType: 6
+    damageBonus:
+      strength: 0.6
+    damageAlter:
+      RandomType: 6
+      ToTime: 1.0
+      ToWound: 0
+      RandomWound: false
+      ToHealth: 0.20
+      ToStun: 1.0
+      RandomStun: false
+      IgnoreSelfDestruct: false
+      IgnorePainImmunity: false
+      ToTile: 0.35
+    accuracyMelee: 90
+    meleeMultiplier:
+      melee: 1.0
+      flatHundred: 0.35
+    costMelee:
+      time: 12
+      energy: 10
+    flatRate: true
+    clipSize: -1
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+
 #kinetic
   - type: STR_BUSBOX_PISTOL
     categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
@@ -235,8 +280,8 @@ items:
     bigSprite: 104
     floorSprite: 104
     handSprite: 144
-    bulletSprite: 1
-    fireSound: 4
+    bulletSprite: 2
+    fireSound: 118
     invWidth: 1
     invHeight: 2
     battleType: 1
@@ -330,7 +375,7 @@ items:
     floorSprite: 122
     handSprite: 224
     bulletSprite: 1
-    fireSound: 4
+    fireSound: 124
     invWidth: 1
     invHeight: 2
     battleType: 1
@@ -390,9 +435,9 @@ items:
     bigSprite: 167
     floorSprite: 158
     handSprite: 360
-    bulletSprite: 1
+    bulletSprite: 16
     bulletSpeed: 20
-    fireSound: 4
+    fireSound: 124
     invWidth: 1
     invHeight: 2
     battleType: 1
@@ -459,7 +504,7 @@ items:
     bigSprite: 126
     floorSprite: 125
     handSprite: 240
-    bulletSprite: 1
+    bulletSprite: 2
     fireSound: 4
     invWidth: 1
     invHeight: 3
@@ -520,7 +565,7 @@ items:
     floorSprite: 146
     handSprite: 328
     bulletSprite: 1
-    fireSound: 4
+    fireSound: 124
     invWidth: 1
     invHeight: 2
     battleType: 1
@@ -558,7 +603,7 @@ items:
     floorSprite: 146
     handSprite: 328
     bulletSprite: 1
-    fireSound: 4
+    fireSound: 124
     invWidth: 1
     invHeight: 2
     battleType: 1
@@ -614,10 +659,11 @@ items:
       - STR_SSP_CRACK
     size: 0.25
     costSell: 440
-    bigSprite: 900 #todo
-    floorSprite: 900 #todo
-    handSprite: 900 #todo
-    fireSound: 4 #todo
+    bigSprite: 171
+    floorSprite: 161
+    handSprite: 368
+    fireSound: 118
+    reloadSound: 120
     invWidth: 1
     invHeight: 3
     battleType: 1
@@ -625,15 +671,16 @@ items:
     costThrow:
       energy: 16
     compatibleAmmo:
-      - STR_SSP_SHOTGUN_BS
+      - STR_SSP_SHOTGUN_AMMO_BS
+      - STR_SSP_SHOTGUN_AMMO_SLUG
     accuracySnap: 80
     accuracyAimed: 110
     accuracyMultiplier:
       firing: 1.0
       flatHundred: 0.10
     shotgunChoke: 85
-    tuSnap: 35
-    tuAimed: 60
+    tuSnap: 40
+    tuAimed: 70
     tuLoad: 25
     snapRange: 8
     aimRange: 12
@@ -654,10 +701,11 @@ items:
     costBuy: 4399
     costSell: 1100
     transferTime: 4
-    bigSprite: 900 #todo
-    floorSprite: 900 #todo
-    handSprite: 900 #todo
-    fireSound: 4 #todo
+    bigSprite: 171
+    floorSprite: 161
+    handSprite: 368
+    fireSound: 118
+    reloadSound: 120
     invWidth: 1
     invHeight: 3
     battleType: 1
@@ -665,15 +713,16 @@ items:
     costThrow:
       energy: 16
     compatibleAmmo:
-      - STR_SSP_SHOTGUN_BS
+      - STR_SSP_SHOTGUN_AMMO_BS
+      - STR_SSP_SHOTGUN_AMMO_SLUG
     accuracySnap: 80
     accuracyAimed: 110
     accuracyMultiplier:
       firing: 1.0
       flatHundred: 0.10
     shotgunChoke: 85
-    tuSnap: 35
-    tuAimed: 60
+    tuSnap: 40
+    tuAimed: 70
     tuLoad: 25
     snapRange: 8
     aimRange: 12
@@ -684,7 +733,7 @@ items:
     attraction: 15
     armor: 30
 
-  - type: STR_SSP_SHOTGUN_BS
+  - type: STR_SSP_SHOTGUN_AMMO_BS
     categories: [STR_SECURITY_CATEGORY, STR_SHOTGUNS_CATEGORY]
     requiresBuy:
       - STR_TODO
@@ -694,8 +743,8 @@ items:
     costBuy: 34
     costSell: 8
     transferTime: 4
-    bigSprite: 900 #todo
-    floorSprite: 900 #todo
+    bigSprite: 172
+    floorSprite: 162
     hitSound: 13
     hitAnimation: 26
     battleType: 2
@@ -703,10 +752,38 @@ items:
     costThrow:
       energy: 6
     power: 14
-    clipSize: 6
+    clipSize: 8
     shotgunPellets: 6
     shotgunSpread: 25
     shotgunBehavior: 1
+    damageType: 1
+    damageBonus:
+      reactions: 0.05
+    damageAlter:
+      ToStun: 0.50
+    armor: 20
+
+  - type: STR_SSP_SHOTGUN_AMMO_SLUG
+    categories: [STR_SECURITY_CATEGORY, STR_SHOTGUNS_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_VENDOR_SSP
+      - STR_SSP_SHOTGUN
+    size: 0.01
+    costBuy: 39
+    costSell: 10
+    transferTime: 4
+    bigSprite: 173
+    floorSprite: 163
+    bulletSprite: 19
+    hitSound: 13
+    hitAnimation: 26
+    battleType: 2
+    weight: 3
+    costThrow:
+      energy: 6
+    power: 35
+    clipSize: 8
     damageType: 1
     damageBonus:
       reactions: 0.05
@@ -726,9 +803,9 @@ items:
     bigSprite: 125
     floorSprite: 124
     handSprite: 232
-    bulletSprite: 1
+    bulletSprite: 16
     bulletSpeed: 20
-    fireSound: 4
+    fireSound: 124
     hitSound: 13
     hitAnimation: -1
     invWidth: 1
@@ -846,13 +923,13 @@ items:
       - STR_VENDOR_SSP
       - STR_TASER_PISTOL
     size: 0.01
-    costBuy: 39
-    costSell: 10
+    costBuy: 44
+    costSell: 11
     transferTime: 4
     bigSprite: 145
     floorSprite: 141
     hitSound: 13
-    hitAnimation: 26 #todo
+    hitAnimation: 56
     battleType: 2
     weight: 2
     costThrow:
@@ -928,7 +1005,7 @@ items:
     transferTime: 4
     bigSprite: 142
     floorSprite: 138
-    hitSound: 110
+    hitSound: 13
     hitAnimation: 26
     battleType: 2
     weight: 1
@@ -993,9 +1070,9 @@ items:
     bigSprite: 159
     floorSprite: 152
     handSprite: 352
-    bulletSprite: 11
-    bulletSpeed: 60
-    fireSound: 11
+    bulletSprite: 13
+    bulletSpeed: 30
+    fireSound: 121
     hitSound: 19
     hitAnimation: 36
     invWidth: 1
@@ -1039,9 +1116,10 @@ items:
     bigSprite: 158
     floorSprite: 151
     handSprite: 344
-    bulletSprite: 11
-    bulletSpeed: 60
-    fireSound: 11
+    bulletSprite: 13
+    bulletSpeed: 30
+    fireSound: 121
+    reloadSound: 125
     invWidth: 1
     invHeight: 2
     battleType: 1
@@ -1079,9 +1157,10 @@ items:
     bigSprite: 158
     floorSprite: 151
     handSprite: 344
-    bulletSprite: 11
-    bulletSpeed: 60
-    fireSound: 11
+    bulletSprite: 13
+    bulletSpeed: 30
+    fireSound: 121
+    reloadSound: 125
     invWidth: 1
     invHeight: 2
     battleType: 1
@@ -1173,10 +1252,10 @@ items:
     floorSprite: 107
     handSprite: 152
     bulletSprite: 11
-    bulletSpeed: 60
-    fireSound: 11
+    bulletSpeed: 30
+    fireSound: 121
     hitSound: 19
-    hitAnimation: 36
+    hitAnimation: 66
     battleType: 1
     weight: 8
     costThrow:
@@ -1218,7 +1297,7 @@ items:
     handSprite: 264
     bulletSprite: 11
     bulletSpeed: 60
-    fireSound: 11
+    fireSound: 121
     hitSound: 19
     hitAnimation: -1
     invWidth: 1
@@ -1271,10 +1350,10 @@ items:
     floorSprite: 126
     handSprite: 248
     bulletSprite: 11
-    bulletSpeed: 60
+    bulletSpeed: 30
     fireSound: 11
     hitSound: 19
-    hitAnimation: 36
+    hitAnimation: 66
     invWidth: 1
     invHeight: 3
     battleType: 1
@@ -1322,10 +1401,10 @@ items:
     floorSprite: 129
     handSprite: 272
     bulletSprite: 11
-    bulletSpeed: 60
-    fireSound: 11
+    bulletSpeed: 30
+    fireSound: 123
     hitSound: 19
-    hitAnimation: 36
+    hitAnimation: 66
     invWidth: 1
     invHeight: 3
     battleType: 1
@@ -1427,10 +1506,11 @@ items:
     bigSprite: 132
     floorSprite: 130
     handSprite: 280
-    bulletSprite: 11
-    bulletSpeed: 20
-    fireSound: 11
+    bulletSprite: 15
+    bulletSpeed: 15
+    fireSound: 122
     hitSound: 19
+    hitAnimation: 0
     invWidth: 2
     invHeight: 3
     battleType: 1
@@ -1781,7 +1861,6 @@ items:
     weight: 8
     costThrow: 
       energy: 12
-    blockBothHands: true
     arcingShot: true
     compatibleAmmo:
       - STR_ELECTRIC_NAILER_AMMO
@@ -1877,7 +1956,7 @@ items:
     dropoff: 4
     kneelBonus: 110
     twoHanded: true
-    blockBothHands: true
+    oneHandedPenalty: 25
     experienceTrainingMode: 7
     attraction: 10
     armor: 30
@@ -1989,24 +2068,26 @@ items:
     maxRange: 6
     clipSize: 5
     isFireExtinguisher: true
-    meleePower: 8
     meleeType: 6
-    meleeAlter:
-      RandomType: 8
-      ToTime: 1.0
-      ToHealth: 0.35
-      ToStun: 1.0
-      RandomStun: false
-      ToTile: 0.35
+    meleePower: 8
     meleeBonus:
       strength: 0.4
+    meleeAlter:
+      RandomType: 6
+      ToTime: 1.0
+      ToHealth: 0.20
+      ToStun: 1.0
+      RandomStun: true
+      IgnoreSelfDestruct: false
+      IgnorePainImmunity: false
+      ToTile: 0.35
     accuracyMelee: 70
     meleeMultiplier:
       melee: 1.0
       flatHundred: 0.35
     costMelee:
-      time: 14
-      energy: 6
+      time: 12
+      energy: 8
     flatMelee:
       time: true
     experienceTrainingMode: 19
@@ -2029,7 +2110,7 @@ items:
     costThrow:
       time: 15
       energy: 6
-    power: 15
+    power: 14
     tuPrime: 5
     tuUnload: 5
     primeActionName: STR_PRIME_FLARE
@@ -2057,7 +2138,7 @@ items:
     costThrow:
       time: 15
       energy: 6
-    power: 13
+    power: 12
     fuseType: -3
     fuseTriggerEvents:
       defaultBehavior: false
@@ -2076,7 +2157,7 @@ items:
     costThrow:
       time: 15
       energy: 6
-    power: 13
+    power: 12
     armor: 30
 
   - type: STR_MOTION_DETECTOR
@@ -2223,7 +2304,7 @@ items:
     requiresBuy:
       - STR_TODO
     size: 0.5
-    costBuy: 49
+    costBuy: -250
     costSell: -1000
     transferTime: 4
     bigSprite: 153
@@ -2235,18 +2316,16 @@ items:
     costThrow:
       energy: 12
 
-  - type: STR_PLASTICS #TODO resources tech
+  - type: STR_PLASTICS
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
       - STR_TODO
     size: 0.2
-    costBuy: 8000
-    costSell: 2000
+    costBuy: 4000
+    costSell: 1000
     transferTime: 4
-    bigSprite: 153 #todo
+    bigSprite: 170
     ignoreInCraftEquip: true
-    invWidth: 2
-    invHeight: 2
     battleType: 10
     weight: 4
     costThrow:
@@ -2345,7 +2424,7 @@ items:
 
   - type: STR_BRAND_LOYALTY
     categories: [STR_PERKS_CATEGORY]
-    monthlySalary: -800
+    monthlySalary: -950
     recoveryPoints: 1
 
   - type: STR_BOUNTY_1

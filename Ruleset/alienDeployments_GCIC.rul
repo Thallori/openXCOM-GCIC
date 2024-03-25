@@ -376,12 +376,12 @@ alienDeployments:
             - STR_45_AMMO
           -
             - STR_BATON
-            - STR_SINGLESHOT_LASER_PISTOL_CODED
-            - STR_MULTISHOT_LASER_AMMO
+            - STR_45_PISTOL_CODED
+            - STR_45_AMMO
           -
             - STR_BATON
-            - STR_SINGLESHOT_LASER_PISTOL_CODED
-            - STR_MULTISHOT_LASER_AMMO
+            - STR_45_PISTOL_CODED
+            - STR_45_AMMO
           -
             - STR_BATON
             - STR_SINGLESHOT_LASER_PISTOL_CODED
@@ -426,7 +426,7 @@ alienDeployments:
     markerName: STR_GCIC_SABOTAGE_2
     duration: [72, 96]
     despawnPenalty: 100
-    abortPenalty: -100
+    abortPenalty: 100
     despawnEvents:
       STR_EVENT_CLAIM_SECURED: 100
     failureEvents:
@@ -453,7 +453,7 @@ alienDeployments:
         lowQty: 1
         medQty: 1
         highQty: 2
-        dQty: 1
+        dQty: 0
         percentageOutsideUfo: 0
         extraRandomItems: *personalData7
         itemSets: &sspOfficer
@@ -467,14 +467,6 @@ alienDeployments:
             - STR_45_AMMO
           -
             - STR_BATON
-            - STR_45_PISTOL_CODED
-            - STR_45_AMMO
-          -
-            - STR_BATON
-            - STR_SINGLESHOT_LASER_PISTOL_CODED
-            - STR_MULTISHOT_LASER_AMMO
-          -
-            - STR_BATON
             - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
           -
@@ -491,12 +483,20 @@ alienDeployments:
             - STR_SSP_SHOTGUN_BS
           -
             - STR_SSP_SHOTGUN
-            - STR_SSP_SHOTGUN_SLUG
-            - STR_SSP_SHOTGUN_SLUG
+            - STR_SSP_SHOTGUN_BS
+            - STR_SSP_SHOTGUN_BS
           -
             - STR_SSP_SHOTGUN
-            - STR_SSP_SHOTGUN_SLUG
-            - STR_SSP_SHOTGUN_SLUG
+            - STR_SSP_SHOTGUN_BS
+            - STR_SSP_SHOTGUN_BS
+          -
+            - STR_SSP_SHOTGUN
+            - STR_SSP_SHOTGUN_BS
+            - STR_SSP_SHOTGUN_BS
+          -
+            - STR_SSP_SHOTGUN
+            - STR_SSP_SHOTGUN_BS
+            - STR_SSP_SHOTGUN_BS
       - alienRank: 6
         lowQty: 2
         medQty: 2

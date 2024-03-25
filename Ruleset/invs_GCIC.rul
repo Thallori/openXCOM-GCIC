@@ -2,15 +2,15 @@
   - id: STR_GROUND
     listOrder: 90
     costs:
-      STR_QD_SLOT: 12
-      STR_BACK_PACK: 20
-      STR_BELT: 13
-      STR_LEFT_HAND: 10
-      STR_LEFT_LEG: 14
-      STR_LEFT_SHOULDER: 18
-      STR_RIGHT_HAND: 10
-      STR_RIGHT_LEG: 14
-      STR_RIGHT_SHOULDER: 18
+      STR_QD_SLOT: 13
+      STR_BACK_PACK: 18
+      STR_BELT: 14
+      STR_LEFT_HAND: 8
+      STR_LEFT_LEG: 16
+      STR_LEFT_SHOULDER: 16
+      STR_RIGHT_HAND: 8
+      STR_RIGHT_LEG: 16
+      STR_RIGHT_SHOULDER: 16
   - id: STR_RIGHT_HAND
     listOrder: 70
     costs:

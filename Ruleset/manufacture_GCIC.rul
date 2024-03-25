@@ -76,10 +76,51 @@ manufacture:
   - name: STR_45_AMMO
     category: STR_AMMO_MANUCAT
     requires:
-      - STR_45_AMMO_M
+      - STR_GUNPOWDER
+      - STR_45_PISTOL
     time: 8
     cost: 20
     refund: true
+
+  - name: STR_SSP_SHOTGUN_AMMO_BS
+    category: STR_AMMO_MANUCAT
+    requires:
+      - STR_GUNPOWDER
+      - STR_SSP_SHOTGUN
+    time: 6
+    cost: 15
+    refund: true
+
+  - name: STR_SSP_SHOTGUN_AMMO_SLUG
+    category: STR_AMMO_MANUCAT
+    requires:
+      - STR_GUNPOWDER
+      - STR_SSP_SHOTGUN
+    time: 8
+    cost: 20
+    refund: true
+
+  - name: STR_TASER_AMMO
+    category: STR_AMMO_MANUCAT
+    requires:
+      - STR_VENDOR_PRINTER
+      - STR_TASER_PISTOL
+    time: 8
+    cost: 25
+    refund: true
+
+  - name: STR_DART_AMMO1
+    category: STR_AMMO_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_MEDICAL
+    requires:
+      - STR_MEDI_BAY
+      - STR_DART_PISTOL
+    time: 12
+    cost: 40
+    refund: true
+    requiredItems:
+      STR_BIOMASS: 1
 
   - name: STR_SINGLESHOT_LASER_AMMO
     category: STR_AMMO_MANUCAT
@@ -89,6 +130,7 @@ manufacture:
     cost: 80
     refund: true
 
+#explosives
   - name: STR_PIPEBOMB
     category: STR_EXPLOSIVES_MANUCAT
     requires:
@@ -107,12 +149,26 @@ manufacture:
     requiredItems:
       STR_ELERIUM_CORE: 1
 
+#armor
+  - name: STR_AQUAVEST_DRONE_ARMOR
+    category: STR_ARMORS_MANUCAT
+    requires:
+      - STR_PLASTICS
+      - STR_AQUAVEST_DRONE_ARMOR
+    time: 1600
+    cost: 2000
+    refund: true
+    requiredItems:
+      STR_PLASTICS: 2
+
 #resources
   - name: STR_PLASTICS
     category: STR_RESOURCES_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
     requires:
       - STR_PLASTICS
-    time: 100
+    time: 500
     cost: 400
     refund: true
     requiredItems:
@@ -206,12 +262,12 @@ manufacture:
 #cracking
   - name: STR_CONSUMER_CYBERNETICS_DECODED
     category: STR_CRACKING_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
     requires:
       - STR_CONSUMER_CYBERNETICS_CODED
       - STR_LOCAL_INTERFACE
       - STR_BIOCODING
-    requiresBaseFunc:
-      - STR_SERVICE_PORT
     time: 48
     refund: true
     requiredItems:
@@ -221,12 +277,12 @@ manufacture:
 
   - name: STR_45_PISTOL_DECODED
     category: STR_CRACKING_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
     requires:
       - STR_45_PISTOL_CODED
       - STR_LOCAL_INTERFACE
       - STR_BIOCODING
-    requiresBaseFunc:
-      - STR_SERVICE_PORT
     time: 400
     refund: true
     requiredItems:
@@ -234,14 +290,29 @@ manufacture:
     producedItems:
       STR_45_PISTOL: 1
 
+  - name: STR_SSP_SHOTGUN_DECODED
+    category: STR_CRACKING_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
+    requires:
+      - STR_SSP_SHOTGUN_CODED
+      - STR_LOCAL_INTERFACE
+      - STR_BIOCODING
+    time: 400
+    refund: true
+    requiredItems:
+      STR_SSP_SHOTGUN_CODED: 1
+    producedItems:
+      STR_SSP_SHOTGUN: 1
+
   - name: STR_TASER_PISTOL_DECODED
     category: STR_CRACKING_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
     requires:
       - STR_TASER_PISTOL_CODED
       - STR_LOCAL_INTERFACE
       - STR_BIOCODING
-    requiresBaseFunc:
-      - STR_SERVICE_PORT
     time: 400
     refund: true
     requiredItems:
@@ -251,12 +322,12 @@ manufacture:
 
   - name: STR_SSP_LASER_PISTOL_DECODED
     category: STR_CRACKING_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
     requires:
       - STR_SINGLESHOT_LASER_PISTOL_CODED
       - STR_LOCAL_INTERFACE
       - STR_BIOCODING
-    requiresBaseFunc:
-      - STR_SERVICE_PORT
     time: 400
     refund: true
     requiredItems:
