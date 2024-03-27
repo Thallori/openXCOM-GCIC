@@ -105,6 +105,9 @@ extraSprites:
       172: Resources/Items/Kinetic/Ammo/ssp_bs_ammo_bigob.png
       173: Resources/Items/Kinetic/Ammo/ssp_slug_ammo_bigob.png
       174: Resources/Items/Builtins/riotshield_bigob.png
+      175: Resources/Items/Builtins/electrobolt_bigob.png
+      176: Resources/Factions/Netrunners/skiptracer_bigob.png
+      177: Resources/Armors/Anthros/Aquavest/aquavest_corpse_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -172,6 +175,9 @@ extraSprites:
       161: Resources/Items/Kinetic/ssp_shotgun_floorob.png
       162: Resources/Items/Kinetic/Ammo/ssp_bs_ammo_floorob.png
       163: Resources/Items/Kinetic/Ammo/ssp_slug_ammo_floorob.png
+      164: Resources/Factions/Netrunners/skiptracer_floorob.png
+      165: Resources/Armors/Anthros/Aquavest/aquavest_corpse_floorob.png
+      166: Resources/Armors/Anthros/Aquavest/aquavest_corpse_shark_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -214,6 +220,12 @@ extraSprites:
       376: Resources/Items/Builtins/riotshield_handob.png
       900: Resources/temp_handob.png
 
+  - type: SPICONS.DAT
+    width: 32
+    height: 24
+    files:  
+      108: Resources/UI/spicon_electrobolt.png
+
   - type: BASEBITS.PCK
     files:
       0: Resources/BaseBits/basebits00.png
@@ -232,6 +244,7 @@ extraSprites:
       307: Resources/BaseBits/basebits_corridor.png
       308: Resources/BaseBits/basebits_local.png
       309: Resources/BaseBits/basebits_pnpbay.png
+      310: Resources/BaseBits/basebits_printshop.png
       433: Resources/Crafts/bicube_basebit.png
       434: Resources/Crafts/crossover_basebit.png
       435: Resources/Crafts/rider_basebit.png
@@ -268,6 +281,7 @@ extraSprites:
     files:
       56: Resources/Animations/electric_hit.png
       66: Resources/Animations/redlaser_hit.png
+      76: Resources/Animations/sonic_hit.png
 
   - type: HIT.PCK
     height: 40
@@ -296,9 +310,11 @@ extraSprites:
       595: Resources/Animations/Projectiles/lmg_bullet.png
       630: Resources/Animations/Projectiles/sniper_bullet.png
       665: Resources/Animations/Projectiles/slug_bullet.png
+      700: Resources/Animations/Projectiles/bluebubble_bullet.png
+      735: Resources/Animations/Projectiles/purplebubble_bullet.png
 
 #paperdolls
-#human
+# human
   - typeSingle: HUMAN__2__F0_SHELL
     fileSingle: Resources/Armors/Bodies/Humans/HUMAN_F0.png
   - typeSingle: HUMAN__2__F1_SHELL
@@ -316,12 +332,12 @@ extraSprites:
     fileSingle: Resources/Armors/Bodies/Humans/HUMAN_M2.png
   - typeSingle: HUMAN__2__M3_SHELL
     fileSingle: Resources/Armors/Bodies/Humans/HUMAN_M3.png
-#hybrid
+# hybrid
   - typeSingle: HYBRID__2__F0_SHELL
     fileSingle: Resources/Armors/Bodies/Hybrids/HYBRID_F0.png
   - typeSingle: HYBRID__2__M0_SHELL
     fileSingle: Resources/Armors/Bodies/Hybrids/HYBRID_M0.png
-#shark
+# shark
   - typeSingle: SHARK__2__F0_SHELL
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_F0.png
   - typeSingle: SHARK__2__F1_SHELL
@@ -339,7 +355,7 @@ extraSprites:
     subY: 20
     files:
       0: Resources/UI/tiny_armors.png
-#worksuit
+# worksuit
   - typeSingle: HUMAN__7__WORKSUIT
     fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_inventory.png
   - typeSingle: HYBRID__7__WORKSUIT
@@ -367,7 +383,7 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Worksuit/worksuit_sprite_shark.png
-#jumpsuit
+# jumpsuit
   - typeSingle: HUMAN__7__JUMPSUIT
     fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory.png
   - typeSingle: HYBRID__7__JUMPSUIT
@@ -395,7 +411,7 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Jumpsuit/jumpsuit_sprite_shark.png
-#aquavest
+# aquavest
   - typeSingle: HUMAN__7__AQUAVEST
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory.png
   - typeSingle: HYBRID__7__AQUAVEST
@@ -430,7 +446,7 @@ extraSprites:
     files:
       0: Resources/Armors/Anthros/Aquavest/aquavest_sprite_shark.png
 
-#pilot
+# pilot
   - typeSingle: PILOT_CORE.SPK
     fileSingle: Resources/Armors/Pilots/FlyingCore/pilot_core_inventory.png
   - type: PILOT_CORE.PCK
@@ -441,7 +457,7 @@ extraSprites:
     files:
       0: Resources/Armors/Pilots/FlyingCore/pilot_core_sprite.png
 
-#ironeyes
+# ironeyes
   - typeSingle: BOOSTER_CPAL
     fileSingle: Resources/Factions/Ironeyes/booster_CPAL.png
   - typeSingle: BOOSTER.SPK
@@ -466,7 +482,7 @@ extraSprites:
     files:
       0: Resources/Factions/Ironeyes/ripper_sprite.png
 
-#netrunners
+# netrunners
   - typeSingle: FREELANCER_CPAL
     fileSingle: Resources/Factions/Netrunners/freelancer_CPAL.png
   - typeSingle: FREELANCER.SPK
@@ -479,7 +495,19 @@ extraSprites:
     files:
       0: Resources/Factions/Netrunners/freelancer_sprite.png
 
-#ssp
+  - typeSingle: SKIPTRACER_CPAL
+    fileSingle: Resources/Factions/Netrunners/skiptracer_CPAL.png
+  - typeSingle: SKIPTRACER.SPK
+    fileSingle: Resources/Factions/Netrunners/skiptracer_inventory.png
+  - type: SKIPTRACER.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 680
+    files:
+      0: Resources/Factions/Netrunners/skiptracer_sprite.png
+
+# ssp
   - typeSingle: SSPGUARD_CPAL
     fileSingle: Resources/Factions/SSP/sspguard_CPAL.png
   - typeSingle: SSPGUARD.SPK
@@ -504,7 +532,7 @@ extraSprites:
     files:
       0: Resources/Factions/SSP/sspofficer_sprite.png
 
-#enemy drones
+# enemy drones
   - typeSingle: DRONEHYBRID.SPK
     fileSingle: Resources/Factions/Drones/dronehybrid_inventory.png
   - typeSingle: DRONEHUMAN.SPK
@@ -512,7 +540,7 @@ extraSprites:
   - typeSingle: DRONESHARK.SPK
     fileSingle: Resources/Factions/Drones/droneshark_inventory.png
 
-#clients
+# clients
   - typeSingle: CLIENT_1.SPK
     fileSingle: Resources/Factions/Clients/client_1_inventory.png
   - type: CLIENT_1.PCK
@@ -540,14 +568,14 @@ extraSprites:
     fileSingle: Resources/Pedia/align_test2_CPAL.png
   - typeSingle: TEMPHARDPOINT.SPK
     fileSingle: Resources/temphardpoint_pedia.png
-
+# files
   - typeSingle: DATA1_CPAL
     fileSingle: Resources/Pedia/data1_CPAL.png
   - typeSingle: DATA2_CPAL
     fileSingle: Resources/Pedia/data2_CPAL.png
   - typeSingle: DATA3_CPAL
     fileSingle: Resources/Pedia/data3_CPAL.png
-
+# operations
   - typeSingle: OPERATIONS1_CPAL
     fileSingle: Resources/Pedia/operations1_CPAL.png
   - typeSingle: OPERATIONS2_CPAL
@@ -556,7 +584,7 @@ extraSprites:
     fileSingle: Resources/Pedia/operations3_CPAL.png
   - typeSingle: OPERATIONS4_CPAL
     fileSingle: Resources/Pedia/operations4_CPAL.png
-
+# connections
   - typeSingle: VENDOR_PRINT_CPAL
     fileSingle: Resources/Pedia/vendor_print_CPAL.png
   - typeSingle: VENDOR_MEDI_CPAL
@@ -571,9 +599,11 @@ extraSprites:
     fileSingle: Resources/Pedia/vendor_vcm_CPAL.png
   - typeSingle: VENDOR_SSP_CPAL
     fileSingle: Resources/Pedia/vendor_ssp_CPAL.png
-
+# technologies
   - typeSingle: RECEIPT_CPAL
     fileSingle: Resources/Pedia/receipt_CPAL.png
+  - typeSingle: CONSUME_CPAL
+    fileSingle: Resources/Pedia/consume_CPAL.png
   - typeSingle: GUNPOWDER_CPAL
     fileSingle: Resources/Pedia/gunpowder_CPAL.png
   - typeSingle: NBCELL_CPAL
@@ -584,16 +614,6 @@ extraSprites:
     fileSingle: Resources/Pedia/staple_CPAL.png
   - typeSingle: PASS_CPAL
     fileSingle: Resources/Pedia/pass_CPAL.png
-
-  - typeSingle: IMMORTAL_CPAL
-    fileSingle: Resources/Pedia/immortal_CPAL.png
-  - typeSingle: IMPLANTS_CPAL
-    fileSingle: Resources/Pedia/implants_CPAL.png
-  - typeSingle: NEURACHEM_CPAL
-    fileSingle: Resources/Pedia/neurachem_CPAL.png
-
-  - typeSingle: LIQUIDITY_CPAL
-    fileSingle: Resources/Pedia/liquidity_CPAL.png
 # crafts
   - typeSingle: CRAFT_BICUBE_CPAL
     fileSingle: Resources/Pedia/craft_bicube_CPAL.png
@@ -611,6 +631,13 @@ extraSprites:
     fileSingle: Resources/Pedia/human_CPAL.png
   - typeSingle: SHARK_CPAL
     fileSingle: Resources/Pedia/shark_CPAL.png
+# transformations
+  - typeSingle: IMMORTAL_CPAL
+    fileSingle: Resources/Pedia/immortal_CPAL.png
+  - typeSingle: IMPLANTS_CPAL
+    fileSingle: Resources/Pedia/implants_CPAL.png
+  - typeSingle: NEURACHEM_CPAL
+    fileSingle: Resources/Pedia/neurachem_CPAL.png
 # armors
   - typeSingle: ARMOR_PLEX_CPAL
     fileSingle: Resources/Pedia/armor_plex_CPAL.png

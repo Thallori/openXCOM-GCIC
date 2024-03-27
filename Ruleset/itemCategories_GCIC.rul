@@ -52,10 +52,10 @@
   - type: STR_SECURITY_CATEGORY
     listOrder: 410
     hidden: true
-  - type: STR_MILTEC_CATEGORY
+  - type: STR_MILSPEC_CATEGORY
     listOrder: 420
     hidden: true
-  - type: STR_EXOTIC_CATEGORY
+  - type: STR_INVASION_CATEGORY
     listOrder: 430
     hidden: true
   - type: STR_VACUUM_RATED_CATEGORY
@@ -66,10 +66,6 @@
     hidden: true
   - type: STR_LOCKED_CATEGORY
     listOrder: 590
-  # - type: STR_KINETIC_CATEGORY
-  #   listOrder: 600
-  # - type: STR_LASER_CATEGORY
-  #   listOrder: 601
   - type: STR_RESOURCES_CATEGORY
     listOrder: 800
   - type: STR_PERKS_CATEGORY

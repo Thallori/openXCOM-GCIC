@@ -229,6 +229,58 @@ items:
     specialUseEmptyHandShow: true
     recover: false
 
+  - type: STR_ELECTROBOLT
+    categories: [STR_BUILT_INS_CATEGORY]
+    specialIconSprite: 108
+    bigSprite: 175
+    bulletSprite: 14
+    bulletSpeed: -1
+    fireSound: 108
+    hitSound: 13
+    hitAnimation: 56
+    invWidth: 2
+    invHeight: 2
+    battleType: 1
+    arcingShot: true
+    power: 6
+    damageBonus:
+      throwing: 0.1
+      stamina: 0.2
+      reactions: 0.1
+    damageType: 10
+    damageAlter:
+      RandomType: 6
+      ToWound: 0.0
+      RandomWound: false
+      ToHealth: 0.35
+      ToStun: 1.0
+      RandomStun: false
+      IgnoreSelfDestruct: true
+      IgnorePainImmunity: true
+      ToTile: 0.25
+    clipSize: -1
+    accuracySnap: 65
+    accuracyAimed: 90
+    accuracyMultiplier:
+      throwing: 1.0
+    costSnap:
+      time: 18
+      energy: 12
+    costAimed:
+      time: 25
+      energy: 12
+    flatRate: true
+    snapRange: 3
+    aimRange: 9
+    dropoff: 4
+    confSnap:
+      name: STR_SNAPSHOCK
+    confAimed:
+      name: STR_AIMSHOCK
+    experienceTrainingMode: 7
+    fixedWeapon: true
+    recover: false
+
   - type: STR_RIOT_SHIELD
     categories: [STR_BUILT_INS_CATEGORY]
     bigSprite: 174
@@ -269,6 +321,7 @@ items:
     recover: false
 
 #kinetic
+# p2p
   - type: STR_BUSBOX_PISTOL
     categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
@@ -281,7 +334,7 @@ items:
     floorSprite: 104
     handSprite: 144
     bulletSprite: 2
-    fireSound: 118
+    fireSound: 4
     invWidth: 1
     invHeight: 2
     battleType: 1
@@ -554,6 +607,58 @@ items:
     damageType: 1
     armor: 20
 
+  - type: STR_DISPOSABLE_SMG
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_P2P
+      - STR_DISPOSABLE_SMG
+    size: 0.1
+    costBuy: 79
+    costSell: 25
+    transferTime: 12
+    bigSprite: 125
+    floorSprite: 124
+    handSprite: 232
+    bulletSprite: 16
+    bulletSpeed: 20
+    fireSound: 124
+    hitSound: 13
+    hitAnimation: -1
+    invWidth: 1
+    invHeight: 2
+    battleType: 1
+    weight: 8
+    costThrow:
+      energy: 10
+    power: 18
+    damageBonus:
+      reactions: 0.05
+    damageType: 1
+    clipSize: 27
+    sprayWaypoints: 2
+    confSnap:
+      shots: 3
+      shortName: STR_SNAP_MULTIPLE_SHORT
+    confAuto:
+      shots: 6
+    accuracySnap: 45
+    accuracyAuto: 40
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.10
+    tuSnap: 30
+    tuAuto: 45
+    snapRange: 12
+    autoRange: 7
+    dropoff: 3
+    kneelBonus: 115
+    # twoHanded: true
+    oneHandedPenalty: 85
+    experienceTrainingMode: 5
+    attraction: 15
+    armor: 30
+
+# ssp
   - type: STR_45_PISTOL_CODED
     categories: [STR_SECURITY_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_LOCKED_CATEGORY]
     ufopediaType: STR_45_PISTOL
@@ -751,7 +856,7 @@ items:
     weight: 3
     costThrow:
       energy: 6
-    power: 14
+    power: 15
     clipSize: 8
     shotgunPellets: 6
     shotgunSpread: 25
@@ -791,57 +896,6 @@ items:
       ToStun: 0.50
     armor: 20
 
-  - type: STR_DISPOSABLE_SMG
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
-    requiresBuy:
-      - STR_VENDOR_P2P
-      - STR_DISPOSABLE_SMG
-    size: 0.1
-    costBuy: 79
-    costSell: 25
-    transferTime: 12
-    bigSprite: 125
-    floorSprite: 124
-    handSprite: 232
-    bulletSprite: 16
-    bulletSpeed: 20
-    fireSound: 124
-    hitSound: 13
-    hitAnimation: -1
-    invWidth: 1
-    invHeight: 2
-    battleType: 1
-    weight: 8
-    costThrow:
-      energy: 10
-    power: 18
-    damageBonus:
-      reactions: 0.05
-    damageType: 1
-    clipSize: 27
-    sprayWaypoints: 2
-    confSnap:
-      shots: 3
-      shortName: STR_SNAP_MULTIPLE_SHORT
-    confAuto:
-      shots: 6
-    accuracySnap: 45
-    accuracyAuto: 40
-    accuracyMultiplier:
-      firing: 1.0
-      flatHundred: 0.10
-    tuSnap: 30
-    tuAuto: 45
-    snapRange: 12
-    autoRange: 7
-    dropoff: 3
-    kneelBonus: 115
-    # twoHanded: true
-    oneHandedPenalty: 85
-    experienceTrainingMode: 5
-    attraction: 15
-    armor: 30
-
 #electric
   - type: STR_TASER_PISTOL_CODED
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY, STR_LOCKED_CATEGORY]
@@ -861,7 +915,7 @@ items:
     invWidth: 1
     invHeight: 2
     battleType: 1
-    weight: 4
+    weight: 3
     costThrow:
       energy: 6
     compatibleAmmo:
@@ -898,7 +952,7 @@ items:
     invWidth: 1
     invHeight: 2
     battleType: 1
-    weight: 4
+    weight: 3
     costThrow:
       energy: 6
     compatibleAmmo:
@@ -953,7 +1007,7 @@ items:
     clipSize: 2
     armor: 20
 
-#aquatic
+# nrf
   - type: STR_DART_PISTOL
     categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
     requiresBuy:
@@ -1059,6 +1113,109 @@ items:
       IgnorePainImmunity: true
       ToTile: 0.0
     clipSize: 8
+    armor: 20
+
+  - type: STR_CHEM_SMG
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_PRINTER
+      - STR_CHEM_SMG
+    size: 0.1
+    costBuy: 499
+    costSell: 125
+    transferTime: 4
+    bigSprite: 900
+    floorSprite: 900
+    handSprite: 900
+    bulletSprite: 20
+    bulletSpeed: 5
+    fireSound: 129
+    invWidth: 1
+    invHeight: 2
+    battleType: 1
+    weight: 6
+    costThrow:
+      energy: 8
+    arcingShot: true
+    compatibleAmmo:
+      - STR_CHEM_SMG_AMMO0
+      - STR_CHEM_SMG_AMMO1
+    confSnap:
+      shots: 2
+      shortName: STR_SNAP_MULTIPLE_SHORT
+    confAimed:
+      shots: 2
+      shortName: STR_AIMED_MULTIPLE_SHORT
+    accuracySnap: 30
+    accuracyAimed: 45
+    accuracyMultiplier:
+      throwing: 1.0
+      flatHundred: 0.10
+    tuSnap: 35
+    tuAimed: 45
+    tuLoad: 25
+    snapRange: 6
+    aimRange: 14
+    dropoff: 3
+    kneelBonus: 110
+    # twoHanded: true
+    oneHandedPenalty: 75
+    experienceTrainingMode: 7
+    attraction: 10
+    armor: 30
+
+  - type: STR_CHEM_SMG_AMMO0
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_PRINTER
+      - STR_CHEM_SMG
+    size: 0.01
+    costBuy: 11
+    costSell: 3
+    transferTime: 4
+    bigSprite: 142
+    floorSprite: 138
+    hitSound: 13
+    hitAnimation: -1
+    battleType: 2
+    weight: 2
+    costThrow:
+      energy: 6
+    power: 1
+    damageBonus:
+      reactions: 0.05
+    damageType: 11
+    damageAlter:
+      ToTile: 0.0
+    clipSize: 10
+    armor: 20
+
+  - type: STR_CHEM_SMG_AMMO1
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_CHEM_SMG
+    size: 0.01
+    costBuy: 449
+    costSell: 112
+    transferTime: 4
+    bigSprite: 900
+    floorSprite: 900
+    bulletSprite: 21
+    hitSound: 19
+    hitAnimation: -1
+    battleType: 2
+    weight: 2
+    costThrow:
+      energy: 6
+    power: 25
+    damageBonus:
+      reactions: 0.05
+    damageType: 8
+    damageAlter:
+      IgnoreDirection: true
+      ToArmorPre: 0.05
+    clipSize: 10
     armor: 20
 
 #laser
@@ -1257,7 +1414,7 @@ items:
     hitSound: 19
     hitAnimation: 66
     battleType: 1
-    weight: 8
+    weight: 6
     costThrow:
       energy: 8
     power: 19
@@ -1750,7 +1907,7 @@ items:
 
 #tools
   - type: STR_WRENCH
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MELEE_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MELEE_CATEGORY]
     requiresBuy:
       - STR_VENDOR_PRINTER
       - STR_WRENCH
@@ -1822,7 +1979,7 @@ items:
       ToArmorPre: 0.05
       ToTime: 1.0
       ToHealth: 0.35
-      ToStun: 1.0
+      ToStun: 0.75
       RandomStun: false
       IgnoreSelfDestruct: true
       IgnorePainImmunity: true
@@ -1837,6 +1994,51 @@ items:
     flatRate: true
     experienceTrainingMode: 16
     clipSize: -1
+    attraction: 15
+    armor: 30
+
+  - type: STR_SONIC_PROBE
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_BUILDER
+      - STR_SONIC_PROBE
+    size: 0.1
+    costBuy: 489
+    costSell: 122
+    transferTime: 4
+    bigSprite: 900
+    floorSprite: 900
+    handSprite: 900
+    bulletSprite: 20
+    bulletSpeed: -1
+    fireSound: 127
+    hitSound: 128
+    hitAnimation: 76
+    invWidth: 1
+    invHeight: 2
+    battleType: 1
+    weight: 5
+    costThrow:
+      energy: 8
+    power: 12
+    damageBonus:
+      reactions: 0.2
+    damageType: 11
+    damageAlter:
+      ArmorEffectiveness: 0.75
+      ToStun: 0.5
+    powerRangeThreshold: 5
+    powerRangeReduction: 5
+    clipSize: -1
+    accuracySnap: 60
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.15
+    tuSnap: 30
+    snapRange: 5
+    maxRange: 9
+    dropoff: 4
+    kneelBonus: 110
     attraction: 15
     armor: 30
 
@@ -1932,7 +2134,7 @@ items:
     battleType: 1
     weight: 6
     costThrow: 
-      energy: 10
+      energy: 8
     arcingShot: true
     compatibleAmmo:
       - STR_KNOCK_FLARE_AMMO
@@ -1955,8 +2157,8 @@ items:
     maxRange: 32
     dropoff: 4
     kneelBonus: 110
-    twoHanded: true
-    oneHandedPenalty: 25
+    # twoHanded: true
+    oneHandedPenalty: 85
     experienceTrainingMode: 7
     attraction: 10
     armor: 30
@@ -2380,12 +2582,12 @@ items:
   - type: STR_GCIC_SABOTAGE_2_DATA
     categories: [STR_DATA_CATEGORY]
     specialType: 197
-    costSell: 80000
+    costSell: 100000
     recoveryPoints: -15
 
-  - type: STR_GCIC_SABOTAGE_2_DATA_DISC
+  - type: STR_GCIC_SABOTAGE_2_DATA_DECRYPT
     categories: [STR_DATA_CATEGORY]
-    costSell: 125000
+    costSell: 145000
 
   - type: STR_HYBRID_DATA
     categories: [STR_DATA_CATEGORY]
@@ -2400,6 +2602,9 @@ items:
   - type: STR_MONEY_1
     categories: [STR_PERKS_CATEGORY]
     costSell: 20
+  - type: STR_MONEY_2
+    categories: [STR_PERKS_CATEGORY]
+    costSell: 80
 
 #projects
   - type: STR_RRM_ITEM
@@ -2478,9 +2683,15 @@ items:
     costSell: 10000
     monthlySalary: -750
 
+  - type: STR_DRONE_DEEP_ITEM
+    categories: [STR_DRONES_CATEGORY]
+    size: -1.0
+    costSell: 10000
+    monthlySalary: -750
+
 #armor
   - type: STR_DURA_DRONE_ARMOR
-    categories: [STR_OUTFITS_CATEGORY, STR_SECURITY_CATEGORY]
+    categories: [STR_OUTFITS_CATEGORY, STR_CONVENTIONAL_CATEGORY]
     requiresBuy:
       - STR_TODO
     size: 0.25
@@ -2488,7 +2699,7 @@ items:
     costSell: 1000
     transferTime: 4
 
-  - type: STR_AQUAVEST_DRONE_ARMOR #TODO resources
+  - type: STR_AQUAVEST_DRONE_ARMOR
     categories: [STR_OUTFITS_CATEGORY, STR_SECURITY_CATEGORY]
     requiresBuy:
       - STR_TODO
@@ -2591,11 +2802,11 @@ items:
       STR_DURA_DRONE_ARMOR: [1]
     armor: 35
 
-  - type: STR_AQUAVEST_DRONE_HYBRID_CORPSE #TODO resources
+  - type: STR_AQUAVEST_DRONE_HYBRID_CORPSE
     name: STR_CORPSE
     categories: [STR_DEBUG_CATEGORY]
-    bigSprite: 45
-    floorSprite: 39
+    bigSprite: 177
+    floorSprite: 165
     invWidth: 2
     invHeight: 3
     battleType: 11
@@ -2607,11 +2818,11 @@ items:
       STR_AQUAVEST_DRONE_ARMOR: [1]
     armor: 40
 
-  - type: STR_AQUAVEST_DRONE_HUMAN_CORPSE #TODO resources
+  - type: STR_AQUAVEST_DRONE_HUMAN_CORPSE
     name: STR_CORPSE
     categories: [STR_DEBUG_CATEGORY]
-    bigSprite: 45
-    floorSprite: 39
+    bigSprite: 177
+    floorSprite: 165
     invWidth: 2
     invHeight: 3
     battleType: 11
@@ -2623,11 +2834,11 @@ items:
       STR_AQUAVEST_DRONE_ARMOR: [1]
     armor: 40
 
-  - type: STR_AQUAVEST_DRONE_SHARK_CORPSE #TODO resources
+  - type: STR_AQUAVEST_DRONE_SHARK_CORPSE
     name: STR_CORPSE
     categories: [STR_DEBUG_CATEGORY]
-    bigSprite: 45
-    floorSprite: 39
+    bigSprite: 177
+    floorSprite: 166
     invWidth: 2
     invHeight: 3
     battleType: 11
@@ -2655,11 +2866,9 @@ items:
     armor: 50
 
 #targets
-#ironeyes
+#ironsights
   - type: STR_BOOSTER_PRIVATE
     categories: [STR_SPECIMENS_CATEGORY]
-    size: 0.0
-    recover: true
     liveAlien: true
     costSell: -1000
 
@@ -2679,8 +2888,6 @@ items:
 
   - type: STR_RIPPER_PRIVATE
     categories: [STR_SPECIMENS_CATEGORY]
-    size: 0.0
-    recover: true
     liveAlien: true
     costSell: -1000
 
@@ -2701,8 +2908,6 @@ items:
 #netrunners
   - type: STR_FREELANCER_PRIVATE
     categories: [STR_SPECIMENS_CATEGORY]
-    size: 0.0
-    recover: true
     liveAlien: true
     costSell: -1000
 
@@ -2720,11 +2925,28 @@ items:
       STR_CONSUMER_CYBERNETICS_CODED: [1]
     armor: 30
 
+  - type: STR_SKIPTRACER_PRIVATE
+    categories: [STR_SPECIMENS_CATEGORY]
+    liveAlien: true
+    costSell: -1000
+
+  - type: STR_SKIPTRACER_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    weight: 22
+    bigSprite: 176
+    floorSprite: 164
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_CONSUMER_CYBERNETICS_CODED: [1]
+    armor: 30
+
 #ssp
   - type: STR_SSPGUARD_PRIVATE
     categories: [STR_SPECIMENS_CATEGORY]
-    size: 0.0
-    recover: true
     liveAlien: true
     costSell: -1000
 
@@ -2743,8 +2965,6 @@ items:
 
   - type: STR_SSPOFFICER_PRIVATE
     categories: [STR_SPECIMENS_CATEGORY]
-    size: 0.0
-    recover: true
     liveAlien: true
     costSell: -1000
 
@@ -2767,7 +2987,6 @@ items:
     categories: [STR_DEBUG_CATEGORY]
     recoveryTransformations:
       STR_DRONE_HYBRID_ITEM: [1]
-    size: 0.0
     recover: true
     liveAlien: true
 
@@ -2775,7 +2994,6 @@ items:
     categories: [STR_DEBUG_CATEGORY]
     recoveryTransformations:
       STR_DRONE_HUMAN_ITEM: [1]
-    size: 0.0
     recover: true
     liveAlien: true
 
@@ -2783,7 +3001,6 @@ items:
     categories: [STR_DEBUG_CATEGORY]
     recoveryTransformations:
       STR_DRONE_SHARK_ITEM: [1]
-    size: 0.0
     recover: true
     liveAlien: true
 

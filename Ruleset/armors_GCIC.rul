@@ -734,7 +734,7 @@ armors:
     sideArmor: 6
     rearArmor: 6
     underArmor: 6
-    damageModifier: 
+    damageModifier: #&SmallsmokeUnarmoredResists
       - 1.0 #0 none
       - 1.0 #1 kinetic
       - 1.4 #2 incendiary
@@ -744,7 +744,7 @@ armors:
       - 1.0 #6 blunt
       - 1.0 #7 mechanical
       - 1.0 #8 chemical
-      - 3.5 #9 smoke
+      - 3.0 #9 smoke
       - 1.0 #10 electric
       - 1.0 #11 sonic
       - 1.0 #12 biological
@@ -779,29 +779,12 @@ armors:
     sideArmor: 6
     rearArmor: 6
     underArmor: 6
-    damageModifier:
-      - 1.0 #0 none
-      - 1.0 #1 kinetic
-      - 1.4 #2 incendiary
-      - 1.0 #3 concussive
-      - 1.0 #4 radiant
-      - 1.0 #5 plasma
-      - 1.0 #6 blunt
-      - 1.0 #7 mechanical
-      - 1.0 #8 chemical
-      - 1.5 #9 smoke
-      - 1.0 #10 electric
-      - 1.0 #11 sonic
-      - 1.0 #12 biological
-      - 1.0 #13 psionic
-      - 1.0 #14 heat
-      - 1.0 #15 cold
+    damageModifier: *OrganicUnarmoredResists
     meleeDodge: *MeleeDodgeTypical
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: &StunRecoveryEnemy
-        flatHundred: 0
+      stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryHumanTypical
     loftempsSet: [ 3 ]
 
@@ -824,6 +807,47 @@ armors:
     rearArmor: 2
     underArmor: 2
     damageModifier: *OrganicUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryHumanTypical
+    loftempsSet: [ 3 ]
+
+  - type: STR_SKIPTRACER_ARMOR
+    ufopediaType: STR_SKIPTRACER_ARMOR
+    spriteInv: SKIPTRACER.SPK
+    spriteSheet: SKIPTRACER.PCK
+    # spriteFaceGroup: 6
+    # spriteFaceColor: *SpriteFaceColorHuman
+    corpseBattle:
+      - STR_SKIPTRACER_CORPSE
+    specialWeapon: STR_ELECTROBOLT
+    allowsKneeling: true
+    visibilityAtDay: 30
+    visibilityAtDark: 9
+    frontArmor: 6
+    sideArmor: 6
+    rearArmor: 6
+    underArmor: 6
+    damageModifier: #&deeponeUnarmoredResists
+      - 1.0 #0 none
+      - 1.0 #1 kinetic
+      - 1.4 #2 incendiary
+      - 1.0 #3 concussive
+      - 1.0 #4 radiant
+      - 1.0 #5 plasma
+      - 1.0 #6 blunt
+      - 1.0 #7 mechanical
+      - 1.0 #8 chemical
+      - 0.5 #9 smoke
+      - 0.5 #10 electric
+      - 1.0 #11 sonic
+      - 1.0 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
     meleeDodge: *MeleeDodgeTypical
     psiDefence: *PsiDefenseTypical
     recovery:

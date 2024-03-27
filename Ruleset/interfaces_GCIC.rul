@@ -100,9 +100,9 @@ interfaces:
       - id: ammoColorDTSmoke
         color: 161    #brown: smoke
       - id: ammoColorDT10
-        color: 129    #electric: electric
+        color: 129    #cyan: electric
       - id: ammoColorDT11
-        color: 32    #todo: sonic
+        color: 207    #sky: sonic
       - id: ammoColorDT12
         color: 179    #fleshy: biological
       - id: ammoColorDT13

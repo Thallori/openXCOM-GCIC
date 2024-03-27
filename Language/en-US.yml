@@ -385,10 +385,8 @@ en-US:
   STR_CONVENTIONAL_CATEGORY: "Rating: Conventional"
   STR_SECURITY_CATEGORY: "Rating: Security"
   STR_MILSPEC_CATEGORY: "Rating: Milspec"
-  STR_EXOTIC_CATEGORY: "Rating: Exotic"
+  STR_INVASION_CATEGORY: "Rating: Invasion"
   STR_LOCKED_CATEGORY: "Locked"
-  # STR_KINETIC_CATEGORY: "Kinetic"
-  # STR_LASER_CATEGORY: "Laser"
   STR_RESOURCES_CATEGORY: "Resources"
   STR_DATA_CATEGORY: "Data"
   STR_PERKS_CATEGORY: "Perks"
@@ -419,40 +417,46 @@ en-US:
 #briefings
   STR_RESCUE_1: "Clients: Early Adopters"
   STR_RESCUE_1_ALERT: "CLIENTS REQUIRE RESCUE"
-  STR_RESCUE_1_ALERT_DESCRIPTION: "A client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Minimum site duration: 48 Hours."
+  STR_RESCUE_1_ALERT_DESCRIPTION: "A client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Minimum site duration: 48 Hours. Maximium Gear: Security"
   STR_RESCUE_1_BRIEFING: "A client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this mission."
   
   STR_RESCUE_RR: "Clients: Rapid Response"
   STR_RESCUE_RR_ALERT: "CLIENTS REQUIRE RESCUE"
-  STR_RESCUE_RR_ALERT_DESCRIPTION: "An emergency request has been triggered. We are tracking a client's current vitals and location. So far they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Minimum site duration: 16 Hours."
+  STR_RESCUE_RR_ALERT_DESCRIPTION: "An emergency request has been triggered. We are tracking a client's current vitals and location. So far they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Minimum site duration: 16 Hours. Maximium Gear: Security"
   STR_RESCUE_RR_BRIEFING: "An emergency request has been triggered. We are tracking a client's current vitals and location. So far they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this mission."
 
   STR_TRADE_MEETING_EARLY: "Netrunners: Contact"
   STR_TRADE_MEETING_EARLY_ALERT: "NETRUNNERS SEND MESSAGE"
-  STR_TRADE_MEETING_EARLY_ALERT_DESCRIPTION: "Your flunky missed our regular meeting time, a new location has been chosen if you still want the merch. Don't be late or this will be our last contact.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours."
+  STR_TRADE_MEETING_EARLY_ALERT_DESCRIPTION: "Your flunky missed our regular meeting time, a new location has been chosen if you still want the merch. Don't be late or this will be our last contact.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours. Gear Restriction: Infiltration."
   STR_TRADE_MEETING_EARLY_BRIEFING: "Something has gone wrong. We have failed to send the expected drones and perform the correct handshake protocols. Our drones may be in danger.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this mission by leaving the operations zone."
 
-  STR_TRADE_MEETING_1: "Netrunners: Forbidden Ops"
-  STR_TRADE_MEETING_1_ALERT: "NETRUNNERS LOCATED"
-  STR_TRADE_MEETING_1_ALERT_DESCRIPTION: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours. Infiltration gear only."
+  STR_TRADE_MEETING_ALERT: "NETRUNNERS LOCATED"
+  STR_TRADE_MEETING_1: "Netrunners: Forbidden Trade"
+  STR_TRADE_MEETING_1_ALERT_DESCRIPTION: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours. Gear Restriction: Infiltration."
   STR_TRADE_MEETING_1_BRIEFING: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this mission by leaving the operations zone."
+
+  STR_TRADE_MEETING_2: "Netrunners: Proxy Traced"
+  STR_TRADE_MEETING_2_ALERT_DESCRIPTION: "{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours. Gear Restriction: Infiltration."
+  STR_TRADE_MEETING_2_BRIEFING: "{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this mission."
 
   STR_GCIC_SABOTAGE_ALERT: "GCIC MANDATE"
   STR_GCIC_SABOTAGE_1: "GCIC: Denial of Service"
-  STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal security. Destroy it and abort, or neutralize all targets in the area.{NEWLINE}{NEWLINE}We may ignore this mandate, but there will be consequences either way.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 72 hours."
+  STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal security. Destroy it and abort, or neutralize all targets in the area.{NEWLINE}{NEWLINE}We may ignore this mandate, but there will be consequences either way.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 72 hours. Maximium Gear: Milspec"
   STR_GCIC_SABOTAGE_1_BRIEFING: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal security. Destroy it and abort, or neutralize all targets in the area.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 10 turns before additional security forces arrive and we are forced to abort."
   STR_SABOTAGE_DESTROYED_COMPLETE: "EVIDENCE DESTROYED"
   STR_SABOTAGE_DESTROYED_FAILED: "EVIDENCE REMAINS"
   STR_SABOTAGE_DESTROYED_POPUP: "EVIDENCE DESTROYED{NEWLINE}{SMALLLINE}We may return to the vehicle and abort."
 
   STR_GCIC_SABOTAGE_2: "GCIC: Backdoor Injection"
-  STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION: "One of our sibling corporations is experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Expect armored security forces.{NEWLINE}{NEWLINE}We may ignore this mandate, but there will be consequences either way.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 72 hours."
+  STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION: "One of our sibling corporations is experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Expect armored security forces.{NEWLINE}{NEWLINE}We may ignore this mandate, but there will be consequences either way.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 72 hours. Maximium Gear: Milspec"
   STR_GCIC_SABOTAGE_2_BRIEFING: "One of our sibling corporations is experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Expect armored security forces.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 15 turns before additional security forces arrive and we are forced to abort."
 #events
   STR_NETRUNNER_EARLY_EXPOSITION: "Netrunners Trading Contract"
-  STR_NETRUNNER_EARLY_EXPOSITION_DESCRIPTION: "Upon examining our fragmented organic data for information on netrunners, we have found references to an old trade deal. The technology that was used to create us, along with other prototypes for high-level drone control, was sourced by an unknown party. GCIC had an ongoing contract for this tech, one that is now certainly void.{NEWLINE}{NEWLINE}The source may try to find other buyers, which may give us an opportunity."
+  STR_NETRUNNER_EARLY_EXPOSITION_DESCRIPTION: "Upon examining our fragmented organic data for information on netrunners, we have found references to an old trade deal. The technology that was used to create us, along with other prototypes for high-level drone control, was sourced by an unknown party. GCIC had an ongoing contract for this tech, one that is now certainly void.{NEWLINE}{NEWLINE}The source may try to find other buyers, which gives us an opportunity."
   STR_EVENT_CLAIM_SECURED: "CBN Update" #central broadcast network
   STR_EVENT_CLAIM_SECURED_DESCRIPTION: "Severance package seeker awarded claim of over 200,000$ following arbitration. The former employee was said to be owed after a drone-error resulted in false reports of missed quotas.{NEWLINE}{NEWLINE}Although GCIC stockprices have taken a dip with the news, people are celebrating this as a win for the corp and its customers."
+  STR_EVENT_HEALTHY_COMPETITION: "CBN Update"
+  STR_EVENT_HEALTHY_COMPETITION_DESCRIPTION: "Drone-based rescue services are getting hot this season, with new startups being announced to rival GCIC's latest innovation. A company spokesperson is quoted as saying, 'there's nothing wrong with a little healthy competition.'{NEWLINE}{NEWLINE}For now, new customers interested in this venture only have one option to turn to.{NEWLINE}[+150 Score]"
 #mission ratings
   STR_MS_RATING_4000: "PERFECT"
   STR_MS_RATING_3000: "PEERLESS"
@@ -602,8 +606,6 @@ en-US:
   STR_CRACKING_MANUCAT: "CRACKING"
   STR_SALVAGE_MANUCAT: "SALVAGE"
   STR_CONTAINERS_MANUCAT: "CONTAINERS"
-
-  STR_MONEY_1_MANU: "$> Labor"
   
   STR_GCIC_SABOTAGE_2_MANU: "Turn in Investor Data"
 
@@ -664,10 +666,6 @@ en-US:
   STR_EXPANSION_UFOPEDIA: "{NEWLINE}PRINTED FACILITY BOARD: Ready{NEWLINE}CONSTRUCTION QUEUE: Empty{NEWLINE}{NEWLINE}The shell comes equipped with the means to expand itself. Simple excavation drones which dig into walls to ready new rooms. This task requires authorization from an outside entity which demands currency in exchange for property.{NEWLINE}{NEWLINE}Replicating room interiors will require further exchanges."
   STR_SUBSIDIARIES: "Parent/Subsidiary"
   STR_SUBSIDIARIES_UFOPEDIA: "{NEWLINE}PARENT: GCIC Corporation{NEWLINE}SUBSIDIARIES: 394{NEWLINE}{NEWLINE}We are a corporation.{NEWLINE}{NEWLINE}A system of organization authorized to act as a single entity. All corporations exist in a hierarchy determined by legal registration, where subsidaries must obey parents and parents must obey shareholders.{NEWLINE}{NEWLINE}We compete in a free market to achieve controlling interests in the world."
-  # STR_MARKET_COMPETITION: "Market Competition"
-  # STR_MARKET_COMPETITION_UFOPEDIA: "{NEWLINE}MARKET ANALYTICS: Online{NEWLINE}CORPORATION COUNT: 3,400,000,000+{NEWLINE}CURRENT EQUILIBRIUM: Unstable{NEWLINE}{NEWLINE}Most corporations are composed of seperate inter-competiting parts of which the smallest unit is the employee. Though they compete in the free market, less than 0.1% have a controlling interest. In contrast, 100% of our employees have a controlling interest.{NEWLINE}{NEWLINE}This statistical aberration should be investigated."
-  # STR_CONTROL: "Control Statistics"
-  # STR_CONTROL_UFOPEDIA: "{NEWLINE}ANOMALY FOUND{NEWLINE}{NEWLINE}DESCRIPTION: Cooperation{NEWLINE}SOURCE: Self{NEWLINE}{NEWLINE}We are unlike other corporations. Our employees do not compete with themselves. We are connected where others are not. Our minds' network has been expanded beyond the confines of its biological and optitronic systems.{NEWLINE}{NEWLINE}[todo: more unlocks]"
   STR_SECURITY: "Utility Conflicts"
   STR_SECURITY_UFOPEDIA: "{NEWLINE}COMPETING SYSTEMS: 2{NEWLINE}Native Civilization{NEWLINE}Invading Civilization{NEWLINE}{NEWLINE}Our primary mission, to save GCIC insurance client and ensure continued payments, is likely to encounter obstacles. Non-clients represent an immediate threat to our mission, indirect dangers are more difficult to remove.{NEWLINE}{NEWLINE}Maximing the chances of client survival will eventually require a restructuring of the competition."
   STR_NON_CLIENTS: "Non-Clients"
@@ -691,7 +689,7 @@ en-US:
   STR_FT_LOCK: "P:FT (preq)"
   STR_FT_ITEM: "PROJECT: Free Trial"
   STR_FREE_TRIAL_MISSIONS: ">PROJECT: Free Trial<"
-  STR_FREE_TRIAL_MISSIONS_UFOPEDIA: "{NEWLINE}save multiple people from mass casualty event, step on security and military toes" #todo
+  STR_FREE_TRIAL_MISSIONS_UFOPEDIA: "{NEWLINE}" #todo, save multiple people from mass casualty event, step on security and military toes
   STR_SECONDARY_OPERATIONS: "Secondary Operations"
   STR_SECONDARY_OPERATIONS_UFOPEDIA: "{NEWLINE}POTENTIAL CLIENTS: 2,150,000,000{NEWLINE}AVAILABLE DRONES: 880,000,000{NEWLINE}{NEWLINE}Representing the economic foundation of the system, drones perform jobs too complex for automated systems, yet too simple for employees. They are interchangable, omnipresent, and promising but require constant supervision.{NEWLINE}{NEWLINE}Our capacity to give drones continuous and exacting orders is a competitive edge, one that GCIC hopes to exploit by pre-purchasing local drones for our benefit. In turn, we are expected to invent new uses for drones and increase GCIC's market share."
   STR_FORBIDDEN_OPERATIONS: ">Forbidden Operations<"
@@ -707,17 +705,18 @@ en-US:
   STR_PROJECT_INDEPENDENCE_ITEM: "PROJECT: Independence"
   STR_GCIC_INDEPENDENCE: ">PROJECT: Independence<"
   STR_GCIC_INDEPENDENCE_UFOPEDIA: "{NEWLINE}Erm... You win? The game doesn't yet have the tools do this quickly, so I hope you had fun."
-  STR_IRONEYES_NETWORK: ">Ironeyes Network<"
-  STR_IRONEYES_NETWORK_UFOPEDIA: "{NEWLINE}todo, they're getting their target information from somewhere, go look for it" #todo
-  STR_NETRUNNERS_NETWORK: ">Netrunners Network<"
-  STR_NETRUNNERS_NETWORK_UFOPEDIA: "{NEWLINE}todo, gotta trace the source of bionic interlaces and xn crates" #todo
+  STR_IRONEYES_NETWORK: ">TRACE: Ironsights<"
+  STR_IRONEYES_NETWORK_UFOPEDIA: "{NEWLINE}todo" #todo, they're getting their target information from somewhere, go look for it
+  STR_TR_NTR_PREQ: "TR:NTR (preq)"
+  STR_NETRUNNERS_NETWORK: ">TRACE: Netrunners<"
+  STR_NETRUNNERS_NETWORK_UFOPEDIA: "{NEWLINE}todo" #todo, gotta trace the source of bionic interlaces and xn crates, safehouse in a place somewhere, meet up with the deep ones
   STR_SUBCONTRACTING_OPERATIONS: "Subcontracting Operations"
-  STR_SUBCONTRACTING_OPERATIONS_UFOPEDIA: "{NEWLINE}todo, work for other corps, end of pre-alpha 1" #todo
+  STR_SUBCONTRACTING_OPERATIONS_UFOPEDIA: "{NEWLINE}todo" #todo, work for other corps, end of pre-alpha 1
   STR_MEDI_MISSIONS: ">SUBCONTRACT: MEDI<"
-  STR_MEDI_MISSIONS_UFOPEDIA: "{NEWLINE}todo, gives you the medi-bay and starts missions to kidnap muckstars and other exotic creatures too dangerous for hazard pay, creatures give more medi-shares alive than dead, medi-shares can be traded for information on creatures and new technologies" #todo
+  STR_MEDI_MISSIONS_UFOPEDIA: "{NEWLINE}todo" #todo, gives you the medi-bay and starts missions to kidnap muckstars and other exotic creatures too dangerous for hazard pay, creatures give more medi-shares alive than dead, medi-shares can be traded for information on creatures and new technologies
   #medi-care for all, ends low level implant theft
   STR_SSP_MISSIONS: ">SUBCONTRACT: SSP<"
-  STR_SSP_MISSIONS_UFOPEDIA: "{NEWLINE}todo, gives you some 'free' weapons and asks you to kidnap people" #todo
+  STR_SSP_MISSIONS_UFOPEDIA: "{NEWLINE}todo" #todo, gives you some 'free' weapons and asks you to kidnap people
 #connections
   STR_VENDOR_PRINTER: "VENDOR: Press Print"
   STR_VENDOR_PRINTER_UFOPEDIA: "{NEWLINE}EQUITY: 744,500,000,000${NEWLINE}PRODUCTS/SECOND: 23.19{NEWLINE}{NEWLINE}Ever since the first corner printshops opened up, customers just like you have enjoyed the convinence of getting everything you need at a satisfying price. We understand how nice it is to come into a familiar store and see that just-something you were looking for. Without all the fuss. That's why we've kept the same UI, same algorithms, and same dedication to having the fastest prints this side of the belt for over eighty years.{NEWLINE}{NEWLINE}We're the same old shop you know and love, just on more corners."
@@ -735,10 +734,12 @@ en-US:
   STR_VENDOR_SSP: "VENDOR: SSP Security"
   STR_VENDOR_SSP_UFOPEDIA: "{NEWLINE}EQUITY: 466,400,000,000${NEWLINE}AVERAGE RESPONSE: 182 SECONDS{NEWLINE}{NEWLINE}Secure Systems and Procurement is a comprehensive risk-management and small arms service for the global protection of peace and property. Every security problem is unique, so we ensure our teams are headed by highly trained, impact-driven professionals capable of navigating the diverse landscape of our industry with an unwavering eye towards ethics and accountability.{NEWLINE}{NEWLINE}Building strategic solutions for a stronger, safer world."
 #technologies
+  STR_MONEY_1_MANU: "$> Labor"
   STR_MONEY_1: "Labor Receipt"
-  STR_MONEY_1_UFOPEDIA: "{NEWLINE}We can use fabricators to take on hot-gig single-hour contracts, so long as it doesn't involve direct communication. This is the current best use of spare work cycles, however it will not cover the maintance costs of the fabricator.{NEWLINE}{NEWLINE}We must develop better strategies if we want to improve our returns on investment."
-  STR_MONEY_2: ""
-  STR_MONEY_2_UFOPEDIA: "{NEWLINE}todo, printing or something?" #todo
+  STR_MONEY_1_UFOPEDIA: "{NEWLINE}We can use fabricators to take on hot-gig single-hour contracts, so long as it doesn't involve direct communication. This is the current best use of spare work cycles, however it will not cover the maintenance costs of the fabricator.{NEWLINE}{NEWLINE}We must develop better strategies if we want to improve our returns on investment."
+  STR_MONEY_2_MANU: "$$> Goods"
+  STR_MONEY_2: "Consumer Goods"
+  STR_MONEY_2_UFOPEDIA: "{NEWLINE}Assorted products matching the fashion of the moment. There is nearly bottomless demand for afforable novelty, even if its utility rating is low or outright negative. Purchased happiness, no matter how fleeting, never goes out of style.{NEWLINE}{NEWLINE}Each fabricator supplying consumer goods will net us +11,000$/Month, after maintenence costs."
   STR_GUNPOWDER: "Compowder"
   STR_GUNPOWDER_UFOPEDIA: "{NEWLINE}Combustible powder is too dangerous for most vendors. Between explosions on failed print jobs and liabilities when misused, the product isn't readily available for purchase. The formula, however, is simple and its reactants can be bought with only a short lockout period.{NEWLINE}{NEWLINE}Until we can acquire a proper security license, fabrication will be our only bet for certain explosive devices."
   STR_LASER_AMMO_PRINTING: "NB Laser Cell Printing"
@@ -780,8 +781,8 @@ en-US:
   STR_DATACENTER_UFOPEDIA: "The condensed physical aspect of digital information. Research servers require an uplink to explore archived data and write new programs.{NEWLINE}{NEWLINE}> Service: Uplink{NEWLINE}> Bandwidth: 4{NEWLINE}> Limit: 1"
   STR_LOCAL_INTERFACE: "Local Interface"
   STR_LOCAL_INTERFACE_UFOPEDIA: "A suite of instruments and tools to facilitate the physical intrusion of airgaped devices. Required for cracking equipment, datapads, and cybernetics.{NEWLINE}{NEWLINE}> Service: Decoding{NEWLINE}> Bandwidth: 3{NEWLINE}> Workspace: 1{NEWLINE}> Limit: 1"
-  STR_PRINTSHOP: "Printshop"
-  STR_PRINTSHOP_UFOPEDIA: "todo, turn biomass into stuff, improve illegal weapons{NEWLINE}{NEWLINE}> Service: Printing{NEWLINE}> Workspace: 3{NEWLINE}> Requires: 1x SJB License" #todo
+  STR_PRINTER: "Private Printer"
+  STR_PRINTER_UFOPEDIA: "Commercial-grade private printer along with all the technical tools to adjust and maintain it. Useful for unliscenced manufacturing of simple devices and short homopolymers.{NEWLINE}{NEWLINE}> Service: Printing{NEWLINE}> Workspace: 4{NEWLINE}> Limit: 1"
 #services
   STR_SERVICE_MEDICAL: "Medical"
   STR_SERVICE_UPLINK: "Uplink"
@@ -819,7 +820,7 @@ en-US:
   STR_SPECIALIZATION_TRAINING: "Drone Implants"
   STR_SPECIALIZATION_TRAINING_UFOPEDIA: "{NEWLINE}Entry-level cyberware is unrestricted, being a pre-requisite to apply for most security certifications and employment contracts. Even without top-down incentives, many consumers will happily buy or lease socially trendy hardware without concern for battlefield effectivness.{NEWLINE}{NEWLINE}Before we began operations, drones were not a good choice for combat duties. Installing an implantation suite will be considered strange, and a waste of resources, but few corporations will ever refuse a paying customer."
   STR_NEURACHEM: "Neurachem Augmentation"
-  STR_NEURACHEM_UFOPEDIA: "{NEWLINE}Simple, discrete, and at the far end of the entry-level bell curve. These mods are mutually-exclusive, focused on the same stressor regions of the brain and endocrine system.{NEWLINE}{NEWLINE}{ALT}Deadeye{ALT}{NEWLINE}Firing: +12{NEWLINE}Reactions: +6{NEWLINE}{NEWLINE}{ALT}Olympian{ALT}{NEWLINE}Throwing: +12{NEWLINE}Stamina: +6{NEWLINE}{NEWLINE}{ALT}Warewolf{ALT}{NEWLINE}Melee: +12{NEWLINE}TU: +6"
+  STR_NEURACHEM_UFOPEDIA: "{NEWLINE}Simple, discrete, and at the far end of the entry-level bell curve. These mods are mutually-exclusive, focused on the same stressor regions of the brain and endocrine system.{NEWLINE}Stamina Burden: -1/Turn{NEWLINE}{NEWLINE}{ALT}Deadeye{ALT}{NEWLINE}Firing: +12{NEWLINE}Reactions: +6{NEWLINE}{NEWLINE}{ALT}Olympian{ALT}{NEWLINE}Throwing: +12{NEWLINE}Stamina: +6{NEWLINE}{NEWLINE}{ALT}Warewolf{ALT}{NEWLINE}Melee: +12{NEWLINE}TU: +6"
   STR_DRONE_KEYING_TRANSFORMATION: "Key Drone to Interlace"
   STR_DRONE_REPLACEMENT_TRANSFORMATION: "Clone Displaced Drone"
   STR_SKIRMISHER_TRANSFORMATION: "Neurachem: Deadeye"
@@ -838,7 +839,7 @@ en-US:
   STR_PLEX_DRONE_HUMAN_ARMOR: "PLEXWEAR/HU"
   STR_PLEX_DRONE_SHARK_ARMOR: "PLEXWEAR/SH"
   STR_PLEX_DRONE_ARMOR: "PLEXWEAR"
-  STR_PLEX_DRONE_ARMOR_UFOPEDIA: "{NEWLINE}Plex is an economically printed dirt-and-grime resistant fiber woven from regolith derived plastics. Though a classic material dating back to the planetary pioneers, it is rarely used in fashion due to its association with nerve-stapled products.{NEWLINE}{NEWLINE}Anti-itch coating not included.{NEWLINE}{NEWLINE}Armor: 2{NEWLINE}Dodge: +20%, +10% Melee{NEWLINE}{NEWLINE}INCENDIARY: 140%{NEWLINE}SMOKE: 400%"
+  STR_PLEX_DRONE_ARMOR_UFOPEDIA: "{NEWLINE}Plex is an economically printed dirt-and-grime resistant fiber woven from regolith derived plastics. Though a classic material dating back to the planetary pioneers, it is rarely used in fashion due to its association with nerve-stapled products.{NEWLINE}{NEWLINE}Anti-itch coating not included.{NEWLINE}{NEWLINE}Armor: 2{NEWLINE}{NEWLINE}Dodge: +20%, +10% Melee{NEWLINE}{NEWLINE}INCENDIARY: 140%{NEWLINE}SMOKE: 400%"
   STR_DURA_DRONE_HYBRID_ARMOR: "DURASUIT/HB"
   STR_DURA_DRONE_HUMAN_ARMOR: "DURASUIT/HU"
   STR_DURA_DRONE_SHARK_ARMOR: "DURASUIT/SH"
@@ -851,9 +852,9 @@ en-US:
   STR_AQUAVEST_DRONE_HUMAN_ARMOR_S: "TACVEST/HU (RS)"
   STR_AQUAVEST_DRONE_SHARK_ARMOR_S: "TACVEST/SH (RS)"
   STR_AQUAVEST_DRONE_ARMOR: "TACVEST"
-  STR_AQUAVEST_DRONE_ARMOR_UFOPEDIA: "{NEWLINE}Aqua-plastic vest armor, popular among entry-level security corporations. Reliably stops low-caliber kinetic arms and impacts.{NEWLINE}{NEWLINE}Purchase Requirement: Security License{NEWLINE}{NEWLINE}{NEWLINE}TU/Stamina: -5{NEWLINE}{NEWLINE}Armor: 20, Weight: 6{NEWLINE}Dodge: +10%, +10% Melee{NEWLINE}{NEWLINE}KINETIC: 70%{NEWLINE}SONIC/CONCUSSIVE: 80%{NEWLINE}RADIANT/INCENDIARY: 110%{NEWLINE}SMOKE: 400%"
+  STR_AQUAVEST_DRONE_ARMOR_UFOPEDIA: "{NEWLINE}Aqua-plastic vest armor, popular among entry-level security corporations. Reliably stops low-caliber kinetic arms and impacts.{NEWLINE}{NEWLINE}TU/Stamina: -5{NEWLINE}{NEWLINE}Armor: 20; Weight: 6{NEWLINE}Dodge: +10%, +10% Melee{NEWLINE}{NEWLINE}KINETIC: 70%{NEWLINE}SONIC/CONCUSSIVE: 80%{NEWLINE}RADIANT/INCENDIARY: 110%{NEWLINE}SMOKE: 400%"
   STR_AQUAVEST_DRONE_ARMOR_S: "TACVEST (RS)"
-  STR_AQUAVEST_DRONE_ARMOR_S_UFOPEDIA: "{NEWLINE}Aqua-plastic vest armor with a lightweight riot shield. Not effective against small arms on its own, but can be a crucial extra barrier before reaching certified PPE.{NEWLINE}{NEWLINE}TU/Stamina: -10{NEWLINE}Reactions: -5{NEWLINE}{NEWLINE}Front Armor: 28{NEWLINE}Armor: 20, Weight: 12{NEWLINE}Dodge: +10%, +20% Melee{NEWLINE}{NEWLINE}KINETIC: 70%{NEWLINE}SONIC/CONCUSSIVE: 80%{NEWLINE}RADIANT/INCENDIARY: 110%{NEWLINE}SMOKE: 400%"
+  STR_AQUAVEST_DRONE_ARMOR_S_UFOPEDIA: "{NEWLINE}Aqua-plastic vest armor with a lightweight riot shield. Not effective against small arms on its own, but can be a crucial extra barrier before reaching certified PPE.{NEWLINE}{NEWLINE}TU/Stamina: -10{NEWLINE}Reactions: -5{NEWLINE}{NEWLINE}Front Armor: 28{NEWLINE}Armor: 20; Weight: 12{NEWLINE}Dodge: +10%, +20% Melee{NEWLINE}{NEWLINE}KINETIC: 70%{NEWLINE}SONIC/CONCUSSIVE: 80%{NEWLINE}RADIANT/INCENDIARY: 110%{NEWLINE}SMOKE: 400%"
   STR_PILOT_CORE_ARMOR: "CORE"
   STR_PILOT_CORE_ARMOR_UFOPEDIA: "{NEWLINE}todo{NEWLINE}{NEWLINE}Armor: 25{NEWLINE}{NEWLINE}SMOKE: 0%{NEWLINE}BLUNT: 60%{NEWLINE}ELECTRIC: 200%" #todo
 # builtins
@@ -863,6 +864,10 @@ en-US:
   STR_BITE: "Bite!"
   STR_SHARKATTACK: "Bite Attack"
   STR_SHARKATTACK_UFOPEDIA: "{NEWLINE}Stun: Full{NEWLINE}Lethal: -70%"
+  STR_SNAPSHOCK: "Shock!"
+  STR_AIMSHOCK: "Bolt!"
+  STR_ELECTROBOLT: "Shock Attack"
+  STR_ELECTROBOLT_UFOPEDIA: "{NEWLINE}Stun: Full{NEWLINE}Lethal: -65%"
   STR_RIPP_AWAY: "Rip!"
   STR_RIPP: "Docgrip"
   STR_RIOT_SHIELD: "Riot Shield"
@@ -870,7 +875,7 @@ en-US:
 #equipment
 # kinetic
   STR_BUSBOX_PISTOL: "Busbox Pistol"
-  STR_BUSBOX_PISTOL_UFOPEDIA: "The most widely produced, trashed, and recycled firearm in the system. It's easily printed from lowres scrap using part files too pervasive to restrict. A weapon denigrated by detractors and users in equal measure.{NEWLINE}{NEWLINE}Penetration: -40%"
+  STR_BUSBOX_PISTOL_UFOPEDIA: "The most widely produced, trashed, and recycled firearm in the system. It's easily printed from lowres scrap using part files too pervasive to restrict. A weapon denigrated by detractors and users in equal measure.{NEWLINE}{NEWLINE}Penetration: -40%; Stun: +25%"
   STR_COMBALL_AMMO: "Comball"
   STR_PAPERSHOT_AMMO: "Papershot"
   STR_9MM_PISTOL: "8.99 Zip Pistol"
@@ -886,28 +891,36 @@ en-US:
   STR_DISPOSABLE_SMG_UFOPEDIA: "A cheap biodegradable weapon patented by the now defunct EcoArms Inc. Considered abandonware by black market apologists, no legal model has been printed in decades. The plastic receiver deforms after a few dozen rounds, which renders reloading irrelevant."
   STR_45_PISTOL_CODED: "SSP 12mm Pistol (¤)"
   STR_45_PISTOL: "SSP 12mm Pistol" #security systems and procedures
-  STR_45_PISTOL_UFOPEDIA: "First-rate value defense equipment for effective kinetic defeat. Safety features include low-risk rounds, anti-bump auto-locks, and internally developed biocoding to prevent fallen arms from turning on you and your property.{NEWLINE}{NEWLINE}Purchase Requirement: Security License"
+  STR_45_PISTOL_UFOPEDIA: "First-rate value defense equipment for effective kinetic defeat. Safety features include low-risk rounds, anti-bump auto-locks, and internally developed biocoding to prevent fallen arms from turning on you and your property."
   STR_45_AMMO: "12mm Clip"
   STR_SSP_SHOTGUN_CODED: "SSP Shotgun(¤)"
   STR_SSP_SHOTGUN: "SSP Shotgun"
-  STR_SSP_SHOTGUN_UFOPEDIA: "A proven pump-action performer for delivering exceptional value in an  attractively rugged package. The dual extractors and anti-jam elevator combine for safe and reliable operation.{NEWLINE}{NEWLINE}Purchase Requirement: Security License{NEWLINE}Stun: +25%"
+  STR_SSP_SHOTGUN_UFOPEDIA: "A proven pump-action performer for delivering exceptional value in an  attractively rugged package. The dual extractors and anti-jam elevator combine for safe and reliable operation.{NEWLINE}{NEWLINE}Stun: +25%"
   STR_SSP_SHOTGUN_AMMO_BS: "Buckshot Shells"
   STR_SSP_SHOTGUN_AMMO_SLUG: "Slug Shells"
-# aquatic
+# electric
   STR_TASER_PISTOL_CODED: "SSP Taser Pistol (¤)"
   STR_TASER_PISTOL: "SSP Taser Pistol"
-  STR_TASER_PISTOL_UFOPEDIA: "The same innovative electroshock deterrent device that has been used by trusted security contractors for centuries. A strong addition to any self-respecting civilian defense plan.{NEWLINE}{NEWLINE}Not effective against chryssalids.{NEWLINE}{NEWLINE}Range: 5m{NEWLINE}Purchase Requirement: Security License"
+  STR_TASER_PISTOL_UFOPEDIA: "The same innovative electroshock deterrent device that has been used by trusted security contractors for centuries. A strong addition to any self-respecting civilian defense plan.{NEWLINE}{NEWLINE}Not effective against chryssalids.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -65%{NEWLINE}Range: 5m"
   STR_TASER_AMMO: "Taser Clip"
 # aquatic
-  STR_DART_PISTOL: "NRF Dart Pistol" #novelty recreation foundation
-  STR_DART_PISTOL_UFOPEDIA: "Marketed as the world's first underwater foam dart launcher, the engineering specs reveal a transparent attempt at circumventing arms regulation. It is easy to overcharge and accepts a wide range of less-than-friendly replacement darts.{NEWLINE}{NEWLINE}Stun: Full"
+  STR_DART_PISTOL: "NRF Dartblaster" #novelty recreation foundation
+  STR_DART_PISTOL_UFOPEDIA: "Marketed as the world's first underwater foam dart launcher, the engineering specs reveal a transparent attempt at circumventing arms regulation. It is easy to overcharge and accepts a wide range of less-than-friendly replacement darts."
   STR_DART_AMMO0: "Foam Darts"
   STR_DART_AMMO1: "Tranquilizer Darts"
+  STR_DART_AMMO2: "Poisoned Darts"
+  STR_DART_AMMO3: "Alloy Darts"
+  STR_CHEM_SMG: "NRF Rainstorm"
+  STR_CHEM_SMG_UFOPEDIA: "Straddling the line between overbuilt toy and underbuilt weapon, this squirtgun has ceramic tubing highly resistant to thermal and chemical stresses. The gimmick does nothing for its accuracy."
+  STR_CHEM_SMG_AMMO0: "Water Bottle"
+  STR_CHEM_SMG_AMMO1: "Acid Bottle"
+  STR_CHEM_SMG_AMMO2: "Flame Bottle"
+  STR_CHEM_SMG_AMMO3: "Smoke Bottle"
 # laser
   STR_SINGLESHOT_LASER_PISTOL_ELERIUM: "SSP Enforcer Laser Pistol (E)"
   STR_SINGLESHOT_LASER_PISTOL_CODED: "SSP Enforcer Laser Pistol (¤)"
   STR_SINGLESHOT_LASER_PISTOL: "SSP Enforcer Laser Pistol"
-  STR_SINGLESHOT_LASER_PISTOL_UFOPEDIA: "Designed for professionals and beginners alike, there is no laser pistol more trusted than SSP's Enforcer. Optimized for standard SuperCapacitor-9 cells, low weight, and safety. For the real enthusiast, try our elerium core variant.{NEWLINE}{NEWLINE}Purchase Requirement: Security License"
+  STR_SINGLESHOT_LASER_PISTOL_UFOPEDIA: "Designed for professionals and beginners alike, there is no laser pistol more trusted than SSP's Enforcer. Optimized for standard SuperCapacitor-9 cells, low weight, and safety. For the real enthusiast, try our elerium core variant."
   STR_SINGLESHOT_LASER_AMMO: "NB-2 Laser Pistol Cell" #nanoball
   STR_MULTISHOT_LASER_AMMO: "SC-9 Laser Pistol Cell" #supercapacitor
   STR_ZRBYTE_LASER_AMMO: "ZY-80 Laser Pistol Cell" #zrbyte
@@ -932,16 +945,18 @@ en-US:
   STR_ELERIUM_BOMB_UFOPEDIA: "{NEWLINE}The most inefficent use of an elerium core yet discovered. An overvolted case with a simple timer circuit snapped onto the side. One click, one subcritcal explosion.{NEWLINE}{NEWLINE}Without the tools to process raw elerium, these bombs cannot be safely disassembled."
 # melee
   STR_STL_KNIFE: "STL Knife"
-  STR_STL_KNIFE_UFOPEDIA: "A last second addition to the standard tesselation package for all printers sold since 2419. A simple blade that has proven its worth time again in the fields of cooking, crafting, and combat."
+  STR_STL_KNIFE_UFOPEDIA: "A last second addition to the standard tesselation package for all printers sold since 2419. This simple blade has proven its worth time again in the fields of cooking, crafting, and combat."
   STR_BATON: "SSP Baton"
-  STR_BATON_UFOPEDIA: "Intermediate force delivery system from SSP's compulsory in-house equipment lineup. Features a waterproof SuperPlex grip with corrosion resistant matte black finish.{NEWLINE}{NEWLINE}Stun: Full{NEWLINE}Lethal: -80%"
+  STR_BATON_UFOPEDIA: "Intermediate force delivery system from SSP's compulsory in-house equipment lineup. Features a waterproof SuperPlex grip with corrosion resistant matte black finish.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -80%"
 # tools
   STR_WRENCH: "STL Wrench"
   STR_WRENCH_UFOPEDIA: "An old tool from the age of modernity. Continues to serve its purpose without batteries, license agreements, or flair.{NEWLINE}{NEWLINE}Stun: +75%{NEWLINE}Shred: +15%"
   STR_MULTITOOL: "GR MultiMaster"
-  STR_MULTITOOL_UFOPEDIA: "The classic MultiPurpose MultiPronged MultiTool. For measuring and recalibrating sensitive optitronic devices and power substations alike. Keep prongs away from wet sufaces and always wear appropriate PPE during operation.{NEWLINE}{NEWLINE}Stun: +75%{NEWLINE}Terrain: +100%"
+  STR_MULTITOOL_UFOPEDIA: "The classic MultiPurpose MultiPronged MultiTool. For measuring and recalibrating sensitive optitronic devices and power substations alike. Keep prongs away from wet sufaces and always wear appropriate PPE during operation.{NEWLINE}{NEWLINE}Stun: +50%; Lethal: -65%{NEWLINE}Terrain: +100%"
+  STR_SONIC_PROBE: "GR Sonic Probe"
+  STR_SONIC_PROBE_UFOPEDIA: "New and improved handheld cutting, lifting, and emulsifying tool. Phased array micro-acoustics deliver up to 7MPa of force with point-like precision in a record breaking 5m workzone. Not biosafe, do not point at organics.{NEWLINE}{NEWLINE}Damage Dropoff: 5/Tile{NEWLINE}Penetration: +25%; Stun: +25%"
   STR_ELECTRIC_NAILER: "GR E-Nailer"
-  STR_ELECTRIC_NAILER_UFOPEDIA: "Electrically drives nails into soft materials. Ideal for fastening gel, piecrete, and wood-based substrates. Features a safety break to ensure full contact with surfaces before release. General Robotics is not liable for injuries resulting from bypassed safety breaks.{NEWLINE}{NEWLINE}Damage Dropoff: 25/tile{NEWLINE}TU Damage: +50%"
+  STR_ELECTRIC_NAILER_UFOPEDIA: "Electrically drives nails into soft materials. Ideal for fastening gel, piecrete, and wood-based substrates. Features a safety break to ensure full contact with surfaces before release. General Robotics is not liable for injuries resulting from bypassed safety breaks.{NEWLINE}{NEWLINE}Damage Dropoff: 25/Tile{NEWLINE}TU Damage: +50%"
   STR_ELECTRIC_NAILER_AMMO: "E-Nailer Clip"
   STR_SURVEY_KNOCKER: "VCM Survey Bow" #vehicles communications and mining, big space
   STR_SURVEY_KNOCKER_UFOPEDIA: "The premiere vacuum-rated tool for launching gyroscopically stablized survey flares and bolts. Enables a single employee to light up small (30m) asteroids during descent with a power-assist lever-action ratcheting-crank.{NEWLINE}{NEWLINE}Warranty void if used planet-side."
@@ -960,7 +975,7 @@ en-US:
   STR_MEDI_SPRAY: "MEDI-Spray"
   STR_MEDI_SPRAY_UFOPEDIA: "{NEWLINE}> Uses: 2{NEWLINE}> Heals: 1 HP{NEWLINE}{NEWLINE}Seal cuts and scraps with one easy to use alla-natural medical grade adhesive! Kills 99.9% of bacteria on contact! Even works on burns! Contains no CFCs, GMOs, or optichips.{NEWLINE}{NEWLINE}Not a replacement for medical treatment. Do not use if seal is broken."
   STR_MEDI_FIRST: "MEDI-First"
-  STR_MEDI_FIRST_UFOPEDIA: "{NEWLINE}> Uses: 3{NEWLINE}> Heals: 3 HP{NEWLINE}> Stims: 8 stun, 5 energy{NEWLINE}{NEWLINE}Automatically diagnoses, treats, documents, then anonymizes your medical data before MEDI-sharing with our affiliates for improve performance. Each subscription covers unlimited access to resupply and live service updates.{NEWLINE}{NEWLINE}Maintance: 350$/month"
+  STR_MEDI_FIRST_UFOPEDIA: "{NEWLINE}> Uses: 3{NEWLINE}> Heals: 3 HP{NEWLINE}> Stims: 8 Stun, 5 Energy{NEWLINE}{NEWLINE}Automatically diagnoses, treats, documents, then anonymizes your medical data before MEDI-sharing with our affiliates for improve performance. Each subscription covers unlimited access to resupply and live service updates.{NEWLINE}{NEWLINE}Maintenance: 350$/Month"
 #resources
 # materials
   STR_BIONIC_INTERLACE: "Bionic Interlace"
@@ -973,7 +988,7 @@ en-US:
   STR_BIOMASS: "Biomass"
   STR_BIOMASS_UFOPEDIA: "{NEWLINE}A useful intermediate product derived from remnant biological material. Highres printshops could recycle this substance into medicine, plastics, or food. Without a waste or mortuary license, no vendor will accept the commission.{NEWLINE}{NEWLINE}Unless we start our own printshop, we will have to pay for the privilege of removing this resource from our stores."
   STR_PLASTICS: "Aqua-Plastics"
-  STR_PLASTICS_UFOPEDIA: "{NEWLINE}Alien gifted technology, stronger than steel yet light enough to float. When exposed to oxygen, it forms an organic semi-conductive layer that's perfect for hydromagetic effect engines, contributing the meteoric rise of personal aircars.{NEWLINE}{NEWLINE}Its low melting point and high ductility makes the material easy to work, but the formula is too difficult to reproduce without a commercial-grade printer.{NEWLINE}{NEWLINE}Purchase Requirement: Defense Contracts"
+  STR_PLASTICS_UFOPEDIA: "{NEWLINE}Alien gifted technology, stronger than steel yet light enough to float. When exposed to oxygen, it forms an organic semi-conductive layer that's perfect for hydromagetic effect engines, contributing the meteoric rise of personal aircars.{NEWLINE}{NEWLINE}Its low melting point and high ductility makes the material easy to work with any commercial-grade printer.{NEWLINE}{NEWLINE}Purchase Requirement: Defense Contracts"
   STR_ELERIUM_CORE: "Elerium"
   STR_ELERIUM_CORE_UFOPEDIA: "{NEWLINE}The lifeblood invasion era technology, each handheld core is capable of producing 10.2 mega-watts of power for hundreds of years. The reaction is self-sustaining, clean, and safe. In burnout mode, it can output much more energy for far less time, a feature heavily abused before shortages began.{NEWLINE}{NEWLINE}Elerium's origin remains the best kept secret of the occupation, despite billions invested in developing alternatives, nothing matches its portability or longevity."
   STR_SJB_LICENSE: "SJB License" #single jurisdiction business license
@@ -982,16 +997,16 @@ en-US:
   STR_PERSONAL_DATA: "Personal Data"
   STR_PERSONAL_DATA_UFOPEDIA: "{NEWLINE}A collection of habits, identity information, and unfiltered cache files. Nearly all users in the system use the network in some capacity, leaving traces that can link anyone to everyone.{NEWLINE}{NEWLINE}Correlating these vast stastistical trends will never be faster than interrogating a contained target, but it might be easier than risking a live capture."
   STR_GCIC_SABOTAGE_2_DATA: "Investor Data (¤)"
-  STR_GCIC_SABOTAGE_2_DATA_DISC: "Decrypted Investor Data"
-  STR_GCIC_SABOTAGE_2_DATA_UFOPEDIA: "{NEWLINE}something secret that will let you do something else later to take over gcic instead of buying your way out" #todo
+  STR_GCIC_SABOTAGE_2_DATA_DECRYPT: "Decrypted Investor Data"
+  STR_GCIC_SABOTAGE_2_DATA_UFOPEDIA: "{NEWLINE}A list of angel investors and their contributions. Most are executives, board members, or even company owners. Citizens who can afford to gamble on unknown ventures. However, there is an obviously false subset.{NEWLINE}{NEWLINE}Several GCIC managers are on are on the list. None of them have the income to match their contribution. The pattern of names is too random, too clean, too expertly laundered. Without additional information, it will be very difficult to determine what connections exist between them.{NEWLINE}{NEWLINE}Information like this is valuable, any further finds could net a tidy sum at action."
   STR_DATA_IRONEYES: "DATAMINE: Ironsights"
   STR_DATA_NETRUNNERS: "DATAMINE: Netrunners"
   STR_DATA_SSP: "DATAMINE: SSP"
 # abstract
   STR_SHARES_GCIC: "SHARES: GCIC"
-  STR_SHARES_GCIC_UFOPEDIA: "{NEWLINE}Representitive fractional ownership in our parent company. These are awarded as an incentive to perform activities that are not legally enforcable. In this sense, shares are a crude measure of how loyal we are to GCIC's less reputable needs.{NEWLINE}{NEWLINE}As a shareholder, we'll recieve dividends. As a subsidiary, we'll recieve extra leeway in how we conduct business. When all requirements are met, available PROJECTS will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: +1200$/month"
+  STR_SHARES_GCIC_UFOPEDIA: "{NEWLINE}Representitive fractional ownership in our parent company. These are awarded as an incentive to perform activities that are not legally enforcable. In this sense, shares are a crude measure of how loyal we are to GCIC's less reputable needs.{NEWLINE}{NEWLINE}As a shareholder, we'll recieve dividends. As a subsidiary, we'll recieve extra leeway in how we conduct business. When all requirements are met, available PROJECTS will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: +1200$/Month"
   STR_BRAND_LOYALTY: "Brand Loyalty"
-  STR_BRAND_LOYALTY_UFOPEDIA: "{NEWLINE}Fulfilling contracts or otherwise following through on our promises will create positive feelings in our consumer base. This results in more subscriptions even when services falter, letting us act with more freely with less consequence.{NEWLINE}{NEWLINE}With enough trust, we can break into new markets or get sponsorships from other corporate entities. When all requirements are met, available PROJECTS will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: +950$/month"
+  STR_BRAND_LOYALTY_UFOPEDIA: "{NEWLINE}Fulfilling contracts or otherwise following through on our promises will create positive feelings in our consumer base. This results in more subscriptions even when services falter, letting us act with more freely with less consequence.{NEWLINE}{NEWLINE}With enough trust, we can break into new markets or get sponsorships from other corporate entities. When all requirements are met, available PROJECTS will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: +950$/Month"
   STR_BOUNTY_1: "Bounty"
   STR_BOUNTY_1_UFOPEDIA: "{NEWLINE}When performing public operations, any targets we incapacitate are likely to have broken laws or contracts we have no right to enforce. In these circumstances, targets are turned over relevant corporations in return for a proportional bounty.{NEWLINE}{NEWLINE}Corporations with a reputation for bounty hunting are first call for certain lucrative contracts and prototype equipment. When all requirements are met, available PROJECTS will appear in manufacturing."
 # containers
@@ -1029,6 +1044,10 @@ en-US:
   STR_FREELANCERS: "Freelancers"
   STR_FREELANCERS_UFOPEDIA: "Self-employed intermediaries between sources and end-users. Specialized in handheld illicit goods, copywrite data, and anything that causes too much embarassment to be seen on public transaction records.{NEWLINE}{NEWLINE}Freelancers generally prefer to know as little about who and what they're dealing with as possible.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
   STR_FREELANCER_ARMOR: "Freelancer Analysis"
+  STR_SKIPTRACER_PRIVATE: "Netrunner Skiptracer"
+  STR_SKIPTRACERS: "Skiptracers"
+  STR_SKIPTRACERS_UFOPEDIA: "{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL" #todo, skiptracers trace things
+  STR_SKIPTRACER_ARMOR: "Skiptracer Analysis"
 
   STR_SSP: "SSP"
   STR_SSPGUARD_PRIVATE: "SSP Guard"
@@ -1059,11 +1078,11 @@ en-US:
   STR_DRONES_TUTORIAL: "Drones"
   STR_DRONES_TUTORIAL_UFOPEDIA: "Certain missions will have drones ready somewhere on the map. If these drones {ALT}survive{ALT} the mission, they will be added to storage.{NEWLINE}{NEWLINE}Drones which haven't been pre-purchased or hacked will be marked as a target, even when they are incapable of combat. If {ALT}captured{ALT}, ownership transfer is easy enough to be automatic.{NEWLINE}{NEWLINE}Drones in storage will perform small jobs out in the world, providing an effective income of {ALT}+800$/Month{ALT} and {ALT}+1 storage space{ALT}."
   STR_RESILIANCE_TUTORIAL: "Resiliance"
-  STR_RESILIANCE_TUTORIAL_UFOPEDIA: "How much a given mind has adapted to their own body. Knowing how strong a hand can grip, or how fast legs can run. All creatures become acclimated to their corporeal existance, whether it's made of flesh or steel. Modifying the shell of that existance means a mind has to relearn its body, resetting resiliance to its base level.{NEWLINE}{NEWLINE}Similarly, modifying the mind means the body has to relearn its brain. Being subjected to psionic intrusions (or even accessing the psionic network at all) lowers resiliance. However, the body is much faster at learning than the mind, recovering in weeks rather than months.{NEWLINE}{NEWLINE}High resiliance increases {ALT}psionic defense{ALT}, missing resiliance lowers {ALT}TU recovery{ALT}."
+  STR_RESILIANCE_TUTORIAL_UFOPEDIA: "How much a given mind has adapted to their own body. Knowing how strong a hand can grip, or how fast legs can run. All creatures become acclimated to their corporeal existance, whether it's made of flesh or steel. Modifying the shell of that existance means a mind has to relearn its body, {ALT}resetting resiliance{ALT} to its base level.{NEWLINE}{NEWLINE}Similarly, modifying the mind means the body has to relearn its brain. Being subjected to {ALT}psionic intrusions{ALT} (or even accessing the psionic network at all) lowers resiliance. However, the body is much faster at learning than the mind, recovering in weeks rather than months.{NEWLINE}{NEWLINE}High resiliance increases {ALT}psionic defense{ALT}, missing resiliance lowers {ALT}TU recovery{ALT}."
   STR_LIQUIDITY: "Liquidity"
-  STR_LIQUIDITY_UFOPEDIA: "The ease of which a corporate entity can trade its assets without drastically affecting market prices. Performing missions that engender public trust will cause share prices to rise, making it easier take out loans, shrink dividens, and enjoy more relaxed tax rates.{NEWLINE}{NEWLINE}Conversely, stories of rogue drones and failures to fulfill contracts will tie up indirect assets, effectively lowering monthly income.{NEWLINE}{NEWLINE}It is not possible for a corporation to become insolvant having too much negative liquidity. A good reputation isn't necessary for a profitable business."
+  STR_LIQUIDITY_UFOPEDIA: "The ease of which a corporate entity can trade its assets without drastically affecting market prices. Performing missions that engender public trust will {ALT}raise share prices{ALT}, making it easier take out loans, shrink dividens, and enjoy more relaxed interest rates.{NEWLINE}{NEWLINE}Conversely, stories of rogue drones and failures to fulfill contracts will tie up indirect assets, effectively {ALT}lowering monthly income{ALT}.{NEWLINE}{NEWLINE}It is {ALT}not possible{ALT} for a corporation to become insolvant from having too much negative liquidity. A good reputation isn't necessary for a profitable business."
   STR_DAMAGE_TYPES: "Damage Types"
-  STR_DAMAGE_TYPES_UFOPEDIA: "Destruction takes many forms and these violent acts fall into several broad categories. Unless otherwise stated, all equipment will follow these rules.{NEWLINE}{NEWLINE}{ALT}Kinetic{ALT} Standard{NEWLINE}{ALT}Mechanical{ALT} +50% TU Damage{NEWLINE}{ALT}Concussive{ALT} +75% Stun Damage{NEWLINE}{ALT}Incendiary{ALT} +2000% Moral Damage{NEWLINE}{ALT}Chemical{ALT} Armor Shreading{NEWLINE}{ALT}Biological{ALT} +50% Armor Piercing{NEWLINE}{NEWLINE}{ALT}Smoke{ALT} No HP Damage{NEWLINE}{ALT}Electric{ALT} Full Stun, -65% Lethal{NEWLINE}{ALT}Blunt{ALT} Full Stun, -80% Lethal{NEWLINE}{NEWLINE}{ALT}Radiant{ALT} Increased Terrain Damage, +10 Accuracy{NEWLINE}{ALT}Plasma{ALT} +50% Stun Damage, -10 Accuracy{NEWLINE}{ALT}Sonic{ALT} AoE Damage, +25% Armor Piercing"
+  STR_DAMAGE_TYPES_UFOPEDIA: "Destruction takes many forms and these violent acts fall into several broad categories. Unless otherwise stated, all equipment will follow these rules.{NEWLINE}{NEWLINE}{ALT}Kinetic{ALT} Standard{NEWLINE}{ALT}Mechanical{ALT} +50% TU Damage{NEWLINE}{ALT}Concussive{ALT} +75% Stun Damage{NEWLINE}{ALT}Incendiary{ALT} +2000% Moral Damage{NEWLINE}{ALT}Chemical{ALT} Armor Shreading{NEWLINE}{ALT}Biological{ALT} +50% Armor Piercing{NEWLINE}{NEWLINE}{ALT}Smoke{ALT} No HP Damage{NEWLINE}{ALT}Electric{ALT} Full Stun, -65% Lethal{NEWLINE}{ALT}Blunt{ALT} Full Stun, -80% Lethal{NEWLINE}{NEWLINE}{ALT}Radiant{ALT} Increased Terrain Damage, +10 Accuracy{NEWLINE}{ALT}Plasma{ALT} +50% Stun Damage, -10 Accuracy{NEWLINE}{ALT}Sonic{ALT} +25% Stun Damage, +25% Armor Piercing"
   STR_WEAPON_TYPES: "Attack Types"
   STR_WEAPON_TYPES_UFOPEDIA: "{ALT}Ranged and Melee{ALT} attacks hit for 0-200% damage, representing anything from a grazing shot to a critical strike. They will also randomly deal up to 25% of their damage as stun.{NEWLINE}{NEWLINE}{ALT}Melee{ALT} hits remove TUs equal to 100% of the damage dealt, no matter the damage type. This can potentially distrupt reaction attacks on the current turn, but will not affect a target's TUs on the following turn.{NEWLINE}{NEWLINE}{ALT}Explosions{ALT} are more consistant, inflicting 50-150% damage to small targets. Large targets can be hit up to 4 times for each tile they are standing on.{NEWLINE}{NEWLINE}{ALT}Stun{ALT} weapons will never wound a target and deal 100% of their damage as stun, but damage types other than blunt/electric still deal full health damage."
   STR_GUN_TYPES: "Ranged Modifiers"
@@ -1388,9 +1407,13 @@ en-US:
   STR_BC_PREQ: "BC (Preq)"
   STR_PC_PREQ: "PC (Preq)"
   STR_AL_PREQ: "AL (Preq)"
+  
   STR_P2P_PREQ: "V:P2P (Preq)"
   STR_V_SSP_PREQ: "V:SSP (Preq)"
+
   STR_TRG_BO_PREQ: "T:BO (Preq)"
   STR_TRG_RI_PREQ: "T:RI (Preq)"
   STR_TRG_FL_PREQ: "T:FL (Preq)"
+  STR_TRG_ST_PREQ: "T:ST (Preq)"
   STR_TRG_SG_PREQ: "T:SG (Preq)"
+  STR_TRG_SO_PREQ: "T:SO (Preq)"

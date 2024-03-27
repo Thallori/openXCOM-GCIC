@@ -290,6 +290,15 @@ ufopaedia:
     text_width: 180
     image_id: RECEIPT_CPAL
 
+  - id: STR_MONEY_2
+    requires:
+      - STR_MONEY_2_MANU
+    text: STR_MONEY_2_UFOPEDIA
+    section: STR_TECHNOLOGIES_UC
+    type_id: 7
+    text_width: 180
+    image_id: CONSUME_CPAL
+
   - id: STR_GUNPOWDER
     requires:
       - STR_GUNPOWDER
@@ -411,12 +420,12 @@ ufopaedia:
     section: STR_BASE_FACILITIES_UC
     type_id: 6
 
-  # - id: STR_PRINTSHOP #todo
-  #   requires:
-  #     - STR_PRINTSHOP
-  #   text: STR_PRINTSHOP_UFOPEDIA
-  #   section: STR_BASE_FACILITIES_UC
-  #   type_id: 6
+  - id: STR_PRINTER #todo
+    requires:
+      - STR_PRINTER
+    text: STR_PRINTER_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
 
 #asp craft
   - id: STR_APS
@@ -661,12 +670,23 @@ ufopaedia:
 
 # builtins
   - id: STR_UNARMED
+    requires:
+      - STR_PLEX_DRONE_ARMOR
     text: STR_UNARMED_UFOPEDIA
     section: STR_DRONES_UC
     type_id: 4
 
   - id: STR_SHARKATTACK
+    requires:
+      - STR_DRONE_SHARK_ITEM
     text: STR_SHARKATTACK_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 4
+
+  - id: STR_ELECTROBOLT
+    requires:
+      - STR_DRONE_DEEP_ITEM
+    text: STR_ELECTROBOLT_UFOPEDIA
     section: STR_DRONES_UC
     type_id: 4
 
@@ -784,7 +804,7 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     type_id: 4
 
-# aquatic
+# nrf
   - id: STR_DART_PISTOL
     requires:
       - STR_DART_PISTOL
@@ -801,6 +821,25 @@ ufopaedia:
   - id: STR_DART_AMMO1
     requires:
       - STR_DART_PISTOL
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_CHEM_SMG
+    requires:
+      - STR_CHEM_SMG
+    text: STR_CHEM_SMG_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_CHEM_SMG_AMMO0
+    requires:
+      - STR_CHEM_SMG
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_CHEM_SMG_AMMO1
+    requires:
+      - STR_CHEM_SMG
     section: STR_NOT_AVAILABLE
     type_id: 4
 
@@ -911,6 +950,13 @@ ufopaedia:
     requires:
       - STR_MULTITOOL
     text: STR_MULTITOOL_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_SONIC_PROBE
+    requires:
+      - STR_SONIC_PROBE
+    text: STR_SONIC_PROBE_UFOPEDIA
     section: STR_EQUIPMENT_UC
     type_id: 4
 
@@ -1208,9 +1254,7 @@ ufopaedia:
   - id: STR_LIQUIDITY
     text: STR_LIQUIDITY_UFOPEDIA
     section: STR_MANUALS_UC
-    type_id: 7
-    text_width: 180
-    image_id: LIQUIDITY_CPAL
+    type_id: 8
 
   - id: STR_DAMAGE_TYPES
     text: STR_DAMAGE_TYPES_UFOPEDIA

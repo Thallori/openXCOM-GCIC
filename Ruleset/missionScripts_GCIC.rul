@@ -97,13 +97,38 @@ missionScripts:
     startDelay: 15000
     randomDelay: 7200
 
-  - type: TradeMeeting1
+  - type: TradeMeeting1a
     firstMonth: 1
     researchTriggers:
       STR_FORBIDDEN_OPERATIONS: true
+      STR_NETRUNNERS_NETWORK: false
     missionWeights:
       0:
         STR_TRADE_MEETING_1: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: TradeMeeting1b
+    firstMonth: 1
+    executionOdds: 40
+    researchTriggers:
+      STR_FORBIDDEN_OPERATIONS: true
+      STR_NETRUNNERS_NETWORK: true
+    missionWeights:
+      0:
+        STR_TRADE_MEETING_1: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: TradeMeeting2a
+    firstMonth: 1
+    researchTriggers:
+      STR_NETRUNNERS_NETWORK: true
+    missionWeights:
+      0:
+        STR_TRADE_MEETING_2: 100
     useTable: false
     startDelay: 30
     randomDelay: 43000

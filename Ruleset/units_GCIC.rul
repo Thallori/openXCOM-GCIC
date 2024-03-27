@@ -31,7 +31,7 @@ units:
       psiSkill: 0
       mana: 25
     armor: STR_PLEX_DRONE_HYBRID_ARMOR
-    standHeight: 22
+    standHeight: 18
     kneelHeight: 14
     value: 1
     deathSound: [10]
@@ -66,7 +66,7 @@ units:
       psiSkill: 0
       mana: 25
     armor: STR_PLEX_DRONE_HUMAN_ARMOR
-    standHeight: 22
+    standHeight: 20
     kneelHeight: 14
     value: 1
     deathSound: [41, 42, 43]
@@ -104,7 +104,7 @@ units:
       tu: 45
       stamina: 55
       health: 45
-      bravery: 50
+      bravery: 70
       reactions: 35
       firing: 45
       throwing: 40
@@ -114,7 +114,7 @@ units:
       psiSkill: 0
       mana: 30
     armor: STR_BOOSTER_ARMOR
-    standHeight: 22
+    standHeight: 20
     kneelHeight: 14
     value: 2
     deathSound: [41, 42, 43]
@@ -133,7 +133,7 @@ units:
       tu: 55
       stamina: 60
       health: 50
-      bravery: 60
+      bravery: 70
       reactions: 40
       firing: 50
       throwing: 40
@@ -143,7 +143,7 @@ units:
       psiSkill: 0
       mana: 30
     armor: STR_RIPPER_ARMOR
-    standHeight: 22
+    standHeight: 20
     kneelHeight: 14
     value: 3
     deathSound: [44, 45, 46]
@@ -162,7 +162,7 @@ units:
       tu: 50
       stamina: 50
       health: 35
-      bravery: 30
+      bravery: 70
       reactions: 40
       firing: 40
       throwing: 30
@@ -172,10 +172,38 @@ units:
       psiSkill: 0
       mana: 40
     armor: STR_FREELANCER_ARMOR
-    standHeight: 22
+    standHeight: 20
     kneelHeight: 14
-    value: -5
+    value: -4
     deathSound: [41, 42, 43]
+    energyRecovery: 30
+    intelligence: 3
+    aggression: 1
+    spotter: 0
+    sniper: 0
+    canSurrender: true
+
+  - type: STR_SKIPTRACER_PRIVATE
+    race: STR_NETRUNNERS
+    rank: STR_RANK_4
+    stats:
+      tu: 50
+      stamina: 55
+      health: 40
+      bravery: 70
+      reactions: 45
+      firing: 40
+      throwing: 50
+      melee: 45
+      strength: 35
+      psiStrength: 0
+      psiSkill: 0
+      mana: 40
+    armor: STR_SKIPTRACER_ARMOR
+    standHeight: 20
+    kneelHeight: 14
+    value: -8
+    deathSound: [126]
     energyRecovery: 30
     intelligence: 3
     aggression: 1
@@ -192,7 +220,7 @@ units:
       tu: 55
       stamina: 50
       health: 40
-      bravery: 40
+      bravery: 70
       reactions: 35
       firing: 40
       throwing: 30
@@ -221,7 +249,7 @@ units:
       tu: 50
       stamina: 50
       health: 40
-      bravery: 40
+      bravery: 70
       reactions: 40
       firing: 50
       throwing: 30
@@ -260,7 +288,7 @@ units:
       psiSkill: 0
       mana: 25
     armor: STR_DRONEHYBRID_ARMOR
-    standHeight: 22
+    standHeight: 18
     kneelHeight: 14
     moraleLossWhenKilled: 10
     pickUpWeaponsMoreActively: 0
@@ -284,7 +312,7 @@ units:
       psiSkill: 0
       mana: 25
     armor: STR_DRONEHUMAN_ARMOR
-    standHeight: 22
+    standHeight: 20
     kneelHeight: 14
     moraleLossWhenKilled: 10
     pickUpWeaponsMoreActively: 0
@@ -325,7 +353,7 @@ units:
       tu: 1
       stamina: 50
       health: 30
-      bravery: 80
+      bravery: 50
       reactions: 30
       firing: 30
       throwing: 30
@@ -349,7 +377,7 @@ units:
       tu: 8
       stamina: 50
       health: 30
-      bravery: 80
+      bravery: 50
       reactions: 30
       firing: 30
       throwing: 30

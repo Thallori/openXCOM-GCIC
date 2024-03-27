@@ -12,7 +12,7 @@ alienDeployments:
     duration: [48, 72]
     despawnPenalty: 200
     abortPenalty: 185
-    # startingCondition: LOWSPEC_GEAR
+    # startingCondition: SECURITY_GEAR_SECURITY_CRAFT
     briefing:
       showTarget: false
       title: STR_RESCUE_1
@@ -84,7 +84,7 @@ alienDeployments:
     duration: [16, 24]
     despawnPenalty: 200
     abortPenalty: 175
-    # startingCondition: LOWSPEC_GEAR
+    # startingCondition: SECURITY_GEAR_SECURITY_CRAFT
     briefing:
       showTarget: false
       title: STR_RESCUE_RR
@@ -119,9 +119,9 @@ alienDeployments:
             - STR_9MM_AMMO
             - STR_9MM_AMMO
           -
-            - STR_9MM_SMG
-            - STR_9MM_SMG_AMMO
-            - STR_9MM_SMG_AMMO
+            - STR_9MM_PISTOL
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
@@ -169,7 +169,7 @@ alienDeployments:
       STR_NETRUNNER_EARLY_EXPOSITION: 100
     failureEvents:
       STR_NETRUNNER_EARLY_EXPOSITION: 100
-    # startingCondition: LOWSPEC_GEAR_INFILTRATION_CRAFT
+    startingCondition: INFILTRATION_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
       title: STR_TRADE_MEETING_EARLY
@@ -191,7 +191,7 @@ alienDeployments:
         percentageOutsideUfo: 0
         extraRandomItems: &personalData6
           - [STR_PERSONAL_DATA, STR_NONE, STR_NONE, STR_NONE, STR_NONE, STR_NONE]
-        itemSets: &netrunnerEarlySet
+        itemSets: &freelancer
           -
             - STR_DART_PISTOL
             - STR_DART_AMMO1
@@ -205,21 +205,13 @@ alienDeployments:
             - STR_DART_PISTOL
             - STR_DART_AMMO1
           -
-            - STR_TASER_PISTOL_CODED
-            - STR_TASER_AMMO
-            - STR_MULTITOOL
+            - STR_SONIC_PROBE
           -
-            - STR_TASER_PISTOL_CODED
-            - STR_TASER_AMMO
-            - STR_MULTITOOL
+            - STR_SONIC_PROBE
           -
-            - STR_TASER_PISTOL_CODED
-            - STR_TASER_AMMO
-            - STR_MULTITOOL
+            - STR_SONIC_PROBE
           -
-            - STR_TASER_PISTOL_CODED
-            - STR_TASER_AMMO
-            - STR_MULTITOOL
+            - STR_SONIC_PROBE
           -
             - STR_MULTITOOL
           -
@@ -266,7 +258,7 @@ alienDeployments:
     width: 20
     length: 20
     height: 5
-    alert: STR_TRADE_MEETING_1_ALERT
+    alert: STR_TRADE_MEETING_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_TRADE_MEETING_1_ALERT_DESCRIPTION
     markerName: STR_TRADE_MEETING_1
@@ -294,7 +286,7 @@ alienDeployments:
         dQty: 1
         percentageOutsideUfo: 0
         extraRandomItems: *personalData6
-        itemSets: *netrunnerEarlySet
+        itemSets: *freelancer
       - alienRank: 6
         lowQty: 1
         medQty: 1
@@ -310,6 +302,141 @@ alienDeployments:
         dQty: 1
         percentageOutsideUfo: 100
         customUnitType: STR_DRONE_ENEMY_HUMAN
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 8
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 100
+        customUnitType: STR_DRONE_ENEMY_SHARK
+        itemSets: *AnchorEmptyInventory
+
+  - type: STR_TRADE_MEETING_2
+    script: CLUB_LANDING
+    width: 20
+    length: 30
+    height: 5
+    alert: STR_TRADE_MEETING_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_TRADE_MEETING_2_ALERT_DESCRIPTION
+    markerName: STR_TRADE_MEETING_2
+    duration: [48, 72]
+    despawnPenalty: 0
+    abortPenalty: 0
+    startingCondition: INFILTRATION_GEAR_INFILTRATION_CRAFT
+    briefing:
+      showTarget: false
+      title: STR_TRADE_MEETING_2
+      music: HACKER_INTRO
+      background: BACK16.SCR
+      palette: 2
+    missionBountyItem: STR_BIONIC_INTERLACE
+    unlockedResearch: STR_TRG_ST_PREQ
+    terrains:
+      - CLUB_LANDING
+    music:
+      - HACKER1
+    data:
+      - alienRank: 7
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: &smallXN
+          -
+            - STR_XN_LASER_PISTOL
+          -
+            - STR_XN_LASER_PISTOL
+          -
+            - STR_XN_LASER_SMG
+          -
+            - STR_XN_LASER_SMG
+          -
+            - STR_XN_LASER_SMG
+          -
+            - STR_XN_LASER_SMG
+          -
+            - STR_XN_LASER_RIFLE
+          -
+            - STR_XN_LASER_RIFLE
+          -
+            - STR_XN_LASER_RIFLE
+          -
+            - STR_XN_LASER_RIFLE
+      - alienRank: 7
+        lowQty: 1
+        medQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: &skiptracer
+          -
+            - STR_DART_PISTOL
+            - STR_DART_AMMO1
+          -
+            - STR_DART_PISTOL
+            - STR_DART_AMMO1
+          -
+            - STR_CHEM_SMG
+            - STR_CHEM_SMG_AMMO1
+            - STR_CHEM_SMG_AMMO1
+          -
+            - STR_CHEM_SMG
+            - STR_CHEM_SMG_AMMO1
+            - STR_CHEM_SMG_AMMO1
+          -
+            - STR_CHEM_SMG
+            - STR_CHEM_SMG_AMMO1
+            - STR_CHEM_SMG_AMMO1
+          -
+            - STR_CHEM_SMG
+            - STR_CHEM_SMG_AMMO1
+            - STR_CHEM_SMG_AMMO1
+          -
+            - STR_CHEM_SMG
+            - STR_CHEM_SMG_AMMO1
+            - STR_CHEM_SMG_AMMO1
+          -
+            - STR_CHEM_SMG
+            - STR_CHEM_SMG_AMMO1
+            - STR_CHEM_SMG_AMMO1
+          -
+            - STR_PERSONAL_DATA
+          -
+            - STR_PERSONAL_DATA
+      - alienRank: 6
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 2
+        percentageOutsideUfo: 0
+        extraRandomItems: *personalData6
+        itemSets: *freelancer
+      - alienRank: 6
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_HYBRID
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 100
+        customUnitType: STR_DRONE_ENEMY_HUMAN
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 8
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 100
+        customUnitType: STR_DRONE_ENEMY_SHARK
         itemSets: *AnchorEmptyInventory
 
   - type: STR_GCIC_SABOTAGE_1
@@ -327,7 +454,7 @@ alienDeployments:
       STR_EVENT_CLAIM_SECURED: 100
     failureEvents:
       STR_EVENT_CLAIM_SECURED: 100
-    # startingCondition: LOWSPEC_GEAR_INFILTRATION_CRAFT
+    # startingCondition: MILSPEC_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
       title: STR_GCIC_SABOTAGE_1
@@ -428,10 +555,8 @@ alienDeployments:
     despawnPenalty: 100
     abortPenalty: 100
     despawnEvents:
-      STR_EVENT_CLAIM_SECURED: 100
-    failureEvents:
-      STR_EVENT_CLAIM_SECURED: 100
-    # startingCondition: LOWSPEC_GEAR_INFILTRATION_CRAFT
+      STR_EVENT_HEALTHY_COMPETITION: 100
+    # startingCondition: MILSPEC_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
       title: STR_GCIC_SABOTAGE_2
@@ -474,29 +599,29 @@ alienDeployments:
             - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
           -
-            - STR_SSP_SHOTGUN
-            - STR_SSP_SHOTGUN_BS
-            - STR_SSP_SHOTGUN_BS
+            - STR_SSP_SHOTGUN_CODED
+            - STR_SSP_SHOTGUN_AMMO_BS
+            - STR_SSP_SHOTGUN_AMMO_BS
           -
-            - STR_SSP_SHOTGUN
-            - STR_SSP_SHOTGUN_BS
-            - STR_SSP_SHOTGUN_BS
+            - STR_SSP_SHOTGUN_CODED
+            - STR_SSP_SHOTGUN_AMMO_BS
+            - STR_SSP_SHOTGUN_AMMO_BS
           -
-            - STR_SSP_SHOTGUN
-            - STR_SSP_SHOTGUN_BS
-            - STR_SSP_SHOTGUN_BS
+            - STR_SSP_SHOTGUN_CODED
+            - STR_SSP_SHOTGUN_AMMO_BS
+            - STR_SSP_SHOTGUN_AMMO_BS
           -
-            - STR_SSP_SHOTGUN
-            - STR_SSP_SHOTGUN_BS
-            - STR_SSP_SHOTGUN_BS
+            - STR_SSP_SHOTGUN_CODED
+            - STR_SSP_SHOTGUN_AMMO_BS
+            - STR_SSP_SHOTGUN_AMMO_BS
           -
-            - STR_SSP_SHOTGUN
-            - STR_SSP_SHOTGUN_BS
-            - STR_SSP_SHOTGUN_BS
+            - STR_SSP_SHOTGUN_CODED
+            - STR_SSP_SHOTGUN_AMMO_BS
+            - STR_SSP_SHOTGUN_AMMO_BS
           -
-            - STR_SSP_SHOTGUN
-            - STR_SSP_SHOTGUN_BS
-            - STR_SSP_SHOTGUN_BS
+            - STR_SSP_SHOTGUN_CODED
+            - STR_SSP_SHOTGUN_AMMO_BS
+            - STR_SSP_SHOTGUN_AMMO_BS
       - alienRank: 6
         lowQty: 2
         medQty: 2
@@ -520,4 +645,12 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 100
         customUnitType: STR_DRONE_ENEMY_HUMAN
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 8
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 100
+        customUnitType: STR_DRONE_ENEMY_SHARK
         itemSets: *AnchorEmptyInventory

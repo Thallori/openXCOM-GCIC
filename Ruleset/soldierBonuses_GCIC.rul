@@ -38,16 +38,25 @@ soldierBonuses:
     stats:
       firing: 12
       reactions: 6
+    recovery:
+      energy:
+        flatOne: -1
 
   - name: STR_RANGER_SPECIALIST
     stats:
       throwing: 12
       stamina: 6
+    recovery:
+      energy:
+        flatOne: -1
 
   - name: STR_SCOUT_SPECIALIST
     stats:
       melee: 12
       tu: 6
+    recovery:
+      energy:
+        flatOne: -1
 
   - name: STR_AGILITY_MUSCLES
     stats:
@@ -56,6 +65,9 @@ soldierBonuses:
       stamina: 10
       strength: 5
       health: 15
+    recovery:
+      energy:
+        flatOne: -2
 
   - name: STR_HEAVY_MUSCLES
     stats:
@@ -64,6 +76,9 @@ soldierBonuses:
       stamina: 10
       strength: 10
       health: 20
+    recovery:
+      energy:
+        flatOne: -2
 
 #commendations
   - name: STR_MEDAL_ORIGINAL8

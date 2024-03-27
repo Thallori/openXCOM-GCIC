@@ -72,7 +72,7 @@ facilities:
       STR_SJB_LICENSE:
         build: 1
         refund: 1
-    monthlyCost: -12000
+    monthlyCost: -22000
     storage: 250
     mapName: XBASE_07
 
@@ -106,30 +106,28 @@ facilities:
     refundValue: 150000
     monthlyCost: 800
     personnel: 24
-    manaRecoveryPerDay: 1
+    manaRecoveryPerDay: 2
     mapName: XBASE_01
 
-  - type: STR_REMEDITION_OFFICE
-    requires:
-      - STR_VENDOR_BUILDER
-      - STR_REMEDITION_OFFICE
-    leavesBehindOnSell:
-      - STR_DEPOT
-    provideBaseFunc: [STR_SERVICE_PROJECTS] #drone personal projects
-#    spriteShape: 1
-#    spriteFacility: 303
-    buildTime: 14
-    buildCost: 275000
-    refundValue: 200000
-    monthlyCost: 14000
-    maxAllowedPerBase: 1
-    manaRecoveryPerDay: 3
-    storage: 10
-    mapName: XBASE_07
+#   - type: STR_REMEDITION_OFFICE
+#     requires:
+#       - STR_REMEDITION_OFFICE
+#     leavesBehindOnSell:
+#       - STR_DEPOT
+#     provideBaseFunc: [STR_SERVICE_PROJECTS] #drone personal projects
+# #    spriteShape: 1
+# #    spriteFacility: 303
+#     buildTime: 14
+#     buildCost: 275000
+#     refundValue: 200000
+#     monthlyCost: 14000
+#     maxAllowedPerBase: 1
+#     manaRecoveryPerDay: 3
+#     storage: 10
+#     mapName: XBASE_07
 
   - type: STR_MEDI_BAY
     requires:
-      - STR_VENDOR_BUILDER
       - STR_MEDI_BAY
     leavesBehindOnSell:
       - STR_DEPOT
@@ -179,7 +177,6 @@ facilities:
 
   - type: STR_LOCAL_INTERFACE
     requires:
-      - STR_VENDOR_BUILDER
       - STR_LOCAL_INTERFACE
     leavesBehindOnSell:
       - STR_DEPOT
@@ -195,39 +192,34 @@ facilities:
     maxAllowedPerBase: 1
     mapName: XBASE_02
 
-  - type: STR_PUBLIC_GATEWAY
-    requires:
-      - STR_VENDOR_BUILDER
-      - STR_PUBLIC_GATEWAY
-    leavesBehindOnSell:
-      - STR_DEPOT
-    provideBaseFunc: [STR_SERVICE_NETWORK] #for hacking things you've don't got
-#    spriteShape: 1
-#    spriteFacility: 303
-    buildTime: 15
-    buildCost: 900000
-    refundValue: 750000
-    monthlyCost: 6500
-    labs: 1
-    maxAllowedPerBase: 3
-    mapName: XBASE_02
+#   - type: STR_PUBLIC_GATEWAY
+#     requires:
+#       - STR_PUBLIC_GATEWAY
+#     leavesBehindOnSell:
+#       - STR_DEPOT
+#     provideBaseFunc: [STR_SERVICE_NETWORK] #for hacking things you've don't got
+# #    spriteShape: 1
+# #    spriteFacility: 303
+#     buildTime: 15
+#     buildCost: 900000
+#     refundValue: 750000
+#     monthlyCost: 6500
+#     labs: 1
+#     maxAllowedPerBase: 3
+#     mapName: XBASE_02
 
-  - type: STR_PRINTSHOP
+  - type: STR_PRINTER
     requires:
-      - STR_VENDOR_BUILDER
-      - STR_PRINTSHOP
+      - STR_PRINTER
     leavesBehindOnSell:
       - STR_DEPOT
     provideBaseFunc: [STR_SERVICE_PRINTING]
-#    spriteShape: 1
-#    spriteFacility: 303
+    spriteShape: 1
+    spriteFacility: 310
     buildTime: 22
-    buildCost: 700000
-    refundValue: 525000
-    buildCostItems:
-      STR_SJB_LICENSE:
-        build: 1
-        refund: 1
-    monthlyCost: -25000
-    workshops: 3
+    buildCost: 385000
+    refundValue: 270000
+    monthlyCost: 35000
+    workshops: 4
+    maxAllowedPerBase: 1
     mapName: XBASE_02

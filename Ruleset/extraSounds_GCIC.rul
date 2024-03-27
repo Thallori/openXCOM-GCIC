@@ -26,19 +26,23 @@ extraSounds:
       110: Resources/Sounds/Impacts/harpoon_hit.wav
       111: Resources/Sounds/Fire/fire_fire.wav
       112: Resources/Sounds/Animals/pitched_growl.wav
-      113: Resources/Sounds/Deaths/DogeDeath1.wav
-      114: Resources/Sounds/Deaths/DogeDeath2.wav
-      115: Resources/Sounds/Deaths/DogeDeath3.wav
+      113: Resources/Sounds/Deaths/doge_death1.wav
+      114: Resources/Sounds/Deaths/doge_death2.wav
+      115: Resources/Sounds/Deaths/doge_death3.wav
       116: Resources/Sounds/Fire/acid_fire.wav
       117: Resources/Sounds/Fire/chainsaw_fire.wav
       118: Resources/Sounds/Fire/shotgun_fire.wav
       119: Resources/Sounds/Fire/sniper_fire.wav
       120: Resources/Sounds/Reloads/shotgun_reload.wav
-      121: Resources/Sounds/Fire/laser1_fire.wav
-      122: Resources/Sounds/Fire/laser2_fire.wav
-      123: Resources/Sounds/Fire/laser3_fire.wav
+      121: Resources/Sounds/Fire/laserpistol_fire.wav
+      122: Resources/Sounds/Fire/laserheavy_fire.wav
+      123: Resources/Sounds/Fire/lasersniper_fire.wav
       124: Resources/Sounds/Fire/pistol_fire.wav
       125: Resources/Sounds/Reloads/battery_reload.wav
+      126: Resources/Sounds/Deaths/dep_death1.wav
+      127: Resources/Sounds/Fire/voip_fire.wav
+      128: Resources/Sounds/Impacts/sonic_hit.wav
+      129: Resources/Sounds/Fire/squirt_fire.wav
 
   - type: GEO.CAT
     files:

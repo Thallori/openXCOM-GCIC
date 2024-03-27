@@ -7,6 +7,17 @@ manufacture:
     producedItems:
       STR_MONEY_1: 1
 
+  - name: STR_MONEY_2_MANU
+    category: STR_TASKS_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
+    requires:
+      - STR_MONEY_2_MANU
+    time: 1
+    cost: 30
+    producedItems:
+      STR_MONEY_2: 1
+
   - name: STR_GCIC_SABOTAGE_2_MANU
     category: STR_TASKS_MANUCAT
     requires:
@@ -21,11 +32,11 @@ manufacture:
     category: STR_CRACKING_MANUCAT
     requires:
       - STR_GCIC_BACKCHANNEL_MISSIONS
-    time: 800
+    time: 650
     requiredItems:
       STR_GCIC_SABOTAGE_2_DATA: 1
     producedItems:
-      STR_GCIC_SABOTAGE_2_DATA_DISC: 1
+      STR_GCIC_SABOTAGE_2_DATA_DECRYPT: 1
 
 #projects
   - name: STR_RRM_ITEM
@@ -152,6 +163,8 @@ manufacture:
 #armor
   - name: STR_AQUAVEST_DRONE_ARMOR
     category: STR_ARMORS_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
     requires:
       - STR_PLASTICS
       - STR_AQUAVEST_DRONE_ARMOR

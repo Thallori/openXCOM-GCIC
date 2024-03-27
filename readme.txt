@@ -54,6 +54,7 @@ X-Com Files/Final Mod Pack		[mod]
   Taser					[wholecloth]		(Ryskeliini)
   Fire Extinguisher			[touchup, recolour]
   Armored Vest				[touchup, recolour]
+  Chemogun SFX				[wholecloth]
 
 X-Com Files Resound			[mod]
  Ksenni					[author]
@@ -73,7 +74,7 @@ From the Apocalypse			[mod]
   Civilians				[wholecloth, remix]	(original)
   Medikit				[touchup, recolour]
   Motion Sensor				[wholecloth]
-  Soldier/Base Stats			[recolour]
+  Soldier/Base Stats Background		[recolour]
   Bite Sprite				[wholecloth]
 
 Delicious Colors			[mod]
