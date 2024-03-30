@@ -817,7 +817,6 @@ ufopaedia:
       - STR_DART_PISTOL
     section: STR_NOT_AVAILABLE
     type_id: 4
-
   - id: STR_DART_AMMO1
     requires:
       - STR_DART_PISTOL
@@ -836,8 +835,12 @@ ufopaedia:
       - STR_CHEM_SMG
     section: STR_NOT_AVAILABLE
     type_id: 4
-
   - id: STR_CHEM_SMG_AMMO1
+    requires:
+      - STR_CHEM_SMG
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+  - id: STR_CHEM_SMG_AMMO2
     requires:
       - STR_CHEM_SMG
     section: STR_NOT_AVAILABLE
@@ -1164,12 +1167,6 @@ ufopaedia:
     section: STR_COMPETITORS_UC
     type_id: 5
 
-  - id: STR_RIPP
-    requires:
-      - STR_RIPP
-    section: STR_COMPETITORS_UC
-    type_id: 4
-
 # netrunners
   - id: STR_FREELANCERS
     requires:
@@ -1184,6 +1181,26 @@ ufopaedia:
       width: 149
       height: 200
     image_id: FREELANCER_CPAL
+
+  - id: STR_FREELANCER_ARMOR
+    requires:
+      - STR_FREELANCER_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+
+  - id: STR_SKIPTRACERS
+    requires:
+      - STR_SKIPTRACER_PRIVATE
+    text: STR_SKIPTRACERS_UFOPEDIA
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: SKIPTRACER_CPAL
 
   - id: STR_FREELANCER_ARMOR
     requires:

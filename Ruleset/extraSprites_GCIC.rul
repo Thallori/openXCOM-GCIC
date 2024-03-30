@@ -70,9 +70,9 @@ extraSprites:
       137: Resources/UI/Voids/null_belt.png
       138: Resources/Armors/Anthros/Worksuit/worksuit_corpse_bigob.png
       139: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_bigob.png
-      140: Resources/Items/Aquatic/dartpistol_bigob.png
-      141: Resources/Items/Aquatic/Ammo/dart_ammo_bigob.png
-      142: Resources/Items/Aquatic/Ammo/dart_foam_ammo_bigob.png
+      140: Resources/Items/Multi/dartpistol_bigob.png
+      141: Resources/Items/Multi/Ammo/dart_ammo_bigob.png
+      142: Resources/Items/Multi/Ammo/dart_foam_ammo_bigob.png
       143: Resources/Items/Tools/extinguisher_bigob.png
       144: Resources/Items/Electric/taser_bigob.png
       145: Resources/Items/Electric/Ammo/taser_ammo_bigob.png
@@ -108,6 +108,11 @@ extraSprites:
       175: Resources/Items/Builtins/electrobolt_bigob.png
       176: Resources/Factions/Netrunners/skiptracer_bigob.png
       177: Resources/Armors/Anthros/Aquavest/aquavest_corpse_bigob.png
+      178: Resources/Items/Tools/probe_bigob.png
+      179: Resources/Items/Multi/watergun_bigob.png
+      180: Resources/Items/Multi/Ammo/watergun_water_ammo_bigob.png
+      181: Resources/Items/Multi/Ammo/watergun_chem_ammo_bigob.png
+      182: Resources/Items/Multi/Ammo/watergun_fire_ammo_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -147,9 +152,9 @@ extraSprites:
       133: Resources/Armors/Anthros/Worksuit/worksuit_corpse_shark_floorob.png
       134: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_floorob.png
       135: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_shark_floorob.png
-      136: Resources/Items/Aquatic/dartpistol_floorob.png
-      137: Resources/Items/Aquatic/Ammo/dart_ammo_floorob.png
-      138: Resources/Items/Aquatic/Ammo/dart_foam_ammo_floorob.png
+      136: Resources/Items/Multi/dartpistol_floorob.png
+      137: Resources/Items/Multi/Ammo/dart_ammo_floorob.png
+      138: Resources/Items/Multi/Ammo/dart_foam_ammo_floorob.png
       139: Resources/Items/Tools/extinguisher_floorob.png
       140: Resources/Items/Electric/taser_floorob.png
       141: Resources/Items/Electric/Ammo/taser_ammo_floorob.png
@@ -178,6 +183,11 @@ extraSprites:
       164: Resources/Factions/Netrunners/skiptracer_floorob.png
       165: Resources/Armors/Anthros/Aquavest/aquavest_corpse_floorob.png
       166: Resources/Armors/Anthros/Aquavest/aquavest_corpse_shark_floorob.png
+      167: Resources/Items/Tools/probe_floorob.png
+      168: Resources/Items/Multi/watergun_floorob.png
+      169: Resources/Items/Multi/Ammo/watergun_water_ammo_floorob.png
+      170: Resources/Items/Multi/Ammo/watergun_chem_ammo_floorob.png
+      171: Resources/Items/Multi/Ammo/watergun_fire_ammo_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -206,7 +216,7 @@ extraSprites:
       264: Resources/Items/Laser/xn_smg_handob.png
       272: Resources/Items/Laser/xn_sniper_handob.png
       280: Resources/Items/Laser/xn_cannon_handob.png
-      288: Resources/Items/Aquatic/dartpistol_handob.png
+      288: Resources/Items/Multi/dartpistol_handob.png
       296: Resources/Items/Tools/extinguisher_handob.png
       304: Resources/Items/Electric/taser_handob.png
       312: Resources/Items/Laser/xn_gatling_handob.png
@@ -218,6 +228,8 @@ extraSprites:
       360: Resources/Items/Kinetic/9mm_smg_handob.png
       368: Resources/Items/Kinetic/ssp_shotgun_handob.png
       376: Resources/Items/Builtins/riotshield_handob.png
+      384: Resources/Items/Tools/probe_handob.png
+      392: Resources/Items/Multi/watergun_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
@@ -301,17 +313,18 @@ extraSprites:
     files:
       35: Resources/Animations/Projectiles/pistol_bullet.png
       70: Resources/Animations/Projectiles/rifle_bullet.png
-      385: Resources/Animations/Projectiles/redlaser_bullet.png
+      385: Resources/Animations/Projectiles/laserred_bullet.png
       420: Resources/Animations/Projectiles/bolt_bullet.png
-      455: Resources/Animations/Projectiles/yellowlaser_bullet.png
+      455: Resources/Animations/Projectiles/laseryellow_bullet.png
       490: Resources/Animations/Projectiles/taser_bullet.png
-      525: Resources/Animations/Projectiles/bigredlaser_bullet.png
+      525: Resources/Animations/Projectiles/laserredbig_bullet.png
       560: Resources/Animations/Projectiles/smg_bullet.png
       595: Resources/Animations/Projectiles/lmg_bullet.png
       630: Resources/Animations/Projectiles/sniper_bullet.png
       665: Resources/Animations/Projectiles/slug_bullet.png
-      700: Resources/Animations/Projectiles/bluebubble_bullet.png
-      735: Resources/Animations/Projectiles/purplebubble_bullet.png
+      700: Resources/Animations/Projectiles/bubbleblue_bullet.png
+      735: Resources/Animations/Projectiles/bubblepurple_bullet.png
+      770: Resources/Animations/Projectiles/bubblered_bullet.png
 
 #paperdolls
 # human
@@ -349,7 +362,7 @@ extraSprites:
 
 #armor
   - type: CustomArmorPreviews
-    width: 108
+    width: 144
     height: 32
     subX: 12
     subY: 20

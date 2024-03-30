@@ -54,7 +54,7 @@ X-Com Files/Final Mod Pack		[mod]
   Taser					[wholecloth]		(Ryskeliini)
   Fire Extinguisher			[touchup, recolour]
   Armored Vest				[touchup, recolour]
-  Chemogun SFX				[wholecloth]
+  Chemogun and Flamer SFX		[wholecloth]
 
 X-Com Files Resound			[mod]
  Ksenni					[author]
@@ -95,6 +95,10 @@ Sharkquanaut Combat Divers		[mod]
 TFTD: Vanilla Plus			[mod]
  Daev					[author]
   Starry Background			[wholecloth]
+
+The World of Terrifying Silence		[mod]
+ Nord					[author
+  Turbo Hit Animation			[wholecloth]
 
 Kenny.nl				[site]
  SFX Set				[pack]

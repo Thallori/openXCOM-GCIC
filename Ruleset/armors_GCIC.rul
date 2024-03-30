@@ -226,7 +226,10 @@ armors:
       time: *TimeRecoveryTypical
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
-      energy: *EnergyRecoveryTypical
+      energy: &EnergyRecoveryGood
+        stamina: 0.1
+        flatHundred: 0.18
+        stunNormalized: -18
       morale: *MoraleRecoveryTypical
     overKill: 1.5
     units:
@@ -276,7 +279,10 @@ armors:
       time: *TimeRecoveryTypical
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
-      energy: *EnergyRecoveryHumanTypical
+      energy: &EnergyRecoveryHumanGood
+        stamina: 0.1
+        flatHundred: 0.22
+        stunNormalized: -22
       morale: *MoraleRecoveryTypical
     overKill: 1.5
     units:
@@ -324,7 +330,7 @@ armors:
       time: *TimeRecoveryTypical
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
-      energy: *EnergyRecoveryTypical
+      energy: *EnergyRecoveryGood
       morale: *MoraleRecoveryTypical
     overKill: 1.5
     units:
@@ -386,8 +392,8 @@ armors:
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryPoor
         stamina: 0.1
-        healthCurrent: 0.12
-        stunCurrent: -0.12
+        flatHundred: 0.14
+        stunNormalized: -0.14
       morale: *MoraleRecoveryTypical
     overKill: 1.5
     units:
@@ -441,8 +447,8 @@ armors:
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryHumanPoor
         stamina: 0.1
-        healthCurrent: 0.16
-        stunCurrent: -0.16
+        flatHundred: 0.18
+        stunNormalized: -0.18
       morale: *MoraleRecoveryTypical
     overKill: 1.5
     units:
@@ -538,7 +544,10 @@ armors:
       time: *TimeRecoveryTypical
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
-      energy: *EnergyRecoveryPoor
+      energy: &EnergyRecoveryBad
+        stamina: 0.1
+        flatHundred: 0.12
+        stunNormalized: -0.12
       morale: *MoraleRecoveryTypical
     overKill: 1.5
     units:
@@ -592,7 +601,10 @@ armors:
       time: *TimeRecoveryTypical
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
-      energy: *EnergyRecoveryHumanPoor
+      energy: &EnergyRecoveryHumanBad
+        stamina: 0.1
+        flatHundred: 0.16
+        stunNormalized: -0.16
       morale: *MoraleRecoveryTypical
     overKill: 1.5
     units:
@@ -644,7 +656,7 @@ armors:
       time: *TimeRecoveryTypical
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
-      energy: *EnergyRecoveryPoor
+      energy: *EnergyRecoveryBad
       morale: *MoraleRecoveryTypical
     overKill: 1.5
     units:
@@ -853,7 +865,7 @@ armors:
     recovery:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryEnemy
-      energy: *EnergyRecoveryHumanTypical
+      energy: *EnergyRecoveryTypical
     loftempsSet: [ 3 ]
 
 # ssp

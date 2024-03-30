@@ -192,21 +192,21 @@ facilities:
     maxAllowedPerBase: 1
     mapName: XBASE_02
 
-#   - type: STR_PUBLIC_GATEWAY
-#     requires:
-#       - STR_PUBLIC_GATEWAY
-#     leavesBehindOnSell:
-#       - STR_DEPOT
-#     provideBaseFunc: [STR_SERVICE_NETWORK] #for hacking things you've don't got
-# #    spriteShape: 1
-# #    spriteFacility: 303
-#     buildTime: 15
-#     buildCost: 900000
-#     refundValue: 750000
-#     monthlyCost: 6500
-#     labs: 1
-#     maxAllowedPerBase: 3
-#     mapName: XBASE_02
+  - type: STR_PUBLIC_GATEWAY
+    requires:
+      - STR_PUBLIC_GATEWAY
+    leavesBehindOnSell:
+      - STR_DEPOT
+    provideBaseFunc: [STR_SERVICE_NETWORK] #for hacking things you've don't got
+#    spriteShape: 1
+#    spriteFacility: 303
+    buildTime: 15
+    buildCost: 900000
+    refundValue: 750000
+    monthlyCost: 6500
+    labs: 1
+    maxAllowedPerBase: 3
+    mapName: XBASE_02
 
   - type: STR_PRINTER
     requires:

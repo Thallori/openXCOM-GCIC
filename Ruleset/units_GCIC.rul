@@ -10,7 +10,7 @@ units:
       # throwing: 35
       # melee: 35
       # strength: 20
-      # psiStrength: 0
+      # psiStrength: 30
       # psiSkill: 0
       # mana: 25
 
@@ -27,7 +27,7 @@ units:
       throwing: 35
       melee: 35
       strength: 10
-      psiStrength: 0
+      psiStrength: 30
       psiSkill: 0
       mana: 25
     armor: STR_PLEX_DRONE_HYBRID_ARMOR
@@ -40,6 +40,8 @@ units:
         - STR_WRENCH
       -
         - STR_MULTITOOL
+      -
+        - STR_SONIC_PROBE
       -
         - STR_EXTINGUISHER
       -
@@ -62,7 +64,7 @@ units:
       throwing: 40
       melee: 25
       strength: 20
-      psiStrength: 0
+      psiStrength: 30
       psiSkill: 0
       mana: 25
     armor: STR_PLEX_DRONE_HUMAN_ARMOR
@@ -85,7 +87,7 @@ units:
       throwing: 25
       melee: 40
       strength: 25
-      psiStrength: 0
+      psiStrength: 30
       psiSkill: 0
       mana: 25
     armor: STR_PLEX_DRONE_SHARK_ARMOR
@@ -110,7 +112,7 @@ units:
       throwing: 40
       melee: 45
       strength: 40
-      psiStrength: 0
+      psiStrength: 30
       psiSkill: 0
       mana: 30
     armor: STR_BOOSTER_ARMOR
@@ -139,7 +141,7 @@ units:
       throwing: 40
       melee: 50
       strength: 40
-      psiStrength: 0
+      psiStrength: 30
       psiSkill: 0
       mana: 30
     armor: STR_RIPPER_ARMOR
@@ -168,7 +170,7 @@ units:
       throwing: 30
       melee: 30
       strength: 30
-      psiStrength: 0
+      psiStrength: 30
       psiSkill: 0
       mana: 40
     armor: STR_FREELANCER_ARMOR
@@ -189,14 +191,14 @@ units:
     stats:
       tu: 50
       stamina: 55
-      health: 40
+      health: 35
       bravery: 70
       reactions: 45
       firing: 40
       throwing: 50
-      melee: 45
+      melee: 35
       strength: 35
-      psiStrength: 0
+      psiStrength: 30
       psiSkill: 0
       mana: 40
     armor: STR_SKIPTRACER_ARMOR
@@ -284,7 +286,7 @@ units:
       throwing: 35
       melee: 35
       strength: 10
-      psiStrength: 0
+      psiStrength: 30
       psiSkill: 0
       mana: 25
     armor: STR_DRONEHYBRID_ARMOR
@@ -308,7 +310,7 @@ units:
       throwing: 40
       melee: 25
       strength: 20
-      psiStrength: 0
+      psiStrength: 30
       psiSkill: 0
       mana: 25
     armor: STR_DRONEHUMAN_ARMOR
@@ -332,7 +334,7 @@ units:
       throwing: 25
       melee: 40
       strength: 25
-      psiStrength: 0
+      psiStrength: 30
       psiSkill: 0
       mana: 25
     armor: STR_DRONESHARK_ARMOR
@@ -359,7 +361,7 @@ units:
       throwing: 30
       melee: 30
       strength: 15
-      psiStrength: 0
+      psiStrength: 30
       psiSkill: 0
       mana: 30
     armor: STR_CLIENT_1_ARMOR
@@ -383,7 +385,7 @@ units:
       throwing: 30
       melee: 30
       strength: 15
-      psiStrength: 0
+      psiStrength: 30
       psiSkill: 0
       mana: 30
     armor: STR_CLIENT_RR_ARMOR

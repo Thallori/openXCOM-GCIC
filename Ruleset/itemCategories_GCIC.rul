@@ -27,8 +27,10 @@
     listOrder: 82
   - type: STR_BOWS_CATEGORY
     listOrder: 85
-  - type: STR_EXPLOSIVES_CATEGORY
+  - type: STR_INCENDIARY_CATEGORY
     listOrder: 90
+  - type: STR_EXPLOSIVES_CATEGORY
+    listOrder: 95
   - type: STR_PSI_CATEGORY
     listOrder: 100
   - type: STR_MELEE_CATEGORY
@@ -48,11 +50,9 @@
     listOrder: 390
   - type: STR_CONVENTIONAL_CATEGORY
     listOrder: 400
-    hidden: true
   - type: STR_SECURITY_CATEGORY
     listOrder: 410
-    hidden: true
-  - type: STR_MILSPEC_CATEGORY
+  - type: STR_MILITARY_CATEGORY
     listOrder: 420
     hidden: true
   - type: STR_INVASION_CATEGORY

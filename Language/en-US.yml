@@ -372,6 +372,7 @@ en-US:
   STR_LAUNCHERS_CATEGORY: "Launchers"
   STR_ROCKETS_CATEGORY: "SPWs" #self-propelled weapons
   STR_BOWS_CATEGORY: "Bows"
+  STR_INCENDIARY_CATEGORY: "Incendiary"
   STR_EXPLOSIVES_CATEGORY: "Explosives"
   STR_PSI_CATEGORY: "Psionic"
   STR_MELEE_CATEGORY: "Melee"
@@ -383,8 +384,8 @@ en-US:
   STR_VACUUM_RATED_CATEGORY: "Rating: Vacuum"
   STR_AQUATIC_CATEGORY: "Rating: Aquatic"
   STR_CONVENTIONAL_CATEGORY: "Rating: Conventional"
-  STR_SECURITY_CATEGORY: "Rating: Security"
-  STR_MILSPEC_CATEGORY: "Rating: Milspec"
+  STR_SECURITY_CATEGORY: "Rating: Sectech"
+  STR_MILITARY_CATEGORY: "Rating: Milspec"
   STR_INVASION_CATEGORY: "Rating: Invasion"
   STR_LOCKED_CATEGORY: "Locked"
   STR_RESOURCES_CATEGORY: "Resources"
@@ -762,9 +763,9 @@ en-US:
   STR_CENTRAL_ACCESS: "Central Access"
   STR_CENTRAL_ACCESS_UFOPEDIA: "The barrier between public and private enterprise. Shell corporations require an access point to build underground facilities.{NEWLINE}{NEWLINE}Vulnerable to intrusion."
   STR_CORRIDOR: "Corridor"
-  STR_CORRIDOR_UFOPEDIA: "Four-way connection for facilities. Equipped with hidden cameras to observe potential targets."
+  STR_CORRIDOR_UFOPEDIA: "Four-way connection for facilities. Equipped with hidden cameras to observe potential targets. Can be built-over to save excavation time."
   STR_DEPOT: "Depot"
-  STR_DEPOT_UFOPEDIA: "Liminal multi-purpose backrooms. Provides unoptimized spaces for ancillaries, equipment, and fabrication.{NEWLINE}{NEWLINE}> Storage: 20{NEWLINE}> Accommodations: 8{NEWLINE}> Cells: 1"
+  STR_DEPOT_UFOPEDIA: "Liminal multi-purpose backrooms. Provides unoptimized spaces for equipment, ancillaries, and visitors. Can be built-over to save excavation time.{NEWLINE}{NEWLINE}> Storage: 20{NEWLINE}> Accommodations: 8{NEWLINE}> Cells: 1"
   STR_STORAGE_1: "Storage Bay"
   STR_STORAGE_1_UFOPEDIA: "Generalized storage for the automatic loading/unloading of physical assets. Climate controlled rooms keep both unstable and perishable goods safe.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 50"
   STR_STOREROOM: "P&P Bay"
@@ -895,13 +896,13 @@ en-US:
   STR_45_AMMO: "12mm Clip"
   STR_SSP_SHOTGUN_CODED: "SSP Shotgun(¤)"
   STR_SSP_SHOTGUN: "SSP Shotgun"
-  STR_SSP_SHOTGUN_UFOPEDIA: "A proven pump-action performer for delivering exceptional value in an  attractively rugged package. The dual extractors and anti-jam elevator combine for safe and reliable operation.{NEWLINE}{NEWLINE}Stun: +25%"
+  STR_SSP_SHOTGUN_UFOPEDIA: "A proven pump-action performer for delivering exceptional value in an attractively rugged package. Dual extractors and anti-jam elevator combine for safe and reliable operation.{NEWLINE}{NEWLINE}Stun: +25%"
   STR_SSP_SHOTGUN_AMMO_BS: "Buckshot Shells"
   STR_SSP_SHOTGUN_AMMO_SLUG: "Slug Shells"
 # electric
   STR_TASER_PISTOL_CODED: "SSP Taser Pistol (¤)"
   STR_TASER_PISTOL: "SSP Taser Pistol"
-  STR_TASER_PISTOL_UFOPEDIA: "The same innovative electroshock deterrent device that has been used by trusted security contractors for centuries. A strong addition to any self-respecting civilian defense plan.{NEWLINE}{NEWLINE}Not effective against chryssalids.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -65%{NEWLINE}Range: 5m"
+  STR_TASER_PISTOL_UFOPEDIA: "The same innovative electroshock deterrent device that has been used by trusted security contractors for centuries. A strong addition to any self-respecting civilian defense plan.{NEWLINE}{NEWLINE}Not effective against chryssalids.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -65%{NEWLINE}Range: 6m"
   STR_TASER_AMMO: "Taser Clip"
 # aquatic
   STR_DART_PISTOL: "NRF Dartblaster" #novelty recreation foundation
@@ -913,14 +914,14 @@ en-US:
   STR_CHEM_SMG: "NRF Rainstorm"
   STR_CHEM_SMG_UFOPEDIA: "Straddling the line between overbuilt toy and underbuilt weapon, this squirtgun has ceramic tubing highly resistant to thermal and chemical stresses. The gimmick does nothing for its accuracy."
   STR_CHEM_SMG_AMMO0: "Water Bottle"
-  STR_CHEM_SMG_AMMO1: "Acid Bottle"
+  STR_CHEM_SMG_AMMO1: "Chem Bottle"
   STR_CHEM_SMG_AMMO2: "Flame Bottle"
   STR_CHEM_SMG_AMMO3: "Smoke Bottle"
 # laser
   STR_SINGLESHOT_LASER_PISTOL_ELERIUM: "SSP Enforcer Laser Pistol (E)"
   STR_SINGLESHOT_LASER_PISTOL_CODED: "SSP Enforcer Laser Pistol (¤)"
   STR_SINGLESHOT_LASER_PISTOL: "SSP Enforcer Laser Pistol"
-  STR_SINGLESHOT_LASER_PISTOL_UFOPEDIA: "Designed for professionals and beginners alike, there is no laser pistol more trusted than SSP's Enforcer. Optimized for standard SuperCapacitor-9 cells, low weight, and safety. For the real enthusiast, try our elerium core variant."
+  STR_SINGLESHOT_LASER_PISTOL_UFOPEDIA: "Designed for professionals and beginners alike, there is no laser pistol more trusted than the Enforcer. Optimized for standard SuperCapacitor-9 cells, low weight, and safety. For the real enthusiast, try our elerium core variant."
   STR_SINGLESHOT_LASER_AMMO: "NB-2 Laser Pistol Cell" #nanoball
   STR_MULTISHOT_LASER_AMMO: "SC-9 Laser Pistol Cell" #supercapacitor
   STR_ZRBYTE_LASER_AMMO: "ZY-80 Laser Pistol Cell" #zrbyte
@@ -954,9 +955,9 @@ en-US:
   STR_MULTITOOL: "GR MultiMaster"
   STR_MULTITOOL_UFOPEDIA: "The classic MultiPurpose MultiPronged MultiTool. For measuring and recalibrating sensitive optitronic devices and power substations alike. Keep prongs away from wet sufaces and always wear appropriate PPE during operation.{NEWLINE}{NEWLINE}Stun: +50%; Lethal: -65%{NEWLINE}Terrain: +100%"
   STR_SONIC_PROBE: "GR Sonic Probe"
-  STR_SONIC_PROBE_UFOPEDIA: "New and improved handheld cutting, lifting, and emulsifying tool. Phased array micro-acoustics deliver up to 7MPa of force with point-like precision in a record breaking 5m workzone. Not biosafe, do not point at organics.{NEWLINE}{NEWLINE}Damage Dropoff: 5/Tile{NEWLINE}Penetration: +25%; Stun: +25%"
+  STR_SONIC_PROBE_UFOPEDIA: "New and improved handheld cutting, lifting, and emulsifying tool. Phased array micro-acoustics deliver up to 7MPa of force with point-like precision. Not biosafe, do not point at organics.{NEWLINE}{NEWLINE}Range: 5m; Damage Dropoff: 5/Tile{NEWLINE}Penetration: +25%; Stun: +25%"
   STR_ELECTRIC_NAILER: "GR E-Nailer"
-  STR_ELECTRIC_NAILER_UFOPEDIA: "Electrically drives nails into soft materials. Ideal for fastening gel, piecrete, and wood-based substrates. Features a safety break to ensure full contact with surfaces before release. General Robotics is not liable for injuries resulting from bypassed safety breaks.{NEWLINE}{NEWLINE}Damage Dropoff: 25/Tile{NEWLINE}TU Damage: +50%"
+  STR_ELECTRIC_NAILER_UFOPEDIA: "Electrically drives nails into soft materials. Ideal for fastening gel, piecrete, and wood-based substrates. Features a safety break to ensure full contact with surfaces before release. General Robotics is not liable for injuries resulting from bypassed safety breaks.{NEWLINE}{NEWLINE}Range: 3m; Damage Dropoff: 25/Tile{NEWLINE}TU Damage: +50%"
   STR_ELECTRIC_NAILER_AMMO: "E-Nailer Clip"
   STR_SURVEY_KNOCKER: "VCM Survey Bow" #vehicles communications and mining, big space
   STR_SURVEY_KNOCKER_UFOPEDIA: "The premiere vacuum-rated tool for launching gyroscopically stablized survey flares and bolts. Enables a single employee to light up small (30m) asteroids during descent with a power-assist lever-action ratcheting-crank.{NEWLINE}{NEWLINE}Warranty void if used planet-side."
@@ -1046,7 +1047,7 @@ en-US:
   STR_FREELANCER_ARMOR: "Freelancer Analysis"
   STR_SKIPTRACER_PRIVATE: "Netrunner Skiptracer"
   STR_SKIPTRACERS: "Skiptracers"
-  STR_SKIPTRACERS_UFOPEDIA: "{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL" #todo, skiptracers trace things
+  STR_SKIPTRACERS_UFOPEDIA: "Provides hide and find services to those who can afford them (or can't afford not to.) Nothing happens without leaving traces of its existance, creating false trails and picking out the truth requires valuable skills that can be traded like any other.{NEWLINE}{NEWLINE}Although far more dangerous in the digital realm, like all criminals, they aren't helpless in analogue situations.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
   STR_SKIPTRACER_ARMOR: "Skiptracer Analysis"
 
   STR_SSP: "SSP"
@@ -1056,7 +1057,7 @@ en-US:
   STR_SSPGUARD_ARMOR: "SSP Guard Analysis"
   STR_SSPOFFICER_PRIVATE: "SSP Officer"
   STR_SSPOFFICERS: "SSP Officers"
-  STR_SSPOFFICERS_UFOPEDIA: "{NEWLINE}{NEWLINE}RISK CLASS: SECURITY"
+  STR_SSPOFFICERS_UFOPEDIA: "Salaried security forces authorized to write fines and make arrests on behalf of corporate interests. Advertised as the barrier between anarchy and order, in practice, they are reponsible for more than half of all violent altercations.{NEWLINE}{NEWLINE}Officers are required to put at least 30% of their income towards equipment rentals, making aqua-plastic vests a popular choice.{NEWLINE}{NEWLINE}RISK CLASS: SECURITY"
   STR_SSPOFFICER_ARMOR: "SSP Officer Analysis"
 
   STR_DRONES_ENEMY: "Competing Drones"
@@ -1080,15 +1081,20 @@ en-US:
   STR_RESILIANCE_TUTORIAL: "Resiliance"
   STR_RESILIANCE_TUTORIAL_UFOPEDIA: "How much a given mind has adapted to their own body. Knowing how strong a hand can grip, or how fast legs can run. All creatures become acclimated to their corporeal existance, whether it's made of flesh or steel. Modifying the shell of that existance means a mind has to relearn its body, {ALT}resetting resiliance{ALT} to its base level.{NEWLINE}{NEWLINE}Similarly, modifying the mind means the body has to relearn its brain. Being subjected to {ALT}psionic intrusions{ALT} (or even accessing the psionic network at all) lowers resiliance. However, the body is much faster at learning than the mind, recovering in weeks rather than months.{NEWLINE}{NEWLINE}High resiliance increases {ALT}psionic defense{ALT}, missing resiliance lowers {ALT}TU recovery{ALT}."
   STR_LIQUIDITY: "Liquidity"
-  STR_LIQUIDITY_UFOPEDIA: "The ease of which a corporate entity can trade its assets without drastically affecting market prices. Performing missions that engender public trust will {ALT}raise share prices{ALT}, making it easier take out loans, shrink dividens, and enjoy more relaxed interest rates.{NEWLINE}{NEWLINE}Conversely, stories of rogue drones and failures to fulfill contracts will tie up indirect assets, effectively {ALT}lowering monthly income{ALT}.{NEWLINE}{NEWLINE}It is {ALT}not possible{ALT} for a corporation to become insolvant from having too much negative liquidity. A good reputation isn't necessary for a profitable business."
+  STR_LIQUIDITY_UFOPEDIA: "The ease of which a corporate entity can trade its assets without drastically affecting market prices. Performing missions that engender public trust will {ALT}grow monthly income{ALT} by making it easier to shrink dividens and repay loans at lower interest rates.{NEWLINE}{NEWLINE}Conversely, stories of rogue drones and failures to fulfill contracts will tie up indirect assets, effectively {ALT}lowering monthly income{ALT}.{NEWLINE}{NEWLINE}It is {ALT}not possible{ALT} for a corporation to become insolvant from having too much negative liquidity. A good reputation isn't necessary for a profitable business."
   STR_DAMAGE_TYPES: "Damage Types"
-  STR_DAMAGE_TYPES_UFOPEDIA: "Destruction takes many forms and these violent acts fall into several broad categories. Unless otherwise stated, all equipment will follow these rules.{NEWLINE}{NEWLINE}{ALT}Kinetic{ALT} Standard{NEWLINE}{ALT}Mechanical{ALT} +50% TU Damage{NEWLINE}{ALT}Concussive{ALT} +75% Stun Damage{NEWLINE}{ALT}Incendiary{ALT} +2000% Moral Damage{NEWLINE}{ALT}Chemical{ALT} Armor Shreading{NEWLINE}{ALT}Biological{ALT} +50% Armor Piercing{NEWLINE}{NEWLINE}{ALT}Smoke{ALT} No HP Damage{NEWLINE}{ALT}Electric{ALT} Full Stun, -65% Lethal{NEWLINE}{ALT}Blunt{ALT} Full Stun, -80% Lethal{NEWLINE}{NEWLINE}{ALT}Radiant{ALT} Increased Terrain Damage, +10 Accuracy{NEWLINE}{ALT}Plasma{ALT} +50% Stun Damage, -10 Accuracy{NEWLINE}{ALT}Sonic{ALT} +25% Stun Damage, +25% Armor Piercing"
+  STR_DAMAGE_TYPES_UFOPEDIA: "Destruction takes many forms and these violent acts fall into several broad categories. Unless otherwise stated, all equipment will follow these rules.{NEWLINE}{NEWLINE}{ALT}Kinetic{ALT} Standard{NEWLINE}{ALT}Mechanical{ALT} +50% TU Damage{NEWLINE}{ALT}Concussive{ALT} +75% Stun Damage{NEWLINE}{ALT}Incendiary{ALT} +450% Moral Damage{NEWLINE}{ALT}Chemical{ALT} Armor Shreading{NEWLINE}{ALT}Biological{ALT} +50% Armor Piercing{NEWLINE}{NEWLINE}{ALT}Smoke{ALT} No HP Damage{NEWLINE}{ALT}Electric{ALT} Full Stun, -65% Lethal{NEWLINE}{ALT}Blunt{ALT} Full Stun, -80% Lethal{NEWLINE}{NEWLINE}{ALT}Radiant{ALT} Increased Terrain Damage, +10 Accuracy{NEWLINE}{ALT}Plasma{ALT} +50% Stun Damage, -10 Accuracy{NEWLINE}{ALT}Sonic{ALT} +25% Stun Damage, +25% Armor Piercing"
   STR_WEAPON_TYPES: "Attack Types"
   STR_WEAPON_TYPES_UFOPEDIA: "{ALT}Ranged and Melee{ALT} attacks hit for 0-200% damage, representing anything from a grazing shot to a critical strike. They will also randomly deal up to 25% of their damage as stun.{NEWLINE}{NEWLINE}{ALT}Melee{ALT} hits remove TUs equal to 100% of the damage dealt, no matter the damage type. This can potentially distrupt reaction attacks on the current turn, but will not affect a target's TUs on the following turn.{NEWLINE}{NEWLINE}{ALT}Explosions{ALT} are more consistant, inflicting 50-150% damage to small targets. Large targets can be hit up to 4 times for each tile they are standing on.{NEWLINE}{NEWLINE}{ALT}Stun{ALT} weapons will never wound a target and deal 100% of their damage as stun, but damage types other than blunt/electric still deal full health damage."
   STR_GUN_TYPES: "Ranged Modifiers"
   STR_GUN_TYPES_UFOPEDIA: "Weapon styles vary by design, philosophy, and ease of use. The following is not a comprehensive list, but will cover most equipment we can use.{NEWLINE}{NEWLINE}{ALT}Flat Accuracy{ALT} Pistols +20, SMGs/Shotguns +10, Precision -20{NEWLINE}{NEWLINE}{ALT}Kneeling Accuracy{ALT} Pistols/Bows +10%, SMGs/Shotguns +15%, Assault/Precision +20%, Cannons/MGs +50%{NEWLINE}{NEWLINE}{ALT}One-Handed Accuracy{ALT} Shotguns/Bows -25%, Assault/Precision -50%, Cannons/MGs -65%{NEWLINE}{NEWLINE}{ALT}Precision Arms{ALT} +25% no-sight accuracy, +50% minimum damage{NEWLINE}{ALT}Cannons{ALT} 25% accuracy from strength{NEWLINE}{ALT}MGs{ALT} 50% accuracy from strength{NEWLINE}{NEWLINE}{ALT}Launchers{ALT} have variable modifiers, depending on size and weight"
   #melee modifiers
   #dodge is always 10% melee + X% reactions, shields provide another +10% melee, builtins always deal less health damage and full stun, blunt = -85%, mechanical = -70%, melee weapons which are easy to use get flat +35% accuracy, builtins and weapons which require skill to use effectively +0%
+  #tips
+  #lore only researches give score, representing understanding the world a little better
+  #things are sold for 1/4 their buying price for tax reasons, locked things sell for 1/10 their buying price since someone else has to crack/scrap it, shares cost 5x their selling price because you might be trying to do a buyout
+  #melee and stun weapons do two damage rolls to average out results
+  #chem weapons always attack front armor, no matter the direction they hit from
 #accolades
   STR_MEDALS: "ACCOLADES"
   STR_MEDAL_NAME: "Accolade Title"

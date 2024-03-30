@@ -344,6 +344,7 @@ alienDeployments:
         highQty: 1
         dQty: 0
         percentageOutsideUfo: 0
+        extraRandomItems: *personalData6
         itemSets: &smallXN
           -
             - STR_XN_LASER_PISTOL
@@ -371,6 +372,7 @@ alienDeployments:
         highQty: 3
         dQty: 1
         percentageOutsideUfo: 0
+        extraRandomItems: *personalData6
         itemSets: &skiptracer
           -
             - STR_DART_PISTOL
@@ -396,16 +398,16 @@ alienDeployments:
             - STR_CHEM_SMG_AMMO1
           -
             - STR_CHEM_SMG
-            - STR_CHEM_SMG_AMMO1
-            - STR_CHEM_SMG_AMMO1
+            - STR_CHEM_SMG_AMMO2
+            - STR_CHEM_SMG_AMMO2
           -
             - STR_CHEM_SMG
-            - STR_CHEM_SMG_AMMO1
-            - STR_CHEM_SMG_AMMO1
+            - STR_CHEM_SMG_AMMO2
+            - STR_CHEM_SMG_AMMO2
           -
-            - STR_PERSONAL_DATA
+            []
           -
-            - STR_PERSONAL_DATA
+            []
       - alienRank: 6
         lowQty: 3
         medQty: 3
@@ -555,6 +557,8 @@ alienDeployments:
     despawnPenalty: 100
     abortPenalty: 100
     despawnEvents:
+      STR_EVENT_HEALTHY_COMPETITION: 100
+    failureEvents:
       STR_EVENT_HEALTHY_COMPETITION: 100
     # startingCondition: MILSPEC_GEAR_INFILTRATION_CRAFT
     briefing:
