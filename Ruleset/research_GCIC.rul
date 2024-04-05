@@ -99,22 +99,19 @@ research:
   - name: STR_HYBRID_MEMORY_1
     dependencies:
       - STR_LOCK
-    points: 20
-
+    points: 10
   - name: STR_HYBRID_MEMORY_2
     dependencies:
       - STR_LOCK
-    points: 20
-
+    points: 10
   - name: STR_HYBRID_MEMORY_3
     dependencies:
       - STR_LOCK
-    points: 20
-
+    points: 10
   - name: STR_HYBRID_MEMORY_4
     dependencies:
       - STR_LOCK
-    points: 20
+    points: 10
 
 #operations
   - name: STR_PRIMARY_OPERATIONS
@@ -195,6 +192,7 @@ research:
     requiresBaseFunc:
       - STR_SERVICE_UPLINK
     dependencies:
+      - STR_BOUNTY_1
       - STR_NON_CLIENTS
       - STR_SECONDARY_OPERATIONS
       - STR_VENDOR_BUILDER

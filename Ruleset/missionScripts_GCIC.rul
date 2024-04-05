@@ -111,7 +111,7 @@ missionScripts:
 
   - type: TradeMeeting1b
     firstMonth: 1
-    executionOdds: 40
+    executionOdds: 55
     researchTriggers:
       STR_FORBIDDEN_OPERATIONS: true
       STR_NETRUNNERS_NETWORK: true

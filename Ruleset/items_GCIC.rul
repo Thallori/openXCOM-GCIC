@@ -2650,25 +2650,25 @@ items:
     categories: [STR_DRONES_CATEGORY]
     size: -1.0
     costSell: 10000
-    monthlySalary: -750
+    monthlySalary: -800
 
   - type: STR_DRONE_HUMAN_ITEM
     categories: [STR_DRONES_CATEGORY]
     size: -1.0
     costSell: 10000
-    monthlySalary: -750
+    monthlySalary: -800
 
   - type: STR_DRONE_SHARK_ITEM
     categories: [STR_DRONES_CATEGORY]
     size: -1.0
     costSell: 10000
-    monthlySalary: -750
+    monthlySalary: -800
 
   - type: STR_DRONE_DEEP_ITEM
     categories: [STR_DRONES_CATEGORY]
     size: -1.0
     costSell: 10000
-    monthlySalary: -750
+    monthlySalary: -800
 
 #armor
   - type: STR_DURA_DRONE_ARMOR

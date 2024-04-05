@@ -125,8 +125,8 @@ ufopaedia:
     text_width: 180
     image_id: HMEMORY_CPAL
   - id: STR_HYBRID_MEMORY_4
-    # requires:
-    #   - STR_HYBRID_MEMORY_4
+    requires:
+      - STR_HYBRID_MEMORY_4
     text: STR_HYBRID_MEMORY_4_UFOPEDIA
     section: STR_FILES_UC
     type_id: 7
@@ -187,6 +187,15 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: OPERATIONS3Z_CPAL
+
+  - id: STR_NETRUNNERS_NETWORK
+    requires:
+      - STR_NETRUNNERS_NETWORK
+    text: STR_NETRUNNERS_NETWORK_UFOPEDIA
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: OPERATIONS3_CPAL
 
   - id: STR_SUBCONTRACTING_OPERATIONS
     requires:
