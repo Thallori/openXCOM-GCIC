@@ -121,7 +121,7 @@ soldiers:
     trainingStatCaps:
       psiSkill: 40
     armor: STR_PLEX_DRONE_HYBRID_ARMOR
-    standHeight: 22
+    standHeight: 20
     kneelHeight: 14
     value: 1
     allowPiloting: false
@@ -187,7 +187,7 @@ soldiers:
     trainingStatCaps:
       psiSkill: 40
     armor: STR_PLEX_DRONE_HUMAN_ARMOR
-    standHeight: 22
+    standHeight: 20
     kneelHeight: 14
     value: 1
     transferTime: 72

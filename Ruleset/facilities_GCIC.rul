@@ -198,13 +198,13 @@ facilities:
     leavesBehindOnSell:
       - STR_DEPOT
     provideBaseFunc: [STR_SERVICE_NETWORK] #for hacking things you've don't got
-#    spriteShape: 1
-#    spriteFacility: 303
+    spriteShape: 1
+    spriteFacility: 311
     buildTime: 15
-    buildCost: 900000
-    refundValue: 750000
-    monthlyCost: 6500
-    labs: 1
+    buildCost: 720000
+    refundValue: 540000
+    monthlyCost: 65000
+    labs: 2
     maxAllowedPerBase: 3
     mapName: XBASE_02
 

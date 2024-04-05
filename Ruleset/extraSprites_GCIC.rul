@@ -113,6 +113,9 @@ extraSprites:
       180: Resources/Items/Multi/Ammo/watergun_water_ammo_bigob.png
       181: Resources/Items/Multi/Ammo/watergun_chem_ammo_bigob.png
       182: Resources/Items/Multi/Ammo/watergun_fire_ammo_bigob.png
+      183: Resources/Items/Multi/Ammo/dart_poi_ammo_bigob.png
+      184: Resources/Items/Multi/Ammo/dart_alloy_ammo_bigob.png
+      185: Resources/Items/Materials/secret_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -188,6 +191,8 @@ extraSprites:
       169: Resources/Items/Multi/Ammo/watergun_water_ammo_floorob.png
       170: Resources/Items/Multi/Ammo/watergun_chem_ammo_floorob.png
       171: Resources/Items/Multi/Ammo/watergun_fire_ammo_floorob.png
+      172: Resources/Items/Multi/Ammo/dart_poi_ammo_floorob.png
+      173: Resources/Items/Multi/Ammo/dart_alloy_ammo_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -257,6 +262,7 @@ extraSprites:
       308: Resources/BaseBits/basebits_local.png
       309: Resources/BaseBits/basebits_pnpbay.png
       310: Resources/BaseBits/basebits_printshop.png
+      311: Resources/BaseBits/basebits_gateway.png
       433: Resources/Crafts/bicube_basebit.png
       434: Resources/Crafts/crossover_basebit.png
       435: Resources/Crafts/rider_basebit.png
@@ -588,13 +594,24 @@ extraSprites:
     fileSingle: Resources/Pedia/data2_CPAL.png
   - typeSingle: DATA3_CPAL
     fileSingle: Resources/Pedia/data3_CPAL.png
+# memories
+  - typeSingle: HMEMORY_CPAL
+    fileSingle: Resources/Pedia/hmemory_CPAL.png
+  - typeSingle: UMEMORY_CPAL
+    fileSingle: Resources/Pedia/umemory_CPAL.png
+  - typeSingle: SMEMORY_CPAL
+    fileSingle: Resources/Pedia/smemory_CPAL.png
 # operations
   - typeSingle: OPERATIONS1_CPAL
     fileSingle: Resources/Pedia/operations1_CPAL.png
+  - typeSingle: OPERATIONS1Z_CPAL
+    fileSingle: Resources/Pedia/operations1z_CPAL.png
   - typeSingle: OPERATIONS2_CPAL
     fileSingle: Resources/Pedia/operations2_CPAL.png
   - typeSingle: OPERATIONS3_CPAL
     fileSingle: Resources/Pedia/operations3_CPAL.png
+  - typeSingle: OPERATIONS3Z_CPAL
+    fileSingle: Resources/Pedia/operations3z_CPAL.png
   - typeSingle: OPERATIONS4_CPAL
     fileSingle: Resources/Pedia/operations4_CPAL.png
 # connections

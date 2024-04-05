@@ -61,14 +61,6 @@
       size: 2
     - type: fillArea
 
-  - type: CLUB_LANDING
-    commands:
-    - type: addCraft
-      rects:
-        - [0, 2, 1, 1]
-    - type: addBlock
-      size: [2, 3]
-
   - type: SINGLE_BLOCK_2X2
     commands:
     - type: addBlock

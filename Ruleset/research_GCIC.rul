@@ -89,7 +89,7 @@ research:
       - STR_SERVICE_UPLINK
     needItem: true
     destroyItem: true
-    cost: 5
+    cost: 4
     getOneFree:
       - STR_HYBRID_MEMORY_1
       - STR_HYBRID_MEMORY_2
@@ -99,22 +99,22 @@ research:
   - name: STR_HYBRID_MEMORY_1
     dependencies:
       - STR_LOCK
-    points: 10
+    points: 20
 
   - name: STR_HYBRID_MEMORY_2
     dependencies:
       - STR_LOCK
-    points: 10
+    points: 20
 
   - name: STR_HYBRID_MEMORY_3
     dependencies:
       - STR_LOCK
-    points: 10
+    points: 20
 
   - name: STR_HYBRID_MEMORY_4
     dependencies:
       - STR_LOCK
-    points: 10
+    points: 20
 
 #operations
   - name: STR_PRIMARY_OPERATIONS
@@ -187,6 +187,7 @@ research:
   - name: STR_NETRUNNERS_NETWORK
     dependencies:
       - STR_TR_NTR_PREQ
+      - STR_FORBIDDEN_OPERATIONS
       - STR_BIONIC_INTERLACE
     cost: 10
 
@@ -202,6 +203,7 @@ research:
 
   - name: STR_MEDI_MISSIONS
     dependencies:
+      - STR_TODO
       - STR_VENDOR_MEDI
       - STR_SUBCONTRACTING_OPERATIONS
     cost: 15
@@ -366,8 +368,8 @@ research:
 
   - name: STR_PUBLIC_GATEWAY
     dependencies:
-      - STR_TODO
-    cost: 30
+      - STR_SECRET_DATA
+    cost: 25
 
   - name: STR_PRINTER
     dependencies:
@@ -691,11 +693,11 @@ research:
 
   - name: STR_PLASTICS
     needItem: true
-    cost: 10
+    cost: 20
 
   - name: STR_ELERIUM_CORE
     needItem: true
-    cost: 15
+    cost: 20
 
   - name: STR_SJB_LICENSE
     needItem: true
@@ -708,6 +710,11 @@ research:
     cost: 5
     unlocks:
       - STR_PC_PREQ
+
+  - name: STR_SECRET_DATA
+    needItem: true
+    destroyItem: true
+    cost: 5
 
   - name: STR_GCIC_SABOTAGE_2_DATA_DECRYPT
     needItem: true

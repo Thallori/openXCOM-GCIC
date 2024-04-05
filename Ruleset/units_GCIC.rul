@@ -31,7 +31,7 @@ units:
       psiSkill: 0
       mana: 25
     armor: STR_PLEX_DRONE_HYBRID_ARMOR
-    standHeight: 18
+    standHeight: 20
     kneelHeight: 14
     value: 1
     deathSound: [10]

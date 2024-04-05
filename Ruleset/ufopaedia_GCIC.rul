@@ -100,41 +100,38 @@ ufopaedia:
     image_id: DATA3_CPAL
 
 # memories
-  # - id: STR_HYBRID_MEMORY_1
-  #   requires:
-  #     - STR_HYBRID_MEMORY_1
-  #   text: STR_HYBRID_MEMORY_1_UFOPEDIA
-  #   section: STR_FILES_UC
-  #   type_id: 7
-  #   text_width: 180
-  #   image_id: ALIGN_TEST_CPAL #TODO image
-
-  # - id: STR_HYBRID_MEMORY_2
-  #   requires:
-  #     - STR_HYBRID_MEMORY_2
-  #   text: STR_HYBRID_MEMORY_2_UFOPEDIA
-  #   section: STR_FILES_UC
-  #   type_id: 7
-  #   text_width: 180
-  #   image_id: ALIGN_TEST_CPAL #TODO image
-
-  # - id: STR_HYBRID_MEMORY_3
-  #   requires:
-  #     - STR_HYBRID_MEMORY_3
-  #   text: STR_HYBRID_MEMORY_3_UFOPEDIA
-  #   section: STR_FILES_UC
-  #   type_id: 7
-  #   text_width: 180
-  #   image_id: ALIGN_TEST_CPAL #TODO image
-
-  # - id: STR_HYBRID_MEMORY_4
-  #   requires:
-  #     - STR_HYBRID_MEMORY_4
-  #   text: STR_HYBRID_MEMORY_4_UFOPEDIA
-  #   section: STR_FILES_UC
-  #   type_id: 7
-  #   text_width: 180
-  #   image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_HYBRID_MEMORY_1
+    requires:
+      - STR_HYBRID_MEMORY_1
+    text: STR_HYBRID_MEMORY_1_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: HMEMORY_CPAL
+  - id: STR_HYBRID_MEMORY_2
+    requires:
+      - STR_HYBRID_MEMORY_2
+    text: STR_HYBRID_MEMORY_2_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: HMEMORY_CPAL
+  - id: STR_HYBRID_MEMORY_3
+    requires:
+      - STR_HYBRID_MEMORY_3
+    text: STR_HYBRID_MEMORY_3_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: HMEMORY_CPAL
+  - id: STR_HYBRID_MEMORY_4
+    # requires:
+    #   - STR_HYBRID_MEMORY_4
+    text: STR_HYBRID_MEMORY_4_UFOPEDIA
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: HMEMORY_CPAL
 
   - id: STR_GCIC_INDEPENDENCE
     requires:
@@ -162,7 +159,7 @@ ufopaedia:
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
-    image_id: OPERATIONS1_CPAL
+    image_id: OPERATIONS1Z_CPAL
 
   - id: STR_SECONDARY_OPERATIONS
     requires:
@@ -189,7 +186,7 @@ ufopaedia:
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
-    image_id: OPERATIONS3_CPAL
+    image_id: OPERATIONS3Z_CPAL
 
   - id: STR_SUBCONTRACTING_OPERATIONS
     requires:
@@ -420,6 +417,13 @@ ufopaedia:
     section: STR_BASE_FACILITIES_UC
     type_id: 6
 
+  - id: STR_PUBLIC_GATEWAY
+    requires:
+      - STR_PUBLIC_GATEWAY
+    text: STR_PUBLIC_GATEWAY_UFOPEDIA
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
   - id: STR_PRINTER #todo
     requires:
       - STR_PRINTER
@@ -450,6 +454,8 @@ ufopaedia:
       height: 60
 
   - id: STR_HD_HOVERBIKE
+    requires:
+      - STR_HD_HOVERBIKE
     text: STR_HD_HOVERBIKE_UFOPEDIA
     section: STR_APS_CRAFT_UC
     type_id: 1
@@ -466,8 +472,8 @@ ufopaedia:
       height: 60
 
   - id: STR_VCM_BICUBE
-    # requires:
-    #   - STR_VENDOR_VCM
+    requires:
+      - STR_VCM_BICUBE
     text: STR_VCM_BICUBE_UFOPEDIA
     section: STR_APS_CRAFT_UC
     type_id: 1
@@ -534,6 +540,15 @@ ufopaedia:
     requires:
       - STR_DRONE_SHARK_ITEM
     text: STR_DRONE_SHARK_ITEM_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: SHARK_CPAL
+
+  - id: STR_DRONE_DEEP_ITEM
+    requires:
+      - STR_DRONE_DEEP_ITEM
+    text: STR_DRONE_DEEP_ITEM_UFOPEDIA
     section: STR_DRONES_UC
     type_id: 7
     text_width: 180
@@ -707,7 +722,6 @@ ufopaedia:
   - id: STR_COMBALL_AMMO
     section: STR_NOT_AVAILABLE
     type_id: 4
-
   - id: STR_PAPERSHOT_AMMO
     section: STR_NOT_AVAILABLE
     type_id: 4
@@ -783,7 +797,6 @@ ufopaedia:
       - STR_SSP_SHOTGUN
     section: STR_NOT_AVAILABLE
     type_id: 4
-
   - id: STR_SSP_SHOTGUN_AMMO_SLUG
     requires:
       - STR_SSP_SHOTGUN
@@ -822,6 +835,18 @@ ufopaedia:
       - STR_DART_PISTOL
     section: STR_NOT_AVAILABLE
     type_id: 4
+  - id: STR_DART_AMMO2
+    requires:
+      - STR_TODO
+      - STR_DART_PISTOL
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+  - id: STR_DART_AMMO3
+    requires:
+      - STR_TODO
+      - STR_DART_PISTOL
+    section: STR_NOT_AVAILABLE
+    type_id: 4
 
   - id: STR_CHEM_SMG
     requires:
@@ -847,6 +872,14 @@ ufopaedia:
     type_id: 4
 
 # laser
+  - id: STR_SINGLESHOT_LASER_PISTOL_ELERIUM
+    requires:
+      - STR_SINGLESHOT_LASER_PISTOL
+      - STR_ELERIUM_CORE
+    text: STR_SINGLESHOT_LASER_PISTOL_ELERIUM_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
   - id: STR_SINGLESHOT_LASER_PISTOL
     requires:
       - STR_SINGLESHOT_LASER_PISTOL
@@ -859,7 +892,6 @@ ufopaedia:
       - STR_SINGLESHOT_LASER_AMMO
     section: STR_NOT_AVAILABLE
     type_id: 4
-
   - id: STR_MULTISHOT_LASER_AMMO
     requires:
       - STR_SINGLESHOT_LASER_PISTOL
@@ -1086,6 +1118,13 @@ ufopaedia:
     section: STR_RESOURCES_UC
     type_id: 4
 
+  - id: STR_SECRET_DATA
+    requires:
+      - STR_SECRET_DATA
+    text: STR_SECRET_DATA_UFOPEDIA
+    section: STR_RESOURCES_UC
+    type_id: 4
+
 # abstract
   - id: STR_SHARES_GCIC
     requires:
@@ -1138,7 +1177,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: BOOSTER_CPAL
-
   - id: STR_BOOSTER_ARMOR
     requires:
       - STR_BOOSTER_ARMOR
@@ -1159,7 +1197,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: RIPPER_CPAL
-
   - id: STR_RIPPER_ARMOR
     requires:
       - STR_RIPPER_ARMOR
@@ -1181,7 +1218,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: FREELANCER_CPAL
-
   - id: STR_FREELANCER_ARMOR
     requires:
       - STR_FREELANCER_ARMOR
@@ -1201,10 +1237,9 @@ ufopaedia:
       width: 149
       height: 200
     image_id: SKIPTRACER_CPAL
-
-  - id: STR_FREELANCER_ARMOR
+  - id: STR_SKIPTRACER_ARMOR
     requires:
-      - STR_FREELANCER_ARMOR
+      - STR_SKIPTRACER_ARMOR
     section: STR_COMPETITORS_UC
     type_id: 5
 
@@ -1222,7 +1257,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: SSPGUARD_CPAL
-
   - id: STR_SSPGUARD_ARMOR
     requires:
       - STR_SSPGUARD_ARMOR
@@ -1242,7 +1276,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: SSPOFFICER_CPAL
-
   - id: STR_SSPOFFICER_ARMOR
     requires:
       - STR_SSPOFFICER_ARMOR

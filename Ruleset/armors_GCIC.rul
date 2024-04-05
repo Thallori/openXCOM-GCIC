@@ -200,7 +200,7 @@ armors:
     frontArmor: 12
     sideArmor: 12
     rearArmor: 12
-    underArmor: 12
+    underArmor: 9
     damageModifier: &OrganicDuraResists
       - 1.0 #0 none
       - 0.75 #1 kinetic
@@ -271,7 +271,7 @@ armors:
     frontArmor: 12
     sideArmor: 12
     rearArmor: 12
-    underArmor: 12
+    underArmor: 9
     damageModifier: *OrganicDuraResists
     meleeDodge: *MeleeDodgeGood
     psiDefence: *PsiDefenseTypical
@@ -322,7 +322,7 @@ armors:
     frontArmor: 12
     sideArmor: 12
     rearArmor: 12
-    underArmor: 12
+    underArmor: 9
     damageModifier: *OrganicDuraResists
     meleeDodge: *MeleeDodgeGood
     psiDefence: *PsiDefenseTypical
@@ -364,7 +364,7 @@ armors:
     frontArmor: 20
     sideArmor: 20
     rearArmor: 20
-    underArmor: 20
+    underArmor: 15
     damageModifier: &OrganicAquavestResists
       - 1.0 #0 none
       - 0.7 #1 kinetic
@@ -437,7 +437,7 @@ armors:
     frontArmor: 20
     sideArmor: 20
     rearArmor: 20
-    underArmor: 20
+    underArmor: 15
     damageModifier: *OrganicAquavestResists
     meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical
@@ -490,7 +490,7 @@ armors:
     frontArmor: 20
     sideArmor: 20
     rearArmor: 20
-    underArmor: 20
+    underArmor: 15
     damageModifier: *OrganicAquavestResists
     meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical
@@ -534,7 +534,7 @@ armors:
     frontArmor: 28
     sideArmor: 20
     rearArmor: 20
-    underArmor: 20
+    underArmor: 15
     damageModifier: *OrganicAquavestResists
     meleeDodge: &MeleeDodgePoorS
       melee: 0.2
@@ -593,7 +593,7 @@ armors:
     frontArmor: 28
     sideArmor: 20
     rearArmor: 20
-    underArmor: 20
+    underArmor: 15
     damageModifier: *OrganicAquavestResists
     meleeDodge: *MeleeDodgePoorS
     psiDefence: *PsiDefenseTypical
@@ -648,7 +648,7 @@ armors:
     frontArmor: 28
     sideArmor: 20
     rearArmor: 20
-    underArmor: 20
+    underArmor: 15
     damageModifier: *OrganicAquavestResists
     meleeDodge: *MeleeDodgePoorS
     psiDefence: *PsiDefenseTypical
@@ -911,7 +911,7 @@ armors:
     frontArmor: 20
     sideArmor: 20
     rearArmor: 20
-    underArmor: 20
+    underArmor: 15
     damageModifier: *OrganicAquavestResists
     meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical

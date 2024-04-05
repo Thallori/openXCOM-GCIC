@@ -118,3 +118,44 @@ ufos:
         - name: SABOTAGE_OFFICE1
           width: 20
           length: 20
+        - name: SABOTAGE_OFFICE2
+          width: 20
+          length: 20
+
+  - type: STR_SABOTAGE_OFFICE_BI
+    modSprite: interception_jammed
+    battlescapeTerrainData:
+      name: STR_SABOTAGE_OFFICE
+      mapDataSets:
+        - BLANKS
+        - FLOOR_ASPHALT
+        - FLOOR_URBAN
+        - FLOOR_TILES
+        - FLOOR_PLAIN
+        - FLORA_URBAN
+        - FLORA_FOREST_SMALL
+        - STRUCTURE_DRYWALL1
+        - STRUCTURE_DRYWALL2
+        - STRUCTURE_WAREHOUSE
+        - STRUCTURE_GLASS2
+        - STAIRS_PLAIN
+        - FENCE_PLAIN
+        - FENCE_IRON
+        - FURNITURE_OFFICE1
+        - SIGNS_COMMERCIAL
+        - SIGNS_TECH2
+        - BITS_BOOKS1
+        - BITS_SERVERS
+        - HOLOGRAMS
+        - BITS_CRATES1
+        - ROOFS_BITS
+        - BITS_TECH
+        - COMPUTERS1
+        - LIGHTS_STREET1
+      mapBlocks:
+        - name: SABOTAGE_OFFICE_BI1
+          width: 20
+          length: 20
+        - name: SABOTAGE_OFFICE_BI2
+          width: 20
+          length: 20

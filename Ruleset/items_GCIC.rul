@@ -34,6 +34,11 @@ items:
     transferTime: 12
 
 #inventory
+  - type: STR_BLANK_ITEM
+    categories: [STR_DEBUG_CATEGORY]
+    weight: 0
+    recover: false
+
 # voids
   - type: STR_NULL_LEFT_LEG
     categories: [STR_VOIDS_CATEGORY]
@@ -371,6 +376,7 @@ items:
     hitAnimation: 26
     battleType: 2
     weight: 2
+    clipSize: 4
     power: 34
     damageBonus:
       reactions: 0.05
@@ -378,7 +384,6 @@ items:
     damageAlter:
       ToStun: 0.5
       ArmorEffectiveness: 1.4
-    clipSize: 4
     armor: 20
 
   - type: STR_PAPERSHOT_AMMO
@@ -395,6 +400,7 @@ items:
     hitAnimation: 26
     battleType: 2
     weight: 3
+    clipSize: 4
     power: 18
     damageBonus:
       reactions: 0.05
@@ -402,7 +408,6 @@ items:
     damageAlter:
       ArmorEffectiveness: 1.4
       ToStun: 0.50
-    clipSize: 4
     shotgunPellets: 4
     shotgunSpread: 25
     shotgunBehavior: 1
@@ -458,8 +463,8 @@ items:
     hitAnimation: 26
     battleType: 2
     weight: 2
-    power: 20
     clipSize: 14
+    power: 20
     damageBonus:
       reactions: 0.05
     damageType: 1
@@ -471,8 +476,8 @@ items:
       - STR_VENDOR_P2P
       - STR_9MM_SMG
     size: 0.1
-    costBuy: 1899
-    costSell: 475
+    costBuy: 2899
+    costSell: 725
     transferTime: 12
     bigSprite: 167
     floorSprite: 158
@@ -514,8 +519,8 @@ items:
       - STR_VENDOR_P2P
       - STR_9MM_SMG
     size: 0.01
-    costBuy: 14
-    costSell: 4
+    costBuy: 24
+    costSell: 6
     transferTime: 12
     bigSprite: 168
     floorSprite: 159
@@ -523,8 +528,8 @@ items:
     hitAnimation: -1
     battleType: 2
     weight: 3
-    power: 20
     clipSize: 22
+    power: 20
     damageBonus:
       reactions: 0.05
     damageType: 1
@@ -581,10 +586,12 @@ items:
     hitAnimation: 26
     battleType: 2
     weight: 3
-    power: 22
     clipSize: 5
+    power: 22
     damageBonus:
       firing: 0.10
+    damageAlter:
+      ArmorEffectiveness: 0.90
     damageType: 1
     armor: 20
 
@@ -609,11 +616,11 @@ items:
     invHeight: 2
     battleType: 1
     weight: 8
+    clipSize: 27
     power: 18
+    damageType: 1
     damageBonus:
       reactions: 0.05
-    damageType: 1
-    clipSize: 27
     sprayWaypoints: 2
     confSnap:
       shots: 3
@@ -723,8 +730,8 @@ items:
     hitAnimation: 26
     battleType: 2
     weight: 2
-    power: 28
     clipSize: 12
+    power: 28
     damageBonus:
       reactions: 0.05
     damageType: 1
@@ -823,8 +830,8 @@ items:
     hitAnimation: 26
     battleType: 2
     weight: 3
-    power: 15
     clipSize: 8
+    power: 15
     shotgunPellets: 6
     shotgunSpread: 25
     shotgunBehavior: 1
@@ -852,8 +859,8 @@ items:
     hitAnimation: 26
     battleType: 2
     weight: 3
-    power: 35
     clipSize: 8
+    power: 35
     damageType: 1
     damageBonus:
       reactions: 0.05
@@ -868,7 +875,6 @@ items:
     requires:
       - STR_SSP_CRACK
     size: 0.1
-    costBuy: 1999
     costSell: 500
     transferTime: 4
     bigSprite: 144
@@ -947,6 +953,7 @@ items:
     hitAnimation: 56
     battleType: 2
     weight: 2
+    clipSize: 2
     power: 32
     damageBonus:
       reactions: 0.05
@@ -963,7 +970,6 @@ items:
       ToTile: 0.0
     powerRangeThreshold: 6
     powerRangeReduction: 999
-    clipSize: 2
     armor: 20
 
 # multi
@@ -989,6 +995,8 @@ items:
     compatibleAmmo:
       - STR_DART_AMMO0
       - STR_DART_AMMO1
+      - STR_DART_AMMO2
+      - STR_DART_AMMO3
     accuracySnap: 65
     accuracyAimed: 80
     accuracyMultiplier:
@@ -1006,7 +1014,7 @@ items:
     armor: 30
 
   - type: STR_DART_AMMO0
-    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
       - STR_VENDOR_PRINTER
       - STR_DART_PISTOL
@@ -1019,13 +1027,13 @@ items:
     hitSound: 13
     hitAnimation: 26
     battleType: 2
-    weight: 1
+    weight: 2
+    clipSize: 8
     power: 1
     damageBonus:
       reactions: 0.05
     damageType: 6
     damageAlter:
-      RandomType: 6
       ToHealth: 0.20
       ToStun: 1.0
       RandomStun: false
@@ -1033,7 +1041,6 @@ items:
       IgnorePainImmunity: false
       FixRadius: 0
       ToTile: 0.0
-    clipSize: 8
     armor: 20
 
   - type: STR_DART_AMMO1
@@ -1051,6 +1058,7 @@ items:
     hitAnimation: 26
     battleType: 2
     weight: 2
+    clipSize: 8
     power: 15
     damageBonus:
       reactions: 0.05
@@ -1065,8 +1073,56 @@ items:
       IgnoreSelfDestruct: true
       IgnorePainImmunity: true
       ToTile: 0.0
-    clipSize: 8
     armor: 20
+
+  - type: STR_DART_AMMO2
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_DART_PISTOL
+    size: 0.01
+    costBuy: 299
+    costSell: 75
+    transferTime: 4
+    bigSprite: 183
+    floorSprite: 172
+    hitSound: 110
+    hitAnimation: 26
+    battleType: 2
+    weight: 2
+    clipSize: 8
+    power: 28
+    damageBonus:
+      reactions: 0.05
+    damageType: 12
+    damageAlter:
+      ArmorEffectiveness: 0.5
+      ToTile: 0.0
+    armor: 20
+
+  - type: STR_DART_AMMO3
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_DART_PISTOL
+    size: 0.01
+    costBuy: 999
+    costSell: 250
+    transferTime: 4
+    bigSprite: 184
+    floorSprite: 173
+    hitSound: 110
+    hitAnimation: 26
+    battleType: 2
+    weight: 2
+    clipSize: 8
+    power: 35
+    damageBonus:
+      reactions: 0.05
+    damageType: 7
+    damageAlter:
+      ToTime: 0.5
+    armor: 50
 
   - type: STR_CHEM_SMG
     categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_INCENDIARY_CATEGORY, STR_SMGS_CATEGORY]
@@ -1074,8 +1130,8 @@ items:
       - STR_VENDOR_PRINTER
       - STR_CHEM_SMG
     size: 0.1
-    costBuy: 499
-    costSell: 125
+    costBuy: 389
+    costSell: 97
     transferTime: 4
     bigSprite: 179
     floorSprite: 168
@@ -1109,7 +1165,7 @@ items:
     snapRange: 7
     aimRange: 14
     dropoff: 3
-    kneelBonus: 110
+    kneelBonus: 115
     # twoHanded: true
     oneHandedPenalty: 75
     experienceTrainingMode: 7
@@ -1131,13 +1187,16 @@ items:
     hitAnimation: -1
     battleType: 2
     weight: 2
+    clipSize: 10
     power: 1
     damageBonus:
       reactions: 0.05
     damageType: 11
     damageAlter:
+      ToHealth: 0.20
+      ToStun: 1.0
+      RandomStun: false
       ToTile: 0.0
-    clipSize: 10
     isFireExtinguisher: true
     armor: 20
 
@@ -1157,6 +1216,7 @@ items:
     hitAnimation: -1
     battleType: 2
     weight: 2
+    clipSize: 10
     power: 25
     damageBonus:
       reactions: 0.05
@@ -1164,7 +1224,6 @@ items:
     damageAlter:
       IgnoreDirection: true
       ToArmorPre: 0.05
-    clipSize: 10
     armor: 20
 
   - type: STR_CHEM_SMG_AMMO2
@@ -1183,7 +1242,8 @@ items:
     hitAnimation: 0
     battleType: 2
     weight: 2
-    power: 15
+    clipSize: 10
+    power: 18
     damageBonus:
       reactions: 0.05
     damageType: 2
@@ -1193,19 +1253,20 @@ items:
       IgnoreSelfDestruct: false
       IgnoreDirection: false
       FixRadius: 1
-      RadiusEffectiveness: 0.05
       FireThreshold: 5
-      ArmorEffectiveness: 0.30
       ToMorale: 4.5
       ToStun: 0.25
-    clipSize: 10
     armor: 20
 
 # laser
   - type: STR_SINGLESHOT_LASER_PISTOL_ELERIUM
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
-    ufopediaType: STR_SINGLESHOT_LASER_PISTOL
+    requiresBuy:
+      - STR_TODO
+      - STR_VENDOR_SSP
+      - STR_SINGLESHOT_LASER_PISTOL
     size: 0.1
+    costBuy: 212999
     costSell: 200000
     bigSprite: 159
     floorSprite: 152
@@ -1330,7 +1391,8 @@ items:
     hitAnimation: 36
     battleType: 2
     weight: 2
-    power: 30
+    clipSize: 2
+    power: 28
     damageBonus:
       reactions: 0.05
     damageType: 4
@@ -1339,7 +1401,6 @@ items:
       RandomWound: false
       FireThreshold: 50
       ToTile: 0.65
-    clipSize: 2
     armor: 20
 
   - type: STR_MULTISHOT_LASER_AMMO
@@ -1358,6 +1419,7 @@ items:
     hitAnimation: 36
     battleType: 2
     weight: 2
+    clipSize: 9
     power: 30
     damageBonus:
       reactions: 0.05
@@ -1367,8 +1429,7 @@ items:
       RandomWound: false
       FireThreshold: 50
       ToTile: 0.65
-    clipSize: 9
-    armor: 30
+    armor: 20
 
   - type: STR_XN_LASER_PISTOL
     categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
@@ -1489,6 +1550,7 @@ items:
       firing: 0.10
     damageType: 4
     damageAlter:
+      ArmorEffectiveness: 0.90
       ToWound: 0.025
       RandomWound: false
       FireThreshold: 50
@@ -1539,6 +1601,7 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 7
+      ArmorEffectiveness: 0.80
       ToWound: 0.025
       RandomWound: false
       FireThreshold: 60
@@ -1586,6 +1649,7 @@ items:
       strength: 0.1
     damageType: 4
     damageAlter:
+      ArmorEffectiveness: 0.85
       ToWound: 0.025
       RandomWound: false
       FireThreshold: 20
@@ -2048,6 +2112,7 @@ items:
     invHeight: 1
     battleType: 2
     weight: 2
+    clipSize: 40
     power: 27
     damageType: 7
     damageBonus:
@@ -2059,7 +2124,6 @@ items:
       ToTile: 0.15
     powerRangeThreshold: 3
     powerRangeReduction: 25
-    clipSize: 40
     armor: 20
 
   - type: STR_SURVEY_KNOCKER
@@ -2127,6 +2191,7 @@ items:
     invHeight: 1
     battleType: 2
     weight: 4
+    clipSize: 6
     power: 8
     damageType: 6
     damageBonus:
@@ -2142,7 +2207,6 @@ items:
       IgnorePainImmunity: false
       FixRadius: 0
       ToTile: 0.25
-    clipSize: 6
     armor: 20
 
   - type: STR_KNOCK_BOLT_AMMO
@@ -2162,6 +2226,7 @@ items:
     invHeight: 1
     battleType: 2
     weight: 4
+    clipSize: 6
     power: 12
     damageType: 7
     damageBonus:
@@ -2171,7 +2236,6 @@ items:
       ToTime: 0.50
       IgnoreSelfDestruct: false
       ToTile: 0.25
-    clipSize: 6
     armor: 20
 
   - type: STR_EXTINGUISHER
@@ -2198,6 +2262,7 @@ items:
     invHeight: 2
     battleType: 1
     weight: 9
+    clipSize: 5
     power: 30
     arcingShot: true
     damageType: 9
@@ -2208,7 +2273,6 @@ items:
     accuracyAimed: 99
     tuAimed: 55
     maxRange: 6
-    clipSize: 5
     isFireExtinguisher: true
     meleeType: 6
     meleePower: 8
@@ -2399,6 +2463,7 @@ items:
   - type: STR_CONSUMER_CYBERNETICS
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
+      - STR_VENDOR_MEDI
       - STR_SPECIALIZATION_TRAINING
     size: 0.25
     costBuy: 6399
@@ -2483,11 +2548,19 @@ items:
 # data
   - type: STR_PERSONAL_DATA
     categories: [STR_DATA_CATEGORY]
-    size: 0.0
     costSell: 40
     bigSprite: 157
     ignoreInCraftEquip: true
     recoveryPoints: 1
+    battleType: 10
+    weight: 2
+
+  - type: STR_SECRET_DATA
+    categories: [STR_DATA_CATEGORY]
+    costSell: 9500
+    bigSprite: 185
+    ignoreInCraftEquip: true
+    recoveryPoints: 2
     battleType: 10
     weight: 2
 

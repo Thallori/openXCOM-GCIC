@@ -33,7 +33,7 @@ alienDeployments:
         dQty: 1
         percentageOutsideUfo: 60
         extraRandomItems: &personalData7
-          - [STR_PERSONAL_DATA, STR_NONE, STR_NONE, STR_NONE, STR_NONE, STR_NONE, STR_NONE]
+          - [STR_PERSONAL_DATA, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM]
         itemSets: &boosterSet
           -
             - STR_BUSBOX_PISTOL
@@ -102,7 +102,7 @@ alienDeployments:
         lowQty: 1
         medQty: 1
         highQty: 1
-        dQty: 0
+        dQty: 1
         percentageOutsideUfo: 0
         extraRandomItems: *personalData7
         itemSets: &ripperSet
@@ -146,7 +146,7 @@ alienDeployments:
         lowQty: 3
         medQty: 3
         highQty: 4
-        dQty: 2
+        dQty: 3
         percentageOutsideUfo: 50
         extraRandomItems: *personalData7
         itemSets: *boosterSet
@@ -190,7 +190,7 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 0
         extraRandomItems: &personalData6
-          - [STR_PERSONAL_DATA, STR_NONE, STR_NONE, STR_NONE, STR_NONE, STR_NONE]
+          - [STR_PERSONAL_DATA, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM]
         itemSets: &freelancer
           -
             - STR_DART_PISTOL
@@ -275,7 +275,7 @@ alienDeployments:
     missionBountyItem: STR_BIONIC_INTERLACE
     unlockedResearch: STR_TRG_FL_PREQ
     terrains:
-      - CLUB
+      - CLUB0
     music:
       - HACKER1
     data:
@@ -313,9 +313,9 @@ alienDeployments:
         itemSets: *AnchorEmptyInventory
 
   - type: STR_TRADE_MEETING_2
-    script: CLUB_LANDING
+    script: SINGLE_BLOCK_2X2
     width: 20
-    length: 30
+    length: 20
     height: 5
     alert: STR_TRADE_MEETING_ALERT
     # alertBackground: BACK03.SCR
@@ -334,7 +334,7 @@ alienDeployments:
     missionBountyItem: STR_BIONIC_INTERLACE
     unlockedResearch: STR_TRG_ST_PREQ
     terrains:
-      - CLUB_LANDING
+      - CLUB1
     music:
       - HACKER1
     data:
@@ -344,7 +344,8 @@ alienDeployments:
         highQty: 1
         dQty: 0
         percentageOutsideUfo: 0
-        extraRandomItems: *personalData6
+        extraRandomItems:
+          - [STR_SECRET_DATA]
         itemSets: &smallXN
           -
             - STR_XN_LASER_PISTOL
@@ -369,7 +370,7 @@ alienDeployments:
       - alienRank: 7
         lowQty: 1
         medQty: 1
-        highQty: 3
+        highQty: 2
         dQty: 1
         percentageOutsideUfo: 0
         extraRandomItems: *personalData6
@@ -466,7 +467,7 @@ alienDeployments:
     missionBountyItem: STR_SHARES_GCIC
     missionBountyItemCount: 5
     unlockedResearch: STR_TRG_SG_PREQ
-    customUfo: STR_SABOTAGE_OFFICE
+    customUfo: STR_SABOTAGE_OFFICE1
     terrains:
       - COMMERCIAL
     music:
@@ -491,25 +492,31 @@ alienDeployments:
             - STR_BATON
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
-          -
-            - STR_BATON
-            - STR_45_PISTOL_CODED
             - STR_45_AMMO
           -
             - STR_BATON
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
-          -
-            - STR_BATON
-            - STR_45_PISTOL_CODED
             - STR_45_AMMO
           -
             - STR_BATON
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
+            - STR_45_AMMO
           -
             - STR_BATON
             - STR_45_PISTOL_CODED
+            - STR_45_AMMO
+            - STR_45_AMMO
+          -
+            - STR_BATON
+            - STR_45_PISTOL_CODED
+            - STR_45_AMMO
+            - STR_45_AMMO
+          -
+            - STR_BATON
+            - STR_45_PISTOL_CODED
+            - STR_45_AMMO
             - STR_45_AMMO
           -
             - STR_BATON
@@ -570,12 +577,12 @@ alienDeployments:
     missionBountyItem: STR_GCIC_SABOTAGE_2_DATA
     missionBountyItemCount: 1
     unlockedResearch: STR_TRG_SO_PREQ
-    customUfo: STR_SABOTAGE_OFFICE
+    customUfo: STR_SABOTAGE_OFFICE_BI
     terrains:
       - COMMERCIAL
     music:
       - SHADOW1
-    turnLimit: 15
+    turnLimit: 20
     chronoTrigger: 1
     data:
       - alienRank: 7
@@ -590,9 +597,11 @@ alienDeployments:
             - STR_BATON
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
+            - STR_45_AMMO
           -
             - STR_BATON
             - STR_45_PISTOL_CODED
+            - STR_45_AMMO
             - STR_45_AMMO
           -
             - STR_BATON
@@ -627,11 +636,11 @@ alienDeployments:
             - STR_SSP_SHOTGUN_AMMO_BS
             - STR_SSP_SHOTGUN_AMMO_BS
       - alienRank: 6
-        lowQty: 2
-        medQty: 2
-        highQty: 3
+        lowQty: 3
+        medQty: 3
+        highQty: 4
         dQty: 2
-        percentageOutsideUfo: 50
+        percentageOutsideUfo: 40
         extraRandomItems: *personalData7
         itemSets: *sspGuard
       - alienRank: 6
@@ -639,7 +648,7 @@ alienDeployments:
         medQty: 1
         highQty: 1
         dQty: 0
-        percentageOutsideUfo: 0
+        percentageOutsideUfo: 100
         customUnitType: STR_DRONE_ENEMY_HYBRID
         itemSets: *AnchorEmptyInventory
       - alienRank: 7

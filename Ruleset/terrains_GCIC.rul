@@ -233,45 +233,7 @@ terrains:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
           STR_SPAWN_DRONE_HUMAN_1: [0, 0]
 
-  - name: CLUB_LANDING
-    mapDataSets:
-      - BLANKS
-      - LIFTER
-      - FLOOR_URBAN
-      - STRUCTURE_LUX
-      - STRUCTURE_GLASS
-      - STRUCTURE_PANELS2
-      - STRUCTURE_SLUMS1
-      - STAIRS_METAL
-      - FLOOR_ASPHALT
-      - FURNITURE_TABLES_CHAIRS
-      - LADDER
-      - BITS_CONTRABAND
-      - BITS_SERVERS
-      - BITS_TECH
-      - SIGNS_TECH1
-      - HOLOGRAMS
-      - FURNITURE_BAR
-      - FURNITURE_DESKS1
-      - FURNITURE_SLUMS1
-      - FURNITURE_SLUMS2
-      - FURNITURE_BEDS_LUX
-      - ENTRY
-    mapBlocks:
-      - name: CLUB_LANDING_01LZ
-        width: 20
-        length: 30
-        items:
-          STR_CRIMINAL_CONTAINER_1:
-            - [7, 14, 0]
-            - [2, 2, 1]
-        randomizedItems:
-          - position: [3, 1, 0]
-            amount: 1
-            mixed: true
-            itemList: [STR_XN_CONTAINER_1, STR_ELERIUM_BOMB]
-
-  - name: CLUB
+  - name: CLUB0
     mapDataSets:
       - BLANKS
       - LIFTER
@@ -306,6 +268,45 @@ terrains:
             - [2, 2, 1]
           STR_XN_CONTAINER_1:
             - [3, 1, 0]
+
+  - name: CLUB1
+    mapDataSets:
+      - BLANKS
+      - LIFTER
+      - FLOOR_URBAN
+      - STRUCTURE_LUX
+      - STRUCTURE_GLASS
+      - STRUCTURE_PANELS2
+      - STRUCTURE_SLUMS1
+      - STAIRS_METAL
+      - FLOOR_ASPHALT
+      - FURNITURE_TABLES_CHAIRS
+      - LADDER
+      - BITS_CONTRABAND
+      - BITS_SERVERS
+      - BITS_TECH
+      - SIGNS_TECH1
+      - HOLOGRAMS
+      - FURNITURE_BAR
+      - FURNITURE_DESKS1
+      - FURNITURE_SLUMS1
+      - FURNITURE_SLUMS2
+      - FURNITURE_BEDS_LUX
+      - ENTRY
+      - LADDERM
+      - FENCE_IRON
+      - BATHROOM
+      - STRUCTURE_TILES1
+    mapBlocks:
+      - name: CLUB_01
+        width: 20
+        length: 20
+        items:
+          STR_CRIMINAL_CONTAINER_1:
+            - [16, 2, 0]
+            - [1, 5, 1]
+            - [14, 3, 1]
+            - [14, 4, 2]
 
   - name: COMMERCIAL
     mapDataSets:
