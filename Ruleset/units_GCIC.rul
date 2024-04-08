@@ -345,6 +345,96 @@ units:
     value: -1
     deathSound: [113, 114, 115]
 
+#animals
+  - type: STR_CHRYSSALID
+    race: STR_ANIMALS
+    rank: STR_RANK_ANIMAL
+    liveAlien: STR_SHARES_MEDI
+    stats:
+      tu: 110
+      stamina: 140
+      health: 95
+      bravery: 100
+      reactions: 70
+      firing: 0
+      throwing: 0
+      strength: 110
+      psiStrength: 0
+      psiSkill: 0
+      melee: 100
+      mana: 80
+    armor: STR_CHRYSSALID_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 35
+    deathSound: 9
+    intelligence: 4
+    aggression: 2
+    energyRecovery: 40
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CHRYSSALID_WEAPON
+
+  - type: STR_ZOMBIE
+    race: STR_ANIMALS
+    rank: STR_RANK_ANIMAL
+    liveAlien: STR_SHARES_MEDI
+    stats:
+      tu: 40
+      stamina: 80
+      health: 85
+      bravery: 100
+      reactions: 40
+      firing: 0
+      throwing: 0
+      strength: 80
+      psiStrength: 0
+      psiSkill: 0
+      melee: 80
+      mana: 80
+    spawnUnit: STR_CHRYSSALID
+    armor: STR_ZOMBIE_ARMOR
+    standHeight: 18
+    kneelHeight: 18
+    value: 15
+    intelligence: 3
+    aggression: 2
+    energyRecovery: 20
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_ZOMBIE_WEAPON
+
+  - type: STR_MUCKSTAR
+    race: STR_ANIMALS
+    rank: STR_RANK_ANIMAL
+    liveAlien: STR_SHARES_MEDI
+    stats:
+      tu: 60
+      stamina: 80
+      health: 35
+      bravery: 100
+      reactions: 75
+      firing: 80
+      throwing: 0
+      strength: 20
+      psiStrength: 0
+      psiSkill: 0
+      melee: 55
+      mana: 80
+    armor: STR_MUCKSTAR_ARMOR
+    standHeight: 12
+    kneelHeight: 12
+    floatHeight: 8
+    value: 7
+    deathSound: 7
+    moveSound: 16
+    intelligence: 3
+    aggression: 2
+    energyRecovery: 40
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_MUCKSTAR_WEAPON
+
 #clients
   - type: STR_CLIENT_1
     race: STR_RACE_CLIENT

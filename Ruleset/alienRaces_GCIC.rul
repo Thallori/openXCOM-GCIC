@@ -83,3 +83,20 @@ alienRaces:
       - STR_DRONE_ENEMY_HYBRID #11
       - STR_DRONE_ENEMY_HYBRID #12
     retaliationAggression: -100
+
+  - id: STR_ANIMALS
+    members:
+      - STR_CHRYSSALID #0
+      - STR_ZOMBIE #1
+      - STR_MUCKSTAR #2
+      - STR_MUCKSTAR #3
+      - STR_MUCKSTAR #4
+      - STR_MUCKSTAR #5
+      - STR_MUCKSTAR #6
+      - STR_MUCKSTAR #7
+      - STR_MUCKSTAR #8
+      - STR_MUCKSTAR #9
+      - STR_MUCKSTAR #10
+      - STR_MUCKSTAR #11
+      - STR_MUCKSTAR #12
+    retaliationAggression: -100

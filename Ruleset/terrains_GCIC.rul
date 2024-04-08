@@ -40,77 +40,41 @@ terrains:
       - HOLOGRAMS
     mapBlocks:
       - name: HANGAR_00LZ
-        width: 10
-        length: 10
         groups: 1
       - name: HANGAR_01LZ
-        width: 10
-        length: 10
         groups: 1
       - name: HANGAR_02
         width: 20
         length: 20
       - name: HANGAR_03S
-        width: 10
-        length: 10
       - name: HANGAR_04S
-        width: 10
-        length: 10
       - name: HANGAR_05S
-        width: 10
-        length: 10
       - name: HANGAR_06S
-        width: 10
-        length: 10
       - name: HANGAR_07
         width: 10
         length: 20
       - name: HANGAR_08S
-        width: 10
-        length: 10
       - name: HANGAR_09NS
-        width: 10
-        length: 10
         groups: 3
       - name: HANGAR_10NS
-        width: 10
-        length: 10
         groups: 3
       - name: HANGAR_11NS
-        width: 10
-        length: 10
         groups: 3
       - name: HANGAR_12NS
-        width: 10
-        length: 10
         groups: 3
       - name: HANGAR_13NS
-        width: 10
-        length: 10
         groups: 3
       - name: HANGAR_14NS
-        width: 10
-        length: 10
         groups: 3
       - name: HANGAR_15NS
-        width: 10
-        length: 10
         groups: 3
       - name: HANGAR_16NS
-        width: 10
-        length: 10
         groups: 3
       - name: HANGAR_17NS
-        width: 10
-        length: 10
         groups: 3
       - name: HANGAR_18NS
-        width: 10
-        length: 10
         groups: 3
       - name: HANGAR_19S
-        width: 10
-        length: 10
       - name: HANGAR_20
         width: 10
         length: 20
@@ -167,8 +131,6 @@ terrains:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
           STR_SPAWN_DRONE_HUMAN_1: [0, 0]
       - name: HANGAR_03S
-        width: 10
-        length: 10
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [2, 7, 0]
@@ -178,8 +140,6 @@ terrains:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
           STR_SPAWN_DRONE_HUMAN_1: [0, 0]
       - name: HANGAR_04S
-        width: 10
-        length: 10
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [2, 6, 0]
@@ -189,8 +149,6 @@ terrains:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
           STR_SPAWN_DRONE_HUMAN_1: [0, 0]
       - name: HANGAR_05S
-        width: 10
-        length: 10
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [3, 1, 0]
@@ -200,8 +158,6 @@ terrains:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
           STR_SPAWN_DRONE_HUMAN_1: [0, 0]
       - name: HANGAR_06S
-        width: 10
-        length: 10
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [4, 2, 0]
@@ -222,8 +178,6 @@ terrains:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
           STR_SPAWN_DRONE_SHARK_1: [0, 0]
       - name: HANGAR_08S
-        width: 10
-        length: 10
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [5, 1, 0]
@@ -344,74 +298,38 @@ terrains:
       - FLOOR_PLAIN
     mapBlocks:
       - name: COMMERCIAL_00LZ
-        width: 10
-        length: 10
         groups: 1
       - name: COMMERCIAL_01LZ
-        width: 10
-        length: 10
         groups: 1
       - name: COMMERCIAL_02
         width: 20
         length: 20
       - name: COMMERCIAL_03S
-        width: 10
-        length: 10
       - name: COMMERCIAL_04S
-        width: 10
-        length: 10
       - name: COMMERCIAL_05S
-        width: 10
-        length: 10
       - name: COMMERCIAL_06S
-        width: 10
-        length: 10
       - name: COMMERCIAL_07
         width: 20
         length: 20
       - name: COMMERCIAL_08S
-        width: 10
-        length: 10
       - name: COMMERCIAL_09S
-        width: 10
-        length: 10
       - name: COMMERCIAL_10S
-        width: 10
-        length: 10
       - name: COMMERCIAL_11S
-        width: 10
-        length: 10
       - name: COMMERCIAL_12EW
-        width: 10
-        length: 10
         groups: 2
       - name: COMMERCIAL_13EW
-        width: 10
-        length: 10
         groups: 2
       - name: COMMERCIAL_14EW
-        width: 10
-        length: 10
         groups: 2
       - name: COMMERCIAL_15EW
-        width: 10
-        length: 10
         groups: 2
       - name: COMMERCIAL_16EW
-        width: 10
-        length: 10
         groups: 2
       - name: COMMERCIAL_17EW
-        width: 10
-        length: 10
         groups: 2
       - name: COMMERCIAL_18EW
-        width: 10
-        length: 10
         groups: 2
       - name: COMMERCIAL_19EW
-        width: 10
-        length: 10
         groups: 2
       - name: COMMERCIAL_20
         width: 20
@@ -419,3 +337,35 @@ terrains:
       - name: COMMERCIAL_21
         width: 20
         length: 10
+
+  - name: FOREST2
+    mapDataSets:
+      - BLANKS
+      - FLORA_FOREST
+      - FLORA_FOREST_SMALL
+      - BITS_ROCKS
+    mapBlocks:
+      - name: FOREST2_00LZ
+        groups: 1
+      - name: FOREST2_01LZ
+        groups: 1
+      - name: FOREST2_02S
+      - name: FOREST2_03S
+      - name: FOREST2_04S
+      - name: FOREST2_05S
+      - name: FOREST2_06S
+      - name: FOREST2_07S
+      - name: FOREST2_08S
+      - name: FOREST2_09S
+      - name: FOREST2_10
+        width: 20
+        length: 20
+      - name: FOREST2_11
+        width: 20
+        length: 20
+      - name: FOREST2_12S
+      - name: FOREST2_13S
+      - name: FOREST2_14S
+      - name: FOREST2_15
+        width: 20
+        length: 20

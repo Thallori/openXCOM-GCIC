@@ -90,6 +90,7 @@ research:
     needItem: true
     destroyItem: true
     cost: 4
+    points: 10
     getOneFree:
       - STR_HYBRID_MEMORY_1
       - STR_HYBRID_MEMORY_2
@@ -170,7 +171,7 @@ research:
       - STR_GCIC_BACKCHANNEL_MISSIONS
 
   - name: STR_GCIC_INDEPENDENCE
-    neededItem: STR_PBI_ITEM
+    neededItem: STR_PROJECT_INDEPENDENCE_ITEM
     needItem: true
     destroyItem: true
     cost: 125
@@ -195,18 +196,23 @@ research:
       - STR_BOUNTY_1
       - STR_NON_CLIENTS
       - STR_SECONDARY_OPERATIONS
+      - STR_SPECIALIZATION_TRAINING
       - STR_VENDOR_BUILDER
       - STR_VENDOR_PRINTER
     cost: 4
 
   - name: STR_MEDI_MISSIONS
+    neededItem: STR_PMM_ITEM
+    needItem: true
+    destroyItem: true
+    cost: 5
+    disables:
+      - STR_PMM_LOCK
+    
+  - name: STR_PMM_LOCK
     dependencies:
-      - STR_TODO
-      - STR_VENDOR_MEDI
       - STR_SUBCONTRACTING_OPERATIONS
-    cost: 15
-    unlocks:
-      - STR_MEDI_BAY
+      - STR_VENDOR_MEDI
 
   - name: STR_SSP_MISSIONS
     dependencies:
@@ -346,7 +352,6 @@ research:
 
   - name: STR_MEDI_BAY
     dependencies:
-      - STR_VENDOR_BUILDER
       - STR_MEDI_MISSIONS
     cost: 20
 
@@ -460,6 +465,10 @@ research:
   - name: STR_NEURACHEM
     dependencies:
       - STR_SPECIALIZATION_TRAINING
+  
+  - name: STR_MUSCULATURE
+    dependencies:
+      - STR_MEDICAL_CYBERNETICS
 
 # armor
   - name: STR_PLEX_DRONE_ARMOR
@@ -681,6 +690,26 @@ research:
     dependencies:
       - STR_CONSUMER_CYBERNETICS_CODED
 
+  - name: STR_LMC_LOCK
+    dependencies:
+      - STR_SHARES_MEDI
+
+#do not provide medical cybernetics until all basic medi research is done
+  - name: STR_MEDICAL_CYBERNETICS_CODED
+    lookup: STR_MEDICAL_CYBERNETICS
+    dependencies:
+      - STR_LOCK
+
+  - name: STR_MEDICAL_CYBERNETICS
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_MEDICAL_CYBERNETICS_CODED
+    getOneFree:
+      - STR_MUSCULATURE
+    disables:
+      - STR_LMC_LOCK
+
   # - name: STR_AG_UNIT
   #   needItem: true
   #   cost: 15
@@ -704,14 +733,12 @@ research:
 # data
   - name: STR_PERSONAL_DATA
     needItem: true
-    destroyItem: true
     cost: 5
     unlocks:
       - STR_PC_PREQ
 
   - name: STR_SECRET_DATA
     needItem: true
-    destroyItem: true
     cost: 5
 
   - name: STR_GCIC_SABOTAGE_2_DATA_DECRYPT
@@ -721,6 +748,10 @@ research:
 
 # abstract
   - name: STR_SHARES_GCIC
+    needItem: true
+    cost: 3
+
+  - name: STR_SHARES_MEDI
     needItem: true
     cost: 3
 
@@ -805,7 +836,7 @@ research:
     dependencies:
       - STR_TRG_SG_PREQ
       - STR_PASS_CRACKING
-    unlocks: 
+    unlocks:
       - STR_VENDOR_SSP
     getOneFree:
       - STR_SSPGUARD_PRIVATE
@@ -818,6 +849,23 @@ research:
       STR_TRG_SO_PREQ:
         - STR_SSPOFFICER_PRIVATE
         - STR_SSP_SHOTGUN
+
+  - name: STR_DATA_ANIMAL
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
+    neededItem: STR_PERSONAL_DATA
+    needItem: true
+    destroyItem: true
+    cost: 25
+    dependencies:
+      - STR_MEDI_MISSIONS
+    getOneFree:
+      - STR_CHRYSSALID
+      - STR_CHRYSSALID_CORPSE
+    getOneFreeProtected:
+      STR_TRG_MS_PREQ:
+        - STR_MUCKSTAR
+        - STR_MUCKSTAR_CORPSE
 
 # ironeyes
   - name: STR_BOOSTER_PRIVATE
@@ -926,6 +974,35 @@ research:
     dependencies:
       - STR_SSPOFFICER_PRIVATE
 
+#animals
+  - name: STR_CHRYSSALID
+    dependencies:
+      - STR_LOCK
+
+  - name: STR_CHRYSSALID_ARMOR
+    dependencies:
+      - STR_CHRYSSALID_CORPSE
+
+  - name: STR_CHRYSSALID_CORPSE
+    lookup: STR_CHRYSSALID_ARMOR
+    needItem: true
+    destroyItem: true
+    cost: 10
+
+  - name: STR_MUCKSTAR
+    dependencies:
+      - STR_LOCK
+
+  - name: STR_MUCKSTAR_ARMOR
+    dependencies:
+      - STR_MUCKSTAR_CORPSE
+
+  - name: STR_MUCKSTAR_CORPSE
+    lookup: STR_MUCKSTAR_ARMOR
+    needItem: true
+    destroyItem: true
+    cost: 10
+
 #uso analysis
 #manuals
   - name: STR_DRONES_TUTORIAL
@@ -991,5 +1068,10 @@ research:
       - STR_LOCK
 
   - name: STR_TRG_SO_PREQ #officers
+    dependencies:
+      - STR_LOCK
+
+# animals
+  - name: STR_TRG_MS_PREQ #muckstar
     dependencies:
       - STR_LOCK

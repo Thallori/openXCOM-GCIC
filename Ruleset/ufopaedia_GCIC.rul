@@ -591,6 +591,15 @@ ufopaedia:
     text_width: 180
     image_id: NEURACHEM_CPAL
 
+  - id: STR_MUSCULATURE
+    requires:
+      - STR_MUSCULATURE
+    text: STR_MUSCULATURE_UFOPEDIA
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: MUSCULATURE_CPAL
+
 # armor
   - id: STR_PLEX_DRONE_ARMOR
     requires:
@@ -1084,6 +1093,13 @@ ufopaedia:
     section: STR_RESOURCES_UC
     type_id: 4
 
+  - id: STR_MEDICAL_CYBERNETICS
+    requires:
+      - STR_MEDICAL_CYBERNETICS
+    text: STR_MEDICAL_CYBERNETICS_UFOPEDIA
+    section: STR_RESOURCES_UC
+    type_id: 4
+
   - id: STR_SJB_LICENSE
     requires:
       - STR_SJB_LICENSE
@@ -1139,6 +1155,13 @@ ufopaedia:
     requires:
       - STR_SHARES_GCIC
     text: STR_SHARES_GCIC_UFOPEDIA
+    section: STR_RESOURCES_UC
+    type_id: 8
+
+  - id: STR_SHARES_MEDI
+    requires:
+      - STR_SHARES_MEDI
+    text: STR_SHARES_MEDI_UFOPEDIA
     section: STR_RESOURCES_UC
     type_id: 8
 
@@ -1288,6 +1311,47 @@ ufopaedia:
   - id: STR_SSPOFFICER_ARMOR
     requires:
       - STR_SSPOFFICER_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+
+#animals
+  - id: STR_CHRYSSALIDS
+    requires:
+      - STR_CHRYSSALID
+    text: STR_CHRYSSALIDS_UFOPEDIA
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: CHRYSSALID_CPAL
+  - id: STR_CHRYSSALID_ARMOR
+    requires:
+      - STR_CHRYSSALID_ARMOR
+    text: STR_CHRYSSALID_ARMOR_UFOPEDIA
+    section: STR_COMPETITORS_UC
+    type_id: 5
+
+  - id: STR_MUCKSTARS
+    requires:
+      - STR_MUCKSTAR
+    text: STR_MUCKSTARS_UFOPEDIA
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: MUCKSTAR_CPAL
+  - id: STR_MUCKSTAR_ARMOR
+    requires:
+      - STR_MUCKSTAR_ARMOR
+    text: STR_MUCKSTAR_ARMOR_UFOPEDIA
     section: STR_COMPETITORS_UC
     type_id: 5
 

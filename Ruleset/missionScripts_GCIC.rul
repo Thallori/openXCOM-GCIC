@@ -189,3 +189,27 @@ missionScripts:
     useTable: false
     startDelay: 30
     randomDelay: 43000
+
+  - type: MEDI1a
+    researchTriggers:
+      STR_MEDI_MISSIONS: true
+    executionOdds: 55
+    missionWeights:
+      0:
+        STR_MEDI_MUCK: 90
+        STR_MEDI_MUCK_CHRYS: 10
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: MEDI1b
+    researchTriggers:
+      STR_MEDI_MISSIONS: true
+    executionOdds: 55
+    missionWeights:
+      0:
+        STR_MEDI_MUCK: 90
+        STR_MEDI_MUCK_CHRYS: 10
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000

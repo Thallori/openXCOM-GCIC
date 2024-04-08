@@ -83,6 +83,16 @@ manufacture:
       STR_SHARES_GCIC: 2000
       STR_PROJECT_INDEPENDENCE_ITEM: 1
 
+  - name: STR_MEDICAL_CYBERNETICS_MANU
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_LMC_LOCK
+    time: 1
+    requiredItems:
+      STR_SHARES_MEDI: 4
+    producedItems:
+      STR_MEDICAL_CYBERNETICS: 1
+
 #ammo
   - name: STR_45_AMMO
     category: STR_AMMO_MANUCAT

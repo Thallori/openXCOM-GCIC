@@ -3,12 +3,12 @@ musics:
   - type: GMGEO3
   - type: HACKER_INTRO
   - type: HACKER1
-  - type: HACKER2
   - type: BREACH_INTRO
   - type: BREACH1
-  - type: BREACH2
   - type: SHADOW_INTRO
   - type: SHADOW1
+  - type: BLOOD_INTRO
+  - type: BLOOD1
 
 extraSounds:
   - type: BATTLE.CAT

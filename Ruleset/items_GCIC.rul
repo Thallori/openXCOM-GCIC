@@ -325,6 +325,69 @@ items:
     fixedWeaponShow: true
     recover: false
 
+  - type: STR_CHRYSSALID_WEAPON
+    weight: 0
+    bigSprite: 61
+    handSprite: 104
+    meleeSound: 49
+    invWidth: 2
+    invHeight: 3
+    battleType: 3
+    power: 110
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    clipSize: -1
+    flatRate: true
+    fixedWeapon: true
+    recover: false
+    zombieUnit: STR_ZOMBIE
+
+  - type: STR_ZOMBIE_WEAPON
+    weight: 0
+    bigSprite: 57
+    meleeSound: 48
+    invWidth: 2
+    invHeight: 3
+    battleType: 3
+    power: 80
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    clipSize: -1
+    flatRate: true
+    fixedWeapon: true
+    recover: false
+
+  - type: STR_MUCKSTAR_WEAPON
+    categories: [STR_BUILT_INS_CATEGORY]
+    bigSprite: 175
+    bulletSprite: 14
+    fireSound: 108
+    hitSound: 13
+    hitAnimation: 56
+    invWidth: 2
+    invHeight: 2
+    battleType: 1
+    power: 35
+    damageType: 10
+    damageAlter:
+      ToWound: 0.0
+      RandomWound: false
+      ToHealth: 0.35
+      ToStun: 1.0
+      RandomStun: false
+      IgnoreSelfDestruct: true
+      IgnorePainImmunity: true
+      ToTile: 0.25
+    clipSize: -1
+    accuracySnap: 40
+    accuracyAimed: 60
+    tuSnap: 40
+    tuAimed: 60
+    fixedWeapon: true
+    recover: false
+
 # kinetic
   - type: STR_BUSBOX_PISTOL
     categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
@@ -351,7 +414,6 @@ items:
     accuracyMultiplier:
       firing: 1.0
       flatHundred: 0.20
-    shotgunChoke: 40
     tuSnap: 30
     tuAimed: 55
     tuLoad: 25
@@ -409,7 +471,7 @@ items:
       ArmorEffectiveness: 1.4
       ToStun: 0.50
     shotgunPellets: 4
-    shotgunSpread: 25
+    shotgunSpread: 15
     shotgunBehavior: 1
     armor: 20
 
@@ -442,7 +504,7 @@ items:
     tuAimed: 30
     tuLoad: 15
     snapRange: 12
-    aimRange: 16
+    aimRange: 18
     dropoff: 3
     kneelBonus: 110
     attraction: 15
@@ -563,7 +625,7 @@ items:
     tuAimed: 65
     tuLoad: 15
     snapRange: 16
-    aimRange: 25
+    aimRange: 30
     dropoff: 3
     twoHanded: true
     oneHandedPenalty: 50
@@ -672,7 +734,7 @@ items:
     tuAimed: 30
     tuLoad: 15
     snapRange: 14
-    aimRange: 18
+    aimRange: 20
     dropoff: 3
     kneelBonus: 110
     attraction: 15
@@ -708,7 +770,7 @@ items:
     tuAimed: 30
     tuLoad: 15
     snapRange: 14
-    aimRange: 18
+    aimRange: 20
     dropoff: 3
     kneelBonus: 110
     attraction: 15
@@ -766,7 +828,7 @@ items:
     tuAimed: 70
     tuLoad: 25
     snapRange: 8
-    aimRange: 12
+    aimRange: 14
     dropoff: 3
     kneelBonus: 115
     twoHanded: true
@@ -801,12 +863,11 @@ items:
     accuracyMultiplier:
       firing: 1.0
       flatHundred: 0.10
-    shotgunChoke: 85
     tuSnap: 40
     tuAimed: 70
     tuLoad: 25
     snapRange: 8
-    aimRange: 12
+    aimRange: 14
     dropoff: 3
     kneelBonus: 115
     twoHanded: true
@@ -833,7 +894,7 @@ items:
     clipSize: 8
     power: 15
     shotgunPellets: 6
-    shotgunSpread: 25
+    shotgunSpread: 20
     shotgunBehavior: 1
     damageType: 1
     damageBonus:
@@ -1006,7 +1067,7 @@ items:
     tuAimed: 45
     tuLoad: 15
     snapRange: 8
-    aimRange: 12
+    aimRange: 14
     dropoff: 3
     kneelBonus: 110
     experienceTrainingMode: 12
@@ -2453,7 +2514,7 @@ items:
   - type: STR_CONSUMER_CYBERNETICS_CODED
     categories: [STR_RESOURCES_CATEGORY]
     ufopediaType: STR_CONSUMER_CYBERNETICS
-    size: 0.25
+    size: 0.2
     costSell: 640
     bigSprite: 163
     ignoreInCraftEquip: true
@@ -2465,7 +2526,7 @@ items:
     requiresBuy:
       - STR_VENDOR_MEDI
       - STR_SPECIALIZATION_TRAINING
-    size: 0.25
+    size: 0.2
     costBuy: 6399
     costSell: 1600
     transferTime: 4
@@ -2473,6 +2534,29 @@ items:
     ignoreInCraftEquip: true
     battleType: 10
     weight: 2
+
+  - type: STR_MEDICAL_CYBERNETICS_CODED
+    categories: [STR_RESOURCES_CATEGORY]
+    ufopediaType: STR_MEDICAL_CYBERNETICS
+    size: 0.2
+    costSell: 1400
+    bigSprite: 188
+    ignoreInCraftEquip: true
+    battleType: 10
+    weight: 3
+
+  - type: STR_MEDICAL_CYBERNETICS
+    categories: [STR_RESOURCES_CATEGORY]
+    requiresBuy:
+      - STR_MEDICAL_CYBERNETICS
+    size: 0.2
+    costBuy: 13999
+    costSell: 3500
+    transferTime: 4
+    bigSprite: 188
+    ignoreInCraftEquip: true
+    battleType: 10
+    weight: 3
 
   - type: STR_AG_UNIT #TODO resources tech
     categories: [STR_RESOURCES_CATEGORY]
@@ -2601,6 +2685,9 @@ items:
   - type: STR_PROJECT_INDEPENDENCE_ITEM
     categories: [STR_PERKS_CATEGORY]
 
+  - type: STR_PMM_ITEM
+    categories: [STR_PERKS_CATEGORY]
+
 # abstract
   - type: STR_SHARES_GCIC
     categories: [STR_PERKS_CATEGORY]
@@ -2610,7 +2697,17 @@ items:
     costBuy: 60000
     costSell: 12000
     monthlySalary: -1200
-    recoveryPoints: 1
+    recoveryPoints: 2
+
+  - type: STR_SHARES_MEDI
+    categories: [STR_PERKS_CATEGORY]
+    requiresBuy:
+      - STR_SHARES_MEDI
+    specialType: 196
+    costBuy: 150000
+    costSell: 30000
+    monthlySalary: -650
+    recoveryPoints: 2
 
   - type: STR_BRAND_LOYALTY
     categories: [STR_PERKS_CATEGORY]
@@ -2958,6 +3055,46 @@ items:
       STR_DRONE_SHARK_ITEM: [1]
     recover: true
     liveAlien: true
+
+# animals
+  - type: STR_CHRYSSALID_CORPSE
+    categories: [STR_SPECIMENS_CATEGORY]
+    size: 0.4
+    costSell: 20000
+    recoveryPoints: 10
+    bigSprite: 53
+    floorSprite: 49
+    weight: 22
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+
+  - type: STR_ZOMBIE_CORPSE
+    categories: [STR_SPECIMENS_CATEGORY]
+    size: 0.4
+    costSell: 4000
+    recoveryPoints: 5
+    bigSprite: 187
+    floorSprite: 175
+    weight: 22
+    invWidth: 2
+    invHeight: 2
+    battleType: 11
+    armor: 30
+
+  - type: STR_MUCKSTAR_CORPSE
+    categories: [STR_SPECIMENS_CATEGORY]
+    size: 0.25
+    costSell: 8000
+    recoveryPoints: 4
+    bigSprite: 186
+    floorSprite: 174
+    weight: 9
+    invWidth: 2
+    invHeight: 2
+    battleType: 11
+    armor: 30
 
 # civilians
   - type: STR_CLIENT_1_CORPSE

@@ -29,6 +29,18 @@ extraSprites:
       0: Resources/Globe/textures_GCIC.png
 
   - type: BIGOBS.PCK
+    width: 64
+    height: 96
+    subX: 32
+    subY: 48
+    files:
+      58: Resources/Items/BuiltIns/Licensed/Terror.png
+  - type: BIGOBS.PCK
+    width: 32
+    height: 48
+    files:
+      57: Resources/Items/BuiltIns/Licensed/Zombie.png
+  - type: BIGOBS.PCK
     files:
       100: Resources/Armors/Pilots/FlyingCore/pilot_core_corpse_bigob.png
       101: Resources/Armors/Pilots/FlyingCore/pilot_core_bigob.png
@@ -116,6 +128,9 @@ extraSprites:
       183: Resources/Items/Multi/Ammo/dart_poi_ammo_bigob.png
       184: Resources/Items/Multi/Ammo/dart_alloy_ammo_bigob.png
       185: Resources/Items/Materials/secret_bigob.png
+      186: Resources/Factions/Animals/muckstar_bigob.png
+      187: Resources/Factions/Animals/zombie_bigob.png
+      188: Resources/Items/Materials/mware_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -193,6 +208,8 @@ extraSprites:
       171: Resources/Items/Multi/Ammo/watergun_fire_ammo_floorob.png
       172: Resources/Items/Multi/Ammo/dart_poi_ammo_floorob.png
       173: Resources/Items/Multi/Ammo/dart_alloy_ammo_floorob.png
+      174: Resources/Factions/Animals/muckstar_floorob.png
+      175: Resources/Factions/Animals/zombie_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -559,6 +576,29 @@ extraSprites:
   - typeSingle: DRONESHARK.SPK
     fileSingle: Resources/Factions/Drones/droneshark_inventory.png
 
+# animals
+  - typeSingle: CHRYSSALID_CPAL
+    fileSingle: Resources/Factions/Animals/chryssalid_CPAL.png
+  - typeSingle: CHRYSSALID.SPK
+    fileSingle: Resources/Factions/Animals/chryssalid_inventory.png
+
+  - typeSingle: ZOMBIE_CPAL
+    fileSingle: Resources/Factions/Animals/zombie_CPAL.png
+  - typeSingle: ZOMBIE.SPK
+    fileSingle: Resources/Factions/Animals/zombie_inventory.png
+
+  - typeSingle: MUCKSTAR_CPAL
+    fileSingle: Resources/Factions/Animals/muckstar_CPAL.png
+  - typeSingle: MUCKSTAR.SPK
+    fileSingle: Resources/Factions/Animals/muckstar_inventory.png
+  - type: MUCKSTAR.PCK
+    subX: 32
+    subY: 40
+    width: 352
+    height: 40
+    files:
+      0: Resources/Factions/Animals/muckstar_sprite.png
+
 # clients
   - typeSingle: CLIENT_1.SPK
     fileSingle: Resources/Factions/Clients/client_1_inventory.png
@@ -596,11 +636,11 @@ extraSprites:
     fileSingle: Resources/Pedia/data3_CPAL.png
 # memories
   - typeSingle: HMEMORY_CPAL
-    fileSingle: Resources/Pedia/hmemory_CPAL.png
+    fileSingle: Resources/Pedia/memoryh_CPAL.png
   - typeSingle: UMEMORY_CPAL
-    fileSingle: Resources/Pedia/umemory_CPAL.png
+    fileSingle: Resources/Pedia/memoryu_CPAL.png
   - typeSingle: SMEMORY_CPAL
-    fileSingle: Resources/Pedia/smemory_CPAL.png
+    fileSingle: Resources/Pedia/memorys_CPAL.png
 # operations
   - typeSingle: OPERATIONS1_CPAL
     fileSingle: Resources/Pedia/operations1_CPAL.png
@@ -631,19 +671,19 @@ extraSprites:
     fileSingle: Resources/Pedia/vendor_ssp_CPAL.png
 # technologies
   - typeSingle: RECEIPT_CPAL
-    fileSingle: Resources/Pedia/receipt_CPAL.png
+    fileSingle: Resources/Pedia/techreceipt_CPAL.png
   - typeSingle: CONSUME_CPAL
-    fileSingle: Resources/Pedia/consume_CPAL.png
+    fileSingle: Resources/Pedia/techconsume_CPAL.png
   - typeSingle: GUNPOWDER_CPAL
-    fileSingle: Resources/Pedia/gunpowder_CPAL.png
+    fileSingle: Resources/Pedia/techgunpowder_CPAL.png
   - typeSingle: NBCELL_CPAL
-    fileSingle: Resources/Pedia/nbcell_CPAL.png
+    fileSingle: Resources/Pedia/technbcell_CPAL.png
   - typeSingle: BIOCODE_CPAL
-    fileSingle: Resources/Pedia/biocode_CPAL.png
+    fileSingle: Resources/Pedia/techbiocode_CPAL.png
   - typeSingle: STAPLE_CPAL
-    fileSingle: Resources/Pedia/staple_CPAL.png
+    fileSingle: Resources/Pedia/techstaple_CPAL.png
   - typeSingle: PASS_CPAL
-    fileSingle: Resources/Pedia/pass_CPAL.png
+    fileSingle: Resources/Pedia/techpass_CPAL.png
 # crafts
   - typeSingle: CRAFT_BICUBE_CPAL
     fileSingle: Resources/Pedia/craft_bicube_CPAL.png
@@ -656,18 +696,20 @@ extraSprites:
     fileSingle: Resources/Crafts/Hardpoints/batbox_pedia.png
 # drones
   - typeSingle: HYBRID_CPAL
-    fileSingle: Resources/Pedia/hybrid_CPAL.png
+    fileSingle: Resources/Pedia/dronehybrid_CPAL.png
   - typeSingle: HUMAN_CPAL
-    fileSingle: Resources/Pedia/human_CPAL.png
+    fileSingle: Resources/Pedia/dronehuman_CPAL.png
   - typeSingle: SHARK_CPAL
-    fileSingle: Resources/Pedia/shark_CPAL.png
+    fileSingle: Resources/Pedia/droneshark_CPAL.png
 # transformations
   - typeSingle: IMMORTAL_CPAL
-    fileSingle: Resources/Pedia/immortal_CPAL.png
+    fileSingle: Resources/Pedia/techimmortal_CPAL.png
   - typeSingle: IMPLANTS_CPAL
-    fileSingle: Resources/Pedia/implants_CPAL.png
+    fileSingle: Resources/Pedia/techimplants_CPAL.png
   - typeSingle: NEURACHEM_CPAL
-    fileSingle: Resources/Pedia/neurachem_CPAL.png
+    fileSingle: Resources/Pedia/techneurachem_CPAL.png
+  - typeSingle: MUSCULATURE_CPAL
+    fileSingle: Resources/Pedia/techmusculature_CPAL.png
 # armors
   - typeSingle: ARMOR_PLEX_CPAL
     fileSingle: Resources/Pedia/armor_plex_CPAL.png

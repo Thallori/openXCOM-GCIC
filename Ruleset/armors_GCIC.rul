@@ -20,9 +20,9 @@ armors:
       - STR_NULL_QD_SLOT
       - STR_NULL_BACK_PACK
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 11
     personalLight: 5
+    heatVision: 20
     frontArmor: 2
     sideArmor: 2
     rearArmor: 2
@@ -103,9 +103,9 @@ armors:
       - STR_NULL_QD_SLOT
       - STR_NULL_BACK_PACK
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 8
     personalLight: 5
+    heatVision: 20
     frontArmor: 2
     sideArmor: 2
     rearArmor: 2
@@ -154,9 +154,9 @@ armors:
       - STR_NULL_QD_SLOT
       - STR_NULL_BACK_PACK
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 8
     personalLight: 5
+    heatVision: 20
     frontArmor: 2
     sideArmor: 2
     rearArmor: 2
@@ -188,9 +188,9 @@ armors:
     storeItem: STR_DURA_DRONE_ARMOR
     specialWeapon: STR_UNARMED
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 11
     personalLight: 5
+    heatVision: 20
     camouflageAtDay: -2
     camouflageAtDark: -2
     stats:
@@ -259,9 +259,9 @@ armors:
     storeItem: STR_DURA_DRONE_ARMOR
     specialWeapon: STR_UNARMED
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 8
     personalLight: 5
+    heatVision: 20
     camouflageAtDay: -2
     camouflageAtDark: -2
     stats:
@@ -310,9 +310,9 @@ armors:
     storeItem: STR_DURA_DRONE_ARMOR
     specialWeapon: STR_SHARKATTACK
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 8
     personalLight: 5
+    heatVision: 20
     camouflageAtDay: -2
     camouflageAtDark: -2
     stats:
@@ -354,9 +354,9 @@ armors:
       - STR_NULL_BACK_PACK
     specialWeapon: STR_UNARMED
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 12
     personalLight: 5
+    heatVision: 20
     weight: 6
     stats:
       tu: -5
@@ -427,9 +427,9 @@ armors:
       - STR_NULL_BACK_PACK
     specialWeapon: STR_UNARMED
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 9
     personalLight: 5
+    heatVision: 20
     weight: 6
     stats:
       tu: -5
@@ -480,9 +480,9 @@ armors:
       - STR_NULL_BACK_PACK
     specialWeapon: STR_SHARKATTACK
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 9
     personalLight: 5
+    heatVision: 20
     weight: 6
     stats:
       tu: -5
@@ -523,9 +523,9 @@ armors:
       - STR_NULL_BACK_PACK
     specialWeapon: STR_UNARMED
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 12
     personalLight: 5
+    heatVision: 20
     weight: 6
     stats:
       tu: -10
@@ -582,9 +582,9 @@ armors:
       - STR_NULL_BACK_PACK
     specialWeapon: STR_UNARMED
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 9
     personalLight: 5
+    heatVision: 20
     weight: 6
     stats:
       tu: -10
@@ -637,9 +637,9 @@ armors:
       - STR_NULL_BACK_PACK
     specialWeapon: STR_SHARKATTACK
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 9
     personalLight: 5
+    heatVision: 20
     weight: 6
     stats:
       tu: -10
@@ -678,10 +678,9 @@ armors:
     painImmune: true
     bleedImmune: true
     zombiImmune: true
-    visibilityAtDay: 30
     visibilityAtDark: 12
     personalLight: 5
-    heatVision: 25
+    heatVision: 20
     stats:
       tu: 15
       stamina: 30
@@ -740,8 +739,8 @@ armors:
     corpseBattle:
       - STR_BOOSTER_CORPSE
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 12
+    heatVision: 20
     frontArmor: 6
     sideArmor: 6
     rearArmor: 6
@@ -770,6 +769,7 @@ armors:
       stun: &StunRecoveryEnemy
         flatHundred: 0
       energy: *EnergyRecoveryHumanTypical
+    overKill: 1.5
     loftempsSet: [ 3 ]
 
   - type: STR_RIPPER_ARMOR
@@ -785,8 +785,8 @@ armors:
       - STR_RIPPER_CORPSE
     specialWeapon: STR_RIPP
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 12
+    heatVision: 20
     frontArmor: 6
     sideArmor: 6
     rearArmor: 6
@@ -798,6 +798,7 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryHumanTypical
+    overKill: 1.5
     loftempsSet: [ 3 ]
 
 # netrunners
@@ -812,8 +813,8 @@ armors:
     corpseBattle:
       - STR_FREELANCER_CORPSE
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 9
+    heatVision: 20
     frontArmor: 2
     sideArmor: 2
     rearArmor: 2
@@ -825,6 +826,7 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryHumanTypical
+    overKill: 1.5
     loftempsSet: [ 3 ]
 
   - type: STR_SKIPTRACER_ARMOR
@@ -837,8 +839,8 @@ armors:
       - STR_SKIPTRACER_CORPSE
     specialWeapon: STR_ELECTROBOLT
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 9
+    heatVision: 20
     frontArmor: 6
     sideArmor: 6
     rearArmor: 6
@@ -866,6 +868,7 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryTypical
+    overKill: 1.5
     loftempsSet: [ 3 ]
 
 # ssp
@@ -880,8 +883,8 @@ armors:
       - STR_SSPGUARD_CORPSE
     specialWeapon: STR_SHARKATTACK
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 9
+    heatVision: 20
     frontArmor: 2
     sideArmor: 2
     rearArmor: 2
@@ -893,6 +896,7 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryTypical
+    overKill: 1.5
     loftempsSet: [ 3 ]
 
   - type: STR_SSPOFFICER_ARMOR
@@ -906,8 +910,8 @@ armors:
       - STR_SSPOFFICER_CORPSE
     specialWeapon: STR_SHARKATTACK
     allowsKneeling: true
-    visibilityAtDay: 30
     visibilityAtDark: 9
+    heatVision: 20
     frontArmor: 20
     sideArmor: 20
     rearArmor: 20
@@ -919,6 +923,7 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryPoor
+    overKill: 1.5
     loftempsSet: [ 3 ]
 
 # enemy drones
@@ -928,8 +933,8 @@ armors:
     spriteSheet: WORKSUIT_HYBRID.PCK
     corpseBattle:
       - STR_PLEX_DRONE_HYBRID_CORPSE
-    visibilityAtDay: 30
-    visibilityAtDark: 12
+    visibilityAtDark: 11
+    heatVision: 20
     frontArmor: 2
     sideArmor: 2
     rearArmor: 2
@@ -941,6 +946,7 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryTypical
+    overKill: 1.5
     loftempsSet: [ 3 ]
 
   - type: STR_DRONEHUMAN_ARMOR
@@ -949,8 +955,8 @@ armors:
     spriteSheet: WORKSUIT_HUMAN.PCK
     corpseBattle:
       - STR_PLEX_DRONE_HUMAN_CORPSE
-    visibilityAtDay: 30
-    visibilityAtDark: 9
+    visibilityAtDark: 8
+    heatVision: 20
     frontArmor: 2
     sideArmor: 2
     rearArmor: 2
@@ -962,6 +968,7 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryHumanTypical
+    overKill: 1.5
     loftempsSet: [ 3 ]
 
   - type: STR_DRONESHARK_ARMOR
@@ -970,8 +977,8 @@ armors:
     spriteSheet: WORKSUIT_SHARK.PCK
     corpseBattle:
       - STR_PLEX_DRONE_SHARK_CORPSE
-    visibilityAtDay: 30
-    visibilityAtDark: 9
+    visibilityAtDark: 8
+    heatVision: 20
     frontArmor: 2
     sideArmor: 2
     rearArmor: 2
@@ -983,7 +990,127 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryTypical
+    overKill: 1.5
     loftempsSet: [ 3 ]
+
+# animals
+  - type: STR_CHRYSSALID_ARMOR
+    spriteInv: CHRYSSALID.SPK
+    spriteSheet: CHRYS.PCK
+    corpseBattle:
+      - STR_CHRYSSALID_CORPSE
+    allowInv: false
+    drawingRoutine: 7
+    heatVision: 70
+    frontArmor: 35
+    sideArmor: 35
+    rearArmor: 35
+    underArmor: 25
+    damageModifier:
+      - 1.0 #0 none
+      - 1.0 #1 kinetic
+      - 1.1 #2 incendiary
+      - 1.0 #3 concussive
+      - 1.0 #4 radiant
+      - 1.0 #5 plasma
+      - 1.0 #6 blunt
+      - 1.0 #7 mechanical
+      - 1.0 #8 chemical
+      - 0.5 #9 smoke
+      - 1.0 #10 electric
+      - 1.0 #11 sonic
+      - 1.0 #12 biological
+      - 1.0 #13 psionic
+      - 0.0 #14 heat
+      - 0.0 #15 cold
+    meleeDodge: *MeleeDodgeGood
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryGood
+    overKill: 1.5
+    loftempsSet: [ 3 ]
+
+  - type: STR_ZOMBIE_ARMOR
+    spriteInv: ZOMBIE.SPK
+    spriteSheet: ZOMBIE.PCK
+    corpseBattle:
+      - STR_ZOMBIE_CORPSE
+    painImmune: true
+    allowInv: false
+    drawingRoutine: 4
+    deathFrames: 18
+    heatVision: 70
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 3
+    damageModifier:
+      - 1.0 #0 none
+      - 1.0 #1 kinetic
+      - 1.4 #2 incendiary
+      - 1.0 #3 concussive
+      - 1.0 #4 radiant
+      - 1.0 #5 plasma
+      - 1.0 #6 blunt
+      - 1.0 #7 mechanical
+      - 1.0 #8 chemical
+      - 1.0 #9 smoke
+      - 1.0 #10 electric
+      - 1.0 #11 sonic
+      - 1.0 #12 biological
+      - 1.0 #13 psionic
+      - 0.0 #14 heat
+      - 0.0 #15 cold
+    meleeDodge: *MeleeDodgePoor
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryTypical
+    overKill: 1.5
+    loftempsSet: [ 3 ]
+
+  - type: STR_MUCKSTAR_ARMOR
+    spriteInv: MUCKSTAR.SPK
+    spriteSheet: MUCKSTAR.PCK
+    corpseBattle:
+      - STR_MUCKSTAR_CORPSE
+    allowInv: false
+    zombiImmune: true
+    constantAnimation: true
+    drawingRoutine: 16
+    heatVision: 45
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 3
+    damageModifier:
+      - 1.0 #0 none
+      - 1.0 #1 kinetic
+      - 1.4 #2 incendiary
+      - 1.0 #3 concussive
+      - 1.0 #4 radiant
+      - 1.0 #5 plasma
+      - 1.0 #6 blunt
+      - 1.0 #7 mechanical
+      - 1.0 #8 chemical
+      - 0.5 #9 smoke
+      - 0.1 #10 electric
+      - 1.0 #11 sonic
+      - 1.0 #12 biological
+      - 1.0 #13 psionic
+      - 0.0 #14 heat
+      - 1.0 #15 cold
+    meleeDodge: *MeleeDodgeGood
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryGood
+    overKill: 1.5
+    loftempsSet: [ 5 ]
 
 #civilians
   - type: STR_CLIENT_1_ARMOR
@@ -997,9 +1124,9 @@ armors:
       - STR_CLIENT_1_CORPSE
     allowsKneeling: false
     alwaysVisible: true
-    visibilityAtDay: 30
     visibilityAtDark: 9
     drawingRoutine: 16
+    heatVision: 20
     frontArmor: 2
     sideArmor: 2
     rearArmor: 2
@@ -1012,6 +1139,7 @@ armors:
       stun: *StunRecoveryTypical
       energy: *EnergyRecoveryTypical
       morale: *MoraleRecoveryTypical
+    overKill: 1.5
     loftempsSet: [ 3 ]
 
   - type: STR_CLIENT_RR_ARMOR
@@ -1025,8 +1153,8 @@ armors:
       - STR_CLIENT_RR_CORPSE
     allowsKneeling: false
     alwaysVisible: true
-    visibilityAtDay: 30
     visibilityAtDark: 9
+    heatVision: 20
     frontArmor: 2
     sideArmor: 2
     rearArmor: 2
@@ -1039,4 +1167,5 @@ armors:
       stun: *StunRecoveryTypical
       energy: *EnergyRecoveryTypical
       morale: *MoraleRecoveryTypical
+    overKill: 1.5
     loftempsSet: [ 3 ]

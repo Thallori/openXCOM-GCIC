@@ -416,6 +416,9 @@ en-US:
   BREACH2: "Into the Breach, The Wasteland"
   SHADOW_INTRO: "Shadowrun Returns, Too Quiet"
   SHADOW1: "Shadowrun Returns, Blood Hounds"
+  CRAFT1: "Starcraft, Zerg One"
+  BLOOD_INTRO: "Blood Money, Trouble in Vegas"
+  BLOOD1: "Blood Money, Night Time in New Orleans"
 #briefings
   STR_RESCUE_1: "Clients: Early Adopters"
   STR_RESCUE_1_ALERT: "CLIENTS REQUIRE RESCUE"
@@ -452,6 +455,13 @@ en-US:
   STR_GCIC_SABOTAGE_2: "GCIC: Backdoor Injection"
   STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION: "One of our sibling corporations is experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Expect armored security forces.{NEWLINE}{NEWLINE}We may ignore this mandate, but there will be consequences either way.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 72 hours. Maximium Gear: Milspec"
   STR_GCIC_SABOTAGE_2_BRIEFING: "One of our sibling corporations is experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Expect armored security forces.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 20 turns before additional security forces arrive and we are forced to abort."
+
+  STR_MEDI_ALERT: "MEDI CONTRACT"
+  STR_MEDI_MUCK: "MEDI: Capture Muckstar"
+  STR_MEDI_MUCK_CHRYS: "MEDI: Capture Muckstar"
+  STR_MEDI_CREATURE: "MEDI: Capture Creature"
+  STR_MEDI_MUCK_ALERT_DESCRIPTION: "{NEWLINE}{NEWLINE}Minimum site duration: 36 hours. Gear Restrictions: None"
+  STR_MEDI_CREATURE_BRIEFING: "{NEWLINE}{NEWLINE}We may abort this mission."
 #events
   STR_NETRUNNER_EARLY_EXPOSITION: "Netrunners Trading Contract"
   STR_NETRUNNER_EARLY_EXPOSITION_DESCRIPTION: "Upon examining our fragmented organic data for information on netrunners, we have found references to an old trade deal. The technology that was used to create us, along with other prototypes for high-level drone control, was sourced by an unknown party. GCIC had an ongoing contract for this tech, one that is now certainly void.{NEWLINE}{NEWLINE}The source may try to find other buyers, which gives us an opportunity."
@@ -625,9 +635,9 @@ en-US:
   STR_45_PISTOL_DECODED: "CRACK: SSP 12mm Pistol"
   STR_SSP_SHOTGUN_DECODED: "CRACK: SSP Shotgun"
   STR_TASER_PISTOL_DECODED: "CRACK: SSP Taser Pistol"
-  STR_SSP_LASER_PISTOL_DECODED: "CRACK: SSP Single-Ray Pistol"
+  STR_SSP_LASER_PISTOL_DECODED: "CRACK: SSP Enforcer Laser Pistol"
 
-  STR_SALVAGE_SINGLESHOT_LASER_PISTOL_ELERIUM: "SALVAGE: SSP Single-Ray Pistol (E)"
+  STR_SALVAGE_SINGLESHOT_LASER_PISTOL_ELERIUM: "SALVAGE: SSP Enforcer Laser Pistol (E)"
   STR_SALVAGE_XN_LASER_PISTOL: "SALVAGE: XN Laser Pistol"
   STR_SALVAGE_XN_LASER_SMG: "SALVAGE: XN Stutter Laser"
   STR_SALVAGE_XN_LASER_RIFLE: "SALVAGE: XN Assault Laser"
@@ -699,7 +709,7 @@ en-US:
   STR_PBI_LOCK: "P:GBC (preq)"
   STR_PBI_ITEM: "PROJECT: GCIC Backchannels"
   STR_GCIC_BACKCHANNEL_MISSIONS: ">PROJECT: GCIC Backchannels<"
-  STR_GCIC_BACKCHANNEL_MISSIONS_UFOPEDIA: "{NEWLINE}AFFILIATES: Sibling Corporations{NEWLINE}AVG. ASSIGNMENTS: 1.41/MONTH{NEWLINE}{NEWLINE}Selling back GCIC shares back at half price has been accepted as proof of loyalty to our parent, or at least, preference for long-term relations over short-sighted gains. In either case, we have been granted access to a protected network discussing less-than-legal competitive practices along with a rise in our responsibilities.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
+  STR_GCIC_BACKCHANNEL_MISSIONS_UFOPEDIA: "{NEWLINE}AFFILIATES: Sibling Corporations{NEWLINE}AVG. ASSIGNMENTS: 1.41/MONTH{NEWLINE}{NEWLINE}Selling back GCIC shares back at half price has been accepted as proof of loyalty to our parent, or at least, preference for long-term relations over short-sighted gains. In either case, we have been granted access to a protected network discussing less-than-legal competitive practices along with an increase in our responsibilities.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_PTS_LOCK: "P:GTS (preq)"
   STR_PTS_ITEM: "PROJECT: GCIC Trade Secrets"
   STR_PIN_LOCK: "P:INDY (preq)"
@@ -714,8 +724,10 @@ en-US:
   STR_NETRUNNERS_NETWORK_UFOPEDIA: "{NEWLINE}FAVORABLE OUTCOME ODDS: 83.3%{NEWLINE}PREDICTED INTERLACES: 1.55/MONTH{NEWLINE}{NEWLINE}Bionic Interlaces and valuable XN kits do not come from nowhere. If we are to survive in this world, we must understand the technology that allows us to exist here. By tailing the freelancers who deliver these goods, we'll be able to find their source (or at least enrich our capabilities.){NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_SUBCONTRACTING_OPERATIONS: "Subcontracting Operations"
   STR_SUBCONTRACTING_OPERATIONS_UFOPEDIA: "{NEWLINE}CONFLICT RISK: Medium{NEWLINE}COOPERATION POTENTIAL: High{NEWLINE}{NEWLINE}All corporations have unfulfilled needs, either the opportunity cost is deemed too high or the shareholders' expectations exceed what is possible. In this light, we have an advantage in the absence of hazard pay. Combined with a reputation for successful operations, we'll be able to undercut outdated sub-contractors.{NEWLINE}{NEWLINE}Bounties are seen as proof of work and they can be traded for new contracts."
-  STR_MEDI_MISSIONS: ">SUBCONTRACT: MEDI<"
-  STR_MEDI_MISSIONS_UFOPEDIA: "{NEWLINE}todo" #todo, gives you the medi-bay and starts missions to kidnap muckstars and other exotic creatures too dangerous for hazard pay, creatures give more medi-shares alive than dead, medi-shares can be traded for information on creatures and new technologies
+  STR_PMM_ITEM: "PROJECT: MEDI Contract"
+  STR_PMM_LOCK: "P:MM (preq)"
+  STR_MEDI_MISSIONS: ">PROJECT: MEDI Contract<"
+  STR_MEDI_MISSIONS_UFOPEDIA: "{NEWLINE}AVG. ASSIGNMENTS: 0.79/MONTH{NEWLINE}todo" #todo, gives you the medi-bay and starts missions to kidnap muckstars and other exotic creatures too dangerous for hazard pay, creatures give more medi-shares alive than dead, medi-shares can be traded for information on creatures and new technologies
   #medi-care for all, ends low level implant theft
   STR_SSP_MISSIONS: ">SUBCONTRACT: SSP<"
   STR_SSP_MISSIONS_UFOPEDIA: "{NEWLINE}todo" #todo, gives you some 'free' weapons and asks you to kidnap people
@@ -823,21 +835,22 @@ en-US:
 # transformations
   STR_DRONE_IMMORTALITY: "Drone Immortality"
   STR_DRONE_IMMORTALITY_UFOPEDIA: "{NEWLINE}Baseline drones begin as clumsy extensions of our minds' and bodies, tools that take time for us to learn how to wield effectively. Because each mind is unique, our total skillset cannot be easily transferred between neural networks. When a drone is displaced, everything we've learned through them is lost.{NEWLINE}{NEWLINE}If we become reliant on a single drone, we can key them to a bionic interlace. Allowing us to order a custom clone and rewrite the brain with the backup."
+  STR_DRONE_KEYING_TRANSFORMATION: "Key Drone to Interlace"
+  STR_DRONE_REPLACEMENT_TRANSFORMATION: "Clone Displaced Drone"
   STR_SPECIALIZATION_TRAINING: "Drone Implants"
   STR_SPECIALIZATION_TRAINING_UFOPEDIA: "{NEWLINE}Entry-level cyberware is unrestricted, being a pre-requisite to apply for most security certifications and employment contracts. Even without top-down incentives, many consumers will happily buy or lease socially trendy hardware without concern for battlefield effectivness.{NEWLINE}{NEWLINE}Before we began operations, drones were not a good choice for combat duties. Installing an implantation suite will be considered strange, and a waste of resources, but few corporations will ever refuse a paying customer."
   STR_NEURACHEM: "Neurachem Augmentation"
   STR_NEURACHEM_UFOPEDIA: "{NEWLINE}Simple, discrete, and at the far end of the entry-level bell curve. These mods are mutually-exclusive, focused on the same stressor regions of the brain and endocrine system.{NEWLINE}Stamina Burden: -1/Turn{NEWLINE}{NEWLINE}{ALT}Deadeye{ALT}{NEWLINE}Firing: +12{NEWLINE}Reactions: +6{NEWLINE}{NEWLINE}{ALT}Olympian{ALT}{NEWLINE}Throwing: +12{NEWLINE}Stamina: +6{NEWLINE}{NEWLINE}{ALT}Warewolf{ALT}{NEWLINE}Melee: +12{NEWLINE}TU: +6"
-  STR_DRONE_KEYING_TRANSFORMATION: "Key Drone to Interlace"
-  STR_DRONE_REPLACEMENT_TRANSFORMATION: "Clone Displaced Drone"
   STR_SKIRMISHER_TRANSFORMATION: "Neurachem: Deadeye"
   STR_RANGER_TRANSFORMATION: "Neurachem: Olympian"
   STR_SCOUT_TRANSFORMATION: "Neurachem: Warewolf"
-  STR_AGILITY_TRANSFORMATION: "Musculature: Bionic"
-  STR_HEAVY_TRANSFORMATION: "Musculature: Mechatronic"
-# transform bonuses
   STR_SKIRMISHER_SPECIALIST: "Deadeye"
   STR_RANGER_SPECIALIST: "Olympian"
   STR_SCOUT_SPECIALIST: "Warewolf"
+  STR_MUSCULATURE: "Musculature Augmentation"
+  STR_MUSCULATURE_UFOPEDIA: "{NEWLINE}Subtle enhancement or full replacement. Weight/mass considerations drive many fierce online debates, especially among those who can't afford either.{NEWLINE}Stamina: +10, Burden: -2/Turn{NEWLINE}{NEWLINE}{ALT}Bionic{ALT}{NEWLINE}TU/Reactions: +8{NEWLINE}Strength: +10{NEWLINE}Health: +15{NEWLINE}{NEWLINE}{ALT}Mechatronic{ALT}{NEWLINE}TU/Reactions: +4{NEWLINE}Strength: +15{NEWLINE}Health: +20"
+  STR_AGILITY_TRANSFORMATION: "Musculature: Bionic"
+  STR_HEAVY_TRANSFORMATION: "Musculature: Mechatronic"
   STR_AGILITY_MUSCLES: "Bionic"
   STR_HEAVY_MUSCLES: "Mechatronic"
 # armor
@@ -885,7 +898,7 @@ en-US:
   STR_COMBALL_AMMO: "Comball"
   STR_PAPERSHOT_AMMO: "Papershot"
   STR_9MM_PISTOL: "8.99 Zip Pistol"
-  STR_9MM_PISTOL_UFOPEDIA: "Assembled from over 90% public access parts, the 8.99 is typically finished by the end user after they've managed to acquire a working reciver. Though most are scrap prints, its reputation among illict elements occassionally produces a model with more flamboyant materials."
+  STR_9MM_PISTOL_UFOPEDIA: "Assembled from almost 90% public access parts, the 8.99 is typically finished by the end user after they've managed to acquire a working reciver. Though most are scrap prints, its reputation among illict elements occassionally produces a model with more flamboyant materials."
   STR_9MM_AMMO: "Zip Pistol Clip"
   STR_9MM_SMG: "3AM Zip SMG"
   STR_9MM_SMG_UFOPEDIA: "Fully automatic firearms are more difficult to come by on the P2P market. Lower print tolerances and more moving parts means that half suffer from low bullets per minute while the other half don't work at all."
@@ -902,8 +915,8 @@ en-US:
   STR_45_PISTOL: "SSP 12mm Pistol" #security systems and procedures
   STR_45_PISTOL_UFOPEDIA: "First-rate value defense equipment for effective kinetic defeat. Safety features include low-risk rounds, anti-bump auto-locks, and internally developed biocoding to prevent fallen arms from turning on you and your property."
   STR_45_AMMO: "12mm Clip"
-  STR_SSP_SHOTGUN_CODED: "SSP Shotgun(¤)"
-  STR_SSP_SHOTGUN: "SSP Shotgun"
+  STR_SSP_SHOTGUN_CODED: "SSP Mox Shotgun(¤)"
+  STR_SSP_SHOTGUN: "SSP Mox Shotgun"
   STR_SSP_SHOTGUN_UFOPEDIA: "A proven pump-action performer for delivering exceptional value in an attractively rugged package. Dual extractors and anti-jam elevator combine for safe and reliable operation.{NEWLINE}{NEWLINE}Stun: +25%"
   STR_SSP_SHOTGUN_AMMO_BS: "SSP Buckshot Shells"
   STR_SSP_SHOTGUN_AMMO_SLUG: "SSP Slug Shells"
@@ -993,6 +1006,11 @@ en-US:
   STR_CONSUMER_CYBERNETICS_CODED: "Consumer Cyberware (¤)"
   STR_CONSUMER_CYBERNETICS: "Consumer Cyberware"
   STR_CONSUMER_CYBERNETICS_UFOPEDIA: "{NEWLINE}Conventional hardware for sensory recording, neural interfacing, hormone regulation, geolocating, surface detailing, memory pruning, and more. This is the ground level of in-system technology with much of it pre-dating invasion-era advances.{NEWLINE}{NEWLINE}Most cybernetics are keyed to a single user, making it difficult to steal and sell. Jailbreaking these devices requires specific tools and a clean workspace free of errant DNA."
+  STR_LMC_LOCK: "L:MC (preq)"
+  STR_MEDICAL_CYBERNETICS_MANU: "LICENSE: Medical Cyberware"
+  STR_MEDICAL_CYBERNETICS_CODED: "Medical Cyberware (¤)"
+  STR_MEDICAL_CYBERNETICS: "Medical Cyberware"
+  STR_MEDICAL_CYBERNETICS_UFOPEDIA: "{NEWLINE}Enhanced comptroller and tissue upgrades for muscles, blood, heart(s), and tendons. Unlike consumer-grade products, these devices are self-repairing using only nutrients readily processed by all healthy bioforms (lithium and titanium supplements not required, but strongly recommended.){NEWLINE}{NEWLINE}Thanks to our licensing agreement with MEDI, we can now purchase and install these in unlimited quantities."
   STR_AG_UNIT: "A-Grav Unit"
   STR_AG_UNIT_UFOPEDIA: "{NEWLINE}antigravity component" #todo
   STR_BIOMASS: "Biomass"
@@ -1014,9 +1032,12 @@ en-US:
   STR_DATA_IRONEYES: "DATAMINE: Ironsights"
   STR_DATA_NETRUNNERS: "DATAMINE: Netrunners"
   STR_DATA_SSP: "DATAMINE: SSP"
+  STR_DATA_ANIMAL: "DATAMINE: MEDI"
 # abstract
   STR_SHARES_GCIC: "SHARES: GCIC"
   STR_SHARES_GCIC_UFOPEDIA: "{NEWLINE}Representitive fractional ownership in our parent company. These are awarded as an incentive to perform activities that are not legally enforcable. In this sense, shares are a crude measure of how loyal we are to GCIC's less reputable needs.{NEWLINE}{NEWLINE}As a shareholder, we'll recieve dividends. As a subsidiary, we'll recieve extra leeway in how we conduct business. When all requirements are met, available PROJECTS will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: +1200$/Month"
+  STR_SHARES_MEDI: "SHARES: MEDI"
+  STR_SHARES_MEDI_UFOPEDIA: "{NEWLINE}{NEWLINE}Effective Income: +650$/Month"
   STR_BRAND_LOYALTY: "Brand Loyalty"
   STR_BRAND_LOYALTY_UFOPEDIA: "{NEWLINE}Fulfilling contracts or otherwise following through on our promises will create positive feelings in our consumer base. This results in more subscriptions even when services falter, letting us act with more freely with less consequence.{NEWLINE}{NEWLINE}With enough trust, we can break into new markets or get sponsorships from other corporate entities. When all requirements are met, available PROJECTS will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: +950$/Month"
   STR_BOUNTY_1: "Bounty"
@@ -1036,6 +1057,7 @@ en-US:
   STR_RANK_5: "Contractor"
   STR_RANK_DRONE: "Drone"
   STR_RACE_DRONE: "Drones"
+  STR_RANK_ANIMAL: "Animal"
 # hostiles
   STR_IRONEYES: "Ironsights"
   STR_BOOSTER_PUBLIC: "Ironsights Booster"
@@ -1044,6 +1066,7 @@ en-US:
   STR_BOOSTERS_UFOPEDIA: "Entry-level employees of crime syndicates with a cybernetic requirement clause. Most begin their careers with the theft of a single implant, either from a retailer or a living body. If that body belongs to a client, we should intervene.{NEWLINE}{NEWLINE}It would be more efficent to prevent this activity rather than respond after-the-fact.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
   STR_BOOSTER_ARMOR: "Booster Analysis"
   STR_BOOSTER_ARMOR_UFOPEDIA: "Night Vision: +3m"
+
   STR_RIPPER_PUBLIC: "Ironsights Ripper"
   STR_RIPPER_PRIVATE: "Ironsights Ripper"
   STR_RIPPERS: "Rippers"
@@ -1056,6 +1079,7 @@ en-US:
   STR_FREELANCERS: "Freelancers"
   STR_FREELANCERS_UFOPEDIA: "Self-employed intermediaries between sources and end-users. Specialized in handheld illicit goods, copywrite data, and anything that causes too much embarassment to be seen on public transaction records.{NEWLINE}{NEWLINE}Freelancers generally prefer to know as little about who and what they're dealing with as possible.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
   STR_FREELANCER_ARMOR: "Freelancer Analysis"
+
   STR_SKIPTRACER_PRIVATE: "Netrunner Skiptracer"
   STR_SKIPTRACERS: "Skiptracers"
   STR_SKIPTRACERS_UFOPEDIA: "Provides hide and find services to those who can afford them (or can't afford not to.) Nothing happens without leaving traces of its existance, creating false trails and picking out the truth requires valuable skills that can be traded like any other.{NEWLINE}{NEWLINE}Although far more dangerous in the digital realm, like all criminals, they aren't helpless in analogue situations.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
@@ -1066,6 +1090,7 @@ en-US:
   STR_SSPGUARDS: "SSP Guards"
   STR_SSPGUARDS_UFOPEDIA: "Secure Systems and Procurement's zero-hour contract employee. Using only the minimum rented PPE, they are not expected to be more than a body running the gate or tillpoint. This makes them the first line of defense.{NEWLINE}{NEWLINE}Their primary function is to delay action long enough for backup to arrive.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
   STR_SSPGUARD_ARMOR: "SSP Guard Analysis"
+
   STR_SSPOFFICER_PRIVATE: "SSP Officer"
   STR_SSPOFFICERS: "SSP Officers"
   STR_SSPOFFICERS_UFOPEDIA: "Salaried security forces authorized to write fines and make arrests on behalf of corporate interests. Advertised as the barrier between anarchy and order, in practice, they are reponsible for more than half of all violent altercations.{NEWLINE}{NEWLINE}Officers are required to put at least 30% of their income towards equipment rentals, making aqua-plastic vests a popular choice.{NEWLINE}{NEWLINE}RISK CLASS: SECURITY"
@@ -1073,8 +1098,39 @@ en-US:
 
   STR_DRONES_ENEMY: "Competing Drones"
   STR_DRONE_ENEMY_HYBRID: "Hybrid Drone"
+  STR_HYBRID_AUTOPSY: "Hybrid Autopsy"
+  STR_HYBRID_AUTOPSY_UFOPEDIA: "todo" #todo, medi data
   STR_DRONE_ENEMY_HUMAN: "Human Drone"
+  STR_HUMAN_AUTOPSY: "Human Autopsy"
+  STR_HUMAN_AUTOPSY_UFOPEDIA: "todo" #todo, medi data
   STR_DRONE_ENEMY_SHARK: "Selamorph Drone"
+  STR_SHARK_AUTOPSY: "Selamorph Autopsy"
+  STR_SHARK_AUTOPSY_UFOPEDIA: "todo" #todo, medi data
+  STR_DRONE_ENEMY_DEEP: "Pleurosaura Drone"
+  STR_DEEP_AUTOPSY: "Pleurosaura Autopsy"
+  STR_DEEP_AUTOPSY_UFOPEDIA: "todo" #todo, medi data
+
+  STR_ANIMALS: "Animals"
+  STR_CHRYSSALID: "Chryssalid"
+  STR_CHRYSSALID_CORPSE: "Chryssalid Corpse"
+  STR_CHRYSSALIDS: "Chryssalids"
+  STR_CHRYSSALIDS_UFOPEDIA: "todo{NEWLINE}{NEWLINE}RISK CLASS: EXTREME" #todo
+  STR_CHRYSSALID_ARMOR: "Chryssalid Analysis"
+  STR_CHRYSSALID_ARMOR_UFOPEDIA: "Attack Damage: 110 Mechanical"
+
+  STR_ZOMBIE: "Zombie"
+  STR_ZOMBIE_CORPSE: "Zombie Corpse"
+  STR_ZOMBIES: "Zombies"
+  STR_ZOMBIES_UFOPEDIA: "todo{NEWLINE}{NEWLINE}RISK CLASS: MILSPEC" #todo
+  STR_ZOMBIE_ARMOR: "Zombie Analysis"
+  STR_ZOMBIE_ARMOR_UFOPEDIA: "Attack Damage: 80 Mechanical"
+
+  STR_MUCKSTAR: "Muckstar"
+  STR_MUCKSTAR_CORPSE: "Muckstar Corpse"
+  STR_MUCKSTARS: "Muckstars"
+  STR_MUCKSTARS_UFOPEDIA: "Oxygen breathing xenoforming flora, aggressive, mobile, moderately dangerous. Begins as an underground collective of spores and emerges when it reaches a certain size or when the ground is sufficently distrubed. Grows ahead of the xenobiome bulk, sometimes in excess of 30km, posing escalating risks to life near the border.{NEWLINE}{NEWLINE}Its xylem-like network of nutrient transport tubes can be catalyzed to deliver strong electrical shocks at long-range. Though unlikely to kill outright, swarms can easily overwhelm unprepared expeditions, making them easy pickings for other xenoforms.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
+  STR_MUCKSTAR_ARMOR: "Muckstar Analysis"
+  STR_MUCKSTAR_ARMOR_UFOPEDIA: "Attack Damage: 35 Electrical"
 
   STR_RACE_CLIENT: "Clients"
   STR_CIVILIAN: "Potential Clients"
@@ -1436,3 +1492,5 @@ en-US:
   STR_TRG_ST_PREQ: "T:ST (Preq)"
   STR_TRG_SG_PREQ: "T:SG (Preq)"
   STR_TRG_SO_PREQ: "T:SO (Preq)"
+
+  STR_TRG_MS_PREQ: "T:MS (Preq)"

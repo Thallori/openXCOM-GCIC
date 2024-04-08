@@ -34,7 +34,7 @@ soldierTransformation:
       - STR_SPECIALIZATION_TRAINING
     percentGainedStatChange:
       mana: -100
-    cost: 5000
+    cost: 4999
     requiredItems:
       STR_CONSUMER_CYBERNETICS: 3
     recoveryTime: 7
@@ -55,7 +55,7 @@ soldierTransformation:
       - STR_SPECIALIZATION_TRAINING
     percentGainedStatChange:
       mana: -100
-    cost: 5000
+    cost: 4999
     requiredItems:
       STR_CONSUMER_CYBERNETICS: 3
     recoveryTime: 7
@@ -76,7 +76,7 @@ soldierTransformation:
       - STR_SPECIALIZATION_TRAINING
     percentGainedStatChange:
       mana: -100
-    cost: 5000
+    cost: 4999
     requiredItems:
       STR_CONSUMER_CYBERNETICS: 3
     recoveryTime: 7
@@ -94,13 +94,16 @@ soldierTransformation:
 
   - name: STR_AGILITY_TRANSFORMATION
     requires:
-      - STR_TODO
+      - STR_MEDICAL_CYBERNETICS
     requiredMinStats:
       mana: 40
     percentGainedStatChange:
       mana: -100
-    cost: 40000
-    recoveryTime: 10
+    cost: 8999
+    requiredItems:
+      STR_MEDICAL_CYBERNETICS: 2
+      STR_CONSUMER_CYBERNETICS: 2
+    recoveryTime: 12
     keepSoldierArmor: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:
@@ -114,13 +117,16 @@ soldierTransformation:
 
   - name: STR_HEAVY_TRANSFORMATION
     requires:
-      - STR_TODO
+      - STR_MEDICAL_CYBERNETICS
     requiredMinStats:
       mana: 40
     percentGainedStatChange:
       mana: -100
-    cost: 40000
-    recoveryTime: 10
+    cost: 8999
+    requiredItems:
+      STR_MEDICAL_CYBERNETICS: 2
+      STR_CONSUMER_CYBERNETICS: 2
+    recoveryTime: 12
     keepSoldierArmor: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:

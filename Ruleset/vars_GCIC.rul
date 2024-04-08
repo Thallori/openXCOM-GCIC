@@ -8,19 +8,66 @@ startingTime:
   month: 1
   year: 2480
 startingDifficulty: 1
-difficultyCoefficient: [-2, 0, 2, 4, 6]
+difficultyCoefficient: [0, 1, 2, 3, 4]
+statGrowthMultipliersAbs:
+  -
+    tu: -5
+    stamina: -5
+    health: -5
+    bravery: -10
+    reactions: -5
+    firing: -5
+    throwing: -5
+    strength: -5
+    melee: -5
+    mana: -5
+  -
+    tu: 0
+    stamina: 0
+    health: 0
+    bravery: 0
+    reactions: 0
+    firing: 0
+    throwing: 0
+    strength: 0
+    melee: 0
+    mana: 0
+  -
+    tu: 5
+    stamina: 5
+    health: 5
+    bravery: 0
+    reactions: 5
+    firing: 5
+    throwing: 5
+    strength: 5
+    melee: 5
+    mana: 10
+  -
+    tu: 10
+    stamina: 10
+    health: 10
+    bravery: 10
+    reactions: 10
+    firing: 10
+    throwing: 10
+    strength: 10
+    melee: 10
+    mana: 20
+  -
+    tu: 15
+    stamina: 15
+    health: 15
+    bravery: 20
+    reactions: 15
+    firing: 15
+    throwing: 15
+    strength: 15
+    melee: 15
+    mana: 30
 statGrowthMultipliers:
-  tu: 4
-  stamina: 4
-  health: 2
-  bravery: 0
-  reactions: 6
-  firing: 6
-  throwing: 2
-  strength: 2
-  psiStrength: 4
+  psiStrength: 0
   psiSkill: 4
-  melee: 6
 aimMultipliers: [0.5, 1.0, 1.0, 1.0, 1.0]
 armorMultipliers: [0.75, 1.0, 1.0, 1.0, 1.0]
 sellPriceCoefficient: [100, 100, 100, 100, 100]
@@ -76,7 +123,7 @@ turnAIUseBlaster: 1
 surrenderMode: 2
 chanceToStopRetaliation: 70
 tooMuchSmokeThreshold: 13
-bughuntMinTurn: 15
+bughuntMinTurn: 20
 bughuntMaxEnemies: 2
 bughuntRank: 0
 bughuntLowMorale: 40
@@ -98,7 +145,7 @@ pediaReplaceCraftFuelWithRangeType: 0
 minReactionAccuracy: 10
 kneelBonusGlobal: 100
 oneHandedPenaltyGlobal: 100
-maxViewDistance: 30
+maxViewDistance: 35
 noLOSAccuracyPenaltyGlobal: 50
 baseDefenseMapFromLocation: 0
 stunningImprovesMorale: true

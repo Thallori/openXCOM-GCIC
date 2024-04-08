@@ -55,12 +55,18 @@ X-Com Files/Final Mod Pack		[mod]
   Fire Extinguisher			[touchup, recolour]
   Armored Vest				[touchup, recolour]
   Chemogun and Flamer SFX		[wholecloth]
+  Muckstar Unit Sprite			[touchup, animated]
+  Zombie				[touchup]
 
 X-Com Files Resound			[mod]
  Ksenni					[author]
   Wrench SFX				[wholecloth]
   Neonbow SFX				[wholecloth]
   Shotgun SFX				[wholecloth]
+
+Awesome Guns				[mod]
+ CanadianBeaver				[author]
+  Laser FireT SFX			[wholecloth]
 
 From the Ashes				[mod]
  Finnik					[author]

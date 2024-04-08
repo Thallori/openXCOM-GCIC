@@ -1,4 +1,17 @@
 ﻿mapScripts:
+  - type: GLOBE
+    commands:
+    - type: addUFO
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addBlock
+      size: 2
+      executions: 2
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain
+
   - type: HANGAR_DRONES_3X3
     commands:
     - type: addUFO

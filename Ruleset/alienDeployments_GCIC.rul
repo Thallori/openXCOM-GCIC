@@ -467,7 +467,7 @@ alienDeployments:
     missionBountyItem: STR_SHARES_GCIC
     missionBountyItemCount: 5
     unlockedResearch: STR_TRG_SG_PREQ
-    customUfo: STR_SABOTAGE_OFFICE1
+    customUfo: STR_SABOTAGE_OFFICE
     terrains:
       - COMMERCIAL
     music:
@@ -666,4 +666,74 @@ alienDeployments:
         dQty: 1
         percentageOutsideUfo: 100
         customUnitType: STR_DRONE_ENEMY_SHARK
+        itemSets: *AnchorEmptyInventory
+
+  - type: STR_MEDI_MUCK
+    script: GLOBE
+    width: 60
+    length: 60
+    height: 5
+    alert: STR_MEDI_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_MEDI_CREATURE_DESCRIPTION
+    markerName: STR_MEDI_CREATURE
+    duration: [36, 60]
+    despawnPenalty: 20
+    abortPenalty: 20
+    briefing:
+      showTarget: false
+      title: STR_MEDI_CREATURE
+      desc: STR_MEDI_CREATURE_BRIEFING
+      music: BLOOD_INTRO
+      background: BACK16.SCR
+      palette: 0
+    unlockedResearch: STR_TRG_MS_PREQ
+    terrains:
+      - FOREST2
+    music:
+      - BLOOD1
+    data:
+      - alienRank: 2
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 3
+        itemSets: *AnchorEmptyInventory
+
+  - type: STR_MEDI_MUCK_CHRYS
+    script: GLOBE
+    width: 60
+    length: 60
+    height: 5
+    alert: STR_MEDI_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_MEDI_CREATURE_DESCRIPTION
+    markerName: STR_MEDI_CREATURE
+    duration: [36, 60]
+    despawnPenalty: 20
+    abortPenalty: 20
+    briefing:
+      showTarget: false
+      title: STR_MEDI_CREATURE
+      desc: STR_MEDI_CREATURE_BRIEFING
+      music: BLOOD_INTRO
+      background: BACK16.SCR
+      palette: 0
+    unlockedResearch: STR_TRG_MS_PREQ
+    terrains:
+      - FOREST2
+    music:
+      - BLOOD1
+    data:
+      - alienRank: 0
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 2
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 1
         itemSets: *AnchorEmptyInventory
