@@ -28,15 +28,25 @@ manufacture:
     producedItems:
       STR_SHARES_GCIC: 8
 
-  - name: STR_GCIC_SABOTAGE_2_CRACK_MANU
-    category: STR_CRACKING_MANUCAT
+  - name: STR_SHARES_MEDI_CHRY
+    category: STR_TASKS_MANUCAT
     requires:
-      - STR_GCIC_BACKCHANNEL_MISSIONS
-    time: 650
+      - STR_CHRYSSALID_CORPSE
+    time: 4
     requiredItems:
-      STR_GCIC_SABOTAGE_2_DATA: 1
+      STR_CHRYSSALID_CORPSE: 2
     producedItems:
-      STR_GCIC_SABOTAGE_2_DATA_DECRYPT: 1
+      STR_SHARES_MEDI: 1
+
+  - name: STR_SHARES_MEDI_MUCK
+    category: STR_TASKS_MANUCAT
+    requires:
+      - STR_MUCKSTAR_CORPSE
+    time: 4
+    requiredItems:
+      STR_MUCKSTAR_CORPSE: 4
+    producedItems:
+      STR_SHARES_MEDI: 1
 
 #projects
   - name: STR_RRM_ITEM
@@ -83,13 +93,29 @@ manufacture:
       STR_SHARES_GCIC: 2000
       STR_PROJECT_INDEPENDENCE_ITEM: 1
 
+  - name: STR_PMM_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_PMM_LOCK
+    time: 1
+    requiredItems:
+      STR_BOUNTY_1: 4
+
+  - name: STR_MEDIBAY_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_LMB_LOCK
+    time: 1
+    requiredItems:
+      STR_SHARES_MEDI: 1
+
   - name: STR_MEDICAL_CYBERNETICS_MANU
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_LMC_LOCK
     time: 1
     requiredItems:
-      STR_SHARES_MEDI: 4
+      STR_SHARES_MEDI: 3
     producedItems:
       STR_MEDICAL_CYBERNETICS: 1
 
@@ -135,7 +161,7 @@ manufacture:
     requiresBaseFunc:
       - STR_SERVICE_MEDICAL
     requires:
-      - STR_MEDI_BAY
+      - STR_MEDIBAY_ITEM
       - STR_DART_PISTOL
     time: 12
     cost: 40
@@ -357,6 +383,16 @@ manufacture:
       STR_SINGLESHOT_LASER_PISTOL_CODED: 1
     producedItems:
       STR_SINGLESHOT_LASER_PISTOL: 1
+
+  - name: STR_GCIC_SABOTAGE_2_CRACK_MANU
+    category: STR_CRACKING_MANUCAT
+    requires:
+      - STR_GCIC_BACKCHANNEL_MISSIONS
+    time: 650
+    requiredItems:
+      STR_GCIC_SABOTAGE_2_DATA: 1
+    producedItems:
+      STR_GCIC_SABOTAGE_2_DATA_DECRYPT: 1
 
 #salvage
   - name: STR_SALVAGE_SINGLESHOT_LASER_PISTOL_ELERIUM

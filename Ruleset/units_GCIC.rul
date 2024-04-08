@@ -366,7 +366,7 @@ units:
     armor: STR_CHRYSSALID_ARMOR
     standHeight: 21
     kneelHeight: 16
-    value: 35
+    value: 30
     deathSound: 9
     intelligence: 4
     aggression: 2
@@ -374,6 +374,9 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_CHRYSSALID_WEAPON
+        - STR_BOUNTY_1
+        - STR_BOUNTY_1
+        - STR_BOUNTY_1
 
   - type: STR_ZOMBIE
     race: STR_ANIMALS
@@ -387,7 +390,7 @@ units:
       reactions: 40
       firing: 0
       throwing: 0
-      strength: 80
+      strength: 60
       psiStrength: 0
       psiSkill: 0
       melee: 80
@@ -396,7 +399,7 @@ units:
     armor: STR_ZOMBIE_ARMOR
     standHeight: 18
     kneelHeight: 18
-    value: 15
+    value: 0
     intelligence: 3
     aggression: 2
     energyRecovery: 20

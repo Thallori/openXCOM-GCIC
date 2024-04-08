@@ -128,18 +128,18 @@ facilities:
 
   - type: STR_MEDI_BAY
     requires:
-      - STR_MEDI_BAY
+      - STR_MEDIBAY_ITEM
     leavesBehindOnSell:
       - STR_DEPOT
     provideBaseFunc: [STR_SERVICE_MEDICAL]
-#    spriteShape: 1
-#    spriteFacility: 303
+    spriteShape: 1
+    spriteFacility: 312
     buildTime: 20
     buildCost: 450000
     refundValue: 325000
-    monthlyCost: 60000
+    monthlyCost: 70000
     sickBayAbsoluteBonus: 0.25
-    sickBayRelativeBonus: 0.5
+    sickBayRelativeBonus: 0.50
     maxAllowedPerBase: 1
     rightClickActionType: 0
     mapName: XBASE_07

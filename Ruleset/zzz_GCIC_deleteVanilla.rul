@@ -456,6 +456,13 @@ research:
   - delete: STR_SUPPLY_SHIP
 soldiers:
   - delete: STR_SOLDIER
+terrains:
+  - delete: CULTA
+  - delete: DESERT
+  - delete: FOREST
+  - delete: JUNGLE
+  - delete: MOUNT
+  - delete: POLAR
 ufopaedia:
   - delete: STR_SKYRANGER
   - delete: STR_LIGHTNING

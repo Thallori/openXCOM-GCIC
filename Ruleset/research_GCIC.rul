@@ -350,10 +350,14 @@ research:
       - STR_TODO
     cost: 15
 
-  - name: STR_MEDI_BAY
+  - name: STR_LMB_LOCK
     dependencies:
-      - STR_MEDI_MISSIONS
-    cost: 20
+      - STR_SHARES_MEDI
+
+  - name: STR_MEDIBAY_ITEM
+    cost: 10
+    disables:
+      - STR_LMB_LOCK
 
   - name: STR_HOLDING_CELLS
     dependencies:

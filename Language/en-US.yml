@@ -399,9 +399,39 @@ en-US:
   STR_BUILT_INS_CATEGORY: "Built-In"
   STR_VOIDS_CATEGORY: "Voids"
   STR_DEBUG_CATEGORY: "Debug"
+#globe textures
+  GLOBE_TEXTURE_0: "Forest/Med Habitation, Cold"
+  GLOBE_TEXTURE_1: "Not Used"
+  GLOBE_TEXTURE_2: "Not Used"
+  GLOBE_TEXTURE_3: "Garden/High Habitation, Temperate"
+  GLOBE_TEXTURE_4: "Steppe/Med Habitation, Warm"
+  GLOBE_TEXTURE_5: "Rock Mountain/Low Habitation, Temperate"
+  GLOBE_TEXTURE_6: "Island/Med Habitation, Warm"
+  GLOBE_TEXTURE_7: "Sand Desert, Hot"
+  GLOBE_TEXTURE_8: "Deep Desert, Scorching"
+  GLOBE_TEXTURE_9: "Polar, Freezing"
+  GLOBE_TEXTURE_10: "Not Used"
+  GLOBE_TEXTURE_11: "Xenoform, Acid"
+  GLOBE_TEXTURE_12: "Icefield, Cold"
+  GLOBE_TEXTURE_13: "Shallow, Water"
+  GLOBE_TEXTURE_14: "Deep, Water"
+  GLOBE_TEXTURE_15: "Not Used"
+  GLOBE_TEXTURE_16: "Coral, Water"
+  GLOBE_TEXTURE_17: "Lake, Water"
+  GLOBE_TEXTURE_18: "Tundra/Low Habitation, Cold"
+  GLOBE_TEXTURE_19: "Heathland/Low Habitation, Cold"
+  GLOBE_TEXTURE_20: "Not Used"
+  GLOBE_TEXTURE_21: "Mediterranean/Med Habitation, Warm"
+  GLOBE_TEXTURE_22: "Rainforest/Low Habitation, Warm"
+  GLOBE_TEXTURE_23: "Not Used"
+  GLOBE_TEXTURE_24: "Deepest Desert, Scorching"
+  GLOBE_TEXTURE_25: "Not Used"
+  GLOBE_TEXTURE_26: "Snow Mountain/Low Habitation, Cold"
+  GLOBE_TEXTURE_27: "Taiga/Low Habitation, Cold"
 #maps land
   STR_HANGAR: "Warehouse District"
   STR_COMMERCIAL: "Merchant Boulevard"
+  MAP_FOREST2: "Forest"
 #maps sea
 #music
   GMSTORY: "Achron, We Will Be Reprised"
@@ -619,7 +649,9 @@ en-US:
   STR_SALVAGE_MANUCAT: "SALVAGE"
   STR_CONTAINERS_MANUCAT: "CONTAINERS"
   
-  STR_GCIC_SABOTAGE_2_MANU: "Turn in Investor Data"
+  STR_GCIC_SABOTAGE_2_MANU: "Deliver Investor Data"
+  STR_SHARES_MEDI_CHRY: "Deliver Chryssalid Remains"
+  STR_SHARES_MEDI_MUCK: "Deliver Muckstar Remains"
 
   STR_SSP_LASER_PISTOL_MANU: "UPGRADE: SSP Enforcer Laser Pistol (E)"
 
@@ -629,13 +661,13 @@ en-US:
   STR_CRACKING_HYBRID_DRONE: "CRACK: Hybrid"
   STR_CRACKING_HUMAN_DRONE: "CRACK: Human"
   STR_CRACKING_SHARK_DRONE: "CRACK: Shark"
-  STR_GCIC_SABOTAGE_2_CRACK_MANU: "CRACK: Investor Data"
 
   STR_CONSUMER_CYBERNETICS_DECODED: "CRACK: Consumer Cyberware"
   STR_45_PISTOL_DECODED: "CRACK: SSP 12mm Pistol"
   STR_SSP_SHOTGUN_DECODED: "CRACK: SSP Shotgun"
   STR_TASER_PISTOL_DECODED: "CRACK: SSP Taser Pistol"
   STR_SSP_LASER_PISTOL_DECODED: "CRACK: SSP Enforcer Laser Pistol"
+  STR_GCIC_SABOTAGE_2_CRACK_MANU: "CRACK: Investor Data"
 
   STR_SALVAGE_SINGLESHOT_LASER_PISTOL_ELERIUM: "SALVAGE: SSP Enforcer Laser Pistol (E)"
   STR_SALVAGE_XN_LASER_PISTOL: "SALVAGE: XN Laser Pistol"
@@ -724,11 +756,11 @@ en-US:
   STR_NETRUNNERS_NETWORK_UFOPEDIA: "{NEWLINE}FAVORABLE OUTCOME ODDS: 83.3%{NEWLINE}PREDICTED INTERLACES: 1.55/MONTH{NEWLINE}{NEWLINE}Bionic Interlaces and valuable XN kits do not come from nowhere. If we are to survive in this world, we must understand the technology that allows us to exist here. By tailing the freelancers who deliver these goods, we'll be able to find their source (or at least enrich our capabilities.){NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_SUBCONTRACTING_OPERATIONS: "Subcontracting Operations"
   STR_SUBCONTRACTING_OPERATIONS_UFOPEDIA: "{NEWLINE}CONFLICT RISK: Medium{NEWLINE}COOPERATION POTENTIAL: High{NEWLINE}{NEWLINE}All corporations have unfulfilled needs, either the opportunity cost is deemed too high or the shareholders' expectations exceed what is possible. In this light, we have an advantage in the absence of hazard pay. Combined with a reputation for successful operations, we'll be able to undercut outdated sub-contractors.{NEWLINE}{NEWLINE}Bounties are seen as proof of work and they can be traded for new contracts."
+  #medi-care for all, ends low level implant theft
   STR_PMM_ITEM: "PROJECT: MEDI Contract"
   STR_PMM_LOCK: "P:MM (preq)"
   STR_MEDI_MISSIONS: ">PROJECT: MEDI Contract<"
-  STR_MEDI_MISSIONS_UFOPEDIA: "{NEWLINE}AVG. ASSIGNMENTS: 0.79/MONTH{NEWLINE}todo" #todo, gives you the medi-bay and starts missions to kidnap muckstars and other exotic creatures too dangerous for hazard pay, creatures give more medi-shares alive than dead, medi-shares can be traded for information on creatures and new technologies
-  #medi-care for all, ends low level implant theft
+  STR_MEDI_MISSIONS_UFOPEDIA: "{NEWLINE}AVG. ASSIGNMENTS: 0.79/MONTH{NEWLINE}DISPLACEMENT RISK: Variable{NEWLINE}Thank you for contacting MEDI Exotics and Pharmaceuticals, your proposal has been accepted on a provisional basis. Desired specimens remain difficult to source despite continued expansion of xenoformed regions, therefore only low-priority assets will handled by your organization.{NEWLINE}{NEWLINE}Captured animals can be automatically delivered. Corpses are less valuable and will only be accepted in lump sums."
   STR_SSP_MISSIONS: ">SUBCONTRACT: SSP<"
   STR_SSP_MISSIONS_UFOPEDIA: "{NEWLINE}todo" #todo, gives you some 'free' weapons and asks you to kidnap people
 #connections
@@ -789,8 +821,10 @@ en-US:
   STR_BUNK_RACKS_UFOPEDIA: "A dedicated space for ancillaries to take care of their bodily needs in tweleve hour rotations. Fulfills the needs for sleep, property, and hygiene.{NEWLINE}{NEWLINE}> Accommodations: 24"
   STR_HOLDING_CELLS: "Holding Cells"
   STR_HOLDING_CELLS_UFOPEDIA: "Illegally captured subjects will be placed in temporary confinement until sufficent data is accrued. Specimens must be recycled before release.{NEWLINE}{NEWLINE}> Cells: 8"
+  STR_LMB_LOCK: "L:MB (preq)"
+  STR_MEDIBAY_ITEM: "LICENSE: MEDI-Bay"
   STR_MEDI_BAY: "MEDI-Bay"
-  STR_MEDI_BAY_UFOPEDIA: "todo, agreement with medi to test stuff, makes biological weapons, heals faster{NEWLINE}{NEWLINE}> Service: Medical{NEWLINE}> Bandwidth: 1{NEWLINE}> Limit: 1" #todo
+  STR_MEDI_BAY_UFOPEDIA: "Biosafe environment to assist in wound recovery, cybernetic maintenance, and pharmaceutical production. The small medical lab may be used for other projects during diagnostic downtime.{NEWLINE}{NEWLINE}> Service: Medical{NEWLINE}> Bandwidth: 1{NEWLINE}> Limit: 1"
   STR_DATACENTER: "Datacenter"
   STR_DATACENTER_UFOPEDIA: "The condensed physical aspect of digital information. Research servers require an uplink to explore archived data and write new programs.{NEWLINE}{NEWLINE}> Service: Uplink{NEWLINE}> Bandwidth: 4{NEWLINE}> Limit: 1"
   STR_LOCAL_INTERFACE: "Local Interface"
@@ -1037,7 +1071,7 @@ en-US:
   STR_SHARES_GCIC: "SHARES: GCIC"
   STR_SHARES_GCIC_UFOPEDIA: "{NEWLINE}Representitive fractional ownership in our parent company. These are awarded as an incentive to perform activities that are not legally enforcable. In this sense, shares are a crude measure of how loyal we are to GCIC's less reputable needs.{NEWLINE}{NEWLINE}As a shareholder, we'll recieve dividends. As a subsidiary, we'll recieve extra leeway in how we conduct business. When all requirements are met, available PROJECTS will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: +1200$/Month"
   STR_SHARES_MEDI: "SHARES: MEDI"
-  STR_SHARES_MEDI_UFOPEDIA: "{NEWLINE}{NEWLINE}Effective Income: +650$/Month"
+  STR_SHARES_MEDI_UFOPEDIA: "{NEWLINE}Contract reward for delivering exotic animals, alive or dead. Presumably, these creatures end up as experiments or extracted for resources that cannot be (economically) printed. Our contribution to medical science.{NEWLINE}{NEWLINE}MEDI-Shares can be traded for access to new breakthroughs or held to recieve dividens. When all requirements are met, available PROJECTS will appear in manufacturing{NEWLINE}{NEWLINE}Effective Income: +650$/Month"
   STR_BRAND_LOYALTY: "Brand Loyalty"
   STR_BRAND_LOYALTY_UFOPEDIA: "{NEWLINE}Fulfilling contracts or otherwise following through on our promises will create positive feelings in our consumer base. This results in more subscriptions even when services falter, letting us act with more freely with less consequence.{NEWLINE}{NEWLINE}With enough trust, we can break into new markets or get sponsorships from other corporate entities. When all requirements are met, available PROJECTS will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: +950$/Month"
   STR_BOUNTY_1: "Bounty"
@@ -1114,16 +1148,16 @@ en-US:
   STR_CHRYSSALID: "Chryssalid"
   STR_CHRYSSALID_CORPSE: "Chryssalid Corpse"
   STR_CHRYSSALIDS: "Chryssalids"
-  STR_CHRYSSALIDS_UFOPEDIA: "todo{NEWLINE}{NEWLINE}RISK CLASS: EXTREME" #todo
+  STR_CHRYSSALIDS_UFOPEDIA: "Devistating bioterror weapon native to xenoformed biomes. Oviparious claws are strong enough to breach alloy. Its adult form takes less than twenty seconds to grow inside other biocompatible creatures (which is most bipeds) and runs at a speed that cooks its own body.{NEWLINE}{NEWLINE}The traits that make it so dangerous also burn out its life. Even the worst incidents have never resulted in more than 10,000 casualties.{NEWLINE}{NEWLINE}Awards 3 bounties when neutralized, captured or otherwise.{NEWLINE}{NEWLINE}RISK CLASS: EXTREME"
   STR_CHRYSSALID_ARMOR: "Chryssalid Analysis"
   STR_CHRYSSALID_ARMOR_UFOPEDIA: "Attack Damage: 110 Mechanical"
 
   STR_ZOMBIE: "Zombie"
   STR_ZOMBIE_CORPSE: "Zombie Corpse"
   STR_ZOMBIES: "Zombies"
-  STR_ZOMBIES_UFOPEDIA: "todo{NEWLINE}{NEWLINE}RISK CLASS: MILSPEC" #todo
+  STR_ZOMBIES_UFOPEDIA: "A shambling corpse puppeted by the larval chryssalid inside. Will attack anything in sight with primitive instincts running on overdrive and muscles pushed hard enough to liquify.{NEWLINE}{NEWLINE}Once the body is damaged beyond use, the chryssalid will emerge, healthy and hungry. Do not engage until ready, this stage is far less dangerous than what comes next.{NEWLINE}{NEWLINE}RISK CLASS: MILSPEC"
   STR_ZOMBIE_ARMOR: "Zombie Analysis"
-  STR_ZOMBIE_ARMOR_UFOPEDIA: "Attack Damage: 80 Mechanical"
+  STR_ZOMBIE_ARMOR_UFOPEDIA: "Attack Damage: 60 Mechanical"
 
   STR_MUCKSTAR: "Muckstar"
   STR_MUCKSTAR_CORPSE: "Muckstar Corpse"

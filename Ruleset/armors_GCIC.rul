@@ -999,7 +999,6 @@ armors:
     spriteSheet: CHRYS.PCK
     corpseBattle:
       - STR_CHRYSSALID_CORPSE
-    allowInv: false
     drawingRoutine: 7
     heatVision: 70
     frontArmor: 35
@@ -1010,7 +1009,7 @@ armors:
       - 1.0 #0 none
       - 1.0 #1 kinetic
       - 1.1 #2 incendiary
-      - 1.0 #3 concussive
+      - 0.7 #3 concussive
       - 1.0 #4 radiant
       - 1.0 #5 plasma
       - 1.0 #6 blunt
@@ -1018,7 +1017,7 @@ armors:
       - 1.0 #8 chemical
       - 0.5 #9 smoke
       - 1.0 #10 electric
-      - 1.0 #11 sonic
+      - 0.7 #11 sonic
       - 1.0 #12 biological
       - 1.0 #13 psionic
       - 0.0 #14 heat
@@ -1077,7 +1076,6 @@ armors:
     spriteSheet: MUCKSTAR.PCK
     corpseBattle:
       - STR_MUCKSTAR_CORPSE
-    allowInv: false
     zombiImmune: true
     constantAnimation: true
     drawingRoutine: 16

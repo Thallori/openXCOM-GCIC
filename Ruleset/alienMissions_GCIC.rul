@@ -103,7 +103,7 @@ alienMissions:
   - type: STR_MEDI_MUCK
     despawnEvenIfTargeted: true
     objective: 3
-    spawnZone: 3 #cities
+    spawnZone: 6 #xenoform
     raceWeights:
       0:
           STR_ANIMALS: 100
@@ -117,7 +117,7 @@ alienMissions:
   - type: STR_MEDI_MUCK_CHRYS
     despawnEvenIfTargeted: true
     objective: 3
-    spawnZone: 3 #cities
+    spawnZone: 6 #xenoform
     raceWeights:
       0:
           STR_ANIMALS: 100

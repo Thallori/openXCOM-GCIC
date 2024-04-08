@@ -670,8 +670,8 @@ alienDeployments:
 
   - type: STR_MEDI_MUCK
     script: GLOBE
-    width: 60
-    length: 60
+    width: 50
+    length: 50
     height: 5
     alert: STR_MEDI_ALERT
     # alertBackground: BACK03.SCR
@@ -688,8 +688,6 @@ alienDeployments:
       background: BACK16.SCR
       palette: 0
     unlockedResearch: STR_TRG_MS_PREQ
-    terrains:
-      - FOREST2
     music:
       - BLOOD1
     data:
@@ -702,8 +700,8 @@ alienDeployments:
 
   - type: STR_MEDI_MUCK_CHRYS
     script: GLOBE
-    width: 60
-    length: 60
+    width: 50
+    length: 50
     height: 5
     alert: STR_MEDI_ALERT
     # alertBackground: BACK03.SCR
@@ -720,8 +718,6 @@ alienDeployments:
       background: BACK16.SCR
       palette: 0
     unlockedResearch: STR_TRG_MS_PREQ
-    terrains:
-      - FOREST2
     music:
       - BLOOD1
     data:

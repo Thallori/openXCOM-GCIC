@@ -5,13 +5,36 @@ globe:
   oceanPalette: 10
   textures: 
     - id: 1 #not used, cleaning this up will take a while
+      terrain:
+          - name: FOREST2
+            weight: 10
     - id: 2
+      terrain:
+          - name: FOREST2
+            weight: 10
     - id: 10
+      terrain:
+          - name: FOREST2
+            weight: 10
+    - id: 15
+      fakeUnderwater: true
+      terrain:
+          - name: FOREST2
+            weight: 10
     - id: 20
+      terrain:
+          - name: FOREST2
+            weight: 10
     - id: 23
+      terrain:
+          - name: FOREST2
+            weight: 10
     - id: 25
+      terrain:
+          - name: FOREST2
+            weight: 10
 
-    - id: 0 #FOREST2/med habitation, cold
+    - id: 0 #forest/med habitation, cold
       terrain:
           - name: FOREST2
             weight: 20
@@ -73,12 +96,6 @@ globe:
           - name: FOREST2
             weight: 10
 
-    - id: 15 #not used
-      fakeUnderwater: true
-      terrain:
-          - name: FOREST2
-            weight: 10
-
     - id: 16 #coral, water
       fakeUnderwater: true
       terrain:
@@ -101,12 +118,12 @@ globe:
           - name: FOREST2
             weight: 40
 
-    - id: 21 #mediterranean/med habitation, hot
+    - id: 21 #mediterranean/med habitation, warm
       terrain:
           - name: FOREST2
             weight: 10
 
-    - id: 22 #rainFOREST2/low habitation, hot
+    - id: 22 #rainforest/low habitation, warm
       terrain:
           - name: FOREST2
             weight: 25

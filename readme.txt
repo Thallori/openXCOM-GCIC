@@ -81,7 +81,8 @@ From the Apocalypse			[mod]
   Medikit				[touchup, recolour]
   Motion Sensor				[wholecloth]
   Soldier/Base Stats Background		[recolour]
-  Bite Sprite				[wholecloth]
+  Bite Sprite				[wholecloth]		(original)
+  Medical Facility			[touchup, reclour]	(original)
 
 Delicious Colors			[mod]
  RSSWizard				[author]

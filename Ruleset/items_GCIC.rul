@@ -350,7 +350,7 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 3
-    power: 80
+    power: 60
     damageType: 7
     accuracyMelee: 100
     tuMelee: 15
@@ -1223,7 +1223,7 @@ items:
     tuSnap: 30
     tuAimed: 45
     tuLoad: 25
-    snapRange: 7
+    snapRange: 9
     aimRange: 14
     dropoff: 3
     kneelBonus: 115
@@ -2687,6 +2687,8 @@ items:
 
   - type: STR_PMM_ITEM
     categories: [STR_PERKS_CATEGORY]
+  - type: STR_MEDIBAY_ITEM
+    categories: [STR_PERKS_CATEGORY]
 
 # abstract
   - type: STR_SHARES_GCIC
@@ -2718,6 +2720,8 @@ items:
     categories: [STR_PERKS_CATEGORY]
     costSell: 4500
     recoveryPoints: 2
+    weight: 0
+    armor: 255
 
 # containers
   - type: STR_CRIMINAL_CONTAINER_1

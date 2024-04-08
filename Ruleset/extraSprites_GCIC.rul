@@ -280,6 +280,7 @@ extraSprites:
       309: Resources/BaseBits/basebits_pnpbay.png
       310: Resources/BaseBits/basebits_printshop.png
       311: Resources/BaseBits/basebits_gateway.png
+      312: Resources/BaseBits/basebits_medi.png
       433: Resources/Crafts/bicube_basebit.png
       434: Resources/Crafts/crossover_basebit.png
       435: Resources/Crafts/rider_basebit.png
@@ -659,6 +660,8 @@ extraSprites:
     fileSingle: Resources/Pedia/vendor_print_CPAL.png
   - typeSingle: VENDOR_MEDI_CPAL
     fileSingle: Resources/Pedia/vendor_medi_CPAL.png
+  - typeSingle: VENDOR_MEDIZ_CPAL
+    fileSingle: Resources/Pedia/vendor_mediz_CPAL.png
   - typeSingle: VENDOR_BUILDER_CPAL
     fileSingle: Resources/Pedia/vendor_builder_CPAL.png
   - typeSingle: VENDOR_P2P_CPAL
