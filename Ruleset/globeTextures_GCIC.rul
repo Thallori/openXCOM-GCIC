@@ -4,141 +4,111 @@ globe:
   oceanShading: false
   oceanPalette: 10
   textures: 
-    - id: 1 #not used, cleaning this up will take a while
-      terrain:
-          - name: FOREST2
-            weight: 10
-    - id: 2
-      terrain:
-          - name: FOREST2
-            weight: 10
-    - id: 10
-      terrain:
-          - name: FOREST2
-            weight: 10
-    - id: 15
-      fakeUnderwater: true
-      terrain:
-          - name: FOREST2
-            weight: 10
-    - id: 20
-      terrain:
-          - name: FOREST2
-            weight: 10
-    - id: 23
-      terrain:
-          - name: FOREST2
-            weight: 10
-    - id: 25
-      terrain:
-          - name: FOREST2
-            weight: 10
-
     - id: 0 #forest/med habitation, cold
       terrain:
           - name: FOREST2
             weight: 20
 
-    - id: 3 #garden/prairie/high habitation, temperate
+    - id: 1 #garden/prairie/high habitation, temperate
       terrain:
         - name: FOREST2
           weight: 40
 
-    - id: 4 #steppe/med habitation, warm
+    - id: 2 #steppe/med habitation, warm
       terrain:
         - name: FOREST2
           weight: 50
 
-    - id: 5 #rock mountain/low habitation, temperate
+    - id: 3 #rock mountain/low habitation, temperate
       terrain:
           - name: FOREST2
             weight: 80
 
-    - id: 6 #island/med habitation, warm
+    - id: 4 #island/med habitation, warm
       terrain:
           - name: FOREST2
             weight: 50
 
-    - id: 7 #sand desert, hot
+    - id: 5 #sand desert, hot
       terrain:
           - name: FOREST2
             weight: 40
 
-    - id: 8 #deep desert, scorching
+    - id: 6 #deep desert, scorching
       terrain:
           - name: FOREST2
             weight: 30
 
-    - id: 9 #polar, freezing
+    - id: 7 #polar, freezing
       terrain:
           - name: FOREST2
             weight: 50
 
-    - id: 11 #xenoform, acid
+    - id: 8 #xenoform, acid
       terrain:
           - name: FOREST2
             weight: 20
 
-    - id: 12 #icefield, cold
+    - id: 9 #icefield, cold
       terrain:
           - name: FOREST2
             weight: 50
 
-    - id: 13 #shallow, water
+    - id: 10 #shallow, water
       fakeUnderwater: true
       terrain:
           - name: FOREST2
             weight: 20
 
-    - id: 14 #deep, water
+    - id: 11 #deep, water
       fakeUnderwater: true
       terrain:
           - name: FOREST2
             weight: 10
 
-    - id: 16 #coral, water
+    - id: 12 #coral, water
       fakeUnderwater: true
       terrain:
           - name: FOREST2
             weight: 30
 
-    - id: 17 #lake, water
+    - id: 13 #lake, water
       fakeUnderwater: true
       terrain:
           - name: FOREST2
             weight: 10
 
-    - id: 18 #tundra/low habitation, cold
+    - id: 14 #tundra/low habitation, cold
       terrain:
           - name: FOREST2
             weight: 80
 
-    - id: 19 #heathland/low habitation, cold
+    - id: 15 #heathland/low habitation, cold
       terrain:
           - name: FOREST2
             weight: 40
 
-    - id: 21 #mediterranean/med habitation, warm
+    - id: 16 #mediterranean/med habitation, warm
       terrain:
           - name: FOREST2
             weight: 10
 
-    - id: 22 #rainforest/low habitation, warm
+    - id: 17 #rainforest/low habitation, warm
       terrain:
           - name: FOREST2
             weight: 25
 
-    - id: 24 #deepest desert, scorching
+    - id: 18 #deepest desert, scorching
       terrain:
           - name: FOREST2
             weight: 70
 
-    - id: 26 #snow mountain/low habitation, cold
+    - id: 19 #snow mountain/low habitation, cold
       terrain:
           - name: FOREST2
             weight: 80
 
-    - id: 27 #taiga/low habitation, cold
+    - id: 20 #taiga/low habitation, cold
       terrain:
           - name: FOREST2
             weight: 80
