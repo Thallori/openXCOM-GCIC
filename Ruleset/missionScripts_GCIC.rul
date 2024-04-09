@@ -9,6 +9,19 @@ missionScripts:
     missionWeights:
       0:
         STR_RESCUE_1: 100
+    regionWeights: &populationDensity
+      0:
+        STR_MEZONIC_RIFTS: 100
+        STR_MOSSWAY_COMMONS: 80
+        STR_GOLDEN_REACH: 80
+        STR_TWINGATES: 40
+        STR_AZATAL_TERRACE: 80
+        STR_KAPISI_DESERT: 10
+        STR_HEIGARA_DESERT: 10
+        STR_GLEAMING_SEAS: 40
+        STR_CAYESAND_BASIN: 60
+        STR_ICEFIELDS: 20
+        STR_RIMEARCH: 20
     useTable: false
     startDelay: 30
     randomDelay: 7200
@@ -20,6 +33,7 @@ missionScripts:
     missionWeights:
       0:
         STR_RESCUE_1: 100
+    regionWeights: *populationDensity
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -30,6 +44,7 @@ missionScripts:
     missionWeights:
       0:
         STR_RESCUE_1: 100
+    regionWeights: *populationDensity
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -40,6 +55,7 @@ missionScripts:
     missionWeights:
       0:
         STR_RESCUE_1: 100
+    regionWeights: *populationDensity
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -51,6 +67,7 @@ missionScripts:
     missionWeights:
       0:
         STR_RESCUE_1: 100
+    regionWeights: *populationDensity
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -62,6 +79,7 @@ missionScripts:
     missionWeights:
       0:
         STR_RESCUE_1: 100
+    regionWeights: *populationDensity
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -72,6 +90,7 @@ missionScripts:
     missionWeights:
       0:
         STR_RESCUE_RR: 100
+    regionWeights: *populationDensity
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -83,6 +102,7 @@ missionScripts:
     missionWeights:
       0:
         STR_RESCUE_RR: 100
+    regionWeights: *populationDensity
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -93,6 +113,17 @@ missionScripts:
     missionWeights:
       0:
         STR_TRADE_MEETING_EARLY: 100
+    regionWeights: &noDesert
+      0:
+        STR_MEZONIC_RIFTS: 100
+        STR_MOSSWAY_COMMONS: 80
+        STR_GOLDEN_REACH: 80
+        STR_TWINGATES: 40
+        STR_AZATAL_TERRACE: 80
+        STR_GLEAMING_SEAS: 40
+        STR_CAYESAND_BASIN: 60
+        STR_ICEFIELDS: 20
+        STR_RIMEARCH: 20
     useTable: false
     startDelay: 15000
     randomDelay: 7200
@@ -105,6 +136,7 @@ missionScripts:
     missionWeights:
       0:
         STR_TRADE_MEETING_1: 100
+    regionWeights: *noDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -118,6 +150,7 @@ missionScripts:
     missionWeights:
       0:
         STR_TRADE_MEETING_1: 100
+    regionWeights: *noDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -129,6 +162,7 @@ missionScripts:
     missionWeights:
       0:
         STR_TRADE_MEETING_2: 100
+    regionWeights: *noDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -139,6 +173,7 @@ missionScripts:
     missionWeights:
       0:
         STR_GCIC_SABOTAGE_1: 100
+    regionWeights: *populationDensity
     useTable: false
     startDelay: 30000
     randomDelay: 7200
@@ -151,6 +186,7 @@ missionScripts:
     missionWeights:
       0:
         STR_GCIC_SABOTAGE_1: 100
+    regionWeights: *populationDensity
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -163,6 +199,7 @@ missionScripts:
     missionWeights:
       0:
         STR_GCIC_SABOTAGE_1: 100
+    regionWeights: *populationDensity
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -174,6 +211,7 @@ missionScripts:
     missionWeights:
       0:
         STR_GCIC_SABOTAGE_2: 100
+    regionWeights: *populationDensity
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -186,6 +224,7 @@ missionScripts:
     missionWeights:
       0:
         STR_GCIC_SABOTAGE_2: 100
+    regionWeights: *populationDensity
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -198,6 +237,15 @@ missionScripts:
       0:
         STR_MEDI_MUCK: 90
         STR_MEDI_MUCK_CHRYS: 10
+    regionWeights: &xenoform
+      0:
+        STR_MEZONIC_RIFTS: 20
+        STR_MOSSWAY_COMMONS: 40
+        STR_GOLDEN_REACH: 20
+        STR_TWINGATES: 20
+        STR_AZATAL_TERRACE: 20
+        STR_GLEAMING_SEAS: 20
+        STR_CAYESAND_BASIN: 20
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -210,6 +258,7 @@ missionScripts:
       0:
         STR_MEDI_MUCK: 90
         STR_MEDI_MUCK_CHRYS: 10
+    regionWeights: *xenoform
     useTable: false
     startDelay: 30
     randomDelay: 43000

@@ -268,6 +268,12 @@ extraSprites:
       3: Resources/BaseBits/basebits03.png
       7: Resources/BaseBits/basebits07.png
       8: Resources/BaseBits/basebits08.png
+      42: Resources/UI/rank0.png
+      43: Resources/UI/rank1.png
+      44: Resources/UI/rank2.png
+      45: Resources/UI/rank3.png
+      46: Resources/UI/rank4.png
+      47: Resources/UI/rank5.png
       300: Resources/BaseBits/basebits_access.png
       301: Resources/BaseBits/basebits_garage.png
       302: Resources/BaseBits/basebits_racks.png
@@ -827,3 +833,13 @@ extraSprites:
     fileSingle: Resources/Backgrounds/pedia_facility.png
   - typeSingle: BACK10.SCR
     fileSingle: Resources/Backgrounds/pedia_research.png
+
+  - typeSingle: AvatarBackground
+    fileSingle: Resources/UI/avatar.png
+  - type: TinyRanks
+    width: 42
+    height: 7
+    subX: 7
+    subY: 7
+    files:
+      0: Resources/UI/tiny_ranks.png

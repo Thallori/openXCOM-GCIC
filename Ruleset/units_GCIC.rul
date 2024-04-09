@@ -428,7 +428,7 @@ units:
     standHeight: 12
     kneelHeight: 12
     floatHeight: 8
-    value: 7
+    value: 5
     deathSound: 7
     moveSound: 16
     intelligence: 3
