@@ -195,7 +195,7 @@ terrains:
       - STRUCTURE_LUX
       - STRUCTURE_GLASS
       - STRUCTURE_PANELS2
-      - STRUCTURE_SLUMS1
+      - STRUCTURE_BRICKS1
       - STAIRS_METAL
       - FLOOR_ASPHALT
       - FURNITURE_TABLES_CHAIRS
@@ -231,7 +231,7 @@ terrains:
       - STRUCTURE_LUX
       - STRUCTURE_GLASS
       - STRUCTURE_PANELS2
-      - STRUCTURE_SLUMS1
+      - STRUCTURE_BRICKS1
       - STAIRS_METAL
       - FLOOR_ASPHALT
       - FURNITURE_TABLES_CHAIRS
@@ -337,6 +337,85 @@ terrains:
       - name: COMMERCIAL_21
         width: 20
         length: 10
+
+  - name: INDUSTRIAL
+    mapDataSets:
+      - BLANKS
+      - FLOOR_ASPHALT2
+      - FLOOR_URBAN
+      - STRUCTURE_CORRUGATED1
+      - STRUCTURE_CORRUGATED2
+      - STRUCTURE_WAREHOUSE
+      - STRUCTURE_BRICKS2
+      - BLOCKS_PORT_CRANE
+      - FENCE_ARROWS
+      - FENCE_CHAINLINK
+      - FENCE_IRON
+      - STAIRS_METAL
+      - LADDERM
+      - ROOFS_BITS
+      - LIGHTS_STREET1
+      - PIPES1
+      - BITES_PIPES
+      - FURNITURE_OUTDOORS
+      - FURNITURE_DESKS1
+      - FURNITURE_DESKS2
+      - BITS_TECH
+      - BITS_SERVERS
+      - COMPUTERS2
+      - BITS_WAREHOUSE
+      - BITS_INDUSTRY
+      - BITS_CRATES2
+      - BITS_CONTRABAND2
+      - BITS_BARRELS
+      - BITS_TRASH
+      - SIGNS_COMMERCIAL
+      - SIGNS_WARNING
+      - SIGNS_TECH1
+      - BATHROOM_SLUM
+      - HOLOGRAMS2
+    mapBlocks:
+      - name: INDUSTRIAL_00LZ
+        groups: 1
+      - name: INDUSTRIAL_01LZ
+        groups: 1
+      - name: INDUSTRIAL_02
+        width: 20
+        length: 20
+      - name: INDUSTRIAL_03S
+      - name: INDUSTRIAL_04S
+      - name: INDUSTRIAL_05S
+      - name: INDUSTRIAL_06S
+      - name: INDUSTRIAL_07S
+      - name: INDUSTRIAL_08
+        width: 20
+        length: 20
+      - name: INDUSTRIAL_09EW
+        groups: 2
+      - name: INDUSTRIAL_10EW
+        groups: 2
+      - name: INDUSTRIAL_11EW
+        groups: 2
+      - name: INDUSTRIAL_12EW
+        groups: 2
+      - name: INDUSTRIAL_13EW
+        groups: 2
+      - name: INDUSTRIAL_14EW
+        groups: 2
+      - name: INDUSTRIAL_15NS
+        groups: 3
+      - name: INDUSTRIAL_16NS
+        groups: 3
+      - name: INDUSTRIAL_17NS
+        groups: 3
+      - name: INDUSTRIAL_18NS
+        groups: 3
+      - name: INDUSTRIAL_19NS
+        groups: 3
+      - name: INDUSTRIAL_20NS
+        groups: 3
+      - name: INDUSTRIAL_21RC
+        groups: 4
 
   - name: FOREST2
     mapDataSets:

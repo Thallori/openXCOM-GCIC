@@ -277,7 +277,7 @@ items:
     flatRate: true
     snapRange: 3
     aimRange: 9
-    dropoff: 4
+    dropoff: 2
     confSnap:
       name: STR_SNAPSHOCK
     confAimed:
@@ -385,6 +385,7 @@ items:
     accuracyAimed: 60
     tuSnap: 40
     tuAimed: 60
+    dropoff: 2
     fixedWeapon: true
     recover: false
 
@@ -419,7 +420,7 @@ items:
     tuLoad: 25
     snapRange: 10
     aimRange: 14
-    dropoff: 4
+    dropoff: 2
     kneelBonus: 110
     attraction: 15
     armor: 30
@@ -505,7 +506,7 @@ items:
     tuLoad: 15
     snapRange: 12
     aimRange: 18
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 110
     attraction: 15
     armor: 30
@@ -567,7 +568,7 @@ items:
     tuAuto: 40
     snapRange: 14
     autoRange: 9
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 115
     # twoHanded: true
     oneHandedPenalty: 85
@@ -626,7 +627,7 @@ items:
     tuLoad: 15
     snapRange: 16
     aimRange: 30
-    dropoff: 3
+    dropoff: 2
     twoHanded: true
     oneHandedPenalty: 50
     kneelBonus: 120
@@ -698,7 +699,7 @@ items:
     tuAuto: 45
     snapRange: 12
     autoRange: 7
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 115
     # twoHanded: true
     oneHandedPenalty: 85
@@ -735,7 +736,7 @@ items:
     tuLoad: 15
     snapRange: 14
     aimRange: 20
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 110
     attraction: 15
     armor: 30
@@ -771,7 +772,7 @@ items:
     tuLoad: 15
     snapRange: 14
     aimRange: 20
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 110
     attraction: 15
     armor: 30
@@ -829,7 +830,7 @@ items:
     tuLoad: 25
     snapRange: 8
     aimRange: 14
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 115
     twoHanded: true
     oneHandedPenalty: 75
@@ -868,7 +869,7 @@ items:
     tuLoad: 25
     snapRange: 8
     aimRange: 14
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 115
     twoHanded: true
     oneHandedPenalty: 75
@@ -957,7 +958,7 @@ items:
     tuSnap: 30
     snapRange: 4
     maxRange: 6
-    dropoff: 20
+    dropoff: 10
     kneelBonus: 110
     experienceTrainingMode: 12
     attraction: 15
@@ -992,7 +993,7 @@ items:
     tuSnap: 30
     snapRange: 4
     maxRange: 6
-    dropoff: 20
+    dropoff: 10
     kneelBonus: 110
     experienceTrainingMode: 12
     attraction: 15
@@ -1068,7 +1069,7 @@ items:
     tuLoad: 15
     snapRange: 8
     aimRange: 14
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 110
     experienceTrainingMode: 12
     attraction: 15
@@ -1225,7 +1226,7 @@ items:
     tuLoad: 25
     snapRange: 9
     aimRange: 14
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 115
     # twoHanded: true
     oneHandedPenalty: 75
@@ -1361,7 +1362,7 @@ items:
     tuLoad: 10
     snapRange: 12
     aimRange: 18
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 110
     attraction: 15
     armor: 120
@@ -1397,7 +1398,7 @@ items:
     tuLoad: 10
     snapRange: 12
     aimRange: 18
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 110
     attraction: 15
     armor: 30
@@ -1436,7 +1437,7 @@ items:
     tuLoad: 10
     snapRange: 12
     aimRange: 18
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 110
     attraction: 15
     armor: 30
@@ -1529,7 +1530,7 @@ items:
     tuAimed: 45
     snapRange: 4
     aimRange: 14
-    dropoff: 4
+    dropoff: 2
     kneelBonus: 110
     attraction: 15
     armor: 120
@@ -1578,7 +1579,7 @@ items:
     tuAuto: 40
     snapRange: 14
     autoRange: 7
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 115
     # twoHanded: true
     oneHandedPenalty: 85
@@ -1732,7 +1733,7 @@ items:
     tuAuto: 80
     snapRange: 16
     autoRange: 10
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 150
     twoHanded: true
     oneHandedPenalty: 35
@@ -1785,7 +1786,7 @@ items:
     tuAimed: 75
     snapRange: 10
     aimRange: 18
-    dropoff: 3
+    dropoff: 2
     kneelBonus: 150
     twoHanded: true
     oneHandedPenalty: 35
@@ -1831,7 +1832,7 @@ items:
     tuAimed: 65
     snapRange: 1
     aimRange: 12
-    dropoff: 5
+    dropoff: 2
     kneelBonus: 115
     twoHanded: true
     oneHandedPenalty: 75
@@ -1863,7 +1864,7 @@ items:
     tuPrime: 30
     tuUnprime: 5
     tuThrow: 20
-    attraction: 15
+    attraction: 6
     armor: 45
 
   - type: STR_ELERIUM_BOMB
@@ -1891,7 +1892,7 @@ items:
     tuPrime: 30
     tuUnprime: 5
     tuThrow: 20
-    attraction: 15
+    attraction: 6
     armor: 120
 
 # melee
@@ -2113,7 +2114,7 @@ items:
       mana: 2
     snapRange: 5
     maxRange: 9
-    dropoff: 4
+    dropoff: 5
     kneelBonus: 110
     experienceTrainingMode: 26
     attraction: 15
@@ -2150,7 +2151,7 @@ items:
     flatRate: true
     snapRange: 2
     maxRange: 3
-    dropoff: 20
+    dropoff: 10
     kneelBonus: 110
     experienceTrainingMode: 19
     attraction: 15
@@ -2226,7 +2227,7 @@ items:
     snapRange: 12
     aimRange: 16
     maxRange: 32
-    dropoff: 4
+    dropoff: 2
     kneelBonus: 110
     # twoHanded: true
     oneHandedPenalty: 85
@@ -2331,7 +2332,7 @@ items:
       FixRadius: 2
       ToStun: 0.5
       RandomType: 4
-    accuracyAimed: 99
+    accuracyAimed: 95
     tuAimed: 55
     maxRange: 6
     isFireExtinguisher: true
@@ -2438,6 +2439,36 @@ items:
     tuUse: 20
     armor: 30
 
+  - type: STR_STIM_INHALER
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_P2P
+      - STR_STIM_INHALER
+    size: 0.05
+    costBuy: 119
+    costSell: 30
+    transferTime: 4
+    hitSound: 103 #
+    bigSprite: 109 #
+    floorSprite: 108 #
+    invWidth: 1
+    invHeight: 1
+    battleType: 6
+    medikitActionName: STR_USE_INHALER
+    weight: 2
+    stimulant: 2
+    manaRecovery: -3
+    stunRecovery: -15
+    energyRecovery: 35
+    medikitTargetMatrix: 31
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 2
+    costUse:
+      time: 8
+    flatRate: true
+    armor: 20
+
   - type: STR_MEDI_SPRAY
     categories: [STR_CONVENTIONAL_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
     requiresBuy:
@@ -2470,7 +2501,7 @@ items:
     categories: [STR_CONVENTIONAL_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
     requiresBuy:
       - STR_VENDOR_MEDI
-    size: 0.25
+    size: 0.1
     costBuy: 2499
     costSell: 600
     monthlyMaintenance: 350
@@ -2488,6 +2519,35 @@ items:
     healthRecovery: 3
     stunRecovery: 8
     energyRecovery: 5
+    medikitTargetMatrix: 31
+    costUse:
+      time: 15
+    flatRate: true
+    armor: 30
+
+  - type: STR_MEDI_TRAUMA
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_TOOLS_CATEGORY, STR_MEDICAL_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_MEDI
+      - STR_MEDI_TRAUMA
+    size: 0.2
+    costBuy: 29999
+    costSell: 7500
+    monthlyMaintenance: 4000
+    bigSprite: 120 #
+    floorSprite: 119 #
+    handSprite: 200 #
+    invWidth: 2
+    invHeight: 2
+    battleType: 6
+    weight: 15
+    painKiller: 6
+    heal: 6
+    stimulant: 6
+    woundRecovery: 1
+    healthRecovery: 4
+    stunRecovery: 8
+    energyRecovery: 15
     medikitTargetMatrix: 31
     costUse:
       time: 15
@@ -2696,20 +2756,40 @@ items:
     requiresBuy:
       - STR_SHARES_GCIC
     specialType: 198
+    recoveryPoints: 2
     costBuy: 60000
     costSell: 12000
     monthlySalary: -1200
-    recoveryPoints: 2
 
   - type: STR_SHARES_MEDI
     categories: [STR_PERKS_CATEGORY]
     requiresBuy:
       - STR_SHARES_MEDI
     specialType: 196
-    costBuy: 150000
-    costSell: 30000
-    monthlySalary: -650
     recoveryPoints: 2
+    costBuy: 150000
+    costSell: 28000
+    monthlySalary: -1450
+
+  - type: STR_SHARES_GR
+    categories: [STR_PERKS_CATEGORY]
+    requires:
+      - STR_SHARES_GR
+    specialType: 195
+    recoveryPoints: 5
+    costBuy: 40000
+    costSell: 7500
+    monthlySalary: -375
+    ignoreInBaseDefense: true
+    ignoreInCraftEquip: true
+    hiddenOnMinimap: true
+    recover: true
+    weight: 0
+    clipSize: 1
+    battleType: 10
+    fuseType: -1
+    isExplodingInHands: true
+    armor: 200
 
   - type: STR_BRAND_LOYALTY
     categories: [STR_PERKS_CATEGORY]
@@ -3064,8 +3144,11 @@ items:
   - type: STR_CHRYSSALID_CORPSE
     categories: [STR_SPECIMENS_CATEGORY]
     size: 0.4
-    costSell: 20000
-    recoveryPoints: 10
+    costSell: 15000
+    recoveryPoints: 5
+    recoveryTransformations:
+      STR_CHRYSSALID_CORPSE: [1]
+      STR_SHARES_MEDI: [50, 50]
     bigSprite: 53
     floorSprite: 49
     weight: 22
@@ -3079,6 +3162,7 @@ items:
     size: 0.4
     costSell: 4000
     recoveryPoints: 5
+    ignoreInBaseDefense: true
     bigSprite: 187
     floorSprite: 175
     weight: 22
@@ -3090,8 +3174,11 @@ items:
   - type: STR_MUCKSTAR_CORPSE
     categories: [STR_SPECIMENS_CATEGORY]
     size: 0.25
-    costSell: 8000
-    recoveryPoints: 4
+    costSell: 4000
+    recoveryPoints: 3
+    recoveryTransformations:
+      STR_MUCKSTAR_CORPSE: [1]
+      STR_SHARES_MEDI: [80, 20]
     bigSprite: 186
     floorSprite: 174
     weight: 9

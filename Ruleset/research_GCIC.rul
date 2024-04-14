@@ -670,11 +670,25 @@ research:
     dependencies:
       - STR_SURVEY_KNOCKER
 
+  - name: STR_STIM_INHALER
+    needItem: true
+    cost: 2
+
   - name: STR_MEDI_SPRAY
 
   - name: STR_MEDI_FIRST
     dependencies:
       - STR_VENDOR_MEDI
+
+  - name: STR_LMT_LOCK
+    dependencies:
+      - STR_SHARES_MEDI
+
+  - name: STR_MEDI_TRAUMA
+    needItem: true
+    cost: 4
+    disables:
+      - STR_LMT_LOCK
 
 #salvage
 # materials
@@ -706,7 +720,7 @@ research:
 
   - name: STR_MEDICAL_CYBERNETICS
     needItem: true
-    cost: 5
+    cost: 10
     unlocks:
       - STR_MEDICAL_CYBERNETICS_CODED
     getOneFree:
@@ -756,6 +770,10 @@ research:
     cost: 3
 
   - name: STR_SHARES_MEDI
+    needItem: true
+    cost: 3
+
+  - name: STR_SHARES_GR
     needItem: true
     cost: 3
 

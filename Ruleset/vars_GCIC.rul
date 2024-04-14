@@ -183,7 +183,6 @@ recommendedUserOptions:
   battleInstantGrenade: false
   showAllCommendations: false
   soldierDiaries: true
-  craftLaunchAlways: true
   canTransferCraftsWhileAirborne: true
   showMoreStatsInInventoryView: true
   strafe: true
@@ -191,26 +190,18 @@ recommendedUserOptions:
   globeSeasons: true
   globeAllRadarsOnBaseBuild: true
   alienBleeding: true
-  noAlienPanicMessages: true
   allowPsionicCapture: true
   allowPsiStrengthImprovement: false
   psiStrengthEval: true
   anytimePsiTraining: true
-  battleAutoEnd: true
   oxcePlayBriefingMusicDuringEquipment: true
   oxceUfoLandingAlert: false
   oxceAutoSell: true
-  oxceManufactureScrollSpeed: 5
-  oxceManufactureScrollSpeedWithCtrl: 10
-  oxceResearchScrollSpeed: 1
-  oxceResearchScrollSpeedWithCtrl: 5
   oxceHighlightNewTopics: true
   oxceEnableOffCentreShooting: true
   oxceEnableSlackingIndicator: true
   oxceGeoscapeEventsInstantDelivery: true
   oxceShowETAMode: 2
-  oxceWoundedDefendBaseIf: 70
-  lazyLoadResources: true
 #  oxceNightVisionColor: 2
 #  oxceAutoNightVisionThreshold: 7
 

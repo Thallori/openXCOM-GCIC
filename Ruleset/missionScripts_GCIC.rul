@@ -232,7 +232,7 @@ missionScripts:
   - type: MEDI1a
     researchTriggers:
       STR_MEDI_MISSIONS: true
-    executionOdds: 55
+    executionOdds: 40
     missionWeights:
       0:
         STR_MEDI_MUCK: 90
@@ -253,7 +253,7 @@ missionScripts:
   - type: MEDI1b
     researchTriggers:
       STR_MEDI_MISSIONS: true
-    executionOdds: 55
+    executionOdds: 39
     missionWeights:
       0:
         STR_MEDI_MUCK: 90

@@ -1,10 +1,19 @@
 ﻿
 alienDeployments:
+  - type: STR_CRAFT_DEPLOYMENT_PREVIEW
+    script: STR_CRAFT_DEPLOYMENT_PREVIEW
+    isHidden: true
+    width: 10
+    length: 10
+    height: 8
+    terrains:
+      - FOREST2
+
   - type: STR_RESCUE_1
-    script: HANGAR_DRONES_3X3
-    width: 30
-    length: 30
-    height: 5
+    script: INDUSTRIAL
+    width: 40
+    length: 40
+    height: 8
     alert: STR_RESCUE_1_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_RESCUE_1_ALERT_DESCRIPTION
@@ -22,7 +31,7 @@ alienDeployments:
     unlockedResearch: STR_TRG_BO_PREQ
     customUfo: STR_HOUSE_GARAGE
     terrains:
-      - HANGAR
+      - INDUSTRIAL
     music:
       - BREACH1
     data:
@@ -32,8 +41,8 @@ alienDeployments:
         highQty: 3
         dQty: 1
         percentageOutsideUfo: 60
-        extraRandomItems: &personalData7
-          - [STR_PERSONAL_DATA, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM]
+        extraRandomItems: &ironExtra
+          - [STR_PERSONAL_DATA, STR_STIM_INHALER, STR_STIM_INHALER, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM]
         itemSets: &boosterSet
           -
             - STR_BUSBOX_PISTOL
@@ -76,7 +85,7 @@ alienDeployments:
     script: HANGAR_DRONES_4X4
     width: 40
     length: 40
-    height: 5
+    height: 8
     alert: STR_RESCUE_RR_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_RESCUE_RR_ALERT_DESCRIPTION
@@ -104,7 +113,7 @@ alienDeployments:
         highQty: 1
         dQty: 1
         percentageOutsideUfo: 0
-        extraRandomItems: *personalData7
+        extraRandomItems: *ironExtra
         itemSets: &ripperSet
           -
             - STR_BUSBOX_PISTOL
@@ -148,14 +157,14 @@ alienDeployments:
         highQty: 4
         dQty: 3
         percentageOutsideUfo: 50
-        extraRandomItems: *personalData7
+        extraRandomItems: *ironExtra
         itemSets: *boosterSet
 
   - type: STR_TRADE_MEETING_EARLY
     script: SINGLE_BLOCK_2X2
     width: 20
     length: 20
-    height: 5
+    height: 8
     alert: STR_TRADE_MEETING_EARLY_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_TRADE_MEETING_EARLY_ALERT_DESCRIPTION
@@ -179,7 +188,7 @@ alienDeployments:
     missionBountyItem: STR_BIONIC_INTERLACE
     unlockedResearch: STR_TRG_FL_PREQ
     terrains:
-      - CLUB
+      - CLUB0
     music:
       - HACKER1
     data:
@@ -189,7 +198,7 @@ alienDeployments:
         highQty: 3
         dQty: 0
         percentageOutsideUfo: 0
-        extraRandomItems: &personalData6
+        extraRandomItems: &netrunnerExtra
           - [STR_PERSONAL_DATA, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM]
         itemSets: &freelancer
           -
@@ -257,7 +266,7 @@ alienDeployments:
     script: SINGLE_BLOCK_2X2
     width: 20
     length: 20
-    height: 5
+    height: 8
     alert: STR_TRADE_MEETING_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_TRADE_MEETING_1_ALERT_DESCRIPTION
@@ -285,7 +294,7 @@ alienDeployments:
         highQty: 4
         dQty: 1
         percentageOutsideUfo: 0
-        extraRandomItems: *personalData6
+        extraRandomItems: *netrunnerExtra
         itemSets: *freelancer
       - alienRank: 6
         lowQty: 1
@@ -316,7 +325,7 @@ alienDeployments:
     script: SINGLE_BLOCK_2X2
     width: 20
     length: 20
-    height: 5
+    height: 8
     alert: STR_TRADE_MEETING_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_TRADE_MEETING_2_ALERT_DESCRIPTION
@@ -373,7 +382,7 @@ alienDeployments:
         highQty: 2
         dQty: 1
         percentageOutsideUfo: 0
-        extraRandomItems: *personalData6
+        extraRandomItems: *netrunnerExtra
         itemSets: &skiptracer
           -
             - STR_DART_PISTOL
@@ -415,7 +424,7 @@ alienDeployments:
         highQty: 4
         dQty: 2
         percentageOutsideUfo: 0
-        extraRandomItems: *personalData6
+        extraRandomItems: *netrunnerExtra
         itemSets: *freelancer
       - alienRank: 6
         lowQty: 1
@@ -446,7 +455,7 @@ alienDeployments:
     script: COMMERCIAL_3X3
     width: 30
     length: 30
-    height: 5
+    height: 8
     alert: STR_GCIC_SABOTAGE_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION
@@ -486,7 +495,8 @@ alienDeployments:
         highQty: 3
         dQty: 1
         percentageOutsideUfo: 0
-        extraRandomItems: *personalData7
+        extraRandomItems: &personalData7
+          - [STR_PERSONAL_DATA, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM]
         itemSets: &sspGuard
           -
             - STR_BATON
@@ -555,7 +565,7 @@ alienDeployments:
     script: COMMERCIAL_4X4
     width: 40
     length: 40
-    height: 5
+    height: 8
     alert: STR_GCIC_SABOTAGE_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION
@@ -669,10 +679,10 @@ alienDeployments:
         itemSets: *AnchorEmptyInventory
 
   - type: STR_MEDI_MUCK
-    script: GLOBE
+    script: DEFAULT
     width: 50
     length: 50
-    height: 5
+    height: 8
     alert: STR_MEDI_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_MEDI_CREATURE_DESCRIPTION
@@ -699,10 +709,10 @@ alienDeployments:
         itemSets: *AnchorEmptyInventory
 
   - type: STR_MEDI_MUCK_CHRYS
-    script: GLOBE
+    script: DEFAULT
     width: 50
     length: 50
-    height: 5
+    height: 8
     alert: STR_MEDI_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_MEDI_CREATURE_DESCRIPTION

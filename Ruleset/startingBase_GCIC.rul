@@ -1,6 +1,4 @@
 startingBase:
-  lon: 2.21213 #TODO, starts for all regions
-  lat: 0.59682
   facilities:
     - type: STR_CENTRAL_ACCESS
       x: 1

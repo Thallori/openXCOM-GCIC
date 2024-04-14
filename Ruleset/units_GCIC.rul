@@ -41,8 +41,6 @@ units:
       -
         - STR_MULTITOOL
       -
-        - STR_SONIC_PROBE
-      -
         - STR_EXTINGUISHER
       -
         - STR_ELECTRIC_NAILER
@@ -401,8 +399,9 @@ units:
     kneelHeight: 18
     value: 0
     intelligence: 3
-    aggression: 2
+    aggression: 8
     energyRecovery: 20
+    isLeeroyJenkins: true
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
@@ -428,7 +427,7 @@ units:
     standHeight: 12
     kneelHeight: 12
     floatHeight: 8
-    value: 5
+    value: 8
     deathSound: 7
     moveSound: 16
     intelligence: 3
