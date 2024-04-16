@@ -668,7 +668,6 @@ armors:
     spriteInv: PILOT_CORE
     spriteSheet: PILOT_CORE.PCK
 #    customArmorPreviewIndex: ? #TODO
-    weight: 0
     corpseBattle:
       - STR_PILOT_CORE_CORPSE
     storeItem: STR_NONE
@@ -678,48 +677,41 @@ armors:
     painImmune: true
     bleedImmune: true
     zombiImmune: true
+    drawingRoutine: 4
+    movementType: 1
+    moveCost:
+      flyDownPercent: [50, 0]
+    moveSound: 40
     visibilityAtDark: 12
     personalLight: 5
-    heatVision: 20
-    stats:
-      tu: 15
-      stamina: 30
-      reactions: 30
-      strength: 10
+    heatVision: 40
     frontArmor: 25
     sideArmor: 25
     rearArmor: 25
-    underArmor: 25
+    underArmor: 20
     damageModifier: &MechanicalUnarmoredResists
       - 1.0 #0 none
       - 1.0 #1 kinetic, physical
-      - 1.0 #2 incendiary
+      - 0.6 #2 incendiary
       - 1.0 #3 concussive
       - 1.0 #4 radiant
       - 1.0 #5 plasma
       - 0.6 #6 blunt, physical
       - 1.0 #7 mechanical
-      - 1.0 #8 chemical
+      - 0.6 #8 chemical
       - 0.0 #9 smoke
-      - 2.0 #10 electric
+      - 1.4 #10 electric
       - 1.0 #11 sonic
-      - 1.0 #12 biological
+      - 0.0 #12 biological
       - 1.0 #13 psionic
-      - 1.0 #14 heat
-      - 1.0 #15 cold
-    meleeDodge:
-      melee: 0.1
-      reactions: 0.1
+      - 0.0 #14 heat
+      - 0.0 #15 cold
+    meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical
     recovery:
-      health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
       energy: *EnergyRecoveryTypical
       morale: *MoraleRecoveryTypical
-    drawingRoutine: 4
-    movementType: 1
-    moveSound: 40
-    size: 1
     overKill: 1.5
     units:
       - STR_PILOT
@@ -1079,6 +1071,9 @@ armors:
     zombiImmune: true
     constantAnimation: true
     drawingRoutine: 16
+    movementType: 1
+    moveCost:
+      flyDownPercent: [50, 0]
     heatVision: 45
     frontArmor: 4
     sideArmor: 4
@@ -1108,7 +1103,36 @@ armors:
       stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryGood
     overKill: 1.5
-    loftempsSet: [ 5 ]
+    loftempsSet: [ 4 ]
+
+# robots
+  - type: STR_ROBOSPHERE_ARMOR
+    spriteInv: ROBOSPHERE.SPK
+    spriteSheet: ROBOSPHERE.PCK
+    corpseBattle:
+      - STR_ROBOSPHERE_CORPSE
+    createsMeleeThreat: false
+    bleedImmune: true
+    zombiImmune: true
+    drawingRoutine: 19
+    movementType: 1
+    moveCost:
+      flyDownPercent: [50, 0]
+    visibilityAtDark: 12
+    personalLight: 5
+    heatVision: 40
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 8
+    damageModifier: *MechanicalUnarmoredResists
+    meleeDodge: *MeleeDodgePoor
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryGood
+    overKill: 1.5
+    loftempsSet: [ 2 ]
 
 #civilians
   - type: STR_CLIENT_1_ARMOR

@@ -127,3 +127,17 @@ alienMissions:
         trajectory: AM_SPAWN
         timer: 1000
         objective: true
+
+  - type: STR_GR_INDUSTRIAL_1
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 3 #cities
+    raceWeights:
+      0:
+          STR_ROBOTS: 100
+    waves:
+      - ufo: STR_GR_INDUSTRIAL_1
+        count: 1
+        trajectory: AM_SPAWN
+        timer: 1000
+        objective: true

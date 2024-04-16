@@ -131,6 +131,7 @@ extraSprites:
       186: Resources/Factions/Animals/muckstar_bigob.png
       187: Resources/Factions/Animals/zombie_bigob.png
       188: Resources/Items/Materials/mware_bigob.png
+      189: Resources/Factions/Robots/robosphere_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -210,6 +211,7 @@ extraSprites:
       173: Resources/Items/Multi/Ammo/dart_alloy_ammo_floorob.png
       174: Resources/Factions/Animals/muckstar_floorob.png
       175: Resources/Factions/Animals/zombie_floorob.png
+      176: Resources/Factions/Robots/robosphere_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -605,6 +607,19 @@ extraSprites:
     height: 40
     files:
       0: Resources/Factions/Animals/muckstar_sprite.png
+
+# robots
+  - typeSingle: ROBOSPHERE_CPAL
+    fileSingle: Resources/Factions/Robots/robosphere_CPAL.png
+  - typeSingle: ROBOSPHERE.SPK
+    fileSingle: Resources/Factions/Robots/robosphere_inventory.png
+  - type: ROBOSPHERE.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 80
+    files:
+      0: Resources/Factions/Robots/robosphere_sprite.png
 
 # clients
   - typeSingle: CLIENT_1.SPK

@@ -1369,6 +1369,27 @@ ufopaedia:
     section: STR_COMPETITORS_UC
     type_id: 5
 
+#robots
+  - id: STR_ROBOSPHERES
+    requires:
+      - STR_ROBOSPHERE
+    text: STR_ROBOSPHERES_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: ROBOSPHERE_CPAL
+  - id: STR_ROBOSPHERE_ARMOR
+    requires:
+      - STR_ROBOSPHERE_ARMOR
+    text: STR_ROBOSPHERE_ARMOR_UP
+    section: STR_COMPETITORS_UC
+    type_id: 5
+
 #uso analysis
 #manuals
   - id: STR_OPERATIONS_TUTORIAL

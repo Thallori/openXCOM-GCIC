@@ -262,3 +262,15 @@ missionScripts:
     useTable: false
     startDelay: 30
     randomDelay: 43000
+
+  - type: GR1a
+    researchTriggers:
+      STR_GR_MISSIONS: true
+    executionOdds: 71
+    missionWeights:
+      0:
+        STR_GR_INDUSTRIAL_1: 100
+    regionWeights: *populationDensity
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000

@@ -103,13 +103,24 @@
       size: 2
     - type: fillArea
 
-  - type: INDUSTRIAL
+  - type: INDUSTRIAL_DRONES_4X4
     commands:
     - type: addUFO
+      rects:
+        - [0, 0, 3, 3]
     - type: addCraft
     - type: addLine
-      direction: horizontal
+      direction: both
+#drone spawns
+    - type: addBlock
+      terrain: INDUSTRIAL_DRONES_1
+      size: 2
+      label: 1
+      executionChances: 50
+    - type: addBlock
+      terrain: INDUSTRIAL_DRONES_1
+      conditionals: [-1]
+#rest of the owl
     - type: addBlock
       size: 2
-      executions: 2
     - type: fillArea

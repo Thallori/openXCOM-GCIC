@@ -155,6 +155,35 @@ units:
     canSurrender: true
 
 #hacker faction
+  - type: STR_FREELANCER_PUBLIC
+    race: STR_NETRUNNERS
+    rank: STR_RANK_5
+    liveAlien: STR_BOUNTY_1
+    stats:
+      tu: 50
+      stamina: 50
+      health: 35
+      bravery: 70
+      reactions: 40
+      firing: 40
+      throwing: 30
+      melee: 30
+      strength: 30
+      psiStrength: 30
+      psiSkill: 0
+      mana: 40
+    armor: STR_FREELANCER_ARMOR
+    standHeight: 20
+    kneelHeight: 14
+    value: 4
+    deathSound: [41, 42, 43]
+    energyRecovery: 30
+    intelligence: 3
+    aggression: 1
+    spotter: 0
+    sniper: 0
+    canSurrender: true
+
   - type: STR_FREELANCER_PRIVATE
     race: STR_NETRUNNERS
     rank: STR_RANK_5
@@ -436,6 +465,40 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_MUCKSTAR_WEAPON
+
+#robots
+  - type: STR_ROBOSPHERE
+    race: STR_ROBOTS
+    rank: STR_RANK_ROBOT
+    liveAlien: STR_SHARES_GR
+    stats:
+      tu: 70
+      stamina: 90
+      health: 20
+      bravery: 100
+      reactions: 50
+      firing: 70
+      throwing: 0
+      strength: 10
+      psiStrength: 0
+      psiSkill: 0
+      melee: 45
+      mana: 80
+    armor: STR_ROBOSPHERE_ARMOR
+    standHeight: 10
+    kneelHeight: 10
+    floatHeight: 10
+    value: 5
+    deathSound: 23
+    moveSound: 15
+    intelligence: 10
+    spotter: 1
+    aggression: 2
+    energyRecovery: 50
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_ROBOSPHERE_WEAPON
+        - STR_SHARES_GR
 
 #clients
   - type: STR_CLIENT_1

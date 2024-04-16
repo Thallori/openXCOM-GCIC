@@ -1025,6 +1025,21 @@ research:
     destroyItem: true
     cost: 10
 
+#robots
+  - name: STR_ROBOSPHERE
+    dependencies:
+      - STR_LOCK
+
+  - name: STR_ROBOSPHERE_ARMOR
+    dependencies:
+      - STR_ROBOSPHERE_CORPSE
+
+  - name: STR_ROBOSPHERE_CORPSE
+    lookup: STR_ROBOSPHERE_ARMOR
+    needItem: true
+    destroyItem: true
+    cost: 5
+
 #uso analysis
 #manuals
   - name: STR_DRONES_TUTORIAL
@@ -1095,5 +1110,10 @@ research:
 
 # animals
   - name: STR_TRG_MS_PREQ #muckstar
+    dependencies:
+      - STR_LOCK
+
+# robots
+  - name: STR_TRG_RS_PREQ #robosphere
     dependencies:
       - STR_LOCK

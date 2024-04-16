@@ -389,6 +389,34 @@ items:
     fixedWeapon: true
     recover: false
 
+  - type: STR_ROBOSPHERE_WEAPON
+    categories: [STR_BUILT_INS_CATEGORY]
+    bigSprite: 175 #
+    meleeAnimation: 12
+    meleeHitSound: 105
+    invWidth: 2
+    invHeight: 2
+    battleType: 3
+    power: 30
+    damageType: 10
+    damageAlter:
+      RandomType: 6
+      ToArmorPre: 0.05
+      ToTime: 1.0
+      ToHealth: 0.35
+      ToStun: 1.0
+      RandomStun: false
+      IgnoreSelfDestruct: true
+      IgnorePainImmunity: true
+      FireThreshold: 25
+      ToTile: 1.5
+    clipSize: -1
+    accuracyMelee: 100
+    tuMelee: 12
+    flatRate: true
+    fixedWeapon: true
+    recover: false
+
 # kinetic
   - type: STR_BUSBOX_PISTOL
     categories: [STR_CONVENTIONAL_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
@@ -2053,7 +2081,7 @@ items:
       ToArmorPre: 0.05
       ToTime: 1.0
       ToHealth: 0.35
-      ToStun: 0.75
+      ToStun: 1.0
       RandomStun: false
       IgnoreSelfDestruct: true
       IgnorePainImmunity: true
@@ -2424,7 +2452,7 @@ items:
     armor: 30
 
   - type: STR_MOTION_DETECTOR
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
     requiresBuy:
       - STR_VENDOR_VCM
       - STR_TODO
@@ -2623,8 +2651,8 @@ items:
     requiresBuy:
       - STR_TODO
     size: 0.1
-    costBuy: 1999
-    costSell: 500
+    costBuy: 5999
+    costSell: 1500
     transferTime: 4
     # bigSprite: ?
     invWidth: 2
@@ -2776,20 +2804,12 @@ items:
     requires:
       - STR_SHARES_GR
     specialType: 195
-    recoveryPoints: 5
+    recoveryPoints: 2
     costBuy: 40000
     costSell: 7500
     monthlySalary: -375
-    ignoreInBaseDefense: true
-    ignoreInCraftEquip: true
-    hiddenOnMinimap: true
-    recover: true
     weight: 0
-    clipSize: 1
-    battleType: 10
-    fuseType: -1
-    isExplodingInHands: true
-    armor: 200
+    armor: 255
 
   - type: STR_BRAND_LOYALTY
     categories: [STR_PERKS_CATEGORY]
@@ -2798,8 +2818,8 @@ items:
 
   - type: STR_BOUNTY_1
     categories: [STR_PERKS_CATEGORY]
-    costSell: 4500
     recoveryPoints: 2
+    costSell: 4500
     weight: 0
     armor: 255
 
@@ -3149,6 +3169,7 @@ items:
     recoveryTransformations:
       STR_CHRYSSALID_CORPSE: [1]
       STR_SHARES_MEDI: [50, 50]
+    ignoreInBaseDefense: true
     bigSprite: 53
     floorSprite: 49
     weight: 22
@@ -3179,9 +3200,28 @@ items:
     recoveryTransformations:
       STR_MUCKSTAR_CORPSE: [1]
       STR_SHARES_MEDI: [80, 20]
+    ignoreInBaseDefense: true
     bigSprite: 186
     floorSprite: 174
     weight: 9
+    invWidth: 2
+    invHeight: 2
+    battleType: 11
+    armor: 30
+
+# robots
+  - type: STR_ROBOSPHERE_CORPSE
+    categories: [STR_SPECIMENS_CATEGORY]
+    size: 0.25
+    costSell: 1500
+    recoveryPoints: 3
+    recoveryTransformations:
+      STR_AG_UNIT: [1]
+      STR_SHARES_GR: [75, 25]
+    ignoreInBaseDefense: true
+    bigSprite: 189
+    floorSprite: 176
+    weight: 12
     invWidth: 2
     invHeight: 2
     battleType: 11

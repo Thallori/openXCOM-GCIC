@@ -57,6 +57,7 @@ X-Com Files/Final Mod Pack		[mod]
   Chemogun and Flamer SFX		[wholecloth]
   Muckstar Unit Sprite			[touchup, animated]
   Zombie				[touchup]
+  Robosphere Inventory			[touchup]
 
 X-Com Files Resound			[mod]
  Ksenni					[author]
@@ -83,6 +84,7 @@ From the Apocalypse			[mod]
   Soldier/Base Stats Background		[recolour]
   Bite Sprite				[wholecloth]		(original)
   Medical Facility			[touchup, reclour]	(original)
+  Robosphere				[touchup]		(original)
 
 Delicious Colors			[mod]
  RSSWizard				[author]

@@ -9,6 +9,7 @@ musics:
   - type: SHADOW1
   - type: BLOOD_INTRO
   - type: BLOOD1
+  - type: BLOOD2
 
 extraSounds:
   - type: BATTLE.CAT

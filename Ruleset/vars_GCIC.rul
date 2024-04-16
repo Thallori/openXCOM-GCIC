@@ -69,7 +69,8 @@ statGrowthMultipliers:
   psiStrength: 0
   psiSkill: 4
 aimMultipliers: [0.5, 1.0, 1.0, 1.0, 1.0]
-armorMultipliers: [0.75, 1.0, 1.0, 1.0, 1.0]
+armorMultipliers: [0.8, 1.0, 1.0, 1.0, 1.0]
+armorMultipliersAbs: [0, 0, 0, 2, 4]
 sellPriceCoefficient: [100, 100, 100, 100, 100]
 difficultyCoefficientOverrides:
   monthlyRatingThresholds: [-999999, -999999, -999999, -999999, -999999]
@@ -202,8 +203,6 @@ recommendedUserOptions:
   oxceEnableSlackingIndicator: true
   oxceGeoscapeEventsInstantDelivery: true
   oxceShowETAMode: 2
-#  oxceNightVisionColor: 2
-#  oxceAutoNightVisionThreshold: 7
 
 constants:
 #  explosionOffset: 8
@@ -214,7 +213,7 @@ constants:
   extendedHwpLoadOrder: true
   extendedMeleeReactions: 2
   extendedTerrainMelee: 4
-  extendedUnderwaterThrowFactor: 50
+  extendedUnderwaterThrowFactor: 60
   damageRange: 100
 
 ai:

@@ -10,9 +10,9 @@ alienDeployments:
       - FOREST2
 
   - type: STR_RESCUE_1
-    script: INDUSTRIAL
-    width: 40
-    length: 40
+    script: HANGAR_DRONES_3X3
+    width: 30
+    length: 30
     height: 8
     alert: STR_RESCUE_1_ALERT
     # alertBackground: BACK03.SCR
@@ -31,7 +31,7 @@ alienDeployments:
     unlockedResearch: STR_TRG_BO_PREQ
     customUfo: STR_HOUSE_GARAGE
     terrains:
-      - INDUSTRIAL
+      - HANGAR
     music:
       - BREACH1
     data:
@@ -743,3 +743,91 @@ alienDeployments:
         highQty: 2
         dQty: 1
         itemSets: *AnchorEmptyInventory
+
+  - type: STR_GR_INDUSTRIAL_1
+    script: INDUSTRIAL_DRONES_4X4
+    width: 40
+    length: 40
+    height: 8
+    alert: STR_GR_INDUSTRIAL_1_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_GR_INDUSTRIAL_1_ALERT_DESCRIPTION
+    markerName: STR_GR_INDUSTRIAL_1
+    duration: [48, 72]
+    despawnPenalty: 20
+    abortPenalty: 20
+    startingCondition: INFILTRATION_GEAR_INFILTRATION_CRAFT
+    briefing:
+      showTarget: false
+      title: STR_GR_INDUSTRIAL_1
+      music: BLOOD_INTRO
+      background: BACK16.SCR
+      palette: 0
+    unlockedResearch: STR_TRG_RS_PREQ
+    terrains:
+      - INDUSTRIAL
+    music:
+      - BLOOD2
+    data:
+      - alienRank: 5
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 5
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        customUnitType: STR_FREELANCER_PUBLIC
+        extraRandomItems: *netrunnerExtra
+        itemSets:
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_MULTITOOL
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_MULTITOOL
+          -
+            - STR_9MM_PISTOL
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+            - STR_MULTITOOL
+          -
+            - STR_9MM_PISTOL
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+            - STR_MULTITOOL
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+            - STR_MULTITOOL
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+            - STR_MULTITOOL
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+            - STR_MULTITOOL
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+            - STR_MULTITOOL
+          -
+            - STR_DISPOSABLE_SMG
+            - STR_MULTITOOL
+          -
+            - STR_DISPOSABLE_SMG
+            - STR_MULTITOOL

@@ -441,8 +441,9 @@ en-US:
   SHADOW_INTRO: "Shadowrun Returns, Too Quiet"
   SHADOW1: "Shadowrun Returns, Blood Hounds"
   CRAFT1: "Starcraft, Zerg One"
-  BLOOD_INTRO: "Blood Money, Trouble in Vegas"
+  BLOOD_INTRO: "Hitman 2, Pause Screen"
   BLOOD1: "Blood Money, Night Time in New Orleans"
+  BLOOD2: "Blood Money, Vegas"
 #briefings
   STR_RESCUE_1: "Clients: Early Adopters"
   STR_RESCUE_1_ALERT: "CLIENTS REQUIRE RESCUE"
@@ -1212,6 +1213,13 @@ en-US:
   STR_MUCKSTARS_UP: "Oxygen breathing xenoforming flora, aggressive, mobile, moderately dangerous. Begins as an underground collective of spores and emerges when it reaches a certain size or when the ground is sufficently distrubed. Grows ahead of the xenobiome bulk, sometimes in excess of 30km, posing escalating risks to life near the border.{NEWLINE}{NEWLINE}Its xylem-like network of nutrient transport tubes can be catalyzed to deliver strong electrical shocks at long-range. 1/5 MEDI corpse exchange rate.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
   STR_MUCKSTAR_ARMOR: "Muckstar Analysis"
   STR_MUCKSTAR_ARMOR_UP: "Attack Damage: 35 Electrical"
+
+  STR_ROBOSPHERE: "GR-Sphere"
+  STR_ROBOSPHERE_CORPSE: "GR-Sphere Corpse"
+  STR_ROBOSPHERES: "GR-Spheres"
+  STR_ROBOSPHERES_UP: "todo{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
+  STR_ROBOSPHERE_ARMOR: "GR-Sphere Analysis"
+  STR_ROBOSPHERE_ARMOR_UP: "Attack Damage: 30 Electrical"
 
   STR_RACE_CLIENT: "Clients"
   STR_CIVILIAN: "Potential Clients"
