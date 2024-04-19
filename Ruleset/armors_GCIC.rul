@@ -136,11 +136,11 @@ armors:
     layersDefinition:
       F0: ["", "", "F0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
-      F2: ["", "", "F0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
       F3: ["", "", "F1_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
-      M2: ["", "", "M0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
       M3: ["", "", "M1_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: &SpriteFaceColorShark [176, 224, 80, 112, 176, 224, 80, 112]
@@ -297,11 +297,11 @@ armors:
     layersDefinition:
       F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      F2: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       F3: ["", "", "F1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      M2: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       M3: ["", "", "M1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
@@ -324,6 +324,157 @@ armors:
     rearArmor: 12
     underArmor: 9
     damageModifier: *OrganicDuraResists
+    meleeDodge: *MeleeDodgeGood
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      time: *TimeRecoveryTypical
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryTypical
+      energy: *EnergyRecoveryGood
+      morale: *MoraleRecoveryTypical
+    overKill: 1.5
+    units:
+      - STR_CRACKED_SHARK_DRONE
+    loftempsSet: [ 3 ]
+
+  - type: STR_SKELE_DRONE_HYBRID_ARMOR
+    ufopediaType: STR_SKELE_DRONE_ARMOR
+    customArmorPreviewIndex: 3
+    spriteSheet: SKELE_HYBRID.PCK
+    layersDefaultPrefix: HYBRID
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "SKELE", "", "", ""]
+    corpseBattle:
+      - STR_SKELE_DRONE_HYBRID_CORPSE
+    storeItem: STR_SKELE_DRONE_ARMOR
+    specialWeapon: STR_UNARMED
+    allowsKneeling: true
+    visibilityAtDark: 11
+    personalLight: 5
+    heatVision: 20
+    weight: 5
+    stats:
+      strength: +15
+      stamina: +10
+      tu: +10
+    frontArmor: 10
+    sideArmor: 15
+    rearArmor: 10
+    underArmor: 8
+    damageModifier: &OrganicDuraResistsMinus
+      - 1.0 #0 none
+      - 0.75 #1 kinetic
+      - 1.0 #2 incendiary
+      - 1.0 #3 concussive
+      - 0.75 #4 radiant
+      - 1.0 #5 plasma
+      - 1.0 #6 blunt
+      - 1.0 #7 mechanical
+      - 0.85 #8 chemical
+      - 4.0 #9 smoke
+      - 1.0 #10 electric
+      - 1.0 #11 sonic
+      - 1.0 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
+    meleeDodge: *MeleeDodgeGood
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      time: *TimeRecoveryTypical
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryTypical
+      energy: *EnergyRecoveryGood
+      morale: *MoraleRecoveryTypical
+    overKill: 1.5
+    units:
+      - STR_CRACKED_HYBRID_DRONE
+    loftempsSet: [ 3 ]
+
+  - type: STR_SKELE_DRONE_HUMAN_ARMOR
+    ufopediaType: STR_SKELE_DRONE_ARMOR
+    customArmorPreviewIndex: 4
+    spriteSheet: SKELE_HUMAN.PCK
+    layersDefaultPrefix: HUMAN
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "SKELE", "", "", ""]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorHuman
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorHuman
+    corpseBattle:
+      - STR_SKELE_DRONE_HUMAN_CORPSE
+    storeItem: STR_SKELE_DRONE_ARMOR
+    specialWeapon: STR_UNARMED
+    allowsKneeling: true
+    visibilityAtDark: 8
+    personalLight: 5
+    heatVision: 20
+    weight: 5
+    stats:
+      strength: +15
+      stamina: +10
+      tu: +10
+    frontArmor: 10
+    sideArmor: 15
+    rearArmor: 10
+    underArmor: 8
+    damageModifier: *OrganicDuraResistsMinus
+    meleeDodge: *MeleeDodgeGood
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      time: *TimeRecoveryTypical
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryTypical
+      energy: *EnergyRecoveryHumanGood
+      morale: *MoraleRecoveryTypical
+    overKill: 1.5
+    units:
+      - STR_CRACKED_HUMAN_DRONE
+    loftempsSet: [ 3 ]
+
+  - type: STR_SKELE_DRONE_SHARK_ARMOR
+    ufopediaType: STR_SKELE_DRONE_ARMOR
+    customArmorPreviewIndex: 5
+    spriteSheet: SKELE_SHARK.PCK
+    layersDefaultPrefix: SHARK
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      F3: ["", "", "F1_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      M3: ["", "", "M1_SHELL", "", "", "", "", "SKELE", "", "", ""]
+    spriteFaceGroup: 11
+    spriteFaceColor: *SpriteFaceColorShark
+    corpseBattle:
+      - STR_SKELE_DRONE_SHARK_CORPSE
+    storeItem: STR_SKELE_DRONE_ARMOR
+    specialWeapon: STR_SHARKATTACK
+    allowsKneeling: true
+    visibilityAtDark: 8
+    personalLight: 5
+    heatVision: 20
+    weight: 5
+    stats:
+      strength: +15
+      stamina: +10
+      tu: +10
+    frontArmor: 10
+    sideArmor: 15
+    rearArmor: 10
+    underArmor: 8
+    damageModifier: *OrganicDuraResistsMinus
     meleeDodge: *MeleeDodgeGood
     psiDefence: *PsiDefenseTypical
     recovery:
@@ -463,11 +614,11 @@ armors:
     layersDefinition:
       F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
-      F2: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
       F3: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
-      M2: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
       M3: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
@@ -619,11 +770,11 @@ armors:
     layersDefinition:
       F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      F2: ["", "", "F0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
       F3: ["", "", "F1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      M2: ["", "", "M0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
       M3: ["", "", "M1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
@@ -691,12 +842,12 @@ armors:
     underArmor: 20
     damageModifier: &MechanicalUnarmoredResists
       - 1.0 #0 none
-      - 1.0 #1 kinetic, physical
+      - 1.0 #1 kinetic
       - 0.6 #2 incendiary
       - 1.0 #3 concussive
       - 1.0 #4 radiant
       - 1.0 #5 plasma
-      - 0.6 #6 blunt, physical
+      - 0.6 #6 blunt
       - 1.0 #7 mechanical
       - 0.6 #8 chemical
       - 0.0 #9 smoke
@@ -704,7 +855,7 @@ armors:
       - 1.0 #11 sonic
       - 0.0 #12 biological
       - 1.0 #13 psionic
-      - 0.0 #14 heat
+      - 1.0 #14 heat
       - 0.0 #15 cold
     meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical

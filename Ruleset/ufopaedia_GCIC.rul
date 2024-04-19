@@ -651,6 +651,31 @@ ufopaedia:
     section: STR_DRONES_UC
     type_id: 5
 
+  - id: STR_SKELE_DRONE_ARMOR
+    requires:
+      - STR_SKELE_DRONE_ARMOR
+    text: STR_SKELE_DRONE_ARMOR_UP
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ARMOR_SKELE_CPAL
+
+  - id: STR_SKELE_DRONE_HYBRID_ARMOR
+    requires:
+      - STR_DEBUG
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_SKELE_DRONE_HUMAN_ARMOR
+    requires:
+      - STR_DEBUG
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_SKELE_DRONE_SHARK_ARMOR
+    requires:
+      - STR_DEBUG
+    section: STR_DRONES_UC
+    type_id: 5
+
   - id: STR_AQUAVEST_DRONE_ARMOR
     requires:
       - STR_AQUAVEST_DRONE_ARMOR
@@ -800,6 +825,19 @@ ufopaedia:
   - id: STR_45_AMMO
     requires:
       - STR_45_PISTOL
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_SSP_SMG
+    requires:
+      - STR_SSP_SMG
+    text: STR_SSP_SMG_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_SSP_SMG_AMMO
+    requires:
+      - STR_SSP_SMG
     section: STR_NOT_AVAILABLE
     type_id: 4
 

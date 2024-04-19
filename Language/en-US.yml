@@ -423,8 +423,9 @@ en-US:
   GLOBE_TEXTURE_19: "Snow Mountain/Low Habitation, Cold"
   GLOBE_TEXTURE_20: "Taiga/Low Habitation, Cold"
 #maps land
-  STR_HANGAR: "Warehouse District"
-  STR_COMMERCIAL: "Merchant Boulevard"
+  MAP_HANGAR: "Warehouse District"
+  MAP_COMMERCIAL: "Merchant Boulevard"
+  MAP_INDUSTRIAL: "Chemical Park"
   MAP_FOREST2: "Forest"
 #maps sea
 #music
@@ -447,46 +448,52 @@ en-US:
 #briefings
   STR_RESCUE_1: "Clients: Early Adopters"
   STR_RESCUE_1_ALERT: "CLIENTS REQUIRE RESCUE"
-  STR_RESCUE_1_ALERT_DESCRIPTION: "A client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Minimum site duration: 48 Hours. Maximium Gear: Security"
+  STR_RESCUE_1_ALERT_DESCRIPTION: "A client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Minimum site duration: 48 Hours{NEWLINE}Maximium Gear: Security"
   STR_RESCUE_1_BRIEFING: "A client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this mission."
   
   STR_RESCUE_RR: "Clients: Rapid Response"
   STR_RESCUE_RR_ALERT: "CLIENTS REQUIRE RESCUE"
-  STR_RESCUE_RR_ALERT_DESCRIPTION: "An emergency request has been triggered. We are tracking a client's current vitals and location. So far they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Minimum site duration: 16 Hours. Maximium Gear: Security"
+  STR_RESCUE_RR_ALERT_DESCRIPTION: "An emergency request has been triggered. We are tracking a client's current vitals and location. So far they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Minimum site duration: 16 Hours{NEWLINE}Maximium Gear: Security"
   STR_RESCUE_RR_BRIEFING: "An emergency request has been triggered. We are tracking a client's current vitals and location. So far they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this mission."
 
   STR_TRADE_MEETING_EARLY: "Netrunners: Contact"
   STR_TRADE_MEETING_EARLY_ALERT: "NETRUNNERS SEND MESSAGE"
-  STR_TRADE_MEETING_EARLY_ALERT_DESCRIPTION: "Your flunky missed our regular meeting time, a new location has been chosen if you still want the merch. Don't be late or this will be our last contact.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours. Gear Restriction: Infiltration."
+  STR_TRADE_MEETING_EARLY_ALERT_DESCRIPTION: "Your flunky missed our regular meeting time, a new location has been chosen if you still want the merch. Don't be late or this will be our last contact.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours{NEWLINE}Gear Restriction: Infiltration"
   STR_TRADE_MEETING_EARLY_BRIEFING: "Something has gone wrong. We have failed to send the expected drones and perform the correct handshake protocols. Our drones may be in danger.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this mission by leaving the operations zone."
 
   STR_TRADE_MEETING_ALERT: "NETRUNNERS LOCATED"
   STR_TRADE_MEETING_1: "Netrunners: Forbidden Trade"
-  STR_TRADE_MEETING_1_ALERT_DESCRIPTION: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours. Gear Restriction: Infiltration."
+  STR_TRADE_MEETING_1_ALERT_DESCRIPTION: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours{NEWLINE}Gear Restriction: Infiltration"
   STR_TRADE_MEETING_1_BRIEFING: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this mission by leaving the operations zone."
 
   STR_TRADE_MEETING_2: "Netrunners: Proxy Traced"
-  STR_TRADE_MEETING_2_ALERT_DESCRIPTION: "Couriers proxy hopping a bionic interlace have been backtraced to a single location. Though unlikely to be the true source, physical investigation might rekindle the trail and yield expansion material.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours. Gear Restriction: Infiltration."
+  STR_TRADE_MEETING_2_ALERT_DESCRIPTION: "Couriers proxy hopping a bionic interlace have been backtraced to a single location. Though unlikely to be the true source, physical investigation might rekindle the trail and yield expansion material.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 48 hours{NEWLINE}Gear Restriction: Infiltration"
   STR_TRADE_MEETING_2_BRIEFING: "Couriers proxy hopping a bionic interlace have been backtraced to a single location. Though unlikely to be the true source, physical investigation might rekindle the trail and yield expansion material.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this mission."
 
   STR_GCIC_SABOTAGE_ALERT: "GCIC MANDATE"
   STR_GCIC_SABOTAGE_1: "GCIC: Denial of Service"
-  STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal security. Destroy it and abort, or neutralize all targets in the area.{NEWLINE}{NEWLINE}We may ignore this mandate, but there will be consequences either way.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 72 hours. Maximium Gear: Milspec"
+  STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal security. Destroy it and abort, or neutralize all targets in the area.{NEWLINE}{NEWLINE}We may ignore this mandate, but there will be consequences either way.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 72 hours{NEWLINE}Maximium Gear: Milspec"
   STR_GCIC_SABOTAGE_1_BRIEFING: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal security. Destroy it and abort, or neutralize all targets in the area.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 10 turns before additional security forces arrive and we are forced to abort."
   STR_SABOTAGE_DESTROYED_COMPLETE: "EVIDENCE DESTROYED"
   STR_SABOTAGE_DESTROYED_FAILED: "EVIDENCE REMAINS"
   STR_SABOTAGE_DESTROYED_POPUP: "EVIDENCE DESTROYED{NEWLINE}{SMALLLINE}We may return to the vehicle and abort."
 
   STR_GCIC_SABOTAGE_2: "GCIC: Backdoor Injection"
-  STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION: "One of our sibling corporations is experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Expect armored security forces.{NEWLINE}{NEWLINE}We may ignore this mandate, but there will be consequences either way.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 72 hours. Maximium Gear: Milspec"
+  STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION: "One of our sibling corporations is experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Expect armored security forces.{NEWLINE}{NEWLINE}We may ignore this mandate, but there will be consequences either way.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum site duration: 72 hours{NEWLINE}Maximium Gear: Milspec"
   STR_GCIC_SABOTAGE_2_BRIEFING: "One of our sibling corporations is experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Expect armored security forces.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 20 turns before additional security forces arrive and we are forced to abort."
 
   STR_MEDI_ALERT: "MEDI CONTRACT"
   STR_MEDI_MUCK: "MEDI: Capture Muckstar"
   STR_MEDI_MUCK_CHRYS: "MEDI: Capture Muckstar (C)"
   STR_MEDI_CREATURE: "MEDI: Capture Creature"
-  STR_MEDI_MUCK_ALERT_DESCRIPTION: "{NEWLINE}{NEWLINE}Minimum site duration: 36 hours. Gear Restrictions: None"
-  STR_MEDI_CREATURE_BRIEFING: "{NEWLINE}{NEWLINE}We may abort this mission."
+  STR_MEDI_MUCK_ALERT_DESCRIPTION: "todo{NEWLINE}{NEWLINE}Minimum site duration: 36 hours{NEWLINE}Gear Restriction: None" #todo
+  STR_MEDI_CREATURE_BRIEFING: "todo{NEWLINE}{NEWLINE}We may abort this mission." #todo
+
+  STR_GR_ALERT: "GR CONTRACT"
+  STR_GR_INDUSTRIAL_1: "GR: Industrial Discrepancy"
+  STR_GR_INDUSTRIAL_1_ALERT_DESCRIPTION: "todo{NEWLINE}{NEWLINE}Minimum site duration: 48 Hours{NEWLINE}Gear Restriction: Infiltration, Tools" #todo
+  STR_GR_INDUSTRIAL_1_BRIEFING: "todo{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GR and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this mission." #todo
+
 #events
   STR_NETRUNNER_EARLY_EXPOSITION: "Netrunners Trading Contract"
   STR_NETRUNNER_EARLY_EXPOSITION_DESCRIPTION: "Upon examining our fragmented organic data for information on netrunners, we have found references to an old trade deal. The technology that was used to create us, along with other prototypes for high-level drone control, was sourced by an unknown party. GCIC had an ongoing contract for this tech, one that is now certainly void.{NEWLINE}{NEWLINE}The source may try to find other buyers, which gives us an opportunity."
@@ -700,7 +707,8 @@ en-US:
 
   STR_CONSUMER_CYBERNETICS_DECODED: "CRACK: Consumer Cyberware"
   STR_45_PISTOL_DECODED: "CRACK: SSP 12mm Pistol"
-  STR_SSP_SHOTGUN_DECODED: "CRACK: SSP Shotgun"
+  STR_SSP_SMG_DECODED: "CRACK: SSP Defender SMG"
+  STR_SSP_SHOTGUN_DECODED: "CRACK: SSP Mox Shotgun"
   STR_TASER_PISTOL_DECODED: "CRACK: SSP Taser Pistol"
   STR_SSP_LASER_PISTOL_DECODED: "CRACK: SSP Enforcer Laser Pistol"
   STR_GCIC_SABOTAGE_2_CRACK_MANU: "CRACK: Investor Data"
@@ -934,6 +942,12 @@ en-US:
   STR_DURA_DRONE_SHARK_ARMOR: "DURASUIT/SH"
   STR_DURA_DRONE_ARMOR: "DURASUIT"
   STR_DURA_DRONE_ARMOR_UP: "{NEWLINE}Pre-invasion military PPE, classified as milspec armor before plasma weapons rendered it hopelessly obsolete. Lightweight and loose fiting, it is designed to maximize mobility without compromising load-bearing capacity.{NEWLINE}{NEWLINE}Stamina: +10{NEWLINE}TU/Reactions: +5{NEWLINE}{NEWLINE}Armor: 12{NEWLINE}Dodge: +30%, +10% Melee{NEWLINE}Camo: +2{NEWLINE}{NEWLINE}KINETIC/RADIANT: 75%{NEWLINE}CHEMICAL/ELECTRIC: 85%{NEWLINE}SMOKE: 400%"
+  STR_SKELE_MANU: "LICENSE: Exoskeleton Armor"
+  STR_SKELE_DRONE_HYBRID_ARMOR: "EXOSKELETON/HB"
+  STR_SKELE_DRONE_HUMAN_ARMOR: "EXOSKELETON/HU"
+  STR_SKELE_DRONE_SHARK_ARMOR: "EXOSKELETON/SH"
+  STR_SKELE_DRONE_ARMOR: "EXOSKELETON"
+  STR_SKELE_DRONE_ARMOR_UP: "{NEWLINE}Battery-powered all-terrain support outfit. Provides lift and mobility assistance, suitable for users with disabilities and career oriented workhorses.{NEWLINE}{NEWLINE}Strength: +15{NEWLINE}TU/Stamina: +10{NEWLINE}{NEWLINE}Side Armor: 15{NEWLINE}Armor: 10; Weight: 5{NEWLINE}Dodge: +30%, +10% Melee{NEWLINE}{NEWLINE}KINETIC/RADIANT: 75%{NEWLINE}CHEMICAL: 85%{NEWLINE}SMOKE: 400%"
   STR_AQUAVEST_DRONE_HYBRID_ARMOR: "TACVEST/HB"
   STR_AQUAVEST_DRONE_HUMAN_ARMOR: "TACVEST/HU"
   STR_AQUAVEST_DRONE_SHARK_ARMOR: "TACVEST/SH"
@@ -961,6 +975,10 @@ en-US:
   STR_RIPP: "Docgrip"
   STR_RIOT_SHIELD: "Riot Shield"
   STR_RIOT_SHIELD_UP: "{NEWLINE}Stun: Full{NEWLINE}Lethal: -80%"
+  STR_CHRYSSALID_WEAPON: "Implant"
+  STR_ZOMBIE_WEAPON: "Tetanicbreak"
+  STR_MUCKSTAR_WEAPON: "Electrobolt"
+  STR_ROBOSPHERE_WEAPON: "Multitool"
 #equipment
 # kinetic
   STR_BUSBOX_PISTOL: "Busbox Pistol"
@@ -1157,6 +1175,7 @@ en-US:
   STR_RIPPER_ARMOR_UP: "Night Vision: +3m"
 
   STR_NETRUNNERS: "Netrunners"
+  STR_FREELANCER_PUBLIC: "Netrunner Freelancer"
   STR_FREELANCER_PRIVATE: "Netrunner Freelancer"
   STR_FREELANCERS: "Freelancers"
   STR_FREELANCERS_UP: "Self-employed intermediaries between sources and end-users. Specialized in handheld illicit goods, copywrite data, and anything that causes too much embarassment to be seen on public transaction records.{NEWLINE}{NEWLINE}Freelancers generally prefer to know as little about who and what they're dealing with as possible.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
@@ -1214,10 +1233,11 @@ en-US:
   STR_MUCKSTAR_ARMOR: "Muckstar Analysis"
   STR_MUCKSTAR_ARMOR_UP: "Attack Damage: 35 Electrical"
 
+  STR_ROBOTS: "Robots"
   STR_ROBOSPHERE: "GR-Sphere"
   STR_ROBOSPHERE_CORPSE: "GR-Sphere Corpse"
   STR_ROBOSPHERES: "GR-Spheres"
-  STR_ROBOSPHERES_UP: "todo{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
+  STR_ROBOSPHERES_UP: "todo{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL" #todo
   STR_ROBOSPHERE_ARMOR: "GR-Sphere Analysis"
   STR_ROBOSPHERE_ARMOR_UP: "Attack Damage: 30 Electrical"
 

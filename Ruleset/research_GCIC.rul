@@ -481,6 +481,16 @@ research:
     needItem: true
     cost: 4
 
+  - name: STR_LAES_LOCK
+    dependencies:
+      - STR_SHARES_GR
+
+  - name: STR_SKELE_DRONE_ARMOR
+    needItem: true
+    cost: 4
+    disables:
+      - STR_LAES_LOCK
+
   - name: STR_AQUAVEST_DRONE_ARMOR
     cost: 15
     dependencies:
@@ -528,6 +538,19 @@ research:
   - name: STR_45_PISTOL
     dependencies:
       - STR_45_PISTOL_CODED
+
+  - name: STR_SSP_SMG_CODED
+    lookup: STR_SSP_SMG
+    needItem: true
+    cost: 4
+    unlocks:
+      - STR_BC_PREQ
+      - STR_V_SSP_PREQ
+      - STR_SSP_SMG
+
+  - name: STR_SSP_SMG
+    dependencies:
+      - STR_SSP_SMG_CODED
 
   - name: STR_SSP_SHOTGUN_CODED
     lookup: STR_SSP_SHOTGUN

@@ -132,6 +132,9 @@ extraSprites:
       187: Resources/Factions/Animals/zombie_bigob.png
       188: Resources/Items/Materials/mware_bigob.png
       189: Resources/Factions/Robots/robosphere_bigob.png
+      190: Resources/Items/Kinetic/ssp_smg_bigob.png
+      191: Resources/Items/Kinetic/Ammo/ssp_smg_ammo_bigob.png
+      192: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -212,6 +215,10 @@ extraSprites:
       174: Resources/Factions/Animals/muckstar_floorob.png
       175: Resources/Factions/Animals/zombie_floorob.png
       176: Resources/Factions/Robots/robosphere_floorob.png
+      177: Resources/Items/Kinetic/ssp_smg_floorob.png
+      178: Resources/Items/Kinetic/Ammo/ssp_smg_ammo_floorob.png
+      179: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_floorob.png
+      180: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_shark_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -254,6 +261,7 @@ extraSprites:
       376: Resources/Items/Builtins/riotshield_handob.png
       384: Resources/Items/Tools/probe_handob.png
       392: Resources/Items/Multi/watergun_handob.png
+      400: Resources/Items/Kinetic/ssp_smg_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
@@ -387,10 +395,14 @@ extraSprites:
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_F0.png
   - typeSingle: SHARK__2__F1_SHELL
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_F1.png
+  - typeSingle: SHARK__2__F2_SHELL
+    fileSingle: Resources/Armors/Bodies/Sharks/SHARK_F2.png
   - typeSingle: SHARK__2__M0_SHELL
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_M0.png
   - typeSingle: SHARK__2__M1_SHELL
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_M1.png
+  - typeSingle: SHARK__2__M2_SHELL
+    fileSingle: Resources/Armors/Bodies/Sharks/SHARK_M2.png
 
 #armor
   - type: CustomArmorPreviews
@@ -456,6 +468,34 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Jumpsuit/jumpsuit_sprite_shark.png
+# exoskeleton
+  - typeSingle: HUMAN__7__SKELE
+    fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_inventory.png
+  - typeSingle: HYBRID__7__SKELE
+    fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_inventory.png
+  - typeSingle: SHARK__7__SKELE
+    fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_inventory.png
+  - type: SKELE_HUMAN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Exoskeleton/exoskeleton_sprite_human.png
+  - type: SKELE_HYBRID.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Exoskeleton/exoskeleton_sprite_hybrid.png
+  - type: SKELE_SHARK.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Exoskeleton/exoskeleton_sprite_shark.png
 # aquavest
   - typeSingle: HUMAN__7__AQUAVEST
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory.png
@@ -739,6 +779,8 @@ extraSprites:
     fileSingle: Resources/Pedia/armor_plex_CPAL.png
   - typeSingle: ARMOR_DURA_CPAL
     fileSingle: Resources/Pedia/armor_dura_CPAL.png
+  - typeSingle: ARMOR_SKELE_CPAL
+    fileSingle: Resources/Pedia/armor_skele_CPAL.png
   - typeSingle: ARMOR_AQUAVEST_CPAL
     fileSingle: Resources/Pedia/armor_aquavest_CPAL.png
   - typeSingle: ARMOR_AQUAVESTSHIELD_CPAL

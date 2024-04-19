@@ -7,6 +7,9 @@ startingConditions:
       - STR_DURA_DRONE_HYBRID_ARMOR
       - STR_DURA_DRONE_HUMAN_ARMOR
       - STR_DURA_DRONE_SHARK_ARMOR
+      - STR_SKELE_DRONE_HYBRID_ARMOR
+      - STR_SKELE_DRONE_HUMAN_ARMOR
+      - STR_SKELE_DRONE_SHARK_ARMOR
     allowedItemCategories:
       - STR_INFILTRATION_CATEGORY
     allowedCraft:
@@ -14,17 +17,24 @@ startingConditions:
       - STR_HD_HOVERBIKE
       - STR_VCM_BICUBE
 
-  # - type: TOOLS_GEAR_INFILTRATION_CRAFT
-  #   allowedArmors:
-  #     - STR_PLEX_DRONE_HYBRID_ARMOR
-  #     - STR_PLEX_DRONE_HUMAN_ARMOR
-  #     - STR_PLEX_DRONE_SHARK_ARMOR
-  #   allowedItemCategories:
-  #     - STR_TOOLS_CATEGORY
-  #   allowedCraft:
-  #     - STR_HD_CROSSOVER
-  #     - STR_HD_HOVERBIKE
-  #     - STR_VCM_BICUBE
+  - type: INFILTRATIONTOOLS_GEAR_INFILTRATION_CRAFT
+    allowedArmors:
+      - STR_PLEX_DRONE_HYBRID_ARMOR
+      - STR_PLEX_DRONE_HUMAN_ARMOR
+      - STR_PLEX_DRONE_SHARK_ARMOR
+      - STR_DURA_DRONE_HYBRID_ARMOR
+      - STR_DURA_DRONE_HUMAN_ARMOR
+      - STR_DURA_DRONE_SHARK_ARMOR
+      - STR_SKELE_DRONE_HYBRID_ARMOR
+      - STR_SKELE_DRONE_HUMAN_ARMOR
+      - STR_SKELE_DRONE_SHARK_ARMOR
+    allowedItemCategories:
+      - STR_INFILTRATION_CATEGORY
+      - STR_TOOLS_CATEGORY
+    allowedCraft:
+      - STR_HD_CROSSOVER
+      - STR_HD_HOVERBIKE
+      - STR_VCM_BICUBE
 
   # - type: SECURITY_GEAR_SECURITY_CRAFT
   #   allowedArmors:

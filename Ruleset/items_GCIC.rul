@@ -425,7 +425,7 @@ items:
     size: 0.1
     costBuy: 79
     costSell: 20
-    transferTime: 4
+    transferTime: 12
     bigSprite: 104
     floorSprite: 104
     handSprite: 144
@@ -823,6 +823,120 @@ items:
     weight: 2
     clipSize: 12
     power: 28
+    damageBonus:
+      reactions: 0.05
+    damageType: 1
+    armor: 20
+
+  - type: STR_SSP_SMG_CODED
+    categories: [STR_SECURITY_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY, STR_LOCKED_CATEGORY]
+    ufopediaType: STR_SSP_SMG
+    requires:
+      - STR_SSP_CRACK
+    size: 0.1
+    costSell: 590
+    bigSprite: 190
+    floorSprite: 177
+    handSprite: 400
+    bulletSprite: 16
+    bulletSpeed: 20
+    fireSound: 124
+    invWidth: 1
+    invHeight: 2
+    battleType: 1
+    weight: 7
+    compatibleAmmo:
+      - STR_SSP_SMG_AMMO
+    confSnap:
+      shots: 3
+      shortName: STR_SNAP_MULTIPLE_SHORT
+    confAuto:
+      shots: 5
+    accuracyAimed: 80
+    accuracySnap: 50
+    accuracyAuto: 45
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.10
+    tuAimed: 45
+    tuSnap: 30
+    tuAuto: 40
+    aimRange: 24
+    snapRange: 16
+    autoRange: 10
+    dropoff: 2
+    kneelBonus: 115
+    # twoHanded: true
+    oneHandedPenalty: 85
+    experienceTrainingMode: 5
+    attraction: 15
+    armor: 30
+
+  - type: STR_SSP_SMG
+    categories: [STR_SECURITY_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_VENDOR_SSP
+      - STR_SSP_SMG
+    size: 0.1
+    costBuy: 5899
+    costSell: 1475
+    transferTime: 4
+    bigSprite: 190
+    floorSprite: 177
+    handSprite: 400
+    bulletSprite: 16
+    bulletSpeed: 20
+    fireSound: 124
+    invWidth: 1
+    invHeight: 2
+    battleType: 1
+    weight: 7
+    compatibleAmmo:
+      - STR_SSP_SMG_AMMO
+    confSnap:
+      shots: 3
+      shortName: STR_SNAP_MULTIPLE_SHORT
+    confAuto:
+      shots: 5
+    accuracyAimed: 80
+    accuracySnap: 50
+    accuracyAuto: 45
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.10
+    tuAimed: 45
+    tuSnap: 30
+    tuAuto: 40
+    aimRange: 24
+    snapRange: 16
+    autoRange: 10
+    dropoff: 2
+    kneelBonus: 115
+    # twoHanded: true
+    oneHandedPenalty: 85
+    experienceTrainingMode: 5
+    attraction: 15
+    armor: 30
+
+  - type: STR_SSP_SMG_AMMO
+    categories: [STR_SECURITY_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_VENDOR_SSP
+      - STR_SSP_SMG
+    size: 0.01
+    costBuy: 249
+    costSell: 62
+    transferTime: 4
+    bigSprite: 191
+    floorSprite: 178
+    hitSound: 13
+    hitAnimation: -1
+    battleType: 2
+    weight: 3
+    clipSize: 20
+    power: 24
     damageBonus:
       reactions: 0.05
     damageType: 1
@@ -2881,6 +2995,15 @@ items:
     costSell: 1000
     transferTime: 4
 
+  - type: STR_SKELE_DRONE_ARMOR
+    categories: [STR_OUTFITS_CATEGORY, STR_CONVENTIONAL_CATEGORY, STR_TOOLS_CATEGORY]
+    requiresBuy:
+      - STR_SKELE_DRONE_ARMOR
+    size: 0.25
+    costBuy: 19999
+    costSell: 5000
+    transferTime: 4
+
   - type: STR_AQUAVEST_DRONE_ARMOR
     categories: [STR_OUTFITS_CATEGORY, STR_SECURITY_CATEGORY]
     requiresBuy:
@@ -2970,6 +3093,48 @@ items:
     recoveryTransformations:
       STR_BIOMASS: [1]
       STR_DURA_DRONE_ARMOR: [1]
+    armor: 35
+
+  - type: STR_SKELE_DRONE_HYBRID_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 192
+    floorSprite: 179
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 20
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_SKELE_DRONE_ARMOR: [1]
+    armor: 35
+
+  - type: STR_SKELE_DRONE_HUMAN_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 192
+    floorSprite: 179
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 22
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_SKELE_DRONE_ARMOR: [1]
+    armor: 35
+
+  - type: STR_SKELE_DRONE_SHARK_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 192
+    floorSprite: 180
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 28
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_SKELE_DRONE_ARMOR: [1]
     armor: 35
 
   - type: STR_AQUAVEST_DRONE_HYBRID_CORPSE

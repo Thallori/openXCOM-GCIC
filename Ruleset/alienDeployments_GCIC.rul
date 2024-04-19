@@ -622,17 +622,17 @@ alienDeployments:
             - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
           -
-            - STR_SSP_SHOTGUN_CODED
-            - STR_SSP_SHOTGUN_AMMO_BS
-            - STR_SSP_SHOTGUN_AMMO_BS
+            - STR_SSP_SMG_CODED
+            - STR_SSP_SMG_AMMO
+            - STR_SSP_SMG_AMMO
           -
-            - STR_SSP_SHOTGUN_CODED
-            - STR_SSP_SHOTGUN_AMMO_BS
-            - STR_SSP_SHOTGUN_AMMO_BS
+            - STR_SSP_SMG_CODED
+            - STR_SSP_SMG_AMMO
+            - STR_SSP_SMG_AMMO
           -
-            - STR_SSP_SHOTGUN_CODED
-            - STR_SSP_SHOTGUN_AMMO_BS
-            - STR_SSP_SHOTGUN_AMMO_BS
+            - STR_SSP_SMG_CODED
+            - STR_SSP_SMG_AMMO
+            - STR_SSP_SMG_AMMO
           -
             - STR_SSP_SHOTGUN_CODED
             - STR_SSP_SHOTGUN_AMMO_BS
@@ -749,14 +749,14 @@ alienDeployments:
     width: 40
     length: 40
     height: 8
-    alert: STR_GR_INDUSTRIAL_1_ALERT
+    alert: STR_GR_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_GR_INDUSTRIAL_1_ALERT_DESCRIPTION
     markerName: STR_GR_INDUSTRIAL_1
     duration: [48, 72]
     despawnPenalty: 20
     abortPenalty: 20
-    startingCondition: INFILTRATION_GEAR_INFILTRATION_CRAFT
+    startingCondition: INFILTRATIONTOOLS_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
       title: STR_GR_INDUSTRIAL_1
