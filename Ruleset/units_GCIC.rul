@@ -35,7 +35,7 @@ units:
     kneelHeight: 14
     value: 1
     deathSound: [10]
-    builtInWeaponSets: &drone1Tools
+    builtInWeaponSets: #&drone1ToolsLight
       -
         - STR_WRENCH
       -
@@ -70,7 +70,21 @@ units:
     kneelHeight: 14
     value: 1
     deathSound: [41, 42, 43]
-    builtInWeaponSets: *drone1Tools
+    builtInWeaponSets: &drone1ToolsHeavy
+      -
+        - STR_WRENCH
+      -
+        - STR_SLEDGEHAMMER
+      -
+        - STR_MULTITOOL
+      -
+        - STR_EXTINGUISHER
+      -
+        - STR_ELECTRIC_NAILER
+        - STR_ELECTRIC_NAILER_AMMO
+      -
+        - STR_SURVEY_KNOCKER
+        - STR_KNOCK_FLARE_AMMO
 
   - type: STR_DRONE_SHARK_1
     race: STR_RACE_DRONE
@@ -93,7 +107,7 @@ units:
     kneelHeight: 14
     value: 1
     deathSound: [113, 114, 115]
-    builtInWeaponSets: *drone1Tools
+    builtInWeaponSets: *drone1ToolsHeavy
 
 #criminal faction
   - type: STR_BOOSTER_PUBLIC

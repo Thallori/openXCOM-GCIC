@@ -1037,6 +1037,13 @@ ufopaedia:
     section: STR_EQUIPMENT_UC
     type_id: 4
 
+  - id: STR_SLEDGEHAMMER
+    requires:
+      - STR_SLEDGEHAMMER
+    text: STR_SLEDGEHAMMER_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
   - id: STR_MULTITOOL
     requires:
       - STR_MULTITOOL

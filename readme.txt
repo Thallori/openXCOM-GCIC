@@ -54,7 +54,7 @@ X-Com Files/Final Mod Pack		[mod]
   Taser					[wholecloth]		(Ryskeliini)
   Fire Extinguisher			[touchup, recolour]
   Armored Vest				[touchup, recolour]
-  Chemogun and Flamer SFX		[wholecloth]
+  Chemogun, Flamer, Hammer SFX		[wholecloth]
   Muckstar Unit Sprite			[touchup, animated]
   Zombie				[touchup]
   Robosphere Inventory			[touchup]

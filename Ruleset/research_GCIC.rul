@@ -664,6 +664,10 @@ research:
     needItem: true
     cost: 2
 
+  - name: STR_SLEDGEHAMMER
+    needItem: true
+    cost: 2
+
   - name: STR_MULTITOOL
     needItem: true
     cost: 3

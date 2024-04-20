@@ -770,9 +770,9 @@ alienDeployments:
       - BLOOD2
     data:
       - alienRank: 5
-        lowQty: 2
-        medQty: 2
-        highQty: 3
+        lowQty: 3
+        medQty: 3
+        highQty: 4
         dQty: 1
         percentageOutsideUfo: 50
         itemSets: *AnchorEmptyInventory
@@ -783,7 +783,8 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 0
         customUnitType: STR_FREELANCER_PUBLIC
-        extraRandomItems: *netrunnerExtra
+        extraRandomItems:
+          - [STR_SECRET_DATA]
         itemSets:
           -
             - STR_BUSBOX_PISTOL

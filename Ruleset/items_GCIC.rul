@@ -2168,6 +2168,50 @@ items:
     attraction: 15
     armor: 30
 
+  - type: STR_SLEDGEHAMMER
+    categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_MELEE_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_PRINTER
+      - STR_SLEDGEHAMMER
+    size: 0.3
+    costBuy: 74
+    costSell: 18
+    transferTime: 4
+    bigSprite: 195
+    floorSprite: 183
+    handSprite: 416
+    meleeHitSound: 131
+    meleeAnimation: 0
+    invWidth: 1
+    invHeight: 3
+    battleType: 3
+    weight: 20
+    power: 25
+    damageBonus:
+      strength: 0.9
+    damageType: 3
+    damageAlter:
+      RandomType: 6
+      ToTime: 1.0
+      ToStun: 1.0
+      ToTile: 0.60
+      FixRadius: 0
+    clipSize: -1
+    accuracyMelee: 75
+    meleeMultiplier:
+      melee: 0.5
+      strength: 0.5
+      flatHundred: 0.35
+    costMelee:
+      time: 20
+      energy: 16
+    flatRate: true
+    twoHanded: true
+    oneHandedPenalty: 50
+    experienceTrainingMode: 1
+    attraction: 15
+    armor: 30
+
   - type: STR_MULTITOOL
     categories: [STR_CONVENTIONAL_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MELEE_CATEGORY]
     requiresBuy:
@@ -2590,9 +2634,9 @@ items:
     costBuy: 119
     costSell: 30
     transferTime: 4
-    hitSound: 103 #
-    bigSprite: 109 #
-    floorSprite: 108 #
+    hitSound: 103
+    bigSprite: 193
+    floorSprite: 181
     invWidth: 1
     invHeight: 1
     battleType: 6
@@ -2676,9 +2720,9 @@ items:
     costBuy: 29999
     costSell: 7500
     monthlyMaintenance: 4000
-    bigSprite: 120 #
-    floorSprite: 119 #
-    handSprite: 200 #
+    bigSprite: 194
+    floorSprite: 182
+    handSprite: 408
     invWidth: 2
     invHeight: 2
     battleType: 6

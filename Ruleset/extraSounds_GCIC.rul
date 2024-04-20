@@ -45,6 +45,7 @@ extraSounds:
       128: Resources/Sounds/Impacts/sonic_hit.wav
       129: Resources/Sounds/Fire/squirt_fire.wav
       130: Resources/Sounds/Impacts/fire_hit.wav
+      131: Resources/Sounds/Impacts/heavy_hit.wav
 
   - type: GEO.CAT
     files:

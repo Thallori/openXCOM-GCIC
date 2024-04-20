@@ -5,6 +5,12 @@ en-US:
   STR_BLANK_TOKEN: " "
   STR_BLANK_ITEM: " "
 #vanilla replace
+  STR_1_BEGINNER: "1> Beginner"
+  STR_2_EXPERIENCED: "2> Classic"
+  STR_3_VETERAN: "3> Severe"
+  STR_4_GENIUS: "4> Critical"
+  STR_5_SUPERHUMAN: "5> Fatal"
+
   STR_INCOME: "INCOME"
   STR_FINANCE: "FINANCES"
   STR_EXPENDITURE: "EXPENDITURE"
@@ -942,6 +948,7 @@ en-US:
   STR_DURA_DRONE_SHARK_ARMOR: "DURASUIT/SH"
   STR_DURA_DRONE_ARMOR: "DURASUIT"
   STR_DURA_DRONE_ARMOR_UP: "{NEWLINE}Pre-invasion military PPE, classified as milspec armor before plasma weapons rendered it hopelessly obsolete. Lightweight and loose fiting, it is designed to maximize mobility without compromising load-bearing capacity.{NEWLINE}{NEWLINE}Stamina: +10{NEWLINE}TU/Reactions: +5{NEWLINE}{NEWLINE}Armor: 12{NEWLINE}Dodge: +30%, +10% Melee{NEWLINE}Camo: +2{NEWLINE}{NEWLINE}KINETIC/RADIANT: 75%{NEWLINE}CHEMICAL/ELECTRIC: 85%{NEWLINE}SMOKE: 400%"
+  STR_LAES_LOCK: "LA:ES (preq)"
   STR_SKELE_MANU: "LICENSE: Exoskeleton Armor"
   STR_SKELE_DRONE_HYBRID_ARMOR: "EXOSKELETON/HB"
   STR_SKELE_DRONE_HUMAN_ARMOR: "EXOSKELETON/HU"
@@ -1066,6 +1073,8 @@ en-US:
 # tools
   STR_WRENCH: "STL Wrench"
   STR_WRENCH_UP: "An old tool from the age of modernity. Continues to serve its purpose without batteries, license agreements, or flair.{NEWLINE}{NEWLINE}Stun: +75%{NEWLINE}Shred: +15%"
+  STR_SLEDGEHAMMER: "STL Hammer"
+  STR_SLEDGEHAMMER_UP: "Simple, heavy, effective. Used in demolition and situations where a stuck obstacle refuses more subtle solutions.{NEWLINE}{NEWLINE}Stun: +75%{NEWLINE}Terrain: +10%"
   STR_MULTITOOL: "GR MultiMaster"
   STR_MULTITOOL_UP: "The classic MultiPurpose MultiPronged MultiTool. For measuring and recalibrating sensitive optitronic devices and power substations alike. Keep prongs away from wet sufaces and always wear appropriate PPE during operation.{NEWLINE}{NEWLINE}Stun: +50%; Lethal: -65%{NEWLINE}Terrain: +100%"
   STR_SONIC_PROBE: "GR Sonic Probe"

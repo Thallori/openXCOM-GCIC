@@ -62,7 +62,7 @@ extraSprites:
       117: Resources/Items/Tools/Ammo/nailer_ammo_bigob.png
       118: Resources/Items/Tools/multitool_bigob.png
       119: Resources/Items/Utility/chemflare_bigob.png
-      120: Resources/Items/Utility/medikit_bigob.png
+      120: Resources/Items/Utility/medifirst_bigob.png
       121: Resources/Items/Utility/motionscanner_bigob.png
       122: Resources/Items/Explosives/pipebomb_bigob.png
       123: Resources/Items/Kinetic/9mm_bigob.png
@@ -135,6 +135,9 @@ extraSprites:
       190: Resources/Items/Kinetic/ssp_smg_bigob.png
       191: Resources/Items/Kinetic/Ammo/ssp_smg_ammo_bigob.png
       192: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_bigob.png
+      193: Resources/Items/Utility/jet_bigob.png
+      194: Resources/Items/Utility/meditrauma_bigob.png
+      195: Resources/Items/Tools/sledgehammer_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -157,7 +160,7 @@ extraSprites:
       116: Resources/Items/Tools/Ammo/nailer_ammo_floorob.png
       117: Resources/Items/Tools/multitool_floorob.png
       118: Resources/Items/Utility/chemflare_floorob.png
-      119: Resources/Items/Utility/medikit_floorob.png
+      119: Resources/Items/Utility/medifirst_floorob.png
       120: Resources/Items/Utility/motionscanner_floorob.png
       121: Resources/Items/Explosives/pipebomb_floorob.png
       122: Resources/Items/Kinetic/9mm_floorob.png
@@ -219,6 +222,9 @@ extraSprites:
       178: Resources/Items/Kinetic/Ammo/ssp_smg_ammo_floorob.png
       179: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_floorob.png
       180: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_shark_floorob.png
+      181: Resources/Items/Utility/jet_floorob.png
+      182: Resources/Items/Utility/meditrauma_floorob.png
+      183: Resources/Items/Tools/sledgehammer_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -236,7 +242,7 @@ extraSprites:
       176: Resources/Items/Tools/multitool_handob.png
       184: Resources/Items/Utility/chemflare_handob.png
       192: Resources/Items/Utility/electroflare_handob.png
-      200: Resources/Items/Utility/medikit_handob.png
+      200: Resources/Items/Utility/medifirst_handob.png
       208: Resources/Items/Utility/motionscanner_handob.png
       216: Resources/Items/Explosives/pipebomb_handob.png
       224: Resources/Items/Kinetic/9mm_handob.png
@@ -262,6 +268,8 @@ extraSprites:
       384: Resources/Items/Tools/probe_handob.png
       392: Resources/Items/Multi/watergun_handob.png
       400: Resources/Items/Kinetic/ssp_smg_handob.png
+      408: Resources/Items/Utility/meditrauma_handob.png
+      416: Resources/Items/Tools/sledgehammer_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
