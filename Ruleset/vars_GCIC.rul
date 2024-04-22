@@ -205,8 +205,9 @@ recommendedUserOptions:
   oxceShowETAMode: 2
 
 constants:
-#  explosionOffset: 8
-#  underwaterSmokeOffset: 8
+  # explosionOffset: 8
+  # underwaterSmokeOffset: 8
+  # extendedMovementCostRounding: 2
   extendedItemReloadCost: true
   extendedInventorySlotSorting: true
   extendedRunningCost: true

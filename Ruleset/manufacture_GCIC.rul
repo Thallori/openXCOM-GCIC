@@ -79,7 +79,7 @@ manufacture:
       - STR_PMM_LOCK
     time: 1
     requiredItems:
-      STR_BOUNTY_1: 4
+      STR_BOUNTY_1: 20
 
   - name: STR_MEDIBAY_ITEM
     category: STR_PROJECTS_MANUCAT
@@ -109,15 +109,41 @@ manufacture:
     producedItems:
       STR_MEDICAL_CYBERNETICS: 1
 
+  - name: STR_PGM_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_PGM_LOCK
+    time: 1
+    requiredItems:
+      STR_BOUNTY_1: 20
+
+  - name: STR_BOLTCANNON_MANU
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_LBC_LOCK
+    time: 1
+    requiredItems:
+      STR_SHARES_GR: 1
+    producedItems:
+      STR_BOLT_CANNON: 1
+
   - name: STR_SKELE_MANU
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_LAES_LOCK
     time: 1
     requiredItems:
-      STR_SHARES_GR: 5
+      STR_SHARES_GR: 4
     producedItems:
       STR_SKELE_DRONE_ARMOR: 1
+
+  - name: STR_LDT_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_LDT_LOCK
+    time: 1
+    requiredItems:
+      STR_SHARES_GR: 4
 
 #ammo
   - name: STR_45_AMMO
@@ -525,7 +551,7 @@ manufacture:
       - [10, {STR_9MM_SMG: 1, STR_9MM_SMG_AMMO: 4}]
       - [20, {STR_9MM_RIFLE: 1, STR_9MM_RIFLE_AMMO: 4}]
       - [20, {STR_DISPOSABLE_SMG: 3}]
-      - [20, {STR_STIM_INHALER: 5}]
+      - [20, {STR_STIM_INHALER: 10}]
 
   - name: STR_OPEN_XN_CONTAINER_1
     category: STR_CONTAINERS_MANUCAT

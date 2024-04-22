@@ -48,38 +48,48 @@ alienDeployments:
             - STR_BUSBOX_PISTOL
             - STR_COMBALL_AMMO
             - STR_COMBALL_AMMO
+            - STR_BOUNTY_1
           -
             - STR_BUSBOX_PISTOL
             - STR_COMBALL_AMMO
             - STR_COMBALL_AMMO
+            - STR_BOUNTY_1
           -
             - STR_BUSBOX_PISTOL
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
             - STR_STL_KNIFE
+            - STR_BOUNTY_1
           -
             - STR_BUSBOX_PISTOL
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
             - STR_STL_KNIFE
+            - STR_BOUNTY_1
           -
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_RIFLE
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
+            - STR_BOUNTY_1
           -
             - STR_DISPOSABLE_SMG
+            - STR_BOUNTY_1
           -
             - STR_DISPOSABLE_SMG
+            - STR_BOUNTY_1
           -
             - STR_STL_KNIFE
+            - STR_BOUNTY_1
 
   - type: STR_RESCUE_RR
     script: HANGAR_DRONES_4X4
@@ -119,38 +129,48 @@ alienDeployments:
             - STR_BUSBOX_PISTOL
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
+            - STR_BOUNTY_1
           -
             - STR_BUSBOX_PISTOL
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
+            - STR_BOUNTY_1
           -
             - STR_DISPOSABLE_SMG
+            - STR_BOUNTY_1
           -
             - STR_DISPOSABLE_SMG
+            - STR_BOUNTY_1
       - alienRank: 5
         lowQty: 3
         medQty: 3
@@ -791,44 +811,54 @@ alienDeployments:
             - STR_COMBALL_AMMO
             - STR_COMBALL_AMMO
             - STR_MULTITOOL
+            - STR_BOUNTY_1
           -
             - STR_BUSBOX_PISTOL
             - STR_COMBALL_AMMO
             - STR_COMBALL_AMMO
             - STR_MULTITOOL
+            - STR_BOUNTY_1
           -
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
             - STR_MULTITOOL
+            - STR_BOUNTY_1
           -
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
             - STR_MULTITOOL
+            - STR_BOUNTY_1
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
             - STR_MULTITOOL
+            - STR_BOUNTY_1
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
             - STR_MULTITOOL
+            - STR_BOUNTY_1
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
             - STR_MULTITOOL
+            - STR_BOUNTY_1
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
             - STR_MULTITOOL
+            - STR_BOUNTY_1
           -
             - STR_DISPOSABLE_SMG
             - STR_MULTITOOL
+            - STR_BOUNTY_1
           -
             - STR_DISPOSABLE_SMG
             - STR_MULTITOOL
+            - STR_BOUNTY_1

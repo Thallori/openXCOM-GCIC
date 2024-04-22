@@ -1071,6 +1071,19 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     type_id: 4
 
+  - id: STR_BOLT_CANNON
+    requires:
+      - STR_BOLT_CANNON
+    text: STR_BOLT_CANNON_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_BOLT_CANNON_AMMO
+    requires:
+      - STR_BOLT_CANNON
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
   - id: STR_SURVEY_KNOCKER
     requires:
       - STR_SURVEY_KNOCKER
@@ -1177,6 +1190,13 @@ ufopaedia:
     requires:
       - STR_BIOMASS
     text: STR_BIOMASS_UP
+    section: STR_RESOURCES_UC
+    type_id: 4
+
+  - id: STR_DURATHREAD
+    requires:
+      - STR_DURATHREAD
+    text: STR_DURATHREAD_UP
     section: STR_RESOURCES_UC
     type_id: 4
 

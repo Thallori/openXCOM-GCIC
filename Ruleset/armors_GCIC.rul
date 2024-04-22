@@ -349,6 +349,11 @@ armors:
       - STR_SKELE_DRONE_HYBRID_CORPSE
     storeItem: STR_SKELE_DRONE_ARMOR
     specialWeapon: STR_UNARMED
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_QD_SLOT
+      - STR_NULL_BACK_PACK
     allowsKneeling: true
     visibilityAtDark: 11
     personalLight: 5
@@ -362,7 +367,7 @@ armors:
     sideArmor: 15
     rearArmor: 10
     underArmor: 8
-    damageModifier: &OrganicDuraResistsMinus
+    damageModifier: &OrganicSkele
       - 1.0 #0 none
       - 0.75 #1 kinetic
       - 1.0 #2 incendiary
@@ -373,7 +378,7 @@ armors:
       - 1.0 #7 mechanical
       - 0.85 #8 chemical
       - 4.0 #9 smoke
-      - 1.0 #10 electric
+      - 1.1 #10 electric
       - 1.0 #11 sonic
       - 1.0 #12 biological
       - 1.0 #13 psionic
@@ -413,6 +418,11 @@ armors:
     corpseBattle:
       - STR_SKELE_DRONE_HUMAN_CORPSE
     storeItem: STR_SKELE_DRONE_ARMOR
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_QD_SLOT
+      - STR_NULL_BACK_PACK
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDark: 8
@@ -427,7 +437,7 @@ armors:
     sideArmor: 15
     rearArmor: 10
     underArmor: 8
-    damageModifier: *OrganicDuraResistsMinus
+    damageModifier: *OrganicSkele
     meleeDodge: *MeleeDodgeGood
     psiDefence: *PsiDefenseTypical
     recovery:
@@ -443,6 +453,11 @@ armors:
 
   - type: STR_SKELE_DRONE_SHARK_ARMOR
     ufopediaType: STR_SKELE_DRONE_ARMOR
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_QD_SLOT
+      - STR_NULL_BACK_PACK
     customArmorPreviewIndex: 5
     spriteSheet: SKELE_SHARK.PCK
     layersDefaultPrefix: SHARK
@@ -474,7 +489,7 @@ armors:
     sideArmor: 15
     rearArmor: 10
     underArmor: 8
-    damageModifier: *OrganicDuraResistsMinus
+    damageModifier: *OrganicSkele
     meleeDodge: *MeleeDodgeGood
     psiDefence: *PsiDefenseTypical
     recovery:

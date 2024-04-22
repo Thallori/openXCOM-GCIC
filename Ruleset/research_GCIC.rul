@@ -201,6 +201,11 @@ research:
       - STR_VENDOR_PRINTER
     cost: 4
 
+  - name: STR_PMM_LOCK
+    dependencies:
+      - STR_SUBCONTRACTING_OPERATIONS
+      - STR_VENDOR_MEDI
+
   - name: STR_MEDI_MISSIONS
     neededItem: STR_PMM_ITEM
     needItem: true
@@ -208,18 +213,19 @@ research:
     cost: 5
     disables:
       - STR_PMM_LOCK
-    
-  - name: STR_PMM_LOCK
-    dependencies:
-      - STR_SUBCONTRACTING_OPERATIONS
-      - STR_VENDOR_MEDI
 
-  - name: STR_SSP_MISSIONS
+  - name: STR_PGM_LOCK
     dependencies:
-      - STR_TODO
-      - STR_VENDOR_SSP
       - STR_SUBCONTRACTING_OPERATIONS
-    cost: 15
+      - STR_VENDOR_BUILDER
+
+  - name: STR_GR_MISSIONS
+    neededItem: STR_PGM_ITEM
+    needItem: true
+    destroyItem: true
+    cost: 5
+    disables:
+      - STR_PGM_LOCK
 
 #communications
   - name: STR_VENDOR_PRINTER
@@ -680,6 +686,16 @@ research:
     needItem: true
     cost: 2
 
+  - name: STR_LBC_LOCK
+    dependencies:
+      - STR_SHARES_GR
+
+  - name: STR_BOLT_CANNON
+    needItem: true
+    cost: 2
+    disables:
+      - STR_LBC_LOCK
+
   - name: STR_SURVEY_KNOCKER
     needItem: true
     cost: 2
@@ -762,6 +778,23 @@ research:
   - name: STR_BIOMASS
     needItem: true
     cost: 3
+
+  - name: STR_LDT_LOCK
+    dependencies:
+      - STR_SHARES_GR
+
+  - name: STR_LDT_ITEM
+    needItem: true
+    destroyItem: true
+    cost: 4
+    unlocks:
+      - STR_DURATHREAD
+    disables:
+      - STR_LDT_LOCK
+
+  - name: STR_DURATHREAD
+    needItem: true
+    cost: 5
 
   - name: STR_PLASTICS
     needItem: true
@@ -905,7 +938,7 @@ research:
     neededItem: STR_PERSONAL_DATA
     needItem: true
     destroyItem: true
-    cost: 25
+    cost: 10
     dependencies:
       - STR_MEDI_MISSIONS
     getOneFree:
@@ -915,6 +948,22 @@ research:
       STR_TRG_MS_PREQ:
         - STR_MUCKSTAR
         - STR_MUCKSTAR_CORPSE
+
+  - name: STR_DATA_ROBOT
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
+    neededItem: STR_PERSONAL_DATA
+    needItem: true
+    destroyItem: true
+    cost: 10
+    dependencies:
+      - STR_GR_MISSIONS
+    getOneFree:
+      - STR_DURATHREAD
+    getOneFreeProtected:
+      STR_TRG_RS_PREQ:
+        - STR_ROBOSPHERE
+        - STR_ROBOSPHERE_ARMOR
 
 # ironeyes
   - name: STR_BOOSTER_PRIVATE
@@ -1030,13 +1079,7 @@ research:
 
   - name: STR_CHRYSSALID_ARMOR
     dependencies:
-      - STR_CHRYSSALID_CORPSE
-
-  - name: STR_CHRYSSALID_CORPSE
-    lookup: STR_CHRYSSALID_ARMOR
-    needItem: true
-    destroyItem: true
-    cost: 10
+      - STR_LOCK
 
   - name: STR_MUCKSTAR
     dependencies:
@@ -1044,13 +1087,7 @@ research:
 
   - name: STR_MUCKSTAR_ARMOR
     dependencies:
-      - STR_MUCKSTAR_CORPSE
-
-  - name: STR_MUCKSTAR_CORPSE
-    lookup: STR_MUCKSTAR_ARMOR
-    needItem: true
-    destroyItem: true
-    cost: 10
+      - STR_LOCK
 
 #robots
   - name: STR_ROBOSPHERE
@@ -1059,13 +1096,7 @@ research:
 
   - name: STR_ROBOSPHERE_ARMOR
     dependencies:
-      - STR_ROBOSPHERE_CORPSE
-
-  - name: STR_ROBOSPHERE_CORPSE
-    lookup: STR_ROBOSPHERE_ARMOR
-    needItem: true
-    destroyItem: true
-    cost: 5
+      - STR_LOCK
 
 #uso analysis
 #manuals
