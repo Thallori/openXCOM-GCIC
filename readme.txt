@@ -41,7 +41,7 @@ X-Com Files/Final Mod Pack		[mod]
   Alloy Knife				[touchup, recolour]
   Crossbow				[redraw]
   Prison Facility			[redraw]
-  Punch!				[wholecloth]
+  Punch!				[wholecloth]		(Brian322)
   Bullet and Hit Animations		[wholecloth, redraw]
   Spray Sound				[wholecloth]
   Flying Drone Chassis			[cleanup, recolour]	(xenonauts)
@@ -124,10 +124,10 @@ X-Com Files/FMP
  Early game of sending a tiny number of soldiers to kill a tiny number of weak enemies. The progression of turning into a global agency from humble beginnings. Aliens not being a threat until later. Characters in research unlocks. Limiting equipment loadouts based on mission types. Commendations and transformations as a major training method. AIs as soldiers. Aliens as soldiers. Psionic shields. Facility based progression. Manufacturing size zero. Static defenses for base defense missions. Early game (non-OP) psionics. Shields. Power bonuses. Sanity. The moon.
 
 40k
- Bounty system. Spawning 'disposable' allies at mission start. Recoil/strength requirements. The power of scripting in general. Redoing the geoscape to tell a completely different story. Outpost mechanics and base defense missions. Facility art direction.
+ Spawning 'disposable' allies at mission start. Recoil/strength requirements. The power of scripting in general. Redoing the geoscape to tell a completely different story. Outpost mechanics and base defense missions. Facility art direction.
 
 X-Piratez
- Item and facility based income/storage mechanics. Balancing the metaprogression around money and number of scientists. Purchasing based progression. Different bonuses depending on starting location. Different soldier types. Negative score missions. Enviromental effects. Energy management. Freshness. Hacking. Space.
+ Item and facility based income/storage mechanics. Balancing the metaprogression around money and number of scientists. Purchasing based progression. Different soldier types. Negative score missions. Enviromental effects. Energy management. Bounties. Freshness. Hacking. Space.
 
 Reaver's Harmony
  Geoscape ship mechanics, ship upgrades being compatible with weapon slots. Salvaging equipment into components.

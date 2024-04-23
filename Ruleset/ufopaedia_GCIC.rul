@@ -1179,12 +1179,12 @@ ufopaedia:
     section: STR_RESOURCES_UC
     type_id: 4
 
-  # - id: STR_AG_UNIT #todo
-  #   requires:
-  #     - STR_AG_UNIT
-  #   text: STR_AG_UNIT_UP
-  #   section: STR_RESOURCES_UC
-  #   type_id: 4
+  - id: STR_AG_UNIT
+    requires:
+      - STR_AG_UNIT
+    text: STR_AG_UNIT_UP
+    section: STR_RESOURCES_UC
+    type_id: 4
 
   - id: STR_BIOMASS
     requires:

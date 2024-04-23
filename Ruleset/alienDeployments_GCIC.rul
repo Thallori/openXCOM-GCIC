@@ -375,27 +375,37 @@ alienDeployments:
         percentageOutsideUfo: 0
         extraRandomItems:
           - [STR_SECRET_DATA]
-        itemSets: &smallXN
+        itemSets: # &smallXN
           -
             - STR_XN_LASER_PISTOL
+            - STR_DURATHREAD
           -
             - STR_XN_LASER_PISTOL
+            - STR_DURATHREAD
           -
             - STR_XN_LASER_SMG
+            - STR_DURATHREAD
           -
             - STR_XN_LASER_SMG
+            - STR_DURATHREAD
           -
             - STR_XN_LASER_SMG
+            - STR_DURATHREAD
           -
             - STR_XN_LASER_SMG
+            - STR_DURATHREAD
           -
             - STR_XN_LASER_RIFLE
+            - STR_DURATHREAD
           -
             - STR_XN_LASER_RIFLE
+            - STR_DURATHREAD
           -
             - STR_XN_LASER_RIFLE
+            - STR_DURATHREAD
           -
             - STR_XN_LASER_RIFLE
+            - STR_DURATHREAD
       - alienRank: 7
         lowQty: 1
         medQty: 1
@@ -403,41 +413,49 @@ alienDeployments:
         dQty: 1
         percentageOutsideUfo: 0
         extraRandomItems: *netrunnerExtra
-        itemSets: &skiptracer
+        itemSets: # &skiptracer
           -
             - STR_DART_PISTOL
             - STR_DART_AMMO1
+            - STR_DURATHREAD
           -
             - STR_DART_PISTOL
             - STR_DART_AMMO1
+            - STR_DURATHREAD
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO1
             - STR_CHEM_SMG_AMMO1
+            - STR_DURATHREAD
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO1
             - STR_CHEM_SMG_AMMO1
+            - STR_DURATHREAD
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO1
             - STR_CHEM_SMG_AMMO1
+            - STR_DURATHREAD
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO1
             - STR_CHEM_SMG_AMMO1
+            - STR_DURATHREAD
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO2
             - STR_CHEM_SMG_AMMO2
+            - STR_DURATHREAD
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO2
             - STR_CHEM_SMG_AMMO2
+            - STR_DURATHREAD
           -
-            []
+            - STR_DURATHREAD
           -
-            []
+            - STR_DURATHREAD
       - alienRank: 6
         lowQty: 3
         medQty: 3
@@ -628,43 +646,53 @@ alienDeployments:
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
+            - STR_PLASTICS
           -
             - STR_BATON
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
+            - STR_PLASTICS
           -
             - STR_BATON
             - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
+            - STR_PLASTICS
           -
             - STR_BATON
             - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
+            - STR_PLASTICS
           -
             - STR_SSP_SMG_CODED
             - STR_SSP_SMG_AMMO
             - STR_SSP_SMG_AMMO
+            - STR_PLASTICS
           -
             - STR_SSP_SMG_CODED
             - STR_SSP_SMG_AMMO
             - STR_SSP_SMG_AMMO
+            - STR_PLASTICS
           -
             - STR_SSP_SMG_CODED
             - STR_SSP_SMG_AMMO
             - STR_SSP_SMG_AMMO
+            - STR_PLASTICS
           -
             - STR_SSP_SHOTGUN_CODED
             - STR_SSP_SHOTGUN_AMMO_BS
             - STR_SSP_SHOTGUN_AMMO_BS
+            - STR_PLASTICS
           -
             - STR_SSP_SHOTGUN_CODED
             - STR_SSP_SHOTGUN_AMMO_BS
             - STR_SSP_SHOTGUN_AMMO_BS
+            - STR_PLASTICS
           -
             - STR_SSP_SHOTGUN_CODED
             - STR_SSP_SHOTGUN_AMMO_BS
             - STR_SSP_SHOTGUN_AMMO_BS
+            - STR_PLASTICS
       - alienRank: 6
         lowQty: 3
         medQty: 3

@@ -87,6 +87,7 @@ en-US:
 
   STR_ALIENS: "Targets"
   STR_CORPSE: "Remains"
+  STR_WRECK: "Wreck"
   STR_LIST_ITEM: "RESULTS"
   STR_ALIEN_ARTIFACT: "Salvage"
   STR_IS_UNDER_ALIEN_CONTROL_MALE: "{0}{NEWLINE}is under hostile control"
@@ -491,14 +492,14 @@ en-US:
   STR_MEDI_ALERT: "MEDI CONTRACT"
   STR_MEDI_MUCK: "MEDI: Capture Muckstar"
   STR_MEDI_MUCK_CHRYS: "MEDI: Capture Muckstar (C)"
-  STR_MEDI_CREATURE: "MEDI: Capture Creature"
-  STR_MEDI_MUCK_ALERT_DESCRIPTION: "todo{NEWLINE}{NEWLINE}Minimum site duration: 36 hours{NEWLINE}Gear Restriction: None" #todo
-  STR_MEDI_CREATURE_BRIEFING: "todo{NEWLINE}{NEWLINE}We may abort this mission." #todo
+  STR_MEDI_CREATURE: "MEDI: Creature Capture"
+  STR_MEDI_MUCK_ALERT_DESCRIPTION: "We have been sent the tracking data of an exotic xenoform. Live captures guarantee rewards, remains will only be accepted on the chance vital resources are undamaged.{NEWLINE}{NEWLINE}Minimum site duration: 36 hours{NEWLINE}Gear Restriction: None"
+  STR_MEDI_CREATURE_BRIEFING: "We have been sent the tracking data of an exotic xenoform. Live captures guarantee rewards, processed remains will only be accepted on the chance its vital assets are undamaged.{NEWLINE}{NEWLINE}We may abort this mission."
 
   STR_GR_ALERT: "GR CONTRACT"
   STR_GR_INDUSTRIAL_1: "GR: Industrial Discrepancy"
-  STR_GR_INDUSTRIAL_1_ALERT_DESCRIPTION: "todo{NEWLINE}{NEWLINE}Minimum site duration: 48 Hours{NEWLINE}Gear Restriction: Infiltration, Tools" #todo
-  STR_GR_INDUSTRIAL_1_BRIEFING: "todo{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GR and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this mission." #todo
+  STR_GR_INDUSTRIAL_1_ALERT_DESCRIPTION: "General Robots has sent us the location of a signal loss event. Our contract stipulates a clandestine approach before securing the site and recovering the machines.{NEWLINE}{NEWLINE}Minimum site duration: 48 Hours{NEWLINE}Gear Restriction: Infiltration, Tools"
+  STR_GR_INDUSTRIAL_1_BRIEFING: "General Robots has sent us the location of a signal loss event. Our contract stipulates a clandestine approach before securing the site and recovering the machines.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GR and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this mission."
 
 #events
   STR_NETRUNNER_EARLY_EXPOSITION: "Netrunners Trading Contract"
@@ -810,9 +811,11 @@ en-US:
   STR_PMM_ITEM: "PROJECT: MEDI Contract"
   STR_PMM_LOCK: "P:MM (preq)"
   STR_MEDI_MISSIONS: ">PROJECT: MEDI Contract<"
-  STR_MEDI_MISSIONS_UP: "{NEWLINE}AVG. ASSIGNMENTS: 0.79/MONTH{NEWLINE}DISPLACEMENT RISK: Variable{NEWLINE}Thank you for contacting MEDI Exotics and Pharmaceuticals, your proposal has been accepted on a provisional basis. Desired specimens remain difficult to source despite continued expansion of xenoformed regions, therefore only low-priority assets will handled by your organization.{NEWLINE}{NEWLINE}Captured animals will be automatically delivered, corpses only have a chance to retain sought materials."
+  STR_MEDI_MISSIONS_UP: "{NEWLINE}AVG. ASSIGNMENTS: 0.79/MONTH{NEWLINE}DISPLACEMENT RISK: Variable{NEWLINE}{NEWLINE}Thank you for contacting MEDI Exotics and Pharmaceuticals, your proposal has been accepted on a provisional basis. Desired specimens remain difficult to source despite continued expansion of xenoformed regions, therefore only low-priority assets will handled by your organization.{NEWLINE}{NEWLINE}Captured animals will be automatically delivered, remains only have a chance to retain sought materials."
+  STR_PGM_ITEM: "PROJECT: GR Contract"
+  STR_PGM_LOCK: "P:GM (preq)"
   STR_GR_MISSIONS: ">PROJECT: GR Contract<"
-  STR_GR_MISSIONS_UP: "{NEWLINE}todo" #todo, tools and exoskeletons to stop hardware misuse/theft
+  STR_GR_MISSIONS_UP: "{NEWLINE}AVG. ASSIGNMENTS: 0.71/MONTH{NEWLINE}HAZARDS: Electrical{NEWLINE}{NEWLINE}Next up we have-who? GCIC, sure. We've been having some problems with our bots. Feeds being cut, hacked software, things going missing. You know 'shrinkage.' Workers have learned to quit instead of checking it out and you're cheaper than SSP so I'll send you some stuff when we see it.{NEWLINE}{NEWLINE}Try not to destroy the product, okay? Or at least the drives. I need them for making counter-measures."
 #connections
   STR_VENDOR_PRINTER: "VENDOR: Press Print"
   STR_VENDOR_PRINTER_UP: "{NEWLINE}EQUITY: 744,500,000,000${NEWLINE}PRODUCTS/SECOND: 23.19{NEWLINE}{NEWLINE}Ever since the first corner printshops opened up, customers just like you have enjoyed the convinence of getting everything you need at a satisfying price. We understand how nice it is to come into a familiar store and see that just-something you were looking for. Without all the fuss. That's why we've kept the same UI, same algorithms, and same dedication to having the fastest prints this side of the belt for over eighty years.{NEWLINE}{NEWLINE}We're the same old shop you know and love, just on more corners."
@@ -882,7 +885,7 @@ en-US:
   STR_PUBLIC_GATEWAY: "Public Gateway"
   STR_PUBLIC_GATEWAY_UP: "Firewalled network access with over one million concurrent connections. Enables large-scale information surveys and data-hammer attacks.{NEWLINE}{NEWLINE}> Service: Network{NEWLINE}> Bandwidth: 2{NEWLINE}> Limit: 3"
   STR_PRINTER: "Private Printer"
-  STR_PRINTER_UP: "Commercial-grade private printer along with all the technical tools to adjust and maintain it. Useful for unliscenced manufacturing of simple devices and short homopolymers.{NEWLINE}{NEWLINE}> Service: Printing{NEWLINE}> Workspace: 4{NEWLINE}> Limit: 1"
+  STR_PRINTER_UP: "Commercial-grade private printer along with all the technical tools to adjust and maintain it. Useful for unlicensed manufacturing of simple devices and short homopolymers.{NEWLINE}{NEWLINE}> Service: Printing{NEWLINE}> Workspace: 4{NEWLINE}> Limit: 1"
 #services
   STR_SERVICE_MEDICAL: "Medical"
   STR_SERVICE_UPLINK: "Uplink"
@@ -954,7 +957,7 @@ en-US:
   STR_SKELE_DRONE_HUMAN_ARMOR: "EXOSKELETON/HU"
   STR_SKELE_DRONE_SHARK_ARMOR: "EXOSKELETON/SH"
   STR_SKELE_DRONE_ARMOR: "EXOSKELETON"
-  STR_SKELE_DRONE_ARMOR_UP: "{NEWLINE}Battery-powered all-terrain support outfit. Provides lift and mobility assistance, suitable for users with disabilities and career oriented workhorses.{NEWLINE}{NEWLINE}Strength: +15{NEWLINE}TU/Stamina: +10{NEWLINE}{NEWLINE}Side Armor: 15{NEWLINE}Armor: 10; Weight: 5{NEWLINE}Dodge: +30%, +10% Melee{NEWLINE}{NEWLINE}KINETIC/RADIANT: 75%{NEWLINE}CHEMICAL: 85%{NEWLINE}SMOKE: 400%"
+  STR_SKELE_DRONE_ARMOR_UP: "{NEWLINE}Battery-powered all-terrain support outfit. Provides lift and mobility assistance, suitable for users with disabilities and career oriented workhorses.{NEWLINE}{NEWLINE}Strength: +15{NEWLINE}TU/Stamina: +10{NEWLINE}{NEWLINE}Armor: 10; Weight: 5{NEWLINE}Dodge: +30%, +10% Melee{NEWLINE}{NEWLINE}KINETIC/RADIANT: 75%{NEWLINE}CHEMICAL: 85%{NEWLINE}ELECTRIC: 110%{NEWLINE}SMOKE: 400%"
   STR_AQUAVEST_DRONE_HYBRID_ARMOR: "TACVEST/HB"
   STR_AQUAVEST_DRONE_HUMAN_ARMOR: "TACVEST/HU"
   STR_AQUAVEST_DRONE_SHARK_ARMOR: "TACVEST/SH"
@@ -1012,7 +1015,7 @@ en-US:
   STR_45_AMMO: "12mm Clip"
   STR_SSP_SMG_CODED: "SSP Defender SMG (¤)"
   STR_SSP_SMG: "SSP Defender SMG"
-  STR_SSP_SMG_UP: "todo" #todo, has an aimed shot
+  STR_SSP_SMG_UP: "The latest evolution of easy-to-use defensive arms technology. Ergonomic hand-grips couched in ultra-modern designer polymers offers better better safety and control than the next leading competitor."
   STR_SSP_SMG_AMMO: "Defender Clip"
   STR_SSP_SHOTGUN_CODED: "SSP Mox Shotgun (¤)"
   STR_SSP_SHOTGUN: "SSP Mox Shotgun"
@@ -1064,7 +1067,7 @@ en-US:
   STR_PIPEBOMB: "Pipe Bomb"
   STR_PIPEBOMB_UP: "{NEWLINE}Compowder packed in a scrap metal pipe. As simple to operate as it is to make, this type of IED is older than the space-age. Remains popular among hobbyists and firebrands despite reliability issues."
   STR_ELERIUM_BOMB: "Elerium Bomb"
-  STR_ELERIUM_BOMB_UP: "{NEWLINE}The most inefficent use of an elerium core yet discovered. An overvolted case with a simple timer circuit snapped onto the side. One click, one subcritcal explosion.{NEWLINE}{NEWLINE}Without the tools to process raw elerium, these bombs cannot be safely disassembled."
+  STR_ELERIUM_BOMB_UP: "{NEWLINE}The most inefficent use of an elerium core yet discovered. A compromised case with a simple timer circuit snapped onto the side. One click, one subcritcal explosion.{NEWLINE}{NEWLINE}Without the tools to process raw elerium, these bombs cannot be safely disassembled."
 # melee
   STR_STL_KNIFE: "STL Knife"
   STR_STL_KNIFE_UP: "A last second addition to the standard tesselation package for all printers sold since 2419. This simple blade has proven its worth time again in the fields of cooking, crafting, and combat."
@@ -1082,6 +1085,11 @@ en-US:
   STR_ELECTRIC_NAILER: "GR E-Nailer"
   STR_ELECTRIC_NAILER_UP: "Electrically drives nails into soft materials. Ideal for fastening gel, piecrete, and wood-based substrates. Features a safety break to ensure full contact with surfaces before release. General Robotics is not liable for injuries resulting from bypassed safety breaks.{NEWLINE}{NEWLINE}Range: 3m; Damage Dropoff: 25/Tile{NEWLINE}TU Damage: +50%"
   STR_ELECTRIC_NAILER_AMMO: "E-Nailer Clip"
+  STR_LBC_LOCK: "L:BC (preq)"
+  STR_BOLTCANNON_MANU: "LICENSE: Anchor Bolter"
+  STR_BOLT_CANNON: "GR Anchor Bolter"
+  STR_BOLT_CANNON_UP: "Applies quick structural reinforcement bolts through rock, piecrete, and steel foundations. Works best on contact, ranged options are supported only during collapse-based emergencies.{NEWLINE}{NEWLINE}Damage Dropoff: 1/Tile{NEWLINE}TU Damage: +50%"
+  STR_BOLT_CANNON_AMMO: "Anchor Bolts"
   STR_SURVEY_KNOCKER: "VCM Survey Bow" #vehicles communications and mining, big space
   STR_SURVEY_KNOCKER_UP: "The premiere vacuum-rated tool for launching gyroscopically stablized survey flares and bolts. Enables a single employee to light up small (30m) asteroids during descent with a power-assist lever-action ratcheting-crank.{NEWLINE}{NEWLINE}Warranty void if used planet-side."
   STR_KNOCK_FLARE_AMMO: "Survey Flare Clip"
@@ -1097,15 +1105,15 @@ en-US:
   STR_MOTION_DETECTOR: "VCM Motion Scanner"
   STR_MOTION_DETECTOR_UP: "{NEWLINE}> Range: 9m{NEWLINE}{NEWLINE}" #todo
   STR_STIM_INHALER: "Jet Inhaler"
-  STR_STIM_INHALER_UP: "{NEWLINE}> Uses: 2{NEWLINE}> Stims: -3 Resiliance, -15 Stun, +35 Energy{NEWLINE}{NEWLINE}"
+  STR_STIM_INHALER_UP: "{NEWLINE}> Uses: 2{NEWLINE}> Stims: -3 Resiliance, -15 Stun, +35 Energy{NEWLINE}{NEWLINE}Unlicensed recreational medicine. Gives the user the perception of enhanced energy and impetus while measurably reducing signs of conciousness and self-control."
   STR_MEDI_SPRAY: "MEDI-Spray"
   STR_MEDI_SPRAY_UP: "{NEWLINE}> Uses: 2{NEWLINE}> Heals: 1 HP{NEWLINE}{NEWLINE}Seal cuts and scraps with one easy to use alla-natural medical grade adhesive! Kills 99.9% of bacteria on contact! Even works on burns! Contains no CFCs, GMOs, or optichips.{NEWLINE}{NEWLINE}Not a replacement for medical treatment. Do not use if seal is broken."
   STR_MEDI_FIRST: "MEDI-First"
-  STR_MEDI_FIRST_UP: "{NEWLINE}> Uses: 3{NEWLINE}> Heals: 3 HP{NEWLINE}> Stims: 8 Stun, 5 Energy{NEWLINE}{NEWLINE}Automatically diagnoses, treats, documents, then anonymizes your medical data before MEDI-sharing with our affiliates for improve performance. Each subscription covers unlimited access to resupply and live service updates.{NEWLINE}{NEWLINE}Maintenance: 350$/Month"
+  STR_MEDI_FIRST_UP: "{NEWLINE}> Uses: 3{NEWLINE}> Heals: 3 HP{NEWLINE}> Stims: 8 Stun, 5 Energy{NEWLINE}{NEWLINE}Automatically diagnoses, treats, documents, and anonymizes your medical data before MEDI-sharing with our affiliates for improve performance. Each subscription covers unlimited access to resupply and live service updates.{NEWLINE}{NEWLINE}Maintenance: 350$/Month"
   STR_LMT_LOCK: "L:MT (preq)"
   STR_MEDI_TRAUMA_MANU: "LICENSE: MEDI-Trauma Kit"
   STR_MEDI_TRAUMA: "MEDI-Trauma"
-  STR_MEDI_TRAUMA_UP: "{NEWLINE}> Uses: 6{NEWLINE}> Heals: 4 HP{NEWLINE}> Stims: 8 Stun, 15 Energy{NEWLINE}{NEWLINE}todo{NEWLINE}{NEWLINE}Maintenance: 4,000$/Month" #todo
+  STR_MEDI_TRAUMA_UP: "{NEWLINE}> Uses: 6{NEWLINE}> Heals: 4 HP{NEWLINE}> Stims: 8 Stun, 15 Energy{NEWLINE}{NEWLINE}Emergency room in a box. Recommended by affiliate doctors in on-site treatment of major injuries and as a convenient source of portable MEDI-care. Each subscription covers unlimited access to resupply and live service updates.{NEWLINE}{NEWLINE}Maintenance: 4,000$/Month"
 #resources
 # materials
   STR_BIONIC_INTERLACE: "Bionic Interlace"
@@ -1118,12 +1126,16 @@ en-US:
   STR_MEDICAL_CYBERNETICS_CODED: "Medical Cyberware (¤)"
   STR_MEDICAL_CYBERNETICS: "Medical Cyberware"
   STR_MEDICAL_CYBERNETICS_UP: "{NEWLINE}Enhanced comptroller and tissue upgrades for muscles, blood, heart(s), and tendons. Unlike consumer-grade products, these devices are self-repairing using only nutrients readily processed by all healthy bioforms (lithium and titanium supplements not required, but strongly recommended.){NEWLINE}{NEWLINE}Thanks to our licensing agreement with MEDI, we can now purchase and install these in unlimited quantities."
-  STR_AG_UNIT: "A-Grav Unit"
-  STR_AG_UNIT_UP: "{NEWLINE}antigravity component" #todo
+  STR_AG_UNIT: "A.Grav Unit"
+  STR_AG_UNIT_UP: "{NEWLINE}A small hydromagnetic effect module, inaccurately known as anti-gravity. When powered, it can push against the fluctuating dispersion forces of atoms (efficently) or along perpendicular magnetic field lines (inefficently).{NEWLINE}{NEWLINE}When brought together in a conductive web, each unit becomes more efficent at the cost of field stability. Resulting in less power but more computation to per kilogram."
   STR_BIOMASS: "Biomass"
   STR_BIOMASS_UP: "{NEWLINE}A useful intermediate product derived from remnant biological material. Highres printshops could recycle this substance into medicine, plastics, or food. Without a waste or mortuary license, no vendor will accept the commission.{NEWLINE}{NEWLINE}Unless we start our own printshop, we will have to pay for the privilege of removing this resource from our stores."
+  STR_LDT_LOCK: "L:DT (preq)"
+  STR_LDT_ITEM: "LICENSE: Durathread"
+  STR_DURATHREAD: "Durathread"
+  STR_DURATHREAD_UP: "{NEWLINE}Ultra-high density polymer thread. It is ordorless, tasteless, and resistant to both chemical and incendiary agents. Depending on weave and crystallinity-coefficent, it can form anything from flexible fabrics to hardened backings in composite armor.{NEWLINE}{NEWLINE}Durathread's strength once made it synonymous with military equipment. Technological advancements has relegated it to hobbiest, fashion, and labor safety outfits."
   STR_PLASTICS: "Aqua-Plastics"
-  STR_PLASTICS_UP: "{NEWLINE}Alien gifted technology, stronger than steel yet light enough to float. When exposed to oxygen, it forms an organic semi-conductive layer that's perfect for hydromagetic effect engines, contributing the meteoric rise of personal aircars.{NEWLINE}{NEWLINE}Its low melting point and high ductility makes the material easy to work with any commercial-grade printer.{NEWLINE}{NEWLINE}Purchase Requirement: Defense Contracts"
+  STR_PLASTICS_UP: "{NEWLINE}Alien gifted technology, stronger than steel yet light enough to float. When exposed to oxygen, it forms an organic semi-conductive layer that's perfect for hydromagetic effect engines, contributing the meteoric rise of personal aircars.{NEWLINE}{NEWLINE}Its low melting point and high ductility makes the material easy to work with any commercial-grade printer."
   STR_ELERIUM_CORE: "Elerium"
   STR_ELERIUM_CORE_UP: "{NEWLINE}The lifeblood invasion era technology, each handheld core is capable of producing 10.2 mega-watts of power for hundreds of years. The reaction is self-sustaining, clean, and safe. In burnout mode, it can output much more energy for far less time, a feature heavily abused before shortages began.{NEWLINE}{NEWLINE}Elerium's origin remains the best kept secret of the occupation, despite billions invested in developing alternatives, nothing matches its portability or longevity."
   STR_SJB_LICENSE: "SJB License" #single jurisdiction business license
@@ -1150,7 +1162,7 @@ en-US:
   STR_BRAND_LOYALTY: "Brand Loyalty"
   STR_BRAND_LOYALTY_UP: "{NEWLINE}Fulfilling contracts or otherwise following through on our promises will create positive feelings in our consumer base. This results in more subscriptions even when services falter, letting us act with more freely with less consequence.{NEWLINE}{NEWLINE}With enough trust, we can break into new markets or get sponsorships from other corporate entities. When all requirements are met, available PROJECTS will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: +950$/Month"
   STR_BOUNTY_1: "Bounty"
-  STR_BOUNTY_1_UP: "{NEWLINE}When performing public operations, any targets we incapacitate are likely to have broken laws or contracts we have no right to enforce. In these circumstances, targets are turned over relevant corporations in return for a proportional bounty.{NEWLINE}{NEWLINE}Corporations with a reputation for bounty hunting are first call for certain lucrative contracts and prototype equipment. When all requirements are met, available PROJECTS will appear in manufacturing."
+  STR_BOUNTY_1_UP: "{NEWLINE}When performing sanctioned operations, any targets we incapacitate or displace are likely to have broken laws or contracts we have no right to enforce. In these circumstances, we are awarded bounties for our services. More if we can deliver live captures.{NEWLINE}{NEWLINE}Corporations with a reputation for bounty hunting are first call for certain lucrative contracts and prototype equipment. When all requirements are met, available PROJECTS will appear in manufacturing."
 # containers
   STR_CRIMINAL_CONTAINER_1: "Contraband Crate"
   STR_CRIMINAL_CONTAINER_1_UP: "{NEWLINE}With no logos, reciepts, or requirements to wave liabilities, the contents of this box are, by any legal definition, contraband. Its primitive security system of hammered down nails should be easy for our fabricators to crack."
@@ -1222,31 +1234,27 @@ en-US:
 
   STR_ANIMALS: "Animals"
   STR_CHRYSSALID: "Chryssalid"
-  STR_CHRYSSALID_CORPSE: "Chryssalid Corpse"
   STR_CHRYSSALIDS: "Chryssalids"
-  STR_CHRYSSALIDS_UP: "Devistating bioterror weapon native to xenoformed biomes. Oviparious claws are strong enough to breach alloy. Its adult form takes less than twenty seconds to grow inside other biocompatible creatures (which is most bipeds) and runs at a speed that cooks its own body.{NEWLINE}{NEWLINE}The traits that make it so dangerous also burn out its life. Even the worst incidents have never resulted in more than 10,000 casualties.{NEWLINE}{NEWLINE}Awards 3 bounties when neutralized, captured or otherwise. 1/2 MEDI corpse exchange rate.{NEWLINE}{NEWLINE}RISK CLASS: EXTREME"
+  STR_CHRYSSALIDS_UP: "Devistating bioterror weapon native to xenoformed biomes. Oviparious claws are strong enough to breach alloy. Its adult form takes less than twenty seconds to grow inside other biocompatible creatures (which is most bipeds) and runs at a speed that cooks its own body.{NEWLINE}{NEWLINE}The traits that make it so dangerous also burn out its life. Even the worst incidents have never resulted in more than 10,000 casualties.{NEWLINE}{NEWLINE}Awards 3 bounties when neutralized, captured or otherwise. 1/2 MEDI corpse exchange chance.{NEWLINE}{NEWLINE}RISK CLASS: EXTREME"
   STR_CHRYSSALID_ARMOR: "Chryssalid Analysis"
   STR_CHRYSSALID_ARMOR_UP: "Attack Damage: 110 Mechanical"
 
   STR_ZOMBIE: "Zombie"
-  STR_ZOMBIE_CORPSE: "Zombie Corpse"
   STR_ZOMBIES: "Zombies"
   STR_ZOMBIES_UP: "A shambling corpse puppeted by the larval chryssalid inside. Will attack anything in sight with primitive instincts running on overdrive and muscles pushed hard enough to liquify.{NEWLINE}{NEWLINE}Once the body is damaged beyond use, the chryssalid will emerge, healthy and hungry. Do not engage until ready, this stage is far less dangerous than what comes next.{NEWLINE}{NEWLINE}RISK CLASS: MILSPEC"
   STR_ZOMBIE_ARMOR: "Zombie Analysis"
   STR_ZOMBIE_ARMOR_UP: "Attack Damage: 60 Mechanical"
 
   STR_MUCKSTAR: "Muckstar"
-  STR_MUCKSTAR_CORPSE: "Muckstar Corpse"
   STR_MUCKSTARS: "Muckstars"
-  STR_MUCKSTARS_UP: "Oxygen breathing xenoforming flora, aggressive, mobile, moderately dangerous. Begins as an underground collective of spores and emerges when it reaches a certain size or when the ground is sufficently distrubed. Grows ahead of the xenobiome bulk, sometimes in excess of 30km, posing escalating risks to life near the border.{NEWLINE}{NEWLINE}Its xylem-like network of nutrient transport tubes can be catalyzed to deliver strong electrical shocks at long-range. 1/5 MEDI corpse exchange rate.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
+  STR_MUCKSTARS_UP: "Oxygen breathing xenoforming flora, aggressive, mobile, moderately dangerous. Begins as an underground collective of spores and emerges when it reaches a certain size or when the ground is sufficently distrubed. Grows ahead of the xenobiome bulk, sometimes in excess of 30km, posing escalating risks to life near the border.{NEWLINE}{NEWLINE}Its xylem-like network of nutrient transport tubes can be catalyzed to deliver strong electrical shocks at long-range. 1/5 MEDI corpse exchange chance.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
   STR_MUCKSTAR_ARMOR: "Muckstar Analysis"
   STR_MUCKSTAR_ARMOR_UP: "Attack Damage: 35 Electrical"
 
   STR_ROBOTS: "Robots"
   STR_ROBOSPHERE: "GR-Sphere"
-  STR_ROBOSPHERE_CORPSE: "GR-Sphere Corpse"
   STR_ROBOSPHERES: "GR-Spheres"
-  STR_ROBOSPHERES_UP: "todo{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL" #todo
+  STR_ROBOSPHERES_UP: "Small hover-bot designed for monitoring and maintenance in mildly hazardous enviroments. Its shell enables fast and relatively discreet movement but like all optitronic systems it struggles with complex decision making. Remote control operators are required for anything beyond passive site surveillance.{NEWLINE}Equipped with a GR MultiMaster for interfacing, diagnosis, and disassembly.{NEWLINE}{NEWLINE}RISK CLASS: CONVENTIONAL"
   STR_ROBOSPHERE_ARMOR: "GR-Sphere Analysis"
   STR_ROBOSPHERE_ARMOR_UP: "Attack Damage: 30 Electrical"
 

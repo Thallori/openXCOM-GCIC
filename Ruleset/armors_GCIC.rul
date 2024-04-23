@@ -364,7 +364,7 @@ armors:
       stamina: +10
       tu: +10
     frontArmor: 10
-    sideArmor: 15
+    sideArmor: 10
     rearArmor: 10
     underArmor: 8
     damageModifier: &OrganicSkele
@@ -434,7 +434,7 @@ armors:
       stamina: +10
       tu: +10
     frontArmor: 10
-    sideArmor: 15
+    sideArmor: 10
     rearArmor: 10
     underArmor: 8
     damageModifier: *OrganicSkele
@@ -486,7 +486,7 @@ armors:
       stamina: +10
       tu: +10
     frontArmor: 10
-    sideArmor: 15
+    sideArmor: 10
     rearArmor: 10
     underArmor: 8
     damageModifier: *OrganicSkele
@@ -999,16 +999,16 @@ armors:
     allowsKneeling: true
     visibilityAtDark: 9
     heatVision: 20
-    frontArmor: 6
-    sideArmor: 6
-    rearArmor: 6
-    underArmor: 6
-    damageModifier: #&deeponeUnarmoredResists
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    damageModifier: #&deeponeDuraResists
       - 1.0 #0 none
-      - 1.0 #1 kinetic
-      - 1.4 #2 incendiary
+      - 0.75 #1 kinetic
+      - 1.0 #2 incendiary
       - 1.0 #3 concussive
-      - 1.0 #4 radiant
+      - 0.75 #4 radiant
       - 1.0 #5 plasma
       - 1.0 #6 blunt
       - 1.0 #7 mechanical
@@ -1020,6 +1020,7 @@ armors:
       - 1.0 #13 psionic
       - 1.0 #14 heat
       - 1.0 #15 cold
+      - 1.0 #0 none
     meleeDodge: *MeleeDodgeTypical
     psiDefence: *PsiDefenseTypical
     recovery:

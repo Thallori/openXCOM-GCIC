@@ -771,9 +771,9 @@ research:
     disables:
       - STR_LMC_LOCK
 
-  # - name: STR_AG_UNIT
-  #   needItem: true
-  #   cost: 15
+  - name: STR_AG_UNIT
+    needItem: true
+    cost: 15
 
   - name: STR_BIOMASS
     needItem: true
@@ -943,11 +943,11 @@ research:
       - STR_MEDI_MISSIONS
     getOneFree:
       - STR_CHRYSSALID
-      - STR_CHRYSSALID_CORPSE
+      - STR_CHRYSSALID_ARMOR
     getOneFreeProtected:
       STR_TRG_MS_PREQ:
         - STR_MUCKSTAR
-        - STR_MUCKSTAR_CORPSE
+        - STR_MUCKSTAR_ARMOR
 
   - name: STR_DATA_ROBOT
     requiresBaseFunc:
