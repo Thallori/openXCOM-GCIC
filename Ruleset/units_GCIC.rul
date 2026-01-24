@@ -35,7 +35,7 @@ units:
     kneelHeight: 14
     value: 1
     deathSound: [10]
-    builtInWeaponSets: #&drone1ToolsLight
+    builtInWeaponSets: &drone1ToolsLight
       -
         - STR_WRENCH
       -
@@ -109,6 +109,29 @@ units:
     deathSound: [113, 114, 115]
     builtInWeaponSets: *drone1ToolsHeavy
 
+  - type: STR_DRONE_DEEP_1
+    race: STR_RACE_DRONE
+    civilianRecoveryType: STR_DRONE_DEEP_ITEM
+    stats:
+      tu: 45
+      stamina: 30
+      health: 25
+      bravery: 50
+      reactions: 35
+      firing: 35
+      throwing: 40
+      melee: 35
+      strength: 20
+      psiStrength: 30
+      psiSkill: 0
+      mana: 25
+    armor: STR_PLEX_DRONE_DEEP_ARMOR
+    standHeight: 18
+    kneelHeight: 12
+    value: 1
+    deathSound: [113, 114, 115]
+    builtInWeaponSets: *drone1ToolsLight
+
 #criminal faction
   - type: STR_BOOSTER_PUBLIC
     race: STR_IRONEYES
@@ -130,7 +153,7 @@ units:
     armor: STR_BOOSTER_ARMOR
     standHeight: 20
     kneelHeight: 14
-    value: 2
+    value: 4
     deathSound: [41, 42, 43]
     energyRecovery: 30
     intelligence: 3
@@ -159,7 +182,7 @@ units:
     armor: STR_RIPPER_ARMOR
     standHeight: 20
     kneelHeight: 14
-    value: 3
+    value: 5
     deathSound: [44, 45, 46]
     energyRecovery: 30
     intelligence: 3
@@ -243,9 +266,9 @@ units:
       psiSkill: 0
       mana: 40
     armor: STR_SKIPTRACER_ARMOR
-    standHeight: 20
-    kneelHeight: 14
-    value: -8
+    standHeight: 18
+    kneelHeight: 12
+    value: -5
     deathSound: [126]
     energyRecovery: 30
     intelligence: 3
@@ -275,7 +298,7 @@ units:
     armor: STR_SSPGUARD_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -10
+    value: -5
     deathSound: [113, 114, 115]
     energyRecovery: 30
     intelligence: 3
@@ -304,7 +327,7 @@ units:
     armor: STR_SSPOFFICER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -15
+    value: -8
     deathSound: [113, 114, 115]
     energyRecovery: 30
     intelligence: 3
@@ -337,6 +360,7 @@ units:
     pickUpWeaponsMoreActively: 0
     value: -1
     deathSound: [10]
+    autoSurrender: true
 
   - type: STR_DRONE_ENEMY_HUMAN
     race: STR_RACE_DRONE
@@ -361,6 +385,7 @@ units:
     pickUpWeaponsMoreActively: 0
     value: -1
     deathSound: [41, 42, 43]
+    autoSurrender: true
 
   - type: STR_DRONE_ENEMY_SHARK
     race: STR_RACE_DRONE
@@ -385,6 +410,32 @@ units:
     pickUpWeaponsMoreActively: 0
     value: -1
     deathSound: [113, 114, 115]
+    autoSurrender: true
+
+  - type: STR_DRONE_ENEMY_DEEP
+    race: STR_RACE_DRONE
+    rank: STR_RANK_DRONE
+    stats:
+      tu: 45
+      stamina: 30
+      health: 25
+      bravery: 50
+      reactions: 35
+      firing: 35
+      throwing: 40
+      melee: 35
+      strength: 20
+      psiStrength: 30
+      psiSkill: 0
+      mana: 25
+    armor: STR_DRONESHARK_ARMOR
+    standHeight: 18
+    kneelHeight: 12
+    moraleLossWhenKilled: 10
+    pickUpWeaponsMoreActively: 0
+    value: -1
+    deathSound: [126]
+    autoSurrender: true
 
 #animals
   - type: STR_CHRYSSALID
@@ -400,13 +451,13 @@ units:
       firing: 0
       throwing: 0
       strength: 110
-      psiStrength: 0
+      psiStrength: 60
       psiSkill: 0
       melee: 100
       mana: 80
     armor: STR_CHRYSSALID_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 22
     value: 30
     deathSound: 9
     intelligence: 4
@@ -432,7 +483,7 @@ units:
       firing: 0
       throwing: 0
       strength: 60
-      psiStrength: 0
+      psiStrength: 10
       psiSkill: 0
       melee: 80
       mana: 80
@@ -506,12 +557,44 @@ units:
     deathSound: 23
     moveSound: 15
     intelligence: 10
-    spotter: 1
     aggression: 2
+    spotter: 1
     energyRecovery: 50
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ROBOSPHERE_WEAPON
+
+#simulated
+  - type: STR_HOLOSECTOID
+    race: STR_SIMULATED
+    rank: STR_RANK_SIMULATED
+    liveAlien: ""
+    capturable: false
+    stats:
+      tu: 55
+      stamina: 90
+      health: 30
+      bravery: 80
+      reactions: 65
+      firing: 50
+      throwing: 50
+      strength: 10
+      psiStrength: 60
+      psiSkill: 0
+      melee: 10
+      mana: 25
+    armor: STR_HOLOSECTOID_ARMOR
+    standHeight: 16
+    kneelHeight: 12
+    value: 5
+    deathSound: 10
+    intelligence: 3
+    aggression: 2
+    spotter: 1
+    sniper: 50
+    energyRecovery: 30
+    builtInWeaponSets:
+      - - STR_HOLOSECTOID_WEAPON
 
 #clients
   - type: STR_CLIENT_1
@@ -535,7 +618,7 @@ units:
     armor: STR_CLIENT_1_ARMOR
     standHeight: 14
     moraleLossWhenKilled: 0
-    value: 15
+    value: 25
     deathSound: [41, 42, 43]
     energyRecovery: 30
 
@@ -559,6 +642,6 @@ units:
     armor: STR_CLIENT_RR_ARMOR
     standHeight: 14
     moraleLossWhenKilled: 0
-    value: 25
+    value: 35
     deathSound: [44, 45, 46]
     energyRecovery: 30

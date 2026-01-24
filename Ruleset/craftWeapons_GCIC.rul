@@ -8,6 +8,7 @@ craftWeapons:
       speedMax: 100
       avoidBonus: 3
     hidePediaInfo: true
+    tooltip: STR_CRAFT_BATTERY_PACK_UC_TOOLTIP2
 
   - type: STR_HD_EXPRESS_ENGINE
     launcher: STR_HD_EXPRESS_ENGINE
@@ -19,6 +20,7 @@ craftWeapons:
       avoidBonus: 6
       accel: 1
     hidePediaInfo: true
+    tooltip: STR_CRAFT_BATTERY_PACK_UC_TOOLTIP2
 
   - type: STR_BATBOX
     launcher: STR_BATBOX
@@ -28,3 +30,4 @@ craftWeapons:
       fuelMax: 850
       speedMax: -35
     hidePediaInfo: true
+    tooltip: STR_CRAFT_BATTERY_PACK_UC_TOOLTIP

@@ -1,5 +1,17 @@
 
 alienMissions:
+  - type: STR_HOLOUFO_SMALL_MISSION
+#    interruptResearch: STR_TODO
+    despawnEvenIfTargeted: true
+    raceWeights:
+      0:
+          STR_SIMULATED: 100
+    waves:
+      - ufo: STR_HOLOUFO_SMALL
+        count: 1
+        trajectory: LOOK_AT_ME
+        timer: 30
+
   - type: STR_RESCUE_1
 #    interruptResearch: STR_TODO
     despawnEvenIfTargeted: true

@@ -43,8 +43,7 @@ X-Com Files/Final Mod Pack		[mod]
   Prison Facility			[redraw]
   Punch!				[wholecloth]		(Brian322)
   Bullet and Hit Animations		[wholecloth, redraw]
-  Spray Sound				[wholecloth]
-  Flying Drone Chassis			[cleanup, recolour]	(xenonauts)
+  Flying Drone Chassis			[cleanup, recolour]	(Xenonauts)
   Civilians				[wholecloth]
   Bandit				[recolour]
   Police Officer			[recolour]
@@ -54,10 +53,11 @@ X-Com Files/Final Mod Pack		[mod]
   Taser					[wholecloth]		(Ryskeliini)
   Fire Extinguisher			[touchup, recolour]
   Armored Vest				[touchup, recolour]
-  Chemogun, Flamer, Hammer SFX		[wholecloth]
   Muckstar Unit Sprite			[touchup, animated]
   Zombie				[touchup]
   Robosphere Inventory			[touchup]
+  SFX					[wholecloth]
+   Chemogun, Flamer, Hammer, Plasma, Spray
 
 X-Com Files Resound			[mod]
  Ksenni					[author]

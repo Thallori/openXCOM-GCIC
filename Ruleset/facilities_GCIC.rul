@@ -32,7 +32,7 @@ facilities:
     buildCost: 10000
     refundValue: 8000
     monthlyCost: 50
-    storage: 20
+    storage: 15
     personnel: 8
     aliens: 1
     manaRecoveryPerDay: 1
@@ -44,8 +44,6 @@ facilities:
     canBeBuiltOver: true
     buildOverFacilities:
       - STR_STOREROOM
-    leavesBehindOnSell:
-      - STR_DEPOT
     fakeUnderwater: 0
     spriteShape: 1
     spriteFacility: 305
@@ -73,14 +71,12 @@ facilities:
         build: 1
         refund: 1
     monthlyCost: -22000
-    storage: 250
+    storage: 100
     mapName: XBASE_07
 
   - type: STR_GARAGE
     requires:
       - STR_VENDOR_BUILDER
-    leavesBehindOnSell:
-      - STR_DEPOT
     fakeUnderwater: 0
     size: 1
     spriteShape: 1
@@ -89,7 +85,7 @@ facilities:
     buildCost: 25000
     refundValue: 20000
     monthlyCost: 500
-    storage: 10
+    storage: 5
     workshops: 1
     crafts: 1
     mapName: XBASE_16
@@ -97,8 +93,6 @@ facilities:
   - type: STR_BUNK_RACKS
     requires:
       - STR_VENDOR_BUILDER
-    leavesBehindOnSell:
-      - STR_DEPOT
     spriteShape: 1
     spriteFacility: 302
     buildTime: 12
@@ -106,14 +100,12 @@ facilities:
     refundValue: 150000
     monthlyCost: 800
     personnel: 24
-    manaRecoveryPerDay: 2
+    manaRecoveryPerDay: 1
     mapName: XBASE_01
 
 #   - type: STR_REMEDITION_OFFICE
 #     requires:
 #       - STR_REMEDITION_OFFICE
-#     leavesBehindOnSell:
-#       - STR_DEPOT
 #     provideBaseFunc: [STR_SERVICE_PROJECTS] #drone personal projects
 # #    spriteShape: 1
 # #    spriteFacility: 303
@@ -129,8 +121,6 @@ facilities:
   - type: STR_MEDI_BAY
     requires:
       - STR_MEDIBAY_ITEM
-    leavesBehindOnSell:
-      - STR_DEPOT
     provideBaseFunc: [STR_SERVICE_MEDICAL]
     spriteShape: 1
     spriteFacility: 312
@@ -138,6 +128,7 @@ facilities:
     buildCost: 450000
     refundValue: 325000
     monthlyCost: 70000
+    labs: 1
     sickBayAbsoluteBonus: 0.25
     sickBayRelativeBonus: 0.50
     maxAllowedPerBase: 1
@@ -148,8 +139,6 @@ facilities:
     requires:
       - STR_VENDOR_BUILDER
       - STR_HOLDING_CELLS
-    leavesBehindOnSell:
-      - STR_DEPOT
     spriteShape: 1
     spriteFacility: 304
     buildTime: 16
@@ -162,8 +151,6 @@ facilities:
   - type: STR_DATACENTER
     requires:
       - STR_VENDOR_BUILDER
-    leavesBehindOnSell:
-      - STR_DEPOT
     provideBaseFunc: [STR_SERVICE_UPLINK]
     spriteShape: 1
     spriteFacility: 303
@@ -178,8 +165,7 @@ facilities:
   - type: STR_LOCAL_INTERFACE
     requires:
       - STR_LOCAL_INTERFACE
-    leavesBehindOnSell:
-      - STR_DEPOT
+      - STR_PERSONAL_DATA
     provideBaseFunc: [STR_SERVICE_PORT] #for hacking things you've got
     spriteShape: 1
     spriteFacility: 308
@@ -187,6 +173,10 @@ facilities:
     buildCost: 250000
     refundValue: 175000
     monthlyCost: 20000
+    buildCostItems:
+      STR_PERSONAL_DATA:
+        build: 10
+        refund: 10
     workshops: 1
     labs: 3
     maxAllowedPerBase: 1
@@ -195,8 +185,7 @@ facilities:
   - type: STR_PUBLIC_GATEWAY
     requires:
       - STR_PUBLIC_GATEWAY
-    leavesBehindOnSell:
-      - STR_DEPOT
+      - STR_SECRET_DATA
     provideBaseFunc: [STR_SERVICE_NETWORK] #for hacking things you've don't got
     spriteShape: 1
     spriteFacility: 311
@@ -204,6 +193,10 @@ facilities:
     buildCost: 720000
     refundValue: 540000
     monthlyCost: 65000
+    buildCostItems:
+      STR_SECRET_DATA:
+        build: 5
+        refund: 5
     labs: 2
     maxAllowedPerBase: 3
     mapName: XBASE_02
@@ -211,8 +204,6 @@ facilities:
   - type: STR_PRINTER
     requires:
       - STR_PRINTER
-    leavesBehindOnSell:
-      - STR_DEPOT
     provideBaseFunc: [STR_SERVICE_PRINTING]
     spriteShape: 1
     spriteFacility: 310
@@ -222,4 +213,17 @@ facilities:
     monthlyCost: 35000
     workshops: 4
     maxAllowedPerBase: 1
+    mapName: XBASE_02
+
+  - type: STR_SCANNER
+    requires:
+      - STR_VENDOR_BUILDER
+    spriteShape: 2
+    spriteFacility: 313
+    buildTime: 11
+    buildCost: 68000
+    refundValue: 50000
+    monthlyCost: -8000
+    radarChance: 5
+    radarRange: 1900
     mapName: XBASE_02

@@ -12,7 +12,6 @@ soldierTransformation:
       - STR_CRACKED_SHARK_DRONE
     forbiddenPreviousTransformations:
       - STR_DRONE_KEYING_TRANSFORMATION
-
   - name: STR_DRONE_REPLACEMENT_TRANSFORMATION
     requires:
       - STR_DRONE_IMMORTALITY
@@ -32,8 +31,10 @@ soldierTransformation:
   - name: STR_SKIRMISHER_TRANSFORMATION
     requires:
       - STR_SPECIALIZATION_TRAINING
+    requiredMinStats:
+      mana: 20
     percentGainedStatChange:
-      mana: -100
+      mana: -50
     cost: 4999
     requiredItems:
       STR_CONSUMER_CYBERNETICS: 3
@@ -49,12 +50,11 @@ soldierTransformation:
       - STR_SKIRMISHER_TRANSFORMATION
       - STR_RANGER_TRANSFORMATION
       - STR_SCOUT_TRANSFORMATION
-
   - name: STR_RANGER_TRANSFORMATION
     requires:
       - STR_SPECIALIZATION_TRAINING
     percentGainedStatChange:
-      mana: -100
+      mana: -50
     cost: 4999
     requiredItems:
       STR_CONSUMER_CYBERNETICS: 3
@@ -70,12 +70,13 @@ soldierTransformation:
       - STR_SKIRMISHER_TRANSFORMATION
       - STR_RANGER_TRANSFORMATION
       - STR_SCOUT_TRANSFORMATION
-
   - name: STR_SCOUT_TRANSFORMATION
     requires:
       - STR_SPECIALIZATION_TRAINING
+    requiredMinStats:
+      mana: 20
     percentGainedStatChange:
-      mana: -100
+      mana: -50
     cost: 4999
     requiredItems:
       STR_CONSUMER_CYBERNETICS: 3
@@ -96,9 +97,9 @@ soldierTransformation:
     requires:
       - STR_MEDICAL_CYBERNETICS
     requiredMinStats:
-      mana: 40
+      mana: 20
     percentGainedStatChange:
-      mana: -100
+      mana: -50
     cost: 8999
     requiredItems:
       STR_MEDICAL_CYBERNETICS: 2
@@ -114,14 +115,13 @@ soldierTransformation:
     forbiddenPreviousTransformations:
       - STR_AGILITY_TRANSFORMATION
       - STR_HEAVY_TRANSFORMATION
-
   - name: STR_HEAVY_TRANSFORMATION
     requires:
       - STR_MEDICAL_CYBERNETICS
     requiredMinStats:
-      mana: 40
+      mana: 20
     percentGainedStatChange:
-      mana: -100
+      mana: -50
     cost: 8999
     requiredItems:
       STR_MEDICAL_CYBERNETICS: 2

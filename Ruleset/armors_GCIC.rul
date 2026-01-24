@@ -21,7 +21,7 @@ armors:
       - STR_NULL_BACK_PACK
     allowsKneeling: true
     visibilityAtDark: 11
-    personalLight: 5
+    personalLight: 13
     heatVision: 20
     frontArmor: 2
     sideArmor: 2
@@ -36,7 +36,7 @@ armors:
       - 1.0 #5 plasma
       - 1.0 #6 blunt
       - 1.0 #7 mechanical
-      - 1.0 #8 chemical
+      - 1.4 #8 chemical
       - 4.0 #9 smoke
       - 1.0 #10 electric
       - 1.0 #11 sonic
@@ -54,8 +54,8 @@ armors:
       moraleCurrent: 0.5
     recovery:
       time: &TimeRecoveryTypical
-        tu: 0.75
-        manaNormalized: 50
+        tu: 0.60
+        manaNormalized: 75
       health: &HealthRecoveryTypical
         stunNormalized: -0.10
       stun: &StunRecoveryTypical
@@ -63,12 +63,13 @@ armors:
         flatHundred: 0.02
         stunNormalized: -2
       energy: &EnergyRecoveryTypical
-        stamina: 0.1
-        flatHundred: 0.16
-        stunNormalized: -16
+        stamina: 0.20
+        healthNormalized: 10
       morale: &MoraleRecoveryTypical
         bravery: 0.1
         moraleCurrent: -0.12
+      mana: &ManaRecoveryTypical
+        flatHundred: 0
     overKill: 1.5
     units:
       - STR_CRACKED_HYBRID_DRONE
@@ -104,7 +105,7 @@ armors:
       - STR_NULL_BACK_PACK
     allowsKneeling: true
     visibilityAtDark: 8
-    personalLight: 5
+    personalLight: 13
     heatVision: 20
     frontArmor: 2
     sideArmor: 2
@@ -118,10 +119,10 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryHumanTypical
-        stamina: 0.1
-        flatHundred: 0.20
-        stunNormalized: -20
+        stamina: 0.25
+        healthNormalized: 15
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_HUMAN_DRONE
@@ -155,7 +156,7 @@ armors:
       - STR_NULL_BACK_PACK
     allowsKneeling: true
     visibilityAtDark: 8
-    personalLight: 5
+    personalLight: 13
     heatVision: 20
     frontArmor: 2
     sideArmor: 2
@@ -170,9 +171,63 @@ armors:
       stun: *StunRecoveryTypical
       energy: *EnergyRecoveryTypical
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_SHARK_DRONE
+    loftempsSet: [ 3 ]
+
+  - type: STR_PLEX_DRONE_DEEP_ARMOR
+    ufopediaType: STR_PLEX_DRONE_ARMOR
+    customArmorPreviewIndex: 12
+    spriteInv: DRONEDEEP.SPK
+    spriteSheet: WORKSUIT_DEEP.PCK
+    corpseBattle:
+      - STR_PLEX_DRONE_DEEP_CORPSE
+    storeItem: STR_NONE
+    specialWeapon: STR_ELECTROBOLT
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_QD_SLOT
+      - STR_NULL_BACK_PACK
+    allowsKneeling: true
+    visibilityAtDark: 8
+    personalLight: 13
+    heatVision: 20
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: &DeepOneUnarmoredResists
+      - 1.0 #0 none
+      - 1.0 #1 kinetic
+      - 1.4 #2 incendiary
+      - 1.0 #3 concussive
+      - 1.0 #4 radiant
+      - 1.0 #5 plasma
+      - 1.0 #6 blunt
+      - 1.0 #7 mechanical
+      - 0.7 #8 chemical
+      - 0.5 #9 smoke
+      - 0.5 #10 electric
+      - 1.0 #11 sonic
+      - 1.0 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      time: *TimeRecoveryTypical
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryTypical
+      energy: *EnergyRecoveryTypical
+      morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
+    overKill: 1.5
+    units:
+      - STR_CRACKED_DEEP_DRONE
     loftempsSet: [ 3 ]
 
   - type: STR_DURA_DRONE_HYBRID_ARMOR
@@ -189,13 +244,14 @@ armors:
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDark: 11
-    personalLight: 5
+    personalLight: 13
     heatVision: 20
-    camouflageAtDay: -2
-    camouflageAtDark: -2
-    stats:
-      stamina: +10
+    camouflageAtDay: -5
+    camouflageAtDark: -5
+    stats: &DuraStats
+      health: +5
       reactions: +5
+      stamina: +5
       tu: +5
     frontArmor: 12
     sideArmor: 12
@@ -204,17 +260,17 @@ armors:
     damageModifier: &OrganicDuraResists
       - 1.0 #0 none
       - 0.75 #1 kinetic
-      - 1.0 #2 incendiary
-      - 1.0 #3 concussive
+      - 0.85 #2 incendiary
+      - 0.95 #3 concussive
       - 0.75 #4 radiant
-      - 1.0 #5 plasma
-      - 1.0 #6 blunt
-      - 1.0 #7 mechanical
+      - 0.75 #5 plasma
+      - 0.75 #6 blunt
+      - 0.75 #7 mechanical
       - 0.85 #8 chemical
       - 4.0 #9 smoke
-      - 0.85 #10 electric
-      - 1.0 #11 sonic
-      - 1.0 #12 biological
+      - 0.75 #10 electric
+      - 0.95 #11 sonic
+      - 0.75 #12 biological
       - 1.0 #13 psionic
       - 1.0 #14 heat
       - 1.0 #15 cold
@@ -227,10 +283,10 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryGood
-        stamina: 0.1
-        flatHundred: 0.18
-        stunNormalized: -18
+        stamina: 0.20
+        healthNormalized: 20
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_HYBRID_DRONE
@@ -260,14 +316,11 @@ armors:
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDark: 8
-    personalLight: 5
+    personalLight: 13
     heatVision: 20
-    camouflageAtDay: -2
-    camouflageAtDark: -2
-    stats:
-      stamina: +10
-      reactions: +5
-      tu: +5
+    camouflageAtDay: -5
+    camouflageAtDark: -5
+    stats: *DuraStats
     frontArmor: 12
     sideArmor: 12
     rearArmor: 12
@@ -280,10 +333,10 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryHumanGood
-        stamina: 0.1
-        flatHundred: 0.22
-        stunNormalized: -22
+        stamina: 0.25
+        healthNormalized: 20
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_HUMAN_DRONE
@@ -311,14 +364,11 @@ armors:
     specialWeapon: STR_SHARKATTACK
     allowsKneeling: true
     visibilityAtDark: 8
-    personalLight: 5
+    personalLight: 13
     heatVision: 20
-    camouflageAtDay: -2
-    camouflageAtDark: -2
-    stats:
-      stamina: +10
-      reactions: +5
-      tu: +5
+    camouflageAtDay: -5
+    camouflageAtDark: -5
+    stats: *DuraStats
     frontArmor: 12
     sideArmor: 12
     rearArmor: 12
@@ -332,14 +382,66 @@ armors:
       stun: *StunRecoveryTypical
       energy: *EnergyRecoveryGood
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_SHARK_DRONE
     loftempsSet: [ 3 ]
 
+  - type: STR_DURA_DRONE_DEEP_ARMOR
+    ufopediaType: STR_DURA_DRONE_ARMOR
+    customArmorPreviewIndex: 13
+    spriteSheet: JUMPSUIT_DEEP.PCK
+    spriteInv: JUMPSUIT_DEEP.SPK
+    corpseBattle:
+      - STR_DURA_DRONE_DEEP_CORPSE
+    storeItem: STR_DURA_DRONE_ARMOR
+    specialWeapon: STR_ELECTROBOLT
+    allowsKneeling: true
+    visibilityAtDark: 8
+    personalLight: 13
+    heatVision: 20
+    camouflageAtDay: -5
+    camouflageAtDark: -5
+    stats: *DuraStats
+    frontArmor: 12
+    sideArmor: 12
+    rearArmor: 12
+    underArmor: 9
+    damageModifier: &DeepOneDuraResists
+      - 1.0 #0 none
+      - 0.75 #1 kinetic
+      - 0.85 #2 incendiary
+      - 0.95 #3 concussive
+      - 0.75 #4 radiant
+      - 0.75 #5 plasma
+      - 0.75 #6 blunt
+      - 0.75 #7 mechanical
+      - 0.45 #8 chemical
+      - 2.0 #9 smoke
+      - 0.4 #10 electric
+      - 0.95 #11 sonic
+      - 0.75 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
+    meleeDodge: *MeleeDodgeGood
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      time: *TimeRecoveryTypical
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryTypical
+      energy: *EnergyRecoveryGood
+      morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
+    overKill: 1.5
+    units:
+      - STR_CRACKED_DEEP_DRONE
+    loftempsSet: [ 3 ]
+
   - type: STR_SKELE_DRONE_HYBRID_ARMOR
     ufopediaType: STR_SKELE_DRONE_ARMOR
-    customArmorPreviewIndex: 3
+    customArmorPreviewIndex: 16
     spriteSheet: SKELE_HYBRID.PCK
     layersDefaultPrefix: HYBRID
     layersDefinition:
@@ -356,10 +458,10 @@ armors:
       - STR_NULL_BACK_PACK
     allowsKneeling: true
     visibilityAtDark: 11
-    personalLight: 5
+    personalLight: 13
     heatVision: 20
     weight: 5
-    stats:
+    stats: &SkeleStats
       strength: +15
       stamina: +10
       tu: +10
@@ -369,18 +471,18 @@ armors:
     underArmor: 8
     damageModifier: &OrganicSkele
       - 1.0 #0 none
-      - 0.75 #1 kinetic
-      - 1.0 #2 incendiary
-      - 1.0 #3 concussive
-      - 0.75 #4 radiant
-      - 1.0 #5 plasma
-      - 1.0 #6 blunt
-      - 1.0 #7 mechanical
-      - 0.85 #8 chemical
+      - 0.85 #1 kinetic
+      - 1.4 #2 incendiary
+      - 0.85 #3 concussive
+      - 0.85 #4 radiant
+      - 0.85 #5 plasma
+      - 0.85 #6 blunt
+      - 0.85 #7 mechanical
+      - 1.4 #8 chemical
       - 4.0 #9 smoke
       - 1.1 #10 electric
-      - 1.0 #11 sonic
-      - 1.0 #12 biological
+      - 0.85 #11 sonic
+      - 0.85 #12 biological
       - 1.0 #13 psionic
       - 1.0 #14 heat
       - 1.0 #15 cold
@@ -390,8 +492,11 @@ armors:
       time: *TimeRecoveryTypical
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
-      energy: *EnergyRecoveryGood
+      energy: &EnergyRecoveryGreat
+        stamina: 0.20
+        healthNormalized: 30
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_HYBRID_DRONE
@@ -399,7 +504,7 @@ armors:
 
   - type: STR_SKELE_DRONE_HUMAN_ARMOR
     ufopediaType: STR_SKELE_DRONE_ARMOR
-    customArmorPreviewIndex: 4
+    customArmorPreviewIndex: 17
     spriteSheet: SKELE_HUMAN.PCK
     layersDefaultPrefix: HUMAN
     layersDefinition:
@@ -426,13 +531,10 @@ armors:
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDark: 8
-    personalLight: 5
+    personalLight: 13
     heatVision: 20
     weight: 5
-    stats:
-      strength: +15
-      stamina: +10
-      tu: +10
+    stats: *SkeleStats
     frontArmor: 10
     sideArmor: 10
     rearArmor: 10
@@ -444,8 +546,11 @@ armors:
       time: *TimeRecoveryTypical
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
-      energy: *EnergyRecoveryHumanGood
+      energy: &EnergyRecoverHumanGreat
+        stamina: 0.25
+        healthNormalized: 30
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_HUMAN_DRONE
@@ -458,7 +563,7 @@ armors:
       - STR_NULL_RIGHT_SHOULDER
       - STR_NULL_QD_SLOT
       - STR_NULL_BACK_PACK
-    customArmorPreviewIndex: 5
+    customArmorPreviewIndex: 18
     spriteSheet: SKELE_SHARK.PCK
     layersDefaultPrefix: SHARK
     layersDefinition:
@@ -478,13 +583,10 @@ armors:
     specialWeapon: STR_SHARKATTACK
     allowsKneeling: true
     visibilityAtDark: 8
-    personalLight: 5
+    personalLight: 13
     heatVision: 20
     weight: 5
-    stats:
-      strength: +15
-      stamina: +10
-      tu: +10
+    stats: *SkeleStats
     frontArmor: 10
     sideArmor: 10
     rearArmor: 10
@@ -496,11 +598,67 @@ armors:
       time: *TimeRecoveryTypical
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
-      energy: *EnergyRecoveryGood
+      energy: *EnergyRecoveryGreat
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_SHARK_DRONE
+    loftempsSet: [ 3 ]
+
+  - type: STR_SKELE_DRONE_DEEP_ARMOR
+    ufopediaType: STR_SKELE_DRONE_ARMOR
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_QD_SLOT
+      - STR_NULL_BACK_PACK
+    customArmorPreviewIndex: 19
+    spriteSheet: SKELE_DEEP.PCK
+    spriteInv: SKELE_DEEP.SPK
+    corpseBattle:
+      - STR_SKELE_DRONE_DEEP_CORPSE
+    storeItem: STR_SKELE_DRONE_ARMOR
+    specialWeapon: STR_ELECTROBOLT
+    allowsKneeling: true
+    visibilityAtDark: 8
+    personalLight: 13
+    heatVision: 20
+    weight: 5
+    stats: *SkeleStats
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 8
+    damageModifier:
+      - 1.0 #0 none
+      - 0.85 #1 kinetic
+      - 1.4 #2 incendiary
+      - 0.85 #3 concussive
+      - 0.85 #4 radiant
+      - 0.85 #5 plasma
+      - 0.85 #6 blunt
+      - 0.85 #7 mechanical
+      - 0.7 #8 chemical
+      - 2.0 #9 smoke
+      - 0.55 #10 electric
+      - 0.85 #11 sonic
+      - 0.85 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
+    meleeDodge: *MeleeDodgeGood
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      time: *TimeRecoveryTypical
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryTypical
+      energy: *EnergyRecoveryGreat
+      morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
+    overKill: 1.5
+    units:
+      - STR_CRACKED_DEEP_DRONE
     loftempsSet: [ 3 ]
 
   - type: STR_AQUAVEST_DRONE_HYBRID_ARMOR
@@ -520,8 +678,8 @@ armors:
       - STR_NULL_BACK_PACK
     specialWeapon: STR_UNARMED
     allowsKneeling: true
-    visibilityAtDark: 12
-    personalLight: 5
+    visibilityAtDark: 11
+    personalLight: 13
     heatVision: 20
     weight: 6
     stats:
@@ -534,17 +692,17 @@ armors:
     damageModifier: &OrganicAquavestResists
       - 1.0 #0 none
       - 0.7 #1 kinetic
-      - 1.1 #2 incendiary
-      - 0.8 #3 concussive
-      - 1.1 #4 radiant
-      - 1.0 #5 plasma
-      - 1.0 #6 blunt
-      - 1.0 #7 mechanical
-      - 1.0 #8 chemical
+      - 1.2 #2 incendiary
+      - 0.7 #3 concussive
+      - 0.9 #4 radiant
+      - 0.7 #5 plasma
+      - 0.7 #6 blunt
+      - 0.7 #7 mechanical
+      - 1.2 #8 chemical
       - 4.0 #9 smoke
-      - 1.0 #10 electric
-      - 0.8 #11 sonic
-      - 1.0 #12 biological
+      - 0.7 #10 electric
+      - 0.7 #11 sonic
+      - 0.7 #12 biological
       - 1.0 #13 psionic
       - 1.0 #14 heat
       - 1.0 #15 cold
@@ -557,10 +715,10 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryPoor
-        stamina: 0.1
-        flatHundred: 0.14
-        stunNormalized: -0.14
+        stamina: 0.20
+        healthNormalized: 10
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_HYBRID_DRONE
@@ -593,8 +751,8 @@ armors:
       - STR_NULL_BACK_PACK
     specialWeapon: STR_UNARMED
     allowsKneeling: true
-    visibilityAtDark: 9
-    personalLight: 5
+    visibilityAtDark: 8
+    personalLight: 13
     heatVision: 20
     weight: 6
     stats:
@@ -612,10 +770,10 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryHumanPoor
-        stamina: 0.1
-        flatHundred: 0.18
-        stunNormalized: -0.18
+        stamina: 0.25
+        healthNormalized: 10
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_HUMAN_DRONE
@@ -646,8 +804,8 @@ armors:
       - STR_NULL_BACK_PACK
     specialWeapon: STR_SHARKATTACK
     allowsKneeling: true
-    visibilityAtDark: 9
-    personalLight: 5
+    visibilityAtDark: 8
+    personalLight: 13
     heatVision: 20
     weight: 6
     stats:
@@ -666,9 +824,66 @@ armors:
       stun: *StunRecoveryTypical
       energy: *EnergyRecoveryPoor
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_SHARK_DRONE
+    loftempsSet: [ 3 ]
+
+  - type: STR_AQUAVEST_DRONE_DEEP_ARMOR
+    ufopediaType: STR_AQUAVEST_DRONE_ARMOR
+    customArmorPreviewIndex: 14
+    spriteSheet: AQUAVEST_DEEP.PCK
+    spriteInv: AQUAVEST_DEEP.SPK
+    corpseBattle:
+      - STR_AQUAVEST_DRONE_DEEP_CORPSE
+    storeItem: STR_AQUAVEST_DRONE_ARMOR
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_BACK_PACK
+    specialWeapon: STR_ELECTROBOLT
+    allowsKneeling: true
+    visibilityAtDark: 8
+    personalLight: 13
+    heatVision: 20
+    weight: 6
+    stats:
+      tu: -5
+      stamina: -5
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 15
+    damageModifier: &DeepOneAquavestResists
+      - 1.0 #0 none
+      - 0.7 #1 kinetic
+      - 1.2 #2 incendiary
+      - 0.7 #3 concussive
+      - 0.9 #4 radiant
+      - 0.7 #5 plasma
+      - 0.7 #6 blunt
+      - 0.7 #7 mechanical
+      - 0.6 #8 chemical
+      - 2.0 #9 smoke
+      - 0.35 #10 electric
+      - 0.7 #11 sonic
+      - 0.7 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
+    meleeDodge: *MeleeDodgePoor
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      time: *TimeRecoveryTypical
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryTypical
+      energy: *EnergyRecoveryPoor
+      morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
+    overKill: 1.5
+    units:
+      - STR_CRACKED_DEEP_DRONE
     loftempsSet: [ 3 ]
 
   - type: STR_AQUAVEST_DRONE_HYBRID_ARMOR_S
@@ -689,16 +904,17 @@ armors:
       - STR_NULL_BACK_PACK
     specialWeapon: STR_UNARMED
     allowsKneeling: true
-    visibilityAtDark: 12
-    personalLight: 5
+    visibilityAtDark: 11
+    personalLight: 13
     heatVision: 20
     weight: 6
-    stats:
+    stats: &AquavestSStats
+      bravery: 10
       tu: -10
       stamina: -10
       reactions: -5
-    frontArmor: 28
-    sideArmor: 20
+    frontArmor: 32
+    sideArmor: 32
     rearArmor: 20
     underArmor: 15
     damageModifier: *OrganicAquavestResists
@@ -711,10 +927,10 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryBad
-        stamina: 0.1
-        flatHundred: 0.12
-        stunNormalized: -0.12
+        stamina: 0.20
+        healthNormalized: 5
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_HYBRID_DRONE
@@ -748,16 +964,13 @@ armors:
       - STR_NULL_BACK_PACK
     specialWeapon: STR_UNARMED
     allowsKneeling: true
-    visibilityAtDark: 9
-    personalLight: 5
+    visibilityAtDark: 8
+    personalLight: 13
     heatVision: 20
     weight: 6
-    stats:
-      tu: -10
-      stamina: -10
-      reactions: -5
-    frontArmor: 28
-    sideArmor: 20
+    stats: *AquavestSStats
+    frontArmor: 32
+    sideArmor: 32
     rearArmor: 20
     underArmor: 15
     damageModifier: *OrganicAquavestResists
@@ -768,10 +981,10 @@ armors:
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryHumanBad
-        stamina: 0.1
-        flatHundred: 0.16
-        stunNormalized: -0.16
+        stamina: 0.25
+        healthNormalized: 5
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_HUMAN_DRONE
@@ -803,16 +1016,13 @@ armors:
       - STR_NULL_BACK_PACK
     specialWeapon: STR_SHARKATTACK
     allowsKneeling: true
-    visibilityAtDark: 9
-    personalLight: 5
+    visibilityAtDark: 8
+    personalLight: 13
     heatVision: 20
     weight: 6
-    stats:
-      tu: -10
-      stamina: -10
-      reactions: -5
-    frontArmor: 28
-    sideArmor: 20
+    stats: *AquavestSStats
+    frontArmor: 32
+    sideArmor: 32
     rearArmor: 20
     underArmor: 15
     damageModifier: *OrganicAquavestResists
@@ -824,9 +1034,49 @@ armors:
       stun: *StunRecoveryTypical
       energy: *EnergyRecoveryBad
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_CRACKED_SHARK_DRONE
+    loftempsSet: [ 3 ]
+
+  - type: STR_AQUAVEST_DRONE_DEEP_ARMOR_S
+    ufopediaType: STR_AQUAVEST_DRONE_ARMOR_S
+    customArmorPreviewIndex: 15
+    spriteSheet: AQUAVEST_DEEP.PCK
+    spriteInv: AQUAVEST_S_DEEP.SPK
+    corpseBattle:
+      - STR_AQUAVEST_DRONE_DEEP_CORPSE
+    storeItem: STR_AQUAVEST_DRONE_ARMOR
+    builtInWeapons:
+      - STR_RIOT_SHIELD
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_BACK_PACK
+    specialWeapon: STR_ELECTROBOLT
+    allowsKneeling: true
+    visibilityAtDark: 8
+    personalLight: 13
+    heatVision: 20
+    weight: 6
+    stats: *AquavestSStats
+    frontArmor: 32
+    sideArmor: 32
+    rearArmor: 20
+    underArmor: 15
+    damageModifier: *DeepOneAquavestResists
+    meleeDodge: *MeleeDodgePoorS
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      time: *TimeRecoveryTypical
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryTypical
+      energy: *EnergyRecoveryBad
+      morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
+    overKill: 1.5
+    units:
+      - STR_CRACKED_DEEP_DRONE
     loftempsSet: [ 3 ]
 
 #pilots
@@ -849,7 +1099,7 @@ armors:
       flyDownPercent: [50, 0]
     moveSound: 40
     visibilityAtDark: 12
-    personalLight: 5
+    personalLight: 13
     heatVision: 40
     frontArmor: 25
     sideArmor: 25
@@ -864,20 +1114,22 @@ armors:
       - 1.0 #5 plasma
       - 0.6 #6 blunt
       - 1.0 #7 mechanical
-      - 0.6 #8 chemical
+      - 1.0 #8 chemical
       - 0.0 #9 smoke
-      - 1.4 #10 electric
+      - 1.5 #10 electric
       - 1.0 #11 sonic
       - 0.0 #12 biological
       - 1.0 #13 psionic
       - 1.0 #14 heat
-      - 0.0 #15 cold
+      - 1.0 #15 cold
     meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical
     recovery:
+      time: *TimeRecoveryTypical
       stun: *StunRecoveryTypical
       energy: *EnergyRecoveryTypical
       morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
     overKill: 1.5
     units:
       - STR_PILOT
@@ -897,35 +1149,21 @@ armors:
     corpseBattle:
       - STR_BOOSTER_CORPSE
     allowsKneeling: true
-    visibilityAtDark: 12
+    personalLight: 5
     heatVision: 20
-    frontArmor: 6
-    sideArmor: 6
-    rearArmor: 6
-    underArmor: 6
-    damageModifier: #&SmallsmokeUnarmoredResists
-      - 1.0 #0 none
-      - 1.0 #1 kinetic
-      - 1.4 #2 incendiary
-      - 1.0 #3 concussive
-      - 1.0 #4 radiant
-      - 1.0 #5 plasma
-      - 1.0 #6 blunt
-      - 1.0 #7 mechanical
-      - 1.0 #8 chemical
-      - 3.0 #9 smoke
-      - 1.0 #10 electric
-      - 1.0 #11 sonic
-      - 1.0 #12 biological
-      - 1.0 #13 psionic
-      - 1.0 #14 heat
-      - 1.0 #15 cold
+    frontArmor: 7
+    sideArmor: 7
+    rearArmor: 7
+    underArmor: 5
+    damageModifier: *OrganicUnarmoredResists
     meleeDodge: *MeleeDodgeTypical
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
       stun: &StunRecoveryEnemy
-        flatHundred: 0
+        healthNormalized: 3
+        flatHundred: 0.02
+        stunNormalized: -2
       energy: *EnergyRecoveryHumanTypical
     overKill: 1.5
     loftempsSet: [ 3 ]
@@ -943,12 +1181,12 @@ armors:
       - STR_RIPPER_CORPSE
     specialWeapon: STR_RIPP
     allowsKneeling: true
-    visibilityAtDark: 12
+    personalLight: 5
     heatVision: 20
-    frontArmor: 6
-    sideArmor: 6
-    rearArmor: 6
-    underArmor: 6
+    frontArmor: 7
+    sideArmor: 7
+    rearArmor: 7
+    underArmor: 5
     damageModifier: *OrganicUnarmoredResists
     meleeDodge: *MeleeDodgeTypical
     psiDefence: *PsiDefenseTypical
@@ -971,7 +1209,7 @@ armors:
     corpseBattle:
       - STR_FREELANCER_CORPSE
     allowsKneeling: true
-    visibilityAtDark: 9
+    personalLight: 5
     heatVision: 20
     frontArmor: 2
     sideArmor: 2
@@ -997,30 +1235,13 @@ armors:
       - STR_SKIPTRACER_CORPSE
     specialWeapon: STR_ELECTROBOLT
     allowsKneeling: true
-    visibilityAtDark: 9
+    personalLight: 5
     heatVision: 20
-    frontArmor: 10
-    sideArmor: 10
-    rearArmor: 10
-    underArmor: 10
-    damageModifier: #&deeponeDuraResists
-      - 1.0 #0 none
-      - 0.75 #1 kinetic
-      - 1.0 #2 incendiary
-      - 1.0 #3 concussive
-      - 0.75 #4 radiant
-      - 1.0 #5 plasma
-      - 1.0 #6 blunt
-      - 1.0 #7 mechanical
-      - 0.5 #8 chemical
-      - 0.5 #9 smoke
-      - 0.5 #10 electric
-      - 1.0 #11 sonic
-      - 1.0 #12 biological
-      - 1.0 #13 psionic
-      - 1.0 #14 heat
-      - 1.0 #15 cold
-      - 1.0 #0 none
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: *DeepOneUnarmoredResists
     meleeDodge: *MeleeDodgeTypical
     psiDefence: *PsiDefenseTypical
     recovery:
@@ -1042,7 +1263,7 @@ armors:
       - STR_SSPGUARD_CORPSE
     specialWeapon: STR_SHARKATTACK
     allowsKneeling: true
-    visibilityAtDark: 9
+    personalLight: 5
     heatVision: 20
     frontArmor: 2
     sideArmor: 2
@@ -1069,7 +1290,7 @@ armors:
       - STR_SSPOFFICER_CORPSE
     specialWeapon: STR_SHARKATTACK
     allowsKneeling: true
-    visibilityAtDark: 9
+    personalLight: 5
     heatVision: 20
     frontArmor: 20
     sideArmor: 20
@@ -1093,6 +1314,7 @@ armors:
     corpseBattle:
       - STR_PLEX_DRONE_HYBRID_CORPSE
     visibilityAtDark: 11
+    personalLight: 5
     heatVision: 20
     frontArmor: 2
     sideArmor: 2
@@ -1115,6 +1337,7 @@ armors:
     corpseBattle:
       - STR_PLEX_DRONE_HUMAN_CORPSE
     visibilityAtDark: 8
+    personalLight: 5
     heatVision: 20
     frontArmor: 2
     sideArmor: 2
@@ -1137,12 +1360,36 @@ armors:
     corpseBattle:
       - STR_PLEX_DRONE_SHARK_CORPSE
     visibilityAtDark: 8
+    personalLight: 5
     heatVision: 20
     frontArmor: 2
     sideArmor: 2
     rearArmor: 2
     underArmor: 2
     damageModifier: *OrganicUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryTypical
+    overKill: 1.5
+    loftempsSet: [ 3 ]
+
+  - type: STR_DRONEDEEP_ARMOR
+    ufopediaType: STR_DRONE_DEEP_ITEM
+    spriteInv: DRONEDEEP.SPK
+    spriteSheet: WORKSUIT_DEEP.PCK
+    corpseBattle:
+      - STR_PLEX_DRONE_DEEP_CORPSE
+    visibilityAtDark: 8
+    personalLight: 5
+    heatVision: 20
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: *DeepOneUnarmoredResists
     meleeDodge: *MeleeDodgeTypical
     psiDefence: *PsiDefenseTypical
     recovery:
@@ -1159,6 +1406,7 @@ armors:
     corpseBattle:
       - STR_CHRYSSALID_CORPSE
     drawingRoutine: 7
+    personalLight: 5
     heatVision: 70
     frontArmor: 35
     sideArmor: 35
@@ -1166,21 +1414,21 @@ armors:
     underArmor: 25
     damageModifier:
       - 1.0 #0 none
-      - 1.0 #1 kinetic
-      - 1.1 #2 incendiary
+      - 0.7 #1 kinetic
+      - 1.4 #2 incendiary
       - 0.7 #3 concussive
-      - 1.0 #4 radiant
-      - 1.0 #5 plasma
-      - 1.0 #6 blunt
-      - 1.0 #7 mechanical
-      - 1.0 #8 chemical
+      - 0.7 #4 radiant
+      - 0.7 #5 plasma
+      - 0.7 #6 blunt
+      - 0.7 #7 mechanical
+      - 0.7 #8 chemical
       - 0.5 #9 smoke
       - 0.7 #10 electric
       - 0.7 #11 sonic
-      - 1.0 #12 biological
+      - 0.7 #12 biological
       - 1.0 #13 psionic
-      - 0.0 #14 heat
-      - 0.0 #15 cold
+      - 1.0 #14 heat
+      - 1.0 #15 cold
     meleeDodge: *MeleeDodgeGood
     psiDefence: *PsiDefenseTypical
     recovery:
@@ -1199,6 +1447,7 @@ armors:
     allowInv: false
     drawingRoutine: 4
     deathFrames: 18
+    personalLight: 5
     heatVision: 70
     frontArmor: 4
     sideArmor: 4
@@ -1214,13 +1463,13 @@ armors:
       - 1.0 #6 blunt
       - 1.0 #7 mechanical
       - 1.0 #8 chemical
-      - 1.0 #9 smoke
+      - 0.5 #9 smoke
       - 1.0 #10 electric
       - 1.0 #11 sonic
       - 1.0 #12 biological
       - 1.0 #13 psionic
-      - 0.0 #14 heat
-      - 0.0 #15 cold
+      - 1.0 #14 heat
+      - 1.0 #15 cold
     meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical
     recovery:
@@ -1241,6 +1490,7 @@ armors:
     movementType: 1
     moveCost:
       flyDownPercent: [50, 0]
+    personalLight: 5
     heatVision: 45
     frontArmor: 4
     sideArmor: 4
@@ -1257,11 +1507,11 @@ armors:
       - 1.0 #7 mechanical
       - 1.0 #8 chemical
       - 0.5 #9 smoke
-      - 0.1 #10 electric
+      - 0.4 #10 electric
       - 1.0 #11 sonic
       - 1.0 #12 biological
       - 1.0 #13 psionic
-      - 0.0 #14 heat
+      - 1.0 #14 heat
       - 1.0 #15 cold
     meleeDodge: *MeleeDodgeGood
     psiDefence: *PsiDefenseTypical
@@ -1285,13 +1535,12 @@ armors:
     movementType: 1
     moveCost:
       flyDownPercent: [50, 0]
-    visibilityAtDark: 12
     personalLight: 5
     heatVision: 40
-    frontArmor: 10
-    sideArmor: 10
-    rearArmor: 10
-    underArmor: 8
+    frontArmor: 15
+    sideArmor: 15
+    rearArmor: 15
+    underArmor: 12
     damageModifier: *MechanicalUnarmoredResists
     meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical
@@ -1301,7 +1550,32 @@ armors:
     overKill: 1.5
     loftempsSet: [ 2 ]
 
-#civilians
+# simulated
+  - type: STR_HOLOSECTOID_ARMOR
+#    ufopediaType: STR_DRONE_HYBRID_ITEM
+    spriteInv: HOLOSECTOID.SPK
+    spriteSheet: HOLOSECTOID.PCK
+    corpseBattle:
+      - STR_HOLOSECTOID_CORPSE
+    allowsKneeling: false
+    personalLight: 5
+    personalLightHostile: 5
+    heatVision: 20
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    damageModifier: *OrganicUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryTypical
+    overKill: 1.5
+    loftempsSet: [ 2 ]
+
+# civilians
   - type: STR_CLIENT_1_ARMOR
     spriteInv: CLIENT_1.SPK
     spriteSheet: CLIENT_1.PCK
@@ -1314,6 +1588,7 @@ armors:
     allowsKneeling: false
     alwaysVisible: true
     visibilityAtDark: 9
+    personalLight: 5
     drawingRoutine: 16
     heatVision: 20
     frontArmor: 2
@@ -1325,9 +1600,8 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryTypical
+      stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryTypical
-      morale: *MoraleRecoveryTypical
     overKill: 1.5
     loftempsSet: [ 3 ]
 
@@ -1343,6 +1617,7 @@ armors:
     allowsKneeling: false
     alwaysVisible: true
     visibilityAtDark: 9
+    personalLight: 5
     heatVision: 20
     frontArmor: 2
     sideArmor: 2
@@ -1353,8 +1628,7 @@ armors:
     psiDefence: *PsiDefenseTypical
     recovery:
       health: *HealthRecoveryTypical
-      stun: *StunRecoveryTypical
+      stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryTypical
-      morale: *MoraleRecoveryTypical
     overKill: 1.5
     loftempsSet: [ 3 ]

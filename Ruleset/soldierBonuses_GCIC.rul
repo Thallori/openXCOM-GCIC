@@ -64,7 +64,7 @@ soldierBonuses:
       reactions: 8
       stamina: 10
       strength: 10
-      health: 15
+      health: 10
     recovery:
       energy:
         flatOne: -2
@@ -75,10 +75,35 @@ soldierBonuses:
       reactions: 4
       stamina: 10
       strength: 15
-      health: 20
+      health: 15
     recovery:
       energy:
         flatOne: -2
+
+  - name: STR_LIGHT_SKIN
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 4
+    stats:
+      health: 5
+    recovery:
+      energy:
+        flatOne: -1
+
+  - name: STR_HARD_SKIN
+    frontArmor: 9
+    sideArmor: 9
+    rearArmor: 9
+    underArmor: 9
+    stats:
+      health: 5
+      tu: -5
+      reactions: -5
+      stamina: -10
+    recovery:
+      energy:
+        flatOne: -1
 
 #commendations
   - name: STR_MEDAL_ORIGINAL8

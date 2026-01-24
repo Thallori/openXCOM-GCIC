@@ -9,6 +9,52 @@ alienDeployments:
     terrains:
       - FOREST2
 
+  - type: STR_HOLOUFO_SMALL
+    script: DEFAULT2
+    width: 40
+    length: 40
+    height: 6
+#    missionBountyItem: STR_MEDIUM_SCOUT_FRAME
+    briefing:
+      showTarget: false
+      title: STR_HOLOUFO_TITLE_BRIEFING
+      desc: STR_HOLOUFO_DESC_BRIEFING
+      music: SIM_INTRO
+      background: DESTINATION.SCR
+      palette: 0
+    customUfo: STR_HOLOUFO_SMALL
+    unlockedResearch: STR_TRG_HS_PREQ
+    music:
+      - SEC1
+    data:
+      - alienRank: 4
+        lowQty: 5
+        medQty: 5
+        highQty: 6
+        dQty: 3
+        percentageOutsideUfo: 50
+        itemSets: &AnchorEmptyInventory
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+
   - type: STR_RESCUE_1
     script: HANGAR_DRONES_3X3
     width: 30
@@ -19,14 +65,14 @@ alienDeployments:
     alertDescription: STR_RESCUE_1_ALERT_DESCRIPTION
     markerName: STR_RESCUE_1
     duration: [48, 72]
-    despawnPenalty: 200
-    abortPenalty: 185
+    despawnPenalty: 100
+    abortPenalty: 85
     # startingCondition: SECURITY_GEAR_SECURITY_CRAFT
     briefing:
       showTarget: false
       title: STR_RESCUE_1
       music: BREACH_INTRO
-      background: BACK16.SCR
+      background: DESTINATION.SCR
       palette: 0
     unlockedResearch: STR_TRG_BO_PREQ
     customUfo: STR_HOUSE_GARAGE
@@ -101,14 +147,14 @@ alienDeployments:
     alertDescription: STR_RESCUE_RR_ALERT_DESCRIPTION
     markerName: STR_RESCUE_RR
     duration: [16, 24]
-    despawnPenalty: 200
-    abortPenalty: 175
+    despawnPenalty: 100
+    abortPenalty: 75
     # startingCondition: SECURITY_GEAR_SECURITY_CRAFT
     briefing:
       showTarget: false
       title: STR_RESCUE_RR
       music: BREACH_INTRO
-      background: BACK16.SCR
+      background: DESTINATION.SCR
       palette: 0
     unlockedResearch: STR_TRG_RI_PREQ
     customUfo: STR_HOUSE_GARAGE_RR
@@ -192,21 +238,16 @@ alienDeployments:
     duration: [48, 72]
     despawnPenalty: 0
     abortPenalty: 0
-    successEvents:
-      STR_NETRUNNER_EARLY_EXPOSITION: 100
-    despawnEvents:
-      STR_NETRUNNER_EARLY_EXPOSITION: 100
-    failureEvents:
-      STR_NETRUNNER_EARLY_EXPOSITION: 100
     startingCondition: INFILTRATION_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
       title: STR_TRADE_MEETING_EARLY
       music: HACKER_INTRO
-      background: BACK16.SCR
+      background: DESTINATION.SCR
       palette: 2
     missionBountyItem: STR_BIONIC_INTERLACE
     unlockedResearch: STR_TRG_FL_PREQ
+    minShade: 6
     terrains:
       - CLUB0
     music:
@@ -223,16 +264,16 @@ alienDeployments:
         itemSets: &freelancer
           -
             - STR_DART_PISTOL
-            - STR_DART_AMMO1
+            - STR_DART_AMMO2
           -
             - STR_DART_PISTOL
-            - STR_DART_AMMO1
+            - STR_DART_AMMO2
           -
             - STR_DART_PISTOL
-            - STR_DART_AMMO1
+            - STR_DART_AMMO2
           -
             - STR_DART_PISTOL
-            - STR_DART_AMMO1
+            - STR_DART_AMMO2
           -
             - STR_SONIC_PROBE
           -
@@ -252,27 +293,7 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 0
         customUnitType: STR_DRONE_ENEMY_HYBRID
-        itemSets: &AnchorEmptyInventory
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
+        itemSets: *AnchorEmptyInventory
       - alienRank: 7
         lowQty: 0
         medQty: 0
@@ -299,10 +320,11 @@ alienDeployments:
       showTarget: false
       title: STR_TRADE_MEETING_1
       music: HACKER_INTRO
-      background: BACK16.SCR
+      background: DESTINATION.SCR
       palette: 2
     missionBountyItem: STR_BIONIC_INTERLACE
     unlockedResearch: STR_TRG_FL_PREQ
+    minShade: 6
     terrains:
       - CLUB0
     music:
@@ -358,10 +380,11 @@ alienDeployments:
       showTarget: false
       title: STR_TRADE_MEETING_2
       music: HACKER_INTRO
-      background: BACK16.SCR
+      background: DESTINATION.SCR
       palette: 2
     missionBountyItem: STR_BIONIC_INTERLACE
     unlockedResearch: STR_TRG_ST_PREQ
+    minShade: 6
     terrains:
       - CLUB1
     music:
@@ -375,37 +398,27 @@ alienDeployments:
         percentageOutsideUfo: 0
         extraRandomItems:
           - [STR_SECRET_DATA]
-        itemSets: # &smallXN
+        itemSets: &smallXN
           -
             - STR_XN_LASER_PISTOL
-            - STR_DURATHREAD
           -
             - STR_XN_LASER_PISTOL
-            - STR_DURATHREAD
           -
             - STR_XN_LASER_SMG
-            - STR_DURATHREAD
           -
             - STR_XN_LASER_SMG
-            - STR_DURATHREAD
           -
             - STR_XN_LASER_SMG
-            - STR_DURATHREAD
           -
             - STR_XN_LASER_SMG
-            - STR_DURATHREAD
           -
             - STR_XN_LASER_RIFLE
-            - STR_DURATHREAD
           -
             - STR_XN_LASER_RIFLE
-            - STR_DURATHREAD
           -
             - STR_XN_LASER_RIFLE
-            - STR_DURATHREAD
           -
             - STR_XN_LASER_RIFLE
-            - STR_DURATHREAD
       - alienRank: 7
         lowQty: 1
         medQty: 1
@@ -413,49 +426,33 @@ alienDeployments:
         dQty: 1
         percentageOutsideUfo: 0
         extraRandomItems: *netrunnerExtra
-        itemSets: # &skiptracer
+        itemSets: &skiptracer
           -
             - STR_DART_PISTOL
-            - STR_DART_AMMO1
-            - STR_DURATHREAD
+            - STR_DART_AMMO2
           -
             - STR_DART_PISTOL
-            - STR_DART_AMMO1
-            - STR_DURATHREAD
+            - STR_DART_AMMO2
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO1
-            - STR_CHEM_SMG_AMMO1
-            - STR_DURATHREAD
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO1
-            - STR_CHEM_SMG_AMMO1
-            - STR_DURATHREAD
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO1
-            - STR_CHEM_SMG_AMMO1
-            - STR_DURATHREAD
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO1
-            - STR_CHEM_SMG_AMMO1
-            - STR_DURATHREAD
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO2
-            - STR_CHEM_SMG_AMMO2
-            - STR_DURATHREAD
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO2
-            - STR_CHEM_SMG_AMMO2
-            - STR_DURATHREAD
-          -
-            - STR_DURATHREAD
-          -
-            - STR_DURATHREAD
+          - []
+          - []
       - alienRank: 6
         lowQty: 3
         medQty: 3
@@ -499,7 +496,7 @@ alienDeployments:
     alertDescription: STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION
     markerName: STR_GCIC_SABOTAGE_1
     duration: [72, 96]
-    despawnPenalty: 150
+    despawnPenalty: 50
     despawnEvents:
       STR_EVENT_CLAIM_SECURED: 100
     failureEvents:
@@ -509,7 +506,7 @@ alienDeployments:
       showTarget: false
       title: STR_GCIC_SABOTAGE_1
       music: SHADOW_INTRO
-      background: BACK16.SCR
+      background: DESTINATION.SCR
       palette: 2
     missionBountyItem: STR_SHARES_GCIC
     missionBountyItemCount: 5
@@ -521,8 +518,8 @@ alienDeployments:
       - SHADOW1
     objectiveType: 20
     objectivesRequired: 1
-    objectiveComplete: [STR_SABOTAGE_DESTROYED_COMPLETE, 5]
-    objectiveFailed: [STR_SABOTAGE_DESTROYED_FAILED, -150]
+    objectiveComplete: [STR_SABOTAGE_DESTROYED_COMPLETE, -25]
+    objectiveFailed: [STR_SABOTAGE_DESTROYED_FAILED, -50]
     objectivePopup: STR_SABOTAGE_DESTROYED_POPUP
     turnLimit: 10
     chronoTrigger: 1
@@ -541,19 +538,11 @@ alienDeployments:
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
-          -
-            - STR_BATON
-            - STR_45_PISTOL_CODED
-            - STR_45_AMMO
             - STR_45_AMMO
           -
             - STR_BATON
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
-            - STR_45_AMMO
-          -
-            - STR_BATON
-            - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
           -
@@ -561,18 +550,36 @@ alienDeployments:
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
+            - STR_45_AMMO
           -
             - STR_BATON
             - STR_45_PISTOL_CODED
+            - STR_45_AMMO
+            - STR_45_AMMO
+            - STR_45_AMMO
+          -
+            - STR_BATON
+            - STR_45_PISTOL_CODED
+            - STR_45_AMMO
+            - STR_45_AMMO
+            - STR_45_AMMO
+          -
+            - STR_BATON
+            - STR_45_PISTOL_CODED
+            - STR_45_AMMO
             - STR_45_AMMO
             - STR_45_AMMO
           -
             - STR_BATON
             - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
           -
             - STR_BATON
             - STR_SINGLESHOT_LASER_PISTOL_CODED
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
           -
             - STR_BATON
@@ -609,8 +616,8 @@ alienDeployments:
     alertDescription: STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION
     markerName: STR_GCIC_SABOTAGE_2
     duration: [72, 96]
-    despawnPenalty: 100
-    abortPenalty: 100
+    despawnPenalty: 50
+    abortPenalty: 50
     despawnEvents:
       STR_EVENT_HEALTHY_COMPETITION: 100
     failureEvents:
@@ -620,7 +627,7 @@ alienDeployments:
       showTarget: false
       title: STR_GCIC_SABOTAGE_2
       music: SHADOW_INTRO
-      background: BACK16.SCR
+      background: DESTINATION.SCR
       palette: 2
     missionBountyItem: STR_GCIC_SABOTAGE_2_DATA
     missionBountyItemCount: 1
@@ -630,7 +637,7 @@ alienDeployments:
       - COMMERCIAL
     music:
       - SHADOW1
-    turnLimit: 20
+    turnLimit: 15
     chronoTrigger: 1
     data:
       - alienRank: 7
@@ -646,53 +653,55 @@ alienDeployments:
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
-            - STR_PLASTICS
+            - STR_45_AMMO
           -
             - STR_BATON
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
-            - STR_PLASTICS
+            - STR_45_AMMO
           -
             - STR_BATON
             - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
-            - STR_PLASTICS
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
           -
             - STR_BATON
             - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
-            - STR_PLASTICS
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
           -
             - STR_SSP_SMG_CODED
             - STR_SSP_SMG_AMMO
             - STR_SSP_SMG_AMMO
-            - STR_PLASTICS
+            - STR_SSP_SMG_AMMO
           -
             - STR_SSP_SMG_CODED
             - STR_SSP_SMG_AMMO
             - STR_SSP_SMG_AMMO
-            - STR_PLASTICS
+            - STR_SSP_SMG_AMMO
           -
             - STR_SSP_SMG_CODED
             - STR_SSP_SMG_AMMO
             - STR_SSP_SMG_AMMO
-            - STR_PLASTICS
+            - STR_SSP_SMG_AMMO
           -
             - STR_SSP_SHOTGUN_CODED
             - STR_SSP_SHOTGUN_AMMO_BS
             - STR_SSP_SHOTGUN_AMMO_BS
-            - STR_PLASTICS
+            - STR_SSP_SHOTGUN_AMMO_BS
           -
             - STR_SSP_SHOTGUN_CODED
             - STR_SSP_SHOTGUN_AMMO_BS
             - STR_SSP_SHOTGUN_AMMO_BS
-            - STR_PLASTICS
+            - STR_SSP_SHOTGUN_AMMO_BS
           -
             - STR_SSP_SHOTGUN_CODED
             - STR_SSP_SHOTGUN_AMMO_BS
             - STR_SSP_SHOTGUN_AMMO_BS
-            - STR_PLASTICS
+            - STR_SSP_SHOTGUN_AMMO_BS
       - alienRank: 6
         lowQty: 3
         medQty: 3
@@ -733,7 +742,7 @@ alienDeployments:
     height: 8
     alert: STR_MEDI_ALERT
     # alertBackground: BACK03.SCR
-    alertDescription: STR_MEDI_CREATURE_DESCRIPTION
+    alertDescription: STR_MEDI_MUCK_ALERT_DESCRIPTION
     markerName: STR_MEDI_CREATURE
     duration: [36, 60]
     despawnPenalty: 20
@@ -743,7 +752,7 @@ alienDeployments:
       title: STR_MEDI_CREATURE
       desc: STR_MEDI_CREATURE_BRIEFING
       music: BLOOD_INTRO
-      background: BACK16.SCR
+      background: DESTINATION.SCR
       palette: 0
     unlockedResearch: STR_TRG_MS_PREQ
     music:
@@ -763,7 +772,7 @@ alienDeployments:
     height: 8
     alert: STR_MEDI_ALERT
     # alertBackground: BACK03.SCR
-    alertDescription: STR_MEDI_CREATURE_DESCRIPTION
+    alertDescription: STR_MEDI_MUCK_ALERT_DESCRIPTION
     markerName: STR_MEDI_CREATURE
     duration: [36, 60]
     despawnPenalty: 20
@@ -773,9 +782,9 @@ alienDeployments:
       title: STR_MEDI_CREATURE
       desc: STR_MEDI_CREATURE_BRIEFING
       music: BLOOD_INTRO
-      background: BACK16.SCR
+      background: DESTINATION.SCR
       palette: 0
-    unlockedResearch: STR_TRG_MS_PREQ
+    unlockedResearch: STR_TRG_CR_PREQ
     music:
       - BLOOD1
     data:
@@ -804,12 +813,12 @@ alienDeployments:
     duration: [48, 72]
     despawnPenalty: 20
     abortPenalty: 20
-    startingCondition: INFILTRATIONTOOLS_GEAR_INFILTRATION_CRAFT
+    startingCondition: TOOLS_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
       title: STR_GR_INDUSTRIAL_1
       music: BLOOD_INTRO
-      background: BACK16.SCR
+      background: DESTINATION.SCR
       palette: 0
     unlockedResearch: STR_TRG_RS_PREQ
     terrains:

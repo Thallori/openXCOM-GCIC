@@ -1,5 +1,8 @@
 musics:
+  - type: GMARCINTRO
   - type: GMSTORY
+  - type: GMGEO1
+  - type: GMGEO2
   - type: GMGEO3
   - type: HACKER_INTRO
   - type: HACKER1
@@ -10,6 +13,8 @@ musics:
   - type: BLOOD_INTRO
   - type: BLOOD1
   - type: BLOOD2
+  - type: SIM_INTRO
+  - type: SEC1
 
 extraSounds:
   - type: BATTLE.CAT
@@ -46,6 +51,8 @@ extraSounds:
       129: Resources/Sounds/Fire/squirt_fire.wav
       130: Resources/Sounds/Impacts/fire_hit.wav
       131: Resources/Sounds/Impacts/heavy_hit.wav
+      132: Resources/Sounds/Fire/plasmapistol_fire.wav
+      133: Resources/Sounds/Impacts/plasma_hit.wav
 
   - type: GEO.CAT
     files:

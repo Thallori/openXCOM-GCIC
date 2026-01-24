@@ -1,4 +1,6 @@
 startingBase:
+  lon: 2.1468
+  lat: 0.6222
   facilities:
     - type: STR_CENTRAL_ACCESS
       x: 1
@@ -15,6 +17,9 @@ startingBase:
     - type: STR_CORRIDOR
       x: 2
       y: 3
+    - type: STR_SCANNER
+      x: 2
+      y: 4
     - type: STR_BUNK_RACKS
       x: 3
       y: 2
@@ -43,9 +48,11 @@ startingBase:
         STR_MEDI_SPRAY: 2
       status: STR_READY
   items:
-    STR_BUSBOX_PISTOL: 1
+    STR_BUSBOX_PISTOL: 4
     STR_COMBALL_AMMO: 10
+    STR_PAPERSHOT_AMMO: 10
     STR_STL_KNIFE: 2
+    STR_WRENCH: 1
     STR_ELECTROFLARE: 8
     STR_MEDI_SPRAY: 12
   randomSoldiers:

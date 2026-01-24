@@ -201,11 +201,11 @@ terrains:
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [9, 2, 0]
-          STR_SPAWN_DRONE_HUMAN_1:
+          STR_SPAWN_DRONE_DEEP_1:
           - [10, 3, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
-          STR_SPAWN_DRONE_HUMAN_1: [0, 0]
+          STR_SPAWN_DRONE_DEEP_1: [0, 0]
       - name: HANGAR_03S
         items:
           STR_SPAWN_DRONE_HYBRID_1:
@@ -219,11 +219,11 @@ terrains:
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [2, 6, 0]
-          STR_SPAWN_DRONE_HUMAN_1:
+          STR_SPAWN_DRONE_DEEP_1:
           - [4, 4, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
-          STR_SPAWN_DRONE_HUMAN_1: [0, 0]
+          STR_SPAWN_DRONE_DEEP_1: [0, 0]
       - name: HANGAR_05S
         items:
           STR_SPAWN_DRONE_HYBRID_1:
@@ -470,11 +470,11 @@ terrains:
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [2, 3, 0]
-          STR_SPAWN_DRONE_HUMAN_1:
+          STR_SPAWN_DRONE_DEEP_1:
           - [1, 8, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
-          STR_SPAWN_DRONE_HUMAN_1: [0, 0]
+          STR_SPAWN_DRONE_DEEP_1: [0, 0]
       - name: INDUSTRIAL_04S
         items:
           STR_SPAWN_DRONE_HYBRID_1:
@@ -515,12 +515,12 @@ terrains:
         width: 20
         length: 20
         items:
-          STR_SPAWN_DRONE_HYBRID_1:
+          STR_SPAWN_DRONE_DEEP_1:
           - [9, 6, 0]
           STR_SPAWN_DRONE_SHARK_1:
           - [11, 7, 0]
         fuseTimers:
-          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_DEEP_1: [0, 0]
           STR_SPAWN_DRONE_SHARK_1: [0, 0]
 
   - name: FOREST2

@@ -89,6 +89,10 @@ craftWeapons:
   - delete: STR_FUSION_BALL_UC
   - delete: STR_LASER_CANNON_UC
   - delete: STR_PLASMA_BEAM_UC
+cutscenes:
+  - delete: intro
+#  - delete: winGame
+#  - delete: loseGame
 facilities:
   - delete: STR_ACCESS_LIFT
   - delete: STR_LIVING_QUARTERS

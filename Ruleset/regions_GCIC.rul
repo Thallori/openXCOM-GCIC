@@ -3,6 +3,15 @@
 #1: rural land/desert/cold land
 #2: urban+sea/deep desert/ice
 #3: cities/desert outposts/cold cities
+# -1: rich, space elevator
+# -2: poor
+# -3: arid
+# -4: cold
+# -5: tropical
+# -6: warm port
+# -7: cold port
+# -8: lake port
+# -9: coral port
 #4: bases land/bases desert/bases land
 #5: spawn-despawn
 #6: xenoform/not used/not used
@@ -41,6 +50,8 @@ regions:
       - - [110.8725, 110.8725, 30.4616, 30.4616, -1, STR_MR_CAPITAL_CITY] #rich
         - [91.88873, 91.88873, 32.7934, 32.7934, -1, STR_MR_WEST_CAPITAL] #rich
         - [165.2408, 165.2408, 23.09994, 23.09994, -3, STR_MR_DESERT_CITY] #desert
+        - [62.7962, 62.7962, 39.83494, 39.83494, -3, STR_MR_WESTDESERT_CITY] #desert
+        - [91.1326, 91.1326, 16.0393, 16.0393, -3, STR_MR_NORTHDESERT_CITY] #desert
         - [147.0219, 147.0219, 46.88892, 46.88892, -8, STR_MR_EAST_LAKE] #lake
         - [132.3264, 132.3264, 45.09108, 45.09108, -8, STR_MR_WEST_LAKE] #lake
         - [132.9774, 132.9774, 55.00157, 55.00157, -8, STR_MR_MOUNT_CITY] #lake
@@ -296,6 +307,8 @@ regions:
         - [204.7293, 204.7293, -43.27929, -43.27929, -5, STR_GS_SOUTHISLAND_TROP]
         - [212.6662, 212.6662, -51.88884, -51.88884, -5, STR_GS_NORTHISLAND_TROP]
         - [231.9032, 231.9032, -41.26143, -41.26143, -6, STR_GS_EAST_PORT]
+        - [116.2132, 116.2132, -23.62773, -23.62773, -6, STR_MG_CENTRAL_PORT]
+        - [129.3362, 129.3362, -32.95373, -32.95373, -5, STR_MG_ISLAND_PORT]
       - - [183.9407, 193.9407, -37.19323, -27.19323]
         - [201.6839, 211.5924, -37.19322, -27.19323]
         - [228.4139, 238.4139, -38.4606, -30.16508]

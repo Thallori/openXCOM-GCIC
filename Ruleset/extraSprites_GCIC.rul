@@ -138,6 +138,16 @@ extraSprites:
       193: Resources/Items/Utility/jet_bigob.png
       194: Resources/Items/Utility/meditrauma_bigob.png
       195: Resources/Items/Tools/sledgehammer_bigob.png
+      196: Resources/Items/Builtins/holopistol_bigob.png
+      197: Resources/Factions/Aliens/holosectoid_bigob.png
+      198: Resources/Items/Materials/thread_bigob.png
+      199: Resources/Items/Materials/grav_bigob.png
+      200: Resources/Armors/Anthros/Worksuit/worksuit_corpse_deep_bigob.png
+      201: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_deep_bigob.png
+      202: Resources/Armors/Anthros/Aquavest/aquavest_corpse_deep_bigob.png
+      203: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_deep_bigob.png
+      204: Resources/Items/Tools/riveter_bigob.png
+      205: Resources/Items/Tools/Ammo/riveter_ammo_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -225,6 +235,13 @@ extraSprites:
       181: Resources/Items/Utility/jet_floorob.png
       182: Resources/Items/Utility/meditrauma_floorob.png
       183: Resources/Items/Tools/sledgehammer_floorob.png
+      184: Resources/Factions/Aliens/holosectoid_floorob.png
+      185: Resources/Armors/Anthros/Worksuit/worksuit_corpse_deep_floorob.png
+      186: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_deep_floorob.png
+      187: Resources/Armors/Anthros/Aquavest/aquavest_corpse_deep_floorob.png
+      188: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_deep_floorob.png
+      189: Resources/Items/Tools/riveter_floorob.png
+      190: Resources/Items/Tools/Ammo/riveter_ammo_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -270,6 +287,8 @@ extraSprites:
       400: Resources/Items/Kinetic/ssp_smg_handob.png
       408: Resources/Items/Utility/meditrauma_handob.png
       416: Resources/Items/Tools/sledgehammer_handob.png
+      424: Resources/Items/Builtins/holopistol_handob.png
+      432: Resources/Items/Tools/riveter_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
@@ -305,6 +324,7 @@ extraSprites:
       310: Resources/BaseBits/basebits_printshop.png
       311: Resources/BaseBits/basebits_gateway.png
       312: Resources/BaseBits/basebits_medi.png
+      313: Resources/BaseBits/basebits_scanner.png
       433: Resources/Crafts/bicube_basebit.png
       434: Resources/Crafts/crossover_basebit.png
       435: Resources/Crafts/rider_basebit.png
@@ -411,10 +431,15 @@ extraSprites:
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_M1.png
   - typeSingle: SHARK__2__M2_SHELL
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_M2.png
+# deep
+  - typeSingle: DEEP_2__F0_SHELL
+    fileSingle: Resources/Armors/Bodies/Deep/DEEPHANDS_F0.png
+  - typeSingle: DEEP__2__M0_SHELL
+    fileSingle: Resources/Armors/Bodies/Deep/DEEPHANDS_F0.png
 
 #armor
   - type: CustomArmorPreviews
-    width: 144
+    width: 240
     height: 32
     subX: 12
     subY: 20
@@ -427,6 +452,8 @@ extraSprites:
     fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_inventory.png
   - typeSingle: SHARK__7__WORKSUIT
     fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_inventory.png
+  - typeSingle: DEEP__7__WORKSUIT
+    fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_deep_inventory.png
   - type: WORKSUIT_HUMAN.PCK
     width: 512
     height: 720
@@ -448,6 +475,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Worksuit/worksuit_sprite_shark.png
+  - type: WORKSUIT_DEEP.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Worksuit/worksuit_sprite_deep.png
 # jumpsuit
   - typeSingle: HUMAN__7__JUMPSUIT
     fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory.png
@@ -455,6 +489,8 @@ extraSprites:
     fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory.png
   - typeSingle: SHARK__7__JUMPSUIT
     fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory.png
+  - typeSingle: DEEP__7__JUMPSUIT
+    fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_deep_inventory.png
   - type: JUMPSUIT_HUMAN.PCK
     width: 512
     height: 720
@@ -476,6 +512,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Jumpsuit/jumpsuit_sprite_shark.png
+  - type: JUMPSUIT_DEEP.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Jumpsuit/jumpsuit_sprite_deep.png
 # exoskeleton
   - typeSingle: HUMAN__7__SKELE
     fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_inventory.png
@@ -483,6 +526,8 @@ extraSprites:
     fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_inventory.png
   - typeSingle: SHARK__7__SKELE
     fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_inventory.png
+  - typeSingle: DEEP__7__SKELE
+    fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_deep_inventory.png
   - type: SKELE_HUMAN.PCK
     width: 512
     height: 720
@@ -504,6 +549,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Exoskeleton/exoskeleton_sprite_shark.png
+  - type: SKELE_DEEP.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Exoskeleton/exoskeleton_sprite_deep.png
 # aquavest
   - typeSingle: HUMAN__7__AQUAVEST
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory.png
@@ -511,12 +563,16 @@ extraSprites:
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory.png
   - typeSingle: SHARK__7__AQUAVEST
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory.png
+  - typeSingle: DEEP__7__AQUAVEST
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_deep_inventory.png
   - typeSingle: HUMAN__7__AQUAVESTSHIELD
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_s_inventory.png
   - typeSingle: HYBRID__7__AQUAVESTSHIELD
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_s_inventory.png
   - typeSingle: SHARK__7__AQUAVESTSHIELD
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_s_inventory.png
+  - typeSingle: DEEP__7__AQUAVESTSHIELD
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_s_deep_inventory.png
   - type: AQUAVEST_HUMAN.PCK
     width: 512
     height: 720
@@ -538,6 +594,23 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Aquavest/aquavest_sprite_shark.png
+  - type: AQUAVEST_DEEP.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Aquavest/aquavest_sprite_deep.png
+
+# deep
+  - typeSingle: JUMPSUIT_DEEP.SPK
+    fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_deep_inventory.png
+  - typeSingle: SKELE_DEEP.SPK
+    fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_deep_inventory.png
+  - typeSingle: AQUAVEST_DEEP.SPK
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_deep_inventory.png
+  - typeSingle: AQUAVEST_S_DEEP.SPK
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_s_deep_inventory.png
 
 # pilot
   - typeSingle: PILOT_CORE.SPK
@@ -632,6 +705,8 @@ extraSprites:
     fileSingle: Resources/Factions/Drones/dronehuman_inventory.png
   - typeSingle: DRONESHARK.SPK
     fileSingle: Resources/Factions/Drones/droneshark_inventory.png
+  - typeSingle: DRONEDEEP.SPK
+    fileSingle: Resources/Factions/Drones/dronedeep_inventory.png
 
 # animals
   - typeSingle: CHRYSSALID_CPAL
@@ -668,6 +743,19 @@ extraSprites:
     height: 80
     files:
       0: Resources/Factions/Robots/robosphere_sprite.png
+
+# simulated
+  - typeSingle: HOLOSECTOID_CPAL
+    fileSingle: Resources/Factions/SSP/sspofficer_CPAL.png
+  - typeSingle: HOLOSECTOID.SPK
+    fileSingle: Resources/Factions/Aliens/holosectoid_inventory.png
+  - type: HOLOSECTOID.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 680
+    files:
+      0: Resources/Factions/Aliens/holosectoid_sprite.png
 
 # clients
   - typeSingle: CLIENT_1.SPK
@@ -725,6 +813,8 @@ extraSprites:
   - typeSingle: OPERATIONS4_CPAL
     fileSingle: Resources/Pedia/operations4_CPAL.png
 # connections
+  - typeSingle: VENDOR_CPAL
+    fileSingle: Resources/Pedia/vendor_CPAL.png
   - typeSingle: VENDOR_PRINT_CPAL
     fileSingle: Resources/Pedia/vendor_print_CPAL.png
   - typeSingle: VENDOR_MEDI_CPAL
@@ -754,8 +844,6 @@ extraSprites:
     fileSingle: Resources/Pedia/techbiocode_CPAL.png
   - typeSingle: STAPLE_CPAL
     fileSingle: Resources/Pedia/techstaple_CPAL.png
-  - typeSingle: PASS_CPAL
-    fileSingle: Resources/Pedia/techpass_CPAL.png
 # crafts
   - typeSingle: CRAFT_BICUBE_CPAL
     fileSingle: Resources/Pedia/craft_bicube_CPAL.png
@@ -766,6 +854,10 @@ extraSprites:
 # armament
   - typeSingle: BATBOX.SPK
     fileSingle: Resources/Crafts/Hardpoints/batbox_pedia.png
+  - typeSingle: ECONOMY.SPK
+    fileSingle: Resources/Crafts/Hardpoints/economy_pedia.png
+  - typeSingle: SPORT.SPK
+    fileSingle: Resources/Crafts/Hardpoints/sport_pedia.png
 # drones
   - typeSingle: HYBRID_CPAL
     fileSingle: Resources/Pedia/dronehybrid_CPAL.png
@@ -773,6 +865,8 @@ extraSprites:
     fileSingle: Resources/Pedia/dronehuman_CPAL.png
   - typeSingle: SHARK_CPAL
     fileSingle: Resources/Pedia/droneshark_CPAL.png
+  - typeSingle: DEEP_CPAL
+    fileSingle: Resources/Pedia/dronedeep_CPAL.png
 # transformations
   - typeSingle: IMMORTAL_CPAL
     fileSingle: Resources/Pedia/techimmortal_CPAL.png
@@ -797,6 +891,8 @@ extraSprites:
 #intercept window
   - typeSingle: interception_jammed
     fileSingle: Resources/Interwin/jammed_interwin.png
+  - typeSingle: holoufo_interwin
+    fileSingle: Resources/Interwin/holoufo_interwin.png
 
 #day/night icons
   - type: DayNightIndicator
@@ -856,6 +952,8 @@ extraSprites:
     fileSingle: Resources/UI/DETBORD2.png
 
 #backgrounds
+  - typeSingle: DESTINATION.SCR
+    fileSingle: Resources/Backgrounds/back_destination.png
 #replace
   # - typeSingle: ALTGEOBORD.SCR
   #   fileSingle: Resources/Backgrounds/GEOBORD.png
@@ -884,7 +982,7 @@ extraSprites:
   - typeSingle: BACK15.SCR
     fileSingle: Resources/Backgrounds/back_test.png
   - typeSingle: BACK16.SCR
-    fileSingle: Resources/Backgrounds/back_destination.png
+    fileSingle: Resources/Backgrounds/back_test.png
   - typeSingle: BACK17.SCR
     fileSingle: Resources/Backgrounds/back_factory.png
 
@@ -898,6 +996,8 @@ extraSprites:
     fileSingle: Resources/Backgrounds/pedia_facility.png
   - typeSingle: BACK10.SCR
     fileSingle: Resources/Backgrounds/pedia_research.png
+  - typeSingle: BACK11.SCR
+    fileSingle: Resources/Backgrounds/pedia_craft.png
 
   - typeSingle: AvatarBackground
     fileSingle: Resources/UI/avatar.png

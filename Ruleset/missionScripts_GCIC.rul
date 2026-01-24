@@ -3,21 +3,53 @@
 #10080 minutes in a week
 #43200 minutes in a month
 
+#    regionWeights: &populationDensity
+#      0:
+#        STR_MEZONIC_RIFTS: 100
+#        STR_MOSSWAY_COMMONS: 80
+#        STR_GOLDEN_REACH: 80
+#        STR_TWINGATES: 40
+#        STR_AZATAL_TERRACE: 80
+#        STR_KAPISI_DESERT: 10
+#        STR_HEIGARA_DESERT: 10
+#        STR_GLEAMING_SEAS: 40
+#        STR_CAYESAND_BASIN: 60
+#        STR_ICEFIELDS: 20
+#        STR_RIMEARCH: 20
+
 missionScripts:
+  - type: SimSmalla
+    researchTriggers:
+      STR_TODO: false
+    missionWeights:
+      0:
+        STR_HOLOUFO_SMALL_MISSION: 100
+    targetBaseOdds: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+  - type: SimSmallb
+    researchTriggers:
+      STR_TODO: false
+    missionWeights:
+      0:
+        STR_HOLOUFO_SMALL_MISSION: 100
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
   - type: Rescue1Early
     lastMonth: 0
     missionWeights:
       0:
         STR_RESCUE_1: 100
-    regionWeights: &populationDensity
+    regionWeights: &PopDenseNoDesert
       0:
         STR_MEZONIC_RIFTS: 100
         STR_MOSSWAY_COMMONS: 80
         STR_GOLDEN_REACH: 80
         STR_TWINGATES: 40
         STR_AZATAL_TERRACE: 80
-        STR_KAPISI_DESERT: 10
-        STR_HEIGARA_DESERT: 10
         STR_GLEAMING_SEAS: 40
         STR_CAYESAND_BASIN: 60
         STR_ICEFIELDS: 20
@@ -33,45 +65,41 @@ missionScripts:
     missionWeights:
       0:
         STR_RESCUE_1: 100
-    regionWeights: *populationDensity
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
-
   - type: Rescue1b
     # researchTriggers:
     #   STR_TODO: false
     missionWeights:
       0:
         STR_RESCUE_1: 100
-    regionWeights: *populationDensity
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
-
   - type: Rescue1c
     # researchTriggers:
     #   STR_TODO: false
     missionWeights:
       0:
-        STR_RESCUE_1: 100
-    regionWeights: *populationDensity
+        STR_RESCUE_1: 90
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
-
   - type: Rescue1d
     # researchTriggers:
     #   STR_TODO: false
-    executionOdds: 50
+    executionOdds: 60
     missionWeights:
       0:
         STR_RESCUE_1: 100
-    regionWeights: *populationDensity
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
-
   - type: Rescue1e
     # researchTriggers:
     #   STR_TODO: false
@@ -79,7 +107,7 @@ missionScripts:
     missionWeights:
       0:
         STR_RESCUE_1: 100
-    regionWeights: *populationDensity
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -90,19 +118,29 @@ missionScripts:
     missionWeights:
       0:
         STR_RESCUE_RR: 100
-    regionWeights: *populationDensity
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
-
   - type: RescueRRb
     researchTriggers:
       STR_RAPID_RESPONSE_MISSIONS: true
-    executionOdds: 74
+    executionOdds: 50
     missionWeights:
       0:
         STR_RESCUE_RR: 100
-    regionWeights: *populationDensity
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+  - type: RescueRRc
+    researchTriggers:
+      STR_RAPID_RESPONSE_MISSIONS: true
+    executionOdds: 24
+    missionWeights:
+      0:
+        STR_RESCUE_RR: 100
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -113,17 +151,7 @@ missionScripts:
     missionWeights:
       0:
         STR_TRADE_MEETING_EARLY: 100
-    regionWeights: &noDesert
-      0:
-        STR_MEZONIC_RIFTS: 100
-        STR_MOSSWAY_COMMONS: 80
-        STR_GOLDEN_REACH: 80
-        STR_TWINGATES: 40
-        STR_AZATAL_TERRACE: 80
-        STR_GLEAMING_SEAS: 40
-        STR_CAYESAND_BASIN: 60
-        STR_ICEFIELDS: 20
-        STR_RIMEARCH: 20
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 15000
     randomDelay: 7200
@@ -131,38 +159,48 @@ missionScripts:
   - type: TradeMeeting1a
     firstMonth: 1
     researchTriggers:
-      STR_FORBIDDEN_OPERATIONS: true
+      STR_FORBIDDEN_OPERATIONS: true #not needed, but gives a fake notice for affects game progression
       STR_NETRUNNERS_NETWORK: false
     missionWeights:
       0:
         STR_TRADE_MEETING_1: 100
-    regionWeights: *noDesert
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
-
   - type: TradeMeeting1b
     firstMonth: 1
     executionOdds: 55
     researchTriggers:
-      STR_FORBIDDEN_OPERATIONS: true
       STR_NETRUNNERS_NETWORK: true
     missionWeights:
       0:
         STR_TRADE_MEETING_1: 100
-    regionWeights: *noDesert
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
 
   - type: TradeMeeting2a
-    firstMonth: 1
     researchTriggers:
       STR_NETRUNNERS_NETWORK: true
+      STR_NETRUNNERS_SURVEY: false
     missionWeights:
       0:
         STR_TRADE_MEETING_2: 100
-    regionWeights: *noDesert
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+  - type: TradeMeeting2b
+    executionOdds: 22
+    researchTriggers:
+      STR_NETRUNNERS_NETWORK: true
+      STR_NETRUNNERS_SURVEY: true
+    missionWeights:
+      0:
+        STR_TRADE_MEETING_2: 100
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -173,7 +211,7 @@ missionScripts:
     missionWeights:
       0:
         STR_GCIC_SABOTAGE_1: 100
-    regionWeights: *populationDensity
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30000
     randomDelay: 7200
@@ -186,20 +224,31 @@ missionScripts:
     missionWeights:
       0:
         STR_GCIC_SABOTAGE_1: 100
-    regionWeights: *populationDensity
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
-
   - type: GCIC1b
     researchTriggers:
       STR_GCIC_INDEPENDENCE: false
     firstMonth: 1
-    executionOdds: 50
+    executionOdds: 25
     missionWeights:
       0:
         STR_GCIC_SABOTAGE_1: 100
-    regionWeights: *populationDensity
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+  - type: GCIC1c
+    researchTriggers:
+      STR_GCIC_INDEPENDENCE: false
+    firstMonth: 1
+    executionOdds: 25
+    missionWeights:
+      0:
+        STR_GCIC_SABOTAGE_1: 100
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -211,20 +260,31 @@ missionScripts:
     missionWeights:
       0:
         STR_GCIC_SABOTAGE_2: 100
-    regionWeights: *populationDensity
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
-
   - type: GCIC2b
     researchTriggers:
       STR_GCIC_BACKCHANNEL_MISSIONS: true
       STR_GCIC_INDEPENDENCE: false
-    executionOdds: 41
+    executionOdds: 30
     missionWeights:
       0:
         STR_GCIC_SABOTAGE_2: 100
-    regionWeights: *populationDensity
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+  - type: GCIC2c
+    researchTriggers:
+      STR_GCIC_BACKCHANNEL_MISSIONS: true
+      STR_GCIC_INDEPENDENCE: false
+    executionOdds: 11
+    missionWeights:
+      0:
+        STR_GCIC_SABOTAGE_2: 100
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000
@@ -232,7 +292,6 @@ missionScripts:
   - type: MEDI1a
     researchTriggers:
       STR_MEDI_MISSIONS: true
-    executionOdds: 40
     missionWeights:
       0:
         STR_MEDI_MUCK: 90
@@ -249,11 +308,22 @@ missionScripts:
     useTable: false
     startDelay: 30
     randomDelay: 43000
-
   - type: MEDI1b
     researchTriggers:
       STR_MEDI_MISSIONS: true
-    executionOdds: 39
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_MEDI_MUCK: 90
+        STR_MEDI_MUCK_CHRYS: 10
+    regionWeights: *xenoform
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+  - type: MEDI1b
+    researchTriggers:
+      STR_MEDI_MISSIONS: true
+    executionOdds: 19
     missionWeights:
       0:
         STR_MEDI_MUCK: 90
@@ -266,11 +336,32 @@ missionScripts:
   - type: GR1a
     researchTriggers:
       STR_GR_MISSIONS: true
-    executionOdds: 71
     missionWeights:
       0:
         STR_GR_INDUSTRIAL_1: 100
-    regionWeights: *populationDensity
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+  - type: GR1b
+    researchTriggers:
+      STR_GR_MISSIONS: true
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_GR_INDUSTRIAL_1: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+  - type: GR1c
+    researchTriggers:
+      STR_GR_MISSIONS: true
+    executionOdds: 12
+    missionWeights:
+      0:
+        STR_GR_INDUSTRIAL_1: 100
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 43000

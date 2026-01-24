@@ -78,7 +78,7 @@ difficultyCoefficientOverrides:
   ufoEscapeCountdownCoefficients: [150, 100, 100, 85, 80]
   retaliationTriggerOdds: [4, 12, 12, 12, 12]
   retaliationBaseRegionOdds: [25, 50, 50, 65, 75]
-  aliensFacingCraftOdds: [0, 25, 25, 80, 100]
+  aliensFacingCraftOdds: [0, 20, 40, 80, 100]
 #flagByKills: [1,5,10,25,50,75,100]
 costEngineer: 25000
 costScientist: 40000
@@ -136,19 +136,19 @@ pilotAccuracyRange: 50
 pilotReactionsZeroPoint: 50
 pilotReactionsRange: 50
 pilotBraveryThresholds: [90, 60, 30]
-escortRange: 50
+escortRange: 20
 drawEnemyRadarCircles: 2
 crewEmergencyEvacuationSurvivalChance: 100
 buildTimeReductionScaling: 75
 displayCustomCategories: 1
 extraNerdyPediaInfoType: 2
 pediaReplaceCraftFuelWithRangeType: 0
-minReactionAccuracy: 10
 kneelBonusGlobal: 100
 oneHandedPenaltyGlobal: 100
 maxViewDistance: 35
 noLOSAccuracyPenaltyGlobal: 50
 baseDefenseMapFromLocation: 0
+chanceToDetectAlienBaseEachMonth: 0
 stunningImprovesMorale: true
 enableNewResearchSorting: true
 statisticalBulletConservation: true
@@ -157,14 +157,16 @@ showFullNameInAlienInventory: true
 giveScoreAlsoForResearchedArtifacts: true
 buildInfiltrationBaseCloseToTheCountry: true
 lessAliensDuringBaseDefense: true
+newBaseUnlockResearch: STR_TODO
 fakeUnderwaterBaseUnlockResearch: STR_TODO
 psiUnlockResearch: STR_TODO
 mana:
   enabled: true
   battleUI: true
-  trainingPrimary: true
+  trainingPrimary: false
   trainingSecondary: true
   replenishAfterMission: false
+  woundThreshold: 20
 alienFuel: [STR_NONE, 0]
 fontName: AmigaFont.dat
 lighting:
@@ -177,7 +179,6 @@ fixedUserOptions:
   weaponSelfDestruction: false
   storageLimitsEnforced: true
   battleExplosionHeight: 2
-  playIntro: false
 
 recommendedUserOptions:
   customInitialBase: false
@@ -202,19 +203,22 @@ recommendedUserOptions:
   oxceEnableOffCentreShooting: true
   oxceEnableSlackingIndicator: true
   oxceGeoscapeEventsInstantDelivery: true
+  playIntro: true
   oxceShowETAMode: 2
 
 constants:
   # explosionOffset: 8
   # underwaterSmokeOffset: 8
-  # extendedMovementCostRounding: 2
+  extendedMovementCostRounding: 2
   extendedItemReloadCost: true
   extendedInventorySlotSorting: true
   extendedRunningCost: true
   extendedHwpLoadOrder: true
+  extendedSpotOnHitForSniping: 1
+  extendedBerserkWithAimed: 2
   extendedMeleeReactions: 2
   extendedTerrainMelee: 4
-  extendedUnderwaterThrowFactor: 60
+  extendedUnderwaterThrowFactor: 75
   damageRange: 100
 
 ai:
@@ -222,8 +226,90 @@ ai:
   pickUpWeaponsMoreActively: true
   pickUpWeaponsMoreActivelyCiv: false
   destroyBaseFacilities: true
+  reactionFireThreshold: 5
+  reactionFireThresholdCiv: 5
   fireChoiceIntelCoeff: 5
   fireChoiceAggroCoeff: 5
 
 alienItemLevels:
   - [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+cutscenes:
+  - type: intro
+    useUfoAudioSequence: false
+    slideshow:
+      transitionSeconds: 106
+      musicId: GMARCINTRO
+      slides:
+        - imagePath: Resources/Backgrounds/slide_planet5.png
+          caption: STR_INTRO_CAPTION_1
+          captionSize: [180, 200]
+          captionPos: [5, 5]
+          captionColor: 133
+          transitionSeconds: 1
+        - imagePath: Resources/Backgrounds/slide_planet4.png
+          caption: STR_INTRO_CAPTION_1
+          captionSize: [180, 200]
+          captionPos: [5, 5]
+          captionColor: 133
+          transitionSeconds: 1
+        - imagePath: Resources/Backgrounds/slide_planet3.png
+          caption: STR_INTRO_CAPTION_1
+          captionSize: [180, 200]
+          captionPos: [5, 5]
+          captionColor: 133
+          transitionSeconds: 1
+        - imagePath: Resources/Backgrounds/slide_planet2.png
+          caption: STR_INTRO_CAPTION_2
+          captionSize: [180, 200]
+          captionPos: [5, 5]
+          captionColor: 133
+          transitionSeconds: 1
+        - imagePath: Resources/Backgrounds/slide_planet1.png
+          caption: STR_INTRO_CAPTION_3
+          captionSize: [180, 200]
+          captionPos: [5, 5]
+          captionColor: 133
+          transitionSeconds: 1
+        - imagePath: Resources/Backgrounds/slide_planet1.png
+          caption: STR_INTRO_CAPTION_4
+          captionSize: [180, 200]
+          captionPos: [5, 5]
+          captionColor: 133
+          transitionSeconds: 1
+        - imagePath: Resources/Backgrounds/slide_planet1.png
+          caption: STR_INTRO_CAPTION_5
+          captionSize: [180, 200]
+          captionPos: [5, 5]
+          captionColor: 133
+          transitionSeconds: 2
+        - imagePath: Resources/Backgrounds/slide_planet1.png
+          caption: STR_INTRO_CAPTION_6
+          captionSize: [180, 200]
+          captionPos: [5, 5]
+          captionColor: 133
+          transitionSeconds: 2
+        - imagePath: Resources/Backgrounds/slide_planet2.png
+          caption: STR_INTRO_CAPTION_6
+          captionSize: [180, 200]
+          captionPos: [5, 5]
+          captionColor: 133
+          transitionSeconds: 1
+        - imagePath: Resources/Backgrounds/slide_planet2.png
+          caption: STR_INTRO_CAPTION_7
+          captionSize: [180, 200]
+          captionPos: [5, 5]
+          captionColor: 133
+          transitionSeconds: 2
+        - imagePath: Resources/Backgrounds/slide_planet3.png
+          caption: STR_INTRO_CAPTION_7
+          captionSize: [180, 200]
+          captionPos: [5, 5]
+          captionColor: 133
+          transitionSeconds: 1
+        - imagePath: Resources/Backgrounds/slide_planet4.png
+          caption: STR_INTRO_CAPTION_8
+          captionSize: [180, 200]
+          captionPos: [5, 5]
+          captionColor: 133
+          transitionSeconds: 100

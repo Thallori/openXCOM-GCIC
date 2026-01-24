@@ -215,6 +215,15 @@ ufopaedia:
     text_width: 180
     image_id: VENDOR_MEDIZ_CPAL
 
+  - id: STR_GR_MISSIONS
+    requires:
+      - STR_GR_MISSIONS
+    text: STR_GR_MISSIONS_UP
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_BUILDER_CPAL
+
   # - id: STR_SSP_MISSIONS
   #   requires:
   #     - STR_SSP_MISSIONS
@@ -225,6 +234,15 @@ ufopaedia:
   #   image_id: VENDOR_SSP_CPAL
 
 #connections
+  - id: STR_VENDORS
+    requires:
+      - STR_VENDORS
+    text: STR_VENDORS_UP
+    section: STR_CONNECTIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_CPAL
+
   - id: STR_VENDOR_PRINTER
     requires:
       - STR_VENDOR_PRINTER
@@ -341,15 +359,6 @@ ufopaedia:
     text_width: 180
     image_id: STAPLE_CPAL
 
-  - id: STR_PASS_CRACKING
-    requires:
-      - STR_PASS_CRACKING
-    text: STR_PASS_CRACKING_UP
-    section: STR_TECHNOLOGIES_UC
-    type_id: 7
-    text_width: 180
-    image_id: PASS_CPAL
-
   # - id: STR_SSP_CRACK
   #   requires:
   #     - STR_SSP_CRACK
@@ -361,7 +370,7 @@ ufopaedia:
   - id: STR_PFB
     text: STR_PFB_UP
     section: STR_BASE_FACILITIES_UC
-    type_id: 8 #todo, type 7 image?
+    type_id: 8
 
   - id: STR_CENTRAL_ACCESS
     text: STR_CENTRAL_ACCESS_UP
@@ -433,10 +442,15 @@ ufopaedia:
     section: STR_BASE_FACILITIES_UC
     type_id: 6
 
-  - id: STR_PRINTER #todo
+  - id: STR_PRINTER
     requires:
       - STR_PRINTER
     text: STR_PRINTER_UP
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+
+  - id: STR_SCANNER
+    text: STR_SCANNER_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
 
@@ -498,14 +512,14 @@ ufopaedia:
       width: 140
       height: 60
 
-#hardpoints
+# hardpoints
   - id: STR_HD_ECONOMY_ENGINE
     requires:
       - STR_HD_ECONOMY_ENGINE
     text: STR_HD_ECONOMY_ENGINE_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
-    image_id: TEMPHARDPOINT.SPK #todo
+    image_id: ECONOMY.SPK
 
   - id: STR_HD_EXPRESS_ENGINE
     requires:
@@ -513,13 +527,21 @@ ufopaedia:
     text: STR_HD_EXPRESS_ENGINE_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
-    image_id: TEMPHARDPOINT.SPK #todo
+    image_id: SPORT.SPK
 
   - id: STR_BATBOX
     text: STR_BATBOX_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
     image_id: BATBOX.SPK
+
+# uso analysis
+  - id: STR_HOLOUFO_SMALL
+    type_id: 9
+    section: STR_APS_CRAFT_UC
+    requires:
+      - STR_HOLOUFO_SMALL
+    text: STR_HOLOUFO_SMALL_UP
 
 #drones
   - id: STR_DRONE_ARTICLE
@@ -561,7 +583,7 @@ ufopaedia:
     section: STR_DRONES_UC
     type_id: 7
     text_width: 180
-    image_id: SHARK_CPAL
+    image_id: DEEP_CPAL
 
 # transformations
   - id: STR_DRONE_IMMORTALITY
@@ -625,6 +647,11 @@ ufopaedia:
       - STR_DEBUG
     section: STR_DRONES_UC
     type_id: 5
+  - id: STR_PLEX_DRONE_DEEP_ARMOR
+    requires:
+      - STR_DEBUG
+    section: STR_DRONES_UC
+    type_id: 5
 
   - id: STR_DURA_DRONE_ARMOR
     requires:
@@ -646,6 +673,11 @@ ufopaedia:
     section: STR_DRONES_UC
     type_id: 5
   - id: STR_DURA_DRONE_SHARK_ARMOR
+    requires:
+      - STR_DEBUG
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_DURA_DRONE_DEEP_ARMOR
     requires:
       - STR_DEBUG
     section: STR_DRONES_UC
@@ -675,6 +707,11 @@ ufopaedia:
       - STR_DEBUG
     section: STR_DRONES_UC
     type_id: 5
+  - id: STR_SKELE_DRONE_DEEP_ARMOR
+    requires:
+      - STR_DEBUG
+    section: STR_DRONES_UC
+    type_id: 5
 
   - id: STR_AQUAVEST_DRONE_ARMOR
     requires:
@@ -700,6 +737,11 @@ ufopaedia:
       - STR_DEBUG
     section: STR_DRONES_UC
     type_id: 5
+  - id: STR_AQUAVEST_DRONE_DEEP_ARMOR
+    requires:
+      - STR_DEBUG
+    section: STR_DRONES_UC
+    type_id: 5
 
   - id: STR_AQUAVEST_DRONE_ARMOR_S
     requires:
@@ -721,6 +763,11 @@ ufopaedia:
     section: STR_DRONES_UC
     type_id: 5
   - id: STR_AQUAVEST_DRONE_SHARK_ARMOR_S
+    requires:
+      - STR_DEBUG
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_AQUAVEST_DRONE_DEEP_ARMOR_S
     requires:
       - STR_DEBUG
     section: STR_DRONES_UC
@@ -1025,6 +1072,8 @@ ufopaedia:
     type_id: 4
 
   - id: STR_BATON
+    requires:
+      - STR_BATON
     text: STR_BATON_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
@@ -1244,6 +1293,13 @@ ufopaedia:
     section: STR_RESOURCES_UC
     type_id: 8
 
+  - id: STR_SHARES_GR
+    requires:
+      - STR_SHARES_GR
+    text: STR_SHARES_GR_UP
+    section: STR_RESOURCES_UC
+    type_id: 8
+
   - id: STR_BRAND_LOYALTY
     requires:
       - STR_BRAND_LOYALTY
@@ -1274,6 +1330,11 @@ ufopaedia:
     type_id: 4
 
 #potential targets
+  - id: STR_HOSTILES
+    text: STR_HOSTILES_UP
+    section: STR_COMPETITORS_UC
+    type_id: 8
+
 # ironeyes
   - id: STR_BOOSTERS
     requires:
@@ -1291,7 +1352,6 @@ ufopaedia:
   - id: STR_BOOSTER_ARMOR
     requires:
       - STR_BOOSTER_ARMOR
-    text: STR_BOOSTER_ARMOR_UP
     section: STR_COMPETITORS_UC
     type_id: 5
 
@@ -1311,7 +1371,6 @@ ufopaedia:
   - id: STR_RIPPER_ARMOR
     requires:
       - STR_RIPPER_ARMOR
-    text: STR_RIPPER_ARMOR_UP
     section: STR_COMPETITORS_UC
     type_id: 5
 
@@ -1334,6 +1393,14 @@ ufopaedia:
       - STR_FREELANCER_ARMOR
     section: STR_COMPETITORS_UC
     type_id: 5
+  - id: STR_FREELANCER_INTERVIEW
+    requires:
+      - STR_FREELANCER_INTERVIEW
+    text: STR_FREELANCER_INTERVIEW_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL
 
   - id: STR_SKIPTRACERS
     requires:
@@ -1353,6 +1420,14 @@ ufopaedia:
       - STR_SKIPTRACER_ARMOR
     section: STR_COMPETITORS_UC
     type_id: 5
+  - id: STR_SKIPTRACER_INTERVIEW
+    requires:
+      - STR_SKIPTRACER_INTERVIEW
+    text: STR_SKIPTRACER_INTERVIEW_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL
 
 # ssp
   - id: STR_SSPGUARDS
@@ -1373,6 +1448,14 @@ ufopaedia:
       - STR_SSPGUARD_ARMOR
     section: STR_COMPETITORS_UC
     type_id: 5
+  - id: STR_SSPGUARD_INTERVIEW
+    requires:
+      - STR_SSPGUARD_INTERVIEW
+    text: STR_SSPGUARD_INTERVIEW_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL
 
   - id: STR_SSPOFFICERS
     requires:
@@ -1392,6 +1475,14 @@ ufopaedia:
       - STR_SSPOFFICER_ARMOR
     section: STR_COMPETITORS_UC
     type_id: 5
+  - id: STR_SSPOFFICER_INTERVIEW
+    requires:
+      - STR_SSPOFFICER_INTERVIEW
+    text: STR_SSPOFFICER_INTERVIEW_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL
 
 #animals
   - id: STR_CHRYSSALIDS
@@ -1455,27 +1546,34 @@ ufopaedia:
     section: STR_COMPETITORS_UC
     type_id: 5
 
-#uso analysis
 #manuals
+  - id: STR_MANUAL_MANUAL
+    text: STR_MANUAL_MANUAL_UP
+    section: STR_MANUALS_UC
+    type_id: 8
+
   - id: STR_OPERATIONS_TUTORIAL
     text: STR_OPERATIONS_TUTORIAL_UP
     section: STR_MANUALS_UC
     type_id: 8
 
+  - id: STR_AUDITING
+    text: STR_AUDITING_UP
+    section: STR_MANUALS_UC
+    type_id: 8
+
+  - id: STR_LIQUIDITY
+    text: STR_LIQUIDITY_UP
+    section: STR_MANUALS_UC
+    type_id: 8
+
   - id: STR_DRONES_TUTORIAL
-    requires:
-      - STR_DRONES_TUTORIAL
     text: STR_DRONES_TUTORIAL_UP
     section: STR_MANUALS_UC
     type_id: 8
 
   - id: STR_RESILIANCE_TUTORIAL
     text: STR_RESILIANCE_TUTORIAL_UP
-    section: STR_MANUALS_UC
-    type_id: 8
-
-  - id: STR_LIQUIDITY
-    text: STR_LIQUIDITY_UP
     section: STR_MANUALS_UC
     type_id: 8
 
@@ -1498,9 +1596,7 @@ ufopaedia:
   - id: STR_ACCOLADES_TECH
     text: STR_ACCOLADES_TECH_UP
     section: STR_COMMENDATIONS_UC
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
+    type_id: 8
 
   - id: STR_MEDAL_ORIGINAL8_NAME
     text: STR_MEDAL_ORIGINAL8_UP

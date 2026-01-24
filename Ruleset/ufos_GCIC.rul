@@ -1,5 +1,32 @@
 
 ufos:
+  - type: STR_HOLOUFO_SMALL
+    modSprite: holoufo_interwin
+    size: STR_SMALL
+    blobSize: 1
+    damageMax: 10
+    armor: 0
+    speedMax: 1600
+    power: 10
+    range: 15
+    score: 50
+    reload: 75
+    breakOffTime: 500
+    missionScore: 0
+    battlescapeTerrainData:
+      name: STR_HOLOUFO_SMALL
+      mapDataSets:
+        - BLANKS
+        - HOLO_UFOSTRUCTURE
+        - HOLO_UFOINNER
+      mapBlocks:
+        - name: HOLOUFO_SMALL1
+          width: 10
+          length: 10
+        - name: HOLOUFO_SMALL2
+          width: 10
+          length: 10
+
   - type: STR_HOUSE_GARAGE
     modSprite: interception_jammed
     battlescapeTerrainData:

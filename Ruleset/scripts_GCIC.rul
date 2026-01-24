@@ -1,18 +1,43 @@
 
-#from kzer-za
-# randomized tus on first turn
-
 extended:
+  tags:
+    RuleUfo:
+      TAG_PUBLIC_HYPERWAVE_DATA: int
+
   scripts:
     createUnit:
       - offset: 41 #from kzer-za, randomized tus on first turn
         code: |
           var int unitTUs;
-          var int divisor;
-          # var int unitAggression;
-          # adjust aliens' TUs on the first turn
-          unit.getTimeUnitsMax unitTUs;
-          battle_game.randomRange divisor 30 80;
-          muldiv unitTUs divisor 100;
-          unit.setTimeUnits unitTUs;
+          var int partTU;
+          var int turnNum;
+          
+          battle_game.getTurn turnNum;
+          if eq turnNum 0;
+            battle_game.randomRange partTU 30 80; #between 30 and 80% max tus
+            unit.getTimeUnitsMax unitTUs;
+            muldiv unitTUs partTU 100;
+            unit.setTimeUnits unitTUs;
+          else;
+            unit.setTimeUnits 0; #for units spawned after turn one
+          end;
           return;
+    detectUfoFromBase:
+      - offset: 10 #from Yankes, shows ufo data even without hyperwave decoder
+        code: |
+          var int showHwData;
+         
+          ufo.getTag showHwData Tag.TAG_PUBLIC_HYPERWAVE_DATA;
+         
+          if eq showHwData 1;
+            var int temp DETECTION_HYPERWAVE;
+            bit_xor temp DETECTION_RADAR; # remove from HW radar detection bit, it leave only HW data flag
+            bit_or detection_type temp; # add only HW falag to detection
+          end;
+         
+          return detection_type detection_chance;
+
+ufos:
+  - update: STR_HOLOUFO_SMALL
+    tags:
+      TAG_PUBLIC_HYPERWAVE_DATA: 1
