@@ -133,14 +133,111 @@ ufopaedia:
     text_width: 180
     image_id: HMEMORY_CPAL
 
-  - id: STR_GCIC_INDEPENDENCE
+#connections
+  - id: STR_VENDORS
     requires:
-      - STR_GCIC_INDEPENDENCE
-    text: STR_GCIC_INDEPENDENCE_UP
+      - STR_VENDORS
+    text: STR_VENDORS_UP
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: ALIGN_TEST_CPAL
+    image_id: VENDOR_CPAL
+
+  - id: STR_VENDOR_PRINTER
+    requires:
+      - STR_VENDOR_PRINTER
+    text: STR_VENDOR_PRINTER_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_PRINT_CPAL
+
+  - id: STR_VENDOR_P2P
+    requires:
+      - STR_VENDOR_P2P
+    text: STR_VENDOR_P2P_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_P2P_CPAL
+
+  - id: STR_VENDOR_MEDI
+    requires:
+      - STR_VENDOR_MEDI
+    text: STR_VENDOR_MEDI_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_MEDI_CPAL
+
+  - id: STR_HYBRID_AUTOPSY
+    requires:
+      - STR_HYBRID_AUTOPSY
+    text: STR_HYBRID_AUTOPSY_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_MEDI_CPAL
+  - id: STR_HUMAN_AUTOPSY
+    requires:
+      - STR_HUMAN_AUTOPSY
+    text: STR_HUMAN_AUTOPSY_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_MEDI_CPAL
+  - id: STR_SHARK_AUTOPSY
+    requires:
+      - STR_SHARK_AUTOPSY
+    text: STR_SHARK_AUTOPSY_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_MEDI_CPAL
+  - id: STR_DEEP_AUTOPSY
+    requires:
+      - STR_DEEP_AUTOPSY
+    text: STR_DEEP_AUTOPSY_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_MEDI_CPAL
+
+  - id: STR_VENDOR_BUILDER
+    requires:
+      - STR_VENDOR_BUILDER
+    text: STR_VENDOR_BUILDER_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_BUILDER_CPAL
+
+  - id: STR_VENDOR_HD
+    requires:
+      - STR_VENDOR_HD
+    text: STR_VENDOR_HD_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_HD_CPAL
+
+  - id: STR_VENDOR_VCM
+    requires:
+      - STR_VENDOR_VCM
+    text: STR_VENDOR_VCM_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_VCM_CPAL
+
+  - id: STR_VENDOR_SSP
+    requires:
+      - STR_VENDOR_SSP
+    text: STR_VENDOR_SSP_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_SSP_CPAL
 
 #operations
   - id: STR_PRIMARY_OPERATIONS
@@ -183,6 +280,15 @@ ufopaedia:
     requires:
       - STR_GCIC_BACKCHANNEL_MISSIONS
     text: STR_GCIC_BACKCHANNEL_MISSIONS_UP
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: OPERATIONS3Z_CPAL
+
+  - id: STR_GCIC_INDEPENDENCE
+    requires:
+      - STR_GCIC_INDEPENDENCE
+    text: STR_GCIC_INDEPENDENCE_UP
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
@@ -233,79 +339,6 @@ ufopaedia:
   #   text_width: 180
   #   image_id: VENDOR_SSP_CPAL
 
-#connections
-  - id: STR_VENDORS
-    requires:
-      - STR_VENDORS
-    text: STR_VENDORS_UP
-    section: STR_CONNECTIONS_UC
-    type_id: 7
-    text_width: 180
-    image_id: VENDOR_CPAL
-
-  - id: STR_VENDOR_PRINTER
-    requires:
-      - STR_VENDOR_PRINTER
-    text: STR_VENDOR_PRINTER_UP
-    section: STR_CONNECTIONS_UC
-    type_id: 7
-    text_width: 180
-    image_id: VENDOR_PRINT_CPAL
-
-  - id: STR_VENDOR_P2P
-    requires:
-      - STR_VENDOR_P2P
-    text: STR_VENDOR_P2P_UP
-    section: STR_CONNECTIONS_UC
-    type_id: 7
-    text_width: 180
-    image_id: VENDOR_P2P_CPAL
-
-  - id: STR_VENDOR_MEDI
-    requires:
-      - STR_VENDOR_MEDI
-    text: STR_VENDOR_MEDI_UP
-    section: STR_CONNECTIONS_UC
-    type_id: 7
-    text_width: 180
-    image_id: VENDOR_MEDI_CPAL
-
-  - id: STR_VENDOR_BUILDER
-    requires:
-      - STR_VENDOR_BUILDER
-    text: STR_VENDOR_BUILDER_UP
-    section: STR_CONNECTIONS_UC
-    type_id: 7
-    text_width: 180
-    image_id: VENDOR_BUILDER_CPAL
-
-  - id: STR_VENDOR_HD
-    requires:
-      - STR_VENDOR_HD
-    text: STR_VENDOR_HD_UP
-    section: STR_CONNECTIONS_UC
-    type_id: 7
-    text_width: 180
-    image_id: VENDOR_HD_CPAL
-
-  - id: STR_VENDOR_VCM
-    requires:
-      - STR_VENDOR_VCM
-    text: STR_VENDOR_VCM_UP
-    section: STR_CONNECTIONS_UC
-    type_id: 7
-    text_width: 180
-    image_id: VENDOR_VCM_CPAL
-
-  - id: STR_VENDOR_SSP
-    requires:
-      - STR_VENDOR_SSP
-    text: STR_VENDOR_SSP_UP
-    section: STR_CONNECTIONS_UC
-    type_id: 7
-    text_width: 180
-    image_id: VENDOR_SSP_CPAL
-
 #technologies
   - id: STR_MONEY_1
     text: STR_MONEY_1_UP
@@ -332,6 +365,15 @@ ufopaedia:
     text_width: 180
     image_id: GUNPOWDER_CPAL
 
+  - id: STR_REDOX
+    requires:
+      - STR_REDOX
+    text: STR_REDOX_UP
+    section: STR_TECHNOLOGIES_UC
+    type_id: 7
+    text_width: 180
+    image_id: MEDICAL_CPAL
+
   - id: STR_LASER_AMMO_PRINTING
     requires:
       - STR_LASER_AMMO_PRINTING
@@ -340,6 +382,15 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: NBCELL_CPAL
+
+  - id: STR_BIOMEDICAL
+    requires:
+      - STR_BIOMEDICAL
+    text: STR_BIOMEDICAL_UP
+    section: STR_TECHNOLOGIES_UC
+    type_id: 7
+    text_width: 180
+    image_id: MEDICAL_CPAL
 
   - id: STR_BIOCODING
     requires:
@@ -1051,6 +1102,21 @@ ufopaedia:
     type_id: 4
 
 # grenades
+  - id: STR_MOLOTOV
+    requires:
+      - STR_MOLOTOV
+    text: STR_MOLOTOV_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_ACIDFLASK_FAKE
+    title: STR_ACIDFLASK
+    requires:
+      - STR_ACIDFLASK
+    text: STR_ACIDFLASK_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
   - id: STR_PIPEBOMB
     requires:
       - STR_PIPEBOMB
@@ -1179,6 +1245,20 @@ ufopaedia:
     section: STR_EQUIPMENT_UC
     type_id: 4
 
+  - id: STR_STIM_SPRINT
+    requires:
+      - STR_STIM_SPRINT
+    text: STR_STIM_SPRINT_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_STIM_MORNING
+    requires:
+      - STR_STIM_MORNING
+    text: STR_STIM_MORNING_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
   - id: STR_MEDI_SPRAY
     text: STR_MEDI_SPRAY_UP
     section: STR_EQUIPMENT_UC
@@ -1221,13 +1301,6 @@ ufopaedia:
     section: STR_RESOURCES_UC
     type_id: 4
 
-  - id: STR_SJB_LICENSE
-    requires:
-      - STR_SJB_LICENSE
-    text: STR_SJB_LICENSE_UP
-    section: STR_RESOURCES_UC
-    type_id: 4
-
   - id: STR_AG_UNIT
     requires:
       - STR_AG_UNIT
@@ -1260,6 +1333,13 @@ ufopaedia:
     requires:
       - STR_ELERIUM_CORE
     text: STR_ELERIUM_CORE_UP
+    section: STR_RESOURCES_UC
+    type_id: 4
+
+  - id: STR_SJB_LICENSE
+    requires:
+      - STR_SJB_LICENSE
+    text: STR_SJB_LICENSE_UP
     section: STR_RESOURCES_UC
     type_id: 4
 
@@ -1394,13 +1474,19 @@ ufopaedia:
     section: STR_COMPETITORS_UC
     type_id: 5
   - id: STR_FREELANCER_INTERVIEW
+    title: STR_FREELANCER_INTERVIEW_T
     requires:
       - STR_FREELANCER_INTERVIEW
     text: STR_FREELANCER_INTERVIEW_UP
     section: STR_COMPETITORS_UC
     type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: FREELANCER_CPAL
 
   - id: STR_SKIPTRACERS
     requires:
@@ -1421,13 +1507,19 @@ ufopaedia:
     section: STR_COMPETITORS_UC
     type_id: 5
   - id: STR_SKIPTRACER_INTERVIEW
+    title: STR_SKIPTRACER_INTERVIEW_T
     requires:
       - STR_SKIPTRACER_INTERVIEW
     text: STR_SKIPTRACER_INTERVIEW_UP
     section: STR_COMPETITORS_UC
     type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: SKIPTRACER_CPAL
 
 # ssp
   - id: STR_SSPGUARDS
@@ -1449,13 +1541,19 @@ ufopaedia:
     section: STR_COMPETITORS_UC
     type_id: 5
   - id: STR_SSPGUARD_INTERVIEW
+    title: STR_SSPGUARD_INTERVIEW_T
     requires:
       - STR_SSPGUARD_INTERVIEW
     text: STR_SSPGUARD_INTERVIEW_UP
     section: STR_COMPETITORS_UC
     type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: SSPGUARD_CPAL
 
   - id: STR_SSPOFFICERS
     requires:
@@ -1476,13 +1574,19 @@ ufopaedia:
     section: STR_COMPETITORS_UC
     type_id: 5
   - id: STR_SSPOFFICER_INTERVIEW
+    title: STR_SSPOFFICER_INTERVIEW_T
     requires:
       - STR_SSPOFFICER_INTERVIEW
     text: STR_SSPOFFICER_INTERVIEW_UP
     section: STR_COMPETITORS_UC
     type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: SSPOFFICER_CPAL
 
 #animals
   - id: STR_CHRYSSALIDS

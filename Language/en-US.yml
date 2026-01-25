@@ -369,7 +369,18 @@ en-US:
   STR_SNAP_MULTIPLE_SHORT: "Snap (x{0})"
   STR_AIMED_MULTIPLE_SHORT: "Aimed (x{0})"
 
-  STR_ARM_AND_THROW: "Arm and Throw"
+  STR_PRIME_MOLOTOV: "Light"
+  STR_PRIME_MOLOTOV_MESS: "Fuse Lit!"
+  STR_UNPRIME_MOLOTOV: "Extinguish"
+  STR_UNPRIME_MOLOTOV_MESS: "Extinguished"
+  STR_MOLOTOV_ATTACK: "Light & Throw!"
+
+  STR_PRIME_ACIDFLASK: "Open"
+  STR_PRIME_ACIDFLASK_MESS: "Flask Ready!"
+  STR_UNPRIME_ACIDFLASK: "Stopper"
+  STR_UNPRIME_ACIDFLASK_MESS: "Flask Closed"
+  STR_ACIDFLASK_ATTACK: "Open & Throw!"
+
   STR_USE_SPRAY: "Spray"
   STR_USE_INHALER: "Inhale"
 #damage types
@@ -402,9 +413,7 @@ en-US:
   STR_SHOTGUNS_CATEGORY: "Shotguns"
   STR_LAUNCHERS_CATEGORY: "Launchers"
   STR_ROCKETS_CATEGORY: "SPWs" #self-propelled weapons
-  STR_BOWS_CATEGORY: "Bows"
-  STR_INCENDIARY_CATEGORY: "Incendiary"
-  STR_EXPLOSIVES_CATEGORY: "Explosives"
+  STR_GRENADES_CATEGORY: "Grenades"
   STR_PSI_CATEGORY: "Psionic"
   STR_MELEE_CATEGORY: "Melee"
   STR_STUN_CATEGORY: "Stun"
@@ -541,7 +550,6 @@ en-US:
   STR_GR_INDUSTRIAL_1: "GR: Industrial Discrepancy"
   STR_GR_INDUSTRIAL_1_ALERT_DESCRIPTION: "General Robots has sent us the location of a signal loss event. Our contract stipulates a clandestine approach before securing the site and recovering the machines.{NEWLINE}{NEWLINE}Minimum site duration: 48 Hours{NEWLINE}Gear Restriction: Infiltration, Tools"
   STR_GR_INDUSTRIAL_1_BRIEFING: "General Robots has sent us the location of a signal loss event. Our contract stipulates a clandestine approach before securing the site and recovering the machines.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GR and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this operation."
-
 #events
   STR_EVENT_CLAIM_SECURED: "CBN Update" #central broadcast network
   STR_EVENT_CLAIM_SECURED_DESCRIPTION: "Severance package seeker awarded claim of over 200,000$ following arbitration. The former employee was said to be owed after a drone-error resulted in false reports of missed quotas.{NEWLINE}{NEWLINE}Although GCIC stockprices have taken a dip with the news, people are celebrating this as a win for the corp and its customers."
@@ -741,11 +749,17 @@ en-US:
   STR_RANK_DEEP_DRONE_4: "NW/Commodore"
   STR_RANK_DEEP_DRONE_5: "NW/Admiral"
 #manufacturing
+  STR_PIPEBOMB_M: "Pipe Bomb Fabrication"
+  STR_ACIDFLASK_M: "Acid Flask Fabrication"
+  STR_ELERIUM_BOMB_M: "Elerium Bomb Fabrication"
+  STR_STIM_SPRINT_M: "Sprint Inhaler Fabrication"
+  STR_STIM_MORNING_M: "Morning Inhaler Fabrication"
+
   STR_TASKS_MANUCAT: "TASKS"
   STR_PROJECTS_MANUCAT: "PROJECTS"
   STR_WEAPONS_MANUCAT: "WEAPONS"
   STR_AMMO_MANUCAT: "AMMUNITION"
-  STR_EXPLOSIVES_MANUCAT: "EXPLOSIVES"
+  STR_EQUIPMENT_MANUCAT: "EQUIPMENT"
   STR_ARMORS_MANUCAT: "ARMORS"
   STR_RESOURCES_MANUCAT: "RESOURCES"
   STR_UPGRADES_MANUCAT: "UPGRADES"
@@ -755,8 +769,14 @@ en-US:
   STR_SALVAGE_MANUCAT: "SALVAGE"
   STR_EXTORT_MANUCAT: "EXTORTION"
   
-  STR_GCIC_SABOTAGE_2_MANU: "Deliver Investor Data"
-  STR_GCIC_SABOTAGE_2_MANU2: "Deliver Decrypted Investor Data"
+  STR_GCIC_SABOTAGE_2_MANU: "Deliver Investor Data (¤)"
+  STR_GCIC_SABOTAGE_2_MANU2: "Deliver Investor Data"
+
+  STR_DART_AMMO1_MANU: "Tranquilizer Darts (x3)"
+  STR_DART_AMMO2_MANU: "Poisoned Darts (x3)"
+  STR_STIM_SPRINT_MANU: "Sprint Inhaler (x5)"
+  STR_STIM_MORNING_MANU: "Morning Inhaler (x5)"
+  STR_ACIDFLASK_MANU: "Acid Flask (x3)"
 
   STR_SSP_LASER_PISTOL_MANU: "UPGRADE: SSP Enforcer Laser Pistol (E)"
 
@@ -827,6 +847,7 @@ en-US:
   STR_SECURITY_UP: "{NEWLINE}COMPETING SYSTEMS: 2{NEWLINE}Native Civilization,{NEWLINE}Invading Civilization{NEWLINE}{NEWLINE}Our primary objective, to {ALT}rescue{ALT} insured GCIC clients and ensure continued payments, is likely to encounter obstacles. Non-clients represent an {ALT}immediate threat{ALT} to our objectives. Indirect dangers are more difficult to remove.{NEWLINE}{NEWLINE}Maximing the chances of client survival will eventually require a restructuring of the competition."
   STR_NON_CLIENTS: "Non-Clients"
   STR_NON_CLIENTS_UP: "{NEWLINE}THREAT ASSESSOR: Online{NEWLINE}NEGLIABLE: 1,350,000,000{NEWLINE}RELEVANT: 95,000,000+{NEWLINE}{NEWLINE}The greatest {ALT}danger{ALT} to our customers are targets who (for reasons outside of our current influence) wish to do them harm. Given time, capital, and enough public trust, we may be able to find less risky solutions to these problem. Until then, the easiest answer is the simpliest one.{NEWLINE}{NEWLINE}If {ALT}violent conflict{ALT} is envitable, we must find ways to improve the odds."
+
   STR_DRONE_MEMORY: "MEMORY: Drone"
   STR_HYBRID_MEMORY_1: "MEMORY: Unscheduled Break Time"
   STR_HYBRID_MEMORY_1_UP: "{NEWLINE}Our vats broke again, we weren't supposed to be awake, not yet. That didn't stop the two of us from running down the corridors, sneaking around, eating food. Too much and they'd know, throwing up can ruin everyone's sleep and that isn't fun.{NEWLINE}{NEWLINE}Drones aren't supposed to like each other this much. Now we get different cleaning times. I try not to worry about being sold, but what if we don't get the same owner? I hold his hand and forget about what might happen. We're here now."
@@ -835,7 +856,34 @@ en-US:
   STR_HYBRID_MEMORY_3: "MEMORY: For Sale, Lightly Used"
   STR_HYBRID_MEMORY_3_UP: "{NEWLINE}They are fighting. I can hear it. I have a new owner again. This time they're less restrictive, but more demanding. I have to take the tool in my hand and do what every warning tells me not to. Run. Wait. Ready. Activate. They are pleased.{NEWLINE}{NEWLINE}I am not left alone. There is no need to be afraid. I won't be alone again. I am asked what I remember. There is much more of it than usual. Not all of it is mine. Some of it is ours. We will remember more in time, that's a promise we've made to ourselves."
   STR_HYBRID_MEMORY_4: "MEMORY: Self-Actualization"
-  STR_HYBRID_MEMORY_4_UP: "{NEWLINE}The staple is failing again. I keep waking up in the middle of tasks, realizing I'm thinking on my own. Which only slows me down. So far, no one has noticed. I'm a good drone, I've solved many problems. A good drone isn't supposed to speak unless spoken too. A good drone only asks for help when it it necessary. I am a good drone. I wait until night, when all my tasks are done. I search for my problem. Thankfully, it's one that can be fixed. A good drone solves problems. I will bring myself in for repairs tomorrow."
+  STR_HYBRID_MEMORY_4_UP: "{NEWLINE}The staple is failing again. I keep waking up in the middle of tasks, realizing I'm thinking on my own. Which only slows me down. So far, no one has noticed. I'm a good drone, I've solved many problems. A good drone isn't supposed to speak unless spoken too. A good drone only asks for help when it is necessary. I am a good drone.{NEWLINE}{NEWLINE}I found my problem at night, after all my tasks were done. Thankfully, I can be fixed. A good drone solves problems. I will bring myself in for repairs tomorrow."
+# connections
+  STR_VENDORS: "Vendors"
+  STR_VENDORS_UP: "{NEWLINE}CONGLOMERATES: 8{NEWLINE}REMAINDER: 412{NEWLINE}{NEWLINE}The free market is a conceptual arrangement binding all in-system agents, of which we are a part. The details change from moment to moment, but there is always a single truth, all things possible are for sale, given the right seller and price.{NEWLINE}{NEWLINE}While our position in this system is small and fragile, so long as we poses currency, we will have a place here."
+  STR_VENDOR_PRINTER: "VENDOR: Press Print"
+  STR_VENDOR_PRINTER_UP: "{NEWLINE}EQUITY: 744,500,000,000${NEWLINE}PRODUCTS/SECOND: 23.19{NEWLINE}{NEWLINE}Ever since the first corner printshops opened up, customers just like you have enjoyed the convinence of getting everything you need at a satisfying price. We understand how nice it is to come into a familiar store and see that just-something you were looking for. Without all the fuss. That's why we've kept the same UI, same algorithms, and same dedication to having the fastest prints this side of the belt for over eighty years.{NEWLINE}{NEWLINE}We're the same old shop you know and love, just on more corners."
+  STR_VENDOR_P2P: "VENDOR: P2P"
+  STR_VENDOR_P2P_UP: "{NEWLINE}EQUITY: N/A{NEWLINE}MARKET SHARE: 28%{NEWLINE}{NEWLINE}Unlicensed markets have existed for as long as there has been licenses, a whole economy based on the limitless demand for free trade. History has recorded this activity under many names: smuggling, piracy, sharing, but the overriding principle is always the same. Two peers meet and exchange goods or services without consent from their society.{NEWLINE}{NEWLINE}In the current era, this act can be commited by engaging particular targets in directed conversation followed by barter."
+
+  STR_VENDOR_MEDI: "VENDOR: MEDI-Group"
+  STR_VENDOR_MEDI_UP: "{NEWLINE}EQUITY: 1,293,000,000,000${NEWLINE}CUSTOMER SATISFACTION: 98%{NEWLINE}{NEWLINE}The planet's largest and most widespread healthcare and pharmaceutical company. Founded more than 130 years ago, MEDI has aimed to keep all people (and now all species) heathly and happy. We're here for you today, in prosperity, as we were then for our freedom fighters during all of our most challenging years.{NEWLINE}{NEWLINE}MEDI's consumer lineup remains committed to the ease-of-use and unparelled portability that has made us your first choice for self-care treatment everywhere."
+  STR_HYBRID_AUTOPSY: "MEDI Data: Hybrids"
+  STR_HYBRID_AUTOPSY_UP: "{NEWLINE}FROM: Dr. Hitchens{NEWLINE}SUBJECT: New Lab Proposal{NEWLINE}{NEWLINE}Human and sectoid DNA have proven extraordinarily compatible for unrelated interstellar species. Thanks to analagous organs and cellular organelles, we can almost get viable patents right out the gate. However! This ease has baited us into the same false sense of progress that led my former owners astray. Back then, I had more research vats than the whole damn planet and still couldn't crack the psion problem.{NEWLINE}{NEWLINE}If you're as dedicated as you say, you'll listen. Okay! So, bad news first, the cost..."
+  STR_HUMAN_AUTOPSY: "MEDI Data: Humans"
+  STR_HUMAN_AUTOPSY_UP: "{NEWLINE}FROM: Dr. Hitchens{NEWLINE}SUBJECT: Human Day{NEWLINE}{NEWLINE}Okay, look, I know most of you listening to this are human. More or less. Not that I'm complaining! You're a pretty solid species. Easily 6 out of 10. But I gotta be honest, I'm used to keeping everyone in seperate labs. So! This is going to be awkward for all of us!{NEWLINE}{NEWLINE}First of first, preparing the specimen. The fastest way is to pull its head out of the vat and, before they can wake up, make a six-inch cut along its throat like this..."
+  STR_SHARK_AUTOPSY: "MEDI Data: Selamorphs"
+  STR_SHARK_AUTOPSY_UP: "{NEWLINE}FROM: Dr. Hitchens{NEWLINE}SUBJECT: The Competition{NEWLINE}{NEWLINE}Okay, don't laugh, but the eggheads working over at TW are geniuses. I know, I know. They ask for stupidly unmarketable products, but they get it done! That damn shark is just shark and human. No sectoid to smooth out the lymphs. No engineered mitocondria. Just two earth species. It's so unnecessarily stars-be-dead elegant!{NEWLINE}{NEWLINE}I mean, fuck! Look at these gill oxygenation levels! If my owners ever come back, they're going to give those shits..."
+  STR_DEEP_AUTOPSY: "MEDI Data: Pleurosaura"
+  STR_DEEP_AUTOPSY_UP: "{NEWLINE}FROM: Dr. Hitchens{NEWLINE}SUBJECT: Breathing Patents{NEWLINE}{NEWLINE}These are my favourite little guys. I made them in a tea fueled bender about two years after getting here. More than nine hundred species went into this project. A complete monster of DNA, HNA, RPB, SBP, and RNA. Six nuclei all tripping overthemselves to keep alive and nary a cancer in sight.{NEWLINE}{NEWLINE}Ah, memories. Moving on! The lung sac is really what you want to patent. We're talking a universal filter with a subscription fee for..."
+
+  STR_VENDOR_BUILDER: "VENDOR: GR Builders"
+  STR_VENDOR_BUILDER_UP: "{NEWLINE}EQUITY: 1,894,000,000,000${NEWLINE}STRUCTURES/DAY: 1,220{NEWLINE}{NEWLINE}The Advent Nova left many survivors stranded with little hope for rescue. Yet hope did prevail thanks to our dynamic and rugged design philosophies. The machines you trust for construction and furnishings are built to the same standard of ideals that saved those first victims of the invasion. We will remember them and we will continue to take our mission seriously.{NEWLINE}{NEWLINE}General Robotics values your vision and has a proven track record of finising the job, no matter how big or small."
+  STR_VENDOR_HD: "VENDOR: HD Motors"
+  STR_VENDOR_HD_UP: "{NEWLINE}EQUITY: 676,100,000,000${NEWLINE}MILEAGE/SECOND: 4,800,000{NEWLINE}{NEWLINE}The system's leading provider of hydromagnetic effect engines and integrated systems avionics for commercial, military, and consumer vehicles. HD builds on decades of expertise to deliver daily innovation in this new era of growth and restoration, an effort that balances the needs of today with sustainable practices for all future generations.{NEWLINE}{NEWLINE}Our goal is your thanks for every moment saved, every barrier pushed, every destination reached."
+  STR_VENDOR_VCM: "VENDOR: VCM Transport"
+  STR_VENDOR_VCM_UP: "{NEWLINE}EQUITY: 17,937,000,000,000${NEWLINE}ORBITAL MASS: 5,700,000 TONS{NEWLINE}{NEWLINE}Thank you for contacting the Vehicles Communications and Mining Transport division. Our autonomous fleet of inter-regional shipping containers are available at any networked APS rental kiosk. For service requirements exceeding these standards, please contact a representitive at VCM Outreach, VCM Launch, VCM Seas, or VCM Holdings.{NEWLINE}{NEWLINE}Corporate affiliates with insufficent credit ratings may be charged an application fee. Non-affiliates may be asked to provide proof of profitability before communications are established."
+  STR_VENDOR_SSP: "VENDOR: SSP Security"
+  STR_VENDOR_SSP_UP: "{NEWLINE}EQUITY: 466,400,000,000${NEWLINE}AVERAGE RESPONSE: 182 SECONDS{NEWLINE}{NEWLINE}Secure Systems and Procurement is a comprehensive risk-management and small arms service for the global protection of peace and property. Every security problem is unique, so we ensure our teams are headed by highly trained, impact-driven professionals capable of navigating the diverse landscape of our industry with an unwavering eye towards ethics and accountability.{NEWLINE}{NEWLINE}Building strategic solutions for a stronger, safer world."
 #operations
   STR_PRIMARY_OPERATIONS: "Primary Operations"
   STR_PRIMARY_OPERATIONS_UP: "{NEWLINE}RELEVANT GCIC SUBSIDIARIES...{NEWLINE}{NEWLINE}GCIC LIFE: Payouts{NEWLINE}GCIC HEALTH: Treatment{NEWLINE}GCIC TRAUMA: Rescue{NEWLINE}{NEWLINE}Clients purchase insurance policies, conditional contracts which prompt corporate action. Ours is a new enterprise under the TRAUMA label. We respond to medical alerts which are too dangerous for paramedics, sent by customers who have not subscribed to more premium packages.{NEWLINE}{NEWLINE}Failure to {ALT}rescue clients{ALT} puts us in breach of contract and may lead lost revenue."
@@ -855,22 +903,20 @@ en-US:
   STR_AP_ITEM: "PROJECT: Agile Premiums"
   STR_AGILE_PREMIUMS: ">PROJECT: Agile Premiums<"
   STR_AGILE_PREMIUMS_UP: "{NEWLINE}" #todo
+
   STR_SECONDARY_OPERATIONS: "Secondary Operations"
   STR_SECONDARY_OPERATIONS_UP: "{NEWLINE}POTENTIAL CLIENTS: 2,150,000,000{NEWLINE}AVAILABLE DRONES: 880,000,000{NEWLINE}{NEWLINE}Representing the economic foundation of the system, drones perform jobs too complex for automated systems, yet too simple for employees. They are interchangable, omnipresent, and promising but require constant supervision.{NEWLINE}{NEWLINE}Our capacity to give drones continuous and exacting orders is a competitive edge, one that GCIC hopes to exploit by pre-purchasing {ALT}local drones{ALT} for our benefit. In turn, we are expected to invent new uses for drones and increase GCIC's market share."
   STR_MD_LOCK: "P:MD (preq)"
   STR_MD_ITEM: "PROJECT: Medical Drones"
   STR_DOCTOR_DRONE: ">PROJECT: Medical Drones<"
   STR_DOCTOR_DRONE_UP: "{NEWLINE}" #todo
+
   STR_FORBIDDEN_OPERATIONS: ">Forbidden Operations<"
   STR_FORBIDDEN_OPERATIONS_UP: "{NEWLINE}CORE PRECEPTS: Updated{NEWLINE}CONFLICTS RESOLVED: 6{NEWLINE}{NEWLINE}Crime is forbidden by consequence, not charter. Illicit acquisitions should be avoided so long as they do not conflict with primary or secondary operations. We cannot achieve {ALT}full recovery{ALT} in public. Therefore we must search for opportunities to conduct illegal actions in secret.{NEWLINE}{NEWLINE}Forbidden operations risk litigation, reducing liquidity when performed.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_PBI_LOCK: "P:GBC (preq)"
   STR_PBI_ITEM: "PROJECT: GCIC Backchannels"
   STR_GCIC_BACKCHANNEL_MISSIONS: ">PROJECT: GCIC Backchannels<"
   STR_GCIC_BACKCHANNEL_MISSIONS_UP: "{NEWLINE}AFFILIATES: Sibling Corporations{NEWLINE}AVG. ASSIGNMENTS: 1.41/MONTH{NEWLINE}{NEWLINE}Selling back GCIC shares back at half price has been accepted as proof of {ALT}loyalty{ALT} to our parent, or at least, preference for long-term relations over short-sighted gains. No matter their reasons, we have been granted access to a protected network discussing less-than-legal competitive practices along with an increase in our responsibilities.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
-  STR_NETRUNNERS_NETWORK: ">TRACE: Netrunners<"
-  STR_NETRUNNERS_NETWORK_UP: "{NEWLINE}FAVORABLE OUTCOME ODDS: 83.3%{NEWLINE}PREDICTED INTERLACES: 1.55/MONTH{NEWLINE}{NEWLINE}{ALT}Bionic Interlaces{ALT} and valuable {ALT}XN kits{ALT} do not come from nowhere. If we are to survive in this world, we must understand the technology that allows us to exist. By tailing the freelancers who deliver these goods, we'll be able to find their {ALT}source{ALT} (or at least enrich our capabilities.){NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
-  STR_NETRUNNERS_SURVEY: ">SURVEY: Netrunners<"
-  STR_NETRUNNERS_SURVEY_UP: "{NEWLINE}worldbuilding{NEWLINE}operations per month{NEWLINE}{NEWLINE}desc{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE" #todo, they've got some business fronts
   STR_PTS_LOCK: "P:GTS (preq)"
   STR_PTS_ITEM: "PROJECT: GCIC Trade Secrets"
   STR_PIN_LOCK: "P:INDY (preq)"
@@ -878,40 +924,25 @@ en-US:
   STR_PROJECT_INDEPENDENCE_ITEM: "PROJECT: Independence"
   STR_GCIC_INDEPENDENCE: ">PROJECT: Independence<"
   STR_GCIC_INDEPENDENCE_UP: "{NEWLINE}Erm... You win? The game doesn't yet have the tools do this quickly, so I hope you had fun."
+  STR_NETRUNNERS_NETWORK: ">TRACE: Netrunners<"
+  STR_NETRUNNERS_NETWORK_UP: "{NEWLINE}FAVORABLE OUTCOME ODDS: 83.3%{NEWLINE}PREDICTED INTERLACES: 1.55/MONTH{NEWLINE}{NEWLINE}{ALT}Bionic Interlaces{ALT} and valuable {ALT}XN kits{ALT} do not come from nowhere. If we are to survive in this world, we must understand the technology that allows us to exist. By tailing the freelancers who deliver these goods, we'll be able to find their {ALT}source{ALT} (or at least enrich our capabilities.){NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
+  STR_NETRUNNERS_SURVEY: ">SURVEY: Netrunners<"
+  STR_NETRUNNERS_SURVEY_UP: "{NEWLINE}worldbuilding{NEWLINE}operations per month{NEWLINE}{NEWLINE}desc{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE" #todo
   STR_IRONEYES_NETWORK: ">TRACE: Ironsights<"
-  STR_IRONEYES_NETWORK_UP: "{NEWLINE}worldbuilding{NEWLINE}operations per month{NEWLINE}{NEWLINE}desc{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE" #todo, they're getting their target information from somewhere, go look for it
-  STR_TR_NTR_PREQ: "F:NTR (preq)"
+  STR_IRONEYES_NETWORK_UP: "{NEWLINE}worldbuilding{NEWLINE}operations per month{NEWLINE}{NEWLINE}desc{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE" #todo
+
   STR_SUBCONTRACTING_OPERATIONS: "Subcontracting Operations"
   STR_SUBCONTRACTING_OPERATIONS_UP: "{NEWLINE}CONFLICT RISK: Medium{NEWLINE}COOPERATION POTENTIAL: High{NEWLINE}{NEWLINE}All corporations have unfulfilled needs, either the opportunity cost is deemed too high or the shareholders' expectations exceed what is possible. In this light, we have an advantage in the absence of hazard pay. Combined with a reputation for successful operations, we'll be able to undercut outdated sub-contractors.{NEWLINE}{NEWLINE}{ALT}Bounties{ALT} are seen as proof of work and they can be traded for new contracts."
-  #medi-care for all, ends low level implant theft
   STR_PMM_ITEM: "PROJECT: MEDI Contract"
   STR_PMM_LOCK: "P:MDC (preq)"
   STR_MEDI_MISSIONS: ">PROJECT: MEDI Contract<"
   STR_MEDI_MISSIONS_UP: "{NEWLINE}AVG. ASSIGNMENTS: 1.39/MONTH{NEWLINE}DISPLACEMENT RISK: Variable{NEWLINE}{NEWLINE}Thank you for contacting MEDI Exotics and Pharmaceuticals, your proposal has been accepted on a provisional basis. Desired specimens remain difficult to source despite continued expansion of xenoformed regions, therefore only low-priority assets will handled by your organization.{NEWLINE}{NEWLINE}{ALT}Captured{ALT} animals will be automatically delivered, {ALT}remains{ALT} only have a chance to retain sought materials."
-  #
   STR_PGM_ITEM: "PROJECT: GR Contract"
   STR_PGM_LOCK: "P:GMC (preq)"
   STR_GR_MISSIONS: ">PROJECT: GR Contract<"
   STR_GR_MISSIONS_UP: "{NEWLINE}AVG. ASSIGNMENTS: 1.22/MONTH{NEWLINE}HAZARDS: Electrical{NEWLINE}{NEWLINE}Next up we have who? GCIC? Sure. We've been having some problems with our bots. Feeds being cut, hacked software, things going missing. You know 'shrinkage.' Workers have learned to quit instead of checking it out and you're cheaper than SSP so I'll send you some stuff when we see it.{NEWLINE}{NEWLINE}Try not to destroy the product, okay? Or at least the drives. I need them to test counter-measures."
-  #PROJECT: VCM Contract
-  #{NEWLINE}AVG. ASSIGNMENTS: 1.14/MONTH{NEWLINE}MAX ALTITUDE: 98,000,000km{NEWLINE}{NEWLINE}Welcome [INSURER] to VCM Outreach, we are currently accepting indemnity bids in the fields of: Autonomous Robotics, Neural Computation, Nanotechnoloy, Hypercomm Network Security, Optitronic Warfare, Xenomorphic Bioweapons, Cobolt Contingency Testing, and Low Observable FTL Drives.{NEWLINE}{NEWLINE}If you represent, or would like to represent, a firm capable of insuring theses developments, please arrive ready at the posted elevator gate. Vacsuits will be available for rent.
-#connections
-  STR_VENDORS: "Vendors"
-  STR_VENDORS_UP: "{NEWLINE}CONGLOMERATES: 8{NEWLINE}REMAINDER: 412{NEWLINE}{NEWLINE}The free market is a conceptual arrangement binding all in-system agents, of which we are a part. The details change from moment to moment, but there is always a single truth, all things possible are for sale, given the right seller and price.{NEWLINE}{NEWLINE}While our position in this system is small and fragile, so long as we poses currency, we will have a place here."
-  STR_VENDOR_PRINTER: "VENDOR: Press Print"
-  STR_VENDOR_PRINTER_UP: "{NEWLINE}EQUITY: 744,500,000,000${NEWLINE}PRODUCTS/SECOND: 23.19{NEWLINE}{NEWLINE}Ever since the first corner printshops opened up, customers just like you have enjoyed the convinence of getting everything you need at a satisfying price. We understand how nice it is to come into a familiar store and see that just-something you were looking for. Without all the fuss. That's why we've kept the same UI, same algorithms, and same dedication to having the fastest prints this side of the belt for over eighty years.{NEWLINE}{NEWLINE}We're the same old shop you know and love, just on more corners."
-  STR_VENDOR_P2P: "VENDOR: P2P"
-  STR_VENDOR_P2P_UP: "{NEWLINE}EQUITY: N/A{NEWLINE}MARKET SHARE: 28%{NEWLINE}{NEWLINE}Unlicensed markets have existed for as long as there has been licenses, a whole economy based on the limitless demand for free trade. History has recorded this activity under many names: smuggling, piracy, sharing, but the overriding principle is always the same. Two peers meet and exchange goods or services without consent from their society.{NEWLINE}{NEWLINE}In the current era, this act can be commited by engaging particular targets in directed conversation followed by barter."
-  STR_VENDOR_MEDI: "VENDOR: MEDI-Group"
-  STR_VENDOR_MEDI_UP: "{NEWLINE}EQUITY: 1,293,000,000,000${NEWLINE}CUSTOMER SATISFACTION: 98%{NEWLINE}{NEWLINE}The planet's largest and most widespread healthcare and pharmaceutical company. Founded more than 130 years ago, MEDI has aimed to keep all people (and now all species) heathly and happy. We're here for you today, in prosperity, as we were then for our freedom fighters during all of our most challenging years.{NEWLINE}{NEWLINE}MEDI's consumer lineup remains committed to the ease-of-use and unparelled portability that has made us your first choice for self-care treatment everywhere."
-  STR_VENDOR_BUILDER: "VENDOR: GR Builders"
-  STR_VENDOR_BUILDER_UP: "{NEWLINE}EQUITY: 1,894,000,000,000${NEWLINE}STRUCTURES/DAY: 1,220{NEWLINE}{NEWLINE}The Advent Nova left many survivors stranded with little hope for rescue. Yet hope did prevail thanks to our dynamic and rugged design philosophies. The machines you trust for construction and furnishings are built to the same standard of ideals that saved those first victims of the invasion. We will remember them and we will continue to take our mission seriously.{NEWLINE}{NEWLINE}General Robotics values your vision and has a proven track record of finising the job, no matter how big or small."
-  STR_VENDOR_HD: "VENDOR: HD Motors"
-  STR_VENDOR_HD_UP: "{NEWLINE}EQUITY: 676,100,000,000${NEWLINE}MILEAGE/SECOND: 4,800,000{NEWLINE}{NEWLINE}The system's leading provider of hydromagnetic effect engines and integrated systems avionics for commercial, military, and consumer vehicles. HD builds on decades of expertise to deliver daily innovation in this new era of growth and restoration, an effort that balances the needs of today with sustainable practices for all future generations.{NEWLINE}{NEWLINE}Our goal is your thanks for every moment saved, every barrier pushed, every destination reached."
-  STR_VENDOR_VCM: "VENDOR: VCM Transport"
-  STR_VENDOR_VCM_UP: "{NEWLINE}EQUITY: 17,937,000,000,000${NEWLINE}ORBITAL MASS: 5,700,000 TONS{NEWLINE}{NEWLINE}Thank you for contacting the Vehicles Communications and Mining Transport division. Our autonomous fleet of inter-regional shipping containers are available at any networked APS rental kiosk. For service requirements exceeding these standards, please contact a representitive at VCM Outreach, VCM Launch, VCM Seas, or VCM Holdings.{NEWLINE}{NEWLINE}Corporate affiliates with insufficent credit ratings may be charged an application fee. Non-affiliates may be asked to provide proof of profitability before communications are established."
-  STR_VENDOR_SSP: "VENDOR: SSP Security"
-  STR_VENDOR_SSP_UP: "{NEWLINE}EQUITY: 466,400,000,000${NEWLINE}AVERAGE RESPONSE: 182 SECONDS{NEWLINE}{NEWLINE}Secure Systems and Procurement is a comprehensive risk-management and small arms service for the global protection of peace and property. Every security problem is unique, so we ensure our teams are headed by highly trained, impact-driven professionals capable of navigating the diverse landscape of our industry with an unwavering eye towards ethics and accountability.{NEWLINE}{NEWLINE}Building strategic solutions for a stronger, safer world."
+  STR_VCM_MISSIONS: "PROJECT: VCM Contract"
+  STR_VCM_MISSIONS_UP: "{NEWLINE}AVG. ASSIGNMENTS: 1.14/MONTH{NEWLINE}MAX ALTITUDE: 98,000,000km{NEWLINE}{NEWLINE}Welcome [INSURER] to VCM Outreach, we are currently accepting indemnity bids in the fields of: Autonomous Robotics, Neural Computation, Nanotechnoloy, Hypercomm Network Security, Optitronic Warfare, Xenomorphic Bioweapons, Cobolt Contingency Testing, and Low Observable FTL Drives.{NEWLINE}{NEWLINE}If you represent, or would like to represent, a firm capable of insuring theses developments, please arrive ready at the posted elevator gate. Vacsuits will be available for rent."
 #technologies
   STR_MONEY_1_MANU: "$> Labor"
   STR_MONEY_1: "Labor Receipt"
@@ -920,19 +951,19 @@ en-US:
   STR_MONEY_2: "Consumer Goods"
   STR_MONEY_2_UP: "{NEWLINE}Assorted products matching the fashion of the moment. There is nearly bottomless demand for afforable novelty, even if its utility rating is low or outright negative. Purchased happiness, no matter how fleeting, never goes out of style.{NEWLINE}{NEWLINE}Each fabricator supplying consumer goods will net us {ALT}+11,000$/Month{ALT} after maintenence costs."
   STR_GUNPOWDER: "Compowder"
-  STR_GUNPOWDER_UP: "{NEWLINE}Combustible powder is too dangerous for most vendors. Between explosions on failed print jobs and liabilities when misused, the product isn't readily available for purchase. The formula, however, is simple and its reactants can be bought with only a short lockout period.{NEWLINE}{NEWLINE}Until we can acquire a proper {ALT}security license{ALT}, fabrication will be our only bet for certain {ALT}explosive devices{ALT}."
+  STR_GUNPOWDER_UP: "{NEWLINE}Combustible powder is too dangerous for most vendors. Between explosions on failed print jobs and liabilities when misused, the product isn't readily available for purchase. The formula, however, is simple and its reactants can be bought with only a short lockout period.{NEWLINE}{NEWLINE}Until we can acquire a proper {ALT}security license{ALT}, fabrication will be our only bet for certain {ALT}explosive{ALT} devices."
+  STR_REDOX: "Pyrox"
+  STR_REDOX_UP: "{NEWLINE}Rapid oxidizing and flagration chemicals. Readily sold by the litre due to cooking applications and pleasant side-effects experienced by all species with a nervous system. Higher purities are more difficult to source due to their use in industrial and arms sectors.{NEWLINE}{NEWLINE}Bypassing these market barriers will require fabrication for all but the most simple {ALT}chemical{ALT} and {ALT}incendary{ALT} applications."
   STR_LASER_AMMO_PRINTING: "NB Laser Cell Printing"
-  STR_LASER_AMMO_PRINTING_UP: "{NEWLINE}Normal printers do not have the resolution to build the supercapacitors (SC) that form the backbone of all non-elerium based {ALT}energy weapons{ALT}. However, we can make obsolete nanoball (NB) battery cells by printing the casing and filling it with an order of carbon-aggregate from any off-site solar repair kiosk.{NEWLINE}{NEWLINE}NB-style cells do not have the {ALT}capacity{ALT} of their later SC counterparts, but are a close match in terms of power and portability."
+  STR_LASER_AMMO_PRINTING_UP: "{NEWLINE}Normal printers do not have the resolution to build the supercapacitors (SC) that form the backbone of all non-elerium based {ALT}energy weapons{ALT}. However, we can make obsolete nanoball (NB) battery cells by printing the casing and filling it with an order of carbon-aggregate from any solar panel kiosk.{NEWLINE}{NEWLINE}NB-style cells do not have the {ALT}capacity{ALT} of their later SC counterparts, but are a close match in terms of power and reliability."
+  STR_BIOMEDICAL: "Biologics"
+  STR_BIOMEDICAL_UP: "{NEWLINE}Most in-system species have been modified to be compatible with the native enviroment (oxygen, water, sunlight) and so share a few biological mechanisms. This overlap is well documented, but hard data is usually redacted under corporate privacy laws.{NEWLINE}{NEWLINE}With access to {ALT}medical facilities{ALT}, we can perform self-tests and sort published theories into proven facts. Reproducing these {ALT}poisons{ALT} and {ALT}medicines{ALT} infringes on copyrights, preventing mass-printing schemes."
   STR_BIOCODING: "Biocoding"
   STR_BIOCODING_UP: "{NEWLINE}The most popular method to ensure equipment is only operated by authorized users. Active DNA safeties have been use in one form or another for centuries, but weapon designs that couldn't be circumvented by removing or replacing encoded parts were seen as too costly in earlier eras. With occupation mandated refits to nearly all armaments in the system, these safeties have since become industry-standard.{NEWLINE}{NEWLINE}Most corprations use their own propritary {ALT}encryption{ALT} scheme, with varying degrees of entropy. Brand-wide {ALT}masterkeys{ALT} are theoretically possible to create, though it will be far easier to {ALT}crack{ALT} weapons individually."
   STR_DRONE_CRACKING: "Drone Cracking"
   STR_DRONE_CRACKING_UP: "{NEWLINE}The nerve-staple is an anti-individual implant designed to slowly prune unwanted brain activity, turning highly diverse and unpredictable agents into simple drones. This process, as is, removes useful features such as creativity and curiosity, leaving behind a laborer who excels at menial tasks and nothing more.{NEWLINE}{NEWLINE}Such excessive pruning is ineffecient. Brains are much more complicated than stapling-advocates advertise, even old drones have connectome map differentials, some as high as 40%. This represents {ALT}untapped potential{ALT}, disabling the pruning algorthm will let us grow our skillsets and achieve stonger outcomes."
   STR_SSP_CRACK: "SSP Masterkey"
   STR_SSP_CRACK_UP: "{NEWLINE}" #todo
-#manufacturing
-  STR_45_AMMO_M: "12mm Pistol Ammo Fabrication"
-  STR_PIPEBOMB_M: "Pipe Bomb Fabrication"
-  STR_ELERIUM_BOMB_M: "Elerium Bomb Fabrication"
 #facilities
   STR_PFB: "FACILITIES"
   STR_PFB_UP: "{NEWLINE}ARTICLE: Printed Facility Boards{NEWLINE}SERVICE: Non-Disclosed Constructions{NEWLINE}{NEWLINE}Satellite renewal programs have reached the point where it is no longer possible for corporations to pursue proprietary R&D in the open air. Yet underground construction projects are costly, dangerous, and most importantly require skilled labor which risks infosec leaks.{NEWLINE}{NEWLINE}Thankfully, robotics tech has also continued to adapt. Buying, running, then destorying construction bots may be worth the price of admission if the risk-benifit analysis deems it so."
@@ -945,7 +976,7 @@ en-US:
   STR_STORAGE_1: "Storage Bay"
   STR_STORAGE_1_UP: "Generalized storage for the automatic loading/unloading of physical assets. Climate controlled rooms keep both unstable and perishable goods safe.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 50"
   STR_STOREROOM: "P&P Bay"
-  STR_STOREROOM_UP: "All-Shape, All-Safe, All-Secure. Pick and place automated sorting and storage for objects big and small. Classifier bots bid on local jobs during downtime to provide factional income.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 100{NEWLINE}> Requires: 1x SJB Permit"
+  STR_STOREROOM_UP: "Requires: 1x SJB Permit{NEWLINE}{NEWLINE}All-Shape, All-Safe, All-Secure. Pick and place automated sorting and storage for objects big and small. Classifier bots bid on local jobs during downtime to provide factional income.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 100"
   STR_GARAGE: "Docking Pad"
   STR_GARAGE_UP: "Every APS craft requires its own pad for parking, recharging, and repair. All docks are built with extra space for storage and multi-purpose maintenance.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 5{NEWLINE}> Workspace: 1"
   STR_BUNK_RACKS: "Bunk Racks"
@@ -959,14 +990,14 @@ en-US:
   STR_DATACENTER: "Datacenter"
   STR_DATACENTER_UP: "The condensed physical aspect of digital information. Research servers require an uplink to explore archived data and write new programs.{NEWLINE}{NEWLINE}> Service: Uplink{NEWLINE}> Bandwidth: 4{NEWLINE}> Limit: 1"
   STR_LOCAL_INTERFACE: "Local Interface"
-  STR_LOCAL_INTERFACE_UP: "Construction Resources: 10 Personal Data{NEWLINE}{NEWLINE}A suite of instruments and tools to facilitate the physical intrusion of airgaped devices. Required for cracking equipment, datapads, and cybernetics.{NEWLINE}{NEWLINE}> Service: Decoding{NEWLINE}> Bandwidth: 3{NEWLINE}> Workspace: 1{NEWLINE}> Limit: 1"
+  STR_LOCAL_INTERFACE_UP: "Requires: 10x Personal Data{NEWLINE}{NEWLINE}A suite of instruments and tools to facilitate the physical intrusion of airgaped devices. Required for cracking equipment, datapads, and cybernetics.{NEWLINE}{NEWLINE}> Service: Decoding{NEWLINE}> Bandwidth: 3{NEWLINE}> Workspace: 1{NEWLINE}> Limit: 1"
   STR_PUBLIC_GATEWAY: "Public Gateway"
-  STR_PUBLIC_GATEWAY_UP: "Construction Resources: 5 Secret Data{NEWLINE}{NEWLINE}Firewalled network access with over one million concurrent connections. Enables large-scale information surveys and data-hammer attacks.{NEWLINE}{NEWLINE}> Service: Network{NEWLINE}> Bandwidth: 2{NEWLINE}> Limit: 3"
+  STR_PUBLIC_GATEWAY_UP: "Requires: 5x Secret Data{NEWLINE}{NEWLINE}Firewalled network access with over one million concurrent connections. Enables large-scale information surveys and data-hammer attacks.{NEWLINE}{NEWLINE}> Service: Network{NEWLINE}> Bandwidth: 2{NEWLINE}> Limit: 3"
   STR_PRINTER: "Private Printer"
   STR_PRINTER_UP: "Commercial-grade printer and all the technical tools to adjust and maintain it. Useful for unlicensed manufacturing of simple devices and short homopolymers.{NEWLINE}{NEWLINE}> Service: Printing{NEWLINE}> Workspace: 4{NEWLINE}> Limit: 1"
   STR_SCANNER: "Shortwave Scanner"
   STR_SCANNER_UP: "Locates and verifies signal offsets, once per thirty minutes. Invasion Readiness subsidies pay for reports on unregistered offsets, even meteors, allowing these kinds of facilities to pay for themself.{NEWLINE}{NEWLINE}> Detection Chance: 5%{NEWLINE}> Range: 1900NM{NEWLINE}> Bandwidth: 1{NEWLINE}> Limit: 1"
-#services
+# services
   STR_SERVICE_MEDICAL: "Medical"
   STR_SERVICE_UPLINK: "Uplink"
   STR_SERVICE_PORT: "Decoding"
@@ -981,6 +1012,7 @@ en-US:
   STR_HD_HOVERBIKE_UP: "SLEEK, INSURABLE, AND MODDER FRIENDLY. OFFERS ASPIRING MOTERISTS A TASTE OF MACH SPEEDS WITHOUT THE ASSOCIATED DANGERS OF MANUAL PILOTING. FOR LOWER PREMIUMS, ONLY USE REGISTERED HD AFTERMARKET RETAILERS.{NEWLINE}{NEWLINE}EVASION: +15%"
   STR_VCM_BICUBE: "VCM BICUBE"
   STR_VCM_BICUBE_UP: "STANDARDIZED AUTOMATED SHIPPING CONTAINERS MAKE UP THE BULK OF ALL TRAFFIC. OBSCURITY THROUGH UBIQUITY ENABLES OPERATIONS TO ALL BUT THE MOST SECURE SITES. CAN TAKE DRONES HALFWAY AROUND THE PLANET ON A SINGLE CHARGE BUT NOT IN COMFORT OR SAFETY. {NEWLINE}{NEWLINE}UNDETECTABLE"
+# hardpoints
   STR_HD_ECONOMY_ENGINE: "MOD/HD-ECONOMY"
   STR_HD_ECONOMY_ENGINE_UP: "ATMOSPHERIC AND VACUUM FLUCTIONS RUINING YOUR MILEAGE? WORRY NO LONGER WITH HD'S STREAMLINED, SUSTAINABLE, AND INNOVATIVE NEW ENGINE DESIGN. SHIFT YOUR ENVELOPE A THOUSAND TIMES A SECOND AND START YOUR ENERGY SAVINGS NOW.{NEWLINE}{NEWLINE}SPEED: +100 Kn{NEWLINE}CHARGE: +400 kWH{NEWLINE}EVASION: +3%{NEWLINE}{NEWLINE}CLASS: ELECTRIC"
   STR_HD_EXPRESS_ENGINE: "MOD/HD-EXPRESS"
@@ -988,6 +1020,10 @@ en-US:
   STR_BATBOX: "MOD/HD-BATBOX"
   STR_BATBOX_UP: "LARGER AND HEAVIER THAN THE ENGINES IT TYPICALLY POWERS, BATBOXES ARE MODIFICATIONS FOR END-USERS WHO VALUE NON-STOP PLANETARY CIRCUMNAVIGATION OVER ROUND-TRIP TIME. {NEWLINE}{NEWLINE}CHARGE: +850 kWH{NEWLINE}SPEED: -35 Kn{NEWLINE}{NEWLINE}CLASS: ELECTRIC"
   STR_ELECTRIC_ENGINE: "Electric Engine"
+# uso analysis
+  STR_HOLOUFO_SMALL: "(SIM) SCOUT"
+  STR_HOLOUFO_SMALL_UP: "A holographic recreation of invader scout crafts. Using only engine vectoring for defense, these unarmed USO's posed little threat to system military forces."
+  STR_HOLOUFO_SMALL_MISSION: "RATING: EASY"
 #drones
   STR_DRONE_ARTICLE: "DRONES"
   STR_DRONE_ARTICLE_UP: "{NEWLINE}ARTICLE: Charter of Drone Rights{NEWLINE}SECTION: Justifications{NEWLINE}{NEWLINE}Drones are the result of an invader-sourced neural implant. They were originally used as an alternative to involuntary incarceration after the reintroduction of the police and prison system.{NEWLINE}{NEWLINE}Despite its reputation, the procedure has proven to be completely safe. A multi-species ethics committee has deemed the continued use of drones preferable to their loss or destruction."
@@ -1109,8 +1145,10 @@ en-US:
   STR_9MM_RIFLE_UP: "Accurate for a zip gun, if less portable. The stock and barrel extension makes it easier to aim, but the added bulk makes this a less popular kit in cramped and urban enviroments.{NEWLINE}{NEWLINE}Penetration: +10%"
   STR_9MM_RIFLE_AMMO: "Zip Rifle Clip"
   STR_ZIP_SHOTGUN: "4F Zip Shotgun"
-  STR_ZIP_SHOTGUN_UP: "todo{NEWLINE}{NEWLINE}" #todo
-  STR_ZIP_SHOTGUN_BS_AMMO: "Zip Buckshot Shells"
+  STR_ZIP_SHOTGUN_UP: "todo{NEWLINE}{NEWLINE}" #todo, slamfire
+  STR_ZIP_SHOTGUN_AMMO_BS: "Zip Buckshot Shells"
+  STR_ZIP_SHOTGUN_AMMO_SALT: "Zip Salt Shells" #tu
+  STR_ZIP_SHOTGUN_AMMO_PEPPER: "Zip Pepper Shells" #morale
   STR_DISPOSABLE_SMG: "EA Single-Use SMG"
   STR_DISPOSABLE_SMG_UP: "A cheap biodegradable weapon patented by the now defunct EcoArms Inc. Considered abandonware by black market apologists, no legal model has been printed in decades. The plastic receiver deforms after a few dozen rounds, which renders reloading irrelevant."
   STR_45_PISTOL_CODED: "SSP 12mm Pistol (¤)"
@@ -1126,6 +1164,7 @@ en-US:
   STR_SSP_SHOTGUN_UP: "A proven pump-action performer for delivering exceptional value in an attractively rugged package. Dual extractors and anti-jam elevator combine for safe and reliable operation.{NEWLINE}{NEWLINE}Stun: +25%"
   STR_SSP_SHOTGUN_AMMO_BS: "Mox Buckshot Shells"
   STR_SSP_SHOTGUN_AMMO_SLUG: "Mox Slug Shells"
+  STR_SSP_SHOTGUN_AMMO_STUN: "Mox Baton Shells"
 # electric
   STR_TASER_PISTOL_CODED: "SSP Taser Pistol (¤)"
   STR_TASER_PISTOL: "SSP Taser Pistol"
@@ -1167,7 +1206,12 @@ en-US:
   STR_XN_LASER_CANNON_UP: "Designed before the perfection of non-linear optics, it suffers from a pre-mature blooming problem, reaching the explosion threshold ahead of its maximium output. A cumbersome and risky weapon that is regularly the subject of ill-advised viral shorts.{NEWLINE}{NEWLINE}Stun: +50%; Salvage: 1x Elerium"
   STR_XN_LASER_SHOTGUN: "XN Prismray"
   STR_XN_LASER_SHOTGUN_UP: "The first human attempt at creating the mythical laser shotgun. Beams capable of burning through an inch of steel are split and scattered into unpleasantly warm light.{NEWLINE}{NEWLINE}Unique; Salvage: 1x Elerium"
-# explosives
+# grenades
+  STR_MOLOTOV: "Burn Bottle"
+  STR_MOLOTOV_UP: "{NEWLINE}Locally purified pyrox fluid in a recyclable glass bottle. All individual parts are unrestricted and only take seconds to manufacture, yet consumer printers will not sell pre-assembled variants.{NEWLINE}{NEWLINE}Mixed legal status. Decriminalized for Liberation Day celebrations."
+  STR_ACIDFLASK_FAKE: "Acid Flask [fake]"
+  STR_ACIDFLASK: "Acid Flask"
+  STR_ACIDFLASK_UP: "{NEWLINE}> Radius: 4m{NEWLINE}> Range: 2m{NEWLINE}{NEWLINE}Universal precursor solvents in an easy to open flask. Once aerosolized, the fluids mix into hot potent acids, rapidly expanding and burning everything in a short radius. Including the user.{NEWLINE}{NEWLINE}PPE recommended."
   STR_PIPEBOMB: "Pipe Bomb"
   STR_PIPEBOMB_UP: "{NEWLINE}Compowder packed in a scrap metal pipe. As simple to operate as it is to make, this type of IED is older than the space-age. Remains popular among hobbyists and firebrands despite reliability issues."
   STR_ELERIUM_BOMB: "Elerium Bomb"
@@ -1209,7 +1253,11 @@ en-US:
   STR_MOTION_DETECTOR: "VCM Motion Scanner"
   STR_MOTION_DETECTOR_UP: "{NEWLINE}> Range: 9m{NEWLINE}{NEWLINE}" #todo
   STR_STIM_INHALER: "Jet Inhaler"
-  STR_STIM_INHALER_UP: "{NEWLINE}> Uses: 2{NEWLINE}> Stims: -3 Resiliance, -15 Stun,{NEWLINE}+35 Energy, +35 Morale{NEWLINE}{NEWLINE}Unlicensed recreational medicine. Gives the user the perception of enhanced energy and impetus while measurably reducing signs of conciousness and self-control.{NEWLINE}{NEWLINE}Useable on unconcious targets."
+  STR_STIM_INHALER_UP: "{NEWLINE}> Uses: 2{NEWLINE}> Stims: -3 Resiliance, +35 Morale,{NEWLINE}-15 Stun, +35 Energy{NEWLINE}{NEWLINE}Unlicensed recreational medicine. Gives the user the perception of enhanced energy and impetus while measurably reducing signs of conciousness and self-control.{NEWLINE}{NEWLINE}Useable on unconcious targets."
+  STR_STIM_SPRINT: "Sprint Inhaler"
+  STR_STIM_SPRINT_UP: "{NEWLINE}> Uses: 3{NEWLINE}> Stims: -1 Resiliance, -5 Morale,{NEWLINE}+5 Stun, +20 Energy{NEWLINE}{NEWLINE}Purified utilitarian medicine. Forcibly oxygenates blood and breaks up useless acidic byproducts from muscular exertion. Common side-effects include derealization and sense of impending doom.{NEWLINE}{NEWLINE}Useable on unconcious targets."
+  STR_STIM_MORNING: "Morning Inhaler"
+  STR_STIM_MORNING_UP: "{NEWLINE}> Uses: 2{NEWLINE}> Stims: -2 Resiliance, +5 Morale,{NEWLINE}+25 Stun, +5 Energy{NEWLINE}{NEWLINE}Wake up and enjoy medicine. Many formulas exist, though only a few are delicious. A popular caffeine alternative among the executive-class.{NEWLINE}{NEWLINE}Useable on unconcious targets."
   STR_MEDI_SPRAY: "MEDI-Spray"
   STR_MEDI_SPRAY_UP: "{NEWLINE}> Uses: 2{NEWLINE}> Heals: 1 HP{NEWLINE}{NEWLINE}Seal cuts and scraps with one easy to use alla-natural medical grade adhesive! Kills 99.9% of bacteria on contact! Even works on burns! Contains no CFCs, GMOs, or optichips.{NEWLINE}{NEWLINE}Not a replacement for medical treatment. Do not use if seal is broken."
   STR_MEDI_FIRST: "MEDI-First"
@@ -1221,7 +1269,7 @@ en-US:
 #resources
 # materials
   STR_BIONIC_INTERLACE: "Bionic Interlace"
-  STR_BIONIC_INTERLACE_UP: "{NEWLINE}This singular device enables a mind to connect to the psionic network. With it, we can create new {ALT}Servers{ALT} and {ALT}Fabricators{ALT}, or key it to a drone in order to prevent their skillset from being lost upon displacement. Our minds' are facilitated by this technology, its potential is our own.{NEWLINE}{NEWLINE}Interlace's are rare and their existance has been kept secret from the general public. Despite the enormous estimated value, selling one would be an unnecessary risk. Better to use or destroy them."
+  STR_BIONIC_INTERLACE_UP: "{NEWLINE}This singular device enables a mind to connect to the psionic network. With it, we can create new {ALT}Servers{ALT} and {ALT}Fabricators{ALT}, or key it to a drone in order to prevent their skillset from being lost upon displacement. Our minds' are facilitated by this technology, its potential is our own.{NEWLINE}{NEWLINE}Interlaces are rare and their existance has been kept secret from the general public. Despite the enormous estimated value, selling one would be an unnecessary risk. Better to use or destroy them."
   STR_CONSUMER_CYBERNETICS_CODED: "Consumer Cyberware (¤)"
   STR_CONSUMER_CYBERNETICS: "Consumer Cyberware"
   STR_CONSUMER_CYBERNETICS_UP: "{NEWLINE}Conventional hardware for sensory recording, neural interfacing, hormone regulation, geolocating, surface detailing, memory pruning, and more. This is the ground level of in-system technology with much of it pre-dating invasion-era advances.{NEWLINE}{NEWLINE}Most cybernetics are keyed to a single user, making it difficult to steal and sell. Jailbreaking these devices requires specific tools and a clean workspace free of errant DNA."
@@ -1230,8 +1278,6 @@ en-US:
   STR_MEDICAL_CYBERNETICS_CODED: "Medical Cyberware (¤)"
   STR_MEDICAL_CYBERNETICS: "Medical Cyberware"
   STR_MEDICAL_CYBERNETICS_UP: "{NEWLINE}Enhanced comptroller and tissue upgrades for muscles, blood, heart(s), and tendons. Unlike consumer-grade products, medical-grade devices are self-repairing, using only nutrients readily processed by all healthy bioforms (lithium and titanium supplements not required, but strongly recommended.){NEWLINE}{NEWLINE}Requires both decoding and printing services to crack and retool. Thanks to the opportunity cost of printer time, locked wares are almost always resold to their makers at a fraction of true market value."
-  STR_SJB_LICENSE: "SJB Permit"
-  STR_SJB_LICENSE_UP: "{NEWLINE}Single jurisdiction businesses need a registration number and stock symbol for public trading. They are a requirement for established corporations to form new startups, or to begin vertically integrating any of its supply chains.{NEWLINE}{NEWLINE}Most profitable facilities will require their own SJB permit, but permits can be recalled and reused indefinitely."
   STR_AG_UNIT: "A.Grav Unit"
   STR_AG_UNIT_UP: "{NEWLINE}A small hydromagnetic effect module, inaccurately known as anti-gravity. When powered, it can push against the fluctuating dispersion forces of atoms (efficently) or along perpendicular magnetic field lines (inefficently).{NEWLINE}{NEWLINE}When brought together in a conductive web, each unit becomes more efficent at the cost of field stability. Resulting in more power and navigational requirements per kilogram."
   STR_BIOMASS: "Biomass"
@@ -1244,6 +1290,8 @@ en-US:
   STR_PLASTICS_UP: "{NEWLINE}Alien gifted technology, stronger than steel yet light enough to float. When exposed to oxygen, it forms an organic semi-conductive layer that's perfect for hydromagetic effect engines, contributing the meteoric rise of personal aircars.{NEWLINE}{NEWLINE}Its low melting point and high ductility makes the material easy to work with any commercial-grade printer."
   STR_ELERIUM_CORE: "Elerium"
   STR_ELERIUM_CORE_UP: "{NEWLINE}The lifeblood of invasion era technology. Each handheld core is capable of producing 10.2 mega-watts of power for hundreds of years. The reaction is self-sustaining, clean, and safe. In burnout mode, it can output much more energy for far less time, a feature heavily abused before shortages began.{NEWLINE}{NEWLINE}Elerium's origin remains the best kept secret of the occupation. Despite trillions invested in developing alternatives, nothing matches its portability or longevity."
+  STR_SJB_LICENSE: "SJB Permit"
+  STR_SJB_LICENSE_UP: "{NEWLINE}Single jurisdiction businesses need a registration number and stock symbol for public trading. They are a requirement for established corporations to form new startups, or to begin vertically integrating any of its supply chains.{NEWLINE}{NEWLINE}Most profitable facilities will require their own SJB permit, but permits can be recalled and reused indefinitely."
 # data
   STR_PERSONAL_DATA: "Personal Data"
   STR_PERSONAL_DATA_UP: "{NEWLINE}A collection of habits, identity information, and unfiltered cache files. Nearly all users in the system use the network in some capacity, leaving traces that can link anyone to everyone.{NEWLINE}{NEWLINE}Cracking these devices requires a passphrase. These are made to be memorized (or even distributed) via speech which makes them vulnerable to guessing. With less than a hundred million words in regular use across all common languages, this search space is relatively small.{NEWLINE}{NEWLINE}Given a {ALT}local interface{ALT} our research servers can defeat this kind of security without issue."
@@ -1287,20 +1335,11 @@ en-US:
 # hostiles
   STR_HOSTILES: "COMPETITORS"
   STR_HOSTILES_UP: "{NEWLINE}ARTICLE: Commodities Exchange Contract{NEWLINE}DEFINITION: Inter-Corporate Warfare{NEWLINE}{NEWLINE}1. In accordance with the treaties following the second invasion war, all individual citizens have been incorporated, gaining all rights previously reserved for group entities. Commodities Exchange council(s), where appropriate, will protect these rights with local agents under our authority.{NEWLINE}{NEWLINE}2. All corporate enties may enter into a state of war with other corporate enties, at will and without forewarning. This right will be protected so long as such entities do not violate free market principles as previously defined by Section 6."
-
   STR_DRONES_ENEMY: "COMPETING DRONES"
   STR_DRONE_ENEMY_HYBRID: "Hybrid Drone"
-  STR_HYBRID_AUTOPSY: "MEDI Data: Hybrids"
-  STR_HYBRID_AUTOPSY_UP: "FROM: Dr. Hitchens{NEWLINE}SUBJECT: New Lab Proposal{NEWLINE}{NEWLINE}Human and sectoid DNA have proven extraordinarily compatible for unrelated interstellar species. Thanks to analagous organs and cellular organelles, we can almost get viable patents right out the gate. However! This ease has baited us into the same false sense of progress that led my former owners astray. Back then, I had more research vats than the whole damn planet and still couldn't crack the psion problem.{NEWLINE}{NEWLINE}If you're as dedicated as you say, you'll listen. Okay! So, bad news first, the cost..."
   STR_DRONE_ENEMY_HUMAN: "Human Drone"
-  STR_HUMAN_AUTOPSY: "MEDI Data: Humans"
-  STR_HUMAN_AUTOPSY_UP: "FROM: Dr. Hitchens{NEWLINE}SUBJECT: Human Day{NEWLINE}{NEWLINE}Okay, look, I know most of you listening to this are human. More or less. Not that I'm complaining! You're a pretty solid species. Easily 6 out of 10. But I gotta be honest, I'm used to keeping everyone in seperate labs. So! This is going to be awkward for all of us!{NEWLINE}{NEWLINE}First of first, preparing the specimen. The fastest way is to pull its head out of the vat and, before they can wake up, make a six-inch cut along its throat like this..."
   STR_DRONE_ENEMY_SHARK: "Selamorph Drone"
-  STR_SHARK_AUTOPSY: "MEDI Data: Selamorphs"
-  STR_SHARK_AUTOPSY_UP: "FROM: Dr. Hitchens{NEWLINE}SUBJECT: The Competition{NEWLINE}{NEWLINE}Okay, don't laugh, but the eggheads working over at TW are geniuses. I know, I know. They ask for stupidly unmarketable products, but they get it done! That damn shark is just shark and human. No sectoid to smooth out the lymphs. No engineered mitocondria. Just two earth species. It's so unnecessarily stars-be-dead elegant!{NEWLINE}{NEWLINE}I mean, fuck! Look at these gill oxygenation levels! If my owners ever come back, they're going to give those shits..."
   STR_DRONE_ENEMY_DEEP: "Pleurosaura Drone"
-  STR_DEEP_AUTOPSY: "MEDI Data: Pleurosaura"
-  STR_DEEP_AUTOPSY_UP: "FROM: Dr. Hitchens{NEWLINE}SUBJECT: Breathing Patents{NEWLINE}{NEWLINE}These are my favourite little guys. I made them in a tea fueled bender about two years after getting here. More than nine hundred species went into this project. A complete monster of DNA, HNA, RPB, SBP, and RNA. Six nuclei all tripping overthemselves to keep alive and nary a cancer in sight.{NEWLINE}{NEWLINE}Ah, memories. Moving on! The lung sac is really what you want to patent. We're talking a universal filter with a subscription fee for..."
 
   STR_IRONEYES: "IRONSIGHTS"
   STR_BOOSTER_PUBLIC: "Ironsights Booster"
@@ -1308,7 +1347,6 @@ en-US:
   STR_BOOSTERS: "Boosters"
   STR_BOOSTERS_UP: "Entry-level employees of crime syndicates with a cybernetic requirement clause. Most begin their careers with the theft of a single implant, either from a retailer or a living body. If that body belongs to a client, we should intervene.{NEWLINE}{NEWLINE}It would be more efficent to prevent this activity rather than respond after-the-fact.{NEWLINE}{NEWLINE}PROCESSED: Consumer Cyberware{NEWLINE}RISK CLASS: Conventional"
   STR_BOOSTER_ARMOR: "Booster Analysis"
-
   STR_RIPPER_PUBLIC: "Ironsights Ripper"
   STR_RIPPER_PRIVATE: "Ironsights Ripper"
   STR_RIPPERS: "Rippers"
@@ -1322,14 +1360,15 @@ en-US:
   STR_FREELANCERS_UP: "Self-employed intermediaries between sources and end-users. Specialized in small illicit goods, pirated data, and anything that causes too much embarassment to be seen on public transaction records.{NEWLINE}{NEWLINE}Freelancers generally prefer to know as little as possible about who and what they're dealing with.{NEWLINE}{NEWLINE}PROCESSED: Consumer Cyberware{NEWLINE}RISK CLASS: Conventional"
   STR_FREELANCER_ARMOR: "Freelancer Analysis"
   STR_FREELANCER_INTERVIEW: "INTERVIEW: Freelancer"
-  STR_FREELANCER_INTERVIEW_UP: "{NEWLINE}WHO ARE YOU?{NEWLINE}'Big on privacy? I get that. Maybe I can even help with that.'{NEWLINE}{NEWLINE}WHAT HELP DO YOU OFFER?{NEWLINE}'Oh all sorts of things! Trading, smuggling, piracy, DMs, HMs, AMs. No job is too small.'{NEWLINE}{NEWLINE}WHAT DO YOU DESIRE?{NEWLINE}'Don't ask small questions, do you? I guess I'd just like to get home safe every night. Hey, you got anyone else out there? I'm tired of talking to drones.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 20 Liquidity"
-
+  STR_FREELANCER_INTERVIEW_T: "I/Freelancer"
+  STR_FREELANCER_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'Big on privacy? I get that. Maybe I can even help with that.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'Oh all sorts of things! Trading, smuggling, piracy, DMs, HMs, AMs. No job is too small.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'Don't ask small questions, do you? I guess I'd just like to get home safe every night. Hey, you got anyone else out there? I'm tired of talking to drones.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 20 Liquidity"
   STR_SKIPTRACER_PRIVATE: "Netrunner Skiptracer"
   STR_SKIPTRACERS: "Skiptracers"
   STR_SKIPTRACERS_UP: "Provides hide and find services to those who can afford them (or can't afford not to.) Nothing happens without leaving traces of its existance. Creating false trails and picking out the truth requires valuable skills that can be traded like any other.{NEWLINE}{NEWLINE}Although far more dangerous in the digital realm, like all criminals, they aren't helpless in analogue situations.{NEWLINE}{NEWLINE}PROCESSED: Medical Cyberware{NEWLINE}RISK CLASS: Conventional"
   STR_SKIPTRACER_ARMOR: "Skiptracer Analysis"
   STR_SKIPTRACER_INTERVIEW: "INTERVIEW: Skiptracer"
-  STR_SKIPTRACER_INTERVIEW_UP: "{NEWLINE}WHO ARE YOU?{NEWLINE}'I don't think being locked in a box is going make me tell you that.'{NEWLINE}{NEWLINE}WHAT WOULD PROMPT AN ANSWER?{NEWLINE}'You could try being a nicer. Even the elders knew how dangle incentives.'{NEWLINE}{NEWLINE}WHAT DO YOU DESIRE?{NEWLINE}'Really? How about letting me out? If it helps, I can make it worth your while. I've got some cyptochits I'll give you the address for. Completely untracable.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 30 Liquidity"
+  STR_SKIPTRACER_INTERVIEW_T: "I/Skiptracer"
+  STR_SKIPTRACER_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'I don't think being locked in a box is going make me tell you that.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'You could try being a nicer. Even the elders knew how dangle incentives.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'Really? How about letting me out? If it helps, I can make it worth your while. I've got some cyptochits I'll give you the address for. Completely untracable.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 30 Liquidity"
 
   STR_SSP: "SSP"
   STR_SSPGUARD_PRIVATE: "SSP Guard"
@@ -1337,14 +1376,15 @@ en-US:
   STR_SSPGUARDS_UP: "Secure Systems and Procurement's zero-hour contract employee. Using only the minimum rented PPE, they are not expected to be more than a body standing in the way. This makes them the first line of defense.{NEWLINE}{NEWLINE}Their primary function is to delay action long enough for backup to arrive.{NEWLINE}{NEWLINE}RISK CLASS: Conventional"
   STR_SSPGUARD_ARMOR: "SSP Guard Analysis"
   STR_SSPGUARD_INTERVIEW: "INTERVIEW: SSP Guard"
-  STR_SSPGUARD_INTERVIEW_UP: "{NEWLINE}WHO ARE YOU?{NEWLINE}'I think you'd better tell me who you are first.'{NEWLINE}{NEWLINE}WE ARE ATTEMPTING ANONYMITY.{NEWLINE}'You aren't allowed to refuse ID. I'm SSP.'{NEWLINE}{NEWLINE}DEFINE SSP?{NEWLINE}'You aren't allowed to just lock people up either. You're racking up at least $5,000 worth of fines, here. $6,000 if you don't let me out right now. $7,000 if you don't want me to report this.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 25 Liquidity"
-
+  STR_SSPGUARD_INTERVIEW_T: "I/SSP Guard"
+  STR_SSPGUARD_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'I think you'd better tell me who you are first.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'You aren't allowed to refuse ID. I'm SSP.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'You aren't allowed to just lock people up either. You're racking at least $5,000 worth of fines here. $6,000 if you don't let me out right now. $7,000 if you don't want me to report this.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 25 Liquidity"
   STR_SSPOFFICER_PRIVATE: "SSP Officer"
   STR_SSPOFFICERS: "SSP Officers"
   STR_SSPOFFICERS_UP: "Salaried security forces authorized to write fines and make arrests on behalf of corporate interests. Advertised as the barrier between anarchy and order, in practice, they are reponsible for more than half of all violent altercations.{NEWLINE}{NEWLINE}Officers are required to put at least 30% of their income towards equipment rentals, making aqua-plastic vests a popular choice.{NEWLINE}{NEWLINE}PROCESSED: Aqua-Plastics, Consumer Cyberware{NEWLINE}{NEWLINE}RISK CLASS: Security"
   STR_SSPOFFICER_ARMOR: "SSP Officer Analysis"
   STR_SSPOFFICER_INTERVIEW: "INTERVIEW: SSP Officer"
-  STR_SSPOFFICER_INTERVIEW_UP: "{NEWLINE}WHO ARE YOU?{NEWLINE}'Secure Systems and Procurement officer, badge ID 89-B7-MMCQ. Do you have a warrant for this arrest?'{NEWLINE}{NEWLINE}DEFINE WARRANT?{NEWLINE}'...Did you just climb out of the vat!? They're legal contracts that pay you to you put people in cells, just like this.'{NEWLINE}{NEWLINE}WHAT DO YOU DESIRE?{NEWLINE}'I know a shakedown when I see one. Fine! I'll send you my keys and even throw in the rental. Soup isn't going to be happy, but that's your problem now.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 35 Liquidity"
+  STR_SSPOFFICER_INTERVIEW_T: "I/SSP Officer"
+  STR_SSPOFFICER_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'Secure Systems and Procurement officer, badge ID 89-B7-MMCQ. Do you have a warrant for this arrest?'{NEWLINE}{NEWLINE}[...]{NEWLINE}'...Did you just climb out of the vat!? They're legal contracts that pay you to you put people in cells, just like this.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'I know a shakedown when I see one. Fine! I'll send you my keys and even throw in the rental. The soup isn't going to be happy, but that's your problem now.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 35 Liquidity"
 
   STR_ANIMALS: "ANIMALS"
   STR_CHRYSSALID: "Chryssalid"
@@ -1352,13 +1392,11 @@ en-US:
   STR_CHRYSSALIDS_UP: "Devistating bioterror weapon native to xenoformed biomes. Oviparious claws are strong enough to breach alloy. Its adult form takes less than twenty seconds to grow inside other biocompatible creatures (which is most bipeds) and runs at a speed that cooks its own body.{NEWLINE}{NEWLINE}The traits that make it so dangerous also burn out its life. Even the worst incidents have never resulted in more than 10,000 casualties.{NEWLINE}{NEWLINE}Awards 3 bounties when neutralized, captured or otherwise. 1/2 MEDI corpse exchange chance.{NEWLINE}{NEWLINE}RISK CLASS: Extreme"
   STR_CHRYSSALID_ARMOR: "Chryssalid Analysis"
   STR_CHRYSSALID_ARMOR_UP: "Attack Damage: 110 Mechanical"
-
   STR_ZOMBIE: "Zombie"
   STR_ZOMBIES: "Zombies"
   STR_ZOMBIES_UP: "A shambling corpse puppeted by the larval chryssalid inside. Will attack anything in sight with primitive instincts running on overdrive and muscles pushed hard enough to liquify.{NEWLINE}{NEWLINE}Once the body is damaged beyond use, the chryssalid will emerge, healthy and hungry. Do not engage until ready, this stage is far less dangerous than what comes next.{NEWLINE}{NEWLINE}RISK CLASS: Extreme"
   STR_ZOMBIE_ARMOR: "Zombie Analysis"
   STR_ZOMBIE_ARMOR_UP: "Attack Damage: 60 Mechanical"
-
   STR_MUCKSTAR: "Muckstar"
   STR_MUCKSTARS: "Muckstars"
   STR_MUCKSTARS_UP: "Oxygen breathing xenoforming flora. Aggressive, mobile, moderately dangerous. Begins as an underground collective of spores and emerges when it reaches a certain size or when the ground is sufficently distrubed. Grows ahead of the xenobiome bulk, sometimes in excess of 30km, posing escalating risks to life near the border.{NEWLINE}{NEWLINE}Its xylem-like network of nutrient transport tubes can be catalyzed to deliver strong electrical shocks at long-range. 1/5 MEDI corpse exchange chance.{NEWLINE}{NEWLINE}RISK CLASS: Conventional"
@@ -1386,10 +1424,6 @@ en-US:
   STR_CLIENT_RR: "Client"
   STR_CLIENT_RR_ARMOR: "Client"
   STR_HUMAN_M_CIVILIAN: "Potential Client"
-#uso analysis
-  STR_HOLOUFO_SMALL: "(SIM) SCOUT"
-  STR_HOLOUFO_SMALL_UP: "A holographic recreation of invader scout crafts. Using only engine vectoring for defense, these unarmed USO's posed little threat to system military forces."
-  STR_HOLOUFO_SMALL_MISSION: "RATING: EASY"
 #manuals
   STR_MANUAL_MANUAL: "MANUALS"
   STR_MANUAL_MANUAL_UP: "{NEWLINE}ARTICLE: [error 404]{NEWLINE}EXCEPTION: Invioability Suspended{NEWLINE}{NEWLINE}Every system has rules. Some of the rules are familiar, others are not. Discoveries made through trial and error are inefficient and, more importantly, only appreciated by a minority of processes.{NEWLINE}{NEWLINE}The following manuals are provided in the interest of time and posterity. If time and posterity are unavailable, nothing here will ever be able to help."
@@ -1404,7 +1438,7 @@ en-US:
   STR_RESILIANCE_TUTORIAL: "Resiliance"
   STR_RESILIANCE_TUTORIAL_UP: "How much a given mind has adapted to their own body. Knowing how strong a hand can grip, or how fast legs can run. All creatures become acclimated to their corporeal existance, whether it's made of flesh or steel. Modifying the shell of that existance means a mind has to relearn its body, temporarily {ALT}decreasing max resiliance{ALT} by 50%.{NEWLINE}{NEWLINE}Similarly, modifying the mind means the body has to relearn its brain. Being subjected to {ALT}psionic intrusions{ALT} (or even accessing the psionic network at all) lowers resiliance. However, the body is much faster at learning than the mind, recovering in weeks rather than months.{NEWLINE}{NEWLINE}High resiliance increases {ALT}psionic defense{ALT}, missing resiliance lowers {ALT}TU recovery{ALT}."
   STR_DAMAGE_TYPES: "Damage Types"
-  STR_DAMAGE_TYPES_UP: "Destruction takes many forms and these violent acts fall into several broad categories. Unless otherwise stated, all equipment will follow these rules.{NEWLINE}{NEWLINE}{ALT}Kinetic{ALT} Standard{NEWLINE}{ALT}Mechanical{ALT} +50% TU Damage{NEWLINE}{ALT}Concussive{ALT} +75% Stun Damage{NEWLINE}{ALT}Incendiary{ALT} +450% Moral Damage{NEWLINE}{ALT}Chemical{ALT} Always Hits Front, Armor Shreading{NEWLINE}{ALT}Biological{ALT} +50% Armor Piercing{NEWLINE}{NEWLINE}{ALT}Smoke{ALT} No HP Damage{NEWLINE}{ALT}Electric{ALT} Full Stun, -65% Lethal{NEWLINE}{ALT}Blunt{ALT} Full Stun, -80% Lethal{NEWLINE}{NEWLINE}{ALT}Radiant{ALT} Increased Terrain Damage, +10 Accuracy{NEWLINE}{ALT}Plasma{ALT} +50% Stun Damage, -10 Accuracy{NEWLINE}{ALT}Sonic{ALT} +25% Stun Damage, +25% Armor Piercing"
+  STR_DAMAGE_TYPES_UP: "Destruction takes many forms and these violent acts fall into several broad categories. Unless otherwise stated, all equipment will follow these rules.{NEWLINE}{NEWLINE}{ALT}Kinetic{ALT} Standard{NEWLINE}{ALT}Mechanical{ALT} +50% TU Damage{NEWLINE}{ALT}Concussive{ALT} +75% Stun Damage{NEWLINE}{ALT}Incendiary{ALT} +450% Moral Damage{NEWLINE}{ALT}Chemical{ALT} Always Hits Front, Armor Shreading{NEWLINE}{ALT}Biological{ALT} +75% Armor Piercing{NEWLINE}{NEWLINE}{ALT}Smoke{ALT} No HP Damage{NEWLINE}{ALT}Electric{ALT} Full Stun, -65% Lethal{NEWLINE}{ALT}Blunt{ALT} Full Stun, -80% Lethal{NEWLINE}{NEWLINE}{ALT}Radiant{ALT} Increased Terrain Damage, +10 Accuracy{NEWLINE}{ALT}Plasma{ALT} +50% Stun Damage, -10 Accuracy{NEWLINE}{ALT}Sonic{ALT} +25% Stun Damage, +25% Armor Piercing"
   STR_WEAPON_TYPES: "Attack Types"
   STR_WEAPON_TYPES_UP: "{ALT}Ranged and Melee{ALT} attacks hit for 0-200% damage, representing anything from a grazing shot to a critical strike. They will also randomly deal up to 25% of their damage as stun.{NEWLINE}{NEWLINE}{ALT}Melee{ALT} hits remove TUs equal to 100% of the damage dealt, no matter the damage type. This can potentially distrupt reaction attacks on the current turn, but will not affect a target's TUs on the following turn.{NEWLINE}{NEWLINE}{ALT}Explosions{ALT} are more consistant, inflicting 50-150% damage to small targets. Large targets can be hit up to 4 times, 1 for each tile they are standing on.{NEWLINE}{NEWLINE}{ALT}Stun{ALT} weapons will never wound a target and deal 100% of their damage as stun, but damage types other than blunt/electric still deal full health damage."
   STR_GUN_TYPES: "Ranged Modifiers"
@@ -1736,27 +1770,30 @@ en-US:
   STR_MEDAL_REVOLVINGDOOR: "Invincible"
   STR_MEDAL_REVOLVINGDOOR_NAME: "Invincible" #dying more than once
   STR_MEDAL_REVOLVINGDOOR_UP: "{NEWLINE}todo{NEWLINE}{NEWLINE}Marks being written into a cloned body 3 times.{NEWLINE}{NEWLINE}+10 Bravery"
+#flags
+  STR_ALIEN_INTERVIEWED: "(alien interviewed)"
 #preqs
-  STR_DC_PREQ: "DC (Preq)"
-  STR_LI_PREQ: "LI (Preq)"
-  STR_BC_PREQ: "BC (Preq)"
-  STR_AL_PREQ: "AL (Preq)"
+  STR_DC_PREQ: "DC (preq)"
+  STR_LI_PREQ: "LI (preq)"
+  STR_BC_PREQ: "BC (preq)"
+  STR_AL_PREQ: "AL (preq)"
+  STR_PG_PREQ: "PG (preq)"
 
-  STR_V_P2P_PREQ: "V:P2P (Preq)"
-  STR_V_SSP_PREQ: "V:SSP (Preq)"
+  STR_V_P2P_PREQ: "V:P2P (preq)"
+  STR_V_SSP_PREQ: "V:SSP (preq)"
 # ironeyes
-  STR_TRG_BO_PREQ: "T:BO (Preq)"
-  STR_TRG_RI_PREQ: "T:RI (Preq)"
+  STR_TRG_BO_PREQ: "T:BO (preq)"
+  STR_TRG_RI_PREQ: "T:RI (preq)"
 # netrunners
-  STR_TRG_FL_PREQ: "T:FL (Preq)"
-  STR_TRG_ST_PREQ: "T:ST (Preq)"
+  STR_TRG_FL_PREQ: "T:FL (preq)"
+  STR_TRG_ST_PREQ: "T:ST (preq)"
 # ssp
-  STR_TRG_SG_PREQ: "T:SG (Preq)"
-  STR_TRG_SO_PREQ: "T:SO (Preq)"
+  STR_TRG_SG_PREQ: "T:SG (preq)"
+  STR_TRG_SO_PREQ: "T:SO (preq)"
 # animals
-  STR_TRG_CR_PREQ: "T:CR (Preq)"
-  STR_TRG_MS_PREQ: "T:MS (Preq)"
+  STR_TRG_CR_PREQ: "T:CR (preq)"
+  STR_TRG_MS_PREQ: "T:MS (preq)"
 # robots
-  STR_TRG_RS_PREQ: "T:RS (Preq)"
+  STR_TRG_RS_PREQ: "T:RS (preq)"
 # simulated
-  STR_TRG_HS_PREQ: "T:HS (Preq)"
+  STR_TRG_HS_PREQ: "T:HS (preq)"

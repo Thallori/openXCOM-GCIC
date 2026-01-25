@@ -148,6 +148,10 @@ extraSprites:
       203: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_deep_bigob.png
       204: Resources/Items/Tools/riveter_bigob.png
       205: Resources/Items/Tools/Ammo/riveter_ammo_bigob.png
+      206: Resources/Items/Utility/sprint_bigob.png
+      207: Resources/Items/Utility/morning_bigob.png
+      208: Resources/Items/Explosives/molotov_bigob.png
+      209: Resources/Items/Explosives/flask_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -242,6 +246,8 @@ extraSprites:
       188: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_deep_floorob.png
       189: Resources/Items/Tools/riveter_floorob.png
       190: Resources/Items/Tools/Ammo/riveter_ammo_floorob.png
+      191: Resources/Items/Utility/sprint_floorob.png
+      192: Resources/Items/Utility/morning_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -350,8 +356,9 @@ extraSprites:
     subX: 128
     subY: 64
     files:
-      80: Resources/Animations/grey_skull.png
-      88: Resources/Animations/green_skull.png
+      80: Resources/Animations/Explosions/grey_skull.png
+      88: Resources/Animations/Explosions/green_skull.png
+      96: Resources/Animations/Explosions/flames.png
 
   - type: SMOKE.PCK
     height: 80
@@ -780,9 +787,9 @@ extraSprites:
 
 #ufopedia
   - typeSingle: ALIGN_TEST_CPAL
-    fileSingle: Resources/Pedia/align_test_CPAL.png
+    fileSingle: Resources/align_test_CPAL.png
   - typeSingle: ALIGN_TEST2_CPAL
-    fileSingle: Resources/Pedia/align_test2_CPAL.png
+    fileSingle: Resources/align_test2_CPAL.png
   - typeSingle: TEMPHARDPOINT.SPK
     fileSingle: Resources/temphardpoint_pedia.png
 # files
@@ -844,6 +851,8 @@ extraSprites:
     fileSingle: Resources/Pedia/techbiocode_CPAL.png
   - typeSingle: STAPLE_CPAL
     fileSingle: Resources/Pedia/techstaple_CPAL.png
+  - typeSingle: MEDICAL_CPAL
+    fileSingle: Resources/Pedia/medical_CPAL.png
 # crafts
   - typeSingle: CRAFT_BICUBE_CPAL
     fileSingle: Resources/Pedia/craft_bicube_CPAL.png

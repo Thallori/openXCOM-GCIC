@@ -135,6 +135,7 @@ alienDeployments:
             - STR_BOUNTY_1
           -
             - STR_STL_KNIFE
+            - STR_MOLOTOV
             - STR_BOUNTY_1
 
   - type: STR_RESCUE_RR
@@ -451,8 +452,10 @@ alienDeployments:
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO2
-          - []
-          - []
+          - 
+            - STR_ACIDFLASK
+          - 
+            - STR_ACIDFLASK
       - alienRank: 6
         lowQty: 3
         medQty: 3

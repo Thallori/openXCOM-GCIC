@@ -118,6 +118,10 @@ Hardmode Expansion			[mod]
  hellrazor				[author]
   Sniper Rifle SFX			[wholecloth]		(oshiaki2115)
 
+The World of Terrifying Silence		[mod]
+ Nord					[author]
+  Glass Breaking SFX			[mixed]
+
 Inspiration comes from many sources, too many to list. Ranging from decades old fan fiction that could have been done better to scientific journals. However, the ideas taken from the OpenXCom community are listed here.
 
 X-Com Files/FMP

@@ -53,6 +53,8 @@ extraSounds:
       131: Resources/Sounds/Impacts/heavy_hit.wav
       132: Resources/Sounds/Fire/plasmapistol_fire.wav
       133: Resources/Sounds/Impacts/plasma_hit.wav
+      134: Resources/Sounds/Impacts/glassfire_hit.wav
+      135: Resources/Sounds/Impacts/glassburn_hit.wav
 
   - type: GEO.CAT
     files:

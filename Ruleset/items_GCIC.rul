@@ -255,7 +255,7 @@ items:
     confAimed:
       name: STR_AIMSHOCK
     costAimed:
-      time: 9
+      time: 12
       energy: 12
     experienceTrainingMode: 7
     fixedWeapon: true
@@ -432,6 +432,7 @@ items:
     dropoff: 3
     kneelBonus: 110
     fixedWeapon: true
+    fixedWeaponShow: true
     recover: false
 
 # kinetic
@@ -505,7 +506,7 @@ items:
     hitSound: 13
     hitAnimation: 26
     battleType: 2
-    weight: 3
+    weight: 2
     clipSize: 4
     power: 18
     damageBonus:
@@ -1338,7 +1339,7 @@ items:
     armor: 20
 
   - type: STR_CHEM_SMG
-    categories: [STR_INFILTRATION_CATEGORY, STR_INCENDIARY_CATEGORY, STR_SMGS_CATEGORY]
+    categories: [STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
     requiresBuy:
       - STR_VENDOR_PRINTER
       - STR_CHEM_SMG
@@ -1410,7 +1411,7 @@ items:
       ToArmorPre: 0.05
     armor: 20
   - type: STR_CHEM_SMG_AMMO2
-    categories: [STR_INFILTRATION_CATEGORY, STR_INCENDIARY_CATEGORY, STR_SMGS_CATEGORY]
+    categories: [STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
     requiresBuy:
       - STR_TODO
       - STR_CHEM_SMG
@@ -1986,9 +1987,123 @@ items:
     armor: 120
 
 # grenades
-  - type: STR_PIPEBOMB
-    categories: [STR_INFILTRATION_CATEGORY, STR_EXPLOSIVES_CATEGORY]
+  - type: STR_MOLOTOV
+    categories: [STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_P2P
+      - STR_MOLOTOV
     size: 0.1
+    costBuy: 19
+    costSell: 5
+    transferTime: 4
+    bigSprite: 208
+    floorSprite: 121 #
+    handSprite: 216 #
+    hitAnimation: 96
+    explosionHitSound: 134
+    battleType: 4
+    weight: 4
+    power: 20
+    damageType: 2
+    damageAlter:
+      RandomType: 9
+      FireBlastCalc: false
+      IgnoreSelfDestruct: false
+      IgnoreDirection: false
+      FixRadius: 1
+      FireThreshold: 5
+      ToMorale: 4.5
+      ToStun: 0.25
+    primeActionName: STR_PRIME_MOLOTOV
+    primeActionMessage: STR_PRIME_MOLOTOV_MESS
+    unprimeActionName: STR_UNPRIME_MOLOTOV
+    unprimeActionMessage: STR_UNPRIME_MOLOTOV_MESS
+    fuseType: -2
+    tuPrime: 30
+    tuUnprime: 15
+    tuThrow: 20
+    throwDropoffRange: 12
+    throwDropoff: 4
+    attraction: 30
+    armor: 20
+
+  - type: STR_ACIDFLASK
+    ufopediaType: STR_ACIDFLASK_FAKE
+    categories: [STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_ACIDFLASK
+    size: 0.1
+    costBuy: 119
+    costSell: 30
+    transferTime: 4
+    bigSprite: 209
+    floorSprite: 121 #
+    handSprite: 216 #
+    bulletSprite: 8 #
+    hitAnimation: 88
+    explosionHitSound: 135
+    fireSound: 39
+    battleType: 1
+    weight: 3
+    clipSize: 1
+    power: 45
+    damageType: 8
+    damageAlter:
+      IgnoreSelfDestruct: false
+      IgnoreDirection: true
+      ToArmorPre: 0.05
+      FixRadius: 4
+    experienceTrainingMode: 7
+    arcingShot: true
+    tuAimed: 30
+    accuracyAimed: 100
+    accuracyMultiplier:
+      throwing: 1.0
+    confAimed:
+      name: STR_ACIDFLASK_ATTACK
+    maxRange: 2
+    attraction: 10
+    armor: 20
+
+  - type: STR_ACIDFLASK_FAKE
+    categories: [STR_DEBUG_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
+    requiresBuy:
+      - STR_DEBUG
+      - STR_TODO
+      - STR_ACIDFLASK
+    size: 0.1
+    costBuy: 119
+    costSell: 30
+    transferTime: 4
+    bigSprite: 209
+    floorSprite: 121 #
+    handSprite: 216 #
+    hitAnimation: 88
+    explosionHitSound: 135
+    battleType: 4
+    weight: 3
+    power: 45
+    damageType: 8
+    damageAlter:
+      IgnoreSelfDestruct: false
+      IgnoreDirection: true
+      ToArmorPre: 0.05
+      FixRadius: 4
+    fuseType: -2
+    tuPrime: 0
+    tuThrow: 30
+    throwRange: 2
+    attraction: 10
+    armor: 20
+    ignoreInCraftEquip: true
+
+  - type: STR_PIPEBOMB
+    categories: [STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+    size: 0.1
+    costBuy: 199
     costSell: 50
     transferTime: 4
     bigSprite: 122
@@ -2003,21 +2118,24 @@ items:
       FixRadius: 4
       RandomType: 9
       ToItem: 0.5
-      ToStun: 1.0
+      ToStun: 0.75
       IgnoreOverKill: false
       IgnoreSelfDestruct: false
     fuseType: 0
     tuPrime: 30
     tuUnprime: 5
     tuThrow: 20
-    attraction: 6
+    underwaterThrowDropoffRange: 8
+    throwDropoffRange: 12
+    throwDropoff: 4
+    attraction: 20
     armor: 45
 
   - type: STR_ELERIUM_BOMB
-    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_EXPLOSIVES_CATEGORY]
+    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
     size: 0.1
     costSell: 200000
-    recoveryPoints: 1
+    recoveryPoints: 10
     bigSprite: 155
     floorSprite: 149
     handSprite: 336
@@ -2038,7 +2156,9 @@ items:
     tuPrime: 30
     tuUnprime: 5
     tuThrow: 20
-    attraction: 6
+    throwDropoffRange: 12
+    throwDropoff: 4
+    attraction: 50
     armor: 120
 
 # melee
@@ -2445,7 +2565,7 @@ items:
     armor: 20
 
   - type: STR_SURVEY_KNOCKER
-    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_BOWS_CATEGORY]
+    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY]
     requiresBuy:
       - STR_VENDOR_VCM
       - STR_SURVEY_KNOCKER
@@ -2490,7 +2610,7 @@ items:
     attraction: 10
     armor: 30
   - type: STR_KNOCK_FLARE_AMMO
-    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_BOWS_CATEGORY]
+    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY]
     requiresBuy:
       - STR_VENDOR_VCM
       - STR_SURVEY_KNOCKER
@@ -2525,7 +2645,7 @@ items:
       ToTile: 0.25
     armor: 20
   - type: STR_KNOCK_BOLT_AMMO
-    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_BOWS_CATEGORY]
+    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY]
     requiresBuy:
       - STR_VENDOR_VCM
       - STR_SURVEY_KNOCKER
@@ -2636,7 +2756,7 @@ items:
     armor: 8
 
   - type: STR_CHEMFLARE
-    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
+    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
     requiresBuy:
       - STR_VENDOR_VCM
       - STR_SURVEY_KNOCKER
@@ -2658,7 +2778,7 @@ items:
     armor: 30
 
   - type: STR_CHEMFLARE_NO_RECOVER
-    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
+    categories: [STR_DEBUG_CATEGORY]
     ufopediaType: STR_CHEMFLARE
     recover: false
     bigSprite: 119
@@ -2672,7 +2792,7 @@ items:
     armor: 30
 
   - type: STR_MOTION_DETECTOR
-    categories: [STR_VACUUM_RATED_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
+    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY]
     requiresBuy:
       - STR_VENDOR_VCM
       - STR_TODO
@@ -2688,7 +2808,7 @@ items:
     armor: 30
 
   - type: STR_STIM_INHALER
-    categories: [STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
+    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
     requiresBuy:
       - STR_VENDOR_P2P
       - STR_STIM_INHALER
@@ -2706,9 +2826,69 @@ items:
     weight: 2
     stimulant: 2
     manaRecovery: -3
+    moraleRecovery: 35
     stunRecovery: -15
     energyRecovery: 35
-    moraleRecovery: 35
+    medikitTargetMatrix: 22
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 2
+    costUse:
+      time: 8
+    flatRate: true
+    armor: 20
+
+  - type: STR_STIM_SPRINT
+    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+    size: 0.05
+    costBuy: 239
+    costSell: 60
+    transferTime: 4
+    hitSound: 103
+    bigSprite: 206
+    floorSprite: 191
+    invWidth: 1
+    invHeight: 1
+    battleType: 6
+    medikitActionName: STR_USE_INHALER
+    weight: 3
+    stimulant: 3
+    manaRecovery: -1
+    moraleRecovery: -5
+    stunRecovery: 5
+    energyRecovery: 20
+    medikitTargetMatrix: 22
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 2
+    costUse:
+      time: 8
+    flatRate: true
+    armor: 20
+
+  - type: STR_STIM_MORNING
+    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+    size: 0.05
+    costBuy: 179
+    costSell: 45
+    transferTime: 4
+    hitSound: 103
+    bigSprite: 207
+    floorSprite: 192
+    invWidth: 1
+    invHeight: 1
+    battleType: 6
+    medikitActionName: STR_USE_INHALER
+    weight: 3
+    stimulant: 2
+    manaRecovery: -2
+    moraleRecovery: 5
+    stunRecovery: 25
+    energyRecovery: 5
     medikitTargetMatrix: 22
     medikitTargetSelf: true
     isConsumable: true
@@ -2719,7 +2899,7 @@ items:
     armor: 20
 
   - type: STR_MEDI_SPRAY
-    categories: [STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
+    categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
     requiresBuy:
       - STR_VENDOR_MEDI
     size: 0.05
@@ -2747,7 +2927,7 @@ items:
     armor: 20
 
   - type: STR_MEDI_FIRST
-    categories: [STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
+    categories: [STR_VACUUM_RATED_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
     requiresBuy:
       - STR_VENDOR_MEDI
     size: 0.1
@@ -2775,7 +2955,7 @@ items:
     armor: 30
 
   - type: STR_MEDI_TRAUMA
-    categories: [STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
+    categories: [STR_VACUUM_RATED_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
     requiresBuy:
       - STR_VENDOR_MEDI
       - STR_MEDI_TRAUMA_ITEM
