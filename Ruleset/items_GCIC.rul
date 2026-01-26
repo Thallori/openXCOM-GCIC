@@ -231,11 +231,11 @@ items:
     battleType: 1
     arcingShot: true
     power: 6
+    damageType: 10
     damageBonus:
       throwing: 0.1
       stamina: 0.2
       reactions: 0.1
-    damageType: 10
     damageAlter:
       ToWound: 0.0
       RandomWound: false
@@ -258,6 +258,32 @@ items:
       time: 12
       energy: 12
     experienceTrainingMode: 7
+    meleePower: 5
+    meleeType: 6
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+      reactions: 0.1
+    meleeAlter: 
+      RandomType: 6
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.4
+      ToHealth: 0.15
+      ToStun: 1.0
+      RandomStun: false
+      IgnoreSelfDestruct: false
+      IgnorePainImmunity: false
+      ToTime: 1.0
+    confMelee:
+      name: STR_PUNCH
+    costMelee:
+      time: 8
+      energy: 2
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 0.5
+      reactions: 0.5
     fixedWeapon: true
     specialUseEmptyHand: true
     recover: false
@@ -1997,8 +2023,8 @@ items:
     costSell: 5
     transferTime: 4
     bigSprite: 208
-    floorSprite: 121 #
-    handSprite: 216 #
+    floorSprite: 193
+    handSprite: 440
     hitAnimation: 96
     explosionHitSound: 134
     battleType: 4
@@ -2019,9 +2045,9 @@ items:
     unprimeActionName: STR_UNPRIME_MOLOTOV
     unprimeActionMessage: STR_UNPRIME_MOLOTOV_MESS
     fuseType: -2
-    tuPrime: 30
-    tuUnprime: 15
-    tuThrow: 20
+    tuPrime: 20
+    tuUnprime: 10
+    tuThrow: 25
     throwDropoffRange: 12
     throwDropoff: 4
     attraction: 30
@@ -2038,9 +2064,10 @@ items:
     costSell: 30
     transferTime: 4
     bigSprite: 209
-    floorSprite: 121 #
-    handSprite: 216 #
-    bulletSprite: 8 #
+    floorSprite: 194
+    handSprite: 448
+    bulletSprite: 23
+    bulletSpeed: -2
     hitAnimation: 88
     explosionHitSound: 135
     fireSound: 39
@@ -2077,8 +2104,8 @@ items:
     costSell: 30
     transferTime: 4
     bigSprite: 209
-    floorSprite: 121 #
-    handSprite: 216 #
+    floorSprite: 194
+    handSprite: 448
     hitAnimation: 88
     explosionHitSound: 135
     battleType: 4
@@ -2091,8 +2118,9 @@ items:
       ToArmorPre: 0.05
       FixRadius: 4
     fuseType: -2
-    tuPrime: 0
-    tuThrow: 30
+    tuPrime: 5
+    tuUnprime: 5
+    tuThrow: 25
     throwRange: 2
     attraction: 10
     armor: 20
@@ -2124,7 +2152,7 @@ items:
     fuseType: 0
     tuPrime: 30
     tuUnprime: 5
-    tuThrow: 20
+    tuThrow: 25
     underwaterThrowDropoffRange: 8
     throwDropoffRange: 12
     throwDropoff: 4
@@ -2155,7 +2183,7 @@ items:
     fuseType: 0
     tuPrime: 30
     tuUnprime: 5
-    tuThrow: 20
+    tuThrow: 25
     throwDropoffRange: 12
     throwDropoff: 4
     attraction: 50
@@ -2752,7 +2780,7 @@ items:
     fuseTriggerEvents:
       defaultBehavior: false
       throwTrigger: true
-    tuThrow: 15
+    tuThrow: 20
     armor: 8
 
   - type: STR_CHEMFLARE
@@ -2774,7 +2802,7 @@ items:
     fuseTriggerEvents:
       defaultBehavior: false
       throwTrigger: true
-    tuThrow: 15
+    tuThrow: 20
     armor: 30
 
   - type: STR_CHEMFLARE_NO_RECOVER
@@ -2788,7 +2816,7 @@ items:
     weight: 2
     power: 12
     fuseType: -3
-    tuThrow: 15
+    tuThrow: 20
     armor: 30
 
   - type: STR_MOTION_DETECTOR
@@ -3224,7 +3252,7 @@ items:
     categories: [STR_PERKS_CATEGORY]
     monthlySalary: -950
     costSell: 7500
-    recoveryPoints: 1
+    recoveryPoints: 3
 
   - type: STR_BOUNTY_1
     categories: [STR_PERKS_CATEGORY]

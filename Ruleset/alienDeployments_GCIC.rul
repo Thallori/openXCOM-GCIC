@@ -454,7 +454,9 @@ alienDeployments:
             - STR_CHEM_SMG_AMMO2
           - 
             - STR_ACIDFLASK
+            - STR_ACIDFLASK
           - 
+            - STR_ACIDFLASK
             - STR_ACIDFLASK
       - alienRank: 6
         lowQty: 3

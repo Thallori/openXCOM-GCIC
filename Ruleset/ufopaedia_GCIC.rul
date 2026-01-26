@@ -372,7 +372,7 @@ ufopaedia:
     section: STR_TECHNOLOGIES_UC
     type_id: 7
     text_width: 180
-    image_id: MEDICAL_CPAL
+    image_id: REDOX_CPAL
 
   - id: STR_LASER_AMMO_PRINTING
     requires:

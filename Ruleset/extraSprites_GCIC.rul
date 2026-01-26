@@ -248,6 +248,8 @@ extraSprites:
       190: Resources/Items/Tools/Ammo/riveter_ammo_floorob.png
       191: Resources/Items/Utility/sprint_floorob.png
       192: Resources/Items/Utility/morning_floorob.png
+      193: Resources/Items/Explosives/molotov_floorob.png
+      194: Resources/Items/Explosives/flask_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -295,6 +297,8 @@ extraSprites:
       416: Resources/Items/Tools/sledgehammer_handob.png
       424: Resources/Items/Builtins/holopistol_handob.png
       432: Resources/Items/Tools/riveter_handob.png
+      440: Resources/Items/Explosives/molotov_handob.png
+      448: Resources/Items/Explosives/flask_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
@@ -366,6 +370,12 @@ extraSprites:
     subX: 32
     subY: 40
     files:
+      20: Resources/UI/smoke_rank0.png
+      21: Resources/UI/smoke_rank1.png
+      22: Resources/UI/smoke_rank2.png
+      23: Resources/UI/smoke_rank3.png
+      24: Resources/UI/smoke_rank4.png
+      25: Resources/UI/smoke_rank5.png
       56: Resources/Animations/electric_hit.png
       66: Resources/Animations/redlaser_hit.png
       76: Resources/Animations/sonic_hit.png
@@ -400,6 +410,7 @@ extraSprites:
       700: Resources/Animations/Projectiles/bubbleblue_bullet.png
       735: Resources/Animations/Projectiles/bubblepurple_bullet.png
       770: Resources/Animations/Projectiles/bubblered_bullet.png
+      805: Resources/Animations/Projectiles/flask_bullet.png
 
 #paperdolls
 # human
@@ -853,6 +864,8 @@ extraSprites:
     fileSingle: Resources/Pedia/techstaple_CPAL.png
   - typeSingle: MEDICAL_CPAL
     fileSingle: Resources/Pedia/medical_CPAL.png
+  - typeSingle: REDOX_CPAL
+    fileSingle: Resources/Pedia/redox_CPAL.png
 # crafts
   - typeSingle: CRAFT_BICUBE_CPAL
     fileSingle: Resources/Pedia/craft_bicube_CPAL.png

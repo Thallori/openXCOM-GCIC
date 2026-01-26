@@ -82,8 +82,8 @@ soldiers:
     costSalaryColonel: 200
     costSalaryCommander: 200
     minStats:
-      tu: 45
-      stamina: 45
+      tu: 40
+      stamina: 40
       health: 25
       bravery: 10
       reactions: 35
@@ -95,8 +95,8 @@ soldiers:
       psiSkill: 0
       mana: 20
     maxStats:
-      tu: 65
-      stamina: 65
+      tu: 60
+      stamina: 60
       health: 50
       bravery: 50
       reactions: 60
@@ -108,8 +108,8 @@ soldiers:
       psiSkill: 12
       mana: 30
     statCaps:
-      tu: 55
-      stamina: 55
+      tu: 50
+      stamina: 50
       health: 40
       bravery: 60
       reactions: 50
@@ -123,7 +123,7 @@ soldiers:
     trainingStatCaps:
       psiSkill: 40
     armor: STR_PLEX_DRONE_HYBRID_ARMOR
-    standHeight: 20
+    standHeight: 22
     kneelHeight: 14
     value: 1
     allowPiloting: false
@@ -148,8 +148,8 @@ soldiers:
     costSalaryColonel: 250
     costSalaryCommander: 250
     minStats:
-      tu: 45
-      stamina: 50
+      tu: 40
+      stamina: 45
       health: 25
       bravery: 10
       reactions: 30
@@ -161,8 +161,8 @@ soldiers:
       psiSkill: 0
       mana: 20
     maxStats:
-      tu: 65
-      stamina: 70
+      tu: 60
+      stamina: 65
       health: 50
       bravery: 50
       reactions: 55
@@ -174,8 +174,8 @@ soldiers:
       psiSkill: 12
       mana: 30
     statCaps:
-      tu: 55
-      stamina: 60
+      tu: 50
+      stamina: 55
       health: 40
       bravery: 60
       reactions: 45
@@ -189,7 +189,7 @@ soldiers:
     trainingStatCaps:
       psiSkill: 40
     armor: STR_PLEX_DRONE_HUMAN_ARMOR
-    standHeight: 20
+    standHeight: 22
     kneelHeight: 14
     value: 1
     transferTime: 72
@@ -215,8 +215,8 @@ soldiers:
     costSalaryColonel: 400
     costSalaryCommander: 400
     minStats:
-      tu: 45
-      stamina: 45
+      tu: 40
+      stamina: 40
       health: 25
       bravery: 10
       reactions: 30
@@ -228,8 +228,8 @@ soldiers:
       psiSkill: 0
       mana: 20
     maxStats:
-      tu: 65
-      stamina: 65
+      tu: 60
+      stamina: 60
       health: 50
       bravery: 50
       reactions: 55
@@ -241,8 +241,8 @@ soldiers:
       psiSkill: 12
       mana: 30
     statCaps:
-      tu: 55
-      stamina: 55
+      tu: 50
+      stamina: 50
       health: 40
       bravery: 60
       reactions: 45
@@ -282,8 +282,8 @@ soldiers:
     costSalaryColonel: 300
     costSalaryCommander: 300
     minStats:
-      tu: 45
-      stamina: 25
+      tu: 40
+      stamina: 30
       health: 25
       bravery: 10
       reactions: 35
@@ -295,8 +295,8 @@ soldiers:
       psiSkill: 0
       mana: 20
     maxStats:
-      tu: 65
-      stamina: 55
+      tu: 60
+      stamina: 50
       health: 50
       bravery: 50
       reactions: 60
@@ -308,8 +308,8 @@ soldiers:
       psiSkill: 12
       mana: 30
     statCaps:
-      tu: 55
-      stamina: 45
+      tu: 50
+      stamina: 40
       health: 40
       bravery: 60
       reactions: 50
@@ -323,8 +323,8 @@ soldiers:
     trainingStatCaps:
       psiSkill: 40
     armor: STR_PLEX_DRONE_DEEP_ARMOR
-    standHeight: 18
-    kneelHeight: 12
+    standHeight: 22
+    kneelHeight: 14
     value: 1
     transferTime: 72
     allowPiloting: false

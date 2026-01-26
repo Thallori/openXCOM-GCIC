@@ -83,7 +83,7 @@ From the Apocalypse			[mod]
   Motion Sensor				[wholecloth]
   Soldier/Base Stats Background		[recolour]
   Bite Sprite				[wholecloth]		(original)
-  Medical Facility			[touchup, reclour]	(original)
+  Medical Facility			[touchup, recolour]	(original)
   Robosphere				[touchup]		(original)
 
 Delicious Colors			[mod]
@@ -120,7 +120,7 @@ Hardmode Expansion			[mod]
 
 The World of Terrifying Silence		[mod]
  Nord					[author]
-  Glass Breaking SFX			[mixed]
+  Glass Breaking SFX			[mix]
 
 Inspiration comes from many sources, too many to list. Ranging from decades old fan fiction that could have been done better to scientific journals. However, the ideas taken from the OpenXCom community are listed here.
 

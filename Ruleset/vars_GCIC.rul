@@ -129,7 +129,7 @@ bughuntMaxEnemies: 2
 bughuntRank: 0
 bughuntLowMorale: 40
 bughuntTimeUnitsLeft: 60
-ufoGlancingHitThreshold: 5
+ufoGlancingHitThreshold: 2
 ufoBeamWidthParameter: 50
 pilotAccuracyZeroPoint: 50
 pilotAccuracyRange: 50
@@ -181,11 +181,11 @@ fixedUserOptions:
   battleExplosionHeight: 2
 
 recommendedUserOptions:
+  playIntro: true
   customInitialBase: false
   battleInstantGrenade: false
   showAllCommendations: false
   soldierDiaries: true
-  canTransferCraftsWhileAirborne: true
   showMoreStatsInInventoryView: true
   strafe: true
   forceFire: true
@@ -203,7 +203,6 @@ recommendedUserOptions:
   oxceEnableOffCentreShooting: true
   oxceEnableSlackingIndicator: true
   oxceGeoscapeEventsInstantDelivery: true
-  playIntro: true
   oxceShowETAMode: 2
 
 constants:

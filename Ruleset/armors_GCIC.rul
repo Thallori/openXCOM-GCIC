@@ -284,7 +284,7 @@ armors:
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryGood
         stamina: 0.20
-        healthNormalized: 20
+        healthNormalized: 15
       morale: *MoraleRecoveryTypical
       mana: *ManaRecoveryTypical
     overKill: 1.5
@@ -334,7 +334,7 @@ armors:
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryHumanGood
         stamina: 0.25
-        healthNormalized: 20
+        healthNormalized: 15
       morale: *MoraleRecoveryTypical
       mana: *ManaRecoveryTypical
     overKill: 1.5
@@ -494,7 +494,7 @@ armors:
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryGreat
         stamina: 0.20
-        healthNormalized: 30
+        healthNormalized: 20
       morale: *MoraleRecoveryTypical
       mana: *ManaRecoveryTypical
     overKill: 1.5
@@ -548,7 +548,7 @@ armors:
       stun: *StunRecoveryTypical
       energy: &EnergyRecoverHumanGreat
         stamina: 0.25
-        healthNormalized: 30
+        healthNormalized: 20
       morale: *MoraleRecoveryTypical
       mana: *ManaRecoveryTypical
     overKill: 1.5
@@ -716,7 +716,7 @@ armors:
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryPoor
         stamina: 0.20
-        healthNormalized: 10
+        healthNormalized: 8
       morale: *MoraleRecoveryTypical
       mana: *ManaRecoveryTypical
     overKill: 1.5
@@ -771,7 +771,7 @@ armors:
       stun: *StunRecoveryTypical
       energy: &EnergyRecoveryHumanPoor
         stamina: 0.25
-        healthNormalized: 10
+        healthNormalized: 8
       morale: *MoraleRecoveryTypical
       mana: *ManaRecoveryTypical
     overKill: 1.5
@@ -1250,6 +1250,9 @@ armors:
       energy: *EnergyRecoveryTypical
     overKill: 1.5
     loftempsSet: [ 3 ]
+    ai:
+      targetWeightAsFriendly: -1
+      targetWeightAsNeutral: -1
 
 # ssp
   - type: STR_SSPGUARD_ARMOR

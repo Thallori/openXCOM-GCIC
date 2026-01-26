@@ -31,7 +31,7 @@ units:
       psiSkill: 0
       mana: 25
     armor: STR_PLEX_DRONE_HYBRID_ARMOR
-    standHeight: 20
+    standHeight: 22
     kneelHeight: 14
     value: 1
     deathSound: [10]
@@ -66,7 +66,7 @@ units:
       psiSkill: 0
       mana: 25
     armor: STR_PLEX_DRONE_HUMAN_ARMOR
-    standHeight: 20
+    standHeight: 22
     kneelHeight: 14
     value: 1
     deathSound: [41, 42, 43]
@@ -126,8 +126,8 @@ units:
       psiSkill: 0
       mana: 25
     armor: STR_PLEX_DRONE_DEEP_ARMOR
-    standHeight: 18
-    kneelHeight: 12
+    standHeight: 22
+    kneelHeight: 14
     value: 1
     deathSound: [113, 114, 115]
     builtInWeaponSets: *drone1ToolsLight
@@ -151,13 +151,13 @@ units:
       psiSkill: 0
       mana: 30
     armor: STR_BOOSTER_ARMOR
-    standHeight: 20
+    standHeight: 22
     kneelHeight: 14
     value: 4
     deathSound: [41, 42, 43]
     energyRecovery: 30
-    intelligence: 3
-    aggression: 4
+    intelligence: 2
+    aggression: 5
     spotter: 0
     sniper: 0
     canSurrender: true
@@ -180,14 +180,14 @@ units:
       psiSkill: 0
       mana: 30
     armor: STR_RIPPER_ARMOR
-    standHeight: 20
+    standHeight: 22
     kneelHeight: 14
     value: 5
     deathSound: [44, 45, 46]
     energyRecovery: 30
-    intelligence: 3
-    aggression: 5
-    spotter: 1
+    intelligence: 2
+    aggression: 2
+    spotter: 0
     sniper: 0
     canSurrender: true
 
@@ -210,12 +210,12 @@ units:
       psiSkill: 0
       mana: 40
     armor: STR_FREELANCER_ARMOR
-    standHeight: 20
+    standHeight: 22
     kneelHeight: 14
     value: 4
     deathSound: [41, 42, 43]
     energyRecovery: 30
-    intelligence: 3
+    intelligence: 2
     aggression: 1
     spotter: 0
     sniper: 0
@@ -238,12 +238,12 @@ units:
       psiSkill: 0
       mana: 40
     armor: STR_FREELANCER_ARMOR
-    standHeight: 20
+    standHeight: 22
     kneelHeight: 14
     value: -4
     deathSound: [41, 42, 43]
     energyRecovery: 30
-    intelligence: 3
+    intelligence: 2
     aggression: 1
     spotter: 0
     sniper: 0
@@ -266,12 +266,12 @@ units:
       psiSkill: 0
       mana: 40
     armor: STR_SKIPTRACER_ARMOR
-    standHeight: 18
-    kneelHeight: 12
+    standHeight: 22
+    kneelHeight: 14
     value: -5
     deathSound: [126]
     energyRecovery: 30
-    intelligence: 3
+    intelligence: 2
     aggression: 1
     spotter: 0
     sniper: 0
@@ -301,7 +301,7 @@ units:
     value: -5
     deathSound: [113, 114, 115]
     energyRecovery: 30
-    intelligence: 3
+    intelligence: 1
     aggression: 2
     spotter: 0
     sniper: 0
@@ -330,7 +330,7 @@ units:
     value: -8
     deathSound: [113, 114, 115]
     energyRecovery: 30
-    intelligence: 3
+    intelligence: 2
     aggression: 2
     spotter: 1
     sniper: 0
@@ -354,7 +354,7 @@ units:
       psiSkill: 0
       mana: 25
     armor: STR_DRONEHYBRID_ARMOR
-    standHeight: 18
+    standHeight: 22
     kneelHeight: 14
     moraleLossWhenKilled: 10
     pickUpWeaponsMoreActively: 0
@@ -379,7 +379,7 @@ units:
       psiSkill: 0
       mana: 25
     armor: STR_DRONEHUMAN_ARMOR
-    standHeight: 20
+    standHeight: 22
     kneelHeight: 14
     moraleLossWhenKilled: 10
     pickUpWeaponsMoreActively: 0
@@ -429,8 +429,8 @@ units:
       psiSkill: 0
       mana: 25
     armor: STR_DRONESHARK_ARMOR
-    standHeight: 18
-    kneelHeight: 12
+    standHeight: 22
+    kneelHeight: 14
     moraleLossWhenKilled: 10
     pickUpWeaponsMoreActively: 0
     value: -1
@@ -461,7 +461,7 @@ units:
     value: 30
     deathSound: 9
     intelligence: 4
-    aggression: 2
+    aggression: 8
     energyRecovery: 40
     livingWeapon: true
     builtInWeaponSets:
@@ -492,7 +492,7 @@ units:
     standHeight: 18
     kneelHeight: 18
     value: 0
-    intelligence: 3
+    intelligence: 0
     aggression: 8
     energyRecovery: 20
     isLeeroyJenkins: true
@@ -524,8 +524,8 @@ units:
     value: 8
     deathSound: 7
     moveSound: 16
-    intelligence: 3
-    aggression: 2
+    intelligence: 1
+    aggression: 1
     energyRecovery: 40
     livingWeapon: true
     builtInWeaponSets:
@@ -556,7 +556,7 @@ units:
     value: 5
     deathSound: 23
     moveSound: 15
-    intelligence: 10
+    intelligence: 3
     aggression: 2
     spotter: 1
     energyRecovery: 50
@@ -589,7 +589,7 @@ units:
     value: 5
     deathSound: 10
     intelligence: 3
-    aggression: 2
+    aggression: 1
     spotter: 1
     sniper: 50
     energyRecovery: 30
