@@ -501,7 +501,7 @@ en-US:
 #briefings
 # ufos
   STR_HOLOUFO_TITLE_BRIEFING: "Invasion Readiness Simulation"
-  STR_HOLOUFO_DESC_BRIEFING: "As part of the Counter-Invasion Treaty, missions based on archival data are provided free of charge. All corporations are encouraged to participate. Top performers may even be invited to the IR-Licensing Games.{NEWLINE}{NEWLINE}Succeeding in this historic simulation will pay subsidies for captured holograms. Weapons are non-lethal plasma-gel. Unconcious/abandoned drones will be forfeit on failure.{NEWLINE}{NEWLINE}We may abort this operation."
+  STR_HOLOUFO_DESC_BRIEFING: "As part of the Counter-Invasion Treaty, missions based on archival data are provided free of charge. All corporations are encouraged to participate. Top performers may even be invited to the IR-Licensing Games.{NEWLINE}{NEWLINE}Succeeding in this historic simulation will pay subsidies for hologram remains. Weapons are non-lethal plasma-gel. Unconcious/abandoned drones will be forfeit on failure.{NEWLINE}{NEWLINE}We may abort this operation."
 # rescue
   STR_RESCUE_1: "Clients: Early Adopters"
   STR_RESCUE_1_ALERT: "CLIENTS REQUIRE RESCUE"

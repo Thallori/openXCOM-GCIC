@@ -258,6 +258,8 @@ items:
       time: 12
       energy: 12
     experienceTrainingMode: 7
+    meleeHitSound: 102
+    meleeAnimation: 0
     meleePower: 5
     meleeType: 6
     meleeBonus:
