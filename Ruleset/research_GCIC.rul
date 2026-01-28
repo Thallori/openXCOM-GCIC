@@ -966,7 +966,7 @@ research:
     needItem: true
     destroyItem: true
     cost: 5
-    points: 20
+    points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
     getOneFree:
@@ -975,11 +975,6 @@ research:
         - STR_ELECTRIC_NAILER
         - STR_SURVEY_KNOCKER
     getOneFreeProtected:
-      STR_MEDI_MISSIONS:
-        - STR_HYBRID_AUTOPSY
-        - STR_HUMAN_AUTOPSY
-        - STR_SHARK_AUTOPSY
-        - STR_DEEP_AUTOPSY
       STR_TRG_BO_PREQ:
         - STR_BOOSTER_PRIVATE
         - STR_9MM_PISTOL
@@ -1022,6 +1017,30 @@ research:
       STR_TRG_HS_PREQ:
         - STR_HOLOUFO_SMALL
         - STR_HOLOSECTOID
+
+  - name: STR_DATA_2
+    requiresBaseFunc:
+      - STR_SERVICE_NETWORK
+    neededItem: STR_SECRET_DATA
+    needItem: true
+    destroyItem: true
+    cost: 5
+    points: 20
+    dependencies:
+      - STR_PUBLIC_GATEWAY
+    getOneFree:
+        - STR_XN_LASER_PISTOL
+        - STR_XN_LASER_SMG
+        - STR_XN_LASER_RIFLE
+        - STR_XN_LASER_SNIPER
+        - STR_XN_LASER_MG
+        - STR_XN_LASER_CANNON
+    getOneFreeProtected:
+      STR_MEDI_MISSIONS:
+        - STR_HYBRID_AUTOPSY
+        - STR_HUMAN_AUTOPSY
+        - STR_SHARK_AUTOPSY
+        - STR_DEEP_AUTOPSY
 
 # ironeyes
   - name: STR_BOOSTER_PRIVATE
