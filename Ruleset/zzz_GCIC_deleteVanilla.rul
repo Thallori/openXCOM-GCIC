@@ -615,7 +615,7 @@ ufoTrajectories:
   - delete: P7
   - delete: P8
   - delete: P9
-  - delete: __RETALIATION_ASSAULT_RUN
+#  - delete: __RETALIATION_ASSAULT_RUN
 units:
   - delete: STR_TANK_CANNON
   - delete: STR_TANK_ROCKET_LAUNCHER

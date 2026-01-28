@@ -76,9 +76,11 @@ difficultyCoefficientOverrides:
   monthlyRatingThresholds: [-999999, -999999, -999999, -999999, -999999]
   ufoFiringRateCoefficients: [150, 100, 100, 85, 80]
   ufoEscapeCountdownCoefficients: [150, 100, 100, 85, 80]
-  retaliationTriggerOdds: [4, 12, 12, 12, 12]
-  retaliationBaseRegionOdds: [25, 50, 50, 65, 75]
-  aliensFacingCraftOdds: [0, 20, 40, 80, 100]
+#  retaliationTriggerOdds: [4, 12, 12, 12, 12]
+#  retaliationBaseRegionOdds: [25, 50, 50, 65, 75]
+  retaliationTriggerOdds: [0, 0, 0, 0, 0] #no retailiations yet
+  retaliationBaseRegionOdds: [0, 0, 0, 0, 0] #no retailiations yet
+  aliensFacingCraftOdds: [0, 25, 50, 75, 100]
 #flagByKills: [1,5,10,25,50,75,100]
 costEngineer: 25000
 costScientist: 40000

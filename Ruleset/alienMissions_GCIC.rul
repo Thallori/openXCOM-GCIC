@@ -3,6 +3,7 @@ alienMissions:
   - type: STR_HOLOUFO_SMALL_MISSION
 #    interruptResearch: STR_TODO
     despawnEvenIfTargeted: true
+    retaliationOdds: 0
     raceWeights:
       0:
           STR_SIMULATED: 100
