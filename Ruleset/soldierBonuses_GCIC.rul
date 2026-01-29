@@ -87,6 +87,7 @@ soldierBonuses:
     underArmor: 4
     stats:
       health: 5
+      melee: 5
     recovery:
       energy:
         flatOne: -1
@@ -98,6 +99,8 @@ soldierBonuses:
     underArmor: 9
     stats:
       health: 5
+      melee: 5
+      bravery: 10
       tu: -5
       reactions: -5
       stamina: -10
@@ -457,11 +460,6 @@ soldierBonuses:
       throwing: 1
       melee: 1
 
-  - name: STR_MEDAL_MONSTER
-    stats:
-      strength: 2
-      health: 2
-
   - name: STR_MEDAL_WRESTLER_1
     stats:
       melee: 1
@@ -494,6 +492,11 @@ soldierBonuses:
     recovery:
       energy:
         flatOne: 4
+
+  - name: STR_MEDAL_MONSTER
+    stats:
+      strength: 2
+      stamina: 2
 
   - name: STR_MEDAL_MAULER_1
     stats:
@@ -578,23 +581,6 @@ soldierBonuses:
       reactions: 4
       firing: 4
 
-  - name: STR_MEDAL_SHOTGUN_SURGEON_1
-    stats:
-      tu: 1
-      reactions: 1
-  - name: STR_MEDAL_SHOTGUN_SURGEON_2
-    stats:
-      tu: 2
-      reactions: 2
-  - name: STR_MEDAL_SHOTGUN_SURGEON_3
-    stats:
-      tu: 3
-      reactions: 3
-  - name: STR_MEDAL_SHOTGUN_SURGEON_4
-    stats:
-      tu: 4
-      reactions: 4
-
   - name: STR_MEDAL_ASSAULTER_1
     stats:
       tu: 1
@@ -611,6 +597,23 @@ soldierBonuses:
     stats:
       tu: 4
       firing: 4
+
+  - name: STR_MEDAL_SHOTGUN_SURGEON_1
+    stats:
+      tu: 1
+      reactions: 1
+  - name: STR_MEDAL_SHOTGUN_SURGEON_2
+    stats:
+      tu: 2
+      reactions: 2
+  - name: STR_MEDAL_SHOTGUN_SURGEON_3
+    stats:
+      tu: 3
+      reactions: 3
+  - name: STR_MEDAL_SHOTGUN_SURGEON_4
+    stats:
+      tu: 4
+      reactions: 4
 
   - name: STR_MEDAL_TROOPER_1
     stats:
@@ -671,20 +674,6 @@ soldierBonuses:
   - name: STR_MEDAL_CANNONEER_4
     stats:
       strength: 8
-
-  - name: STR_MEDAL_PURIFIER_1
-    stats:
-      stamina: 1
-  - name: STR_MEDAL_PURIFIER_2
-    stats:
-      stamina: 2
-  - name: STR_MEDAL_PURIFIER_3
-    stats:
-      stamina: 3
-  - name: STR_MEDAL_PURIFIER_4
-    stats:
-      stamina: 4
-      mana: 1
 
   - name: STR_MEDAL_BOMBARDIER_1
     stats:
@@ -833,6 +822,20 @@ soldierBonuses:
       stamina: 4
       throwing: 4
       melee: 4
+
+  - name: STR_MEDAL_PURIFIER_1
+    stats:
+      stamina: 1
+  - name: STR_MEDAL_PURIFIER_2
+    stats:
+      stamina: 2
+  - name: STR_MEDAL_PURIFIER_3
+    stats:
+      stamina: 3
+  - name: STR_MEDAL_PURIFIER_4
+    stats:
+      stamina: 4
+      mana: 1
 
   - name: STR_MEDAL_INCAPACITATOR_1
     stats:

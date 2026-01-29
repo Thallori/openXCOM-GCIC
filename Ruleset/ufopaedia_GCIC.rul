@@ -1667,7 +1667,6 @@ ufopaedia:
   - id: STR_CLIENT_CRAZY_ARMOR
     requires:
       - STR_CLIENT_CRAZY_ARMOR
-    text: STR_CLIENT_CRAZY_ARMOR_UP
     section: STR_COMPETITORS_UC
     type_id: 5
 
@@ -1697,8 +1696,23 @@ ufopaedia:
     section: STR_MANUALS_UC
     type_id: 8
 
+  - id: STR_MORALE_TUTORIAL
+    text: STR_MORALE_TUTORIAL_UP
+    section: STR_MANUALS_UC
+    type_id: 8
+
   - id: STR_RESILIANCE_TUTORIAL
     text: STR_RESILIANCE_TUTORIAL_UP
+    section: STR_MANUALS_UC
+    type_id: 8
+
+  - id: STR_NIGHT_TUTORIAL
+    text: STR_NIGHT_TUTORIAL_UP
+    section: STR_MANUALS_UC
+    type_id: 8
+
+  - id: STR_ARMOR_TUTORIAL
+    text: STR_ARMOR_TUTORIAL_UP
     section: STR_MANUALS_UC
     type_id: 8
 
@@ -1714,6 +1728,11 @@ ufopaedia:
 
   - id: STR_GUN_TYPES
     text: STR_GUN_TYPES_UP
+    section: STR_MANUALS_UC
+    type_id: 8
+
+  - id: STR_MELEE_TYPES
+    text: STR_MELEE_TYPES_UP
     section: STR_MANUALS_UC
     type_id: 8
 
@@ -1947,16 +1966,16 @@ ufopaedia:
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
 
-  - id: STR_MEDAL_MONSTER_NAME
-    text: STR_MEDAL_MONSTER_UP
+  - id: STR_MEDAL_WRESTLER_NAME
+    text: STR_MEDAL_WRESTLER_UP
     section: STR_COMMENDATIONS_UC
     hiddenCommendation: true
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
 
-  - id: STR_MEDAL_WRESTLER_NAME
-    text: STR_MEDAL_WRESTLER_UP
+  - id: STR_MEDAL_MONSTER_NAME
+    text: STR_MEDAL_MONSTER_UP
     section: STR_COMMENDATIONS_UC
     hiddenCommendation: true
     type_id: 7

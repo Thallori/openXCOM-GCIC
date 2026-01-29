@@ -2220,10 +2220,10 @@ items:
       IgnoreSelfDestruct: false
       ToTile: 0.35
     clipSize: -1
-    accuracyMelee: 90
+    accuracyMelee: 65
     meleeMultiplier:
       melee: 1.0
-      flatHundred: 0.35
+      flatHundred: 0.50
     costMelee:
       time: 7
       energy: 2
@@ -2266,10 +2266,10 @@ items:
       IgnorePainImmunity: false
       ToTile: 0.35
     clipSize: -1
-    accuracyMelee: 90
+    accuracyMelee: 70
     meleeMultiplier:
       melee: 1.0
-      flatHundred: 0.35
+      flatHundred: 0.50
     costMelee:
       time: 9
       energy: 4
@@ -2309,10 +2309,10 @@ items:
       ToTile: 0.35
       FixRadius: 0
     clipSize: -1
-    accuracyMelee: 80
+    accuracyMelee: 55
     meleeMultiplier:
       melee: 1.0
-      flatHundred: 0.35
+      flatHundred: 0.50
     costMelee:
       time: 12
       energy: 6
@@ -2350,11 +2350,11 @@ items:
       ToTile: 0.60
       FixRadius: 0
     clipSize: -1
-    accuracyMelee: 75
+    accuracyMelee: 65
     meleeMultiplier:
       melee: 0.5
       strength: 0.5
-      flatHundred: 0.35
+      flatHundred: 0.50
     costMelee:
       time: 20
       energy: 16
@@ -2399,10 +2399,10 @@ items:
       FireThreshold: 20
       ToTile: 1.5
     clipSize: -1
-    accuracyMelee: 85
+    accuracyMelee: 75
     meleeMultiplier:
       melee: 1.0
-      flatHundred: 0.35
+      flatHundred: 0.50
     costMelee:
       time: 9
       energy: 2
@@ -2443,10 +2443,10 @@ items:
     powerRangeThreshold: 5
     powerRangeReduction: 5
     clipSize: -1
-    accuracySnap: 60
+    accuracySnap: 50
     accuracyMultiplier:
       firing: 1.0
-      flatHundred: 0.15
+      flatHundred: 0.50
     costSnap:
       time: 30
       energy: 15
@@ -2481,9 +2481,10 @@ items:
     arcingShot: true
     compatibleAmmo:
       - STR_ELECTRIC_NAILER_AMMO
-    accuracySnap: 40
+    accuracySnap: 70
     accuracyMultiplier:
       reactions: 1.0
+      flatHundred: 0.50
     costSnap:
       time: 14
     tuLoad: 20
@@ -2547,11 +2548,11 @@ items:
     arcingShot: true
     compatibleAmmo:
       - STR_BOLT_CANNON_AMMO
-    accuracySnap: 55
-    accuracyAimed: 80
+    accuracySnap: 70
+    accuracyAimed: 110
     accuracyMultiplier:
-      throwing: 0.75
-      strength: 0.25
+      throwing: 1.0
+      flatHundred: 0.50
     tuSnap: 30
     tuAimed: 45
     tuLoad: 20
@@ -2618,21 +2619,20 @@ items:
       - STR_KNOCK_FLARE_AMMO
       - STR_KNOCK_BOLT_AMMO
     accuracySnap: 75
-    accuracyAimed: 85
+    accuracyAimed: 115
     accuracyMultiplier:
       throwing: 1.0
-      flatHundred: 0.20
+      flatHundred: 0.50
     costSnap:
-      time: 24
-      energy: 6
+      time: 20
+      energy: 8
     costAimed:
-      time: 32
-      energy: 6
+      time: 28
+      energy: 8
     tuLoad: 20
     flatRate: true
     snapRange: 12
     aimRange: 16
-    maxRange: 32
     dropoff: 2
     kneelBonus: 110
     oneHandedPenalty: 85
@@ -2665,6 +2665,7 @@ items:
     damageAlter:
       RandomType: 8
       ToWound: 0
+      ArmorEffectiveness: 0.85
       RandomWound: false
       ToHealth: 0.20
       ToStun: 1.0
@@ -2697,6 +2698,7 @@ items:
     damageBonus:
       throwing: 0.3
     damageAlter:
+      ArmorEffectiveness: 0.85
       ToTime: 0.50
       IgnoreSelfDestruct: false
       ToTile: 0.25
@@ -2754,7 +2756,7 @@ items:
     accuracyMelee: 70
     meleeMultiplier:
       melee: 1.0
-      flatHundred: 0.35
+      flatHundred: 0.50
     costMelee:
       time: 12
       energy: 8

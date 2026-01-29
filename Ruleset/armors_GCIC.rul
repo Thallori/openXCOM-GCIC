@@ -67,7 +67,7 @@ armors:
         healthNormalized: 10
       morale: &MoraleRecoveryTypical
         bravery: 0.1
-        moraleCurrent: -0.12
+        moraleCurrent: -0.11
       mana: &ManaRecoveryTypical
         flatHundred: 0
     overKill: 1.5

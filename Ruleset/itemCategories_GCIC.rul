@@ -11,6 +11,8 @@
     listOrder: 10
   - type: STR_SMGS_CATEGORY
     listOrder: 20
+  - type: STR_SHOTGUNS_CATEGORY
+    listOrder: 25
   - type: STR_ASSAULT_RIFLES_CATEGORY
     listOrder: 30
   - type: STR_SNIPER_RIFLES_CATEGORY
@@ -19,18 +21,14 @@
     listOrder: 50
   - type: STR_CANNONS_CATEGORY
     listOrder: 60
-  - type: STR_SHOTGUNS_CATEGORY
-    listOrder: 70
   - type: STR_LAUNCHERS_CATEGORY
-    listOrder: 80
+    listOrder: 70
   - type: STR_ROCKETS_CATEGORY
-    listOrder: 82
+    listOrder: 72
+  - type: STR_GRENADES_CATEGORY
+    listOrder: 80
   - type: STR_BOWS_CATEGORY
     listOrder: 85
-  - type: STR_INCENDIARY_CATEGORY
-    listOrder: 90
-  - type: STR_EXPLOSIVES_CATEGORY
-    listOrder: 95
   - type: STR_PSI_CATEGORY
     listOrder: 100
   - type: STR_MELEE_CATEGORY
@@ -70,6 +68,9 @@
     hidden: true
   - type: STR_AQUATIC_CATEGORY
     listOrder: 460
+    hidden: true
+  - type: STR_INCENDIARY_CATEGORY
+    listOrder: 500
     hidden: true
   - type: STR_LOCKED_CATEGORY
     listOrder: 590

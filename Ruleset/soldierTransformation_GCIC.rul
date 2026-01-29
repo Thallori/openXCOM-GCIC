@@ -1,33 +1,4 @@
 soldierTransformation:
-  - name: STR_DRONE_KEYING_TRANSFORMATION
-    requires:
-      - STR_DRONE_IMMORTALITY
-    requiredItems:
-      STR_BIONIC_INTERLACE: 1
-    recoveryTime: 1
-    allowsLiveSoldiers: true
-    allowedSoldierTypes:
-      - STR_CRACKED_HYBRID_DRONE
-      - STR_CRACKED_HUMAN_DRONE
-      - STR_CRACKED_SHARK_DRONE
-    forbiddenPreviousTransformations:
-      - STR_DRONE_KEYING_TRANSFORMATION
-  - name: STR_DRONE_REPLACEMENT_TRANSFORMATION
-    requires:
-      - STR_DRONE_IMMORTALITY
-    cost: 65000
-    recoveryTime: 32
-    rerollStats:
-      mana: 1
-    allowsDeadSoldiers: true
-    needsCorpseRecovered: false
-    allowedSoldierTypes:
-      - STR_CRACKED_HYBRID_DRONE
-      - STR_CRACKED_HUMAN_DRONE
-      - STR_CRACKED_SHARK_DRONE
-    requiredPreviousTransformations:
-      - STR_DRONE_KEYING_TRANSFORMATION
-
   - name: STR_SKIRMISHER_TRANSFORMATION
     requires:
       - STR_SPECIALIZATION_TRAINING
@@ -45,6 +16,7 @@ soldierTransformation:
       - STR_CRACKED_HYBRID_DRONE
       - STR_CRACKED_HUMAN_DRONE
       - STR_CRACKED_SHARK_DRONE
+      - STR_CRACKED_DEEP_DRONE
     soldierBonusType: STR_SKIRMISHER_SPECIALIST
     forbiddenPreviousTransformations:
       - STR_SKIRMISHER_TRANSFORMATION
@@ -65,6 +37,7 @@ soldierTransformation:
       - STR_CRACKED_HYBRID_DRONE
       - STR_CRACKED_HUMAN_DRONE
       - STR_CRACKED_SHARK_DRONE
+      - STR_CRACKED_DEEP_DRONE
     soldierBonusType: STR_RANGER_SPECIALIST
     forbiddenPreviousTransformations:
       - STR_SKIRMISHER_TRANSFORMATION
@@ -87,6 +60,7 @@ soldierTransformation:
       - STR_CRACKED_HYBRID_DRONE
       - STR_CRACKED_HUMAN_DRONE
       - STR_CRACKED_SHARK_DRONE
+      - STR_CRACKED_DEEP_DRONE
     soldierBonusType: STR_SCOUT_SPECIALIST
     forbiddenPreviousTransformations:
       - STR_SKIRMISHER_TRANSFORMATION
@@ -111,6 +85,7 @@ soldierTransformation:
       - STR_CRACKED_HYBRID_DRONE
       - STR_CRACKED_HUMAN_DRONE
       - STR_CRACKED_SHARK_DRONE
+      - STR_CRACKED_DEEP_DRONE
     soldierBonusType: STR_AGILITY_MUSCLES
     forbiddenPreviousTransformations:
       - STR_AGILITY_TRANSFORMATION
@@ -133,7 +108,45 @@ soldierTransformation:
       - STR_CRACKED_HYBRID_DRONE
       - STR_CRACKED_HUMAN_DRONE
       - STR_CRACKED_SHARK_DRONE
+      - STR_CRACKED_DEEP_DRONE
     soldierBonusType: STR_HEAVY_MUSCLES
     forbiddenPreviousTransformations:
+      - STR_AGILITY_TRANSFORMATION
+      - STR_HEAVY_TRANSFORMATION
+
+  - name: STR_DRONE_KEYING_TRANSFORMATION
+    requires:
+      - STR_DRONE_IMMORTALITY
+    requiredItems:
+      STR_BIONIC_INTERLACE: 1
+    recoveryTime: 1
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_CRACKED_HYBRID_DRONE
+      - STR_CRACKED_HUMAN_DRONE
+      - STR_CRACKED_SHARK_DRONE
+      - STR_CRACKED_DEEP_DRONE
+    forbiddenPreviousTransformations:
+      - STR_DRONE_KEYING_TRANSFORMATION
+  - name: STR_DRONE_REPLACEMENT_TRANSFORMATION
+    requires:
+      - STR_DRONE_IMMORTALITY
+    cost: 65000
+    recoveryTime: 48
+    rerollStats:
+      mana: 1
+    allowsDeadSoldiers: true
+    needsCorpseRecovered: false
+    allowedSoldierTypes:
+      - STR_CRACKED_HYBRID_DRONE
+      - STR_CRACKED_HUMAN_DRONE
+      - STR_CRACKED_SHARK_DRONE
+      - STR_CRACKED_DEEP_DRONE
+    requiredPreviousTransformations:
+      - STR_DRONE_KEYING_TRANSFORMATION
+    removeTransformations:
+      - STR_SKIRMISHER_TRANSFORMATION
+      - STR_RANGER_TRANSFORMATION
+      - STR_SCOUT_TRANSFORMATION
       - STR_AGILITY_TRANSFORMATION
       - STR_HEAVY_TRANSFORMATION

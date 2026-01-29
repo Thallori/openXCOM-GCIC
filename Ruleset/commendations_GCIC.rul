@@ -75,9 +75,11 @@ commendations:
     description: STR_MEDAL_INFILTRATOR_UFOPEDIA
     soldierBonusTypes: [STR_MEDAL_INFILTRATOR_1, STR_MEDAL_INFILTRATOR_2, STR_MEDAL_INFILTRATOR_3, STR_MEDAL_INFILTRATOR_4]
     sprite: 2
-    missionTypeFilter: ["STR_TRADE_MEETING_1"]
+    missionTypeFilter: ["STR_TRADE_MEETING_EARLY", "STR_TRADE_MEETING_1", "STR_TRADE_MEETING_2"]
     criteria:
       totalMissions: [1, 4, 16, 32]
+
+#todo, gr missions, medi missions
 
   - type: STR_MEDAL_CAMPAIGN_RIBBON_NAME #missions in a region
     description: STR_MEDAL_CAMPAIGN_RIBBON_UFOPEDIA
@@ -105,6 +107,8 @@ commendations:
       killsWithCriteriaCareer: [1, 4, 16, 32]
     killCriteria:
       - - [1, ["STR_BOOSTER_PUBLIC", "STR_IRONEYES", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      - - [1, ["STR_RIPPER_PUBLIC", "STR_IRONEYES", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      - - [1, ["STR_FREELANCER_PUBLIC", "STR_NETRUNNERS", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
 
   - type: STR_MEDAL_SLAVEKILLS_NAME #kills through mind controlled units
     description: STR_MEDAL_SLAVEKILLS_UFOPEDIA
@@ -213,7 +217,7 @@ commendations:
     criteria:
       killsWithCriteriaCareer: [1]
     killCriteria:
-      - - [1, ["STATUS_DEAD", "FACTION_NEUTRAL"]]
+      - - [1, ["STATUS_DEAD", "STR_CLIENTS"]]
 
   - type: STR_MEDAL_BETRAYER_NAME #friendly kills
     description: STR_MEDAL_BETRAYER_UFOPEDIA
@@ -245,6 +249,17 @@ commendations:
     criteria:
       totalKillsWithAWeapon: [32]
 
+  - type: STR_MEDAL_WRESTLER_NAME #stuns with special use empty hand melee attack
+    description: STR_MEDAL_WRESTLER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_WRESTLER_1, STR_MEDAL_WRESTLER_2, STR_MEDAL_WRESTLER_3, STR_MEDAL_WRESTLER_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [1, 4, 16, 32]
+    killCriteria:
+      - - [1, ["STR_UNARMED", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      - - [1, ["STR_SHARK_BITE", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      - - [1, ["STR_ELECTROBOLT", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+
   - type: STR_MEDAL_MONSTER_NAME #kills with special use empty hand melee attack
     description: STR_MEDAL_MONSTER_UFOPEDIA
     soldierBonusTypes: [STR_MEDAL_MONSTER]
@@ -258,16 +273,9 @@ commendations:
       - - [1, ["STR_SHARK_BITE", "FACTION_HOSTILE", "STATUS_DEAD"]]
       - - [1, ["STR_SHARK_BITE", "FACTION_NEUTRAL", "STATUS_DEAD"]]
       - - [1, ["STR_SHARK_BITE", "FACTION_PLAYER", "STATUS_DEAD"]]
-
-  - type: STR_MEDAL_WRESTLER_NAME #stuns with special use empty hand melee attack
-    description: STR_MEDAL_WRESTLER_UFOPEDIA
-    soldierBonusTypes: [STR_MEDAL_WRESTLER_1, STR_MEDAL_WRESTLER_2, STR_MEDAL_WRESTLER_3, STR_MEDAL_WRESTLER_4]
-    sprite: 1
-    criteria:
-      killsWithCriteriaCareer: [1, 4, 16, 32]
-    killCriteria:
-      - - [1, ["STR_UNARMED", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
-      - - [1, ["STR_SHARK_BITE", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      - - [1, ["STR_ELECTROBOLT", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_ELECTROBOLT", "FACTION_NEUTRAL", "STATUS_DEAD"]]
+      - - [1, ["STR_ELECTROBOLT", "FACTION_PLAYER", "STATUS_DEAD"]]
 
   - type: STR_MEDAL_MAULER_NAME #kills/stuns with animal builtins
     description: STR_MEDAL_MAULER_UFOPEDIA
@@ -302,15 +310,10 @@ commendations:
       - - [1, ["STR_SINGLESHOT_LASER_PISTOL_ELERIUM", "FACTION_HOSTILE", "STATUS_DEAD"]]
       - - [1, ["STR_SINGLESHOT_LASER_PISTOL_CODED", "FACTION_HOSTILE", "STATUS_DEAD"]]
       - - [1, ["STR_SINGLESHOT_LASER_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
-
-  - type: STR_MEDAL_SHOTGUN_SURGEON_NAME #kills with shotguns
-    description: STR_MEDAL_SHOTGUN_SURGEON_UFOPEDIA
-    soldierBonusTypes: [STR_MEDAL_SHOTGUN_SURGEON_1, STR_MEDAL_SHOTGUN_SURGEON_2, STR_MEDAL_SHOTGUN_SURGEON_3, STR_MEDAL_SHOTGUN_SURGEON_4]
-    sprite: 1
-    criteria:
-      killsWithCriteriaCareer: [4, 16, 64, 128]
-    killCriteria:
-      - - [1, ["STR_XN_LASER_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_DART_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_ELECTRIC_NAILER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_TASER_PISTOL_CODED", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_TASER_PISTOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
   - type: STR_MEDAL_ASSAULTER_NAME #kills with smgs
     description: STR_MEDAL_ASSAULTER_UFOPEDIA
@@ -321,6 +324,21 @@ commendations:
     killCriteria:
       - - [1, ["STR_DISPOSABLE_SMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
       - - [1, ["STR_XN_LASER_SMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_9MM_SMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_SSP_SMG_CODED", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_SSP_SMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_CHEM_SMG", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
+  - type: STR_MEDAL_SHOTGUN_SURGEON_NAME #kills with shotguns
+    description: STR_MEDAL_SHOTGUN_SURGEON_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_SHOTGUN_SURGEON_1, STR_MEDAL_SHOTGUN_SURGEON_2, STR_MEDAL_SHOTGUN_SURGEON_3, STR_MEDAL_SHOTGUN_SURGEON_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [4, 16, 64, 128]
+    killCriteria:
+      - - [1, ["STR_XN_LASER_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_SSP_SHOTGUN_CODED", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_SSP_SHOTGUN", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
   - type: STR_MEDAL_TROOPER_NAME #kills with rifles
     description: STR_MEDAL_TROOPER_UFOPEDIA
@@ -358,15 +376,7 @@ commendations:
       killsWithCriteriaCareer: [4, 16, 64, 128]
     killCriteria:
       - - [1, ["STR_XN_LASER_CANNON", "FACTION_HOSTILE", "STATUS_DEAD"]]
-
-  - type: STR_MEDAL_PURIFIER_NAME #kills with fire damage
-    description: STR_MEDAL_PURIFIER_UFOPEDIA
-    soldierBonusTypes: [STR_MEDAL_PURIFIER_1, STR_MEDAL_PURIFIER_2, STR_MEDAL_PURIFIER_3, STR_MEDAL_PURIFIER_4]
-    sprite: 1
-    criteria:
-      killsWithCriteriaCareer: [4, 16, 64, 128]
-    killCriteria:
-      - - [1, ["DT_IN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_BOLT_CANNON", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
   - type: STR_MEDAL_BOMBARDIER_NAME #kills with launchers
     description: STR_MEDAL_BOMBARDIER_UFOPEDIA
@@ -396,6 +406,8 @@ commendations:
     killCriteria:
       - - [1, ["STR_PIPEBOMB", "FACTION_HOSTILE", "STATUS_DEAD"]]
       - - [1, ["STR_ELERIUM_BOMB", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_MOLOTOV", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_ACIDFLASK", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
   - type: STR_MEDAL_ARCHER_NAME #kills with bows
     description: STR_MEDAL_ARCHER_UFOPEDIA
@@ -406,7 +418,7 @@ commendations:
     killCriteria:
       - - [1, ["STR_SURVEY_KNOCKER", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
-  - type: STR_MEDAL_WARRIOR_NAME #kills with contemporary melee weapons
+  - type: STR_MEDAL_WARRIOR_NAME #kills with melee weapons
     description: STR_MEDAL_WARRIOR_UFOPEDIA
     soldierBonusTypes: [STR_MEDAL_WARRIOR_1, STR_MEDAL_WARRIOR_2, STR_MEDAL_WARRIOR_3, STR_MEDAL_WARRIOR_4]
     sprite: 1
@@ -414,6 +426,11 @@ commendations:
       killsWithCriteriaCareer: [4, 16, 64, 128]
     killCriteria:
       - - [1, ["STR_STL_KNIFE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_BATON", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_WRENCH", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_SLEDGEHAMMER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_EXTINGUISHER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_RIOT_SHIELD", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
   - type: STR_MEDAL_TECHNICIAN_NAME #kills with tools
     description: STR_MEDAL_TECHNICIAN_UFOPEDIA
@@ -425,6 +442,10 @@ commendations:
       - - [1, ["STR_WRENCH", "FACTION_HOSTILE", "STATUS_DEAD"]]
       - - [1, ["STR_MULTITOOL", "FACTION_HOSTILE", "STATUS_DEAD"]]
       - - [1, ["STR_ELECTRIC_NAILER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_BOLT_CANNON", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_SLEDGEHAMMER", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_SONIC_PROBE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_SURVEY_KNOCKER", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
   - type: STR_MEDAL_TRADITIONALIST_NAME #kills with archaic weapons
     description: STR_MEDAL_TRADITIONALIST_UFOPEDIA
@@ -444,6 +465,15 @@ commendations:
     killCriteria:
       - - [1, ["STR_BOW", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
+  - type: STR_MEDAL_PURIFIER_NAME #kills with fire damage
+    description: STR_MEDAL_PURIFIER_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_PURIFIER_1, STR_MEDAL_PURIFIER_2, STR_MEDAL_PURIFIER_3, STR_MEDAL_PURIFIER_4]
+    sprite: 1
+    criteria:
+      killsWithCriteriaCareer: [4, 16, 64, 128]
+    killCriteria:
+      - - [1, ["DT_IN", "FACTION_HOSTILE", "STATUS_DEAD"]]
+
   - type: STR_MEDAL_INCAPACITATOR_NAME #stuns with blunt weapons
     description: STR_MEDAL_INCAPACITATOR_UFOPEDIA
     soldierBonusTypes: [STR_MEDAL_INCAPACITATOR_1, STR_MEDAL_INCAPACITATOR_2, STR_MEDAL_INCAPACITATOR_3, STR_MEDAL_INCAPACITATOR_4]
@@ -452,6 +482,7 @@ commendations:
       killsWithCriteriaCareer: [4, 16, 64, 128]
     killCriteria:
       - - [1, ["STR_BATON", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      - - [1, ["STR_RIOT_SHIELD", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
 
   - type: STR_MEDAL_TASEMASTER_NAME #stuns with electric weapons
     description: STR_MEDAL_TASEMASTER_UFOPEDIA
@@ -464,6 +495,8 @@ commendations:
       - - [1, ["STR_TASER_PISTOL", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
       - - [1, ["STR_MULTITOOL", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
 
+#todo, stuns with bio weapons
+
   - type: STR_MEDAL_SLEEPER_NAME #stuns with psi weapons
     description: STR_MEDAL_SLEEPER_UFOPEDIA
     soldierBonusTypes: [STR_MEDAL_SLEEPER_1, STR_MEDAL_SLEEPER_2, STR_MEDAL_SLEEPER_3, STR_MEDAL_SLEEPER_4]
@@ -471,7 +504,7 @@ commendations:
     criteria:
       killsWithCriteriaCareer: [4, 16, 64, 128]
     killCriteria:
-      - - [1, ["STR_PSICLONE", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
+      - - [1, ["STR_SONIC_PROBE", "FACTION_HOSTILE", "STATUS_UNCONSCIOUS"]]
 
   - type: STR_MEDAL_SORCERER_NAME #kills with psi weapons
     description: STR_MEDAL_SORCERER_UFOPEDIA
@@ -480,8 +513,7 @@ commendations:
     criteria:
       killsWithCriteriaCareer: [4, 16, 64, 128]
     killCriteria:
-      - - [1, ["STR_PSICLONE", "FACTION_HOSTILE", "STATUS_DEAD"]]
-      - - [1, ["STR_FLAME_GLOVE", "FACTION_HOSTILE", "STATUS_DEAD"]]
+      - - [1, ["STR_SONIC_PROBE", "FACTION_HOSTILE", "STATUS_DEAD"]]
 
   - type: STR_MEDAL_REVOLVINGDOOR_NAME #dying more than once
     description: STR_MEDAL_REVOLVINGDOOR_UFOPEDIA
