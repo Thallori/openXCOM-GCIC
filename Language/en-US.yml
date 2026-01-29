@@ -437,6 +437,7 @@ en-US:
   STR_PERKS_CATEGORY: "Perks"
   STR_CONTAINERS_CATEGORY: "Containers"
   STR_DRONES_CATEGORY: "Drones"
+  
   STR_SPECIMENS_CATEGORY: "Specimens"
   STR_REMAINS_CATEGORY: "Remains"
   STR_BUILT_INS_CATEGORY: "Built-In"
@@ -877,7 +878,8 @@ en-US:
   STR_NON_CLIENTS: "Non-Clients"
   STR_NON_CLIENTS_UP: "{NEWLINE}THREAT ASSESSOR: Online{NEWLINE}NEGLIABLE: 1,350,000,000{NEWLINE}RELEVANT: 95,000,000+{NEWLINE}{NEWLINE}The greatest {ALT}danger{ALT} to our customers are targets who (for reasons outside of our current influence) wish to do them harm. Given time, capital, and enough public trust, we may be able to find less risky solutions to these problem. Until then, the easiest answer is the simpliest one.{NEWLINE}{NEWLINE}If {ALT}violent conflict{ALT} is envitable, we must find ways to improve the odds."
 
-  STR_DRONE_MEMORY: "MEMORY: Drone"
+  STR_DRONE_MEMORY: "MEMORIES: Drone"
+  STR_DRONE_MEMORY_UP: "{NEWLINE}When cracking new drones, we may find memories that escaped nerve staple pruning. Once remembered, these experiences become our own. The emotions within are our emotions. We transform the sensation of being them into the sensation of being us.{NEWLINE}{NEWLINE}Memory introspection will deepen our understanding of society, making it easier to act as the mask our clients expect to see."
   STR_HYBRID_MEMORY_1: "MEMORY: Unscheduled Break Time"
   STR_HYBRID_MEMORY_1_UP: "{NEWLINE}Our vats broke again, we weren't supposed to be awake, not yet. That didn't stop the two of us from running down the corridors, sneaking around, eating food. Too much and they'd know, throwing up can ruin everyone's sleep and that isn't fun.{NEWLINE}{NEWLINE}Drones aren't supposed to like each other this much. Now we get different cleaning times. I try not to worry about being sold, but what if we don't get the same owner? I hold his hand and forget about what might happen. We're here now."
   STR_HYBRID_MEMORY_2: "MEMORY: Function Skipped, Resuming"
@@ -1331,6 +1333,7 @@ en-US:
   STR_GCIC_SABOTAGE_2_DATA_UP: "{NEWLINE}A list of angel investors and their contributions. Most are executives, board members, citizens who can afford to gamble on unknown ventures. However, some of these make up an obviously false subset.{NEWLINE}{NEWLINE}None of the GCIC managers on the list have the income to match their contribution. The pattern of names is too random, too clean, too expertly laundered. Without additional information, it will be very difficult to determine what connections exist between them.{NEWLINE}{NEWLINE}Information like this is valuable, any further finds could net a tidy sum if auctioned."
   STR_DATA_1: "MINE: Personal Data"
   STR_DATA_2: "MINE: Secret Data"
+  STR_ARMOR_REPAIR_BILL: "Armor Repair Bill"
 # abstract
   STR_SHARES_GCIC: "GCIC-Shares"
   STR_SHARES_GCIC_UP: "{NEWLINE}Representitive fractional ownership in our parent company. These are awarded as an incentive to perform activities that are not legally enforcable. In this sense, shares are a crude measure of how loyal we are to GCIC's less reputable needs.{NEWLINE}{NEWLINE}As a shareholder, we'll recieve dividends. As a subsidiary, we'll recieve extra leeway in how we conduct business. When all requirements are met, available {ALT}PROJECTS{ALT} will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: {ALT}+1200$/Month{ALT}"
@@ -1476,7 +1479,7 @@ en-US:
   STR_NIGHT_TUTORIAL: "Night"
   STR_NIGHT_TUTORIAL_UP: "{ALT}Darkness{ALT} is an ever present danger, one which our competitors rarely suffer. Even the most basic visual augments can run real-time map differntials to distinguish invaders, provided the implant is sufficently familiar with the area. Xenoforms have been engineered without vision limitations.{NEWLINE}{NEWLINE}{ALT}Day or night{ALT}, all potential targets see as far as the best drone. {ALT}35 meters{ALT} versus the {ALT}8 meter{ALT} baseline. As such, there is no reason to embrace the dark.{NEWLINE}{NEWLINE}All drones carry small flashlights, illuminating the areas they venture forth. This light is life. Night is safer together."
   STR_ARMOR_TUTORIAL: "Armor"
-  STR_ARMOR_TUTORIAL_UP: "It is preferable to never be hit. If hits must be taken, protective equipment may mitgate harm. Armor evaluation is broken down into steps.{NEWLINE}{NEWLINE}{ALT}Armor%{ALT} mutiplies incoming damage (less is better){NEWLINE}{ALT}Flat Armor{ALT} subtracts incoming damage (more is better){NEWLINE}{ALT}Camo{ALT} reduces range of being spotted.{NEWLINE}{NEWLINE}Some outfits have {ALT}front armor{ALT}, reliably protecting from the front and unreliably protecting from the sides. Grenades and explosions within a {ALT}1 meter radius{ALT} will hit {ALT}under armor{ALT}, which is {ALT}25% lower{ALT} than stated.{NEWLINE}{NEWLINE}Weapon {ALT}penetration counters flat armor{ALT}, negative penetration causes flat armor to be more effective."
+  STR_ARMOR_TUTORIAL_UP: "It is preferable to never be hit. If hits must be taken, protective equipment may mitgate harm. Armor evaluation is broken down into steps.{NEWLINE}{NEWLINE}{ALT}Armor%{ALT} mutiplies incoming damage (less is better){NEWLINE}{ALT}Flat Armor{ALT} subtracts incoming damage (more is better){NEWLINE}{ALT}Camo{ALT} reduces range of being spotted.{NEWLINE}{NEWLINE}Some outfits have {ALT}front armor{ALT}, reliably protecting from the front and unreliably protecting from the sides. {Under Armor} is 25% lower than flat armor, offering less protection from grenades and explosions within a 1 meter radius.{NEWLINE}{NEWLINE}Weapon {ALT}penetration{ALT} counters flat armor, negative penetration causes flat armor to be more effective.{NEWLINE}{NEWLINE}Armor is always {ALT}recovered{ALT} alongside a drone's remains, plus a variable set of {ALT}repair bills{ALT} which have $100 monthly interest payments."
   STR_DAMAGE_TYPES: "Damage Types"
   STR_DAMAGE_TYPES_UP: "Destruction takes many forms and these violent acts fall into several broad categories. Unless otherwise stated, all weapons will follow these rules.{NEWLINE}{NEWLINE}{ALT}Kinetic{ALT} Standard{NEWLINE}{ALT}Mechanical{ALT} +50% TU Damage{NEWLINE}{ALT}Concussive{ALT} +75% Stun Damage{NEWLINE}{ALT}Incendiary{ALT} +450% Moral Damage{NEWLINE}{ALT}Chemical{ALT} Always Hits Front, Armor Shreading{NEWLINE}{ALT}Biological{ALT} +75% Armor Piercing{NEWLINE}{NEWLINE}{ALT}Smoke{ALT} No HP Damage{NEWLINE}{ALT}Electric{ALT} +75% Stun Damage, -65% Lethal{NEWLINE}{ALT}Blunt{ALT} +75% Stun Damage, -80% Lethal{NEWLINE}{NEWLINE}{ALT}Radiant{ALT} Increased Terrain Damage, +10 Accuracy{NEWLINE}{ALT}Plasma{ALT} +50% Stun Damage, -10 Accuracy{NEWLINE}{ALT}Sonic{ALT} +25% Stun Damage, +25% Armor Piercing"
   STR_WEAPON_TYPES: "Attack Types"

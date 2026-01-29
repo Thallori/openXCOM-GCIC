@@ -100,6 +100,15 @@ ufopaedia:
     image_id: DATA3_CPAL
 
 # memories
+  - id: STR_DRONE_MEMORY
+    requires:
+      - STR_DRONE_MEMORY
+    text: STR_DRONE_MEMORY_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: HMEMORY_CPAL
+
   - id: STR_HYBRID_MEMORY_1
     requires:
       - STR_HYBRID_MEMORY_1
