@@ -67,23 +67,6 @@ alienRaces:
       - STR_SSPOFFICER_PRIVATE #12
     retaliationAggression: -100
 
-  - id: STR_DRONES_ENEMY
-    members:
-      - STR_DRONE_ENEMY_HYBRID #0
-      - STR_DRONE_ENEMY_HYBRID #1
-      - STR_DRONE_ENEMY_HYBRID #2
-      - STR_DRONE_ENEMY_HYBRID #3
-      - STR_DRONE_ENEMY_HYBRID #4
-      - STR_DRONE_ENEMY_HYBRID #5
-      - STR_DRONE_ENEMY_HYBRID #6
-      - STR_DRONE_ENEMY_HUMAN #7
-      - STR_DRONE_ENEMY_SHARK #8
-      - STR_DRONE_ENEMY_DEEP #9
-      - STR_DRONE_ENEMY_HYBRID #10
-      - STR_DRONE_ENEMY_HYBRID #11
-      - STR_DRONE_ENEMY_HYBRID #12
-    retaliationAggression: -100
-
   - id: STR_ANIMALS
     members:
       - STR_CHRYSSALID #0
@@ -133,4 +116,38 @@ alienRaces:
       - STR_HOLOSECTOID #10
       - STR_HOLOSECTOID #11
       - STR_HOLOSECTOID #12
+    retaliationAggression: -100
+
+  - id: STR_DRONES_ENEMY
+    members:
+      - STR_DRONE_ENEMY_HYBRID #0
+      - STR_DRONE_ENEMY_HYBRID #1
+      - STR_DRONE_ENEMY_HYBRID #2
+      - STR_DRONE_ENEMY_HYBRID #3
+      - STR_DRONE_ENEMY_HYBRID #4
+      - STR_DRONE_ENEMY_HYBRID #5
+      - STR_DRONE_ENEMY_HYBRID #6
+      - STR_DRONE_ENEMY_HUMAN #7
+      - STR_DRONE_ENEMY_SHARK #8
+      - STR_DRONE_ENEMY_DEEP #9
+      - STR_DRONE_ENEMY_HYBRID #10
+      - STR_DRONE_ENEMY_HYBRID #11
+      - STR_DRONE_ENEMY_HYBRID #12
+    retaliationAggression: -100
+
+  - id: STR_CLIENTS
+    members:
+      - STR_CLIENT_1 #0
+      - STR_CLIENT_1 #1
+      - STR_CLIENT_1 #2
+      - STR_CLIENT_1 #3
+      - STR_CLIENT_1 #4
+      - STR_CLIENT_CRAZY #5
+      - STR_CLIENT_1 #6
+      - STR_CLIENT_RR #7
+      - STR_CLIENT_1 #8
+      - STR_CLIENT_1 #9
+      - STR_CLIENT_1 #10
+      - STR_CLIENT_1 #11
+      - STR_CLIENT_1 #12
     retaliationAggression: -100

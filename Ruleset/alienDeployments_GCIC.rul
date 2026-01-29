@@ -7,10 +7,10 @@ alienDeployments:
     length: 10
     height: 8
     terrains:
-      - FOREST2
+      - MAP_FOREST2
 
   - type: STR_HOLOUFO_SMALL
-    script: DEFAULT2
+    script: DEFAULT4X4
     width: 40
     length: 40
     height: 6
@@ -56,7 +56,7 @@ alienDeployments:
             []
 
   - type: STR_RESCUE_1
-    script: HANGAR_DRONES_3X3
+    # script: HANGAR_DRONES_3X3
     width: 30
     length: 30
     height: 8
@@ -66,7 +66,7 @@ alienDeployments:
     markerName: STR_RESCUE_1
     duration: [48, 72]
     despawnPenalty: 100
-    abortPenalty: 85
+    abortPenalty: 75
     # startingCondition: SECURITY_GEAR_SECURITY_CRAFT
     briefing:
       showTarget: false
@@ -77,7 +77,8 @@ alienDeployments:
     unlockedResearch: STR_TRG_BO_PREQ
     customUfo: STR_HOUSE_GARAGE
     terrains:
-      - HANGAR
+      - HANGAR_DRONES_SIZE3
+      - SLUM_DRONES_SIZE3
     music:
       - BREACH1
     data:
@@ -139,7 +140,7 @@ alienDeployments:
             - STR_BOUNTY_1
 
   - type: STR_RESCUE_RR
-    script: HANGAR_DRONES_4X4
+    # script: HANGAR_DRONES_4X4
     width: 40
     length: 40
     height: 8
@@ -149,7 +150,7 @@ alienDeployments:
     markerName: STR_RESCUE_RR
     duration: [16, 24]
     despawnPenalty: 100
-    abortPenalty: 75
+    abortPenalty: 65
     # startingCondition: SECURITY_GEAR_SECURITY_CRAFT
     briefing:
       showTarget: false
@@ -160,7 +161,8 @@ alienDeployments:
     unlockedResearch: STR_TRG_RI_PREQ
     customUfo: STR_HOUSE_GARAGE_RR
     terrains:
-      - HANGAR
+      - HANGAR_DRONES_SIZE4
+      - SLUM_DRONES_SIZE4
     music:
       - BREACH1
     data:
@@ -226,6 +228,89 @@ alienDeployments:
         percentageOutsideUfo: 50
         extraRandomItems: *ironExtra
         itemSets: *boosterSet
+
+  - type: STR_KNOCKOUT_MISSION
+    # script: SLUM_DRONES_3X3
+    width: 30
+    length: 30
+    height: 8
+    alert: STR_KNOCKOUT_MISSION_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_KNOCKOUT_MISSION_ALERT_DESCRIPTION
+    markerName: STR_KNOCKOUT_MISSION
+    duration: [48, 72]
+    despawnPenalty: 100
+    abortPenalty: 100
+    # startingCondition: SECURITY_GEAR_SECURITY_CRAFT
+    briefing:
+      showTarget: false
+      title: STR_KNOCKOUT_MISSION
+      music: BREACH_INTRO
+      background: DESTINATION.SCR
+      palette: 0
+    # unlockedResearch: STR_TRG_BO_PREQ
+    terrains:
+      - HANGAR_DRONES_SIZE3
+      - SLUM_DRONES_SIZE3
+    music:
+      - BREACH1
+    data:
+      - alienRank: 5
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 0
+        itemSets: &cybercrazy
+          -
+            - STR_STL_KNIFE
+            - STR_STIM_INHALER
+            - STR_STIM_INHALER
+            - STR_PERSONAL_DATA
+          -
+            - STR_STL_KNIFE
+            - STR_STIM_INHALER
+            - STR_STIM_INHALER
+            - STR_PERSONAL_DATA
+          -
+            - STR_STL_KNIFE
+            - STR_STIM_INHALER
+            - STR_STIM_INHALER
+            - STR_PERSONAL_DATA
+          -
+            - STR_WRENCH
+            - STR_STIM_INHALER
+            - STR_STIM_INHALER
+            - STR_PERSONAL_DATA
+          -
+            - STR_WRENCH
+            - STR_STIM_INHALER
+            - STR_STIM_INHALER
+            - STR_PERSONAL_DATA
+          -
+            - STR_WRENCH
+            - STR_STIM_INHALER
+            - STR_STIM_INHALER
+            - STR_PERSONAL_DATA
+          -
+            - STR_SLEDGEHAMMER
+            - STR_STIM_INHALER
+            - STR_STIM_INHALER
+            - STR_PERSONAL_DATA
+          -
+            - STR_SLEDGEHAMMER
+            - STR_STIM_INHALER
+            - STR_STIM_INHALER
+            - STR_PERSONAL_DATA
+          -
+            - STR_SLEDGEHAMMER
+            - STR_STIM_INHALER
+            - STR_STIM_INHALER
+            - STR_PERSONAL_DATA
+          -
+            - STR_SLEDGEHAMMER
+            - STR_STIM_INHALER
+            - STR_STIM_INHALER
+            - STR_PERSONAL_DATA
 
   - type: STR_TRADE_MEETING_EARLY
     script: SINGLE_BLOCK_2X2

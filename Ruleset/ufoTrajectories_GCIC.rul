@@ -4,6 +4,7 @@ ufoTrajectories:
     groundTimer: 0
     waypoints:
       - [0, 0, 0]
+
   - id: LOOK_AT_ME
     groundTimer: 5000
     waypoints:

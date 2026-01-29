@@ -8,9 +8,11 @@
       executions: 2
     - type: fillArea
 
-  - type: DEFAULT2
+  - type: DEFAULT4X4
     commands:
     - type: addUFO
+      rects:
+        - [0, 0, 3, 3]
     - type: addCraft
     - type: addBlock
       size: 2
@@ -53,7 +55,6 @@
       size: 2
       conditionals: [-2]
     - type: fillArea
-
   - type: HANGAR_DRONES_4X4
     commands:
     - type: addUFO
@@ -80,8 +81,10 @@
 #rest of the owl
     - type: addBlock
       size: [1, 2]
+      conditionals: [-1]
     - type: addBlock
       size: 2
+      conditionals: [-2]
     - type: fillArea
 
   - type: COMMERCIAL_3X3
@@ -97,7 +100,6 @@
     - type: addBlock
       size: 2
     - type: fillArea
-
   - type: COMMERCIAL_4X4
     commands:
     - type: addUFO
@@ -132,4 +134,68 @@
 #rest of the owl
     - type: addBlock
       size: 2
+      conditionals: [-1]
+    - type: fillArea
+
+  - type: SLUM_DRONES_3X3
+    commands:
+    - type: addUFO
+      rects:
+        - [0, 0, 2, 2]
+    - type: addCraft
+    - type: addLine
+      direction: vertical
+#drone spawns
+    - type: addBlock
+      terrain: SLUM_DRONES_1
+      size: [2, 1]
+      label: 1
+      executionChances: 33
+    - type: addBlock
+      terrain: SLUM_DRONES_1
+      size: 2
+      label: 2
+      executionChances: 50
+      conditionals: [-1]
+    - type: addBlock
+      terrain: SLUM_DRONES_1
+      conditionals: [-1, -2]
+#rest of the owl
+    - type: addBlock
+      size: [2, 1]
+      conditionals: [-1]
+    - type: addBlock
+      size: 2
+      conditionals: [-2]
+    - type: fillArea
+  - type: SLUM_DRONES_4X4
+    commands:
+    - type: addUFO
+      rects:
+        - [0, 0, 3, 3]
+    - type: addCraft
+    - type: addLine
+      direction: vertical
+#drone spawns
+    - type: addBlock
+      terrain: SLUM_DRONES_1
+      size: [2, 1]
+      label: 1
+      executionChances: 33
+    - type: addBlock
+      terrain: SLUM_DRONES_1
+      size: 2
+      label: 2
+      executionChances: 50
+      conditionals: [-1]
+    - type: addBlock
+      terrain: SLUM_DRONES_1
+      conditionals: [-1, -2]
+#rest of the owl
+    - type: addBlock
+      size: [2, 1]
+      conditionals: [-1]
+    - type: addBlock
+      size: 2
+      conditionals: [-2]
     - type: fillArea

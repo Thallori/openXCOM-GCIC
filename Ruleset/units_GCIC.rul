@@ -599,6 +599,7 @@ units:
 #clients
   - type: STR_CLIENT_1
     race: STR_RACE_CLIENT
+    rank: STR_RANK_5
     civilianRecoveryType: STR_BRAND_LOYALTY
     vip: true
     ignoredByAI: true
@@ -623,7 +624,8 @@ units:
     energyRecovery: 30
 
   - type: STR_CLIENT_RR
-    race: STR_RACE_CLIENT
+    race: STR_CLIENTS
+    rank: STR_RANK_5
     civilianRecoveryType: STR_BRAND_LOYALTY
     vip: true
     stats:
@@ -640,8 +642,39 @@ units:
       psiSkill: 0
       mana: 30
     armor: STR_CLIENT_RR_ARMOR
-    standHeight: 14
+    standHeight: 22
+    kneelHeight: 14
     moraleLossWhenKilled: 0
     value: 35
     deathSound: [44, 45, 46]
     energyRecovery: 30
+
+  - type: STR_CLIENT_CRAZY
+    race: STR_CLIENTS
+    rank: STR_RANK_5
+    liveAlien: STR_BRAND_LOYALTY
+    stats:
+      tu: 65
+      stamina: 35
+      health: 50
+      bravery: 80
+      reactions: 30
+      firing: 30
+      throwing: 30
+      melee: 30
+      strength: 40
+      psiStrength: 30
+      psiSkill: 0
+      mana: 10
+    armor: STR_CLIENT_CRAZY_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 15
+    deathSound: [41, 42, 43]
+    energyRecovery: 20
+    intelligence: 2
+    aggression: 8
+    spotter: 0
+    sniper: 0
+    isLeeroyJenkins: true
+    canSurrender: false

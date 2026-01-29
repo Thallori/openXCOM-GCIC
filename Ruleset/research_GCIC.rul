@@ -397,7 +397,6 @@ research:
     dependencies:
       - STR_AL_PREQ
       - STR_VENDOR_PRINTER
-      - STR_LOCAL_INTERFACE
       - STR_BIOCODING
     cost: 5
     unlocks:
@@ -423,8 +422,7 @@ research:
   - name: STR_DRONE_CRACKING
     dependencies:
       - STR_DC_PREQ
-      - STR_NON_CLIENTS
-    cost: 5
+    cost: 3
 
   - name: STR_SSP_CRACK
     dependencies:
@@ -544,13 +542,13 @@ research:
 #drones
   - name: STR_DRONE_HYBRID_ITEM
     needItem: true
-    cost: 4
+    cost: 3
     unlocks:
       - STR_DC_PREQ
 
   - name: STR_DRONE_HUMAN_ITEM
     needItem: true
-    cost: 4
+    cost: 3
     unlocks:
       - STR_DC_PREQ
 
@@ -918,6 +916,8 @@ research:
   - name: STR_SECRET_DATA
     needItem: true
     cost: 5
+    unlocks:
+      - STR_PG_PREQ
 
   - name: STR_GCIC_SABOTAGE_2_DATA_DECRYPT
     needItem: true
@@ -1024,7 +1024,7 @@ research:
     neededItem: STR_SECRET_DATA
     needItem: true
     destroyItem: true
-    cost: 5
+    cost: 10
     points: 20
     dependencies:
       - STR_PUBLIC_GATEWAY
@@ -1087,7 +1087,6 @@ research:
     destroyItem: false
     cost: 7
     unlocks:
-      - STR_LI_PREQ
       - STR_FREELANCER_ARMOR
       - STR_ALIEN_INTERVIEWED
     getOneFree:
@@ -1124,7 +1123,6 @@ research:
     destroyItem: false
     cost: 4
     unlocks:
-      - STR_LI_PREQ
       - STR_V_SSP_PREQ
       - STR_SSPGUARD_ARMOR
       - STR_ALIEN_INTERVIEWED

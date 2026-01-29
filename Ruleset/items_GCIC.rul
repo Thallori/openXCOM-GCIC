@@ -3792,6 +3792,7 @@ items:
     recoveryPoints: -1
     recoveryTransformations:
       STR_BIOMASS: [1]
+      STR_CONSUMER_CYBERNETICS_CODED: [1]
     armor: 30
   - type: STR_CLIENT_RR_CORPSE
     name: STR_CORPSE
@@ -3805,6 +3806,21 @@ items:
     recoveryPoints: -1
     recoveryTransformations:
       STR_BIOMASS: [1]
+      STR_CONSUMER_CYBERNETICS_CODED: [1]
+    armor: 30
+  - type: STR_CLIENT_CRAZY_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    weight: 22
+    bigSprite: 210
+    floorSprite: 195
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recoveryPoints: -65
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_CONSUMER_CYBERNETICS_CODED: [1]
     armor: 30
 
 #spawns

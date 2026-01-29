@@ -154,8 +154,168 @@ terrains:
       - name: HANGAR_20
         width: 10
         length: 20
-
+  - name: HANGAR_DRONES_SIZE3
+    script: HANGAR_DRONES_3X3
+    mapDataSets:
+      - BLANKS
+      - FLOOR_ASPHALT
+      - FLOOR_URBAN
+      - FLORA_URBAN
+      - STRUCTURE_CORRUGATED1
+      - STRUCTURE_CORRUGATED2
+      - STRUCTURE_PANELS
+      - STRUCTURE_PANELS2
+      - STRUCTURE_WAREHOUSE
+      - STRUCTURE_WOOD
+      - STAIRS_METAL
+      - LADDER
+      - BITS_POTTED_PLANTS
+      - ROOFS_BITS
+      - FENCE_ARROWS
+      - FENCE_CHAINLINK
+      - LIGHTS_STREET1
+      - BITS_WAREHOUSE
+      - BITS_CRATES1
+      - BITS_CRATES2
+      - BITS_CRATES3
+      - BITS_TECH
+      - BITS_TRASH
+      - BITS_BARRELS
+      - BITS_SERVERS
+      - BITS_FILING_CABINETS_GREY
+      - SIGNS_COMMERCIAL
+      - SIGNS_TECH1
+      - SIGNS_WARNING
+      - BLOCKS_PORT
+      - BLOCKS_PORT_CRANE
+      - FURNITURE_OUTDOORS
+      - FURNITURE_DESKS1
+      - FURNITURE_DESKS2
+      - BATHROOM_SLUM
+      - SKIP
+      - HOLOGRAMS
+    mapBlocks:
+      - name: HANGAR_00LZ
+        groups: 1
+      - name: HANGAR_01LZ
+        groups: 1
+      - name: HANGAR_02
+        width: 20
+        length: 20
+      - name: HANGAR_03S
+      - name: HANGAR_04S
+      - name: HANGAR_05S
+      - name: HANGAR_06S
+      - name: HANGAR_07
+        width: 10
+        length: 20
+      - name: HANGAR_08S
+      - name: HANGAR_09NS
+        groups: 3
+      - name: HANGAR_10NS
+        groups: 3
+      - name: HANGAR_11NS
+        groups: 3
+      - name: HANGAR_12NS
+        groups: 3
+      - name: HANGAR_13NS
+        groups: 3
+      - name: HANGAR_14NS
+        groups: 3
+      - name: HANGAR_15NS
+        groups: 3
+      - name: HANGAR_16NS
+        groups: 3
+      - name: HANGAR_17NS
+        groups: 3
+      - name: HANGAR_18NS
+        groups: 3
+      - name: HANGAR_19S
+      - name: HANGAR_20
+        width: 10
+        length: 20
+  - name: HANGAR_DRONES_SIZE4
+    script: HANGAR_DRONES_4X4
+    mapDataSets:
+      - BLANKS
+      - FLOOR_ASPHALT
+      - FLOOR_URBAN
+      - FLORA_URBAN
+      - STRUCTURE_CORRUGATED1
+      - STRUCTURE_CORRUGATED2
+      - STRUCTURE_PANELS
+      - STRUCTURE_PANELS2
+      - STRUCTURE_WAREHOUSE
+      - STRUCTURE_WOOD
+      - STAIRS_METAL
+      - LADDER
+      - BITS_POTTED_PLANTS
+      - ROOFS_BITS
+      - FENCE_ARROWS
+      - FENCE_CHAINLINK
+      - LIGHTS_STREET1
+      - BITS_WAREHOUSE
+      - BITS_CRATES1
+      - BITS_CRATES2
+      - BITS_CRATES3
+      - BITS_TECH
+      - BITS_TRASH
+      - BITS_BARRELS
+      - BITS_SERVERS
+      - BITS_FILING_CABINETS_GREY
+      - SIGNS_COMMERCIAL
+      - SIGNS_TECH1
+      - SIGNS_WARNING
+      - BLOCKS_PORT
+      - BLOCKS_PORT_CRANE
+      - FURNITURE_OUTDOORS
+      - FURNITURE_DESKS1
+      - FURNITURE_DESKS2
+      - BATHROOM_SLUM
+      - SKIP
+      - HOLOGRAMS
+    mapBlocks:
+      - name: HANGAR_00LZ
+        groups: 1
+      - name: HANGAR_01LZ
+        groups: 1
+      - name: HANGAR_02
+        width: 20
+        length: 20
+      - name: HANGAR_03S
+      - name: HANGAR_04S
+      - name: HANGAR_05S
+      - name: HANGAR_06S
+      - name: HANGAR_07
+        width: 10
+        length: 20
+      - name: HANGAR_08S
+      - name: HANGAR_09NS
+        groups: 3
+      - name: HANGAR_10NS
+        groups: 3
+      - name: HANGAR_11NS
+        groups: 3
+      - name: HANGAR_12NS
+        groups: 3
+      - name: HANGAR_13NS
+        groups: 3
+      - name: HANGAR_14NS
+        groups: 3
+      - name: HANGAR_15NS
+        groups: 3
+      - name: HANGAR_16NS
+        groups: 3
+      - name: HANGAR_17NS
+        groups: 3
+      - name: HANGAR_18NS
+        groups: 3
+      - name: HANGAR_19S
+      - name: HANGAR_20
+        width: 10
+        length: 20
   - name: HANGAR_DRONES_1
+    script: HANGAR_DRONES_3X3
     mapDataSets:
       - BLANKS
       - FLOOR_ASPHALT
@@ -417,7 +577,6 @@ terrains:
         groups: 3
       - name: INDUSTRIAL_21RC
         groups: 4
-
   - name: INDUSTRIAL_DRONES_1
     mapDataSets:
       - BLANKS
@@ -522,6 +681,315 @@ terrains:
         fuseTimers:
           STR_SPAWN_DRONE_DEEP_1: [0, 0]
           STR_SPAWN_DRONE_SHARK_1: [0, 0]
+
+  - name: SLUM
+    mapDataSets:
+      - BLANKS
+      - FLOOR_ASPHALT
+      - FLOOR_SLUMS
+      - FLORA_URBAN
+      - STRUCTURE_BRICKS2
+      - STRUCTURE_SLUMS
+      - STRUCTURE_SLUMTILES
+      - STRUCTURE_WOOD
+      - ROOFS_BITS
+      - FENCE_CHAINLINK
+      - FENCE_IRON
+      - LADDER
+      - STAIRS_PLAIN
+      - LIGHTS_SLUMS
+      - FURNITURE_OUTDOORS
+      - FURNITURE_SLUMS1
+      - FURNITURE_SLUMS2
+      - FURNITURE_SLUMS3
+      - BATHROOM_SLUM
+      - HOLOGRAMS2
+      - SIGNS_TECH1
+      - BITS_CRATES1
+      - BITS_GRAFFITI
+      - BITS_SLUMTRASH
+      - BITS_SERVERS
+      - FLOOR_URBAN
+    mapBlocks:
+      - name: SLUM_00LZ
+        groups: 1
+      - name: SLUM_01LZ
+        groups: 1
+      - name: SLUM_02S
+      - name: SLUM_03
+        width: 20
+        length: 20
+      - name: SLUM_04S
+      - name: SLUM_05S
+      - name: SLUM_06S
+      - name: SLUM_07S
+      - name: SLUM_08
+        width: 20
+        length: 20
+      - name: SLUM_09S
+      - name: SLUM_10S
+      - name: SLUM_11S
+      - name: SLUM_12S
+      - name: SLUM_13NS
+        groups: 3
+      - name: SLUM_14NS
+        groups: 3
+      - name: SLUM_15NS
+        groups: 3
+      - name: SLUM_16NS
+        groups: 3
+      - name: SLUM_17NS
+        groups: 3
+      - name: SLUM_18NS
+        groups: 3
+      - name: SLUM_19NS
+        groups: 3
+      - name: SLUM_20NS
+        groups: 3
+  - name: SLUM_DRONES_SIZE3
+    script: SLUM_DRONES_3X3
+    mapDataSets:
+      - BLANKS
+      - FLOOR_ASPHALT
+      - FLOOR_SLUMS
+      - FLORA_URBAN
+      - STRUCTURE_BRICKS2
+      - STRUCTURE_SLUMS
+      - STRUCTURE_SLUMTILES
+      - STRUCTURE_WOOD
+      - ROOFS_BITS
+      - FENCE_CHAINLINK
+      - FENCE_IRON
+      - LADDER
+      - STAIRS_PLAIN
+      - LIGHTS_SLUMS
+      - FURNITURE_OUTDOORS
+      - FURNITURE_SLUMS1
+      - FURNITURE_SLUMS2
+      - FURNITURE_SLUMS3
+      - BATHROOM_SLUM
+      - HOLOGRAMS2
+      - SIGNS_TECH1
+      - BITS_CRATES1
+      - BITS_GRAFFITI
+      - BITS_SLUMTRASH
+      - BITS_SERVERS
+      - FLOOR_URBAN
+    mapBlocks:
+      - name: SLUM_00LZ
+        groups: 1
+      - name: SLUM_01LZ
+        groups: 1
+      - name: SLUM_02S
+      - name: SLUM_03
+        width: 20
+        length: 20
+      - name: SLUM_04S
+      - name: SLUM_05S
+      - name: SLUM_06S
+      - name: SLUM_07S
+      - name: SLUM_08
+        width: 20
+        length: 20
+      - name: SLUM_09S
+      - name: SLUM_10S
+      - name: SLUM_11S
+      - name: SLUM_12S
+      - name: SLUM_13NS
+        groups: 3
+      - name: SLUM_14NS
+        groups: 3
+      - name: SLUM_15NS
+        groups: 3
+      - name: SLUM_16NS
+        groups: 3
+      - name: SLUM_17NS
+        groups: 3
+      - name: SLUM_18NS
+        groups: 3
+      - name: SLUM_19NS
+        groups: 3
+      - name: SLUM_20NS
+        groups: 3
+  - name: SLUM_DRONES_SIZE4
+    script: SLUM_DRONES_4X4
+    mapDataSets:
+      - BLANKS
+      - FLOOR_ASPHALT
+      - FLOOR_SLUMS
+      - FLORA_URBAN
+      - STRUCTURE_BRICKS2
+      - STRUCTURE_SLUMS
+      - STRUCTURE_SLUMTILES
+      - STRUCTURE_WOOD
+      - ROOFS_BITS
+      - FENCE_CHAINLINK
+      - FENCE_IRON
+      - LADDER
+      - STAIRS_PLAIN
+      - LIGHTS_SLUMS
+      - FURNITURE_OUTDOORS
+      - FURNITURE_SLUMS1
+      - FURNITURE_SLUMS2
+      - FURNITURE_SLUMS3
+      - BATHROOM_SLUM
+      - HOLOGRAMS2
+      - SIGNS_TECH1
+      - BITS_CRATES1
+      - BITS_GRAFFITI
+      - BITS_SLUMTRASH
+      - BITS_SERVERS
+      - FLOOR_URBAN
+    mapBlocks:
+      - name: SLUM_00LZ
+        groups: 1
+      - name: SLUM_01LZ
+        groups: 1
+      - name: SLUM_02S
+      - name: SLUM_03
+        width: 20
+        length: 20
+      - name: SLUM_04S
+      - name: SLUM_05S
+      - name: SLUM_06S
+      - name: SLUM_07S
+      - name: SLUM_08
+        width: 20
+        length: 20
+      - name: SLUM_09S
+      - name: SLUM_10S
+      - name: SLUM_11S
+      - name: SLUM_12S
+      - name: SLUM_13NS
+        groups: 3
+      - name: SLUM_14NS
+        groups: 3
+      - name: SLUM_15NS
+        groups: 3
+      - name: SLUM_16NS
+        groups: 3
+      - name: SLUM_17NS
+        groups: 3
+      - name: SLUM_18NS
+        groups: 3
+      - name: SLUM_19NS
+        groups: 3
+      - name: SLUM_20NS
+        groups: 3
+  - name: SLUM_DRONES_1
+    mapDataSets:
+      - BLANKS
+      - FLOOR_ASPHALT
+      - FLOOR_SLUMS
+      - FLORA_URBAN
+      - STRUCTURE_BRICKS2
+      - STRUCTURE_SLUMS
+      - STRUCTURE_SLUMTILES
+      - STRUCTURE_WOOD
+      - ROOFS_BITS
+      - FENCE_CHAINLINK
+      - FENCE_IRON
+      - LADDER
+      - STAIRS_PLAIN
+      - LIGHTS_SLUMS
+      - FURNITURE_OUTDOORS
+      - FURNITURE_SLUMS1
+      - FURNITURE_SLUMS2
+      - FURNITURE_SLUMS3
+      - BATHROOM_SLUM
+      - HOLOGRAMS2
+      - SIGNS_TECH1
+      - BITS_CRATES1
+      - BITS_GRAFFITI
+      - BITS_SLUMTRASH
+      - BITS_SERVERS
+      - FLOOR_URBAN
+    mapBlocks:
+      - name: SLUM_03
+        width: 20
+        length: 20
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [6, 8, 0]
+          STR_SPAWN_DRONE_SHARK_1:
+          - [9, 8, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_SHARK_1: [0, 0]
+      - name: SLUM_04S
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [1, 2, 0]
+          STR_SPAWN_DRONE_HUMAN_1:
+          - [1, 4, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_HUMAN_1: [0, 0]
+      - name: SLUM_06S
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [2, 6, 0]
+          STR_SPAWN_DRONE_HUMAN_1:
+          - [3, 5, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_SHARK_1: [0, 0]
+      - name: SLUM_07S
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [1, 4, 0]
+          STR_SPAWN_DRONE_SHARK_1:
+          - [1, 5, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_SHARK_1: [0, 0]
+      - name: SLUM_08
+        width: 20
+        length: 20
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [4, 18, 0]
+          STR_SPAWN_DRONE_DEEP_1:
+          - [7, 16, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_DEEP_1: [0, 0]
+      - name: SLUM_09S
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [6, 2, 0]
+          STR_SPAWN_DRONE_HUMAN_1:
+          - [8, 3, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_HUMAN_1: [0, 0]
+      - name: SLUM_10S
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [6, 2, 0]
+          STR_SPAWN_DRONE_HUMAN_1:
+          - [7, 2, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_HUMAN_1: [0, 0]
+      - name: SLUM_11S
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [3, 4, 0]
+          STR_SPAWN_DRONE_SHARK_1:
+          - [4, 5, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_SHARK_1: [0, 0]
+      - name: SLUM_12S
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [6, 1, 0]
+          STR_SPAWN_DRONE_HUMAN_1:
+          - [7, 2, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_HUMAN_1: [0, 0]
 
   - name: FOREST2
     mapDataSets:

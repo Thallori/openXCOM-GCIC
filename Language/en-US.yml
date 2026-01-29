@@ -463,12 +463,17 @@ en-US:
   GLOBE_TEXTURE_18: "Deepest Desert, Scorching"
   GLOBE_TEXTURE_19: "Snow Mountain/Low Habitation, Cold"
   GLOBE_TEXTURE_20: "Taiga/Low Habitation, Cold"
-#maps land
+#terrains
   MAP_HANGAR: "Warehouse District"
   MAP_COMMERCIAL: "Merchant Boulevard"
   MAP_INDUSTRIAL: "Chemical Park"
+  MAP_SLUM: "Suburban Slums"
   MAP_FOREST2: "Forest"
-#maps sea
+# scripted
+  MAP_HANGAR_DRONES_SIZE3: "Warehouse District"
+  MAP_HANGAR_DRONES_SIZE4: "Warehouse District"
+  MAP_SLUM_DRONES_SIZE3: "Suburban Slums"
+  MAP_SLUM_DRONES_SIZE4: "Suburban Slums"
 #music
   GMARCINTRO: "Achron, All Is Lost"
   GMSTORY: "Achron, We Will Be Reprised"
@@ -512,6 +517,11 @@ en-US:
   STR_RESCUE_RR_ALERT: "CLIENTS REQUIRE RESCUE"
   STR_RESCUE_RR_ALERT_DESCRIPTION: "An emergency request has been triggered. We are tracking a client's current vitals and location. So far they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Minimum site duration: 16 Hours{NEWLINE}Maximum Gear: Security"
   STR_RESCUE_RR_BRIEFING: "An emergency request has been triggered. We are tracking a client's current vitals and location. So far they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this operation."
+
+  STR_KNOCKOUT_MISSION: "Clients: Cyber Psychosis"
+  STR_KNOCKOUT_MISSION_ALERT: "CLIENTS REQUIRE RESCUE"
+  STR_KNOCKOUT_MISSION_ALERT_DESCRIPTION: "Telemetry data from multiple clients matches certain cybernetic ailments. Although they are unlikely to pose much danger, we should take care to retrieve them unharmed.{NEWLINE}{NEWLINE}Minimum site duration: 48 Hours{NEWLINE}Maximum Gear: Security"
+  STR_KNOCKOUT_MISSION_BRIEFING: "Telemetry data from multiple clients matches certain cybernetic ailments. Although they are unlikely to pose much danger, we should take care to retrieve them unharmed.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon landing.{NEWLINE}{NEWLINE}We may abort this operation."
 # netrunners
   STR_TRADE_MEETING_EARLY: "Netrunners: Contact"
   STR_TRADE_MEETING_EARLY_ALERT: "NETRUNNERS SEND MESSAGE"
@@ -1417,12 +1427,15 @@ en-US:
   STR_HOLOSECTOID_ARMOR: "(Sim) Sectoid Analysis"
   STR_HOLOSECTOID_ARMOR_UP: "Attack Damage: 52 Plasma"
 
-  STR_RACE_CLIENT: "CLIENTS"
-  STR_CIVILIAN: "Potential Clients"
+  STR_CLIENTS: "CLIENTS"
   STR_CLIENT_1: "Client"
   STR_CLIENT_1_ARMOR: "Client"
   STR_CLIENT_RR: "Client"
   STR_CLIENT_RR_ARMOR: "Client"
+  STR_CLIENT_CRAZY: "Client"
+  STR_CLIENT_CRAZY_ARMOR: "Client"
+
+  STR_CIVILIAN: "Potential Clients"
   STR_HUMAN_M_CIVILIAN: "Potential Client"
 #manuals
   STR_MANUAL_MANUAL: "MANUALS"
@@ -1773,27 +1786,27 @@ en-US:
 #flags
   STR_ALIEN_INTERVIEWED: "(alien interviewed)"
 #preqs
-  STR_DC_PREQ: "DC (preq)"
-  STR_LI_PREQ: "LI (preq)"
-  STR_BC_PREQ: "BC (preq)"
-  STR_AL_PREQ: "AL (preq)"
-  STR_PG_PREQ: "PG (preq)"
+  STR_DC_PREQ: "(drone researched)"
+  STR_LI_PREQ: "(encryption encountered)"
+  STR_BC_PREQ: "(biocoding encountered)"
+  STR_AL_PREQ: "(laser cell researched)"
+  STR_PG_PREQ: "(network encountered)"
 
-  STR_V_P2P_PREQ: "V:P2P (preq)"
-  STR_V_SSP_PREQ: "V:SSP (preq)"
+  STR_V_P2P_PREQ: "(P2P encountered)"
+  STR_V_SSP_PREQ: "(SSP encountered)"
 # ironeyes
-  STR_TRG_BO_PREQ: "T:BO (preq)"
-  STR_TRG_RI_PREQ: "T:RI (preq)"
+  STR_TRG_BO_PREQ: "(booster neutralized)"
+  STR_TRG_RI_PREQ: "(ripper neutralized)"
 # netrunners
-  STR_TRG_FL_PREQ: "T:FL (preq)"
-  STR_TRG_ST_PREQ: "T:ST (preq)"
+  STR_TRG_FL_PREQ: "(freelancer collected)"
+  STR_TRG_ST_PREQ: "(skiptracer collected)"
 # ssp
-  STR_TRG_SG_PREQ: "T:SG (preq)"
-  STR_TRG_SO_PREQ: "T:SO (preq)"
+  STR_TRG_SG_PREQ: "(guard collected)"
+  STR_TRG_SO_PREQ: "(officer collected)"
 # animals
-  STR_TRG_CR_PREQ: "T:CR (preq)"
-  STR_TRG_MS_PREQ: "T:MS (preq)"
+  STR_TRG_CR_PREQ: "(chryssalid exchanged)"
+  STR_TRG_MS_PREQ: "(muckstar exchanged)"
 # robots
-  STR_TRG_RS_PREQ: "T:RS (preq)"
+  STR_TRG_RS_PREQ: "(robosphere exchanged)"
 # simulated
-  STR_TRG_HS_PREQ: "T:HS (preq)"
+  STR_TRG_HS_PREQ: "(holo-sectoid exchanged)"

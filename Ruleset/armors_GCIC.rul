@@ -1635,3 +1635,29 @@ armors:
       energy: *EnergyRecoveryTypical
     overKill: 1.5
     loftempsSet: [ 3 ]
+
+  - type: STR_CLIENT_CRAZY_ARMOR
+    spriteInv: CLIENT_CRAZY.SPK
+    spriteSheet: CLIENT_CRAZY.PCK
+    spriteFaceGroup: 10
+    spriteFaceColor: [160, 160, 161, 161, 162, 162, 163, 163]
+    spriteHairGroup: 6
+    spriteHairColor: [96, 96, 160, 160, 112, 112, 240, 240]
+    corpseBattle:
+      - STR_CLIENT_CRAZY_CORPSE
+    allowsKneeling: true
+    personalLight: 13
+    heatVision: 20
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: *OrganicUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryTypical
+    overKill: 1.5
+    loftempsSet: [ 3 ]

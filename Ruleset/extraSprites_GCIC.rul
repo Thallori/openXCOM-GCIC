@@ -152,6 +152,7 @@ extraSprites:
       207: Resources/Items/Utility/morning_bigob.png
       208: Resources/Items/Explosives/molotov_bigob.png
       209: Resources/Items/Explosives/flask_bigob.png
+      210: Resources/Factions/Clients/client_crazy_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -250,6 +251,7 @@ extraSprites:
       192: Resources/Items/Utility/morning_floorob.png
       193: Resources/Items/Explosives/molotov_floorob.png
       194: Resources/Items/Explosives/flask_floorob.png
+      195: Resources/Factions/Clients/client_crazy_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -786,15 +788,24 @@ extraSprites:
     files:
       0: Resources/Factions/Clients/client_1_sprite.png
 
-  - typeSingle: CLIENT_RR.SPK
-    fileSingle: Resources/Factions/Clients/client_rr_inventory.png
-  - type: CLIENT_RR.PCK
+  - typeSingle: CLIENT_CRAZY.SPK
+    fileSingle: Resources/Factions/Clients/client_crazy_inventory.png
+  - type: CLIENT_CRAZY.PCK
     subX: 32
     subY: 40
     width: 512
     height: 680
     files:
-      0: Resources/Factions/Clients/client_rr_sprite.png
+      0: Resources/Factions/Clients/client_crazy_sprite.png
+  - typeSingle: CLIENT_RR.SPK
+    fileSingle: Resources/Factions/Clients/client_crazy_inventory.png
+  - type: CLIENT_CRAZY.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 680
+    files:
+      0: Resources/Factions/Clients/client_crazy_sprite.png
 
 #ufopedia
   - typeSingle: ALIGN_TEST_CPAL
