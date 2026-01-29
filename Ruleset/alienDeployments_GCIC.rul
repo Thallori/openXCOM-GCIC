@@ -248,7 +248,7 @@ alienDeployments:
       music: BREACH_INTRO
       background: DESTINATION.SCR
       palette: 0
-    # unlockedResearch: STR_TRG_BO_PREQ
+    unlockedResearch: STR_TRG_CZ_PREQ
     terrains:
       - HANGAR_DRONES_SIZE3
       - SLUM_DRONES_SIZE3

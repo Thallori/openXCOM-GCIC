@@ -50,7 +50,7 @@ alienMissions:
     spawnZone: 3 #cities
     raceWeights:
       0:
-          STR_IRONEYES: 100
+          STR_CLIENTS: 100
     waves:
       - ufo: STR_KNOCKOUT_MISSION
         count: 1

@@ -84,7 +84,7 @@ missionScripts:
     #   STR_TODO: false
     missionWeights:
       0:
-        STR_RESCUE_1: 90
+        STR_RESCUE_1: 60
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
@@ -92,7 +92,7 @@ missionScripts:
   - type: Rescue1d
     # researchTriggers:
     #   STR_TODO: false
-    executionOdds: 60
+    executionOdds: 40
     missionWeights:
       0:
         STR_RESCUE_1: 100
@@ -103,7 +103,7 @@ missionScripts:
   - type: Rescue1e
     # researchTriggers:
     #   STR_TODO: false
-    executionOdds: 50
+    executionOdds: 20
     missionWeights:
       0:
         STR_RESCUE_1: 100
@@ -140,6 +140,39 @@ missionScripts:
     missionWeights:
       0:
         STR_RESCUE_RR: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: RescueCEarly
+    lastMonth: 0
+    missionWeights:
+      0:
+        STR_KNOCKOUT_MISSION: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 10000
+    randomDelay: 33000
+
+  - type: RescueCa
+    firstMonth: 1
+    researchTriggers:
+      STR_TRG_CZ_PREQ: false
+    missionWeights:
+      0:
+        STR_KNOCKOUT_MISSION: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+  - type: RescueCb
+    researchTriggers:
+      STR_TRG_CZ_PREQ: true
+    executionOdds: 40
+    missionWeights:
+      0:
+        STR_KNOCKOUT_MISSION: 100
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30

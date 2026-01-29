@@ -788,16 +788,19 @@ extraSprites:
     files:
       0: Resources/Factions/Clients/client_1_sprite.png
 
-  - typeSingle: CLIENT_CRAZY.SPK
-    fileSingle: Resources/Factions/Clients/client_crazy_inventory.png
-  - type: CLIENT_CRAZY.PCK
+  - typeSingle: CLIENT_RR.SPK
+    fileSingle: Resources/Factions/Clients/client_rr_inventory.png
+  - type: CLIENT_RR.PCK
     subX: 32
     subY: 40
     width: 512
     height: 680
     files:
-      0: Resources/Factions/Clients/client_crazy_sprite.png
-  - typeSingle: CLIENT_RR.SPK
+      0: Resources/Factions/Clients/client_rr_sprite.png
+
+  - typeSingle: CLIENT_CRAZY_CPAL
+    fileSingle: Resources/Factions/Clients/client_crazy_CPAL.png
+  - typeSingle: CLIENT_CRAZY.SPK
     fileSingle: Resources/Factions/Clients/client_crazy_inventory.png
   - type: CLIENT_CRAZY.PCK
     subX: 32
