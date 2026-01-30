@@ -3698,20 +3698,30 @@ items:
 # enemy drones
   - type: STR_DRONE_ENEMY_HYBRID
     categories: [STR_DEBUG_CATEGORY]
+    recoveryPoints: 1
     recoveryTransformations:
       STR_DRONE_HYBRID_ITEM: [1]
     recover: true
     liveAlien: true
   - type: STR_DRONE_ENEMY_HUMAN
     categories: [STR_DEBUG_CATEGORY]
+    recoveryPoints: 1
     recoveryTransformations:
       STR_DRONE_HUMAN_ITEM: [1]
     recover: true
     liveAlien: true
   - type: STR_DRONE_ENEMY_SHARK
     categories: [STR_DEBUG_CATEGORY]
+    recoveryPoints: 1
     recoveryTransformations:
       STR_DRONE_SHARK_ITEM: [1]
+    recover: true
+    liveAlien: true
+  - type: STR_DRONE_ENEMY_DEEP
+    categories: [STR_DEBUG_CATEGORY]
+    recoveryPoints: 1
+    recoveryTransformations:
+      STR_DRONE_DEEP_ITEM: [1]
     recover: true
     liveAlien: true
 

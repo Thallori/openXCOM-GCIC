@@ -107,7 +107,7 @@ ufopaedia:
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: HMEMORY_CPAL
+    image_id: UMEMORY_CPAL
 
   - id: STR_HYBRID_MEMORY_1
     requires:
@@ -186,7 +186,7 @@ ufopaedia:
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: VENDOR_MEDI_CPAL
+    image_id: VENDOR_MEDI_DR_CPAL
   - id: STR_HUMAN_AUTOPSY
     requires:
       - STR_HUMAN_AUTOPSY
@@ -194,7 +194,7 @@ ufopaedia:
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: VENDOR_MEDI_CPAL
+    image_id: VENDOR_MEDI_DR_CPAL
   - id: STR_SHARK_AUTOPSY
     requires:
       - STR_SHARK_AUTOPSY
@@ -202,7 +202,7 @@ ufopaedia:
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: VENDOR_MEDI_CPAL
+    image_id: VENDOR_MEDI_DR_CPAL
   - id: STR_DEEP_AUTOPSY
     requires:
       - STR_DEEP_AUTOPSY
@@ -210,7 +210,7 @@ ufopaedia:
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: VENDOR_MEDI_CPAL
+    image_id: VENDOR_MEDI_DR_CPAL
 
   - id: STR_VENDOR_BUILDER
     requires:

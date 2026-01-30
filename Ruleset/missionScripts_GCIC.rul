@@ -353,7 +353,7 @@ missionScripts:
     useTable: false
     startDelay: 30
     randomDelay: 43000
-  - type: MEDI1b
+  - type: MEDI1c
     researchTriggers:
       STR_MEDI_MISSIONS: true
     executionOdds: 19

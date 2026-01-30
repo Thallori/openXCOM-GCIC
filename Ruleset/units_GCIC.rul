@@ -428,7 +428,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       mana: 25
-    armor: STR_DRONESHARK_ARMOR
+    armor: STR_DRONEDEEP_ARMOR
     standHeight: 22
     kneelHeight: 14
     moraleLossWhenKilled: 10

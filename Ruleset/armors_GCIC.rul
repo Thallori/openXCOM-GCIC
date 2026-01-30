@@ -1309,99 +1309,6 @@ armors:
     overKill: 1.5
     loftempsSet: [ 3 ]
 
-# enemy drones
-  - type: STR_DRONEHYBRID_ARMOR
-    ufopediaType: STR_DRONE_HYBRID_ITEM
-    spriteInv: DRONEHYBRID.SPK
-    spriteSheet: WORKSUIT_HYBRID.PCK
-    corpseBattle:
-      - STR_PLEX_DRONE_HYBRID_CORPSE
-    visibilityAtDark: 11
-    personalLight: 5
-    heatVision: 20
-    frontArmor: 2
-    sideArmor: 2
-    rearArmor: 2
-    underArmor: 2
-    damageModifier: *OrganicUnarmoredResists
-    meleeDodge: *MeleeDodgeTypical
-    psiDefence: *PsiDefenseTypical
-    recovery:
-      health: *HealthRecoveryTypical
-      stun: *StunRecoveryEnemy
-      energy: *EnergyRecoveryTypical
-    overKill: 1.5
-    loftempsSet: [ 3 ]
-
-  - type: STR_DRONEHUMAN_ARMOR
-    ufopediaType: STR_DRONE_HUMAN_ITEM
-    spriteInv: DRONEHUMAN.SPK
-    spriteSheet: WORKSUIT_HUMAN.PCK
-    corpseBattle:
-      - STR_PLEX_DRONE_HUMAN_CORPSE
-    visibilityAtDark: 8
-    personalLight: 5
-    heatVision: 20
-    frontArmor: 2
-    sideArmor: 2
-    rearArmor: 2
-    underArmor: 2
-    damageModifier: *OrganicUnarmoredResists
-    meleeDodge: *MeleeDodgeTypical
-    psiDefence: *PsiDefenseTypical
-    recovery:
-      health: *HealthRecoveryTypical
-      stun: *StunRecoveryEnemy
-      energy: *EnergyRecoveryHumanTypical
-    overKill: 1.5
-    loftempsSet: [ 3 ]
-
-  - type: STR_DRONESHARK_ARMOR
-    ufopediaType: STR_DRONE_SHARK_ITEM
-    spriteInv: DRONESHARK.SPK
-    spriteSheet: WORKSUIT_SHARK.PCK
-    corpseBattle:
-      - STR_PLEX_DRONE_SHARK_CORPSE
-    visibilityAtDark: 8
-    personalLight: 5
-    heatVision: 20
-    frontArmor: 2
-    sideArmor: 2
-    rearArmor: 2
-    underArmor: 2
-    damageModifier: *OrganicUnarmoredResists
-    meleeDodge: *MeleeDodgeTypical
-    psiDefence: *PsiDefenseTypical
-    recovery:
-      health: *HealthRecoveryTypical
-      stun: *StunRecoveryEnemy
-      energy: *EnergyRecoveryTypical
-    overKill: 1.5
-    loftempsSet: [ 3 ]
-
-  - type: STR_DRONEDEEP_ARMOR
-    ufopediaType: STR_DRONE_DEEP_ITEM
-    spriteInv: DRONEDEEP.SPK
-    spriteSheet: WORKSUIT_DEEP.PCK
-    corpseBattle:
-      - STR_PLEX_DRONE_DEEP_CORPSE
-    visibilityAtDark: 8
-    personalLight: 5
-    heatVision: 20
-    frontArmor: 2
-    sideArmor: 2
-    rearArmor: 2
-    underArmor: 2
-    damageModifier: *DeepOneUnarmoredResists
-    meleeDodge: *MeleeDodgeTypical
-    psiDefence: *PsiDefenseTypical
-    recovery:
-      health: *HealthRecoveryTypical
-      stun: *StunRecoveryEnemy
-      energy: *EnergyRecoveryTypical
-    overKill: 1.5
-    loftempsSet: [ 3 ]
-
 # animals
   - type: STR_CHRYSSALID_ARMOR
     spriteInv: CHRYSSALID.SPK
@@ -1577,6 +1484,100 @@ armors:
       energy: *EnergyRecoveryTypical
     overKill: 1.5
     loftempsSet: [ 2 ]
+
+
+# enemy drones
+  - type: STR_DRONEHYBRID_ARMOR
+    ufopediaType: STR_DRONE_HYBRID_ITEM
+    spriteInv: DRONEHYBRID.SPK
+    spriteSheet: WORKSUIT_HYBRID.PCK
+    corpseBattle:
+      - STR_PLEX_DRONE_HYBRID_CORPSE
+    visibilityAtDark: 11
+    personalLight: 5
+    heatVision: 20
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: *OrganicUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryTypical
+    overKill: 1.5
+    loftempsSet: [ 3 ]
+
+  - type: STR_DRONEHUMAN_ARMOR
+    ufopediaType: STR_DRONE_HUMAN_ITEM
+    spriteInv: DRONEHUMAN.SPK
+    spriteSheet: WORKSUIT_HUMAN.PCK
+    corpseBattle:
+      - STR_PLEX_DRONE_HUMAN_CORPSE
+    visibilityAtDark: 8
+    personalLight: 5
+    heatVision: 20
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: *OrganicUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryHumanTypical
+    overKill: 1.5
+    loftempsSet: [ 3 ]
+
+  - type: STR_DRONESHARK_ARMOR
+    ufopediaType: STR_DRONE_SHARK_ITEM
+    spriteInv: DRONESHARK.SPK
+    spriteSheet: WORKSUIT_SHARK.PCK
+    corpseBattle:
+      - STR_PLEX_DRONE_SHARK_CORPSE
+    visibilityAtDark: 8
+    personalLight: 5
+    heatVision: 20
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: *OrganicUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryTypical
+    overKill: 1.5
+    loftempsSet: [ 3 ]
+
+  - type: STR_DRONEDEEP_ARMOR
+    ufopediaType: STR_DRONE_DEEP_ITEM
+    spriteInv: DRONEDEEP.SPK
+    spriteSheet: WORKSUIT_DEEP.PCK
+    corpseBattle:
+      - STR_PLEX_DRONE_DEEP_CORPSE
+    visibilityAtDark: 8
+    personalLight: 5
+    heatVision: 20
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: *DeepOneUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryTypical
+    overKill: 1.5
+    loftempsSet: [ 3 ]
 
 # civilians
   - type: STR_CLIENT_1_ARMOR

@@ -136,6 +136,7 @@ soldierTransformation:
     rerollStats:
       mana: 1
     allowsDeadSoldiers: true
+    allowsLiveSoldiers: false
     needsCorpseRecovered: false
     allowedSoldierTypes:
       - STR_CRACKED_HYBRID_DRONE

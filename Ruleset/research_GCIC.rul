@@ -916,6 +916,99 @@ research:
       STR_TRG_CZ_PREQ:
         - STR_CLIENT_CRAZY
 
+  - name: STR_DATA_1_IRONEYES
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
+    neededItem: STR_PERSONAL_DATA
+    needItem: true
+    destroyItem: true
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_LOCAL_INTERFACE
+    getOneFreeProtected:
+      STR_TRG_BO_PREQ:
+        - STR_BOOSTER_PRIVATE
+      STR_TRG_RI_PREQ:
+        - STR_RIPPER_PRIVATE
+
+  - name: STR_DATA_1_NETRUNNERS
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
+    neededItem: STR_PERSONAL_DATA
+    needItem: true
+    destroyItem: true
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_LOCAL_INTERFACE
+    getOneFreeProtected:
+      STR_TRG_FL_PREQ:
+        - STR_FREELANCER_PRIVATE
+      STR_TRG_ST_PREQ:
+        - STR_SKIPTRACER_PRIVATE
+
+  - name: STR_DATA_1_SSP
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
+    neededItem: STR_PERSONAL_DATA
+    needItem: true
+    destroyItem: true
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_LOCAL_INTERFACE
+    getOneFreeProtected:
+      STR_TRG_SG_PREQ:
+        - STR_SSPGUARD_PRIVATE
+      STR_TRG_SO_PREQ:
+        - STR_SSPOFFICER_PRIVATE
+
+  - name: STR_DATA_1_MEDI
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
+    neededItem: STR_PERSONAL_DATA
+    needItem: true
+    destroyItem: true
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_LOCAL_INTERFACE
+    getOneFreeProtected:
+      STR_TRG_CR_PREQ:
+        - STR_CHRYSSALID
+      STR_TRG_MS_PREQ:
+        - STR_MUCKSTAR
+
+  - name: STR_DATA_1_GR
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
+    neededItem: STR_PERSONAL_DATA
+    needItem: true
+    destroyItem: true
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_LOCAL_INTERFACE
+    getOneFreeProtected:
+      STR_TRG_RS_PREQ:
+        - STR_ROBOSPHERE
+
+  - name: STR_DATA_1_IRS
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
+    neededItem: STR_PERSONAL_DATA
+    needItem: true
+    destroyItem: true
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_LOCAL_INTERFACE
+    getOneFreeProtected:
+      STR_TRG_HS_PREQ:
+        - STR_HOLOUFO_SMALL
+        - STR_HOLOSECTOID
+
   - name: STR_DATA_2
     requiresBaseFunc:
       - STR_SERVICE_NETWORK
@@ -939,6 +1032,7 @@ research:
         - STR_HUMAN_AUTOPSY
         - STR_SHARK_AUTOPSY
         - STR_DEEP_AUTOPSY
+
 # ironeyes
   - name: STR_BOOSTER_PRIVATE
     needItem: true

@@ -66,8 +66,18 @@ statGrowthMultipliersAbs:
     melee: 15
     mana: 30
 statGrowthMultipliers:
+  tu: 0
+  stamina: 0
+  health: 0
+  bravery: 0
+  reactions: 0
+  firing: 0
+  throwing: 0
+  strength: 0
+  melee: 0
+  mana: 0
   psiStrength: 0
-  psiSkill: 4
+  psiSkill: 5
 aimMultipliers: [0.5, 1.0, 1.0, 1.0, 1.0]
 armorMultipliers: [0.8, 1.0, 1.0, 1.0, 1.0]
 armorMultipliersAbs: [0, 0, 0, 2, 4]
@@ -177,7 +187,7 @@ mana:
   trainingSecondary: true
   replenishAfterMission: false
   woundThreshold: 20
-alienFuel: [STR_NONE, 0]
+alienFuel: [STR_ELERIUM_CORE, 1]
 fontName: AmigaFont.dat
 lighting:
   enhanced: 1
@@ -212,8 +222,17 @@ recommendedUserOptions:
   oxceHighlightNewTopics: true
   oxceEnableOffCentreShooting: true
   oxceEnableSlackingIndicator: true
+  oxceShowBaseNameInPopups: true
+  oxceRememberDisabledCraftWeapons: true
   oxceGeoscapeEventsInstantDelivery: true
+  oxceBaseManufactureFallbackButton: true
+  oxceGeoSuppressLandingWithoutEquipment: true
+  oxcePediaShowClipSize: true
+  oxceBaseFilterResearchable: true
+  oxceManufactureScrollSpeed: 1
+  oxceResearchScrollSpeed: 1
   oxceShowETAMode: 2
+  oxcePediaSortResistances: 1
 
 constants:
   # explosionOffset: 8
@@ -227,7 +246,7 @@ constants:
   extendedBerserkWithAimed: 2
   extendedMeleeReactions: 2
   extendedTerrainMelee: 4
-  extendedUnderwaterThrowFactor: 75
+  extendedUnderwaterThrowFactor: 60
   damageRange: 100
 
 ai:
@@ -238,7 +257,8 @@ ai:
   reactionFireThreshold: 5
   reactionFireThresholdCiv: 5
   fireChoiceIntelCoeff: 5
-  fireChoiceAggroCoeff: 5
+  fireChoiceAggroCoeff: 50
+  aiUseDelayProxy: 0
 
 alienItemLevels:
   - [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

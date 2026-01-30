@@ -852,7 +852,9 @@ extraSprites:
   - typeSingle: VENDOR_MEDI_CPAL
     fileSingle: Resources/Pedia/vendor_medi_CPAL.png
   - typeSingle: VENDOR_MEDIZ_CPAL
-    fileSingle: Resources/Pedia/vendor_mediz_CPAL.png
+    fileSingle: Resources/Pedia/vendor_medi2_CPAL.png
+  - typeSingle: VENDOR_MEDI_DR_CPAL
+    fileSingle: Resources/Pedia/vendor_medi3_CPAL.png
   - typeSingle: VENDOR_BUILDER_CPAL
     fileSingle: Resources/Pedia/vendor_builder_CPAL.png
   - typeSingle: VENDOR_P2P_CPAL

@@ -7,7 +7,7 @@ alienDeployments:
     length: 10
     height: 8
     terrains:
-      - MAP_FOREST2
+      - FOREST2
 
   - type: STR_HOLOUFO_SMALL
     script: DEFAULT4X4
@@ -350,16 +350,16 @@ alienDeployments:
         itemSets: &freelancer
           -
             - STR_DART_PISTOL
-            - STR_DART_AMMO2
+            - STR_DART_AMMO1
           -
             - STR_DART_PISTOL
-            - STR_DART_AMMO2
+            - STR_DART_AMMO1
           -
             - STR_DART_PISTOL
-            - STR_DART_AMMO2
+            - STR_DART_AMMO1
           -
             - STR_DART_PISTOL
-            - STR_DART_AMMO2
+            - STR_DART_AMMO1
           -
             - STR_SONIC_PROBE
           -
