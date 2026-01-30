@@ -75,6 +75,7 @@ terrains:
             - [14, 3, 1]
             - [14, 4, 2]
 
+  #_SIZEX are just copies with a different map script so alienDeployments doesn't have to have different mapscripts in order to spawn drones
   - name: HANGAR
     mapDataSets:
       - BLANKS
@@ -746,6 +747,12 @@ terrains:
         groups: 3
       - name: SLUM_20NS
         groups: 3
+      - name: SLUM_21
+        width: 20
+        length: 10
+      - name: SLUM_22
+        width: 20
+        length: 10
   - name: SLUM_DRONES_SIZE3
     script: SLUM_DRONES_3X3
     mapDataSets:
@@ -811,6 +818,12 @@ terrains:
         groups: 3
       - name: SLUM_20NS
         groups: 3
+      - name: SLUM_21
+        width: 20
+        length: 10
+      - name: SLUM_22
+        width: 20
+        length: 10
   - name: SLUM_DRONES_SIZE4
     script: SLUM_DRONES_4X4
     mapDataSets:
@@ -876,6 +889,12 @@ terrains:
         groups: 3
       - name: SLUM_20NS
         groups: 3
+      - name: SLUM_21
+        width: 20
+        length: 10
+      - name: SLUM_22
+        width: 20
+        length: 10
   - name: SLUM_DRONES_1
     mapDataSets:
       - BLANKS
@@ -929,7 +948,7 @@ terrains:
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [2, 6, 0]
-          STR_SPAWN_DRONE_HUMAN_1:
+          STR_SPAWN_DRONE_SHARK_1:
           - [3, 5, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
@@ -990,6 +1009,28 @@ terrains:
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
           STR_SPAWN_DRONE_HUMAN_1: [0, 0]
+      - name: SLUM_21
+        width: 20
+        length: 10
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [9, 4, 0]
+          STR_SPAWN_DRONE_HUMAN_1:
+          - [10, 3, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_HUMAN_1: [0, 0]
+      - name: SLUM_22
+        width: 20
+        length: 10
+        items:
+          STR_SPAWN_DRONE_HYBRID_1:
+          - [4, 3, 0]
+          STR_SPAWN_DRONE_DEEP_1:
+          - [5, 2, 0]
+        fuseTimers:
+          STR_SPAWN_DRONE_HYBRID_1: [0, 0]
+          STR_SPAWN_DRONE_DEEP_1: [0, 0]
 
   - name: FOREST2
     mapDataSets:

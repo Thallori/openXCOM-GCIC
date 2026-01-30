@@ -4,10 +4,15 @@
     - type: addUFO
     - type: addCraft
     - type: addBlock
+      size: [2, 1]
+    - type: addBlock
+      size: [1, 2]
+    - type: addBlock
       size: 2
       executions: 2
     - type: fillArea
 
+  #makes sure the ufo isn't on the bottom edges of the map, since that's where doors will be and having to sneak down a 1-tile corridor that only exists because of the map's limits feels bad
   - type: DEFAULT4X4
     commands:
     - type: addUFO
@@ -15,8 +20,29 @@
         - [0, 0, 3, 3]
     - type: addCraft
     - type: addBlock
+      size: [2, 1]
+      label: 1
+      executionChances: 50
+    - type: addBlock
+      size: [1, 2]
+      conditionals: [-1]
+    - type: addBlock
       size: 2
       executions: 1
+    - type: fillArea
+  - type: DEFAULT5X5
+    commands:
+    - type: addUFO
+      rects:
+        - [0, 0, 4, 4]
+    - type: addCraft
+    - type: addBlock
+      size: [2, 1]
+    - type: addBlock
+      size: [1, 2]
+    - type: addBlock
+      size: 2
+      executions: 2
     - type: fillArea
 
   - type: SINGLE_BLOCK_2X2
