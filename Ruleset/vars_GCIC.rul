@@ -257,7 +257,7 @@ ai:
   reactionFireThreshold: 5
   reactionFireThresholdCiv: 5
   fireChoiceIntelCoeff: 5
-  fireChoiceAggroCoeff: 50
+  fireChoiceAggroCoeff: 5
   aiUseDelayProxy: 0
 
 alienItemLevels:
