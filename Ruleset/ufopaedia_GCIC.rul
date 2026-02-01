@@ -1438,11 +1438,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: BOOSTER_CPAL
-  - id: STR_BOOSTER_ARMOR
-    requires:
-      - STR_BOOSTER_ARMOR
-    section: STR_COMPETITORS_UC
-    type_id: 5
 
   - id: STR_RIPPERS
     requires:
@@ -1457,11 +1452,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: RIPPER_CPAL
-  - id: STR_RIPPER_ARMOR
-    requires:
-      - STR_RIPPER_ARMOR
-    section: STR_COMPETITORS_UC
-    type_id: 5
 
 # netrunners
   - id: STR_FREELANCERS
@@ -1477,11 +1467,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: FREELANCER_CPAL
-  - id: STR_FREELANCER_ARMOR
-    requires:
-      - STR_FREELANCER_ARMOR
-    section: STR_COMPETITORS_UC
-    type_id: 5
   - id: STR_FREELANCER_INTERVIEW
     title: STR_FREELANCER_INTERVIEW_T
     requires:
@@ -1510,11 +1495,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: SKIPTRACER_CPAL
-  - id: STR_SKIPTRACER_ARMOR
-    requires:
-      - STR_SKIPTRACER_ARMOR
-    section: STR_COMPETITORS_UC
-    type_id: 5
   - id: STR_SKIPTRACER_INTERVIEW
     title: STR_SKIPTRACER_INTERVIEW_T
     requires:
@@ -1544,11 +1524,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: SSPGUARD_CPAL
-  - id: STR_SSPGUARD_ARMOR
-    requires:
-      - STR_SSPGUARD_ARMOR
-    section: STR_COMPETITORS_UC
-    type_id: 5
   - id: STR_SSPGUARD_INTERVIEW
     title: STR_SSPGUARD_INTERVIEW_T
     requires:
@@ -1577,11 +1552,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: SSPOFFICER_CPAL
-  - id: STR_SSPOFFICER_ARMOR
-    requires:
-      - STR_SSPOFFICER_ARMOR
-    section: STR_COMPETITORS_UC
-    type_id: 5
   - id: STR_SSPOFFICER_INTERVIEW
     title: STR_SSPOFFICER_INTERVIEW_T
     requires:
@@ -1596,8 +1566,7 @@ ufopaedia:
       width: 149
       height: 200
     image_id: SSPOFFICER_CPAL
-
-#animals
+# animals
   - id: STR_CHRYSSALIDS
     requires:
       - STR_CHRYSSALID
@@ -1611,13 +1580,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: CHRYSSALID_CPAL
-  - id: STR_CHRYSSALID_ARMOR
-    requires:
-      - STR_CHRYSSALID_ARMOR
-    text: STR_CHRYSSALID_ARMOR_UP
-    section: STR_COMPETITORS_UC
-    type_id: 5
-
   - id: STR_MUCKSTARS
     requires:
       - STR_MUCKSTAR
@@ -1631,14 +1593,21 @@ ufopaedia:
       width: 149
       height: 200
     image_id: MUCKSTAR_CPAL
-  - id: STR_MUCKSTAR_ARMOR
+  - id: STR_CELATIDS
     requires:
-      - STR_MUCKSTAR_ARMOR
-    text: STR_MUCKSTAR_ARMOR_UP
+      - STR_CELATID
+    text: STR_CELATIDS_UP
     section: STR_COMPETITORS_UC
-    type_id: 5
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: CELATID_CPAL
 
-#robots
+# robots
   - id: STR_ROBOSPHERES
     requires:
       - STR_ROBOSPHERE
@@ -1652,14 +1621,8 @@ ufopaedia:
       width: 149
       height: 200
     image_id: ROBOSPHERE_CPAL
-  - id: STR_ROBOSPHERE_ARMOR
-    requires:
-      - STR_ROBOSPHERE_ARMOR
-    text: STR_ROBOSPHERE_ARMOR_UP
-    section: STR_COMPETITORS_UC
-    type_id: 5
 
-#clients
+# clients
   - id: STR_CLIENT_CRAZYS
     requires:
       - STR_CLIENT_CRAZY
@@ -1673,6 +1636,62 @@ ufopaedia:
       width: 149
       height: 200
     image_id: CLIENT_CRAZY_CPAL
+
+# analysis
+  - id: STR_BOOSTER_ARMOR
+    requires:
+      - STR_BOOSTER_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_RIPPER_ARMOR
+    requires:
+      - STR_RIPPER_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_FREELANCER_ARMOR
+    requires:
+      - STR_FREELANCER_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_SKIPTRACER_ARMOR
+    requires:
+      - STR_SKIPTRACER_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_SSPGUARD_ARMOR
+    requires:
+      - STR_SSPGUARD_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_SSPOFFICER_ARMOR
+    requires:
+      - STR_SSPOFFICER_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_CHRYSSALID_ARMOR
+    requires:
+      - STR_CHRYSSALID_ARMOR
+    text: STR_CHRYSSALID_ARMOR_UP
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_MUCKSTAR_ARMOR
+    requires:
+      - STR_MUCKSTAR_ARMOR
+    text: STR_MUCKSTAR_ARMOR_UP
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_CELATID_ARMOR
+    requires:
+      - STR_CELATID_ARMOR
+    text: STR_CELATID_ARMOR_UP
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_ROBOSPHERE_ARMOR
+    requires:
+      - STR_ROBOSPHERE_ARMOR
+    text: STR_ROBOSPHERE_ARMOR_UP
+    section: STR_COMPETITORS_UC
+    type_id: 5
   - id: STR_CLIENT_CRAZY_ARMOR
     requires:
       - STR_CLIENT_CRAZY_ARMOR

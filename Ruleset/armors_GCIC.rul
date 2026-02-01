@@ -1443,6 +1443,8 @@ armors:
     allowInv: false
     drawingRoutine: 9
     movementType: 1
+    moveCost:
+      flyDownPercent: [50, 0]
     personalLight: 5
     heatVision: 45
     frontArmor: 4
@@ -1466,6 +1468,12 @@ armors:
       - 1.0 #13 psionic
       - 1.0 #14 heat
       - 1.0 #15 cold
+    meleeDodge: *MeleeDodgeGood
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryGood
     loftempsSet: [ 2 ]
 
 # robots

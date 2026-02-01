@@ -756,7 +756,7 @@ extraSprites:
       0: Resources/Factions/Animals/muckstar_sprite.png
 
   - typeSingle: CELATID_CPAL
-    fileSingle: Resources/Factions/Animals/muckstar_CPAL.png
+    fileSingle: Resources/Factions/Animals/celatid_CPAL.png
   - typeSingle: CELATID.SPK
     fileSingle: Resources/Factions/Animals/celatid_inventory.png
 

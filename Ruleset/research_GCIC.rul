@@ -908,6 +908,8 @@ research:
         - STR_CHRYSSALID
       STR_TRG_MS_PREQ:
         - STR_MUCKSTAR
+      STR_TRG_CL_PREQ:
+        - STR_CELATID
       STR_TRG_RS_PREQ:
         - STR_ROBOSPHERE
       STR_TRG_HS_PREQ:
@@ -979,6 +981,8 @@ research:
         - STR_CHRYSSALID
       STR_TRG_MS_PREQ:
         - STR_MUCKSTAR
+      STR_TRG_CL_PREQ:
+        - STR_CELATID
 
   - name: STR_DATA_1_GR
     requiresBaseFunc:
@@ -1156,6 +1160,15 @@ research:
   - name: STR_MUCKSTAR_ARMOR
     dependencies:
       - STR_MUCKSTAR
+
+  - name: STR_CELATID
+    unlocks:
+      - STR_CELATID_ARMOR
+    dependencies:
+      - STR_LOCK
+  - name: STR_CELATID_ARMOR
+    dependencies:
+      - STR_CELATID
 # robots
   - name: STR_ROBOSPHERE
     unlocks:
