@@ -257,7 +257,7 @@ alienDeployments:
         lowQty: 2
         medQty: 2
         highQty: 3
-        dQty: 0
+        dQty: 1
         itemSets: &cybercrazy
           -
             - STR_STL_KNIFE
@@ -341,7 +341,7 @@ alienDeployments:
         lowQty: 2
         medQty: 2
         highQty: 3
-        dQty: 0
+        dQty: 1
         percentageOutsideUfo: 0
         extraRandomItems: &netrunnerExtra
           - [STR_PERSONAL_DATA, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM]
@@ -415,9 +415,9 @@ alienDeployments:
       - HACKER1
     data:
       - alienRank: 6
-        lowQty: 3
-        medQty: 3
-        highQty: 4
+        lowQty: 2
+        medQty: 2
+        highQty: 3
         dQty: 1
         percentageOutsideUfo: 0
         extraRandomItems: *netrunnerExtra
@@ -504,10 +504,10 @@ alienDeployments:
           -
             - STR_XN_LASER_RIFLE
       - alienRank: 7
-        lowQty: 1
-        medQty: 1
-        highQty: 2
-        dQty: 1
+        lowQty: 0
+        medQty: 0
+        highQty: 1
+        dQty: 2
         percentageOutsideUfo: 0
         extraRandomItems: *netrunnerExtra
         itemSets: &skiptracer
@@ -791,10 +791,10 @@ alienDeployments:
             - STR_SSP_SHOTGUN_AMMO_BS
             - STR_SSP_SHOTGUN_AMMO_BS
       - alienRank: 6
-        lowQty: 3
-        medQty: 3
-        highQty: 4
-        dQty: 2
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 3
         percentageOutsideUfo: 40
         extraRandomItems: *personalData7
         itemSets: *sspGuard
@@ -830,7 +830,7 @@ alienDeployments:
     height: 8
     alert: STR_MEDI_ALERT
     # alertBackground: BACK03.SCR
-    alertDescription: STR_MEDI_MUCK_ALERT_DESCRIPTION
+    alertDescription: STR_MEDI_CREATURE_ALERT_DESCRIPTION
     markerName: STR_MEDI_CREATURE
     duration: [36, 60]
     despawnPenalty: 20
@@ -847,10 +847,10 @@ alienDeployments:
       - BLOOD1
     data:
       - alienRank: 2
-        lowQty: 2
-        medQty: 2
-        highQty: 3
-        dQty: 3
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 4
         itemSets: *AnchorEmptyInventory
 
   - type: STR_MEDI_MUCK_CHRYS
@@ -860,7 +860,7 @@ alienDeployments:
     height: 8
     alert: STR_MEDI_ALERT
     # alertBackground: BACK03.SCR
-    alertDescription: STR_MEDI_MUCK_ALERT_DESCRIPTION
+    alertDescription: STR_MEDI_CREATURE_ALERT_DESCRIPTION
     markerName: STR_MEDI_CREATURE
     duration: [36, 60]
     despawnPenalty: 20
@@ -880,9 +880,75 @@ alienDeployments:
         lowQty: 1
         medQty: 1
         highQty: 2
-        dQty: 0
+        dQty: 1
         itemSets: *AnchorEmptyInventory
       - alienRank: 2
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 1
+        itemSets: *AnchorEmptyInventory
+
+  - type: STR_MEDI_CELA
+    script: DEFAULT
+    width: 50
+    length: 50
+    height: 8
+    alert: STR_MEDI_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_MEDI_CREATURE_ALERT_DESCRIPTION
+    markerName: STR_MEDI_CREATURE
+    duration: [36, 60]
+    despawnPenalty: 20
+    abortPenalty: 20
+    briefing:
+      showTarget: false
+      title: STR_MEDI_CREATURE
+      desc: STR_MEDI_CREATURE_BRIEFING
+      music: BLOOD_INTRO
+      background: DESTINATION.SCR
+      palette: 0
+    unlockedResearch: STR_TRG_CL_PREQ
+    music:
+      - BLOOD1
+    data:
+      - alienRank: 3
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 4
+        itemSets: *AnchorEmptyInventory
+
+  - type: STR_MEDI_CELA_CHRYS
+    script: DEFAULT
+    width: 50
+    length: 50
+    height: 8
+    alert: STR_MEDI_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_MEDI_CREATURE_ALERT_DESCRIPTION
+    markerName: STR_MEDI_CREATURE
+    duration: [36, 60]
+    despawnPenalty: 20
+    abortPenalty: 20
+    briefing:
+      showTarget: false
+      title: STR_MEDI_CREATURE
+      desc: STR_MEDI_CREATURE_BRIEFING
+      music: BLOOD_INTRO
+      background: DESTINATION.SCR
+      palette: 0
+    unlockedResearch: STR_TRG_CR_PREQ
+    music:
+      - BLOOD1
+    data:
+      - alienRank: 0
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 1
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 3
         lowQty: 1
         medQty: 1
         highQty: 2
@@ -915,10 +981,10 @@ alienDeployments:
       - BLOOD2
     data:
       - alienRank: 5
-        lowQty: 3
-        medQty: 3
-        highQty: 4
-        dQty: 1
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 2
         percentageOutsideUfo: 50
         itemSets: *AnchorEmptyInventory
       - alienRank: 5

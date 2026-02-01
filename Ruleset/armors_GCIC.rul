@@ -91,7 +91,7 @@ armors:
       M2: ["", "", "M2_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
       M3: ["", "", "M3_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
     spriteFaceGroup: 6
-    spriteFaceColor: &SpriteFaceColorHuman [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteFaceColor: &SpriteFaceColorHuman [96, 96, 80, 80, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
     spriteHairGroup: 9
     spriteHairColor: &SpriteHairColorHuman  [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
     corpseBattle:
@@ -1144,7 +1144,7 @@ armors:
     spriteFaceGroup: 6
     spriteFaceColor: *SpriteFaceColorHuman
     spriteHairGroup: 9
-    spriteHairColor: *SpriteHairColorHuman
+    spriteHairColor: &SpriteAllHairColours [16, 32, 48, 96, 112, 128, 144, 160, 192, 208, 224, 240]
     forcedTorso: 1
     corpseBattle:
       - STR_BOOSTER_CORPSE
@@ -1175,7 +1175,7 @@ armors:
     spriteFaceGroup: 6
     spriteFaceColor: *SpriteFaceColorHuman
     spriteHairGroup: 9
-    spriteHairColor: *SpriteHairColorHuman
+    spriteHairColor: *SpriteAllHairColours
     forcedTorso: 1
     corpseBattle:
       - STR_RIPPER_CORPSE
@@ -1205,7 +1205,7 @@ armors:
     spriteFaceGroup: 6
     spriteFaceColor: *SpriteFaceColorHuman
     spriteHairGroup: 9
-    spriteHairColor: *SpriteHairColorHuman
+    spriteHairColor: *SpriteAllHairColours
     corpseBattle:
       - STR_FREELANCER_CORPSE
     allowsKneeling: true
@@ -1315,6 +1315,7 @@ armors:
     spriteSheet: CHRYS.PCK
     corpseBattle:
       - STR_CHRYSSALID_CORPSE
+    allowInv: false
     drawingRoutine: 7
     personalLight: 5
     heatVision: 70
@@ -1330,7 +1331,7 @@ armors:
       - 0.7 #4 radiant
       - 0.7 #5 plasma
       - 0.7 #6 blunt
-      - 0.7 #7 mechanical
+      - 1.2 #7 mechanical
       - 0.7 #8 chemical
       - 0.5 #9 smoke
       - 0.7 #10 electric
@@ -1346,7 +1347,7 @@ armors:
       stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryGood
     overKill: 1.5
-    loftempsSet: [ 3 ]
+    loftempsSet: [ 4 ]
 
   - type: STR_ZOMBIE_ARMOR
     spriteInv: ZOMBIE.SPK
@@ -1359,10 +1360,10 @@ armors:
     deathFrames: 18
     personalLight: 5
     heatVision: 70
-    frontArmor: 4
-    sideArmor: 4
-    rearArmor: 4
-    underArmor: 3
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
     damageModifier:
       - 1.0 #0 none
       - 1.0 #1 kinetic
@@ -1371,7 +1372,7 @@ armors:
       - 1.0 #4 radiant
       - 1.0 #5 plasma
       - 1.0 #6 blunt
-      - 1.0 #7 mechanical
+      - 1.2 #7 mechanical
       - 1.0 #8 chemical
       - 0.5 #9 smoke
       - 1.0 #10 electric
@@ -1394,8 +1395,8 @@ armors:
     spriteSheet: MUCKSTAR.PCK
     corpseBattle:
       - STR_MUCKSTAR_CORPSE
-    zombiImmune: true
     constantAnimation: true
+    zombiImmune: true
     drawingRoutine: 16
     movementType: 1
     moveCost:
@@ -1414,7 +1415,7 @@ armors:
       - 1.0 #4 radiant
       - 1.0 #5 plasma
       - 1.0 #6 blunt
-      - 1.0 #7 mechanical
+      - 1.2 #7 mechanical
       - 1.0 #8 chemical
       - 0.5 #9 smoke
       - 0.4 #10 electric
@@ -1431,6 +1432,41 @@ armors:
       energy: *EnergyRecoveryGood
     overKill: 1.5
     loftempsSet: [ 4 ]
+
+  - type: STR_CELATID_ARMOR
+    spriteInv: CELATID.SPK
+    spriteSheet: CELATID.PCK
+    corpseBattle:
+      - STR_CELATID_CORPSE
+    constantAnimation: true
+    zombiImmune: true
+    allowInv: false
+    drawingRoutine: 9
+    movementType: 1
+    personalLight: 5
+    heatVision: 45
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 3
+    damageModifier:
+      - 1.0 #0 none
+      - 1.0 #1 kinetic
+      - 1.4 #2 incendiary
+      - 1.0 #3 concussive
+      - 1.0 #4 radiant
+      - 1.0 #5 plasma
+      - 1.0 #6 blunt
+      - 1.2 #7 mechanical
+      - 0.4 #8 chemical
+      - 0.5 #9 smoke
+      - 1.0 #10 electric
+      - 1.0 #11 sonic
+      - 1.0 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
+    loftempsSet: [ 2 ]
 
 # robots
   - type: STR_ROBOSPHERE_ARMOR
@@ -1485,7 +1521,6 @@ armors:
     overKill: 1.5
     loftempsSet: [ 2 ]
 
-
 # enemy drones
   - type: STR_DRONEHYBRID_ARMOR
     ufopediaType: STR_DRONE_HYBRID_ITEM
@@ -1514,6 +1549,10 @@ armors:
     ufopediaType: STR_DRONE_HUMAN_ITEM
     spriteInv: DRONEHUMAN.SPK
     spriteSheet: WORKSUIT_HUMAN.PCK
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorHuman
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorHuman
     corpseBattle:
       - STR_PLEX_DRONE_HUMAN_CORPSE
     visibilityAtDark: 8
@@ -1537,6 +1576,8 @@ armors:
     ufopediaType: STR_DRONE_SHARK_ITEM
     spriteInv: DRONESHARK.SPK
     spriteSheet: WORKSUIT_SHARK.PCK
+    spriteFaceGroup: 11
+    spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
       - STR_PLEX_DRONE_SHARK_CORPSE
     visibilityAtDark: 8
@@ -1586,7 +1627,7 @@ armors:
     spriteFaceGroup: 6
     spriteFaceColor: *SpriteFaceColorHuman
     spriteHairGroup: 9
-    spriteHairColor: *SpriteHairColorHuman
+    spriteHairColor: *SpriteAllHairColours
     corpseBattle:
       - STR_CLIENT_1_CORPSE
     allowsKneeling: false
@@ -1613,9 +1654,9 @@ armors:
     spriteInv: CLIENT_RR.SPK
     spriteSheet: CLIENT_RR.PCK
     spriteFaceGroup: 10
-    spriteFaceColor: [160, 160, 161, 161, 162, 162, 163, 163]
+    spriteFaceColor: *SpriteFaceColorHuman
     spriteHairGroup: 6
-    spriteHairColor: [96, 96, 160, 160, 112, 112, 240, 240]
+    spriteHairColor: *SpriteAllHairColours
     corpseBattle:
       - STR_CLIENT_RR_CORPSE
     allowsKneeling: false
@@ -1641,11 +1682,12 @@ armors:
     spriteInv: CLIENT_CRAZY.SPK
     spriteSheet: CLIENT_CRAZY.PCK
     spriteFaceGroup: 10
-    spriteFaceColor: [160, 160, 161, 161, 162, 162, 163, 163]
-    spriteHairGroup: 6
-    spriteHairColor: [96, 96, 160, 160, 112, 112, 240, 240]
+    spriteFaceColor: *SpriteFaceColorHuman
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteAllHairColours
     corpseBattle:
       - STR_CLIENT_CRAZY_CORPSE
+    specialWeapon: STR_UNARMED
     allowsKneeling: true
     personalLight: 13
     heatVision: 20

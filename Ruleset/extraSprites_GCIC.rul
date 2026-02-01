@@ -373,15 +373,18 @@ extraSprites:
     subX: 32
     subY: 40
     files:
+      56: Resources/Animations/electric_hit.png
+      66: Resources/Animations/redlaser_hit.png
+      76: Resources/Animations/sonic_hit.png
+
+  - type: SMOKE.PCK
+    files: 
       20: Resources/UI/smoke_rank0.png
       21: Resources/UI/smoke_rank1.png
       22: Resources/UI/smoke_rank2.png
       23: Resources/UI/smoke_rank3.png
       24: Resources/UI/smoke_rank4.png
       25: Resources/UI/smoke_rank5.png
-      56: Resources/Animations/electric_hit.png
-      66: Resources/Animations/redlaser_hit.png
-      76: Resources/Animations/sonic_hit.png
 
   - type: HIT.PCK
     height: 40
@@ -751,6 +754,11 @@ extraSprites:
     height: 40
     files:
       0: Resources/Factions/Animals/muckstar_sprite.png
+
+  - typeSingle: CELATID_CPAL
+    fileSingle: Resources/Factions/Animals/muckstar_CPAL.png
+  - typeSingle: CELATID.SPK
+    fileSingle: Resources/Factions/Animals/celatid_inventory.png
 
 # robots
   - typeSingle: ROBOSPHERE_CPAL

@@ -259,7 +259,6 @@ items:
     invWidth: 2
     invHeight: 2
     battleType: 1
-    arcingShot: true
     power: 6
     damageType: 10
     damageBonus:
@@ -316,6 +315,7 @@ items:
     meleeMultiplier:
       melee: 0.5
       reactions: 0.5
+    arcingShot: true
     fixedWeapon: true
     specialUseEmptyHand: true
     recover: false
@@ -359,9 +359,10 @@ items:
     fixedWeaponShow: true
     recover: false
 
-  - type: CHRYSSALID_WEAPON
+  - type: STR_CHRYSSALID_WEAPON
     weight: 0
     bigSprite: 61
+    floorSprite: 31
     handSprite: 104
     meleeSound: 49
     invWidth: 2
@@ -379,7 +380,7 @@ items:
     fixedWeapon: true
     recover: false
     zombieUnit: STR_ZOMBIE
-  - type: ZOMBIE_WEAPON
+  - type: STR_ZOMBIE_WEAPON
     weight: 0
     bigSprite: 57
     meleeSound: 48
@@ -397,10 +398,12 @@ items:
     flatRate: true
     fixedWeapon: true
     recover: false
-  - type: MUCKSTAR_WEAPON
+  - type: STR_MUCKSTAR_WEAPON
     categories: [STR_BUILT_INS_CATEGORY]
+    weight: 0
     bigSprite: 175
     bulletSprite: 14
+    bulletSpeed: -1
     fireSound: 108
     hitSound: 13
     hitAnimation: 56
@@ -420,13 +423,43 @@ items:
       ToTile: 0.25
     clipSize: -1
     accuracySnap: 40
-    accuracyAimed: 60
-    tuSnap: 40
-    tuAimed: 60
+    accuracyAimed: 100
+    tuSnap: 16
+    tuAimed: 26
     dropoff: 2
+    flatRate: true
     fixedWeapon: true
     recover: false
-  - type: ROBOSPHERE_WEAPON
+  - type: STR_CELATID_WEAPON
+    categories: [STR_BUILT_INS_CATEGORY]
+    weight: 0
+    bigSprite: 60
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 8
+    bulletSpeed: -1
+    fireSound: 51
+    hitSound: 19
+    hitAnimation: 46
+    invWidth: 2
+    invHeight: 3
+    battleType: 1
+    power: 20
+    damageType: 8
+    damageAlter:
+      IgnoreDirection: true
+      ToArmorPre: 0.05
+    clipSize: -1
+    accuracySnap: 40
+    accuracyAimed: 100
+    tuSnap: 18
+    tuAimed: 30
+    dropoff: 2
+    flatRate: true
+    arcingShot: true
+    fixedWeapon: true
+    recover: false
+  - type: STR_ROBOSPHERE_WEAPON
     categories: [STR_BUILT_INS_CATEGORY]
     bigSprite: 175
     meleeAnimation: 12
@@ -453,7 +486,7 @@ items:
     flatRate: true
     fixedWeapon: true
     recover: false
-  - type: HOLOSECTOID_WEAPON
+  - type: STR_HOLOSECTOID_WEAPON
     categories: [STR_BUILT_INS_CATEGORY]
     bigSprite: 196
     handSprite: 424
@@ -1023,6 +1056,7 @@ items:
     bigSprite: 171
     floorSprite: 161
     handSprite: 368
+    bulletSprite: 3
     fireSound: 118
     reloadSound: 120
     invWidth: 1
@@ -1062,6 +1096,7 @@ items:
     bigSprite: 171
     floorSprite: 161
     handSprite: 368
+    bulletSprite: 3
     fireSound: 118
     reloadSound: 120
     invWidth: 1
@@ -1409,7 +1444,7 @@ items:
     floorSprite: 168
     handSprite: 392
     bulletSprite: 20
-    bulletSpeed: 5
+    bulletSpeed: -1
     fireSound: 129
     invWidth: 1
     invHeight: 2
@@ -2005,6 +2040,7 @@ items:
     bigSprite: 128
     floorSprite: 127
     handSprite: 256
+    bulletSprite: 11
     fireSound: 11
     hitSound: 19
     hitAnimation: 36
@@ -2077,7 +2113,7 @@ items:
     unprimeActionName: STR_UNPRIME_MOLOTOV
     unprimeActionMessage: STR_UNPRIME_MOLOTOV_MESS
     fuseType: -2
-    tuPrime: 20
+    tuPrime: 15
     tuUnprime: 10
     tuThrow: 25
     throwDropoffRange: 12
@@ -2115,7 +2151,7 @@ items:
       FixRadius: 4
     experienceTrainingMode: 7
     arcingShot: true
-    tuAimed: 30
+    tuAimed: 40
     accuracyAimed: 100
     accuracyMultiplier:
       throwing: 1.0
@@ -2150,8 +2186,8 @@ items:
       ToArmorPre: 0.05
       FixRadius: 4
     fuseType: -2
-    tuPrime: 5
-    tuUnprime: 5
+    tuPrime: 15
+    tuUnprime: 10
     tuThrow: 25
     throwRange: 2
     attraction: 10
@@ -2183,7 +2219,7 @@ items:
       IgnoreSelfDestruct: false
     fuseType: 0
     tuPrime: 30
-    tuUnprime: 5
+    tuUnprime: 10
     tuThrow: 25
     underwaterThrowDropoffRange: 8
     throwDropoffRange: 12
@@ -3628,7 +3664,6 @@ items:
       STR_BIOMASS: [1]
       STR_CONSUMER_CYBERNETICS_CODED: [1]
     armor: 30
-
 # netrunners
   - type: STR_FREELANCER_PRIVATE
     categories: [STR_SPECIMENS_CATEGORY]
@@ -3663,7 +3698,6 @@ items:
       STR_BIOMASS: [1]
       STR_MEDICAL_CYBERNETICS_CODED: [1]
     armor: 30
-
 # ssp
   - type: STR_SSPGUARD_PRIVATE
     categories: [STR_SPECIMENS_CATEGORY]
@@ -3698,7 +3732,6 @@ items:
       STR_PLASTICS: [1]
       STR_CONSUMER_CYBERNETICS_CODED: [1]
     armor: 30
-
 # enemy drones
   - type: STR_DRONE_ENEMY_HYBRID
     categories: [STR_DEBUG_CATEGORY]
@@ -3728,38 +3761,36 @@ items:
       STR_DRONE_DEEP_ITEM: [1]
     recover: true
     liveAlien: true
-
 # animals
   - type: STR_CHRYSSALID_CORPSE
     name: STR_CORPSE
     categories: [STR_SPECIMENS_CATEGORY]
     size: 0.4
     costSell: 15000
-    recoveryPoints: 5
+    recoveryPoints: 3
     recoveryTransformations:
       STR_BIOMASS: [1]
-      STR_SHARES_MEDI: [50, 50]
+      STR_SHARES_MEDI: [25, 75]
     ignoreInBaseDefense: true
     bigSprite: 53
     floorSprite: 49
-    weight: 22
     invWidth: 2
     invHeight: 3
+    weight: 20
     battleType: 11
-    armor: 30
-
+    armor: 70
   - type: STR_ZOMBIE_CORPSE
     name: STR_CORPSE
     categories: [STR_SPECIMENS_CATEGORY]
     size: 0.4
     costSell: 4000
-    recoveryPoints: 5
+    recoveryPoints: 3
     ignoreInBaseDefense: true
-    bigSprite: 187
+    bigSprite: 900
     floorSprite: 175
-    weight: 22
     invWidth: 2
-    invHeight: 2
+    invHeight: 3
+    weight: 22
     battleType: 11
     armor: 30
   - type: STR_MUCKSTAR_CORPSE
@@ -3774,12 +3805,28 @@ items:
     ignoreInBaseDefense: true
     bigSprite: 186
     floorSprite: 174
-    weight: 9
     invWidth: 2
     invHeight: 2
+    weight: 9
     battleType: 11
     armor: 30
-
+  - type: STR_CELATID_CORPSE
+    name: STR_CORPSE
+    categories: [STR_SPECIMENS_CATEGORY]
+    size: 0.25
+    costSell: 5000
+    recoveryPoints: 3
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_SHARES_MEDI: [75, 25]
+    ignoreInBaseDefense: true
+    bigSprite: 47
+    floorSprite: 43
+    invWidth: 2
+    invHeight: 3
+    weight: 12
+    battleType: 11
+    armor: 30
 # robots
   - type: STR_ROBOSPHERE_CORPSE
     name: STR_WRECK
@@ -3798,7 +3845,6 @@ items:
     invHeight: 2
     battleType: 11
     armor: 30
-
 # simulated
   - type: STR_HOLOSECTOID_CORPSE
     name: STR_SIMCORPSE
@@ -3813,7 +3859,6 @@ items:
     invHeight: 3
     battleType: 11
     armor: 15
-
 # civilians
   - type: STR_CLIENT_1_CORPSE
     name: STR_CORPSE

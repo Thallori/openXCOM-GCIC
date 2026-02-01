@@ -56,7 +56,6 @@ units:
       -
         - STR_SURVEY_KNOCKER
         - STR_KNOCK_FLARE_AMMO
-
   - type: STR_DRONE_HUMAN_1
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_HUMAN_ITEM
@@ -99,7 +98,6 @@ units:
       -
         - STR_SURVEY_KNOCKER
         - STR_KNOCK_FLARE_AMMO
-
   - type: STR_DRONE_SHARK_1
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_SHARK_ITEM
@@ -122,7 +120,6 @@ units:
     value: 1
     deathSound: [113, 114, 115]
     builtInWeaponSets: *drone1ToolsHeavy
-
   - type: STR_DRONE_DEEP_1
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_DEEP_ITEM
@@ -145,7 +142,6 @@ units:
     value: 1
     deathSound: [113, 114, 115]
     builtInWeaponSets: *drone1ToolsLight
-
 #criminal faction
   - type: STR_BOOSTER_PUBLIC
     race: STR_IRONEYES
@@ -175,7 +171,6 @@ units:
     spotter: 0
     sniper: 0
     canSurrender: true
-
   - type: STR_RIPPER_PUBLIC
     race: STR_IRONEYES
     rank: STR_RANK_4
@@ -204,7 +199,6 @@ units:
     spotter: 0
     sniper: 0
     canSurrender: true
-
 #hacker faction
   - type: STR_FREELANCER_PUBLIC
     race: STR_NETRUNNERS
@@ -262,7 +256,6 @@ units:
     spotter: 0
     sniper: 0
     canSurrender: true
-
   - type: STR_SKIPTRACER_PRIVATE
     race: STR_NETRUNNERS
     rank: STR_RANK_4
@@ -290,7 +283,6 @@ units:
     spotter: 0
     sniper: 0
     canSurrender: true
-
 #security faction
   - type: STR_SSPGUARD_PRIVATE
     race: STR_SSP
@@ -320,7 +312,6 @@ units:
     spotter: 0
     sniper: 0
     canSurrender: true
-
   - type: STR_SSPOFFICER_PRIVATE
     race: STR_SSP
     rank: STR_RANK_4
@@ -349,7 +340,6 @@ units:
     spotter: 1
     sniper: 0
     canSurrender: true
-
 #enemy drones
   - type: STR_DRONE_ENEMY_HYBRID
     race: STR_RACE_DRONE
@@ -375,7 +365,6 @@ units:
     value: -1
     deathSound: [10]
     autoSurrender: true
-
   - type: STR_DRONE_ENEMY_HUMAN
     race: STR_RACE_DRONE
     rank: STR_RANK_DRONE
@@ -400,7 +389,6 @@ units:
     value: -1
     deathSound: [41, 42, 43]
     autoSurrender: true
-
   - type: STR_DRONE_ENEMY_SHARK
     race: STR_RACE_DRONE
     rank: STR_RANK_DRONE
@@ -425,7 +413,6 @@ units:
     value: -1
     deathSound: [113, 114, 115]
     autoSurrender: true
-
   - type: STR_DRONE_ENEMY_DEEP
     race: STR_RACE_DRONE
     rank: STR_RANK_DRONE
@@ -450,7 +437,6 @@ units:
     value: -1
     deathSound: [126]
     autoSurrender: true
-
 #animals
   - type: STR_CHRYSSALID
     race: STR_ANIMALS
@@ -465,7 +451,7 @@ units:
       firing: 0
       throwing: 0
       strength: 110
-      psiStrength: 60
+      psiStrength: 10
       psiSkill: 0
       melee: 100
       mana: 80
@@ -475,12 +461,13 @@ units:
     value: 30
     deathSound: 9
     intelligence: 4
-    aggression: 8
+    aggression: 5
     energyRecovery: 40
     livingWeapon: true
+    isLeeroyJenkins: true
     builtInWeaponSets:
-      - - STR_BOUNTY_CHRYSSALID
-
+      - - STR_CHRYSSALID_WEAPON
+        - STR_BOUNTY_CHRYSSALID
   - type: STR_ZOMBIE
     race: STR_ANIMALS
     rank: STR_RANK_ANIMAL
@@ -494,7 +481,7 @@ units:
       firing: 0
       throwing: 0
       strength: 60
-      psiStrength: 10
+      psiStrength: 0
       psiSkill: 0
       melee: 80
       mana: 80
@@ -505,26 +492,27 @@ units:
     value: 0
     intelligence: 0
     aggression: 8
-    energyRecovery: 20
+    energyRecovery: 30
     isLeeroyJenkins: true
     livingWeapon: true
-
+    builtInWeaponSets:
+      - - STR_ZOMBIE_WEAPON
   - type: STR_MUCKSTAR
     race: STR_ANIMALS
     rank: STR_RANK_ANIMAL
     liveAlien: STR_SHARES_MEDI
     stats:
-      tu: 60
-      stamina: 80
+      tu: 40
+      stamina: 60
       health: 35
       bravery: 100
-      reactions: 75
-      firing: 80
+      reactions: 65
+      firing: 50
       throwing: 0
-      strength: 20
-      psiStrength: 0
+      strength: 10
+      psiStrength: 15
       psiSkill: 0
-      melee: 55
+      melee: 10
       mana: 80
     armor: STR_MUCKSTAR_ARMOR
     standHeight: 12
@@ -535,9 +523,40 @@ units:
     moveSound: 16
     intelligence: 1
     aggression: 1
-    energyRecovery: 40
+    energyRecovery: 30
     livingWeapon: true
-
+    builtInWeaponSets:
+      - - STR_MUCKSTAR_WEAPON
+  - type: STR_CELATID
+    race: STR_ANIMALS
+    rank: STR_RANK_ANIMAL
+    liveAlien: STR_SHARES_MEDI
+    stats:
+      tu: 45
+      stamina: 65
+      health: 40
+      bravery: 90
+      reactions: 40
+      firing: 100
+      throwing: 0
+      strength: 15
+      psiStrength: 20
+      psiSkill: 0
+      melee: 15
+      mana: 80
+    armor: STR_CELATID_ARMOR
+    standHeight: 12
+    kneelHeight: 12
+    floatHeight: 6
+    value: 10
+    deathSound: 7
+    moveSound: 16
+    intelligence: 3
+    aggression: 2
+    energyRecovery: 30
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CELATID_WEAPON
 #robots
   - type: STR_ROBOSPHERE
     race: STR_ROBOTS
@@ -566,9 +585,10 @@ units:
     intelligence: 3
     aggression: 2
     spotter: 1
-    energyRecovery: 50
+    energyRecovery: 30
     livingWeapon: true
-
+    builtInWeaponSets:
+      - - STR_ROBOSPHERE_WEAPON
 #simulated
   - type: STR_HOLOSECTOID
     race: STR_SIMULATED
@@ -598,7 +618,8 @@ units:
     spotter: 1
     sniper: 50
     energyRecovery: 30
-
+    builtInWeaponSets:
+      - - STR_HOLOSECTOID_WEAPON
 #clients
   - type: STR_CLIENT_1
     race: STR_RACE_CLIENT
@@ -625,7 +646,6 @@ units:
     value: 25
     deathSound: [41, 42, 43]
     energyRecovery: 30
-
   - type: STR_CLIENT_RR
     race: STR_CLIENTS
     rank: STR_RANK_5
@@ -651,7 +671,6 @@ units:
     value: 35
     deathSound: [44, 45, 46]
     energyRecovery: 30
-
   - type: STR_CLIENT_CRAZY
     race: STR_CLIENTS
     rank: STR_RANK_5
@@ -672,9 +691,9 @@ units:
     armor: STR_CLIENT_CRAZY_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 15
+    value: 0
     deathSound: [41, 42, 43]
-    energyRecovery: 20
+    energyRecovery: 30
     intelligence: 2
     aggression: 8
     spotter: 0

@@ -36,7 +36,7 @@ UFO Defense				[game]
   Chrssalids				[touchup+face]
   Zombies				[none]
   Sectoids				[touchup+remix]
-  Celatids				[none]
+  Celatids				[touchup]
   UI Screens				[redraw]
   Corpses Bigob				[remix]
   Globe Textures			[none+touchup]
@@ -247,6 +247,7 @@ thallori
   daynight
   ranks
   stun icon
+  tiny armors
   empty pedia backgrounds
 
 Esven

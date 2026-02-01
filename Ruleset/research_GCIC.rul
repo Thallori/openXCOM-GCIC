@@ -1252,6 +1252,9 @@ research:
   - name: STR_TRG_MS_PREQ #muckstar
     dependencies:
       - STR_LOCK
+  - name: STR_TRG_CL_PREQ #celatid
+    dependencies:
+      - STR_LOCK
 
 # robots
   - name: STR_TRG_RS_PREQ #robosphere

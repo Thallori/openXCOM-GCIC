@@ -72,7 +72,7 @@ alienRaces:
       - STR_CHRYSSALID #0
       - STR_ZOMBIE #1
       - STR_MUCKSTAR #2
-      - STR_MUCKSTAR #3
+      - STR_CELATID #3
       - STR_MUCKSTAR #4
       - STR_MUCKSTAR #5
       - STR_MUCKSTAR #6
