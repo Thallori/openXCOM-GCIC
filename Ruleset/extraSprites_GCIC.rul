@@ -139,7 +139,7 @@ extraSprites:
       194: Resources/Items/Utility/meditrauma_bigob.png
       195: Resources/Items/Tools/sledgehammer_bigob.png
       196: Resources/Items/Builtins/holopistol_bigob.png
-      197: Resources/Factions/Aliens/holosectoid_bigob.png
+      197: Resources/Factions/Holograms/holosectoid_bigob.png
       198: Resources/Items/Materials/thread_bigob.png
       199: Resources/Items/Materials/grav_bigob.png
       200: Resources/Armors/Anthros/Worksuit/worksuit_corpse_deep_bigob.png
@@ -153,6 +153,7 @@ extraSprites:
       208: Resources/Items/Explosives/molotov_bigob.png
       209: Resources/Items/Explosives/flask_bigob.png
       210: Resources/Factions/Clients/client_crazy_bigob.png
+      211: Resources/Items/Materials/trophy_chryssalid_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -240,7 +241,7 @@ extraSprites:
       181: Resources/Items/Utility/jet_floorob.png
       182: Resources/Items/Utility/meditrauma_floorob.png
       183: Resources/Items/Tools/sledgehammer_floorob.png
-      184: Resources/Factions/Aliens/holosectoid_floorob.png
+      184: Resources/Factions/Holograms/holosectoid_floorob.png
       185: Resources/Armors/Anthros/Worksuit/worksuit_corpse_deep_floorob.png
       186: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_deep_floorob.png
       187: Resources/Armors/Anthros/Aquavest/aquavest_corpse_deep_floorob.png
@@ -768,14 +769,14 @@ extraSprites:
   - typeSingle: HOLOSECTOID_CPAL
     fileSingle: Resources/Factions/SSP/sspofficer_CPAL.png
   - typeSingle: HOLOSECTOID.SPK
-    fileSingle: Resources/Factions/Aliens/holosectoid_inventory.png
+    fileSingle: Resources/Factions/Holograms/holosectoid_inventory.png
   - type: HOLOSECTOID.PCK
     subX: 32
     subY: 40
     width: 512
     height: 680
     files:
-      0: Resources/Factions/Aliens/holosectoid_sprite.png
+      0: Resources/Factions/Holograms/holosectoid_sprite.png
 
 # clients
   - typeSingle: CLIENT_1.SPK

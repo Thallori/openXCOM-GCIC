@@ -80,7 +80,7 @@ statGrowthMultipliers:
   psiSkill: 5
 aimMultipliers: [0.5, 1.0, 1.0, 1.0, 1.0]
 armorMultipliers: [0.8, 1.0, 1.0, 1.0, 1.0]
-armorMultipliersAbs: [0, 0, 0, 2, 4]
+armorMultipliersAbs: [0, 0, 2, 4, 6]
 sellPriceCoefficient: [100, 100, 100, 100, 100]
 difficultyCoefficientOverrides:
   monthlyRatingThresholds: [-999999, -999999, -999999, -999999, -999999]

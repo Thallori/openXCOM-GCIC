@@ -41,10 +41,18 @@ units:
       -
         - STR_MULTITOOL
       -
+        - STR_MULTITOOL
+      -
         - STR_EXTINGUISHER
       -
         - STR_ELECTRIC_NAILER
         - STR_ELECTRIC_NAILER_AMMO
+      -
+        - STR_ELECTRIC_NAILER
+        - STR_ELECTRIC_NAILER_AMMO
+      -
+        - STR_SURVEY_KNOCKER
+        - STR_KNOCK_FLARE_AMMO
       -
         - STR_SURVEY_KNOCKER
         - STR_KNOCK_FLARE_AMMO
@@ -82,6 +90,12 @@ units:
       -
         - STR_ELECTRIC_NAILER
         - STR_ELECTRIC_NAILER_AMMO
+      -
+        - STR_ELECTRIC_NAILER
+        - STR_ELECTRIC_NAILER_AMMO
+      -
+        - STR_SURVEY_KNOCKER
+        - STR_KNOCK_FLARE_AMMO
       -
         - STR_SURVEY_KNOCKER
         - STR_KNOCK_FLARE_AMMO
@@ -465,10 +479,7 @@ units:
     energyRecovery: 40
     livingWeapon: true
     builtInWeaponSets:
-      - - STR_CHRYSSALID_WEAPON
-        - STR_BOUNTY_1
-        - STR_BOUNTY_1
-        - STR_BOUNTY_1
+      - - STR_BOUNTY_CHRYSSALID
 
   - type: STR_ZOMBIE
     race: STR_ANIMALS
@@ -497,8 +508,6 @@ units:
     energyRecovery: 20
     isLeeroyJenkins: true
     livingWeapon: true
-    builtInWeaponSets:
-      - - STR_ZOMBIE_WEAPON
 
   - type: STR_MUCKSTAR
     race: STR_ANIMALS
@@ -528,8 +537,6 @@ units:
     aggression: 1
     energyRecovery: 40
     livingWeapon: true
-    builtInWeaponSets:
-      - - STR_MUCKSTAR_WEAPON
 
 #robots
   - type: STR_ROBOSPHERE
@@ -561,8 +568,6 @@ units:
     spotter: 1
     energyRecovery: 50
     livingWeapon: true
-    builtInWeaponSets:
-      - - STR_ROBOSPHERE_WEAPON
 
 #simulated
   - type: STR_HOLOSECTOID
@@ -593,8 +598,6 @@ units:
     spotter: 1
     sniper: 50
     energyRecovery: 30
-    builtInWeaponSets:
-      - - STR_HOLOSECTOID_WEAPON
 
 #clients
   - type: STR_CLIENT_1

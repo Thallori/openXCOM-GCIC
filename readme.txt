@@ -22,11 +22,46 @@ Falko				OXC, Falko's Tools
 
 Assets credits are by source first, listed author may not be the true originator!
 Please contact thallori for corrections.
-								(earliest known source)
+
+Title					[source]
+ Name					[contribution]
+  File					[modifications]		(earliest known source)
+
+UFO Defense				[game]
+ Mythos Games				[group]
+ MicroProse				[group]
+  SFX					[none+pitch]
+  Bullet+Hit+Explosion Animations	[none+recolour+redraw]
+  Soldiers+Civilians			[touchup+remix]
+  Chrssalids				[touchup+face]
+  Zombies				[none]
+  Sectoids				[touchup+remix]
+  Celatids				[none]
+  UI Screens				[redraw]
+  Corpses Bigob				[remix]
+  Globe Textures			[none+touchup]
+  Intercept Window			[remix]
+  Electroflare				[none]
+  Pallets				[remix]
+  SCANG.DAT				[none]
+  Map Sprites				[touchup+remix]
+
+Terror from the Deep			[game]
+ Mythos Games				[group]
+ MicroProse				[group]
+  SFX					[none]
+  Bullet+Hit+Explosion Animations	[none]
+  Basebit Background and Walls		[touchup]
+  Deep Ones				[remix]
+  Globe Textures			[none+touchup]
+  Chemflare				[touchup]
+  Pallets				[remix]
+  Map Sprites				[touchup+recolour]
+
 Community Map Pack			[mod]
- OXC					[authors]
-  Map Sprites				[wholecloth, touchup]	(ufo, tftd)
-  Globe Textures			[wholecloth, touchup]	(ufo)
+ OXC					[group]
+  Map Sprites				[none+touchup]		(ufo+tftd)
+  Globe Textures			[none+touchup]		(ufo)
 
 X-Com Files/Final Mod Pack		[mod]
  Solarius Scorch			[project lead]
@@ -36,66 +71,66 @@ X-Com Files/Final Mod Pack		[mod]
  Otto Hartenstein
  Helrica
  Brain_322
-
-  Wrench				[touchup, recolour]	(zdoom)
-  Alloy Knife				[touchup, recolour]
+ Additional contributers in XCF readme
+  Wrench				[touchup+recolour]	(zdoom)
+  Alloy Knife				[touchup+recolour]	(Solarius+Dioxine)
   Crossbow				[redraw]
   Prison Facility			[redraw]
-  Punch!				[wholecloth]		(Brian322)
-  Bullet and Hit Animations		[wholecloth, redraw]
-  Flying Drone Chassis			[cleanup, recolour]	(Xenonauts)
-  Civilians				[wholecloth]
-  Bandit				[recolour]
+  Punch!				[none]			(Brian322)
+  Bullet+Hit+Explosion Animations	[none+redraw]
+  Flying Drone Chassis 			[cleanup+recolour]	(Xenonauts)
+  Civilians 				[none]
+  Bandit 				[recolour]
   Police Officer			[recolour]
-  Hybrid				[wholecloth]
-  HitFX	Script				[wholecloth]		(Mistar Red)
-  Crate					[wholecloth, recolour]
-  Taser					[wholecloth]		(Ryskeliini)
-  Fire Extinguisher			[touchup, recolour]
-  Armored Vest				[touchup, recolour]
-  Muckstar Unit Sprite			[touchup, animated]
+  Hybrid				[none]
+  Taser Animation+SFX			[none]			(Ryskeliini)
+  HitFX	Script				[none]			(Mistar Red)
+  Crate Obs				[none+recolour]			
+  Fire Extinguisher			[touchup+recolour]
+  Armored Vest				[touchup+recolour]
+  Muckstar				[touchup+animated]
   Zombie				[touchup]
   Robosphere Inventory			[touchup]
-  SFX					[wholecloth]
+  Bleed+Burn+Shock Icons		[touchup+recolour]
+  SFX					[none]
    Chemogun, Flamer, Hammer, Plasma, Spray
 
 X-Com Files Resound			[mod]
  Ksenni					[author]
-  Wrench SFX				[wholecloth]
-  Neonbow SFX				[wholecloth]
-  Shotgun SFX				[wholecloth]
+  Wrench SFX				[none]
+  Neonbow SFX				[none]
+  Shotgun SFX				[none]
 
 Awesome Guns				[mod]
  CanadianBeaver				[author]
-  Laser FireT SFX			[wholecloth]
+  Laser FireT SFX			[none]
 
 From the Ashes				[mod]
  Finnik					[author]
-  Military Guns				[wholecloth]		(zdoom)
+  Military Guns				[none]			(zdoom)
 
 From the Apocalypse			[mod]
  Robin					[author]
-  Aircar Map Sprites			[wholecloth, recolour]	(original)
-  Tech, Bath, and Wall Map Sprites	[wholecloth, touchup]	(original)
-  Hologram Sprites			[wholecloth]		(original)
-  Civilians				[wholecloth, remix]	(original)
-  Medikit				[touchup, recolour]
-  Motion Sensor				[wholecloth]
-  Soldier/Base Stats Background		[recolour]
-  Bite Sprite				[wholecloth]		(original)
-  Medical Facility			[touchup, recolour]	(original)
+  Civilians				[none+remix]		(original)
+  Soldier+Base Stats Background		[recolour]		(ufo)
+  Medical Facility			[touchup+recolour]	(original)
   Robosphere				[touchup]		(original)
+  Obs					[none+touchup+recolour] (original)
+   Medikit, Motion Sensor, Bite
+  Map Sprites				[recolour+remix]	(original)
+   Tech, Bathroom, Walls, Furniture, Holograms, Aircars
 
 Delicious Colors			[mod]
  RSSWizard				[author]
-  Pallet				[recolour]
+  Pallet				[recolour]		(ufo)
 
 Amiga Fonts				[mod]
  Hythlodaeus				[author]		(ufo)
+  Font					[none+remix]
 
 First Turn Enemy TU Randomizer		[mod]
  Kzer-Za, Starving Poet			[authors]
-  Script				[wholecloth]
+  Script				[none]
 
 Sharkquanaut Combat Divers		[mod]
  Hans Woofington			[author]
@@ -103,26 +138,30 @@ Sharkquanaut Combat Divers		[mod]
 
 TFTD: Vanilla Plus			[mod]
  Daev					[author]
-  Starry Background			[wholecloth]
+  Starry Background			[none]
 
 The World of Terrifying Silence		[mod]
  Nord					[author
-  Turbo Hit Animation			[wholecloth]
-
-Kenny.nl				[site]
- SFX Set				[pack]
-  Switch29				[wholecloth]
-  BookPlace1				[wholecloth]
-
-Hardmode Expansion			[mod]
- hellrazor				[author]
-  Sniper Rifle SFX			[wholecloth]		(oshiaki2115)
+  Turbo Hit Animation			[none]
 
 The World of Terrifying Silence		[mod]
  Nord					[author]
-  Glass Breaking SFX			[mix]
+  Glass Breaking SFX			[remix]
 
-Inspiration comes from many sources, too many to list. Ranging from decades old fan fiction that could have been done better to scientific journals. However, the ideas taken from the OpenXCom community are listed here.
+Hardmode Expansion			[mod]
+ hellrazor				[author]
+  Sniper Rifle SFX			[none]			(oshiaki2115)
+
+Kenny.nl				[site]
+ SFX Set				[pack]
+  Switch29				[none]			(original)
+  BookPlace1				[none]			(original)
+
+Xenonauts				[game]
+ Goldhawk Interactive			[group]
+  Shield				[remix]			(original)
+
+Inspiration comes from many sources, too many to list. Ranging from decades old fan fiction to scientific journals. However, the ideas taken from the OpenXCom community are listed here.
 
 X-Com Files/FMP
  Early game of sending a tiny number of soldiers to kill a tiny number of weak enemies. The progression of turning into a global agency from humble beginnings. Aliens not being a threat until later. Characters in research unlocks. Limiting equipment loadouts based on mission types. Commendations and transformations as a major training method. AIs as soldiers. Aliens as soldiers. Psionic shields. Facility based progression. Manufacturing size zero. Static defenses for base defense missions. Early game (non-OP) psionics. Shields. Power bonuses. Sanity. The moon.
@@ -134,7 +173,7 @@ X-Piratez
  Item and facility based income/storage mechanics. Balancing the metaprogression around money and number of scientists. Purchasing based progression. Different soldier types. Negative score missions. Enviromental effects. Energy management. Bounties. Freshness. Hacking. Space.
 
 Reaver's Harmony
- Geoscape ship mechanics, ship upgrades being compatible with weapon slots. Salvaging equipment into components.
+ Geoscape ship mechanics, ship upgrades being compatible with all weapon slots. Salvaging equipment into components.
 
 From the Ashes
  Soldier specialization. Reminding me how much more fun base defense missions are when you don't build defensively.
@@ -147,3 +186,71 @@ Xeno Operations
 
 NuclearWorld
  TU damage instead of CQC to make melee options safer on aggression without making them overpowered on the defensive.
+
+
+List of assets and their authors which are completely unique to this mod.
+
+thallori
+ bullets
+  bolt bullet
+  flask bullet
+  slug bullet
+  laserredbig bullet
+  
+ facilities
+  datacenter
+  depot
+  local interface
+  printshop
+  scanner
+  
+ hardpoints and craft icons
+  all of them
+
+ obs
+  taser
+  elerium
+  elerium bomb
+  pipe bomb
+  flask
+  molotov
+  busbox pistol
+  9mm guns
+  disposable smg
+  ssp/12mm guns
+  xn weapons
+  biomass
+  grav
+  interlace
+  medical cyberware
+  aquaplastic
+  durathread
+  sjb license
+  ssp baton
+  dartpistol
+  watergun
+  multitool
+  nailer
+  sonic probe
+  riveter
+  sledgehammer
+  inhalers
+  doc grip
+
+ pedia
+  data1+2+3
+  operations1+2+3+4
+  vendors
+
+ ui
+  commendations decorations+medals
+  daynight
+  ranks
+  stun icon
+  empty pedia backgrounds
+
+Esven
+ map tiles
+  flora forest small spikey fern
+  xn cannon				[touchup]
+  xn volley				[touchup]

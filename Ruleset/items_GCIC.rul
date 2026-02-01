@@ -359,7 +359,7 @@ items:
     fixedWeaponShow: true
     recover: false
 
-  - type: STR_CHRYSSALID_WEAPON
+  - type: CHRYSSALID_WEAPON
     weight: 0
     bigSprite: 61
     handSprite: 104
@@ -379,7 +379,7 @@ items:
     fixedWeapon: true
     recover: false
     zombieUnit: STR_ZOMBIE
-  - type: STR_ZOMBIE_WEAPON
+  - type: ZOMBIE_WEAPON
     weight: 0
     bigSprite: 57
     meleeSound: 48
@@ -397,7 +397,7 @@ items:
     flatRate: true
     fixedWeapon: true
     recover: false
-  - type: STR_MUCKSTAR_WEAPON
+  - type: MUCKSTAR_WEAPON
     categories: [STR_BUILT_INS_CATEGORY]
     bigSprite: 175
     bulletSprite: 14
@@ -426,7 +426,7 @@ items:
     dropoff: 2
     fixedWeapon: true
     recover: false
-  - type: STR_ROBOSPHERE_WEAPON
+  - type: ROBOSPHERE_WEAPON
     categories: [STR_BUILT_INS_CATEGORY]
     bigSprite: 175
     meleeAnimation: 12
@@ -453,7 +453,7 @@ items:
     flatRate: true
     fixedWeapon: true
     recover: false
-  - type: STR_HOLOSECTOID_WEAPON
+  - type: HOLOSECTOID_WEAPON
     categories: [STR_BUILT_INS_CATEGORY]
     bigSprite: 196
     handSprite: 424
@@ -2716,7 +2716,7 @@ items:
     transferTime: 4
     bigSprite: 115
     floorSprite: 114
-    hitSound: 13
+    hitSound: 110
     hitAnimation: 26
     invWidth: 1
     invHeight: 1
@@ -2891,7 +2891,7 @@ items:
     moraleRecovery: 35
     stunRecovery: -15
     energyRecovery: 35
-    medikitTargetMatrix: 22
+    medikitTargetMatrix: 31
     medikitTargetSelf: true
     isConsumable: true
     medikitType: 2
@@ -2921,7 +2921,7 @@ items:
     moraleRecovery: -5
     stunRecovery: 5
     energyRecovery: 20
-    medikitTargetMatrix: 22
+    medikitTargetMatrix: 31
     medikitTargetSelf: true
     isConsumable: true
     medikitType: 2
@@ -2951,7 +2951,7 @@ items:
     moraleRecovery: 5
     stunRecovery: 25
     energyRecovery: 5
-    medikitTargetMatrix: 22
+    medikitTargetMatrix: 31
     medikitTargetSelf: true
     isConsumable: true
     medikitType: 2
@@ -3270,6 +3270,16 @@ items:
     recoveryPoints: 2
     costSell: 4500
     weight: 0
+    armor: 255
+
+  - type: STR_BOUNTY_CHRYSSALID
+    ufopediaType: STR_BOUNTY_1
+    categories: [STR_SPECIMENS_CATEGORY]
+    recoveryPoints: 6
+    recoveryTransformations:
+      STR_BOUNTY_1: [3]
+    bigSprite: 211
+    weight: 3
     armor: 255
 
   - type: STR_IRS_SUBSIDY
@@ -3597,7 +3607,6 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 11
-    recoveryPoints: -1
     recoveryTransformations:
       STR_BIOMASS: [1]
       STR_CONSUMER_CYBERNETICS_CODED: [1]
@@ -3615,7 +3624,6 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 11
-    recoveryPoints: -1
     recoveryTransformations:
       STR_BIOMASS: [1]
       STR_CONSUMER_CYBERNETICS_CODED: [1]
@@ -3634,7 +3642,6 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 11
-    recoveryPoints: -1
     recoveryTransformations:
       STR_BIOMASS: [1]
       STR_CONSUMER_CYBERNETICS_CODED: [1]
@@ -3652,7 +3659,6 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 11
-    recoveryPoints: -1
     recoveryTransformations:
       STR_BIOMASS: [1]
       STR_MEDICAL_CYBERNETICS_CODED: [1]
@@ -3671,7 +3677,6 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 11
-    recoveryPoints: -1
     recoveryTransformations:
       STR_BIOMASS: [1]
     armor: 30
@@ -3688,7 +3693,6 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 11
-    recoveryPoints: -1
     recoveryTransformations:
       STR_BIOMASS: [1]
       STR_PLASTICS: [1]
@@ -3743,6 +3747,7 @@ items:
     invHeight: 3
     battleType: 11
     armor: 30
+
   - type: STR_ZOMBIE_CORPSE
     name: STR_CORPSE
     categories: [STR_SPECIMENS_CATEGORY]
@@ -3762,7 +3767,7 @@ items:
     categories: [STR_SPECIMENS_CATEGORY]
     size: 0.25
     costSell: 4000
-    recoveryPoints: 1
+    recoveryPoints: 3
     recoveryTransformations:
       STR_BIOMASS: [1]
       STR_SHARES_MEDI: [80, 20]
@@ -3781,7 +3786,7 @@ items:
     categories: [STR_SPECIMENS_CATEGORY]
     size: 0.25
     costSell: 1500
-    recoveryPoints: 1
+    recoveryPoints: 2
     recoveryTransformations:
       STR_AG_UNIT: [1]
       STR_SHARES_GR: [75, 25]
@@ -3819,7 +3824,6 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 11
-    recoveryPoints: -1
     recoveryTransformations:
       STR_BIOMASS: [1]
       STR_CONSUMER_CYBERNETICS_CODED: [1]
@@ -3833,7 +3837,6 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 11
-    recoveryPoints: -1
     recoveryTransformations:
       STR_BIOMASS: [1]
       STR_CONSUMER_CYBERNETICS_CODED: [1]
