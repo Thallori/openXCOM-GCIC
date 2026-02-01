@@ -512,8 +512,8 @@ en-US:
 # rescue
   STR_RESCUE_1: "Clients: Early Adopters"
   STR_RESCUE_1_ALERT: "CLIENTS REQUIRE RESCUE"
-  STR_RESCUE_1_ALERT_DESCRIPTION: "A client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 Hours{NEWLINE}Maximum Gear: Security"
-  STR_RESCUE_1_BRIEFING: "A client's implant signal has failed to respond for one hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
+  STR_RESCUE_1_ALERT_DESCRIPTION: "A client's implant signal has failed to respond for over an hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 Hours{NEWLINE}Maximum Gear: Security"
+  STR_RESCUE_1_BRIEFING: "A client's implant signal has failed to respond for over an hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
   
   STR_RESCUE_RR: "Clients: Rapid Response"
   STR_RESCUE_RR_ALERT: "CLIENTS REQUIRE RESCUE"
@@ -536,8 +536,8 @@ en-US:
   STR_TRADE_MEETING_1_BRIEFING: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation by leaving the area."
 
   STR_TRADE_MEETING_2: "Netrunners: Proxy Traced"
-  STR_TRADE_MEETING_2_ALERT_DESCRIPTION: "Couriers proxy hopping a bionic interlace have been backtraced to a single location. Though unlikely to be the true source, physical investigation might rekindle the trail and yield expansion material.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 hours{NEWLINE}Gear Restriction: Infiltration"
-  STR_TRADE_MEETING_2_BRIEFING: "Couriers proxy hopping a bionic interlace have been backtraced to a single location. Though unlikely to be the true source, physical investigation might rekindle the trail and yield expansion material.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation."
+  STR_TRADE_MEETING_2_ALERT_DESCRIPTION: "Couriers proxy-hopping a bionic interlace have been backtraced to a single location. Though unlikely to be the true source, physical investigation might rekindle the trail and yield expansion material.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 hours{NEWLINE}Gear Restriction: Infiltration"
+  STR_TRADE_MEETING_2_BRIEFING: "Couriers proxy-hopping a bionic interlace have been backtraced to a single location. Though unlikely to be the true source, physical investigation might rekindle the trail and yield expansion material.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation."
 # gcic
   STR_GCIC_SABOTAGE_ALERT: "GCIC MANDATE"
   STR_GCIC_SABOTAGE_1: "GCIC: Denial of Service"
@@ -1826,8 +1826,9 @@ en-US:
   STR_DC_PREQ: "(drone researched)"
   STR_LI_PREQ: "(encryption encountered)"
   STR_BC_PREQ: "(biocoding encountered)"
-  STR_AL_PREQ: "(laser cell researched)"
+  STR_AL_PREQ: "(laser cell encountered)"
   STR_PG_PREQ: "(network encountered)"
+  STR_RD_PREQ: "(pyrox encountered)"
 
   STR_V_P2P_PREQ: "(P2P encountered)"
   STR_V_SSP_PREQ: "(SSP encountered)"

@@ -418,7 +418,7 @@ armors:
       - 0.75 #6 blunt
       - 0.75 #7 mechanical
       - 0.35 #8 chemical
-      - 2.0 #9 smoke
+      - 0.5 #9 smoke
       - 0.35 #10 electric
       - 0.95 #11 sonic
       - 0.75 #12 biological
@@ -640,7 +640,7 @@ armors:
       - 0.85 #6 blunt
       - 0.85 #7 mechanical
       - 0.5 #8 chemical
-      - 2.0 #9 smoke
+      - 0.5 #9 smoke
       - 0.55 #10 electric
       - 0.85 #11 sonic
       - 0.85 #12 biological
@@ -865,7 +865,7 @@ armors:
       - 0.7 #6 blunt
       - 0.7 #7 mechanical
       - 0.35 #8 chemical
-      - 2.0 #9 smoke
+      - 0.5 #9 smoke
       - 0.35 #10 electric
       - 0.7 #11 sonic
       - 0.7 #12 biological
