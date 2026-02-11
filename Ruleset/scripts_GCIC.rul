@@ -14,7 +14,7 @@ extended:
           
           battle_game.getTurn turnNum;
           if eq turnNum 0;
-            battle_game.randomRange partTU 30 80; #between 30 and 80% max tus
+            battle_game.randomRange partTU 50 90; #between 50 and 90% max tus
             unit.getTimeUnitsMax unitTUs;
             muldiv unitTUs partTU 100;
             unit.setTimeUnits unitTUs;

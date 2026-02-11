@@ -252,7 +252,7 @@ missionScripts:
   - type: GCIC1a
     researchTriggers:
       STR_GCIC_BACKCHANNEL_MISSIONS: false
-      STR_GCIC_INDEPENDENCE: false
+      # STR_GCIC_INDEPENDENCE: false
     firstMonth: 1
     missionWeights:
       0:
@@ -262,8 +262,8 @@ missionScripts:
     startDelay: 30
     randomDelay: 43000
   - type: GCIC1b
-    researchTriggers:
-      STR_GCIC_INDEPENDENCE: false
+    # researchTriggers:
+    #   STR_GCIC_INDEPENDENCE: false
     firstMonth: 1
     executionOdds: 25
     missionWeights:
@@ -274,8 +274,8 @@ missionScripts:
     startDelay: 30
     randomDelay: 43000
   - type: GCIC1c
-    researchTriggers:
-      STR_GCIC_INDEPENDENCE: false
+    # researchTriggers:
+    #   STR_GCIC_INDEPENDENCE: false
     firstMonth: 1
     executionOdds: 25
     missionWeights:
@@ -289,7 +289,7 @@ missionScripts:
   - type: GCIC2a
     researchTriggers:
       STR_GCIC_BACKCHANNEL_MISSIONS: true
-      STR_GCIC_INDEPENDENCE: false
+      # STR_GCIC_INDEPENDENCE: false
     missionWeights:
       0:
         STR_GCIC_SABOTAGE_2: 100
@@ -300,7 +300,7 @@ missionScripts:
   - type: GCIC2b
     researchTriggers:
       STR_GCIC_BACKCHANNEL_MISSIONS: true
-      STR_GCIC_INDEPENDENCE: false
+      # STR_GCIC_INDEPENDENCE: false
     executionOdds: 30
     missionWeights:
       0:
@@ -312,7 +312,7 @@ missionScripts:
   - type: GCIC2c
     researchTriggers:
       STR_GCIC_BACKCHANNEL_MISSIONS: true
-      STR_GCIC_INDEPENDENCE: false
+      # STR_GCIC_INDEPENDENCE: false
     executionOdds: 11
     missionWeights:
       0:

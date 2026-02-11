@@ -33,6 +33,17 @@ statGrowthMultipliersAbs:
     melee: 0
     mana: 0
   -
+    tu: 0
+    stamina: 0
+    health: 0
+    bravery: 0
+    reactions: 0
+    firing: 0
+    throwing: 0
+    strength: 0
+    melee: 0
+    mana: 0
+  -
     tu: 5
     stamina: 5
     health: 5
@@ -43,17 +54,6 @@ statGrowthMultipliersAbs:
     strength: 5
     melee: 5
     mana: 10
-  -
-    tu: 10
-    stamina: 10
-    health: 10
-    bravery: 10
-    reactions: 10
-    firing: 10
-    throwing: 10
-    strength: 10
-    melee: 10
-    mana: 20
   -
     tu: 15
     stamina: 15
@@ -78,14 +78,14 @@ statGrowthMultipliers:
   mana: 0
   psiStrength: 0
   psiSkill: 5
-aimMultipliers: [0.5, 1.0, 1.0, 1.0, 1.0]
-armorMultipliers: [0.8, 1.0, 1.0, 1.0, 1.0]
-armorMultipliersAbs: [0, 0, 2, 4, 5]
+aimMultipliers: [0.5, 0.8, 1.0, 1.0, 1.0]
+armorMultipliers: [0.5, 0.8, 1.0, 1.0, 1.0]
+armorMultipliersAbs: [0, 0, 0, 3, 5]
 sellPriceCoefficient: [100, 100, 100, 100, 100]
 difficultyCoefficientOverrides:
-  monthlyRatingThresholds: [-999999, -999999, -999999, -999999, -999999]
-  ufoFiringRateCoefficients: [150, 100, 100, 85, 80]
-  ufoEscapeCountdownCoefficients: [150, 100, 100, 85, 80]
+  monthlyRatingThresholds: [-9999999, -9999999, -9999999, -9999999, -9999999]
+  ufoFiringRateCoefficients: [150, 110, 100, 90, 80]
+  ufoEscapeCountdownCoefficients: [150, 110, 100, 90, 80]
 #  retaliationTriggerOdds: [4, 12, 12, 12, 12]
 #  retaliationBaseRegionOdds: [25, 50, 50, 65, 75]
   retaliationTriggerOdds: [0, 0, 0, 0, 0] #no retailiations yet
@@ -99,7 +99,6 @@ hireScientistsUnlockResearch: STR_DEBUG
 shortRadarRange: 2000
 timePersonnel: 72
 initialFunding: 188
-performanceBonusFactor: 100
 monthlyRatings:
   10000: STR_MT_RATING_P8
   7500: STR_MT_RATING_P7
@@ -136,7 +135,7 @@ missionRatings:
   -350: STR_MS_RATING_N3
   -500: STR_MS_RATING_N4
   -1000: STR_MS_RATING_N5
-defeatScore: -999999
+defeatScore: -9999999
 defeatFunds: -1000000
 maxLookVariant: 8
 turnAIUseGrenade: 1
@@ -155,7 +154,7 @@ pilotAccuracyZeroPoint: 50
 pilotAccuracyRange: 50
 pilotReactionsZeroPoint: 50
 pilotReactionsRange: 50
-pilotBraveryThresholds: [90, 60, 30]
+pilotBraveryThresholds: [80, 50, 30]
 escortRange: 20
 drawEnemyRadarCircles: 2
 crewEmergencyEvacuationSurvivalChance: 100
@@ -177,7 +176,6 @@ showFullNameInAlienInventory: true
 giveScoreAlsoForResearchedArtifacts: true
 buildInfiltrationBaseCloseToTheCountry: true
 lessAliensDuringBaseDefense: true
-newBaseUnlockResearch: STR_TODO
 fakeUnderwaterBaseUnlockResearch: STR_TODO
 psiUnlockResearch: STR_TODO
 mana:
@@ -187,7 +185,7 @@ mana:
   trainingSecondary: true
   replenishAfterMission: false
   woundThreshold: 20
-alienFuel: [STR_ELERIUM_CORE, 1]
+alienFuel: [STR_ELERIUM_CORE, 4]
 fontName: AmigaFont.dat
 lighting:
   enhanced: 1
@@ -226,7 +224,6 @@ recommendedUserOptions:
   oxceRememberDisabledCraftWeapons: true
   oxceGeoscapeEventsInstantDelivery: true
   oxceBaseManufactureFallbackButton: true
-  oxceGeoSuppressLandingWithoutEquipment: true
   oxcePediaShowClipSize: true
   oxceBaseFilterResearchable: true
   oxceManufactureScrollSpeed: 1

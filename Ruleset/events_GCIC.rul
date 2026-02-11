@@ -1,9 +1,132 @@
 events:
+  - name: STR_DRONES_MONTHLY_P3
+    description: STR_DRONES_MONTHLY_P3_DESCRIPTION
+    funds: -150000
+    points: 100
+  - name: STR_DRONES_MONTHLY_P2
+    description: STR_DRONES_MONTHLY_P2_DESCRIPTION
+    everyItemList:
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HUMAN_ITEM
+      - STR_DRONE_HUMAN_ITEM
+      - STR_DRONE_SHARK_ITEM
+      - STR_DRONE_SHARK_ITEM
+      - STR_DRONE_DEEP_ITEM
+    funds: 200000
+  - name: STR_DRONES_MONTHLY_P1
+    description: STR_DRONES_MONTHLY_P1_DESCRIPTION
+    everyItemList:
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HUMAN_ITEM
+      - STR_DRONE_HUMAN_ITEM
+      - STR_DRONE_SHARK_ITEM
+      - STR_DRONE_DEEP_ITEM
+    funds: 100000
+  - name: STR_DRONES_MONTHLY_ZERO
+    description: STR_DRONES_MONTHLY_ZERO_DESCRIPTION
+    everyItemList:
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HUMAN_ITEM
+      - STR_DRONE_HUMAN_ITEM
+      - STR_DRONE_SHARK_ITEM
+    funds: 50000
+  - name: STR_DRONES_MONTHLY_N1
+    description: STR_DRONES_MONTHLY_N1_DESCRIPTION
+    everyItemList:
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HUMAN_ITEM
+      - STR_DRONE_SHARK_ITEM
+    funds: 25000
+  - name: STR_DRONES_MONTHLY_N2
+    description: STR_DRONES_MONTHLY_N2_DESCRIPTION
+    everyItemList:
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HYBRID_ITEM
+      - STR_DRONE_HUMAN_ITEM
+  - name: STR_DRONES_MONTHLY_N3
+    description: STR_DRONES_MONTHLY_N3_DESCRIPTION
+    funds: 1
+    points: -150
+
   - name: STR_EVENT_CLAIM_SECURED
     description: STR_EVENT_CLAIM_SECURED_DESCRIPTION
+    interruptResearch: STR_DEBUG
     everyItemList: [STR_BRAND_LOYALTY]
     funds: -20000
 
   - name: STR_EVENT_HEALTHY_COMPETITION
     description: STR_EVENT_HEALTHY_COMPETITION_DESCRIPTION
+    interruptResearch: STR_DEBUG
     points: 150
+
+eventScripts:
+  - type: EVENTSCRIPT_MONTHLY_P3
+    eventWeights:
+      0:
+        STR_DRONES_MONTHLY_P3: 100
+    firstMonth: 1
+    minScore: 1000
+    # researchTriggers:
+    #   STR_GCIC_INDEPENDENCE: false
+  - type: EVENTSCRIPT_MONTHLY_P2
+    eventWeights:
+      0:
+        STR_DRONES_MONTHLY_P2: 100
+    firstMonth: 1
+    maxScore: 999
+    minScore: 500
+    # researchTriggers:
+    #   STR_GCIC_INDEPENDENCE: false
+  - type: EVENTSCRIPT_MONTHLY_P1
+    eventWeights:
+      0:
+        STR_DRONES_MONTHLY_P1: 100
+    firstMonth: 1
+    maxScore: 499
+    minScore: 150
+    # researchTriggers:
+    #   STR_GCIC_INDEPENDENCE: false
+  - type: EVENTSCRIPT_MONTHLY_ZERO
+    eventWeights:
+      0:
+        STR_DRONES_MONTHLY_ZERO: 100
+    firstMonth: 1
+    maxScore: 149
+    minScore: -100
+    # researchTriggers:
+    #   STR_GCIC_INDEPENDENCE: false
+  - type: EVENTSCRIPT_MONTHLY_N1
+    eventWeights:
+      0:
+        STR_DRONES_MONTHLY_N1: 100
+    firstMonth: 1
+    maxScore: -101
+    minScore: -350
+    # researchTriggers:
+    #   STR_GCIC_INDEPENDENCE: false
+  - type: EVENTSCRIPT_MONTHLY_N2
+    eventWeights:
+      0:
+        STR_DRONES_MONTHLY_N2: 100
+    firstMonth: 1
+    maxScore: -351
+    minScore: -750
+    # researchTriggers:
+    #   STR_GCIC_INDEPENDENCE: false
+  - type: EVENTSCRIPT_MONTHLY_N3
+    eventWeights:
+      0:
+        STR_DRONES_MONTHLY_N3: 100
+    firstMonth: 1
+    maxScore: -751
+    # researchTriggers:
+    #   STR_GCIC_INDEPENDENCE: false

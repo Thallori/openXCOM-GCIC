@@ -94,14 +94,17 @@ alienDeployments:
             - STR_BUSBOX_PISTOL
             - STR_COMBALL_AMMO
             - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
             - STR_BOUNTY_1
           -
             - STR_BUSBOX_PISTOL
             - STR_COMBALL_AMMO
             - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
             - STR_BOUNTY_1
           -
             - STR_BUSBOX_PISTOL
+            - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
             - STR_STL_KNIFE
@@ -110,15 +113,18 @@ alienDeployments:
             - STR_BUSBOX_PISTOL
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
             - STR_STL_KNIFE
             - STR_BOUNTY_1
           -
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
+            - STR_9MM_AMMO
             - STR_BOUNTY_1
           -
             - STR_9MM_PISTOL
+            - STR_9MM_AMMO
             - STR_9MM_AMMO
             - STR_9MM_AMMO
             - STR_BOUNTY_1
@@ -126,12 +132,15 @@ alienDeployments:
             - STR_9MM_RIFLE
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
             - STR_BOUNTY_1
           -
             - STR_DISPOSABLE_SMG
+            - STR_STL_KNIFE
             - STR_BOUNTY_1
           -
             - STR_DISPOSABLE_SMG
+            - STR_STL_KNIFE
             - STR_BOUNTY_1
           -
             - STR_STL_KNIFE
@@ -176,47 +185,59 @@ alienDeployments:
             - STR_BUSBOX_PISTOL
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_STL_KNIFE
             - STR_BOUNTY_1
           -
             - STR_BUSBOX_PISTOL
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_STL_KNIFE
             - STR_BOUNTY_1
           -
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
+            - STR_9MM_AMMO
             - STR_BOUNTY_1
           -
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
+            - STR_9MM_AMMO
             - STR_BOUNTY_1
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
-            - STR_BOUNTY_1
-          -
-            - STR_9MM_SMG
-            - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
             - STR_BOUNTY_1
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
             - STR_BOUNTY_1
           -
             - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
             - STR_BOUNTY_1
           -
             - STR_DISPOSABLE_SMG
+            - STR_STL_KNIFE
             - STR_BOUNTY_1
           -
             - STR_DISPOSABLE_SMG
+            - STR_STL_KNIFE
             - STR_BOUNTY_1
       - alienRank: 5
         lowQty: 3
@@ -227,8 +248,58 @@ alienDeployments:
         extraRandomItems: *ironExtra
         itemSets: *boosterSet
 
+  - type: STR_RESCUE_FT
+    width: 50
+    length: 50
+    height: 8
+    alert: STR_RESCUE_FT_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_RESCUE_FT_ALERT_DESCRIPTION
+    markerName: STR_RESCUE_FT
+    duration: [24, 48]
+    despawnPenalty: 20
+    civilians: 12
+    # startingCondition: SECURITY_GEAR_SECURITY_CRAFT
+    briefing:
+      showTarget: false
+      title: STR_RESCUE_FT
+      music: BREACH_INTRO
+      background: DESTINATION.SCR
+      palette: 0
+    unlockedResearch: STR_TRG_RI_PREQ
+    terrains:
+      - HANGAR
+      - COMMERCIAL
+      - SLUM
+    music:
+      - BREACH2
+    data:
+      - alienRank: 4
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 2
+        percentageOutsideUfo: 50
+        extraRandomItems: *ironExtra
+        itemSets: *ripperSet
+      - alienRank: 5
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 4
+        percentageOutsideUfo: 50
+        extraRandomItems: *ironExtra
+        itemSets: *boosterSet
+      - alienRank: 5
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 50
+        customUnitType: STR_FREELANCER_PUBLIC
+        itemSets: *boosterSet
+
   - type: STR_KNOCKOUT_MISSION
-    # script: SLUM_DRONES_3X3
     width: 30
     length: 30
     height: 8
@@ -329,7 +400,6 @@ alienDeployments:
       music: HACKER_INTRO
       background: DESTINATION.SCR
       palette: 2
-    missionBountyItem: STR_BIONIC_INTERLACE
     unlockedResearch: STR_TRG_FL_PREQ
     minShade: 6
     terrains:
@@ -406,7 +476,6 @@ alienDeployments:
       music: HACKER_INTRO
       background: DESTINATION.SCR
       palette: 2
-    missionBountyItem: STR_BIONIC_INTERLACE
     unlockedResearch: STR_TRG_FL_PREQ
     minShade: 6
     terrains:
@@ -466,7 +535,6 @@ alienDeployments:
       music: HACKER_INTRO
       background: DESTINATION.SCR
       palette: 2
-    missionBountyItem: STR_BIONIC_INTERLACE
     unlockedResearch: STR_TRG_ST_PREQ
     minShade: 6
     terrains:
@@ -537,9 +605,7 @@ alienDeployments:
             - STR_CHEM_SMG_AMMO2
           - 
             - STR_ACIDFLASK
-            - STR_ACIDFLASK
           - 
-            - STR_ACIDFLASK
             - STR_ACIDFLASK
       - alienRank: 6
         lowQty: 3
@@ -574,6 +640,128 @@ alienDeployments:
         customUnitType: STR_DRONE_ENEMY_SHARK
         itemSets: *AnchorEmptyInventory
 
+  - type: STR_TRADE_MEETING_3
+    script: SINGLE_BLOCK_2X2
+    width: 20
+    length: 20
+    height: 8
+    alert: STR_TRADE_MEETING_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_TRADE_MEETING_3_ALERT_DESCRIPTION
+    markerName: STR_TRADE_MEETING_3
+    duration: [48, 72]
+    despawnPenalty: 0
+    abortPenalty: 0
+    startingCondition: INFILTRATION_GEAR_INFILTRATION_CRAFT
+    briefing:
+      showTarget: false
+      title: STR_TRADE_MEETING_3
+      music: HACKER_INTRO
+      background: DESTINATION.SCR
+      palette: 2
+    #unlockedResearch: STR_TRG_ST_PREQ
+    minShade: 6
+    terrains:
+      - CLUB2
+    music:
+      - HACKER1
+    data:
+      - alienRank: 8
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        extraRandomItems:
+          - [STR_SECRET_DATA]
+        itemSets: &wiretapper
+          -
+            - STR_SONIC_PROBE
+            - STR_SKULLJACK
+          -
+            - STR_SONIC_PROBE
+            - STR_SKULLJACK
+          -
+            - STR_SONIC_PROBE
+            - STR_SKULLJACK
+          -
+            - STR_SONIC_PROBE
+            - STR_SKULLJACK
+          -
+            - STR_SONIC_PROBE
+            - STR_SKULLJACK
+          -
+            - STR_MARSBALL
+            - STR_SKULLJACK
+          -
+            - STR_MARSBALL
+            - STR_SKULLJACK
+          -
+            - STR_MARSBALL
+            - STR_SKULLJACK
+          -
+            - STR_MARSBALL
+            - STR_SKULLJACK
+          -
+            - STR_MARSBALL
+            - STR_SKULLJACK
+      - alienRank: 8
+        lowQty: 0
+        medQty: 0
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 0
+        extraRandomItems: *netrunnerExtra
+        itemSets: *wiretapper
+      - alienRank: 7
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 0
+        extraRandomItems: *netrunnerExtra
+        itemSets: *skiptracer
+      - alienRank: 6
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 3
+        percentageOutsideUfo: 0
+        extraRandomItems: *netrunnerExtra
+        itemSets: *freelancer
+      - alienRank: 6
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_HYBRID
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 100
+        customUnitType: STR_DRONE_ENEMY_HUMAN
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 8
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 100
+        customUnitType: STR_DRONE_ENEMY_SHARK
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 100
+        customUnitType: STR_DRONE_ENEMY_DEEP
+        itemSets: *AnchorEmptyInventory
+
   - type: STR_GCIC_SABOTAGE_1
     script: COMMERCIAL_3X3
     width: 30
@@ -589,7 +777,7 @@ alienDeployments:
       STR_EVENT_CLAIM_SECURED: 100
     failureEvents:
       STR_EVENT_CLAIM_SECURED: 100
-    # startingCondition: MILSPEC_GEAR_INFILTRATION_CRAFT
+    startingCondition: MILSPEC_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
       title: STR_GCIC_SABOTAGE_1
@@ -710,7 +898,7 @@ alienDeployments:
       STR_EVENT_HEALTHY_COMPETITION: 100
     failureEvents:
       STR_EVENT_HEALTHY_COMPETITION: 100
-    # startingCondition: MILSPEC_GEAR_INFILTRATION_CRAFT
+    startingCondition: MILSPEC_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
       title: STR_GCIC_SABOTAGE_2

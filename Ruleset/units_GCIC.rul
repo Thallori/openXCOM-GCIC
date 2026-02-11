@@ -165,11 +165,9 @@ units:
     kneelHeight: 14
     value: 4
     deathSound: [41, 42, 43]
-    energyRecovery: 30
     intelligence: 2
     aggression: 5
-    spotter: 0
-    sniper: 0
+    sniper: 20
     canSurrender: true
   - type: STR_RIPPER_PUBLIC
     race: STR_IRONEYES
@@ -177,7 +175,7 @@ units:
     liveAlien: STR_BOUNTY_1
     stats:
       tu: 55
-      stamina: 60
+      stamina: 65
       health: 50
       bravery: 70
       reactions: 40
@@ -193,11 +191,9 @@ units:
     kneelHeight: 14
     value: 5
     deathSound: [44, 45, 46]
-    energyRecovery: 30
     intelligence: 2
     aggression: 2
-    spotter: 0
-    sniper: 0
+    sniper: 20
     canSurrender: true
 #hacker faction
   - type: STR_FREELANCER_PUBLIC
@@ -220,13 +216,11 @@ units:
     armor: STR_FREELANCER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 4
+    value: 3
     deathSound: [41, 42, 43]
-    energyRecovery: 30
     intelligence: 2
     aggression: 1
-    spotter: 0
-    sniper: 0
+    sniper: 20
     canSurrender: true
 
   - type: STR_FREELANCER_PRIVATE
@@ -248,20 +242,18 @@ units:
     armor: STR_FREELANCER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -4
+    value: -3
     deathSound: [41, 42, 43]
-    energyRecovery: 30
     intelligence: 2
     aggression: 1
-    spotter: 0
-    sniper: 0
+    sniper: 20
     canSurrender: true
   - type: STR_SKIPTRACER_PRIVATE
     race: STR_NETRUNNERS
     rank: STR_RANK_4
     stats:
       tu: 50
-      stamina: 55
+      stamina: 50
       health: 35
       bravery: 70
       reactions: 45
@@ -275,19 +267,44 @@ units:
     armor: STR_SKIPTRACER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -5
+    value: -4
     deathSound: [126]
-    energyRecovery: 30
     intelligence: 2
     aggression: 1
-    spotter: 0
-    sniper: 0
+    sniper: 20
+    canSurrender: true
+  - type: STR_WIRETAPPER_PRIVATE
+    race: STR_NETRUNNERS
+    rank: STR_RANK_3
+    stats:
+      tu: 55
+      stamina: 55
+      health: 55
+      bravery: 70
+      reactions: 35
+      firing: 45
+      throwing: 45
+      melee: 45
+      strength: 50
+      psiStrength: 30
+      psiSkill: 0
+      mana: 40
+    armor: STR_WIRETAPPER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    floatHeight: 2
+    value: -5
+    deathSound: [10]
+    moveSound: 15
+    intelligence: 2
+    aggression: 1
+    spotter: 1
+    sniper: 20
     canSurrender: true
 #security faction
   - type: STR_SSPGUARD_PRIVATE
     race: STR_SSP
     rank: STR_RANK_5
-    liveAlien: STR_SSPGUARD_PRIVATE
     stats:
       tu: 55
       stamina: 50
@@ -306,16 +323,13 @@ units:
     kneelHeight: 14
     value: -5
     deathSound: [113, 114, 115]
-    energyRecovery: 30
     intelligence: 1
     aggression: 2
-    spotter: 0
-    sniper: 0
+    sniper: 20
     canSurrender: true
   - type: STR_SSPOFFICER_PRIVATE
     race: STR_SSP
     rank: STR_RANK_4
-    liveAlien: STR_SSPOFFICER_PRIVATE
     stats:
       tu: 50
       stamina: 50
@@ -334,11 +348,10 @@ units:
     kneelHeight: 14
     value: -8
     deathSound: [113, 114, 115]
-    energyRecovery: 30
     intelligence: 2
     aggression: 2
     spotter: 1
-    sniper: 0
+    sniper: 20
     canSurrender: true
 #enemy drones
   - type: STR_DRONE_ENEMY_HYBRID
@@ -462,7 +475,6 @@ units:
     deathSound: 9
     intelligence: 4
     aggression: 5
-    energyRecovery: 40
     livingWeapon: true
     isLeeroyJenkins: true
     builtInWeaponSets:
@@ -492,7 +504,6 @@ units:
     value: 0
     intelligence: 0
     aggression: 8
-    energyRecovery: 30
     isLeeroyJenkins: true
     livingWeapon: true
     builtInWeaponSets:
@@ -523,7 +534,6 @@ units:
     moveSound: 16
     intelligence: 1
     aggression: 1
-    energyRecovery: 30
     livingWeapon: true
     builtInWeaponSets:
       - - STR_MUCKSTAR_WEAPON
@@ -553,7 +563,6 @@ units:
     moveSound: 16
     intelligence: 3
     aggression: 2
-    energyRecovery: 30
     livingWeapon: true
     builtInWeaponSets:
       - - STR_CELATID_WEAPON
@@ -585,7 +594,6 @@ units:
     intelligence: 3
     aggression: 2
     spotter: 1
-    energyRecovery: 30
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ROBOSPHERE_WEAPON
@@ -617,13 +625,12 @@ units:
     aggression: 1
     spotter: 1
     sniper: 50
-    energyRecovery: 30
     builtInWeaponSets:
       - - STR_HOLOSECTOID_WEAPON
 #clients
   - type: STR_CLIENT_1
     race: STR_RACE_CLIENT
-    rank: STR_RANK_5
+    rank: STR_RANK_CLIENT
     civilianRecoveryType: STR_BRAND_LOYALTY
     vip: true
     ignoredByAI: true
@@ -642,13 +649,11 @@ units:
       mana: 30
     armor: STR_CLIENT_1_ARMOR
     standHeight: 14
-    moraleLossWhenKilled: 0
     value: 25
     deathSound: [41, 42, 43]
-    energyRecovery: 30
   - type: STR_CLIENT_RR
     race: STR_CLIENTS
-    rank: STR_RANK_5
+    rank: STR_RANK_CLIENT
     civilianRecoveryType: STR_BRAND_LOYALTY
     vip: true
     stats:
@@ -667,13 +672,11 @@ units:
     armor: STR_CLIENT_RR_ARMOR
     standHeight: 22
     kneelHeight: 14
-    moraleLossWhenKilled: 0
     value: 35
     deathSound: [44, 45, 46]
-    energyRecovery: 30
   - type: STR_CLIENT_CRAZY
     race: STR_CLIENTS
-    rank: STR_RANK_5
+    rank: STR_RANK_CLIENT
     liveAlien: STR_BRAND_LOYALTY
     stats:
       tu: 65
@@ -693,10 +696,55 @@ units:
     kneelHeight: 14
     value: 0
     deathSound: [41, 42, 43]
-    energyRecovery: 30
     intelligence: 2
     aggression: 8
-    spotter: 0
-    sniper: 0
     isLeeroyJenkins: true
     canSurrender: false
+#potential clients
+  - &refHumanCivilian
+    type: STR_CIVILIAN_CASUAL_M
+    race: STR_CIVILIAN
+    rank: STR_RANK_CLIENT
+    civilianRecoveryType: STR_BRAND_LOYALTY
+    stats:
+      tu: 35
+      stamina: 40
+      health: 30
+      bravery: 80
+      reactions: 30
+      firing: 30
+      throwing: 30
+      melee: 30
+      strength: 20
+      psiStrength: 30
+      psiSkill: 0
+      mana: 30
+    armor: STR_CIVILIAN_CASUAL_M_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    intelligence: 4
+    value: 15
+    pickUpWeaponsMoreActively: 0
+    deathSound: [41, 42, 43]
+  - type: STR_CIVILIAN_CASUAL_F
+    refNode: *refHumanCivilian
+    armor: STR_CIVILIAN_CASUAL_F_ARMOR
+    deathSound: [44, 45, 46]
+
+  - type: STR_CIVILIAN_GREASER_M
+    refNode: *refHumanCivilian
+    armor: STR_CIVILIAN_GREASER_M_ARMOR
+    deathSound: [41, 42, 43]
+  - type: STR_CIVILIAN_GREASER_F
+    refNode: *refHumanCivilian
+    armor: STR_CIVILIAN_GREASER_F_ARMOR
+    deathSound: [44, 45, 46]
+
+  - type: STR_CIVILIAN_HOODIE_M
+    refNode: *refHumanCivilian
+    armor: STR_CIVILIAN_HOODIE_M_ARMOR
+    deathSound: [41, 42, 43]
+  - type: STR_CIVILIAN_HOODIE_F
+    refNode: *refHumanCivilian
+    armor: STR_CIVILIAN_HOODIE_F_ARMOR
+    deathSound: [44, 45, 46]

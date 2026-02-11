@@ -42,7 +42,6 @@
       size: [1, 2]
     - type: addBlock
       size: 2
-      executions: 2
     - type: fillArea
 
   - type: SINGLE_BLOCK_2X2
@@ -50,6 +49,17 @@
     - type: addBlock
       size: 2
 
+  - type: HANGAR_DEFAULT
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addLine
+      direction: vertical
+    - type: addBlock
+      size: [1, 2]
+    - type: addBlock
+      size: 2
+    - type: fillArea
   - type: HANGAR_DRONES_3X3
     commands:
     - type: addUFO
@@ -113,6 +123,17 @@
       conditionals: [-2]
     - type: fillArea
 
+  - type: COMMERCIAL_DEFAULT
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addLine
+      direction: horizontal
+    - type: addBlock
+      size: [2, 1]
+    - type: addBlock
+      size: 2
+    - type: fillArea
   - type: COMMERCIAL_3X3
     commands:
     - type: addUFO
@@ -140,6 +161,15 @@
       size: 2
     - type: fillArea
 
+  - type: INDUSTRIAL_DEFAULT
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addLine
+      direction: both
+    - type: addBlock
+      size: 2
+    - type: fillArea
   - type: INDUSTRIAL_DRONES_4X4
     commands:
     - type: addUFO
@@ -163,6 +193,17 @@
       conditionals: [-1]
     - type: fillArea
 
+  - type: SLUM_DEFAULT
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addLine
+      direction: vertical
+    - type: addBlock
+      size: [2, 1]
+    - type: addBlock
+      size: 2
+    - type: fillArea
   - type: SLUM_DRONES_3X3
     commands:
     - type: addUFO

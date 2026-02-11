@@ -8,6 +8,7 @@ musics:
   - type: HACKER1
   - type: BREACH_INTRO
   - type: BREACH1
+  - type: BREACH2
   - type: SHADOW_INTRO
   - type: SHADOW1
   - type: BLOOD_INTRO
@@ -55,6 +56,7 @@ extraSounds:
       133: Resources/Sounds/Impacts/plasma_hit.wav
       134: Resources/Sounds/Impacts/glassfire_hit.wav
       135: Resources/Sounds/Impacts/glassburn_hit.wav
+      136: Resources/Sounds/Impacts/energy_hit.wav
 
   - type: GEO.CAT
     files:

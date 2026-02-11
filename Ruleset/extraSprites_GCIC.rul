@@ -53,7 +53,7 @@ extraSprites:
       108: Resources/Items/Builtins/fist_bigob.png
       109: Resources/Items/Utility/medispray_bigob.png
       110: Resources/Items/Containers/trunk_bigob.png
-      111: Resources/Factions/Clients/human_civilian_m0_bigob.png
+      111: Resources/Factions/Clients/civilian_casual1_bigob.png
       112: Resources/Factions/Ironeyes/booster_bigob.png
       113: Resources/Items/Tools/survey_knocker_bigob.png
       114: Resources/Items/Tools/Ammo/survey_knocker_flare_ammo_bigob.png
@@ -154,6 +154,15 @@ extraSprites:
       209: Resources/Items/Explosives/flask_bigob.png
       210: Resources/Factions/Clients/client_crazy_bigob.png
       211: Resources/Items/Materials/trophy_chryssalid_bigob.png
+      212: Resources/Items/Explosives/windlass_bigob.png
+      213: Resources/Items/Explosives/Ammo/windlass_ammo_bigob.png
+      214: Resources/Items/Explosives/Ammo/windlass_bomb_bigob.png
+      215: Resources/Factions/Clients/civilian_greaser1_bigob.png
+      216: Resources/Factions/Clients/civilian_greaser2_bigob.png
+      217: Resources/Factions/Clients/civilian_hoodie1_bigob.png
+      218: Resources/Factions/Clients/civilian_hoodie2_bigob.png
+      219: Resources/Items/Melee/skulljack_bigob.png
+      220: Resources/Items/Multi/marsball_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -167,7 +176,7 @@ extraSprites:
       107: Resources/Items/Laser/xn_pistol_floorob.png
       108: Resources/Items/Utility/medispray_floorob.png
       109: Resources/Items/Containers/trunk_floorob.png
-      110: Resources/Factions/Clients/human_civilian_m0_floorob.png
+      110: Resources/Factions/Clients/civilian_casual_floorob.png
       111: Resources/Factions/Ironeyes/booster_floorob.png
       112: Resources/Items/Tools/survey_knocker_floorob.png
       113: Resources/Items/Tools/Ammo/survey_knocker_flare_ammo_floorob.png
@@ -253,6 +262,13 @@ extraSprites:
       193: Resources/Items/Explosives/molotov_floorob.png
       194: Resources/Items/Explosives/flask_floorob.png
       195: Resources/Factions/Clients/client_crazy_floorob.png
+      196: Resources/Items/Explosives/windlass_floorob.png
+      197: Resources/Items/Explosives/Ammo/windlass_ammo_floorob.png
+      198: Resources/Items/Explosives/Ammo/windlass_bomb_floorob.png
+      199: Resources/Factions/Clients/civilian_greaser_floorob.png
+      200: Resources/Factions/Clients/civilian_hoodie_floorob.png
+      201: Resources/Items/Melee/skulljack_floorob.png
+      202: Resources/Items/Multi/marsball_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -302,6 +318,9 @@ extraSprites:
       432: Resources/Items/Tools/riveter_handob.png
       440: Resources/Items/Explosives/molotov_handob.png
       448: Resources/Items/Explosives/flask_handob.png
+      456: Resources/Items/Explosives/windlass_handob.png
+      464: Resources/Items/Melee/skulljack_handob.png
+      472: Resources/Items/Multi/marsball_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
@@ -395,6 +414,7 @@ extraSprites:
       12: Resources/Animations/electric_splat.png
       16: Resources/Animations/white_slash.png
       20: Resources/Animations/red_claws.png
+      24: Resources/Animations/yellow_slash.png
 
   - type: Projectiles
     height: 3
@@ -417,6 +437,7 @@ extraSprites:
       735: Resources/Animations/Projectiles/bubblepurple_bullet.png
       770: Resources/Animations/Projectiles/bubblered_bullet.png
       805: Resources/Animations/Projectiles/flask_bullet.png
+      840: Resources/Animations/Projectiles/ball_bullet.png
 
 #paperdolls
 # human
@@ -697,6 +718,18 @@ extraSprites:
     files:
       0: Resources/Factions/Netrunners/skiptracer_sprite.png
 
+  - typeSingle: WIRETAPPER_CPAL
+    fileSingle: Resources/Factions/Netrunners/skiptracer_CPAL.png
+  - typeSingle: WIRETAPPER.SPK
+    fileSingle: Resources/Factions/Netrunners/skiptracer_inventory.png
+  - type: WIRETAPPER.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Factions/Netrunners/wiretapper_sprite.png
+
 # ssp
   - typeSingle: SSPGUARD_CPAL
     fileSingle: Resources/Factions/SSP/sspguard_CPAL.png
@@ -782,7 +815,7 @@ extraSprites:
     subX: 32
     subY: 40
     width: 512
-    height: 680
+    height: 720
     files:
       0: Resources/Factions/Holograms/holosectoid_sprite.png
 
@@ -818,6 +851,49 @@ extraSprites:
     height: 680
     files:
       0: Resources/Factions/Clients/client_crazy_sprite.png
+
+  - typeSingle: CIVILIAN_CASUAL_M.SPK
+    fileSingle: Resources/Factions/Clients/civilian_casual1_inventory.png
+  - typeSingle: CIVILIAN_CASUAL_F.SPK
+    fileSingle: Resources/Factions/Clients/civilian_casual2_inventory.png
+  - type: CIVILIAN_CASUAL.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Factions/Clients/civilian_casual_sprite.png
+
+  - typeSingle: CIVILIAN_GREASER_M.SPK
+    fileSingle: Resources/Factions/Clients/civilian_greaser1_inventory.png
+  - type: CIVILIAN_GREASER_M.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Factions/Clients/civilian_greaser1_sprite.png
+  - typeSingle: CIVILIAN_GREASER_F.SPK
+    fileSingle: Resources/Factions/Clients/civilian_greaser2_inventory.png
+  - type: CIVILIAN_GREASER_F.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Factions/Clients/civilian_greaser2_sprite.png
+
+  - typeSingle: CIVILIAN_HOODIE_M.SPK
+    fileSingle: Resources/Factions/Clients/civilian_hoodie1_inventory.png
+  - typeSingle: CIVILIAN_HOODIE_F.SPK
+    fileSingle: Resources/Factions/Clients/civilian_hoodie2_inventory.png
+  - type: CIVILIAN_HOODIE.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Factions/Clients/civilian_hoodie_sprite.png
 
 #ufopedia
   - typeSingle: ALIGN_TEST_CPAL
@@ -898,6 +974,8 @@ extraSprites:
     fileSingle: Resources/Pedia/craft_hoverbike_CPAL.png
   - typeSingle: CRAFT_CROSSOVER_CPAL
     fileSingle: Resources/Pedia/craft_crossover_CPAL.png
+  - typeSingle: CRAFT_SECVAN_CPAL
+    fileSingle: Resources/Pedia/craft_secvan_CPAL.png
 # armament
   - typeSingle: BATBOX.SPK
     fileSingle: Resources/Crafts/Hardpoints/batbox_pedia.png

@@ -21,24 +21,24 @@
     listOrder: 50
   - type: STR_CANNONS_CATEGORY
     listOrder: 60
-  - type: STR_LAUNCHERS_CATEGORY
-    listOrder: 70
   - type: STR_ROCKETS_CATEGORY
+    listOrder: 70
+  - type: STR_LAUNCHERS_CATEGORY
     listOrder: 72
   - type: STR_GRENADES_CATEGORY
     listOrder: 80
   - type: STR_BOWS_CATEGORY
     listOrder: 85
-  - type: STR_PSI_CATEGORY
-    listOrder: 100
   - type: STR_MELEE_CATEGORY
-    listOrder: 110
-  - type: STR_STUN_CATEGORY
-    listOrder: 119
+    listOrder: 100
   - type: STR_UTILITY_CATEGORY
-    listOrder: 120
+    listOrder: 110
   - type: STR_MEDICAL_CATEGORY
+    listOrder: 120
+  - type: STR_PSI_CATEGORY
     listOrder: 130
+  - type: STR_STUN_CATEGORY
+    listOrder: 200
   - type: STR_TOOLS_CATEGORY
     listOrder: 370
   - type: STR_SPORT_CATEGORY
@@ -69,25 +69,24 @@
   - type: STR_AQUATIC_CATEGORY
     listOrder: 460
     hidden: true
-  - type: STR_INCENDIARY_CATEGORY
-    listOrder: 500
-    hidden: true
   - type: STR_LOCKED_CATEGORY
-    listOrder: 590
+    listOrder: 700
+  - type: STR_CONTAINERS_CATEGORY
+    listOrder: 799
   - type: STR_RESOURCES_CATEGORY
     listOrder: 800
-  - type: STR_PERKS_CATEGORY
-    listOrder: 810
   - type: STR_DATA_CATEGORY
     listOrder: 820
-  - type: STR_CONTAINERS_CATEGORY
+  - type: STR_PERKS_CATEGORY
     listOrder: 830
-  - type: STR_DRONES_CATEGORY
+  - type: STR_LIABILITIES_CATEGORY
     listOrder: 840
-  - type: STR_SPECIMENS_CATEGORY
+  - type: STR_DRONES_CATEGORY
     listOrder: 850
-  - type: STR_REMAINS_CATEGORY
+  - type: STR_SPECIMENS_CATEGORY
     listOrder: 860
+  - type: STR_REMAINS_CATEGORY
+    listOrder: 870
   - type: STR_BUILT_INS_CATEGORY
     listOrder: 997
     hidden: true

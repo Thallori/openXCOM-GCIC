@@ -63,24 +63,6 @@ ufopaedia:
     text_width: 180
     image_id: DATA2_CPAL
 
-  # - id: STR_MARKET_COMPETITION
-  #   requires:
-  #     - STR_MARKET_COMPETITION
-  #   text: STR_MARKET_COMPETITION_UP
-  #   section: STR_FILES_UC
-  #   type_id: 7
-  #   text_width: 180
-  #   image_id: ALIGN_TEST_CPAL #TODO image
-
-  # - id: STR_CONTROL
-  #   requires:
-  #     - STR_CONTROL
-  #   text: STR_CONTROL_UP
-  #   section: STR_FILES_UC
-  #   type_id: 7
-  #   text_width: 180
-  #   image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_SECURITY
     requires:
       - STR_SECURITY
@@ -98,7 +80,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: DATA3_CPAL
-
 # memories
   - id: STR_DRONE_MEMORY
     requires:
@@ -141,7 +122,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: HMEMORY_CPAL
-
 #connections
   - id: STR_VENDORS
     requires:
@@ -161,7 +141,7 @@ ufopaedia:
     text_width: 180
     image_id: VENDOR_PRINT_CPAL
 
-  - id: STR_VENDOR_P2P
+  - id: STR_VENDOR_P2P_FILE
     requires:
       - STR_VENDOR_P2P
     text: STR_VENDOR_P2P_UP
@@ -247,7 +227,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: VENDOR_SSP_CPAL
-
 #operations
   - id: STR_PRIMARY_OPERATIONS
     requires:
@@ -347,7 +326,6 @@ ufopaedia:
   #   type_id: 7
   #   text_width: 180
   #   image_id: VENDOR_SSP_CPAL
-
 #technologies
   - id: STR_MONEY_1
     text: STR_MONEY_1_UP
@@ -358,7 +336,7 @@ ufopaedia:
 
   - id: STR_MONEY_2
     requires:
-      - STR_MONEY_2_MANU
+      - STR_MONEY_2_RESEARCH
     text: STR_MONEY_2_UP
     section: STR_TECHNOLOGIES_UC
     type_id: 7
@@ -425,7 +403,6 @@ ufopaedia:
   #   text: STR_SSP_CRACK_UP
   #   section: STR_TECHNOLOGIES_UC
   #   type_id: 8 #todo, type 7 image?
-
 #facilities
   - id: STR_PFB
     text: STR_PFB_UP
@@ -436,7 +413,6 @@ ufopaedia:
     text: STR_CENTRAL_ACCESS_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
-
   - id: STR_CORRIDOR
     text: STR_CORRIDOR_UP
     section: STR_BASE_FACILITIES_UC
@@ -446,12 +422,10 @@ ufopaedia:
     text: STR_DEPOT_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
-
   - id: STR_STORAGE_1
     text: STR_STORAGE_1_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
-
   - id: STR_STOREROOM
     requires:
       - STR_STOREROOM
@@ -487,14 +461,12 @@ ufopaedia:
     text: STR_DATACENTER_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
-
   - id: STR_LOCAL_INTERFACE
     requires:
       - STR_LOCAL_INTERFACE
     text: STR_LOCAL_INTERFACE_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
-
   - id: STR_PUBLIC_GATEWAY
     requires:
       - STR_PUBLIC_GATEWAY
@@ -513,7 +485,6 @@ ufopaedia:
     text: STR_SCANNER_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
-
 #asp craft
   - id: STR_APS
     text: STR_APS_UP
@@ -531,14 +502,13 @@ ufopaedia:
       width: 145
       height: 100
     rect_stats:
-      x: 5
-      y: 140
+      x: 160
+      y: 4
       width: 140
       height: 60
-
   - id: STR_HD_HOVERBIKE
     requires:
-      - STR_HD_HOVERBIKE
+      - STR_HD_HOVERBIKE_RESEARCH
     text: STR_HD_HOVERBIKE_UP
     section: STR_APS_CRAFT_UC
     type_id: 1
@@ -549,11 +519,10 @@ ufopaedia:
       width: 145
       height: 100
     rect_stats:
-      x: 5
-      y: 140
+      x: 160
+      y: 4
       width: 140
       height: 60
-
   - id: STR_VCM_BICUBE
     requires:
       - STR_VCM_BICUBE
@@ -567,23 +536,38 @@ ufopaedia:
       width: 145
       height: 100
     rect_stats:
-      x: 5
-      y: 140
+      x: 160
+      y: 4
       width: 140
       height: 60
-
+  - id: STR_SSP_SECVAN
+    requires:
+      - STR_SSP_SECVAN_RESEARCH
+    text: STR_SSP_SECVAN_UP
+    section: STR_APS_CRAFT_UC
+    type_id: 1
+    image_id: CRAFT_SECVAN_CPAL
+    rect_text:
+      x: 5
+      y: 45
+      width: 145
+      height: 100
+    rect_stats:
+      x: 160
+      y: 4
+      width: 140
+      height: 60
 # hardpoints
   - id: STR_HD_ECONOMY_ENGINE
     requires:
-      - STR_HD_ECONOMY_ENGINE
+      - STR_HD_ECONOMY_ENGINE_RESEARCH
     text: STR_HD_ECONOMY_ENGINE_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
     image_id: ECONOMY.SPK
-
   - id: STR_HD_EXPRESS_ENGINE
     requires:
-      - STR_HD_EXPRESS_ENGINE
+      - STR_HD_EXPRESS_ENGINE_RESEARCH
     text: STR_HD_EXPRESS_ENGINE_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
@@ -594,7 +578,6 @@ ufopaedia:
     section: STR_APS_CRAFT_UC
     type_id: 2
     image_id: BATBOX.SPK
-
 # uso analysis
   - id: STR_HOLOUFO_SMALL
     type_id: 9
@@ -602,7 +585,6 @@ ufopaedia:
     requires:
       - STR_HOLOUFO_SMALL
     text: STR_HOLOUFO_SMALL_UP
-
 #drones
   - id: STR_DRONE_ARTICLE
     text: STR_DRONE_ARTICLE_UP
@@ -617,7 +599,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: HYBRID_CPAL
-
   - id: STR_DRONE_HUMAN_ITEM
     requires:
       - STR_DRONE_HUMAN_ITEM
@@ -626,7 +607,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: HUMAN_CPAL
-
   - id: STR_DRONE_SHARK_ITEM
     requires:
       - STR_DRONE_SHARK_ITEM
@@ -635,7 +615,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: SHARK_CPAL
-
   - id: STR_DRONE_DEEP_ITEM
     requires:
       - STR_DRONE_DEEP_ITEM
@@ -644,7 +623,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: DEEP_CPAL
-
 # transformations
   - id: STR_DRONE_IMMORTALITY
     requires:
@@ -663,7 +641,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: IMPLANTS_CPAL
-
   - id: STR_NEURACHEM
     requires:
       - STR_NEURACHEM
@@ -672,7 +649,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: NEURACHEM_CPAL
-
   - id: STR_MUSCULATURE
     requires:
       - STR_MUSCULATURE
@@ -681,8 +657,7 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: MUSCULATURE_CPAL
-
-# armor
+# armors
   - id: STR_PLEX_DRONE_ARMOR
     requires:
       - STR_PLEX_DRONE_ARMOR
@@ -832,7 +807,6 @@ ufopaedia:
       - STR_DEBUG
     section: STR_DRONES_UC
     type_id: 5
-
 # builtins
   - id: STR_UNARMED
     requires:
@@ -840,30 +814,26 @@ ufopaedia:
     text: STR_UNARMED_UP
     section: STR_DRONES_UC
     type_id: 4
-
   - id: STR_SHARKATTACK
     requires:
       - STR_DRONE_SHARK_ITEM
     text: STR_SHARKATTACK_UP
     section: STR_DRONES_UC
     type_id: 4
-
   - id: STR_ELECTROBOLT
     requires:
       - STR_DRONE_DEEP_ITEM
     text: STR_ELECTROBOLT_UP
     section: STR_DRONES_UC
     type_id: 4
-
   - id: STR_RIOT_SHIELD
     requires:
       - STR_AQUAVEST_DRONE_ARMOR
     text: STR_RIOT_SHIELD_UP
     section: STR_DRONES_UC
     type_id: 4
-
 #equipment
-# kinetic
+# p2p
   - id: STR_BUSBOX_PISTOL
     text: STR_BUSBOX_PISTOL_UP
     section: STR_EQUIPMENT_UC
@@ -882,7 +852,6 @@ ufopaedia:
     text: STR_9MM_PISTOL_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_9MM_AMMO
     requires:
       - STR_9MM_PISTOL
@@ -895,7 +864,6 @@ ufopaedia:
     text: STR_9MM_SMG_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_9MM_SMG_AMMO
     requires:
       - STR_9MM_SMG
@@ -908,7 +876,6 @@ ufopaedia:
     text: STR_9MM_RIFLE_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_9MM_RIFLE_AMMO
     requires:
       - STR_9MM_RIFLE
@@ -921,65 +888,6 @@ ufopaedia:
     text: STR_DISPOSABLE_SMG_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
-  - id: STR_45_PISTOL
-    requires:
-      - STR_45_PISTOL
-    text: STR_45_PISTOL_UP
-    section: STR_EQUIPMENT_UC
-    type_id: 4
-
-  - id: STR_45_AMMO
-    requires:
-      - STR_45_PISTOL
-    section: STR_NOT_AVAILABLE
-    type_id: 4
-
-  - id: STR_SSP_SMG
-    requires:
-      - STR_SSP_SMG
-    text: STR_SSP_SMG_UP
-    section: STR_EQUIPMENT_UC
-    type_id: 4
-
-  - id: STR_SSP_SMG_AMMO
-    requires:
-      - STR_SSP_SMG
-    section: STR_NOT_AVAILABLE
-    type_id: 4
-
-  - id: STR_SSP_SHOTGUN
-    requires:
-      - STR_SSP_SHOTGUN
-    text: STR_SSP_SHOTGUN_UP
-    section: STR_EQUIPMENT_UC
-    type_id: 4
-
-  - id: STR_SSP_SHOTGUN_AMMO_BS
-    requires:
-      - STR_SSP_SHOTGUN
-    section: STR_NOT_AVAILABLE
-    type_id: 4
-  - id: STR_SSP_SHOTGUN_AMMO_SLUG
-    requires:
-      - STR_SSP_SHOTGUN
-    section: STR_NOT_AVAILABLE
-    type_id: 4
-
-# electric
-  - id: STR_TASER_PISTOL
-    requires:
-      - STR_TASER_PISTOL
-    text: STR_TASER_PISTOL_UP
-    section: STR_EQUIPMENT_UC
-    type_id: 4
-
-  - id: STR_TASER_AMMO
-    requires:
-      - STR_TASER_PISTOL
-    section: STR_NOT_AVAILABLE
-    type_id: 4
-
 # nrf
   - id: STR_DART_PISTOL
     requires:
@@ -1033,8 +941,49 @@ ufopaedia:
       - STR_CHEM_SMG
     section: STR_NOT_AVAILABLE
     type_id: 4
+# ssp
+  - id: STR_45_PISTOL
+    requires:
+      - STR_45_PISTOL
+    text: STR_45_PISTOL_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_45_AMMO
+    requires:
+      - STR_45_PISTOL
+    section: STR_NOT_AVAILABLE
+    type_id: 4
 
-# laser
+  - id: STR_SSP_SMG
+    requires:
+      - STR_SSP_SMG
+    text: STR_SSP_SMG_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_SSP_SMG_AMMO
+    requires:
+      - STR_SSP_SMG
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_SSP_SHOTGUN
+    requires:
+      - STR_SSP_SHOTGUN
+    text: STR_SSP_SHOTGUN_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_SSP_SHOTGUN_AMMO_BS
+    requires:
+      - STR_SSP_SHOTGUN
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+  - id: STR_SSP_SHOTGUN_AMMO_SLUG
+    requires:
+      - STR_SSP_SHOTGUN
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
   - id: STR_SINGLESHOT_LASER_PISTOL_ELERIUM
     requires:
       - STR_SINGLESHOT_LASER_PISTOL
@@ -1061,6 +1010,18 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     type_id: 4
 
+  - id: STR_TASER_PISTOL
+    requires:
+      - STR_TASER_PISTOL
+    text: STR_TASER_PISTOL_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_TASER_AMMO
+    requires:
+      - STR_TASER_PISTOL
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+# xn
   - id: STR_XN_LASER_PISTOL
     requires:
       - STR_XN_LASER_PISTOL
@@ -1110,6 +1071,30 @@ ufopaedia:
     section: STR_EQUIPMENT_UC
     type_id: 4
 
+  - id: STR_SKULLJACK
+    requires:
+      - STR_SKULLJACK
+    text: STR_SKULLJACK_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+# launchers
+  - id: STR_WINDLASS_LAUNCHER
+    requires:
+      - STR_WINDLASS_LAUNCHER
+    text: STR_WINDLASS_LAUNCHER_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_WINDLASS_LAUNCHER_AMMO
+    requires:
+      - STR_DEBUG
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+  - id: STR_WINDLASS_LAUNCHER_AMMO_FAKE
+    title: STR_WINDLASS_LAUNCHER_AMMO
+    requires:
+      - STR_WINDLASS_LAUNCHER
+    section: STR_NOT_AVAILABLE
+    type_id: 4
 # grenades
   - id: STR_MOLOTOV
     requires:
@@ -1139,20 +1124,24 @@ ufopaedia:
     text: STR_ELERIUM_BOMB_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
+# sporting
+  - id: STR_MARSBALL
+    requires:
+      - STR_MARSBALL
+    text: STR_MARSBALL_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
 # melee
   - id: STR_STL_KNIFE
     text: STR_STL_KNIFE_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_BATON
     requires:
       - STR_BATON
     text: STR_BATON_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
 # tools
   - id: STR_WRENCH
     requires:
@@ -1160,7 +1149,6 @@ ufopaedia:
     text: STR_WRENCH_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_SLEDGEHAMMER
     requires:
       - STR_SLEDGEHAMMER
@@ -1188,7 +1176,6 @@ ufopaedia:
     text: STR_ELECTRIC_NAILER_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_ELECTRIC_NAILER_AMMO
     requires:
       - STR_ELECTRIC_NAILER
@@ -1201,7 +1188,6 @@ ufopaedia:
     text: STR_BOLT_CANNON_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_BOLT_CANNON_AMMO
     requires:
       - STR_BOLT_CANNON
@@ -1214,13 +1200,11 @@ ufopaedia:
     text: STR_SURVEY_KNOCKER_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_KNOCK_FLARE_AMMO
     requires:
       - STR_SURVEY_KNOCKER
     section: STR_NOT_AVAILABLE
     type_id: 4
-
   - id: STR_KNOCK_BOLT_AMMO
     requires:
       - STR_SURVEY_KNOCKER
@@ -1233,13 +1217,11 @@ ufopaedia:
     text: STR_EXTINGUISHER_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
 # utility
   - id: STR_ELECTROFLARE
     text: STR_ELECTROFLARE_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_CHEMFLARE
     requires:
       - STR_SURVEY_KNOCKER
@@ -1253,14 +1235,12 @@ ufopaedia:
     text: STR_STIM_INHALER_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_STIM_SPRINT
     requires:
       - STR_STIM_SPRINT
     text: STR_STIM_SPRINT_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_STIM_MORNING
     requires:
       - STR_STIM_MORNING
@@ -1272,21 +1252,18 @@ ufopaedia:
     text: STR_MEDI_SPRAY_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_MEDI_FIRST
     requires:
       - STR_MEDI_FIRST
     text: STR_MEDI_FIRST_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_MEDI_TRAUMA
     requires:
       - STR_MEDI_TRAUMA
     text: STR_MEDI_TRAUMA_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
 #salvage
 # materials
   - id: STR_BIONIC_INTERLACE
@@ -1302,7 +1279,6 @@ ufopaedia:
     text: STR_CONSUMER_CYBERNETICS_UP
     section: STR_RESOURCES_UC
     type_id: 4
-
   - id: STR_MEDICAL_CYBERNETICS
     requires:
       - STR_MEDICAL_CYBERNETICS
@@ -1330,7 +1306,6 @@ ufopaedia:
     text: STR_DURATHREAD_UP
     section: STR_RESOURCES_UC
     type_id: 4
-
   - id: STR_PLASTICS
     requires:
       - STR_PLASTICS
@@ -1351,7 +1326,6 @@ ufopaedia:
     text: STR_SJB_LICENSE_UP
     section: STR_RESOURCES_UC
     type_id: 4
-
 # data
   - id: STR_PERSONAL_DATA
     requires:
@@ -1359,14 +1333,12 @@ ufopaedia:
     text: STR_PERSONAL_DATA_UP
     section: STR_RESOURCES_UC
     type_id: 4
-
   - id: STR_SECRET_DATA
     requires:
       - STR_SECRET_DATA
     text: STR_SECRET_DATA_UP
     section: STR_RESOURCES_UC
     type_id: 4
-
 # abstract
   - id: STR_SHARES_GCIC
     requires:
@@ -1374,14 +1346,12 @@ ufopaedia:
     text: STR_SHARES_GCIC_UP
     section: STR_RESOURCES_UC
     type_id: 8
-
   - id: STR_SHARES_MEDI
     requires:
       - STR_SHARES_MEDI
     text: STR_SHARES_MEDI_UP
     section: STR_RESOURCES_UC
     type_id: 8
-
   - id: STR_SHARES_GR
     requires:
       - STR_SHARES_GR
@@ -1395,7 +1365,6 @@ ufopaedia:
     text: STR_BRAND_LOYALTY_UP
     section: STR_RESOURCES_UC
     type_id: 8
-
   - id: STR_BOUNTY_1
     requires:
       - STR_BOUNTY_1
@@ -1403,6 +1372,12 @@ ufopaedia:
     section: STR_RESOURCES_UC
     type_id: 8
 
+  - id: STR_ARMOR_REPAIR_BILL
+    requires:
+      - STR_ARMOR_REPAIR_BILL
+    text: STR_ARMOR_REPAIR_BILL_UP
+    section: STR_RESOURCES_UC
+    type_id: 4
 # containers
   - id: STR_CRIMINAL_CONTAINER_1
     requires:
@@ -1410,20 +1385,17 @@ ufopaedia:
     text: STR_CRIMINAL_CONTAINER_1_UP
     section: STR_RESOURCES_UC
     type_id: 4
-
   - id: STR_XN_CONTAINER_1
     requires:
       - STR_XN_CONTAINER_1
     text: STR_XN_CONTAINER_1_UP
     section: STR_RESOURCES_UC
     type_id: 4
-
 #potential targets
   - id: STR_HOSTILES
     text: STR_HOSTILES_UP
     section: STR_COMPETITORS_UC
     type_id: 8
-
 # ironeyes
   - id: STR_BOOSTERS
     requires:
@@ -1452,7 +1424,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: RIPPER_CPAL
-
 # netrunners
   - id: STR_FREELANCERS
     requires:
@@ -1509,7 +1480,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: SKIPTRACER_CPAL
-
 # ssp
   - id: STR_SSPGUARDS
     requires:
@@ -1606,7 +1576,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: CELATID_CPAL
-
 # robots
   - id: STR_ROBOSPHERES
     requires:
@@ -1621,7 +1590,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: ROBOSPHERE_CPAL
-
 # clients
   - id: STR_CLIENT_CRAZYS
     requires:
@@ -1636,7 +1604,6 @@ ufopaedia:
       width: 149
       height: 200
     image_id: CLIENT_CRAZY_CPAL
-
 # analysis
   - id: STR_BOOSTER_ARMOR
     requires:
@@ -1697,73 +1664,59 @@ ufopaedia:
       - STR_CLIENT_CRAZY_ARMOR
     section: STR_COMPETITORS_UC
     type_id: 5
-
 #manuals
   - id: STR_MANUAL_MANUAL
     text: STR_MANUAL_MANUAL_UP
     section: STR_MANUALS_UC
     type_id: 8
-
   - id: STR_OPERATIONS_TUTORIAL
     text: STR_OPERATIONS_TUTORIAL_UP
     section: STR_MANUALS_UC
     type_id: 8
-
   - id: STR_AUDITING
     text: STR_AUDITING_UP
     section: STR_MANUALS_UC
     type_id: 8
-
   - id: STR_LIQUIDITY
     text: STR_LIQUIDITY_UP
     section: STR_MANUALS_UC
     type_id: 8
-
   - id: STR_DRONES_TUTORIAL
     text: STR_DRONES_TUTORIAL_UP
     section: STR_MANUALS_UC
     type_id: 8
-
   - id: STR_MORALE_TUTORIAL
     text: STR_MORALE_TUTORIAL_UP
     section: STR_MANUALS_UC
     type_id: 8
-
   - id: STR_RESILIANCE_TUTORIAL
     text: STR_RESILIANCE_TUTORIAL_UP
     section: STR_MANUALS_UC
     type_id: 8
-
   - id: STR_NIGHT_TUTORIAL
     text: STR_NIGHT_TUTORIAL_UP
     section: STR_MANUALS_UC
     type_id: 8
-
   - id: STR_ARMOR_TUTORIAL
     text: STR_ARMOR_TUTORIAL_UP
     section: STR_MANUALS_UC
     type_id: 8
-
   - id: STR_DAMAGE_TYPES
     text: STR_DAMAGE_TYPES_UP
     section: STR_MANUALS_UC
     type_id: 8
-
   - id: STR_WEAPON_TYPES
     text: STR_WEAPON_TYPES_UP
     section: STR_MANUALS_UC
     type_id: 8
-
   - id: STR_GUN_TYPES
     text: STR_GUN_TYPES_UP
     section: STR_MANUALS_UC
     type_id: 8
-
   - id: STR_MELEE_TYPES
     text: STR_MELEE_TYPES_UP
     section: STR_MANUALS_UC
     type_id: 8
-
 #accolades
   - id: STR_ACCOLADES_TECH
     text: STR_ACCOLADES_TECH_UP
@@ -1777,7 +1730,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_SERVICE_TIME_NAME
     text: STR_MEDAL_SERVICE_TIME_UP
     section: STR_COMMENDATIONS_UC
@@ -1785,145 +1737,8 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_STATGAIN_NAME
     text: STR_MEDAL_STATGAIN_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_CARREER_MISSIONS_NAME
-    text: STR_MEDAL_CARREER_MISSIONS_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_NIGHTOPS_NAME
-    text: STR_MEDAL_NIGHTOPS_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_AQUANAUT_NAME
-    text: STR_MEDAL_AQUANAUT_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_ASTRONAUT_NAME
-    text: STR_MEDAL_ASTRONAUT_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_INFILTRATOR_NAME
-    text: STR_MEDAL_INFILTRATOR_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_CAMPAIGN_RIBBON_NAME
-    text: STR_MEDAL_CAMPAIGN_RIBBON_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_CARREER_KILLS_NAME
-    text: STR_MEDAL_CARREER_KILLS_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_BOUNTYHUNTER_NAME
-    text: STR_MEDAL_BOUNTYHUNTER_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_SLAVEKILLS_NAME
-    text: STR_MEDAL_SLAVEKILLS_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_MISSION_KILLS_5_NAME
-    text: STR_MEDAL_MISSION_KILLS_5_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_MISSION_KILLS_11_NAME
-    text: STR_MEDAL_MISSION_KILLS_11_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_DBLKILL_NAME
-    text: STR_MEDAL_DBLKILL_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_QUADKILL_NAME
-    text: STR_MEDAL_QUADKILL_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_7V7KILL_NAME
-    text: STR_MEDAL_7V7KILL_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_CHAMPION_NAME
-    text: STR_MEDAL_CHAMPION_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_WHIRLWIND_NAME
-    text: STR_MEDAL_WHIRLWIND_UP
-    section: STR_COMMENDATIONS_UC
-    hiddenCommendation: true
-    type_id: 7
-    text_width: 180
-    image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_REACTIONFIRE_NAME
-    text: STR_MEDAL_REACTIONFIRE_UP
     section: STR_COMMENDATIONS_UC
     hiddenCommendation: true
     type_id: 7
@@ -1937,7 +1752,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_HEALER_NAME
     text: STR_MEDAL_HEALER_UP
     section: STR_COMMENDATIONS_UC
@@ -1946,6 +1760,48 @@ ufopaedia:
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
 
+  - id: STR_MEDAL_CARREER_MISSIONS_NAME
+    text: STR_MEDAL_CARREER_MISSIONS_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_NIGHTOPS_NAME
+    text: STR_MEDAL_NIGHTOPS_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_AQUANAUT_NAME
+    text: STR_MEDAL_AQUANAUT_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_ASTRONAUT_NAME
+    text: STR_MEDAL_ASTRONAUT_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_INFILTRATOR_NAME
+    text: STR_MEDAL_INFILTRATOR_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_CAMPAIGN_RIBBON_NAME
+    text: STR_MEDAL_CAMPAIGN_RIBBON_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
   - id: STR_MEDAL_GLOBETROTTER_NAME
     text: STR_MEDAL_GLOBETROTTER_UP
     section: STR_COMMENDATIONS_UC
@@ -1954,32 +1810,78 @@ ufopaedia:
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
 
-  - id: STR_MEDAL_CIV_KILLS_NAME
-    text: STR_MEDAL_CIV_KILLS_UP
+  - id: STR_MEDAL_CARREER_KILLS_NAME
+    text: STR_MEDAL_CARREER_KILLS_UP
     section: STR_COMMENDATIONS_UC
     hiddenCommendation: true
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_BETRAYER_NAME
-    text: STR_MEDAL_BETRAYER_UP
+  - id: STR_MEDAL_BOUNTYHUNTER_NAME
+    text: STR_MEDAL_BOUNTYHUNTER_UP
     section: STR_COMMENDATIONS_UC
     hiddenCommendation: true
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_LONESURVIVOR_NAME
-    text: STR_MEDAL_LONESURVIVOR_UP
+  - id: STR_MEDAL_SLAVEKILLS_NAME
+    text: STR_MEDAL_SLAVEKILLS_UP
     section: STR_COMMENDATIONS_UC
     hiddenCommendation: true
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
-  - id: STR_MEDAL_IRONMAN_NAME
-    text: STR_MEDAL_IRONMAN_UP
+  - id: STR_MEDAL_MISSION_KILLS_5_NAME
+    text: STR_MEDAL_MISSION_KILLS_5_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_MISSION_KILLS_11_NAME
+    text: STR_MEDAL_MISSION_KILLS_11_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_DBLKILL_NAME
+    text: STR_MEDAL_DBLKILL_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_QUADKILL_NAME
+    text: STR_MEDAL_QUADKILL_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_7V7KILL_NAME
+    text: STR_MEDAL_7V7KILL_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_CHAMPION_NAME
+    text: STR_MEDAL_CHAMPION_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_WHIRLWIND_NAME
+    text: STR_MEDAL_WHIRLWIND_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_REACTIONFIRE_NAME
+    text: STR_MEDAL_REACTIONFIRE_UP
     section: STR_COMMENDATIONS_UC
     hiddenCommendation: true
     type_id: 7
@@ -1993,7 +1895,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_WRESTLER_NAME
     text: STR_MEDAL_WRESTLER_UP
     section: STR_COMMENDATIONS_UC
@@ -2001,7 +1902,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_MONSTER_NAME
     text: STR_MEDAL_MONSTER_UP
     section: STR_COMMENDATIONS_UC
@@ -2009,7 +1909,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_MAULER_NAME
     text: STR_MEDAL_MAULER_UP
     section: STR_COMMENDATIONS_UC
@@ -2017,7 +1916,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_HUNTER_KILLER_NAME
     text: STR_MEDAL_HUNTER_KILLER_UP
     section: STR_COMMENDATIONS_UC
@@ -2033,7 +1931,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_SHOTGUN_SURGEON_NAME
     text: STR_MEDAL_SHOTGUN_SURGEON_UP
     section: STR_COMMENDATIONS_UC
@@ -2041,7 +1938,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_ASSAULTER_NAME
     text: STR_MEDAL_ASSAULTER_UP
     section: STR_COMMENDATIONS_UC
@@ -2049,7 +1945,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_TROOPER_NAME
     text: STR_MEDAL_TROOPER_UP
     section: STR_COMMENDATIONS_UC
@@ -2057,7 +1952,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_SNIPER_NAME
     text: STR_MEDAL_SNIPER_UP
     section: STR_COMMENDATIONS_UC
@@ -2065,7 +1959,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_GUNNER_NAME
     text: STR_MEDAL_GUNNER_UP
     section: STR_COMMENDATIONS_UC
@@ -2073,7 +1966,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_CANNONEER_NAME
     text: STR_MEDAL_CANNONEER_UP
     section: STR_COMMENDATIONS_UC
@@ -2081,7 +1973,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_PURIFIER_NAME
     text: STR_MEDAL_PURIFIER_UP
     section: STR_COMMENDATIONS_UC
@@ -2089,7 +1980,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_BOMBARDIER_NAME
     text: STR_MEDAL_BOMBARDIER_UP
     section: STR_COMMENDATIONS_UC
@@ -2097,7 +1987,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_ROCKET_SCIENTIST_NAME
     text: STR_MEDAL_ROCKET_SCIENTIST_UP
     section: STR_COMMENDATIONS_UC
@@ -2105,7 +1994,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_GRENADIER_NAME
     text: STR_MEDAL_GRENADIER_UP
     section: STR_COMMENDATIONS_UC
@@ -2113,7 +2001,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_ARCHER_NAME
     text: STR_MEDAL_ARCHER_UP
     section: STR_COMMENDATIONS_UC
@@ -2121,7 +2008,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_WARRIOR_NAME
     text: STR_MEDAL_WARRIOR_UP
     section: STR_COMMENDATIONS_UC
@@ -2129,7 +2015,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_TECHNICIAN_NAME
     text: STR_MEDAL_TECHNICIAN_UP
     section: STR_COMMENDATIONS_UC
@@ -2137,7 +2022,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_TRADITIONALIST_NAME
     text: STR_MEDAL_TRADITIONALIST_UP
     section: STR_COMMENDATIONS_UC
@@ -2145,7 +2029,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_PRIMAL_NAME
     text: STR_MEDAL_PRIMAL_UP
     section: STR_COMMENDATIONS_UC
@@ -2161,7 +2044,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_TASEMASTER_NAME
     text: STR_MEDAL_TASEMASTER_UP
     section: STR_COMMENDATIONS_UC
@@ -2169,7 +2051,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_SLEEPER_NAME
     text: STR_MEDAL_SLEEPER_UP
     section: STR_COMMENDATIONS_UC
@@ -2177,7 +2058,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
-
   - id: STR_MEDAL_SORCERER_NAME
     text: STR_MEDAL_SORCERER_UP
     section: STR_COMMENDATIONS_UC
@@ -2186,6 +2066,34 @@ ufopaedia:
     text_width: 180
     image_id: ALIGN_TEST_CPAL #TODO image
 
+  - id: STR_MEDAL_CIV_KILLS_NAME
+    text: STR_MEDAL_CIV_KILLS_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_BETRAYER_NAME
+    text: STR_MEDAL_BETRAYER_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_LONESURVIVOR_NAME
+    text: STR_MEDAL_LONESURVIVOR_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
+  - id: STR_MEDAL_IRONMAN_NAME
+    text: STR_MEDAL_IRONMAN_UP
+    section: STR_COMMENDATIONS_UC
+    hiddenCommendation: true
+    type_id: 7
+    text_width: 180
+    image_id: ALIGN_TEST_CPAL #TODO image
   - id: STR_MEDAL_REVOLVINGDOOR_NAME
     text: STR_MEDAL_REVOLVINGDOOR_UP
     section: STR_COMMENDATIONS_UC

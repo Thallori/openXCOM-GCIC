@@ -12,7 +12,7 @@ manufacture:
     requiresBaseFunc:
       - STR_SERVICE_PRINTING
     requires:
-      - STR_MONEY_2_MANU
+      - STR_MONEY_2_RESEARCH
     time: 1
     cost: 30
     producedItems:
@@ -48,6 +48,16 @@ manufacture:
       STR_BRAND_LOYALTY: 6
     producedItems:
       STR_RRM_ITEM: 1
+
+  - name: STR_FTM_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_FTM_LOCK
+    time: 1
+    requiredItems:
+      STR_BRAND_LOYALTY: 6
+    producedItems:
+      STR_FTM_ITEM: 1
 
   - name: STR_PBI_ITEM
     category: STR_PROJECTS_MANUCAT
@@ -247,6 +257,14 @@ manufacture:
       - STR_LASER_AMMO_PRINTING
     time: 4
     cost: 80
+    refund: true
+
+  - name: STR_WINDLASS_LAUNCHER_AMMO
+    category: STR_EQUIPMENT_MANUCAT
+    requires:
+      - STR_WINDLASS_LAUNCHER_AMMO_M
+    time: 12
+    cost: 100
     refund: true
 
 #equipment
@@ -601,10 +619,10 @@ manufacture:
     producedItems:
       STR_PERSONAL_DATA: 1
     randomProducedItems:
-      - [20, {STR_45_PISTOL: 1, STR_45_AMMO: 5}]
-      - [20, {STR_SSP_SMG: 1, STR_SSP_SMG_AMMO: 5}]
+      - [30, {STR_45_PISTOL: 1, STR_45_AMMO: 5}]
+      - [30, {STR_SSP_SMG: 1, STR_SSP_SMG_AMMO: 5}]
       - [10, {STR_SINGLESHOT_LASER_PISTOL: 1, STR_MULTISHOT_LASER_AMMO: 6}]
-      - [20, {STR_TASER_PISTOL: 1, STR_TASER_AMMO: 4}]
+      - [30, {STR_TASER_PISTOL: 1, STR_TASER_AMMO: 4}]
   - name: STR_EX_SSPOFFICER
     category: STR_EXTORT_MANUCAT
     requires:
@@ -619,9 +637,9 @@ manufacture:
       STR_PERSONAL_DATA: 1
       STR_AQUAVEST_DRONE_ARMOR: 1
     randomProducedItems:
-      - [10, {STR_SSP_SMG: 1, STR_SSP_SMG_AMMO: 5}]
-      - [20, {STR_SINGLESHOT_LASER_PISTOL: 1, STR_MULTISHOT_LASER_AMMO: 6}]
-      - [20, {STR_SSP_SHOTGUN: 1, STR_SSP_SHOTGUN_AMMO_BS: 5}]
+      - [20, {STR_SSP_SMG: 1, STR_SSP_SMG_AMMO: 5}]
+      - [40, {STR_SINGLESHOT_LASER_PISTOL: 1, STR_MULTISHOT_LASER_AMMO: 6}]
+      - [40, {STR_SSP_SHOTGUN: 1, STR_SSP_SHOTGUN_AMMO_BS: 5}]
 
 #containers
   - name: STR_OPEN_CRIMINAL_CONTAINER_1

@@ -12,7 +12,7 @@ terrains:
       - FLOOR_ASPHALT
       - FURNITURE_CHAIRS1
       - FURNITURE_TABLES1
-      - LADDER
+      - LADDERM
       - BITS_CONTRABAND
       - BITS_SERVERS
       - BITS_TECH
@@ -24,10 +24,14 @@ terrains:
       - FURNITURE_SLUMS2
       - FURNITURE_BEDS_LUX
       - ENTRY
+      - FENCE_CHAINLINK
+      - FENCE_IRON
+      - INTERLACE
     mapBlocks:
       - name: CLUB_00
         width: 20
         length: 20
+        craftInventoryTile: [19, 14, 0]
         items:
           STR_CRIMINAL_CONTAINER_1:
             - [7, 14, 0]
@@ -66,10 +70,13 @@ terrains:
       - BATHROOM
       - STRUCTURE_TILES1
       - ENTERTAINMENT
+      - ROOFS_BITS
+      - INTERLACE
     mapBlocks:
       - name: CLUB_01
         width: 20
         length: 20
+        craftInventoryTile: [19, 8, 0]
         items:
           STR_CRIMINAL_CONTAINER_1:
             - [16, 2, 0]
@@ -77,8 +84,66 @@ terrains:
             - [14, 3, 1]
             - [14, 4, 2]
 
+  - name: CLUB2
+    mapDataSets:
+      - BLANKS
+      - FLORA_URBAN
+      - FLORA_FOREST_SMALL
+      - FLOOR_ASPHALT
+      - FLOOR_TILES
+      - FLOOR_URBAN
+      - FLOOR_PLAIN
+      - STRUCTURE_BRICKS1
+      - STRUCTURE_TILES1
+      - STRUCTURE_DRYWALL2
+      - STRUCTURE_GLASS2
+      - STRUCTURE_LUX
+      - FENCE_PLAIN
+      - FENCE_CHAINLINK
+      - FURNITURE_TABLES1
+      - FURNITURE_OFFICE1
+      - BITS_BOOKS1
+      - BITS_POTTED_PLANTS
+      - BATHROOM
+      - FURNITURE_DESKS1
+      - FENCE_IRON
+      - BITS_CONTRABAND
+      - BITS_CONTRABAND2
+      - BITS_INDUSTRY
+      - COMPUTERS2
+      - BITS_CRATES2
+      - BITS_SERVERS
+      - BITS_TECH
+      - SIGNS_TECH1
+      - ROOFS_BITS
+      - HOLOGRAMS2
+      - LADDERM
+      - DEATHTRAP1
+      - ENTRY
+      - INTERLACE
+    mapBlocks:
+      - name: CLUB_02
+        width: 20
+        length: 20
+        craftInventoryTile: [19, 14, 0]
+        items:
+          STR_CRIMINAL_CONTAINER_1:
+            - [11, 12, 0]
+            - [16, 1, 0]
+            - [1, 6, 0]
+            - [6, 10, 0]
+            - [11, 1, 1]
+          STR_XN_CONTAINER_1:
+            - [10, 11, 1]
+
   #_SIZEX are just copies with a different map script so alienDeployments doesn't have to have different mapscripts in order to spawn drones
   - name: HANGAR
+    civilianTypes:
+      - STR_CIVILIAN_CASUAL_M
+      - STR_CIVILIAN_CASUAL_F
+      - STR_CIVILIAN_GREASER_M
+      - STR_CIVILIAN_GREASER_F
+    script: HANGAR_DEFAULT
     mapDataSets:
       - BLANKS
       - FLOOR_ASPHALT
@@ -427,6 +492,12 @@ terrains:
           STR_SPAWN_DRONE_HUMAN_1: [0, 0]
 
   - name: COMMERCIAL
+    script: COMMERCIAL_DEFAULT
+    civilianTypes:
+      - STR_CIVILIAN_CASUAL_M
+      - STR_CIVILIAN_CASUAL_F
+      - STR_CIVILIAN_GREASER_M
+      - STR_CIVILIAN_GREASER_F
     mapDataSets:
       - BLANKS
       - FLOOR_ASPHALT
@@ -504,6 +575,7 @@ terrains:
         length: 10
 
   - name: INDUSTRIAL
+    script: INDUSTRIAL_DEFAULT
     mapDataSets:
       - BLANKS
       - FLOOR_ASPHALT2
@@ -687,6 +759,14 @@ terrains:
           STR_SPAWN_DRONE_SHARK_1: [0, 0]
 
   - name: SLUM
+    script: SLUM_DEFAULT
+    civilianTypes:
+      - STR_CIVILIAN_CASUAL_M
+      - STR_CIVILIAN_CASUAL_F
+      - STR_CIVILIAN_GREASER_M
+      - STR_CIVILIAN_GREASER_F
+      - STR_CIVILIAN_HOODIE_M
+      - STR_CIVILIAN_HOODIE_F
     mapDataSets:
       - BLANKS
       - FLOOR_ASPHALT

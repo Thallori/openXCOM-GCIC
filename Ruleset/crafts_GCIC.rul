@@ -8,7 +8,6 @@ crafts:
   - type: STR_HD_CROSSOVER
     sprite: 401
     damageMax: 30
-    armor: 0
     avoidBonus: 5
     accel: 2 #0-2, half disengagement speed
     speedMax: 350
@@ -55,7 +54,6 @@ crafts:
   - type: STR_HD_HOVERBIKE
     sprite: 402
     damageMax: 25
-    armor: 0
     avoidBonus: 15
     accel: 3 #3-5 normal disengagement speed
     speedMax: 670
@@ -75,7 +73,7 @@ crafts:
     keepCraftAfterFailedMission: true
     requires:
       - STR_VENDOR_HD
-      - STR_HD_HOVERBIKE
+      - STR_HD_HOVERBIKE_RESEARCH
     weapons: 2
     weaponTypes: [1, 1]
     weaponStrings:
@@ -102,7 +100,6 @@ crafts:
   - type: STR_VCM_BICUBE
     sprite: 400
     damageMax: 40
-    armor: 0
     accel: 1 #0-2, half disengagement speed
     speedMax: 140
     fuelMax: 400
@@ -147,3 +144,58 @@ crafts:
       - [5, 5, 0, 2]
       - [4, 4, 0, 2]
       - [4, 5, 0, 2]
+
+  - type: STR_SSP_SECVAN
+    sprite: 401
+    damageMax: 50
+    shieldCapacity: 10
+    shieldRecharge: 1
+    shieldRechargeInGeoscape: 10
+    avoidBonus: 5
+    accel: 2 #0-2, half disengagement speed
+    speedMax: 280
+    fuelMax: 350
+    refuelRate: 200
+    sightRange: 750
+    radarRange: 200
+    radarChance: 80
+    soldiers: 6
+    vehicles: 1
+    maxSmallUnits: 6
+    maxLargeUnits: 1
+    costBuy: 199999
+    costRent: 3500
+    costSell: 50000
+    transferTime: 12
+    score: 15
+    keepCraftAfterFailedMission: true
+    requires:
+      - STR_VENDOR_SSP
+      - STR_SSP_SECVAN_RESEARCH
+    weapons: 1
+    weaponTypes: [1, 1]
+    weaponStrings:
+      - STR_ELECTRIC_ENGINE
+      - STR_BLANK_TOKEN
+      - STR_BLANK_TOKEN
+      - STR_BLANK_TOKEN
+    battlescapeTerrainData:
+      name: CRAFT_SECVAN
+      mapDataSets:
+        - BLANKS
+        - HOVERCRAFT_BITS
+        - HOVERCRAFT_BLACK1
+        - HOVERCRAFT_BLACK2
+        - STRUCTURE_SHIELDS
+      mapBlocks:
+        - name: CRAFT_SECVAN
+          width: 10
+          length: 10
+    craftInventoryTile: [6, 5, 0]
+    deployment:
+      - [6, 5, 0, 2]
+      - [5, 5, 0, 6]
+      - [6, 4, 0, 0]
+      - [5, 4, 0, 0]
+      - [6, 3, 0, 0]
+      - [5, 3, 0, 0]

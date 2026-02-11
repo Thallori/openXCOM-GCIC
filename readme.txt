@@ -117,7 +117,7 @@ From the Apocalypse			[mod]
   Robosphere				[touchup]		(original)
   Obs					[none+touchup+recolour] (original)
    Medikit, Motion Sensor, Bite
-  Map Sprites				[recolour+remix]	(original)
+  Map Sprites				[recolour+remix]	(original+ufo+apoc)
    Tech, Bathroom, Walls, Furniture, Holograms, Aircars
 
 Delicious Colors			[mod]
