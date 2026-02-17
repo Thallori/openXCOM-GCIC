@@ -156,9 +156,11 @@ terrains:
         width: 10
         length: 60
         craftInventoryTile: [9, 58, 0]
+        revealedFloors: [0]
       - name: STUDIO_02
         width: 50
         length: 10
+        revealedFloors: [0]
       - name: STUDIO_03
         width: 50
         length: 10

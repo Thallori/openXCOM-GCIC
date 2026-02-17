@@ -50,6 +50,9 @@ ufos:
         - name: UFO_HARVESTER1
           width: 20
           length: 20
+        - name: UFO_HARVESTER2
+          width: 20
+          length: 20
 
   - type: STR_HOUSE_GARAGE
     modSprite: interception_jammed
