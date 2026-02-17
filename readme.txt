@@ -252,6 +252,9 @@ thallori
   tiny armors
   empty pedia backgrounds
 
+ map tiles
+  purple studio cameras
+
 Esven
  map tiles
   flora forest small spikey fern

@@ -146,6 +146,7 @@ terrains:
       - FENCE_IRON
       - STAIRS_METAL
       - LADDERM
+      - BITS_CAMERAS
       - FURNITURE_CHAIRS1
       - BITS_TECH
       - FLORA_FOREST

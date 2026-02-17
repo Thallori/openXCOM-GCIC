@@ -478,8 +478,11 @@ en-US:
 # scripted
   MAP_HANGAR_DRONES_SIZE3: "Warehouse District"
   MAP_HANGAR_DRONES_SIZE4: "Warehouse District"
+  MAP_HANGAR_DRONES_SIZE5: "Warehouse District"
+  MAP_COMMERCIAL_DRONES_SIZE5: "Merchant Boulevard"
   MAP_SLUM_DRONES_SIZE3: "Suburban Slums"
   MAP_SLUM_DRONES_SIZE4: "Suburban Slums"
+  MAP_SLUM_DRONES_SIZE5: "Suburban Slums"
 #music
   GMARCINTRO: "Achron, All Is Lost"
   GMSTORY: "Achron, We Will Be Reprised"

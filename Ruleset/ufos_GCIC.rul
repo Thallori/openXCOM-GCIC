@@ -46,6 +46,7 @@ ufos:
         - STRUCTURE_UFO
         - BITS_UFO
         - FURNITURE_UFO
+        - BITS_CAMERAS
       mapBlocks:
         - name: UFO_HARVESTER1
           width: 20
