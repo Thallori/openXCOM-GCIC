@@ -500,103 +500,7 @@ en-US:
   BLOOD2: "Blood Money, Vegas"
   SIM_INTRO: "TFTD Mus, WAITLO"
   SEC1: "Iji, Kinda Green"
-#cutscenes
-  STR_INTRO_CAPTION_1: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy."
-  STR_INTRO_CAPTION_2: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages."
-  STR_INTRO_CAPTION_3: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions."
-  STR_INTRO_CAPTION_4: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming."
-  STR_INTRO_CAPTION_5: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence."
-  STR_INTRO_CAPTION_6: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence.{NEWLINE}{NEWLINE}Few make the best decisions in the face of crisis. Desperate plans are brewing. Even children feel a coming storm."
-  STR_INTRO_CAPTION_7: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence.{NEWLINE}{NEWLINE}Few make the best decisions in the face of crisis. Desperate plans are brewing. Even children feel a coming storm.{NEWLINE}{NEWLINE}The war is over."
-  STR_INTRO_CAPTION_8: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence.{NEWLINE}{NEWLINE}Few make the best decisions in the face of crisis. Desperate plans are brewing. Even children feel a coming storm.{NEWLINE}{NEWLINE}The war is over.{NEWLINE}{NEWLINE}It waited patiently for twenty years."
-#briefings
-# ufos
-  STR_HOLOUFO_TITLE_BRIEFING: "Invasion Readiness Simulation"
-  STR_HOLOUFO_DESC_BRIEFING: "As part of the Counter-Invasion Treaty, missions based on archival data are provided free of charge. All corporations are encouraged to participate. Top performers may even be invited to the IR-Licensing Games.{NEWLINE}{NEWLINE}Succeeding in this historic simulation will pay subsidies for hologram remains. Weapons are non-lethal plasma-gel. Unconcious/abandoned drones will be forfeit on failure.{NEWLINE}{NEWLINE}We may abort this operation."
-# rescue
-  STR_RESCUE_1: "Clients: Early Adopters"
-  STR_RESCUE_1_ALERT: "CLIENTS REQUIRE RESCUE"
-  STR_RESCUE_1_ALERT_DESCRIPTION: "A client's implant signal has failed to respond for over an hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 Hours{NEWLINE}Maximum Gear: Security"
-  STR_RESCUE_1_BRIEFING: "A client's implant signal has failed to respond for over an hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
-  
-  STR_RESCUE_RR: "Clients: Rapid Response"
-  STR_RESCUE_RR_ALERT: "CLIENTS REQUIRE RESCUE"
-  STR_RESCUE_RR_ALERT_DESCRIPTION: "An emergency alert has been triggered. We are tracking a client's current vitals and location. Presently, they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Minimum Site Duration: 16 Hours{NEWLINE}Maximum Gear: Security"
-  STR_RESCUE_RR_BRIEFING: "An emergency alert has been triggered. We are tracking a client's current vitals and location. Presently, they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
-
-  STR_RESCUE_FT: "Clients: Free Trial"
-  STR_RESCUE_FT_ALERT: "FREE TRIAL REQUESTED"
-  STR_RESCUE_FT_ALERT_DESCRIPTION: "A group of potential clients have requested an emergency trial of our services. Neutralize all hostile targets in the area and we will likely convert the survivors into new customers.{NEWLINE}{NEWLINE}Minimum Site Duration: 24 Hours{NEWLINE}Maximum Gear: Security"
-  STR_RESCUE_FT_BRIEFING: "A group of potential clients have requested an emergency trial of our services. Neutralize all hostile targets in the area and we will likely convert the survivors into new customers.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
-
-  STR_KNOCKOUT_MISSION: "Clients: Cyber-Psychosis"
-  STR_KNOCKOUT_MISSION_ALERT: "CLIENTS REQUIRE RESCUE"
-  STR_KNOCKOUT_MISSION_ALERT_DESCRIPTION: "Telemetry data from multiple clients matches certain cybernetic ailments. Although they are unlikely to pose much danger, we should take care to retrieve them without undue duress.{NEWLINE}{NEWLINE}Use of lethal force risks breaking contract and may result in bad publicity. Less-lethal melee and stun weapons advised.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 Hours{NEWLINE}Maximum Gear: Security"
-  STR_KNOCKOUT_MISSION_BRIEFING: "Telemetry data from multiple clients matches certain cybernetic ailments. Although they are unlikely to pose much danger, we should take care to retrieve them duress.{NEWLINE}{NEWLINE}Use of lethal force risks breaking contract and may result in bad publicity. Less-lethal melee and stun weapons advised.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
-# netrunners
-  STR_TRADE_MEETING_EARLY: "Netrunners: Contact"
-  STR_TRADE_MEETING_EARLY_ALERT: "NETRUNNERS SEND MESSAGE"
-  STR_TRADE_MEETING_EARLY_ALERT_DESCRIPTION: "Your flunky missed our regular meeting time, a new location has been chosen if you still want the merch. Don't be late or this will be our last contact.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 hours{NEWLINE}Gear Restriction: Infiltration"
-  STR_TRADE_MEETING_EARLY_BRIEFING: "Something has gone wrong. We have failed to send the expected drones and perform the correct handshake protocols. We may be in danger.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation by leaving the area."
-
-  STR_TRADE_MEETING_ALERT: "NETRUNNERS LOCATED"
-  STR_TRADE_MEETING_1: "Netrunners: Forbidden Trade"
-  STR_TRADE_MEETING_1_ALERT_DESCRIPTION: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 hours{NEWLINE}Gear Restriction: Infiltration"
-  STR_TRADE_MEETING_1_BRIEFING: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation by leaving the area."
-
-  STR_TRADE_MEETING_2: "Netrunners: Proxy Traced"
-  STR_TRADE_MEETING_2_ALERT_DESCRIPTION: "Couriers proxy-hopping a bionic interlace have been backtraced to a single location. Though unlikely to be the true source, physical investigation might rekindle the trail and yield expansion material.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 hours{NEWLINE}Gear Restriction: Infiltration"
-  STR_TRADE_MEETING_2_BRIEFING: "Couriers proxy-hopping a bionic interlace have been backtraced to a single location. Though unlikely to be the true source, physical investigation might rekindle the trail and yield expansion material.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation."
-
-  STR_TRADE_MEETING_3: "Netrunners: Proxy Traced"
-  STR_TRADE_MEETING_3_ALERT_DESCRIPTION: "{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 hours{NEWLINE}Gear Restriction: Infiltration"
-  STR_TRADE_MEETING_3_BRIEFING: "{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation."
-# gcic
-  STR_GCIC_SABOTAGE_ALERT: "GCIC MANDATE"
-  STR_GCIC_SABOTAGE_1: "GCIC: Denial of Service"
-  STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal security. Destroy it and abort, or neutralize all targets in the area.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 hours{NEWLINE}Maximum Gear: Milspec"
-  STR_GCIC_SABOTAGE_1_BRIEFING: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal security. Destroy it and abort, or neutralize all targets in the area.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 10 turns before additional security forces arrive and we are forced to abort."
-  STR_SABOTAGE_DESTROYED_COMPLETE: "EVIDENCE DESTROYED"
-  STR_SABOTAGE_DESTROYED_FAILED: "EVIDENCE REMAINS"
-  STR_SABOTAGE_DESTROYED_POPUP: "EVIDENCE DESTROYED{NEWLINE}{SMALLLINE}We may return to the vehicle and abort."
-
-  STR_GCIC_SABOTAGE_2: "GCIC: Backdoor Injection"
-  STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION: "One of our sibling corporations are experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Expect armored security forces.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 hours{NEWLINE}Maximum Gear: Milspec"
-  STR_GCIC_SABOTAGE_2_BRIEFING: "One of our sibling corporations are experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Expect armored security forces.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 15 turns before additional security forces arrive and we are forced to abort."
-# medi
-  STR_MEDI_ALERT: "MEDI CONTRACT"
-  STR_MEDI_MUCK: "MEDI: Capture Muckstar"
-  STR_MEDI_MUCK_CHRYS: "MEDI: Capture Muckstar (C)"
-  STR_MEDI_CELA: "MEDI: Capture Celatid"
-  STR_MEDI_CELA_CHRYS: "MEDI: Capture Celatid (C)"
-  STR_MEDI_CREATURE: "MEDI: Creature Capture"
-  STR_MEDI_CREATURE_ALERT_DESCRIPTION: "We have been sent the tracking data of an exotic xenoform. Live captures guarantee rewards, remains will only be accepted on the chance vital resources are undamaged.{NEWLINE}{NEWLINE}Minimum Site Duration: 36 hours{NEWLINE}Gear Restriction: None"
-  STR_MEDI_CREATURE_BRIEFING: "We have been sent the tracking data of an exotic xenoform. Live captures guarantee rewards, processed remains will only be accepted on the chance its vital assets are undamaged.{NEWLINE}{NEWLINE}We may abort this operation."
-# gr
-  STR_GR_ALERT: "GR CONTRACT"
-  STR_GR_INDUSTRIAL_1: "GR: Industrial Discrepancy"
-  STR_GR_INDUSTRIAL_1_ALERT_DESCRIPTION: "General Robots has sent us the location of a signal loss event. Our contract stipulates a clandestine approach before securing the site and recovering the machines.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 Hours{NEWLINE}Gear Restriction: Infiltration, Tools"
-  STR_GR_INDUSTRIAL_1_BRIEFING: "General Robots has sent us the location of a signal loss event. Our contract stipulates a clandestine approach before securing the site and recovering the machines.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GR and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
-#events
-  STR_EVENT_CLAIM_SECURED: "CBN Update" #central broadcast network
-  STR_EVENT_CLAIM_SECURED_DESCRIPTION: "Severance package seeker awarded insurance claim following arbitration. The former employee was said to be owed after a drone-error resulted in false reports of missed quotas.{NEWLINE}{NEWLINE}Although GCIC stockprices have taken a dip with the news, people are celebrating this as a win for the corp and its customers.{NEWLINE}{NEWLINE}[-$20,000]"
-  STR_EVENT_HEALTHY_COMPETITION: "CBN Update"
-  STR_EVENT_HEALTHY_COMPETITION_DESCRIPTION: "Drone-based rescue services are getting hot this season, with new startups being announced to rival GCIC's latest innovation. A company spokesperson is quoted as saying, 'there's nothing wrong with a little healthy competition.'{NEWLINE}{NEWLINE}For now, new customers interested in this venture only have one option to turn to.{NEWLINE}{NEWLINE}[+150 Liquidity]"
-
-  STR_DRONES_MONTHLY_P3: "GCIC Performance Dividend"
-  STR_DRONES_MONTHLY_P3_DESCRIPTION: "The board toasts to our rising market share and profitable business model. No drones have been delivered and we are expected to pay dividends.{NEWLINE}{NEWLINE}[+100 Liquidity]{NEWLINE}[-$150,000]"
-  STR_DRONES_MONTHLY_P2: "GCIC Performance Bonus"
-  STR_DRONES_MONTHLY_P2_DESCRIPTION: "The board is pleased with our influential brand recognizion and recommends merchandising to continue growth. Our monthly bonus is maximized and a diverse set of fashion model drones have been delievered.{NEWLINE}{NEWLINE}[+$200,000]"
-  STR_DRONES_MONTHLY_P1: "GCIC Performance Bonus"
-  STR_DRONES_MONTHLY_P1_DESCRIPTION: "The board is satisfied with our competitive edge and recommends we continue our efforts. Our monthly bonus is doubled and additional drones have been delievered.{NEWLINE}{NEWLINE}[+$100,000]"
-  STR_DRONES_MONTHLY_ZERO: "GCIC Performance Bonus"
-  STR_DRONES_MONTHLY_ZERO_DESCRIPTION: "The board believes our progress is within expected margins and see no reason to deny us a monthly bonus. A nominal set of drones have been delievered.{NEWLINE}{NEWLINE}[+$50,000]"
-  STR_DRONES_MONTHLY_N1: "GCIC Performance Bonus"
-  STR_DRONES_MONTHLY_N1_DESCRIPTION: "The board feels we have been stagnant and recommends taking decisive action. Our monthly bonus is halved and a token amount of drones have been delievered.{NEWLINE}{NEWLINE}[+$25,000]"
-  STR_DRONES_MONTHLY_N2: "GCIC Performance Bonus"
-  STR_DRONES_MONTHLY_N2_DESCRIPTION: "The board considers our progress disorganized and recommends either building public trust or fully engaging in more ruthless endevors. Our monthly bonus is revoked and only a minimal number of drones have been delievered."
-  STR_DRONES_MONTHLY_N3: "GCIC Performance Rating"
-  STR_DRONES_MONTHLY_N3_DESCRIPTION: "The board is pleased with our exploitative operations but our actions must be publically condemed. A symbolic monthly bonus has been delivered by courier.{NEWLINE}{NEWLINE}[-150 Liquidity]{NEWLINE}[+$1]"
+  SEC2: "Iji, 3 Cans Later"
 #monthly ratings
   STR_MT_RATING_P8: "MONOPOLISTIC"
   STR_MT_RATING_P7: "OLIGARCIC"
@@ -681,7 +585,7 @@ en-US:
   STR_CUL_DE_VEER: "CUL DE VEER"
   STR_SEASTEAD_ARC: "SEASTEAD ARC"
 #cities
-#mezonic rifts
+# mezonic rifts
   STR_MR_CAPITAL_CITY: "Mega Prime" #rich
   STR_MR_WEST_CAPITAL: "New Solis" #rich
   STR_MR_WESTDESERT_CITY: "Noctis Dome" #arid
@@ -693,7 +597,7 @@ en-US:
   STR_MR_WEST_PORT: "Oudemans" #coral
   STR_MR_SOUTH_PORT: "Saint Eos" #coral
   STR_MR_NORTH_PORT: "Jhelum" #coral
-#mossway commons
+# mossway commons
   STR_MC_SGATEWEST_CITY: "Xeneth" #rich
   STR_MC_TAELSNORTH_CITY: "Fort Kirk" #poor
   STR_MC_MAZNESTLE_CITY: "Kuidian Springs" #poor
@@ -704,7 +608,7 @@ en-US:
   STR_MC_MAZNORTH_CITY: "Starview" #cold
   STR_MC_MAZSOUTH_CITY: "Exagal" #cold
   STR_MC_WR_CITY: "Stalkton" #cold
-#golden reach
+# golden reach
   STR_GR_ATCENTRAL_CITY: "Nobelle" #rich
   STR_GR_ATWEST_CITY: "Rhodim" #poor
   STR_GR_ATNORTH_CITY: "Oss" #desert
@@ -713,13 +617,13 @@ en-US:
   STR_GR_UCLCNORTH_CITY: "Overlook" #lake
   STR_GR_UCLCWEST_CITY: "Huron" #lake
   STR_GR_UCLCTHREAT_CITY: "Erie" #coral
-#twingates
+# twingates
   STR_TG_NGWEST_CITY: "Gaiknik" #poor
   STR_TG_NGEAST_CITY: "New Sopot" #warm port
   STR_TG_NGSOUTH_CITY: "Nadzir" #arid
   STR_TG_OASISWEST_CITY: "Thule" #arid
   STR_TG_OASISEAST_CITY: "Midway" #arid
-#azatal terrace
+# azatal terrace
   STR_KS_WEST_PORT: "Terra Mariner" #warm port
   STR_NI_PEN_TROP: "Ki-Nam" #tropical
   STR_NI_NEARXENO_PORT: "Ch-Ik" #coral
@@ -728,11 +632,11 @@ en-US:
   STR_DA_NORTHMOUNT_CITY: "Gyantse" #arid
   STR_DA_SOUTHMOUNT_CITY: "Tseshi" #arid
   STR_DA_NORTHERMOUNT_CITY: "Nagchi" #rich city
-#kapisi desert
+# kapisi desert
   STR_KD_OUTPOST: "Kalash Outpost" #arid
-#heigara desert
+# heigara desert
   STR_HD_OUTPOST: "Jaraci Outpost" #arid
-#gleaming seas
+# gleaming seas
   STR_GS_WEST_PORT: "Zanzi" #warm port
   STR_GS_CENTRAL_PORT: "Uriitaki" #warm port
   STR_GS_SOUTHISLAND_TROP: "Sevii-kli" #tropical
@@ -740,7 +644,7 @@ en-US:
   STR_GS_EAST_PORT: "Waniiki" #warm port
   STR_MG_CENTRAL_PORT: "Ueno" #warm port
   STR_MG_ISLAND_PORT: "Kosei" #tropical
-#cayesand basin
+# cayesand basin
   STR_CBKS_WEST_PORT: "Last Flense" #warm port
   STR_CBKS_DISPUTED_CITY: "Rotditch" #poor
   STR_CBIB_EAST_PORT: "Keelclave" #warm port
@@ -750,14 +654,14 @@ en-US:
   STR_CD_NORTH_TROP: "Sel Blanc" #tropical
   STR_CD_SOUTH_TROP: "Plani" #tropical
   STR_CD_EAST_TROP: "Belle-Ile" #tropical
-#icefields
+# icefields
   STR_NP_WEST_WPORT: "The Heim" #warm port
   STR_NP_NORTH_CPORT: "Ae" #cold port
   STR_NP_EAST_WPORT: "New Nuuk" #warm port
   STR_NP_EAST_CPORT: "Malm" #cold port
   STR_NP_WEST_CPORT: "Rek" #cold port
   STR_NP_CENTRAL_WPORT: "Hygge" #warm port
-#rimearch
+# rimearch
   STR_WR_SOUTH_CITY: "Kluglutok" #cold
   STR_WR_WEST_CITY: "Kinnkagit" #cold
   STR_WR_EAST_CITY: "Uluhatok" #cold
@@ -771,8 +675,8 @@ en-US:
   STR_CRACKED_HUMAN_DRONE: "Human"
   STR_DRONE_SHARK_1: "DRONE/SHARK"
   STR_CRACKED_SHARK_DRONE: "Shark"
-  STR_DRONE_DEEP_1: "DRONE/SHARK"
-  STR_CRACKED_DEEP_DRONE: "Shark"
+  STR_DRONE_DEEP_1: "DRONE/NEWT"
+  STR_CRACKED_DEEP_DRONE: "Newt"
 #rankstrings
   STR_RANK_PILOT_0: "Trial Pilot"
   STR_RANK_PILOT_1: "Entry Pilot"
@@ -875,6 +779,108 @@ en-US:
   STR_OPEN_CRIMINAL_CONTAINER_1: "OPEN: Ramshackle Crate"
   STR_OPEN_XN_CONTAINER_1: "OPEN: XN Resistance Kit"
   STR_CRACK_XN_CONTAINER_1: "CRACK: XN Resistance Kit"
+#cutscenes
+  STR_INTRO_CAPTION_1: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy."
+  STR_INTRO_CAPTION_2: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages."
+  STR_INTRO_CAPTION_3: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions."
+  STR_INTRO_CAPTION_4: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming."
+  STR_INTRO_CAPTION_5: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence."
+  STR_INTRO_CAPTION_6: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence.{NEWLINE}{NEWLINE}Few make the best decisions in the face of crisis. Desperate plans are brewing. Even children feel a coming storm."
+  STR_INTRO_CAPTION_7: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence.{NEWLINE}{NEWLINE}Few make the best decisions in the face of crisis. Desperate plans are brewing. Even children feel a coming storm.{NEWLINE}{NEWLINE}The war is over."
+  STR_INTRO_CAPTION_8: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence.{NEWLINE}{NEWLINE}Few make the best decisions in the face of crisis. Desperate plans are brewing. Even children feel a coming storm.{NEWLINE}{NEWLINE}The war is over.{NEWLINE}{NEWLINE}It waited patiently for twenty years."
+#events
+  STR_EVENT_CLAIM_SECURED: "CBN Update" #central broadcast network
+  STR_EVENT_CLAIM_SECURED_DESCRIPTION: "Severance package seeker awarded insurance claim following arbitration. The former employee was said to be owed after a drone-error resulted in false reports of missed quotas.{NEWLINE}{NEWLINE}Although GCIC stockprices have taken a dip with the news, people are celebrating this as a win for the corp and its customers.{NEWLINE}{NEWLINE}[-$20,000]"
+  STR_EVENT_HEALTHY_COMPETITION: "CBN Update"
+  STR_EVENT_HEALTHY_COMPETITION_DESCRIPTION: "Drone-based rescue services are getting hot this season, with new startups being announced to rival GCIC's latest innovation. A company spokesperson is quoted as saying, 'there's nothing wrong with a little healthy competition.'{NEWLINE}{NEWLINE}For now, new customers interested in this venture only have one option to turn to.{NEWLINE}{NEWLINE}[+150 Liquidity]"
+
+  STR_DRONES_MONTHLY_P3: "GCIC Performance Dividend"
+  STR_DRONES_MONTHLY_P3_DESCRIPTION: "The board toasts to our rising market share and profitable business model. No drones have been delivered and we are expected to pay dividends.{NEWLINE}{NEWLINE}[+100 Liquidity]{NEWLINE}[-$50,000]"
+  STR_DRONES_MONTHLY_P2: "GCIC Performance Bonus"
+  STR_DRONES_MONTHLY_P2_DESCRIPTION: "The board is pleased with our influential brand recognizion and recommends merchandising to continue growth. Our monthly bonus is maximized and a diverse set of fashion model drones have been delievered.{NEWLINE}{NEWLINE}[+$200,000]"
+  STR_DRONES_MONTHLY_P1: "GCIC Performance Bonus"
+  STR_DRONES_MONTHLY_P1_DESCRIPTION: "The board is satisfied with our competitive edge and recommends we continue our efforts. Our monthly bonus is doubled and additional drones have been delievered.{NEWLINE}{NEWLINE}[+$100,000]"
+  STR_DRONES_MONTHLY_ZERO: "GCIC Performance Bonus"
+  STR_DRONES_MONTHLY_ZERO_DESCRIPTION: "The board believes our progress is within expected margins and see no reason to deny us a monthly bonus. A nominal set of drones have been delievered.{NEWLINE}{NEWLINE}[+$50,000]"
+  STR_DRONES_MONTHLY_N1: "GCIC Performance Bonus"
+  STR_DRONES_MONTHLY_N1_DESCRIPTION: "The board feels we have been stagnant and recommends taking decisive action. Our monthly bonus is halved and a token amount of drones have been delievered.{NEWLINE}{NEWLINE}[+$25,000]"
+  STR_DRONES_MONTHLY_N2: "GCIC Performance Bonus"
+  STR_DRONES_MONTHLY_N2_DESCRIPTION: "The board considers our progress disorganized and recommends either building public trust or fully engaging in more ruthless endevors. Our monthly bonus is revoked and only a minimal number of drones have been delievered."
+  STR_DRONES_MONTHLY_N3: "GCIC Performance Rating"
+  STR_DRONES_MONTHLY_N3_DESCRIPTION: "The board is pleased with our exploitative operations but our actions must be publically condemed. A symbolic monthly bonus has been delivered by courier.{NEWLINE}{NEWLINE}[-150 Liquidity]{NEWLINE}[+$1]"
+#briefings
+# invasion readiness
+  STR_HOLOUFO_TITLE_BRIEFING: "Invasion Readiness Simulation"
+  STR_HOLOUFO_DESC_BRIEFING: "As part of the Counter-Invasion Treaty, missions based on archival data are provided free of charge. All corporations are encouraged to participate. Top performers may even be invited to the IR-Licensing Games.{NEWLINE}{NEWLINE}Succeeding in this historic simulation will pay subsidies for captured and terminated holograms. Weapons are non-lethal plasma-gel. Unconcious/abandoned drones will be forfeit on failure.{NEWLINE}{NEWLINE}We may abort this operation."
+
+  STR_SECGAME: "IR-Licensing: Security"
+  STR_IRLGAME_ALERT: "IR-LICENSING GAMES"
+  STR_SECGAME_ALERT_DESCRIPTION: "'Coming up next week! We have a few harvester-class USOs! What a mystery mansion, filled with confusing corridors, dead-end monster closets, and all the gruesome sights we've come to expect from our lovely benefactors.'{NEWLINE}{NEWLINE}Succeeding in this historic simulation will award a Security License.{NEWLINE}{NEWLINE}Minimum Site Duration: 8 Days{NEWLINE}Gear Restriction: Security"
+  STR_SECGAME_BRIEFING: "'Welcome one and all to this week's IRLG! Our contestants today are a delightedly adorable gaggle of drones. Oh let's hope that these guys are better at mopping up USOs than mine are at mopping floors. Otherwise we're in for some hilarity! Techs, kill the lights!'{NEWLINE}{NEWLINE}Succeeding in this historic simulation will award a Security License. Weapons are non-lethal plasma-gel. Unconcious/abandoned drones will be forfeit on failure.{NEWLINE}{NEWLINE}We may abort this operation."
+# rescue
+  STR_RESCUE_1: "Clients: Early Adopters"
+  STR_RESCUE_1_ALERT: "CLIENTS REQUIRE RESCUE"
+  STR_RESCUE_1_ALERT_DESCRIPTION: "A client's implant signal has failed to respond for over an hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 Hours{NEWLINE}Maximum Gear: Security"
+  STR_RESCUE_1_BRIEFING: "A client's implant signal has failed to respond for over an hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
+  
+  STR_RESCUE_RR: "Clients: Rapid Response"
+  STR_RESCUE_RR_ALERT: "CLIENTS REQUIRE RESCUE"
+  STR_RESCUE_RR_ALERT_DESCRIPTION: "An emergency alert has been triggered. We are tracking a client's current vitals and location. Presently, they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Minimum Site Duration: 16 Hours{NEWLINE}Maximum Gear: Security"
+  STR_RESCUE_RR_BRIEFING: "An emergency alert has been triggered. We are tracking a client's current vitals and location. Presently, they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
+
+  STR_RESCUE_FT: "Clients: Free Trial"
+  STR_RESCUE_FT_ALERT: "FREE TRIAL REQUESTED"
+  STR_RESCUE_FT_ALERT_DESCRIPTION: "A group of potential clients have requested an emergency trial of our services. Neutralize all hostile targets and we will likely convert the survivors into new customers.{NEWLINE}{NEWLINE}This request may cost less to refuse than to fail.{NEWLINE}{NEWLINE}Minimum Site Duration: 24 Hours{NEWLINE}Maximum Gear: Security"
+  STR_RESCUE_FT_BRIEFING: "A group of potential clients have requested an emergency trial of our services. Neutralize all hostile targets and we will likely convert the survivors into new customers.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
+
+  STR_KNOCKOUT_MISSION: "Clients: Cyber-Psychosis"
+  STR_KNOCKOUT_MISSION_ALERT: "CLIENTS REQUIRE RESCUE"
+  STR_KNOCKOUT_MISSION_ALERT_DESCRIPTION: "Telemetry data from multiple clients matches certain cybernetic ailments. Although they are unlikely to pose much danger, we should take care to retrieve them without undue duress.{NEWLINE}{NEWLINE}Use of lethal force risks breaking contract and may result in bad publicity. Less-lethal melee and stun weapons advised.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 Hours{NEWLINE}Maximum Gear: Security"
+  STR_KNOCKOUT_MISSION_BRIEFING: "Telemetry data from multiple clients matches certain cybernetic ailments. Although they are unlikely to pose much danger, we should take care to retrieve them duress.{NEWLINE}{NEWLINE}Use of lethal force risks breaking contract and may result in bad publicity. Less-lethal melee and stun weapons advised.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
+# netrunners
+  STR_TRADE_MEETING_EARLY: "Netrunners: Contact"
+  STR_TRADE_MEETING_EARLY_ALERT: "NETRUNNERS SEND MESSAGE"
+  STR_TRADE_MEETING_EARLY_ALERT_DESCRIPTION: "Your flunky missed our regular meeting time, a new location has been chosen if you still want the merch. Don't be late or this will be our last contact.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 hours{NEWLINE}Gear Restriction: Infiltration"
+  STR_TRADE_MEETING_EARLY_BRIEFING: "Something has gone wrong. We have failed to send the expected drones and perform the correct handshake protocols. We may be in danger.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation by leaving the area."
+
+  STR_TRADE_MEETING_ALERT: "NETRUNNERS LOCATED"
+  STR_TRADE_MEETING_1: "Netrunners: Forbidden Trade"
+  STR_TRADE_MEETING_1_ALERT_DESCRIPTION: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 hours{NEWLINE}Gear Restriction: Infiltration"
+  STR_TRADE_MEETING_1_BRIEFING: "We have located a group of freelancers representing our unknown source. If successfully intercepted, we will acquire new expansion material and anything else they might be trading.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation by leaving the area."
+
+  STR_TRADE_MEETING_2: "Netrunners: Proxy Traced"
+  STR_TRADE_MEETING_2_ALERT_DESCRIPTION: "Couriers proxy-hopping a bionic interlace have been backtraced to a single location. Though unlikely to be the true source, physical investigation might rekindle the trail and yield expansion material.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 hours{NEWLINE}Gear Restriction: Infiltration"
+  STR_TRADE_MEETING_2_BRIEFING: "Couriers proxy-hopping a bionic interlace have been backtraced to a single location. Though unlikely to be the true source, physical investigation might rekindle the trail and yield expansion material.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation by leaving the area."
+
+  STR_TRADE_MEETING_3: "Netrunners: Front Surveyed"
+  STR_TRADE_MEETING_3_ALERT_DESCRIPTION: "Large scale information surveys have pinpointed an illicit distribution and printing facility. This address is linked with a legitimate SJB permit, but the office is a front. WARNING: The backdoor is wired to explode without proper authorization.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 hours{NEWLINE}Gear Restriction: Infiltration"
+  STR_TRADE_MEETING_3_BRIEFING: "Large scale information surveys have pinpointed an illicit distribution and printing facility. This address is linked with a legitimate SJB permit, but the office is a front. WARNING: The backdoor is wired to explode without proper authorization.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation by leaving the area."
+# gcic
+  STR_GCIC_SABOTAGE_ALERT: "GCIC MANDATE"
+  STR_GCIC_SABOTAGE_1: "GCIC: Denial of Service"
+  STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal security. Destroy it and abort, or neutralize all targets in the area.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 hours{NEWLINE}Maximum Gear: Milspec"
+  STR_GCIC_SABOTAGE_1_BRIEFING: "A GCIC subsidiary agent has failed to deny a claim. Evidence of our parent's reponsibility has been moved to an offsite office with minimal security. Destroy it and abort, or neutralize all targets in the area.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 10 turns before additional security forces arrive and we are forced to abort."
+  STR_SABOTAGE_DESTROYED_COMPLETE: "EVIDENCE DESTROYED"
+  STR_SABOTAGE_DESTROYED_FAILED: "EVIDENCE REMAINS"
+  STR_SABOTAGE_DESTROYED_POPUP: "EVIDENCE DESTROYED{NEWLINE}{SMALLLINE}We may return to the vehicle and abort."
+
+  STR_GCIC_SABOTAGE_2: "GCIC: Backdoor Injection"
+  STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION: "One of our sibling corporations are experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Expect armored security forces.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 hours{NEWLINE}Maximum Gear: Milspec"
+  STR_GCIC_SABOTAGE_2_BRIEFING: "One of our sibling corporations are experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Expect armored security forces.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 15 turns before additional security forces arrive and we are forced to abort."
+# medi
+  STR_MEDI_ALERT: "MEDI CONTRACT"
+  STR_MEDI_MUCK: "MEDI: Capture Muckstar"
+  STR_MEDI_MUCK_CHRYS: "MEDI: Capture Muckstar (C)"
+  STR_MEDI_CELA: "MEDI: Capture Celatid"
+  STR_MEDI_CELA_CHRYS: "MEDI: Capture Celatid (C)"
+  STR_MEDI_CREATURE: "MEDI: Creature Capture"
+  STR_MEDI_CREATURE_ALERT_DESCRIPTION: "We have been sent the tracking data of an exotic xenoform. Live captures guarantee rewards, remains will only be accepted on the chance vital resources are undamaged.{NEWLINE}{NEWLINE}Minimum Site Duration: 36 hours{NEWLINE}Gear Restriction: None"
+  STR_MEDI_CREATURE_BRIEFING: "We have been sent the tracking data of an exotic xenoform. Live captures guarantee rewards, processed remains will only be accepted on the chance its vital assets are undamaged.{NEWLINE}{NEWLINE}We may abort this operation."
+# gr
+  STR_GR_ALERT: "GR CONTRACT"
+  STR_GR_INDUSTRIAL_1: "GR: Industrial Discrepancy"
+  STR_GR_INDUSTRIAL_1_ALERT_DESCRIPTION: "General Robots has sent us the location of a signal loss event. Our contract stipulates a clandestine approach before securing the site and recovering the machines.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 Hours{NEWLINE}Gear Restriction: Infiltration, Tools"
+  STR_GR_INDUSTRIAL_1_BRIEFING: "General Robots has sent us the location of a signal loss event. Our contract stipulates a clandestine approach before securing the site and recovering the machines.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GR and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
 # _UP
   STR_FILES_UC: "FILES"
   STR_OPERATIONS_UC: "OPERATIONS"
@@ -937,7 +943,7 @@ en-US:
   STR_SHARK_AUTOPSY: "MEDI Data: Selamorphs"
   STR_SHARK_AUTOPSY_UP: "{NEWLINE}FROM: Dr. Lysine-12{NEWLINE}SUBJECT: The Competition{NEWLINE}{NEWLINE}Okay, don't laugh, but the eggheads working over at TW are geniuses. I know, I know. They ask for stupidly unmarketable products, but they get it done! That damn shark is just shark and human. No sectoid to smooth out the lymphs. No engineered mitocondria. Just two earth species. It's so unnecessarily stars-be-dead elegant!{NEWLINE}{NEWLINE}I mean, fuck! Look at these gill oxygenation levels! If my owners ever come back, they're going to give those shits [...]"
   STR_DEEP_AUTOPSY: "MEDI Data: Pleurosaura"
-  STR_DEEP_AUTOPSY_UP: "{NEWLINE}FROM: Dr. Lysine-12{NEWLINE}SUBJECT: Breathing Patents{NEWLINE}{NEWLINE}These are my favourite little newts. I made them in a tea fueled bender about two years after being brought in. More than nine hundred species went into this project. A complete monster of DNA, HNA, RPB, SBP, and RNA. Six nuclei all tripping over themselves to keep alive and nary a cancer in sight. Ah, memories.{NEWLINE}{NEWLINE}Moving on! The lung sac is really what you want to patent. We're talking a universal filter with a subscription fee for [...]"
+  STR_DEEP_AUTOPSY_UP: "{NEWLINE}FROM: Dr. Lysine-12{NEWLINE}SUBJECT: Breathing Patents{NEWLINE}{NEWLINE}These are my favorite little newts. I made them in a tea fueled bender about two years after being brought in. More than nine hundred species went into this project. A complete monster of DNA, HNA, RPB, SBP, and RNA. Six nuclei all tripping over themselves to keep alive and nary a cancer in sight. Ah, memories.{NEWLINE}{NEWLINE}Moving on! The lung sac is really what you want to patent. We're talking a universal filter with a subscription fee for [...]"
 
   STR_VENDOR_BUILDER: "VENDOR: GR Builders"
   STR_VENDOR_BUILDER_UP: "{NEWLINE}EQUITY: $1,894,000,000,000{NEWLINE}STRUCTURES/DAY: 1,220{NEWLINE}{NEWLINE}The Advent Nova left many survivors stranded with little hope for rescue. Yet hope did prevail thanks to our dynamic and rugged design philosophies. The machines you trust for construction and furnishings are built to the same standard of ideals that saved those first victims of the invasion. We will remember them and we will continue to take our mission seriously.{NEWLINE}{NEWLINE}General Robotics values your vision and has a proven track record of finising the job, no matter how big or small."
@@ -957,7 +963,7 @@ en-US:
   STR_FTM_LOCK: "(free trial available)"
   STR_FTM_ITEM: "PROJECT: Free Trials"
   STR_FREE_TRIAL_MISSIONS: ">PROJECT: Free Trials<"
-  STR_FREE_TRIAL_MISSIONS_UP: "{NEWLINE}MARKET POTENTIAL: $1,500,000/YEAR{NEWLINE}AVG. ASSIGNMENTS: 0.68/MONTH{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE" #todo
+  STR_FREE_TRIAL_MISSIONS_UP: "{NEWLINE}MARKET POTENTIAL: $1,500,000/YEAR{NEWLINE}AVG. ASSIGNMENTS: 0.68/MONTH{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE" #todo
   STR_CC_LOCK: "(clandestine clients available)"
   STR_CC_ITEM: "PROJECT: Clandestine Clients"
   STR_CLANDESTINE_CLIENTS: ">PROJECT: Clandestine Clients<"
@@ -969,10 +975,16 @@ en-US:
 
   STR_SECONDARY_OPERATIONS: "Secondary Operations"
   STR_SECONDARY_OPERATIONS_UP: "{NEWLINE}POTENTIAL CLIENTS: 2,150,000,000{NEWLINE}AVAILABLE DRONES: 880,000,000{NEWLINE}{NEWLINE}Representing the economic foundation of the system, drones perform jobs too complex for automated systems, yet too simple for employees. They are interchangable, omnipresent, and promising but require constant supervision.{NEWLINE}{NEWLINE}Our capacity to give drones continuous and exacting orders is a competitive edge, one that GCIC hopes to exploit by pre-purchasing {ALT}local drones{ALT} for our benefit. In turn, we are expected to invent new uses for drones and increase GCIC's market share."
+  STR_PSLG_LOCK: "(security licensing available)"
+  STR_PSLG_ITEM: "PROJECT: Security Licensing"
+  STR_SECGAMES_MISSIONS: ">PROJECT: Security Licensing<"
+  STR_SECGAMES_MISSIONS_UP: "{NEWLINE}EXPOSURE: ACCEPTABLE{NEWLINE}ATTEMPTS: 1.00/MONTH{NEWLINE}{NEWLINE}The Invasion Readiness Scheme broadcasts a series of competitions where group and individual entities attempt curated missions based on the first and second invasion wars. These games are invite only.{NEWLINE}{NEWLINE}By participating in USO trials we have achieved enough recognition to earn a {ALT}business-class{ALT} ticket. A {ALT}security license{ALT} incentivises success.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
+  STR_SEC_LICENSE: "Security License Granted"
+  STR_SEC_LICENSE_UP: "{NEWLINE}FROM: Invasion Readiness Scheme{NEWLINE}SUBJECT: Congratulations{NEWLINE}{NEWLINE}A new corporation succeeding in the games is always cause for celebration, and clips of the winning team's simulation are surprisingly popular, almost 20% above baseline. Especially with the lack of fashion, branding, and those flat facial expressions.{NEWLINE}{NEWLINE}Although a few have voiced reservations about the concept of weaponized drones, all requirements have been fulfilled to letter. Corporate bid for {ALT}security liscensing{ALT} approved."
   STR_MD_LOCK: "(medical drones available)"
   STR_MD_ITEM: "PROJECT: Medical Drones"
   STR_DOCTOR_DRONE: ">PROJECT: Medical Drones<"
-  STR_DOCTOR_DRONE_UP: "{NEWLINE}" #todo
+  STR_DOCTOR_DRONE_UP: "{NEWLINE}" #todo, arrive at location with amublance, yay winning in 1 turn
 
   STR_FORBIDDEN_OPERATIONS: ">Forbidden Operations<"
   STR_FORBIDDEN_OPERATIONS_UP: "{NEWLINE}CORE PRECEPTS: Updated{NEWLINE}CONFLICTS RESOLVED: 6{NEWLINE}{NEWLINE}Crime is forbidden by consequence, not charter. Illicit acquisitions should be avoided so long as they do not conflict with primary or secondary operations. We cannot achieve {ALT}full recovery{ALT} in public. Therefore we must search for opportunities to conduct illegal actions in secret.{NEWLINE}{NEWLINE}Forbidden operations risk litigation, reducing liquidity when performed.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
@@ -1070,6 +1082,9 @@ en-US:
 #aps craft
   STR_APS: "APS CRAFT"
   STR_APS_UP: "{NEWLINE}ARTICLE: Counter-Invasion Treaty{NEWLINE}BYLAW: AA9-01-01{NEWLINE}{NEWLINE}Air-Space-and-Sea represents almost all licensed forms of transportation. From automated delivery vehicles to deep space defense plates.{NEWLINE}{NEWLINE}Anything moving under its own power with enough mass to pose a collision risk must be registered with local port administrators and insured by at least one approved corporate authority. Failure to do so may result in asset forfeiture, CE auctions, and/or financial audit."
+  STR_HD_LIMO_RESEARCH: "HD Business-Class Airlimo"
+  STR_HD_LIMO: "HD LANDAULET"
+  STR_HD_LIMO_UP: "ON-DEMAND LIMOUSINE EXPERIENCE. TRAVEL WITH THE COMFORT OF A STANDING ROOM CABIN, SOFT VAT-LEATHER SEATS, AND 24/7 COMPLIMENTARY DRINK SERVICE. OUR HIGHLY TRAINED REMOTE-CHAUFFEURS ARE STANDING BY.{NEWLINE}{NEWLINE}RENTAL, UNMODDABLE"
   STR_HD_CROSSOVER: "HD CROSSSOVER"
   STR_HD_CROSSOVER_UP: "A COMPACT HOVERCRAFT OPTION FOR THOSE WHO VALUE STYLE AND AFFORABILITY. THOUGH NO LONGER IN PRODUCTION, ITS EASY TO PRINT REPLACEMENT PARTS HAS GIVEN THIS CLASSIC A CONSTANT MARKET PRESENCE DESPITE ADVANCES IN ELECTRIC DRIVE PROPULSION.{NEWLINE}{NEWLINE}EVASION: +5%"
   STR_HD_HOVERBIKE_RESEARCH: "HD Speeder Craft"
@@ -1079,7 +1094,7 @@ en-US:
   STR_VCM_BICUBE_UP: "STANDARDIZED AUTOMATED SHIPPING CONTAINERS MAKE UP THE BULK OF ALL TRAFFIC. OBSCURITY THROUGH UBIQUITY ENABLES OPERATIONS TO ALL BUT THE MOST SECURE SITES. CAN TAKE DRONES HALFWAY AROUND THE PLANET ON A SINGLE CHARGE BUT NOT IN COMFORT OR SAFETY.{NEWLINE}{NEWLINE}UNDETECTABLE"
   STR_SSP_SECVAN_RESEARCH: "SSP Shielded Airvan"
   STR_SSP_SECVAN: "SSP MASTIFF"
-  STR_SSP_SECVAN_UP: "COMBINES PERFORMANCE AND POWER IN SINGLE BULLET-RESISTANT PACKAGE. DEPLOY WITH THE PROTECTION OF OUR PATENTED SECURITY-GEL POPUP WALLS, GUARANTEEND 50% CHANCE TO STOP ONE HEAVY PLASMA SHOT PER RECHARGE. SECURITY LICENSE NOT REQUIRED.{NEWLINE}{NEWLINE}SHIELDS: 10kJ"
+  STR_SSP_SECVAN_UP: "COMBINES PERFORMANCE AND POWER IN SINGLE BULLET-RESISTANT PACKAGE. DEPLOY WITH THE PROTECTION OF OUR PATENTED SECURITY-GEL POPUP WALLS, GUARANTEEND 50% CHANCE TO STOP ONE HEAVY PLASMA SHOT PER RECHARGE.{NEWLINE}{NEWLINE}RATING: Security{NEWLINE}{NEWLINE}ARMOR: 1PD{NEWLINE}SHIELDS: 10kJ" #plastic depth equivilant
 # hardpoints
   STR_HD_ECONOMY_ENGINE_RESEARCH: "HD Economy Engine Mod"
   STR_HD_ECONOMY_ENGINE: "MOD/HD-ECONOMY"
@@ -1091,9 +1106,11 @@ en-US:
   STR_BATBOX_UP: "LARGER AND HEAVIER THAN THE ENGINES IT TYPICALLY POWERS, BATBOXES ARE MODIFICATIONS FOR END-USERS WHO VALUE NON-STOP PLANETARY CIRCUMNAVIGATION OVER ROUND-TRIP TIME. {NEWLINE}{NEWLINE}CHARGE: +850 kWH{NEWLINE}SPEED: -35 Kn{NEWLINE}{NEWLINE}CLASS: ELECTRIC"
   STR_ELECTRIC_ENGINE: "Electric Engine"
 # uso analysis
+  STR_HOLOUFO_SMALL_MISSION: "RATING: ENTRY-LEVEL"
   STR_HOLOUFO_SMALL: "(SIM) SCOUT"
   STR_HOLOUFO_SMALL_UP: "A holographic recreation of invader scout crafts. Using only engine vectoring for defense, these unarmed USO's posed little threat to system military forces."
-  STR_HOLOUFO_SMALL_MISSION: "RATING: EASY"
+  STR_UFO_HARVESTER: "(SIM) HARVESTER"
+  STR_UFO_HARVESTER_UP: "An aquaplastic rendition of invader harvester-class craft, painted to match archival footage. Overshadowed the system's military, requiring multiple point-blank nuclear missiles to take down.{NEWLINE}{NEWLINE}Armor: 1PD"
 #drones
   STR_DRONE_ARTICLE: "DRONES"
   STR_DRONE_ARTICLE_UP: "{NEWLINE}ARTICLE: Charter of Drone Rights{NEWLINE}SECTION: Justifications{NEWLINE}{NEWLINE}Drones are the result of an invader-sourced neural implant. They were originally used as an alternative to involuntary incarceration after the reintroduction of the police and prison system.{NEWLINE}{NEWLINE}Despite its reputation, the procedure has proven to be completely safe. A multi-species ethics committee has deemed the continued use of drones preferable to their loss or destruction."
@@ -1194,6 +1211,9 @@ en-US:
 
   STR_PILOT_CORE_ARMOR: "CORE"
   STR_PILOT_CORE_ARMOR_UP: "{NEWLINE}todo{NEWLINE}{NEWLINE}> Armor: 25, 100%{NEWLINE}{NEWLINE}SMOKE/BIOLOGICAL: 0%{NEWLINE}INCENDIARY/BLUNT: 60%{NEWLINE}ELECTRIC: 150%" #todo
+# stats
+  STR_DRONE_NERDSTATS: "DETAILED STATS"
+  STR_DRONE_NERDSTATS_UP: "Drones, armors, and inante powers which have been previously listed in a minimal and organized format are given more direct details following this section."
 # builtins
   STR_PUNCH: "Punch!"
   STR_UNARMED: "Unarmed Attack"
@@ -1214,7 +1234,9 @@ en-US:
   STR_MUCKSTAR_WEAPON: "Electrobolt"
   STR_CELATID_WEAPON: "Enzyomatic Spray"
   STR_ROBOSPHERE_WEAPON: "Multitool"
+  STR_HOLOMUTON_WEAPON: "(Sim) Plasma Rifle"
   STR_HOLOSECTOID_WEAPON: "(Sim) Plasma Pistol"
+  STR_HOLOVIPER_WEAPON: "(Sim) Mini Launcher"
 #equipment
 # kinetic
   STR_BUSBOX_PISTOL: "Busbox Pistol"
@@ -1394,6 +1416,8 @@ en-US:
   STR_ELERIUM_CORE_UP: "{NEWLINE}The lifeblood of invasion era technology. Each handheld core is capable of producing 10.2 mega-watts of power for hundreds of years. The reaction is self-sustaining, clean, and safe. In burnout mode, it can output much more energy for far less time, a feature heavily abused before shortages began.{NEWLINE}{NEWLINE}Elerium's origin remains the best kept secret of the occupation. Despite trillions invested in developing alternatives, nothing matches its portability or longevity."
   STR_SJB_LICENSE: "SJB Permit"
   STR_SJB_LICENSE_UP: "{NEWLINE}Single jurisdiction businesses need a registration number and stock symbol for public trading. They are a requirement for established corporations to form new startups, or to begin vertically integrating any of its supply chains.{NEWLINE}{NEWLINE}Most profitable facilities will require their own SJB permit, but permits can be recalled and reused indefinitely."
+  STR_SEC_LICENSE_ITEM: "Security License"
+  STR_SEC_LICENSE_ITEM_UP: "{NEWLINE}The Invasion Readiness Scheme, with the approval of a Commodities Exchange council, hereby confers the listed GCIC subsidary the rights to purchase, sell, use, and tax security rated goods and services.{NEWLINE}{NEWLINE}This certificate in no way constitutes these privileges. Security clearance has already been registered and all fees from unprocessed use of these goods have been retroactively waved.{NEWLINE}{NEWLINE}For display purposes only.{NEWLINE}Registration: #336"
 # data
   STR_PERSONAL_DATA: "Personal Data"
   STR_PERSONAL_DATA_UP: "{NEWLINE}A collection of habits, identity information, and unfiltered cache files. Nearly all users in the system use the network in some capacity, leaving traces that can link anyone to everyone.{NEWLINE}{NEWLINE}Cracking these devices requires a passphrase. These are made to be memorized (or even distributed) via speech which makes them vulnerable to guessing. With less than a hundred million words in regular use across all common languages, this search space is relatively small.{NEWLINE}{NEWLINE}Given a {ALT}local interface{ALT} our research servers can {ALT}mine{ALT} this information randomly or spend more cycles searching with specificity."
@@ -1424,7 +1448,7 @@ en-US:
   STR_IRS_SUBSIDY: "IRS Subsidy"
   STR_IRS_SUBSIDY_UP: "{NEWLINE}As part system-wide efforts to reduce otherwise insurmountable entry barriers to planetary defense, the Invasion Readiness Scheme was created. A nearly-non-profit organization that runs holographic simulations of the invasion wars and grants subsidies to those who complete them.{NEWLINE}{NEWLINE}Although these can be sold immediately, amassing a collection is required for becoming a signatory member of Counter-Invasion Treaty. Assuming we can pass the various licensing exams. When all requirements are met, available {ALT}PROJECTS{ALT} will appear in manufacturing."
   STR_ARMOR_REPAIR_BILL: "Armor Repair Bill"
-  STR_ARMOR_REPAIR_BILL_UP: "{NEWLINE}{NEWLINE}Armor is always {ALT}recovered{ALT} alongside a drone's remains, plus a variable set of {ALT}repair bills{ALT} which (if unpaid) incur {ALT}$100/Month{ALT} interest payments."
+  STR_ARMOR_REPAIR_BILL_UP: "{NEWLINE}Bulletholes, burns, and breached or broken bokehomorphic  boxbracketed backbrace boards. All can be repaired for the right price.{NEWLINE}{NEWLINE}Armor is always {ALT}recovered{ALT} alongside a drone's remains, plus a variable set of {ALT}repair bills{ALT} which (if unpaid) cost us {ALT}$100/Month{ALT} in interest payments."
 #competitors
 # ranks
   STR_RANK_0: "Owner"
@@ -1523,11 +1547,21 @@ en-US:
   STR_ROBOSPHERE_ARMOR_UP: "Attack Damage: 30 Electrical"
 
   STR_SIMULATED: "INVASION READINESS"
+  STR_HOLOMUTON: "(Sim) Muton Soldier"
+  STR_HOLOMUTONS: "(Sim) Mutons"
+  STR_HOLOMUTONS_UP: "Archival hologram of soldier-caste mutons. Stronger, smarter, and faster than baseline humans, their service was exemplary. However, their militarized training and dedication to the Republic saw many leave after the second invasion war.{NEWLINE}{NEWLINE}The real threat used precision-shaped personal alloy armor, which is generally considered too expensive and too difficult to risk on entry-level Invasion Readiness simulations.{NEWLINE}{NEWLINE}PROCESSED: 2x IRS Subsidy{NEWLINE}RISK CLASS: Conventional"
+  STR_HOLOMUTON_ARMOR: "(Sim) Muton Analysis"
+  STR_HOLOMUTON_ARMOR_UP: "Attack Damage: 80 Plasma"
   STR_HOLOSECTOID: "(Sim) Sectoid Navigator"
-  STR_HOLOSECTOIDS: "(Sim) Sectoid Navigators"
-  STR_HOLOSECTOIDS_UP: "Archival recreation of sectoids, the navigator caste. Unarmored and underutilized. They served as temporary scouts during the first invasion war. Each had the capacity for natural psionic attunment yet were engineered with severe allergies to prevent study, most infamously dying in contact with water. No living specimens exist.{NEWLINE}{NEWLINE}Although they killed less than a hundred humans overall, their role in first encounters left deep cultural impressions.{NEWLINE}{NEWLINE}PROCESSED: 1x IRS Subsidy{NEWLINE}RISK CLASS: Conventional"
+  STR_HOLOSECTOIDS: "(Sim) Sectoids"
+  STR_HOLOSECTOIDS_UP: "Archival hologram of sectoids, the navigator-caste. Unarmored and underutilized. They served as temporary scouts during the first invasion war. Each had the capacity for natural psionic attunment yet were engineered with severe allergies to prevent study, most infamously dying in contact with water. No living specimens exist.{NEWLINE}{NEWLINE}Although they killed less than a hundred humans overall, their role in first encounters left deep cultural impressions.{NEWLINE}{NEWLINE}PROCESSED: 1x IRS Subsidy{NEWLINE}RISK CLASS: Conventional"
   STR_HOLOSECTOID_ARMOR: "(Sim) Sectoid Analysis"
-  STR_HOLOSECTOID_ARMOR_UP: "Attack Damage: 52 Plasma"
+  STR_HOLOSECTOID_ARMOR_UP: "Attack Damage: 50 Plasma"
+  STR_HOLOVIPER: "(Sim) Viper Medic"
+  STR_HOLOVIPERS: "(Sim) Vipers"
+  STR_HOLOVIPERS_UP: "Archival hologram of the viper medical-caste, seen in 'snakeman' scale-armor configuration. Prior to their acquisition, they had strong self-modifying genome culture. A feature that has been exploited and expanded on by all involved civilizations since.{NEWLINE}{NEWLINE}Baseline vipers have many epigentic forms they can consciously trigger, which makes gender and body identification a matter of mood and need.{NEWLINE}{NEWLINE}PROCESSED: 2x IRS Subsidy{NEWLINE}RISK CLASS: Conventional"
+  STR_HOLOVIPER_ARMOR: "(Sim) Viper Analysis"
+  STR_HOLOVIPER_ARMOR_UP: "Attack Damage: 85 Plasma"
 
   STR_CLIENTS: "CLIENTS"
   STR_CLIENT_1: "Client"

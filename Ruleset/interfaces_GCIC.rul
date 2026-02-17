@@ -6,6 +6,10 @@ interfaces:
         color: 245   # even lighter blue
         color2: 133  # minty green
         custom: -22  # above Intercept button
+      - id: trainingIndicator
+        color: 245   # even lighter blue
+        color2: 133  # minty green
+        custom: 4  # below standard visible area
       - id: text
         color: 82   # even lighter blue
 
@@ -112,6 +116,63 @@ interfaces:
       - id: ammoColorDT15
         color: 32    #todo: cold
 
+  - type: baseNaming
+    backgroundImage: BACK13.SCR
+  - type: baseDestroyed
+    backgroundImage: BACK15.SCR
+  # - type: baseDefense
+  #   backgroundImage: BACK04.SCR
+  # - type: baseDefense_geo
+  #   backgroundImage: BACK04.SCR
+
+  - type: manageContainment
+    backgroundImage: BACK05.SCR
+  - type: globalContainmentMenu
+    backgroundImage: BACK05.SCR
+  - type: placeFacility
+    backgroundImage: BACK05.SCR
+
+  # - type: alienBase
+  #   backgroundImage: BACK13.SCR
+  # - type: terrorSite
+  #   elements:
+  #     - id: palette
+  #       color: 3     # pink
+  # - type: confirmCydonia
+  #   backgroundImage: BACK12.SCR
+  #   elements:
+  #     - id: palette
+  #       color: 5     # red
+
+  - type: confirmLanding
+    backgroundImage: BACK16.SCR
+    elements:
+      - id: palette
+        color: 0
+  - type: UFOInfo
+    backgroundImage: BACK12.SCR
+    elements:
+      - id: palette
+        color: 7
+        color2: 7
+  - type: UFOLost
+    backgroundImage: BACK12.SCR
+    elements:
+      - id: palette
+        color: 7
+        color2: 7
+  - type: multipleTargets
+    backgroundImage: BACK12.SCR
+    elements:
+      - id: palette
+        color: 7
+        color2: 7
+
+  - type: dogfightInfo
+    backgroundImage: BACK12.SCR
+  - type: dogfightExperience
+    backgroundImage: BACK12.SCR
+
   - type: craftSoldiers
     backgroundImage: BACK14.SCR
   - type: craftPilots
@@ -134,13 +195,23 @@ interfaces:
     backgroundImage: BACK04.SCR
   - type: soldierDiaryPerformance
     backgroundImage: BACK04.SCR
+  - type: soldierDiaryLight
+    backgroundImage: BACK04.SCR
   - type: soldierBonus
     backgroundImage: BACK04.SCR
   - type: soldierRank
     backgroundImage: BACK04.SCR
   - type: soldierAvatar
     backgroundImage: BACK04.SCR
+  - type: soldierArmor
+    backgroundImage: BACK04.SCR
 
+  - type: promotions
+    backgroundImage: BACK04.SCR
+  - type: psiTraining
+    backgroundImage: BACK04.SCR
+  - type: allocatePsi
+    backgroundImage: BACK04.SCR
   - type: trainingFinished
     backgroundImage: BACK04.SCR
   - type: martialTraining

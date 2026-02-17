@@ -118,7 +118,7 @@ From the Apocalypse			[mod]
   Obs					[none+touchup+recolour] (original)
    Medikit, Motion Sensor, Bite
   Map Sprites				[recolour+remix]	(original+ufo+apoc)
-   Tech, Bathroom, Walls, Furniture, Holograms, Aircars
+   Tech, Bathroom, Walls, Floors, Furniture, Holograms, Aircars
 
 Delicious Colors			[mod]
  RSSWizard				[author]
@@ -236,6 +236,8 @@ thallori
   sledgehammer
   inhalers
   doc grip
+  marsball
+  windlass bomb launcher
 
  pedia
   data1+2+3

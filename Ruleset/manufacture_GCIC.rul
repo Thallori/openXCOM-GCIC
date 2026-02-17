@@ -53,11 +53,22 @@ manufacture:
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_FTM_LOCK
+      - STR_TODO
     time: 1
     requiredItems:
-      STR_BRAND_LOYALTY: 6
+      STR_BRAND_LOYALTY: 8
     producedItems:
       STR_FTM_ITEM: 1
+
+  - name: STR_PSLG_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_PSLG_LOCK
+    time: 1
+    requiredItems:
+      STR_IRS_SUBSIDY: 15
+    producedItems:
+      STR_PSLG_ITEM: 1
 
   - name: STR_PBI_ITEM
     category: STR_PROJECTS_MANUCAT

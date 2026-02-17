@@ -84,6 +84,7 @@ research:
   - name: STR_FTM_LOCK
     dependencies:
       - STR_PRIMARY_OPERATIONS
+      - STR_SEC_LICENSE
       - STR_VENDOR_SSP
       - STR_BRAND_LOYALTY
   - name: STR_FREE_TRIAL_MISSIONS
@@ -93,6 +94,19 @@ research:
     cost: 5
     disables:
       - STR_FTM_LOCK
+
+  - name: STR_PSLG_LOCK
+    dependencies:
+      - STR_SECONDARY_OPERATIONS
+      - STR_IRS_SUBSIDY
+      - STR_VENDOR_HD
+  - name: STR_SECGAMES_MISSIONS
+    neededItem: STR_PSLG_ITEM
+    needItem: true
+    destroyItem: true
+    cost: 5
+    disables:
+      - STR_PSLG_LOCK
 
   - name: STR_SECONDARY_OPERATIONS
     requiresBaseFunc:
@@ -182,6 +196,16 @@ research:
     disables:
       - STR_PGM_LOCK
 # licenses
+  - name: STR_SEC_LICENSE
+    dependencies:
+      - STR_SEC_LICENSE_ITEM
+  - name: STR_SEC_LICENSE_ITEM
+    getOneFree:
+      - STR_SEC_LICENSE
+    needItem: true
+    cost: 2
+    points: 150
+
   - name: STR_LMB_LOCK
     dependencies:
       - STR_SHARES_MEDI
@@ -347,6 +371,8 @@ research:
     dependencies:
       - STR_PRINTER
     cost: 8
+    unlocks:
+      - STR_MONEY_2
 
   - name: STR_GUNPOWDER
     dependencies:
@@ -465,6 +491,11 @@ research:
       - STR_VENDOR_BUILDER
     cost: 10
 #asp craft
+  - name: STR_HD_LIMO_RESEARCH
+    dependencies:
+      - STR_VENDOR_HD
+      - STR_SECGAMES_MISSIONS
+    cost: 4
   - name: STR_HD_CROSSOVER
     dependencies:
       - STR_VENDOR_HD
@@ -473,14 +504,14 @@ research:
       - STR_VENDOR_HD
       - STR_RAPID_RESPONSE_MISSIONS
     cost: 4
-  - name: STR_VCM_BICUBE
-    dependencies:
-      - STR_VENDOR_VCM
   - name: STR_SSP_SECVAN_RESEARCH
     dependencies:
       - STR_VENDOR_SSP
       - STR_FREE_TRIAL_MISSIONS
     cost: 4
+  - name: STR_VCM_BICUBE
+    dependencies:
+      - STR_VENDOR_VCM
 # hardpoints
   - name: STR_HD_ECONOMY_ENGINE_RESEARCH
     dependencies:
@@ -824,9 +855,13 @@ research:
     needItem: true
     cost: 5
 # tasks
-  - name: STR_ARMOR_REPAIR_BILL
   - name: STR_MONEY_1
   - name: STR_MONEY_2
+    dependencies:
+      - STR_MONEY_2_RESEARCH
+  - name: STR_ARMOR_REPAIR_BILL
+    needItem: true
+    cost: 1
 # data
   - name: STR_PERSONAL_DATA
     needItem: true
@@ -860,6 +895,9 @@ research:
   - name: STR_BOUNTY_1
     needItem: true
     cost: 2
+  - name: STR_IRS_SUBSIDY
+    needItem: true
+    cost: 3
 #potential targets
   - name: STR_DATA_1
     requiresBaseFunc:
@@ -921,6 +959,10 @@ research:
       STR_TRG_HS_PREQ:
         - STR_HOLOUFO_SMALL
         - STR_HOLOSECTOID
+      STR_SEC_LICENSE:
+        - STR_UFO_HARVESTER
+        - STR_HOLOMUTON
+        - STR_HOLOVIPER
       STR_TRG_CZ_PREQ:
         - STR_CLIENT_CRAZY
 
@@ -1018,6 +1060,10 @@ research:
       STR_TRG_HS_PREQ:
         - STR_HOLOUFO_SMALL
         - STR_HOLOSECTOID
+      STR_SEC_LICENSE:
+        - STR_UFO_HARVESTER
+        - STR_HOLOMUTON
+        - STR_HOLOVIPER
 
   - name: STR_DATA_2
     requiresBaseFunc:
@@ -1187,7 +1233,19 @@ research:
   - name: STR_HOLOUFO_SMALL
     dependencies:
       - STR_LOCK
+  - name: STR_UFO_HARVESTER
+    dependencies:
+      - STR_LOCK
     
+  - name: STR_HOLOMUTON
+    unlocks:
+      - STR_HOLOMUTON_ARMOR
+    dependencies:
+      - STR_LOCK
+  - name: STR_HOLOMUTON_ARMOR
+    dependencies:
+      - STR_HOLOMUTON
+
   - name: STR_HOLOSECTOID
     unlocks:
       - STR_HOLOSECTOID_ARMOR
@@ -1196,6 +1254,15 @@ research:
   - name: STR_HOLOSECTOID_ARMOR
     dependencies:
       - STR_HOLOSECTOID
+
+  - name: STR_HOLOVIPER
+    unlocks:
+      - STR_HOLOVIPER_ARMOR
+    dependencies:
+      - STR_LOCK
+  - name: STR_HOLOVIPER_ARMOR
+    dependencies:
+      - STR_HOLOVIPER
 # clients
   - name: STR_CLIENT_CRAZY
     unlocks:

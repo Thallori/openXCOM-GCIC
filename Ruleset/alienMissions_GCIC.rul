@@ -13,6 +13,21 @@ alienMissions:
         trajectory: LOOK_AT_ME
         timer: 30
 
+  - type: STR_SECGAME
+    interruptResearch: STR_SEC_LICENSE
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 3 #cities
+    raceWeights:
+      0:
+          STR_SIMULATED: 100
+    waves:
+      - ufo: STR_SECGAME
+        count: 1
+        trajectory: AM_SPAWN
+        timer: 1000
+        objective: true
+
   - type: STR_RESCUE_1
 #    interruptResearch: STR_TODO
     despawnEvenIfTargeted: true
@@ -101,6 +116,7 @@ alienMissions:
         objective: true
 
   - type: STR_GCIC_SABOTAGE_1
+#    interruptResearch: STR_TODO
     despawnEvenIfTargeted: true
     objective: 3
     spawnZone: 3 #cities
@@ -115,6 +131,7 @@ alienMissions:
         objective: true
 
   - type: STR_GCIC_SABOTAGE_2
+#    interruptResearch: STR_TODO
     despawnEvenIfTargeted: true
     objective: 3
     spawnZone: 3 #cities

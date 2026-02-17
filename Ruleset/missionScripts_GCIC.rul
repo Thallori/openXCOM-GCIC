@@ -20,7 +20,7 @@
 missionScripts:
   - type: SimSmalla
     researchTriggers:
-      STR_TODO: false
+      STR_SECGAMES_MISSIONS: false
     missionWeights:
       0:
         STR_HOLOUFO_SMALL_MISSION: 100
@@ -29,20 +29,65 @@ missionScripts:
     startDelay: 30
     randomDelay: 43000
   - type: SimSmallb
-    researchTriggers:
-      STR_TODO: false
+#    researchTriggers:
+#      STR_TODO: false
     missionWeights:
       0:
         STR_HOLOUFO_SMALL_MISSION: 100
+    regionWeights: &PopDense
+      0:
+        STR_MEZONIC_RIFTS: 100
+        STR_MOSSWAY_COMMONS: 80
+        STR_GOLDEN_REACH: 80
+        STR_TWINGATES: 40
+        STR_AZATAL_TERRACE: 80
+        STR_GLEAMING_SEAS: 40
+        STR_CAYESAND_BASIN: 60
+        STR_ICEFIELDS: 20
+        STR_RIMEARCH: 20
+        STR_KAPISI_DESERT: 20
+        STR_HEIGARA_DESERT: 20
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+  - type: SimSmallc
+    researchTriggers:
+      STR_SECGAMES_MISSIONS: true
+    missionWeights:
+      0:
+        STR_HOLOUFO_SMALL_MISSION: 100
+    regionWeights: *PopDense
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+  - type: SimSmalld
+    researchTriggers:
+      STR_SECGAMES_MISSIONS: true
+    missionWeights:
+      0:
+        STR_HOLOUFO_SMALL_MISSION: 100
+    regionWeights: *PopDense
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+  - type: SimSmalle
+    researchTriggers:
+      STR_SECGAMES_MISSIONS: true
+    missionWeights:
+      0:
+        STR_HOLOUFO_SMALL_MISSION: 100
+    regionWeights: *PopDense
     useTable: false
     startDelay: 30
     randomDelay: 43000
 
-  - type: Rescue1Early
-    lastMonth: 0
+  - type: Secgame
+    # researchTriggers:
+    #   STR_SECGAMES_MISSIONS: true
+    #   STR_SEC_LICENSE: false
     missionWeights:
       0:
-        STR_RESCUE_1: 100
+        STR_SECGAME: 100
     regionWeights: &PopDenseNoDesert
       0:
         STR_MEZONIC_RIFTS: 100
@@ -54,6 +99,16 @@ missionScripts:
         STR_CAYESAND_BASIN: 60
         STR_ICEFIELDS: 20
         STR_RIMEARCH: 20
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: Rescue1Early
+    lastMonth: 0
+    missionWeights:
+      0:
+        STR_RESCUE_1: 100
+    regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
     randomDelay: 7200

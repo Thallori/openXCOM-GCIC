@@ -163,6 +163,11 @@ extraSprites:
       218: Resources/Factions/Clients/civilian_hoodie2_bigob.png
       219: Resources/Items/Melee/skulljack_bigob.png
       220: Resources/Items/Multi/marsball_bigob.png
+      221: Resources/Factions/Holograms/holomuton_bigob.png
+      222: Resources/Factions/Holograms/holoviper_bigob.png
+      223: Resources/Items/Builtins/holorifle_bigob.png
+      224: Resources/Items/Builtins/hololauncher_bigob.png
+      225: Resources/Items/Materials/seclicense_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -269,6 +274,8 @@ extraSprites:
       200: Resources/Factions/Clients/civilian_hoodie_floorob.png
       201: Resources/Items/Melee/skulljack_floorob.png
       202: Resources/Items/Multi/marsball_floorob.png
+      203: Resources/Factions/Holograms/holomuton_floorob.png
+      204: Resources/Factions/Holograms/holoviper_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -321,6 +328,8 @@ extraSprites:
       456: Resources/Items/Explosives/windlass_handob.png
       464: Resources/Items/Melee/skulljack_handob.png
       472: Resources/Items/Multi/marsball_handob.png
+      480: Resources/Items/Builtins/holorifle_handob.png
+      488: Resources/Items/Builtins/hololauncher_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
@@ -397,6 +406,8 @@ extraSprites:
       76: Resources/Animations/sonic_hit.png
 
   - type: SMOKE.PCK
+    height: 40
+    width: 32
     files: 
       20: Resources/UI/smoke_rank0.png
       21: Resources/UI/smoke_rank1.png
@@ -477,7 +488,7 @@ extraSprites:
   - typeSingle: SHARK__2__M2_SHELL
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_M2.png
 # deep
-  - typeSingle: DEEP_2__F0_SHELL
+  - typeSingle: DEEP__2__F0_SHELL
     fileSingle: Resources/Armors/Bodies/Deep/DEEPHANDS_F0.png
   - typeSingle: DEEP__2__M0_SHELL
     fileSingle: Resources/Armors/Bodies/Deep/DEEPHANDS_F0.png
@@ -646,17 +657,6 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Aquavest/aquavest_sprite_deep.png
-
-# deep
-  - typeSingle: JUMPSUIT_DEEP.SPK
-    fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_deep_inventory.png
-  - typeSingle: SKELE_DEEP.SPK
-    fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_deep_inventory.png
-  - typeSingle: AQUAVEST_DEEP.SPK
-    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_deep_inventory.png
-  - typeSingle: AQUAVEST_S_DEEP.SPK
-    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_s_deep_inventory.png
-
 # pilot
   - typeSingle: PILOT_CORE.SPK
     fileSingle: Resources/Armors/Pilots/FlyingCore/pilot_core_inventory.png
@@ -667,7 +667,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Armors/Pilots/FlyingCore/pilot_core_sprite.png
-
 # ironeyes
   - typeSingle: BOOSTER_CPAL
     fileSingle: Resources/Factions/Ironeyes/booster_CPAL.png
@@ -692,7 +691,6 @@ extraSprites:
     height: 680
     files:
       0: Resources/Factions/Ironeyes/ripper_sprite.png
-
 # netrunners
   - typeSingle: FREELANCER_CPAL
     fileSingle: Resources/Factions/Netrunners/freelancer_CPAL.png
@@ -729,7 +727,6 @@ extraSprites:
     height: 720
     files:
       0: Resources/Factions/Netrunners/wiretapper_sprite.png
-
 # ssp
   - typeSingle: SSPGUARD_CPAL
     fileSingle: Resources/Factions/SSP/sspguard_CPAL.png
@@ -754,7 +751,6 @@ extraSprites:
     height: 680
     files:
       0: Resources/Factions/SSP/sspofficer_sprite.png
-
 # enemy drones
   - typeSingle: DRONEHYBRID.SPK
     fileSingle: Resources/Factions/Drones/dronehybrid_inventory.png
@@ -764,7 +760,6 @@ extraSprites:
     fileSingle: Resources/Factions/Drones/droneshark_inventory.png
   - typeSingle: DRONEDEEP.SPK
     fileSingle: Resources/Factions/Drones/dronedeep_inventory.png
-
 # animals
   - typeSingle: CHRYSSALID_CPAL
     fileSingle: Resources/Factions/Animals/chryssalid_CPAL.png
@@ -792,7 +787,6 @@ extraSprites:
     fileSingle: Resources/Factions/Animals/celatid_CPAL.png
   - typeSingle: CELATID.SPK
     fileSingle: Resources/Factions/Animals/celatid_inventory.png
-
 # robots
   - typeSingle: ROBOSPHERE_CPAL
     fileSingle: Resources/Factions/Robots/robosphere_CPAL.png
@@ -805,10 +799,20 @@ extraSprites:
     height: 80
     files:
       0: Resources/Factions/Robots/robosphere_sprite.png
-
 # simulated
+  - typeSingle: HOLOMUTON_CPAL
+    fileSingle: Resources/Factions/Holograms/holomuton_CPAL.png
+  - typeSingle: HOLOMUTON.SPK
+    fileSingle: Resources/Factions/Holograms/holomuton_inventory.png
+  - type: HOLOMUTON.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Factions/Holograms/holomuton_sprite.png
   - typeSingle: HOLOSECTOID_CPAL
-    fileSingle: Resources/Factions/SSP/sspofficer_CPAL.png
+    fileSingle: Resources/Factions/Holograms/holosectoid_CPAL.png
   - typeSingle: HOLOSECTOID.SPK
     fileSingle: Resources/Factions/Holograms/holosectoid_inventory.png
   - type: HOLOSECTOID.PCK
@@ -818,7 +822,17 @@ extraSprites:
     height: 720
     files:
       0: Resources/Factions/Holograms/holosectoid_sprite.png
-
+  - typeSingle: HOLOVIPER_CPAL
+    fileSingle: Resources/Factions/Holograms/holoviper_CPAL.png
+  - typeSingle: HOLOVIPER.SPK
+    fileSingle: Resources/Factions/Holograms/holoviper_inventory.png
+  - type: HOLOVIPER.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 360
+    files:
+      0: Resources/Factions/Holograms/holoviper_sprite.png
 # clients
   - typeSingle: CLIENT_1.SPK
     fileSingle: Resources/Factions/Clients/client_1_inventory.png
@@ -894,7 +908,6 @@ extraSprites:
     height: 720
     files:
       0: Resources/Factions/Clients/civilian_hoodie_sprite.png
-
 #ufopedia
   - typeSingle: ALIGN_TEST_CPAL
     fileSingle: Resources/align_test_CPAL.png
@@ -923,6 +936,8 @@ extraSprites:
     fileSingle: Resources/Pedia/operations1z_CPAL.png
   - typeSingle: OPERATIONS2_CPAL
     fileSingle: Resources/Pedia/operations2_CPAL.png
+  - typeSingle: OPERATIONS2Z_CPAL
+    fileSingle: Resources/Pedia/operations2z_CPAL.png
   - typeSingle: OPERATIONS3_CPAL
     fileSingle: Resources/Pedia/operations3_CPAL.png
   - typeSingle: OPERATIONS3Z_CPAL
@@ -968,14 +983,16 @@ extraSprites:
   - typeSingle: REDOX_CPAL
     fileSingle: Resources/Pedia/redox_CPAL.png
 # crafts
-  - typeSingle: CRAFT_BICUBE_CPAL
-    fileSingle: Resources/Pedia/craft_bicube_CPAL.png
-  - typeSingle: CRAFT_HOVERBIKE_CPAL
-    fileSingle: Resources/Pedia/craft_hoverbike_CPAL.png
+  - typeSingle: CRAFT_LIMO_CPAL
+    fileSingle: Resources/Pedia/craft_limo_CPAL.png
   - typeSingle: CRAFT_CROSSOVER_CPAL
     fileSingle: Resources/Pedia/craft_crossover_CPAL.png
+  - typeSingle: CRAFT_HOVERBIKE_CPAL
+    fileSingle: Resources/Pedia/craft_hoverbike_CPAL.png
   - typeSingle: CRAFT_SECVAN_CPAL
     fileSingle: Resources/Pedia/craft_secvan_CPAL.png
+  - typeSingle: CRAFT_BICUBE_CPAL
+    fileSingle: Resources/Pedia/craft_bicube_CPAL.png
 # armament
   - typeSingle: BATBOX.SPK
     fileSingle: Resources/Crafts/Hardpoints/batbox_pedia.png
@@ -1012,13 +1029,13 @@ extraSprites:
     fileSingle: Resources/Pedia/armor_aquavest_CPAL.png
   - typeSingle: ARMOR_AQUAVESTSHIELD_CPAL
     fileSingle: Resources/Pedia/armor_aquavestshield_CPAL.png
-
 #intercept window
   - typeSingle: interception_jammed
     fileSingle: Resources/Interwin/jammed_interwin.png
   - typeSingle: holoufo_interwin
     fileSingle: Resources/Interwin/holoufo_interwin.png
-
+  - typeSingle: ufoharvester_interwin
+    fileSingle: Resources/Interwin/ufoharvester_interwin.png
 #day/night icons
   - type: DayNightIndicator
     width: 72
@@ -1027,7 +1044,6 @@ extraSprites:
     subY: 24
     files:
       0: Resources/UI/daynight.png
-
 #battle icons
   - typeSingle: BigBurnIndicator
     fileSingle: Resources/UI/icon_burn.png
@@ -1046,7 +1062,6 @@ extraSprites:
     fileSingle: Resources/UI/icon_bleed.png
   - typeSingle: FloorShockIndicator
     fileSingle: Resources/UI/icon_shock.png
-
 #commendations
   - type: Commendations
     width: 31
@@ -1062,7 +1077,6 @@ extraSprites:
     subY: 8
     files:
       0: Resources/UI/commendations_decorations.png
-
 #motion scanner
   - type: DETBLOB.DAT
     width: 240
@@ -1075,53 +1089,51 @@ extraSprites:
     fileSingle: Resources/UI/DETBORD.png
   - typeSingle: DETBORD2.PCK
     fileSingle: Resources/UI/DETBORD2.png
-
 #backgrounds
-  - typeSingle: DESTINATION.SCR
-    fileSingle: Resources/Backgrounds/back_destination.png
 #replace
+  # planet background only, can be much larger
   # - typeSingle: ALTGEOBORD.SCR
   #   fileSingle: Resources/Backgrounds/GEOBORD.png
-  - typeSingle: GEOBORD.SCR
+  - typeSingle: GEOBORD.SCR #geoscape side panel
     fileSingle: Resources/Backgrounds/GEOBORD.png
-
-  - typeSingle: TAC00.SCR
+# backgrounds
+  - typeSingle: TAC00.SCR #hidden movement
     fileSingle: Resources/Backgrounds/hidden.png
 
-  - typeSingle: BACK01.SCR
+  - typeSingle: BACK01.SCR #primary
     fileSingle: Resources/Backgrounds/back_main.png
-  - typeSingle: BACK02.SCR
+  - typeSingle: BACK02.SCR #soldiers
     fileSingle: Resources/Backgrounds/back_soylent.png
-  - typeSingle: BACK03.SCR
+  - typeSingle: BACK03.SCR #terror mission alert
     fileSingle: Resources/Backgrounds/back_test.png
-  - typeSingle: BACK04.SCR
+  - typeSingle: BACK04.SCR #base defense
     fileSingle: Resources/Backgrounds/back_locker.png
-  - typeSingle: BACK05.SCR
+  - typeSingle: BACK05.SCR #research and construction
     fileSingle: Resources/Backgrounds/back_servers.png
-  - typeSingle: BACK12.SCR
+  - typeSingle: BACK12.SCR #launch interception
     fileSingle: Resources/Backgrounds/back_aircar.png
-  - typeSingle: BACK13.SCR
+  - typeSingle: BACK13.SCR #buy/sell, transfers, funding
     fileSingle: Resources/Backgrounds/back_market.png
-  - typeSingle: BACK14.SCR
+  - typeSingle: BACK14.SCR #equip craft
     fileSingle: Resources/Backgrounds/back_loading.png
-  - typeSingle: BACK15.SCR
+  - typeSingle: BACK15.SCR #ufo detected, crash/landing site popup
     fileSingle: Resources/Backgrounds/back_test.png
-  - typeSingle: BACK16.SCR
-    fileSingle: Resources/Backgrounds/back_test.png
-  - typeSingle: BACK17.SCR
+  - typeSingle: BACK16.SCR #mission briefings
+    fileSingle: Resources/Backgrounds/back_destination.png
+  - typeSingle: BACK17.SCR #manufacturing
     fileSingle: Resources/Backgrounds/back_factory.png
-
-  - typeSingle: BACK06.SCR
+# ui
+  - typeSingle: BACK06.SCR #soldier stats
     fileSingle: Resources/Backgrounds/soldier_info.png
-  - typeSingle: ALTBACK07.SCR
+  - typeSingle: ALTBACK07.SCR #base stats with storage limits turned on
     fileSingle: Resources/Backgrounds/base_info.png
-  - typeSingle: BACK08.SCR
+  - typeSingle: BACK08.SCR #equipment pedia
     fileSingle: Resources/Backgrounds/pedia_item.png
-  - typeSingle: BACK09.SCR
+  - typeSingle: BACK09.SCR #facilities pedia
     fileSingle: Resources/Backgrounds/pedia_facility.png
-  - typeSingle: BACK10.SCR
+  - typeSingle: BACK10.SCR #text only pedia
     fileSingle: Resources/Backgrounds/pedia_research.png
-  - typeSingle: BACK11.SCR
+  - typeSingle: BACK11.SCR #ufos pedia
     fileSingle: Resources/Backgrounds/pedia_craft.png
 
   - typeSingle: AvatarBackground

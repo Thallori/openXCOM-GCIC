@@ -31,6 +31,7 @@ alienRaces:
       - STR_RIPPER_PUBLIC #10
       - STR_RIPPER_PUBLIC #11
       - STR_RIPPER_PUBLIC #12
+      - STR_REFURBISHED_CYBERDISK #13
     retaliationAggression: -100
 
   - id: STR_NETRUNNERS
@@ -106,9 +107,9 @@ alienRaces:
       - STR_HOLOSECTOID #0
       - STR_HOLOSECTOID #1
       - STR_HOLOSECTOID #2
-      - STR_HOLOSECTOID #3
+      - STR_HOLOVIPER #3
       - STR_HOLOSECTOID #4
-      - STR_HOLOSECTOID #5
+      - STR_HOLOMUTON #5
       - STR_HOLOSECTOID #6
       - STR_HOLOSECTOID #7
       - STR_HOLOSECTOID #8

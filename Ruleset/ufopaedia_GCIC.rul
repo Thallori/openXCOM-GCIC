@@ -255,6 +255,24 @@ ufopaedia:
     text_width: 180
     image_id: OPERATIONS2_CPAL
 
+  - id: STR_SECGAMES_MISSIONS
+    requires:
+      - STR_SECGAMES_MISSIONS
+    text: STR_SECGAMES_MISSIONS_UP
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: OPERATIONS2Z_CPAL
+
+  - id: STR_SEC_LICENSE
+    requires:
+      - STR_SEC_LICENSE
+    text: STR_SEC_LICENSE_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: OPERATIONS2Z_CPAL
+
   - id: STR_FORBIDDEN_OPERATIONS
     requires:
       - STR_FORBIDDEN_OPERATIONS
@@ -491,6 +509,23 @@ ufopaedia:
     section: STR_APS_CRAFT_UC
     type_id: 8 #todo, type 7 image?
 
+  - id: STR_HD_LIMO
+    requires:
+      - STR_HD_LIMO_RESEARCH
+    text: STR_HD_LIMO_UP
+    section: STR_APS_CRAFT_UC
+    type_id: 1
+    image_id: CRAFT_LIMO_CPAL
+    rect_text:
+      x: 5
+      y: 45
+      width: 145
+      height: 150
+    rect_stats:
+      x: 160
+      y: 4
+      width: 140
+      height: 60
   - id: STR_HD_CROSSOVER
     text: STR_HD_CROSSOVER_UP
     section: STR_APS_CRAFT_UC
@@ -500,7 +535,7 @@ ufopaedia:
       x: 5
       y: 45
       width: 145
-      height: 100
+      height: 150
     rect_stats:
       x: 160
       y: 4
@@ -517,24 +552,7 @@ ufopaedia:
       x: 5
       y: 45
       width: 145
-      height: 100
-    rect_stats:
-      x: 160
-      y: 4
-      width: 140
-      height: 60
-  - id: STR_VCM_BICUBE
-    requires:
-      - STR_VCM_BICUBE
-    text: STR_VCM_BICUBE_UP
-    section: STR_APS_CRAFT_UC
-    type_id: 1
-    image_id: CRAFT_BICUBE_CPAL
-    rect_text:
-      x: 5
-      y: 45
-      width: 145
-      height: 100
+      height: 150
     rect_stats:
       x: 160
       y: 4
@@ -551,7 +569,24 @@ ufopaedia:
       x: 5
       y: 45
       width: 145
-      height: 100
+      height: 150
+    rect_stats:
+      x: 160
+      y: 4
+      width: 140
+      height: 60
+  - id: STR_VCM_BICUBE
+    requires:
+      - STR_VCM_BICUBE
+    text: STR_VCM_BICUBE_UP
+    section: STR_APS_CRAFT_UC
+    type_id: 1
+    image_id: CRAFT_BICUBE_CPAL
+    rect_text:
+      x: 5
+      y: 45
+      width: 145
+      height: 150
     rect_stats:
       x: 160
       y: 4
@@ -585,11 +620,17 @@ ufopaedia:
     requires:
       - STR_HOLOUFO_SMALL
     text: STR_HOLOUFO_SMALL_UP
+  - id: STR_UFO_HARVESTER
+    type_id: 9
+    section: STR_APS_CRAFT_UC
+    requires:
+      - STR_UFO_HARVESTER
+    text: STR_UFO_HARVESTER_UP
 #drones
   - id: STR_DRONE_ARTICLE
     text: STR_DRONE_ARTICLE_UP
     section: STR_DRONES_UC
-    type_id: 8 #todo, type 7 image?
+    type_id: 8
 
   - id: STR_DRONE_HYBRID_ITEM
     requires:
@@ -667,27 +708,6 @@ ufopaedia:
     text_width: 180
     image_id: ARMOR_PLEX_CPAL
 
-  - id: STR_PLEX_DRONE_HYBRID_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_PLEX_DRONE_HUMAN_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_PLEX_DRONE_SHARK_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_PLEX_DRONE_DEEP_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-
   - id: STR_DURA_DRONE_ARMOR
     requires:
       - STR_DURA_DRONE_ARMOR
@@ -696,27 +716,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ARMOR_DURA_CPAL
-
-  - id: STR_DURA_DRONE_HYBRID_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_DURA_DRONE_HUMAN_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_DURA_DRONE_SHARK_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_DURA_DRONE_DEEP_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
 
   - id: STR_SKELE_DRONE_ARMOR
     requires:
@@ -727,27 +726,6 @@ ufopaedia:
     text_width: 180
     image_id: ARMOR_SKELE_CPAL
 
-  - id: STR_SKELE_DRONE_HYBRID_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_SKELE_DRONE_HUMAN_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_SKELE_DRONE_SHARK_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_SKELE_DRONE_DEEP_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-
   - id: STR_AQUAVEST_DRONE_ARMOR
     requires:
       - STR_AQUAVEST_DRONE_ARMOR
@@ -756,28 +734,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ARMOR_AQUAVEST_CPAL
-
-  - id: STR_AQUAVEST_DRONE_HYBRID_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_AQUAVEST_DRONE_HUMAN_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_AQUAVEST_DRONE_SHARK_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_AQUAVEST_DRONE_DEEP_ARMOR
-    requires:
-      - STR_DEBUG
-    section: STR_DRONES_UC
-    type_id: 5
-
   - id: STR_AQUAVEST_DRONE_ARMOR_S
     requires:
       - STR_AQUAVEST_DRONE_ARMOR
@@ -787,24 +743,179 @@ ufopaedia:
     text_width: 180
     image_id: ARMOR_AQUAVESTSHIELD_CPAL
 
+  - id: STR_DRONE_NERDSTATS
+    requires:
+      - STR_DC_PREQ
+    text: STR_DRONE_NERDSTATS_UP
+    section: STR_DRONES_UC
+    type_id: 8
+
+  - id: STR_CRACKED_HYBRID_DRONE
+    requires:
+      - STR_DRONE_HYBRID_ITEM
+    section: STR_DRONES_UC
+    type_id: 18
+    image_id: BACK10.SCR
+    rect_stats:
+      x: 10
+      y: 48
+      width: 160
+      height: 96
+  - id: STR_CRACKED_HUMAN_DRONE
+    requires:
+      - STR_DRONE_HUMAN_ITEM
+    section: STR_DRONES_UC
+    type_id: 18
+    image_id: BACK10.SCR
+    rect_stats:
+      x: 10
+      y: 48
+      width: 160
+      height: 96
+  - id: STR_CRACKED_SHARK_DRONE
+    requires:
+      - STR_DRONE_SHARK_ITEM
+    section: STR_DRONES_UC
+    type_id: 18
+    image_id: BACK10.SCR
+    rect_stats:
+      x: 10
+      y: 48
+      width: 160
+      height: 96
+  - id: STR_CRACKED_DEEP_DRONE
+    requires:
+      - STR_DRONE_DEEP_ITEM
+    section: STR_DRONES_UC
+    type_id: 18
+    image_id: BACK10.SCR
+    rect_stats:
+      x: 10
+      y: 48
+      width: 160
+      height: 96
+
+  - id: STR_PLEX_DRONE_HYBRID_ARMOR
+    requires:
+      - STR_PLEX_DRONE_ARMOR
+      - STR_DRONE_HYBRID_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_DURA_DRONE_HYBRID_ARMOR
+    requires:
+      - STR_DURA_DRONE_ARMOR
+      - STR_DRONE_HYBRID_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_SKELE_DRONE_HYBRID_ARMOR
+    requires:
+      - STR_SKELE_DRONE_ARMOR
+      - STR_DRONE_HYBRID_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_AQUAVEST_DRONE_HYBRID_ARMOR
+    requires:
+      - STR_AQUAVEST_DRONE_ARMOR
+      - STR_DRONE_HYBRID_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
   - id: STR_AQUAVEST_DRONE_HYBRID_ARMOR_S
     requires:
-      - STR_DEBUG
+      - STR_AQUAVEST_DRONE_ARMOR
+      - STR_DRONE_HYBRID_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+
+  - id: STR_PLEX_DRONE_HUMAN_ARMOR
+    requires:
+      - STR_PLEX_DRONE_ARMOR
+      - STR_DRONE_HUMAN_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_DURA_DRONE_HUMAN_ARMOR
+    requires:
+      - STR_DURA_DRONE_ARMOR
+      - STR_DRONE_HUMAN_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_SKELE_DRONE_HUMAN_ARMOR
+    requires:
+      - STR_SKELE_DRONE_ARMOR
+      - STR_DRONE_HUMAN_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_AQUAVEST_DRONE_HUMAN_ARMOR
+    requires:
+      - STR_AQUAVEST_DRONE_ARMOR
+      - STR_DRONE_HUMAN_ITEM
     section: STR_DRONES_UC
     type_id: 5
   - id: STR_AQUAVEST_DRONE_HUMAN_ARMOR_S
     requires:
-      - STR_DEBUG
+      - STR_AQUAVEST_DRONE_ARMOR
+      - STR_DRONE_HUMAN_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+
+  - id: STR_PLEX_DRONE_SHARK_ARMOR
+    requires:
+      - STR_PLEX_DRONE_ARMOR
+      - STR_DRONE_SHARK_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_DURA_DRONE_SHARK_ARMOR
+    requires:
+      - STR_DURA_DRONE_ARMOR
+      - STR_DRONE_SHARK_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_SKELE_DRONE_SHARK_ARMOR
+    requires:
+      - STR_SKELE_DRONE_ARMOR
+      - STR_DRONE_SHARK_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_AQUAVEST_DRONE_SHARK_ARMOR
+    requires:
+      - STR_AQUAVEST_DRONE_ARMOR
+      - STR_DRONE_SHARK_ITEM
     section: STR_DRONES_UC
     type_id: 5
   - id: STR_AQUAVEST_DRONE_SHARK_ARMOR_S
     requires:
-      - STR_DEBUG
+      - STR_AQUAVEST_DRONE_ARMOR
+      - STR_DRONE_SHARK_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+
+  - id: STR_PLEX_DRONE_DEEP_ARMOR
+    requires:
+      - STR_PLEX_DRONE_ARMOR
+      - STR_DRONE_DEEP_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_DURA_DRONE_DEEP_ARMOR
+    requires:
+      - STR_DURA_DRONE_ARMOR
+      - STR_DRONE_DEEP_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_SKELE_DRONE_DEEP_ARMOR
+    requires:
+      - STR_SKELE_DRONE_ARMOR
+      - STR_DRONE_DEEP_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_AQUAVEST_DRONE_DEEP_ARMOR
+    requires:
+      - STR_AQUAVEST_DRONE_ARMOR
+      - STR_DRONE_DEEP_ITEM
     section: STR_DRONES_UC
     type_id: 5
   - id: STR_AQUAVEST_DRONE_DEEP_ARMOR_S
     requires:
-      - STR_DEBUG
+      - STR_AQUAVEST_DRONE_ARMOR
+      - STR_DRONE_DEEP_ITEM
     section: STR_DRONES_UC
     type_id: 5
 # builtins
@@ -1326,6 +1437,13 @@ ufopaedia:
     text: STR_SJB_LICENSE_UP
     section: STR_RESOURCES_UC
     type_id: 4
+# trophies
+  - id: STR_SEC_LICENSE_ITEM
+    requires:
+      - STR_SEC_LICENSE_ITEM
+    text: STR_SEC_LICENSE_ITEM_UP
+    section: STR_RESOURCES_UC
+    type_id: 4
 # data
   - id: STR_PERSONAL_DATA
     requires:
@@ -1369,6 +1487,12 @@ ufopaedia:
     requires:
       - STR_BOUNTY_1
     text: STR_BOUNTY_1_UP
+    section: STR_RESOURCES_UC
+    type_id: 8
+  - id: STR_IRS_SUBSIDY
+    requires:
+      - STR_IRS_SUBSIDY
+    text: STR_IRS_SUBSIDY_UP
     section: STR_RESOURCES_UC
     type_id: 8
 
@@ -1590,6 +1714,46 @@ ufopaedia:
       width: 149
       height: 200
     image_id: ROBOSPHERE_CPAL
+# simulated
+  - id: STR_HOLOMUTONS
+    requires:
+      - STR_HOLOMUTON
+    text: STR_HOLOMUTONS_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: HOLOMUTON_CPAL
+  - id: STR_HOLOSECTOIDS
+    requires:
+      - STR_HOLOSECTOID
+    text: STR_HOLOSECTOIDS_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: HOLOSECTOID_CPAL
+  - id: STR_HOLOVIPERS
+    requires:
+      - STR_HOLOVIPER
+    text: STR_HOLOVIPERS_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: HOLOVIPER_CPAL
 # clients
   - id: STR_CLIENT_CRAZYS
     requires:
@@ -1657,6 +1821,24 @@ ufopaedia:
     requires:
       - STR_ROBOSPHERE_ARMOR
     text: STR_ROBOSPHERE_ARMOR_UP
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_HOLOMUTON_ARMOR
+    requires:
+      - STR_HOLOMUTON_ARMOR
+    text: STR_HOLOMUTON_ARMOR_UP
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_HOLOSECTOID_ARMOR
+    requires:
+      - STR_HOLOSECTOID_ARMOR
+    text: STR_HOLOSECTOID_ARMOR_UP
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_HOLOVIPER_ARMOR
+    requires:
+      - STR_HOLOVIPER_ARMOR
+    text: STR_HOLOVIPER_ARMOR_UP
     section: STR_COMPETITORS_UC
     type_id: 5
   - id: STR_CLIENT_CRAZY_ARMOR

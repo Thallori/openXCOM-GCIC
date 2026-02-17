@@ -132,6 +132,10 @@ armors:
     customArmorPreviewIndex: 12
     spriteInv: DRONEDEEP.SPK
     spriteSheet: WORKSUIT_DEEP.PCK
+    layersDefaultPrefix: DEEP
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
     corpseBattle:
       - STR_PLEX_DRONE_DEEP_CORPSE
     specialWeapon: STR_ELECTROBOLT
@@ -276,7 +280,10 @@ armors:
     refNode: *refDuraDrone
     customArmorPreviewIndex: 13
     spriteSheet: JUMPSUIT_DEEP.PCK
-    spriteInv: JUMPSUIT_DEEP.SPK
+    layersDefaultPrefix: DEEP
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
     corpseBattle:
       - STR_DURA_DRONE_DEEP_CORPSE
     specialWeapon: STR_ELECTROBOLT
@@ -418,7 +425,10 @@ armors:
     refNode: *refSkeleDrone
     customArmorPreviewIndex: 19
     spriteSheet: SKELE_DEEP.PCK
-    spriteInv: SKELE_DEEP.SPK
+    layersDefaultPrefix: DEEP
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "SKELE", "", "", ""]
     corpseBattle:
       - STR_SKELE_DRONE_DEEP_CORPSE
     specialWeapon: STR_ELECTROBOLT
@@ -559,7 +569,10 @@ armors:
     refNode: *refAquavestDrone
     customArmorPreviewIndex: 14
     spriteSheet: AQUAVEST_DEEP.PCK
-    spriteInv: AQUAVEST_DEEP.SPK
+    layersDefaultPrefix: DEEP
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
     corpseBattle:
       - STR_AQUAVEST_DRONE_DEEP_CORPSE
     specialWeapon: STR_ELECTROBOLT
@@ -687,7 +700,10 @@ armors:
     refNode: *refAquavestSDrone
     customArmorPreviewIndex: 15
     spriteSheet: AQUAVEST_DEEP.PCK
-    spriteInv: AQUAVEST_S_DEEP.SPK
+    layersDefaultPrefix: DEEP
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
     corpseBattle:
       - STR_AQUAVEST_DRONE_DEEP_CORPSE
     specialWeapon: STR_ELECTROBOLT
@@ -752,7 +768,6 @@ armors:
     units:
       - STR_PILOT
     loftempsSet: [ 3 ]
-
 #enemies
 # ironeyes
   - type: STR_BOOSTER_ARMOR
@@ -814,7 +829,6 @@ armors:
       energy: *EnergyRecoveryHumanTypical
     overKill: 1.5
     loftempsSet: [ 3 ]
-
 # netrunners
   - type: STR_FREELANCER_ARMOR
     ufopediaType: STR_FREELANCER_ARMOR
@@ -905,7 +919,6 @@ armors:
       energy: *EnergyRecoveryTypical
     overKill: 1.5
     loftempsSet: [ 3 ]
-
 # ssp
   - type: STR_SSPGUARD_ARMOR
     ufopediaType: STR_SSPGUARD_ARMOR
@@ -960,7 +973,6 @@ armors:
       energy: *EnergyRecoveryPoor
     overKill: 1.5
     loftempsSet: [ 3 ]
-
 # animals
   - type: STR_CHRYSSALID_ARMOR
     spriteInv: CHRYSSALID.SPK
@@ -1138,7 +1150,6 @@ armors:
       stun: *StunRecoveryEnemy
       energy: *EnergyRecoveryGood
     loftempsSet: [ 2 ]
-
 # robots
   - type: STR_ROBOSPHERE_ARMOR
     spriteInv: ROBOSPHERE.SPK
@@ -1167,8 +1178,32 @@ armors:
       energy: *EnergyRecoveryGood
     overKill: 1.5
     loftempsSet: [ 2 ]
-
 # simulated
+  - type: STR_HOLOMUTON_ARMOR
+    spriteInv: HOLOMUTON.SPK
+    spriteSheet: HOLOMUTON.PCK
+    corpseBattle:
+      - STR_HOLOMUTON_CORPSE
+    allowsKneeling: false
+    bleedImmune: true
+    zombiImmune: true
+    personalLight: 10
+    personalLightHostile: 5
+    heatVision: 20
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    damageModifier: *OrganicUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryTypical
+    overKill: 1.5
+    loftempsSet: [ 4 ]
+
   - type: STR_HOLOSECTOID_ARMOR
     spriteInv: HOLOSECTOID.SPK
     spriteSheet: HOLOSECTOID.PCK
@@ -1194,6 +1229,32 @@ armors:
     overKill: 1.5
     loftempsSet: [ 2 ]
 
+  - type: STR_HOLOVIPER_ARMOR
+    spriteInv: HOLOVIPER.SPK
+    spriteSheet: HOLOVIPER.PCK
+    corpseBattle:
+      - STR_HOLOVIPER_CORPSE
+    allowsKneeling: false
+    bleedImmune: true
+    zombiImmune: true
+    drawingRoutine: 6
+    movementType: 2
+    personalLight: 10
+    personalLightHostile: 5
+    heatVision: 20
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    damageModifier: *OrganicUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryTypical
+    overKill: 1.5
+    loftempsSet: [ 3 ]
 # enemy drones
   - &refEnemyDrone
     type: STR_DRONEHYBRID_ARMOR
@@ -1251,7 +1312,6 @@ armors:
       - STR_PLEX_DRONE_DEEP_CORPSE
     visibilityAtDark: 8
     damageModifier: *DeepOneUnarmoredResists
-
 # civilians
   - type: STR_CLIENT_1_ARMOR
     spriteInv: CLIENT_1.SPK

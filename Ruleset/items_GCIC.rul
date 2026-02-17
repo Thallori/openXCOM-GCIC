@@ -36,6 +36,9 @@ items:
     categories: [STR_PERKS_CATEGORY]
   - type: STR_FTM_ITEM
     categories: [STR_PERKS_CATEGORY]
+  - type: STR_PSLG_ITEM
+    categories: [STR_PERKS_CATEGORY]
+
   - type: STR_PBI_ITEM
     categories: [STR_PERKS_CATEGORY]
   - type: STR_PTS_ITEM
@@ -339,8 +342,8 @@ items:
     damageAlter:
       RandomType: 6
       ToTime: 2.0
-      ToWound: 0
-      RandomWound: false
+      ToWound: 0.2
+      RandomWound: true
       ToHealth: 0.20
       ToStun: 1.0
       RandomStun: false
@@ -416,8 +419,6 @@ items:
     power: 35
     damageType: 10
     damageAlter:
-      ToWound: 0.0
-      RandomWound: false
       ToHealth: 0.35
       ToStun: 1.0
       RandomStun: false
@@ -489,6 +490,49 @@ items:
     flatRate: true
     fixedWeapon: true
     recover: false
+
+  - type: STR_HOLOMUTON_WEAPON
+    categories: [STR_BUILT_INS_CATEGORY]
+    bigSprite: 223
+    handSprite: 480
+    bulletSprite: 8
+    fireSound: 18
+    hitSound: 133
+    hitAnimation: 46
+    invWidth: 1
+    invHeight: 3
+    battleType: 1
+    power: 80
+    damageType: 5
+    damageAlter:
+      SmokeThreshold: 0
+      ToHealth: 0.05
+      ToStun: 1.2 #because a real weapon would deal damage+stun damage
+      RandomStun: false
+      ToWound: 0
+      RandomWound: false
+      ToTile: 0.05
+    clipSize: -1
+    accuracyAuto: 55
+    accuracySnap: 85
+    accuracyAimed: 100
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: -0.10
+    tuAuto: 35
+    tuSnap: 30
+    tuAimed: 60
+    autoRange: 10
+    snapRange: 20
+    aimRange: 30
+    dropoff: 2
+    kneelBonus: 120
+    weight: 17
+    oneHandedPenalty: 50
+    twoHanded: true
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
   - type: STR_HOLOSECTOID_WEAPON
     categories: [STR_BUILT_INS_CATEGORY]
     bigSprite: 196
@@ -500,7 +544,7 @@ items:
     invWidth: 1
     invHeight: 2
     battleType: 1
-    power: 52
+    power: 50
     damageType: 5
     damageAlter:
       SmokeThreshold: 0
@@ -525,6 +569,46 @@ items:
     aimRange: 20
     dropoff: 3
     kneelBonus: 110
+    weight: 7
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+  - type: STR_HOLOVIPER_WEAPON
+    categories: [STR_BUILT_INS_CATEGORY]
+    bigSprite: 224
+    handSprite: 488
+    bulletSprite: 9
+    fireSound: 53
+    hitSound: 0
+    hitAnimation: 88
+    explosionHitSound: 116
+    invWidth: 2
+    invHeight: 2
+    battleType: 1
+    power: 85
+    damageType: 5
+    damageAlter:
+      FixRadius: 8
+      RandomType: 9
+      SmokeThreshold: 65
+      ToHealth: 0.05
+      ToStun: 1.0
+      RandomStun: false
+      ToWound: 0
+      RandomWound: false
+      ToTile: 0.05
+    clipSize: -1
+    accuracySnap: 65
+    accuracyAimed: 110
+    tuSnap: 65 #plus 25% to simulate reloading
+    tuAimed: 85 #plus 10% because 100% tu sucks
+    snapRange: 16
+    aimRange: 20
+    dropoff: 2
+    kneelBonus: 120
+    weight: 13
+    oneHandedPenalty: 75
+    twoHanded: true
     fixedWeapon: true
     fixedWeaponShow: true
     recover: false
@@ -1136,7 +1220,7 @@ items:
   - type: STR_45_PISTOL
     categories: [STR_SECURITY_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_SEC_LICENSE
       - STR_VENDOR_SSP
       - STR_45_PISTOL
     size: 0.1
@@ -1172,7 +1256,7 @@ items:
     requires:
       - STR_45_PISTOL
     requiresBuy:
-      - STR_TODO
+      - STR_SEC_LICENSE
       - STR_VENDOR_SSP
       - STR_45_PISTOL
     size: 0.01
@@ -1236,7 +1320,7 @@ items:
   - type: STR_SSP_SMG
     categories: [STR_SECURITY_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_SEC_LICENSE
       - STR_VENDOR_SSP
       - STR_SSP_SMG
     size: 0.1
@@ -1283,7 +1367,7 @@ items:
     requires:
       - STR_SSP_SMG
     requiresBuy:
-      - STR_TODO
+      - STR_SEC_LICENSE
       - STR_VENDOR_SSP
       - STR_SSP_SMG
     size: 0.01
@@ -1342,7 +1426,7 @@ items:
   - type: STR_SSP_SHOTGUN
     categories: [STR_SECURITY_CATEGORY, STR_SHOTGUNS_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_SEC_LICENSE
       - STR_VENDOR_SSP
       - STR_SSP_SHOTGUN
     size: 0.2
@@ -1383,7 +1467,7 @@ items:
     requires:
       - STR_SSP_SHOTGUN
     requiresBuy:
-      - STR_TODO
+      - STR_SEC_LICENSE
       - STR_VENDOR_SSP
       - STR_SSP_SHOTGUN
     size: 0.01
@@ -1411,7 +1495,7 @@ items:
     requires:
       - STR_SSP_SHOTGUN
     requiresBuy:
-      - STR_TODO
+      - STR_SEC_LICENSE
       - STR_VENDOR_SSP
       - STR_SSP_SHOTGUN
     size: 0.01
@@ -1515,7 +1599,7 @@ items:
   - type: STR_SINGLESHOT_LASER_PISTOL
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_SEC_LICENSE
       - STR_VENDOR_SSP
       - STR_SINGLESHOT_LASER_PISTOL
     size: 0.1
@@ -1576,7 +1660,7 @@ items:
     requires:
       - STR_SINGLESHOT_LASER_PISTOL
     requiresBuy:
-      - STR_TODO
+      - STR_SEC_LICENSE
       - STR_VENDOR_SSP
       - STR_SINGLESHOT_LASER_PISTOL
     size: 0.01
@@ -1635,7 +1719,7 @@ items:
   - type: STR_TASER_PISTOL
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_SEC_LICENSE
       - STR_VENDOR_SSP
       - STR_TASER_PISTOL
     size: 0.1
@@ -1671,7 +1755,7 @@ items:
     requires:
       - STR_TASER_PISTOL
     requiresBuy:
-      - STR_TODO
+      - STR_SEC_LICENSE
       - STR_VENDOR_SSP
       - STR_TASER_PISTOL
     size: 0.01
@@ -2127,7 +2211,7 @@ items:
     tuAimed: 45
     tuLoad: 20
     aimRange: 24
-    maxRange: 30
+    maxRange: 32
     dropoff: 1
     kneelBonus: 120
     twoHanded: true
@@ -2159,9 +2243,9 @@ items:
     damageType: 6
     damageAlter:
       RandomType: 8
-      ToWound: 0
       ArmorEffectiveness: 0.85
-      RandomWound: false
+      ToWound: 0.2
+      RandomWound: true
       ToHealth: 0.20
       ToStun: 1.0
       RandomStun: false
@@ -2404,6 +2488,72 @@ items:
     attraction: 50
     armor: 120
 # sporting
+  # maybe one day, if there's a way to make this less weird
+  # - type: STR_MARSBALLBAT
+  #   categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_MELEE_CATEGORY]
+  #   requiresBuy:
+  #     - STR_VENDOR_PRINTER
+  #     - STR_MARSBALLBAT
+  #   size: 0.2
+  #   costBuy: 49
+  #   costSell: 12
+  #   transferTime: 4
+  #   bigSprite: 113 #
+  #   floorSprite: 112 #
+  #   handSprite: 160 #
+  #   bulletSprite: 24
+  #   bulletSpeed: -2
+  #   fireSound: 104 #
+  #   meleeHitSound: 100
+  #   meleeAnimation: 0
+  #   invWidth: 1
+  #   invHeight: 3
+  #   battleType: 1
+  #   weight: 8
+  #   meleeType: 6
+  #   meleePower: 25
+  #   meleeBonus:
+  #     strength: 0.3
+  #   meleeAlter:
+  #     RandomType: 6
+  #     ToTime: 2.0
+  #     ToWound: 0.2
+  #     RandomWound: true
+  #     ToHealth: 0.20
+  #     ToStun: 1.0
+  #     IgnoreSelfDestruct: false
+  #     IgnorePainImmunity: false
+  #     ToTile: 0.35
+  #   accuracyMelee: 65
+  #   meleeMultiplier:
+  #     melee: 1.0
+  #     flatHundred: 0.50
+  #   costMelee:
+  #     time: 12
+  #     energy: 4
+  #   compatibleAmmo:
+  #     - STR_MARSBALL
+  #   arcingShot: true
+  #   accuracySnap: 70
+  #   accuracyAimed: 110
+  #   accuracyMultiplier:
+  #     throwing: 1.0
+  #   costSnap:
+  #     time: 22
+  #     energy: 12
+  #   costAimed:
+  #     time: 28
+  #     energy: 12
+  #   tuLoad: 5
+  #   flatRate: true
+  #   snapRange: 7
+  #   aimRange: 7
+  #   dropoff: 2
+  #   kneelBonus: 110
+  #   oneHandedPenalty: 75
+  #   experienceTrainingMode: 7
+  #   attraction: 15
+  #   armor: 30
   - type: STR_MARSBALL
     categories: [STR_VACUUM_RATED_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_TOOLS_CATEGORY]
     requiresBuy:
@@ -2430,8 +2580,8 @@ items:
       throwing: 0.3
     damageAlter:
       RandomType: 6
-      ToWound: 0
-      RandomWound: false
+      ToWound: 0.2
+      RandomWound: true
       ToHealth: 0.20
       ToStun: 1.0
       RandomStun: false
@@ -2464,7 +2614,7 @@ items:
     aimRange: 7
     dropoff: 10
     powerRangeThreshold: 7
-    powerRangeReduction: 20
+    powerRangeReduction: 2
     kneelBonus: 110
     experienceTrainingMode: 7
     attraction: 10
@@ -2937,9 +3087,9 @@ items:
       throwing: 0.3
     damageAlter:
       RandomType: 6
-      ToWound: 0
       ArmorEffectiveness: 0.85
-      RandomWound: false
+      ToWound: 0.2
+      RandomWound: true
       ToHealth: 0.20
       ToStun: 1.0
       RandomStun: false
@@ -3261,7 +3411,7 @@ items:
       ToTime: 2.0
       ToHealth: 0.20
       ToStun: 1.0
-      RandomStun: true
+      RandomStun: false
       IgnoreSelfDestruct: false
       IgnorePainImmunity: false
       ToTile: 0.35
@@ -3438,6 +3588,17 @@ items:
     ignoreInCraftEquip: true
     battleType: 10
     weight: 2
+# trophies
+  - type: STR_SEC_LICENSE_ITEM
+    categories: [STR_PERKS_CATEGORY]
+    specialType: 195
+    recoveryPoints: 25
+    size: 0
+    costSell: 0
+    bigSprite: 225
+    ignoreInCraftEquip: true
+    battleType: 10
+    weight: 2
 # data
   - type: STR_PERSONAL_DATA
     categories: [STR_DATA_CATEGORY]
@@ -3520,7 +3681,6 @@ items:
 
   - type: STR_IRS_SUBSIDY
     categories: [STR_PERKS_CATEGORY]
-    recoveryPoints: 5
     costSell: 5000
     weight: 0
     armor: 255
@@ -3577,7 +3737,8 @@ items:
   - type: STR_AQUAVEST_DRONE_ARMOR
     categories: [STR_OUTFITS_CATEGORY, STR_SECURITY_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_SEC_LICENSE
+      - STR_AQUAVEST_DRONE_ARMOR
     size: 0.2
     costBuy: 11999
     costSell: 3000
@@ -4049,6 +4210,19 @@ items:
     battleType: 11
     armor: 30
 # simulated
+  - type: STR_HOLOMUTON_CORPSE
+    name: STR_SIMCORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    recoveryPoints: 5
+    recoveryTransformations:
+      STR_IRS_SUBSIDY: [1]
+    bigSprite: 221
+    floorSprite: 203
+    weight: 2
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 15
   - type: STR_HOLOSECTOID_CORPSE
     name: STR_SIMCORPSE
     categories: [STR_DEBUG_CATEGORY]
@@ -4057,6 +4231,19 @@ items:
       STR_IRS_SUBSIDY: [1]
     bigSprite: 197
     floorSprite: 184
+    weight: 2
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 15
+  - type: STR_HOLOVIPER_CORPSE
+    name: STR_SIMCORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    recoveryPoints: 5
+    recoveryTransformations:
+      STR_IRS_SUBSIDY: [1]
+    bigSprite: 222
+    floorSprite: 204
     weight: 2
     invWidth: 2
     invHeight: 3

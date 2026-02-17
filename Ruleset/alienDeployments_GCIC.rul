@@ -13,16 +13,15 @@ alienDeployments:
     script: DEFAULT4X4
     width: 40
     length: 40
-    height: 6
-#    missionBountyItem: STR_MEDIUM_SCOUT_FRAME
+    height: 8
     briefing:
       showTarget: false
       title: STR_HOLOUFO_TITLE_BRIEFING
       desc: STR_HOLOUFO_DESC_BRIEFING
       music: SIM_INTRO
-      background: DESTINATION.SCR
       palette: 0
     customUfo: STR_HOLOUFO_SMALL
+    forcePercentageOutsideUfo: true
     unlockedResearch: STR_TRG_HS_PREQ
     music:
       - SEC1
@@ -55,6 +54,53 @@ alienDeployments:
           -
             []
 
+  - type: STR_SECGAME
+    width: 60
+    length: 60
+    height: 8
+    alert: STR_IRLGAME_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_SECGAME_ALERT_DESCRIPTION
+    markerName: STR_SECGAME
+    duration: [200, 240]
+    despawnPenalty: 20
+    # startingCondition: SECURITY_GEAR_SECURITY_CRAFT
+    briefing:
+      showTarget: false
+      title: STR_SECGAME
+      music: SIM_INTRO
+      palette: 0
+    missionBountyItem: STR_SEC_LICENSE_ITEM
+    customUfo: STR_UFO_HARVESTER
+    forcePercentageOutsideUfo: true
+    minShade: 15
+    terrains:
+      - STUDIO0
+    music:
+      - SEC1
+    data:
+      - alienRank: 3
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 30
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 4
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 2
+        percentageOutsideUfo: 30
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 5
+        lowQty: 5
+        medQty: 5
+        highQty: 6
+        dQty: 5
+        percentageOutsideUfo: 60
+        itemSets: *AnchorEmptyInventory
+
   - type: STR_RESCUE_1
     width: 30
     length: 30
@@ -71,10 +117,10 @@ alienDeployments:
       showTarget: false
       title: STR_RESCUE_1
       music: BREACH_INTRO
-      background: DESTINATION.SCR
       palette: 0
     unlockedResearch: STR_TRG_BO_PREQ
     customUfo: STR_HOUSE_GARAGE
+    forcePercentageOutsideUfo: true
     terrains:
       - HANGAR_DRONES_SIZE3
       - SLUM_DRONES_SIZE3
@@ -163,10 +209,10 @@ alienDeployments:
       showTarget: false
       title: STR_RESCUE_RR
       music: BREACH_INTRO
-      background: DESTINATION.SCR
       palette: 0
     unlockedResearch: STR_TRG_RI_PREQ
     customUfo: STR_HOUSE_GARAGE_RR
+    forcePercentageOutsideUfo: true
     terrains:
       - HANGAR_DRONES_SIZE4
       - SLUM_DRONES_SIZE4
@@ -257,24 +303,23 @@ alienDeployments:
     alertDescription: STR_RESCUE_FT_ALERT_DESCRIPTION
     markerName: STR_RESCUE_FT
     duration: [24, 48]
-    despawnPenalty: 20
+    despawnPenalty: 50
     civilians: 12
     # startingCondition: SECURITY_GEAR_SECURITY_CRAFT
     briefing:
       showTarget: false
       title: STR_RESCUE_FT
       music: BREACH_INTRO
-      background: DESTINATION.SCR
       palette: 0
     unlockedResearch: STR_TRG_RI_PREQ
     terrains:
-      - HANGAR
-      - COMMERCIAL
-      - SLUM
+      - HANGAR_DRONES_SIZE5
+      - COMMERCIAL_DRONES_SIZE5
+      - SLUM_DRONES_SIZE5
     music:
       - BREACH2
     data:
-      - alienRank: 4
+      - alienRank: 3
         lowQty: 1
         medQty: 1
         highQty: 2
@@ -290,14 +335,13 @@ alienDeployments:
         percentageOutsideUfo: 50
         extraRandomItems: *ironExtra
         itemSets: *boosterSet
-      - alienRank: 5
+      - alienRank: 13
         lowQty: 1
         medQty: 1
-        highQty: 1
+        highQty: 2
         dQty: 1
         percentageOutsideUfo: 50
-        customUnitType: STR_FREELANCER_PUBLIC
-        itemSets: *boosterSet
+        itemSets: *AnchorEmptyInventory
 
   - type: STR_KNOCKOUT_MISSION
     width: 30
@@ -315,7 +359,6 @@ alienDeployments:
       showTarget: false
       title: STR_KNOCKOUT_MISSION
       music: BREACH_INTRO
-      background: DESTINATION.SCR
       palette: 0
     unlockedResearch: STR_TRG_CZ_PREQ
     terrains:
@@ -398,7 +441,6 @@ alienDeployments:
       showTarget: false
       title: STR_TRADE_MEETING_EARLY
       music: HACKER_INTRO
-      background: DESTINATION.SCR
       palette: 2
     unlockedResearch: STR_TRG_FL_PREQ
     minShade: 6
@@ -474,7 +516,6 @@ alienDeployments:
       showTarget: false
       title: STR_TRADE_MEETING_1
       music: HACKER_INTRO
-      background: DESTINATION.SCR
       palette: 2
     unlockedResearch: STR_TRG_FL_PREQ
     minShade: 6
@@ -533,7 +574,6 @@ alienDeployments:
       showTarget: false
       title: STR_TRADE_MEETING_2
       music: HACKER_INTRO
-      background: DESTINATION.SCR
       palette: 2
     unlockedResearch: STR_TRG_ST_PREQ
     minShade: 6
@@ -657,7 +697,6 @@ alienDeployments:
       showTarget: false
       title: STR_TRADE_MEETING_3
       music: HACKER_INTRO
-      background: DESTINATION.SCR
       palette: 2
     #unlockedResearch: STR_TRG_ST_PREQ
     minShade: 6
@@ -782,12 +821,12 @@ alienDeployments:
       showTarget: false
       title: STR_GCIC_SABOTAGE_1
       music: SHADOW_INTRO
-      background: DESTINATION.SCR
       palette: 2
     missionBountyItem: STR_SHARES_GCIC
     missionBountyItemCount: 5
     unlockedResearch: STR_TRG_SG_PREQ
     customUfo: STR_SABOTAGE_OFFICE
+    forcePercentageOutsideUfo: true
     terrains:
       - COMMERCIAL
     music:
@@ -903,12 +942,12 @@ alienDeployments:
       showTarget: false
       title: STR_GCIC_SABOTAGE_2
       music: SHADOW_INTRO
-      background: DESTINATION.SCR
       palette: 2
     missionBountyItem: STR_GCIC_SABOTAGE_2_DATA
     missionBountyItemCount: 1
     unlockedResearch: STR_TRG_SO_PREQ
     customUfo: STR_SABOTAGE_OFFICE_BI
+    forcePercentageOutsideUfo: true
     terrains:
       - COMMERCIAL
     music:
@@ -1028,7 +1067,6 @@ alienDeployments:
       title: STR_MEDI_CREATURE
       desc: STR_MEDI_CREATURE_BRIEFING
       music: BLOOD_INTRO
-      background: DESTINATION.SCR
       palette: 0
     unlockedResearch: STR_TRG_MS_PREQ
     music:
@@ -1058,7 +1096,6 @@ alienDeployments:
       title: STR_MEDI_CREATURE
       desc: STR_MEDI_CREATURE_BRIEFING
       music: BLOOD_INTRO
-      background: DESTINATION.SCR
       palette: 0
     unlockedResearch: STR_TRG_CR_PREQ
     music:
@@ -1094,7 +1131,6 @@ alienDeployments:
       title: STR_MEDI_CREATURE
       desc: STR_MEDI_CREATURE_BRIEFING
       music: BLOOD_INTRO
-      background: DESTINATION.SCR
       palette: 0
     unlockedResearch: STR_TRG_CL_PREQ
     music:
@@ -1124,7 +1160,6 @@ alienDeployments:
       title: STR_MEDI_CREATURE
       desc: STR_MEDI_CREATURE_BRIEFING
       music: BLOOD_INTRO
-      background: DESTINATION.SCR
       palette: 0
     unlockedResearch: STR_TRG_CR_PREQ
     music:
@@ -1160,7 +1195,6 @@ alienDeployments:
       showTarget: false
       title: STR_GR_INDUSTRIAL_1
       music: BLOOD_INTRO
-      background: DESTINATION.SCR
       palette: 0
     unlockedResearch: STR_TRG_RS_PREQ
     terrains:

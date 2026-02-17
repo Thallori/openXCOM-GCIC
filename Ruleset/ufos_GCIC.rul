@@ -27,6 +27,30 @@ ufos:
           width: 10
           length: 10
 
+  - type: STR_UFO_HARVESTER
+    modSprite: ufoharvester_interwin
+    size: STR_MEDIUM_UC
+    blobSize: 2
+    damageMax: 50
+    armor: 1
+    speedMax: 1600
+    power: 20
+    range: 35
+    score: 100
+    reload: 50
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_UFO_HARVESTER
+      mapDataSets:
+        - BLANKS
+        - STRUCTURE_UFO
+        - BITS_UFO
+        - FURNITURE_UFO
+      mapBlocks:
+        - name: UFO_HARVESTER1
+          width: 20
+          length: 20
+
   - type: STR_HOUSE_GARAGE
     modSprite: interception_jammed
     battlescapeTerrainData:

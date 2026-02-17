@@ -1,7 +1,7 @@
 events:
   - name: STR_DRONES_MONTHLY_P3
     description: STR_DRONES_MONTHLY_P3_DESCRIPTION
-    funds: -150000
+    funds: -50000
     points: 100
   - name: STR_DRONES_MONTHLY_P2
     description: STR_DRONES_MONTHLY_P2_DESCRIPTION

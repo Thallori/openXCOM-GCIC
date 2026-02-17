@@ -1,7 +1,7 @@
 units:
 #drone spawns
       # base stats
-      # tu: 45
+      # tu: 40
       # stamina: 40
       # health: 25
       # bravery: 50
@@ -18,7 +18,7 @@ units:
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_HYBRID_ITEM
     stats:
-      tu: 45
+      tu: 40
       stamina: 40
       health: 25
       bravery: 50
@@ -60,7 +60,7 @@ units:
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_HUMAN_ITEM
     stats:
-      tu: 45
+      tu: 40
       stamina: 45
       health: 25
       bravery: 50
@@ -102,7 +102,7 @@ units:
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_SHARK_ITEM
     stats:
-      tu: 45
+      tu: 40
       stamina: 40
       health: 25
       bravery: 50
@@ -124,7 +124,7 @@ units:
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_DEEP_ITEM
     stats:
-      tu: 45
+      tu: 40
       stamina: 30
       health: 25
       bravery: 50
@@ -298,7 +298,7 @@ units:
     moveSound: 15
     intelligence: 2
     aggression: 1
-    spotter: 1
+    spotter: 0
     sniper: 20
     canSurrender: true
 #security faction
@@ -315,7 +315,7 @@ units:
       throwing: 30
       melee: 40
       strength: 35
-      psiStrength: 0
+      psiStrength: 30
       psiSkill: 0
       mana: 40
     armor: STR_SSPGUARD_ARMOR
@@ -340,7 +340,7 @@ units:
       throwing: 30
       melee: 50
       strength: 40
-      psiStrength: 0
+      psiStrength: 30
       psiSkill: 0
       mana: 40
     armor: STR_SSPOFFICER_ARMOR
@@ -464,7 +464,7 @@ units:
       firing: 0
       throwing: 0
       strength: 110
-      psiStrength: 10
+      psiStrength: 20
       psiSkill: 0
       melee: 100
       mana: 80
@@ -493,7 +493,7 @@ units:
       firing: 0
       throwing: 0
       strength: 60
-      psiStrength: 0
+      psiStrength: 20
       psiSkill: 0
       melee: 80
       mana: 80
@@ -501,7 +501,7 @@ units:
     armor: STR_ZOMBIE_ARMOR
     standHeight: 18
     kneelHeight: 18
-    value: 0
+    value: 5
     intelligence: 0
     aggression: 8
     isLeeroyJenkins: true
@@ -521,7 +521,7 @@ units:
       firing: 50
       throwing: 0
       strength: 10
-      psiStrength: 15
+      psiStrength: 20
       psiSkill: 0
       melee: 10
       mana: 80
@@ -580,7 +580,7 @@ units:
       firing: 70
       throwing: 0
       strength: 10
-      psiStrength: 0
+      psiStrength: 20
       psiSkill: 0
       melee: 45
       mana: 80
@@ -598,20 +598,49 @@ units:
     builtInWeaponSets:
       - - STR_ROBOSPHERE_WEAPON
 #simulated
+  - type: STR_HOLOMUTON
+    race: STR_SIMULATED
+    rank: STR_RANK_SIMULATED
+    liveAlien: STR_IRS_SUBSIDY
+    stats:
+      tu: 60
+      stamina: 90
+      health: 130
+      bravery: 80
+      reactions: 65
+      firing: 60
+      throwing: 40
+      strength: 70
+      psiStrength: 20
+      psiSkill: 0
+      melee: 75
+      mana: 25
+    armor: STR_HOLOMUTON_ARMOR
+    standHeight: 22
+    kneelHeight: 16
+    value: 10
+    deathSound: 6
+    intelligence: 3
+    aggression: 2
+    spotter: 1
+    sniper: 50
+    builtInWeaponSets:
+      - - STR_HOLOMUTON_WEAPON
+        - STR_IRS_SUBSIDY
+        - STR_IRS_SUBSIDY
   - type: STR_HOLOSECTOID
     race: STR_SIMULATED
     rank: STR_RANK_SIMULATED
-    liveAlien: ""
-    capturable: false
+    liveAlien: STR_IRS_SUBSIDY
     stats:
-      tu: 55
-      stamina: 90
+      tu: 50
+      stamina: 80
       health: 30
       bravery: 80
-      reactions: 65
+      reactions: 55
       firing: 50
-      throwing: 50
-      strength: 10
+      throwing: 30
+      strength: 15
       psiStrength: 60
       psiSkill: 0
       melee: 10
@@ -627,6 +656,37 @@ units:
     sniper: 50
     builtInWeaponSets:
       - - STR_HOLOSECTOID_WEAPON
+        - STR_IRS_SUBSIDY
+  - type: STR_HOLOVIPER
+    race: STR_SIMULATED
+    rank: STR_RANK_SIMULATED
+    liveAlien: STR_IRS_SUBSIDY
+    stats:
+      tu: 65
+      stamina: 70
+      health: 50
+      bravery: 80
+      reactions: 50
+      firing: 60
+      throwing: 30
+      strength: 45
+      psiStrength: 30
+      psiSkill: 0
+      melee: 65
+      mana: 25
+    armor: STR_HOLOVIPER_ARMOR
+    standHeight: 18
+    kneelHeight: 16
+    value: 10
+    deathSound: 8
+    intelligence: 3
+    aggression: 1
+    spotter: 1
+    sniper: 50
+    builtInWeaponSets:
+      - - STR_HOLOVIPER_WEAPON
+        - STR_IRS_SUBSIDY
+        - STR_IRS_SUBSIDY
 #clients
   - type: STR_CLIENT_1
     race: STR_RACE_CLIENT
