@@ -168,6 +168,12 @@ extraSprites:
       223: Resources/Items/Builtins/holorifle_bigob.png
       224: Resources/Items/Builtins/hololauncher_bigob.png
       225: Resources/Items/Materials/seclicense_bigob.png
+      226: Resources/Items/Laser/prototype_rifle_bigob.png
+      227: Resources/Items/Laser/Ammo/prototype_ammo_bigob.png
+      228: Resources/Items/Laser/prototype_erifle_bigob.png
+      229: Resources/Items/Laser/prototype_pistol_bigob.png
+      230: Resources/Items/Laser/prototype_epistol_bigob.png
+      231: Resources/Items/Laser/Ammo/prototype_pistol_ammo_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -276,6 +282,12 @@ extraSprites:
       202: Resources/Items/Multi/marsball_floorob.png
       203: Resources/Factions/Holograms/holomuton_floorob.png
       204: Resources/Factions/Holograms/holoviper_floorob.png
+      205: Resources/Items/Laser/prototype_rifle_floorob.png
+      206: Resources/Items/Laser/Ammo/prototype_ammo_floorob.png
+      207: Resources/Items/Laser/prototype_erifle_floorob.png
+      208: Resources/Items/Laser/prototype_epistol_floorob.png
+      209: Resources/Items/Laser/prototype_pistol_floorob.png
+      210: Resources/Items/Laser/Ammo/prototype_pistol_ammo_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -330,6 +342,10 @@ extraSprites:
       472: Resources/Items/Multi/marsball_handob.png
       480: Resources/Items/Builtins/holorifle_handob.png
       488: Resources/Items/Builtins/hololauncher_handob.png
+      496: Resources/Items/Laser/prototype_rifle_handob.png
+      504: Resources/Items/Laser/prototype_erifle_handob.png
+      512: Resources/Items/Laser/prototype_epistol_handob.png
+      520: Resources/Items/Laser/prototype_pistol_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
@@ -449,6 +465,7 @@ extraSprites:
       770: Resources/Animations/Projectiles/bubblered_bullet.png
       805: Resources/Animations/Projectiles/flask_bullet.png
       840: Resources/Animations/Projectiles/ball_bullet.png
+      875: Resources/Animations/Projectiles/bomb_bullet.png
 
 #paperdolls
 # human
@@ -717,9 +734,9 @@ extraSprites:
       0: Resources/Factions/Netrunners/skiptracer_sprite.png
 
   - typeSingle: WIRETAPPER_CPAL
-    fileSingle: Resources/Factions/Netrunners/skiptracer_CPAL.png
+    fileSingle: Resources/Factions/Netrunners/wiretapper_CPAL.png
   - typeSingle: WIRETAPPER.SPK
-    fileSingle: Resources/Factions/Netrunners/skiptracer_inventory.png
+    fileSingle: Resources/Factions/Netrunners/wiretapper_inventory.png
   - type: WIRETAPPER.PCK
     subX: 32
     subY: 40

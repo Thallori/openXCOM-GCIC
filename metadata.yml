@@ -7,3 +7,4 @@ isMaster: true
 master: xcom1
 requiredExtendedVersion: "8.5"
 reservedSpace: 3
+resourceConfig: transparency.rul

@@ -446,7 +446,7 @@ ufopaedia:
     type_id: 6
   - id: STR_STOREROOM
     requires:
-      - STR_STOREROOM
+      - STR_STOREROOM_RESEARCH
     text: STR_STOREROOM_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
@@ -463,7 +463,7 @@ ufopaedia:
 
   - id: STR_HOLDING_CELLS
     requires:
-      - STR_HOLDING_CELLS
+      - STR_HOLDING_CELLS_RESEARCH
     text: STR_HOLDING_CELLS_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
@@ -1095,21 +1095,12 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     type_id: 4
 
-  - id: STR_SINGLESHOT_LASER_PISTOL_ELERIUM
-    requires:
-      - STR_SINGLESHOT_LASER_PISTOL
-      - STR_ELERIUM_CORE
-    text: STR_SINGLESHOT_LASER_PISTOL_ELERIUM_UP
-    section: STR_EQUIPMENT_UC
-    type_id: 4
-
   - id: STR_SINGLESHOT_LASER_PISTOL
     requires:
       - STR_SINGLESHOT_LASER_PISTOL
     text: STR_SINGLESHOT_LASER_PISTOL_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_SINGLESHOT_LASER_AMMO
     requires:
       - STR_SINGLESHOT_LASER_AMMO
@@ -1187,6 +1178,30 @@ ufopaedia:
       - STR_SKULLJACK
     text: STR_SKULLJACK_UP
     section: STR_EQUIPMENT_UC
+    type_id: 4
+# ours
+  - id: STR_GCIC_PROTOTYPE_LASER_PISTOL
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL
+    text: STR_GCIC_PROTOTYPE_LASER_PISTOL_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_GCIC_PROTOTYPE_LASER_RIFLE
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE
+    text: STR_GCIC_PROTOTYPE_LASER_RIFLE_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE
+    section: STR_NOT_AVAILABLE
     type_id: 4
 # launchers
   - id: STR_WINDLASS_LAUNCHER
@@ -1604,6 +1619,34 @@ ufopaedia:
       width: 149
       height: 200
     image_id: SKIPTRACER_CPAL
+
+  - id: STR_WIRETAPPERS
+    requires:
+      - STR_WIRETAPPER_PRIVATE
+    text: STR_WIRETAPPERS_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: WIRETAPPER_CPAL
+  - id: STR_WIRETAPPER_INTERVIEW
+    title: STR_WIRETAPPER_INTERVIEW_T
+    requires:
+      - STR_WIRETAPPER_INTERVIEW
+    text: STR_WIRETAPPER_INTERVIEW_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: WIRETAPPER_CPAL
 # ssp
   - id: STR_SSPGUARDS
     requires:
@@ -1787,6 +1830,11 @@ ufopaedia:
   - id: STR_SKIPTRACER_ARMOR
     requires:
       - STR_SKIPTRACER_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_WIRETAPPER_ARMOR
+    requires:
+      - STR_WIRETAPPER_ARMOR
     section: STR_COMPETITORS_UC
     type_id: 5
   - id: STR_SSPGUARD_ARMOR

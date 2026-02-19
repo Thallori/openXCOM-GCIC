@@ -698,7 +698,7 @@ alienDeployments:
       title: STR_TRADE_MEETING_3
       music: HACKER_INTRO
       palette: 2
-    #unlockedResearch: STR_TRG_ST_PREQ
+    unlockedResearch: STR_TRG_WT_PREQ
     minShade: 6
     terrains:
       - CLUB2

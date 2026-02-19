@@ -57,7 +57,7 @@ facilities:
   - type: STR_STOREROOM
     requires:
       - STR_VENDOR_BUILDER
-      - STR_STOREROOM
+      - STR_STOREROOM_RESEARCH
     leavesBehindOnSell:
       - STR_STORAGE_1
     fakeUnderwater: 0
@@ -105,7 +105,7 @@ facilities:
 
 #   - type: STR_REMEDITION_OFFICE
 #     requires:
-#       - STR_REMEDITION_OFFICE
+#       - STR_REMEDITION_OFFICE_RESEARCH
 #     provideBaseFunc: [STR_SERVICE_PROJECTS] #drone personal projects
 # #    spriteShape: 1
 # #    spriteFacility: 303
@@ -138,7 +138,7 @@ facilities:
   - type: STR_HOLDING_CELLS
     requires:
       - STR_VENDOR_BUILDER
-      - STR_HOLDING_CELLS
+      - STR_HOLDING_CELLS_RESEARCH
     spriteShape: 1
     spriteFacility: 304
     buildTime: 16

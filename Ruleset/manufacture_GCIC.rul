@@ -168,7 +168,7 @@ manufacture:
     requiredItems:
       STR_SHARES_GR: 4
 
-#ammo
+#weapons and ammo
   - name: STR_45_AMMO
     category: STR_AMMO_MANUCAT
     requires:
@@ -266,8 +266,49 @@ manufacture:
     category: STR_AMMO_MANUCAT
     requires:
       - STR_LASER_AMMO_PRINTING
+      - STR_SINGLESHOT_LASER_PISTOL
     time: 4
     cost: 80
+    refund: true
+
+  - name: STR_GCIC_PROTOTYPE_LASER_PISTOL
+    category: STR_EQUIPMENT_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL
+    time: 500
+    cost: 8000
+    refund: true
+
+  - name: STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
+    category: STR_AMMO_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL
+    time: 4
+    cost: 90
+    refund: true
+
+  - name: STR_GCIC_PROTOTYPE_LASER_RIFLE
+    category: STR_EQUIPMENT_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE
+    time: 800
+    cost: 10000
+    refund: true
+
+  - name: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
+    category: STR_AMMO_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE
+    time: 4
+    cost: 100
     refund: true
 
   - name: STR_WINDLASS_LAUNCHER_AMMO
@@ -379,6 +420,32 @@ manufacture:
       STR_ELERIUM_CORE: 1
     producedItems:
       STR_SINGLESHOT_LASER_PISTOL_ELERIUM: 1
+
+  - name: STR_GCIC_PROTOTYPE_LASER_PISTOL_MANU
+    category: STR_UPGRADES_MANUCAT
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL
+      - STR_ELERIUM_CORE
+    time: 12
+    refund: true
+    requiredItems:
+      STR_GCIC_PROTOTYPE_LASER_PISTOL: 1
+      STR_ELERIUM_CORE: 1
+    producedItems:
+      STR_GCIC_PROTOTYPE_LASER_PISTOL_ELERIUM: 1
+
+  - name: STR_GCIC_PROTOTYPE_LASER_RIFLE_MANU
+    category: STR_UPGRADES_MANUCAT
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE
+      - STR_ELERIUM_CORE
+    time: 12
+    refund: true
+    requiredItems:
+      STR_GCIC_PROTOTYPE_LASER_RIFLE: 1
+      STR_ELERIUM_CORE: 1
+    producedItems:
+      STR_GCIC_PROTOTYPE_LASER_RIFLE_ELERIUM: 1
 
 #expansions
   - name: STR_SCIENTIST_MANU
@@ -608,14 +675,27 @@ manufacture:
     requires:
       - STR_SKIPTRACER_INTERVIEW
     time: 96
-    points: -20
-    cost: -12000
+    points: -25
+    cost: -15000
     refund: true
     requiredItems:
       STR_SKIPTRACER_PRIVATE: 1
     producedItems:
       STR_PERSONAL_DATA: 1
       STR_SECRET_DATA: 3
+  - name: STR_EX_WIRETAPPER
+    category: STR_EXTORT_MANUCAT
+    requires:
+      - STR_WIRETAPPER_INTERVIEW
+    time: 120
+    points: -30
+    cost: -28000
+    refund: true
+    requiredItems:
+      STR_WIRETAPPER_PRIVATE: 1
+    producedItems:
+      STR_PERSONAL_DATA: 5
+      STR_SECRET_DATA: 5
 
   - name: STR_EX_SSPGUARD
     category: STR_EXTORT_MANUCAT
@@ -712,7 +792,7 @@ manufacture:
   - name: STR_SALVAGE_SINGLESHOT_LASER_PISTOL_ELERIUM
     category: STR_SALVAGE_MANUCAT
     requires:
-      - STR_SINGLESHOT_LASER_PISTOL_ELERIUM
+      - STR_SINGLESHOT_LASER_PISTOL
     time: 12
     refund: true
     requiredItems:
@@ -796,4 +876,28 @@ manufacture:
     requiredItems:
       STR_XN_LASER_SHOTGUN: 1
     producedItems:
+      STR_ELERIUM_CORE: 1
+
+  - name: STR_SALVAGE_GCIC_PROTOTYPE_LASER_PISTOL_ELERIUM
+    category: STR_SALVAGE_MANUCAT
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL
+    time: 12
+    refund: true
+    requiredItems:
+      STR_GCIC_PROTOTYPE_LASER_PISTOL_ELERIUM: 1
+    producedItems:
+      STR_GCIC_PROTOTYPE_LASER_PISTOL: 1
+      STR_ELERIUM_CORE: 1
+
+  - name: STR_SALVAGE_GCIC_PROTOTYPE_LASER_RIFLE_ELERIUM
+    category: STR_SALVAGE_MANUCAT
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE
+    time: 12
+    refund: true
+    requiredItems:
+      STR_GCIC_PROTOTYPE_LASER_RIFLE_ELERIUM: 1
+    producedItems:
+      STR_GCIC_PROTOTYPE_LASER_RIFLE: 1
       STR_ELERIUM_CORE: 1

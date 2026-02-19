@@ -499,6 +499,9 @@ items:
     fireSound: 18
     hitSound: 133
     hitAnimation: 46
+    vaporColorSurface: 4
+    vaporDensitySurface: 6
+    vaporProbabilitySurface: 18
     invWidth: 1
     invHeight: 3
     battleType: 1
@@ -541,6 +544,9 @@ items:
     fireSound: 132
     hitSound: 133
     hitAnimation: 46
+    vaporColorSurface: 4
+    vaporDensitySurface: 6
+    vaporProbabilitySurface: 20
     invWidth: 1
     invHeight: 2
     battleType: 1
@@ -582,6 +588,9 @@ items:
     hitSound: 0
     hitAnimation: 88
     explosionHitSound: 116
+    vaporColorSurface: 5
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 50
     invWidth: 2
     invHeight: 2
     battleType: 1
@@ -1143,6 +1152,9 @@ items:
     bulletSprite: 22
     explosionHitSound: 130
     hitAnimation: 0
+    vaporColorSurface: 0
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
     battleType: 2
     weight: 2
     clipSize: 10
@@ -1519,6 +1531,7 @@ items:
 
   - type: STR_SINGLESHOT_LASER_PISTOL_ELERIUM
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    ufopediaType: STR_SINGLESHOT_LASER_PISTOL_ELERIUM
     requiresBuy:
       - STR_TODO
       - STR_VENDOR_SSP
@@ -1578,7 +1591,7 @@ items:
     invWidth: 1
     invHeight: 2
     battleType: 1
-    weight: 6
+    weight: 4
     compatibleAmmo:
       - STR_SINGLESHOT_LASER_AMMO
       - STR_MULTISHOT_LASER_AMMO
@@ -1616,7 +1629,7 @@ items:
     invWidth: 1
     invHeight: 2
     battleType: 1
-    weight: 6
+    weight: 4
     compatibleAmmo:
       - STR_SINGLESHOT_LASER_AMMO
       - STR_MULTISHOT_LASER_AMMO
@@ -1921,7 +1934,7 @@ items:
     tuAuto: 40
     snapRange: 12
     aimRange: 18
-    autoRange: 4
+    autoRange: 8
     dropoff: 2
     kneelBonus: 120
     twoHanded: true
@@ -1994,9 +2007,6 @@ items:
     fireSound: 11
     hitSound: 19
     hitAnimation: -1
-    vaporColorSurface: 2
-    vaporDensitySurface: 10
-    vaporProbabilitySurface: 15
     invWidth: 2
     invHeight: 3
     battleType: 1
@@ -2179,6 +2189,234 @@ items:
     experienceTrainingMode: 26
     attraction: 10
     armor: 50
+# ours
+  - type: STR_GCIC_PROTOTYPE_LASER_PISTOL_ELERIUM
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
+    ufopediaType: STR_GCIC_PROTOTYPE_LASER_PISTOL
+    requiresBuy:
+      - STR_TODO
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL
+    size: 0.1
+    costBuy: 205000
+    costSell: 204000
+    bigSprite: 230
+    floorSprite: 208
+    handSprite: 512
+    bulletSprite: 11
+    bulletSpeed: 30
+    fireSound: 121
+    hitSound: 19
+    hitAnimation: 36
+    invWidth: 1
+    invHeight: 2
+    battleType: 1
+    weight: 8
+    clipSize: -1
+    power: 30
+    damageBonus:
+      reactions: 0.05
+    damageType: 4
+    damageAlter:
+      ToWound: 0.025
+      RandomWound: false
+      FireThreshold: 40
+      ToTile: 0.65
+    accuracySnap: 65
+    accuracyAimed: 70
+    accuracyAuto: 50
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.30
+    tuSnap: 20
+    tuAimed: 30
+    tuAuto: 25
+    snapRange: 14
+    aimRange: 20
+    autoRange: 7
+    autoShots: 2
+    dropoff: 3
+    kneelBonus: 110
+    attraction: 0
+    armor: 120
+  - type: STR_GCIC_PROTOTYPE_LASER_PISTOL
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL
+    size: 0.1
+    costBuy: 5000
+    costSell: 4000
+    bigSprite: 229
+    floorSprite: 209
+    handSprite: 520
+    bulletSprite: 11
+    bulletSpeed: 30
+    fireSound: 121
+    reloadSound: 125
+    invWidth: 1
+    invHeight: 2
+    battleType: 1
+    weight: 3
+    compatibleAmmo:
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
+    accuracySnap: 65
+    accuracyAimed: 70
+    accuracyAuto: 50
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.30
+    tuSnap: 20
+    tuAimed: 30
+    tuAuto: 25
+    snapRange: 14
+    aimRange: 20
+    autoRange: 7
+    autoShots: 2
+    dropoff: 3
+    kneelBonus: 110
+    attraction: 0
+    armor: 40
+  - type: STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_VACUUM_RATED_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL
+    size: 0.01
+    costBuy: 35
+    costSell: 25
+    transferTime: 4
+    bigSprite: 231
+    floorSprite: 210
+    hitSound: 19
+    hitAnimation: 36
+    battleType: 2
+    weight: 2
+    clipSize: 4
+    power: 28
+    damageBonus:
+      reactions: 0.05
+    damageType: 4
+    damageAlter:
+      ToWound: 0.025
+      RandomWound: false
+      FireThreshold: 40
+      ToTile: 0.65
+
+  - type: STR_GCIC_PROTOTYPE_LASER_RIFLE_ELERIUM
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
+    ufopediaType: STR_GCIC_PROTOTYPE_LASER_RIFLE
+    requiresBuy:
+      - STR_TODO
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE
+    size: 0.2
+    costBuy: 208000
+    costSell: 206000
+    bigSprite: 228
+    floorSprite: 207
+    handSprite: 504
+    bulletSprite: 11
+    bulletSpeed: 30
+    hitSound: 19
+    hitAnimation: 36
+    fireSound: 11
+    invWidth: 1
+    invHeight: 3
+    battleType: 1
+    weight: 17
+    clipSize: -1
+    power: 40
+    damageBonus:
+      firing: 0.10
+    damageType: 4
+    damageAlter:
+      ArmorEffectiveness: 0.90
+      ToWound: 0.025
+      RandomWound: false
+      FireThreshold: 75
+      ToTile: 0.65
+    accuracySnap: 70
+    accuracyAimed: 110
+    accuracyAuto: 60
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.10
+    tuSnap: 40
+    tuAimed: 70
+    tuAuto: 55
+    snapRange: 16
+    aimRange: 30
+    autoRange: 8
+    dropoff: 2
+    kneelBonus: 120
+    twoHanded: true
+    oneHandedPenalty: 50
+    attraction: 0
+    armor: 120
+  - type: STR_GCIC_PROTOTYPE_LASER_RIFLE
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE
+    size: 0.2
+    costBuy: 8000
+    costSell: 6000
+    bigSprite: 226
+    floorSprite: 205
+    handSprite: 496
+    bulletSprite: 11
+    bulletSpeed: 30
+    fireSound: 11
+    reloadSound: 125
+    invWidth: 1
+    invHeight: 3
+    battleType: 1
+    weight: 12
+    compatibleAmmo:
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
+    accuracySnap: 70
+    accuracyAimed: 110
+    accuracyAuto: 60
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.10
+    tuSnap: 40
+    tuAimed: 70
+    tuAuto: 55
+    snapRange: 16
+    aimRange: 30
+    autoRange: 8
+    dropoff: 2
+    kneelBonus: 120
+    twoHanded: true
+    oneHandedPenalty: 50
+    attraction: 0
+    armor: 40
+  - type: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_RATED_CATEGORY, STR_VACUUM_RATED_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE
+    size: 0.01
+    costBuy: 40
+    costSell: 30
+    transferTime: 4
+    bigSprite: 227
+    floorSprite: 206
+    hitSound: 19
+    hitAnimation: 36
+    battleType: 2
+    weight: 3
+    clipSize: 5
+    power: 38
+    damageBonus:
+      firing: 0.10
+    damageType: 4
+    damageAlter:
+      ArmorEffectiveness: 0.90
+      ToWound: 0.025
+      RandomWound: false
+      FireThreshold: 75
+      ToTile: 0.65
 #explosives
 # launchers
   - type: STR_WINDLASS_LAUNCHER
@@ -2193,9 +2431,12 @@ items:
     bigSprite: 212
     floorSprite: 196
     handSprite: 456
-    bulletSprite: 0 #
+    bulletSprite: 25
     bulletSpeed: 5
     fireSound: 104
+    vaporColorSurface: 5
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
     invWidth: 1
     invHeight: 3
     battleType: 1
@@ -2232,7 +2473,6 @@ items:
     transferTime: 4
     bigSprite: 213
     floorSprite: 197
-    bulletSprite: 0
     hitSound: 13
     hitAnimation: 26
     spawnItem: STR_WINDLASS_GRENADE_NO_RECOVER
@@ -2329,6 +2569,9 @@ items:
     handSprite: 440
     hitAnimation: 96
     explosionHitSound: 134
+    vaporColorSurface: 0
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
     battleType: 4
     weight: 4
     power: 20

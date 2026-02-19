@@ -368,6 +368,8 @@ en-US:
 #actions
   STR_SNAP_MULTIPLE_SHORT: "Snap (x{0})"
   STR_AIMED_MULTIPLE_SHORT: "Aimed (x{0})"
+  STR_LINKED_SHOT_NAME: "Linked"
+  STR_LINKED_SHOT_NAME_SHORT: "Linked"
 
   STR_FASTBALL_ACTION: "Fastball!"
   STR_CURVEBALL_ACTION: "Curveball!"
@@ -747,6 +749,8 @@ en-US:
   STR_ACIDFLASK_MANU: "Acid Flask (x3)"
 
   STR_SSP_LASER_PISTOL_MANU: "UPGRADE: SSP Enforcer Laser Pistol (E)"
+  STR_GCIC_PROTOTYPE_LASER_PISTOL_MANU: "UPGRADE: Linked Laser Pistol (E)"
+  STR_GCIC_PROTOTYPE_LASER_RIFLE_MANU: "UPGRADE: Linked Laser Rifle (E)"
 
   STR_SCIENTIST_MANU: "EXPAND: Server Capacity"
   STR_ENGINEER_MANU: "EXPAND: Fabricator Capacity"
@@ -773,9 +777,12 @@ en-US:
   STR_SALVAGE_XN_LASER_MG: "SALVAGE: XN Volley Laser"
   STR_SALVAGE_XN_LASER_CANNON: "SALVAGE: XN Laser Cannon"
   STR_SALVAGE_XN_LASER_SHOTGUN: "SALVAGE: XN Prismray"
+  STR_SALVAGE_GCIC_PROTOTYPE_LASER_PISTOL_ELERIUM: "SALVAGE: Linked Laser Pistol (E)"
+  STR_SALVAGE_GCIC_PROTOTYPE_LASER_RIFLE_ELERIUM: "SALVAGE: Linked Laser Rifle (E)"
 
   STR_EX_FREELANCER: "EXTORT: Netrunner Freelancer"
   STR_EX_SKIPTRACER: "EXTORT: Netrunner Skiptracer"
+  STR_EX_WIRETAPPER: "EXTORT: Netrunner Wiretapper"
   STR_EX_SSPGUARD: "EXTORT: SSP Guard"
   STR_EX_SSPOFFICER: "EXTORT: SSP Officer"
 
@@ -1035,6 +1042,8 @@ en-US:
   STR_REDOX_UP: "{NEWLINE}Rapid oxidizing and flagration chemicals. Readily sold by the litre due to cooking applications and pleasant side-effects experienced by all species with a nervous system. Higher purities are more difficult to source due to their use in industrial and arms sectors.{NEWLINE}{NEWLINE}Bypassing these market barriers will require fabrication for all but the most simple {ALT}chemical{ALT} and {ALT}incendary{ALT} applications."
   STR_LASER_AMMO_PRINTING: "NB Laser Cell Printing"
   STR_LASER_AMMO_PRINTING_UP: "{NEWLINE}Normal printers do not have the resolution to build the supercapacitors (SC) that form the backbone of all non-elerium based {ALT}energy weapons{ALT}. However, we can make obsolete nanoball (NB) battery cells by printing the casing and filling it with an order of carbon-aggregate from any solar panel kiosk.{NEWLINE}{NEWLINE}NB-style cells do not have the {ALT}capacity{ALT} of their later SC counterparts, but are a close match in terms of power and reliability."
+  STR_LASER_WEAPONS_CONSTRUCTION: "Laser Weapons Printing"
+  STR_LASER_WEAPONS_CONSTRUCTION_UP: "" #todo
   STR_BIOMEDICAL: "Biologics"
   STR_BIOMEDICAL_UP: "{NEWLINE}Most in-system species have been modified to be compatible with the native enviroment (oxygen, water, sunlight) and so share a few biological mechanisms. This overlap is well documented, but hard data is usually redacted under corporate privacy laws.{NEWLINE}{NEWLINE}With access to {ALT}medical facilities{ALT} we can perform self-tests and sort published theories into proven facts. Reproducing these {ALT}poisons{ALT} and {ALT}medicines{ALT} infringes on copyrights, preventing mass-printing schemes."
   STR_BIOCODING: "Biocoding"
@@ -1054,12 +1063,14 @@ en-US:
   STR_DEPOT_UP: "Liminal multi-purpose backrooms. Provides unoptimized spaces for equipment, ancillaries, and visitors. Can be built-over to save excavation time.{NEWLINE}{NEWLINE}> Storage: 15{NEWLINE}> Accommodations: 8{NEWLINE}> Cells: 1"
   STR_STORAGE_1: "Storage Bay"
   STR_STORAGE_1_UP: "Generalized storage for the automatic loading/unloading of physical assets. Climate controlled rooms keep both unstable and perishable goods safe.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 50"
+  STR_STOREROOM_RESEARCH: "Profitable Storage Expansion"
   STR_STOREROOM: "P&P Bay"
   STR_STOREROOM_UP: "Requires: 1x SJB Permit{NEWLINE}{NEWLINE}All-Shape, All-Safe, All-Secure. Pick and place automated sorting and storage for objects big and small. Classifier bots bid on local jobs during downtime to provide factional income.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 100"
   STR_GARAGE: "Docking Pad"
   STR_GARAGE_UP: "Every APS craft requires its own pad for parking, recharging, and repair. All docks are built with extra space for storage and multi-purpose maintenance.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 5{NEWLINE}> Workspace: 1"
   STR_BUNK_RACKS: "Bunk Racks"
   STR_BUNK_RACKS_UP: "A dedicated space for ancillaries to take care of their bodily needs in tweleve hour rotations. Fulfills the needs for sleep, property, and hygiene.{NEWLINE}{NEWLINE}> Accommodations: 24"
+  STR_HOLDING_CELLS_RESEARCH: "Specimen Containment Expansion"
   STR_HOLDING_CELLS: "Holding Cells"
   STR_HOLDING_CELLS_UP: "Illegally captured subjects will be placed in temporary confinement until sufficent data is accrued. Specimens may be released without consequence.{NEWLINE}{NEWLINE}> Cells: 8"
   STR_LMB_LOCK: "(medi-bay unlicensed)"
@@ -1296,7 +1307,6 @@ en-US:
   STR_CHEM_SMG_AMMO3: "Smoke Bottle"
 # laser
   STR_SINGLESHOT_LASER_PISTOL_ELERIUM: "SSP Enforcer Laser Pistol (E)"
-  STR_SINGLESHOT_LASER_PISTOL_ELERIUM_UP: "Unlimited power in the palm of your hand. Never again worry about those harrowing moments between charge cells and take in the simple joys of consequence-free lasing."
   STR_SINGLESHOT_LASER_PISTOL_CODED: "SSP Enforcer Laser Pistol (¤)"
   STR_SINGLESHOT_LASER_PISTOL: "SSP Enforcer Laser Pistol"
   STR_SINGLESHOT_LASER_PISTOL_UP: "Designed for professionals and beginners alike, there's no laser pistol more trusted than the Enforcer. Optimized for standard SuperCapacitor-9 cells, low weight, and safety. For the real enthusiast, try our elerium core variant."
@@ -1319,6 +1329,15 @@ en-US:
   STR_XN_LASER_SHOTGUN_UP: "The first human attempt at creating the mythical laser shotgun. Beams capable of burning through an inch of steel are split and scattered into unpleasantly warm light.{NEWLINE}{NEWLINE}Unique; Salvage: 1x Elerium"
   STR_SKULLJACK: "XN Skulljack"
   STR_SKULLJACK_UP: "On-site implant cracking tool, previously capable of penetrating the Republic's psi-networks. Encryption tech has improved since then, but the brutality of the recieving end still leaves a mind scrambled.{NEWLINE}{NEWLINE}One charge per operation.{NEWLINE}{NEWLINE}Penetration: +90%; Lethal -90%{NEWLINE}Morale/Resiliance Damage: +100%"
+# ours
+  STR_GCIC_PROTOTYPE_LASER_PISTOL_ELERIUM: "Linked Laser Pistol (E)"
+  STR_GCIC_PROTOTYPE_LASER_PISTOL: "Linked Laser Pistol"
+  STR_GCIC_PROTOTYPE_LASER_PISTOL_UP: "Lightweight and built without expensive properitary parts. We are the hum of the capacitor, the light in the optics, the heat of fire."
+  STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1: "NB-2 Linked Pistol Cell"
+  STR_GCIC_PROTOTYPE_LASER_RIFLE_ELERIUM: "Linked Laser Rifle (E)"
+  STR_GCIC_PROTOTYPE_LASER_RIFLE: "Linked Laser Rifle"
+  STR_GCIC_PROTOTYPE_LASER_RIFLE_UP: "Optronically enmeshed weapon, optimized for uncracked drones and commercial printers. Our network reaches into and fills this new shell.{NEWLINE}{NEWLINE}Penetration: +10%"
+  STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1: "NB-2 Linked Rifle Cell"
 # launchers
   STR_WINDLASS_LAUNCHER: "HRA Windlass Launcher" #historical re-enactment society
   STR_WINDLASS_LAUNCHER_UP: "First used in 1915, this World War I era catapult is handcrafted from non-engineered pine and traditionally forged pig iron. A splendid way to launch hand grenades from the bottom of the trenches to the top of your mantlepiece.{NEWLINE}{NEWLINE}As with all genuine articles from The Historical Re-Enactment Society, The Windlass comes stamped with a certificate of authenticity."
@@ -1501,7 +1520,14 @@ en-US:
   STR_SKIPTRACER_ARMOR: "Skiptracer Analysis"
   STR_SKIPTRACER_INTERVIEW: "INTERVIEW: Skiptracer"
   STR_SKIPTRACER_INTERVIEW_T: "I/Skiptracer"
-  STR_SKIPTRACER_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'I don't think being locked in a box is going make me tell you that.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'You could try being a nicer. Even the elders knew how dangle incentives.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'Really? How about letting me out? If it helps, I can make it worth your while. I've got some cyptochits I'll give you the address for. Completely untracable.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 30 Liquidity"
+  STR_SKIPTRACER_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'I don't think being locked in a box is going make me tell you that.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'You could try being a nicer. Even the elders knew how dangle incentives.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'Really? How about letting me out? If it helps, I can make it worth your while. I've got some cyptochits I'll give you the address for. Completely untracable.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 25 Liquidity"
+  STR_WIRETAPPER_PRIVATE: "Netrunner Wiretapper"
+  STR_WIRETAPPERS: "Wiretappers"
+  STR_WIRETAPPERS_UP: "Self-proclaimed wizards of organo-machine interfacing, sensation malware, and brute-force psionic intrusion methods. Often hired to retrieve bionically encoded data, whether encrypted in implants or old-fashioned memories.{NEWLINE}{NEWLINE}The most successful specimens end up possessing far more information than they are comfortable with, which makes them more likely to engage in recreational memory deletion.{NEWLINE}{NEWLINE}PROCESSED: Medical Cyberware{NEWLINE}RISK CLASS: Conventional"
+  STR_WIRETAPPER_ARMOR: "Wiretapper Analysis"
+  STR_WIRETAPPER_INTERVIEW: "INTERVIEW: Wiretapper"
+  STR_WIRETAPPER_INTERVIEW_T: "I/Wiretapper"
+  STR_WIRETAPPER_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'I think the last time I knew that was the sixties. Do drones remember the sixties?'{NEWLINE}{NEWLINE}[...]{NEWLINE}'Of course I was a kid, probably even had legs and dreams. Jerkass. Hey, got a calculator back there?'{NEWLINE}{NEWLINE}[...]{NEWLINE}'Listen, I make bad life choices. Sometimes they come back to bite me. Sometimes they save me. I think I can part with five mistakes and still be feared. How's that sound?'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 30 Liquidity"
 
   STR_SSP: "SSP"
   STR_SSPGUARD_PRIVATE: "SSP Guard"
@@ -1942,6 +1968,7 @@ en-US:
 # netrunners
   STR_TRG_FL_PREQ: "(freelancer collected)"
   STR_TRG_ST_PREQ: "(skiptracer collected)"
+  STR_TRG_WT_PREQ: "(wiretapper collected)"
 # ssp
   STR_TRG_SG_PREQ: "(guard collected)"
   STR_TRG_SO_PREQ: "(officer collected)"

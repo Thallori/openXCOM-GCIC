@@ -890,7 +890,7 @@ armors:
       targetWeightAsHostile: 500
 
   - type: STR_WIRETAPPER_ARMOR
-    ufopediaType: STR_SKIPTRACER_ARMOR
+    ufopediaType: STR_WIRETAPPER_ARMOR
     spriteInv: WIRETAPPER.SPK
     spriteSheet: WIRETAPPER.PCK
     # spriteFaceGroup: 6

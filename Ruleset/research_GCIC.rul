@@ -393,6 +393,20 @@ research:
     cost: 5
     unlocks:
       - STR_SINGLESHOT_LASER_AMMO
+  - name: STR_LASER_WEAPONS_CONSTRUCTION
+    dependencies:
+      - STR_VENDOR_PRINTER
+      - STR_LASER_AMMO_PRINTING
+      - STR_PRINTER
+    cost: 50
+    getOneFree:
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE
+    spawnedItemList:
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
+
   - name: STR_BIOMEDICAL
     requiresBaseFunc:
       - STR_SERVICE_MEDICAL
@@ -459,16 +473,16 @@ research:
     getOneFree:
       - STR_STIM_MORNING
 #facilities
-  - name: STR_STOREROOM
+  - name: STR_STOREROOM_RESEARCH
     dependencies:
       - STR_SJB_LICENSE
       - STR_VENDOR_BUILDER
     cost: 10
-  - name: STR_REMEDITION_OFFICE
+  - name: STR_REMEDITION_OFFICE_RESEARCH
     dependencies:
       - STR_TODO
     cost: 15
-  - name: STR_HOLDING_CELLS
+  - name: STR_HOLDING_CELLS_RESEARCH
     dependencies:
       - STR_FORBIDDEN_OPERATIONS
       - STR_VENDOR_BUILDER
@@ -649,16 +663,11 @@ research:
     dependencies:
       - STR_SSP_SHOTGUN_CODED
 
-  - name: STR_SINGLESHOT_LASER_PISTOL_ELERIUM
-    lookup: STR_SINGLESHOT_LASER_PISTOL
-    dependencies:
-      - STR_SINGLESHOT_LASER_PISTOL_CODED
   - name: STR_SINGLESHOT_LASER_PISTOL_CODED
     lookup: STR_SINGLESHOT_LASER_PISTOL
     needItem: true
     cost: 4
     unlocks:
-      - STR_SINGLESHOT_LASER_PISTOL_ELERIUM
       - STR_SINGLESHOT_LASER_PISTOL
       - STR_BC_PREQ
       - STR_AL_PREQ
@@ -710,6 +719,20 @@ research:
       - STR_SKULLJACK
     needItem: true
     cost: 10
+# ours
+  - name: STR_GCIC_PROTOTYPE_LASER_PISTOL
+    dependencies:
+      - STR_LASER_WEAPONS_CONSTRUCTION
+    cost: 15
+    spawnedItemList:
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
+  - name: STR_GCIC_PROTOTYPE_LASER_RIFLE
+    dependencies:
+      - STR_LASER_WEAPONS_CONSTRUCTION
+    cost: 15
 # launchers
   - name: STR_WINDLASS_LAUNCHER
     needItem: true
@@ -938,6 +961,10 @@ research:
         - STR_XN_LASER_PISTOL
         - STR_XN_LASER_SMG
         - STR_XN_LASER_RIFLE
+      STR_TRG_WT_PREQ:
+        - STR_WIRETAPPER_PRIVATE
+        - STR_MARSBALL
+        - STR_SKULLJACK
       STR_TRG_SG_PREQ:
         - STR_SSPGUARD_PRIVATE
         - STR_45_PISTOL
@@ -997,6 +1024,8 @@ research:
         - STR_FREELANCER_PRIVATE
       STR_TRG_ST_PREQ:
         - STR_SKIPTRACER_PRIVATE
+      STR_TRG_WT_PREQ:
+        - STR_WIRETAPPER_PRIVATE
 
   - name: STR_DATA_1_SSP
     requiresBaseFunc:
@@ -1155,6 +1184,23 @@ research:
   - name: STR_SKIPTRACER_ARMOR
     dependencies:
       - STR_SKIPTRACER_PRIVATE
+
+  - name: STR_WIRETAPPER_PRIVATE
+    dependencies:
+      - STR_LOCK
+  - name: STR_WIRETAPPER_INTERVIEW
+    neededItem: STR_WIRETAPPER_PRIVATE
+    needItem: true
+    destroyItem: false
+    cost: 11
+    unlocks:
+      - STR_WIRETAPPER_ARMOR
+      - STR_ALIEN_INTERVIEWED_FLAG
+    getOneFree:
+      - STR_WIRETAPPER_PRIVATE
+  - name: STR_WIRETAPPER_ARMOR
+    dependencies:
+      - STR_WIRETAPPER_PRIVATE
 # ssp
   - name: STR_SSPGUARD_PRIVATE
     dependencies:
@@ -1318,6 +1364,9 @@ research:
     dependencies:
       - STR_LOCK
   - name: STR_TRG_ST_PREQ #skiptracers
+    dependencies:
+      - STR_LOCK
+  - name: STR_TRG_WT_PREQ #wiretappers
     dependencies:
       - STR_LOCK
 # ssp
