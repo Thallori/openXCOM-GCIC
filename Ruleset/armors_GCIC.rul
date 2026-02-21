@@ -754,8 +754,8 @@ armors:
       - 1.0 #11 sonic
       - 0.0 #12 biological
       - 1.0 #13 psionic
-      - 1.0 #14 heat
-      - 1.0 #15 cold
+      - 0.0 #14 heat
+      - 0.0 #15 cold
     meleeDodge: *MeleeDodgePoor
     psiDefence: *PsiDefenseTypical
     recovery:
@@ -1157,8 +1157,11 @@ armors:
     corpseBattle:
       - STR_ROBOSPHERE_CORPSE
     createsMeleeThreat: false
+    allowInv: false
     bleedImmune: true
     zombiImmune: true
+    painImmune: true
+    fearImmune: true
     drawingRoutine: 19
     movementType: 1
     moveCost:
@@ -1178,6 +1181,58 @@ armors:
       energy: *EnergyRecoveryGood
     overKill: 1.5
     loftempsSet: [ 2 ]
+
+  - type: STR_CYFURB_ARMOR
+    spriteInv: CYFURB.SPK
+    spriteSheet: CYFURB.PCK
+    corpseBattle:
+      - CYFURB_CORPSE_1
+      - CYFURB_CORPSE_2
+      - CYFURB_CORPSE_3
+      - CYFURB_CORPSE_4
+    corpseGeo: STR_CYFURB_CORPSE
+    createsMeleeThreat: false
+    allowInv: false
+    bleedImmune: true
+    zombiImmune: true
+    painImmune: true
+    fearImmune: true
+    constantAnimation: true
+    drawingRoutine: 3
+    size: 2
+    movementType: 1
+    moveCost:
+      flyUpPercent: [100, 50]
+      flyDownPercent: [50, 0]
+    personalLight: 10
+    heatVision: 50
+    frontArmor: 10
+    sideArmor: 35
+    rearArmor: 35
+    underArmor: 15
+    damageModifier:
+      - 1.0 #0 none
+      - 0.7 #1 kinetic
+      - 0.5 #2 incendiary
+      - 0.7 #3 concussive
+      - 0.7 #4 radiant
+      - 0.7 #5 plasma
+      - 0.5 #6 blunt
+      - 1.0 #7 mechanical
+      - 0.7 #8 chemical
+      - 0.0 #9 smoke
+      - 1.2 #10 electric
+      - 0.7 #11 sonic
+      - 0.0 #12 biological
+      - 0.7 #13 psionic
+      - 0.0 #14 heat
+      - 0.0 #15 cold
+    meleeDodge: *MeleeDodgePoor
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      energy: *EnergyRecoveryGood
+    overKill: 1.5
+    loftempsSet: [ 92, 89, 90, 91 ]
 # simulated
   - type: STR_HOLOMUTON_ARMOR
     spriteInv: HOLOMUTON.SPK
@@ -1188,7 +1243,7 @@ armors:
     bleedImmune: true
     zombiImmune: true
     personalLight: 10
-    personalLightHostile: 5
+    personalLightHostile: 3
     heatVision: 20
     frontArmor: 0
     sideArmor: 0
@@ -1213,7 +1268,7 @@ armors:
     bleedImmune: true
     zombiImmune: true
     personalLight: 10
-    personalLightHostile: 5
+    personalLightHostile: 3
     heatVision: 20
     frontArmor: 0
     sideArmor: 0
@@ -1240,7 +1295,7 @@ armors:
     drawingRoutine: 6
     movementType: 2
     personalLight: 10
-    personalLightHostile: 5
+    personalLightHostile: 3
     heatVision: 20
     frontArmor: 0
     sideArmor: 0

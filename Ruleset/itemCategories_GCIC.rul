@@ -52,6 +52,9 @@
     hidden: true
   - type: STR_INFILTRATION_CATEGORY
     listOrder: 390
+  - type: STR_UNLICENSED_CATEGORY
+    listOrder: 395
+    hidden: true
   - type: STR_SECURITY_CATEGORY
     listOrder: 400
   - type: STR_MILITARY_CATEGORY
@@ -63,7 +66,7 @@
   - type: STR_AI_CATEGORY
     listOrder: 449
     hidden: true
-  - type: STR_VACUUM_RATED_CATEGORY
+  - type: STR_VACUUM_CATEGORY
     listOrder: 455
     hidden: true
   - type: STR_AQUATIC_CATEGORY

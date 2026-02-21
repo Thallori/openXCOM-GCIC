@@ -8,6 +8,7 @@ alienDeployments:
     height: 8
     terrains:
       - FOREST2
+      - DESERT2
 
   - type: STR_HOLOUFO_SMALL
     script: DEFAULT4X4
@@ -75,7 +76,7 @@ alienDeployments:
     forcePercentageOutsideUfo: true
     minShade: 15
     terrains:
-      - STUDIO0
+      - STUDIO0_FOREST
     music:
       - SEC1
     data:
@@ -311,7 +312,7 @@ alienDeployments:
       title: STR_RESCUE_FT
       music: BREACH_INTRO
       palette: 0
-    unlockedResearch: STR_TRG_RI_PREQ
+    unlockedResearch: STR_TRG_CYFURB_PREQ
     terrains:
       - HANGAR_DRONES_SIZE5
       - COMMERCIAL_DRONES_SIZE5
@@ -335,12 +336,13 @@ alienDeployments:
         percentageOutsideUfo: 50
         extraRandomItems: *ironExtra
         itemSets: *boosterSet
-      - alienRank: 13
+      - alienRank: 2
         lowQty: 1
         medQty: 1
         highQty: 2
         dQty: 1
-        percentageOutsideUfo: 50
+        percentageOutsideUfo: 100
+        customUnitType: STR_CYFURB
         itemSets: *AnchorEmptyInventory
 
   - type: STR_KNOCKOUT_MISSION
@@ -1202,7 +1204,7 @@ alienDeployments:
     music:
       - BLOOD2
     data:
-      - alienRank: 5
+      - alienRank: 0
         lowQty: 2
         medQty: 2
         highQty: 3

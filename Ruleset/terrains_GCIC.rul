@@ -136,7 +136,7 @@ terrains:
           STR_XN_CONTAINER_1:
             - [10, 11, 1]
 
-  - name: STUDIO0
+  - name: STUDIO0_FOREST
     script: STUDIO_UFO_FOREST
     mapDataSets:
       - BLANKS
@@ -430,7 +430,7 @@ terrains:
     mapDataSets: *commercialData
     mapBlocks: *commercialBlocks
   - name: COMMERCIAL_DRONES_1
-    civilianTypes: *hangarCivilians
+    civilianTypes: *commercialCivilians
     mapDataSets: *commercialData
     mapBlocks:
       - name: COMMERCIAL_02
@@ -959,5 +959,35 @@ terrains:
       - name: FOREST2_13S
       - name: FOREST2_14S
       - name: FOREST2_15
+        width: 20
+        length: 20
+
+  - name: DESERT2
+    mapDataSets:
+      - BLANKS
+      - FLORA_DESERT
+    mapBlocks:
+      - name: DESERT2_00LZ
+        groups: 1
+      - name: DESERT2_01LZ
+        groups: 1
+      - name: DESERT2_02S
+      - name: DESERT2_03S
+      - name: DESERT2_04S
+      - name: DESERT2_05S
+      - name: DESERT2_06S
+      - name: DESERT2_07S
+      - name: DESERT2_08S
+      - name: DESERT2_09S
+      - name: DESERT2_10
+        width: 20
+        length: 20
+      - name: DESERT2_11
+        width: 20
+        length: 20
+      - name: DESERT2_12S
+      - name: DESERT2_13S
+      - name: DESERT2_14S
+      - name: DESERT2_15
         width: 20
         length: 20

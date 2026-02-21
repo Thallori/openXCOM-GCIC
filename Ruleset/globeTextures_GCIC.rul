@@ -16,7 +16,7 @@ globe:
 
     - id: 2 #steppe/med habitation, warm
       terrain:
-        - name: FOREST2
+        - name: DESERT2
           weight: 50
 
     - id: 3 #rock mountain/low habitation, temperate
@@ -31,12 +31,12 @@ globe:
 
     - id: 5 #sand desert, hot
       terrain:
-          - name: FOREST2
+          - name: DESERT2
             weight: 40
 
     - id: 6 #deep desert, scorching
       terrain:
-          - name: FOREST2
+          - name: DESERT2
             weight: 30
 
     - id: 7 #polar, freezing
@@ -90,7 +90,7 @@ globe:
 
     - id: 16 #mediterranean/med habitation, warm
       terrain:
-          - name: FOREST2
+          - name: DESERT2
             weight: 10
 
     - id: 17 #rainforest/low habitation, warm
@@ -100,7 +100,7 @@ globe:
 
     - id: 18 #deepest desert, scorching
       terrain:
-          - name: FOREST2
+          - name: DESERT2
             weight: 70
 
     - id: 19 #snow mountain/low habitation, cold

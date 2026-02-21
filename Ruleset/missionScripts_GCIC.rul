@@ -281,13 +281,37 @@ missionScripts:
     startDelay: 30
     randomDelay: 43000
   - type: TradeMeeting2b
-    executionOdds: 22
+    executionOdds: 29
     researchTriggers:
       STR_NETRUNNERS_NETWORK: true
       STR_NETRUNNERS_SURVEY: true
     missionWeights:
       0:
         STR_TRADE_MEETING_2: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
+  - type: TradeMeeting3a
+    researchTriggers:
+      STR_NETRUNNERS_SURVEY: true
+#      STR_TODO: false
+    missionWeights:
+      0:
+        STR_TRADE_MEETING_3: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+  - type: TradeMeeting3b
+    executionOdds: 18
+    researchTriggers:
+      STR_NETRUNNERS_SURVEY: true
+#      STR_TODO: true
+    missionWeights:
+      0:
+        STR_TRADE_MEETING_3: 100
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30

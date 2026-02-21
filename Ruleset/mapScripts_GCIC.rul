@@ -239,11 +239,9 @@
 #rest of the owl
     - type: addBlock
       size: [2, 1]
-      label: 1
       conditionals: [-1]
     - type: addBlock
       size: 2
-      label: 2
       conditionals: [-2]
     - type: fillArea
 

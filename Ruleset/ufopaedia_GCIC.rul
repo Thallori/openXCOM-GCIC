@@ -246,6 +246,15 @@ ufopaedia:
     text_width: 180
     image_id: OPERATIONS1Z_CPAL
 
+  - id: STR_FREE_TRIAL_MISSIONS
+    requires:
+      - STR_FREE_TRIAL_MISSIONS
+    text: STR_FREE_TRIAL_MISSIONS_UP
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: OPERATIONS1Z_CPAL
+
   - id: STR_SECONDARY_OPERATIONS
     requires:
       - STR_SECONDARY_OPERATIONS
@@ -304,6 +313,14 @@ ufopaedia:
     requires:
       - STR_NETRUNNERS_NETWORK
     text: STR_NETRUNNERS_NETWORK_UP
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: OPERATIONS3_CPAL
+  - id: STR_NETRUNNERS_SURVEY
+    requires:
+      - STR_NETRUNNERS_SURVEY
+    text: STR_NETRUNNERS_SURVEY_UP
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
@@ -387,6 +404,15 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: NBCELL_CPAL
+
+  - id: STR_LASER_WEAPONS_CONSTRUCTION
+    requires:
+      - STR_LASER_AMMO_PRINTING
+    text: STR_LASER_WEAPONS_CONSTRUCTION_UP
+    section: STR_TECHNOLOGIES_UC
+    type_id: 7
+    text_width: 180
+    image_id: REDLASER_CPAL
 
   - id: STR_BIOMEDICAL
     requires:
@@ -1192,6 +1218,18 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     type_id: 4
 
+  - id: STR_GCIC_PROTOTYPE_LASER_SMG
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_SMG
+    text: STR_GCIC_PROTOTYPE_LASER_SMG_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_SMG
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
   - id: STR_GCIC_PROTOTYPE_LASER_RIFLE
     requires:
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
@@ -1201,6 +1239,18 @@ ufopaedia:
   - id: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
     requires:
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_GCIC_PROTOTYPE_LASER_SNIPER
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_SNIPER
+    text: STR_GCIC_PROTOTYPE_LASER_SNIPER_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_SNIPER_AMMO1
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_SNIPER
     section: STR_NOT_AVAILABLE
     type_id: 4
 # launchers
@@ -1757,6 +1807,19 @@ ufopaedia:
       width: 149
       height: 200
     image_id: ROBOSPHERE_CPAL
+  - id: STR_CYFURBS
+    requires:
+      - STR_CYFURB
+    text: STR_CYFURBS_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: CYFURB_CPAL
 # simulated
   - id: STR_HOLOMUTONS
     requires:
@@ -1869,6 +1932,12 @@ ufopaedia:
     requires:
       - STR_ROBOSPHERE_ARMOR
     text: STR_ROBOSPHERE_ARMOR_UP
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_CYFURB_ARMOR
+    requires:
+      - STR_CYFURB_ARMOR
+    text: STR_CYFURB_ARMOR_UP
     section: STR_COMPETITORS_UC
     type_id: 5
   - id: STR_HOLOMUTON_ARMOR

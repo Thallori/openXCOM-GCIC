@@ -31,7 +31,6 @@ alienRaces:
       - STR_RIPPER_PUBLIC #10
       - STR_RIPPER_PUBLIC #11
       - STR_RIPPER_PUBLIC #12
-      - STR_REFURBISHED_CYBERDISK #13
     retaliationAggression: -100
 
   - id: STR_NETRUNNERS
@@ -88,7 +87,7 @@ alienRaces:
   - id: STR_ROBOTS
     members:
       - STR_ROBOSPHERE #0
-      - STR_ROBOSPHERE #1
+      - STR_CYFURB #1
       - STR_ROBOSPHERE #2
       - STR_ROBOSPHERE #3
       - STR_ROBOSPHERE #4

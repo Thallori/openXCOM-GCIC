@@ -597,6 +597,37 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ROBOSPHERE_WEAPON
+  - type: STR_CYFURB
+    race: STR_ROBOTS
+    rank: STR_RANK_ROBOT
+    liveAlien: STR_BOUNTY_1
+    stats:
+      tu: 50
+      stamina: 70
+      health: 125
+      bravery: 100
+      reactions: 65
+      firing: 60
+      throwing: 0
+      strength: 60
+      psiStrength: 20
+      psiSkill: 0
+      melee: 0
+      mana: 80
+    armor: STR_CYFURB_ARMOR
+    standHeight: 12
+    kneelHeight: 12
+    floatHeight: 5
+    value: 35
+    deathSound: 23
+    moveSound: 40
+    intelligence: 1
+    aggression: 1
+    spotter: 0
+    specab: 1
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CYFURB_WEAPON
 #simulated
   - type: STR_HOLOMUTON
     race: STR_SIMULATED

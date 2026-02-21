@@ -42,7 +42,6 @@ alienMissions:
         trajectory: AM_SPAWN
         timer: 1000
         objective: true
-
   - type: STR_RESCUE_RR
 #    interruptResearch: STR_TODO
     despawnEvenIfTargeted: true
@@ -57,7 +56,6 @@ alienMissions:
         trajectory: AM_SPAWN
         timer: 1000
         objective: true
-
   - type: STR_KNOCKOUT_MISSION
 #    interruptResearch: STR_TODO
     despawnEvenIfTargeted: true
@@ -86,7 +84,6 @@ alienMissions:
         trajectory: AM_SPAWN
         timer: 1000
         objective: true
-
   - type: STR_TRADE_MEETING_1
     despawnEvenIfTargeted: true
     objective: 3
@@ -100,7 +97,6 @@ alienMissions:
         trajectory: AM_SPAWN
         timer: 1000
         objective: true
-
   - type: STR_TRADE_MEETING_2
     despawnEvenIfTargeted: true
     objective: 3
@@ -110,6 +106,19 @@ alienMissions:
           STR_NETRUNNERS: 100
     waves:
       - ufo: STR_TRADE_MEETING_2
+        count: 1
+        trajectory: AM_SPAWN
+        timer: 1000
+        objective: true
+  - type: STR_TRADE_MEETING_3
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 3 #cities
+    raceWeights:
+      0:
+          STR_NETRUNNERS: 100
+    waves:
+      - ufo: STR_TRADE_MEETING_3
         count: 1
         trajectory: AM_SPAWN
         timer: 1000
@@ -129,7 +138,6 @@ alienMissions:
         trajectory: AM_SPAWN
         timer: 1000
         objective: true
-
   - type: STR_GCIC_SABOTAGE_2
 #    interruptResearch: STR_TODO
     despawnEvenIfTargeted: true
@@ -158,7 +166,6 @@ alienMissions:
         trajectory: AM_SPAWN
         timer: 1000
         objective: true
-
   - type: STR_MEDI_MUCK_CHRYS
     despawnEvenIfTargeted: true
     objective: 3
@@ -186,7 +193,6 @@ alienMissions:
         trajectory: AM_SPAWN
         timer: 1000
         objective: true
-
   - type: STR_MEDI_CELA_CHRYS
     despawnEvenIfTargeted: true
     objective: 3

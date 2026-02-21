@@ -169,11 +169,18 @@ extraSprites:
       224: Resources/Items/Builtins/hololauncher_bigob.png
       225: Resources/Items/Materials/seclicense_bigob.png
       226: Resources/Items/Laser/prototype_rifle_bigob.png
-      227: Resources/Items/Laser/Ammo/prototype_ammo_bigob.png
+      227: Resources/Items/Laser/Ammo/prototype_rifle_ammo_bigob.png
       228: Resources/Items/Laser/prototype_erifle_bigob.png
       229: Resources/Items/Laser/prototype_pistol_bigob.png
       230: Resources/Items/Laser/prototype_epistol_bigob.png
       231: Resources/Items/Laser/Ammo/prototype_pistol_ammo_bigob.png
+      232: Resources/Items/Laser/prototype_esmg_bigob.png
+      233: Resources/Items/Laser/prototype_smg_bigob.png
+      234: Resources/Items/Laser/Ammo/prototype_smg_ammo_bigob.png
+      235: Resources/Factions/Netrunners/wiretapper_bigob.png
+      236: Resources/Items/Laser/prototype_esniper_bigob.png
+      237: Resources/Items/Laser/prototype_sniper_bigob.png
+      238: Resources/Items/Laser/Ammo/prototype_sniper_ammo_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -283,11 +290,22 @@ extraSprites:
       203: Resources/Factions/Holograms/holomuton_floorob.png
       204: Resources/Factions/Holograms/holoviper_floorob.png
       205: Resources/Items/Laser/prototype_rifle_floorob.png
-      206: Resources/Items/Laser/Ammo/prototype_ammo_floorob.png
+      206: Resources/Items/Laser/Ammo/prototype_rifle_ammo_floorob.png
       207: Resources/Items/Laser/prototype_erifle_floorob.png
       208: Resources/Items/Laser/prototype_epistol_floorob.png
       209: Resources/Items/Laser/prototype_pistol_floorob.png
       210: Resources/Items/Laser/Ammo/prototype_pistol_ammo_floorob.png
+      211: Resources/Items/Laser/prototype_esmg_floorob.png
+      212: Resources/Items/Laser/prototype_smg_floorob.png
+      213: Resources/Items/Laser/Ammo/prototype_smg_ammo_floorob.png
+      214: Resources/Factions/Netrunners/wiretapper_floorob.png
+      215: Resources/Factions/Robots/cyfurb1_floorob.png
+      216: Resources/Factions/Robots/cyfurb2_floorob.png
+      217: Resources/Factions/Robots/cyfurb3_floorob.png
+      218: Resources/Factions/Robots/cyfurb4_floorob.png
+      219: Resources/Items/Laser/prototype_esniper_floorob.png
+      220: Resources/Items/Laser/prototype_sniper_floorob.png
+      221: Resources/Items/Laser/Ammo/prototype_sniper_ammo_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -346,6 +364,10 @@ extraSprites:
       504: Resources/Items/Laser/prototype_erifle_handob.png
       512: Resources/Items/Laser/prototype_epistol_handob.png
       520: Resources/Items/Laser/prototype_pistol_handob.png
+      528: Resources/Items/Laser/prototype_esmg_handob.png
+      536: Resources/Items/Laser/prototype_smg_handob.png
+      544: Resources/Items/Laser/prototype_esniper_handob.png
+      552: Resources/Items/Laser/prototype_sniper_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
@@ -466,6 +488,7 @@ extraSprites:
       805: Resources/Animations/Projectiles/flask_bullet.png
       840: Resources/Animations/Projectiles/ball_bullet.png
       875: Resources/Animations/Projectiles/bomb_bullet.png
+      910: Resources/Animations/Projectiles/laseryellowbig_bullet.png
 
 #paperdolls
 # human
@@ -708,6 +731,18 @@ extraSprites:
     height: 680
     files:
       0: Resources/Factions/Ironeyes/ripper_sprite.png
+
+  - typeSingle: CYFURB_CPAL
+    fileSingle: Resources/Factions/Robots/cyfurb_CPAL.png
+  - typeSingle: CYFURB.SPK
+    fileSingle: Resources/Factions/Robots/cyfurb_inventory.png
+  - type: CYFURB.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Factions/Robots/cyfurb_sprite.png
 # netrunners
   - typeSingle: FREELANCER_CPAL
     fileSingle: Resources/Factions/Netrunners/freelancer_CPAL.png
@@ -999,6 +1034,8 @@ extraSprites:
     fileSingle: Resources/Pedia/medical_CPAL.png
   - typeSingle: REDOX_CPAL
     fileSingle: Resources/Pedia/redox_CPAL.png
+  - typeSingle: REDLASER_CPAL
+    fileSingle: Resources/Pedia/redlaser_CPAL.png
 # crafts
   - typeSingle: CRAFT_LIMO_CPAL
     fileSingle: Resources/Pedia/craft_limo_CPAL.png

@@ -395,9 +395,9 @@ research:
       - STR_SINGLESHOT_LASER_AMMO
   - name: STR_LASER_WEAPONS_CONSTRUCTION
     dependencies:
-      - STR_VENDOR_PRINTER
       - STR_LASER_AMMO_PRINTING
       - STR_PRINTER
+      - STR_LC_PREQ
     cost: 50
     getOneFree:
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
@@ -694,24 +694,38 @@ research:
 # xn
   - name: STR_XN_LASER_PISTOL
     needItem: true
+    unlocks:
+       - STR_LC_PREQ
     cost: 5
   - name: STR_XN_LASER_SMG
     needItem: true
+    unlocks:
+       - STR_LC_PREQ
     cost: 5
   - name: STR_XN_LASER_RIFLE
     needItem: true
+    unlocks:
+       - STR_LC_PREQ
     cost: 5
   - name: STR_XN_LASER_SNIPER
     needItem: true
+    unlocks:
+       - STR_LC_PREQ
     cost: 5
   - name: STR_XN_LASER_MG
     needItem: true
+    unlocks:
+       - STR_LC_PREQ
     cost: 5
   - name: STR_XN_LASER_CANNON
     needItem: true
+    unlocks:
+       - STR_LC_PREQ
     cost: 5
   - name: STR_XN_LASER_SHOTGUN
     needItem: true
+    unlocks:
+       - STR_LC_PREQ
     cost: 5
 
   - name: STR_SKULLJACK
@@ -729,10 +743,48 @@ research:
       - STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
       - STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
       - STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
+  - name: STR_GCIC_PROTOTYPE_LASER_SMG
+    dependencies:
+      - STR_LASER_WEAPONS_CONSTRUCTION
+    cost: 15
+    spawnedItemList:
+      - STR_GCIC_PROTOTYPE_LASER_SMG
+      - STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1
+      - STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1
+      - STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1
   - name: STR_GCIC_PROTOTYPE_LASER_RIFLE
     dependencies:
       - STR_LASER_WEAPONS_CONSTRUCTION
     cost: 15
+  - name: STR_GCIC_PROTOTYPE_LASER_SNIPER
+    dependencies:
+      - STR_LASER_WEAPONS_CONSTRUCTION
+    cost: 15
+    spawnedItemList:
+      - STR_GCIC_PROTOTYPE_LASER_SNIPER
+      - STR_GCIC_PROTOTYPE_LASER_SNIPER_AMMO1
+      - STR_GCIC_PROTOTYPE_LASER_SNIPER_AMMO1
+      - STR_GCIC_PROTOTYPE_LASER_SNIPER_AMMO1
+  - name: STR_GCIC_PROTOTYPE_LASER_MG
+    dependencies:
+      - STR_LASER_WEAPONS_CONSTRUCTION
+      - STR_TODO
+    cost: 20
+    spawnedItemList:
+      - STR_GCIC_PROTOTYPE_LASER_MG
+      - STR_GCIC_PROTOTYPE_LASER_MG_AMMO1
+      - STR_GCIC_PROTOTYPE_LASER_MG_AMMO1
+      - STR_GCIC_PROTOTYPE_LASER_MG_AMMO1
+  - name: STR_GCIC_PROTOTYPE_LASER_CANNON
+    dependencies:
+      - STR_LASER_WEAPONS_CONSTRUCTION
+      - STR_TODO
+    cost: 20
+    spawnedItemList:
+      - STR_GCIC_PROTOTYPE_LASER_CANNON
+      - STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO1
+      - STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO1
+      - STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO1
 # launchers
   - name: STR_WINDLASS_LAUNCHER
     needItem: true
@@ -949,6 +1001,8 @@ research:
       STR_TRG_RI_PREQ:
         - STR_RIPPER_PRIVATE
         - STR_9MM_SMG
+      STR_TRG_CYFURB_PREQ:
+        - STR_CYFURB
       STR_TRG_FL_PREQ:
         - STR_FREELANCER_PRIVATE
         - STR_DART_PISTOL
@@ -1008,6 +1062,8 @@ research:
         - STR_BOOSTER_PRIVATE
       STR_TRG_RI_PREQ:
         - STR_RIPPER_PRIVATE
+      STR_TRG_CYFURB_PREQ:
+        - STR_CYFURB
 
   - name: STR_DATA_1_NETRUNNERS
     requiresBaseFunc:
@@ -1275,6 +1331,14 @@ research:
   - name: STR_ROBOSPHERE_ARMOR
     dependencies:
       - STR_ROBOSPHERE
+  - name: STR_CYFURB
+    unlocks:
+      - STR_CYFURB_ARMOR
+    dependencies:
+      - STR_LOCK
+  - name: STR_CYFURB_ARMOR
+    dependencies:
+      - STR_CYFURB
 # simulated
   - name: STR_HOLOUFO_SMALL
     dependencies:
@@ -1341,6 +1405,9 @@ research:
   - name: STR_RD_PREQ #redox
     dependencies:
       - STR_LOCK
+  - name: STR_LC_PREQ #laser construction
+    dependencies:
+      - STR_LOCK
 # vendors
   - name: STR_V_P2P_PREQ #peer 2 peer
     dependencies:
@@ -1357,6 +1424,9 @@ research:
     dependencies:
       - STR_LOCK
   - name: STR_TRG_RI_PREQ #ripper
+    dependencies:
+      - STR_LOCK
+  - name: STR_TRG_CYFURB_PREQ #cyberdisk
     dependencies:
       - STR_LOCK
 # netrunners

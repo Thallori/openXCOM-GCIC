@@ -277,7 +277,7 @@ manufacture:
       - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_PISTOL
-    time: 500
+    time: 200
     cost: 8000
     refund: true
 
@@ -291,14 +291,34 @@ manufacture:
     cost: 90
     refund: true
 
+  - name: STR_GCIC_PROTOTYPE_LASER_SMG
+    category: STR_EQUIPMENT_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_SMG
+    time: 400
+    cost: 12000
+    refund: true
+
+  - name: STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1
+    category: STR_AMMO_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_SMG
+    time: 4
+    cost: 100
+    refund: true
+
   - name: STR_GCIC_PROTOTYPE_LASER_RIFLE
     category: STR_EQUIPMENT_MANUCAT
     requiresBaseFunc:
       - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
-    time: 800
-    cost: 10000
+    time: 500
+    cost: 15000
     refund: true
 
   - name: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
@@ -308,7 +328,27 @@ manufacture:
     requires:
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
     time: 4
-    cost: 100
+    cost: 110
+    refund: true
+
+  - name: STR_GCIC_PROTOTYPE_LASER_SNIPER
+    category: STR_EQUIPMENT_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_SNIPER
+    time: 800
+    cost: 80000
+    refund: true
+
+  - name: STR_GCIC_PROTOTYPE_LASER_SNIPER_AMMO1
+    category: STR_AMMO_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_SNIPER
+    time: 4
+    cost: 120
     refund: true
 
   - name: STR_WINDLASS_LAUNCHER_AMMO
@@ -434,6 +474,19 @@ manufacture:
     producedItems:
       STR_GCIC_PROTOTYPE_LASER_PISTOL_ELERIUM: 1
 
+  - name: STR_GCIC_PROTOTYPE_LASER_SMG_MANU
+    category: STR_UPGRADES_MANUCAT
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_SMG
+      - STR_ELERIUM_CORE
+    time: 12
+    refund: true
+    requiredItems:
+      STR_GCIC_PROTOTYPE_LASER_SMG: 1
+      STR_ELERIUM_CORE: 2
+    producedItems:
+      STR_GCIC_PROTOTYPE_LASER_SMG_ELERIUM: 1
+
   - name: STR_GCIC_PROTOTYPE_LASER_RIFLE_MANU
     category: STR_UPGRADES_MANUCAT
     requires:
@@ -443,9 +496,22 @@ manufacture:
     refund: true
     requiredItems:
       STR_GCIC_PROTOTYPE_LASER_RIFLE: 1
-      STR_ELERIUM_CORE: 1
+      STR_ELERIUM_CORE: 2
     producedItems:
       STR_GCIC_PROTOTYPE_LASER_RIFLE_ELERIUM: 1
+
+  - name: STR_GCIC_PROTOTYPE_LASER_SNIPER_MANU
+    category: STR_UPGRADES_MANUCAT
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_SNIPER
+      - STR_ELERIUM_CORE
+    time: 12
+    refund: true
+    requiredItems:
+      STR_GCIC_PROTOTYPE_LASER_SNIPER: 1
+      STR_ELERIUM_CORE: 2
+    producedItems:
+      STR_GCIC_PROTOTYPE_LASER_SNIPER_ELERIUM: 1
 
 #expansions
   - name: STR_SCIENTIST_MANU
@@ -890,6 +956,18 @@ manufacture:
       STR_GCIC_PROTOTYPE_LASER_PISTOL: 1
       STR_ELERIUM_CORE: 1
 
+  - name: STR_GCIC_PROTOTYPE_LASER_SMG_ELERIUM
+    category: STR_SALVAGE_MANUCAT
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_SMG
+    time: 12
+    refund: true
+    requiredItems:
+      STR_GCIC_PROTOTYPE_LASER_SMG_ELERIUM: 1
+    producedItems:
+      STR_GCIC_PROTOTYPE_LASER_SMG: 1
+      STR_ELERIUM_CORE: 2
+
   - name: STR_SALVAGE_GCIC_PROTOTYPE_LASER_RIFLE_ELERIUM
     category: STR_SALVAGE_MANUCAT
     requires:
@@ -900,4 +978,16 @@ manufacture:
       STR_GCIC_PROTOTYPE_LASER_RIFLE_ELERIUM: 1
     producedItems:
       STR_GCIC_PROTOTYPE_LASER_RIFLE: 1
-      STR_ELERIUM_CORE: 1
+      STR_ELERIUM_CORE: 2
+
+  - name: STR_GCIC_PROTOTYPE_LASER_SNIPER_ELERIUM
+    category: STR_SALVAGE_MANUCAT
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_SNIPER
+    time: 12
+    refund: true
+    requiredItems:
+      STR_GCIC_PROTOTYPE_LASER_SNIPER_ELERIUM: 1
+    producedItems:
+      STR_GCIC_PROTOTYPE_LASER_SNIPER: 1
+      STR_ELERIUM_CORE: 2
