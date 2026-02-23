@@ -239,6 +239,7 @@ en-US:
   STR_ALIENS_KILLED: "TARGETS TERMINATED"
   STR_ALIEN_CORPSES_RECOVERED: "REMAINS PROCESSED"
   STR_LIVE_ALIENS_RECOVERED: "TARGETS CAPTURED"
+  STR_LIVE_ALIENS_SURRENDERED: "TARGETS SURRENDERED"
   STR_ALIEN_ARTIFACTS_RECOVERED: "ASSETS ACQUIRED"
   STR_ALIEN_BASE_CONTROL_DESTROYED: "CONTROL NODE DESTROYED"
   STR_CIVILIANS_KILLED_BY_ALIENS: "CLAIMS APPROVED (KILLED BY TARGETS)"
@@ -318,6 +319,9 @@ en-US:
   STR_OPENXCOM: "Global Contracts"
   STR_SLACKING_INDICATOR: "Unassigned{NEWLINE}svr:{0} fab:{1}"
   STR_LANDED: "Touched Down"
+  STR_BUG_HUNT_ACTIVATED: "Bug Hunt mode activated: targets are visible on the minimap!"
+  STR_QUICK_MODE_ACTIVATED: "Zip mode activated.{NEWLINE}Press Ctrl+S again to deactivate."
+  STR_QUICK_MODE_DEACTIVATED: "Zip mode deactivated."
 
   ETM_PSI_STRENGTH: "PSI SENSITIVITY"
   ETM_PSI_STRENGTH_2X: "PSI SENSITIVITY (x2)"
@@ -501,6 +505,7 @@ en-US:
   BREACH2: "Into the Breach, The Wasteland"
   SHADOW_INTRO: "Shadowrun Returns, Too Quiet"
   SHADOW1: "Shadowrun Returns, Blood Hounds"
+  IRON1: "White Bat Audio, Severance"
   CRAFT1: "Starcraft, Zerg One"
   BLOOD_INTRO: "Hitman 2, Pause Screen"
   BLOOD1: "Blood Money, Night Time in New Orleans"
@@ -983,7 +988,7 @@ en-US:
   STR_FTM_LOCK: "(free trial available)"
   STR_FTM_ITEM: "PROJECT: Free Trials"
   STR_FREE_TRIAL_MISSIONS: ">PROJECT: Free Trials<"
-  STR_FREE_TRIAL_MISSIONS_UP: "{NEWLINE}MARKET POTENTIAL: $1,500,000/YEAR{NEWLINE}AVG. ASSIGNMENTS: 0.68/MONTH{NEWLINE}{NEWLINE}When a mass casualty event is in progress, potential clients are more amenable to insurance. Wealthy consumers can afford the exorbitant rates of surge pricing while others are left with denied payment messages.By offering a single event package for free, we can be able to convert a dozen clients at once. Depending on how many we can save.{NEWLINE}{NEWLINE}Failure to save trial clients is still a breach of contract, this risk may make accepting a trial more costly than refusing.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE" #todo
+  STR_FREE_TRIAL_MISSIONS_UP: "{NEWLINE}MARKET POTENTIAL: $1,500,000/YEAR{NEWLINE}AVG. ASSIGNMENTS: 0.68/MONTH{NEWLINE}{NEWLINE}When a mass casualty event is in progress, potential clients are more amenable to insurance. Wealthy consumers can afford the exorbitant rates of surge pricing while others are left with denied payment messages.By offering a single event package for free, we can be able to convert a dozen clients at once. Depending on how many we can save.{NEWLINE}{NEWLINE}Failure to save trial clients is still a breach of contract, this risk may make accepting a trial more costly than refusing.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_CC_LOCK: "(clandestine clients available)"
   STR_CC_ITEM: "PROJECT: Clandestine Clients"
   STR_CLANDESTINE_CLIENTS: ">PROJECT: Clandestine Clients<"
@@ -1011,7 +1016,7 @@ en-US:
   STR_PBI_LOCK: "(gcic backchannels available)"
   STR_PBI_ITEM: "PROJECT: GCIC Backchannels"
   STR_GCIC_BACKCHANNEL_MISSIONS: ">PROJECT: GCIC Backchannels<"
-  STR_GCIC_BACKCHANNEL_MISSIONS_UP: "{NEWLINE}AFFILIATES: Sibling Corporations{NEWLINE}AVG. ASSIGNMENTS: 1.41/MONTH{NEWLINE}{NEWLINE}Selling back GCIC shares back at half price has been accepted as proof of {ALT}loyalty{ALT} to our parent, or at least, preference for long-term relations over short-sighted gains. No matter their reasons, we have been granted access to a protected network discussing less-than-legal competitive practices along with an increase in our responsibilities.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
+  STR_GCIC_BACKCHANNEL_MISSIONS_UP: "{NEWLINE}AFFILIATES: Sibling Corporations{NEWLINE}AVG. ASSIGNMENTS: 1.41/MONTH{NEWLINE}{NEWLINE}Selling back GCIC shares at half price has been accepted as proof of {ALT}loyalty{ALT} to our parent, or at least, preference for long-term relations over short-sighted gains. No matter their reasons, we have been granted access to a protected network discussing less-than-legal competitive practices along with an increase in our responsibilities.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_PTS_LOCK: "(gcic trade secrets available)"
   STR_PTS_ITEM: "PROJECT: GCIC Trade Secrets"
   STR_PIN_LOCK: "(independence available)"
@@ -1024,7 +1029,7 @@ en-US:
   STR_NETRUNNERS_SURVEY: ">SURVEY: Netrunners<"
   STR_NETRUNNERS_SURVEY_UP: "{NEWLINE}FAVORABLE OUTCOME ODDS: 74.9%{NEWLINE}PREDICTED INTERLACES: 1.84/MONTH{NEWLINE}{NEWLINE}There are too many false trails connected to {ALT}bionic interlace{ALT} couriers. Tracing each individually is a losing strategy, but thankfully one our {ALT}private gateway{ALT} allows us to bypass. Validating each trace against millions of real-world data surveys will let us sort the truth from the chaff.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_IRONEYES_NETWORK: ">TRACE: Ironsights<"
-  STR_IRONEYES_NETWORK_UP: "{NEWLINE}worldbuilding{NEWLINE}operations per month{NEWLINE}{NEWLINE}desc{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE" #todo
+  STR_IRONEYES_NETWORK_UP: "{NEWLINE}RESOLUTION PROGRESS: <0.01%{NEWLINE}CRACKDOWN OPPORTUNITIES: 1.43/MONTH{NEWLINE}{NEWLINE}A loosely affiliated gang unified by a belief in cybernetic dawrinism, an ahistorical creed which promotes power by taking it from the weak. They control hundreds of blocks in cities across the globe.{NEWLINE}{NEWLINE}If our drones follow a member to their {ALT}safehouse{ALT}, we may learn more about their organization and ultimately devise a way to {ALT}neutralize{ALT} this threat to our clients.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
 
   STR_SUBCONTRACTING_OPERATIONS: "Subcontracting Operations"
   STR_SUBCONTRACTING_OPERATIONS_UP: "{NEWLINE}CONFLICT RISK: Medium{NEWLINE}COOPERATION POTENTIAL: High{NEWLINE}{NEWLINE}All corporations have unfulfilled needs, either the opportunity cost is deemed too high or the shareholders' expectations exceed what is possible. In this light, we have an advantage in the absence of hazard pay. Combined with a reputation for successful operations, we'll be able to undercut outdated sub-contractors.{NEWLINE}{NEWLINE}{ALT}Bounties{ALT} are seen as proof of work and they can be traded for new contracts."
@@ -1073,14 +1078,14 @@ en-US:
   STR_DEPOT_UP: "Liminal multi-purpose backrooms. Provides unoptimized spaces for equipment, ancillaries, and visitors. Can be built-over to save excavation time.{NEWLINE}{NEWLINE}> Storage: 15{NEWLINE}> Accommodations: 8{NEWLINE}> Cells: 1"
   STR_STORAGE_1: "Storage Bay"
   STR_STORAGE_1_UP: "Generalized storage for the automatic loading/unloading of physical assets. Climate controlled rooms keep both unstable and perishable goods safe.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 50"
-  STR_STOREROOM_RESEARCH: "Profitable Storage Expansion"
+  STR_STOREROOM_RESEARCH: "Profitable Storage Facility"
   STR_STOREROOM: "P&P Bay"
   STR_STOREROOM_UP: "Requires: 1x SJB Permit{NEWLINE}{NEWLINE}All-Shape, All-Safe, All-Secure. Pick and place automated sorting and storage for objects big and small. Classifier bots bid on local jobs during downtime to provide factional income.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 100"
   STR_GARAGE: "Docking Pad"
   STR_GARAGE_UP: "Every APS craft requires its own pad for parking, recharging, and repair. All docks are built with extra space for storage and multi-purpose maintenance.{NEWLINE}{NEWLINE}Vulnerable to intrusion.{NEWLINE}{NEWLINE}> Storage: 5{NEWLINE}> Workspace: 1"
   STR_BUNK_RACKS: "Bunk Racks"
   STR_BUNK_RACKS_UP: "A dedicated space for ancillaries to take care of their bodily needs in tweleve hour rotations. Fulfills the needs for sleep, property, and hygiene.{NEWLINE}{NEWLINE}> Accommodations: 24"
-  STR_HOLDING_CELLS_RESEARCH: "Specimen Containment Expansion"
+  STR_HOLDING_CELLS_RESEARCH: "Specimen Containment Facility"
   STR_HOLDING_CELLS: "Holding Cells"
   STR_HOLDING_CELLS_UP: "Illegally captured subjects will be placed in temporary confinement until sufficent data is accrued. Specimens may be released without consequence.{NEWLINE}{NEWLINE}> Cells: 8"
   STR_LMB_LOCK: "(medi-bay unlicensed)"
@@ -1134,7 +1139,7 @@ en-US:
   STR_HOLOUFO_SMALL: "(SIM) SCOUT"
   STR_HOLOUFO_SMALL_UP: "A holographic recreation of invader scout crafts. Using only engine vectoring for defense, these unarmed USO's posed little threat to system military forces."
   STR_UFO_HARVESTER: "(SIM) HARVESTER"
-  STR_UFO_HARVESTER_UP: "An aquaplastic rendition of invader harvester-class craft, painted to match archival footage. Overshadowed the system's military, requiring multiple point-blank nuclear missiles to take down.{NEWLINE}{NEWLINE}Armor: 1PD"
+  STR_UFO_HARVESTER_UP: "An aquaplastic rendition of invader harvester-class craft, painted to match archival footage. Overshadowed the system's military, requiring multiple point-blank nuclear missiles to take down."
 #drones
   STR_DRONE_ARTICLE: "DRONES"
   STR_DRONE_ARTICLE_UP: "{NEWLINE}ARTICLE: Charter of Drone Rights{NEWLINE}SECTION: Justifications{NEWLINE}{NEWLINE}Drones are the result of an invader-sourced neural implant. They were originally used as an alternative to involuntary incarceration after the reintroduction of the police and prison system.{NEWLINE}{NEWLINE}Despite its reputation, the procedure has proven to be completely safe. A multi-species ethics committee has deemed the continued use of drones preferable to their loss or destruction."
@@ -1655,7 +1660,7 @@ en-US:
   STR_OPERATIONS_TUTORIAL: "Projects"
   STR_OPERATIONS_TUTORIAL_UP: "Research topics marked by {ALT}>arrows<{ALT} will unlock new operations and therefore, new opportunities. This is the best (and usually only) way to make progress.{NEWLINE}{NEWLINE}Some projects have multiple pre-requisites before they become available. In the research screen, a topic can be {ALT}examined{ALT} [middle-click] to see what it might unlock.{NEWLINE}{NEWLINE}Other projects will require {ALT}manufacturing{ALT} representing an exchange of items for possibilities. Each project only needs a single production, which must then be researched."
   STR_AUDITING: "Audit"
-  STR_AUDITING_UP: "Acting as the highest form of legitimate power, the Commodities Exchange Market records and taxes all in-system transactions. Ensuring no corporation is too big to fail, a debt limit of {ALT}$1,000,000{ALT} will trigger an aduit.{NEWLINE}{NEWLINE}Because the results of these investigations are public, being audited is the {ALT}final loss condition{ALT} for most corporations.{NEWLINE}{NEWLINE}Emergency measures such as selling assets, dismantling expansions, and liquidating ancillaries can be done up until the {ALT}last day{ALT} of each month."
+  STR_AUDITING_UP: "Acting as the highest form of legitimate power, the Commodities Exchange Market records and taxes all in-system transactions. Ensuring no corporation is too big to fail, a debt limit of {ALT}$1,000,000{ALT} will trigger an aduit.{NEWLINE}{NEWLINE}Because the results of these investigations are public, being audited is the {ALT}final loss condition{ALT} for most corporations.{NEWLINE}{NEWLINE}Emergency measures such as selling assets, dismantling facilities, and liquidating ancillaries can be done up until the {ALT}last day{ALT} of each month."
   STR_LIQUIDITY: "Liquidity"
   STR_LIQUIDITY_UP: "The ease of which a corporate entity can trade its assets without drastically affecting market prices. Performing operations that engender public trust will {ALT}grow monthly income{ALT} by making it easier to shrink dividens and repay loans at lower interest rates.{NEWLINE}{NEWLINE}Conversely, stories of rogue drones and failures to fulfill contracts will tie up indirect assets, effectively {ALT}lowering monthly income{ALT}.{NEWLINE}{NEWLINE}It is {ALT}not possible{ALT} for a corporation to become insolvant from having too much negative liquidity. A good reputation isn't necessary for a profitable business."
   STR_DRONES_TUTORIAL: "Drones"
@@ -2010,7 +2015,7 @@ en-US:
 # ironeyes
   STR_TRG_BO_PREQ: "(booster neutralized)"
   STR_TRG_RI_PREQ: "(ripper neutralized)"
-  STR_TRG_CYFURB_PREQ: "(salvaged disk neutralized)"
+  STR_TRG_CYFURB_PREQ: "(free trial success)"
 # netrunners
   STR_TRG_FL_PREQ: "(freelancer collected)"
   STR_TRG_ST_PREQ: "(skiptracer collected)"
@@ -2025,6 +2030,7 @@ en-US:
 # robots
   STR_TRG_RS_PREQ: "(robosphere exchanged)"
 # simulated
-  STR_TRG_HS_PREQ: "(holo-sectoid exchanged)"
+  STR_TRG_HS_PREQ: "(holo-scout success)"
+  STR_TRG_HARUFO_PREQ: "(security game success)"
 # clients
   STR_TRG_CZ_PREQ: "(cyber-psychosis encountered)"

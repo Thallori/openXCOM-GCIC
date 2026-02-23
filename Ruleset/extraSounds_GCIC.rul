@@ -11,6 +11,7 @@ musics:
   - type: BREACH2
   - type: SHADOW_INTRO
   - type: SHADOW1
+  - type: IRON1
   - type: BLOOD_INTRO
   - type: BLOOD1
   - type: BLOOD2
@@ -57,6 +58,10 @@ extraSounds:
       134: Resources/Sounds/Impacts/glassfire_hit.wav
       135: Resources/Sounds/Impacts/glassburn_hit.wav
       136: Resources/Sounds/Impacts/energy_hit.wav
+      137: Resources/Sounds/Impacts/beep_hit.wav
+      138: Resources/Sounds/Fire/machinegun_fire.wav
+      139: Resources/Sounds/Fire/tube_fire.wav
+      140: Resources/Sounds/Reloads/bolt_reload.wav
 
   - type: GEO.CAT
     files:

@@ -165,6 +165,12 @@ research:
       - STR_NETRUNNERS_NETWORK
     cost: 6
 
+  - name: STR_IRONEYES_NETWORK
+    dependencies:
+      - STR_TRG_BO_PREQ
+      - STR_FORBIDDEN_OPERATIONS
+    cost: 3
+
   - name: STR_SUBCONTRACTING_OPERATIONS
     dependencies:
       - STR_SECONDARY_OPERATIONS
@@ -612,9 +618,14 @@ research:
     cost: 2
     unlocks:
       - STR_V_P2P_PREQ
+  - name: STR_9MM_MG
+    needItem: true
+    cost: 3
+    unlocks:
+      - STR_V_P2P_PREQ
   - name: STR_DISPOSABLE_SMG
     needItem: true
-    cost: 2
+    cost: 3
     unlocks:
       - STR_V_P2P_PREQ
 # nrf
@@ -786,9 +797,12 @@ research:
       - STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO1
       - STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO1
 # launchers
+  - name: STR_BARREL_MOTAR
+    needItem: true
+    cost: 5
   - name: STR_WINDLASS_LAUNCHER
     needItem: true
-    cost: 4
+    cost: 5
 # grenades
   - name: STR_MOLOTOV
     needItem: true
@@ -797,7 +811,7 @@ research:
       - STR_RD_PREQ
   - name: STR_ACIDFLASK
     needItem: true
-    cost: 4
+    cost: 5
     unlocks:
       - STR_RD_PREQ
   - name: STR_PIPEBOMB
@@ -809,7 +823,7 @@ research:
 # sporting
   - name: STR_MARSBALL
     needItem: true
-    cost: 4
+    cost: 5
     unlocks:
       - STR_V_SPORT_PREQ
 # melee
@@ -832,15 +846,15 @@ research:
     cost: 3
   - name: STR_ELECTRIC_NAILER
     needItem: true
-    cost: 2
+    cost: 3
   - name: STR_BOLT_CANNON
     needItem: true
-    cost: 2
+    cost: 3
     dependencies:
       - STR_LBC_LOCK
   - name: STR_SURVEY_KNOCKER
     needItem: true
-    cost: 2
+    cost: 3
     unlocks:
       - STR_CHEMFLARE
 # utilities
@@ -848,24 +862,26 @@ research:
   - name: STR_CHEMFLARE
     dependencies:
       - STR_SURVEY_KNOCKER
+    needItem: true
+    cost: 2
   - name: STR_EXTINGUISHER
     needItem: true
     cost: 2
   - name: STR_STIM_INHALER
     needItem: true
-    cost: 2
+    cost: 3
   - name: STR_STIM_SPRINT
     needItem: true
-    cost: 2
+    cost: 3
   - name: STR_STIM_MORNING
     needItem: true
-    cost: 2
+    cost: 3
   - name: STR_MEDI_SPRAY
   - name: STR_MEDI_FIRST
     dependencies:
       - STR_VENDOR_MEDI
     needItem: true
-    cost: 2
+    cost: 3
   - name: STR_MEDI_TRAUMA
     needItem: true
     cost: 4
@@ -875,7 +891,7 @@ research:
 # containers
   - name: STR_CRIMINAL_CONTAINER_1
     needItem: true
-    cost: 2
+    cost: 3
     unlocks:
       - STR_V_P2P_PREQ
   - name: STR_XN_CONTAINER_1
@@ -1001,8 +1017,15 @@ research:
       STR_TRG_RI_PREQ:
         - STR_RIPPER_PRIVATE
         - STR_9MM_SMG
+      STR_TRG_BRK_PREQ:
+        - STR_BREAKER_PRIVATE
+        - STR_BARREL_MOTAR
+        - STR_WINDLASS_LAUNCHER
       STR_TRG_CYFURB_PREQ:
         - STR_CYFURB
+        - STR_BREAKER_PRIVATE
+        - STR_BARREL_MOTAR
+        - STR_WINDLASS_LAUNCHER
       STR_TRG_FL_PREQ:
         - STR_FREELANCER_PRIVATE
         - STR_DART_PISTOL
@@ -1040,7 +1063,7 @@ research:
       STR_TRG_HS_PREQ:
         - STR_HOLOUFO_SMALL
         - STR_HOLOSECTOID
-      STR_SEC_LICENSE:
+      STR_TRG_HARUFO_PREQ:
         - STR_UFO_HARVESTER
         - STR_HOLOMUTON
         - STR_HOLOVIPER
@@ -1062,8 +1085,11 @@ research:
         - STR_BOOSTER_PRIVATE
       STR_TRG_RI_PREQ:
         - STR_RIPPER_PRIVATE
+      STR_TRG_BRK_PREQ:
+        - STR_BREAKER_PRIVATE
       STR_TRG_CYFURB_PREQ:
         - STR_CYFURB
+        - STR_BREAKER_PRIVATE
 
   - name: STR_DATA_1_NETRUNNERS
     requiresBaseFunc:
@@ -1145,7 +1171,7 @@ research:
       STR_TRG_HS_PREQ:
         - STR_HOLOUFO_SMALL
         - STR_HOLOSECTOID
-      STR_SEC_LICENSE:
+      STR_TRG_HARUFO_PREQ:
         - STR_UFO_HARVESTER
         - STR_HOLOMUTON
         - STR_HOLOVIPER
@@ -1175,34 +1201,53 @@ research:
         - STR_DEEP_AUTOPSY
 # ironeyes
   - name: STR_BOOSTER_PRIVATE
+    dependencies:
+      - STR_LOCK
+  - name: STR_BOOSTER_INTERVIEW
+    neededItem: STR_BOOSTER_PRIVATE
     needItem: true
-    destroyItem: true
+    destroyItem: false
     cost: 6
     unlocks:
       - STR_BOOSTER_ARMOR
+      - STR_ALIEN_INTERVIEWED_FLAG
     getOneFree:
-      - STR_9MM_PISTOL
-      - STR_9MM_RIFLE
-      - STR_DISPOSABLE_SMG
-      - STR_PIPEBOMB
-      - STR_STL_KNIFE
+      - STR_BOOSTER_PRIVATE
   - name: STR_BOOSTER_ARMOR
     dependencies:
       - STR_BOOSTER_PRIVATE
 
   - name: STR_RIPPER_PRIVATE
+    dependencies:
+      - STR_LOCK
+  - name: STR_RIPPER_INTERVIEW
+    neededItem: STR_RIPPER_PRIVATE
     needItem: true
-    destroyItem: true
+    destroyItem: false
     cost: 7
     unlocks:
       - STR_RIPPER_ARMOR
+      - STR_ALIEN_INTERVIEWED_FLAG
     getOneFree:
-      - STR_9MM_PISTOL
-      - STR_9MM_SMG
-      - STR_DISPOSABLE_SMG
-      - STR_PIPEBOMB
-      - STR_STL_KNIFE
+      - STR_RIPPER_PRIVATE
   - name: STR_RIPPER_ARMOR
+    dependencies:
+      - STR_RIPPER_PRIVATE
+
+  - name: STR_BREAKER_PRIVATE
+    dependencies:
+      - STR_LOCK
+  - name: STR_BREAKER_INTERVIEW
+    neededItem: STR_BREAKER_PRIVATE
+    needItem: true
+    destroyItem: false
+    cost: 8
+    unlocks:
+      - STR_BREAKER_ARMOR
+      - STR_ALIEN_INTERVIEWED_FLAG
+    getOneFree:
+      - STR_BREAKER_PRIVATE
+  - name: STR_BREAKER_ARMOR
     dependencies:
       - STR_RIPPER_PRIVATE
 # netrunners
@@ -1426,6 +1471,9 @@ research:
   - name: STR_TRG_RI_PREQ #ripper
     dependencies:
       - STR_LOCK
+  - name: STR_TRG_BRK_PREQ #breaker
+    dependencies:
+      - STR_LOCK
   - name: STR_TRG_CYFURB_PREQ #cyberdisk
     dependencies:
       - STR_LOCK
@@ -1462,6 +1510,9 @@ research:
       - STR_LOCK
 # simulated
   - name: STR_TRG_HS_PREQ #sim sectoids
+    dependencies:
+      - STR_LOCK
+  - name: STR_TRG_HARUFO_PREQ #sim mutons, sim snakes
     dependencies:
       - STR_LOCK
 # clients

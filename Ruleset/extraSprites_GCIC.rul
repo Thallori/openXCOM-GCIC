@@ -181,6 +181,7 @@ extraSprites:
       236: Resources/Items/Laser/prototype_esniper_bigob.png
       237: Resources/Items/Laser/prototype_sniper_bigob.png
       238: Resources/Items/Laser/Ammo/prototype_sniper_ammo_bigob.png
+      239: Resources/Factions/Ironeyes/breaker_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -306,6 +307,7 @@ extraSprites:
       219: Resources/Items/Laser/prototype_esniper_floorob.png
       220: Resources/Items/Laser/prototype_sniper_floorob.png
       221: Resources/Items/Laser/Ammo/prototype_sniper_ammo_floorob.png
+      222: Resources/Factions/Ironeyes/breaker_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -731,6 +733,18 @@ extraSprites:
     height: 680
     files:
       0: Resources/Factions/Ironeyes/ripper_sprite.png
+
+  - typeSingle: BREAKER_CPAL
+    fileSingle: Resources/Factions/Ironeyes/breaker_CPAL.png
+  - typeSingle: BREAKER.SPK
+    fileSingle: Resources/Factions/Ironeyes/breaker_inventory.png
+  - type: BREAKER.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 680
+    files:
+      0: Resources/Factions/Ironeyes/breaker_sprite.png
 
   - typeSingle: CYFURB_CPAL
     fileSingle: Resources/Factions/Robots/cyfurb_CPAL.png

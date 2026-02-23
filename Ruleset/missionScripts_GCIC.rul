@@ -82,9 +82,9 @@ missionScripts:
     randomDelay: 43000
 
   - type: Secgame
-    # researchTriggers:
-    #   STR_SECGAMES_MISSIONS: true
-    #   STR_SEC_LICENSE: false
+    researchTriggers:
+      STR_SECGAMES_MISSIONS: true
+      STR_SEC_LICENSE: false
     missionWeights:
       0:
         STR_SECGAME: 100
@@ -112,7 +112,6 @@ missionScripts:
     useTable: false
     startDelay: 30
     randomDelay: 7200
-
   - type: Rescue1a
     researchTriggers:
       STR_RAPID_RESPONSE_MISSIONS: false
@@ -125,8 +124,8 @@ missionScripts:
     startDelay: 30
     randomDelay: 43000
   - type: Rescue1b
-    # researchTriggers:
-    #   STR_TODO: false
+    researchTriggers:
+      STR_FREE_TRIAL_MISSIONS: false
     missionWeights:
       0:
         STR_RESCUE_1: 100
@@ -137,6 +136,7 @@ missionScripts:
   - type: Rescue1c
     # researchTriggers:
     #   STR_TODO: false
+    executionOdds: 80
     missionWeights:
       0:
         STR_RESCUE_1: 60
@@ -200,6 +200,34 @@ missionScripts:
     startDelay: 30
     randomDelay: 43000
 
+  - type: RescueFTfirst
+    researchTriggers:
+      STR_FREE_TRIAL_MISSIONS: true
+    missionVarName: STR_RESCUE_FT
+    label: 1
+    varName: var_freetrials
+    maxRuns: 1
+    missionWeights:
+      0:
+        STR_RESCUE_FT: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+  - type: RescueFTa
+    researchTriggers:
+      STR_FREE_TRIAL_MISSIONS: true
+    missionVarName: STR_RESCUE_FT
+    conditionals: [-1]
+    executionOdds: 68
+    missionWeights:
+      0:
+        STR_RESCUE_FT: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43000
+
   - type: RescueCEarly
     lastMonth: 0
     missionWeights:
@@ -207,9 +235,8 @@ missionScripts:
         STR_KNOCKOUT_MISSION: 100
     regionWeights: *PopDenseNoDesert
     useTable: false
-    startDelay: 10000
-    randomDelay: 33000
-
+    startDelay: 10000 #almost a week
+    randomDelay: 33000 #remainder of the month
   - type: RescueCa
     firstMonth: 1
     researchTriggers:
@@ -224,7 +251,7 @@ missionScripts:
   - type: RescueCb
     researchTriggers:
       STR_TRG_CZ_PREQ: true
-    executionOdds: 40
+    executionOdds: 15
     missionWeights:
       0:
         STR_KNOCKOUT_MISSION: 100
@@ -241,9 +268,8 @@ missionScripts:
         STR_TRADE_MEETING_EARLY: 100
     regionWeights: *PopDenseNoDesert
     useTable: false
-    startDelay: 15000
-    randomDelay: 7200
-
+    startDelay: 10000 #almost a week
+    randomDelay: 10000 #should happen sometime in the middle
   - type: TradeMeeting1a
     firstMonth: 1
     researchTriggers:
@@ -327,7 +353,6 @@ missionScripts:
     useTable: false
     startDelay: 30000
     randomDelay: 7200
-
   - type: GCIC1a
     researchTriggers:
       STR_GCIC_BACKCHANNEL_MISSIONS: false

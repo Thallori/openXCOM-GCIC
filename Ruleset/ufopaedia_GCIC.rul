@@ -253,7 +253,7 @@ ufopaedia:
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
-    image_id: OPERATIONS1Z_CPAL
+    image_id: OPERATIONS1_CPAL
 
   - id: STR_SECONDARY_OPERATIONS
     requires:
@@ -277,7 +277,7 @@ ufopaedia:
     requires:
       - STR_SEC_LICENSE
     text: STR_SEC_LICENSE_UP
-    section: STR_FILES_UC
+    section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
     image_id: OPERATIONS2Z_CPAL
@@ -321,6 +321,15 @@ ufopaedia:
     requires:
       - STR_NETRUNNERS_SURVEY
     text: STR_NETRUNNERS_SURVEY_UP
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: OPERATIONS3_CPAL
+
+  - id: STR_IRONEYES_NETWORK
+    requires:
+      - STR_IRONEYES_NETWORK
+    text: STR_IRONEYES_NETWORK_UP
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
@@ -1019,6 +1028,18 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     type_id: 4
 
+  - id: STR_9MM_MG
+    requires:
+      - STR_9MM_MG
+    text: STR_9MM_MG_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_9MM_MG_AMMO
+    requires:
+      - STR_9MM_MG
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
   - id: STR_DISPOSABLE_SMG
     requires:
       - STR_DISPOSABLE_SMG
@@ -1217,6 +1238,12 @@ ufopaedia:
       - STR_GCIC_PROTOTYPE_LASER_PISTOL
     section: STR_NOT_AVAILABLE
     type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO2
+    requires:
+      - STR_TODO #laser cell outsourcing
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL
+    section: STR_NOT_AVAILABLE
+    type_id: 4
 
   - id: STR_GCIC_PROTOTYPE_LASER_SMG
     requires:
@@ -1226,6 +1253,12 @@ ufopaedia:
     type_id: 4
   - id: STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1
     requires:
+      - STR_GCIC_PROTOTYPE_LASER_SMG
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_SMG_AMMO2
+    requires:
+      - STR_TODO #laser cell outsourcing
       - STR_GCIC_PROTOTYPE_LASER_SMG
     section: STR_NOT_AVAILABLE
     type_id: 4
@@ -1241,6 +1274,12 @@ ufopaedia:
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
     section: STR_NOT_AVAILABLE
     type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO2
+    requires:
+      - STR_TODO #laser cell outsourcing
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE
+    section: STR_NOT_AVAILABLE
+    type_id: 4
 
   - id: STR_GCIC_PROTOTYPE_LASER_SNIPER
     requires:
@@ -1253,7 +1292,25 @@ ufopaedia:
       - STR_GCIC_PROTOTYPE_LASER_SNIPER
     section: STR_NOT_AVAILABLE
     type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_SNIPER_AMMO2
+    requires:
+      - STR_TODO #laser cell outsourcing
+      - STR_GCIC_PROTOTYPE_LASER_SNIPER
+    section: STR_NOT_AVAILABLE
+    type_id: 4
 # launchers
+  - id: STR_BARREL_MOTAR
+    requires:
+      - STR_BARREL_MOTAR
+    text: STR_BARREL_MOTAR_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_BARREL_MOTAR_AMMO
+    requires:
+      - STR_DEBUG
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
   - id: STR_WINDLASS_LAUNCHER
     requires:
       - STR_WINDLASS_LAUNCHER
@@ -1599,6 +1656,20 @@ ufopaedia:
       width: 149
       height: 200
     image_id: BOOSTER_CPAL
+  - id: STR_BOOSTER_INTERVIEW
+    title: STR_BOOSTER_INTERVIEW_T
+    requires:
+      - STR_BOOSTER_INTERVIEW
+    text: STR_BOOSTER_INTERVIEW_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: BOOSTER_CPAL
 
   - id: STR_RIPPERS
     requires:
@@ -1613,6 +1684,48 @@ ufopaedia:
       width: 149
       height: 200
     image_id: RIPPER_CPAL
+  - id: STR_RIPPER_INTERVIEW
+    title: STR_RIPPER_INTERVIEW_T
+    requires:
+      - STR_RIPPER_INTERVIEW
+    text: STR_RIPPER_INTERVIEW_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: RIPPER_CPAL
+
+  - id: STR_BREAKERS
+    requires:
+      - STR_BREAKER_PRIVATE
+    text: STR_BREAKERS_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: BREAKER_CPAL
+  - id: STR_BREAKER_INTERVIEW
+    title: STR_BREAKER_INTERVIEW_T
+    requires:
+      - STR_BREAKER_INTERVIEW
+    text: STR_BREAKER_INTERVIEW_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: BREAKER_CPAL
 # netrunners
   - id: STR_FREELANCERS
     requires:
@@ -1883,6 +1996,11 @@ ufopaedia:
   - id: STR_RIPPER_ARMOR
     requires:
       - STR_RIPPER_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_BREAKER_ARMOR
+    requires:
+      - STR_BREAKER_ARMOR
     section: STR_COMPETITORS_UC
     type_id: 5
   - id: STR_FREELANCER_ARMOR

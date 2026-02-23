@@ -74,7 +74,6 @@
     - type: fillArea
       terrain: FOREST2
 
-
   - type: HANGAR_DEFAULT
     commands:
     - type: addUFO
@@ -280,6 +279,19 @@
   - type: SLUM_DEFAULT
     commands:
     - type: addUFO
+    - type: addCraft
+    - type: addLine
+      direction: vertical
+    - type: addBlock
+      size: [2, 1]
+    - type: addBlock
+      size: 2
+    - type: fillArea
+  - type: SLUM_4X4
+    commands:
+    - type: addUFO
+      rects:
+        - [0, 0, 3, 3]
     - type: addCraft
     - type: addLine
       direction: vertical

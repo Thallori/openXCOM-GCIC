@@ -829,6 +829,37 @@ armors:
       energy: *EnergyRecoveryHumanTypical
     overKill: 1.5
     loftempsSet: [ 3 ]
+
+  - type: STR_BREAKER_ARMOR
+    ufopediaType: STR_BREAKER_ARMOR
+    spriteInv: BREAKER.SPK
+    spriteSheet: BREAKER.PCK
+    # spriteFaceGroup: 6
+    # spriteFaceColor: *SpriteFaceColorHuman
+    forcedTorso: 1
+    corpseBattle:
+      - STR_BREAKER_CORPSE
+    specialWeapon: STR_ELECTROBOLT
+    allowsKneeling: true
+    personalLight: 10
+    heatVision: 20
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 4
+    damageModifier: *DeepOneUnarmoredResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryTypical
+    overKill: 1.5
+    loftempsSet: [ 3 ]
+    ai: #makes them willing to do self and friendly fire
+      targetWeightAsFriendly: -1
+      targetWeightAsNeutral: -1
+      targetWeightAsHostile: 500
 # netrunners
   - type: STR_FREELANCER_ARMOR
     ufopediaType: STR_FREELANCER_ARMOR
@@ -884,7 +915,7 @@ armors:
       energy: *EnergyRecoveryTypical
     overKill: 1.5
     loftempsSet: [ 3 ]
-    ai:
+    ai: #makes them willing to do self and friendly fire
       targetWeightAsFriendly: -1
       targetWeightAsNeutral: -1
       targetWeightAsHostile: 500
