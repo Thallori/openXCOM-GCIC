@@ -3,20 +3,6 @@
 #10080 minutes in a week
 #43200 minutes in a month
 
-#    regionWeights: &populationDensity
-#      0:
-#        STR_MEZONIC_RIFTS: 100
-#        STR_MOSSWAY_COMMONS: 80
-#        STR_GOLDEN_REACH: 80
-#        STR_TWINGATES: 40
-#        STR_AZATAL_TERRACE: 80
-#        STR_KAPISI_DESERT: 10
-#        STR_HEIGARA_DESERT: 10
-#        STR_GLEAMING_SEAS: 40
-#        STR_CAYESAND_BASIN: 60
-#        STR_ICEFIELDS: 20
-#        STR_RIMEARCH: 20
-
 missionScripts:
   - type: SimSmalla
     researchTriggers:
@@ -27,59 +13,59 @@ missionScripts:
     targetBaseOdds: 100
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: SimSmallb
 #    researchTriggers:
 #      STR_TODO: false
     missionWeights:
       0:
         STR_HOLOUFO_SMALL_MISSION: 100
-    regionWeights: &PopDense
+    regionWeights: &PopDenseAll
       0:
         STR_MEZONIC_RIFTS: 100
         STR_MOSSWAY_COMMONS: 80
         STR_GOLDEN_REACH: 80
-        STR_TWINGATES: 40
         STR_AZATAL_TERRACE: 80
-        STR_GLEAMING_SEAS: 40
         STR_CAYESAND_BASIN: 60
+        STR_TWINGATES: 40
+        STR_GLEAMING_SEAS: 40
         STR_ICEFIELDS: 20
         STR_RIMEARCH: 20
-        STR_KAPISI_DESERT: 20
-        STR_HEIGARA_DESERT: 20
+        STR_KAPISI_DESERT: 10
+        STR_HEIGARA_DESERT: 10
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: SimSmallc
     researchTriggers:
       STR_SECGAMES_MISSIONS: true
     missionWeights:
       0:
         STR_HOLOUFO_SMALL_MISSION: 100
-    regionWeights: *PopDense
+    regionWeights: *PopDenseAll
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: SimSmalld
     researchTriggers:
       STR_SECGAMES_MISSIONS: true
     missionWeights:
       0:
         STR_HOLOUFO_SMALL_MISSION: 100
-    regionWeights: *PopDense
+    regionWeights: *PopDenseAll
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: SimSmalle
     researchTriggers:
       STR_SECGAMES_MISSIONS: true
     missionWeights:
       0:
         STR_HOLOUFO_SMALL_MISSION: 100
-    regionWeights: *PopDense
+    regionWeights: *PopDenseAll
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
 
   - type: Secgame
     researchTriggers:
@@ -101,7 +87,7 @@ missionScripts:
         STR_RIMEARCH: 20
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
 
   - type: Rescue1Early
     lastMonth: 0
@@ -122,7 +108,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: Rescue1b
     researchTriggers:
       STR_FREE_TRIAL_MISSIONS: false
@@ -132,7 +118,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: Rescue1c
     # researchTriggers:
     #   STR_TODO: false
@@ -143,7 +129,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: Rescue1d
     # researchTriggers:
     #   STR_TODO: false
@@ -154,7 +140,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: Rescue1e
     # researchTriggers:
     #   STR_TODO: false
@@ -165,7 +151,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
 
   - type: RescueRRa
     researchTriggers:
@@ -176,7 +162,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: RescueRRb
     researchTriggers:
       STR_RAPID_RESPONSE_MISSIONS: true
@@ -187,7 +173,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: RescueRRc
     researchTriggers:
       STR_RAPID_RESPONSE_MISSIONS: true
@@ -198,7 +184,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
 
   - type: RescueFTfirst
     researchTriggers:
@@ -213,7 +199,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: RescueFTa
     researchTriggers:
       STR_FREE_TRIAL_MISSIONS: true
@@ -226,7 +212,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
 
   - type: RescueCEarly
     lastMonth: 0
@@ -247,7 +233,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: RescueCb
     researchTriggers:
       STR_TRG_CZ_PREQ: true
@@ -258,7 +244,106 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
+
+  - type: Ironeyes1a
+    researchTriggers:
+      STR_IRONEYES_NETWORK: true
+      STR_IRONEYES_PORT: false
+    missionWeights:
+      0:
+        STR_IRONEYES_SHOP: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Ironeyes1b
+    researchTriggers:
+      STR_IRONEYES_NETWORK: true
+      STR_IRONEYES_SURVEY: false
+    executionOdds: 33
+    missionWeights:
+      0:
+        STR_IRONEYES_SHOP: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Ironeyes1c
+    researchTriggers:
+      STR_IRONEYES_NETWORK: true
+    executionOdds: 10
+    missionWeights:
+      0:
+        STR_IRONEYES_SHOP: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+
+  - type: Ironeyes2a
+    researchTriggers:
+      STR_IRONEYES_PORT: true
+      STR_IRONEYES_SURVEY: false
+    missionWeights:
+      0:
+        STR_IRONEYES_SAFEHOUSE: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Ironeyes2b
+    researchTriggers:
+      STR_IRONEYES_PORT: true
+    executionOdds: 46
+    missionWeights:
+      0:
+        STR_IRONEYES_SAFEHOUSE: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Ironeyes2c
+    researchTriggers:
+      STR_IRONEYES_PORT: true
+    executionOdds: 10
+    missionWeights:
+      0:
+        STR_IRONEYES_SAFEHOUSE: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+
+  - type: Ironeyes3a
+    researchTriggers:
+      STR_IRONEYES_SURVEY: true
+    missionWeights:
+      0:
+        STR_IRONEYES_OUTPOST: 100
+    regionWeights: &PopDenseTemperate
+      0:
+        STR_MEZONIC_RIFTS: 100
+        STR_MOSSWAY_COMMONS: 80
+        STR_GOLDEN_REACH: 80
+        STR_AZATAL_TERRACE: 80
+        STR_CAYESAND_BASIN: 60
+        STR_TWINGATES: 40
+        STR_GLEAMING_SEAS: 40
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Ironeyes3b
+    researchTriggers:
+      STR_IRONEYES_SURVEY: true
+    executionOdds: 10
+    missionWeights:
+      0:
+        STR_IRONEYES_OUTPOST: 100
+    regionWeights: *PopDenseTemperate
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
 
   - type: TradeMeetingEarly
     lastMonth: 0
@@ -273,7 +358,7 @@ missionScripts:
   - type: TradeMeeting1a
     firstMonth: 1
     researchTriggers:
-      STR_FORBIDDEN_OPERATIONS: true #not needed, but gives a fake notice for affects game progression
+      STR_FORBIDDEN_OPERATIONS: true
       STR_NETRUNNERS_NETWORK: false
     missionWeights:
       0:
@@ -281,7 +366,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: TradeMeeting1b
     firstMonth: 1
     executionOdds: 55
@@ -293,7 +378,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
 
   - type: TradeMeeting2a
     researchTriggers:
@@ -305,7 +390,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: TradeMeeting2b
     executionOdds: 29
     researchTriggers:
@@ -317,7 +402,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
 
   - type: TradeMeeting3a
     researchTriggers:
@@ -329,7 +414,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: TradeMeeting3b
     executionOdds: 18
     researchTriggers:
@@ -341,7 +426,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
 
   - type: GCIC1Early
     lastMonth: 0
@@ -364,7 +449,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: GCIC1b
     # researchTriggers:
     #   STR_GCIC_INDEPENDENCE: false
@@ -376,7 +461,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: GCIC1c
     # researchTriggers:
     #   STR_GCIC_INDEPENDENCE: false
@@ -388,7 +473,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
 
   - type: GCIC2a
     researchTriggers:
@@ -400,7 +485,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: GCIC2b
     researchTriggers:
       STR_GCIC_BACKCHANNEL_MISSIONS: true
@@ -412,7 +497,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: GCIC2c
     researchTriggers:
       STR_GCIC_BACKCHANNEL_MISSIONS: true
@@ -424,7 +509,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
 
   - type: MEDI1a
     researchTriggers:
@@ -446,7 +531,7 @@ missionScripts:
         STR_CAYESAND_BASIN: 20
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: MEDI1b
     researchTriggers:
       STR_MEDI_MISSIONS: true
@@ -460,7 +545,7 @@ missionScripts:
     regionWeights: *xenoform
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: MEDI1c
     researchTriggers:
       STR_MEDI_MISSIONS: true
@@ -474,7 +559,7 @@ missionScripts:
     regionWeights: *xenoform
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
 
   - type: GR1a
     researchTriggers:
@@ -485,7 +570,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: GR1b
     researchTriggers:
       STR_GR_MISSIONS: true
@@ -496,7 +581,7 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170
   - type: GR1c
     researchTriggers:
       STR_GR_MISSIONS: true
@@ -507,4 +592,4 @@ missionScripts:
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
-    randomDelay: 43000
+    randomDelay: 43170

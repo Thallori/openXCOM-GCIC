@@ -92,10 +92,9 @@ X-Com Files/Final Mod Pack		[mod]
   Muckstar				[touchup+animated]
   Zombie				[touchup]
   Robosphere Inventory			[touchup]
-  Cyberdisk Inventory			[recolour+remix]
   Bleed+Burn+Shock Icons		[touchup+recolour]
   SFX					[none]
-   Chemogun, Flamer, Hammer, Plasma, Spray
+   Chemogun, Flamer, Hammer, Plasma, Spray, Bolt, Tube, Machinegun
 
 X-Com Files Resound			[mod]
  Ksenni					[author]
@@ -162,6 +161,11 @@ Kenny.nl				[site]
 Xenonauts				[game]
  Goldhawk Interactive			[group]
   Shield				[remix]			(original)
+
+Art/Backgrounds
+ Dontknowwhattodraw94
+  The night I saw Them			[recolour]		(original)
+  https://www.deviantart.com/dontknowwhattodraw94/art/The-night-I-saw-Them-712700535
 
 Inspiration comes from many sources, too many to list. Ranging from decades old fan fiction to scientific journals. However, the ideas taken from the OpenXCom community are listed here.
 
@@ -240,6 +244,7 @@ thallori
   doc grip
   marsball
   windlass bomb launcher
+  barrel mortar
 
  pedia
   data1+2+3

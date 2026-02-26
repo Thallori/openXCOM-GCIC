@@ -182,6 +182,10 @@ extraSprites:
       237: Resources/Items/Laser/prototype_sniper_bigob.png
       238: Resources/Items/Laser/Ammo/prototype_sniper_ammo_bigob.png
       239: Resources/Factions/Ironeyes/breaker_bigob.png
+      240: Resources/Items/Kinetic/9mm_mg_bigob.png
+      241: Resources/Items/Kinetic/Ammo/9mm_mg_ammo_bigob.png
+      242: Resources/Items/Explosives/barrelmortar_bigob.png
+      243: Resources/Items/Explosives/Ammo/barrelmortar_ammo1_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -308,6 +312,10 @@ extraSprites:
       220: Resources/Items/Laser/prototype_sniper_floorob.png
       221: Resources/Items/Laser/Ammo/prototype_sniper_ammo_floorob.png
       222: Resources/Factions/Ironeyes/breaker_floorob.png
+      223: Resources/Items/Kinetic/9mm_mg_floorob.png
+      224: Resources/Items/Kinetic/Ammo/9mm_mg_ammo_floorob.png
+      225: Resources/Items/Explosives/barrelmortar_floorob.png
+      226: Resources/Items/Explosives/Ammo/barrelmortar_ammo1_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -370,6 +378,8 @@ extraSprites:
       536: Resources/Items/Laser/prototype_smg_handob.png
       544: Resources/Items/Laser/prototype_esniper_handob.png
       552: Resources/Items/Laser/prototype_sniper_handob.png
+      560: Resources/Items/Kinetic/9mm_mg_handob.png
+      568: Resources/Items/Explosives/barrelmortar_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT

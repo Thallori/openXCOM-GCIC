@@ -6,7 +6,6 @@ manufacture:
     time: 1
     producedItems:
       STR_MONEY_1: 1
-
   - name: STR_MONEY_2_MANU
     category: STR_TASKS_MANUCAT
     requiresBaseFunc:
@@ -27,7 +26,6 @@ manufacture:
       STR_GCIC_SABOTAGE_2_DATA: 1
     producedItems:
       STR_SHARES_GCIC: 8
-
   - name: STR_GCIC_SABOTAGE_2_MANU2
     category: STR_TASKS_MANUCAT
     requires:
@@ -37,7 +35,6 @@ manufacture:
       STR_GCIC_SABOTAGE_2_DATA_DECRYPT: 1
     producedItems:
       STR_SHARES_GCIC: 8
-
 #projects
   - name: STR_RRM_ITEM
     category: STR_PROJECTS_MANUCAT
@@ -48,7 +45,6 @@ manufacture:
       STR_BRAND_LOYALTY: 6
     producedItems:
       STR_RRM_ITEM: 1
-
   - name: STR_FTM_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
@@ -80,7 +76,6 @@ manufacture:
       STR_SHARES_GCIC: 5
     producedItems:
       STR_PBI_ITEM: 1
-
   - name: STR_PTS_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
@@ -111,7 +106,6 @@ manufacture:
     time: 1
     requiredItems:
       STR_BOUNTY_1: 20
-
   - name: STR_PGM_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
@@ -127,7 +121,6 @@ manufacture:
     time: 1
     requiredItems:
       STR_SHARES_MEDI: 1
-
   - name: STR_MEDI_TRAUMA_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
@@ -135,7 +128,6 @@ manufacture:
     time: 1
     requiredItems:
       STR_SHARES_MEDI: 3
-
   - name: STR_MEDICAL_CYBERNETICS_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
@@ -151,7 +143,6 @@ manufacture:
     time: 1
     requiredItems:
       STR_SHARES_GR: 1
-
   - name: STR_SKELE_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
@@ -159,7 +150,6 @@ manufacture:
     time: 1
     requiredItems:
       STR_SHARES_GR: 3
-
   - name: STR_LDT_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
@@ -167,7 +157,6 @@ manufacture:
     time: 1
     requiredItems:
       STR_SHARES_GR: 4
-
 #weapons and ammo
   - name: STR_45_AMMO
     category: STR_AMMO_MANUCAT
@@ -195,7 +184,6 @@ manufacture:
     time: 6
     cost: 15
     refund: true
-
   - name: STR_SSP_SHOTGUN_AMMO_SLUG
     category: STR_AMMO_MANUCAT
     requires:
@@ -228,7 +216,6 @@ manufacture:
       STR_BIOMASS: 1
     producedItems:
       STR_DART_AMMO1: 3
-
   - name: STR_DART_AMMO2_MANU
     category: STR_AMMO_MANUCAT
     requiresBaseFunc:
@@ -252,7 +239,6 @@ manufacture:
     time: 4
     cost: 40
     refund: true
-
   - name: STR_CHEM_SMG_AMMO2
     category: STR_AMMO_MANUCAT
     requires:
@@ -280,7 +266,6 @@ manufacture:
     time: 200
     cost: 8000
     refund: true
-
   - name: STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
     category: STR_AMMO_MANUCAT
     requiresBaseFunc:
@@ -300,7 +285,6 @@ manufacture:
     time: 400
     cost: 12000
     refund: true
-
   - name: STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1
     category: STR_AMMO_MANUCAT
     requiresBaseFunc:
@@ -320,7 +304,6 @@ manufacture:
     time: 500
     cost: 15000
     refund: true
-
   - name: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
     category: STR_AMMO_MANUCAT
     requiresBaseFunc:
@@ -340,7 +323,6 @@ manufacture:
     time: 800
     cost: 80000
     refund: true
-
   - name: STR_GCIC_PROTOTYPE_LASER_SNIPER_AMMO1
     category: STR_AMMO_MANUCAT
     requiresBaseFunc:
@@ -358,7 +340,6 @@ manufacture:
     time: 12
     cost: 100
     refund: true
-
 #equipment
   - name: STR_PIPEBOMB
     category: STR_EQUIPMENT_MANUCAT
@@ -403,7 +384,6 @@ manufacture:
       STR_BIOMASS: 1
     producedItems:
       STR_STIM_SPRINT: 5
-
   - name: STR_STIM_MORNING_MANU
     category: STR_EQUIPMENT_MANUCAT
     requiresBaseFunc:
@@ -417,7 +397,6 @@ manufacture:
       STR_BIOMASS: 1
     producedItems:
       STR_STIM_MORNING: 5
-
 #armor
   - name: STR_AQUAVEST_DRONE_ARMOR
     category: STR_ARMORS_MANUCAT
@@ -431,7 +410,6 @@ manufacture:
     refund: true
     requiredItems:
       STR_PLASTICS: 2
-
 #resources
   - name: STR_PLASTICS
     category: STR_RESOURCES_MANUCAT
@@ -446,7 +424,6 @@ manufacture:
     refund: true
     requiredItems:
       STR_BIOMASS: 1
-
 #upgrades
   - name: STR_SSP_LASER_PISTOL_MANU
     category: STR_UPGRADES_MANUCAT
@@ -473,7 +450,6 @@ manufacture:
       STR_ELERIUM_CORE: 1
     producedItems:
       STR_GCIC_PROTOTYPE_LASER_PISTOL_ELERIUM: 1
-
   - name: STR_GCIC_PROTOTYPE_LASER_SMG_MANU
     category: STR_UPGRADES_MANUCAT
     requires:
@@ -486,7 +462,6 @@ manufacture:
       STR_ELERIUM_CORE: 2
     producedItems:
       STR_GCIC_PROTOTYPE_LASER_SMG_ELERIUM: 1
-
   - name: STR_GCIC_PROTOTYPE_LASER_RIFLE_MANU
     category: STR_UPGRADES_MANUCAT
     requires:
@@ -499,7 +474,6 @@ manufacture:
       STR_ELERIUM_CORE: 2
     producedItems:
       STR_GCIC_PROTOTYPE_LASER_RIFLE_ELERIUM: 1
-
   - name: STR_GCIC_PROTOTYPE_LASER_SNIPER_MANU
     category: STR_UPGRADES_MANUCAT
     requires:
@@ -512,7 +486,6 @@ manufacture:
       STR_ELERIUM_CORE: 2
     producedItems:
       STR_GCIC_PROTOTYPE_LASER_SNIPER_ELERIUM: 1
-
 #expansions
   - name: STR_SCIENTIST_MANU
     category: STR_EXPANSION_MANUCAT
@@ -526,7 +499,6 @@ manufacture:
       STR_BIONIC_INTERLACE: 1
     spawnedPersonType: STR_SCIENTIST
     producedItems: {} #empty
-
   - name: STR_ENGINEER_MANU
     category: STR_EXPANSION_MANUCAT
     requires:
@@ -539,7 +511,6 @@ manufacture:
       STR_BIONIC_INTERLACE: 1
     spawnedPersonType: STR_ENGINEER
     producedItems: {} #empty
-
 #drones
   - name: STR_CRACKING_HYBRID_DRONE
     category: STR_CRACKING_MANUCAT
@@ -556,7 +527,6 @@ manufacture:
       - [85, {}] #empty
       - [15, {STR_DRONE_MEMORY: 1}]
     producedItems: {} #empty
-
   - name: STR_CRACKING_HUMAN_DRONE
     category: STR_CRACKING_MANUCAT
     requires:
@@ -572,7 +542,6 @@ manufacture:
       - [85, {}] #empty
       - [15, {STR_DRONE_MEMORY: 1}]
     producedItems: {} #empty
-
   - name: STR_CRACKING_SHARK_DRONE
     category: STR_CRACKING_MANUCAT
     requires:
@@ -588,7 +557,6 @@ manufacture:
       - [85, {}] #empty
       - [15, {STR_DRONE_MEMORY: 1}]
     producedItems: {} #empty
-
   - name: STR_CRACKING_DEEP_DRONE
     category: STR_CRACKING_MANUCAT
     requires:
@@ -604,7 +572,6 @@ manufacture:
       - [85, {}] #empty
       - [15, {STR_DRONE_MEMORY: 1}]
     producedItems: {} #empty
-
 #cracking
   - name: STR_CONSUMER_CYBERNETICS_DECODED
     category: STR_CRACKING_MANUCAT
@@ -620,7 +587,6 @@ manufacture:
       STR_CONSUMER_CYBERNETICS_CODED: 1
     producedItems:
       STR_CONSUMER_CYBERNETICS: 1
-
   - name: STR_MEDICAL_CYBERNETICS_DECODED
     category: STR_CRACKING_MANUCAT
     requiresBaseFunc:
@@ -652,7 +618,6 @@ manufacture:
       STR_45_PISTOL_CODED: 1
     producedItems:
       STR_45_PISTOL: 1
-
   - name: STR_SSP_SMG_DECODED
     category: STR_CRACKING_MANUCAT
     requiresBaseFunc:
@@ -667,7 +632,6 @@ manufacture:
       STR_SSP_SMG_CODED: 1
     producedItems:
       STR_SSP_SMG: 1
-
   - name: STR_SSP_SHOTGUN_DECODED
     category: STR_CRACKING_MANUCAT
     requiresBaseFunc:
@@ -682,7 +646,6 @@ manufacture:
       STR_SSP_SHOTGUN_CODED: 1
     producedItems:
       STR_SSP_SHOTGUN: 1
-
   - name: STR_TASER_PISTOL_DECODED
     category: STR_CRACKING_MANUCAT
     requiresBaseFunc:
@@ -697,7 +660,6 @@ manufacture:
       STR_TASER_PISTOL_CODED: 1
     producedItems:
       STR_TASER_PISTOL: 1
-
   - name: STR_SSP_LASER_PISTOL_DECODED
     category: STR_CRACKING_MANUCAT
     requiresBaseFunc:
@@ -722,7 +684,6 @@ manufacture:
       STR_GCIC_SABOTAGE_2_DATA: 1
     producedItems:
       STR_GCIC_SABOTAGE_2_DATA_DECRYPT: 1
-
 #extortions
   - name: STR_EX_FREELANCER
     category: STR_EXTORT_MANUCAT
@@ -797,7 +758,6 @@ manufacture:
       - [20, {STR_SSP_SMG: 1, STR_SSP_SMG_AMMO: 5}]
       - [40, {STR_SINGLESHOT_LASER_PISTOL: 1, STR_MULTISHOT_LASER_AMMO: 6}]
       - [40, {STR_SSP_SHOTGUN: 1, STR_SSP_SHOTGUN_AMMO_BS: 5}]
-
 #containers
   - name: STR_OPEN_CRIMINAL_CONTAINER_1
     category: STR_CONTAINERS_MANUCAT
@@ -812,12 +772,14 @@ manufacture:
       - [20, {STR_BUSBOX_PISTOL: 3, STR_COMBALL_AMMO: 3}]
       - [20, {STR_BUSBOX_PISTOL: 3, STR_PAPERSHOT_AMMO: 3}]
       - [20, {STR_9MM_PISTOL: 1, STR_9MM_AMMO: 4}]
-      - [10, {STR_9MM_SMG: 1, STR_9MM_SMG_AMMO: 4}]
       - [20, {STR_9MM_RIFLE: 1, STR_9MM_RIFLE_AMMO: 4}]
       - [20, {STR_DISPOSABLE_SMG: 3}]
+      - [20, {STR_STIM_INHALER: 10}]
+      - [10, {STR_9MM_SMG: 1, STR_9MM_SMG_AMMO: 4}]
       - [10, {STR_MOLOTOV: 4}]
       - [10, {STR_PIPEBOMB: 2}]
-      - [20, {STR_STIM_INHALER: 10}]
+      - [5, {STR_9MM_MG: 1, STR_9MM_MG_AMMO: 3}]
+      - [5, {STR_BARREL_MOTAR: 1, STR_BARREL_MOTAR_AMMO: 2}]
 
   - name: STR_OPEN_XN_CONTAINER_1
     category: STR_CONTAINERS_MANUCAT
@@ -835,7 +797,6 @@ manufacture:
       - [1, {STR_XN_LASER_SNIPER: 1}]
       - [1, {STR_XN_LASER_MG: 1}]
       - [1, {STR_XN_LASER_CANNON: 1}]
-
   - name: STR_CRACK_XN_CONTAINER_1
     category: STR_CONTAINERS_MANUCAT
     requiresBaseFunc:
@@ -877,7 +838,6 @@ manufacture:
       STR_XN_LASER_PISTOL: 1
     producedItems:
       STR_ELERIUM_CORE: 1
-
   - name: STR_SALVAGE_XN_LASER_SMG
     category: STR_SALVAGE_MANUCAT
     requires:
@@ -888,7 +848,6 @@ manufacture:
       STR_XN_LASER_SMG: 1
     producedItems:
       STR_ELERIUM_CORE: 1
-
   - name: STR_SALVAGE_XN_LASER_RIFLE
     category: STR_SALVAGE_MANUCAT
     requires:
@@ -899,7 +858,6 @@ manufacture:
       STR_XN_LASER_RIFLE: 1
     producedItems:
       STR_ELERIUM_CORE: 1
-
   - name: STR_SALVAGE_XN_LASER_SNIPER
     category: STR_SALVAGE_MANUCAT
     requires:
@@ -910,7 +868,6 @@ manufacture:
       STR_XN_LASER_SNIPER: 1
     producedItems:
       STR_ELERIUM_CORE: 1
-
   - name: STR_SALVAGE_XN_LASER_MG
     category: STR_SALVAGE_MANUCAT
     requires:
@@ -921,7 +878,6 @@ manufacture:
       STR_XN_LASER_MG: 1
     producedItems:
       STR_ELERIUM_CORE: 1
-
   - name: STR_SALVAGE_XN_LASER_CANNON
     category: STR_SALVAGE_MANUCAT
     requires:
@@ -932,7 +888,6 @@ manufacture:
       STR_XN_LASER_CANNON: 1
     producedItems:
       STR_ELERIUM_CORE: 1
-
   - name: STR_SALVAGE_XN_LASER_SHOTGUN
     category: STR_SALVAGE_MANUCAT
     requires:
@@ -955,7 +910,6 @@ manufacture:
     producedItems:
       STR_GCIC_PROTOTYPE_LASER_PISTOL: 1
       STR_ELERIUM_CORE: 1
-
   - name: STR_GCIC_PROTOTYPE_LASER_SMG_ELERIUM
     category: STR_SALVAGE_MANUCAT
     requires:
@@ -967,7 +921,6 @@ manufacture:
     producedItems:
       STR_GCIC_PROTOTYPE_LASER_SMG: 1
       STR_ELERIUM_CORE: 2
-
   - name: STR_SALVAGE_GCIC_PROTOTYPE_LASER_RIFLE_ELERIUM
     category: STR_SALVAGE_MANUCAT
     requires:
@@ -979,7 +932,6 @@ manufacture:
     producedItems:
       STR_GCIC_PROTOTYPE_LASER_RIFLE: 1
       STR_ELERIUM_CORE: 2
-
   - name: STR_GCIC_PROTOTYPE_LASER_SNIPER_ELERIUM
     category: STR_SALVAGE_MANUCAT
     requires:

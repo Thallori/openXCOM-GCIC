@@ -1,8 +1,8 @@
 
 #0: transit land+sea
 #1: rural land/desert/cold land
-#2: urban+sea/deep desert/ice
-#3: cities/desert outposts/cold cities
+#2: urban+sea/deep desert/ice+iceburgs
+#3: land cities/desert outposts/cold land cities
 # -1: rich/space elevator
 # -2: poor
 # -3: arid
@@ -12,7 +12,7 @@
 # -7: cold port
 # -8: lake port
 # -9: coral port
-#4: bases land/bases desert/bases land
+#4: land bases/desert bases/cold land bases
 #5: spawn-despawn
 #6: xenoform/not used/not used
 #7: transit sea

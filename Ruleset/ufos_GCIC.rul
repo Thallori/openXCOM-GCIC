@@ -21,11 +21,7 @@ ufos:
         - HOLO_UFOINNER
       mapBlocks:
         - name: HOLOUFO_SMALL1
-          width: 10
-          length: 10
         - name: HOLOUFO_SMALL2
-          width: 10
-          length: 10
 
   - type: STR_UFO_HARVESTER
     modSprite: ufoharvester_interwin
@@ -76,8 +72,6 @@ ufos:
       mapBlocks:
         - name: HOUSE_GARAGE1
           revealedFloors: 0
-          width: 10
-          length: 10
           items:
             STR_SPAWN_CLIENT_1:
               - [6, 6, 0]
@@ -87,8 +81,6 @@ ufos:
             STR_SPAWN_CLIENT_1: [0, 0]
         - name: HOUSE_GARAGE2
           revealedFloors: 0
-          width: 10
-          length: 10
           items:
             STR_SPAWN_CLIENT_1:
               - [2, 2, 0]
@@ -119,8 +111,6 @@ ufos:
       mapBlocks:
         - name: HOUSE_GARAGE_RR1
           revealedFloors: 0
-          width: 10
-          length: 10
           items:
             STR_SPAWN_CLIENT_RR:
               - [2, 7, 0]
@@ -130,8 +120,6 @@ ufos:
             STR_SPAWN_CLIENT_RR: [0, 0]
         - name: HOUSE_GARAGE_RR2
           revealedFloors: 0
-          width: 10
-          length: 10
           items:
             STR_SPAWN_CLIENT_RR:
               - [6, 2, 0]
@@ -139,6 +127,44 @@ ufos:
               - [1, 2, 0]
           fuseTimers:
             STR_SPAWN_CLIENT_RR: [0, 0]
+
+  - type: HOUSE_SMALL
+    modSprite: interception_jammed
+    battlescapeTerrainData:
+      name: HOUSE_SMALL
+      mapDataSets:
+        - BLANKS
+        - FLORA_URBAN
+        - FLOOR_URBAN
+        - FLOOR_SLUMS
+        - STRUCTURE_WOOD
+        - STRUCTURE_BRICKS2
+        - STRUCTURE_SLUMS
+        - STRUCTURE_SLUMTILES
+        - STRUCTURE_WAREHOUSE
+        - FENCE_CHAINLINK
+        - FENCE_IRON
+        - STAIRS_PLAIN
+        - ROOFS_BITS
+        - BITS_CRATES1
+        - BITS_CONTRABAND
+        - BITS_CONTRABAND2
+        - BITS_POTTED_PLANTS
+        - BITS_SLUMTRASH
+        - BATHROOM_SLUM
+        - FURNITURE_SLUMS1
+        - FURNITURE_SLUMS3
+        - FURNITURE_TABLES1
+        - SPECIAL_MISSILE
+      mapBlocks:
+        - name: HOUSE_SMALL1
+          items:
+            STR_CRIMINAL_CONTAINER_1:
+              - [7, 5, 0]
+        - name: HOUSE_SMALL2
+          items:
+            STR_CRIMINAL_CONTAINER_1:
+              - [1, 2, 0]
 
   - type: HOUSE_BRICK
     modSprite: interception_jammed
@@ -167,16 +193,18 @@ ufos:
         - FURNITURE_SLUMS1
         - FURNITURE_SLUMS3
         - FURNITURE_TABLES1
+        - SPECIAL_MISSILE
       mapBlocks:
         - name: HOUSE_BRICK1
           width: 20
           length: 20
-          # items:
-          #   STR_CRIMINAL_CONTAINER_1:
-          #     - [1, 10, 0]
-          #     - [3, 17, 0]
-          #     - [3, 1, 0]
-          #     - [3, 16, 2]
+          items:
+            STR_CRIMINAL_CONTAINER_1:
+              - [10, 1, 0]
+              - [5, 13, 0]
+              - [4, 5, 1]
+              - [7, 5, 1]
+              - [7, 9, 2]
 
   - type: STR_SABOTAGE_OFFICE
     modSprite: interception_jammed

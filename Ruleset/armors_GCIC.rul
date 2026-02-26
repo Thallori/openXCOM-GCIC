@@ -857,9 +857,56 @@ armors:
     overKill: 1.5
     loftempsSet: [ 3 ]
     ai: #makes them willing to do self and friendly fire
-      targetWeightAsFriendly: -1
-      targetWeightAsNeutral: -1
-      targetWeightAsHostile: 500
+      targetWeightAsFriendly: -50
+      targetWeightAsNeutral: -10
+
+  - type: STR_HITTER_ARMOR
+    ufopediaType: STR_WIRETAPPER_ARMOR
+    spriteInv: WIRETAPPER.SPK
+    spriteSheet: WIRETAPPER.PCK
+    # spriteFaceGroup: 6
+    # spriteFaceColor: *SpriteFaceColorHuman
+    forcedTorso: 1
+    corpseBattle:
+      - STR_WIRETAPPER_CORPSE
+    allowsKneeling: true
+    allowsRunning: false
+    movementType: 1
+    moveCost:
+      flyUpPercent: [100, 50]
+      flyDownPercent: [50, 0]
+    personalLight: 10
+    heatVision: 20
+    weight: 8
+    frontArmor: 25
+    sideArmor: 25
+    rearArmor: 25
+    underArmor: 18
+    damageModifier: &OrganicDuravestResists
+      - 1.0 #0 none
+      - 0.70 #1 kinetic
+      - 0.85 #2 incendiary
+      - 0.95 #3 concussive
+      - 0.70 #4 radiant
+      - 0.75 #5 plasma
+      - 0.75 #6 blunt
+      - 0.75 #7 mechanical
+      - 0.85 #8 chemical
+      - 4.0 #9 smoke
+      - 0.75 #10 electric
+      - 0.95 #11 sonic
+      - 0.75 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryTypical
+    overKill: 1.5
+    loftempsSet: [ 3 ]
 # netrunners
   - type: STR_FREELANCER_ARMOR
     ufopediaType: STR_FREELANCER_ARMOR
@@ -991,6 +1038,7 @@ armors:
     allowsKneeling: true
     personalLight: 10
     heatVision: 20
+    weight: 6
     frontArmor: 20
     sideArmor: 20
     rearArmor: 20

@@ -915,10 +915,11 @@ items:
     size: 0.3
     costBuy: 10999
     costSell: 2750
+    monthlyMaintenance: 1400
     transferTime: 12
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
+    bigSprite: 240
+    floorSprite: 223
+    handSprite: 560
     bulletSprite: 17
     bulletSpeed: 30
     fireSound: 138
@@ -960,8 +961,8 @@ items:
     costBuy: 349
     costSell: 85
     transferTime: 12
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 241
+    floorSprite: 224
     hitSound: 13
     hitAnimation: -1
     invHeight: 1
@@ -2433,7 +2434,7 @@ items:
     bulletSpeed: 30
     fireSound: 121
     hitSound: 19
-    hitAnimation: 36
+    hitAnimation: -1
     invWidth: 1
     invHeight: 2
     battleType: 1
@@ -2525,7 +2526,7 @@ items:
     bigSprite: 234
     floorSprite: 212
     hitSound: 19
-    hitAnimation: 36
+    hitAnimation: -1
     battleType: 2
     weight: 2
     clipSize: 8
@@ -2551,7 +2552,7 @@ items:
     bigSprite: 234
     floorSprite: 212
     hitSound: 19
-    hitAnimation: 36
+    hitAnimation: -1
     battleType: 2
     weight: 2
     clipSize: 8
@@ -3161,9 +3162,9 @@ items:
     costBuy: 174
     costSell: 45
     transferTime: 12
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
+    bigSprite: 242
+    floorSprite: 225
+    handSprite: 568
     bulletSprite: 25
     bulletSpeed: -1
     fireSound: 139
@@ -3180,8 +3181,8 @@ items:
       throwing: 1.0
     tuSnap: 45
     tuAimed: 85
-    snapRange: 4
-    aimRange: 7
+    snapRange: 7
+    aimRange: 20
     dropoff: 1
     kneelBonus: 120
     twoHanded: true
@@ -3198,19 +3199,18 @@ items:
     costBuy: 249
     costSell: 60
     transferTime: 12
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
+    bigSprite: 243
+    floorSprite: 226
     hitAnimation: 0
     invWidth: 1
     invHeight: 3
     battleType: 2
-    weight: 8
+    weight: 7
     clipSize: 1
-    power: 40
+    power: 50
     damageType: 3
     damageAlter:
-      FixRadius: 4
+      FixRadius: 5
       RandomType: 9
       ToItem: 0.5
       ToStun: 0.75
@@ -3386,7 +3386,7 @@ items:
       FixRadius: 1
       FireThreshold: 5
       ToMorale: 4.5
-      ToStun: 0.25
+      ToStun: 0.0
       TileDamageMethod: 2
     primeActionName: STR_PRIME_MOLOTOV
     primeActionMessage: STR_PRIME_MOLOTOV_MESS
@@ -4498,6 +4498,27 @@ items:
     ignoreInCraftEquip: true
     battleType: 10
     weight: 3
+  - type: STR_MILITARY_CYBERNETICS_CODED
+    categories: [STR_RESOURCES_CATEGORY]
+    ufopediaType: STR_MILITARY_CYBERNETICS
+    size: 0.2
+    costSell: 3800
+    bigSprite: 188 #
+    ignoreInCraftEquip: true
+    battleType: 10
+    weight: 3
+  - type: STR_MILITARY_CYBERNETICS
+    categories: [STR_RESOURCES_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+    size: 0.2
+    costBuy: 37999
+    costSell: 9500
+    transferTime: 4
+    bigSprite: 188 #
+    ignoreInCraftEquip: true
+    battleType: 10
+    weight: 3
 
   - type: STR_AG_UNIT
     categories: [STR_RESOURCES_CATEGORY]
@@ -4530,30 +4551,77 @@ items:
     requiresBuy:
       - STR_LDT_ITEM
     size: 0.1
-    costBuy: 2000
+    costBuy: 1999
     costSell: 500
     transferTime: 4
     bigSprite: 198
     ignoreInCraftEquip: true
     battleType: 10
     weight: 2
+  - type: STR_NANOWEAVE
+    categories: [STR_RESOURCES_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+    size: 0.1
+    costBuy: 9999
+    costSell: 2500
+    transferTime: 4
+    bigSprite: 198 #
+    ignoreInCraftEquip: true
+    battleType: 10
+    weight: 2
+
   - type: STR_PLASTICS
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
       - STR_TODO
     size: 0.2
-    costBuy: 4000
+    costBuy: 3999
     costSell: 1000
     transferTime: 4
     bigSprite: 170
     ignoreInCraftEquip: true
     battleType: 10
     weight: 4
+    armor: 40
+  - type: STR_PHX_WARHEAD
+    categories: [STR_RESOURCES_CATEGORY]
+    specialType: 194
+    requiresBuy:
+      - STR_TODO
+    size: 0.1
+    costBuy: 1999
+    costSell: 500
+    transferTime: 72
+    bigSprite: 900 #
+    floorSprite: 900 #
+    ignoreInCraftEquip: true
+    recoveryPoints: -1
+    recoveryDividers:
+      STR_OTHER: -4
+    battleType: 10
+    weight: 4
+    armor: 60
 
+  - type: STR_ALLOYS
+    categories: [STR_RESOURCES_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_ALLOYS
+    size: 0.1
+    costBuy: 24999
+    costSell: 3750
+    transferTime: 4
+    bigSprite: 170 #
+    ignoreInCraftEquip: true
+    recoveryPoints: 1
+    weight: 6
+    armor: 100
   - type: STR_ELERIUM_CORE
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
       - STR_TODO
+      - STR_ELERIUM_CORE
     size: 0.1
     costBuy: 200000
     costSell: 200000
@@ -4562,7 +4630,6 @@ items:
     floorSprite: 148
     ignoreInCraftEquip: true
     recoveryPoints: 5
-    battleType: 10
     weight: 5
     armor: 120
 
@@ -5024,6 +5091,24 @@ items:
     recoveryTransformations:
       STR_BIOMASS: [1]
       STR_CONSUMER_CYBERNETICS_CODED: [1]
+    armor: 30
+
+  - type: STR_HITTER_PRIVATE
+    categories: [STR_SPECIMENS_CATEGORY]
+    liveAlien: true
+  - type: STR_HITTER_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    weight: 22
+    bigSprite: 239 #
+    floorSprite: 222 #
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_ALLOYS: [1]
+      STR_MILITARY_CYBERNETICS_CODED: [1]
     armor: 30
 # netrunners
   - type: STR_FREELANCER_PRIVATE

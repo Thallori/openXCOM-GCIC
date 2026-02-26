@@ -151,6 +151,28 @@ research:
     dependencies:
       - STR_SHARES_GCIC
 
+  - name: STR_IRONEYES_NETWORK
+    dependencies:
+      - STR_FORBIDDEN_OPERATIONS
+      - STR_TRG_BO_PREQ
+    cost: 2
+  - name: STR_IRONEYES_PORT
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
+    dependencies:
+      - STR_IRONEYES_NETWORK
+      - STR_BREAKER_PRIVATE
+      - STR_LOCAL_INTERFACE
+    cost: 4
+  - name: STR_IRONEYES_SURVEY
+    requiresBaseFunc:
+      - STR_SERVICE_NETWORK
+    dependencies:
+      - STR_IRONEYES_PORT
+      - STR_RIPPER_PRIVATE
+      - STR_PUBLIC_GATEWAY
+    cost: 7
+
   - name: STR_NETRUNNERS_NETWORK
     dependencies:
       - STR_FREELANCER_PRIVATE
@@ -163,13 +185,8 @@ research:
     dependencies:
       - STR_SKIPTRACER_PRIVATE
       - STR_NETRUNNERS_NETWORK
-    cost: 6
-
-  - name: STR_IRONEYES_NETWORK
-    dependencies:
-      - STR_TRG_BO_PREQ
-      - STR_FORBIDDEN_OPERATIONS
-    cost: 3
+      - STR_PUBLIC_GATEWAY
+    cost: 9
 
   - name: STR_SUBCONTRACTING_OPERATIONS
     dependencies:
@@ -505,6 +522,18 @@ research:
       - STR_VENDOR_BUILDER
       - STR_PG_PREQ
     cost: 15
+  - name: STR_HYPERCOMMS_ARRAY_RESEARCH
+    dependencies:
+      - STR_LOCAL_INTERFACE
+      - STR_HCAF_PREQ
+    cost: 20
+  - name: STR_BACKCHANNELS_RESEARCH
+    dependencies:
+      - STR_LOCAL_INTERFACE
+      - STR_SJB_LICENSE
+      - STR_BCF_PREQ
+    cost: 20
+
   - name: STR_PRINTER
     dependencies:
       - STR_PLASTICS
@@ -585,6 +614,9 @@ research:
   - name: STR_MUSCULATURE
     dependencies:
       - STR_MEDICAL_CYBERNETICS
+  - name: STR_INTEGUMENTARY
+    dependencies:
+      - STR_MILITARY_CYBERNETICS
 # armor
   - name: STR_PLEX_DRONE_ARMOR
   - name: STR_DURA_DRONE_ARMOR
@@ -912,6 +944,7 @@ research:
       - STR_CONSUMER_CYBERNETICS
       - STR_BC_PREQ
   - name: STR_CONSUMER_CYBERNETICS
+    cost: 5
     dependencies:
       - STR_CONSUMER_CYBERNETICS_CODED
 
@@ -927,6 +960,18 @@ research:
     unlocks:
       - STR_MUSCULATURE
 
+  - name: STR_MILITARY_CYBERNETICS_CODED
+    lookup: STR_MILITARY_CYBERNETICS
+    needItem: true
+    cost: 20
+    unlocks:
+      - STR_MILITARY_CYBERNETICS
+  - name: STR_MILITARY_CYBERNETICS
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_INTEGUMENTARY
+
   - name: STR_AG_UNIT
     needItem: true
     cost: 5
@@ -936,12 +981,20 @@ research:
   - name: STR_DURATHREAD
     needItem: true
     cost: 5
+  - name: STR_NANOWEAVE
+    needItem: true
+    cost: 5
   - name: STR_PLASTICS
+    needItem: true
+    cost: 5
+
+  - name: STR_ALLOYS
     needItem: true
     cost: 5
   - name: STR_ELERIUM_CORE
     needItem: true
     cost: 5
+
   - name: STR_SJB_LICENSE
     needItem: true
     cost: 5
@@ -1019,13 +1072,11 @@ research:
         - STR_9MM_SMG
       STR_TRG_BRK_PREQ:
         - STR_BREAKER_PRIVATE
+        - STR_9MM_MG
         - STR_BARREL_MOTAR
         - STR_WINDLASS_LAUNCHER
       STR_TRG_CYFURB_PREQ:
         - STR_CYFURB
-        - STR_BREAKER_PRIVATE
-        - STR_BARREL_MOTAR
-        - STR_WINDLASS_LAUNCHER
       STR_TRG_FL_PREQ:
         - STR_FREELANCER_PRIVATE
         - STR_DART_PISTOL
@@ -1089,7 +1140,6 @@ research:
         - STR_BREAKER_PRIVATE
       STR_TRG_CYFURB_PREQ:
         - STR_CYFURB
-        - STR_BREAKER_PRIVATE
 
   - name: STR_DATA_1_NETRUNNERS
     requiresBaseFunc:
@@ -1182,7 +1232,7 @@ research:
     neededItem: STR_SECRET_DATA
     needItem: true
     destroyItem: true
-    cost: 10
+    cost: 15
     points: 20
     dependencies:
       - STR_PUBLIC_GATEWAY
@@ -1210,6 +1260,7 @@ research:
     cost: 6
     unlocks:
       - STR_BOOSTER_ARMOR
+      - STR_PG_PREQ
       - STR_ALIEN_INTERVIEWED_FLAG
     getOneFree:
       - STR_BOOSTER_PRIVATE
@@ -1227,6 +1278,7 @@ research:
     cost: 7
     unlocks:
       - STR_RIPPER_ARMOR
+      - STR_PG_PREQ
       - STR_ALIEN_INTERVIEWED_FLAG
     getOneFree:
       - STR_RIPPER_PRIVATE
@@ -1244,6 +1296,7 @@ research:
     cost: 8
     unlocks:
       - STR_BREAKER_ARMOR
+      - STR_PG_PREQ
       - STR_ALIEN_INTERVIEWED_FLAG
     getOneFree:
       - STR_BREAKER_PRIVATE
@@ -1436,6 +1489,12 @@ research:
     dependencies:
       - STR_LOCK
   - name: STR_PG_PREQ #public gateway facility
+    dependencies:
+      - STR_LOCK
+  - name: STR_HCAF_PREQ #hypercomms array facility
+    dependencies:
+      - STR_LOCK
+  - name: STR_BCF_PREQ #backchannels facility
     dependencies:
       - STR_LOCK
   - name: STR_DC_PREQ #drone cracking

@@ -106,7 +106,7 @@ alienDeployments:
     width: 30
     length: 30
     height: 8
-    alert: STR_RESCUE_1_ALERT
+    alert: STR_RESCUE_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_RESCUE_1_ALERT_DESCRIPTION
     markerName: STR_RESCUE_1
@@ -198,7 +198,7 @@ alienDeployments:
     width: 40
     length: 40
     height: 8
-    alert: STR_RESCUE_RR_ALERT
+    alert: STR_RESCUE_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_RESCUE_RR_ALERT_DESCRIPTION
     markerName: STR_RESCUE_RR
@@ -404,7 +404,7 @@ alienDeployments:
     width: 30
     length: 30
     height: 8
-    alert: STR_KNOCKOUT_MISSION_ALERT
+    alert: STR_RESCUE_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_KNOCKOUT_MISSION_ALERT_DESCRIPTION
     markerName: STR_KNOCKOUT_MISSION
@@ -481,24 +481,24 @@ alienDeployments:
             - STR_STIM_INHALER
             - STR_PERSONAL_DATA
 
-  - type: STR_IRONEYES_SAFEHOUSE
-    width: 40
-    length: 40
+  - type: STR_IRONEYES_SHOP
+    width: 30
+    length: 30
     height: 8
-    script: SLUM_4X4
-    alert: STR_IRONEYES_SAFEHOUSE_ALERT
+    script: SLUM_3X3
+    alert: STR_IRONEYES_ALERT
     # alertBackground: BACK03.SCR
-    alertDescription: STR_IRONEYES_SAFEHOUSE_ALERT_DESCRIPTION
-    markerName: STR_IRONEYES_SAFEHOUSE
+    alertDescription: STR_IRONEYES_SHOP_ALERT_DESCRIPTION
+    markerName: STR_IRONEYES_SHOP
     duration: [48, 72]
     startingCondition: MILSPEC_GEAR_INFILTRATION_CRAFT
     briefing:
       showTarget: false
-      title: STR_IRONEYES_SAFEHOUSE
+      title: STR_IRONEYES_SHOP
       music: SHADOW_INTRO
-      palette: 0
+      palette: 2
     unlockedResearch: STR_TRG_BRK_PREQ
-    customUfo: HOUSE_BRICK
+    customUfo: HOUSE_SMALL
     forcePercentageOutsideUfo: true
     terrains:
       - SLUM
@@ -516,13 +516,16 @@ alienDeployments:
           -
             - STR_9MM_MG
             - STR_9MM_MG_AMMO
-            - STR_PIPEBOMB
-          -
-            - STR_9MM_MG
             - STR_9MM_MG_AMMO
             - STR_PIPEBOMB
           -
             - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+            - STR_PIPEBOMB
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
             - STR_9MM_MG_AMMO
             - STR_PIPEBOMB
           -
@@ -614,6 +617,125 @@ alienDeployments:
           -
             - STR_STL_KNIFE
             - STR_MOLOTOV
+
+  - type: STR_IRONEYES_SAFEHOUSE
+    width: 40
+    length: 40
+    height: 8
+    script: SLUM_4X4
+    alert: STR_IRONEYES_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_IRONEYES_SAFEHOUSE_ALERT_DESCRIPTION
+    markerName: STR_IRONEYES_SAFEHOUSE
+    duration: [72, 120]
+    startingCondition: MILSPEC_GEAR_INFILTRATION_CRAFT
+    briefing:
+      showTarget: false
+      title: STR_IRONEYES_SAFEHOUSE
+      music: SHADOW_INTRO
+      palette: 2
+    unlockedResearch: STR_TRG_RI_PREQ
+    customUfo: HOUSE_BRICK
+    forcePercentageOutsideUfo: true
+    terrains:
+      - SLUM
+    music:
+      - IRON1
+    data:
+      - alienRank: 7
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 0
+        extraRandomItems: *ironExtra
+        itemSets: &ripperSetPrivate
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+          -
+            - STR_9MM_PISTOL
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+          -
+            - STR_9MM_PISTOL
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+          -
+            - STR_DISPOSABLE_SMG
+            - STR_STL_KNIFE
+          -
+            - STR_DISPOSABLE_SMG
+            - STR_STL_KNIFE
+      - alienRank: 6
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 4
+        percentageOutsideUfo: 20
+        extraRandomItems: *ironExtra
+        itemSets: *boosterSetPrivate
+      - alienRank: 8
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 2
+        percentageOutsideUfo: 100
+        extraRandomItems: *ironExtra
+        itemSets: *breakerSetPrivate
+      - alienRank: 6
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_HYBRID
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_HUMAN
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 8
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_SHARK
+        itemSets: *AnchorEmptyInventory
 
   - type: STR_TRADE_MEETING_EARLY
     script: SINGLE_BLOCK_2X2

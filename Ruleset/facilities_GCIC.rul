@@ -137,7 +137,6 @@ facilities:
 
   - type: STR_HOLDING_CELLS
     requires:
-      - STR_VENDOR_BUILDER
       - STR_HOLDING_CELLS_RESEARCH
     spriteShape: 1
     spriteFacility: 304
@@ -164,9 +163,9 @@ facilities:
 
   - type: STR_LOCAL_INTERFACE
     requires:
-      - STR_LOCAL_INTERFACE
       - STR_PERSONAL_DATA
-    provideBaseFunc: [STR_SERVICE_PORT] #for hacking things you've got
+      - STR_LOCAL_INTERFACE
+    provideBaseFunc: [STR_SERVICE_PORT] #for hacking things you got
     spriteShape: 1
     spriteFacility: 308
     buildTime: 13
@@ -184,9 +183,9 @@ facilities:
 
   - type: STR_PUBLIC_GATEWAY
     requires:
-      - STR_PUBLIC_GATEWAY
       - STR_SECRET_DATA
-    provideBaseFunc: [STR_SERVICE_NETWORK] #for hacking things you've don't got
+      - STR_PUBLIC_GATEWAY
+    provideBaseFunc: [STR_SERVICE_NETWORK] #for hacking things you don't got
     spriteShape: 1
     spriteFacility: 311
     buildTime: 15
@@ -199,6 +198,29 @@ facilities:
         refund: 5
     labs: 2
     maxAllowedPerBase: 3
+    mapName: XBASE_02
+
+  - type: STR_BACKCHANNELS
+    requires:
+      - STR_SJB_LICENSE
+      - STR_BACKCHANNELS_RESEARCH
+    requiresBaseFunc: [STR_SERVICE_NETWORK]
+    provideBaseFunc: [STR_SERVICE_BACKCHANNELS]
+    spriteShape: 1
+    spriteFacility: 311 #
+    buildTime: 19
+    buildCost: 1000000
+    refundValue: 750000
+    monthlyCost: -120000
+    buildCostItems:
+      STR_SJB_LICENSE:
+        build: 1
+        refund: 1
+      STR_SECRET_DATA:
+        build: 10
+        refund: 10
+    labs: 1
+    maxAllowedPerBase: 1
     mapName: XBASE_02
 
   - type: STR_PRINTER
@@ -224,6 +246,30 @@ facilities:
     buildCost: 68000
     refundValue: 50000
     monthlyCost: -8000
+    labs: 1
     radarChance: 5
     radarRange: 1900
+    maxAllowedPerBase: 1
+    mapName: XBASE_02
+
+  - type: STR_HYPERCOMMS_ARRAY
+    requires:
+      - STR_BIONIC_INTERLACE
+      - STR_HYPERCOMMS_ARRAY_RESEARCH
+    requiresBaseFunc: [STR_SERVICE_NETWORK]
+    provideBaseFunc: [STR_SERVICE_HYPERCOMMS]
+    spriteShape: 1
+    spriteFacility: 311 #
+    buildTime: 17
+    buildCost: 1250000
+    refundValue: 940000
+    monthlyCost: 150000
+    buildCostItems:
+      STR_PERSONAL_DATA:
+        build: 50
+        refund: 50
+    labs: 6
+    radarChance: 3
+    radarRange: 2500
+    maxAllowedPerBase: 1
     mapName: XBASE_02

@@ -159,11 +159,11 @@ units:
       strength: 40
       psiStrength: 30
       psiSkill: 0
-      mana: 30
+      mana: 20
     armor: STR_BOOSTER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 4
+    value: 5
     deathSound: [41, 42, 43]
     intelligence: 2
     aggression: 5
@@ -174,9 +174,9 @@ units:
     rank: STR_RANK_4
     liveAlien: STR_BOUNTY_1
     stats:
-      tu: 55
-      stamina: 65
-      health: 50
+      tu: 50
+      stamina: 60
+      health: 45
       bravery: 70
       reactions: 40
       firing: 50
@@ -185,11 +185,11 @@ units:
       strength: 40
       psiStrength: 30
       psiSkill: 0
-      mana: 30
+      mana: 20
     armor: STR_RIPPER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 5
+    value: 10
     deathSound: [44, 45, 46]
     intelligence: 2
     aggression: 2
@@ -197,12 +197,12 @@ units:
     canSurrender: true
   - type: STR_BREAKER_PUBLIC
     race: STR_IRONEYES
-    rank: STR_RANK_4
+    rank: STR_RANK_3
     liveAlien: STR_BOUNTY_1
     stats:
-      tu: 60
-      stamina: 60
-      health: 60
+      tu: 55
+      stamina: 50
+      health: 45
       bravery: 70
       reactions: 50
       firing: 45
@@ -211,15 +211,44 @@ units:
       strength: 45
       psiStrength: 30
       psiSkill: 0
-      mana: 30
+      mana: 20
     armor: STR_BREAKER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 6
+    value: 15
     deathSound: [126]
     intelligence: 2
-    aggression: 2
+    aggression: 5
     sniper: 20
+    canSurrender: true
+  - type: STR_HITTER_PUBLIC
+    race: STR_IRONEYES
+    rank: STR_RANK_2
+    liveAlien: STR_BOUNTY_1
+    stats:
+      tu: 65
+      stamina: 65
+      health: 55
+      bravery: 90
+      reactions: 50
+      firing: 55
+      throwing: 55
+      melee: 55
+      strength: 50
+      psiStrength: 30
+      psiSkill: 0
+      mana: 20
+    armor: STR_HITTER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    floatHeight: 2
+    value: 20
+    deathSound: [10]
+    moveSound: 15
+    intelligence: 2
+    aggression: 5
+    spotter: 1
+    sniper: 80
     canSurrender: true
 
   - type: STR_BOOSTER_PRIVATE
@@ -237,11 +266,11 @@ units:
       strength: 40
       psiStrength: 30
       psiSkill: 0
-      mana: 30
+      mana: 20
     armor: STR_BOOSTER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -4
+    value: -5
     deathSound: [41, 42, 43]
     intelligence: 2
     aggression: 5
@@ -251,9 +280,9 @@ units:
     race: STR_IRONEYES
     rank: STR_RANK_4
     stats:
-      tu: 55
-      stamina: 65
-      health: 50
+      tu: 50
+      stamina: 60
+      health: 45
       bravery: 70
       reactions: 40
       firing: 50
@@ -262,11 +291,11 @@ units:
       strength: 40
       psiStrength: 30
       psiSkill: 0
-      mana: 30
+      mana: 20
     armor: STR_RIPPER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 5
+    value: -10
     deathSound: [44, 45, 46]
     intelligence: 2
     aggression: 2
@@ -274,11 +303,11 @@ units:
     canSurrender: true
   - type: STR_BREAKER_PRIVATE
     race: STR_IRONEYES
-    rank: STR_RANK_4
+    rank: STR_RANK_3
     stats:
-      tu: 60
-      stamina: 60
-      health: 60
+      tu: 55
+      stamina: 50
+      health: 45
       bravery: 70
       reactions: 50
       firing: 45
@@ -287,15 +316,43 @@ units:
       strength: 45
       psiStrength: 30
       psiSkill: 0
-      mana: 30
+      mana: 20
     armor: STR_BREAKER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -6
+    value: -15
     deathSound: [126]
     intelligence: 2
-    aggression: 2
+    aggression: 5
     sniper: 20
+    canSurrender: true
+  - type: STR_HITTER_PRIVATE
+    race: STR_IRONEYES
+    rank: STR_RANK_2
+    stats:
+      tu: 65
+      stamina: 65
+      health: 55
+      bravery: 90
+      reactions: 50
+      firing: 55
+      throwing: 55
+      melee: 55
+      strength: 50
+      psiStrength: 30
+      psiSkill: 0
+      mana: 20
+    armor: STR_HITTER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    floatHeight: 2
+    value: -20
+    deathSound: [10]
+    moveSound: 15
+    intelligence: 2
+    aggression: 5
+    spotter: 1
+    sniper: 80
     canSurrender: true
 #hacker faction
   - type: STR_FREELANCER_PUBLIC
@@ -379,15 +436,15 @@ units:
     race: STR_NETRUNNERS
     rank: STR_RANK_3
     stats:
-      tu: 55
-      stamina: 55
-      health: 55
+      tu: 65
+      stamina: 60
+      health: 45
       bravery: 70
       reactions: 35
       firing: 45
       throwing: 45
       melee: 45
-      strength: 50
+      strength: 40
       psiStrength: 30
       psiSkill: 0
       mana: 40
@@ -400,7 +457,6 @@ units:
     moveSound: 15
     intelligence: 2
     aggression: 1
-    spotter: 0
     sniper: 20
     canSurrender: true
 #security faction
@@ -423,7 +479,7 @@ units:
     armor: STR_SSPGUARD_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -5
+    value: -6
     deathSound: [113, 114, 115]
     intelligence: 1
     aggression: 2
@@ -448,7 +504,7 @@ units:
     armor: STR_SSPOFFICER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -8
+    value: -12
     deathSound: [113, 114, 115]
     intelligence: 2
     aggression: 2
@@ -706,7 +762,7 @@ units:
     stats:
       tu: 50
       stamina: 70
-      health: 125
+      health: 120
       bravery: 100
       reactions: 65
       firing: 60
@@ -887,7 +943,7 @@ units:
     armor: STR_CLIENT_CRAZY_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 15
+    value: 25
     deathSound: [41, 42, 43]
     intelligence: 2
     aggression: 8
@@ -916,7 +972,7 @@ units:
     standHeight: 22
     kneelHeight: 14
     intelligence: 4
-    value: 15
+    value: 25
     pickUpWeaponsMoreActively: 0
     deathSound: [41, 42, 43]
   - type: STR_CIVILIAN_CASUAL_F

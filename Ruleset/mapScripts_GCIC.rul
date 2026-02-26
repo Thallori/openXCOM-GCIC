@@ -287,6 +287,19 @@
     - type: addBlock
       size: 2
     - type: fillArea
+  - type: SLUM_3X3
+    commands:
+    - type: addUFO
+      rects:
+        - [0, 0, 2, 2]
+    - type: addCraft
+    - type: addLine
+      direction: vertical
+    - type: addBlock
+      size: [2, 1]
+    - type: addBlock
+      size: 2
+    - type: fillArea
   - type: SLUM_4X4
     commands:
     - type: addUFO
