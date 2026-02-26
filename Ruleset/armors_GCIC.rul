@@ -1,4 +1,3 @@
-
 armors:
 #drones
   - &refPlexDrone
@@ -1285,7 +1284,7 @@ armors:
       flyDownPercent: [50, 0]
     personalLight: 10
     heatVision: 50
-    frontArmor: 10
+    frontArmor: 0
     sideArmor: 35
     rearArmor: 35
     underArmor: 15

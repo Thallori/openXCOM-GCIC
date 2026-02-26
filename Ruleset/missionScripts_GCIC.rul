@@ -1,3 +1,11 @@
+arcScripts:
+  - type: mezonicstart
+    xcomBaseInRegionTriggers:
+       STR_MEZONIC_RIFTS: true
+    sequentialArcs:
+      - STR_BEGIN_MEZONIC
+    lastMonth: 0
+    maxArcs: 1
 
 #1440 mintutes in a day
 #10080 minutes in a week
@@ -284,7 +292,7 @@ missionScripts:
   - type: Ironeyes2a
     researchTriggers:
       STR_IRONEYES_PORT: true
-      STR_IRONEYES_SURVEY: false
+      # STR_IRONEYES_SURVEY: false
     missionWeights:
       0:
         STR_IRONEYES_SAFEHOUSE: 100
@@ -315,35 +323,35 @@ missionScripts:
     startDelay: 30
     randomDelay: 43170
 
-  - type: Ironeyes3a
-    researchTriggers:
-      STR_IRONEYES_SURVEY: true
-    missionWeights:
-      0:
-        STR_IRONEYES_OUTPOST: 100
-    regionWeights: &PopDenseTemperate
-      0:
-        STR_MEZONIC_RIFTS: 100
-        STR_MOSSWAY_COMMONS: 80
-        STR_GOLDEN_REACH: 80
-        STR_AZATAL_TERRACE: 80
-        STR_CAYESAND_BASIN: 60
-        STR_TWINGATES: 40
-        STR_GLEAMING_SEAS: 40
-    useTable: false
-    startDelay: 30
-    randomDelay: 43170
-  - type: Ironeyes3b
-    researchTriggers:
-      STR_IRONEYES_SURVEY: true
-    executionOdds: 10
-    missionWeights:
-      0:
-        STR_IRONEYES_OUTPOST: 100
-    regionWeights: *PopDenseTemperate
-    useTable: false
-    startDelay: 30
-    randomDelay: 43170
+  # - type: Ironeyes3a
+  #   researchTriggers:
+  #     STR_IRONEYES_SURVEY: true
+  #   missionWeights:
+  #     0:
+  #       STR_IRONEYES_OUTPOST: 100
+  #   regionWeights: &PopDenseTemperate
+  #     0:
+  #       STR_MEZONIC_RIFTS: 100
+  #       STR_MOSSWAY_COMMONS: 80
+  #       STR_GOLDEN_REACH: 80
+  #       STR_AZATAL_TERRACE: 80
+  #       STR_CAYESAND_BASIN: 60
+  #       STR_TWINGATES: 40
+  #       STR_GLEAMING_SEAS: 40
+  #   useTable: false
+  #   startDelay: 30
+  #   randomDelay: 43170
+  # - type: Ironeyes3b
+  #   researchTriggers:
+  #     STR_IRONEYES_SURVEY: true
+  #   executionOdds: 10
+  #   missionWeights:
+  #     0:
+  #       STR_IRONEYES_OUTPOST: 100
+  #   regionWeights: *PopDenseTemperate
+  #   useTable: false
+  #   startDelay: 30
+  #   randomDelay: 43170
 
   - type: TradeMeetingEarly
     lastMonth: 0

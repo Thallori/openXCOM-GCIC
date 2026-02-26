@@ -1,3 +1,22 @@
+ufoTrajectories:
+  - id: AM_SPAWN
+    groundTimer: 0
+    waypoints:
+      - [0, 0, 0]
+
+  - id: LOOK_AT_ME
+    groundTimer: 5000
+    waypoints:
+      - [5, 4, 100]
+      - [0, 3, 65]
+      - [1, 1, 20]
+      - [0, 0, 35]
+      - [1, 1, 20]
+      - [0, 0, 35]
+      - [1, 1, 20]
+      - [0, 0, 35]
+      - [1, 1, 20]
+      - [5, 0, 100]
 
 ufos:
   - type: STR_HOLOUFO_SMALL
@@ -22,7 +41,6 @@ ufos:
       mapBlocks:
         - name: HOLOUFO_SMALL1
         - name: HOLOUFO_SMALL2
-
   - type: STR_UFO_HARVESTER
     modSprite: ufoharvester_interwin
     size: STR_MEDIUM_UC
@@ -88,7 +106,6 @@ ufos:
               - [1, 5, 0]
           fuseTimers:
             STR_SPAWN_CLIENT_1: [0, 0]
-
   - type: STR_HOUSE_GARAGE_RR
     modSprite: interception_jammed
     battlescapeTerrainData:
@@ -128,10 +145,10 @@ ufos:
           fuseTimers:
             STR_SPAWN_CLIENT_RR: [0, 0]
 
-  - type: HOUSE_SMALL
+  - type: STR_HOUSE_SMALL
     modSprite: interception_jammed
     battlescapeTerrainData:
-      name: HOUSE_SMALL
+      name: STR_HOUSE_SMALL
       mapDataSets:
         - BLANKS
         - FLORA_URBAN
@@ -165,11 +182,49 @@ ufos:
           items:
             STR_CRIMINAL_CONTAINER_1:
               - [1, 2, 0]
-
-  - type: HOUSE_BRICK
+  - type: STR_HOUSE_BRICK
     modSprite: interception_jammed
     battlescapeTerrainData:
-      name: HOUSE_BRICK
+      name: STR_HOUSE_BRICK
+      mapDataSets:
+        - BLANKS
+        - FLORA_URBAN
+        - FLOOR_URBAN
+        - FLOOR_SLUMS
+        - STRUCTURE_WOOD
+        - STRUCTURE_BRICKS2
+        - STRUCTURE_SLUMS
+        - STRUCTURE_SLUMTILES
+        - STRUCTURE_WAREHOUSE
+        - FENCE_CHAINLINK
+        - FENCE_IRON
+        - STAIRS_PLAIN
+        - ROOFS_BITS
+        - BITS_CRATES1
+        - BITS_CONTRABAND
+        - BITS_CONTRABAND2
+        - BITS_POTTED_PLANTS
+        - BITS_SLUMTRASH
+        - BATHROOM_SLUM
+        - FURNITURE_SLUMS1
+        - FURNITURE_SLUMS3
+        - FURNITURE_TABLES1
+        - SPECIAL_MISSILE
+      mapBlocks:
+        - name: HOUSE_BRICK1
+          width: 20
+          length: 20
+          items:
+            STR_CRIMINAL_CONTAINER_1:
+              - [10, 1, 0]
+              - [5, 13, 0]
+              - [4, 5, 1]
+              - [7, 5, 1]
+              - [7, 9, 2]
+  - type: STR_HOUSE_FORT
+    modSprite: interception_jammed
+    battlescapeTerrainData:
+      name: STR_HOUSE_FORT
       mapDataSets:
         - BLANKS
         - FLORA_URBAN
@@ -241,11 +296,10 @@ ufos:
         - name: SABOTAGE_OFFICE2
           width: 20
           length: 20
-
   - type: STR_SABOTAGE_OFFICE_BI
     modSprite: interception_jammed
     battlescapeTerrainData:
-      name: STR_SABOTAGE_OFFICE
+      name: STR_SABOTAGE_OFFICE_BI
       mapDataSets:
         - BLANKS
         - FLOOR_ASPHALT

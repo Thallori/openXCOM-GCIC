@@ -1,5 +1,4 @@
-﻿
-alienDeployments:
+﻿alienDeployments:
   - type: STR_CRAFT_DEPLOYMENT_PREVIEW
     script: STR_CRAFT_DEPLOYMENT_PREVIEW
     isHidden: true
@@ -54,7 +53,6 @@ alienDeployments:
             []
           -
             []
-
   - type: STR_SECGAME
     width: 60
     length: 60
@@ -65,7 +63,7 @@ alienDeployments:
     markerName: STR_SECGAME
     duration: [200, 240]
     despawnPenalty: 20
-    startingCondition: SECURITY_GEAR_SECURITY_CRAFT
+    startingCondition: SECURITY_GEAR
     briefing:
       showTarget: false
       title: STR_SECGAME
@@ -113,7 +111,7 @@ alienDeployments:
     duration: [48, 72]
     despawnPenalty: 100
     abortPenalty: 75
-    startingCondition: SECURITY_GEAR_SECURITY_CRAFT
+    startingCondition: SECURITY_GEAR
     briefing:
       showTarget: false
       title: STR_RESCUE_1
@@ -193,7 +191,6 @@ alienDeployments:
             - STR_STL_KNIFE
             - STR_MOLOTOV
             - STR_BOUNTY_1
-
   - type: STR_RESCUE_RR
     width: 40
     length: 40
@@ -205,7 +202,7 @@ alienDeployments:
     duration: [16, 24]
     despawnPenalty: 100
     abortPenalty: 65
-    startingCondition: SECURITY_GEAR_SECURITY_CRAFT
+    startingCondition: SECURITY_GEAR
     briefing:
       showTarget: false
       title: STR_RESCUE_RR
@@ -292,7 +289,6 @@ alienDeployments:
         percentageOutsideUfo: 50
         extraRandomItems: *ironExtra
         itemSets: *boosterSet
-
   - type: STR_RESCUE_FT
     width: 50
     length: 50
@@ -304,7 +300,7 @@ alienDeployments:
     duration: [24, 48]
     despawnPenalty: 50
     civilians: 12
-    startingCondition: SECURITY_GEAR_SECURITY_CRAFT
+    startingCondition: MILITARY_GEAR
     briefing:
       showTarget: false
       title: STR_RESCUE_FT
@@ -399,7 +395,6 @@ alienDeployments:
         percentageOutsideUfo: 100
         customUnitType: STR_CYFURB
         itemSets: *AnchorEmptyInventory
-
   - type: STR_KNOCKOUT_MISSION
     width: 30
     length: 30
@@ -411,7 +406,7 @@ alienDeployments:
     duration: [48, 72]
     despawnPenalty: 100
     abortPenalty: 100
-    startingCondition: SECURITY_GEAR_SECURITY_CRAFT
+    startingCondition: SECURITY_GEAR
     briefing:
       showTarget: false
       title: STR_KNOCKOUT_MISSION
@@ -498,7 +493,7 @@ alienDeployments:
       music: SHADOW_INTRO
       palette: 2
     unlockedResearch: STR_TRG_BRK_PREQ
-    customUfo: HOUSE_SMALL
+    customUfo: STR_HOUSE_SMALL
     forcePercentageOutsideUfo: true
     terrains:
       - SLUM
@@ -617,7 +612,14 @@ alienDeployments:
           -
             - STR_STL_KNIFE
             - STR_MOLOTOV
-
+      - alienRank: 6
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_HYBRID
+        itemSets: *AnchorEmptyInventory
   - type: STR_IRONEYES_SAFEHOUSE
     width: 40
     length: 40
@@ -635,7 +637,7 @@ alienDeployments:
       music: SHADOW_INTRO
       palette: 2
     unlockedResearch: STR_TRG_RI_PREQ
-    customUfo: HOUSE_BRICK
+    customUfo: STR_HOUSE_BRICK
     forcePercentageOutsideUfo: true
     terrains:
       - SLUM
@@ -736,6 +738,102 @@ alienDeployments:
         percentageOutsideUfo: 0
         customUnitType: STR_DRONE_ENEMY_SHARK
         itemSets: *AnchorEmptyInventory
+  - type: STR_IRONEYES_OUTPOST
+    width: 50
+    length: 50
+    height: 8
+    script: GEO_DEFAULT5X5
+    alert: STR_IRONEYES_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_IRONEYES_OUTPOST_ALERT_DESCRIPTION
+    markerName: STR_IRONEYES_OUTPOST
+    duration: [72, 120]
+    startingCondition: MILITARY_GEAR
+    briefing:
+      showTarget: false
+      title: STR_IRONEYES_OUTPOST
+      music: SHADOW_INTRO
+      palette: 2
+    unlockedResearch: STR_TRG_RI_PREQ
+    customUfo: STR_HOUSE_FORT
+    forcePercentageOutsideUfo: true
+    terrains:
+      - SLUM
+    music:
+      - IRON1
+    data:
+      - alienRank: 10
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 0
+        extraRandomItems: *ironExtra
+        itemSets: *breakerSetPrivate
+      - alienRank: 9
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 3
+        percentageOutsideUfo: 50
+        extraRandomItems: *ironExtra
+        itemSets: *breakerSetPrivate
+      - alienRank: 8
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 50
+        extraRandomItems: *ironExtra
+        itemSets: *breakerSetPrivate #make slightly better
+      - alienRank: 7
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 3
+        percentageOutsideUfo: 0
+        extraRandomItems: *ironExtra
+        itemSets: *ripperSetPrivate #make better
+      - alienRank: 6
+        lowQty: 16
+        medQty: 16
+        highQty: 18
+        dQty: 12
+        percentageOutsideUfo: 10
+        extraRandomItems: *ironExtra
+        itemSets: *boosterSetPrivate #make better
+      - alienRank: 6
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_HYBRID
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_HUMAN
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 8
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_SHARK
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 100
+        customUnitType: STR_DRONE_ENEMY_DEEP
+        itemSets: *AnchorEmptyInventory
 
   - type: STR_TRADE_MEETING_EARLY
     script: SINGLE_BLOCK_2X2
@@ -811,7 +909,6 @@ alienDeployments:
         percentageOutsideUfo: 100
         customUnitType: STR_DRONE_ENEMY_HUMAN
         itemSets: *AnchorEmptyInventory
-
   - type: STR_TRADE_MEETING_1
     script: SINGLE_BLOCK_2X2
     width: 20
@@ -869,7 +966,6 @@ alienDeployments:
         percentageOutsideUfo: 100
         customUnitType: STR_DRONE_ENEMY_SHARK
         itemSets: *AnchorEmptyInventory
-
   - type: STR_TRADE_MEETING_2
     script: SINGLE_BLOCK_2X2
     width: 20
@@ -992,7 +1088,6 @@ alienDeployments:
         percentageOutsideUfo: 100
         customUnitType: STR_DRONE_ENEMY_SHARK
         itemSets: *AnchorEmptyInventory
-
   - type: STR_TRADE_MEETING_3
     script: SINGLE_BLOCK_2X2
     width: 20
@@ -1233,7 +1328,6 @@ alienDeployments:
         percentageOutsideUfo: 100
         customUnitType: STR_DRONE_ENEMY_HUMAN
         itemSets: *AnchorEmptyInventory
-
   - type: STR_GCIC_SABOTAGE_2
     script: COMMERCIAL_4X4
     width: 40
@@ -1391,7 +1485,6 @@ alienDeployments:
         highQty: 1
         dQty: 4
         itemSets: *AnchorEmptyInventory
-
   - type: STR_MEDI_MUCK_CHRYS
     script: DEFAULT
     width: 50
@@ -1426,7 +1519,6 @@ alienDeployments:
         highQty: 2
         dQty: 1
         itemSets: *AnchorEmptyInventory
-
   - type: STR_MEDI_CELA
     script: DEFAULT
     width: 50
@@ -1455,7 +1547,6 @@ alienDeployments:
         highQty: 1
         dQty: 4
         itemSets: *AnchorEmptyInventory
-
   - type: STR_MEDI_CELA_CHRYS
     script: DEFAULT
     width: 50

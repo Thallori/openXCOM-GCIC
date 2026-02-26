@@ -3,7 +3,6 @@
 #max total avoidance: 45%
 #max craft avoidance: 30%
 #max aux avoidance: 15%
-
 crafts:
   - type: STR_HD_LIMO
     sprite: 400
@@ -77,7 +76,7 @@ crafts:
     requires:
       - STR_VENDOR_HD
     weapons: 1
-    weaponTypes: [1]
+    weaponTypes: [[0, 1]]
     weaponStrings:
       - STR_ELECTRIC_ENGINE
       - STR_BLANK_TOKEN
@@ -124,7 +123,7 @@ crafts:
       - STR_VENDOR_HD
       - STR_HD_HOVERBIKE_RESEARCH
     weapons: 2
-    weaponTypes: [1, 1]
+    weaponTypes: [[0, 1], [0, 1]]
     weaponStrings:
       - STR_ELECTRIC_ENGINE
       - STR_BLANK_TOKEN
@@ -176,7 +175,7 @@ crafts:
       - STR_SEC_LICENSE
       - STR_SSP_SECVAN_RESEARCH
     weapons: 1
-    weaponTypes: [1, 1]
+    weaponTypes: [[0, 1]]
     weaponStrings:
       - STR_ELECTRIC_ENGINE
       - STR_BLANK_TOKEN
@@ -227,7 +226,7 @@ crafts:
     requires:
       - STR_VENDOR_VCM
     weapons: 1
-    weaponTypes: [1]
+    weaponTypes: [[0, 1]]
     weaponStrings:
       - STR_ELECTRIC_ENGINE
       - STR_BLANK_TOKEN

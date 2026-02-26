@@ -1,4 +1,3 @@
-
 facilities:
   - type: STR_CENTRAL_ACCESS
     lift: true

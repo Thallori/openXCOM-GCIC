@@ -1,7 +1,56 @@
 craftWeapons:
+
+  - type: STR_CRAFT_WEAPON_9MM_MG
+    launcher: STR_9MM_MG
+    weaponType: 0 #any
+    sprite: 601
+    sound: 100
+    damage: 2
+    range: 10
+    accuracy: 15
+    reloadCautious: 6
+    reloadStandard: 6
+    reloadAggressive: 6
+    ammoMax: 200
+    rearmRate: 75
+    projectileType: 2
+    projectileSpeed: 8
+
+  - type: STR_CRAFT_WEAPON_XN_LASER_MG
+    launcher: STR_XN_LASER_MG
+    weaponType: 0
+    sprite: 601
+    sound: 101
+    damage: 2
+    range: 10
+    accuracy: 20
+    reloadCautious: 5
+    reloadStandard: 5
+    reloadAggressive: 5
+    ammoMax: 200
+    rearmRate: 200
+    projectileType: 4
+    projectileSpeed: 100
+
+  - type: STR_CRAFT_WEAPON_XN_LASER_CANNON
+    launcher: STR_XN_LASER_CANNON
+    weaponType: 0
+    sprite: 601
+    sound: 102
+    damage: 5
+    range: 10
+    accuracy: 35
+    reloadCautious: 25
+    reloadStandard: 25
+    reloadAggressive: 25
+    ammoMax: 100
+    rearmRate: 100
+    projectileType: 4
+    projectileSpeed: 50
+
   - type: STR_HD_ECONOMY_ENGINE
     launcher: STR_HD_ECONOMY_ENGINE
-    weaponType: 1
+    weaponType: 1 #electric
     sprite: 601
     stats:
       fuelMax: 400

@@ -3175,16 +3175,16 @@ items:
     arcingShot: true
     compatibleAmmo:
       - STR_BARREL_MOTAR_AMMO
-    accuracySnap: 35
-    accuracyAimed: 55
+    accuracySnap: 15
+    accuracyAimed: 40
     accuracyMultiplier:
       throwing: 1.0
     tuSnap: 45
-    tuAimed: 85
-    snapRange: 7
-    aimRange: 20
+    tuAimed: 90
+    snapRange: 6
+    aimRange: 12
     dropoff: 1
-    kneelBonus: 120
+    kneelBonus: 200
     twoHanded: true
     oneHandedPenalty: 75
     experienceTrainingMode: 7
@@ -3210,7 +3210,7 @@ items:
     power: 50
     damageType: 3
     damageAlter:
-      FixRadius: 5
+      FixRadius: 4
       RandomType: 9
       ToItem: 0.5
       ToStun: 0.75

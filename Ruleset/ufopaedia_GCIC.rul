@@ -643,6 +643,24 @@ ufopaedia:
       width: 140
       height: 60
 # hardpoints
+  - id: STR_CRAFT_WEAPON_9MM_MG
+    text: STR_HD_ECONOMY_ENGINE_UP
+    section: STR_APS_CRAFT_UC
+    type_id: 2
+    image_id: ECONOMY.SPK
+
+  - id: STR_CRAFT_WEAPON_XN_LASER_MG
+    text: STR_HD_ECONOMY_ENGINE_UP
+    section: STR_APS_CRAFT_UC
+    type_id: 2
+    image_id: ECONOMY.SPK
+
+  - id: STR_CRAFT_WEAPON_XN_LASER_CANNON
+    text: STR_HD_ECONOMY_ENGINE_UP
+    section: STR_APS_CRAFT_UC
+    type_id: 2
+    image_id: ECONOMY.SPK
+
   - id: STR_HD_ECONOMY_ENGINE
     requires:
       - STR_HD_ECONOMY_ENGINE_RESEARCH

@@ -1,4 +1,3 @@
-
 countries: 
   - type: STR_FREE_DOMINANCE
     fundingBase: 10

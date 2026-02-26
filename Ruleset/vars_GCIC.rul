@@ -1,4 +1,3 @@
-
 startingTime:
   second: 30
   minute: 0
@@ -116,7 +115,7 @@ monthlyRatings:
   -5000: STR_MT_RATING_N5
   -7500: STR_MT_RATING_N6
   -10000: STR_MT_RATING_N7
-  -20000: STR_MT_RATING_N8
+  -20000: STR_MT_RATING_N8 #equal to or greater than
 missionRatings:
   4000: STR_MS_RATING_P11
   3000: STR_MS_RATING_P10
@@ -132,9 +131,10 @@ missionRatings:
   -15: STR_MS_RATING_ZREO
   -75: STR_MS_RATING_N1
   -200: STR_MS_RATING_N2
-  -350: STR_MS_RATING_N3
-  -500: STR_MS_RATING_N4
-  -1000: STR_MS_RATING_N5
+  -500: STR_MS_RATING_N3
+  -1000: STR_MS_RATING_N4
+  -2000: STR_MS_RATING_N5
+  -999999: STR_MS_RATING_N6 #equal to or greater than
 defeatScore: -9999999
 defeatFunds: -1000000
 maxLookVariant: 8
@@ -259,6 +259,121 @@ ai:
 
 alienItemLevels:
   - [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+startingBase:
+  lon: 2.1468
+  lat: 0.6222
+  facilities:
+    - type: STR_CENTRAL_ACCESS
+      x: 1
+      y: 2
+    - type: STR_GARAGE
+      x: 1
+      y: 1
+    - type: STR_GARAGE
+      x: 2
+      y: 1
+    - type: STR_CORRIDOR
+      x: 2
+      y: 2
+    - type: STR_CORRIDOR
+      x: 2
+      y: 3
+    - type: STR_SCANNER
+      x: 2
+      y: 4
+    - type: STR_BUNK_RACKS
+      x: 3
+      y: 2
+    - type: STR_DATACENTER
+      x: 4
+      y: 2
+    - type: STR_DEPOT
+      x: 3
+      y: 3
+    - type: STR_STORAGE_1
+      x: 1
+      y: 3
+  crafts:
+    - type: STR_HD_CROSSOVER
+      id: 1
+      fuel: 1200
+      damage: 0
+      weapons:
+        - type: STR_BATBOX
+      items:
+        STR_XN_LASER_PISTOL: 1
+        STR_BUSBOX_PISTOL: 2
+        STR_COMBALL_AMMO: 6
+        STR_STL_KNIFE: 1
+        STR_ELECTROFLARE: 2
+        STR_MEDI_SPRAY: 2
+      status: STR_READY
+  items:
+    STR_BUSBOX_PISTOL: 4
+    STR_COMBALL_AMMO: 10
+    STR_PAPERSHOT_AMMO: 10
+    STR_STL_KNIFE: 2
+    STR_WRENCH: 1
+    STR_ELECTROFLARE: 8
+    STR_MEDI_SPRAY: 12
+  randomSoldiers:
+    STR_CRACKED_HYBRID_DRONE: 4
+    STR_CRACKED_HUMAN_DRONE: 3
+    STR_CRACKED_SHARK_DRONE: 1
+  scientists: 3
+  engineers: 2
+
+baseNamesFirst:
+  - Micro
+  - Kufi
+  - Global
+  - Signal
+  - Dual
+  - Unreal
+  - Modal
+  - Viral
+  - Vital
+  - Neural
+  - Primal
+  - Coral
+  - Cryto
+  - Solar
+  - Aero
+  - Atom
+  - Sonic
+  - Nova
+  - Steel
+  - Gold
+  - Titan
+  - Jackal
+  - Shark
+  - Wolf
+  - Ram
+  - Alpha
+  - Omega
+baseNamesLast:
+  - Corp
+  - Systems
+  - Fire
+  - Works
+  - Sec
+  - Energy
+  - Net
+  - Coms
+  - Cast
+  - Gate
+  - Media
+  - Arts
+  - Tech
+  - Exports
+  - Bionics
+  - Atomics
+  - Optics
+  - Mobil
+  - Bridge
+  - Light
+  - Life
 
 cutscenes:
   - type: intro

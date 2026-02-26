@@ -1,4 +1,3 @@
-
 alienDeployments:
   - delete: STR_CRAFT_DEPLOYMENT_PREVIEW
   - delete: STR_SMALL_SCOUT

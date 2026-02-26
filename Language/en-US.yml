@@ -548,7 +548,8 @@ en-US:
   STR_MS_RATING_N2: "TROUBLING"
   STR_MS_RATING_N3: "DISTRUBING"
   STR_MS_RATING_N4: "OMINOUS"
-  STR_MS_RATING_N5: "HOSTILE"
+  STR_MS_RATING_N5: "MENACING"
+  STR_MS_RATING_N6: "HOSTILE"
 #regions
   STR_MEZONIC_RIFTS: "MEZONIC RIFTS"
   STR_MOSSWAY_COMMONS: "MOSSWAY COMMONS"
@@ -866,11 +867,11 @@ en-US:
   STR_IRONEYES_SHOP_ALERT_DESCRIPTION: "We have followed a booster to a small illicit shop. Among their wares are unstable explosive devices, unconcious specimens are at high risk displacement in the event of detontation.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 hours{NEWLINE}Maximum Gear: Milspec (Inconspicuous Craft)"
   STR_IRONEYES_SHOP_BRIEFING: "We have followed a booster to a small illicit shop. Among their wares are unstable explosive devices, unconcious specimens are at high risk displacement in the event of detontation.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation."
   STR_IRONEYES_SAFEHOUSE: "Ironeyes: Hideout"
-  STR_IRONEYES_SAFEHOUSE_ALERT_DESCRIPTION: "{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 hours{NEWLINE}Maximum Gear: Milspec (Inconspicuous Craft)" #todo
-  STR_IRONEYES_SAFEHOUSE_BRIEFING: "{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation." #todo
+  STR_IRONEYES_SAFEHOUSE_ALERT_DESCRIPTION: "Several contraband shipments have been decoded to a single address. Entry-level gang members are patrolling the area, middle management is likely inside.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 hours{NEWLINE}Maximum Gear: Milspec (Inconspicuous Craft)"
+  STR_IRONEYES_SAFEHOUSE_BRIEFING: "Several contraband shipments have been decoded to a single address. Entry-level gang members are patrolling the area, middle management is likely inside.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation."
   STR_IRONEYES_OUTPOST: "Ironeyes: Armory"
-  STR_IRONEYES_OUTPOST_ALERT_DESCRIPTION: "{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 8 days{NEWLINE}Maximum Gear: Milspec" #todo
-  STR_IRONEYES_OUTPOST_BRIEFING: "{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation." #todo
+  STR_IRONEYES_OUTPOST_ALERT_DESCRIPTION: "Several VCM drop-pods containing milspec shipments have crashed in a small area. A fortified armory has been set up and is actively distributing the contents. They are prepared for an assault.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 8 days{NEWLINE}Maximum Gear: Milspec"
+  STR_IRONEYES_OUTPOST_BRIEFING: "Several VCM drop-pods containing milspec shipments have crashed in a small area. A fortified armory has been set up and is actively distributing the contents. They are prepared for an assault.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation."
 # netrunners
   STR_TRADE_MEETING_EARLY_ALERT: "NETRUNNERS SEND MESSAGE"
   STR_TRADE_MEETING_EARLY: "Netrunners: Contact"
@@ -1038,7 +1039,7 @@ en-US:
   STR_IRONEYES_PORT: ">DECODE: Ironeyes<"
   STR_IRONEYES_PORT_UP: "{NEWLINE}RESOLUTION PROGRESS: 4.02%{NEWLINE}CRACKDOWN OPPORTUNITIES: 1.99/MONTH{NEWLINE}{NEWLINE}Unlike other P2P suppliers, this gang is not driven by the profit motive. Breakers are disassembling {ALT}milspec missiles{ALT} into less powerful (and therefore less valuable) munitions. The origin of these weapons remains unknown, but they are distributed through a network of mules, dead drops, and automated APS craft. All directed via encrypted datapads.{NEWLINE}{NEWLINE}With our local interface, we can decode addresses, then storm their {ALT}hideouts{ALT} to get closer to upper management.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_IRONEYES_SURVEY: ">SURVEY: Ironeyes<"
-  STR_IRONEYES_SURVEY_UP: "{NEWLINE}RESOLUTION PROGRESS: 13.5%{NEWLINE}CRACKDOWN OPPORTUNITIES: 1.76/MONTH{NEWLINE}{NEWLINE}aaaaa{NEWLINE}{NEWLINE}bbbb{ALT}cccccc{ALT}bbbbbb{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
+  STR_IRONEYES_SURVEY_UP: "{NEWLINE}RESOLUTION PROGRESS: 13.5%{NEWLINE}CRACKDOWN OPPORTUNITIES: 1.76/MONTH{NEWLINE}{NEWLINE}Enough data has been collated to outline operations. VCM delivers {ALT}milspec equipment{ALT} through orbital drop-pods. A few veer off-course and the corp writes-off the loss. Salvagers then set up an {ALT}armory{ALT} on location, shipping out the most valuable assets immediately and deconstructing the remainder.{NEWLINE}{NEWLINE}The difficulty is not in detecting the site, but in pinpointing the area before the process completes and everything is abandoned.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_NETRUNNERS_NETWORK: ">TRACE: Netrunners<"
   STR_NETRUNNERS_NETWORK_UP: "{NEWLINE}FAVORABLE OUTCOME ODDS: 83.3%{NEWLINE}PREDICTED INTERLACES: 1.55/MONTH{NEWLINE}{NEWLINE}{ALT}Bionic Interlaces{ALT} and valuable {ALT}XN kits{ALT} do not come from nowhere. If we are to survive in this world, we must understand the technology that allows us to exist. By tailing the freelancers who deliver these goods, we'll be able to find their {ALT}source{ALT} (or at least enrich our capabilities.){NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_NETRUNNERS_SURVEY: ">SURVEY: Netrunners<"
@@ -1403,7 +1404,7 @@ en-US:
   STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO2: "SC-9 Pilot Cannon Cell"
 # launchers
   STR_BARREL_MOTAR: "Barrel Motar"
-  STR_BARREL_MOTAR_UP: "A repuposed steel tube that throws explosions up to 200m away, accurate enough to hit the broad side of a barn. The traditional payload is a welding cylinder packed with compowder and metallic scrap. Works best when a dozen are launched simultaniously.{NEWLINE}{NEWLINE}Stun: +50%"
+  STR_BARREL_MOTAR_UP: "A repuposed steel tube that throws explosions up to 200m away, accurate enough to hit the broad side of a barn. The traditional payload is a welding cylinder packed with compowder and metallic scrap. Works best when a dozen are launched simultaniously.{NEWLINE}{NEWLINE}Kneeling Accuracy: +100%; Stun: +50%"
   STR_BARREL_MOTAR_AMMO: "Improvised Shell"
   STR_WINDLASS_LAUNCHER: "HRA Windlass Launcher" #historical re-enactment society
   STR_WINDLASS_LAUNCHER_UP: "First used in 1915, this World War I era catapult is handcrafted from non-engineered pine and traditionally forged pig iron. A splendid way to launch hand grenades from the bottom of the trenches to the top of your mantlepiece.{NEWLINE}{NEWLINE}As with all genuine articles from The Historical Re-Enactment Society, The Windlass comes stamped with a certificate of authenticity."
