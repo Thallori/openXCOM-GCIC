@@ -23,7 +23,7 @@ ufos:
     modSprite: holoufo_interwin
     size: STR_SMALL
     blobSize: 1
-    damageMax: 10
+    damageMax: 20
     armor: 0
     speedMax: 1600
     power: 10

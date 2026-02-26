@@ -644,19 +644,19 @@ ufopaedia:
       height: 60
 # hardpoints
   - id: STR_CRAFT_WEAPON_9MM_MG
-    text: STR_HD_ECONOMY_ENGINE_UP
+    text: STR_CRAFT_WEAPON_9MM_MG_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
     image_id: ECONOMY.SPK
 
   - id: STR_CRAFT_WEAPON_XN_LASER_MG
-    text: STR_HD_ECONOMY_ENGINE_UP
+    text: STR_CRAFT_WEAPON_XN_LASER_MG_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
     image_id: ECONOMY.SPK
 
   - id: STR_CRAFT_WEAPON_XN_LASER_CANNON
-    text: STR_HD_ECONOMY_ENGINE_UP
+    text: STR_CRAFT_WEAPON_XN_LASER_CANNON_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
     image_id: ECONOMY.SPK
