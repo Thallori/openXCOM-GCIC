@@ -47,6 +47,7 @@ missionScripts:
   - type: SimSmallc
     researchTriggers:
       STR_SECGAMES_MISSIONS: true
+    executionOdds: 80
     missionWeights:
       0:
         STR_HOLOUFO_SMALL_MISSION: 100
@@ -57,6 +58,7 @@ missionScripts:
   - type: SimSmalld
     researchTriggers:
       STR_SECGAMES_MISSIONS: true
+    executionOdds: 50
     missionWeights:
       0:
         STR_HOLOUFO_SMALL_MISSION: 100
@@ -67,6 +69,7 @@ missionScripts:
   - type: SimSmalle
     researchTriggers:
       STR_SECGAMES_MISSIONS: true
+    executionOdds: 20
     missionWeights:
       0:
         STR_HOLOUFO_SMALL_MISSION: 100
@@ -128,8 +131,8 @@ missionScripts:
     startDelay: 30
     randomDelay: 43170
   - type: Rescue1c
-    # researchTriggers:
-    #   STR_TODO: false
+    researchTriggers:
+      STR_IRONEYES_SURVEY: false
     executionOdds: 80
     missionWeights:
       0:
@@ -253,6 +256,26 @@ missionScripts:
     useTable: false
     startDelay: 30
     randomDelay: 43170
+
+  - type: IroneyesDelivery1
+    researchTriggers:
+      STR_IRONEYES_NETWORK: true
+      STR_IRONEYES_SURVEY: false
+    missionWeights:
+      0:
+        STR_IRONEYESUFO_DELIVERY1: 100
+    regionWeights: &globalRegionsTemperate
+      0:
+        STR_REGION_GLOBAL_TEMPERPATE: 100
+    useTable: false
+  - type: IroneyesDelivery2
+    researchTriggers:
+      STR_IRONEYES_SURVEY: true
+    missionWeights:
+      0:
+        STR_IRONEYESUFO_DELIVERY2: 100
+    regionWeights: *globalRegionsTemperate
+    useTable: false
 
   - type: Ironeyes1a
     researchTriggers:

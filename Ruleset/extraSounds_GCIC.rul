@@ -70,6 +70,7 @@ extraSounds:
       2: Resources/Sounds/place.wav
       3: Resources/Sounds/place.wav
       6: Resources/Sounds/switch.wav
-      100: Resources/Sounds/Fire/machinegun_fire.wav
-      101: Resources/Sounds/Fire/laserpistol_fire.wav
-      102: Resources/Sounds/Fire/laserheavy_fire.wav
+      100: Resources/Sounds/Fire/machinegun_fire_quiet.wav
+      101: Resources/Sounds/Fire/machinegun_fire_lowpass.wav
+      102: Resources/Sounds/Fire/laserpistol_fire.wav
+      104: Resources/Sounds/Fire/laserheavy_fire.wav

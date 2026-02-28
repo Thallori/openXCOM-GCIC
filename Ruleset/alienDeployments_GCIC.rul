@@ -16,12 +16,10 @@
     height: 8
     briefing:
       showTarget: false
-      title: STR_HOLOUFO_TITLE_BRIEFING
-      desc: STR_HOLOUFO_DESC_BRIEFING
+      title: STR_HOLOUFO_TITLE
+      desc: STR_HOLOUFO_BRIEFING
       music: SIM_INTRO
       palette: 0
-    customUfo: STR_HOLOUFO_SMALL
-    forcePercentageOutsideUfo: true
     unlockedResearch: STR_TRG_HS_PREQ
     music:
       - SEC1
@@ -699,9 +697,9 @@
             - STR_DISPOSABLE_SMG
             - STR_STL_KNIFE
       - alienRank: 6
-        lowQty: 3
-        medQty: 3
-        highQty: 4
+        lowQty: 4
+        medQty: 4
+        highQty: 5
         dQty: 4
         percentageOutsideUfo: 20
         extraRandomItems: *ironExtra
@@ -711,7 +709,7 @@
         medQty: 1
         highQty: 2
         dQty: 2
-        percentageOutsideUfo: 100
+        percentageOutsideUfo: 50
         extraRandomItems: *ironExtra
         itemSets: *breakerSetPrivate
       - alienRank: 6
@@ -834,6 +832,79 @@
         percentageOutsideUfo: 100
         customUnitType: STR_DRONE_ENEMY_DEEP
         itemSets: *AnchorEmptyInventory
+
+  - type: STR_UFO_AIRCAR_IRON1
+    script: DEFAULT4X4
+    width: 40
+    length: 40
+    height: 8
+    briefing:
+      music: SHADOW_INTRO
+      palette: 2
+    unlockedResearch: STR_TRG_BRK_PREQ
+    music:
+      - IRON1
+    data:
+      - alienRank: 8
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        extraRandomItems: *ironExtra
+        itemSets: *breakerSetPrivate
+      - alienRank: 6
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 70
+        extraRandomItems: *ironExtra
+        itemSets: *boosterSetPrivate
+  - type: STR_UFO_AIRCAR_IRON2
+    script: DEFAULT4X4
+    width: 40
+    length: 40
+    height: 8
+    briefing:
+      music: SHADOW_INTRO
+      palette: 2
+    unlockedResearch: STR_TRG_HIT_PREQ
+    music:
+      - IRON1
+    data:
+      - alienRank: 9
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        extraRandomItems: *ironExtra
+        itemSets: *breakerSetPrivate
+      - alienRank: 8
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 100
+        extraRandomItems: *ironExtra
+        itemSets: *breakerSetPrivate
+      - alienRank: 7
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 0
+        extraRandomItems: *ironExtra
+        itemSets: *ripperSetPrivate
+      - alienRank: 6
+        lowQty: 4
+        medQty: 4
+        highQty: 5
+        dQty: 1
+        percentageOutsideUfo: 80
+        extraRandomItems: *ironExtra
+        itemSets: *boosterSetPrivate
 
   - type: STR_TRADE_MEETING_EARLY
     script: SINGLE_BLOCK_2X2

@@ -10,7 +10,7 @@ alienMissions:
       - ufo: STR_HOLOUFO_SMALL
         count: 1
         trajectory: LOOK_AT_ME
-        timer: 30
+        timer: 1000
 
   - type: STR_SECGAME
     interruptResearch: STR_SEC_LICENSE
@@ -126,6 +126,49 @@ alienMissions:
         trajectory: AM_SPAWN
         timer: 1000
         objective: true
+
+  - type: STR_IRONEYESUFO_DELIVERY1
+#    interruptResearch: STR_TODO
+    despawnEvenIfTargeted: true
+    retaliationOdds: 0
+    points: 0
+    raceWeights:
+      0:
+          STR_IRONEYES: 100
+    waves:
+      - ufo: STR_UFO_AIRCAR_IRON1
+        count: 2
+        trajectory: GLOBAL_AIRTRAFFIC_NOLANDING
+        timer: 8000
+      - ufo: STR_UFO_AIRCAR_IRON1
+        count: 2
+        trajectory: GLOBAL_AIRTRAFFIC_NOLANDING
+        timer: 8000
+      - ufo: STR_UFO_AIRCAR_IRON1
+        count: 2
+        trajectory: GLOBAL_AIRTRAFFIC_NOLANDING
+        timer: 8000
+  - type: STR_IRONEYESUFO_DELIVERY2
+#    interruptResearch: STR_TODO
+    despawnEvenIfTargeted: true
+    retaliationOdds: 0
+    points: 0
+    raceWeights:
+      0:
+          STR_IRONEYES: 100
+    waves:
+      - ufo: STR_UFO_AIRCAR_IRON2
+        count: 2
+        trajectory: GLOBAL_AIRTRAFFIC_NOLANDING
+        timer: 8000
+      - ufo: STR_UFO_AIRCAR_IRON1
+        count: 2
+        trajectory: GLOBAL_AIRTRAFFIC_NOLANDING
+        timer: 8000
+      - ufo: STR_UFO_AIRCAR_IRON2
+        count: 2
+        trajectory: GLOBAL_AIRTRAFFIC_NOLANDING
+        timer: 8000
 
   - type: STR_TRADE_MEETING_EARLY
     despawnEvenIfTargeted: true

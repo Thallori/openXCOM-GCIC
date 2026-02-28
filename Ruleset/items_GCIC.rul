@@ -5107,7 +5107,7 @@ items:
     battleType: 11
     recoveryTransformations:
       STR_BIOMASS: [1]
-      STR_ALLOYS: [1]
+      STR_NANOWEAVE: [1]
       STR_MILITARY_CYBERNETICS_CODED: [1]
     armor: 30
 # netrunners

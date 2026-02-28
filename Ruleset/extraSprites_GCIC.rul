@@ -1113,6 +1113,10 @@ extraSprites:
     fileSingle: Resources/Interwin/holoufo_interwin.png
   - typeSingle: ufoharvester_interwin
     fileSingle: Resources/Interwin/ufoharvester_interwin.png
+  - typeSingle: aircar1_interwin
+    fileSingle: Resources/Interwin/aircar1_interwin.png
+  - typeSingle: aircar2_interwin
+    fileSingle: Resources/Interwin/aircar2_interwin.png
 #day/night icons
   - type: DayNightIndicator
     width: 72
@@ -1213,6 +1217,8 @@ extraSprites:
   - typeSingle: BACK11.SCR #ufos pedia
     fileSingle: Resources/Backgrounds/pedia_craft.png
 
+  - typeSingle: INTERWIN.DAT
+    fileSingle: Resources/UI/INTERWIN.png
   - typeSingle: AvatarBackground
     fileSingle: Resources/UI/avatar.png
   - type: TinyRanks

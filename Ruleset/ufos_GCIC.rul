@@ -18,12 +18,23 @@ ufoTrajectories:
       - [1, 1, 20]
       - [5, 0, 100]
 
+  - id: GLOBAL_AIRTRAFFIC_NOLANDING
+    groundTimer: 100
+    waypoints:
+      - [3, 1, 40]
+      - [2, 1, 80]
+      - [3, 1, 80]
+      - [2, 1, 80]
+      - [3, 1, 80]
+      - [2, 1, 80]
+      - [3, 1, 40]
+
 ufos:
   - type: STR_HOLOUFO_SMALL
     modSprite: holoufo_interwin
     size: STR_SMALL
     blobSize: 1
-    damageMax: 20
+    damageMax: 10
     armor: 0
     speedMax: 1600
     power: 10
@@ -67,6 +78,53 @@ ufos:
         - name: UFO_HARVESTER2
           width: 20
           length: 20
+
+  - type: STR_UFO_AIRCAR_IRON1
+    modSprite: aircar1_interwin
+    size: STR_SMALL
+    blobSize: 1
+    damageMax: 20
+    speedMax: 375
+    power: 2
+    range: 10
+    score: -10
+    reload: 6
+    fireSound: 101
+    breakOffTime: 200
+    missionScore: 0
+    battlescapeTerrainData:
+      name: STR_UFO_AIRCAR_IRON1
+      mapDataSets:
+        - BLANKS
+        - HOVERCRAFT_BITS
+        - HOVERCRAFT_GREEN1
+        - HOVERCRAFT_GREEN2
+        - SPECIAL_MISSILE
+      mapBlocks:
+        - name: AIRCAR1
+  - type: STR_UFO_AIRCAR_IRON2
+    modSprite: aircar2_interwin
+    size: STR_SMALL
+    blobSize: 1
+    damageMax: 25
+    speedMax: 350
+    power: 2
+    range: 10
+    score: -20
+    reload: 6
+    fireSound: 101
+    breakOffTime: 200
+    missionScore: 0
+    battlescapeTerrainData:
+      name: STR_UFO_AIRCAR_IRON2
+      mapDataSets:
+        - BLANKS
+        - HOVERCRAFT_BITS
+        - HOVERCRAFT_GREEN1
+        - HOVERCRAFT_GREEN2
+        - SPECIAL_MISSILE
+      mapBlocks:
+        - name: AIRCAR2
 
   - type: STR_HOUSE_GARAGE
     modSprite: interception_jammed
@@ -216,11 +274,21 @@ ufos:
           length: 20
           items:
             STR_CRIMINAL_CONTAINER_1:
-              - [10, 1, 0]
+              - [9, 1, 0]
               - [5, 13, 0]
               - [4, 5, 1]
               - [7, 5, 1]
               - [7, 9, 2]
+        - name: HOUSE_BRICK2
+          width: 20
+          length: 20
+          items:
+            STR_CRIMINAL_CONTAINER_1:
+              - [1, 11, 0]
+              - [11, 3, 0]
+              - [4, 10, 1]
+              - [19, 9, 1]
+              - [15, 2, 2]
   - type: STR_HOUSE_FORT
     modSprite: interception_jammed
     battlescapeTerrainData:

@@ -644,18 +644,22 @@ ufopaedia:
       height: 60
 # hardpoints
   - id: STR_CRAFT_WEAPON_9MM_MG
+    requires:
+      - STR_9MM_MG
     text: STR_CRAFT_WEAPON_9MM_MG_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
     image_id: ECONOMY.SPK
-
   - id: STR_CRAFT_WEAPON_XN_LASER_MG
+    requires:
+      - STR_XN_LASER_CANNON
     text: STR_CRAFT_WEAPON_XN_LASER_MG_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
     image_id: ECONOMY.SPK
-
   - id: STR_CRAFT_WEAPON_XN_LASER_CANNON
+    requires:
+      - STR_XN_LASER_CANNON
     text: STR_CRAFT_WEAPON_XN_LASER_CANNON_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
@@ -694,6 +698,19 @@ ufopaedia:
     requires:
       - STR_UFO_HARVESTER
     text: STR_UFO_HARVESTER_UP
+
+  - id: STR_UFO_AIRCAR_IRON1
+    type_id: 9
+    section: STR_APS_CRAFT_UC
+    requires:
+      - STR_UFO_AIRCAR_IRON1
+    text: STR_UFO_AIRCAR_IRON1_UP
+  - id: STR_UFO_AIRCAR_IRON2
+    type_id: 9
+    section: STR_APS_CRAFT_UC
+    requires:
+      - STR_UFO_AIRCAR_IRON2
+    text: STR_UFO_AIRCAR_IRON2_UP
 #drones
   - id: STR_DRONE_ARTICLE
     text: STR_DRONE_ARTICLE_UP

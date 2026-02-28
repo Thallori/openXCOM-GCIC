@@ -20,7 +20,7 @@ craftWeapons:
     launcher: STR_XN_LASER_MG
     weaponType: 0
     sprite: 601
-    sound: 101
+    sound: 102
     damage: 2
     range: 10
     accuracy: 20
@@ -36,7 +36,7 @@ craftWeapons:
     launcher: STR_XN_LASER_CANNON
     weaponType: 0
     sprite: 601
-    sound: 102
+    sound: 104
     damage: 5
     range: 10
     accuracy: 35

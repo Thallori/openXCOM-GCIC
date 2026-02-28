@@ -1069,12 +1069,17 @@ research:
         - STR_STIM_INHALER
       STR_TRG_RI_PREQ:
         - STR_RIPPER_PRIVATE
+        - STR_UFO_AIRCAR_IRON1
         - STR_9MM_SMG
       STR_TRG_BRK_PREQ:
         - STR_BREAKER_PRIVATE
+        - STR_UFO_AIRCAR_IRON2
         - STR_9MM_MG
         - STR_BARREL_MOTAR
         - STR_WINDLASS_LAUNCHER
+      STR_TRG_HIT_PREQ:
+        - STR_HITTER_PRIVATE
+        - STR_UFO_AIRCAR_IRON2
       STR_TRG_CYFURB_PREQ:
         - STR_CYFURB
       STR_TRG_FL_PREQ:
@@ -1250,6 +1255,13 @@ research:
         - STR_SHARK_AUTOPSY
         - STR_DEEP_AUTOPSY
 # ironeyes
+  - name: STR_UFO_AIRCAR_IRON1
+    dependencies:
+      - STR_LOCK
+  - name: STR_UFO_AIRCAR_IRON2
+    dependencies:
+      - STR_LOCK
+
   - name: STR_BOOSTER_PRIVATE
     dependencies:
       - STR_LOCK
@@ -1303,6 +1315,23 @@ research:
   - name: STR_BREAKER_ARMOR
     dependencies:
       - STR_RIPPER_PRIVATE
+
+  - name: STR_HITTER_PRIVATE
+    dependencies:
+      - STR_LOCK
+  - name: STR_HITTER_INTERVIEW
+    neededItem: STR_HITTER_PRIVATE
+    needItem: true
+    destroyItem: false
+    cost: 10
+    unlocks:
+      - STR_HITTER_ARMOR
+      - STR_ALIEN_INTERVIEWED_FLAG
+    getOneFree:
+      - STR_HITTER_PRIVATE
+  - name: STR_HITTER_ARMOR
+    dependencies:
+      - STR_HITTER_PRIVATE
 # netrunners
   - name: STR_FREELANCER_PRIVATE
     dependencies:
@@ -1444,7 +1473,7 @@ research:
   - name: STR_UFO_HARVESTER
     dependencies:
       - STR_LOCK
-    
+
   - name: STR_HOLOMUTON
     unlocks:
       - STR_HOLOMUTON_ARMOR
@@ -1531,6 +1560,9 @@ research:
     dependencies:
       - STR_LOCK
   - name: STR_TRG_BRK_PREQ #breaker
+    dependencies:
+      - STR_LOCK
+  - name: STR_TRG_HIT_PREQ #hitter
     dependencies:
       - STR_LOCK
   - name: STR_TRG_CYFURB_PREQ #cyberdisk

@@ -6,7 +6,7 @@
 crafts:
   - type: STR_HD_LIMO
     sprite: 400
-    damageMax: 25
+    damageMax: 30
     accel: 1 #0-2, half disengagement speed
     speedMax: 50
     fuelMax: 350
@@ -55,7 +55,7 @@ crafts:
 
   - type: STR_HD_CROSSOVER
     sprite: 401
-    damageMax: 30
+    damageMax: 35
     avoidBonus: 5
     accel: 2 #0-2, half disengagement speed
     speedMax: 350
