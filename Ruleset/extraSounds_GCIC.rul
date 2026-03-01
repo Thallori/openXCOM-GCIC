@@ -62,6 +62,14 @@ extraSounds:
       138: Resources/Sounds/Fire/machinegun_fire.wav
       139: Resources/Sounds/Fire/tube_fire.wav
       140: Resources/Sounds/Reloads/bolt_reload.wav
+      141: Resources/Sounds/Deaths/dep_death2.wav
+      142: Resources/Sounds/Deaths/dep_death3.wav
+      143: Resources/Sounds/Deaths/float_death1.wav
+      144: Resources/Sounds/Deaths/float_death2.wav
+      145: Resources/Sounds/Deaths/float_death3.wav
+      146: Resources/Sounds/Deaths/alien_death1.wav
+      147: Resources/Sounds/Deaths/alien_death2.wav
+      148: Resources/Sounds/Deaths/alien_death3.wav
 
   - type: GEO.CAT
     files:

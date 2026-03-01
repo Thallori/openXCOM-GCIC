@@ -137,8 +137,8 @@ soldiers:
     soldierNames:
       - delete
       - RandomNames/Hacked.nam
-    deathMale: [10]
-    deathFemale: [10]
+    deathMale: [146, 147, 148]
+    deathFemale: [146, 147, 148]
 
   - type: STR_CRACKED_HUMAN_DRONE
     costSalary: 250
@@ -338,8 +338,8 @@ soldiers:
     soldierNames:
       - delete
       - RandomNames/Hacked.nam
-    deathMale: [126]
-    deathFemale: [126]
+    deathMale: [126, 141, 142]
+    deathFemale: [126, 141, 142]
 
 #  - type: STR_CRACKED_PLACEHOLDER_DRONE
 #    requires:

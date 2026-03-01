@@ -185,6 +185,10 @@ extraSprites:
       241: Resources/Items/Kinetic/Ammo/9mm_mg_ammo_bigob.png
       242: Resources/Items/Explosives/barrelmortar_bigob.png
       243: Resources/Items/Explosives/Ammo/barrelmortar_ammo1_bigob.png
+      244: Resources/Factions/Ironeyes/hitter_bigob.png
+      245: Resources/Items/Materials/alloy_bigob.png
+      246: Resources/Items/Materials/warhead_bigob.png
+      247: Resources/Items/Materials/nanoweave_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -315,6 +319,7 @@ extraSprites:
       224: Resources/Items/Kinetic/Ammo/9mm_mg_ammo_floorob.png
       225: Resources/Items/Explosives/barrelmortar_floorob.png
       226: Resources/Items/Explosives/Ammo/barrelmortar_ammo1_floorob.png
+      227: Resources/Factions/Ironeyes/hitter_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -421,6 +426,9 @@ extraSprites:
       649: Resources/Crafts/Hardpoints/economy_basebit.png
       650: Resources/Crafts/Hardpoints/sport_basebit.png
       651: Resources/Crafts/Hardpoints/batbox_basebit.png
+      652: Resources/Crafts/Hardpoints/9mmmg_basebit.png
+      653: Resources/Crafts/Hardpoints/xnlaservolley_basebit.png
+      654: Resources/Crafts/Hardpoints/xnlasercannon_basebit.png
 
   - type: INTICON.PCK
     files:
@@ -433,6 +441,9 @@ extraSprites:
       606: Resources/Crafts/Hardpoints/economy_inticon.png
       607: Resources/Crafts/Hardpoints/sport_inticon.png
       608: Resources/Crafts/Hardpoints/batbox_inticon.png
+      609: Resources/Crafts/Hardpoints/9mmmg_inticon.png
+      610: Resources/Crafts/Hardpoints/xnlaservolley_inticon.png
+      611: Resources/Crafts/Hardpoints/xnlasercannon_inticon.png
 
   - type: X1.PCK
     width: 1024
@@ -727,7 +738,7 @@ extraSprites:
     subX: 32
     subY: 40
     width: 512
-    height: 680
+    height: 720
     files:
       0: Resources/Factions/Ironeyes/booster_sprite.png
 
@@ -739,7 +750,7 @@ extraSprites:
     subX: 32
     subY: 40
     width: 512
-    height: 680
+    height: 720
     files:
       0: Resources/Factions/Ironeyes/ripper_sprite.png
 
@@ -751,9 +762,21 @@ extraSprites:
     subX: 32
     subY: 40
     width: 512
-    height: 680
+    height: 720
     files:
       0: Resources/Factions/Ironeyes/breaker_sprite.png
+
+  - typeSingle: HITTER_CPAL
+    fileSingle: Resources/Factions/Ironeyes/hitter_CPAL.png
+  - typeSingle: HITTER.SPK
+    fileSingle: Resources/Factions/Ironeyes/hitter_inventory.png
+  - type: HITTER.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Factions/Ironeyes/hitter_sprite.png
 
   - typeSingle: CYFURB_CPAL
     fileSingle: Resources/Factions/Robots/cyfurb_CPAL.png
@@ -775,7 +798,7 @@ extraSprites:
     subX: 32
     subY: 40
     width: 512
-    height: 680
+    height: 720
     files:
       0: Resources/Factions/Netrunners/freelancer_sprite.png
 
@@ -787,7 +810,7 @@ extraSprites:
     subX: 32
     subY: 40
     width: 512
-    height: 680
+    height: 720
     files:
       0: Resources/Factions/Netrunners/skiptracer_sprite.png
 
@@ -811,7 +834,7 @@ extraSprites:
     subX: 32
     subY: 40
     width: 512
-    height: 680
+    height: 720
     files:
       0: Resources/Factions/SSP/sspguard_sprite.png
 
@@ -823,7 +846,7 @@ extraSprites:
     subX: 32
     subY: 40
     width: 512
-    height: 680
+    height: 720
     files:
       0: Resources/Factions/SSP/sspofficer_sprite.png
 # enemy drones
@@ -925,7 +948,7 @@ extraSprites:
     subX: 32
     subY: 40
     width: 512
-    height: 680
+    height: 720
     files:
       0: Resources/Factions/Clients/client_rr_sprite.png
 
@@ -937,7 +960,7 @@ extraSprites:
     subX: 32
     subY: 40
     width: 512
-    height: 680
+    height: 720
     files:
       0: Resources/Factions/Clients/client_crazy_sprite.png
 
@@ -1077,6 +1100,12 @@ extraSprites:
     fileSingle: Resources/Crafts/Hardpoints/economy_pedia.png
   - typeSingle: SPORT.SPK
     fileSingle: Resources/Crafts/Hardpoints/sport_pedia.png
+  - typeSingle: 9MMMG.SPK
+    fileSingle: Resources/Crafts/Hardpoints/9mmmg_pedia.png
+  - typeSingle: XNLASERVOLLEY.SPK
+    fileSingle: Resources/Crafts/Hardpoints/xnlaservolley_pedia.png
+  - typeSingle: XNLASERCANNON.SPK
+    fileSingle: Resources/Crafts/Hardpoints/xnlasercannon_pedia.png
 # drones
   - typeSingle: HYBRID_CPAL
     fileSingle: Resources/Pedia/dronehybrid_CPAL.png

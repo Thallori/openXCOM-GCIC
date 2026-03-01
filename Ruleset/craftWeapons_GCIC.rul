@@ -2,8 +2,7 @@ craftWeapons:
 
   - type: STR_CRAFT_WEAPON_9MM_MG
     launcher: STR_9MM_MG
-    weaponType: 0 #any
-    sprite: 601
+    sprite: 604
     sound: 100
     damage: 2
     range: 10
@@ -18,8 +17,7 @@ craftWeapons:
 
   - type: STR_CRAFT_WEAPON_XN_LASER_MG
     launcher: STR_XN_LASER_MG
-    weaponType: 0
-    sprite: 601
+    sprite: 605
     sound: 102
     damage: 2
     range: 10
@@ -34,8 +32,7 @@ craftWeapons:
 
   - type: STR_CRAFT_WEAPON_XN_LASER_CANNON
     launcher: STR_XN_LASER_CANNON
-    weaponType: 0
-    sprite: 601
+    sprite: 606
     sound: 104
     damage: 5
     range: 10

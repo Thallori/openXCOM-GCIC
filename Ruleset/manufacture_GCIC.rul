@@ -29,6 +29,7 @@ manufacture:
     category: STR_TASKS_MANUCAT
     requires:
       - STR_GCIC_BACKCHANNEL_MISSIONS
+      - STR_GCIC_SABOTAGE_2_DATA_DECRYPT
     time: 1
     requiredItems:
       STR_GCIC_SABOTAGE_2_DATA_DECRYPT: 1
@@ -684,6 +685,60 @@ manufacture:
     producedItems:
       STR_GCIC_SABOTAGE_2_DATA_DECRYPT: 1
 #extortions
+  - name: STR_EX_BOOSTER
+    category: STR_EXTORT_MANUCAT
+    requires:
+      - STR_BOOSTER_INTERVIEW
+    time: 12
+    points: -10
+    cost: -2000
+    refund: true
+    requiredItems:
+      STR_BOOSTER_PRIVATE: 1
+    producedItems:
+      STR_PERSONAL_DATA: 1
+      STR_CONSUMER_CYBERNETICS: 2
+  - name: STR_EX_RIPPER
+    category: STR_EXTORT_MANUCAT
+    requires:
+      - STR_RIPPER_INTERVIEW
+    time: 24
+    points: -15
+    cost: -4000
+    refund: true
+    requiredItems:
+      STR_RIPPER_PRIVATE: 1
+    producedItems:
+      STR_PERSONAL_DATA: 1
+      STR_MEDICAL_CYBERNETICS: 2
+  - name: STR_EX_BREAKER
+    category: STR_EXTORT_MANUCAT
+    requires:
+      - STR_BREAKER_INTERVIEW
+    time: 24
+    points: -20
+    cost: -20000
+    refund: true
+    requiredItems:
+      STR_BREAKER_PRIVATE: 1
+    producedItems:
+      STR_PERSONAL_DATA: 1
+      STR_CRIMINAL_CONTAINER_1: 5
+  - name: STR_EX_HITTER
+    category: STR_EXTORT_MANUCAT
+    requires:
+      - STR_HITTER_INTERVIEW
+    time: 120
+    points: -25
+    cost: -30000
+    refund: true
+    requiredItems:
+      STR_HITTER_PRIVATE: 1
+    producedItems:
+      STR_PERSONAL_DATA: 1
+      STR_AQUAVEST_DRONE_ARMOR: 1
+      STR_MILITARY_CYBERNETICS: 1
+
   - name: STR_EX_FREELANCER
     category: STR_EXTORT_MANUCAT
     requires:
@@ -813,7 +868,6 @@ manufacture:
       - [1, {STR_XN_LASER_SNIPER: 1}]
       - [1, {STR_XN_LASER_MG: 1}]
       - [1, {STR_XN_LASER_CANNON: 1}]
-
 #salvage
   - name: STR_SALVAGE_SINGLESHOT_LASER_PISTOL_ELERIUM
     category: STR_SALVAGE_MANUCAT

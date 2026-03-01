@@ -649,21 +649,21 @@ ufopaedia:
     text: STR_CRAFT_WEAPON_9MM_MG_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
-    image_id: ECONOMY.SPK
+    image_id: 9MMMG.SPK
   - id: STR_CRAFT_WEAPON_XN_LASER_MG
     requires:
-      - STR_XN_LASER_CANNON
+      - STR_CRAFT_WEAPON_XN_LASER_MG
     text: STR_CRAFT_WEAPON_XN_LASER_MG_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
-    image_id: ECONOMY.SPK
+    image_id: XNLASERVOLLEY.SPK
   - id: STR_CRAFT_WEAPON_XN_LASER_CANNON
     requires:
       - STR_XN_LASER_CANNON
     text: STR_CRAFT_WEAPON_XN_LASER_CANNON_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
-    image_id: ECONOMY.SPK
+    image_id: XNLASERCANNON.SPK
 
   - id: STR_HD_ECONOMY_ENGINE
     requires:
@@ -1581,11 +1581,10 @@ ufopaedia:
     text: STR_MEDICAL_CYBERNETICS_UP
     section: STR_RESOURCES_UC
     type_id: 4
-
-  - id: STR_AG_UNIT
+  - id: STR_MILITARY_CYBERNETICS
     requires:
-      - STR_AG_UNIT
-    text: STR_AG_UNIT_UP
+      - STR_MILITARY_CYBERNETICS
+    text: STR_MILITARY_CYBERNETICS_UP
     section: STR_RESOURCES_UC
     type_id: 4
 
@@ -1595,11 +1594,30 @@ ufopaedia:
     text: STR_BIOMASS_UP
     section: STR_RESOURCES_UC
     type_id: 4
+  - id: STR_AG_UNIT
+    requires:
+      - STR_AG_UNIT
+    text: STR_AG_UNIT_UP
+    section: STR_RESOURCES_UC
+    type_id: 4
 
+  - id: STR_PHX_WARHEAD
+    requires:
+      - STR_PHX_WARHEAD
+    text: STR_PHX_WARHEAD_UP
+    section: STR_RESOURCES_UC
+    type_id: 4
   - id: STR_DURATHREAD
     requires:
       - STR_DURATHREAD
     text: STR_DURATHREAD_UP
+    section: STR_RESOURCES_UC
+    type_id: 4
+
+  - id: STR_NANOWEAVE
+    requires:
+      - STR_NANOWEAVE
+    text: STR_NANOWEAVE_UP
     section: STR_RESOURCES_UC
     type_id: 4
   - id: STR_PLASTICS
@@ -1609,6 +1627,12 @@ ufopaedia:
     section: STR_RESOURCES_UC
     type_id: 4
 
+  - id: STR_ALLOYS
+    requires:
+      - STR_ALLOYS
+    text: STR_ALLOYS_UP
+    section: STR_RESOURCES_UC
+    type_id: 4
   - id: STR_ELERIUM_CORE
     requires:
       - STR_ELERIUM_CORE
@@ -1672,6 +1696,12 @@ ufopaedia:
     requires:
       - STR_BOUNTY_1
     text: STR_BOUNTY_1_UP
+    section: STR_RESOURCES_UC
+    type_id: 8
+  - id: STR_BOUNTY_2
+    requires:
+      - STR_BOUNTY_2
+    text: STR_BOUNTY_2_UP
     section: STR_RESOURCES_UC
     type_id: 8
   - id: STR_IRS_SUBSIDY
@@ -1776,6 +1806,34 @@ ufopaedia:
       width: 149
       height: 200
     image_id: BREAKER_CPAL
+
+  - id: STR_HITTERS
+    requires:
+      - STR_HITTER_PRIVATE
+    text: STR_HITTERS_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: HITTER_CPAL
+  - id: STR_HITTER_INTERVIEW
+    title: STR_HITTER_INTERVIEW_T
+    requires:
+      - STR_HITTER_INTERVIEW
+    text: STR_HITTER_INTERVIEW_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: HITTER_CPAL
 # netrunners
   - id: STR_FREELANCERS
     requires:
@@ -2051,6 +2109,11 @@ ufopaedia:
   - id: STR_BREAKER_ARMOR
     requires:
       - STR_BREAKER_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_HITTER_ARMOR
+    requires:
+      - STR_HITTER_ARMOR
     section: STR_COMPETITORS_UC
     type_id: 5
   - id: STR_FREELANCER_ARMOR

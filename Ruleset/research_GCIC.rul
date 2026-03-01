@@ -123,6 +123,12 @@ research:
       - STR_SECURITY
       - STR_EXPANSION
     cost: 5
+
+  - name: STR_PBI_LOCK
+    dependencies:
+      - STR_FORBIDDEN_OPERATIONS
+      - STR_NON_CLIENTS
+      - STR_SHARES_GCIC
   - name: STR_GCIC_BACKCHANNEL_MISSIONS
     neededItem: STR_PBI_ITEM
     needItem: true
@@ -131,15 +137,20 @@ research:
     disables:
       - STR_PBI_LOCK
 
-  - name: STR_PBI_LOCK
-    dependencies:
-      - STR_FORBIDDEN_OPERATIONS
-      - STR_NON_CLIENTS
-      - STR_SHARES_GCIC
   - name: STR_PTS_LOCK
     dependencies:
       - STR_GCIC_BACKCHANNEL_MISSIONS
+  - name: STR_GCIC_TRADE_SECRETS_MISSIONS
+    neededItem: STR_PTS_ITEM
+    needItem: true
+    destroyItem: true
+    cost: 5
+    disables:
+      - STR_PTS_LOCK
 
+  - name: STR_PIN_LOCK
+    dependencies:
+      - STR_SHARES_GCIC
   - name: STR_GCIC_INDEPENDENCE
     neededItem: STR_PROJECT_INDEPENDENCE_ITEM
     needItem: true
@@ -147,9 +158,6 @@ research:
     cost: 125
     disables:
       - STR_PIN_LOCK
-  - name: STR_PIN_LOCK
-    dependencies:
-      - STR_SHARES_GCIC
 
   - name: STR_IRONEYES_NETWORK
     dependencies:
@@ -529,7 +537,7 @@ research:
     cost: 20
   - name: STR_BACKCHANNELS_RESEARCH
     dependencies:
-      - STR_LOCAL_INTERFACE
+      - STR_PUBLIC_GATEWAY
       - STR_SJB_LICENSE
       - STR_BCF_PREQ
     cost: 20
@@ -1015,13 +1023,12 @@ research:
   - name: STR_SECRET_DATA
     needItem: true
     cost: 5
-    unlocks:
-      - STR_PG_PREQ
 
   - name: STR_GCIC_SABOTAGE_2_DATA_DECRYPT
     needItem: true
-    destroyItem: true
     cost: 4
+    unlocks:
+      - STR_BCF_PREQ
 # abstract
   - name: STR_SHARES_GCIC
     needItem: true
@@ -1069,17 +1076,13 @@ research:
         - STR_STIM_INHALER
       STR_TRG_RI_PREQ:
         - STR_RIPPER_PRIVATE
-        - STR_UFO_AIRCAR_IRON1
         - STR_9MM_SMG
       STR_TRG_BRK_PREQ:
         - STR_BREAKER_PRIVATE
-        - STR_UFO_AIRCAR_IRON2
+        - STR_UFO_AIRCAR_IRON1
         - STR_9MM_MG
         - STR_BARREL_MOTAR
         - STR_WINDLASS_LAUNCHER
-      STR_TRG_HIT_PREQ:
-        - STR_HITTER_PRIVATE
-        - STR_UFO_AIRCAR_IRON2
       STR_TRG_CYFURB_PREQ:
         - STR_CYFURB
       STR_TRG_FL_PREQ:
@@ -1132,7 +1135,7 @@ research:
     neededItem: STR_PERSONAL_DATA
     needItem: true
     destroyItem: true
-    cost: 20
+    cost: 40
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
@@ -1145,14 +1148,13 @@ research:
         - STR_BREAKER_PRIVATE
       STR_TRG_CYFURB_PREQ:
         - STR_CYFURB
-
   - name: STR_DATA_1_NETRUNNERS
     requiresBaseFunc:
       - STR_SERVICE_PORT
     neededItem: STR_PERSONAL_DATA
     needItem: true
     destroyItem: true
-    cost: 20
+    cost: 40
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
@@ -1163,14 +1165,13 @@ research:
         - STR_SKIPTRACER_PRIVATE
       STR_TRG_WT_PREQ:
         - STR_WIRETAPPER_PRIVATE
-
   - name: STR_DATA_1_SSP
     requiresBaseFunc:
       - STR_SERVICE_PORT
     neededItem: STR_PERSONAL_DATA
     needItem: true
     destroyItem: true
-    cost: 20
+    cost: 40
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
@@ -1179,14 +1180,13 @@ research:
         - STR_SSPGUARD_PRIVATE
       STR_TRG_SO_PREQ:
         - STR_SSPOFFICER_PRIVATE
-
   - name: STR_DATA_1_MEDI
     requiresBaseFunc:
       - STR_SERVICE_PORT
     neededItem: STR_PERSONAL_DATA
     needItem: true
     destroyItem: true
-    cost: 20
+    cost: 40
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
@@ -1197,28 +1197,26 @@ research:
         - STR_MUCKSTAR
       STR_TRG_CL_PREQ:
         - STR_CELATID
-
   - name: STR_DATA_1_GR
     requiresBaseFunc:
       - STR_SERVICE_PORT
     neededItem: STR_PERSONAL_DATA
     needItem: true
     destroyItem: true
-    cost: 20
+    cost: 40
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
     getOneFreeProtected:
       STR_TRG_RS_PREQ:
         - STR_ROBOSPHERE
-
   - name: STR_DATA_1_IRS
     requiresBaseFunc:
       - STR_SERVICE_PORT
     neededItem: STR_PERSONAL_DATA
     needItem: true
     destroyItem: true
-    cost: 20
+    cost: 40
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
@@ -1249,6 +1247,9 @@ research:
         - STR_XN_LASER_MG
         - STR_XN_LASER_CANNON
     getOneFreeProtected:
+      STR_TRG_HIT_PREQ:
+        - STR_HITTER_PRIVATE
+        - STR_UFO_AIRCAR_IRON2
       STR_MEDI_MISSIONS:
         - STR_HYBRID_AUTOPSY
         - STR_HUMAN_AUTOPSY
@@ -1272,7 +1273,6 @@ research:
     cost: 6
     unlocks:
       - STR_BOOSTER_ARMOR
-      - STR_PG_PREQ
       - STR_ALIEN_INTERVIEWED_FLAG
     getOneFree:
       - STR_BOOSTER_PRIVATE
@@ -1308,7 +1308,6 @@ research:
     cost: 8
     unlocks:
       - STR_BREAKER_ARMOR
-      - STR_PG_PREQ
       - STR_ALIEN_INTERVIEWED_FLAG
     getOneFree:
       - STR_BREAKER_PRIVATE

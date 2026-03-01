@@ -1625,7 +1625,7 @@ items:
 
   - type: STR_SINGLESHOT_LASER_PISTOL_ELERIUM
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
-    ufopediaType: STR_SINGLESHOT_LASER_PISTOL_ELERIUM
+    ufopediaType: STR_SINGLESHOT_LASER_PISTOL
     requiresBuy:
       - STR_TODO
       - STR_VENDOR_SSP
@@ -4449,77 +4449,75 @@ items:
     costSell: -10000
     bigSprite: 146
     floorSprite: 142
-    ignoreInCraftEquip: true
     recoveryPoints: -15
-    battleType: 10
     weight: 2
     armor: 200
-
+# cyberware
   - type: STR_CONSUMER_CYBERNETICS_CODED
     categories: [STR_RESOURCES_CATEGORY]
     ufopediaType: STR_CONSUMER_CYBERNETICS
-    size: 0.2
+    size: 0.1
     costSell: 640
     bigSprite: 163
-    ignoreInCraftEquip: true
-    battleType: 10
     weight: 2
   - type: STR_CONSUMER_CYBERNETICS
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
       - STR_VENDOR_MEDI
       - STR_SPECIALIZATION_TRAINING
-    size: 0.2
+    size: 0.1
     costBuy: 6399
     costSell: 1600
     transferTime: 4
     bigSprite: 163
-    ignoreInCraftEquip: true
-    battleType: 10
     weight: 2
   - type: STR_MEDICAL_CYBERNETICS_CODED
     categories: [STR_RESOURCES_CATEGORY]
     ufopediaType: STR_MEDICAL_CYBERNETICS
-    size: 0.2
+    size: 0.1
     costSell: 1400
     bigSprite: 188
-    ignoreInCraftEquip: true
-    battleType: 10
     weight: 3
   - type: STR_MEDICAL_CYBERNETICS
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
       - STR_MEDICAL_CYBERNETICS_ITEM
-    size: 0.2
+    size: 0.1
     costBuy: 13999
     costSell: 3500
     transferTime: 4
     bigSprite: 188
-    ignoreInCraftEquip: true
-    battleType: 10
     weight: 3
   - type: STR_MILITARY_CYBERNETICS_CODED
     categories: [STR_RESOURCES_CATEGORY]
     ufopediaType: STR_MILITARY_CYBERNETICS
-    size: 0.2
+    size: 0.1
     costSell: 3800
     bigSprite: 188 #
-    ignoreInCraftEquip: true
-    battleType: 10
     weight: 3
   - type: STR_MILITARY_CYBERNETICS
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
       - STR_TODO
-    size: 0.2
+    size: 0.1
     costBuy: 37999
     costSell: 9500
     transferTime: 4
     bigSprite: 188 #
-    ignoreInCraftEquip: true
-    battleType: 10
     weight: 3
-
+# remains
+  - type: STR_BIOMASS
+    categories: [STR_RESOURCES_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+    size: 0.5
+    costBuy: -250
+    costSell: -1000
+    transferTime: 4
+    bigSprite: 153
+    invWidth: 2
+    invHeight: 2
+    weight: 12
   - type: STR_AG_UNIT
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
@@ -4532,20 +4530,22 @@ items:
     ignoreInCraftEquip: true
     battleType: 10
     weight: -4
-  - type: STR_BIOMASS
+# tier 1
+  - type: STR_PHX_WARHEAD
     categories: [STR_RESOURCES_CATEGORY]
+    specialType: 194
     requiresBuy:
       - STR_TODO
-    size: 0.5
-    costBuy: -250
-    costSell: -1000
-    transferTime: 4
-    bigSprite: 153
-    ignoreInCraftEquip: true
-    invWidth: 2
-    invHeight: 2
-    battleType: 10
-    weight: 12
+    size: 0.1
+    costBuy: 4799
+    costSell: 1200
+    transferTime: 72
+    bigSprite: 246
+    recoveryPoints: 1
+    recoveryDividers:
+      STR_OTHER: -4
+    weight: 4
+    armor: 60
   - type: STR_DURATHREAD
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
@@ -4555,9 +4555,8 @@ items:
     costSell: 500
     transferTime: 4
     bigSprite: 198
-    ignoreInCraftEquip: true
-    battleType: 10
     weight: 2
+# tier 2
   - type: STR_NANOWEAVE
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
@@ -4566,11 +4565,8 @@ items:
     costBuy: 9999
     costSell: 2500
     transferTime: 4
-    bigSprite: 198 #
-    ignoreInCraftEquip: true
-    battleType: 10
+    bigSprite: 247
     weight: 2
-
   - type: STR_PLASTICS
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
@@ -4580,40 +4576,18 @@ items:
     costSell: 1000
     transferTime: 4
     bigSprite: 170
-    ignoreInCraftEquip: true
-    battleType: 10
     weight: 4
     armor: 40
-  - type: STR_PHX_WARHEAD
-    categories: [STR_RESOURCES_CATEGORY]
-    specialType: 194
-    requiresBuy:
-      - STR_TODO
-    size: 0.1
-    costBuy: 1999
-    costSell: 500
-    transferTime: 72
-    bigSprite: 900 #
-    floorSprite: 900 #
-    ignoreInCraftEquip: true
-    recoveryPoints: -1
-    recoveryDividers:
-      STR_OTHER: -4
-    battleType: 10
-    weight: 4
-    armor: 60
-
+# tier 3
   - type: STR_ALLOYS
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
       - STR_TODO
-      - STR_ALLOYS
     size: 0.1
     costBuy: 24999
-    costSell: 3750
+    costSell: 6250
     transferTime: 4
-    bigSprite: 170 #
-    ignoreInCraftEquip: true
+    bigSprite: 245
     recoveryPoints: 1
     weight: 6
     armor: 100
@@ -4621,18 +4595,16 @@ items:
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
       - STR_TODO
-      - STR_ELERIUM_CORE
     size: 0.1
     costBuy: 200000
     costSell: 200000
     transferTime: 72
     bigSprite: 154
     floorSprite: 148
-    ignoreInCraftEquip: true
     recoveryPoints: 5
     weight: 5
     armor: 120
-
+# trophies
   - type: STR_SJB_LICENSE
     categories: [STR_RESOURCES_CATEGORY]
     specialType: 196
@@ -4643,10 +4615,7 @@ items:
     costSell: 0
     transferTime: 4
     bigSprite: 152
-    ignoreInCraftEquip: true
-    battleType: 10
     weight: 2
-# trophies
   - type: STR_SEC_LICENSE_ITEM
     categories: [STR_PERKS_CATEGORY]
     specialType: 195
@@ -4654,36 +4623,30 @@ items:
     size: 0
     costSell: 0
     bigSprite: 225
-    ignoreInCraftEquip: true
-    battleType: 10
     weight: 2
 # data
   - type: STR_PERSONAL_DATA
     categories: [STR_DATA_CATEGORY]
     costSell: 40
     bigSprite: 157
-    ignoreInCraftEquip: true
     recoveryPoints: 1
-    battleType: 10
     weight: 2
   - type: STR_SECRET_DATA
     categories: [STR_DATA_CATEGORY]
     costSell: 9500
     bigSprite: 185
-    ignoreInCraftEquip: true
     recoveryPoints: 2
-    battleType: 10
     weight: 2
 
   - type: STR_GCIC_SABOTAGE_2_DATA
     categories: [STR_DATA_CATEGORY]
     ufopediaType: STR_GCIC_BACKCHANNEL_MISSIONS
     specialType: 197
-    costSell: 100000
+    costSell: 120000
     recoveryPoints: -15
   - type: STR_GCIC_SABOTAGE_2_DATA_DECRYPT
     categories: [STR_DATA_CATEGORY]
-    costSell: 145000
+    costSell: 185000
 
   - type: STR_DRONE_MEMORY
     categories: [STR_DATA_CATEGORY]
@@ -4734,7 +4697,7 @@ items:
     armor: 255
 
   - type: STR_BOUNTY_CHRYSSALID
-    ufopediaType: STR_BOUNTY_1
+    ufopediaType: STR_BOUNTY_2
     categories: [STR_SPECIMENS_CATEGORY]
     recoveryPoints: 9
     recoveryTransformations:
@@ -5100,13 +5063,14 @@ items:
     name: STR_CORPSE
     categories: [STR_DEBUG_CATEGORY]
     weight: 22
-    bigSprite: 239 #
-    floorSprite: 222 #
+    bigSprite: 244
+    floorSprite: 227
     invWidth: 2
     invHeight: 3
     battleType: 11
     recoveryTransformations:
       STR_BIOMASS: [1]
+      STR_PLASTICS: [1]
       STR_NANOWEAVE: [1]
       STR_MILITARY_CYBERNETICS_CODED: [1]
     armor: 30
@@ -5195,35 +5159,6 @@ items:
       STR_PLASTICS: [1]
       STR_CONSUMER_CYBERNETICS_CODED: [1]
     armor: 30
-# enemy drones
-  - type: STR_DRONE_ENEMY_HYBRID
-    categories: [STR_DEBUG_CATEGORY]
-    recoveryPoints: 1
-    recoveryTransformations:
-      STR_DRONE_HYBRID_ITEM: [1]
-    recover: true
-    liveAlien: true
-  - type: STR_DRONE_ENEMY_HUMAN
-    categories: [STR_DEBUG_CATEGORY]
-    recoveryPoints: 1
-    recoveryTransformations:
-      STR_DRONE_HUMAN_ITEM: [1]
-    recover: true
-    liveAlien: true
-  - type: STR_DRONE_ENEMY_SHARK
-    categories: [STR_DEBUG_CATEGORY]
-    recoveryPoints: 1
-    recoveryTransformations:
-      STR_DRONE_SHARK_ITEM: [1]
-    recover: true
-    liveAlien: true
-  - type: STR_DRONE_ENEMY_DEEP
-    categories: [STR_DEBUG_CATEGORY]
-    recoveryPoints: 1
-    recoveryTransformations:
-      STR_DRONE_DEEP_ITEM: [1]
-    recover: true
-    liveAlien: true
 # animals
   - type: STR_CHRYSSALID_CORPSE
     name: STR_CORPSE
@@ -5298,8 +5233,8 @@ items:
     costSell: 1500
     recoveryPoints: 2
     recoveryTransformations:
-      STR_AG_UNIT: [1]
       STR_SHARES_GR: [75, 25]
+      STR_AG_UNIT: [1]
     ignoreInBaseDefense: true
     bigSprite: 189
     floorSprite: 176
