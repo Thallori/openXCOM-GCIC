@@ -47,7 +47,7 @@ missionScripts:
   - type: SimSmallc
     researchTriggers:
       STR_SECGAMES_MISSIONS: true
-    executionOdds: 80
+    executionOdds: 70
     missionWeights:
       0:
         STR_HOLOUFO_SMALL_MISSION: 100
@@ -55,24 +55,23 @@ missionScripts:
     useTable: false
     startDelay: 30
     randomDelay: 43170
-  - type: SimSmalld
+  - type: SimFightera
     researchTriggers:
       STR_SECGAMES_MISSIONS: true
-    executionOdds: 50
     missionWeights:
       0:
-        STR_HOLOUFO_SMALL_MISSION: 100
+        STR_HOLOUFO_FIGHTER_MISSION: 100
     regionWeights: *PopDenseAll
     useTable: false
     startDelay: 30
     randomDelay: 43170
-  - type: SimSmalle
+  - type: SimFighterb
     researchTriggers:
       STR_SECGAMES_MISSIONS: true
-    executionOdds: 20
+    executionOdds: 70
     missionWeights:
       0:
-        STR_HOLOUFO_SMALL_MISSION: 100
+        STR_HOLOUFO_FIGHTER_MISSION: 100
     regionWeights: *PopDenseAll
     useTable: false
     startDelay: 30

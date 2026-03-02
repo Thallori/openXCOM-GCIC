@@ -40,6 +40,9 @@ ufos:
   - update: STR_HOLOUFO_SMALL
     tags:
       TAG_PUBLIC_HYPERWAVE_DATA: 1
+  - update: STR_HOLOUFO_FIGHTER
+    tags:
+      TAG_PUBLIC_HYPERWAVE_DATA: 1
   - update: STR_UFO_AIRCAR_IRON1
     tags:
       TAG_PUBLIC_HYPERWAVE_DATA: 1

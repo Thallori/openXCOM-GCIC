@@ -189,6 +189,12 @@ extraSprites:
       245: Resources/Items/Materials/alloy_bigob.png
       246: Resources/Items/Materials/warhead_bigob.png
       247: Resources/Items/Materials/nanoweave_bigob.png
+      248: Resources/Items/Explosives/Ammo/barrelmortar_ammo2_bigob.png
+      249: Resources/Armors/Anthros/Duraware/dura_corpse_bigob.png
+      250: Resources/Armors/Anthros/Duraware/dura_corpse_deep_bigob.png
+      251: Resources/Armors/Anthros/Duraware/duravest_corpse_bigob.png
+      252: Resources/Armors/Anthros/Duraware/duravest_corpse_deep_bigob.png
+      253: Resources/Items/Explosives/phxbomb_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -320,6 +326,14 @@ extraSprites:
       225: Resources/Items/Explosives/barrelmortar_floorob.png
       226: Resources/Items/Explosives/Ammo/barrelmortar_ammo1_floorob.png
       227: Resources/Factions/Ironeyes/hitter_floorob.png
+      228: Resources/Items/Explosives/Ammo/barrelmortar_ammo2_floorob.png
+      229: Resources/Armors/Anthros/Duraware/dura_corpse_floorob.png
+      230: Resources/Armors/Anthros/Duraware/dura_corpse_shark_floorob.png
+      231: Resources/Armors/Anthros/Duraware/dura_corpse_deep_floorob.png
+      232: Resources/Armors/Anthros/Duraware/duravest_corpse_floorob.png
+      233: Resources/Armors/Anthros/Duraware/duravest_corpse_shark_floorob.png
+      234: Resources/Armors/Anthros/Duraware/duravest_corpse_deep_floorob.png
+      235: Resources/Items/Explosives/phxbomb_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -384,6 +398,7 @@ extraSprites:
       552: Resources/Items/Laser/prototype_sniper_handob.png
       560: Resources/Items/Kinetic/9mm_mg_handob.png
       568: Resources/Items/Explosives/barrelmortar_handob.png
+      576: Resources/Items/Explosives/phxbomb_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
@@ -423,6 +438,8 @@ extraSprites:
       433: Resources/Crafts/bicube_basebit.png
       434: Resources/Crafts/crossover_basebit.png
       435: Resources/Crafts/rider_basebit.png
+      436: Resources/Crafts/limo_basebit.png
+      437: Resources/Crafts/secvan_basebit.png
       649: Resources/Crafts/Hardpoints/economy_basebit.png
       650: Resources/Crafts/Hardpoints/sport_basebit.png
       651: Resources/Crafts/Hardpoints/batbox_basebit.png
@@ -435,9 +452,13 @@ extraSprites:
       400: Resources/Crafts/bicube_mini_inticon.png
       401: Resources/Crafts/crossover_mini_inticon.png
       402: Resources/Crafts/rider_mini_inticon.png
+      403: Resources/Crafts/limo_mini_inticon.png
+      404: Resources/Crafts/secvan_mini_inticon.png
       411: Resources/Crafts/bicube_dogfight_inticon.png
       412: Resources/Crafts/crossover_dogfight_inticon.png
       413: Resources/Crafts/rider_dogfight_inticon.png
+      414: Resources/Crafts/limo_dogfight_inticon.png
+      415: Resources/Crafts/secvan_dogfight_inticon.png
       606: Resources/Crafts/Hardpoints/economy_inticon.png
       607: Resources/Crafts/Hardpoints/sport_inticon.png
       608: Resources/Crafts/Hardpoints/batbox_inticon.png
@@ -600,6 +621,80 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Worksuit/worksuit_sprite_deep.png
+# dura
+  - typeSingle: HUMAN__7__DURA
+    fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory.png
+  - typeSingle: HYBRID__7__DURA
+    fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory.png
+  - typeSingle: SHARK__7__DURA
+    fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory.png
+  - typeSingle: DEEP__7__DURA
+    fileSingle: Resources/Armors/Anthros/Duraware/dura_deep_inventory.png
+  - type: DURA_HUMAN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Duraware/dura_sprite_human.png
+  - type: DURA_HYBRID.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Duraware/dura_sprite_hybrid.png
+  - type: DURA_SHARK.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Duraware/dura_sprite_shark.png
+  - type: DURA_DEEP.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Duraware/dura_sprite_deep.png
+# duravest
+  - typeSingle: HUMAN__7__DURAVEST
+    fileSingle: Resources/Armors/Anthros/Duraware/duravest_inventory.png
+  - typeSingle: HYBRID__7__DURAVEST
+    fileSingle: Resources/Armors/Anthros/Duraware/duravest_inventory.png
+  - typeSingle: SHARK__7__DURAVEST
+    fileSingle: Resources/Armors/Anthros/Duraware/duravest_inventory.png
+  - typeSingle: DEEP__7__DURAVEST
+    fileSingle: Resources/Armors/Anthros/Duraware/duravest_deep_inventory.png
+  - type: DURAVEST_HUMAN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Duraware/duravest_sprite_human.png
+  - type: DURAVEST_HYBRID.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Duraware/duravest_sprite_hybrid.png
+  - type: DURAVEST_SHARK.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Duraware/duravest_sprite_shark.png
+  - type: DURAVEST_DEEP.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Duraware/duravest_sprite_deep.png
 # jumpsuit
   - typeSingle: HUMAN__7__JUMPSUIT
     fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory.png
@@ -1094,18 +1189,20 @@ extraSprites:
   - typeSingle: CRAFT_BICUBE_CPAL
     fileSingle: Resources/Pedia/craft_bicube_CPAL.png
 # armament
-  - typeSingle: BATBOX.SPK
-    fileSingle: Resources/Crafts/Hardpoints/batbox_pedia.png
-  - typeSingle: ECONOMY.SPK
-    fileSingle: Resources/Crafts/Hardpoints/economy_pedia.png
-  - typeSingle: SPORT.SPK
-    fileSingle: Resources/Crafts/Hardpoints/sport_pedia.png
+  - typeSingle: PHXMISSILE.SPK
+    fileSingle: Resources/Crafts/Hardpoints/phxmissile_pedia.png
   - typeSingle: 9MMMG.SPK
     fileSingle: Resources/Crafts/Hardpoints/9mmmg_pedia.png
   - typeSingle: XNLASERVOLLEY.SPK
     fileSingle: Resources/Crafts/Hardpoints/xnlaservolley_pedia.png
   - typeSingle: XNLASERCANNON.SPK
     fileSingle: Resources/Crafts/Hardpoints/xnlasercannon_pedia.png
+  - typeSingle: BATBOX.SPK
+    fileSingle: Resources/Crafts/Hardpoints/batbox_pedia.png
+  - typeSingle: ECONOMY.SPK
+    fileSingle: Resources/Crafts/Hardpoints/economy_pedia.png
+  - typeSingle: SPORT.SPK
+    fileSingle: Resources/Crafts/Hardpoints/sport_pedia.png
 # drones
   - typeSingle: HYBRID_CPAL
     fileSingle: Resources/Pedia/dronehybrid_CPAL.png
@@ -1127,6 +1224,10 @@ extraSprites:
 # armors
   - typeSingle: ARMOR_PLEX_CPAL
     fileSingle: Resources/Pedia/armor_plex_CPAL.png
+  - typeSingle: ARMOR_DURAWARE_CPAL
+    fileSingle: Resources/Pedia/armor_duraware_CPAL.png
+  - typeSingle: ARMOR_DURAVEST_CPAL
+    fileSingle: Resources/Pedia/armor_duravest_CPAL.png
   - typeSingle: ARMOR_DURA_CPAL
     fileSingle: Resources/Pedia/armor_dura_CPAL.png
   - typeSingle: ARMOR_SKELE_CPAL
@@ -1140,6 +1241,8 @@ extraSprites:
     fileSingle: Resources/Interwin/jammed_interwin.png
   - typeSingle: holoufo_interwin
     fileSingle: Resources/Interwin/holoufo_interwin.png
+  - typeSingle: holofighter_interwin
+    fileSingle: Resources/Interwin/holofighter_interwin.png
   - typeSingle: ufoharvester_interwin
     fileSingle: Resources/Interwin/ufoharvester_interwin.png
   - typeSingle: aircar1_interwin

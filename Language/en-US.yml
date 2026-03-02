@@ -263,13 +263,14 @@ en-US:
 
   STR_UFO_IS_NOT_RECOVERED: "USO: Abdicated"
   STR_UFO_IS_RECOVERED: "USO: Recovered"
+  STR_UFO_RECOVERY: "USO RECOVERY"
   STR_CRAFT_IS_LOST: "APS CRAFT: Lost"
   STR_TERROR_CONTINUES: "OPERATION: Halted"
   STR_ALIENS_DEFEATED: "OPERATION: Complete"
-  STR_BASE_IS_LOST: "SHELL: Destroyed"
+  STR_BASE_IS_LOST: "SHELL: Displaced"
   STR_BASE_IS_SAVED: "SHELL: Intact"
   STR_ALIEN_BASE_STILL_INTACT: "COMPETING SHELL: Intact"
-  STR_ALIEN_BASE_DESTROYED: "COMPETING SHELL: Destroyed"
+  STR_ALIEN_BASE_DESTROYED: "COMPETING SHELL: Displaced"
 
   STR_UFO_HAS_LANDED: "USO has touched down at{NEWLINE}{0}"
   STR_LANDING_SITE_: "TOUCHDOWN SITE-{0}"
@@ -285,7 +286,7 @@ en-US:
   STR_TERROR_MISSION: "MASS CASUALITY EVENT"
   STR_TERROR_SITE: "MASS CASUALITY SITE-{0}"
 
-  STR_ALIEN_BASE_: "BASE-{0}"
+  STR_ALIEN_BASE_: "COMPETING SHELL-{0}"
   STR_XCOM_AGENTS_HAVE_LOCATED_AN_ALIEN_BASE_IN_REGION: "GCIC drones have located a competing shell in {0}"
   STR_THE_ALIENS_HAVE_DESTROYED_THE_UNDEFENDED_BASE: "Hostiles have destroyed our undefended shell {0}"
   STR_CENTER_ON_UFO_TIME_5_SECONDS: "CENTER ON USO-TIME=5 Secs"
@@ -485,6 +486,7 @@ en-US:
   MAP_SLUM: "Suburban Slums"
   MAP_FOREST2: "Coniferous Forest"
   MAP_DESERT2: "Desert Dunes"
+  MAP_TAIGA2: "Torpid Taiga"
 # scripted
   MAP_HANGAR_DRONES_SIZE3: "Warehouse District"
   MAP_HANGAR_DRONES_SIZE4: "Warehouse District"
@@ -729,8 +731,11 @@ en-US:
   STR_RANK_DEEP_DRONE_4: "NW/Commodore"
   STR_RANK_DEEP_DRONE_5: "NW/Admiral"
 #manufacturing
+  STR_BARREL_MOTAR_AMMO_M: "Barrel Explosive Shell Fabrication"
+  STR_BARREL_MOTAR_PHXAMMO_M: "Barrel PHX Shell Fabrication"
   STR_WINDLASS_LAUNCHER_AMMO_M: "Windlass Tinybomb Fabrication"
   STR_PIPEBOMB_M: "Pipe Bomb Fabrication"
+  STR_PHXBOMB_MANU_M: "PHX Bomb Fabrication"
   STR_ACIDFLASK_M: "Acid Flask Fabrication"
   STR_ELERIUM_BOMB_M: "Elerium Bomb Fabrication"
   STR_STIM_SPRINT_M: "Sprint Inhaler Fabrication"
@@ -757,7 +762,9 @@ en-US:
   STR_DART_AMMO2_MANU: "Poisoned Darts (x3)"
   STR_STIM_SPRINT_MANU: "Sprint Inhaler (x5)"
   STR_STIM_MORNING_MANU: "Morning Inhaler (x5)"
+  STR_WINDLASS_LAUNCHER_AMMO_MANU: "Windlass Tinybomb Cluster (x4)"
   STR_ACIDFLASK_MANU: "Acid Flask (x3)"
+  STR_PHXBOMB_MANU: "PHX Bomb (x3)"
 
   STR_SSP_LASER_PISTOL_MANU: "UPGRADE: SSP Enforcer Laser Pistol (E)"
   STR_GCIC_PROTOTYPE_LASER_PISTOL_MANU: "UPGRADE: Pilot Laser Pistol (E)"
@@ -995,6 +1002,8 @@ en-US:
   STR_VENDOR_P2P_FILE: "VENDOR: P2P"
   STR_VENDOR_P2P: "VENDOR: Illicit"
   STR_VENDOR_P2P_UP: "{NEWLINE}EQUITY: N/A{NEWLINE}MARKET SHARE: 28%{NEWLINE}{NEWLINE}Unlicensed markets have existed for as long as there has been licenses, a whole economy based on the limitless demand for free trade. History has recorded this activity under many names: smuggling, piracy, sharing, but the overriding principle is always the same. Two peers meet and exchange goods or services without consent from their society.{NEWLINE}{NEWLINE}In the current era, this act can be commited by engaging particular targets in directed conversation followed by barter."
+  STR_VENDOR_IRONEYES: "VENDOR: Ironeyes"
+  STR_VENDOR_IRONEYES_UP: "{NEWLINE}aaa{NEWLINE}bbb{NEWLINE}{NEWLINE}cccc{NEWLINE}{NEWLINE}dddd" #todo
 
   STR_VENDOR_MEDI: "VENDOR: MEDI-Group"
   STR_VENDOR_MEDI_UP: "{NEWLINE}EQUITY: $1,293,000,000,000{NEWLINE}CUSTOMER SATISFACTION: 98%{NEWLINE}{NEWLINE}The planet's largest and most widespread healthcare and pharmaceutical company. Founded more than 130 years ago, MEDI has aimed to keep all people (and now all species) heathly and happy. We're here for you today, in prosperity, as we were then for our freedom fighters during all of our most challenging years.{NEWLINE}{NEWLINE}MEDI's consumer lineup remains committed to the ease-of-use and unparelled portability that has made us your first choice for self-care treatment everywhere."
@@ -1043,9 +1052,13 @@ en-US:
   STR_SECGAMES_MISSIONS_UP: "{NEWLINE}EXPOSURE: ACCEPTABLE{NEWLINE}ATTEMPTS: 1.00/MONTH{NEWLINE}{NEWLINE}The Invasion Readiness Scheme broadcasts a series of competitions where group and individual entities attempt curated missions based on the first and second invasion wars. These games are invite only.{NEWLINE}{NEWLINE}By participating in USO trials we have achieved enough recognition to earn a {ALT}business-class{ALT} ticket. A {ALT}security license{ALT} incentivises success.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_SEC_LICENSE: "Security License Granted"
   STR_SEC_LICENSE_UP: "{NEWLINE}FROM: Invasion Readiness Scheme{NEWLINE}SUBJECT: Congratulations{NEWLINE}{NEWLINE}A new corporation succeeding in the games is always cause for celebration, and clips of the winning team's simulation are surprisingly popular, almost 20% above baseline. Especially with the lack of fashion, branding, and those flat facial expressions.{NEWLINE}{NEWLINE}Although a few have voiced reservations about the concept of weaponized drones, all requirements have been fulfilled to letter. Corporate bid for {ALT}security liscensing{ALT} approved."
+  STR_PD2_LOCK: "(dura drones available)"
+  STR_PD2_ITEM: "PROJECT: Dura-Drones Incorporated"
+  STR_PROJECT_DRONES2: "PROJECT: Dura-Drones"
+  STR_PROJECT_DRONES2_UP: "{NEWLINE}" #todo
   STR_MD_LOCK: "(medical drones available)"
   STR_MD_ITEM: "PROJECT: Medical Drones"
-  STR_DOCTOR_DRONE: ">PROJECT: Medical Drones<"
+  STR_DOCTOR_DRONE: "PROJECT: Medical Drones"
   STR_DOCTOR_DRONE_UP: "{NEWLINE}" #todo
 
   STR_FORBIDDEN_OPERATIONS: ">Forbidden Operations<"
@@ -1158,7 +1171,9 @@ en-US:
   STR_SERVICE_UPLINK: "Uplink"
   STR_SERVICE_PORT: "Decoding"
   STR_SERVICE_NETWORK: "Network"
+  STR_SERVICE_BACKCHANNELS: "Backchannels"
   STR_SERVICE_PRINTING: "Printing"
+  STR_SERVICE_HYPERCOMMS: "Hypercomms"
 #aps craft
   STR_APS: "APS CRAFT"
   STR_APS_UP: "{NEWLINE}ARTICLE: Counter-Invasion Treaty{NEWLINE}BYLAW: AA9-01-01{NEWLINE}{NEWLINE}Air-Space-and-Sea represents almost all licensed forms of transportation. From automated delivery vehicles to deep space defense plates.{NEWLINE}{NEWLINE}Anything moving under its own power with enough mass to pose a collision risk must be registered with local port administrators and insured by at least one approved corporate authority. Failure to do so may result in asset forfeiture, CE auctions, and/or financial audit."
@@ -1176,6 +1191,9 @@ en-US:
   STR_SSP_SECVAN: "SSP MASTIFF"
   STR_SSP_SECVAN_UP: "COMBINES PERFORMANCE AND POWER IN SINGLE BULLET-RESISTANT PACKAGE. DEPLOY WITH THE PROTECTION OF OUR PATENTED SECURITY-GEL POPUP WALLS, GUARANTEEND 50% CHANCE TO STOP ONE HEAVY PLASMA SHOT PER RECHARGE.{NEWLINE}{NEWLINE}RATING: Security{NEWLINE}{NEWLINE}ARMOR: 1PD{NEWLINE}SHIELDS: 10kJ" #plastic depth equivilant
 # hardpoints
+  STR_CRAFT_PHXMISSILE_LAUNCHER_RESEARCH: "PHX Missile Launcher Mod"
+  STR_CRAFT_PHXMISSILE_LAUNCHER: "WPN/PHX MISSILES"
+  STR_CRAFT_PHXMISSILE_LAUNCHER_UP: "MEDIUM-RANGE FIRE-AND-FORGET LAUNCHER WITH IMPACT DETONATED WARHEAD. CAPABLE OF (BARELY) PIERCING ALLOYED TARGETS.{NEWLINE}MAINTENANCE: $57,000/MONTH"
   STR_CRAFT_WEAPON_9MM_MG: "WPN/6BB ROTARY MG"
   STR_CRAFT_WEAPON_9MM_MG_UP: "CRAFT MOUNTED LIGHT KINETIC WEAPON{NEWLINE}MAINTENANCE: $1,400/MONTH"
   STR_CRAFT_WEAPON_XN_LASER_MG: "WPN/XN LAS-VOLLEY"
@@ -1195,8 +1213,11 @@ en-US:
   STR_HOLOUFO_SMALL_MISSION: "RATING: ENTRY-LEVEL"
   STR_HOLOUFO_SMALL: "(SIM) SCOUT"
   STR_HOLOUFO_SMALL_UP: "A holographic recreation of invader scout crafts. Using only engine vectoring for defense, these unarmed USO's posed little threat to system military forces."
+  STR_HOLOUFO_FIGHTER_MISSION: "RATING: MANAGERIAL"
+  STR_HOLOUFO_FIGHTER: "(SIM) FIGHTER"
+  STR_HOLOUFO_FIGHTER_UP: "Holoprojection of invader APS-superiority fighters. A blunted and cheap simulation without elerium engines, alloy plating, or plasma cannons. Designed to boost public morale when taken down.{NEWLINE}{NEWLINE}ARMOR: 5PD"
   STR_UFO_HARVESTER: "(SIM) HARVESTER"
-  STR_UFO_HARVESTER_UP: "An aquaplastic rendition of invader harvester-class craft, painted to match archival footage. Once overshadowed the system's military, requiring multiple point-blank nuclear missiles to take down."
+  STR_UFO_HARVESTER_UP: "An aquaplastic rendition of invader harvester-class craft, painted to match archival footage. Once overshadowed the system's military, requiring multiple point-blank nuclear missiles to take down.{NEWLINE}{NEWLINE}ARMOR: 5PD"
   STR_IRONEYESUFO_DELIVERY1: "SHOP RESTOCKING"
   STR_UFO_AIRCAR_IRON1: "HD ARES"
   STR_UFO_AIRCAR_IRON1_UP: "The hot and compact get-together machine. With plenty of leg and trunk room, every day can be a party in the front without leaving your business by the wayside. Available in forest green, gleaming emerald, and vicious verdant.{NEWLINE}{NEWLINE}Ironeyes Modified: 6BB Rotary MG"
@@ -1214,7 +1235,7 @@ en-US:
   STR_DRONE_SHARK_ITEM_UP: "{NEWLINE}Representation: 0.6%{NEWLINE}Stapled: 19.2%{NEWLINE}{NEWLINE}Invented by TW-Bionics, selamorphs are a late addition to the Alien Rights and Employment act. Obstensibly designed to assist in xenoforming coral containment, they lack sufficently functional gills. Leaving them more useful as leases to sec-forces and blue-collar labor.{NEWLINE}{NEWLINE}Aquatic Penalties: Halved{NEWLINE}{NEWLINE}(+) Melee, Strength{NEWLINE}(-) Throwing"
   STR_DRONE_DEEP_ITEM: "DRONE/NEWT" #pleurosaura
   STR_DRONE_DEEP_ITEM_UP: "{NEWLINE}Representation: 2.5%{NEWLINE}Stapled: 4.6%{NEWLINE}{NEWLINE}Alien designed chemical and amphibious warfare species, now free to climb other careers. External lungs filter air and water slowly, but effectively. Fine-tuned electroreceptors across their skin allow for direct machine interfacing, or sloughed off as an emergency shock weapon.{NEWLINE}{NEWLINE}Electrical/Chemical/Smoke Resist: 50%{NEWLINE}{NEWLINE}(+) Throwing, Reactions{NEWLINE}(-) Stamina"
-  STR_DRONE_FLOATER_ITEM: "DRONE/FLOATER" #
+  STR_DRONE_FLOATER_ITEM: "DRONE/FLOATER" #todo
   STR_DRONE_FLOATER_ITEM_UP: "{NEWLINE}Representation: 1.2%{NEWLINE}Stapled: 43.9%{NEWLINE}{NEWLINE}oooooooo{NEWLINE}{NEWLINE}Flying, Cannot Run{NEWLINE}{NEWLINE}(+) TU, Health{NEWLINE}(-) Reactions"
 # transformations
   STR_DRONE_IMMORTALITY: "Drone Immortality"
@@ -1262,23 +1283,24 @@ en-US:
   STR_COAT_DRONE_DEEP_ARMOR: "COAT/NW"
   STR_COAT_DRONE_ARMOR: "COAT"
   STR_COAT_DRONE_ARMOR_UP: "{NEWLINE}todo{NEWLINE}{NEWLINE}> TU: +5{NEWLINE}> Melee/Reactions: +5{NEWLINE}{NEWLINE}> Armor: 5, 95%; Weight: 2{NEWLINE}> Dodge: +25%, +15% Melee{NEWLINE}{NEWLINE}MECHANICAL/ELECTRIC: 70%{NEWLINE}CHEMICAL/INCENDIARY: 80%{NEWLINE}SMOKE: 400%" #todo
-  STR_GCIC_DRONE_HYBRID_ARMOR: "DURAWARE/HY"
-  STR_GCIC_DRONE_HUMAN_ARMOR: "DURAWARE/HU"
-  STR_GCIC_DRONE_SHARK_ARMOR: "DURAWARE/SH"
-  STR_GCIC_DRONE_DEEP_ARMOR: "DURAWARE/NW"
-  STR_GCIC_DRONE_ARMOR: "DURAWARE"
-  STR_GCICVEST_DRONE_HYBRID_ARMOR: "DURAVEST/HY"
-  STR_GCICVEST_DRONE_HUMAN_ARMOR: "DURAVEST/HU"
-  STR_GCICVEST_DRONE_SHARK_ARMOR: "DURAVEST/SH"
-  STR_GCICVEST_DRONE_DEEP_ARMOR: "DURAVEST/NW"
-  STR_GCICVEST_DRONE_ARMOR: "DURAVEST"
-  STR_GCIC_DRONE_ARMOR_UP: "{NEWLINE}todo{NEWLINE}{NEWLINE}> TU/Stamina: +5{NEWLINE}> Health/Reactions: +5{NEWLINE}{NEWLINE}> Armor: 12, 75%{NEWLINE}> Dodge: +30%, +10% Melee{NEWLINE}{NEWLINE}CHEMICAL/INCENDIARY: 85%{NEWLINE}CONCUSSIVE/SONIC: 95%{NEWLINE}SMOKE: 400%" #todo
-  STR_GCICVEST_DRONE_ARMOR_UP: "{NEWLINE}todo{NEWLINE}{NEWLINE}> Health: +5{NEWLINE}> TU/Stamina: -5{NEWLINE}{NEWLINE}> Armor: 18, 75%; Weight: 8{NEWLINE}> Dodge: +10%, +10% Melee{NEWLINE}{NEWLINE}KINETIC/RADIANT: 70%{NEWLINE}CHEMICAL/INCENDIARY: 85%{NEWLINE}CONCUSSIVE/SONIC: 95%{NEWLINE}SMOKE: 400%" #todo
-  STR_DURA_DRONE_HYBRID_ARMOR: "DURASUIT/HY"
-  STR_DURA_DRONE_HUMAN_ARMOR: "DURASUIT/HU"
-  STR_DURA_DRONE_SHARK_ARMOR: "DURASUIT/SH"
-  STR_DURA_DRONE_DEEP_ARMOR: "DURASUIT/NW"
-  STR_DURA_DRONE_ARMOR: "DURASUIT"
+  STR_GCIC_DRONE_ARMOR_RESEARCH: "Durathread Armor Manufacturing"
+  STR_GCIC_DRONE_ARMOR: "DURAWEAR"
+  STR_GCIC_DRONE_HYBRID_ARMOR: "DURAWEAR/HY"
+  STR_GCIC_DRONE_HUMAN_ARMOR: "DURAWEAR/HU"
+  STR_GCIC_DRONE_SHARK_ARMOR: "DURAWEAR/SH"
+  STR_GCIC_DRONE_DEEP_ARMOR: "DURAWEAR/NW"
+  STR_GCICVEST_DRONE_HYBRID_ARMOR: "DURA-VEST/HY"
+  STR_GCICVEST_DRONE_HUMAN_ARMOR: "DURA-VEST/HU"
+  STR_GCICVEST_DRONE_SHARK_ARMOR: "DURA-VEST/SH"
+  STR_GCICVEST_DRONE_DEEP_ARMOR: "DURA-VEST/NW"
+  STR_GCICVEST_DRONE_ARMOR: "DURA-VEST"
+  STR_GCIC_DRONE_ARMOR_UP: "{NEWLINE}GCIC-brand combat drone PPE, drastically increases survivability when faced against the unlicensed weaponskit and works better than placebo versus milspec weapons, explosions, and plasma damage.{NEWLINE}{NEWLINE}> TU/Stamina: +5{NEWLINE}> Health/Reactions: +5{NEWLINE}{NEWLINE}> Armor: 12, 75%{NEWLINE}> Dodge: +30%, +10% Melee{NEWLINE}{NEWLINE}CHEMICAL/INCENDIARY: 85%{NEWLINE}CONCUSSIVE/SONIC: 95%{NEWLINE}SMOKE: 400%"
+  STR_GCICVEST_DRONE_ARMOR_UP: "{NEWLINE}Duraware outfitted with security rated ceramic vest. Offers less protection than contemporary materials, but recycling rebates make replacement prints nearly free.{NEWLINE}{NEWLINE}> Health: +5{NEWLINE}> TU/Stamina: -5{NEWLINE}{NEWLINE}> Armor: 18, 75%; Weight: 8{NEWLINE}> Dodge: +10%, +10% Melee{NEWLINE}{NEWLINE}KINETIC/RADIANT: 70%{NEWLINE}CHEMICAL/INCENDIARY: 85%{NEWLINE}CONCUSSIVE/SONIC: 95%{NEWLINE}SMOKE: 400%"
+  STR_DURA_DRONE_HYBRID_ARMOR: "DURA-OPS/HY"
+  STR_DURA_DRONE_HUMAN_ARMOR: "DURA-OPS/HU"
+  STR_DURA_DRONE_SHARK_ARMOR: "DURA-OPS/SH"
+  STR_DURA_DRONE_DEEP_ARMOR: "DURA-OPS/NW"
+  STR_DURA_DRONE_ARMOR: "DURA-OPS"
   STR_DURA_DRONE_ARMOR_UP: "{NEWLINE}Pre-invasion military PPE, classified as milspec armor before plasma weapons rendered it hopelessly obsolete. Lightweight and loose fiting, it is designed to maximize mobility without compromising load-bearing capacity.{NEWLINE}{NEWLINE}> TU/Stamina: +5{NEWLINE}> Health/Reactions: +5{NEWLINE}{NEWLINE}> Armor: 12, 75%{NEWLINE}> Dodge: +30%, +10% Melee{NEWLINE}> Camo: 5{NEWLINE}{NEWLINE}CHEMICAL/INCENDIARY: 85%{NEWLINE}CONCUSSIVE/SONIC: 95%{NEWLINE}SMOKE: 400%"
   STR_LAES_LOCK: "(exoskeleton unlicensed)"
   STR_SKELE_ITEM: "LICENSE: Exoskeleton Armor"
@@ -1448,7 +1470,8 @@ en-US:
 # launchers
   STR_BARREL_MOTAR: "Barrel Motar"
   STR_BARREL_MOTAR_UP: "A repuposed steel tube that throws explosions up to 200m away, accurate enough to hit the broad side of a barn. The traditional payload is a welding cylinder packed with compowder and metallic scrap. Works best when a dozen are launched simultaniously.{NEWLINE}{NEWLINE}Kneeling Accuracy: +100%; Stun: +50%"
-  STR_BARREL_MOTAR_AMMO: "Improvised Shell"
+  STR_BARREL_MOTAR_AMMO: "Barrel Explosive Shell"
+  STR_BARREL_MOTAR_PHXAMMO: "Barrel PHX Shell"
   STR_WINDLASS_LAUNCHER: "HRA Windlass Launcher" #historical re-enactment society
   STR_WINDLASS_LAUNCHER_UP: "First used in 1915, this World War I era catapult is handcrafted from non-engineered pine and traditionally forged pig iron. A splendid way to launch hand grenades from the bottom of the trenches to the top of your mantlepiece.{NEWLINE}{NEWLINE}As with all genuine articles from The Historical Re-Enactment Society, The Windlass comes stamped with a certificate of authenticity."
   STR_WINDLASS_LAUNCHER_AMMO: "Tinybomb Cluster Clip"
@@ -1462,6 +1485,8 @@ en-US:
   STR_ACIDFLASK_UP: "{NEWLINE}> Radius: 4m{NEWLINE}> Range: 2m{NEWLINE}{NEWLINE}Universal precursor solvents in an easy to open flask. Once aerosolized, the fluids mix into hot potent acids, rapidly expanding and burning everything in a short radius. Including the user.{NEWLINE}{NEWLINE}PPE recommended."
   STR_PIPEBOMB: "Pipe Bomb"
   STR_PIPEBOMB_UP: "{NEWLINE}Compowder packed in a scrap metal pipe. As simple to operate as it is to make, this type of IED is older than the space-age. Remains popular among hobbyists and firebrands despite reliability issues."
+  STR_PHXBOMB: "PHX Bomb"
+  STR_PHXBOMB_UP: "{NEWLINE}" #todo
   STR_ELERIUM_BOMB: "Elerium Bomb"
   STR_ELERIUM_BOMB_UP: "{NEWLINE}The most inefficent use of an elerium core yet discovered. A compromised case with a simple timer circuit snapped onto the side. One click, one sub-critcal explosion.{NEWLINE}{NEWLINE}Without the tools to process raw elerium, these bombs cannot be safely disassembled."
 # sporting
@@ -1487,7 +1512,7 @@ en-US:
   STR_LBC_LOCK: "(anchor bolter unlicensed)"
   STR_BOLT_CANNON_ITEM: "LICENSE: Anchor Bolter"
   STR_BOLT_CANNON: "GR Anchor Bolter"
-  STR_BOLT_CANNON_UP: "Applies quick structural reinforcement bolts through rock, pie-crete, and steel foundations. Works best on contact, ranged options are supported only during collapse-based emergencies.{NEWLINE}{NEWLINE}Damage Dropoff: 1/Tile{NEWLINE}TU Damage: +50%"
+  STR_BOLT_CANNON_UP: "Applies quick structural reinforcement bolts through rock, pie-crete, and steel foundations. Works best on contact, ranged options are supported only during mine collapse emergencies.{NEWLINE}{NEWLINE}Damage Dropoff: 1/Tile{NEWLINE}TU Damage: +50%"
   STR_BOLT_CANNON_AMMO: "Anchor Bolts"
   STR_SURVEY_KNOCKER: "VCM Survey Bow"
   STR_SURVEY_KNOCKER_UP: "The premiere vacuum-rated tool for launching gyroscopically stablized survey flares and bolts. Enables a single employee to light up small (30m) asteroids during descent with a power-assist lever-action ratcheting-crank.{NEWLINE}{NEWLINE}Penetration: +15%"
@@ -1577,6 +1602,8 @@ en-US:
   STR_GCIC_SABOTAGE_2_DATA_DECRYPT: "Decrypted Investor Data"
   STR_GCIC_SABOTAGE_2_DATA_UP: "{NEWLINE}A list of angel investors and their contributions. Most are executives, board members, or citizens who can afford to gamble on unknown ventures. However, some of these make up an obviously false subset.{NEWLINE}{NEWLINE}None of the GCIC managers on the list have the income to match their contribution. The pattern of names is too random, too clean, too expertly laundered. Without additional information, it will be very difficult to determine what connections exist between them.{NEWLINE}{NEWLINE}Information like this is valuable, any further finds could net a tidy sum if auctioned."
 # abstract
+  STR_DRONES2_SHARE: "Dura-Drones Corporation"
+  STR_DRONES2_SHARE_UP: "{NEWLINE}Lawfully enforced controlling interest in our newly launched subsidiary corporation. An initial public offering analysis estimates this to be worth 1,250,000$, although we are not expecting significant growth since we are likely to remain their only regular customer.{NEWLINE}{NEWLINE}As the primary purpose of this business is to globally distribute combat drones, we may sell this without consequence beyond the loss in revenue.{NEWLINE}{NEWLINE}Effective Income: {ALT}+$50,000/Month{ALT}"
   STR_SHARES_GCIC: "GCIC-Shares"
   STR_SHARES_GCIC_UP: "{NEWLINE}Representitive fractional ownership in our parent company. These are awarded as an incentive to perform activities that are not legally enforcable. In this sense, shares are a crude measure of how loyal we are to GCIC's less reputable needs.{NEWLINE}{NEWLINE}As a shareholder, we'll recieve dividends. As a subsidiary, we'll recieve extra leeway in how we conduct business. When all requirements are met, available {ALT}PROJECTS{ALT} will appear in manufacturing.{NEWLINE}{NEWLINE}Effective Income: {ALT}+$1200/Month{ALT}"
   STR_SHARES_MEDI: "MEDI-Shares"

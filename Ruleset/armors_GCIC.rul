@@ -59,7 +59,7 @@ armors:
       health: &HealthRecoveryTypical
         stunNormalized: -0.10
       stun: &StunRecoveryTypical
-        healthNormalized: 3
+        healthNormalized: 8
         flatHundred: 0.02
         stunNormalized: -2
       energy: &EnergyRecoveryTypical
@@ -160,24 +160,22 @@ armors:
       - STR_CRACKED_DEEP_DRONE
 
   - &refDuraDrone
-    type: STR_DURA_DRONE_HYBRID_ARMOR
-    ufopediaType: STR_DURA_DRONE_ARMOR
+    type: STR_GCIC_DRONE_HYBRID_ARMOR
+    ufopediaType: STR_GCIC_DRONE_ARMOR
     customArmorPreviewIndex: 3
-    spriteSheet: JUMPSUIT_HYBRID.PCK
+    spriteSheet: DURA_HYBRID.PCK
     layersDefaultPrefix: HYBRID
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
     corpseBattle:
-      - STR_DURA_DRONE_HYBRID_CORPSE
-    storeItem: STR_DURA_DRONE_ARMOR
+      - STR_GCIC_DRONE_HYBRID_CORPSE
+    storeItem: STR_GCIC_DRONE_ARMOR
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDark: 11
     personalLight: 13
     heatVision: 20
-    camouflageAtDay: -5
-    camouflageAtDark: -5
     stats: &DuraStats
       health: +5
       reactions: +5
@@ -221,70 +219,65 @@ armors:
     units:
       - STR_CRACKED_HYBRID_DRONE
     loftempsSet: [ 3 ]
-  - type: STR_DURA_DRONE_HUMAN_ARMOR
+  - type: STR_GCIC_DRONE_HUMAN_ARMOR
     refNode: *refDuraDrone
     customArmorPreviewIndex: 4
-    spriteSheet: JUMPSUIT_HUMAN.PCK
+    spriteSheet: DURA_HUMAN.PCK
     layersDefaultPrefix: HUMAN
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      F1: ["", "", "F1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      F2: ["", "", "F2_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      F3: ["", "", "F3_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      M1: ["", "", "M1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      M2: ["", "", "M2_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      M3: ["", "", "M3_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "DURA", "", "", ""]
     spriteFaceGroup: 6
     spriteFaceColor: *SpriteFaceColorHuman
     spriteHairGroup: 9
     spriteHairColor: *SpriteHairColorHuman
     corpseBattle:
-      - STR_DURA_DRONE_HUMAN_CORPSE
+      - STR_GCIC_DRONE_HUMAN_CORPSE
     visibilityAtDark: 8
     recovery:
-      time: *TimeRecoveryTypical
-      health: *HealthRecoveryTypical
-      stun: *StunRecoveryTypical
       energy: &EnergyRecoveryHumanGood
         stamina: 0.25
         healthNormalized: 15
-      morale: *MoraleRecoveryTypical
-      mana: *ManaRecoveryTypical
     units:
       - STR_CRACKED_HUMAN_DRONE
-  - type: STR_DURA_DRONE_SHARK_ARMOR
+  - type: STR_GCIC_DRONE_SHARK_ARMOR
     refNode: *refDuraDrone
     customArmorPreviewIndex: 5
-    spriteSheet: JUMPSUIT_SHARK.PCK
+    spriteSheet: DURA_SHARK.PCK
     layersDefaultPrefix: SHARK
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      F1: ["", "", "F1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      F2: ["", "", "F2_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      F3: ["", "", "F1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      M1: ["", "", "M1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      M2: ["", "", "M2_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      M3: ["", "", "M1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F3: ["", "", "F1_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M3: ["", "", "M1_SHELL", "", "", "", "", "DURA", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
-      - STR_DURA_DRONE_SHARK_CORPSE
+      - STR_GCIC_DRONE_SHARK_CORPSE
     specialWeapon: STR_SHARKATTACK
     visibilityAtDark: 8
     units:
       - STR_CRACKED_SHARK_DRONE
-  - type: STR_DURA_DRONE_DEEP_ARMOR
+  - type: STR_GCIC_DRONE_DEEP_ARMOR
     refNode: *refDuraDrone
     customArmorPreviewIndex: 13
-    spriteSheet: JUMPSUIT_DEEP.PCK
+    spriteSheet: DURA_DEEP.PCK
     layersDefaultPrefix: DEEP
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
     corpseBattle:
-      - STR_DURA_DRONE_DEEP_CORPSE
+      - STR_GCIC_DRONE_DEEP_CORPSE
     specialWeapon: STR_ELECTROBOLT
     visibilityAtDark: 8
     damageModifier: &DeepOneDuraResists
@@ -304,6 +297,252 @@ armors:
       - 1.0 #13 psionic
       - 1.0 #14 heat
       - 1.0 #15 cold
+    units:
+      - STR_CRACKED_DEEP_DRONE
+
+  - type: STR_GCICVEST_DRONE_HYBRID_ARMOR
+    ufopediaType: STR_GCICVEST_DRONE_ARMOR
+    refNode: *refDuraDrone
+    customArmorPreviewIndex: 3
+    spriteSheet: DURAVEST_HYBRID.PCK
+    layersDefaultPrefix: HYBRID
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+    corpseBattle:
+      - STR_GCICVEST_DRONE_HYBRID_CORPSE
+    storeItem: STR_GCIC_DRONE_ARMOR
+    visibilityAtDark: 11
+    stats: &DuravestStats
+      health: +5
+      stamina: -5
+      tu: -5
+    frontArmor: 18
+    sideArmor: 18
+    rearArmor: 18
+    underArmor: 14
+    damageModifier: &OrganicDuravestResists
+      - 1.0 #0 none
+      - 0.70 #1 kinetic
+      - 0.85 #2 incendiary
+      - 0.95 #3 concussive
+      - 0.70 #4 radiant
+      - 0.75 #5 plasma
+      - 0.75 #6 blunt
+      - 0.75 #7 mechanical
+      - 0.85 #8 chemical
+      - 4.0 #9 smoke
+      - 0.75 #10 electric
+      - 0.95 #11 sonic
+      - 0.75 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
+    recovery:
+      energy: &EnergyRecoveryPoor
+        stamina: 0.20
+        healthNormalized: 8
+    units:
+      - STR_CRACKED_HYBRID_DRONE
+    loftempsSet: [ 3 ]
+  - type: STR_GCICVEST_DRONE_HUMAN_ARMOR
+    ufopediaType: STR_GCICVEST_DRONE_ARMOR
+    refNode: *refDuraDrone
+    customArmorPreviewIndex: 4
+    spriteSheet: DURAVEST_HUMAN.PCK
+    layersDefaultPrefix: HUMAN
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorHuman
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorHuman
+    corpseBattle:
+      - STR_GCICVEST_DRONE_HUMAN_CORPSE
+    storeItem: STR_GCIC_DRONE_ARMOR
+    visibilityAtDark: 8
+    stats: *DuravestStats
+    frontArmor: 18
+    sideArmor: 18
+    rearArmor: 18
+    underArmor: 14
+    damageModifier: *OrganicDuravestResists
+    recovery:
+      energy: &EnergyRecoveryHumanPoor
+        stamina: 0.25
+        healthNormalized: 8
+    units:
+      - STR_CRACKED_HUMAN_DRONE
+  - type: STR_GCICVEST_DRONE_SHARK_ARMOR
+    ufopediaType: STR_GCICVEST_DRONE_ARMOR
+    refNode: *refDuraDrone
+    customArmorPreviewIndex: 5
+    spriteSheet: DURAVEST_SHARK.PCK
+    layersDefaultPrefix: SHARK
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F3: ["", "", "F1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M3: ["", "", "M1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+    spriteFaceGroup: 11
+    spriteFaceColor: *SpriteFaceColorShark
+    corpseBattle:
+      - STR_GCICVEST_DRONE_SHARK_CORPSE
+    storeItem: STR_GCIC_DRONE_ARMOR
+    specialWeapon: STR_SHARKATTACK
+    visibilityAtDark: 8
+    stats: *DuravestStats
+    frontArmor: 18
+    sideArmor: 18
+    rearArmor: 18
+    underArmor: 14
+    damageModifier: *OrganicDuravestResists
+    recovery:
+      energy: *EnergyRecoveryPoor
+    units:
+      - STR_CRACKED_SHARK_DRONE
+  - type: STR_GCICVEST_DRONE_DEEP_ARMOR
+    ufopediaType: STR_GCICVEST_DRONE_ARMOR
+    refNode: *refDuraDrone
+    customArmorPreviewIndex: 13
+    spriteSheet: DURAVEST_DEEP.PCK
+    layersDefaultPrefix: DEEP
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+    corpseBattle:
+      - STR_GCICVEST_DRONE_DEEP_CORPSE
+    storeItem: STR_GCIC_DRONE_ARMOR
+    specialWeapon: STR_ELECTROBOLT
+    visibilityAtDark: 8
+    stats: *DuravestStats
+    frontArmor: 18
+    sideArmor: 18
+    rearArmor: 18
+    underArmor: 14
+    damageModifier:
+      - 1.0 #0 none
+      - 0.70 #1 kinetic
+      - 0.85 #2 incendiary
+      - 0.95 #3 concussive
+      - 0.70 #4 radiant
+      - 0.75 #5 plasma
+      - 0.75 #6 blunt
+      - 0.75 #7 mechanical
+      - 0.35 #8 chemical
+      - 0.5 #9 smoke
+      - 0.35 #10 electric
+      - 0.95 #11 sonic
+      - 0.75 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
+    recovery:
+      energy: *EnergyRecoveryPoor
+    units:
+      - STR_CRACKED_DEEP_DRONE
+
+  - type: STR_DURA_DRONE_HYBRID_ARMOR
+    ufopediaType: STR_DURA_DRONE_ARMOR
+    refNode: *refDuraDrone
+    customArmorPreviewIndex: 3
+    spriteSheet: JUMPSUIT_HYBRID.PCK
+    layersDefaultPrefix: HYBRID
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+    corpseBattle:
+      - STR_DURA_DRONE_HYBRID_CORPSE
+    storeItem: STR_DURA_DRONE_ARMOR
+    visibilityAtDark: 11
+    camouflageAtDay: -5
+    camouflageAtDark: -5
+    units:
+      - STR_CRACKED_HYBRID_DRONE
+    loftempsSet: [ 3 ]
+  - type: STR_DURA_DRONE_HUMAN_ARMOR
+    ufopediaType: STR_DURA_DRONE_ARMOR
+    refNode: *refDuraDrone
+    customArmorPreviewIndex: 4
+    spriteSheet: JUMPSUIT_HUMAN.PCK
+    layersDefaultPrefix: HUMAN
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorHuman
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorHuman
+    corpseBattle:
+      - STR_DURA_DRONE_HUMAN_CORPSE
+    storeItem: STR_DURA_DRONE_ARMOR
+    visibilityAtDark: 8
+    camouflageAtDay: -5
+    camouflageAtDark: -5
+    recovery:
+      energy: *EnergyRecoveryHumanGood
+    units:
+      - STR_CRACKED_HUMAN_DRONE
+  - type: STR_DURA_DRONE_SHARK_ARMOR
+    ufopediaType: STR_DURA_DRONE_ARMOR
+    refNode: *refDuraDrone
+    customArmorPreviewIndex: 5
+    spriteSheet: JUMPSUIT_SHARK.PCK
+    layersDefaultPrefix: SHARK
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F3: ["", "", "F1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M3: ["", "", "M1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+    spriteFaceGroup: 11
+    spriteFaceColor: *SpriteFaceColorShark
+    corpseBattle:
+      - STR_DURA_DRONE_SHARK_CORPSE
+    storeItem: STR_DURA_DRONE_ARMOR
+    specialWeapon: STR_SHARKATTACK
+    visibilityAtDark: 8
+    camouflageAtDay: -5
+    camouflageAtDark: -5
+    units:
+      - STR_CRACKED_SHARK_DRONE
+  - type: STR_DURA_DRONE_DEEP_ARMOR
+    ufopediaType: STR_DURA_DRONE_ARMOR
+    refNode: *refDuraDrone
+    customArmorPreviewIndex: 13
+    spriteSheet: JUMPSUIT_DEEP.PCK
+    layersDefaultPrefix: DEEP
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+    corpseBattle:
+      - STR_DURA_DRONE_DEEP_CORPSE
+    storeItem: STR_DURA_DRONE_ARMOR
+    specialWeapon: STR_ELECTROBOLT
+    visibilityAtDark: 8
+    camouflageAtDay: -5
+    camouflageAtDark: -5
+    damageModifier: *DeepOneDuraResists
     units:
       - STR_CRACKED_DEEP_DRONE
 
@@ -506,9 +745,7 @@ armors:
       time: *TimeRecoveryTypical
       health: *HealthRecoveryTypical
       stun: *StunRecoveryTypical
-      energy: &EnergyRecoveryPoor
-        stamina: 0.20
-        healthNormalized: 8
+      energy: *EnergyRecoveryPoor
       morale: *MoraleRecoveryTypical
       mana: *ManaRecoveryTypical
     overKill: 1.5
@@ -537,9 +774,7 @@ armors:
       - STR_AQUAVEST_DRONE_HUMAN_CORPSE
     visibilityAtDark: 8
     recovery:
-      energy: &EnergyRecoveryHumanPoor
-        stamina: 0.25
-        healthNormalized: 8
+      energy: *EnergyRecoveryHumanPoor
     units:
       - STR_CRACKED_HUMAN_DRONE
   - type: STR_AQUAVEST_DRONE_SHARK_ARMOR
@@ -793,7 +1028,7 @@ armors:
     recovery:
       health: *HealthRecoveryTypical
       stun: &StunRecoveryEnemy
-        healthNormalized: 3
+        healthNormalized: 8
         flatHundred: 0.02
         stunNormalized: -2
       energy: *EnergyRecoveryHumanTypical
@@ -1262,7 +1497,7 @@ armors:
       flyDownPercent: [50, 0]
     personalLight: 10
     heatVision: 50
-    frontArmor: 0
+    frontArmor: 2
     sideArmor: 35
     rearArmor: 35
     underArmor: 15

@@ -991,3 +991,35 @@ terrains:
       - name: DESERT2_15
         width: 20
         length: 20
+
+  - name: TAIGA2
+    mapDataSets:
+      - BLANKS
+      - FLORA_POLAR_SMALL
+      - FLORA_POLAR
+      - BITS_ROCKS
+    mapBlocks:
+      - name: TAIGA2_00LZ
+        groups: 1
+      - name: TAIGA2_01LZ
+        groups: 1
+      - name: TAIGA2_02S
+      - name: TAIGA2_03S
+      - name: TAIGA2_04S
+      - name: TAIGA2_05S
+      - name: TAIGA2_06S
+      - name: TAIGA2_07S
+      - name: TAIGA2_08S
+      - name: TAIGA2_09
+        width: 20
+        length: 20
+      - name: TAIGA2_10
+        width: 20
+        length: 20
+      - name: TAIGA2_11S
+      - name: TAIGA2_12S
+      - name: TAIGA2_13S
+      - name: TAIGA2_14S
+      - name: TAIGA2_15
+        width: 20
+        length: 20

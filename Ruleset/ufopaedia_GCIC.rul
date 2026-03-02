@@ -149,6 +149,14 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: VENDOR_P2P_CPAL
+  - id: STR_VENDOR_IRONEYES
+    requires:
+      - STR_VENDOR_IRONEYES
+    text: STR_VENDOR_IRONEYES_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_P2P_CPAL
 
   - id: STR_VENDOR_MEDI
     requires:
@@ -245,7 +253,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: OPERATIONS1Z_CPAL
-
   - id: STR_FREE_TRIAL_MISSIONS
     requires:
       - STR_FREE_TRIAL_MISSIONS
@@ -272,7 +279,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: OPERATIONS2Z_CPAL
-
   - id: STR_SEC_LICENSE
     requires:
       - STR_SEC_LICENSE
@@ -643,6 +649,14 @@ ufopaedia:
       width: 140
       height: 60
 # hardpoints
+  - id: STR_CRAFT_PHXMISSILE_LAUNCHER
+    requires:
+      - STR_CRAFT_PHXMISSILE_LAUNCHER_RESEARCH
+    text: STR_CRAFT_PHXMISSILE_LAUNCHER_UP
+    section: STR_APS_CRAFT_UC
+    type_id: 2
+    image_id: PHXMISSILE.SPK
+
   - id: STR_CRAFT_WEAPON_9MM_MG
     requires:
       - STR_9MM_MG
@@ -652,7 +666,7 @@ ufopaedia:
     image_id: 9MMMG.SPK
   - id: STR_CRAFT_WEAPON_XN_LASER_MG
     requires:
-      - STR_CRAFT_WEAPON_XN_LASER_MG
+      - STR_XN_LASER_MG
     text: STR_CRAFT_WEAPON_XN_LASER_MG_UP
     section: STR_APS_CRAFT_UC
     type_id: 2
@@ -692,6 +706,12 @@ ufopaedia:
     requires:
       - STR_HOLOUFO_SMALL
     text: STR_HOLOUFO_SMALL_UP
+  - id: STR_HOLOUFO_FIGHTER
+    type_id: 9
+    section: STR_APS_CRAFT_UC
+    requires:
+      - STR_HOLOUFO_FIGHTER
+    text: STR_HOLOUFO_FIGHTER_UP
   - id: STR_UFO_HARVESTER
     type_id: 9
     section: STR_APS_CRAFT_UC
@@ -793,6 +813,23 @@ ufopaedia:
     text_width: 180
     image_id: ARMOR_PLEX_CPAL
 
+  - id: STR_GCIC_DRONE_ARMOR
+    requires:
+      - STR_GCIC_DRONE_ARMOR_RESEARCH
+    text: STR_GCIC_DRONE_ARMOR_UP
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ARMOR_DURAWARE_CPAL
+  - id: STR_GCICVEST_DRONE_ARMOR
+    requires:
+      - STR_SEC_LICENSE
+      - STR_GCIC_DRONE_ARMOR_RESEARCH
+    text: STR_GCICVEST_DRONE_ARMOR_UP
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ARMOR_DURAVEST_CPAL
   - id: STR_DURA_DRONE_ARMOR
     requires:
       - STR_DURA_DRONE_ARMOR
@@ -886,6 +923,18 @@ ufopaedia:
       - STR_DRONE_HYBRID_ITEM
     section: STR_DRONES_UC
     type_id: 5
+  - id: STR_GCIC_DRONE_HYBRID_ARMOR
+    requires:
+      - STR_GCIC_DRONE_ARMOR_RESEARCH
+      - STR_DRONE_HYBRID_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_GCICVEST_DRONE_HYBRID_ARMOR
+    requires:
+      - STR_GCIC_DRONE_ARMOR_RESEARCH
+      - STR_DRONE_HYBRID_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
   - id: STR_DURA_DRONE_HYBRID_ARMOR
     requires:
       - STR_DURA_DRONE_ARMOR
@@ -914,6 +963,18 @@ ufopaedia:
   - id: STR_PLEX_DRONE_HUMAN_ARMOR
     requires:
       - STR_PLEX_DRONE_ARMOR
+      - STR_DRONE_HUMAN_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_GCIC_DRONE_HUMAN_ARMOR
+    requires:
+      - STR_GCIC_DRONE_ARMOR_RESEARCH
+      - STR_DRONE_HUMAN_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_GCICVEST_DRONE_HUMAN_ARMOR
+    requires:
+      - STR_GCIC_DRONE_ARMOR_RESEARCH
       - STR_DRONE_HUMAN_ITEM
     section: STR_DRONES_UC
     type_id: 5
@@ -948,6 +1009,18 @@ ufopaedia:
       - STR_DRONE_SHARK_ITEM
     section: STR_DRONES_UC
     type_id: 5
+  - id: STR_GCIC_DRONE_SHARK_ARMOR
+    requires:
+      - STR_GCIC_DRONE_ARMOR_RESEARCH
+      - STR_DRONE_SHARK_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_GCICVEST_DRONE_SHARK_ARMOR
+    requires:
+      - STR_GCIC_DRONE_ARMOR_RESEARCH
+      - STR_DRONE_SHARK_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
   - id: STR_DURA_DRONE_SHARK_ARMOR
     requires:
       - STR_DURA_DRONE_ARMOR
@@ -976,6 +1049,18 @@ ufopaedia:
   - id: STR_PLEX_DRONE_DEEP_ARMOR
     requires:
       - STR_PLEX_DRONE_ARMOR
+      - STR_DRONE_DEEP_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_GCIC_DRONE_DEEP_ARMOR
+    requires:
+      - STR_GCIC_DRONE_ARMOR_RESEARCH
+      - STR_DRONE_DEEP_ITEM
+    section: STR_DRONES_UC
+    type_id: 5
+  - id: STR_GCICVEST_DRONE_DEEP_ARMOR
+    requires:
+      - STR_GCIC_DRONE_ARMOR_RESEARCH
       - STR_DRONE_DEEP_ITEM
     section: STR_DRONES_UC
     type_id: 5
@@ -1357,7 +1442,12 @@ ufopaedia:
     type_id: 4
   - id: STR_BARREL_MOTAR_AMMO
     requires:
-      - STR_DEBUG
+      - STR_BARREL_MOTAR
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+  - id: STR_BARREL_MOTAR_PHXAMMO
+    requires:
+      - STR_BARREL_MOTAR_PHXAMMO
     section: STR_NOT_AVAILABLE
     type_id: 4
 
@@ -1385,7 +1475,6 @@ ufopaedia:
     text: STR_MOLOTOV_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_ACIDFLASK_FAKE
     title: STR_ACIDFLASK
     requires:
@@ -1400,7 +1489,12 @@ ufopaedia:
     text: STR_PIPEBOMB_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
+  - id: STR_PHXBOMB
+    requires:
+      - STR_PHXBOMB
+    text: STR_PHXBOMB_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
   - id: STR_ELERIUM_BOMB
     requires:
       - STR_ELERIUM_BOMB
@@ -1667,6 +1761,13 @@ ufopaedia:
     section: STR_RESOURCES_UC
     type_id: 4
 # abstract
+  - id: STR_DRONES2_SHARE
+    requires:
+      - STR_DRONES2_SHARE
+    text: STR_DRONES2_SHARE_UP
+    section: STR_RESOURCES_UC
+    type_id: 8
+
   - id: STR_SHARES_GCIC
     requires:
       - STR_SHARES_GCIC

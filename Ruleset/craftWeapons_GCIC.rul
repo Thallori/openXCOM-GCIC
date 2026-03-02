@@ -1,4 +1,18 @@
 craftWeapons:
+  - type: STR_CRAFT_PHXMISSILE_LAUNCHER
+    launcher: STR_CRAFT_PHXMISSILE_LAUNCHER
+    sprite: 606
+    sound: 5
+    damage: 30
+    range: 30
+    accuracy: 65
+    reloadCautious: 64
+    reloadStandard: 48
+    reloadAggressive: 32
+    ammoMax: 6
+    rearmRate: 1
+    projectileType: 0
+    projectileSpeed: 8
 
   - type: STR_CRAFT_WEAPON_9MM_MG
     launcher: STR_9MM_MG

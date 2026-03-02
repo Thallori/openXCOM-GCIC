@@ -51,6 +51,38 @@
             []
           -
             []
+  - type: STR_HOLOUFO_FIGHTER
+    script: DEFAULT5X5
+    width: 50
+    length: 50
+    height: 8
+    briefing:
+      showTarget: false
+      title: STR_HOLOUFO_TITLE
+      desc: STR_HOLOUFO_BRIEFING
+      music: SIM_INTRO
+      palette: 0
+    missionBountyItem: STR_PLASTICS
+    missionBountyItemCount: 2
+    unlockedResearch: STR_TRG_HUFOF_PREQ
+    music:
+      - SEC1
+    data:
+      - alienRank: 4
+        lowQty: 2
+        medQty: 2
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 5
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 3
+        percentageOutsideUfo: 30
+        itemSets: *AnchorEmptyInventory
+
   - type: STR_SECGAME
     width: 60
     length: 60
@@ -880,7 +912,47 @@
         dQty: 0
         percentageOutsideUfo: 0
         extraRandomItems: *ironExtra
-        itemSets: *breakerSetPrivate
+        itemSets: &hitterSetPrivate
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
       - alienRank: 8
         lowQty: 1
         medQty: 1

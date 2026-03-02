@@ -4,6 +4,16 @@
 
 items:
 #hardpoints
+  - type: STR_CRAFT_PHXMISSILE_LAUNCHER
+    categories: [STR_CRAFT_SYSTEMS_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+    size: 2.0
+    costBuy: 114999
+    costSell: 28750
+    monthlyMaintenance: 57000
+    transferTime: 12
+
   - type: STR_HD_ECONOMY_ENGINE
     categories: [STR_CRAFT_SYSTEMS_CATEGORY]
     requiresBuy:
@@ -37,6 +47,8 @@ items:
   - type: STR_FTM_ITEM
     categories: [STR_PERKS_CATEGORY]
   - type: STR_PSLG_ITEM
+    categories: [STR_PERKS_CATEGORY]
+  - type: STR_PD2_ITEM
     categories: [STR_PERKS_CATEGORY]
 
   - type: STR_PBI_ITEM
@@ -954,8 +966,7 @@ items:
   - type: STR_9MM_MG_AMMO
     categories: [STR_UNLICENSED_CATEGORY, STR_MACHINE_GUNS_CATEGORY]
     requiresBuy:
-      - STR_VENDOR_P2P
-      - STR_TODO
+      - STR_VENDOR_IRONEYES
       - STR_9MM_MG
     size: 0.1
     costBuy: 349
@@ -3156,7 +3167,7 @@ items:
   - type: STR_BARREL_MOTAR
     categories: [STR_UNLICENSED_CATEGORY, STR_LAUNCHERS_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_VENDOR_IRONEYES
       - STR_BARREL_MOTAR
     size: 0.3
     costBuy: 174
@@ -3175,6 +3186,7 @@ items:
     arcingShot: true
     compatibleAmmo:
       - STR_BARREL_MOTAR_AMMO
+      - STR_BARREL_MOTAR_PHXAMMO
     accuracySnap: 15
     accuracyAimed: 40
     accuracyMultiplier:
@@ -3193,7 +3205,7 @@ items:
   - type: STR_BARREL_MOTAR_AMMO
     categories: [STR_UNLICENSED_CATEGORY, STR_LAUNCHERS_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_VENDOR_IRONEYES
       - STR_BARREL_MOTAR
     size: 0.1
     costBuy: 249
@@ -3202,12 +3214,15 @@ items:
     bigSprite: 243
     floorSprite: 226
     hitAnimation: 0
+    vaporColorSurface: 5
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 30
     invWidth: 1
     invHeight: 3
     battleType: 2
     weight: 7
     clipSize: 1
-    power: 50
+    power: 45
     damageType: 3
     damageAlter:
       FixRadius: 4
@@ -3218,7 +3233,39 @@ items:
       IgnoreSelfDestruct: false
     damageBonus:
       bravery: 0.1
-    armor: 35
+    armor: 45
+  - type: STR_BARREL_MOTAR_PHXAMMO
+    categories: [STR_UNLICENSED_CATEGORY, STR_LAUNCHERS_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_BARREL_MOTAR
+    size: 0.1
+    costBuy: 4999
+    costSell: 1250
+    transferTime: 12
+    bigSprite: 248
+    floorSprite: 228
+    hitAnimation: 0
+    vaporColorSurface: 5
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 30
+    invWidth: 1
+    invHeight: 3
+    battleType: 2
+    weight: 7
+    clipSize: 1
+    power: 55
+    damageType: 3
+    damageAlter:
+      FixRadius: 5
+      RandomType: 9
+      ToItem: 0.5
+      ToStun: 0.75
+      IgnoreOverKill: false
+      IgnoreSelfDestruct: false
+    damageBonus:
+      bravery: 0.1
+    armor: 55
 
   - type: STR_WINDLASS_LAUNCHER
     categories: [STR_UNLICENSED_CATEGORY, STR_LAUNCHERS_CATEGORY]
@@ -3233,7 +3280,7 @@ items:
     floorSprite: 196
     handSprite: 456
     bulletSprite: 25
-    bulletSpeed: 5
+    bulletSpeed: 2
     fireSound: 104
     invWidth: 1
     invHeight: 3
@@ -3262,13 +3309,12 @@ items:
     ufopediaType: STR_WINDLASS_LAUNCHER_AMMO_FAKE
     categories: [STR_UNLICENSED_CATEGORY, STR_LAUNCHERS_CATEGORY]
     requiresBuy:
-      - STR_VENDOR_PRINTER
-      - STR_TODO
+      - STR_VENDOR_IRONEYES
       - STR_WINDLASS_LAUNCHER
     size: 0.01
-    costBuy: 799
-    costSell: 200
-    transferTime: 4
+    costBuy: 2299
+    costSell: 575
+    transferTime: 12
     bigSprite: 213
     floorSprite: 197
     hitSound: 137
@@ -3300,12 +3346,12 @@ items:
     categories: [STR_DEBUG_CATEGORY, STR_UNLICENSED_CATEGORY, STR_LAUNCHERS_CATEGORY]
     requiresBuy:
       - STR_DEBUG
-      - STR_VENDOR_PRINTER
-      - STR_TODO
+      - STR_VENDOR_IRONEYES
       - STR_WINDLASS_LAUNCHER
     size: 0.01
-    costBuy: 799
-    costSell: 200
+    costBuy: 2299
+    costSell: 575
+    transferTime: 12
     bigSprite: 213
     spawnItem: STR_WINDLASS_GRENADE_NO_RECOVER
     battleType: 2
@@ -3475,7 +3521,7 @@ items:
   - type: STR_PIPEBOMB
     categories: [STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_VENDOR_IRONEYES
       - STR_PIPEBOMB
     size: 0.1
     costBuy: 199
@@ -3505,6 +3551,39 @@ items:
     throwDropoff: 4
     attraction: 20
     armor: 40
+  - type: STR_PHXBOMB
+    categories: [STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_PHXBOMB
+    size: 0.1
+    costBuy: 1999
+    costSell: 500
+    transferTime: 12
+    bigSprite: 253
+    floorSprite: 235
+    handSprite: 576
+    hitAnimation: 0
+    battleType: 4
+    weight: 4
+    power: 50
+    damageType: 3
+    damageAlter:
+      FixRadius: 4
+      RandomType: 9
+      ToItem: 0.5
+      ToStun: 0.75
+      IgnoreOverKill: false
+      IgnoreSelfDestruct: false
+    fuseType: 0
+    tuPrime: 30
+    tuUnprime: 10
+    tuThrow: 25
+    underwaterThrowDropoffRange: 8
+    throwDropoffRange: 12
+    throwDropoff: 4
+    attraction: 20
+    armor: 50
 
   - type: STR_ELERIUM_BOMB
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
@@ -4551,8 +4630,8 @@ items:
     requiresBuy:
       - STR_LDT_ITEM
     size: 0.1
-    costBuy: 1999
-    costSell: 500
+    costBuy: 999
+    costSell: 250
     transferTime: 4
     bigSprite: 198
     weight: 2
@@ -4651,6 +4730,11 @@ items:
   - type: STR_DRONE_MEMORY
     categories: [STR_DATA_CATEGORY]
 # abstract
+  - type: STR_DRONES2_SHARE
+    categories: [STR_PERKS_CATEGORY]
+    costSell: 1250000
+    monthlySalary: -50000
+
   - type: STR_SHARES_GCIC
     categories: [STR_PERKS_CATEGORY]
     requiresBuy:
@@ -4745,6 +4829,14 @@ items:
     costSell: 10000
     monthlySalary: -800
 #armor
+  - type: STR_GCIC_DRONE_ARMOR
+    categories: [STR_OUTFITS_CATEGORY, STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+    size: 0.1
+    costBuy: 5000
+    costSell: 3750
+    transferTime: 4
   - type: STR_DURA_DRONE_ARMOR
     categories: [STR_OUTFITS_CATEGORY, STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY]
     requiresBuy:
@@ -4819,6 +4911,120 @@ items:
     recoveryTransformations:
       STR_BIOMASS: [1]
     armor: 25
+
+  - type: STR_GCIC_DRONE_HYBRID_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 249
+    floorSprite: 229
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 20
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_GCIC_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [1]
+    armor: 35
+  - type: STR_GCIC_DRONE_HUMAN_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 249
+    floorSprite: 229
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 22
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_GCIC_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [1]
+    armor: 35
+  - type: STR_GCIC_DRONE_SHARK_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 249
+    floorSprite: 230
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 28
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_GCIC_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [1]
+    armor: 35
+  - type: STR_GCIC_DRONE_DEEP_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 250
+    floorSprite: 231
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 22
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_GCIC_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [1]
+    armor: 35
+
+  - type: STR_GCICVEST_DRONE_HYBRID_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 251
+    floorSprite: 232
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 20
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_GCIC_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [1]
+    armor: 35
+  - type: STR_GCICVEST_DRONE_HUMAN_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 251
+    floorSprite: 232
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 22
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_GCIC_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [1]
+    armor: 35
+  - type: STR_GCICVEST_DRONE_SHARK_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 251
+    floorSprite: 233
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 28
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_GCIC_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [1]
+    armor: 35
+  - type: STR_GCICVEST_DRONE_DEEP_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 252
+    floorSprite: 234
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 22
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_GCIC_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [1]
+    armor: 35
 
   - type: STR_DURA_DRONE_HYBRID_CORPSE
     name: STR_CORPSE

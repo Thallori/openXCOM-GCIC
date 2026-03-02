@@ -66,6 +66,15 @@ manufacture:
     producedItems:
       STR_PSLG_ITEM: 1
 
+  - name: STR_PD2_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_PD2_LOCK
+    time: 2000
+    cost: 250000
+    requiredItems:
+      STR_SJB_LICENSE: 1
+
   - name: STR_PBI_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
@@ -158,6 +167,15 @@ manufacture:
     requiredItems:
       STR_SHARES_GR: 4
 #weapons and ammo
+  - name: STR_9MM_MG_AMMO
+    category: STR_AMMO_MANUCAT
+    requires:
+      - STR_GUNPOWDER
+      - STR_9MM_MG
+    time: 8
+    cost: 50
+    refund: true
+
   - name: STR_45_AMMO
     category: STR_AMMO_MANUCAT
     requires:
@@ -181,7 +199,7 @@ manufacture:
     requires:
       - STR_GUNPOWDER
       - STR_SSP_SHOTGUN
-    time: 6
+    time: 8
     cost: 15
     refund: true
   - name: STR_SSP_SHOTGUN_AMMO_SLUG
@@ -333,22 +351,35 @@ manufacture:
     cost: 120
     refund: true
 
-  - name: STR_WINDLASS_LAUNCHER_AMMO
+  - name: STR_BARREL_MOTAR_AMMO
+    category: STR_AMMO_MANUCAT
+    requires:
+      - STR_BARREL_MOTAR_AMMO_M
+    time: 8
+    cost: 200
+    refund: true
+  - name: STR_BARREL_MOTAR_PHXAMMO
+    category: STR_AMMO_MANUCAT
+    requires:
+      - STR_BARREL_MOTAR_PHXAMMO_M
+    time: 12
+    cost: 350
+    refund: true
+    requiredItems:
+      STR_PHX_WARHEAD: 1
+
+  - name: STR_WINDLASS_LAUNCHER_AMMO_MANU
     category: STR_EQUIPMENT_MANUCAT
     requires:
       - STR_WINDLASS_LAUNCHER_AMMO_M
     time: 12
-    cost: 100
+    cost: 400
     refund: true
+    requiredItems:
+      STR_PHX_WARHEAD: 1
+    producedItems:
+      STR_WINDLASS_LAUNCHER_AMMO: 4
 #equipment
-  - name: STR_PIPEBOMB
-    category: STR_EQUIPMENT_MANUCAT
-    requires:
-      - STR_PIPEBOMB_M
-    time: 6
-    cost: 40
-    refund: true
-
   - name: STR_ACIDFLASK_MANU
     category: STR_EQUIPMENT_MANUCAT
     requires:
@@ -360,6 +391,25 @@ manufacture:
       STR_BIOMASS: 1
     producedItems:
       STR_ACIDFLASK: 3
+
+  - name: STR_PIPEBOMB
+    category: STR_EQUIPMENT_MANUCAT
+    requires:
+      - STR_PIPEBOMB_M
+    time: 6
+    cost: 40
+    refund: true
+  - name: STR_PHXBOMB_MANU
+    category: STR_EQUIPMENT_MANUCAT
+    requires:
+      - STR_PHXBOMB_MANU_M
+    time: 12
+    cost: 200
+    refund: true
+    requiredItems:
+      STR_PHX_WARHEAD: 1
+    producedItems:
+      STR_PHXBOMB: 3
 
   - name: STR_ELERIUM_BOMB
     category: STR_EQUIPMENT_MANUCAT
@@ -398,6 +448,16 @@ manufacture:
     producedItems:
       STR_STIM_MORNING: 5
 #armor
+  - name: STR_GCIC_DRONE_ARMOR
+    category: STR_ARMORS_MANUCAT
+    requires:
+      - STR_DURATHREAD
+      - STR_GCIC_DRONE_ARMOR_RESEARCH
+    time: 150
+    cost: 400
+    refund: true
+    requiredItems:
+      STR_DURATHREAD: 2
   - name: STR_AQUAVEST_DRONE_ARMOR
     category: STR_ARMORS_MANUCAT
     requiresBaseFunc:

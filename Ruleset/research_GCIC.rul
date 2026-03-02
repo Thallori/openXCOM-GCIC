@@ -115,6 +115,29 @@ research:
       - STR_OLD_DATA
     cost: 3
 
+  - name: STR_PD2_LOCK
+    dependencies:
+      - STR_SECONDARY_OPERATIONS
+      - STR_NON_CLIENTS
+      - STR_SEC_LICENSE
+      - STR_SJB_LICENSE
+      - STR_LDT_ITEM
+      - STR_GCIC_DRONE_ARMOR_RESEARCH
+      - STR_LASER_WEAPONS_CONSTRUCTION
+  - name: STR_PROJECT_DRONES2
+    neededItem: STR_PD2_ITEM
+    needItem: true
+    destroyItem: true
+    cost: 5
+    spawnedItem: STR_DRONES2_SHARE
+    disables:
+      - STR_PD2_LOCK
+    getOneFree:
+      - STR_DRONES2_SHARE
+  - name: STR_DRONES2_SHARE
+    dependencies:
+      - STR_PROJECT_DRONES2
+
   - name: STR_FORBIDDEN_OPERATIONS
     requiresBaseFunc:
       - STR_SERVICE_UPLINK
@@ -365,6 +388,15 @@ research:
       - STR_VENDORS
       - STR_V_P2P_PREQ
     cost: 8
+  - name: STR_VENDOR_IRONEYES
+    dependencies:
+      - STR_VENDOR_P2P
+      - STR_IRONEYES_PORT
+    cost: 10
+    disables:
+      - STR_PIPEBOMB_M
+      - STR_BARREL_MOTAR_AMMO_M
+      - STR_WINDLASS_LAUNCHER_AMMO_M
   - name: STR_VENDOR_MEDI
     dependencies:
       - STR_VENDORS
@@ -464,11 +496,25 @@ research:
       - STR_SERVICE_NETWORK
     cost: 100
 # manufacturing
+  - name: STR_BARREL_MOTAR_AMMO_M
+    dependencies:
+      - STR_BARREL_MOTAR
+      - STR_GUNPOWDER
+    cost: 3
+  - name: STR_BARREL_MOTAR_PHXAMMO_M
+    dependencies:
+      - STR_BARREL_MOTAR
+      - STR_PHX_WARHEAD
+      - STR_GUNPOWDER
+    cost: 4
+    getOneFree:
+      - STR_BARREL_MOTAR_PHXAMMO
   - name: STR_WINDLASS_LAUNCHER_AMMO_M
     dependencies:
       - STR_WINDLASS_LAUNCHER
+      - STR_PHX_WARHEAD
       - STR_GUNPOWDER
-    cost: 3
+    cost: 4
   - name: STR_ACIDFLASK_M
     dependencies:
       - STR_REDOX
@@ -481,6 +527,13 @@ research:
     cost: 3
     getOneFree:
       - STR_PIPEBOMB
+  - name: STR_PHXBOMB_MANU_M
+    dependencies:
+      - STR_PHX_WARHEAD
+      - STR_GUNPOWDER
+    cost: 4
+    getOneFree:
+      - STR_PHXBOMB
   - name: STR_ELERIUM_BOMB_M
     dependencies:
       - STR_ELERIUM_CORE
@@ -570,6 +623,12 @@ research:
     dependencies:
       - STR_VENDOR_VCM
 # hardpoints
+  - name: STR_CRAFT_PHXMISSILE_LAUNCHER_RESEARCH
+    dependencies:
+      - STR_PHX_WARHEAD
+      - STR_PRINTER
+    cost: 15
+
   - name: STR_HD_ECONOMY_ENGINE_RESEARCH
     dependencies:
       - STR_VENDOR_HD
@@ -627,6 +686,11 @@ research:
       - STR_MILITARY_CYBERNETICS
 # armor
   - name: STR_PLEX_DRONE_ARMOR
+  - name: STR_GCIC_DRONE_ARMOR_RESEARCH
+    cost: 8
+    dependencies:
+      - STR_NON_CLIENTS
+      - STR_DURATHREAD
   - name: STR_DURA_DRONE_ARMOR
     needItem: true
     cost: 4
@@ -840,6 +904,10 @@ research:
   - name: STR_BARREL_MOTAR
     needItem: true
     cost: 5
+  - name: STR_BARREL_MOTAR_PHXAMMO
+    needItem: true
+    cost: 3
+
   - name: STR_WINDLASS_LAUNCHER
     needItem: true
     cost: 5
@@ -855,6 +923,9 @@ research:
     unlocks:
       - STR_RD_PREQ
   - name: STR_PIPEBOMB
+    needItem: true
+    cost: 3
+  - name: STR_PHXBOMB
     needItem: true
     cost: 3
   - name: STR_ELERIUM_BOMB
@@ -980,12 +1051,15 @@ research:
     unlocks:
       - STR_INTEGUMENTARY
 
-  - name: STR_AG_UNIT
-    needItem: true
-    cost: 5
   - name: STR_BIOMASS
     needItem: true
     cost: 3
+  - name: STR_AG_UNIT
+    needItem: true
+    cost: 5
+  - name: STR_PHX_WARHEAD
+    needItem: true
+    cost: 5
   - name: STR_DURATHREAD
     needItem: true
     cost: 5
@@ -995,7 +1069,6 @@ research:
   - name: STR_PLASTICS
     needItem: true
     cost: 5
-
   - name: STR_ALLOYS
     needItem: true
     cost: 5
@@ -1122,9 +1195,11 @@ research:
       STR_TRG_HS_PREQ:
         - STR_HOLOUFO_SMALL
         - STR_HOLOSECTOID
+      STR_TRG_HUFOF_PREQ:
+        - STR_HOLOUFO_FIGHTER
+        - STR_HOLOMUTON
       STR_TRG_HARUFO_PREQ:
         - STR_UFO_HARVESTER
-        - STR_HOLOMUTON
         - STR_HOLOVIPER
       STR_TRG_CZ_PREQ:
         - STR_CLIENT_CRAZY
@@ -1224,9 +1299,11 @@ research:
       STR_TRG_HS_PREQ:
         - STR_HOLOUFO_SMALL
         - STR_HOLOSECTOID
+      STR_TRG_HUFOF_PREQ:
+        - STR_HOLOUFO_FIGHTER
+        - STR_HOLOMUTON
       STR_TRG_HARUFO_PREQ:
         - STR_UFO_HARVESTER
-        - STR_HOLOMUTON
         - STR_HOLOVIPER
 
   - name: STR_DATA_2
@@ -1469,6 +1546,9 @@ research:
   - name: STR_HOLOUFO_SMALL
     dependencies:
       - STR_LOCK
+  - name: STR_HOLOUFO_FIGHTER
+    dependencies:
+      - STR_LOCK
   - name: STR_UFO_HARVESTER
     dependencies:
       - STR_LOCK
@@ -1600,6 +1680,9 @@ research:
       - STR_LOCK
 # simulated
   - name: STR_TRG_HS_PREQ #sim sectoids
+    dependencies:
+      - STR_LOCK
+  - name: STR_TRG_HUFOF_PREQ #sim mutons
     dependencies:
       - STR_LOCK
   - name: STR_TRG_HARUFO_PREQ #sim mutons, sim snakes
