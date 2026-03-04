@@ -32,7 +32,6 @@ items:
     costBuy: 27999
     costSell: 7000
     transferTime: 12
-
   - type: STR_BATBOX
     categories: [STR_CRAFT_SYSTEMS_CATEGORY]
     requiresBuy:
@@ -158,7 +157,6 @@ items:
       melee: 0.2
       reactions: 0.1
     damageAlter:
-      RandomType: 6
       FixRadius: 0
       IgnoreDirection: false
       ArmorEffectiveness: 1.4
@@ -201,7 +199,6 @@ items:
       melee: 0.1
       reactions: 0.1
     damageAlter:
-      RandomType: 6
       ToHealth: 0.30
       ToStun: 1.0
       RandomStun: false
@@ -241,7 +238,6 @@ items:
       melee: 0.2
       reactions: 0.2
     damageAlter:
-      RandomType: 6
       ToHealth: 0.30
       ToStun: 1.0
       RandomStun: false
@@ -352,7 +348,7 @@ items:
     damageBonus:
       strength: 0.6
     damageAlter:
-      RandomType: 6
+      RandomType: 9
       ToTime: 2.0
       ToWound: 0.2
       RandomWound: true
@@ -387,7 +383,6 @@ items:
     power: 110
     damageType: 7
     damageAlter:
-      RandomType: 6
       ToTime: 2.0
       ToTile: 0.25
     accuracyMelee: 100
@@ -407,7 +402,6 @@ items:
     power: 60
     damageType: 7
     damageAlter:
-      RandomType: 6
       ToTime: 2.0
       ToTile: 0.25
     accuracyMelee: 100
@@ -486,7 +480,7 @@ items:
     power: 30
     damageType: 10
     damageAlter:
-      RandomType: 6
+      RandomType: 9
       ToArmorPre: 0.05
       ToTime: 2.0
       ToHealth: 0.35
@@ -512,8 +506,8 @@ items:
     hitSound: 133
     hitAnimation: 46
     vaporColorSurface: 4
-    vaporDensitySurface: 1
-    vaporProbabilitySurface: 10
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 20
     bulletSpeed: -1
     battleType: 1
     invWidth: 2
@@ -1093,7 +1087,7 @@ items:
       reactions: 0.05
     damageType: 12
     damageAlter:
-      RandomType: 6
+      RandomType: 9
       ArmorEffectiveness: 0.25
       ToWound: 0
       RandomWound: false
@@ -1103,7 +1097,7 @@ items:
       IgnorePainImmunity: true
       ToTile: 0.0
   - type: STR_DART_AMMO2
-    categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
+    categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
       - STR_TODO
       - STR_DART_PISTOL
@@ -1262,8 +1256,8 @@ items:
     explosionHitSound: 130
     hitAnimation: 0
     vaporColorSurface: 0
-    vaporDensitySurface: 4
-    vaporProbabilitySurface: 100
+    vaporDensitySurface: 3
+    vaporProbabilitySurface: 80
     battleType: 2
     weight: 2
     clipSize: 10
@@ -1888,7 +1882,7 @@ items:
       reactions: 0.05
     damageType: 10
     damageAlter:
-      RandomType: 6
+      RandomType: 9
       ToWound: 0.0
       RandomWound: false
       ToHealth: 0.35
@@ -2269,7 +2263,6 @@ items:
       psiStrength: 0.2
       bravery: 0.2
     damageAlter:
-      RandomType: 6
       ToTime: 2.0
       ToMorale: 1.0
       ToMana: 1.0
@@ -2340,7 +2333,8 @@ items:
     kneelBonus: 110
     attraction: 0
     armor: 120
-  - type: STR_GCIC_PROTOTYPE_LASER_PISTOL
+  - &refgciclaserpistol
+    type: STR_GCIC_PROTOTYPE_LASER_PISTOL
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_PISTOLS_CATEGORY, STR_INFILTRATION_CATEGORY]
     requiresBuy:
       - STR_TODO
@@ -2363,6 +2357,7 @@ items:
     compatibleAmmo:
       - STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
       - STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO2
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1_NORECOVER
     accuracyAimed: 80
     accuracySnap: 70
     accuracyAuto: 60
@@ -2380,7 +2375,8 @@ items:
     kneelBonus: 110
     attraction: 0
     armor: 40
-  - type: STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
+  - &refgciclaserpistolammo
+    type: STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_PISTOLS_CATEGORY, STR_INFILTRATION_CATEGORY]
     size: 0.01
     costSell: 25
@@ -2427,6 +2423,14 @@ items:
       RandomWound: false
       FireThreshold: 45
       ToTile: 0.65
+
+  - type: STR_GCIC_PROTOTYPE_LASER_PISTOL_NORECOVER
+    ufopediaType: STR_GCIC_PROTOTYPE_LASER_PISTOL
+    refNode: *refgciclaserpistol
+    recover: false
+  - type: STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1_NORECOVER
+    refNode: *refgciclaserpistolammo
+    recover: false
 
   - type: STR_GCIC_PROTOTYPE_LASER_SMG_ELERIUM
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_SMGS_CATEGORY, STR_INFILTRATION_CATEGORY]
@@ -2483,7 +2487,8 @@ items:
     experienceTrainingMode: 5
     attraction: 0
     armor: 120
-  - type: STR_GCIC_PROTOTYPE_LASER_SMG
+  - &refgciclasersmg
+    type: STR_GCIC_PROTOTYPE_LASER_SMG
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_SMGS_CATEGORY, STR_INFILTRATION_CATEGORY]
     requiresBuy:
       - STR_TODO
@@ -2506,6 +2511,7 @@ items:
     compatibleAmmo:
       - STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1
       - STR_GCIC_PROTOTYPE_LASER_SMG_AMMO2
+      - STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1_NORECOVER
     accuracySnap: 60
     accuracyAuto: 50
     accuracyAimed: 85
@@ -2529,7 +2535,8 @@ items:
     experienceTrainingMode: 5
     attraction: 0
     armor: 40
-  - type: STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1
+  - &refgciclasersmgammo
+    type: STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_SMGS_CATEGORY, STR_INFILTRATION_CATEGORY]
     size: 0.01
     costSell: 30
@@ -2576,6 +2583,14 @@ items:
       RandomWound: false
       FireThreshold: 45
       ToTile: 0.70
+
+  - type: STR_GCIC_PROTOTYPE_LASER_SMG_NORECOVER
+    ufopediaType: STR_GCIC_PROTOTYPE_LASER_SMG
+    refNode: *refgciclasersmg
+    recover: false
+  - type: STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1_NORECOVER
+    refNode: *refgciclasersmgammo
+    recover: false
 
   - type: STR_GCIC_PROTOTYPE_LASER_RIFLE_ELERIUM
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
@@ -2628,7 +2643,8 @@ items:
     oneHandedPenalty: 50
     attraction: 0
     armor: 120
-  - type: STR_GCIC_PROTOTYPE_LASER_RIFLE
+  - &refgciclaserrifle
+    type: STR_GCIC_PROTOTYPE_LASER_RIFLE
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
     requiresBuy:
       - STR_TODO
@@ -2651,6 +2667,7 @@ items:
     compatibleAmmo:
       - STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
       - STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO2
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1_NORECOVER
     accuracySnap: 70
     accuracyAimed: 110
     accuracyAuto: 65
@@ -2669,7 +2686,8 @@ items:
     oneHandedPenalty: 50
     attraction: 0
     armor: 40
-  - type: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
+  - &refgciclaserrifleammo
+    type: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
     size: 0.01
     costSell: 30
@@ -2719,6 +2737,14 @@ items:
       FireThreshold: 65
       ToTile: 0.65
 
+  - type: STR_GCIC_PROTOTYPE_LASER_RIFLE_NORECOVER
+    ufopediaType: STR_GCIC_PROTOTYPE_LASER_RIFLE
+    refNode: *refgciclaserrifle
+    recover: false
+  - type: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1_NORECOVER
+    refNode: *refgciclaserrifleammo
+    recover: false
+
   - type: STR_GCIC_PROTOTYPE_LASER_SNIPER_ELERIUM
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
     ufopediaType: STR_GCIC_PROTOTYPE_LASER_SNIPER
@@ -2759,7 +2785,7 @@ items:
       firing: 1.0
       flatHundred: -0.20
     tuSnap: 45
-    tuAimed: 75
+    tuAimed: 85
     snapRange: 25
     aimRange: 35
     dropoff: 1
@@ -2798,7 +2824,7 @@ items:
       firing: 1.0
       flatHundred: -0.20
     tuSnap: 45
-    tuAimed: 75
+    tuAimed: 85
     snapRange: 25
     aimRange: 35
     dropoff: 1
@@ -3406,7 +3432,7 @@ items:
   - type: STR_MOLOTOV
     categories: [STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
     requiresBuy:
-      - STR_VENDOR_P2P
+      - STR_VENDOR_IRONEYES
       - STR_MOLOTOV
     size: 0.1
     costBuy: 19
@@ -3418,8 +3444,8 @@ items:
     hitAnimation: 96
     explosionHitSound: 134
     vaporColorSurface: 0
-    vaporDensitySurface: 4
-    vaporProbabilitySurface: 100
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 80
     battleType: 4
     weight: 4
     power: 20
@@ -3470,6 +3496,7 @@ items:
     power: 45
     damageType: 8
     damageAlter:
+      RandomType: 9
       IgnoreSelfDestruct: false
       IgnoreDirection: true
       ToArmorPre: 0.05
@@ -3642,7 +3669,6 @@ items:
       strength: 0.4
       throwing: 0.2
     damageAlter:
-      RandomType: 6
       ToWound: 0.2
       RandomWound: true
       ToHealth: 0.20
@@ -3706,7 +3732,6 @@ items:
       melee: 0.1
     damageType: 7
     damageAlter:
-      RandomType: 6
       ToTime: 2.0
       IgnoreSelfDestruct: false
       ToTile: 0.35
@@ -3746,7 +3771,7 @@ items:
       melee: 0.2
     damageType: 6
     damageAlter:
-      RandomType: 6
+      RandomType: 9
       ToTime: 2.0
       ToWound: 0
       RandomWound: false
@@ -3793,7 +3818,7 @@ items:
       strength: 0.6
     damageType: 3
     damageAlter:
-      RandomType: 6
+      RandomType: 8
       ToTime: 2.0
       ToArmorPre: 0.15
       ToStun: 1.0
@@ -3835,7 +3860,7 @@ items:
       strength: 0.9
     damageType: 3
     damageAlter:
-      RandomType: 6
+      RandomType: 8
       ToTime: 2.0
       ToStun: 1.0
       ToTile: 0.60
@@ -3880,7 +3905,6 @@ items:
       reactions: 0.2
     damageType: 10
     damageAlter:
-      RandomType: 6
       ToArmorPre: 0.05
       ToTime: 2.0
       ToHealth: 0.35
@@ -4154,7 +4178,6 @@ items:
     damageBonus:
       throwing: 0.3
     damageAlter:
-      RandomType: 6
       ArmorEffectiveness: 0.85
       ToWound: 0.2
       RandomWound: true
@@ -4189,7 +4212,6 @@ items:
     damageBonus:
       throwing: 0.3
     damageAlter:
-      RandomType: 6
       ArmorEffectiveness: 0.85
       ToTime: 0.50
       IgnoreSelfDestruct: false
@@ -4538,7 +4560,7 @@ items:
     size: 0.1
     costSell: 640
     bigSprite: 163
-    weight: 2
+    weight: 3
   - type: STR_CONSUMER_CYBERNETICS
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
@@ -4549,7 +4571,7 @@ items:
     costSell: 1600
     transferTime: 4
     bigSprite: 163
-    weight: 2
+    weight: 3
   - type: STR_MEDICAL_CYBERNETICS_CODED
     categories: [STR_RESOURCES_CATEGORY]
     ufopediaType: STR_MEDICAL_CYBERNETICS
@@ -4572,7 +4594,7 @@ items:
     ufopediaType: STR_MILITARY_CYBERNETICS
     size: 0.1
     costSell: 3800
-    bigSprite: 188 #
+    bigSprite: 254
     weight: 3
   - type: STR_MILITARY_CYBERNETICS
     categories: [STR_RESOURCES_CATEGORY]
@@ -4582,7 +4604,7 @@ items:
     costBuy: 37999
     costSell: 9500
     transferTime: 4
-    bigSprite: 188 #
+    bigSprite: 254
     weight: 3
 # remains
   - type: STR_BIOMASS
@@ -4733,7 +4755,7 @@ items:
   - type: STR_DRONES2_SHARE
     categories: [STR_PERKS_CATEGORY]
     costSell: 1250000
-    monthlySalary: -50000
+    monthlySalary: -70000
 
   - type: STR_SHARES_GCIC
     categories: [STR_PERKS_CATEGORY]
@@ -4798,10 +4820,13 @@ items:
 # tasks
   - type: STR_MONEY_1
     categories: [STR_PERKS_CATEGORY]
-    costSell: 20
+    costSell: 30
   - type: STR_MONEY_2
     categories: [STR_PERKS_CATEGORY]
     costSell: 80
+  - type: STR_MONEY_3
+    categories: [STR_PERKS_CATEGORY]
+    costSell: 2000
 
   - type: STR_ARMOR_REPAIR_BILL
     categories: [STR_LIABILITIES_CATEGORY]
@@ -4968,6 +4993,42 @@ items:
       STR_GCIC_DRONE_ARMOR: [1]
       STR_ARMOR_REPAIR_BILL: [1]
     armor: 35
+  - type: STR_GCIC_DRONE_HYBRID_CORPSE_NORECOVER
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 249
+    floorSprite: 229
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 20
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+    armor: 35
+  - type: STR_GCIC_DRONE_HUMAN_CORPSE_NORECOVER
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 249
+    floorSprite: 229
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 22
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+    armor: 35
+  - type: STR_GCIC_DRONE_DEEP_CORPSE_NORECOVER
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 250
+    floorSprite: 231
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 22
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+    armor: 35
 
   - type: STR_GCICVEST_DRONE_HYBRID_CORPSE
     name: STR_CORPSE
@@ -5024,6 +5085,18 @@ items:
       STR_BIOMASS: [1]
       STR_GCIC_DRONE_ARMOR: [1]
       STR_ARMOR_REPAIR_BILL: [1]
+    armor: 35
+  - type: STR_GCICVEST_DRONE_SHARK_CORPSE_NORECOVER
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 251
+    floorSprite: 233
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 28
+    recoveryTransformations:
+      STR_BIOMASS: [1]
     armor: 35
 
   - type: STR_DURA_DRONE_HYBRID_CORPSE
@@ -5452,7 +5525,6 @@ items:
 
   - type: STR_CYFURB_CORPSE
     recoveryTransformations:
-      STR_BOUNTY_2: [1]
       STR_AG_UNIT: [1]
     battleType: 11
     weight: 100
@@ -5678,6 +5750,31 @@ items:
   - type: STR_SPAWN_DRONE_DEEP_1
     categories: [STR_DEBUG_CATEGORY]
     spawnUnit: STR_DRONE_DEEP_1
+    spawnUnitFaction: 0
+    battleType: 4
+    recover: false
+
+  - type: STR_SPAWN_DRONE_HYBRID_2
+    categories: [STR_DEBUG_CATEGORY]
+    spawnUnit: STR_DRONE_HYBRID_2
+    spawnUnitFaction: 0
+    battleType: 4
+    recover: false
+  - type: STR_SPAWN_DRONE_HUMAN_2
+    categories: [STR_DEBUG_CATEGORY]
+    spawnUnit: STR_DRONE_HUMAN_2
+    spawnUnitFaction: 0
+    battleType: 4
+    recover: false
+  - type: STR_SPAWN_DRONE_SHARK_2
+    categories: [STR_DEBUG_CATEGORY]
+    spawnUnit: STR_DRONE_SHARK_2
+    spawnUnitFaction: 0
+    battleType: 4
+    recover: false
+  - type: STR_SPAWN_DRONE_DEEP_2
+    categories: [STR_DEBUG_CATEGORY]
+    spawnUnit: STR_DRONE_DEEP_2
     spawnUnitFaction: 0
     battleType: 4
     recover: false

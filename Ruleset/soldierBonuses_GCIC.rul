@@ -40,7 +40,6 @@ soldierBonuses:
     recovery:
       energy:
         flatOne: -1
-
   - name: STR_RANGER_SPECIALIST
     stats:
       throwing: 12
@@ -48,7 +47,6 @@ soldierBonuses:
     recovery:
       energy:
         flatOne: -1
-
   - name: STR_SCOUT_SPECIALIST
     stats:
       melee: 12
@@ -67,7 +65,6 @@ soldierBonuses:
     recovery:
       energy:
         flatOne: -2
-
   - name: STR_HEAVY_MUSCLES
     stats:
       tu: 4
@@ -79,33 +76,38 @@ soldierBonuses:
       energy:
         flatOne: -2
 
-  - name: STR_LIGHT_SKIN
+  - name: STR_SOFT_SKIN
     frontArmor: 4
     sideArmor: 4
     rearArmor: 4
     underArmor: 4
     stats:
-      health: 5
-      melee: 5
+      health: 10
+      bravery: 10
+      firing: 8
+      throwing: 8
+      melee: 8
+      tu: 6
+      reactions: 6
     recovery:
       energy:
-        flatOne: -1
-
+        flatOne: -2
   - name: STR_HARD_SKIN
     frontArmor: 9
     sideArmor: 9
     rearArmor: 9
     underArmor: 9
     stats:
-      health: 5
-      melee: 5
+      health: 10
       bravery: 10
-      tu: -5
-      reactions: -5
-      stamina: -10
+      firing: 8
+      throwing: 8
+      melee: 8
+      tu: -4
+      reactions: -4
     recovery:
       energy:
-        flatOne: -1
+        flatOne: -2
 
 #commendations
   - name: STR_MEDAL_ORIGINAL8

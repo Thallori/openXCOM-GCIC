@@ -149,7 +149,7 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: VENDOR_P2P_CPAL
-  - id: STR_VENDOR_IRONEYES
+  - id: STR_VENDOR_IRONEYES_FILE
     requires:
       - STR_VENDOR_IRONEYES
     text: STR_VENDOR_IRONEYES_UP
@@ -266,6 +266,15 @@ ufopaedia:
     requires:
       - STR_SECONDARY_OPERATIONS
     text: STR_SECONDARY_OPERATIONS_UP
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: OPERATIONS2_CPAL
+
+  - id: STR_PROJECT_DRONES2
+    requires:
+      - STR_PROJECT_DRONES2
+    text: STR_PROJECT_DRONES2_UP
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
@@ -398,11 +407,18 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: RECEIPT_CPAL
-
   - id: STR_MONEY_2
     requires:
       - STR_MONEY_2_RESEARCH
     text: STR_MONEY_2_UP
+    section: STR_TECHNOLOGIES_UC
+    type_id: 7
+    text_width: 180
+    image_id: CONSUME_CPAL
+  - id: STR_MONEY_3
+    requires:
+      - STR_MONEY_3_RESEARCH
+    text: STR_MONEY_3_UP
     section: STR_TECHNOLOGIES_UC
     type_id: 7
     text_width: 180
@@ -541,10 +557,17 @@ ufopaedia:
     text: STR_LOCAL_INTERFACE_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
+
   - id: STR_PUBLIC_GATEWAY
     requires:
       - STR_PUBLIC_GATEWAY
     text: STR_PUBLIC_GATEWAY_UP
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+  - id: STR_BACKCHANNELS
+    requires:
+      - STR_BACKCHANNELS_RESEARCH
+    text: STR_BACKCHANNELS_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
 
@@ -554,9 +577,21 @@ ufopaedia:
     text: STR_PRINTER_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
+  - id: STR_TOOLWORKS
+    requires:
+      - STR_TOOLWORKS_RESEARCH
+    text: STR_TOOLWORKS_UP
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
 
   - id: STR_SCANNER
     text: STR_SCANNER_UP
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+  - id: STR_HYPERCOMMS_ARRAY
+    requires:
+      - STR_HYPERCOMMS_ARRAY_RESEARCH
+    text: STR_HYPERCOMMS_ARRAY_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
 #asp craft
@@ -799,6 +834,14 @@ ufopaedia:
     requires:
       - STR_MUSCULATURE
     text: STR_MUSCULATURE_UP
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: MUSCULATURE_CPAL
+  - id: STR_INTEGUMENTARY
+    requires:
+      - STR_INTEGUMENTARY
+    text: STR_INTEGUMENTARY_UP
     section: STR_DRONES_UC
     type_id: 7
     text_width: 180
@@ -1379,6 +1422,11 @@ ufopaedia:
       - STR_GCIC_PROTOTYPE_LASER_PISTOL
     section: STR_NOT_AVAILABLE
     type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1_NORECOVER
+    requires:
+      - STR_DEBUG
+    section: STR_NOT_AVAILABLE
+    type_id: 4
 
   - id: STR_GCIC_PROTOTYPE_LASER_SMG
     requires:
@@ -1397,6 +1445,11 @@ ufopaedia:
       - STR_GCIC_PROTOTYPE_LASER_SMG
     section: STR_NOT_AVAILABLE
     type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1_NORECOVER
+    requires:
+      - STR_DEBUG
+    section: STR_NOT_AVAILABLE
+    type_id: 4
 
   - id: STR_GCIC_PROTOTYPE_LASER_RIFLE
     requires:
@@ -1413,6 +1466,11 @@ ufopaedia:
     requires:
       - STR_TODO #laser cell outsourcing
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1_NORECOVER
+    requires:
+      - STR_DEBUG
     section: STR_NOT_AVAILABLE
     type_id: 4
 

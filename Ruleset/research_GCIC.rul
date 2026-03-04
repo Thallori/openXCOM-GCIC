@@ -100,6 +100,7 @@ research:
       - STR_SECONDARY_OPERATIONS
       - STR_IRS_SUBSIDY
       - STR_VENDOR_HD
+      - STR_VENDOR_SSP
   - name: STR_SECGAMES_MISSIONS
     neededItem: STR_PSLG_ITEM
     needItem: true
@@ -115,7 +116,7 @@ research:
       - STR_OLD_DATA
     cost: 3
 
-  - name: STR_PD2_LOCK
+  - name: STR_PROJECT_DRONES2
     dependencies:
       - STR_SECONDARY_OPERATIONS
       - STR_NON_CLIENTS
@@ -123,20 +124,19 @@ research:
       - STR_SJB_LICENSE
       - STR_LDT_ITEM
       - STR_GCIC_DRONE_ARMOR_RESEARCH
-      - STR_LASER_WEAPONS_CONSTRUCTION
-  - name: STR_PROJECT_DRONES2
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL
+      - STR_GCIC_PROTOTYPE_LASER_SMG
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE
+    cost: 10
+  - name: STR_DRONES2_SHARE
     neededItem: STR_PD2_ITEM
     needItem: true
     destroyItem: true
-    cost: 5
+    cost: 2
+    points: 500
     spawnedItem: STR_DRONES2_SHARE
     disables:
-      - STR_PD2_LOCK
-    getOneFree:
-      - STR_DRONES2_SHARE
-  - name: STR_DRONES2_SHARE
-    dependencies:
-      - STR_PROJECT_DRONES2
+      - STR_PD2_MANULOCK
 
   - name: STR_FORBIDDEN_OPERATIONS
     requiresBaseFunc:
@@ -258,7 +258,9 @@ research:
       - STR_SEC_LICENSE
     needItem: true
     cost: 2
-    points: 150
+    points: 250
+    disables:
+      - STR_SEC_MANULOCK
 
   - name: STR_LMB_LOCK
     dependencies:
@@ -276,7 +278,6 @@ research:
   - name: STR_MEDI_TRAUMA_ITEM
     needItem: true
     destroyItem: true
-    spawnedItem: STR_MEDI_TRAUMA
     cost: 4
     getOneFree:
       - STR_MEDI_TRAUMA
@@ -289,7 +290,6 @@ research:
   - name: STR_MEDICAL_CYBERNETICS_ITEM
     needItem: true
     destroyItem: true
-    spawnedItem: STR_MEDICAL_CYBERNETICS
     cost: 5
     getOneFree:
       - STR_MEDICAL_CYBERNETICS
@@ -302,7 +302,6 @@ research:
   - name: STR_BOLT_CANNON_ITEM
     needItem: true
     destroyItem: true
-    spawnedItem: STR_BOLT_CANNON
     cost: 2
     getOneFree:
       - STR_BOLT_CANNON
@@ -315,7 +314,6 @@ research:
   - name: STR_SKELE_ITEM
     needItem: true
     destroyItem: true
-    spawnedItem: STR_SKELE_DRONE_ARMOR
     cost: 4
     getOneFree:
       - STR_SKELE_DRONE_ARMOR
@@ -328,7 +326,6 @@ research:
   - name: STR_LDT_ITEM
     needItem: true
     destroyItem: true
-    spawnedItem: STR_DURATHREAD
     cost: 5
     getOneFree:
       - STR_DURATHREAD
@@ -394,9 +391,7 @@ research:
       - STR_IRONEYES_PORT
     cost: 10
     disables:
-      - STR_PIPEBOMB_M
-      - STR_BARREL_MOTAR_AMMO_M
-      - STR_WINDLASS_LAUNCHER_AMMO_M
+      - STR_IRONEYES_MANULOCK
   - name: STR_VENDOR_MEDI
     dependencies:
       - STR_VENDORS
@@ -436,6 +431,12 @@ research:
     cost: 8
     unlocks:
       - STR_MONEY_2
+  - name: STR_MONEY_3_RESEARCH
+    dependencies:
+      - STR_TOOLWORKS_RESEARCH
+    cost: 12
+    unlocks:
+      - STR_MONEY_3
 
   - name: STR_GUNPOWDER
     dependencies:
@@ -496,66 +497,48 @@ research:
       - STR_SERVICE_NETWORK
     cost: 100
 # manufacturing
-  - name: STR_BARREL_MOTAR_AMMO_M
-    dependencies:
-      - STR_BARREL_MOTAR
-      - STR_GUNPOWDER
-    cost: 3
   - name: STR_BARREL_MOTAR_PHXAMMO_M
+    lookup: STR_BARREL_MOTAR_PHXAMMO
     dependencies:
       - STR_BARREL_MOTAR
       - STR_PHX_WARHEAD
       - STR_GUNPOWDER
-    cost: 4
-    getOneFree:
-      - STR_BARREL_MOTAR_PHXAMMO
-  - name: STR_WINDLASS_LAUNCHER_AMMO_M
-    dependencies:
-      - STR_WINDLASS_LAUNCHER
-      - STR_PHX_WARHEAD
-      - STR_GUNPOWDER
-    cost: 4
+    cost: 5
   - name: STR_ACIDFLASK_M
+    lookup: STR_ACIDFLASK
     dependencies:
       - STR_REDOX
     cost: 5
-    getOneFree:
-      - STR_ACIDFLASK
   - name: STR_PIPEBOMB_M
+    lookup: STR_PIPEBOMB
     dependencies:
       - STR_GUNPOWDER
-    cost: 3
-    getOneFree:
-      - STR_PIPEBOMB
+    cost: 5
   - name: STR_PHXBOMB_MANU_M
+    lookup: STR_PHXBOMB
     dependencies:
       - STR_PHX_WARHEAD
       - STR_GUNPOWDER
-    cost: 4
-    getOneFree:
-      - STR_PHXBOMB
+    cost: 5
   - name: STR_ELERIUM_BOMB_M
+    lookup: STR_ELERIUM_BOMB
     dependencies:
       - STR_ELERIUM_CORE
-    cost: 3
-    getOneFree:
-      - STR_ELERIUM_BOMB
+    cost: 5
   - name: STR_STIM_SPRINT_M
+    lookup: STR_STIM_SPRINT
     requiresBaseFunc:
       - STR_SERVICE_MEDICAL
     dependencies:
       - STR_BIOMEDICAL
     cost: 6
-    getOneFree:
-      - STR_STIM_SPRINT
   - name: STR_STIM_MORNING_M
+    lookup: STR_STIM_MORNING
     requiresBaseFunc:
       - STR_SERVICE_MEDICAL
     dependencies:
       - STR_BIOMEDICAL
-    cost: 4
-    getOneFree:
-      - STR_STIM_MORNING
+    cost: 6
 #facilities
   - name: STR_STOREROOM_RESEARCH
     dependencies:
@@ -594,12 +577,16 @@ research:
       - STR_SJB_LICENSE
       - STR_BCF_PREQ
     cost: 20
-
   - name: STR_PRINTER
     dependencies:
       - STR_PLASTICS
       - STR_VENDOR_BUILDER
     cost: 10
+  - name: STR_TOOLWORKS_RESEARCH
+    dependencies:
+      - STR_PRINTER
+      - STR_ALLOYS
+    cost: 15
 #asp craft
   - name: STR_HD_LIMO_RESEARCH
     dependencies:
@@ -627,7 +614,7 @@ research:
     dependencies:
       - STR_PHX_WARHEAD
       - STR_PRINTER
-    cost: 15
+    cost: 20
 
   - name: STR_HD_ECONOMY_ENGINE_RESEARCH
     dependencies:
@@ -1084,6 +1071,9 @@ research:
   - name: STR_MONEY_2
     dependencies:
       - STR_MONEY_2_RESEARCH
+  - name: STR_MONEY_3
+    dependencies:
+      - STR_MONEY_3_RESEARCH
   - name: STR_ARMOR_REPAIR_BILL
     needItem: true
     cost: 1
@@ -1692,3 +1682,10 @@ research:
   - name: STR_TRG_CZ_PREQ #client
     dependencies:
       - STR_LOCK
+# manufacturing cleanup
+  - name: STR_TODO_MANULOCK
+  - name: STR_SEC_MANULOCK
+  - name: STR_IRONEYES_MANULOCK
+  - name: STR_IRONEYES_MANULOCK2
+  - name: STR_SSPAMMO_MANULOCK
+  - name: STR_PD2_MANULOCK

@@ -114,6 +114,55 @@ soldierTransformation:
       - STR_AGILITY_TRANSFORMATION
       - STR_HEAVY_TRANSFORMATION
 
+  - name: STR_SOFT_TRANSFORMATION
+    requires:
+      - STR_MILITARY_CYBERNETICS
+    requiredMinStats:
+      mana: 20
+    percentGainedStatChange:
+      mana: -50
+    cost: 15999
+    requiredItems:
+      STR_MILITARY_CYBERNETICS: 2
+      STR_MEDICAL_CYBERNETICS: 3
+      STR_NANOWEAVE: 1
+    recoveryTime: 12
+    keepSoldierArmor: true
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_CRACKED_HYBRID_DRONE
+      - STR_CRACKED_HUMAN_DRONE
+      - STR_CRACKED_SHARK_DRONE
+      - STR_CRACKED_DEEP_DRONE
+    soldierBonusType: STR_SOFT_SKIN
+    forbiddenPreviousTransformations:
+      - STR_SOFT_TRANSFORMATION
+      - STR_HARD_TRANSFORMATION
+  - name: STR_HARD_TRANSFORMATION
+    requires:
+      - STR_MILITARY_CYBERNETICS
+    requiredMinStats:
+      mana: 20
+    percentGainedStatChange:
+      mana: -50
+    cost: 15999
+    requiredItems:
+      STR_MILITARY_CYBERNETICS: 2
+      STR_MEDICAL_CYBERNETICS: 3
+      STR_ALLOYS: 1
+    recoveryTime: 28
+    keepSoldierArmor: true
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_CRACKED_HYBRID_DRONE
+      - STR_CRACKED_HUMAN_DRONE
+      - STR_CRACKED_SHARK_DRONE
+      - STR_CRACKED_DEEP_DRONE
+    soldierBonusType: STR_HARD_SKIN
+    forbiddenPreviousTransformations:
+      - STR_SOFT_TRANSFORMATION
+      - STR_HARD_TRANSFORMATION
+
   - name: STR_DRONE_KEYING_TRANSFORMATION
     requires:
       - STR_DRONE_IMMORTALITY
@@ -151,3 +200,5 @@ soldierTransformation:
       - STR_SCOUT_TRANSFORMATION
       - STR_AGILITY_TRANSFORMATION
       - STR_HEAVY_TRANSFORMATION
+      - STR_SOFT_TRANSFORMATION
+      - STR_HARD_TRANSFORMATION

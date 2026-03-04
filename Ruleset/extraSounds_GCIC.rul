@@ -4,6 +4,7 @@ musics:
   - type: GMGEO1
   - type: GMGEO2
   - type: GMGEO3
+  - type: GMINTER
   - type: HACKER_INTRO
   - type: HACKER1
   - type: BREACH_INTRO
@@ -11,6 +12,7 @@ musics:
   - type: BREACH2
   - type: SHADOW_INTRO
   - type: SHADOW1
+  - type: IRON_INTRO
   - type: IRON1
   - type: BLOOD_INTRO
   - type: BLOOD1

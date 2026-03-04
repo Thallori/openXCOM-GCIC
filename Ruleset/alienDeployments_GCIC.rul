@@ -8,6 +8,7 @@
     terrains:
       - FOREST2
       - DESERT2
+      - TAIGA2
 
   - type: STR_HOLOUFO_SMALL
     script: DEFAULT4X4
@@ -506,6 +507,170 @@
             - STR_STIM_INHALER
             - STR_PERSONAL_DATA
 
+  - type: STR_RESCUE_1_DRONES2
+    isHidden: true
+    width: 30
+    length: 30
+    height: 8
+    alert: STR_RESCUE_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_RESCUE_1_ALERT_DESCRIPTION
+    markerName: STR_RESCUE_1
+    duration: [48, 72]
+    despawnPenalty: 100
+    abortPenalty: 75
+    startingCondition: SECURITY_GEAR
+    briefing:
+      showTarget: false
+      title: STR_RESCUE_1
+      desc: STR_RESCUE_1_BRIEFING
+      music: BREACH_INTRO
+      palette: 0
+    unlockedResearch: STR_TRG_BO_PREQ
+    customUfo: STR_HOUSE_GARAGE
+    forcePercentageOutsideUfo: true
+    terrains:
+      - HANGAR_DRONES2_SIZE3
+      - SLUM_DRONES2_SIZE3
+    music:
+      - BREACH1
+    data:
+      - alienRank: 5
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 60
+        extraRandomItems: *ironExtra
+        itemSets: *boosterSet
+  - type: STR_RESCUE_RR_DRONES2
+    isHidden: true
+    width: 40
+    length: 40
+    height: 8
+    alert: STR_RESCUE_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_RESCUE_RR_ALERT_DESCRIPTION
+    markerName: STR_RESCUE_RR
+    duration: [16, 24]
+    despawnPenalty: 100
+    abortPenalty: 65
+    startingCondition: SECURITY_GEAR
+    briefing:
+      showTarget: false
+      title: STR_RESCUE_RR
+      desc: STR_RESCUE_RR_BRIEFING
+      music: BREACH_INTRO
+      palette: 0
+    unlockedResearch: STR_TRG_RI_PREQ
+    customUfo: STR_HOUSE_GARAGE_RR
+    forcePercentageOutsideUfo: true
+    terrains:
+      - HANGAR_DRONES2_SIZE4
+      - SLUM_DRONES2_SIZE4
+    music:
+      - BREACH1
+    data:
+      - alienRank: 4
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 0
+        extraRandomItems: *ironExtra
+        itemSets: *ripperSet
+      - alienRank: 5
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 3
+        percentageOutsideUfo: 50
+        extraRandomItems: *ironExtra
+        itemSets: *boosterSet
+  - type: STR_RESCUE_FT_DRONES2
+    isHidden: true
+    width: 50
+    length: 50
+    height: 8
+    alert: STR_RESCUE_FT_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_RESCUE_FT_ALERT_DESCRIPTION
+    markerName: STR_RESCUE_FT
+    duration: [24, 48]
+    despawnPenalty: 50
+    civilians: 12
+    startingCondition: MILITARY_GEAR
+    briefing:
+      showTarget: false
+      title: STR_RESCUE_FT
+      desc: STR_RESCUE_FT_BRIEFING
+      music: BREACH_INTRO
+      palette: 0
+    unlockedResearch: STR_TRG_CYFURB_PREQ
+    terrains:
+      - HANGAR_DRONES2_SIZE5
+      - COMMERCIAL_DRONES2_SIZE5
+      - SLUM_DRONES2_SIZE5
+    music:
+      - BREACH2
+    data:
+      - alienRank: 3
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 2
+        percentageOutsideUfo: 50
+        extraRandomItems: *ironExtra
+        itemSets: *breakerSet
+      - alienRank: 5
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 4
+        percentageOutsideUfo: 50
+        extraRandomItems: *ironExtra
+        itemSets: *boosterSet
+      - alienRank: 2
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 100
+        customUnitType: STR_CYFURB
+        itemSets: *AnchorEmptyInventory
+  - type: STR_KNOCKOUT_MISSION_DRONES2
+    isHidden: true
+    width: 30
+    length: 30
+    height: 8
+    alert: STR_RESCUE_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_KNOCKOUT_MISSION_ALERT_DESCRIPTION
+    markerName: STR_KNOCKOUT_MISSION
+    duration: [48, 72]
+    despawnPenalty: 100
+    abortPenalty: 100
+    startingCondition: SECURITY_GEAR
+    briefing:
+      showTarget: false
+      title: STR_KNOCKOUT_MISSION
+      desc: STR_KNOCKOUT_MISSION_BRIEFING
+      music: BREACH_INTRO
+      palette: 0
+    unlockedResearch: STR_TRG_CZ_PREQ
+    terrains:
+      - HANGAR_DRONES2_SIZE3
+      - SLUM_DRONES2_SIZE3
+    music:
+      - BREACH1
+    data:
+      - alienRank: 5
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 1
+        itemSets: *cybercrazy
+
   - type: STR_IRONEYES_SHOP
     width: 30
     length: 30
@@ -980,6 +1145,7 @@
 
   - type: STR_TRADE_MEETING_EARLY
     script: SINGLE_BLOCK_2X2
+    isHidden: true
     width: 20
     length: 20
     height: 8

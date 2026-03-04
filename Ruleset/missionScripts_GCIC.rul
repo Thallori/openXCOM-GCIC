@@ -23,8 +23,6 @@ missionScripts:
     startDelay: 30
     randomDelay: 43170
   - type: SimSmallb
-#    researchTriggers:
-#      STR_TODO: false
     missionWeights:
       0:
         STR_HOLOUFO_SMALL_MISSION: 100
@@ -56,8 +54,6 @@ missionScripts:
     startDelay: 30
     randomDelay: 43170
   - type: SimFightera
-    researchTriggers:
-      STR_SECGAMES_MISSIONS: true
     missionWeights:
       0:
         STR_HOLOUFO_FIGHTER_MISSION: 100
@@ -111,6 +107,7 @@ missionScripts:
   - type: Rescue1a
     researchTriggers:
       STR_RAPID_RESPONSE_MISSIONS: false
+      STR_PROJECT_DRONES2: false
     firstMonth: 1
     missionWeights:
       0:
@@ -122,6 +119,7 @@ missionScripts:
   - type: Rescue1b
     researchTriggers:
       STR_FREE_TRIAL_MISSIONS: false
+      STR_PROJECT_DRONES2: false
     missionWeights:
       0:
         STR_RESCUE_1: 100
@@ -132,6 +130,7 @@ missionScripts:
   - type: Rescue1c
     researchTriggers:
       STR_IRONEYES_SURVEY: false
+      STR_PROJECT_DRONES2: false
     executionOdds: 80
     missionWeights:
       0:
@@ -141,8 +140,8 @@ missionScripts:
     startDelay: 30
     randomDelay: 43170
   - type: Rescue1d
-    # researchTriggers:
-    #   STR_TODO: false
+    researchTriggers:
+      STR_PROJECT_DRONES2: false
     executionOdds: 40
     missionWeights:
       0:
@@ -152,8 +151,8 @@ missionScripts:
     startDelay: 30
     randomDelay: 43170
   - type: Rescue1e
-    # researchTriggers:
-    #   STR_TODO: false
+    researchTriggers:
+      STR_PROJECT_DRONES2: false
     executionOdds: 20
     missionWeights:
       0:
@@ -166,6 +165,7 @@ missionScripts:
   - type: RescueRRa
     researchTriggers:
       STR_RAPID_RESPONSE_MISSIONS: true
+      STR_PROJECT_DRONES2: false
     missionWeights:
       0:
         STR_RESCUE_RR: 100
@@ -176,6 +176,7 @@ missionScripts:
   - type: RescueRRb
     researchTriggers:
       STR_RAPID_RESPONSE_MISSIONS: true
+      STR_PROJECT_DRONES2: false
     executionOdds: 50
     missionWeights:
       0:
@@ -187,6 +188,7 @@ missionScripts:
   - type: RescueRRc
     researchTriggers:
       STR_RAPID_RESPONSE_MISSIONS: true
+      STR_PROJECT_DRONES2: false
     executionOdds: 24
     missionWeights:
       0:
@@ -199,6 +201,7 @@ missionScripts:
   - type: RescueFTfirst
     researchTriggers:
       STR_FREE_TRIAL_MISSIONS: true
+      STR_PROJECT_DRONES2: false
     missionVarName: STR_RESCUE_FT
     label: 1
     varName: var_freetrials
@@ -213,6 +216,7 @@ missionScripts:
   - type: RescueFTa
     researchTriggers:
       STR_FREE_TRIAL_MISSIONS: true
+      STR_PROJECT_DRONES2: false
     missionVarName: STR_RESCUE_FT
     conditionals: [-1]
     executionOdds: 68
@@ -237,6 +241,7 @@ missionScripts:
     firstMonth: 1
     researchTriggers:
       STR_TRG_CZ_PREQ: false
+      STR_PROJECT_DRONES2: false
     missionWeights:
       0:
         STR_KNOCKOUT_MISSION: 100
@@ -247,10 +252,157 @@ missionScripts:
   - type: RescueCb
     researchTriggers:
       STR_TRG_CZ_PREQ: true
+      STR_PROJECT_DRONES2: false
     executionOdds: 15
     missionWeights:
       0:
         STR_KNOCKOUT_MISSION: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+
+  - type: Drones2Rescue1a
+    researchTriggers:
+      STR_RAPID_RESPONSE_MISSIONS: false
+      STR_PROJECT_DRONES2: true
+    firstMonth: 1
+    missionWeights:
+      0:
+        STR_RESCUE_1_DRONES2: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Drones2Rescue1b
+    researchTriggers:
+      STR_FREE_TRIAL_MISSIONS: false
+      STR_PROJECT_DRONES2: true
+    missionWeights:
+      0:
+        STR_RESCUE_1_DRONES2: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Drones2Rescue1c
+    researchTriggers:
+      STR_IRONEYES_SURVEY: false
+      STR_PROJECT_DRONES2: true
+    executionOdds: 80
+    missionWeights:
+      0:
+        STR_RESCUE_1_DRONES2: 60
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Drones2Rescue1d
+    researchTriggers:
+      STR_PROJECT_DRONES2: true
+    executionOdds: 40
+    missionWeights:
+      0:
+        STR_RESCUE_1_DRONES2: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Drones2Rescue1e
+    researchTriggers:
+      STR_PROJECT_DRONES2: true
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_RESCUE_1_DRONES2: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Drones2RescueRRa
+    researchTriggers:
+      STR_RAPID_RESPONSE_MISSIONS: true
+      STR_PROJECT_DRONES2: true
+    missionWeights:
+      0:
+        STR_RESCUE_RR_DRONES2: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Drones2RescueRRb
+    researchTriggers:
+      STR_RAPID_RESPONSE_MISSIONS: true
+      STR_PROJECT_DRONES2: true
+    executionOdds: 50
+    missionWeights:
+      0:
+        STR_RESCUE_RR_DRONES2: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Drones2RescueRRc
+    researchTriggers:
+      STR_RAPID_RESPONSE_MISSIONS: true
+      STR_PROJECT_DRONES2: true
+    executionOdds: 24
+    missionWeights:
+      0:
+        STR_RESCUE_RR_DRONES2: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Drones2RescueFTfirst
+    researchTriggers:
+      STR_FREE_TRIAL_MISSIONS: true
+      STR_PROJECT_DRONES2: true
+    missionVarName: STR_RESCUE_FT
+    label: 1
+    varName: var_freetrials
+    maxRuns: 1
+    missionWeights:
+      0:
+        STR_RESCUE_FT_DRONES2: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Drones2RescueFTa
+    researchTriggers:
+      STR_FREE_TRIAL_MISSIONS: true
+      STR_PROJECT_DRONES2: true
+    missionVarName: STR_RESCUE_FT
+    conditionals: [-1]
+    executionOdds: 68
+    missionWeights:
+      0:
+        STR_RESCUE_FT_DRONES2: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Drones2RescueCa
+    firstMonth: 1
+    researchTriggers:
+      STR_TRG_CZ_PREQ: false
+      STR_PROJECT_DRONES2: true
+    missionWeights:
+      0:
+        STR_KNOCKOUT_MISSION_DRONES2: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: Drones2RescueCb
+    researchTriggers:
+      STR_TRG_CZ_PREQ: true
+      STR_PROJECT_DRONES2: true
+    executionOdds: 15
+    missionWeights:
+      0:
+        STR_KNOCKOUT_MISSION_DRONES2: 100
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30

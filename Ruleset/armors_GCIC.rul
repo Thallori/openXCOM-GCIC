@@ -300,6 +300,56 @@ armors:
     units:
       - STR_CRACKED_DEEP_DRONE
 
+  - type: STR_GCIC_DRONE_HYBRID_ARMOR_NORECOVER
+    refNode: *refDuraDrone
+    spriteInv: DRONEHYBRID2.SPK
+    corpseBattle:
+      - STR_GCIC_DRONE_HYBRID_CORPSE_NORECOVER
+  - type: STR_GCIC_DRONE_HUMAN_ARMOR_NORECOVER
+    refNode: *refDuraDrone
+    customArmorPreviewIndex: 4
+    spriteSheet: DURA_HUMAN.PCK
+    spriteInv: DRONEHUMAN2.SPK
+    layersDefaultPrefix: HUMAN
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "DURA", "", "", ""]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorHuman
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorHuman
+    corpseBattle:
+      - STR_GCIC_DRONE_HUMAN_CORPSE_NORECOVER
+    visibilityAtDark: 8
+    recovery:
+      energy: &EnergyRecoveryHumanGood
+        stamina: 0.25
+        healthNormalized: 15
+    units:
+      - STR_CRACKED_HUMAN_DRONE
+  - type: STR_GCIC_DRONE_DEEP_ARMOR_NORECOVER
+    refNode: *refDuraDrone
+    customArmorPreviewIndex: 13
+    spriteSheet: DURA_DEEP.PCK
+    spriteInv: DRONEDEEP2.SPK
+    layersDefaultPrefix: DEEP
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
+    corpseBattle:
+      - STR_GCIC_DRONE_DEEP_CORPSE_NORECOVER
+    specialWeapon: STR_ELECTROBOLT
+    visibilityAtDark: 8
+    damageModifier: *DeepOneDuraResists
+    units:
+      - STR_CRACKED_DEEP_DRONE
+
   - type: STR_GCICVEST_DRONE_HYBRID_ARMOR
     ufopediaType: STR_GCICVEST_DRONE_ARMOR
     refNode: *refDuraDrone
@@ -452,6 +502,39 @@ armors:
       energy: *EnergyRecoveryPoor
     units:
       - STR_CRACKED_DEEP_DRONE
+  - type: STR_GCICVEST_DRONE_SHARK_ARMOR_NORECOVER
+    ufopediaType: STR_GCICVEST_DRONE_ARMOR
+    refNode: *refDuraDrone
+    customArmorPreviewIndex: 5
+    spriteSheet: DURAVEST_SHARK.PCK
+    spriteInv: DRONESHARK2.SPK
+    layersDefaultPrefix: SHARK
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F3: ["", "", "F1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M3: ["", "", "M1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+    spriteFaceGroup: 11
+    spriteFaceColor: *SpriteFaceColorShark
+    corpseBattle:
+      - STR_GCICVEST_DRONE_SHARK_CORPSE_NORECOVER
+    storeItem: STR_GCIC_DRONE_ARMOR
+    specialWeapon: STR_SHARKATTACK
+    visibilityAtDark: 8
+    stats: *DuravestStats
+    frontArmor: 18
+    sideArmor: 18
+    rearArmor: 18
+    underArmor: 14
+    damageModifier: *OrganicDuravestResists
+    recovery:
+      energy: *EnergyRecoveryPoor
+    units:
+      - STR_CRACKED_SHARK_DRONE
 
   - type: STR_DURA_DRONE_HYBRID_ARMOR
     ufopediaType: STR_DURA_DRONE_ARMOR

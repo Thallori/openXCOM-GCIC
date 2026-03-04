@@ -195,6 +195,7 @@ extraSprites:
       251: Resources/Armors/Anthros/Duraware/duravest_corpse_bigob.png
       252: Resources/Armors/Anthros/Duraware/duravest_corpse_deep_bigob.png
       253: Resources/Items/Explosives/phxbomb_bigob.png
+      254: Resources/Items/Materials/milware_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -953,6 +954,15 @@ extraSprites:
     fileSingle: Resources/Factions/Drones/droneshark_inventory.png
   - typeSingle: DRONEDEEP.SPK
     fileSingle: Resources/Factions/Drones/dronedeep_inventory.png
+
+  - typeSingle: DRONEHYBRID2.SPK
+    fileSingle: Resources/Factions/Drones/dronehybrid2_inventory.png
+  - typeSingle: DRONEHUMAN2.SPK
+    fileSingle: Resources/Factions/Drones/dronehuman2_inventory.png
+  - typeSingle: DRONESHARK2.SPK
+    fileSingle: Resources/Factions/Drones/droneshark2_inventory.png
+  - typeSingle: DRONEDEEP2.SPK
+    fileSingle: Resources/Factions/Drones/dronedeep2_inventory.png
 # animals
   - typeSingle: CHRYSSALID_CPAL
     fileSingle: Resources/Factions/Animals/chryssalid_CPAL.png

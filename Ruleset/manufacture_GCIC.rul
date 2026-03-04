@@ -15,6 +15,16 @@ manufacture:
     cost: 30
     producedItems:
       STR_MONEY_2: 1
+  - name: STR_MONEY_3_MANU
+    category: STR_TASKS_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_MACHINING
+    requires:
+      - STR_MONEY_3_RESEARCH
+    time: 1
+    cost: 1900
+    producedItems:
+      STR_MONEY_3: 1
 
   - name: STR_GCIC_SABOTAGE_2_MANU
     category: STR_TASKS_MANUCAT
@@ -69,11 +79,15 @@ manufacture:
   - name: STR_PD2_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
-      - STR_PD2_LOCK
+      - STR_PROJECT_DRONES2
+      - STR_PD2_MANULOCK
     time: 2000
     cost: 250000
     requiredItems:
       STR_SJB_LICENSE: 1
+      STR_BRAND_LOYALTY: 12
+    producedItems:
+      STR_PD2_ITEM: 1
 
   - name: STR_PBI_ITEM
     category: STR_PROJECTS_MANUCAT
@@ -166,14 +180,26 @@ manufacture:
     time: 1
     requiredItems:
       STR_SHARES_GR: 4
+#hardpoints
+  - name: STR_CRAFT_PHXMISSILE_LAUNCHER
+    categories: STR_APS_MANUCAT
+    requires:
+      - STR_CRAFT_PHXMISSILE_LAUNCHER_RESEARCH
+      - STR_IRONEYES_MANULOCK2
+    time: 1400
+    cost: 20000
+    refund: true
+    requiredItems:
+      STR_PHX_WARHEAD: 12
 #weapons and ammo
   - name: STR_9MM_MG_AMMO
     category: STR_AMMO_MANUCAT
     requires:
       - STR_GUNPOWDER
       - STR_9MM_MG
+      - STR_IRONEYES_MANULOCK
     time: 8
-    cost: 50
+    cost: 150
     refund: true
 
   - name: STR_45_AMMO
@@ -181,6 +207,7 @@ manufacture:
     requires:
       - STR_GUNPOWDER
       - STR_45_PISTOL
+      - STR_SEC_MANULOCK
     time: 8
     cost: 20
     refund: true
@@ -190,6 +217,7 @@ manufacture:
     requires:
       - STR_GUNPOWDER
       - STR_SSP_SMG
+      - STR_SEC_MANULOCK
     time: 8
     cost: 30
     refund: true
@@ -207,6 +235,7 @@ manufacture:
     requires:
       - STR_GUNPOWDER
       - STR_SSP_SHOTGUN
+      - STR_SEC_MANULOCK
     time: 8
     cost: 20
     refund: true
@@ -216,6 +245,7 @@ manufacture:
     requires:
       - STR_VENDOR_PRINTER
       - STR_TASER_PISTOL
+      - STR_SEC_MANULOCK
     time: 8
     cost: 25
     refund: true
@@ -271,6 +301,7 @@ manufacture:
     requires:
       - STR_LASER_AMMO_PRINTING
       - STR_SINGLESHOT_LASER_PISTOL
+      - STR_SSPAMMO_MANULOCK
     time: 4
     cost: 80
     refund: true
@@ -290,6 +321,7 @@ manufacture:
       - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_PISTOL
+      - STR_SSPAMMO_MANULOCK
     time: 4
     cost: 90
     refund: true
@@ -309,6 +341,7 @@ manufacture:
       - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_SMG
+      - STR_SSPAMMO_MANULOCK
     time: 4
     cost: 100
     refund: true
@@ -328,6 +361,7 @@ manufacture:
       - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
+      - STR_SSPAMMO_MANULOCK
     time: 4
     cost: 110
     refund: true
@@ -347,14 +381,26 @@ manufacture:
       - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_SNIPER
+      - STR_SSPAMMO_MANULOCK
     time: 4
     cost: 120
     refund: true
 
+  - name: STR_BARREL_MOTAR
+    category: STR_EQUIPMENT_MANUCAT
+    requires:
+      - STR_BARREL_MOTAR
+      - STR_GUNPOWDER
+      - STR_IRONEYES_MANULOCK
+    time: 8
+    cost: 40
+    refund: true
   - name: STR_BARREL_MOTAR_AMMO
     category: STR_AMMO_MANUCAT
     requires:
-      - STR_BARREL_MOTAR_AMMO_M
+      - STR_BARREL_MOTAR
+      - STR_GUNPOWDER
+      - STR_IRONEYES_MANULOCK
     time: 8
     cost: 200
     refund: true
@@ -362,6 +408,7 @@ manufacture:
     category: STR_AMMO_MANUCAT
     requires:
       - STR_BARREL_MOTAR_PHXAMMO_M
+      - STR_IRONEYES_MANULOCK2
     time: 12
     cost: 350
     refund: true
@@ -371,7 +418,10 @@ manufacture:
   - name: STR_WINDLASS_LAUNCHER_AMMO_MANU
     category: STR_EQUIPMENT_MANUCAT
     requires:
-      - STR_WINDLASS_LAUNCHER_AMMO_M
+      - STR_WINDLASS_LAUNCHER
+      - STR_GUNPOWDER
+      - STR_PHX_WARHEAD
+      - STR_IRONEYES_MANULOCK2
     time: 12
     cost: 400
     refund: true
@@ -380,10 +430,21 @@ manufacture:
     producedItems:
       STR_WINDLASS_LAUNCHER_AMMO: 4
 #equipment
+  - name: STR_MOLOTOV
+    category: STR_EQUIPMENT_MANUCAT
+    requires:
+      - STR_MOLOTOV
+      - STR_REDOX
+      - STR_IRONEYES_MANULOCK
+    time: 1
+    cost: 8
+    refund: true
   - name: STR_ACIDFLASK_MANU
     category: STR_EQUIPMENT_MANUCAT
     requires:
-      - STR_ACIDFLASK_M
+      - STR_ACIDFLASK
+      - STR_REDOX
+      - STR_TODO_MANULOCK
     time: 6
     cost: 40
     refund: true
@@ -395,14 +456,17 @@ manufacture:
   - name: STR_PIPEBOMB
     category: STR_EQUIPMENT_MANUCAT
     requires:
-      - STR_PIPEBOMB_M
+      - STR_PIPEBOMB
+      - STR_GUNPOWDER
+      - STR_IRONEYES_MANULOCK
     time: 6
     cost: 40
     refund: true
   - name: STR_PHXBOMB_MANU
     category: STR_EQUIPMENT_MANUCAT
     requires:
-      - STR_PHXBOMB_MANU_M
+      - STR_PHXBOMB
+      - STR_IRONEYES_MANULOCK2
     time: 12
     cost: 200
     refund: true
@@ -414,7 +478,9 @@ manufacture:
   - name: STR_ELERIUM_BOMB
     category: STR_EQUIPMENT_MANUCAT
     requires:
-      - STR_ELERIUM_BOMB_M
+      - STR_ELERIUM_CORE
+      - STR_ELERIUM_BOMB
+      - STR_TODO_MANULOCK
     time: 6
     cost: 150
     refund: true
@@ -426,7 +492,9 @@ manufacture:
     requiresBaseFunc:
       - STR_SERVICE_MEDICAL
     requires:
-      - STR_STIM_SPRINT_M
+      - STR_STIM_SPRINT
+      - STR_BIOMEDICAL
+      - STR_TODO_MANULOCK
     time: 12
     cost: 240
     refund: true
@@ -439,7 +507,9 @@ manufacture:
     requiresBaseFunc:
       - STR_SERVICE_MEDICAL
     requires:
-      - STR_STIM_MORNING_M
+      - STR_STIM_MORNING
+      - STR_BIOMEDICAL
+      - STR_TODO_MANULOCK
     time: 12
     cost: 200
     refund: true
@@ -457,7 +527,7 @@ manufacture:
     cost: 400
     refund: true
     requiredItems:
-      STR_DURATHREAD: 2
+      STR_DURATHREAD: 3
   - name: STR_AQUAVEST_DRONE_ARMOR
     category: STR_ARMORS_MANUCAT
     requiresBaseFunc:
@@ -465,7 +535,7 @@ manufacture:
     requires:
       - STR_PLASTICS
       - STR_AQUAVEST_DRONE_ARMOR
-    time: 1600
+    time: 1000
     cost: 2000
     refund: true
     requiredItems:
@@ -657,12 +727,28 @@ manufacture:
       - STR_LOCAL_INTERFACE
       - STR_PRINTER
       - STR_BIOCODING
-    time: 48
+    time: 72
     refund: true
     requiredItems:
       STR_MEDICAL_CYBERNETICS_CODED: 1
     producedItems:
       STR_MEDICAL_CYBERNETICS: 1
+  - name: STR_MILITARY_CYBERNETICS_DECODED
+    category: STR_CRACKING_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
+      - STR_SERVICE_MACHINING
+    requires:
+      - STR_MILITARY_CYBERNETICS_CODED
+      - STR_LOCAL_INTERFACE
+      - STR_TOOLWORKS_RESEARCH
+      - STR_BIOCODING
+    time: 120
+    refund: true
+    requiredItems:
+      STR_MILITARY_CYBERNETICS_CODED: 1
+    producedItems:
+      STR_MILITARY_CYBERNETICS: 1
 
   - name: STR_45_PISTOL_DECODED
     category: STR_CRACKING_MANUCAT
@@ -789,7 +875,7 @@ manufacture:
     requires:
       - STR_HITTER_INTERVIEW
     time: 120
-    points: -25
+    points: 0
     cost: -30000
     refund: true
     requiredItems:

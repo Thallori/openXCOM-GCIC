@@ -36,7 +36,6 @@ facilities:
     aliens: 1
     manaRecoveryPerDay: 1
     mapName: XBASE_07
-
   - type: STR_STORAGE_1
     requires:
       - STR_VENDOR_BUILDER
@@ -52,7 +51,6 @@ facilities:
     monthlyCost: 450
     storage: 50
     mapName: XBASE_07
-
   - type: STR_STOREROOM
     requires:
       - STR_VENDOR_BUILDER
@@ -101,7 +99,6 @@ facilities:
     personnel: 24
     manaRecoveryPerDay: 1
     mapName: XBASE_01
-
 #   - type: STR_REMEDITION_OFFICE
 #     requires:
 #       - STR_REMEDITION_OFFICE_RESEARCH
@@ -198,12 +195,10 @@ facilities:
     labs: 2
     maxAllowedPerBase: 3
     mapName: XBASE_02
-
   - type: STR_BACKCHANNELS
     requires:
       - STR_SJB_LICENSE
       - STR_BACKCHANNELS_RESEARCH
-    requiresBaseFunc: [STR_SERVICE_NETWORK]
     provideBaseFunc: [STR_SERVICE_BACKCHANNELS]
     spriteShape: 1
     spriteFacility: 311 #
@@ -218,7 +213,6 @@ facilities:
       STR_SECRET_DATA:
         build: 10
         refund: 10
-    labs: 1
     maxAllowedPerBase: 1
     mapName: XBASE_02
 
@@ -230,10 +224,25 @@ facilities:
     spriteFacility: 310
     buildTime: 22
     buildCost: 385000
-    refundValue: 270000
+    refundValue: 280000
     monthlyCost: 35000
     workshops: 4
-    maxAllowedPerBase: 1
+    mapName: XBASE_02
+  - type: STR_TOOLWORKS
+    requires:
+      - STR_TOOLWORKS_RESEARCH
+    provideBaseFunc: [STR_SERVICE_MACHINING]
+    spriteShape: 1
+    spriteFacility: 310 #
+    buildTime: 25
+    buildCost: 475000
+    refundValue: 350000
+    monthlyCost: 62000
+    buildCostItems:
+      STR_ALLOYS:
+        build: 1
+        refund: 1
+    workshops: 5
     mapName: XBASE_02
 
   - type: STR_SCANNER
@@ -250,19 +259,17 @@ facilities:
     radarRange: 1900
     maxAllowedPerBase: 1
     mapName: XBASE_02
-
   - type: STR_HYPERCOMMS_ARRAY
     requires:
       - STR_BIONIC_INTERLACE
       - STR_HYPERCOMMS_ARRAY_RESEARCH
-    requiresBaseFunc: [STR_SERVICE_NETWORK]
     provideBaseFunc: [STR_SERVICE_HYPERCOMMS]
     spriteShape: 1
     spriteFacility: 311 #
     buildTime: 17
     buildCost: 1250000
-    refundValue: 940000
-    monthlyCost: 150000
+    refundValue: 950000
+    monthlyCost: -50000
     buildCostItems:
       STR_PERSONAL_DATA:
         build: 50
