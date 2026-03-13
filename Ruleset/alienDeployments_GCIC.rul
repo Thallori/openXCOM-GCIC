@@ -138,7 +138,7 @@
     alert: STR_RESCUE_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_RESCUE_1_ALERT_DESCRIPTION
-    markerName: STR_RESCUE_1
+    markerName: STR_RESCUE_1_
     duration: [48, 72]
     despawnPenalty: 100
     abortPenalty: 75
@@ -229,7 +229,7 @@
     alert: STR_RESCUE_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_RESCUE_RR_ALERT_DESCRIPTION
-    markerName: STR_RESCUE_RR
+    markerName: STR_RESCUE_RR_
     duration: [16, 24]
     despawnPenalty: 100
     abortPenalty: 65
@@ -327,7 +327,7 @@
     alert: STR_RESCUE_FT_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_RESCUE_FT_ALERT_DESCRIPTION
-    markerName: STR_RESCUE_FT
+    markerName: STR_RESCUE_FT_
     duration: [24, 48]
     despawnPenalty: 50
     civilians: 12
@@ -433,7 +433,7 @@
     alert: STR_RESCUE_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_KNOCKOUT_MISSION_ALERT_DESCRIPTION
-    markerName: STR_KNOCKOUT_MISSION
+    markerName: STR_KNOCKOUT_MISSION_
     duration: [48, 72]
     despawnPenalty: 100
     abortPenalty: 100
@@ -515,7 +515,7 @@
     alert: STR_RESCUE_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_RESCUE_1_ALERT_DESCRIPTION
-    markerName: STR_RESCUE_1
+    markerName: STR_RESCUE_1_
     duration: [48, 72]
     despawnPenalty: 100
     abortPenalty: 75
@@ -551,7 +551,7 @@
     alert: STR_RESCUE_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_RESCUE_RR_ALERT_DESCRIPTION
-    markerName: STR_RESCUE_RR
+    markerName: STR_RESCUE_RR_
     duration: [16, 24]
     despawnPenalty: 100
     abortPenalty: 65
@@ -595,7 +595,7 @@
     alert: STR_RESCUE_FT_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_RESCUE_FT_ALERT_DESCRIPTION
-    markerName: STR_RESCUE_FT
+    markerName: STR_RESCUE_FT_
     duration: [24, 48]
     despawnPenalty: 50
     civilians: 12
@@ -646,7 +646,7 @@
     alert: STR_RESCUE_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_KNOCKOUT_MISSION_ALERT_DESCRIPTION
-    markerName: STR_KNOCKOUT_MISSION
+    markerName: STR_KNOCKOUT_MISSION_
     duration: [48, 72]
     despawnPenalty: 100
     abortPenalty: 100
@@ -679,7 +679,7 @@
     alert: STR_IRONEYES_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_IRONEYES_SHOP_ALERT_DESCRIPTION
-    markerName: STR_IRONEYES_SHOP
+    markerName: STR_IRONEYES_SHOP_
     duration: [48, 72]
     startingCondition: MILSPEC_GEAR_INFILTRATION_CRAFT
     briefing:
@@ -823,7 +823,7 @@
     alert: STR_IRONEYES_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_IRONEYES_SAFEHOUSE_ALERT_DESCRIPTION
-    markerName: STR_IRONEYES_SAFEHOUSE
+    markerName: STR_IRONEYES_SAFEHOUSE_
     duration: [72, 120]
     startingCondition: MILSPEC_GEAR_INFILTRATION_CRAFT
     briefing:
@@ -941,7 +941,7 @@
     alert: STR_IRONEYES_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_IRONEYES_OUTPOST_ALERT_DESCRIPTION
-    markerName: STR_IRONEYES_OUTPOST
+    markerName: STR_IRONEYES_OUTPOST_
     duration: [72, 120]
     startingCondition: MILITARY_GEAR
     briefing:
@@ -1226,7 +1226,7 @@
     alert: STR_TRADE_MEETING_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_TRADE_MEETING_1_ALERT_DESCRIPTION
-    markerName: STR_TRADE_MEETING_1
+    markerName: STR_TRADE_MEETING_1_
     duration: [48, 72]
     despawnPenalty: 0
     abortPenalty: 0
@@ -1283,7 +1283,7 @@
     alert: STR_TRADE_MEETING_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_TRADE_MEETING_2_ALERT_DESCRIPTION
-    markerName: STR_TRADE_MEETING_2
+    markerName: STR_TRADE_MEETING_2_
     duration: [48, 72]
     despawnPenalty: 0
     abortPenalty: 0
@@ -1405,7 +1405,7 @@
     alert: STR_TRADE_MEETING_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_TRADE_MEETING_3_ALERT_DESCRIPTION
-    markerName: STR_TRADE_MEETING_3
+    markerName: STR_TRADE_MEETING_3_
     duration: [48, 72]
     despawnPenalty: 0
     abortPenalty: 0
@@ -1526,7 +1526,7 @@
     alert: STR_GCIC_SABOTAGE_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION
-    markerName: STR_GCIC_SABOTAGE_1
+    markerName: STR_GCIC_SABOTAGE_1_
     duration: [72, 96]
     despawnPenalty: 50
     despawnEvents:
@@ -1645,7 +1645,7 @@
     alert: STR_GCIC_SABOTAGE_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION
-    markerName: STR_GCIC_SABOTAGE_2
+    markerName: STR_GCIC_SABOTAGE_2_
     duration: [72, 96]
     despawnPenalty: 50
     abortPenalty: 50
@@ -1765,6 +1765,93 @@
         percentageOutsideUfo: 100
         customUnitType: STR_DRONE_ENEMY_SHARK
         itemSets: *AnchorEmptyInventory
+  - type: STR_GCIC_SABOTAGE_3
+    script: COMMERCIAL_4X4
+    width: 40
+    length: 40
+    height: 8
+    alert: STR_GCIC_SABOTAGE_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_GCIC_SABOTAGE_3_ALERT_DESCRIPTION
+    markerName: STR_GCIC_SABOTAGE_3_
+    duration: [72, 96]
+    despawnPenalty: 50
+    despawnEvents:
+      STR_EVENT_HEALTHY_COMPETITION: 100
+    failureEvents:
+      STR_EVENT_HEALTHY_COMPETITION: 100
+    startingCondition: MILSPEC_GEAR_INFILTRATION_CRAFT
+    briefing:
+      showTarget: false
+      title: STR_GCIC_SABOTAGE_3
+      music: SHADOW_INTRO
+      palette: 2
+    unlockedResearch: STR_TRG_SSUP_PREQ
+    customUfo: STR_SABOTAGE_VAULT
+    forcePercentageOutsideUfo: true
+    terrains:
+      - COMMERCIAL
+    music:
+      - SHADOW1
+    turnLimit: 10
+    chronoTrigger: 1
+    data:
+      - alienRank: 8
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 0
+        extraRandomItems: *personalData7
+        itemSets: *sspOfficer
+      - alienRank: 7
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 3
+        percentageOutsideUfo: 0
+        extraRandomItems: *personalData7
+        itemSets: *sspOfficer
+      - alienRank: 6
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 4
+        percentageOutsideUfo: 0
+        extraRandomItems: *personalData7
+        itemSets: *sspGuard
+      - alienRank: 6
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 100
+        customUnitType: STR_DRONE_ENEMY_HYBRID
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 100
+        customUnitType: STR_DRONE_ENEMY_HUMAN
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 8
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 100
+        customUnitType: STR_DRONE_ENEMY_SHARK
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 100
+        customUnitType: STR_DRONE_ENEMY_DEEP
+        itemSets: *AnchorEmptyInventory
 
   - type: STR_MEDI_MUCK
     script: DEFAULT
@@ -1796,6 +1883,7 @@
         itemSets: *AnchorEmptyInventory
   - type: STR_MEDI_MUCK_CHRYS
     script: DEFAULT
+    isHidden: true
     width: 50
     length: 50
     height: 8
@@ -1836,7 +1924,7 @@
     alert: STR_MEDI_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_MEDI_CREATURE_ALERT_DESCRIPTION
-    markerName: STR_MEDI_CREATURE
+    markerName: STR_MEDI_CREATURE_
     duration: [36, 60]
     despawnPenalty: 20
     abortPenalty: 20
@@ -1858,13 +1946,14 @@
         itemSets: *AnchorEmptyInventory
   - type: STR_MEDI_CELA_CHRYS
     script: DEFAULT
+    isHidden: true
     width: 50
     length: 50
     height: 8
     alert: STR_MEDI_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_MEDI_CREATURE_ALERT_DESCRIPTION
-    markerName: STR_MEDI_CREATURE
+    markerName: STR_MEDI_CREATURE_
     duration: [36, 60]
     despawnPenalty: 20
     abortPenalty: 20
@@ -1899,7 +1988,7 @@
     alert: STR_GR_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_GR_INDUSTRIAL_1_ALERT_DESCRIPTION
-    markerName: STR_GR_INDUSTRIAL_1
+    markerName: STR_GR_INDUSTRIAL_1_
     duration: [48, 72]
     despawnPenalty: 20
     abortPenalty: 20

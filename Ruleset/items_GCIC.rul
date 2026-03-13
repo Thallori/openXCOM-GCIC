@@ -1274,6 +1274,10 @@ items:
       FireThreshold: 5
       ToMorale: 4.5
       ToStun: 0.25
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 15;
+        return;
   - type: STR_CHEM_SMG_AMMO0
     categories: [STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY, STR_UTILITY_CATEGORY]
     requiresBuy:
@@ -1673,6 +1677,13 @@ items:
     kneelBonus: 110
     attraction: 15
     armor: 120
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
   - type: STR_SINGLESHOT_LASER_PISTOL_CODED
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_LOCKED_CATEGORY]
     ufopediaType: STR_SINGLESHOT_LASER_PISTOL
@@ -1767,6 +1778,13 @@ items:
       RandomWound: false
       FireThreshold: 50
       ToTile: 0.65
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
   - type: STR_MULTISHOT_LASER_AMMO
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
@@ -1793,6 +1811,13 @@ items:
       RandomWound: false
       FireThreshold: 50
       ToTile: 0.65
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
 
   - type: STR_TASER_PISTOL_CODED
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY, STR_LOCKED_CATEGORY]
@@ -1935,6 +1960,13 @@ items:
     kneelBonus: 110
     attraction: 15
     armor: 120
+    vaporColorSurface: 1
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
 
   - type: STR_XN_LASER_SMG
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
@@ -1986,6 +2018,13 @@ items:
     experienceTrainingMode: 5
     attraction: 15
     armor: 120
+    vaporColorSurface: 1
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
 
   - type: STR_XN_LASER_RIFLE
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
@@ -2036,6 +2075,13 @@ items:
     oneHandedPenalty: 50
     attraction: 15
     armor: 120
+    vaporColorSurface: 1
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
 
   - type: STR_XN_LASER_SNIPER
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
@@ -2085,6 +2131,13 @@ items:
     oneHandedPenalty: 50
     attraction: 15
     armor: 120
+    vaporColorSurface: 1
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
 
   - type: STR_XN_LASER_MG
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_MACHINE_GUNS_CATEGORY]
@@ -2139,6 +2192,13 @@ items:
     experienceTrainingMode: 6
     attraction: 15
     armor: 120
+    vaporColorSurface: 1
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
 
   - type: STR_XN_LASER_CANNON
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_CANNONS_CATEGORY]
@@ -2191,6 +2251,13 @@ items:
     oneHandedPenalty: 35
     attraction: 15
     armor: 120
+    vaporColorSurface: 1
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 5;
+        return;
 
   - type: STR_XN_LASER_SHOTGUN
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_SHOTGUNS_CATEGORY]
@@ -2238,6 +2305,13 @@ items:
     oneHandedPenalty: 75
     attraction: 10
     armor: 120
+    vaporColorSurface: 1
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
 
   - type: STR_SKULLJACK
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_TOOLS_CATEGORY, STR_MELEE_CATEGORY, STR_PSI_CATEGORY]
@@ -2333,6 +2407,13 @@ items:
     kneelBonus: 110
     attraction: 0
     armor: 120
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
   - &refgciclaserpistol
     type: STR_GCIC_PROTOTYPE_LASER_PISTOL
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_PISTOLS_CATEGORY, STR_INFILTRATION_CATEGORY]
@@ -2397,6 +2478,13 @@ items:
       RandomWound: false
       FireThreshold: 45
       ToTile: 0.65
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
   - type: STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO2
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_PISTOLS_CATEGORY, STR_INFILTRATION_CATEGORY]
     requiresBuy:
@@ -2423,6 +2511,13 @@ items:
       RandomWound: false
       FireThreshold: 45
       ToTile: 0.65
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
 
   - type: STR_GCIC_PROTOTYPE_LASER_PISTOL_NORECOVER
     ufopediaType: STR_GCIC_PROTOTYPE_LASER_PISTOL
@@ -2487,6 +2582,13 @@ items:
     experienceTrainingMode: 5
     attraction: 0
     armor: 120
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
   - &refgciclasersmg
     type: STR_GCIC_PROTOTYPE_LASER_SMG
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_SMGS_CATEGORY, STR_INFILTRATION_CATEGORY]
@@ -2557,6 +2659,13 @@ items:
       RandomWound: false
       FireThreshold: 45
       ToTile: 0.70
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
   - type: STR_GCIC_PROTOTYPE_LASER_SMG_AMMO2
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_SMGS_CATEGORY, STR_INFILTRATION_CATEGORY]
     requiresBuy:
@@ -2583,6 +2692,13 @@ items:
       RandomWound: false
       FireThreshold: 45
       ToTile: 0.70
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
 
   - type: STR_GCIC_PROTOTYPE_LASER_SMG_NORECOVER
     ufopediaType: STR_GCIC_PROTOTYPE_LASER_SMG
@@ -2643,6 +2759,13 @@ items:
     oneHandedPenalty: 50
     attraction: 0
     armor: 120
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
   - &refgciclaserrifle
     type: STR_GCIC_PROTOTYPE_LASER_RIFLE
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
@@ -2709,6 +2832,13 @@ items:
       RandomWound: false
       FireThreshold: 75
       ToTile: 0.65
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
   - type: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO2
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
     requiresBuy:
@@ -2736,6 +2866,13 @@ items:
       RandomWound: false
       FireThreshold: 65
       ToTile: 0.65
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
 
   - type: STR_GCIC_PROTOTYPE_LASER_RIFLE_NORECOVER
     ufopediaType: STR_GCIC_PROTOTYPE_LASER_RIFLE
@@ -2795,6 +2932,13 @@ items:
     oneHandedPenalty: 50
     attraction: 0
     armor: 120
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
   - type: STR_GCIC_PROTOTYPE_LASER_SNIPER
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
     requiresBuy:
@@ -2857,6 +3001,13 @@ items:
       RandomWound: false
       FireThreshold: 60
       ToTile: 0.65
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
   - type: STR_GCIC_PROTOTYPE_LASER_SNIPER_AMMO2
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
     requiresBuy:
@@ -2885,6 +3036,13 @@ items:
       RandomWound: false
       FireThreshold: 65
       ToTile: 0.65
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
 
   - type: STR_GCIC_PROTOTYPE_LASER_MG_ELERIUM
     categories: [STR_MILITARY_CATEGORY, STR_VACUUM_CATEGORY, STR_MACHINE_GUNS_CATEGORY]
@@ -2941,6 +3099,13 @@ items:
     experienceTrainingMode: 6
     attraction: 0
     armor: 120
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
   - type: STR_GCIC_PROTOTYPE_LASER_MG
     categories: [STR_MILITARY_CATEGORY, STR_VACUUM_CATEGORY, STR_MACHINE_GUNS_CATEGORY]
     requiresBuy:
@@ -3010,6 +3175,13 @@ items:
       RandomWound: false
       FireThreshold: 80
       ToTile: 0.65
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
   - type: STR_GCIC_PROTOTYPE_LASER_MG_AMMO2
     categories: [STR_MILITARY_CATEGORY, STR_VACUUM_CATEGORY, STR_MACHINE_GUNS_CATEGORY]
     requiresBuy:
@@ -3035,6 +3207,13 @@ items:
       RandomWound: false
       FireThreshold: 80
       ToTile: 0.65
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
 
   - type: STR_GCIC_PROTOTYPE_LASER_CANNON_ELERIUM
     categories: [STR_MILITARY_CATEGORY, STR_VACUUM_CATEGORY, STR_CANNONS_CATEGORY]
@@ -3089,6 +3268,13 @@ items:
     oneHandedPenalty: 35
     attraction: 0
     armor: 120
+    vaporColorSurface: 2
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 5;
+        return;
   - type: STR_GCIC_PROTOTYPE_LASER_CANNON
     categories: [STR_MILITARY_CATEGORY, STR_VACUUM_CATEGORY, STR_CANNONS_CATEGORY]
     requiresBuy:
@@ -3158,6 +3344,13 @@ items:
       ToItem: 0.25
       ToTile: 0.65
       TileDamageMethod: 2
+    vaporColorSurface: 2
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 5;
+        return;
   - type: STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO2
     categories: [STR_MILITARY_CATEGORY, STR_VACUUM_CATEGORY, STR_CANNONS_CATEGORY]
     requiresBuy:
@@ -3188,6 +3381,13 @@ items:
       ToItem: 0.25
       ToTile: 0.65
       TileDamageMethod: 2
+    vaporColorSurface: 2
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 5;
+        return;
 #explosives
 # launchers
   - type: STR_BARREL_MOTAR
@@ -3471,6 +3671,10 @@ items:
     throwDropoffRange: 12
     throwDropoff: 4
     attraction: 30
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 15;
+        return;
 
   - type: STR_ACIDFLASK
     ufopediaType: STR_ACIDFLASK_FAKE
@@ -3611,6 +3815,42 @@ items:
     throwDropoff: 4
     attraction: 20
     armor: 50
+  - type: STR_PHXDEMO
+    categories: [STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_PHXDEMO
+    size: 0.1
+    costBuy: 4699
+    costSell: 1175
+    transferTime: 12
+    bigSprite: 253
+    floorSprite: 235
+    handSprite: 576
+    hitAnimation: 0
+    invWidth: 2
+    invHeight: 1
+    battleType: 4
+    weight: 7
+    power: 60
+    damageType: 3
+    damageAlter:
+      FixRadius: 1
+      RandomType: 9
+      ToItem: 0.5
+      ToTile: 1.5
+      ToStun: 0.75
+      IgnoreOverKill: false
+      IgnoreSelfDestruct: false
+    fuseType: -1
+    tuPrime: 30
+    tuUnprime: 10
+    tuThrow: 25
+    underwaterThrowDropoffRange: 8
+    throwDropoffRange: 12
+    throwDropoff: 4
+    attraction: 20
+    armor: 60
 
   - type: STR_ELERIUM_BOMB
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
@@ -4482,6 +4722,7 @@ items:
     battleType: 1
     weight: 9
     clipSize: 5
+    isAmmoRechargeable: true
     power: 30
     arcingShot: true
     damageType: 9
@@ -4749,6 +4990,18 @@ items:
     categories: [STR_DATA_CATEGORY]
     costSell: 185000
 
+  - type: STR_GCIC_SABOTAGE_3_DATA
+    categories: [STR_DATA_CATEGORY]
+    ufopediaType: STR_GCIC_TRADE_SECRETS_MISSIONS
+    bigSprite: 211
+    floorSprite: 148
+    costSell: 150000
+    recoveryPoints: -50
+    weight: 3
+  - type: STR_GCIC_SABOTAGE_3_DATA_DECRYPT
+    categories: [STR_DATA_CATEGORY]
+    costSell: 250000
+
   - type: STR_DRONE_MEMORY
     categories: [STR_DATA_CATEGORY]
 # abstract
@@ -4802,6 +5055,12 @@ items:
     weight: 1
     armor: 255
 
+  - type: STR_IRS_SUBSIDY
+    categories: [STR_PERKS_CATEGORY]
+    costSell: 5000
+    weight: 1
+    armor: 255
+
   - type: STR_BOUNTY_CHRYSSALID
     ufopediaType: STR_BOUNTY_2
     categories: [STR_SPECIMENS_CATEGORY]
@@ -4812,11 +5071,77 @@ items:
     weight: 3
     armor: 255
 
-  - type: STR_IRS_SUBSIDY
+  - type: STR_CRYPTOCHIT1
     categories: [STR_PERKS_CATEGORY]
-    costSell: 5000
+    bigSprite: 211 #
+    floorSprite: 148 #
+    costSell: 25000
+    recoveryPoints: -5
     weight: 1
-    armor: 255
+  - type: STR_CRYPTOCHIT2
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 211 #
+    floorSprite: 148 #
+    costSell: 75000
+    recoveryPoints: -15
+    weight: 1
+  - type: STR_PERSONAL_DATA_VAULT
+    ufopediaType: STR_PERSONAL_DATA
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 211 #
+    floorSprite: 148 #
+    recoveryPoints: -10
+    recoveryTransformations:
+      STR_PERSONAL_DATA: [10]
+    weight: 3
+  - type: STR_SECRET_DATA_VAULT
+    ufopediaType: STR_SECRET_DATA
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 211 #
+    floorSprite: 148 #
+    recoveryPoints: -15
+    recoveryTransformations:
+      STR_SECRET_DATA: [2]
+    weight: 3
+  - type: STR_MILITARY_CYBERNETICS_VAULT
+    ufopediaType: STR_MILITARY_CYBERNETICS
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 254
+    floorSprite: 148 #
+    recoveryPoints: -10
+    recoveryTransformations:
+      STR_MILITARY_CYBERNETICS_CODED: [2]
+    weight: 3
+  - type: STR_ELERIUM_VAULT
+    ufopediaType: STR_ELERIUM_CORE
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 154
+    floorSprite: 148
+    recoveryPoints: -25
+    recoveryTransformations:
+      STR_ELERIUM_CORE: [1]
+    weight: 5
+    Armor: 120
+  - type: STR_PLASMA_PISTOL_VAULT
+    ufopediaType: STR_ELERIUM_CORE #todo old alien war pistol
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 211 #
+    floorSprite: 148 #
+    recoveryPoints: -20
+    recoveryTransformations:
+      STR_ELERIUM_CORE: [1] #todo old alien war pistol
+    weight: 3
+    Armor: 120
+  - type: STR_CHRYSSALID_EGG_VAULT
+    ufopediaType: STR_ELERIUM_CORE #todo chryssalid egg
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 211 #
+    floorSprite: 148 #
+    recoveryPoints: -30
+    recoveryTransformations:
+      STR_ELERIUM_CORE: [1] #todo chryssalid egg
+    weight: 4
+    Armor: 40
 # tasks
   - type: STR_MONEY_1
     categories: [STR_PERKS_CATEGORY]
@@ -5438,6 +5763,24 @@ items:
       STR_PLASTICS: [1]
       STR_CONSUMER_CYBERNETICS_CODED: [1]
     armor: 30
+
+  - type: STR_SSPSUPERVISOR_PRIVATE
+    categories: [STR_SPECIMENS_CATEGORY]
+    liveAlien: true
+  - type: STR_SSPSUPERVISOR_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    weight: 22
+    bigSprite: 169
+    floorSprite: 160
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_PLASTICS: [1]
+      STR_MEDICAL_CYBERNETICS_CODED: [1]
+    armor: 30
 # animals
   - type: STR_CHRYSSALID_CORPSE
     name: STR_CORPSE
@@ -5806,28 +6149,3 @@ items:
       ToStun: 0.75
       IgnoreOverKill: false
       IgnoreSelfDestruct: false
-#dummy research items
-#not used, but game can crash without these
-  - type: STR_RAPID_RESPONSE_MISSIONS
-    categories: [STR_DEBUG_CATEGORY]
-  - type: STR_GCIC_BACKCHANNEL_MISSIONS
-    categories: [STR_DEBUG_CATEGORY]
-  - type: STR_GCIC_INDEPENDENCE
-    categories: [STR_DEBUG_CATEGORY]
-  - type: STR_MEDI_MISSIONS
-    categories: [STR_DEBUG_CATEGORY]
-  - type: STR_GR_MISSIONS
-    categories: [STR_DEBUG_CATEGORY]
-
-  - type: STR_DATA_MINING
-    categories: [STR_DEBUG_CATEGORY]
-  - type: STR_DATA_IRONEYES
-    categories: [STR_DEBUG_CATEGORY]
-  - type: STR_DATA_NETRUNNERS
-    categories: [STR_DEBUG_CATEGORY]
-  - type: STR_DATA_SSP
-    categories: [STR_DEBUG_CATEGORY]
-  - type: STR_DATA_ANIMAL
-    categories: [STR_DEBUG_CATEGORY]
-  - type: STR_DATA_ROBOT
-    categories: [STR_DEBUG_CATEGORY]

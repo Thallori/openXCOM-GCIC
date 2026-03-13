@@ -235,6 +235,37 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: VENDOR_SSP_CPAL
+
+  - id: STR_RANDOMDIALOGUE1
+    text: STR_RANDOMDIALOGUE1_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: HMEMORY_CPAL
+  - id: STR_RANDOMDIALOGUE2
+    text: STR_RANDOMDIALOGUE2_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: HMEMORY_CPAL
+  - id: STR_RANDOMDIALOGUE3
+    text: STR_RANDOMDIALOGUE3_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: HMEMORY_CPAL
+  - id: STR_RANDOMDIALOGUE4
+    text: STR_RANDOMDIALOGUE4_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: HMEMORY_CPAL
+  - id: STR_SECRETDIALOGUE1
+    text: STR_SECRETDIALOGUE1_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: HMEMORY_CPAL
 #operations
   - id: STR_PRIMARY_OPERATIONS
     requires:

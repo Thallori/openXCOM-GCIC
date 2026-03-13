@@ -434,3 +434,63 @@ ufos:
         - name: SABOTAGE_OFFICE_BI2
           width: 20
           length: 20
+  - type: STR_SABOTAGE_VAULT
+    modSprite: interception_jammed
+    battlescapeTerrainData:
+      name: STR_SABOTAGE_VAULT
+      mapDataSets:
+        - BLANKS
+        - FLOOR_ASPHALT
+        - FLOOR_URBAN
+        - FLOOR_TILES
+        - FLOOR_PLAIN
+        - FLORA_URBAN
+        - FLORA_FOREST_SMALL
+        - STRUCTURE_MASON1
+        - STRUCTURE_SEC1
+        - STRUCTURE_DRYWALL1
+        - STRUCTURE_GLASS2
+        - STRUCTURE_TILES1
+        - BATHROOM
+        - FENCE_IRON
+        - LIFTER
+        - FURNITURE_OFFICE1
+        - BITS_POTTED_PLANTS
+        - BITS_BOOKS1
+        - COMPUTERS1
+        - BITS_SERVERS
+        - BITS_TECH
+        - BITS_CRATES1
+        - ROOFS_BITS
+        - SIGNS_TECH2
+        - HOLOGRAMS
+        - ENTERTAINMENT
+        - FURNITURE_DISPLAY1
+      mapBlocks:
+        - name: SABOTAGE_VAULT1
+          width: 20
+          length: 20
+          items:
+            STR_GCIC_SABOTAGE_3_DATA:
+              - [8, 7, 0]
+          randomizedItems:
+            - position: [7, 7, 0]
+              amount: 1
+              mixed: true
+              itemList: &vaultCommon [STR_CRYPTOCHIT1, STR_CRYPTOCHIT2, STR_PERSONAL_DATA_VAULT, STR_SECRET_DATA_VAULT, STR_MILITARY_CYBERNETICS_VAULT]
+            - position: [9, 7, 0]
+              amount: 1
+              mixed: true
+              itemList: *vaultCommon
+            - position: [7, 12, 0]
+              amount: 1
+              mixed: true
+              itemList: *vaultCommon
+            - position: [9, 12, 0]
+              amount: 1
+              mixed: true
+              itemList: *vaultCommon
+            - position: [8, 12, 0]
+              amount: 1
+              mixed: true
+              itemList: [STR_ELERIUM_VAULT, STR_PLASMA_PISTOL_VAULT, STR_CHRYSSALID_EGG_VAULT]

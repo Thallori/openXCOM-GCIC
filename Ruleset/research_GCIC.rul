@@ -520,6 +520,12 @@ research:
       - STR_PHX_WARHEAD
       - STR_GUNPOWDER
     cost: 5
+  - name: STR_PHXDEMO_MANU_M
+    lookup: STR_PHXDEMO
+    dependencies:
+      - STR_PHX_WARHEAD
+      - STR_GUNPOWDER
+    cost: 5
   - name: STR_ELERIUM_BOMB_M
     lookup: STR_ELERIUM_BOMB
     dependencies:
@@ -913,6 +919,9 @@ research:
     needItem: true
     cost: 3
   - name: STR_PHXBOMB
+    needItem: true
+    cost: 3
+  - name: STR_PHXDEMO
     needItem: true
     cost: 3
   - name: STR_ELERIUM_BOMB
@@ -1652,6 +1661,9 @@ research:
     dependencies:
       - STR_LOCK
   - name: STR_TRG_SO_PREQ #officers
+    dependencies:
+      - STR_LOCK
+  - name: STR_TRG_SSUP_PREQ #supervisors
     dependencies:
       - STR_LOCK
 # animals

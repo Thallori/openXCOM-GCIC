@@ -754,6 +754,7 @@ en-US:
   STR_BARREL_MOTAR_PHXAMMO_M: "PHX Barrel Shell Fabrication"
   STR_PIPEBOMB_M: "Pipe Bomb Fabrication"
   STR_PHXBOMB_MANU_M: "PHX Bomb Fabrication"
+  STR_PHXDEMO_MANU_M: "PHX Demolition Charge Fabrication"
   STR_ACIDFLASK_M: "Acid Flask Fabrication"
   STR_ELERIUM_BOMB_M: "Elerium Bomb Fabrication"
   STR_STIM_SPRINT_M: "Sprint Inhaler Fabrication"
@@ -783,6 +784,7 @@ en-US:
   STR_WINDLASS_LAUNCHER_AMMO_MANU: "Windlass Tinybomb Cluster (x4)"
   STR_ACIDFLASK_MANU: "Acid Flask (x3)"
   STR_PHXBOMB_MANU: "PHX Bomb (x3)"
+  STR_PHXDEMO_MANU: "PHX Bomb (x2)"
 
   STR_SSP_LASER_PISTOL_MANU: "UPGRADE: SSP Enforcer Laser Pistol (E)"
   STR_GCIC_PROTOTYPE_LASER_PISTOL_MANU: "UPGRADE: Pilot Laser Pistol (E)"
@@ -953,11 +955,13 @@ en-US:
 
   STR_GCIC_SABOTAGE_2: "GCIC: Backdoor Injection"
   STR_GCIC_SABOTAGE_2_: "GCIC: Backdoor Injection-{0}"
-  STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION: "One of our sibling corporations are experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Expect armored security forces.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 hours{NEWLINE}Maximum Gear: Milspec (Inconspicuous Craft)"
-  STR_GCIC_SABOTAGE_2_BRIEFING: "One of our sibling corporations are experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Expect armored security forces.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 15 turns before additional security forces arrive and we are forced to abort."
+  STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION: "One of our sibling corporations are experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Neutralize all targets in the area, expect armored security forces.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 hours{NEWLINE}Maximum Gear: Milspec (Inconspicuous Craft)"
+  STR_GCIC_SABOTAGE_2_BRIEFING: "One of our sibling corporations are experiencing new competition from a rival startup, angel investors are suspected. A branch office housing transaction records has been located. Neutralize all targets in the area, expect armored security forces.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 15 turns before additional security forces arrive and we are forced to abort."
 
   STR_GCIC_SABOTAGE_3: "GCIC: Trade Secrets"
   STR_GCIC_SABOTAGE_3_: "GCIC: Trade Secrets-{0}"
+  STR_GCIC_SABOTAGE_3_ALERT_DESCRIPTION: "Our parent has sent us the address of a vault securing rival intellectual property. Breaking in from the ground floor and retrieving it may prove easier than neutralizing all targets in the area.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 hours{NEWLINE}Maximum Gear: Milspec (Inconspicuous Craft)"
+  STR_GCIC_SABOTAGE_3_BRIEFING: "Our parent has sent us the address of a vault securing rival intellectual property. Breaking in from the ground floor and retrieving it may prove easier than neutralizing all targets in the area.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 10 turns before additional security forces arrive and we are forced to abort."
 # medi
   STR_MEDI_ALERT: "MEDI CONTRACT"
   STR_MEDI_MUCK: "MEDI: Capture Muckstar"
@@ -1007,7 +1011,7 @@ en-US:
   STR_SECURITY_UP: "{NEWLINE}COMPETING SYSTEMS: 2{NEWLINE}Native Civilization,{NEWLINE}Invading Civilization{NEWLINE}{NEWLINE}Our primary objective, to {ALT}rescue{ALT} insured GCIC clients and ensure continued payments, is likely to encounter obstacles. Non-clients represent an {ALT}immediate threat{ALT} to our objectives. Indirect dangers are more difficult to remove.{NEWLINE}{NEWLINE}Maximing the chances of client survival will eventually require a restructuring of the competition."
   STR_NON_CLIENTS: "Non-Clients"
   STR_NON_CLIENTS_UP: "{NEWLINE}THREAT ASSESSOR: Online{NEWLINE}NEGLIABLE: 1,350,000,000{NEWLINE}RELEVANT: 95,000,000+{NEWLINE}{NEWLINE}The greatest {ALT}danger{ALT} to our customers are targets who (for reasons outside of our current influence) wish to do them harm. Given time, capital, and enough public trust, we may be able to find less risky solutions to these problem. Until then, the easiest answer is the simpliest one.{NEWLINE}{NEWLINE}If {ALT}violent conflict{ALT} is envitable, we must find ways to improve the odds."
-
+# memories
   STR_DRONE_MEMORY: "MEMORIES: Drone"
   STR_DRONE_MEMORY_UP: "{NEWLINE}When cracking new drones, we may find memories that escaped nerve staple pruning. Once remembered, these experiences become our own. The emotions within are our emotions. We transform the sensation of being them into the sensation of being us.{NEWLINE}{NEWLINE}Memory introspection will deepen our understanding of society, making it easier to act as the mask our clients expect to see."
   STR_HYBRID_MEMORY_1: "MEMORY: Unscheduled Break Time"
@@ -1049,6 +1053,17 @@ en-US:
   STR_VENDOR_VCM_UP: "{NEWLINE}EQUITY: $17,937,000,000,000{NEWLINE}ORBITAL MASS: 5,700,000 TONS{NEWLINE}{NEWLINE}Thank you for contacting the Vehicles Communications and Mining Transport division. Our autonomous fleet of inter-regional shipping containers are available at any networked APS rental kiosk. For service requirements exceeding these standards, please contact a representitive at VCM Outreach, VCM Launch, VCM Seas, or VCM Holdings.{NEWLINE}{NEWLINE}Corporate affiliates with insufficent credit ratings may be charged an application fee. Non-affiliates may be asked to provide proof of profitability before communications are established."
   STR_VENDOR_SSP: "VENDOR: SSP Security"
   STR_VENDOR_SSP_UP: "{NEWLINE}EQUITY: $466,400,000,000{NEWLINE}AVERAGE RESPONSE: 182 SECONDS{NEWLINE}{NEWLINE}Secure Systems and Procurement is a comprehensive risk-management and small arms service for the global protection of peace and property. Every security problem is unique, so we ensure our teams are headed by highly trained, impact-driven professionals capable of navigating the diverse landscape of our industry with an unwavering eye towards ethics and accountability.{NEWLINE}{NEWLINE}Building strategic solutions for a stronger, safer world."
+# misc
+  STR_RANDOMDIALOGUE1: "PRIVATE: Lost in Obstinate Beliefs"
+  STR_RANDOMDIALOGUE1_UP: "{NEWLINE}DATE: June 7th, 2478{NEWLINE}SOURCE: Bash4{NEWLINE}{NEWLINE}{ALT}DeltttaPe>{ALT} Do you ever wonder what alloys are? I mean really are?{NEWLINE}{ALT}Marksnake12>{ALT} just look it up{NEWLINE}{ALT}DeltttaPe>{ALT} I did. I don't think for one second it's what they say. If it were that simple, we'd be making them all the time.{NEWLINE}{ALT}Marksnake12>{ALT} we do make it all the time{NEWLINE}{ALT}DeltttaPe>{ALT} No, I mean, like, before.{NEWLINE}{ALT}Marksnake12>{ALT} hahaha you mean before the aliens?{NEWLINE}{ALT}DeltttaPe>{ALT} You know I don't believe that bull."
+  STR_RANDOMDIALOGUE2: "PRIVATE: Chatroom Accessibility Expansion"
+  STR_RANDOMDIALOGUE2_UP: "{NEWLINE}DATE: Febuary 28th, 2461{NEWLINE}SOURCE: nu.truth.hypercomms{NEWLINE}{NEWLINE}{ALT}MAXX>{ALT} Bridge is up!!!!{NEWLINE}{ALT}AlixOwins>{ALT} woopwoop{NEWLINE}{ALT}TuvixForLife>{ALT} My mind to your mind!{NEWLINE}{ALT}MisterMan>{ALT} This channel is under alien control!{NEWLINE}{ALT}tallboimarx>{ALT} oh yes just what i always wanted more dip riches in my life.{NEWLINE}{ALT}MAXX>{ALT} Rule 4!! Not everyone is literate.{NEWLINE}{ALT}tallboimarx>{ALT} no one normal buys a psiamp just to chat about software defined signal offsets.{NEWLINE}{ALT}MAXX>{ALT} No one in this chat is normal!! :D"
+  STR_RANDOMDIALOGUE3: "PRIVATE: Days Not Gone, Just Waiting"
+  STR_RANDOMDIALOGUE3_UP: "{NEWLINE}DATE: July 10th, 2450{NEWLINE}SOURCE: Rememberance Support Group{NEWLINE}{NEWLINE}{ALT}Insominecessance>{ALT} My parents were on earth when it happened.{NEWLINE}{ALT}BetaKara>{ALT} I'm so sorry.{NEWLINE}{ALT}Insomnescence>{ALT} It's okay. We weren't that close.{NEWLINE}{ALT}BetaKara>{ALT} Oh.{NEWLINE}{ALT}Insomnescence>{ALT} Yeah. I still own a house down there.{NEWLINE}{ALT}BetaKara>{ALT} Can I ask?{NEWLINE}{ALT}Insominecessance>{ALT} It was on the night side when the nova happened. I called around to see what it would cost to get my stuff back and it's way not worth."
+  STR_RANDOMDIALOGUE4: "PRIVATE: "
+  STR_RANDOMDIALOGUE4_UP: "{NEWLINE}DATE: March 15th, 2460{NEWLINE}SOURCE: {NEWLINE}{NEWLINE}"
+  STR_SECRETDIALOGUE1: "PRIVATE: Proof of Battlefield Blossoms"
+  STR_SECRETDIALOGUE1_UP: "{NEWLINE}DATE: November 22nd, 2444{NEWLINE}SOURCE: Intercepted Resistance Comms{NEWLINE}{NEWLINE}{ALT}Quiet>{ALT} Had I known you'd be so sentimental about text encryption, I would have sent a letter. It's nice to finally meet you, Agent Gamma.{NEWLINE}{ALT}Dusk>{ALT} Is that what you've been calling me? How delightfully straightfoward. My side has been calling you Human-Task-Mellow-Orange.{NEWLINE}{ALT}Quiet>{ALT} I do hope that's not how you think of me. In my personal estimation, I'd rank at least above pineapple.{NEWLINE}{ALT}Dusk>{ALT} I think the random generator chose well, oranges are quite delicious. Finding one is always a pleasant surprise. I can only hope to eat more, bite by beautiful bite."
 #operations
   STR_PRIMARY_OPERATIONS: "Primary Operations"
   STR_PRIMARY_OPERATIONS_UP: "{NEWLINE}RELEVANT GCIC SUBSIDIARIES...{NEWLINE}{NEWLINE}GCIC LIFE: Payouts{NEWLINE}GCIC HEALTH: Treatment{NEWLINE}GCIC TRAUMA: Rescue{NEWLINE}{NEWLINE}Clients purchase insurance policies, conditional contracts which prompt corporate action. Ours is a new enterprise under the TRAUMA label. We respond to medical alerts which are too dangerous for paramedics, sent by customers who have not subscribed to more premium packages.{NEWLINE}{NEWLINE}Failure to {ALT}rescue clients{ALT} puts us in breach of contract and may lead lost revenue."
@@ -1332,7 +1347,7 @@ en-US:
   STR_GCIC_DRONE_DEEP_ARMOR_NORECOVER: "DURAWEAR/NW"
   STR_GCICVEST_DRONE_SHARK_ARMOR_NORECOVER: "DURA-VEST/SH"
   STR_GCIC_DRONE_ARMOR_UP: "{NEWLINE}GCIC-brand combat drone PPE, drastically increases survivability when faced against the unlicensed weaponskit and works better than placebo versus milspec weapons, explosions, and plasma damage.{NEWLINE}{NEWLINE}> TU/Stamina: +5{NEWLINE}> Health/Reactions: +5{NEWLINE}{NEWLINE}> Armor: 12, 75%{NEWLINE}> Dodge: +30%, +10% Melee{NEWLINE}{NEWLINE}CHEMICAL/INCENDIARY: 85%{NEWLINE}CONCUSSIVE/SONIC: 95%{NEWLINE}SMOKE: 400%"
-  STR_GCICVEST_DRONE_ARMOR_UP: "{NEWLINE}Duraware outfitted with security rated hardtread vest. Offers less protection than contemporary materials, but recycling rebates make replacement prints nearly free.{NEWLINE}{NEWLINE}> Health: +5{NEWLINE}> TU/Stamina: -5{NEWLINE}{NEWLINE}> Armor: 18, 75%; Weight: 8{NEWLINE}> Dodge: +10%, +10% Melee{NEWLINE}{NEWLINE}KINETIC/RADIANT: 70%{NEWLINE}CHEMICAL/INCENDIARY: 85%{NEWLINE}CONCUSSIVE/SONIC: 95%{NEWLINE}SMOKE: 400%"
+  STR_GCICVEST_DRONE_ARMOR_UP: "{NEWLINE}Duraware outfitted with security rated hardthread vest. Offers less protection than contemporary materials, but recycling rebates make replacement prints nearly free.{NEWLINE}{NEWLINE}> Health: +5{NEWLINE}> TU/Stamina: -5{NEWLINE}{NEWLINE}> Armor: 18, 75%; Weight: 8{NEWLINE}> Dodge: +10%, +10% Melee{NEWLINE}{NEWLINE}KINETIC/RADIANT: 70%{NEWLINE}CHEMICAL/INCENDIARY: 85%{NEWLINE}CONCUSSIVE/SONIC: 95%{NEWLINE}SMOKE: 400%"
   STR_DURA_DRONE_HYBRID_ARMOR: "DURA-OPS/HY"
   STR_DURA_DRONE_HUMAN_ARMOR: "DURA-OPS/HU"
   STR_DURA_DRONE_SHARK_ARMOR: "DURA-OPS/SH"
@@ -1515,8 +1530,8 @@ en-US:
   STR_BARREL_MOTAR_UP: "A repuposed steel tube that throws explosions up to 200m away, accurate enough to hit the broad side of a barn. The traditional payload is a welding cylinder packed with compowder and metallic scrap. Works best when a dozen are launched simultaniously.{NEWLINE}{NEWLINE}Kneeling Accuracy: +100%; Stun: +50%"
   STR_BARREL_MOTAR_AMMO: "Explosive Barrel Shell"
   STR_BARREL_MOTAR_PHXAMMO: "PHX Barrel Shell"
-  STR_WINDLASS_LAUNCHER: "HRA Windlass Launcher" #historical re-enactment society
-  STR_WINDLASS_LAUNCHER_UP: "First used in 1915, this World War I era catapult is handcrafted from non-engineered pine and traditionally forged pig iron. A splendid way to launch hand grenades from the bottom of the trenches to the top of your mantlepiece.{NEWLINE}{NEWLINE}As with all genuine articles from The Historical Re-Enactment Society, The Windlass comes stamped with a certificate of authenticity."
+  STR_WINDLASS_LAUNCHER: "HRA Windlass Launcher" #historical re-enactment association
+  STR_WINDLASS_LAUNCHER_UP: "First used in 1915, this World War I era catapult is handcrafted from non-engineered pine and traditionally forged pig iron. A splendid way to launch hand grenades from the bottom of the trenches to the top of your mantlepiece.{NEWLINE}{NEWLINE}As with all genuine articles from The Historical Re-Enactment Association, The Windlass comes stamped with a certificate of authenticity."
   STR_WINDLASS_LAUNCHER_AMMO: "Tinybomb Cluster Clip"
   STR_WINDLASS_LAUNCHER_AMMO_FAKE: "Tinybomb Cluster Clip [info]"
   STR_WINDLASS_GRENADE_NO_RECOVER: "Tinybomb"
@@ -1530,6 +1545,8 @@ en-US:
   STR_PIPEBOMB_UP: "{NEWLINE}Compowder packed in a scrap metal pipe. As simple to operate as it is to make, this type of IED is older than the space-age. Remains popular among hobbyists and firebrands despite reliability issues."
   STR_PHXBOMB: "PHX Bomb"
   STR_PHXBOMB_UP: "{NEWLINE}Unstable high-explosive contained in a fragmenting casing. It sacrifices the armor-piercing capabilities PHX is known for to create a dead simple area-of-effect grenade.{NEWLINE}{NEWLINE}Do not shake before throwing."
+  STR_PHXDEMO: "PHX Demolotion Charge"
+  STR_PHXDEMO_UP: "{NEWLINE}aaaaa{NEWLINE}{NEWLINE}bbbbb"
   STR_ELERIUM_BOMB: "Elerium Bomb"
   STR_ELERIUM_BOMB_UP: "{NEWLINE}The most inefficent use of an elerium core yet discovered. A compromised case with a simple timer circuit snapped onto the side. One click, one sub-critcal explosion.{NEWLINE}{NEWLINE}Without the tools to process raw elerium, these bombs cannot be safely disassembled."
 # sporting
@@ -1714,7 +1731,7 @@ en-US:
   STR_HITTER_PUBLIC: "Ironeyes Hitter"
   STR_HITTER_PRIVATE: "Ironeyes Hitter"
   STR_HITTERS: "Hitters"
-  STR_HITTERS_UP: "Career oriented assassin, willing to work with anyone who understands the value of discretion. Anyone who survives their business long enough tends to be professional, polite, and paranoid. Most pay their taxes, none declare their real job title.{NEWLINE}{NEWLINE}When donned in combat gear, their objective is clear and almost certainly at odds with our own.{NEWLINE}{NEWLINE}PROCESSED: Milspec Cyberware, Nanoweave, Aqua-Plastics{NEWLINE}{NEWLINE}RISK CLASS: Security"
+  STR_HITTERS_UP: "Career driven assassin, willing to work with anyone who understands the value of discretion. Anyone who survives their business long enough tends to be professional, polite, and paranoid. Most pay their taxes, none declare their real job title.{NEWLINE}{NEWLINE}When donned in combat gear, their objective is clear and almost certainly at odds with our own.{NEWLINE}{NEWLINE}PROCESSED: Milspec Cyberware, Nanoweave, Aqua-Plastics{NEWLINE}{NEWLINE}RISK CLASS: Security"
   STR_HITTER_ARMOR: "Hitter Analysis"
   STR_HITTER_INTERVIEW: "INTERVIEW: Ironeyes Hitter"
   STR_HITTER_INTERVIEW_T: "I/Hitter"
@@ -1759,6 +1776,13 @@ en-US:
   STR_SSPOFFICER_INTERVIEW: "INTERVIEW: SSP Officer"
   STR_SSPOFFICER_INTERVIEW_T: "I/SSP Officer"
   STR_SSPOFFICER_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'Secure Systems and Procurement officer, badge ID 89-B7-MMCQ. Do you have a warrant for this arrest?'{NEWLINE}{NEWLINE}[...]{NEWLINE}'...Did you just climb out of the vat!? They're legal contracts that pay you to you put people in cells, just like this.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'I know a shakedown when I see one. Fine! I'll send you my keys and even throw in the rental. The soup isn't going to be happy, but that's your problem now.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 35 Liquidity"
+  STR_SSPSUPERVISOR_PRIVATE: "SSP Supervisor"
+  STR_SSPSUPERVISORS: "SSP Supervisors"
+  STR_SSPSUPERVISORS_UP: "aaaa{NEWLINE}{NEWLINE}bbbbb{NEWLINE}{NEWLINE}PROCESSED: Medical Cyberware, Aqua-Plastics{NEWLINE}{NEWLINE}RISK CLASS: Security"
+  STR_SSPSUPERVISOR_ARMOR: "SSP Supervisor Analysis"
+  STR_SSPSUPERVISOR_INTERVIEW: "INTERVIEW: SSP Supervisor"
+  STR_SSPSUPERVISOR_INTERVIEW_T: "I/SSP Supervisor"
+  STR_SSPSUPERVISOR_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'aaaa'{NEWLINE}{NEWLINE}[...]{NEWLINE}'bbbb'{NEWLINE}{NEWLINE}[...]{NEWLINE}'cccc'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 45 Liquidity"
 
   STR_ANIMALS: "ANIMALS"
   STR_CHRYSSALID: "Chryssalid"
@@ -2202,6 +2226,7 @@ en-US:
 # ssp
   STR_TRG_SG_PREQ: "(guard neutralized)"
   STR_TRG_SO_PREQ: "(officer neutralized)"
+  STR_TRG_SSUP_PREQ: "(supervisor neutralized)"
 # animals
   STR_TRG_CR_PREQ: "(chryssalid exchanged)"
   STR_TRG_MS_PREQ: "(muckstar exchanged)"

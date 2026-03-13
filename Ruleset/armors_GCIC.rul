@@ -1353,6 +1353,33 @@ armors:
       energy: *EnergyRecoveryPoor
     overKill: 1.5
     loftempsSet: [ 3 ]
+
+  - type: STR_SSPSUPERVISOR_ARMOR
+    ufopediaType: STR_SSPOFFICER_ARMOR
+    spriteInv: SSPOFFICER.SPK
+    spriteSheet: SSPOFFICER.PCK
+    spriteFaceGroup: 11
+    spriteFaceColor: *SpriteFaceColorShark
+    forcedTorso: 1
+    corpseBattle:
+      - STR_SSPSUPERVISOR_CORPSE
+    allowsKneeling: true
+    personalLight: 10
+    heatVision: 20
+    weight: 6
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 15
+    damageModifier: *OrganicAquavestResists
+    meleeDodge: *MeleeDodgePoor
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryHumanPoor
+    overKill: 1.5
+    loftempsSet: [ 3 ]
 # animals
   - type: STR_CHRYSSALID_ARMOR
     spriteInv: CHRYSSALID.SPK

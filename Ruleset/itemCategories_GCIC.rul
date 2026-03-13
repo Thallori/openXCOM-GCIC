@@ -54,7 +54,6 @@
     listOrder: 390
   - type: STR_UNLICENSED_CATEGORY
     listOrder: 395
-    hidden: true
   - type: STR_SECURITY_CATEGORY
     listOrder: 400
   - type: STR_MILITARY_CATEGORY

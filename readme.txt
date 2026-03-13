@@ -64,6 +64,10 @@ Community Map Pack			[mod]
   Map Sprites				[none+touchup]		(ufo+tftd)
   Globe Textures			[none+touchup]		(ufo)
 
+XCOM Terrain Pack			[mod]
+ Hobbes					[author]
+  Dawn City terrain tiles		[none+touch up]		(ufo2000+Nachtwolf)
+
 X-Com Files/Final Mod Pack		[mod]
  Solarius Scorch			[project lead]
  Meridian
@@ -163,9 +167,39 @@ Xenonauts				[game]
   Shield				[remix]			(original)
 
 Art/Backgrounds
- Dontknowwhattodraw94
+ Gong Studios				[group]
+  Cyberfeeder				[touchup]
+  (main background) https://boardgamegeek.com/thread/1373410/art-of-gong-studios
+ Dontknowwhattodraw94			[artist]
   The night I saw Them			[recolour]		(original)
-  https://www.deviantart.com/dontknowwhattodraw94/art/The-night-I-saw-Them-712700535
+  (hidden movement) https://www.deviantart.com/dontknowwhattodraw94/art/The-night-I-saw-Them-712700535
+ dgbaumgart				[artist]
+  Hangar				[contrast]
+  (craft) https://fractalsoftworks.com/2013/02/05/painting-the-hound-and-the-hangar/#more-1683
+ ZhangXiaoyue				[artist]
+  Project SCIFI factory			[contrast]
+  (manufacturing) https://www.therookies.co/entries/6216
+ Neil Gowland				[artist]
+  Sci-Fi Server Room			[contrast]
+  (research) https://grimmsorg.artstation.com/projects/q91e
+ KypcaHT				[artist]
+  Suit Room				[contrast]
+  (equip) https://kypcaht.deviantart.com/art/Suit-Room-609708692
+ Adam Baines				[artist]
+  Elevators				[contrast]
+  (briefing) https://adambaines.blogspot.com/2011/07/elevators.html
+ Warner Bros. Pictures			[group]
+  Blade Runner spinner			[contrast]
+  (ufo/interception)
+ Metro-Goldwyn-Mayer			[group]
+  Soylent Green conveyer		[contrast]
+  (displaced)
+ Adobe					[group]
+  Stock Market				[contrast]
+  (buy/sell/sack) https://stock.adobe.com/ca/search?k=trading&asset_id=184912716
+ Unknown
+  Nearly all -pedia tech pics are the result of doing a google image search, saving dozens of files, then going back through them later. As such, most of the original sources be they stock images or illustrations have be lost due to the author's incompetence. With apologies.
+
 
 Inspiration comes from many sources, too many to list. Ranging from decades old fan fiction to scientific journals. However, the ideas taken from the OpenXCom community are listed here.
 
@@ -261,6 +295,7 @@ thallori
 
  map tiles
   purple studio cameras
+  vault ramp into raised block with glowing lines
 
 Esven
  map tiles
