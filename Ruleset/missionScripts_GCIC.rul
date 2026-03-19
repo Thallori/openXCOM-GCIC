@@ -633,7 +633,8 @@ missionScripts:
     startDelay: 30
     randomDelay: 43170
   - type: GCIC1b
-    # researchTriggers:
+    researchTriggers:
+      STR_GCIC_TRADE_SECRETS_MISSIONS: false
     #   STR_GCIC_INDEPENDENCE: false
     firstMonth: 1
     executionOdds: 25
@@ -671,8 +672,21 @@ missionScripts:
   - type: GCIC2b
     researchTriggers:
       STR_GCIC_BACKCHANNEL_MISSIONS: true
+      STR_GCIC_TRADE_SECRETS_MISSIONS: false
       # STR_GCIC_INDEPENDENCE: false
-    executionOdds: 30
+    executionOdds: 46
+    missionWeights:
+      0:
+        STR_GCIC_SABOTAGE_2: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 35
+    randomDelay: 43170
+  - type: GCIC2c
+    researchTriggers:
+      STR_GCIC_BACKCHANNEL_MISSIONS: true
+      # STR_GCIC_INDEPENDENCE: false
+    executionOdds: 25
     missionWeights:
       0:
         STR_GCIC_SABOTAGE_2: 100
@@ -680,14 +694,32 @@ missionScripts:
     useTable: false
     startDelay: 30
     randomDelay: 43170
-  - type: GCIC2c
+
+  - type: GCIC3first
     researchTriggers:
-      STR_GCIC_BACKCHANNEL_MISSIONS: true
+      STR_GCIC_TRADE_SECRETS_MISSIONS: true
       # STR_GCIC_INDEPENDENCE: false
-    executionOdds: 11
+    missionVarName: STR_GCIC_SABOTAGE_3
+    label: 2
+    varName: var_tradesecrets
+    maxRuns: 1
     missionWeights:
       0:
-        STR_GCIC_SABOTAGE_2: 100
+        STR_GCIC_SABOTAGE_3: 100
+    regionWeights: *PopDenseNoDesert
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: GCIC3a
+    researchTriggers:
+      STR_GCIC_TRADE_SECRETS_MISSIONS: true
+      # STR_GCIC_INDEPENDENCE: false
+    missionVarName: STR_GCIC_SABOTAGE_3
+    conditionals: [-2]
+    executionOdds: 70
+    missionWeights:
+      0:
+        STR_GCIC_SABOTAGE_3: 100
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30

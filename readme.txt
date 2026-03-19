@@ -157,6 +157,12 @@ Hardmode Expansion			[mod]
  hellrazor				[author]
   Sniper Rifle SFX			[none]			(oshiaki2115)
 
+40K					[mod]
+ bulletdesigner				[project lead]
+ ohartenstein23
+ Ryskeliini
+  Turret sprites			[remix]
+
 Kenny.nl				[site]
  SFX Set				[pack]
   Switch29				[none]			(original)

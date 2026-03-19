@@ -38,13 +38,31 @@ manufacture:
   - name: STR_GCIC_SABOTAGE_2_MANU2
     category: STR_TASKS_MANUCAT
     requires:
-      - STR_GCIC_BACKCHANNEL_MISSIONS
       - STR_GCIC_SABOTAGE_2_DATA_DECRYPT
     time: 1
     requiredItems:
       STR_GCIC_SABOTAGE_2_DATA_DECRYPT: 1
     producedItems:
       STR_SHARES_GCIC: 8
+
+  - name: STR_GCIC_SABOTAGE_3_MANU
+    category: STR_TASKS_MANUCAT
+    requires:
+      - STR_GCIC_TRADE_SECRETS_MISSIONS
+    time: 1
+    requiredItems:
+      STR_GCIC_SABOTAGE_3_DATA: 1
+    producedItems:
+      STR_SHARES_GCIC: 14
+  - name: STR_GCIC_SABOTAGE_3_MANU2
+    category: STR_TASKS_MANUCAT
+    requires:
+      - STR_GCIC_SABOTAGE_3_DATA_DECRYPT
+    time: 1
+    requiredItems:
+      STR_GCIC_SABOTAGE_3_DATA_DECRYPT: 1
+    producedItems:
+      STR_SHARES_GCIC: 14
 #projects
   - name: STR_RRM_ITEM
     category: STR_PROJECTS_MANUCAT
@@ -59,7 +77,6 @@ manufacture:
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_FTM_LOCK
-      - STR_TODO
     time: 1
     requiredItems:
       STR_BRAND_LOYALTY: 8
@@ -104,9 +121,9 @@ manufacture:
     requires:
       - STR_PTS_LOCK
     time: 1
-    cost: -270000
+    cost: -150000
     requiredItems:
-      STR_SHARES_GCIC: 45
+      STR_SHARES_GCIC: 25
     producedItems:
       STR_PTS_ITEM: 1
 
@@ -306,6 +323,17 @@ manufacture:
     cost: 80
     refund: true
 
+  - name: STR_ALIEN_PLASMA_PISTOL_CLIP
+    category: STR_AMMO_MANUCAT
+    requires:
+      - STR_PLASMA_AMMO_CONVERSION
+      - STR_ALIEN_PLASMA_PISTOL
+    time: 48
+    cost: 2000
+    refund: true
+    requiredItems:
+      STR_ELERIUM_CORE: 1
+
   - name: STR_GCIC_PROTOTYPE_LASER_PISTOL
     category: STR_EQUIPMENT_MANUCAT
     requiresBaseFunc:
@@ -381,6 +409,46 @@ manufacture:
       - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_SNIPER
+      - STR_SSPAMMO_MANULOCK
+    time: 4
+    cost: 120
+    refund: true
+
+  - name: STR_GCIC_PROTOTYPE_LASER_MG
+    category: STR_EQUIPMENT_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_MG
+    time: 800
+    cost: 80000
+    refund: true
+  - name: STR_GCIC_PROTOTYPE_LASER_MG_AMMO1
+    category: STR_AMMO_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_MG
+      - STR_SSPAMMO_MANULOCK
+    time: 4
+    cost: 120
+    refund: true
+
+  - name: STR_GCIC_PROTOTYPE_LASER_CANNON
+    category: STR_EQUIPMENT_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_CANNON
+    time: 800
+    cost: 80000
+    refund: true
+  - name: STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO1
+    category: STR_AMMO_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_CANNON
       - STR_SSPAMMO_MANULOCK
     time: 4
     cost: 120
@@ -474,6 +542,18 @@ manufacture:
       STR_PHX_WARHEAD: 1
     producedItems:
       STR_PHXBOMB: 3
+  - name: STR_PHXDEMO_MANU
+    category: STR_EQUIPMENT_MANUCAT
+    requires:
+      - STR_PHXDEMO
+      - STR_IRONEYES_MANULOCK2
+    time: 12
+    cost: 750
+    refund: true
+    requiredItems:
+      STR_PHX_WARHEAD: 1
+    producedItems:
+      STR_PHXDEMO: 2
 
   - name: STR_ELERIUM_BOMB
     category: STR_EQUIPMENT_MANUCAT
@@ -521,7 +601,6 @@ manufacture:
   - name: STR_GCIC_DRONE_ARMOR
     category: STR_ARMORS_MANUCAT
     requires:
-      - STR_DURATHREAD
       - STR_GCIC_DRONE_ARMOR_RESEARCH
     time: 150
     cost: 400
@@ -533,20 +612,30 @@ manufacture:
     requiresBaseFunc:
       - STR_SERVICE_PRINTING
     requires:
-      - STR_PLASTICS
-      - STR_AQUAVEST_DRONE_ARMOR
+      - STR_AQUAVEST_DRONE_ARMOR_RESEARCH
     time: 1000
     cost: 2000
     refund: true
     requiredItems:
       STR_PLASTICS: 2
 #resources
+  - name: STR_DURATHREAD
+    category: STR_RESOURCES_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_PRINTING
+    requires:
+      - STR_DURATHREAD
+      - STR_BIOMASS
+    time: 75
+    cost: 100
+    refund: true
+    requiredItems:
+      STR_BIOMASS: 1
   - name: STR_PLASTICS
     category: STR_RESOURCES_MANUCAT
     requiresBaseFunc:
       - STR_SERVICE_PRINTING
     requires:
-      - STR_REDOX
       - STR_PLASTICS
       - STR_BIOMASS
     time: 500
@@ -616,6 +705,30 @@ manufacture:
       STR_ELERIUM_CORE: 2
     producedItems:
       STR_GCIC_PROTOTYPE_LASER_SNIPER_ELERIUM: 1
+  - name: STR_GCIC_PROTOTYPE_LASER_MG_MANU
+    category: STR_UPGRADES_MANUCAT
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_MG
+      - STR_ELERIUM_CORE
+    time: 12
+    refund: true
+    requiredItems:
+      STR_GCIC_PROTOTYPE_LASER_MG: 1
+      STR_ELERIUM_CORE: 3
+    producedItems:
+      STR_GCIC_PROTOTYPE_LASER_MG_ELERIUM: 1
+  - name: STR_GCIC_PROTOTYPE_LASER_CANNON_MANU
+    category: STR_UPGRADES_MANUCAT
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_CANNON
+      - STR_ELERIUM_CORE
+    time: 12
+    refund: true
+    requiredItems:
+      STR_GCIC_PROTOTYPE_LASER_CANNON: 1
+      STR_ELERIUM_CORE: 3
+    producedItems:
+      STR_GCIC_PROTOTYPE_LASER_CANNON_ELERIUM: 1
 #expansions
   - name: STR_SCIENTIST_MANU
     category: STR_EXPANSION_MANUCAT
@@ -830,6 +943,15 @@ manufacture:
       STR_GCIC_SABOTAGE_2_DATA: 1
     producedItems:
       STR_GCIC_SABOTAGE_2_DATA_DECRYPT: 1
+  - name: STR_GCIC_SABOTAGE_3_CRACK_MANU
+    category: STR_CRACKING_MANUCAT
+    requires:
+      - STR_GCIC_TRADE_SECRETS_MISSIONS
+    time: 800
+    requiredItems:
+      STR_GCIC_SABOTAGE_3_DATA: 1
+    producedItems:
+      STR_GCIC_SABOTAGE_3_DATA_DECRYPT: 1
 #extortions
   - name: STR_EX_BOOSTER
     category: STR_EXTORT_MANUCAT
@@ -1007,7 +1129,7 @@ manufacture:
     refund: true
     requiredItems:
       STR_XN_CONTAINER_1: 1
-    producedItems: {STR_DURA_DRONE_ARMOR: 1, STR_XN_LASER_PISTOL: 1}
+    producedItems: {STR_DURA_DRONE_ARMOR: 1, STR_DURATHREAD: 1, STR_XN_LASER_PISTOL: 1}
     randomProducedItems:
       - [1, {STR_XN_LASER_SMG: 1}]
       - [1, {STR_XN_LASER_RIFLE: 1}]
@@ -1142,3 +1264,25 @@ manufacture:
     producedItems:
       STR_GCIC_PROTOTYPE_LASER_SNIPER: 1
       STR_ELERIUM_CORE: 2
+  - name: STR_GCIC_PROTOTYPE_LASER_MG_ELERIUM
+    category: STR_SALVAGE_MANUCAT
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_MG
+    time: 12
+    refund: true
+    requiredItems:
+      STR_GCIC_PROTOTYPE_LASER_MG_ELERIUM: 1
+    producedItems:
+      STR_GCIC_PROTOTYPE_LASER_MG: 1
+      STR_ELERIUM_CORE: 3
+  - name: STR_GCIC_PROTOTYPE_LASER_CANNON_ELERIUM
+    category: STR_SALVAGE_MANUCAT
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_CANNON
+    time: 12
+    refund: true
+    requiredItems:
+      STR_GCIC_PROTOTYPE_LASER_CANNON_ELERIUM: 1
+    producedItems:
+      STR_GCIC_PROTOTYPE_LASER_CANNON: 1
+      STR_ELERIUM_CORE: 3

@@ -205,7 +205,43 @@ interfaces:
     backgroundImage: BACK04.SCR
   - type: soldierArmor
     backgroundImage: BACK04.SCR
+  - delete: soldierMemorial
+  - type: soldierMemorial
+    backgroundImage: BACK02.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 7     # violet
+      - id: window
+        color: 218   # blue
+      - id: text
+        color: 218   # blue
+        color2: 208  # white
+      - id: list
+        color: 246   # purple
+        color2: 218  # blue
+        border: 218  # blue
+      - id: button
+        color: 218   # blue
 
+  - delete: commendationsLate
+  - type: commendationsLate
+    backgroundImage: BACK02.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 7     # violet
+      - id: window
+        color: 218   # blue
+      - id: text
+        color: 218   # blue
+        color2: 208  # white
+      - id: list
+        color: 246   # purple
+        color2: 218  # blue
+        border: 218  # blue
+      - id: button
+        color: 218   # blue
   - type: promotions
     backgroundImage: BACK04.SCR
   - type: psiTraining

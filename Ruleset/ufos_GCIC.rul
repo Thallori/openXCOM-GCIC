@@ -35,7 +35,6 @@ ufoTrajectories:
       - [3, 1, 80]
       - [2, 1, 80]
       - [3, 1, 40]
-
 #alloy armor: 20
 #plastic armor: 5
 ufos:
@@ -473,24 +472,59 @@ ufos:
           items:
             STR_GCIC_SABOTAGE_3_DATA:
               - [8, 7, 0]
+            STR_SPAWN_TURRET_AP:
+              - [10, 9, 0]
+          fuseTimers:
+            STR_SPAWN_TURRET_AP: [0, 0]
           randomizedItems:
             - position: [7, 7, 0]
-              amount: 1
+              amount: 2
               mixed: true
-              itemList: &vaultCommon [STR_CRYPTOCHIT1, STR_CRYPTOCHIT2, STR_PERSONAL_DATA_VAULT, STR_SECRET_DATA_VAULT, STR_MILITARY_CYBERNETICS_VAULT]
+              itemList: &vaultCommon [STR_CRYPTOCHIT1, STR_CRYPTOCHIT1, STR_CRYPTOCHIT2, STR_CRYPTOCHIT2, STR_PERSONAL_DATA_VAULT, STR_SECRET_DATA_VAULT, STR_SECRET_DATA_VAULT, STR_MILITARY_CYBERNETICS_VAULT]
             - position: [9, 7, 0]
-              amount: 1
+              amount: 2
               mixed: true
               itemList: *vaultCommon
             - position: [7, 12, 0]
-              amount: 1
+              amount: 2
               mixed: true
               itemList: *vaultCommon
             - position: [9, 12, 0]
-              amount: 1
+              amount: 2
               mixed: true
               itemList: *vaultCommon
             - position: [8, 12, 0]
-              amount: 1
+              amount: 2
               mixed: true
-              itemList: [STR_ELERIUM_VAULT, STR_PLASMA_PISTOL_VAULT, STR_CHRYSSALID_EGG_VAULT]
+              itemList: &vaultRare [STR_ELERIUM_VAULT, STR_PLASMA_PISTOL_VAULT, STR_PLASMA_PISTOL_VAULT, STR_CHRYSSALID_EGG_VAULT, STR_CHRYSSALID_EGG_VAULT]
+        - name: SABOTAGE_VAULT2
+          width: 20
+          length: 20
+          items:
+            STR_GCIC_SABOTAGE_3_DATA:
+              - [7, 6, 0]
+            STR_SPAWN_TURRET_AP:
+              - [10, 3, 0]
+          fuseTimers:
+            STR_SPAWN_TURRET_AP: [0, 0]
+          randomizedItems:
+            - position: [7, 5, 0]
+              amount: 2
+              mixed: true
+              itemList: *vaultCommon
+            - position: [7, 7, 0]
+              amount: 2
+              mixed: true
+              itemList: *vaultCommon
+            - position: [12, 5, 0]
+              amount: 2
+              mixed: true
+              itemList: *vaultCommon
+            - position: [12, 7, 0]
+              amount: 2
+              mixed: true
+              itemList: *vaultCommon
+            - position: [12, 6, 0]
+              amount: 2
+              mixed: true
+              itemList: *vaultRare

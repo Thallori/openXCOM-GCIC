@@ -517,6 +517,7 @@ items:
     power: 20
     damageAlter:
       FireThreshold: 15
+      ArmorEffectiveness: 0.5
       ToStun: 0.75
     accuracySnap: 50
     accuracyAimed: 100
@@ -526,17 +527,48 @@ items:
     fixedWeapon: true
     recover: false
 
+  - type: STR_TURRET_AP_WEAPON
+    categories: [STR_BUILT_INS_CATEGORY]
+    bigSprite: 256
+    bulletSprite: 16
+    bulletSpeed: 15
+    fireSound: 124
+    hitSound: 13
+    hitAnimation: -1
+    invWidth: 2
+    invHeight: 3
+    battleType: 1
+    weight: 0
+    confSnap:
+      shots: 2
+      shortName: STR_SNAP_MULTIPLE_SHORT
+    confAuto:
+      shots: 6
+    accuracySnap: 70
+    accuracyAuto: 40
+    tuSnap: 45
+    tuAuto: 60
+    snapRange: 20
+    autoRange: 12
+    sprayWaypoints: 2
+    dropoff: 3
+    clipSize: 80
+    power: 25
+    damageType: 1
+    fixedWeapon: true
+    recover: false
+
   - type: STR_HOLOMUTON_WEAPON
     categories: [STR_BUILT_INS_CATEGORY]
     bigSprite: 223
     handSprite: 480
-    bulletSprite: 8
+    bulletSprite: 27
     fireSound: 18
     hitSound: 133
     hitAnimation: 46
-    vaporColorSurface: 4
-    vaporDensitySurface: 6
-    vaporProbabilitySurface: 18
+    vaporColorSurface: 6
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 20
     invWidth: 1
     invHeight: 3
     battleType: 1
@@ -575,12 +607,12 @@ items:
     categories: [STR_BUILT_INS_CATEGORY]
     bigSprite: 196
     handSprite: 424
-    bulletSprite: 8
+    bulletSprite: 27
     fireSound: 132
     hitSound: 133
     hitAnimation: 46
-    vaporColorSurface: 4
-    vaporDensitySurface: 6
+    vaporColorSurface: 6
+    vaporDensitySurface: 1
     vaporProbabilitySurface: 20
     invWidth: 1
     invHeight: 2
@@ -602,7 +634,7 @@ items:
     accuracyMultiplier:
       firing: 1.0
       flatHundred: 0.10
-    tuAuto: 30
+    tuAuto: 35
     tuSnap: 30
     tuAimed: 60
     autoRange: 8
@@ -610,7 +642,7 @@ items:
     aimRange: 20
     dropoff: 3
     kneelBonus: 110
-    weight: 7
+    weight: 8
     fixedWeapon: true
     fixedWeaponShow: true
     recover: false
@@ -623,8 +655,8 @@ items:
     hitSound: 0
     hitAnimation: 88
     explosionHitSound: 116
-    vaporColorSurface: 5
-    vaporDensitySurface: 2
+    vaporColorSurface: 6
+    vaporDensitySurface: 1
     vaporProbabilitySurface: 50
     invWidth: 2
     invHeight: 2
@@ -1926,7 +1958,7 @@ items:
     size: 0.1
     costBuy: 219999
     costSell: 205000
-    transferTime: 12
+    transferTime: 72
     bigSprite: 107
     floorSprite: 107
     handSprite: 152
@@ -1975,7 +2007,7 @@ items:
     size: 0.1
     costBuy: 239999
     costSell: 210000
-    transferTime: 12
+    transferTime: 72
     bigSprite: 129
     floorSprite: 128
     handSprite: 264
@@ -2033,7 +2065,7 @@ items:
     size: 0.2
     costBuy: 259999
     costSell: 215000
-    transferTime: 12
+    transferTime: 72
     bigSprite: 127
     floorSprite: 126
     handSprite: 248
@@ -2090,7 +2122,7 @@ items:
     size: 0.2
     costBuy: 319999
     costSell: 230000
-    transferTime: 12
+    transferTime: 72
     bigSprite: 130
     floorSprite: 129
     handSprite: 272
@@ -2119,7 +2151,7 @@ items:
     accuracyAimed: 130
     accuracyMultiplier:
       firing: 1.0
-      flatHundred: -0.20
+      flatHundred: -0.10
     tuSnap: 45
     tuAimed: 80
     snapRange: 20
@@ -2146,7 +2178,7 @@ items:
     size: 0.3
     costBuy: 279999
     costSell: 220000
-    transferTime: 12
+    transferTime: 72
     bigSprite: 148
     floorSprite: 144
     handSprite: 312
@@ -2207,7 +2239,7 @@ items:
     size: 0.3
     costBuy: 249999
     costSell: 212500
-    transferTime: 12
+    transferTime: 72
     bigSprite: 132
     floorSprite: 130
     handSprite: 280
@@ -2256,7 +2288,7 @@ items:
     vaporProbabilitySurface: 100
     scripts:
       vaporParticleAmmo: |
-        set particle_lifetime 5;
+        set particle_lifetime 8;
         return;
 
   - type: STR_XN_LASER_SHOTGUN
@@ -2321,7 +2353,7 @@ items:
     size: 0.1
     costBuy: 49999
     costSell: 12500
-    transferTime: 12
+    transferTime: 72
     bigSprite: 219
     floorSprite: 201
     handSprite: 464
@@ -2330,6 +2362,7 @@ items:
     invWidth: 1
     invHeight: 2
     battleType: 3
+    spawnItem: STR_PERSONAL_DATA
     weight: 4
     power: 50
     damageType: 13
@@ -2357,6 +2390,71 @@ items:
     experienceTrainingMode: 26
     attraction: 10
     armor: 50
+#alien
+  - type: STR_ALIEN_PLASMA_PISTOL
+    categories: [STR_INVASION_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_ALIEN_PLASMA_PISTOL
+    transferTime: 72
+    size: 0.1
+    costBuy: 340000
+    costSell: 85000
+    bigSprite: 32
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 8
+    fireSound: 18
+    reloadSound: 125
+    weight: 3
+    battleType: 1
+    compatibleAmmo:
+      - STR_ALIEN_PLASMA_PISTOL_CLIP
+    invWidth: 1
+    invHeight: 2
+    accuracyAuto: 50
+    accuracySnap: 65
+    accuracyAimed: 85
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.10
+    tuAuto: 35
+    tuSnap: 30
+    tuAimed: 60
+    autoRange: 8
+    snapRange: 16
+    aimRange: 20
+    dropoff: 3
+    kneelBonus: 110
+    attraction: 30
+    armor: 120
+  - type: STR_ALIEN_PLASMA_PISTOL_CLIP
+    categories: [STR_INVASION_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_ALIEN_PLASMA_PISTOL
+    transferTime: 72
+    size: 0.1
+    costbuy: 200000
+    costSell: 185000
+    bigSprite: 34
+    floorSprite: 33
+    hitSound: 133
+    hitAnimation: 46
+    vaporColorSurface: 4
+    vaporDensitySurface: 6
+    vaporProbabilitySurface: 20
+    weight: 5
+    battleType: 2
+    clipSize: 25
+    power: 50
+    damageBonus:
+      reactions: 0.05
+    damageType: 5
+    damageAlter:
+      FireThreshold: 25
+      ArmorEffectiveness: 0.50
+      ToStun: 0.75
 # ours
   - type: STR_GCIC_PROTOTYPE_LASER_PISTOL_ELERIUM
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_PISTOLS_CATEGORY, STR_INFILTRATION_CATEGORY]
@@ -2367,7 +2465,7 @@ items:
     size: 0.1
     costBuy: 205000
     costSell: 204000
-    transferTime: 4
+    transferTime: 72
     bigSprite: 230
     floorSprite: 208
     handSprite: 512
@@ -2536,7 +2634,7 @@ items:
     size: 0.1
     costBuy: 406000
     costSell: 404500
-    transferTime: 4
+    transferTime: 72
     bigSprite: 232
     floorSprite: 213
     handSprite: 528
@@ -2557,7 +2655,7 @@ items:
     damageAlter:
       ToWound: 0.025
       RandomWound: false
-      FireThreshold: 45
+      FireThreshold: 40
       ToTile: 0.70
     accuracySnap: 60
     accuracyAuto: 50
@@ -2657,7 +2755,7 @@ items:
     damageAlter:
       ToWound: 0.025
       RandomWound: false
-      FireThreshold: 45
+      FireThreshold: 40
       ToTile: 0.70
     vaporColorSurface: 2
     vaporDensitySurface: 2
@@ -2690,7 +2788,7 @@ items:
     damageAlter:
       ToWound: 0.025
       RandomWound: false
-      FireThreshold: 45
+      FireThreshold: 40
       ToTile: 0.70
     vaporColorSurface: 2
     vaporDensitySurface: 2
@@ -2717,7 +2815,7 @@ items:
     size: 0.2
     costBuy: 408000
     costSell: 406000
-    transferTime: 4
+    transferTime: 72
     bigSprite: 228
     floorSprite: 207
     handSprite: 504
@@ -2739,7 +2837,7 @@ items:
       ArmorEffectiveness: 0.90
       ToWound: 0.025
       RandomWound: false
-      FireThreshold: 75
+      FireThreshold: 50
       ToTile: 0.65
     accuracySnap: 70
     accuracyAimed: 110
@@ -2830,7 +2928,7 @@ items:
       ArmorEffectiveness: 0.90
       ToWound: 0.025
       RandomWound: false
-      FireThreshold: 75
+      FireThreshold: 50
       ToTile: 0.65
     vaporColorSurface: 2
     vaporDensitySurface: 2
@@ -2864,7 +2962,7 @@ items:
       ArmorEffectiveness: 0.90
       ToWound: 0.025
       RandomWound: false
-      FireThreshold: 65
+      FireThreshold: 50
       ToTile: 0.65
     vaporColorSurface: 2
     vaporDensitySurface: 2
@@ -2891,10 +2989,10 @@ items:
     size: 0.2
     costBuy: 465000
     costSell: 448000
-    transferTime: 4
+    transferTime: 72
     bigSprite: 236
     floorSprite: 219
-    handSprite: 552
+    handSprite: 544
     fireSound: 123
     bulletSprite: 13
     bulletSpeed: 30
@@ -2914,13 +3012,13 @@ items:
       ArmorEffectiveness: 0.80
       ToWound: 0.025
       RandomWound: false
-      FireThreshold: 60
+      FireThreshold: 50
       ToTile: 0.65
     accuracySnap: 90
     accuracyAimed: 140
     accuracyMultiplier:
       firing: 1.0
-      flatHundred: -0.20
+      flatHundred: -0.10
     tuSnap: 45
     tuAimed: 85
     snapRange: 25
@@ -2950,7 +3048,7 @@ items:
     transferTime: 4
     bigSprite: 237
     floorSprite: 220
-    handSprite: 544
+    handSprite: 552
     bulletSprite: 13
     bulletSpeed: 30
     fireSound: 123
@@ -2966,7 +3064,7 @@ items:
     accuracyAimed: 140
     accuracyMultiplier:
       firing: 1.0
-      flatHundred: -0.20
+      flatHundred: -0.10
     tuSnap: 45
     tuAimed: 85
     snapRange: 25
@@ -2992,14 +3090,14 @@ items:
     clipSize: 4
     power: 32
     damageBonus:
-      firing: 0.20
+      firing: 0.25
     damageType: 4
     damageAlter:
       RandomType: 7
       ArmorEffectiveness: 0.80
       ToWound: 0.025
       RandomWound: false
-      FireThreshold: 60
+      FireThreshold: 50
       ToTile: 0.65
     vaporColorSurface: 2
     vaporDensitySurface: 2
@@ -3027,14 +3125,14 @@ items:
     clipSize: 10
     power: 35
     damageBonus:
-      firing: 0.20
+      firing: 0.25
     damageType: 4
     damageAlter:
       RandomType: 7
       ArmorEffectiveness: 0.80
       ToWound: 0.025
       RandomWound: false
-      FireThreshold: 65
+      FireThreshold: 50
       ToTile: 0.65
     vaporColorSurface: 2
     vaporDensitySurface: 2
@@ -3053,7 +3151,7 @@ items:
     size: 0.3
     costBuy: 632000
     costSell: 624000
-    transferTime: 4
+    transferTime: 72
     bigSprite: 900
     floorSprite: 900
     handSprite: 900
@@ -3065,15 +3163,15 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 1
-    weight: 32
-    power: 35
+    weight: 28
+    power: 30
     damageBonus:
       strength: 0.1
     damageType: 4
     damageAlter:
       ToWound: 0.025
       RandomWound: false
-      FireThreshold: 80
+      FireThreshold: 40
       ToTile: 0.65
     clipSize: -1
     confSnap:
@@ -3089,9 +3187,9 @@ items:
       strength: 0.5
       flatHundred: 0.10
     tuSnap: 45
-    tuAuto: 75
-    snapRange: 18
-    autoRange: 12
+    tuAuto: 90
+    snapRange: 22
+    autoRange: 16
     dropoff: 2
     kneelBonus: 150
     twoHanded: true
@@ -3125,7 +3223,7 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 1
-    weight: 27
+    weight: 23
     compatibleAmmo:
       - STR_GCIC_PROTOTYPE_LASER_MG_AMMO1
       - STR_GCIC_PROTOTYPE_LASER_MG_AMMO2
@@ -3142,9 +3240,9 @@ items:
       strength: 0.5
       flatHundred: 0.10
     tuSnap: 45
-    tuAuto: 75
-    snapRange: 18
-    autoRange: 12
+    tuAuto: 90
+    snapRange: 22
+    autoRange: 16
     dropoff: 2
     kneelBonus: 150
     twoHanded: true
@@ -3164,16 +3262,16 @@ items:
     invWidth: 2
     invHeight: 2
     battleType: 2
-    weight: 8
+    weight: 12
     clipSize: 18
-    power: 32
+    power: 28
     damageBonus:
       strength: 0.1
     damageType: 4
     damageAlter:
       ToWound: 0.025
       RandomWound: false
-      FireThreshold: 80
+      FireThreshold: 40
       ToTile: 0.65
     vaporColorSurface: 2
     vaporDensitySurface: 2
@@ -3196,16 +3294,16 @@ items:
     invWidth: 2
     invHeight: 2
     battleType: 2
-    weight: 8
-    clipSize: 144
-    power: 35
+    weight: 12
+    clipSize: 135
+    power: 30
     damageBonus:
       strength: 0.1
     damageType: 4
     damageAlter:
       ToWound: 0.025
       RandomWound: false
-      FireThreshold: 80
+      FireThreshold: 40
       ToTile: 0.65
     vaporColorSurface: 2
     vaporDensitySurface: 2
@@ -3224,7 +3322,7 @@ items:
     size: 0.3
     costBuy: 644000
     costSell: 633000
-    transferTime: 4
+    transferTime: 72
     bigSprite: 900
     floorSprite: 900
     handSprite: 900
@@ -3258,10 +3356,10 @@ items:
       firing: 0.75
       strength: 0.25
       flatHundred: 0.10
-    tuSnap: 35
-    tuAimed: 75
+    tuSnap: 45
+    tuAimed: 80
     snapRange: 14
-    aimRange: 22
+    aimRange: 24
     dropoff: 2
     kneelBonus: 150
     twoHanded: true
@@ -3273,7 +3371,7 @@ items:
     vaporProbabilitySurface: 100
     scripts:
       vaporParticleAmmo: |
-        set particle_lifetime 5;
+        set particle_lifetime 8;
         return;
   - type: STR_GCIC_PROTOTYPE_LASER_CANNON
     categories: [STR_MILITARY_CATEGORY, STR_VACUUM_CATEGORY, STR_CANNONS_CATEGORY]
@@ -3306,10 +3404,10 @@ items:
       firing: 0.75
       strength: 0.25
       flatHundred: 0.10
-    tuSnap: 35
-    tuAimed: 75
+    tuSnap: 45
+    tuAimed: 80
     snapRange: 14
-    aimRange: 22
+    aimRange: 24
     dropoff: 2
     kneelBonus: 150
     twoHanded: true
@@ -3328,7 +3426,7 @@ items:
     invWidth: 2
     invHeight: 1
     battleType: 2
-    weight: 3
+    weight: 8
     clipSize: 2
     power: 42
     damageBonus:
@@ -3349,7 +3447,7 @@ items:
     vaporProbabilitySurface: 100
     scripts:
       vaporParticleAmmo: |
-        set particle_lifetime 5;
+        set particle_lifetime 8;
         return;
   - type: STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO2
     categories: [STR_MILITARY_CATEGORY, STR_VACUUM_CATEGORY, STR_CANNONS_CATEGORY]
@@ -3365,9 +3463,9 @@ items:
     invWidth: 2
     invHeight: 1
     battleType: 2
-    weight: 3
+    weight: 8
     clipSize: 8
-    power: 42
+    power: 45
     damageBonus:
       bravery: 0.1
     damageType: 4
@@ -3386,7 +3484,7 @@ items:
     vaporProbabilitySurface: 100
     scripts:
       vaporParticleAmmo: |
-        set particle_lifetime 5;
+        set particle_lifetime 8;
         return;
 #explosives
 # launchers
@@ -3821,8 +3919,8 @@ items:
       - STR_TODO
       - STR_PHXDEMO
     size: 0.1
-    costBuy: 4699
-    costSell: 1175
+    costBuy: 2349
+    costSell: 590
     transferTime: 12
     bigSprite: 253
     floorSprite: 235
@@ -3870,6 +3968,7 @@ items:
     damageAlter:
       FixRadius: 6
       RandomType: 9
+      ArmorEffectiveness: 0.5
       ToItem: 0.5
       ToStun: 0.75
       TileDamageMethod: 2
@@ -4659,7 +4758,7 @@ items:
     painKiller: 3
     heal: 3
     stimulant: 3
-    woundRecovery: 1
+    woundRecovery: 2
     healthRecovery: 2
     stunRecovery: 8
     energyRecovery: 5
@@ -4687,7 +4786,7 @@ items:
     painKiller: 8
     heal: 8
     stimulant: 8
-    woundRecovery: 1
+    woundRecovery: 4
     healthRecovery: 4
     stunRecovery: 8
     energyRecovery: 15
@@ -4847,6 +4946,15 @@ items:
     transferTime: 4
     bigSprite: 254
     weight: 3
+# bio
+  - type: STR_CHRYSSALID_EGG
+    categories: [STR_PERKS_CATEGORY]
+    size: 0.1
+    costSell: 80000
+    recoveryPoints: 5
+    bigSprite: 211
+    weight: 4
+    Armor: 40
 # remains
   - type: STR_BIOMASS
     categories: [STR_RESOURCES_CATEGORY]
@@ -4883,7 +4991,7 @@ items:
     costSell: 1200
     transferTime: 72
     bigSprite: 246
-    recoveryPoints: 1
+    recoveryPoints: -1
     recoveryDividers:
       STR_OTHER: -4
     weight: 4
@@ -4946,7 +5054,7 @@ items:
     recoveryPoints: 5
     weight: 5
     armor: 120
-# trophies
+# licenses
   - type: STR_SJB_LICENSE
     categories: [STR_RESOURCES_CATEGORY]
     specialType: 196
@@ -4967,10 +5075,26 @@ items:
     bigSprite: 225
     weight: 2
 # data
+  - type: STR_CRYPTOCHIT1
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 260
+    floorSprite: 241
+    costSell: 39000
+    recoveryPoints: -5
+    weight: 1
+  - type: STR_CRYPTOCHIT2
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 261
+    floorSprite: 242
+    costSell: 73000
+    recoveryPoints: -5
+    weight: 1
+
   - type: STR_PERSONAL_DATA
     categories: [STR_DATA_CATEGORY]
     costSell: 40
     bigSprite: 157
+    floorSprite: 246
     recoveryPoints: 1
     weight: 2
   - type: STR_SECRET_DATA
@@ -4993,8 +5117,8 @@ items:
   - type: STR_GCIC_SABOTAGE_3_DATA
     categories: [STR_DATA_CATEGORY]
     ufopediaType: STR_GCIC_TRADE_SECRETS_MISSIONS
-    bigSprite: 211
-    floorSprite: 148
+    bigSprite: 262
+    floorSprite: 243
     costSell: 150000
     recoveryPoints: -50
     weight: 3
@@ -5060,88 +5184,6 @@ items:
     costSell: 5000
     weight: 1
     armor: 255
-
-  - type: STR_BOUNTY_CHRYSSALID
-    ufopediaType: STR_BOUNTY_2
-    categories: [STR_SPECIMENS_CATEGORY]
-    recoveryPoints: 9
-    recoveryTransformations:
-      STR_BOUNTY_2: [3]
-    bigSprite: 211
-    weight: 3
-    armor: 255
-
-  - type: STR_CRYPTOCHIT1
-    categories: [STR_PERKS_CATEGORY]
-    bigSprite: 211 #
-    floorSprite: 148 #
-    costSell: 25000
-    recoveryPoints: -5
-    weight: 1
-  - type: STR_CRYPTOCHIT2
-    categories: [STR_PERKS_CATEGORY]
-    bigSprite: 211 #
-    floorSprite: 148 #
-    costSell: 75000
-    recoveryPoints: -15
-    weight: 1
-  - type: STR_PERSONAL_DATA_VAULT
-    ufopediaType: STR_PERSONAL_DATA
-    categories: [STR_PERKS_CATEGORY]
-    bigSprite: 211 #
-    floorSprite: 148 #
-    recoveryPoints: -10
-    recoveryTransformations:
-      STR_PERSONAL_DATA: [10]
-    weight: 3
-  - type: STR_SECRET_DATA_VAULT
-    ufopediaType: STR_SECRET_DATA
-    categories: [STR_PERKS_CATEGORY]
-    bigSprite: 211 #
-    floorSprite: 148 #
-    recoveryPoints: -15
-    recoveryTransformations:
-      STR_SECRET_DATA: [2]
-    weight: 3
-  - type: STR_MILITARY_CYBERNETICS_VAULT
-    ufopediaType: STR_MILITARY_CYBERNETICS
-    categories: [STR_PERKS_CATEGORY]
-    bigSprite: 254
-    floorSprite: 148 #
-    recoveryPoints: -10
-    recoveryTransformations:
-      STR_MILITARY_CYBERNETICS_CODED: [2]
-    weight: 3
-  - type: STR_ELERIUM_VAULT
-    ufopediaType: STR_ELERIUM_CORE
-    categories: [STR_PERKS_CATEGORY]
-    bigSprite: 154
-    floorSprite: 148
-    recoveryPoints: -25
-    recoveryTransformations:
-      STR_ELERIUM_CORE: [1]
-    weight: 5
-    Armor: 120
-  - type: STR_PLASMA_PISTOL_VAULT
-    ufopediaType: STR_ELERIUM_CORE #todo old alien war pistol
-    categories: [STR_PERKS_CATEGORY]
-    bigSprite: 211 #
-    floorSprite: 148 #
-    recoveryPoints: -20
-    recoveryTransformations:
-      STR_ELERIUM_CORE: [1] #todo old alien war pistol
-    weight: 3
-    Armor: 120
-  - type: STR_CHRYSSALID_EGG_VAULT
-    ufopediaType: STR_ELERIUM_CORE #todo chryssalid egg
-    categories: [STR_PERKS_CATEGORY]
-    bigSprite: 211 #
-    floorSprite: 148 #
-    recoveryPoints: -30
-    recoveryTransformations:
-      STR_ELERIUM_CORE: [1] #todo chryssalid egg
-    weight: 4
-    Armor: 40
 # tasks
   - type: STR_MONEY_1
     categories: [STR_PERKS_CATEGORY]
@@ -5157,6 +5199,78 @@ items:
     categories: [STR_LIABILITIES_CATEGORY]
     costSell: -500
     monthlyMaintenance: -100
+# trophies
+  - type: STR_BOUNTY_CHRYSSALID
+    ufopediaType: STR_BOUNTY_2
+    categories: [STR_SPECIMENS_CATEGORY]
+    recoveryPoints: 9
+    recoveryTransformations:
+      STR_BOUNTY_2: [3]
+    bigSprite: 211
+    floorSprite: 245
+    weight: 4
+    armor: 255
+
+  - type: STR_PERSONAL_DATA_VAULT
+    ufopediaType: STR_PERSONAL_DATA
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 258
+    floorSprite: 239
+    recoveryPoints: -5
+    recoveryTransformations:
+      STR_PERSONAL_DATA: [5]
+    weight: 3
+  - type: STR_SECRET_DATA_VAULT
+    ufopediaType: STR_SECRET_DATA
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 259
+    floorSprite: 240
+    recoveryPoints: -10
+    recoveryTransformations:
+      STR_SECRET_DATA: [2]
+    weight: 3
+  - type: STR_MILITARY_CYBERNETICS_VAULT
+    ufopediaType: STR_MILITARY_CYBERNETICS
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 257
+    floorSprite: 238
+    recoveryPoints: -10
+    recoveryTransformations:
+      STR_MILITARY_CYBERNETICS_CODED: [2]
+    weight: 3
+  - type: STR_ELERIUM_VAULT
+    ufopediaType: STR_ELERIUM_CORE
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 154
+    floorSprite: 237
+    recoveryPoints: -25
+    recoveryTransformations:
+      STR_ELERIUM_CORE: [1]
+    weight: 5
+    Armor: 120
+  - type: STR_PLASMA_PISTOL_VAULT
+    ufopediaType: STR_ALIEN_PLASMA_PISTOL
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 32
+    floorSprite: 31
+    handSprite: 104
+    invWidth: 1
+    invHeight: 2
+    recoveryPoints: -20
+    recoveryTransformations:
+      STR_ALIEN_PLASMA_PISTOL: [1]
+    weight: 3
+    Armor: 120
+  - type: STR_CHRYSSALID_EGG_VAULT
+    ufopediaType: STR_CHRYSSALID_EGG
+    categories: [STR_PERKS_CATEGORY]
+    bigSprite: 211
+    floorSprite: 245
+    recoveryPoints: -30
+    recoveryTransformations:
+      STR_CHRYSSALID_EGG: [1]
+    weight: 4
+    Armor: 60
 #drones
   - type: STR_DRONE_HYBRID_ITEM
     categories: [STR_DRONES_CATEGORY]
@@ -5771,8 +5885,8 @@ items:
     name: STR_CORPSE
     categories: [STR_DEBUG_CATEGORY]
     weight: 22
-    bigSprite: 169
-    floorSprite: 160
+    bigSprite: 263
+    floorSprite: 244
     invWidth: 2
     invHeight: 3
     battleType: 11
@@ -5784,9 +5898,7 @@ items:
 # animals
   - type: STR_CHRYSSALID_CORPSE
     name: STR_CORPSE
-    categories: [STR_SPECIMENS_CATEGORY]
-    size: 0.5
-    costSell: 15000
+    categories: [STR_DEBUG_CATEGORY]
     recoveryPoints: 3
     recoveryTransformations:
       STR_BIOMASS: [1]
@@ -5801,9 +5913,7 @@ items:
     armor: 70
   - type: STR_ZOMBIE_CORPSE
     name: STR_CORPSE
-    categories: [STR_SPECIMENS_CATEGORY]
-    size: 0.5
-    costSell: 4000
+    categories: [STR_DEBUG_CATEGORY]
     recoveryPoints: 3
     ignoreInBaseDefense: true
     bigSprite: 900
@@ -5815,9 +5925,7 @@ items:
     armor: 30
   - type: STR_MUCKSTAR_CORPSE
     name: STR_CORPSE
-    categories: [STR_SPECIMENS_CATEGORY]
-    size: 0.2
-    costSell: 4000
+    categories: [STR_DEBUG_CATEGORY]
     recoveryPoints: 3
     recoveryTransformations:
       STR_BIOMASS: [1]
@@ -5832,9 +5940,7 @@ items:
     armor: 30
   - type: STR_CELATID_CORPSE
     name: STR_CORPSE
-    categories: [STR_SPECIMENS_CATEGORY]
-    size: 0.2
-    costSell: 5000
+    categories: [STR_DEBUG_CATEGORY]
     recoveryPoints: 3
     recoveryTransformations:
       STR_BIOMASS: [1]
@@ -5850,9 +5956,7 @@ items:
 # robots
   - type: STR_ROBOSPHERE_CORPSE
     name: STR_WRECK
-    categories: [STR_SPECIMENS_CATEGORY]
-    size: 0.2
-    costSell: 1500
+    categories: [STR_DEBUG_CATEGORY]
     recoveryPoints: 2
     recoveryTransformations:
       STR_SHARES_GR: [75, 25]
@@ -5865,8 +5969,23 @@ items:
     invHeight: 2
     battleType: 11
     armor: 30
+  - type: STR_TURRETAP_CORPSE
+    name: STR_WRECK
+    categories: [STR_DEBUG_CATEGORY]
+    recoveryTransformations:
+      STR_PLASTICS: [1]
+    ignoreInBaseDefense: true
+    bigSprite: 255
+    floorSprite: 236
+    weight: 12
+    invWidth: 2
+    invHeight: 1
+    battleType: 11
+    armor: 30
 
   - type: STR_CYFURB_CORPSE
+    name: STR_WRECK
+    categories: [STR_DEBUG_CATEGORY]
     recoveryTransformations:
       STR_AG_UNIT: [1]
     battleType: 11
@@ -5881,6 +6000,7 @@ items:
       IgnoreSelfDestruct: false
   - type: CYFURB_CORPSE_1
     name: STR_WRECK
+    categories: [STR_DEBUG_CATEGORY]
     recoveryTransformations:
       STR_BOUNTY_2: [1]
       STR_AG_UNIT: [1]
@@ -5893,6 +6013,7 @@ items:
     recoveryPoints: 3
   - type: CYFURB_CORPSE_2
     name: STR_WRECK
+    categories: [STR_DEBUG_CATEGORY]
     floorSprite: 216
     invWidth: 0
     invHeight: 0
@@ -5902,6 +6023,7 @@ items:
     recover: false
   - type: CYFURB_CORPSE_3
     name: STR_WRECK
+    categories: [STR_DEBUG_CATEGORY]
     floorSprite: 217
     invWidth: 0
     invHeight: 0
@@ -5911,6 +6033,7 @@ items:
     recover: false
   - type: CYFURB_CORPSE_4
     name: STR_WRECK
+    categories: [STR_DEBUG_CATEGORY]
     floorSprite: 218
     invWidth: 0
     invHeight: 0
@@ -6134,6 +6257,13 @@ items:
     spawnUnitFaction: 2
     battleType: 4
     recover: false
+
+  - type: STR_SPAWN_TURRET_AP
+    categories: [STR_DEBUG_CATEGORY]
+    spawnUnit: STR_DEFENSE_TURRET_AP
+    spawnUnitFaction: 1
+    battleType: 4
+    recover: false
 #traps
   - type: STR_DEATH_TRAP_201
     categories: [STR_DEBUG_CATEGORY]
@@ -6145,6 +6275,7 @@ items:
     damageAlter:
       FixRadius: 6
       RandomType: 9
+      ArmorEffectiveness: 0.5
       ToItem: 0.5
       ToStun: 0.75
       IgnoreOverKill: false

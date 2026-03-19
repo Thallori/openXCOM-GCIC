@@ -23,7 +23,7 @@
       palette: 0
     unlockedResearch: STR_TRG_HS_PREQ
     music:
-      - SEC1
+      - SIM1
     data:
       - alienRank: 4
         lowQty: 5
@@ -67,7 +67,7 @@
     missionBountyItemCount: 2
     unlockedResearch: STR_TRG_HUFOF_PREQ
     music:
-      - SEC1
+      - SIM1
     data:
       - alienRank: 4
         lowQty: 2
@@ -107,7 +107,7 @@
     terrains:
       - STUDIO0_FOREST
     music:
-      - SEC1
+      - SIM1
     data:
       - alienRank: 3
         lowQty: 2
@@ -1837,10 +1837,10 @@
         customUnitType: STR_DRONE_ENEMY_HUMAN
         itemSets: *AnchorEmptyInventory
       - alienRank: 8
-        lowQty: 1
-        medQty: 1
-        highQty: 1
-        dQty: 0
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
         percentageOutsideUfo: 100
         customUnitType: STR_DRONE_ENEMY_SHARK
         itemSets: *AnchorEmptyInventory

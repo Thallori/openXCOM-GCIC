@@ -26,6 +26,7 @@ terrains:
       - ENTRY
       - FENCE_CHAINLINK
       - FENCE_IRON
+      - ROOFS_BITS
       - INTERLACE
     mapBlocks:
       - name: CLUB_00

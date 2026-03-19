@@ -350,7 +350,7 @@ units:
     value: 5
     deathSound: [41, 42, 43]
     intelligence: 2
-    aggression: 5
+    aggression: 3
     sniper: 20
     moraleLossWhenKilled: 75
     canSurrender: true
@@ -431,7 +431,7 @@ units:
     deathSound: [143, 144, 145]
     moveSound: 15
     intelligence: 2
-    aggression: 5
+    aggression: 1
     spotter: 1
     sniper: 80
     moraleLossWhenKilled: 110
@@ -459,7 +459,7 @@ units:
     value: -5
     deathSound: [41, 42, 43]
     intelligence: 2
-    aggression: 5
+    aggression: 3
     sniper: 20
     moraleLossWhenKilled: 75
     canSurrender: true
@@ -537,7 +537,7 @@ units:
     deathSound: [143, 144, 145]
     moveSound: 15
     intelligence: 2
-    aggression: 5
+    aggression: 1
     spotter: 1
     sniper: 80
     moraleLossWhenKilled: 110
@@ -653,7 +653,7 @@ units:
     race: STR_SSP
     rank: STR_RANK_5
     stats:
-      tu: 55
+      tu: 50
       stamina: 50
       health: 40
       bravery: 70
@@ -721,9 +721,9 @@ units:
     standHeight: 22
     kneelHeight: 14
     value: -18
-    deathSound: [41, 42, 43]
+    deathSound: [44, 45, 46]
     intelligence: 2
-    aggression: 2
+    aggression: 0
     spotter: 1
     sniper: 20
     canSurrender: true
@@ -1014,6 +1014,38 @@ units:
       - - STR_CYFURB_WEAPON
         - STR_ALLOYS
         - STR_BOUNTY_2
+  - type: STR_DEFENSE_TURRET_AP
+    race: STR_ROBOTS
+    rank: STR_RANK_ROBOT
+    liveAlien: STR_PLASTICS
+    stats:
+      tu: 25
+      stamina: 10
+      health: 15
+      bravery: 100
+      reactions: 30
+      firing: 50
+      throwing: 0
+      strength: 10
+      psiStrength: 20
+      psiSkill: 0
+      melee: 0
+    armor: STR_DEFENSE_TURRET_AP_ARMOR
+    standHeight: 14
+    kneelHeight: 14
+    value: -8
+    deathSound: 23
+    intelligence: 0
+    aggression: 0
+    moraleLossWhenKilled: 10
+    livingWeapon: true
+    autoSurrender: true
+    builtInWeaponSets:
+      - - STR_TURRET_AP_WEAPON
+        - STR_PLASTICS
+        - STR_SSP_SMG_AMMO
+        - STR_SSP_SMG_AMMO
+        - STR_SSP_SMG_AMMO
 #simulated
   - type: STR_HOLOMUTON
     race: STR_SIMULATED

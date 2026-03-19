@@ -1,8 +1,9 @@
 transparencyLUTs:
   - colors:
       - [16, 14, 4, 2] #0 flames - vaporDensitySurface: 2, vaporProbabilitySurface: 80
-      - [16, 2, 0, 6] #1 red laser - vaporDensitySurface: 2, vaporProbabilitySurface: 100
+      - [16, 0, 0, 6] #1 red laser - vaporDensitySurface: 2, vaporProbabilitySurface: 100
       - [16, 8, 0, 6] #2 orange laser - vaporDensitySurface: 2, vaporProbabilitySurface: 100
       - [12, 12, 12, 6] #3 white laser - vaporDensitySurface: 2, vaporProbabilitySurface: 100
-      - [4, 16, 4, 2] #4 plasma - vaporDensitySurface: 2, vaporProbabilitySurface: 50
-      - [8, 8, 12, 2] #5 rocket - vaporDensitySurface: 1, vaporProbabilitySurface: 30
+      - [4, 16, 4, 2] #4 plasma - vaporDensitySurface: 6, vaporProbabilitySurface: 20
+      - [8, 8, 12, 2] #5 rocket - vaporDensitySurface: 1, vaporProbabilitySurface: 50
+      - [2, 12, 10, 1] #6 gel - vaporDensitySurface: 1, vaporProbabilitySurface: 20

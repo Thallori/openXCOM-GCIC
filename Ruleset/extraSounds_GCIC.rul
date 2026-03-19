@@ -18,7 +18,7 @@ musics:
   - type: BLOOD1
   - type: BLOOD2
   - type: SIM_INTRO
-  - type: SEC1
+  - type: SIM1
 
 extraSounds:
   - type: BATTLE.CAT

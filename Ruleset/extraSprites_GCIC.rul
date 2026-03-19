@@ -196,6 +196,15 @@ extraSprites:
       252: Resources/Armors/Anthros/Duraware/duravest_corpse_deep_bigob.png
       253: Resources/Items/Explosives/phxbomb_bigob.png
       254: Resources/Items/Materials/milware_bigob.png
+      255: Resources/Factions/Robots/turretap_bigob.png
+      256: Resources/Items/Builtins/turretsmg_bigob.png
+      257: Resources/Items/Materials/vaultmilware_bigob.png
+      258: Resources/Items/Materials/vaultpersonal_bigob.png
+      259: Resources/Items/Materials/vaultsecret_bigob.png
+      260: Resources/Items/Materials/cryptochit1_bigob.png
+      261: Resources/Items/Materials/cryptochit2_bigob.png
+      262: Resources/Items/Materials/data3_bigob.png
+      263: Resources/Factions/SSP/sspsupervisor_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -335,6 +344,17 @@ extraSprites:
       233: Resources/Armors/Anthros/Duraware/duravest_corpse_shark_floorob.png
       234: Resources/Armors/Anthros/Duraware/duravest_corpse_deep_floorob.png
       235: Resources/Items/Explosives/phxbomb_floorob.png
+      236: Resources/Factions/Robots/turretap_floorob.png
+      237: Resources/Items/Materials/vaultelerium_floorob.png
+      238: Resources/Items/Materials/vaultmilware_floorob.png
+      239: Resources/Items/Materials/vaultpersonal_floorob.png
+      240: Resources/Items/Materials/vaultsecret_floorob.png
+      241: Resources/Items/Materials/cryptochit1_floorob.png
+      242: Resources/Items/Materials/cryptochit2_floorob.png
+      243: Resources/Items/Materials/data3_floorob.png
+      244: Resources/Factions/SSP/sspsupervisor_floorob.png
+      245: Resources/Items/Materials/trophy_chryssalid_floorob.png
+      246: Resources/Items/Materials/personal_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -533,7 +553,7 @@ extraSprites:
       840: Resources/Animations/Projectiles/ball_bullet.png
       875: Resources/Animations/Projectiles/bomb_bullet.png
       910: Resources/Animations/Projectiles/laseryellowbig_bullet.png
-
+      945: Resources/Animations/Projectiles/gel_bullet.png
 #paperdolls
 # human
   - typeSingle: HUMAN__2__F0_SHELL
@@ -576,11 +596,10 @@ extraSprites:
     fileSingle: Resources/Armors/Bodies/Deep/DEEPHANDS_F0.png
   - typeSingle: DEEP__2__M0_SHELL
     fileSingle: Resources/Armors/Bodies/Deep/DEEPHANDS_F0.png
-
 #armor
   - type: CustomArmorPreviews
-    width: 240
-    height: 32
+    width: 1200
+    height: 80
     subX: 12
     subY: 20
     files:
@@ -945,6 +964,18 @@ extraSprites:
     height: 720
     files:
       0: Resources/Factions/SSP/sspofficer_sprite.png
+
+  - typeSingle: SSPSUPERVISOR_CPAL
+    fileSingle: Resources/Factions/SSP/sspsupervisor_CPAL.png
+  - typeSingle: SSPSUPERVISOR.SPK
+    fileSingle: Resources/Factions/SSP/sspsupervisor_inventory.png
+  - type: SSPSUPERVISOR.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Factions/SSP/sspsupervisor_sprite.png
 # enemy drones
   - typeSingle: DRONEHYBRID.SPK
     fileSingle: Resources/Factions/Drones/dronehybrid_inventory.png
@@ -1002,6 +1033,17 @@ extraSprites:
     height: 80
     files:
       0: Resources/Factions/Robots/robosphere_sprite.png
+  - typeSingle: TURRETAP_CPAL
+    fileSingle: Resources/Factions/Robots/turretap_CPAL.png
+  - typeSingle: TURRETAP.SPK
+    fileSingle: Resources/Factions/Robots/turretap_inventory.png
+  - type: TURRETAP.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/Factions/Robots/turretap_sprite.png
 # simulated
   - typeSingle: HOLOMUTON_CPAL
     fileSingle: Resources/Factions/Holograms/holomuton_CPAL.png
@@ -1125,13 +1167,16 @@ extraSprites:
     fileSingle: Resources/Pedia/data2_CPAL.png
   - typeSingle: DATA3_CPAL
     fileSingle: Resources/Pedia/data3_CPAL.png
-# memories
   - typeSingle: HMEMORY_CPAL
     fileSingle: Resources/Pedia/memoryh_CPAL.png
   - typeSingle: UMEMORY_CPAL
     fileSingle: Resources/Pedia/memoryu_CPAL.png
   - typeSingle: SMEMORY_CPAL
     fileSingle: Resources/Pedia/memorys_CPAL.png
+  - typeSingle: BASH_CPAL
+    fileSingle: Resources/Pedia/bash_CPAL.png
+  - typeSingle: BASH2_CPAL
+    fileSingle: Resources/Pedia/bash2_CPAL.png
 # operations
   - typeSingle: OPERATIONS1_CPAL
     fileSingle: Resources/Pedia/operations1_CPAL.png
@@ -1231,6 +1276,8 @@ extraSprites:
     fileSingle: Resources/Pedia/techneurachem_CPAL.png
   - typeSingle: MUSCULATURE_CPAL
     fileSingle: Resources/Pedia/techmusculature_CPAL.png
+  - typeSingle: INTEGUMENTARY_CPAL
+    fileSingle: Resources/Pedia/techsubdermal_CPAL.png
 # armors
   - typeSingle: ARMOR_PLEX_CPAL
     fileSingle: Resources/Pedia/armor_plex_CPAL.png

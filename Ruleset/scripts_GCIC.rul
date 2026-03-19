@@ -13,12 +13,92 @@ extended:
           
           battle_game.getTurn turnNum;
           if eq turnNum 0;
-            battle_game.randomRange partTU 50 90; #between 50 and 90% max tus
+            battle_game.randomRange partTU 30 70; #between 30 and 70% max tus
             unit.getTimeUnitsMax unitTUs;
             muldiv unitTUs partTU 100;
             unit.setTimeUnits unitTUs;
           else;
             unit.setTimeUnits 0; #for units spawned after turn one
+          end;
+          return;
+    damageUnit:
+      - offset: 8 #replaces vanilla wounds with a scaling random factor
+        code: |
+          var int randomFactor;
+          var int currentHealth;
+          var int currentWounds;
+          var int currentStun;
+          unit.getHealth currentHealth;
+
+          if gt to_wound 0;
+            battle_game.randomRange randomFactor 50 150; #between 5-15% of health damage
+            muldiv randomFactor to_health 1000;
+            if eq randomFactor 0; #we already rolled a wound, so this has to happen
+              set randomFactor 1;
+            end;
+            set to_wound randomFactor;
+          end;
+          
+          if gt currentHealth to_health; #if you're not getting killed by damage right now
+            unit.getFatalwoundsTotal currentWounds;
+            add currentWounds to_wound;
+            sub currentHealth to_health;
+            sub currentHealth currentWounds;
+            if le currentHealth 0; #if you would die from wounds, don't
+              unit.getHealth currentHealth;
+              unit.getStun currentStun;
+              add currentStun to_stun;
+              #debug_log "We're about to die. Health, Damage, Wounds, Stun:" currentHealth to_health currentWounds to_stun;
+              sub to_health currentWounds;
+              if lt to_health 0; #damage doesn't heal health
+                set to_health 0;
+              end;
+              add to_stun currentWounds; #deal the lost damage as stun
+              if ge currentWounds currentHealth; #if wounds is greater than health, don't
+                sub currentWounds currentHealth;
+                sub currentWounds 1;
+                if lt currentWounds 0; #wounds don't heal wounds
+                  set currentWounds 0;
+                end;
+                set to_wound currentWounds;
+              end;
+              unit.getFatalwoundsTotal currentHealth;
+              add currentHealth to_wound;
+              add currentHealth 1;
+              mul currentHealth 5; #shock damage treshold
+              if ge currentStun currentHealth; #if too much stun, don't
+                unit.getStun currentStun;
+                sub currentHealth 1;
+                set to_stun currentHealth;
+                sub to_stun currentStun;
+                if lt to_stun 0; #stun doesn't wake up
+                  set to_stun 0;
+                end;
+              end;
+              #debug_log "Saved your life by reducing Damage, Wounds, Stun:" to_health to_wound to_stun unit;
+            end;
+          end;
+          return;
+    returnFromMissionUnit: #modified from Meridian, adds extra recovery days based on fatal wounds
+      - offset: 9
+        code: |
+          var int totalWounds;
+          var int randomFactor;
+
+          battle_game.randomRange randomFactor 150 450; #end battle wounds are worth 3x health
+          unit.getFatalwoundsTotal totalWounds;
+          muldiv totalWounds randomFactor 100;
+          add recovery_time totalWounds;
+        
+          if gt recovery_time 30; #if recovery days are more than 30, half the days above 30
+            add recovery_time -30;
+            div recovery_time 2;
+            add recovery_time 30;
+          end;
+          if gt recovery_time 50; #if recovery days are still more than 50, third the days above 50
+            add recovery_time -50;
+            div recovery_time 3;
+            add recovery_time 50;
           end;
           return;
     detectUfoFromBase:

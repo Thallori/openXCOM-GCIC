@@ -4,8 +4,13 @@ soldierTransformation:
       - STR_SPECIALIZATION_TRAINING
     requiredMinStats:
       mana: 20
+    includeBonusesForMinStats: true
+    flatOverallStatChange:
+      mana: 5
     percentGainedStatChange:
-      mana: -50
+      mana: -20
+    rerollStats:
+      mana: 1
     cost: 4999
     requiredItems:
       STR_CONSUMER_CYBERNETICS: 3
@@ -25,8 +30,15 @@ soldierTransformation:
   - name: STR_RANGER_TRANSFORMATION
     requires:
       - STR_SPECIALIZATION_TRAINING
+    requiredMinStats:
+      mana: 20
+    includeBonusesForMinStats: true
+    flatOverallStatChange:
+      mana: 5
     percentGainedStatChange:
-      mana: -50
+      mana: -20
+    rerollStats:
+      mana: 1
     cost: 4999
     requiredItems:
       STR_CONSUMER_CYBERNETICS: 3
@@ -48,8 +60,13 @@ soldierTransformation:
       - STR_SPECIALIZATION_TRAINING
     requiredMinStats:
       mana: 20
+    includeBonusesForMinStats: true
+    flatOverallStatChange:
+      mana: 5
     percentGainedStatChange:
-      mana: -50
+      mana: -20
+    rerollStats:
+      mana: 1
     cost: 4999
     requiredItems:
       STR_CONSUMER_CYBERNETICS: 3
@@ -72,8 +89,13 @@ soldierTransformation:
       - STR_MEDICAL_CYBERNETICS
     requiredMinStats:
       mana: 20
+    includeBonusesForMinStats: true
+    flatOverallStatChange:
+      mana: 5
     percentGainedStatChange:
-      mana: -50
+      mana: -30
+    rerollStats:
+      mana: 1
     cost: 8999
     requiredItems:
       STR_MEDICAL_CYBERNETICS: 2
@@ -95,8 +117,13 @@ soldierTransformation:
       - STR_MEDICAL_CYBERNETICS
     requiredMinStats:
       mana: 20
+    includeBonusesForMinStats: true
+    flatOverallStatChange:
+      mana: 5
     percentGainedStatChange:
-      mana: -50
+      mana: -30
+    rerollStats:
+      mana: 1
     cost: 8999
     requiredItems:
       STR_MEDICAL_CYBERNETICS: 2
@@ -119,14 +146,19 @@ soldierTransformation:
       - STR_MILITARY_CYBERNETICS
     requiredMinStats:
       mana: 20
+    includeBonusesForMinStats: true
+    flatOverallStatChange:
+      mana: 10
     percentGainedStatChange:
-      mana: -50
+      mana: -40
+    rerollStats:
+      mana: 1
     cost: 15999
     requiredItems:
       STR_MILITARY_CYBERNETICS: 2
       STR_MEDICAL_CYBERNETICS: 3
       STR_NANOWEAVE: 1
-    recoveryTime: 12
+    recoveryTime: 20
     keepSoldierArmor: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:
@@ -143,14 +175,19 @@ soldierTransformation:
       - STR_MILITARY_CYBERNETICS
     requiredMinStats:
       mana: 20
+    includeBonusesForMinStats: true
+    flatOverallStatChange:
+      mana: 10
     percentGainedStatChange:
-      mana: -50
+      mana: -40
+    rerollStats:
+      mana: 1
     cost: 15999
     requiredItems:
       STR_MILITARY_CYBERNETICS: 2
       STR_MEDICAL_CYBERNETICS: 3
       STR_ALLOYS: 1
-    recoveryTime: 28
+    recoveryTime: 20
     keepSoldierArmor: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:
@@ -175,6 +212,7 @@ soldierTransformation:
       - STR_CRACKED_HUMAN_DRONE
       - STR_CRACKED_SHARK_DRONE
       - STR_CRACKED_DEEP_DRONE
+    soldierBonusType: STR_IMMORTAL_KEY
     forbiddenPreviousTransformations:
       - STR_DRONE_KEYING_TRANSFORMATION
   - name: STR_DRONE_REPLACEMENT_TRANSFORMATION
@@ -182,6 +220,8 @@ soldierTransformation:
       - STR_DRONE_IMMORTALITY
     cost: 65000
     recoveryTime: 48
+    percentGainedStatChange:
+      mana: -50
     rerollStats:
       mana: 1
     allowsDeadSoldiers: true

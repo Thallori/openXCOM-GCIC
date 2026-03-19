@@ -17,7 +17,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: DATA1_CPAL
-
   - id: STR_INPUT_OUTPUT
     requires:
       - STR_INPUT_OUTPUT
@@ -26,7 +25,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: DATA1_CPAL
-
   - id: STR_ANALOGUE_DEVICES
     requires:
       - STR_ANALOGUE_DEVICES
@@ -35,7 +33,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: DATA1_CPAL
-
   - id: STR_EXPANSION
     requires:
       - STR_EXPANSION
@@ -44,7 +41,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: DATA2_CPAL
-
   - id: STR_KERNEL
     requires:
       - STR_KERNEL
@@ -53,7 +49,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: DATA2_CPAL
-
   - id: STR_SUBSIDIARIES
     requires:
       - STR_SUBSIDIARIES
@@ -62,7 +57,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: DATA2_CPAL
-
   - id: STR_SECURITY
     requires:
       - STR_SECURITY
@@ -71,7 +65,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: DATA3_CPAL
-
   - id: STR_NON_CLIENTS
     requires:
       - STR_NON_CLIENTS
@@ -80,48 +73,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: DATA3_CPAL
-# memories
-  - id: STR_DRONE_MEMORY
-    requires:
-      - STR_DRONE_MEMORY
-    text: STR_DRONE_MEMORY_UP
-    section: STR_FILES_UC
-    type_id: 7
-    text_width: 180
-    image_id: UMEMORY_CPAL
-
-  - id: STR_HYBRID_MEMORY_1
-    requires:
-      - STR_HYBRID_MEMORY_1
-    text: STR_HYBRID_MEMORY_1_UP
-    section: STR_FILES_UC
-    type_id: 7
-    text_width: 180
-    image_id: HMEMORY_CPAL
-  - id: STR_HYBRID_MEMORY_2
-    requires:
-      - STR_HYBRID_MEMORY_2
-    text: STR_HYBRID_MEMORY_2_UP
-    section: STR_FILES_UC
-    type_id: 7
-    text_width: 180
-    image_id: HMEMORY_CPAL
-  - id: STR_HYBRID_MEMORY_3
-    requires:
-      - STR_HYBRID_MEMORY_3
-    text: STR_HYBRID_MEMORY_3_UP
-    section: STR_FILES_UC
-    type_id: 7
-    text_width: 180
-    image_id: HMEMORY_CPAL
-  - id: STR_HYBRID_MEMORY_4
-    requires:
-      - STR_HYBRID_MEMORY_4
-    text: STR_HYBRID_MEMORY_4_UP
-    section: STR_FILES_UC
-    type_id: 7
-    text_width: 180
-    image_id: HMEMORY_CPAL
 #connections
   - id: STR_VENDORS
     requires:
@@ -131,7 +82,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: VENDOR_CPAL
-
   - id: STR_VENDOR_PRINTER
     requires:
       - STR_VENDOR_PRINTER
@@ -140,7 +90,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: VENDOR_PRINT_CPAL
-
   - id: STR_VENDOR_P2P_FILE
     requires:
       - STR_VENDOR_P2P
@@ -157,7 +106,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: VENDOR_P2P_CPAL
-
   - id: STR_VENDOR_MEDI
     requires:
       - STR_VENDOR_MEDI
@@ -166,7 +114,39 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: VENDOR_MEDI_CPAL
-
+  - id: STR_VENDOR_BUILDER
+    requires:
+      - STR_VENDOR_BUILDER
+    text: STR_VENDOR_BUILDER_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_BUILDER_CPAL
+  - id: STR_VENDOR_HD
+    requires:
+      - STR_VENDOR_HD
+    text: STR_VENDOR_HD_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_HD_CPAL
+  - id: STR_VENDOR_VCM
+    requires:
+      - STR_VENDOR_VCM
+    text: STR_VENDOR_VCM_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_VCM_CPAL
+  - id: STR_VENDOR_SSP
+    requires:
+      - STR_VENDOR_SSP
+    text: STR_VENDOR_SSP_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_SSP_CPAL
+# random
   - id: STR_HYBRID_AUTOPSY
     requires:
       - STR_HYBRID_AUTOPSY
@@ -200,72 +180,88 @@ ufopaedia:
     text_width: 180
     image_id: VENDOR_MEDI_DR_CPAL
 
-  - id: STR_VENDOR_BUILDER
+  - id: STR_DRONE_MEMORY
     requires:
-      - STR_VENDOR_BUILDER
-    text: STR_VENDOR_BUILDER_UP
+      - STR_DRONE_MEMORY
+    text: STR_DRONE_MEMORY_UP
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: VENDOR_BUILDER_CPAL
-
-  - id: STR_VENDOR_HD
+    image_id: UMEMORY_CPAL
+  - id: STR_HYBRID_MEMORY_1
     requires:
-      - STR_VENDOR_HD
-    text: STR_VENDOR_HD_UP
+      - STR_HYBRID_MEMORY_1
+    text: STR_HYBRID_MEMORY_1_UP
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: VENDOR_HD_CPAL
-
-  - id: STR_VENDOR_VCM
+    image_id: HMEMORY_CPAL
+  - id: STR_HYBRID_MEMORY_2
     requires:
-      - STR_VENDOR_VCM
-    text: STR_VENDOR_VCM_UP
+      - STR_HYBRID_MEMORY_2
+    text: STR_HYBRID_MEMORY_2_UP
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: VENDOR_VCM_CPAL
-
-  - id: STR_VENDOR_SSP
+    image_id: HMEMORY_CPAL
+  - id: STR_HYBRID_MEMORY_3
     requires:
-      - STR_VENDOR_SSP
-    text: STR_VENDOR_SSP_UP
+      - STR_HYBRID_MEMORY_3
+    text: STR_HYBRID_MEMORY_3_UP
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: VENDOR_SSP_CPAL
+    image_id: HMEMORY_CPAL
+  - id: STR_HYBRID_MEMORY_4
+    requires:
+      - STR_HYBRID_MEMORY_4
+    text: STR_HYBRID_MEMORY_4_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: HMEMORY_CPAL
 
   - id: STR_RANDOMDIALOGUE1
+    requires:
+      - STR_RANDOMDIALOGUE1
     text: STR_RANDOMDIALOGUE1_UP
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: HMEMORY_CPAL
+    image_id: BASH_CPAL
   - id: STR_RANDOMDIALOGUE2
+    requires:
+      - STR_RANDOMDIALOGUE2
     text: STR_RANDOMDIALOGUE2_UP
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: HMEMORY_CPAL
+    image_id: BASH_CPAL
   - id: STR_RANDOMDIALOGUE3
+    requires:
+      - STR_RANDOMDIALOGUE3
     text: STR_RANDOMDIALOGUE3_UP
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: HMEMORY_CPAL
+    image_id: BASH_CPAL
   - id: STR_RANDOMDIALOGUE4
+    requires:
+      - STR_RANDOMDIALOGUE4
     text: STR_RANDOMDIALOGUE4_UP
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: HMEMORY_CPAL
+    image_id: BASH_CPAL
+
   - id: STR_SECRETDIALOGUE1
+    requires:
+      - STR_SECRETDIALOGUE1
     text: STR_SECRETDIALOGUE1_UP
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
-    image_id: HMEMORY_CPAL
+    image_id: BASH2_CPAL
 #operations
   - id: STR_PRIMARY_OPERATIONS
     requires:
@@ -275,7 +271,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: OPERATIONS1_CPAL
-
   - id: STR_RAPID_RESPONSE_MISSIONS
     requires:
       - STR_RAPID_RESPONSE_MISSIONS
@@ -301,7 +296,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: OPERATIONS2_CPAL
-
   - id: STR_PROJECT_DRONES2
     requires:
       - STR_PROJECT_DRONES2
@@ -310,7 +304,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: OPERATIONS2_CPAL
-
   - id: STR_SECGAMES_MISSIONS
     requires:
       - STR_SECGAMES_MISSIONS
@@ -336,7 +329,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: OPERATIONS3_CPAL
-
   - id: STR_GCIC_BACKCHANNEL_MISSIONS
     requires:
       - STR_GCIC_BACKCHANNEL_MISSIONS
@@ -404,7 +396,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: OPERATIONS4_CPAL
-
   - id: STR_MEDI_MISSIONS
     requires:
       - STR_MEDI_MISSIONS
@@ -413,7 +404,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: VENDOR_MEDIZ_CPAL
-
   - id: STR_GR_MISSIONS
     requires:
       - STR_GR_MISSIONS
@@ -463,7 +453,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: GUNPOWDER_CPAL
-
   - id: STR_REDOX
     requires:
       - STR_REDOX
@@ -472,7 +461,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: REDOX_CPAL
-
   - id: STR_LASER_AMMO_PRINTING
     requires:
       - STR_LASER_AMMO_PRINTING
@@ -481,11 +469,18 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: NBCELL_CPAL
-
   - id: STR_LASER_WEAPONS_CONSTRUCTION
     requires:
       - STR_LASER_AMMO_PRINTING
     text: STR_LASER_WEAPONS_CONSTRUCTION_UP
+    section: STR_TECHNOLOGIES_UC
+    type_id: 7
+    text_width: 180
+    image_id: REDLASER_CPAL
+  - id: STR_PLASMA_AMMO_CONVERSION
+    requires:
+      - STR_PLASMA_AMMO_CONVERSION
+    text: STR_PLASMA_AMMO_CONVERSION_UP
     section: STR_TECHNOLOGIES_UC
     type_id: 7
     text_width: 180
@@ -499,7 +494,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: MEDICAL_CPAL
-
   - id: STR_BIOCODING
     requires:
       - STR_BIOCODING
@@ -508,7 +502,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: BIOCODE_CPAL
-
   - id: STR_DRONE_CRACKING
     requires:
       - STR_DRONE_CRACKING
@@ -876,7 +869,7 @@ ufopaedia:
     section: STR_DRONES_UC
     type_id: 7
     text_width: 180
-    image_id: MUSCULATURE_CPAL
+    image_id: INTEGUMENTARY_CPAL
 # armors
   - id: STR_PLEX_DRONE_ARMOR
     requires:
@@ -938,230 +931,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ARMOR_AQUAVESTSHIELD_CPAL
-
-  - id: STR_DRONE_NERDSTATS
-    requires:
-      - STR_DC_PREQ
-    text: STR_DRONE_NERDSTATS_UP
-    section: STR_DRONES_UC
-    type_id: 8
-
-  - id: STR_CRACKED_HYBRID_DRONE
-    requires:
-      - STR_DRONE_HYBRID_ITEM
-    section: STR_DRONES_UC
-    type_id: 18
-    image_id: BACK10.SCR
-    rect_stats:
-      x: 10
-      y: 48
-      width: 160
-      height: 96
-  - id: STR_CRACKED_HUMAN_DRONE
-    requires:
-      - STR_DRONE_HUMAN_ITEM
-    section: STR_DRONES_UC
-    type_id: 18
-    image_id: BACK10.SCR
-    rect_stats:
-      x: 10
-      y: 48
-      width: 160
-      height: 96
-  - id: STR_CRACKED_SHARK_DRONE
-    requires:
-      - STR_DRONE_SHARK_ITEM
-    section: STR_DRONES_UC
-    type_id: 18
-    image_id: BACK10.SCR
-    rect_stats:
-      x: 10
-      y: 48
-      width: 160
-      height: 96
-  - id: STR_CRACKED_DEEP_DRONE
-    requires:
-      - STR_DRONE_DEEP_ITEM
-    section: STR_DRONES_UC
-    type_id: 18
-    image_id: BACK10.SCR
-    rect_stats:
-      x: 10
-      y: 48
-      width: 160
-      height: 96
-
-  - id: STR_PLEX_DRONE_HYBRID_ARMOR
-    requires:
-      - STR_PLEX_DRONE_ARMOR
-      - STR_DRONE_HYBRID_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_GCIC_DRONE_HYBRID_ARMOR
-    requires:
-      - STR_GCIC_DRONE_ARMOR_RESEARCH
-      - STR_DRONE_HYBRID_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_GCICVEST_DRONE_HYBRID_ARMOR
-    requires:
-      - STR_GCIC_DRONE_ARMOR_RESEARCH
-      - STR_DRONE_HYBRID_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_DURA_DRONE_HYBRID_ARMOR
-    requires:
-      - STR_DURA_DRONE_ARMOR
-      - STR_DRONE_HYBRID_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_SKELE_DRONE_HYBRID_ARMOR
-    requires:
-      - STR_SKELE_DRONE_ARMOR
-      - STR_DRONE_HYBRID_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_AQUAVEST_DRONE_HYBRID_ARMOR
-    requires:
-      - STR_AQUAVEST_DRONE_ARMOR
-      - STR_DRONE_HYBRID_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_AQUAVEST_DRONE_HYBRID_ARMOR_S
-    requires:
-      - STR_AQUAVEST_DRONE_ARMOR
-      - STR_DRONE_HYBRID_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-
-  - id: STR_PLEX_DRONE_HUMAN_ARMOR
-    requires:
-      - STR_PLEX_DRONE_ARMOR
-      - STR_DRONE_HUMAN_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_GCIC_DRONE_HUMAN_ARMOR
-    requires:
-      - STR_GCIC_DRONE_ARMOR_RESEARCH
-      - STR_DRONE_HUMAN_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_GCICVEST_DRONE_HUMAN_ARMOR
-    requires:
-      - STR_GCIC_DRONE_ARMOR_RESEARCH
-      - STR_DRONE_HUMAN_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_DURA_DRONE_HUMAN_ARMOR
-    requires:
-      - STR_DURA_DRONE_ARMOR
-      - STR_DRONE_HUMAN_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_SKELE_DRONE_HUMAN_ARMOR
-    requires:
-      - STR_SKELE_DRONE_ARMOR
-      - STR_DRONE_HUMAN_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_AQUAVEST_DRONE_HUMAN_ARMOR
-    requires:
-      - STR_AQUAVEST_DRONE_ARMOR
-      - STR_DRONE_HUMAN_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_AQUAVEST_DRONE_HUMAN_ARMOR_S
-    requires:
-      - STR_AQUAVEST_DRONE_ARMOR
-      - STR_DRONE_HUMAN_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-
-  - id: STR_PLEX_DRONE_SHARK_ARMOR
-    requires:
-      - STR_PLEX_DRONE_ARMOR
-      - STR_DRONE_SHARK_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_GCIC_DRONE_SHARK_ARMOR
-    requires:
-      - STR_GCIC_DRONE_ARMOR_RESEARCH
-      - STR_DRONE_SHARK_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_GCICVEST_DRONE_SHARK_ARMOR
-    requires:
-      - STR_GCIC_DRONE_ARMOR_RESEARCH
-      - STR_DRONE_SHARK_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_DURA_DRONE_SHARK_ARMOR
-    requires:
-      - STR_DURA_DRONE_ARMOR
-      - STR_DRONE_SHARK_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_SKELE_DRONE_SHARK_ARMOR
-    requires:
-      - STR_SKELE_DRONE_ARMOR
-      - STR_DRONE_SHARK_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_AQUAVEST_DRONE_SHARK_ARMOR
-    requires:
-      - STR_AQUAVEST_DRONE_ARMOR
-      - STR_DRONE_SHARK_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_AQUAVEST_DRONE_SHARK_ARMOR_S
-    requires:
-      - STR_AQUAVEST_DRONE_ARMOR
-      - STR_DRONE_SHARK_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-
-  - id: STR_PLEX_DRONE_DEEP_ARMOR
-    requires:
-      - STR_PLEX_DRONE_ARMOR
-      - STR_DRONE_DEEP_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_GCIC_DRONE_DEEP_ARMOR
-    requires:
-      - STR_GCIC_DRONE_ARMOR_RESEARCH
-      - STR_DRONE_DEEP_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_GCICVEST_DRONE_DEEP_ARMOR
-    requires:
-      - STR_GCIC_DRONE_ARMOR_RESEARCH
-      - STR_DRONE_DEEP_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_DURA_DRONE_DEEP_ARMOR
-    requires:
-      - STR_DURA_DRONE_ARMOR
-      - STR_DRONE_DEEP_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_SKELE_DRONE_DEEP_ARMOR
-    requires:
-      - STR_SKELE_DRONE_ARMOR
-      - STR_DRONE_DEEP_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_AQUAVEST_DRONE_DEEP_ARMOR
-    requires:
-      - STR_AQUAVEST_DRONE_ARMOR
-      - STR_DRONE_DEEP_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
-  - id: STR_AQUAVEST_DRONE_DEEP_ARMOR_S
-    requires:
-      - STR_AQUAVEST_DRONE_ARMOR
-      - STR_DRONE_DEEP_ITEM
-    section: STR_DRONES_UC
-    type_id: 5
 # builtins
   - id: STR_UNARMED
     requires:
@@ -1435,6 +1204,18 @@ ufopaedia:
     text: STR_SKULLJACK_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
+# alien
+  - id: STR_ALIEN_PLASMA_PISTOL
+    requires:
+      - STR_ALIEN_PLASMA_PISTOL
+    text: STR_ALIEN_PLASMA_PISTOL_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_ALIEN_PLASMA_PISTOL_CLIP
+    requires:
+      - STR_ALIEN_PLASMA_PISTOL
+    section: STR_NOT_AVAILABLE
+    type_id: 4
 # ours
   - id: STR_GCIC_PROTOTYPE_LASER_PISTOL
     requires:
@@ -1522,6 +1303,42 @@ ufopaedia:
       - STR_GCIC_PROTOTYPE_LASER_SNIPER
     section: STR_NOT_AVAILABLE
     type_id: 4
+
+  - id: STR_GCIC_PROTOTYPE_LASER_MG
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_MG
+    text: STR_GCIC_PROTOTYPE_LASER_MG_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_MG_AMMO1
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_MG
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_MG_AMMO2
+    requires:
+      - STR_TODO #laser cell outsourcing
+      - STR_GCIC_PROTOTYPE_LASER_MG
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_GCIC_PROTOTYPE_LASER_CANNON
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_CANNON
+    text: STR_GCIC_PROTOTYPE_LASER_CANNON_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO1
+    requires:
+      - STR_GCIC_PROTOTYPE_LASER_CANNON
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+  - id: STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO2
+    requires:
+      - STR_TODO #laser cell outsourcing
+      - STR_GCIC_PROTOTYPE_LASER_CANNON
+    section: STR_NOT_AVAILABLE
+    type_id: 4
 # launchers
   - id: STR_BARREL_MOTAR
     requires:
@@ -1584,6 +1401,13 @@ ufopaedia:
     text: STR_PHXBOMB_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
+  - id: STR_PHXDEMO
+    requires:
+      - STR_PHXDEMO
+    text: STR_PHXDEMO_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
   - id: STR_ELERIUM_BOMB
     requires:
       - STR_ELERIUM_BOMB
@@ -1694,6 +1518,12 @@ ufopaedia:
     text: STR_CHEMFLARE_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
+  - id: STR_MOTION_DETECTOR
+    requires:
+      - STR_MOTION_DETECTOR
+    text: STR_MOTION_DETECTOR_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
 
   - id: STR_STIM_INHALER
     requires:
@@ -1771,6 +1601,12 @@ ufopaedia:
     section: STR_RESOURCES_UC
     type_id: 4
 
+  - id: STR_CHRYSSALID_EGG
+    requires:
+      - STR_CHRYSSALID_EGG
+    text: STR_CHRYSSALID_EGG_UP
+    section: STR_RESOURCES_UC
+    type_id: 4
   - id: STR_BIOMASS
     requires:
       - STR_BIOMASS
@@ -1829,7 +1665,6 @@ ufopaedia:
     text: STR_SJB_LICENSE_UP
     section: STR_RESOURCES_UC
     type_id: 4
-# trophies
   - id: STR_SEC_LICENSE_ITEM
     requires:
       - STR_SEC_LICENSE_ITEM
@@ -1837,6 +1672,19 @@ ufopaedia:
     section: STR_RESOURCES_UC
     type_id: 4
 # data
+  - id: STR_CRYPTOCHIT1
+    requires:
+      - STR_CRYPTOCHIT1
+    text: STR_CRYPTOCHIT1_UP
+    section: STR_RESOURCES_UC
+    type_id: 4
+  - id: STR_CRYPTOCHIT2
+    requires:
+      - STR_CRYPTOCHIT2
+    text: STR_CRYPTOCHIT1_UP
+    section: STR_RESOURCES_UC
+    type_id: 4
+
   - id: STR_PERSONAL_DATA
     requires:
       - STR_PERSONAL_DATA
