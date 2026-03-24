@@ -92,7 +92,7 @@ X-Com Files/Final Mod Pack		[mod]
   HitFX	Script				[none]			(Mistar Red)
   Crate Obs				[none+recolour]			
   Fire Extinguisher			[touchup+recolour]
-  Armored Vest				[touchup+recolour]
+  Armored Vest				[touchup+recolour]	(robin)
   Muckstar				[touchup+animated]
   Zombie				[touchup]
   Robosphere Inventory			[touchup]
@@ -109,6 +109,7 @@ X-Com Files Resound			[mod]
 Awesome Guns				[mod]
  CanadianBeaver				[author]
   Laser FireT SFX			[none]
+  TU Reserve Buttons			[none]			(civilian+ufo)
 
 From the Ashes				[mod]
  Finnik					[author]
@@ -136,6 +137,10 @@ Amiga Fonts				[mod]
 First Turn Enemy TU Randomizer		[mod]
  Kzer-Za, Starving Poet			[authors]
   Script				[none]
+
+Community Extended LOFTEMPS		[mod]
+ Finnik					[author]
+  LOFTEMPS.DAT				[none]			(tftd+original)
 
 Sharkquanaut Combat Divers		[mod]
  Hans Woofington			[author]

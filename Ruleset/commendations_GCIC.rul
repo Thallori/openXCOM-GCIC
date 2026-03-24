@@ -49,7 +49,7 @@ commendations:
       totalMissions: [1]
 
   - type: STR_MEDAL_NIGHTOPS_NAME #number of night missions
-    description: STR_MEDAL_NIGHTOPS_NAME_UFOPEDIA
+    description: STR_MEDAL_NIGHTOPS_UFOPEDIA
     soldierBonusTypes: [STR_MEDAL_NIGHTOPS_1, STR_MEDAL_NIGHTOPS_2, STR_MEDAL_NIGHTOPS_3, STR_MEDAL_NIGHTOPS_4]
     sprite: 2
     criteria:

@@ -93,7 +93,6 @@
     alertDescription: STR_SECGAME_ALERT_DESCRIPTION
     markerName: STR_SECGAME
     duration: [200, 240]
-    despawnPenalty: 20
     startingCondition: SECURITY_GEAR
     briefing:
       showTarget: false
@@ -104,6 +103,7 @@
     customUfo: STR_UFO_HARVESTER
     forcePercentageOutsideUfo: true
     minShade: 15
+    cheatTurn: 50
     terrains:
       - STUDIO0_FOREST
     music:
@@ -120,15 +120,15 @@
         lowQty: 3
         medQty: 3
         highQty: 4
-        dQty: 2
+        dQty: 4
         percentageOutsideUfo: 30
         itemSets: *AnchorEmptyInventory
       - alienRank: 5
-        lowQty: 5
-        medQty: 5
-        highQty: 6
-        dQty: 5
-        percentageOutsideUfo: 60
+        lowQty: 4
+        medQty: 4
+        highQty: 5
+        dQty: 4
+        percentageOutsideUfo: 30
         itemSets: *AnchorEmptyInventory
 
   - type: STR_RESCUE_1
@@ -1087,37 +1087,47 @@
             - STR_9MM_MG_AMMO
             - STR_9MM_MG_AMMO
           -
-            - STR_9MM_MG
-            - STR_9MM_MG_AMMO
-            - STR_9MM_MG_AMMO
+            - STR_DARTROPE
+            - STR_PHXBOMB
           -
-            - STR_9MM_MG
-            - STR_9MM_MG_AMMO
-            - STR_9MM_MG_AMMO
+            - STR_DARTROPE
+            - STR_PHXBOMB
           -
-            - STR_9MM_MG
-            - STR_9MM_MG_AMMO
-            - STR_9MM_MG_AMMO
+            - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
           -
-            - STR_9MM_MG
-            - STR_9MM_MG_AMMO
-            - STR_9MM_MG_AMMO
+            - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
           -
-            - STR_9MM_MG
-            - STR_9MM_MG_AMMO
-            - STR_9MM_MG_AMMO
+            - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
           -
-            - STR_9MM_MG
-            - STR_9MM_MG_AMMO
-            - STR_9MM_MG_AMMO
+            - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
           -
-            - STR_9MM_MG
-            - STR_9MM_MG_AMMO
-            - STR_9MM_MG_AMMO
+            - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
           -
-            - STR_9MM_MG
-            - STR_9MM_MG_AMMO
-            - STR_9MM_MG_AMMO
+            - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
       - alienRank: 8
         lowQty: 1
         medQty: 1
@@ -1528,7 +1538,6 @@
     alertDescription: STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION
     markerName: STR_GCIC_SABOTAGE_1_
     duration: [72, 96]
-    despawnPenalty: 50
     despawnEvents:
       STR_EVENT_CLAIM_SECURED: 100
     failureEvents:
@@ -1551,7 +1560,7 @@
     objectiveType: 20
     objectivesRequired: 1
     objectiveComplete: [STR_SABOTAGE_DESTROYED_COMPLETE, -25]
-    objectiveFailed: [STR_SABOTAGE_DESTROYED_FAILED, -50]
+    objectiveFailed: [STR_SABOTAGE_DESTROYED_FAILED, 0]
     objectivePopup: STR_SABOTAGE_DESTROYED_POPUP
     turnLimit: 10
     chronoTrigger: 1
@@ -1647,8 +1656,6 @@
     alertDescription: STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION
     markerName: STR_GCIC_SABOTAGE_2_
     duration: [72, 96]
-    despawnPenalty: 50
-    abortPenalty: 50
     despawnEvents:
       STR_EVENT_HEALTHY_COMPETITION: 100
     failureEvents:
@@ -1775,7 +1782,6 @@
     alertDescription: STR_GCIC_SABOTAGE_3_ALERT_DESCRIPTION
     markerName: STR_GCIC_SABOTAGE_3_
     duration: [72, 96]
-    despawnPenalty: 50
     despawnEvents:
       STR_EVENT_HEALTHY_COMPETITION: 100
     failureEvents:
@@ -1793,7 +1799,7 @@
       - COMMERCIAL
     music:
       - SHADOW1
-    turnLimit: 10
+    turnLimit: 20
     chronoTrigger: 1
     data:
       - alienRank: 8
@@ -1803,20 +1809,68 @@
         dQty: 1
         percentageOutsideUfo: 0
         extraRandomItems: *personalData7
-        itemSets: *sspOfficer
+        itemSets: &sspSupervisor
+          -
+            - STR_BATON
+            - STR_SINGLESHOT_LASER_PISTOL_CODED
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
+          -
+            - STR_BATON
+            - STR_SINGLESHOT_LASER_PISTOL_CODED
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
+          -
+            - STR_BATON
+            - STR_VOLTKNOCKER
+            - STR_VOLTKNOCKER
+          -
+            - STR_BATON
+            - STR_VOLTKNOCKER
+            - STR_VOLTKNOCKER
+          -
+            - STR_BATON
+            - STR_VOLTKNOCKER
+            - STR_VOLTKNOCKER
+          -
+            - STR_BATON
+            - STR_VOLTKNOCKER
+            - STR_VOLTKNOCKER
+          -
+            - STR_SSP_LASER_SMG_CODED
+            - STR_SSP_LASER_SMG_AMMO2
+            - STR_SSP_LASER_SMG_AMMO2
+            - STR_SSP_LASER_SMG_AMMO2
+          -
+            - STR_SSP_LASER_SMG_CODED
+            - STR_SSP_LASER_SMG_AMMO2
+            - STR_SSP_LASER_SMG_AMMO2
+            - STR_SSP_LASER_SMG_AMMO2
+          -
+            - STR_SSP_LASER_SMG_CODED
+            - STR_SSP_LASER_SMG_AMMO2
+            - STR_SSP_LASER_SMG_AMMO2
+            - STR_SSP_LASER_SMG_AMMO2
+          -
+            - STR_SSP_LASER_SMG_CODED
+            - STR_SSP_LASER_SMG_AMMO2
+            - STR_SSP_LASER_SMG_AMMO2
+            - STR_SSP_LASER_SMG_AMMO2
       - alienRank: 7
-        lowQty: 3
-        medQty: 3
-        highQty: 4
+        lowQty: 2
+        medQty: 2
+        highQty: 3
         dQty: 3
         percentageOutsideUfo: 0
         extraRandomItems: *personalData7
         itemSets: *sspOfficer
       - alienRank: 6
-        lowQty: 3
-        medQty: 3
-        highQty: 4
-        dQty: 4
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 3
         percentageOutsideUfo: 0
         extraRandomItems: *personalData7
         itemSets: *sspGuard

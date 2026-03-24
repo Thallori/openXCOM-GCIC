@@ -834,8 +834,8 @@ units:
     rank: STR_RANK_ANIMAL
     liveAlien: STR_SHARES_MEDI
     stats:
-      tu: 110
-      stamina: 140
+      tu: 105
+      stamina: 135
       health: 95
       bravery: 100
       reactions: 70
@@ -1017,13 +1017,13 @@ units:
   - type: STR_DEFENSE_TURRET_AP
     race: STR_ROBOTS
     rank: STR_RANK_ROBOT
-    liveAlien: STR_PLASTICS
+    liveAlien: STR_SSP_SMG
     stats:
       tu: 25
       stamina: 10
-      health: 15
+      health: 10
       bravery: 100
-      reactions: 30
+      reactions: 25
       firing: 50
       throwing: 0
       strength: 10
@@ -1033,17 +1033,15 @@ units:
     armor: STR_DEFENSE_TURRET_AP_ARMOR
     standHeight: 14
     kneelHeight: 14
-    value: -8
+    value: -2
     deathSound: 23
     intelligence: 0
     aggression: 0
     moraleLossWhenKilled: 10
     livingWeapon: true
-    autoSurrender: true
     builtInWeaponSets:
       - - STR_TURRET_AP_WEAPON
         - STR_PLASTICS
-        - STR_SSP_SMG_AMMO
         - STR_SSP_SMG_AMMO
         - STR_SSP_SMG_AMMO
 #simulated

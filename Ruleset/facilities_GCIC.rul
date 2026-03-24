@@ -5,7 +5,7 @@ facilities:
     spriteShape: 2
     spriteFacility: 300
     buildTime: 1
-    buildCost: 250000
+    buildCost: 200000
     monthlyCost: 5000
     mapName: XBASE_00
 
@@ -46,10 +46,10 @@ facilities:
     spriteShape: 1
     spriteFacility: 305
     buildTime: 9
-    buildCost: 150000
-    refundValue: 110000
+    buildCost: 40000
+    refundValue: 30000
     monthlyCost: 450
-    storage: 50
+    storage: 75
     mapName: XBASE_07
   - type: STR_STOREROOM
     requires:
@@ -68,7 +68,7 @@ facilities:
         build: 1
         refund: 1
     monthlyCost: -22000
-    storage: 100
+    storage: 200
     mapName: XBASE_07
 
   - type: STR_GARAGE
@@ -93,8 +93,8 @@ facilities:
     spriteShape: 1
     spriteFacility: 302
     buildTime: 12
-    buildCost: 200000
-    refundValue: 150000
+    buildCost: 55000
+    refundValue: 41000
     monthlyCost: 800
     personnel: 24
     manaRecoveryPerDay: 1
@@ -121,8 +121,8 @@ facilities:
     spriteShape: 1
     spriteFacility: 312
     buildTime: 20
-    buildCost: 450000
-    refundValue: 325000
+    buildCost: 275000
+    refundValue: 200000
     monthlyCost: 70000
     labs: 1
     sickBayAbsoluteBonus: 0.25
@@ -185,13 +185,13 @@ facilities:
     spriteShape: 1
     spriteFacility: 311
     buildTime: 15
-    buildCost: 720000
-    refundValue: 540000
-    monthlyCost: 65000
+    buildCost: 300000
+    refundValue: 225000
+    monthlyCost: 40000
     buildCostItems:
       STR_SECRET_DATA:
-        build: 5
-        refund: 5
+        build: 10
+        refund: 10
     labs: 2
     maxAllowedPerBase: 3
     mapName: XBASE_02
@@ -223,8 +223,8 @@ facilities:
     spriteShape: 1
     spriteFacility: 310
     buildTime: 22
-    buildCost: 385000
-    refundValue: 280000
+    buildCost: 320000
+    refundValue: 240000
     monthlyCost: 35000
     workshops: 4
     mapName: XBASE_02
@@ -251,8 +251,8 @@ facilities:
     spriteShape: 2
     spriteFacility: 313
     buildTime: 11
-    buildCost: 68000
-    refundValue: 50000
+    buildCost: 70000
+    refundValue: 52000
     monthlyCost: -8000
     labs: 1
     radarChance: 5

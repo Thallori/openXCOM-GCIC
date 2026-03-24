@@ -205,6 +205,8 @@ extraSprites:
       261: Resources/Items/Materials/cryptochit2_bigob.png
       262: Resources/Items/Materials/data3_bigob.png
       263: Resources/Factions/SSP/sspsupervisor_bigob.png
+      264: Resources/Items/Kinetic/hra_coilsniper_bigob.png
+      265: Resources/Items/Kinetic/Ammo/hra_coilsniper_ammo_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -355,6 +357,8 @@ extraSprites:
       244: Resources/Factions/SSP/sspsupervisor_floorob.png
       245: Resources/Items/Materials/trophy_chryssalid_floorob.png
       246: Resources/Items/Materials/personal_floorob.png
+      247: Resources/Items/Kinetic/hra_coilsniper_floorob.png
+      248: Resources/Items/Kinetic/Ammo/hra_coilsniper_ammo_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -420,6 +424,7 @@ extraSprites:
       560: Resources/Items/Kinetic/9mm_mg_handob.png
       568: Resources/Items/Explosives/barrelmortar_handob.png
       576: Resources/Items/Explosives/phxbomb_handob.png
+      584: Resources/Items/Kinetic/hra_coilsniper_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
@@ -496,7 +501,6 @@ extraSprites:
       80: Resources/Animations/Explosions/grey_skull.png
       88: Resources/Animations/Explosions/green_skull.png
       96: Resources/Animations/Explosions/flames.png
-
   - type: SMOKE.PCK
     height: 80
     width: 160
@@ -506,7 +510,6 @@ extraSprites:
       56: Resources/Animations/electric_hit.png
       66: Resources/Animations/redlaser_hit.png
       76: Resources/Animations/sonic_hit.png
-
   - type: SMOKE.PCK
     height: 40
     width: 32
@@ -517,7 +520,6 @@ extraSprites:
       23: Resources/UI/smoke_rank3.png
       24: Resources/UI/smoke_rank4.png
       25: Resources/UI/smoke_rank5.png
-
   - type: HIT.PCK
     height: 40
     width: 128
@@ -1306,7 +1308,7 @@ extraSprites:
     fileSingle: Resources/Interwin/aircar1_interwin.png
   - typeSingle: aircar2_interwin
     fileSingle: Resources/Interwin/aircar2_interwin.png
-#day/night icons
+# icons
   - type: DayNightIndicator
     width: 72
     height: 24
@@ -1314,7 +1316,7 @@ extraSprites:
     subY: 24
     files:
       0: Resources/UI/daynight.png
-#battle icons
+
   - typeSingle: BigBurnIndicator
     fileSingle: Resources/UI/icon_burn.png
   - typeSingle: BigStunIndicator
@@ -1347,7 +1349,7 @@ extraSprites:
     subY: 8
     files:
       0: Resources/UI/commendations_decorations.png
-#motion scanner
+#replace
   - type: DETBLOB.DAT
     width: 240
     height: 16
@@ -1359,9 +1361,7 @@ extraSprites:
     fileSingle: Resources/UI/DETBORD.png
   - typeSingle: DETBORD2.PCK
     fileSingle: Resources/UI/DETBORD2.png
-#backgrounds
-#replace
-  # planet background only, can be much larger
+  # planet background only, can be much larger than geobord
   # - typeSingle: ALTGEOBORD.SCR
   #   fileSingle: Resources/Backgrounds/GEOBORD.png
   - typeSingle: GEOBORD.SCR #geoscape side panel
@@ -1410,6 +1410,8 @@ extraSprites:
     fileSingle: Resources/UI/INTERWIN.png
   - typeSingle: AvatarBackground
     fileSingle: Resources/UI/avatar.png
+  - typeSingle: TFTDReserve
+    fileSingle: Resources/UI/reserve.png
   - type: TinyRanks
     width: 42
     height: 7

@@ -4,7 +4,9 @@ musics:
   - type: GMGEO1
   - type: GMGEO2
   - type: GMGEO3
+  - type: GMGEO4
   - type: GMINTER
+  - type: GMMARS
   - type: HACKER_INTRO
   - type: HACKER1
   - type: BREACH_INTRO
@@ -72,6 +74,8 @@ extraSounds:
       146: Resources/Sounds/Deaths/alien_death1.wav
       147: Resources/Sounds/Deaths/alien_death2.wav
       148: Resources/Sounds/Deaths/alien_death3.wav
+      149: Resources/Sounds/Fire/coilsniper_fire.wav
+      150: Resources/Sounds/Reloads/gauss_reload.wav
 
   - type: GEO.CAT
     files:

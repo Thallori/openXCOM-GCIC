@@ -10,10 +10,10 @@ extended:
           var int unitTUs;
           var int partTU;
           var int turnNum;
-          
+
           battle_game.getTurn turnNum;
           if eq turnNum 0;
-            battle_game.randomRange partTU 30 70; #between 30 and 70% max tus
+            battle_game.randomRange partTU 30 60; #between 30 and 60% max tus
             unit.getTimeUnitsMax unitTUs;
             muldiv unitTUs partTU 100;
             unit.setTimeUnits unitTUs;
@@ -22,13 +22,9 @@ extended:
           end;
           return;
     damageUnit:
-      - offset: 8 #replaces vanilla wounds with a scaling random factor
+      - offset: 16 #replaces vanilla wounds with a scaling random factor
         code: |
           var int randomFactor;
-          var int currentHealth;
-          var int currentWounds;
-          var int currentStun;
-          unit.getHealth currentHealth;
 
           if gt to_wound 0;
             battle_game.randomRange randomFactor 50 150; #between 5-15% of health damage
@@ -38,22 +34,32 @@ extended:
             end;
             set to_wound randomFactor;
           end;
-          
+          return;
+      - offset: 17
+        code: |
+          var int currentHealth;
+          var int currentWounds;
+          var int currentStun;
+          unit.getHealth currentHealth;
+
           if gt currentHealth to_health; #if you're not getting killed by damage right now
             unit.getFatalwoundsTotal currentWounds;
             add currentWounds to_wound;
             sub currentHealth to_health;
             sub currentHealth currentWounds;
+
             if le currentHealth 0; #if you would die from wounds, don't
               unit.getHealth currentHealth;
               unit.getStun currentStun;
               add currentStun to_stun;
               #debug_log "We're about to die. Health, Damage, Wounds, Stun:" currentHealth to_health currentWounds to_stun;
+
               sub to_health currentWounds;
               if lt to_health 0; #damage doesn't heal health
                 set to_health 0;
               end;
               add to_stun currentWounds; #deal the lost damage as stun
+
               if ge currentWounds currentHealth; #if wounds is greater than health, don't
                 sub currentWounds currentHealth;
                 sub currentWounds 1;
@@ -62,6 +68,7 @@ extended:
                 end;
                 set to_wound currentWounds;
               end;
+
               unit.getFatalwoundsTotal currentHealth;
               add currentHealth to_wound;
               add currentHealth 1;
@@ -79,6 +86,35 @@ extended:
             end;
           end;
           return;
+      - offset: -41.3 #modified from Nord, prevents death by transformation if not dead
+        code: |
+          var ptr RuleArmor armorRuleset;
+          var int armorSize;
+          var int currentHealth;
+
+          if eq to_transform 0; #if no transform, don't transform
+            return;
+          end;
+
+          if eq to_health 0; #if no damage, don't transform
+            set to_transform 0;
+            return;
+          end;
+
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getSize armorSize; #if too big, don't transform
+          if eq armorSize 2;
+            return;
+          end;
+
+          unit.getHealth currentHealth;
+          if le to_health currentHealth; #if not dead, don't transform
+            set to_transform 0;
+            return;
+          end;
+
+          unit.setHealth 0; #if none of the above, die (and transform)
+          return;
     returnFromMissionUnit: #modified from Meridian, adds extra recovery days based on fatal wounds
       - offset: 9
         code: |
@@ -89,7 +125,7 @@ extended:
           unit.getFatalwoundsTotal totalWounds;
           muldiv totalWounds randomFactor 100;
           add recovery_time totalWounds;
-        
+
           if gt recovery_time 30; #if recovery days are more than 30, half the days above 30
             add recovery_time -30;
             div recovery_time 2;
@@ -105,15 +141,14 @@ extended:
       - offset: 10 #from Yankes, shows ufo data even without hyperwave decoder
         code: |
           var int showHwData;
-         
+
           ufo.getTag showHwData Tag.TAG_PUBLIC_HYPERWAVE_DATA;
-         
+
           if eq showHwData 1;
             var int temp DETECTION_HYPERWAVE;
             bit_xor temp DETECTION_RADAR; # remove from HW radar detection bit, it leave only HW data flag
-            bit_or detection_type temp; # add only HW falag to detection
+            bit_or detection_type temp; # add only HW flag to detection
           end;
-         
           return detection_type detection_chance;
 
 ufos:

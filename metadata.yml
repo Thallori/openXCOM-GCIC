@@ -5,6 +5,6 @@ description: "Global Contracts and Insurance Corporation"
 id: global_contracts
 isMaster: true
 master: xcom1
-requiredExtendedVersion: "8.5"
+requiredExtendedVersion: "8.5.7"
 reservedSpace: 3
 resourceConfig: transparency.rul

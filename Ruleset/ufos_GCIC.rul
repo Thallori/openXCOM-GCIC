@@ -122,7 +122,7 @@ ufos:
     score: -10
     reload: 6
     fireSound: 101
-    breakOffTime: 200
+    breakOffTime: 250
     missionScore: 0
     battlescapeTerrainData:
       name: STR_UFO_AIRCAR_IRON1
@@ -145,7 +145,7 @@ ufos:
     score: -20
     reload: 6
     fireSound: 101
-    breakOffTime: 200
+    breakOffTime: 250
     missionScore: 0
     battlescapeTerrainData:
       name: STR_UFO_AIRCAR_IRON2
@@ -319,7 +319,7 @@ ufos:
               - [1, 11, 0]
               - [11, 3, 0]
               - [4, 10, 1]
-              - [19, 9, 1]
+              - [16, 7, 1]
               - [15, 2, 2]
   - type: STR_HOUSE_FORT
     modSprite: interception_jammed
@@ -474,6 +474,12 @@ ufos:
               - [8, 7, 0]
             STR_SPAWN_TURRET_AP:
               - [10, 9, 0]
+              - [10, 4, 0]
+              - [9, 15, 0]
+              - [5, 14, 1]
+              - [9, 13, 1]
+              - [5, 7, 2]
+              - [9, 14, 2]
           fuseTimers:
             STR_SPAWN_TURRET_AP: [0, 0]
           randomizedItems:
@@ -505,6 +511,12 @@ ufos:
               - [7, 6, 0]
             STR_SPAWN_TURRET_AP:
               - [10, 3, 0]
+              - [4, 8, 0]
+              - [15, 7, 0]
+              - [7, 3, 1]
+              - [12, 7, 1]
+              - [11, 6, 2]
+              - [6, 7, 2]
           fuseTimers:
             STR_SPAWN_TURRET_AP: [0, 0]
           randomizedItems:

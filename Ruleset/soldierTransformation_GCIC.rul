@@ -91,7 +91,7 @@ soldierTransformation:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
-      mana: 5
+      mana: 10
     percentGainedStatChange:
       mana: -30
     rerollStats:
@@ -119,7 +119,7 @@ soldierTransformation:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
-      mana: 5
+      mana: 10
     percentGainedStatChange:
       mana: -30
     rerollStats:

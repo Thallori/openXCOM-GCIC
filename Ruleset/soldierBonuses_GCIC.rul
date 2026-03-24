@@ -66,7 +66,7 @@ soldierBonuses:
       stamina: 10
       strength: 10
       health: 10
-      mana: -5
+      mana: -10
     recovery:
       energy:
         flatOne: -2
@@ -77,7 +77,7 @@ soldierBonuses:
       stamina: 10
       strength: 15
       health: 15
-      mana: -5
+      mana: -10
     recovery:
       energy:
         flatOne: -2

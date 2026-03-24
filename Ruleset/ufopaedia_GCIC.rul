@@ -337,6 +337,14 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: OPERATIONS3Z_CPAL
+  - id: STR_GCIC_SABOTAGE_2_DATA_DECRYPT
+    requires:
+      - STR_GCIC_SABOTAGE_2_DATA_DECRYPT
+    text: STR_GCIC_SABOTAGE_2_DATA_DECRYPT_UP
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: OPERATIONS3_CPAL
   - id: STR_GCIC_INDEPENDENCE
     requires:
       - STR_GCIC_INDEPENDENCE
@@ -345,6 +353,14 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: OPERATIONS3Z_CPAL
+  - id: STR_GCIC_SABOTAGE_3_DATA_DECRYPT
+    requires:
+      - STR_GCIC_SABOTAGE_3_DATA_DECRYPT
+    text: STR_GCIC_SABOTAGE_3_DATA_DECRYPT_UP
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: OPERATIONS3_CPAL
 
   - id: STR_IRONEYES_NETWORK
     requires:
@@ -1061,7 +1077,6 @@ ufopaedia:
     text: STR_CHEM_SMG_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_CHEM_SMG_AMMO0
     requires:
       - STR_CHEM_SMG
@@ -1075,6 +1090,18 @@ ufopaedia:
   - id: STR_CHEM_SMG_AMMO2
     requires:
       - STR_CHEM_SMG
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+# hra
+  - id: STR_OLD_GAUSS_SNIPER
+    requires:
+      - STR_OLD_GAUSS_SNIPER
+    text: STR_OLD_GAUSS_SNIPER_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_OLD_GAUSS_SNIPER_AMMO
+    requires:
+      - STR_OLD_GAUSS_SNIPER
     section: STR_NOT_AVAILABLE
     type_id: 4
 # ssp
@@ -1134,6 +1161,23 @@ ufopaedia:
   - id: STR_MULTISHOT_LASER_AMMO
     requires:
       - STR_SINGLESHOT_LASER_PISTOL
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_SSP_LASER_SMG
+    requires:
+      - STR_SSP_LASER_SMG
+    text: STR_SSP_LASER_SMG_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_SSP_LASER_SMG_AMMO1
+    requires:
+      - STR_SSP_LASER_SMG_AMMO1
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+  - id: STR_SSP_LASER_SMG_AMMO2
+    requires:
+      - STR_SSP_LASER_SMG
     section: STR_NOT_AVAILABLE
     type_id: 4
 
@@ -1414,25 +1458,11 @@ ufopaedia:
     text: STR_ELERIUM_BOMB_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-# sporting
-  - id: STR_MARSBALL
-    requires:
-      - STR_MARSBALL
-    text: STR_MARSBALL_UP
-    section: STR_EQUIPMENT_UC
-    type_id: 4
-# melee
+# non-guns
   - id: STR_STL_KNIFE
     text: STR_STL_KNIFE_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-  - id: STR_BATON
-    requires:
-      - STR_BATON
-    text: STR_BATON_UP
-    section: STR_EQUIPMENT_UC
-    type_id: 4
-# tools
   - id: STR_WRENCH
     requires:
       - STR_WRENCH
@@ -1446,6 +1476,32 @@ ufopaedia:
     section: STR_EQUIPMENT_UC
     type_id: 4
 
+  - id: STR_BATON
+    requires:
+      - STR_BATON
+    text: STR_BATON_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_VOLTKNOCKER
+    requires:
+      - STR_VOLTKNOCKER
+    text: STR_TASER_PISTOL_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_DARTROPE
+    requires:
+      - STR_DARTROPE
+    text: STR_DARTROPE_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_MARSBALL
+    requires:
+      - STR_MARSBALL
+    text: STR_MARSBALL_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+# gr
   - id: STR_MULTITOOL
     requires:
       - STR_MULTITOOL
@@ -1500,14 +1556,7 @@ ufopaedia:
       - STR_SURVEY_KNOCKER
     section: STR_NOT_AVAILABLE
     type_id: 4
-
-  - id: STR_EXTINGUISHER
-    requires:
-      - STR_EXTINGUISHER
-    text: STR_EXTINGUISHER_UP
-    section: STR_EQUIPMENT_UC
-    type_id: 4
-# utility
+#utility
   - id: STR_ELECTROFLARE
     text: STR_ELECTROFLARE_UP
     section: STR_EQUIPMENT_UC
@@ -1558,6 +1607,13 @@ ufopaedia:
     requires:
       - STR_MEDI_TRAUMA
     text: STR_MEDI_TRAUMA_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_EXTINGUISHER
+    requires:
+      - STR_EXTINGUISHER
+    text: STR_EXTINGUISHER_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
 #salvage
@@ -1700,7 +1756,7 @@ ufopaedia:
 # abstract
   - id: STR_DRONES2_SHARE
     requires:
-      - STR_DRONES2_SHARE
+      - STR_DRONES2_SHARE_RESEARCH
     text: STR_DRONES2_SHARE_UP
     section: STR_RESOURCES_UC
     type_id: 8
