@@ -6,6 +6,15 @@ enviroEffects:
 
 startingConditions:
   - type: INFILTRATION_GEAR_INFILTRATION_CRAFT
+    defaultArmor: &plexDefaultArmor
+      STR_CRACKED_HYBRID_DRONE:
+        STR_PLEX_DRONE_HYBRID_ARMOR: 100
+      STR_CRACKED_HUMAN_DRONE:
+        STR_PLEX_DRONE_HUMAN_ARMOR: 100
+      STR_CRACKED_SHARK_DRONE:
+        STR_PLEX_DRONE_SHARK_ARMOR: 100
+      STR_CRACKED_DEEP_DRONE:
+        STR_PLEX_DRONE_DEEP_ARMOR: 100
     allowedArmors: &infiltrationArmor
       - STR_PLEX_DRONE_HYBRID_ARMOR
       - STR_PLEX_DRONE_HUMAN_ARMOR
@@ -31,12 +40,14 @@ startingConditions:
       - STR_VCM_BICUBE
 
   - type: TOOLS_GEAR_INFILTRATION_CRAFT
+    defaultArmor: *plexDefaultArmor
     allowedArmors: *infiltrationArmor
     allowedItemCategories:
       - STR_TOOLS_CATEGORY
     allowedCraft: *infiltrationCraft
 
   - type: MILSPEC_GEAR_INFILTRATION_CRAFT
+    # defaultArmor: *plexDefaultArmor
     # allowedArmors:
     #   - STR_all armors are currently allowed
     forbiddenItemCategories:
@@ -45,6 +56,7 @@ startingConditions:
     allowedCraft: *infiltrationCraft
 
   - type: SECURITY_GEAR
+    # defaultArmor: *plexDefaultArmor
     # allowedArmors:
     #   - STR_ all armors are currently allowed
     forbiddenItemCategories:
@@ -52,6 +64,7 @@ startingConditions:
       - STR_INVASION_CATEGORY
 
   - type: MILITARY_GEAR
+    # defaultArmor: *plexDefaultArmor
     # allowedArmors:
     #   - STR_ all armors are currently allowed
     forbiddenItemCategories:

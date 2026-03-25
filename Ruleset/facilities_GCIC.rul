@@ -7,6 +7,7 @@ facilities:
     buildTime: 1
     buildCost: 200000
     monthlyCost: 5000
+    manaRecoveryPerDay: 1
     mapName: XBASE_00
 
   - type: STR_CORRIDOR
@@ -34,7 +35,6 @@ facilities:
     storage: 15
     personnel: 8
     aliens: 1
-    manaRecoveryPerDay: 1
     mapName: XBASE_07
   - type: STR_STORAGE_1
     requires:
@@ -61,14 +61,14 @@ facilities:
     spriteShape: 1
     spriteFacility: 309
     buildTime: 14
-    buildCost: 325000
-    refundValue: 250000
+    buildCost: 85000
+    refundValue: 64000
     buildCostItems:
       STR_SJB_LICENSE:
         build: 1
         refund: 1
-    monthlyCost: -22000
-    storage: 200
+    monthlyCost: -40000
+    storage: 100
     mapName: XBASE_07
 
   - type: STR_GARAGE
@@ -97,22 +97,18 @@ facilities:
     refundValue: 41000
     monthlyCost: 800
     personnel: 24
-    manaRecoveryPerDay: 1
     mapName: XBASE_01
-#   - type: STR_REMEDITION_OFFICE
-#     requires:
-#       - STR_REMEDITION_OFFICE_RESEARCH
-#     provideBaseFunc: [STR_SERVICE_PROJECTS] #drone personal projects
-# #    spriteShape: 1
-# #    spriteFacility: 303
-#     buildTime: 14
-#     buildCost: 275000
-#     refundValue: 200000
-#     monthlyCost: 14000
-#     maxAllowedPerBase: 1
-#     manaRecoveryPerDay: 3
-#     storage: 10
-#     mapName: XBASE_07
+  - type: STR_REMEDITION_OFFICE
+    requires:
+      - STR_REMEDITION_OFFICE_RESEARCH
+    spriteShape: 1
+    spriteFacility: 303 #
+    buildTime: 14
+    buildCost: 140000
+    refundValue: 105000
+    monthlyCost: 14000
+    trainingRooms: 6
+    mapName: XBASE_07
 
   - type: STR_MEDI_BAY
     requires:
@@ -121,8 +117,8 @@ facilities:
     spriteShape: 1
     spriteFacility: 312
     buildTime: 20
-    buildCost: 275000
-    refundValue: 200000
+    buildCost: 375000
+    refundValue: 280000
     monthlyCost: 70000
     labs: 1
     sickBayAbsoluteBonus: 0.25
@@ -156,7 +152,6 @@ facilities:
     labs: 4
     maxAllowedPerBase: 1
     mapName: XBASE_02
-
   - type: STR_LOCAL_INTERFACE
     requires:
       - STR_PERSONAL_DATA
@@ -176,7 +171,6 @@ facilities:
     labs: 3
     maxAllowedPerBase: 1
     mapName: XBASE_02
-
   - type: STR_PUBLIC_GATEWAY
     requires:
       - STR_SECRET_DATA
@@ -195,6 +189,7 @@ facilities:
     labs: 2
     maxAllowedPerBase: 3
     mapName: XBASE_02
+
   - type: STR_BACKCHANNELS
     requires:
       - STR_SJB_LICENSE
@@ -203,16 +198,16 @@ facilities:
     spriteShape: 1
     spriteFacility: 311 #
     buildTime: 19
-    buildCost: 1000000
-    refundValue: 750000
-    monthlyCost: -120000
+    buildCost: 800000
+    refundValue: 600000
+    monthlyCost: -175000
     buildCostItems:
       STR_SJB_LICENSE:
         build: 1
         refund: 1
       STR_SECRET_DATA:
-        build: 10
-        refund: 10
+        build: 30
+        refund: 30
     maxAllowedPerBase: 1
     mapName: XBASE_02
 
@@ -264,16 +259,16 @@ facilities:
       - STR_BIONIC_INTERLACE
       - STR_HYPERCOMMS_ARRAY_RESEARCH
     provideBaseFunc: [STR_SERVICE_HYPERCOMMS]
-    spriteShape: 1
-    spriteFacility: 311 #
+    spriteShape: 2
+    spriteFacility: 313 #
     buildTime: 17
     buildCost: 1250000
     refundValue: 950000
     monthlyCost: -50000
     buildCostItems:
       STR_PERSONAL_DATA:
-        build: 50
-        refund: 50
+        build: 100
+        refund: 100
     labs: 6
     radarChance: 3
     radarRange: 2500

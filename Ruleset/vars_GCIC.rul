@@ -245,6 +245,8 @@ constants:
   extendedTerrainMelee: 4
   extendedUnderwaterThrowFactor: 60
   damageRange: 100
+  goodDebriefingMusic: GMDEBGOO
+  badDebriefingMusic: GMDEBPOR
 
 ai:
   extendedFireModeChoice: true

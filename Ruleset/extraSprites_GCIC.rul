@@ -472,6 +472,7 @@ extraSprites:
       652: Resources/Crafts/Hardpoints/9mmmg_basebit.png
       653: Resources/Crafts/Hardpoints/xnlaservolley_basebit.png
       654: Resources/Crafts/Hardpoints/xnlasercannon_basebit.png
+      655: Resources/Crafts/Hardpoints/phxmissile_basebit.png
 
   - type: INTICON.PCK
     files:
@@ -491,6 +492,7 @@ extraSprites:
       609: Resources/Crafts/Hardpoints/9mmmg_inticon.png
       610: Resources/Crafts/Hardpoints/xnlaservolley_inticon.png
       611: Resources/Crafts/Hardpoints/xnlasercannon_inticon.png
+      612: Resources/Crafts/Hardpoints/phxmissile_inticon.png
 
   - type: X1.PCK
     width: 1024

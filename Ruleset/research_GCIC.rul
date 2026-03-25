@@ -33,40 +33,40 @@ research:
       - STR_SERVICE_UPLINK
     dependencies:
       - STR_INPUT_OUTPUT
-    cost: 3
+    cost: 4
   - name: STR_EXPANSION
     requiresBaseFunc:
       - STR_SERVICE_UPLINK
     dependencies:
       - STR_INPUT_OUTPUT
-    cost: 3
+    cost: 4
   - name: STR_SUBSIDIARIES
     requiresBaseFunc:
       - STR_SERVICE_UPLINK
     dependencies:
       - STR_KERNEL
-    cost: 3
+    cost: 4
   - name: STR_SECURITY
     requiresBaseFunc:
       - STR_SERVICE_UPLINK
     dependencies:
       - STR_KERNEL
       - STR_PRIMARY_OPERATIONS
-    cost: 3
+    cost: 4
   - name: STR_NON_CLIENTS
     requiresBaseFunc:
       - STR_SERVICE_UPLINK
     dependencies:
       - STR_SECURITY
       - STR_VENDORS
-    cost: 3
+    cost: 5
 #operations
   - name: STR_PRIMARY_OPERATIONS
     requiresBaseFunc:
       - STR_SERVICE_UPLINK
     dependencies:
       - STR_OLD_DATA
-    cost: 3
+    cost: 5
 
   - name: STR_RRM_LOCK
     dependencies:
@@ -77,7 +77,7 @@ research:
     neededItem: STR_RRM_ITEM
     needItem: true
     destroyItem: true
-    cost: 5
+    cost: 10
     disables:
       - STR_RRM_LOCK
 
@@ -91,7 +91,7 @@ research:
     neededItem: STR_FTM_ITEM
     needItem: true
     destroyItem: true
-    cost: 5
+    cost: 15
     disables:
       - STR_FTM_LOCK
 
@@ -114,7 +114,7 @@ research:
       - STR_SERVICE_UPLINK
     dependencies:
       - STR_OLD_DATA
-    cost: 3
+    cost: 5
 
   - name: STR_PROJECT_DRONES2
     dependencies:
@@ -126,12 +126,12 @@ research:
       - STR_GCIC_PROTOTYPE_LASER_PISTOL
       - STR_GCIC_PROTOTYPE_LASER_SMG
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
-    cost: 10
+    cost: 60
   - name: STR_DRONES2_SHARE_RESEARCH
     neededItem: STR_PD2_ITEM
     needItem: true
     destroyItem: true
-    cost: 2
+    cost: 5
     points: 500
     spawnedItem: STR_DRONES2_SHARE
     disables:
@@ -144,7 +144,7 @@ research:
       - STR_SECONDARY_OPERATIONS
       - STR_SECURITY
       - STR_EXPANSION
-    cost: 5
+    cost: 7
 
   - name: STR_PBI_LOCK
     dependencies:
@@ -155,7 +155,7 @@ research:
     neededItem: STR_PBI_ITEM
     needItem: true
     destroyItem: true
-    cost: 5
+    cost: 7
     disables:
       - STR_PBI_LOCK
 
@@ -169,7 +169,7 @@ research:
     neededItem: STR_PTS_ITEM
     needItem: true
     destroyItem: true
-    cost: 5
+    cost: 15
     disables:
       - STR_PTS_LOCK
 
@@ -180,7 +180,7 @@ research:
     neededItem: STR_PROJECT_INDEPENDENCE_ITEM
     needItem: true
     destroyItem: true
-    cost: 125
+    cost: 999
     disables:
       - STR_PIN_LOCK
 
@@ -188,7 +188,7 @@ research:
     dependencies:
       - STR_FORBIDDEN_OPERATIONS
       - STR_TRG_BO_PREQ
-    cost: 2
+    cost: 5
   - name: STR_IRONEYES_PORT
     requiresBaseFunc:
       - STR_SERVICE_PORT
@@ -196,7 +196,7 @@ research:
       - STR_IRONEYES_NETWORK
       - STR_BREAKER_PRIVATE
       - STR_LOCAL_INTERFACE
-    cost: 4
+    cost: 10
   - name: STR_IRONEYES_SURVEY
     requiresBaseFunc:
       - STR_SERVICE_NETWORK
@@ -204,14 +204,14 @@ research:
       - STR_IRONEYES_PORT
       - STR_RIPPER_PRIVATE
       - STR_PUBLIC_GATEWAY
-    cost: 7
+    cost: 20
 
   - name: STR_NETRUNNERS_NETWORK
     dependencies:
       - STR_FREELANCER_PRIVATE
       - STR_FORBIDDEN_OPERATIONS
       - STR_BIONIC_INTERLACE
-    cost: 2
+    cost: 5
   - name: STR_NETRUNNERS_SURVEY
     requiresBaseFunc:
       - STR_SERVICE_NETWORK
@@ -219,14 +219,14 @@ research:
       - STR_SKIPTRACER_PRIVATE
       - STR_NETRUNNERS_NETWORK
       - STR_PUBLIC_GATEWAY
-    cost: 9
+    cost: 20
 
   - name: STR_SUBCONTRACTING_OPERATIONS
     dependencies:
       - STR_SECONDARY_OPERATIONS
       - STR_SPECIALIZATION_TRAINING
       - STR_BOUNTY_1
-    cost: 4
+    cost: 7
 
   - name: STR_PMM_LOCK
     dependencies:
@@ -236,7 +236,7 @@ research:
     neededItem: STR_PMM_ITEM
     needItem: true
     destroyItem: true
-    cost: 5
+    cost: 10
     disables:
       - STR_PMM_LOCK
 
@@ -248,7 +248,7 @@ research:
     neededItem: STR_PGM_ITEM
     needItem: true
     destroyItem: true
-    cost: 5
+    cost: 10
     disables:
       - STR_PGM_LOCK
 # licenses
@@ -270,7 +270,7 @@ research:
   - name: STR_MEDIBAY_ITEM
     needItem: true
     destroyItem: true
-    cost: 5
+    cost: 7
     disables:
       - STR_LMB_LOCK
 
@@ -280,7 +280,7 @@ research:
   - name: STR_MEDI_TRAUMA_ITEM
     needItem: true
     destroyItem: true
-    cost: 4
+    cost: 7
     getOneFree:
       - STR_MEDI_TRAUMA
     disables:
@@ -292,7 +292,7 @@ research:
   - name: STR_MEDICAL_CYBERNETICS_ITEM
     needItem: true
     destroyItem: true
-    cost: 5
+    cost: 7
     getOneFree:
       - STR_MEDICAL_CYBERNETICS
     disables:
@@ -304,7 +304,7 @@ research:
   - name: STR_BOLT_CANNON_ITEM
     needItem: true
     destroyItem: true
-    cost: 2
+    cost: 7
     getOneFree:
       - STR_BOLT_CANNON
     disables:
@@ -316,7 +316,7 @@ research:
   - name: STR_SKELE_ITEM
     needItem: true
     destroyItem: true
-    cost: 4
+    cost: 7
     getOneFree:
       - STR_SKELE_DRONE_ARMOR
     disables:
@@ -328,7 +328,7 @@ research:
   - name: STR_LDT_ITEM
     needItem: true
     destroyItem: true
-    cost: 5
+    cost: 7
     getOneFree:
       - STR_DURATHREAD
     disables:
@@ -339,7 +339,7 @@ research:
       - STR_SERVICE_UPLINK
     needItem: true
     destroyItem: true
-    cost: 4
+    cost: 5
     points: 10
     getOneFree:
       - STR_HYBRID_MEMORY_1
@@ -393,7 +393,7 @@ research:
       - STR_SUBSIDIARIES
     getOneFree:
       - STR_VENDOR_PRINTER
-    cost: 5    
+    cost: 7
   - name: STR_VENDOR_PRINTER
     dependencies:
       - STR_LOCK
@@ -406,20 +406,20 @@ research:
     dependencies:
       - STR_VENDOR_P2P
       - STR_IRONEYES_PORT
-    cost: 10
+    cost: 15
     disables:
       - STR_IRONEYES_MANULOCK
   - name: STR_VENDOR_MEDI
     dependencies:
       - STR_VENDORS
-    cost: 5
+    cost: 7
     getOneFree:
       - STR_MEDI_FIRST
   - name: STR_VENDOR_BUILDER
     dependencies:
       - STR_VENDORS
       - STR_EXPANSION
-    cost: 5
+    cost: 7
   - name: STR_VENDOR_HD
     dependencies:
       - STR_VENDORS
@@ -427,11 +427,11 @@ research:
       - STR_HD_CROSSOVER
       - STR_HD_ECONOMY_ENGINE_RESEARCH
       - STR_HD_EXPRESS_ENGINE_RESEARCH
-    cost: 5
+    cost: 7
   - name: STR_VENDOR_VCM
     dependencies:
       - STR_VENDORS
-    cost: 8
+    cost: 9
     getOneFree:
       - STR_VCM_BICUBE
   - name: STR_VENDOR_SSP
@@ -447,13 +447,13 @@ research:
       - STR_SERVICE_PRINTING
     dependencies:
       - STR_PRINTER
-    cost: 8
+    cost: 10
     unlocks:
       - STR_MONEY_2
   - name: STR_MONEY_3_RESEARCH
     dependencies:
       - STR_TOOLWORKS_RESEARCH
-    cost: 12
+    cost: 35
     unlocks:
       - STR_MONEY_3
 
@@ -461,19 +461,19 @@ research:
     dependencies:
       - STR_NON_CLIENTS
       - STR_VENDOR_PRINTER
-    cost: 5
+    cost: 10
   - name: STR_REDOX
     dependencies:
       - STR_BIOMASS
       - STR_GUNPOWDER
       - STR_RD_PREQ
-    cost: 5
+    cost: 10
   - name: STR_LASER_AMMO_PRINTING
     dependencies:
       - STR_VENDOR_PRINTER
       - STR_BIOCODING
       - STR_AL_PREQ
-    cost: 5
+    cost: 20
     unlocks:
       - STR_SINGLESHOT_LASER_AMMO
       - STR_SSP_LASER_SMG_AMMO1
@@ -484,7 +484,7 @@ research:
       - STR_LASER_AMMO_PRINTING
       - STR_PRINTER
       - STR_LC_PREQ
-    cost: 50
+    cost: 100
     getOneFree:
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
     spawnedItemList:
@@ -496,7 +496,7 @@ research:
     dependencies:
       - STR_TOOLWORKS_RESEARCH
       - STR_PLACONV_PREQ
-    cost: 15
+    cost: 40
     unlocks:
       - STR_SINGLESHOT_LASER_AMMO
 
@@ -507,7 +507,7 @@ research:
       - STR_MEDIBAY_ITEM
       - STR_VENDOR_PRINTER
       - STR_BIOMASS
-    cost: 5
+    cost: 10
   - name: STR_BIOCODING
     dependencies:
       - STR_VENDOR_BUILDER
@@ -524,7 +524,7 @@ research:
       - STR_TODO
     requiresBaseFunc:
       - STR_SERVICE_NETWORK
-    cost: 100
+    cost: 999
 # manufacturing
   - name: STR_BARREL_MOTAR_PHXAMMO_M
     lookup: STR_BARREL_MOTAR_PHXAMMO
@@ -566,70 +566,71 @@ research:
       - STR_SERVICE_MEDICAL
     dependencies:
       - STR_BIOMEDICAL
-    cost: 6
+    cost: 10
   - name: STR_STIM_MORNING_M
     lookup: STR_STIM_MORNING
     requiresBaseFunc:
       - STR_SERVICE_MEDICAL
     dependencies:
       - STR_BIOMEDICAL
-    cost: 6
+    cost: 10
 #facilities
   - name: STR_STOREROOM_RESEARCH
     dependencies:
       - STR_SJB_LICENSE
       - STR_VENDOR_BUILDER
-    cost: 10
+    cost: 20
   - name: STR_REMEDITION_OFFICE_RESEARCH
     dependencies:
-      - STR_TODO
-    cost: 15
+      - STR_MUSCULATURE
+      - STR_INTEGUMENTARY
+    cost: 30
   - name: STR_HOLDING_CELLS_RESEARCH
     dependencies:
       - STR_FORBIDDEN_OPERATIONS
       - STR_VENDOR_BUILDER
-    cost: 5
+    cost: 15
   - name: STR_LOCAL_INTERFACE
     dependencies:
       - STR_PERSONAL_DATA
       - STR_VENDOR_BUILDER
       - STR_LI_PREQ
-    cost: 5
+    cost: 15
   - name: STR_PUBLIC_GATEWAY
     dependencies:
       - STR_SECRET_DATA
       - STR_VENDOR_BUILDER
       - STR_PG_PREQ
-    cost: 15
+    cost: 40
   - name: STR_HYPERCOMMS_ARRAY_RESEARCH
     dependencies:
       - STR_LOCAL_INTERFACE
       - STR_HCAF_PREQ
-    cost: 20
+    cost: 100
   - name: STR_BACKCHANNELS_RESEARCH
     dependencies:
       - STR_PUBLIC_GATEWAY
       - STR_SJB_LICENSE
       - STR_BCF_PREQ
-    cost: 20
+    cost: 60
   - name: STR_PRINTER
     dependencies:
       - STR_PLASTICS
       - STR_VENDOR_BUILDER
-    cost: 10
+    cost: 20
   - name: STR_TOOLWORKS_RESEARCH
     requiresBaseFunc:
       - STR_SERVICE_PRINTING
     dependencies:
       - STR_PRINTER
       - STR_ALLOYS
-    cost: 15
+    cost: 100
 #asp craft
   - name: STR_HD_LIMO_RESEARCH
     dependencies:
       - STR_VENDOR_HD
       - STR_SECGAMES_MISSIONS
-    cost: 4
+    cost: 5
   - name: STR_HD_CROSSOVER
     dependencies:
       - STR_VENDOR_HD
@@ -637,15 +638,16 @@ research:
     dependencies:
       - STR_VENDOR_HD
       - STR_RAPID_RESPONSE_MISSIONS
-    cost: 4
+    cost: 5
   - name: STR_SSP_SECVAN_RESEARCH
     dependencies:
       - STR_VENDOR_SSP
       - STR_FREE_TRIAL_MISSIONS
-    cost: 4
+    cost: 5
   - name: STR_VCM_BICUBE
     dependencies:
       - STR_VENDOR_VCM
+    cost: 5
 # hardpoints
   - name: STR_CRAFT_PHXMISSILE_LAUNCHER_RESEARCH
     requiresBaseFunc:
@@ -654,16 +656,16 @@ research:
       - STR_PHX_WARHEAD
       - STR_REDOX
       - STR_PRINTER
-    cost: 20
+    cost: 30
 
   - name: STR_HD_ECONOMY_ENGINE_RESEARCH
     dependencies:
       - STR_VENDOR_HD
-    cost: 4
+    cost: 7
   - name: STR_HD_EXPRESS_ENGINE_RESEARCH
     dependencies:
       - STR_VENDOR_HD
-    cost: 4
+    cost: 7
   - name: STR_BATBOX
     dependencies:
       - STR_VENDOR_HD
@@ -680,12 +682,12 @@ research:
       - STR_DC_PREQ
   - name: STR_DRONE_SHARK_ITEM
     needItem: true
-    cost: 4
+    cost: 5
     unlocks:
       - STR_DC_PREQ
   - name: STR_DRONE_DEEP_ITEM
     needItem: true
-    cost: 4
+    cost: 5
     unlocks:
       - STR_DC_PREQ
 # transformations
@@ -694,36 +696,45 @@ research:
       - STR_DRONE_CRACKING
       - STR_BIONIC_INTERLACE
       - STR_NON_CLIENTS
-    cost: 5
+    cost: 10
   - name: STR_SPECIALIZATION_TRAINING
     dependencies:
       - STR_NON_CLIENTS
       - STR_CONSUMER_CYBERNETICS
     getOneFree:
       - STR_NEURACHEM
-    cost: 5
+    cost: 10
   - name: STR_NEURACHEM
     dependencies:
+      - STR_CONSUMER_CYBERNETICS
       - STR_SPECIALIZATION_TRAINING
   - name: STR_MUSCULATURE
+    cost: 20
     dependencies:
       - STR_MEDICAL_CYBERNETICS
+      - STR_SPECIALIZATION_TRAINING
+    unlocks:
+      - STR_REMEDITION_OFFICE_RESEARCH
   - name: STR_INTEGUMENTARY
+    cost: 40
     dependencies:
       - STR_MILITARY_CYBERNETICS
+      - STR_SPECIALIZATION_TRAINING
+    unlocks:
+      - STR_REMEDITION_OFFICE_RESEARCH
 # armor
   - name: STR_PLEX_DRONE_ARMOR
   - name: STR_DURA_DRONE_ARMOR
     needItem: true
-    cost: 4
+    cost: 5
   - name: STR_SKELE_DRONE_ARMOR
     needItem: true
-    cost: 4
+    cost: 5
   - name: STR_AQUAVEST_DRONE_ARMOR
     needItem: true
-    cost: 4
+    cost: 5
   - name: STR_GCIC_DRONE_ARMOR_RESEARCH
-    cost: 6
+    cost: 15
     dependencies:
       - STR_NON_CLIENTS
       - STR_DURATHREAD
@@ -736,7 +747,7 @@ research:
       - STR_NON_CLIENTS
       - STR_PLASTICS
       - STR_PRINTER
-    cost: 8
+    cost: 15
     getOneFree:
       - STR_AQUAVEST_DRONE_ARMOR
 #equipment
@@ -744,47 +755,47 @@ research:
   - name: STR_BUSBOX_PISTOL
   - name: STR_9MM_PISTOL
     needItem: true
-    cost: 2
+    cost: 5
     unlocks:
       - STR_V_P2P_PREQ
   - name: STR_9MM_SMG
     needItem: true
-    cost: 2
+    cost: 5
     unlocks:
       - STR_V_P2P_PREQ
   - name: STR_9MM_RIFLE
     needItem: true
-    cost: 2
+    cost: 5
     unlocks:
       - STR_V_P2P_PREQ
   - name: STR_9MM_MG
     needItem: true
-    cost: 3
+    cost: 5
     unlocks:
       - STR_V_P2P_PREQ
   - name: STR_DISPOSABLE_SMG
     needItem: true
-    cost: 3
+    cost: 5
     unlocks:
       - STR_V_P2P_PREQ
 # nrf
   - name: STR_DART_PISTOL
     needItem: true
-    cost: 3
+    cost: 10
   - name: STR_CHEM_SMG
     needItem: true
-    cost: 3
+    cost: 10
     unlocks:
       - STR_RD_PREQ
 # hra
   - name: STR_OLD_GAUSS_SNIPER
     needItem: true
-    cost: 4
+    cost: 20
 # ssp
   - name: STR_45_PISTOL_CODED
     lookup: STR_45_PISTOL
     needItem: true
-    cost: 4
+    cost: 5
     unlocks:
       - STR_45_PISTOL
       - STR_BC_PREQ
@@ -796,7 +807,7 @@ research:
   - name: STR_SSP_SMG_CODED
     lookup: STR_SSP_SMG
     needItem: true
-    cost: 4
+    cost: 10
     unlocks:
       - STR_SSP_SMG
       - STR_BC_PREQ
@@ -808,7 +819,7 @@ research:
   - name: STR_SSP_SHOTGUN_CODED
     lookup: STR_SSP_SHOTGUN
     needItem: true
-    cost: 4
+    cost: 10
     unlocks:
       - STR_SSP_SHOTGUN
       - STR_BC_PREQ
@@ -820,7 +831,7 @@ research:
   - name: STR_SINGLESHOT_LASER_PISTOL_CODED
     lookup: STR_SINGLESHOT_LASER_PISTOL
     needItem: true
-    cost: 4
+    cost: 5
     unlocks:
       - STR_SINGLESHOT_LASER_PISTOL
       - STR_BC_PREQ
@@ -837,7 +848,7 @@ research:
   - name: STR_SSP_LASER_SMG_CODED
     lookup: STR_SSP_LASER_SMG
     needItem: true
-    cost: 4
+    cost: 15
     unlocks:
       - STR_SSP_LASER_SMG
       - STR_BC_PREQ
@@ -853,7 +864,7 @@ research:
   - name: STR_TASER_PISTOL_CODED
     lookup: STR_TASER_PISTOL
     needItem: true
-    cost: 4
+    cost: 5
     unlocks:
       - STR_TASER_PISTOL
       - STR_BC_PREQ
@@ -866,45 +877,45 @@ research:
     needItem: true
     unlocks:
        - STR_LC_PREQ
-    cost: 5
+    cost: 7
   - name: STR_XN_LASER_SMG
     needItem: true
     unlocks:
        - STR_LC_PREQ
-    cost: 5
+    cost: 7
   - name: STR_XN_LASER_RIFLE
     needItem: true
     unlocks:
        - STR_LC_PREQ
-    cost: 5
+    cost: 7
   - name: STR_XN_LASER_SNIPER
     needItem: true
     unlocks:
        - STR_LC_PREQ
-    cost: 5
+    cost: 7
   - name: STR_XN_LASER_MG
     needItem: true
     unlocks:
        - STR_LC_PREQ
-    cost: 5
+    cost: 7
   - name: STR_XN_LASER_CANNON
     needItem: true
     unlocks:
        - STR_LC_PREQ
-    cost: 5
+    cost: 7
   - name: STR_XN_LASER_SHOTGUN
     needItem: true
     unlocks:
        - STR_LC_PREQ
-    cost: 5
+    cost: 7
 
   - name: STR_SKULLJACK
     needItem: true
-    cost: 10
+    cost: 15
 # alien
   - name: STR_ALIEN_PLASMA_PISTOL
     needItem: true
-    cost: 10
+    cost: 15
     unlocks:
       - STR_PLACONV_PREQ
 # ours
@@ -913,7 +924,7 @@ research:
       - STR_SERVICE_NETWORK
     dependencies:
       - STR_LASER_WEAPONS_CONSTRUCTION
-    cost: 15
+    cost: 40
     spawnedItemList:
       - STR_GCIC_PROTOTYPE_LASER_PISTOL
       - STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
@@ -924,7 +935,7 @@ research:
       - STR_SERVICE_NETWORK
     dependencies:
       - STR_LASER_WEAPONS_CONSTRUCTION
-    cost: 15
+    cost: 40
     spawnedItemList:
       - STR_GCIC_PROTOTYPE_LASER_SMG
       - STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1
@@ -935,13 +946,13 @@ research:
       - STR_SERVICE_NETWORK
     dependencies:
       - STR_LASER_WEAPONS_CONSTRUCTION
-    cost: 15
+    cost: 40
   - name: STR_GCIC_PROTOTYPE_LASER_SNIPER
     requiresBaseFunc:
       - STR_SERVICE_NETWORK
     dependencies:
       - STR_LASER_WEAPONS_CONSTRUCTION
-    cost: 15
+    cost: 40
     spawnedItemList:
       - STR_GCIC_PROTOTYPE_LASER_SNIPER
       - STR_GCIC_PROTOTYPE_LASER_SNIPER_AMMO1
@@ -955,7 +966,7 @@ research:
       - STR_GCIC_PROTOTYPE_LASER_SMG
       - STR_GCIC_PROTOTYPE_LASER_SNIPER
       - STR_LASER_WEAPONS_CONSTRUCTION
-    cost: 20
+    cost: 60
     spawnedItemList:
       - STR_GCIC_PROTOTYPE_LASER_MG
       - STR_GCIC_PROTOTYPE_LASER_MG_AMMO1
@@ -969,7 +980,7 @@ research:
       - STR_GCIC_PROTOTYPE_LASER_SMG
       - STR_GCIC_PROTOTYPE_LASER_SNIPER
       - STR_LASER_WEAPONS_CONSTRUCTION
-    cost: 20
+    cost: 60
     spawnedItemList:
       - STR_GCIC_PROTOTYPE_LASER_CANNON
       - STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO1
@@ -978,83 +989,83 @@ research:
 # launchers
   - name: STR_BARREL_MOTAR
     needItem: true
-    cost: 5
+    cost: 10
   - name: STR_BARREL_MOTAR_PHXAMMO
     needItem: true
-    cost: 3
+    cost: 10
 
   - name: STR_WINDLASS_LAUNCHER
     needItem: true
-    cost: 5
+    cost: 10
 # grenades
   - name: STR_MOLOTOV
     needItem: true
-    cost: 3
+    cost: 5
     unlocks:
       - STR_RD_PREQ
   - name: STR_ACIDFLASK
     needItem: true
-    cost: 5
+    cost: 10
     unlocks:
       - STR_RD_PREQ
   - name: STR_PIPEBOMB
     needItem: true
-    cost: 3
+    cost: 5
   - name: STR_PHXBOMB
     needItem: true
-    cost: 3
+    cost: 15
   - name: STR_PHXDEMO
     needItem: true
-    cost: 3
+    cost: 15
   - name: STR_ELERIUM_BOMB
     needItem: true
-    cost: 4
+    cost: 15
 #non-gun
   - name: STR_STL_KNIFE
   - name: STR_WRENCH
   - name: STR_SLEDGEHAMMER
     needItem: true
-    cost: 2
+    cost: 5
 
   - name: STR_BATON
     needItem: true
-    cost: 2
+    cost: 5
     unlocks:
       - STR_V_SSP_PREQ
   - name: STR_VOLTKNOCKER
     needItem: true
-    cost: 5
+    cost: 15
     unlocks:
       - STR_V_SSP_PREQ
 
   - name: STR_DARTROPE
     needItem: true
-    cost: 4
+    cost: 15
     unlocks:
       - STR_V_SPORT_PREQ
   - name: STR_MARSBALL
     needItem: true
-    cost: 5
+    cost: 10
     unlocks:
       - STR_V_SPORT_PREQ
 # gr
   - name: STR_MULTITOOL
     needItem: true
-    cost: 3
+    cost: 5
   - name: STR_SONIC_PROBE
     needItem: true
-    cost: 3
+    cost: 5
   - name: STR_ELECTRIC_NAILER
     needItem: true
-    cost: 3
+    cost: 5
   - name: STR_BOLT_CANNON
     needItem: true
-    cost: 3
+    cost: 15
     dependencies:
       - STR_LBC_LOCK
   - name: STR_SURVEY_KNOCKER
     needItem: true
-    cost: 3
+    cost: 5
     unlocks:
       - STR_CHEMFLARE
 #utilities
@@ -1063,47 +1074,47 @@ research:
     dependencies:
       - STR_SURVEY_KNOCKER
     needItem: true
-    cost: 2
+    cost: 5
   - name: STR_MOTION_DETECTOR
     dependencies:
       - STR_TODO
     needItem: true
-    cost: 3
+    cost: 15
 # medical
   - name: STR_STIM_INHALER
     needItem: true
-    cost: 3
+    cost: 5
   - name: STR_STIM_SPRINT
     needItem: true
-    cost: 3
+    cost: 5
   - name: STR_STIM_MORNING
     needItem: true
-    cost: 3
+    cost: 5
   - name: STR_MEDI_SPRAY
   - name: STR_MEDI_FIRST
     dependencies:
       - STR_VENDOR_MEDI
     needItem: true
-    cost: 3
+    cost: 5
   - name: STR_MEDI_TRAUMA
     needItem: true
-    cost: 4
+    cost: 15
     dependencies:
       - STR_MEDI_TRAUMA_ITEM
 
   - name: STR_EXTINGUISHER
     needItem: true
-    cost: 2
+    cost: 5
 #resources
 # containers
   - name: STR_CRIMINAL_CONTAINER_1
     needItem: true
-    cost: 3
+    cost: 5
     unlocks:
       - STR_V_P2P_PREQ
   - name: STR_XN_CONTAINER_1
     needItem: true
-    cost: 3
+    cost: 5
     unlocks:
       - STR_LI_PREQ
 # materials
@@ -1114,7 +1125,7 @@ research:
   - name: STR_CONSUMER_CYBERNETICS_CODED
     lookup: STR_CONSUMER_CYBERNETICS
     needItem: true
-    cost: 5
+    cost: 10
     unlocks:
       - STR_CONSUMER_CYBERNETICS
       - STR_BC_PREQ
@@ -1126,14 +1137,16 @@ research:
   - name: STR_MEDICAL_CYBERNETICS_CODED
     lookup: STR_MEDICAL_CYBERNETICS
     needItem: true
-    cost: 10
+    cost: 15
     unlocks:
       - STR_MEDICAL_CYBERNETICS
   - name: STR_MEDICAL_CYBERNETICS
     needItem: true
     cost: 5
-    unlocks:
-      - STR_MUSCULATURE
+    dependencies:
+      - STR_MEDICAL_CYBERNETICS_CODED
+    getOneFree:
+      - STR_MEDICAL_CYBERNETICS_CODED
 
   - name: STR_MILITARY_CYBERNETICS_CODED
     lookup: STR_MILITARY_CYBERNETICS
@@ -1144,15 +1157,17 @@ research:
   - name: STR_MILITARY_CYBERNETICS
     needItem: true
     cost: 5
-    unlocks:
-      - STR_INTEGUMENTARY
+    dependencies:
+      - STR_MILITARY_CYBERNETICS_CODED
+    getOneFree:
+      - STR_MILITARY_CYBERNETICS_CODED
 
   - name: STR_CHRYSSALID_EGG
     needItem: true
     cost: 10
   - name: STR_BIOMASS
     needItem: true
-    cost: 3
+    cost: 5
   - name: STR_AG_UNIT
     needItem: true
     cost: 5
@@ -1162,15 +1177,15 @@ research:
   - name: STR_DURATHREAD
     needItem: true
     cost: 5
-  - name: STR_NANOWEAVE
-    needItem: true
-    cost: 5
   - name: STR_PLASTICS
     needItem: true
     cost: 5
+  - name: STR_NANOWEAVE
+    needItem: true
+    cost: 10
   - name: STR_ALLOYS
     needItem: true
-    cost: 5
+    cost: 10
   - name: STR_ELERIUM_CORE
     needItem: true
     cost: 5
@@ -1197,34 +1212,37 @@ research:
 
   - name: STR_GCIC_SABOTAGE_2_DATA_DECRYPT
     needItem: true
-    cost: 4
+    cost: 5
     unlocks:
       - STR_BCF_PREQ
   - name: STR_GCIC_SABOTAGE_3_DATA_DECRYPT
     needItem: true
-    cost: 4
+    cost: 5
     unlocks:
       - STR_BCF_PREQ
 # abstract
   - name: STR_SHARES_GCIC
     needItem: true
-    cost: 3
+    cost: 5
   - name: STR_SHARES_MEDI
     needItem: true
-    cost: 3
+    cost: 5
   - name: STR_SHARES_GR
     needItem: true
-    cost: 3
+    cost: 5
 
   - name: STR_BRAND_LOYALTY
     needItem: true
-    cost: 3
+    cost: 5
   - name: STR_BOUNTY_1
     needItem: true
-    cost: 2
+    cost: 5
+  - name: STR_BOUNTY_2
+    needItem: true
+    cost: 5
   - name: STR_IRS_SUBSIDY
     needItem: true
-    cost: 3
+    cost: 5
 # tasks
   - name: STR_MONEY_1
   - name: STR_MONEY_2
@@ -1275,8 +1293,6 @@ research:
         - STR_9MM_MG
         - STR_BARREL_MOTAR
         - STR_WINDLASS_LAUNCHER
-      STR_TRG_CYFURB_PREQ:
-        - STR_CYFURB
       STR_TRG_FL_PREQ:
         - STR_FREELANCER_PRIVATE
         - STR_DART_PISTOL
@@ -1304,6 +1320,7 @@ research:
         - STR_SSP_SHOTGUN
         - STR_SSP_SMG
       STR_TRG_SSUP_PREQ:
+        - STR_DEFENSE_TURRET_AP
         - STR_SSPSUPERVISOR_PRIVATE
         - STR_SSP_LASER_SMG
         - STR_VOLTKNOCKER
@@ -1333,7 +1350,7 @@ research:
     neededItem: STR_PERSONAL_DATA
     needItem: true
     destroyItem: true
-    cost: 40
+    cost: 20
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
@@ -1344,15 +1361,13 @@ research:
         - STR_RIPPER_PRIVATE
       STR_TRG_BRK_PREQ:
         - STR_BREAKER_PRIVATE
-      STR_TRG_CYFURB_PREQ:
-        - STR_CYFURB
   - name: STR_DATA_1_NETRUNNERS
     requiresBaseFunc:
       - STR_SERVICE_PORT
     neededItem: STR_PERSONAL_DATA
     needItem: true
     destroyItem: true
-    cost: 40
+    cost: 20
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
@@ -1369,7 +1384,7 @@ research:
     neededItem: STR_PERSONAL_DATA
     needItem: true
     destroyItem: true
-    cost: 40
+    cost: 20
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
@@ -1386,7 +1401,7 @@ research:
     neededItem: STR_PERSONAL_DATA
     needItem: true
     destroyItem: true
-    cost: 40
+    cost: 20
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
@@ -1403,7 +1418,7 @@ research:
     neededItem: STR_PERSONAL_DATA
     needItem: true
     destroyItem: true
-    cost: 40
+    cost: 20
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
@@ -1416,7 +1431,7 @@ research:
     neededItem: STR_PERSONAL_DATA
     needItem: true
     destroyItem: true
-    cost: 40
+    cost: 20
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
@@ -1437,8 +1452,8 @@ research:
     neededItem: STR_SECRET_DATA
     needItem: true
     destroyItem: true
-    cost: 15
-    points: 20
+    cost: 20
+    points: 75
     dependencies:
       - STR_PUBLIC_GATEWAY
     getOneFree:
@@ -1454,11 +1469,27 @@ research:
         - STR_HITTER_PRIVATE
         - STR_UFO_AIRCAR_IRON2
         - STR_OLD_GAUSS_SNIPER
+      STR_TRG_CYFURB_PREQ:
+        - STR_CYFURB
       STR_MEDI_MISSIONS:
         - STR_HYBRID_AUTOPSY
         - STR_HUMAN_AUTOPSY
         - STR_SHARK_AUTOPSY
         - STR_DEEP_AUTOPSY
+
+  - name: STR_DATA_2_IRONEYES
+    requiresBaseFunc:
+      - STR_SERVICE_NETWORK
+    neededItem: STR_SECRET_DATA
+    needItem: true
+    destroyItem: true
+    cost: 60
+    points: 75
+    dependencies:
+      - STR_PUBLIC_GATEWAY
+    getOneFreeProtected:
+      STR_TRG_HIT_PREQ:
+        - STR_HITTER_PRIVATE
 # ironeyes
   - name: STR_UFO_AIRCAR_IRON1
     dependencies:
@@ -1474,7 +1505,7 @@ research:
     neededItem: STR_BOOSTER_PRIVATE
     needItem: true
     destroyItem: false
-    cost: 6
+    cost: 7
     unlocks:
       - STR_BOOSTER_ARMOR
       - STR_ALIEN_INTERVIEWED_FLAG
@@ -1509,7 +1540,7 @@ research:
     neededItem: STR_BREAKER_PRIVATE
     needItem: true
     destroyItem: false
-    cost: 8
+    cost: 7
     unlocks:
       - STR_BREAKER_ARMOR
       - STR_ALIEN_INTERVIEWED_FLAG
@@ -1526,7 +1557,7 @@ research:
     neededItem: STR_HITTER_PRIVATE
     needItem: true
     destroyItem: false
-    cost: 10
+    cost: 15
     unlocks:
       - STR_HITTER_ARMOR
       - STR_ALIEN_INTERVIEWED_FLAG
@@ -1560,7 +1591,7 @@ research:
     neededItem: STR_SKIPTRACER_PRIVATE
     needItem: true
     destroyItem: false
-    cost: 9
+    cost: 7
     unlocks:
       - STR_SKIPTRACER_ARMOR
       - STR_PG_PREQ
@@ -1578,7 +1609,7 @@ research:
     neededItem: STR_WIRETAPPER_PRIVATE
     needItem: true
     destroyItem: false
-    cost: 11
+    cost: 7
     unlocks:
       - STR_WIRETAPPER_ARMOR
       - STR_ALIEN_INTERVIEWED_FLAG
@@ -1595,7 +1626,7 @@ research:
     neededItem: STR_SSPGUARD_PRIVATE
     needItem: true
     destroyItem: false
-    cost: 4
+    cost: 7
     unlocks:
       - STR_SSPGUARD_ARMOR
       - STR_V_SSP_PREQ
@@ -1613,7 +1644,7 @@ research:
     neededItem: STR_SSPOFFICER_PRIVATE
     needItem: true
     destroyItem: false
-    cost: 6
+    cost: 7
     unlocks:
       - STR_SSPOFFICER_ARMOR
       - STR_PG_PREQ
@@ -1632,7 +1663,7 @@ research:
     neededItem: STR_SSPSUPERVISOR_PRIVATE
     needItem: true
     destroyItem: false
-    cost: 6
+    cost: 7
     unlocks:
       - STR_SSPSUPERVISOR_ARMOR
       - STR_PG_PREQ
@@ -1687,6 +1718,14 @@ research:
   - name: STR_CYFURB_ARMOR
     dependencies:
       - STR_CYFURB
+  - name: STR_DEFENSE_TURRET_AP
+    unlocks:
+      - STR_DEFENSE_TURRET_AP_ARMOR
+    dependencies:
+      - STR_LOCK
+  - name: STR_DEFENSE_TURRET_AP_ARMOR
+    dependencies:
+      - STR_DEFENSE_TURRET_AP
 # simulated
   - name: STR_HOLOUFO_SMALL
     dependencies:

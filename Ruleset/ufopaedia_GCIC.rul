@@ -345,14 +345,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: OPERATIONS3_CPAL
-  - id: STR_GCIC_INDEPENDENCE
-    requires:
-      - STR_GCIC_INDEPENDENCE
-    text: STR_GCIC_INDEPENDENCE_UP
-    section: STR_OPERATIONS_UC
-    type_id: 7
-    text_width: 180
-    image_id: OPERATIONS3Z_CPAL
   - id: STR_GCIC_SABOTAGE_3_DATA_DECRYPT
     requires:
       - STR_GCIC_SABOTAGE_3_DATA_DECRYPT
@@ -361,6 +353,14 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: OPERATIONS3_CPAL
+  - id: STR_GCIC_INDEPENDENCE
+    requires:
+      - STR_GCIC_INDEPENDENCE
+    text: STR_GCIC_INDEPENDENCE_UP
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: OPERATIONS3Z_CPAL
 
   - id: STR_IRONEYES_NETWORK
     requires:
@@ -570,6 +570,12 @@ ufopaedia:
 
   - id: STR_BUNK_RACKS
     text: STR_BUNK_RACKS_UP
+    section: STR_BASE_FACILITIES_UC
+    type_id: 6
+  - id: STR_REMEDITION_OFFICE
+    requires:
+      - STR_REMEDITION_OFFICE_RESEARCH
+    text: STR_REMEDITION_OFFICE_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
 
@@ -1135,7 +1141,6 @@ ufopaedia:
     text: STR_SSP_SHOTGUN_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
   - id: STR_SSP_SHOTGUN_AMMO_BS
     requires:
       - STR_SSP_SHOTGUN
@@ -2068,6 +2073,34 @@ ufopaedia:
       width: 149
       height: 200
     image_id: SSPOFFICER_CPAL
+
+  - id: STR_SSPSUPERVISORS
+    requires:
+      - STR_SSPSUPERVISOR_PRIVATE
+    text: STR_SSPSUPERVISORS_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: SSPSUPERVISOR_CPAL
+  - id: STR_SSPSUPERVISOR_INTERVIEW
+    title: STR_SSPSUPERVISOR_INTERVIEW_T
+    requires:
+      - STR_SSPSUPERVISOR_INTERVIEW
+    text: STR_SSPSUPERVISOR_INTERVIEW_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: SSPSUPERVISOR_CPAL
 # animals
   - id: STR_CHRYSSALIDS
     requires:
@@ -2135,6 +2168,19 @@ ufopaedia:
       width: 149
       height: 200
     image_id: CYFURB_CPAL
+  - id: STR_DEFENSE_TURRET_APS
+    requires:
+      - STR_DEFENSE_TURRET_AP
+    text: STR_DEFENSE_TURRET_APS_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: TURRETAP_CPAL
 # simulated
   - id: STR_HOLOMUTONS
     requires:
@@ -2263,6 +2309,12 @@ ufopaedia:
     requires:
       - STR_CYFURB_ARMOR
     text: STR_CYFURB_ARMOR_UP
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_DEFENSE_TURRET_AP_ARMOR
+    requires:
+      - STR_DEFENSE_TURRET_AP_ARMOR
+    text: STR_DEFENSE_TURRET_AP_ARMOR_UP
     section: STR_COMPETITORS_UC
     type_id: 5
   - id: STR_HOLOMUTON_ARMOR

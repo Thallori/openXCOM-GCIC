@@ -1,7 +1,7 @@
 craftWeapons:
   - type: STR_CRAFT_PHXMISSILE_LAUNCHER
     launcher: STR_CRAFT_PHXMISSILE_LAUNCHER
-    sprite: 606
+    sprite: 607
     sound: 5
     damage: 30
     range: 30

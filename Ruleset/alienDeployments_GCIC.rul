@@ -92,7 +92,7 @@
     # alertBackground: BACK03.SCR
     alertDescription: STR_SECGAME_ALERT_DESCRIPTION
     markerName: STR_SECGAME
-    duration: [200, 240]
+    duration: [288, 336]
     startingCondition: SECURITY_GEAR
     briefing:
       showTarget: false
@@ -120,14 +120,14 @@
         lowQty: 3
         medQty: 3
         highQty: 4
-        dQty: 4
+        dQty: 3
         percentageOutsideUfo: 30
         itemSets: *AnchorEmptyInventory
       - alienRank: 5
-        lowQty: 4
-        medQty: 4
-        highQty: 5
-        dQty: 4
+        lowQty: 5
+        medQty: 5
+        highQty: 6
+        dQty: 5
         percentageOutsideUfo: 30
         itemSets: *AnchorEmptyInventory
 
@@ -949,7 +949,7 @@
       title: STR_IRONEYES_OUTPOST
       music: SHADOW_INTRO
       palette: 2
-    unlockedResearch: STR_TRG_RI_PREQ
+    #unlockedResearch: STR_TRG_RI_PREQ
     customUfo: STR_HOUSE_FORT
     forcePercentageOutsideUfo: true
     terrains:
@@ -1425,6 +1425,7 @@
       title: STR_TRADE_MEETING_3
       music: HACKER_INTRO
       palette: 2
+    missionBountyItem: STR_SJB_LICENSE
     unlockedResearch: STR_TRG_WT_PREQ
     minShade: 6
     terrains:
@@ -1442,22 +1443,22 @@
           - [STR_SECRET_DATA]
         itemSets: &wiretapper
           -
-            - STR_SONIC_PROBE
+            - STR_PIPEBOMB
             - STR_SKULLJACK
           -
-            - STR_SONIC_PROBE
+            - STR_PIPEBOMB
             - STR_SKULLJACK
           -
-            - STR_SONIC_PROBE
+            - STR_PIPEBOMB
             - STR_SKULLJACK
           -
-            - STR_SONIC_PROBE
+            - STR_PIPEBOMB
             - STR_SKULLJACK
           -
-            - STR_SONIC_PROBE
+            - STR_PIPEBOMB
             - STR_SKULLJACK
           -
-            - STR_MARSBALL
+            - STR_PIPEBOMB
             - STR_SKULLJACK
           -
             - STR_MARSBALL
@@ -1472,18 +1473,18 @@
             - STR_MARSBALL
             - STR_SKULLJACK
       - alienRank: 8
-        lowQty: 0
-        medQty: 0
-        highQty: 1
+        lowQty: 1
+        medQty: 1
+        highQty: 2
         dQty: 1
         percentageOutsideUfo: 0
         extraRandomItems: *netrunnerExtra
         itemSets: *wiretapper
       - alienRank: 7
-        lowQty: 2
-        medQty: 2
-        highQty: 3
-        dQty: 2
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 3
         percentageOutsideUfo: 0
         extraRandomItems: *netrunnerExtra
         itemSets: *skiptracer
@@ -1667,7 +1668,6 @@
       music: SHADOW_INTRO
       palette: 2
     missionBountyItem: STR_GCIC_SABOTAGE_2_DATA
-    missionBountyItemCount: 1
     unlockedResearch: STR_TRG_SO_PREQ
     customUfo: STR_SABOTAGE_OFFICE_BI
     forcePercentageOutsideUfo: true

@@ -317,6 +317,10 @@ armors:
     corpseBattle:
       - STR_GCICVEST_DRONE_HYBRID_CORPSE
     storeItem: STR_GCIC_DRONE_ARMOR
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_BACK_PACK
     visibilityAtDark: 11
     stats: &DuravestStats
       health: +5
@@ -372,6 +376,10 @@ armors:
     corpseBattle:
       - STR_GCICVEST_DRONE_HUMAN_CORPSE
     storeItem: STR_GCIC_DRONE_ARMOR
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_BACK_PACK
     visibilityAtDark: 8
     stats: *DuravestStats
     frontArmor: 18
@@ -405,6 +413,10 @@ armors:
     corpseBattle:
       - STR_GCICVEST_DRONE_SHARK_CORPSE
     storeItem: STR_GCIC_DRONE_ARMOR
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_BACK_PACK
     specialWeapon: STR_SHARKATTACK
     visibilityAtDark: 8
     stats: *DuravestStats
@@ -429,6 +441,10 @@ armors:
     corpseBattle:
       - STR_GCICVEST_DRONE_DEEP_CORPSE
     storeItem: STR_GCIC_DRONE_ARMOR
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_BACK_PACK
     specialWeapon: STR_ELECTROBOLT
     visibilityAtDark: 8
     stats: *DuravestStats
@@ -568,7 +584,6 @@ armors:
       - STR_NULL_LEFT_SHOULDER
       - STR_NULL_RIGHT_SHOULDER
       - STR_NULL_QD_SLOT
-      - STR_NULL_BACK_PACK
     allowsKneeling: true
     visibilityAtDark: 11
     personalLight: 13
@@ -1687,6 +1702,11 @@ armors:
     spriteSheet: WORKSUIT_HYBRID.PCK
     corpseBattle:
       - STR_PLEX_DRONE_HYBRID_CORPSE
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_QD_SLOT
+      - STR_NULL_BACK_PACK
     visibilityAtDark: 11
     personalLight: 10
     heatVision: 20
@@ -1798,6 +1818,10 @@ armors:
     corpseBattle:
       - STR_GCICVEST_DRONE_SHARK_CORPSE_NORECOVER
     specialWeapon: STR_SHARKATTACK
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_BACK_PACK
     visibilityAtDark: 8
     stats: *DuravestStats
     frontArmor: 18

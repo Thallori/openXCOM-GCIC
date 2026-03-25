@@ -1,14 +1,14 @@
 soldierTransformation:
   - name: STR_SKIRMISHER_TRANSFORMATION
     requires:
-      - STR_SPECIALIZATION_TRAINING
+      - STR_NEURACHEM
     requiredMinStats:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
       mana: 5
     percentGainedStatChange:
-      mana: -20
+      mana: -25
     rerollStats:
       mana: 1
     cost: 4999
@@ -29,14 +29,14 @@ soldierTransformation:
       - STR_SCOUT_TRANSFORMATION
   - name: STR_RANGER_TRANSFORMATION
     requires:
-      - STR_SPECIALIZATION_TRAINING
+      - STR_NEURACHEM
     requiredMinStats:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
       mana: 5
     percentGainedStatChange:
-      mana: -20
+      mana: -25
     rerollStats:
       mana: 1
     cost: 4999
@@ -57,14 +57,14 @@ soldierTransformation:
       - STR_SCOUT_TRANSFORMATION
   - name: STR_SCOUT_TRANSFORMATION
     requires:
-      - STR_SPECIALIZATION_TRAINING
+      - STR_NEURACHEM
     requiredMinStats:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
       mana: 5
     percentGainedStatChange:
-      mana: -20
+      mana: -25
     rerollStats:
       mana: 1
     cost: 4999
@@ -86,14 +86,14 @@ soldierTransformation:
 
   - name: STR_AGILITY_TRANSFORMATION
     requires:
-      - STR_MEDICAL_CYBERNETICS
+      - STR_MUSCULATURE
     requiredMinStats:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
       mana: 10
     percentGainedStatChange:
-      mana: -30
+      mana: -25
     rerollStats:
       mana: 1
     cost: 8999
@@ -114,14 +114,14 @@ soldierTransformation:
       - STR_HEAVY_TRANSFORMATION
   - name: STR_HEAVY_TRANSFORMATION
     requires:
-      - STR_MEDICAL_CYBERNETICS
+      - STR_MUSCULATURE
     requiredMinStats:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
       mana: 10
     percentGainedStatChange:
-      mana: -30
+      mana: -25
     rerollStats:
       mana: 1
     cost: 8999
@@ -143,14 +143,14 @@ soldierTransformation:
 
   - name: STR_SOFT_TRANSFORMATION
     requires:
-      - STR_MILITARY_CYBERNETICS
+      - STR_INTEGUMENTARY
     requiredMinStats:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
       mana: 10
     percentGainedStatChange:
-      mana: -40
+      mana: -25
     rerollStats:
       mana: 1
     cost: 15999
@@ -172,14 +172,14 @@ soldierTransformation:
       - STR_HARD_TRANSFORMATION
   - name: STR_HARD_TRANSFORMATION
     requires:
-      - STR_MILITARY_CYBERNETICS
+      - STR_INTEGUMENTARY
     requiredMinStats:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
       mana: 10
     percentGainedStatChange:
-      mana: -40
+      mana: -25
     rerollStats:
       mana: 1
     cost: 15999

@@ -1115,13 +1115,14 @@ items:
     battleType: 2
     weight: 2
     clipSize: 8
-    power: 15
+    power: 18
     damageBonus:
       reactions: 0.05
     damageType: 12
     damageAlter:
       RandomType: 9
       ArmorEffectiveness: 0.25
+      ToHealth: 0.50
       ToWound: 0
       RandomWound: false
       ToStun: 1.0
@@ -1295,7 +1296,7 @@ items:
     battleType: 2
     weight: 2
     clipSize: 10
-    power: 18
+    power: 15
     damageBonus:
       reactions: 0.05
     damageType: 2
@@ -1308,6 +1309,7 @@ items:
       FireThreshold: 5
       ToMorale: 4.5
       ToStun: 0.25
+      ArmorEffectiveness: 0.25
     scripts:
       vaporParticleAmmo: |
         set particle_lifetime 15;
@@ -1382,12 +1384,12 @@ items:
       - STR_VENDOR_PRINTER
       - STR_OLD_GAUSS_SNIPER
     size: 0.01
-    costbuy: 45
+    costBuy: 45
     costSell: 22
     transferTime: 4
     bigSprite: 265
     floorSprite: 248
-    hitSound: 13
+    hitSound: 151
     hitAnimation: 26
     battleType: 2
     weight: 2
@@ -1819,6 +1821,7 @@ items:
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
       - STR_SEC_LICENSE
+      - STR_TODO
       - STR_VENDOR_SSP
       - STR_SINGLESHOT_LASER_PISTOL
     size: 0.1
@@ -1885,6 +1888,7 @@ items:
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
       - STR_SEC_LICENSE
+      - STR_TODO
       - STR_VENDOR_SSP
       - STR_SINGLESHOT_LASER_PISTOL
     size: 0.01
@@ -1919,6 +1923,7 @@ items:
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
     ufopediaType: STR_SINGLESHOT_LASER_PISTOL
     requiresBuy:
+      - STR_SEC_LICENSE
       - STR_TODO
       - STR_VENDOR_SSP
       - STR_SSP_LASER_SMG
@@ -2026,6 +2031,7 @@ items:
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
     requiresBuy:
       - STR_SEC_LICENSE
+      - STR_TODO
       - STR_VENDOR_SSP
       - STR_SSP_LASER_SMG
     size: 0.1
@@ -2080,7 +2086,7 @@ items:
     hitAnimation: 36
     battleType: 2
     weight: 3
-    clipSize: 6
+    clipSize: 5
     power: 25
     damageBonus:
       reactions: 0.05
@@ -2101,6 +2107,7 @@ items:
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
     requiresBuy:
       - STR_SEC_LICENSE
+      - STR_TODO
       - STR_VENDOR_SSP
       - STR_SSP_LASER_SMG
     size: 0.01
@@ -2912,8 +2919,8 @@ items:
       - STR_TODO
       - STR_GCIC_PROTOTYPE_LASER_SMG
     size: 0.1
-    costBuy: 406000
-    costSell: 404500
+    costBuy: 206000
+    costSell: 204500
     transferTime: 72
     bigSprite: 232
     floorSprite: 213
@@ -3027,7 +3034,7 @@ items:
     hitAnimation: -1
     battleType: 2
     weight: 2
-    clipSize: 10
+    clipSize: 8
     power: 25
     damageBonus:
       reactions: 0.05
@@ -3093,8 +3100,8 @@ items:
       - STR_TODO
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
     size: 0.2
-    costBuy: 408000
-    costSell: 406000
+    costBuy: 208000
+    costSell: 206000
     transferTime: 72
     bigSprite: 228
     floorSprite: 207
@@ -3267,8 +3274,8 @@ items:
       - STR_TODO
       - STR_GCIC_PROTOTYPE_LASER_SNIPER
     size: 0.2
-    costBuy: 465000
-    costSell: 448000
+    costBuy: 265000
+    costSell: 248000
     transferTime: 72
     bigSprite: 236
     floorSprite: 219
@@ -3367,7 +3374,7 @@ items:
     hitAnimation: 36
     battleType: 2
     weight: 3
-    clipSize: 4
+    clipSize: 3
     power: 32
     damageBonus:
       firing: 0.25
@@ -3429,8 +3436,8 @@ items:
       - STR_TODO
       - STR_GCIC_PROTOTYPE_LASER_MG
     size: 0.3
-    costBuy: 632000
-    costSell: 624000
+    costBuy: 232000
+    costSell: 224000
     transferTime: 72
     bigSprite: 900
     floorSprite: 900
@@ -3443,7 +3450,7 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 1
-    weight: 28
+    weight: 33
     power: 30
     damageBonus:
       strength: 0.1
@@ -3503,7 +3510,7 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 1
-    weight: 23
+    weight: 28
     compatibleAmmo:
       - STR_GCIC_PROTOTYPE_LASER_MG_AMMO1
       - STR_GCIC_PROTOTYPE_LASER_MG_AMMO2
@@ -3543,7 +3550,7 @@ items:
     invHeight: 2
     battleType: 2
     weight: 12
-    clipSize: 18
+    clipSize: 15
     power: 28
     damageBonus:
       strength: 0.1
@@ -3600,8 +3607,8 @@ items:
       - STR_TODO
       - STR_GCIC_PROTOTYPE_LASER_CANNON
     size: 0.3
-    costBuy: 644000
-    costSell: 633000
+    costBuy: 244000
+    costSell: 233000
     transferTime: 72
     bigSprite: 900
     floorSprite: 900
@@ -3614,7 +3621,7 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 1
-    weight: 39
+    weight: 45
     clipSize: -1
     power: 45
     damageBonus:
@@ -3674,7 +3681,7 @@ items:
     invWidth: 2
     invHeight: 3
     battleType: 1
-    weight: 34
+    weight: 40
     compatibleAmmo:
       - STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO1
       - STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO2
@@ -4026,7 +4033,7 @@ items:
     vaporProbabilitySurface: 80
     battleType: 4
     weight: 4
-    power: 20
+    power: 18
     damageType: 2
     damageAlter:
       RandomType: 9
@@ -4037,6 +4044,7 @@ items:
       FireThreshold: 5
       ToMorale: 4.5
       ToStun: 0.0
+      ArmorEffectiveness: 0.25
       TileDamageMethod: 2
     primeActionName: STR_PRIME_MOLOTOV
     primeActionMessage: STR_PRIME_MOLOTOV_MESS
@@ -4048,7 +4056,7 @@ items:
     tuThrow: 25
     throwDropoffRange: 12
     throwDropoff: 4
-    attraction: 30
+    attraction: 15
     scripts:
       vaporParticleAmmo: |
         set particle_lifetime 15;
@@ -5460,7 +5468,7 @@ items:
     categories: [STR_PERKS_CATEGORY]
     specialType: 195
     recoveryPoints: 25
-    size: 0
+    size: 0.1
     costSell: 0
     bigSprite: 225
     weight: 2

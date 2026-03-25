@@ -589,7 +589,7 @@ missionScripts:
   - type: TradeMeeting3a
     researchTriggers:
       STR_NETRUNNERS_SURVEY: true
-#      STR_TODO: false
+      STR_TODO: false
     missionWeights:
       0:
         STR_TRADE_MEETING_3: 100
@@ -601,7 +601,7 @@ missionScripts:
     executionOdds: 18
     researchTriggers:
       STR_NETRUNNERS_SURVEY: true
-#      STR_TODO: true
+      STR_TODO: true
     missionWeights:
       0:
         STR_TRADE_MEETING_3: 100

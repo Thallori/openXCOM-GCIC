@@ -62,11 +62,16 @@ events:
     interruptResearch: STR_DEBUG
     everyItemList: [STR_BRAND_LOYALTY]
     funds: -20000
-
   - name: STR_EVENT_HEALTHY_COMPETITION
     description: STR_EVENT_HEALTHY_COMPETITION_DESCRIPTION
     interruptResearch: STR_DEBUG
     points: 150
+  - name: STR_EVENT_
+    description: STR_EVENT__DESCRIPTION
+    interruptResearch: STR_DEBUG
+
+  - name: STR_EVENT_ENDOFUPDATE2
+    description: STR_EVENT_ENDOFUPDATE2_DESCRIPTION
 
 eventScripts:
   - type: EVENTSCRIPT_MONTHLY_P3
@@ -130,3 +135,9 @@ eventScripts:
     maxScore: -751
     # researchTriggers:
     #   STR_GCIC_INDEPENDENCE: false
+
+  - type: EVENTSCRIPT_ENDOFUPDATE2
+    oneTimeSequentialEvents:
+      - STR_EVENT_ENDOFUPDATE2
+    firstMonth: 8
+    

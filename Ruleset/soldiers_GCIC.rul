@@ -122,7 +122,7 @@ soldiers:
       mana: 60
     trainingStatCaps:
       psiSkill: 40
-      mana: 20
+      mana: 25
     armor: STR_PLEX_DRONE_HYBRID_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -190,7 +190,7 @@ soldiers:
       mana: 60
     trainingStatCaps:
       psiSkill: 40
-      mana: 20
+      mana: 25
     armor: STR_PLEX_DRONE_HUMAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -258,7 +258,7 @@ soldiers:
       mana: 60
     trainingStatCaps:
       psiSkill: 40
-      mana: 20
+      mana: 25
     armor: STR_PLEX_DRONE_SHARK_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -326,7 +326,7 @@ soldiers:
       mana: 60
     trainingStatCaps:
       psiSkill: 40
-      mana: 20
+      mana: 25
     armor: STR_PLEX_DRONE_DEEP_ARMOR
     standHeight: 22
     kneelHeight: 14
