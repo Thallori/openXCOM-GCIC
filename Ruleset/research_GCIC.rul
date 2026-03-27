@@ -608,6 +608,8 @@ research:
       - STR_HCAF_PREQ
     cost: 100
   - name: STR_BACKCHANNELS_RESEARCH
+    requiresBaseFunc:
+      - STR_SERVICE_NETWORK
     dependencies:
       - STR_PUBLIC_GATEWAY
       - STR_SJB_LICENSE
@@ -716,7 +718,7 @@ research:
     unlocks:
       - STR_REMEDITION_OFFICE_RESEARCH
   - name: STR_INTEGUMENTARY
-    cost: 40
+    cost: 30
     dependencies:
       - STR_MILITARY_CYBERNETICS
       - STR_SPECIALIZATION_TRAINING
@@ -781,16 +783,16 @@ research:
 # nrf
   - name: STR_DART_PISTOL
     needItem: true
-    cost: 10
+    cost: 5
   - name: STR_CHEM_SMG
     needItem: true
-    cost: 10
+    cost: 5
     unlocks:
       - STR_RD_PREQ
 # hra
   - name: STR_OLD_GAUSS_SNIPER
     needItem: true
-    cost: 20
+    cost: 5
 # ssp
   - name: STR_45_PISTOL_CODED
     lookup: STR_45_PISTOL
@@ -807,7 +809,7 @@ research:
   - name: STR_SSP_SMG_CODED
     lookup: STR_SSP_SMG
     needItem: true
-    cost: 10
+    cost: 5
     unlocks:
       - STR_SSP_SMG
       - STR_BC_PREQ
@@ -819,7 +821,7 @@ research:
   - name: STR_SSP_SHOTGUN_CODED
     lookup: STR_SSP_SHOTGUN
     needItem: true
-    cost: 10
+    cost: 5
     unlocks:
       - STR_SSP_SHOTGUN
       - STR_BC_PREQ
@@ -848,7 +850,7 @@ research:
   - name: STR_SSP_LASER_SMG_CODED
     lookup: STR_SSP_LASER_SMG
     needItem: true
-    cost: 15
+    cost: 5
     unlocks:
       - STR_SSP_LASER_SMG
       - STR_BC_PREQ
@@ -860,18 +862,6 @@ research:
     dependencies:
       - STR_LASER_AMMO_PRINTING
       - STR_SSP_LASER_SMG_CODED
-
-  - name: STR_TASER_PISTOL_CODED
-    lookup: STR_TASER_PISTOL
-    needItem: true
-    cost: 5
-    unlocks:
-      - STR_TASER_PISTOL
-      - STR_BC_PREQ
-      - STR_V_SSP_PREQ
-  - name: STR_TASER_PISTOL
-    dependencies:
-      - STR_TASER_PISTOL_CODED
 # xn
   - name: STR_XN_LASER_PISTOL
     needItem: true
@@ -911,11 +901,11 @@ research:
 
   - name: STR_SKULLJACK
     needItem: true
-    cost: 15
+    cost: 10
 # alien
   - name: STR_ALIEN_PLASMA_PISTOL
     needItem: true
-    cost: 15
+    cost: 10
     unlocks:
       - STR_PLACONV_PREQ
 # ours
@@ -989,14 +979,14 @@ research:
 # launchers
   - name: STR_BARREL_MOTAR
     needItem: true
-    cost: 10
+    cost: 5
   - name: STR_BARREL_MOTAR_PHXAMMO
     needItem: true
-    cost: 10
+    cost: 5
 
   - name: STR_WINDLASS_LAUNCHER
     needItem: true
-    cost: 10
+    cost: 5
 # grenades
   - name: STR_MOLOTOV
     needItem: true
@@ -1005,7 +995,7 @@ research:
       - STR_RD_PREQ
   - name: STR_ACIDFLASK
     needItem: true
-    cost: 10
+    cost: 5
     unlocks:
       - STR_RD_PREQ
   - name: STR_PIPEBOMB
@@ -1013,13 +1003,13 @@ research:
     cost: 5
   - name: STR_PHXBOMB
     needItem: true
-    cost: 15
+    cost: 5
   - name: STR_PHXDEMO
     needItem: true
-    cost: 15
+    cost: 5
   - name: STR_ELERIUM_BOMB
     needItem: true
-    cost: 15
+    cost: 5
 #non-gun
   - name: STR_STL_KNIFE
   - name: STR_WRENCH
@@ -1034,18 +1024,29 @@ research:
       - STR_V_SSP_PREQ
   - name: STR_VOLTKNOCKER
     needItem: true
-    cost: 15
+    cost: 5
     unlocks:
       - STR_V_SSP_PREQ
-
-  - name: STR_DARTROPE
+  - name: STR_TASER_PISTOL_CODED
+    lookup: STR_TASER_PISTOL
     needItem: true
-    cost: 15
+    cost: 5
     unlocks:
-      - STR_V_SPORT_PREQ
+      - STR_TASER_PISTOL
+      - STR_BC_PREQ
+      - STR_V_SSP_PREQ
+  - name: STR_TASER_PISTOL
+    dependencies:
+      - STR_TASER_PISTOL_CODED
+
+  # - name: STR_DARTROPE
+  #   needItem: true
+  #   cost: 5
+  #   unlocks:
+  #     - STR_V_SPORT_PREQ
   - name: STR_MARSBALL
     needItem: true
-    cost: 10
+    cost: 5
     unlocks:
       - STR_V_SPORT_PREQ
 # gr
@@ -1060,7 +1061,7 @@ research:
     cost: 5
   - name: STR_BOLT_CANNON
     needItem: true
-    cost: 15
+    cost: 5
     dependencies:
       - STR_LBC_LOCK
   - name: STR_SURVEY_KNOCKER
@@ -1079,7 +1080,7 @@ research:
     dependencies:
       - STR_TODO
     needItem: true
-    cost: 15
+    cost: 5
 # medical
   - name: STR_STIM_INHALER
     needItem: true
@@ -1098,7 +1099,7 @@ research:
     cost: 5
   - name: STR_MEDI_TRAUMA
     needItem: true
-    cost: 15
+    cost: 5
     dependencies:
       - STR_MEDI_TRAUMA_ITEM
 

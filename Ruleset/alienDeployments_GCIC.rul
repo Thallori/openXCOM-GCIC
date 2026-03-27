@@ -196,17 +196,14 @@
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
-            - STR_9MM_AMMO
             - STR_BOUNTY_1
           -
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
-            - STR_9MM_AMMO
             - STR_BOUNTY_1
           -
             - STR_9MM_RIFLE
-            - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
             - STR_BOUNTY_1
@@ -272,23 +269,14 @@
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
-            - STR_9MM_AMMO
             - STR_BOUNTY_1
           -
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
-            - STR_9MM_AMMO
             - STR_BOUNTY_1
           -
             - STR_9MM_SMG
-            - STR_9MM_SMG_AMMO
-            - STR_9MM_SMG_AMMO
-            - STR_9MM_SMG_AMMO
-            - STR_BOUNTY_1
-          -
-            - STR_9MM_SMG
-            - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
             - STR_BOUNTY_1
@@ -296,11 +284,14 @@
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
-            - STR_9MM_SMG_AMMO
             - STR_BOUNTY_1
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
             - STR_BOUNTY_1
@@ -861,30 +852,24 @@
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
-            - STR_9MM_AMMO
           -
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
-            - STR_9MM_AMMO
           -
             - STR_9MM_SMG
-            - STR_9MM_SMG_AMMO
-            - STR_9MM_SMG_AMMO
-            - STR_9MM_SMG_AMMO
-          -
-            - STR_9MM_SMG
-            - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
-            - STR_9MM_SMG_AMMO
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+          -
+            - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
           -
@@ -1075,26 +1060,11 @@
         medQty: 1
         highQty: 1
         dQty: 0
-        percentageOutsideUfo: 0
+        percentageOutsideUfo: 100
         extraRandomItems: *ironExtra
         itemSets: &hitterSetPrivate
           -
-            - STR_9MM_MG
-            - STR_9MM_MG_AMMO
-            - STR_9MM_MG_AMMO
-          -
-            - STR_9MM_MG
-            - STR_9MM_MG_AMMO
-            - STR_9MM_MG_AMMO
-          -
-            - STR_DARTROPE
-            - STR_PHXBOMB
-          -
-            - STR_DARTROPE
-            - STR_PHXBOMB
-          -
             - STR_OLD_GAUSS_SNIPER
-            - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
@@ -1103,16 +1073,8 @@
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
           -
             - STR_OLD_GAUSS_SNIPER
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-          -
-            - STR_OLD_GAUSS_SNIPER
-            - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
@@ -1121,10 +1083,33 @@
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
+          -
+            - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
           -
             - STR_OLD_GAUSS_SNIPER
             - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+          -
+            - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+          -
+            - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+          -
+            - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+          -
+            - STR_OLD_GAUSS_SNIPER
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
@@ -1133,7 +1118,7 @@
         medQty: 1
         highQty: 1
         dQty: 0
-        percentageOutsideUfo: 100
+        percentageOutsideUfo: 0
         extraRandomItems: *ironExtra
         itemSets: *breakerSetPrivate
       - alienRank: 7
@@ -1141,14 +1126,14 @@
         medQty: 0
         highQty: 0
         dQty: 1
-        percentageOutsideUfo: 0
+        percentageOutsideUfo: 50
         extraRandomItems: *ironExtra
         itemSets: *ripperSetPrivate
       - alienRank: 6
-        lowQty: 4
-        medQty: 4
-        highQty: 5
-        dQty: 1
+        lowQty: 3
+        medQty: 3
+        highQty: 4
+        dQty: 2
         percentageOutsideUfo: 80
         extraRandomItems: *ironExtra
         itemSets: *boosterSetPrivate
@@ -1580,17 +1565,9 @@
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
-            - STR_45_AMMO
           -
             - STR_BATON
             - STR_45_PISTOL_CODED
-            - STR_45_AMMO
-            - STR_45_AMMO
-            - STR_45_AMMO
-          -
-            - STR_BATON
-            - STR_45_PISTOL_CODED
-            - STR_45_AMMO
             - STR_45_AMMO
             - STR_45_AMMO
           -
@@ -1598,17 +1575,19 @@
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
+          -
+            - STR_BATON
+            - STR_45_PISTOL_CODED
+            - STR_45_AMMO
             - STR_45_AMMO
           -
             - STR_BATON
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
-            - STR_45_AMMO
           -
             - STR_BATON
             - STR_45_PISTOL_CODED
-            - STR_45_AMMO
             - STR_45_AMMO
             - STR_45_AMMO
           -
@@ -1616,11 +1595,9 @@
             - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
-            - STR_MULTISHOT_LASER_AMMO
           -
             - STR_BATON
             - STR_SINGLESHOT_LASER_PISTOL_CODED
-            - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
           -
@@ -1691,53 +1668,43 @@
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
-            - STR_45_AMMO
           -
             - STR_BATON
             - STR_45_PISTOL_CODED
             - STR_45_AMMO
             - STR_45_AMMO
-            - STR_45_AMMO
           -
             - STR_BATON
             - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
-            - STR_MULTISHOT_LASER_AMMO
           -
             - STR_BATON
             - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
-            - STR_MULTISHOT_LASER_AMMO
           -
             - STR_SSP_SMG_CODED
-            - STR_SSP_SMG_AMMO
-            - STR_SSP_SMG_AMMO
-            - STR_SSP_SMG_AMMO
-          -
-            - STR_SSP_SMG_CODED
-            - STR_SSP_SMG_AMMO
             - STR_SSP_SMG_AMMO
             - STR_SSP_SMG_AMMO
           -
             - STR_SSP_SMG_CODED
             - STR_SSP_SMG_AMMO
             - STR_SSP_SMG_AMMO
+          -
+            - STR_SSP_SMG_CODED
+            - STR_SSP_SMG_AMMO
             - STR_SSP_SMG_AMMO
           -
             - STR_SSP_SHOTGUN_CODED
             - STR_SSP_SHOTGUN_AMMO_BS
             - STR_SSP_SHOTGUN_AMMO_BS
-            - STR_SSP_SHOTGUN_AMMO_BS
           -
             - STR_SSP_SHOTGUN_CODED
             - STR_SSP_SHOTGUN_AMMO_BS
             - STR_SSP_SHOTGUN_AMMO_BS
-            - STR_SSP_SHOTGUN_AMMO_BS
           -
             - STR_SSP_SHOTGUN_CODED
-            - STR_SSP_SHOTGUN_AMMO_BS
             - STR_SSP_SHOTGUN_AMMO_BS
             - STR_SSP_SHOTGUN_AMMO_BS
       - alienRank: 6
@@ -1815,13 +1782,11 @@
             - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
-            - STR_MULTISHOT_LASER_AMMO
           -
             - STR_BATON
             - STR_SINGLESHOT_LASER_PISTOL_CODED
             - STR_MULTISHOT_LASER_AMMO
             - STR_MULTISHOT_LASER_AMMO
-            - STR_MULTISHOT_LASER_AMMO
           -
             - STR_BATON
             - STR_VOLTKNOCKER
@@ -1842,20 +1807,16 @@
             - STR_SSP_LASER_SMG_CODED
             - STR_SSP_LASER_SMG_AMMO2
             - STR_SSP_LASER_SMG_AMMO2
+          -
+            - STR_SSP_LASER_SMG_CODED
+            - STR_SSP_LASER_SMG_AMMO2
             - STR_SSP_LASER_SMG_AMMO2
           -
             - STR_SSP_LASER_SMG_CODED
             - STR_SSP_LASER_SMG_AMMO2
             - STR_SSP_LASER_SMG_AMMO2
-            - STR_SSP_LASER_SMG_AMMO2
           -
             - STR_SSP_LASER_SMG_CODED
-            - STR_SSP_LASER_SMG_AMMO2
-            - STR_SSP_LASER_SMG_AMMO2
-            - STR_SSP_LASER_SMG_AMMO2
-          -
-            - STR_SSP_LASER_SMG_CODED
-            - STR_SSP_LASER_SMG_AMMO2
             - STR_SSP_LASER_SMG_AMMO2
             - STR_SSP_LASER_SMG_AMMO2
       - alienRank: 7

@@ -716,7 +716,7 @@ missionScripts:
       # STR_GCIC_INDEPENDENCE: false
     missionVarName: STR_GCIC_SABOTAGE_3
     conditionals: [-2]
-    executionOdds: 70
+    executionOdds: 76
     missionWeights:
       0:
         STR_GCIC_SABOTAGE_3: 100

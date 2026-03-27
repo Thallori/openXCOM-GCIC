@@ -2,7 +2,7 @@ events:
   - name: STR_DRONES_MONTHLY_P3
     description: STR_DRONES_MONTHLY_P3_DESCRIPTION
     funds: -50000
-    points: 100
+    points: 200
   - name: STR_DRONES_MONTHLY_P2
     description: STR_DRONES_MONTHLY_P2_DESCRIPTION
     everyItemList:
@@ -66,9 +66,10 @@ events:
     description: STR_EVENT_HEALTHY_COMPETITION_DESCRIPTION
     interruptResearch: STR_DEBUG
     points: 150
-  - name: STR_EVENT_
-    description: STR_EVENT__DESCRIPTION
+  - name: STR_EVENT_TECHDEMO
+    description: STR_EVENT_TECHDEMO_DESCRIPTION
     interruptResearch: STR_DEBUG
+
 
   - name: STR_EVENT_ENDOFUPDATE2
     description: STR_EVENT_ENDOFUPDATE2_DESCRIPTION

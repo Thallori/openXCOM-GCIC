@@ -502,7 +502,7 @@ ufos:
             - position: [8, 12, 0]
               amount: 2
               mixed: true
-              itemList: &vaultRare [STR_ELERIUM_VAULT, STR_PLASMA_PISTOL_VAULT, STR_PLASMA_PISTOL_VAULT, STR_CHRYSSALID_EGG_VAULT, STR_CHRYSSALID_EGG_VAULT]
+              itemList: &vaultRare [STR_ELERIUM_VAULT, STR_PLASMA_PISTOL_VAULT, STR_PLASMA_PISTOL_VAULT, STR_PLASMA_PISTOL_VAULT, STR_CHRYSSALID_EGG_VAULT, STR_CHRYSSALID_EGG_VAULT]
         - name: SABOTAGE_VAULT2
           width: 20
           length: 20

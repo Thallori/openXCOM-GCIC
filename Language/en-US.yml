@@ -865,14 +865,14 @@ en-US:
   STR_OPEN_XN_CONTAINER_1: "OPEN: XN Resistance Kit"
   STR_CRACK_XN_CONTAINER_1: "CRACK: XN Resistance Kit"
 #cutscenes
-  STR_INTRO_CAPTION_1: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy."
-  STR_INTRO_CAPTION_2: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages."
-  STR_INTRO_CAPTION_3: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions."
-  STR_INTRO_CAPTION_4: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming."
-  STR_INTRO_CAPTION_5: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence."
-  STR_INTRO_CAPTION_6: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence.{NEWLINE}{NEWLINE}Few make the best decisions in the face of crisis. Desperate plans are brewing. Even children feel a coming storm."
-  STR_INTRO_CAPTION_7: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence.{NEWLINE}{NEWLINE}Few make the best decisions in the face of crisis. Desperate plans are brewing. Even children feel a coming storm.{NEWLINE}{NEWLINE}The war is over."
-  STR_INTRO_CAPTION_8: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence.{NEWLINE}{NEWLINE}Few make the best decisions in the face of crisis. Desperate plans are brewing. Even children feel a coming storm.{NEWLINE}{NEWLINE}The war is over.{NEWLINE}{NEWLINE}It waited patiently for twenty years."
+  STR_INTRO_CAPTION_1: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the Republic's occupation. Yet life in the colonies has not grown easy."
+  STR_INTRO_CAPTION_2: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the Republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages."
+  STR_INTRO_CAPTION_3: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the Republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions."
+  STR_INTRO_CAPTION_4: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the Republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming."
+  STR_INTRO_CAPTION_5: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the Republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence."
+  STR_INTRO_CAPTION_6: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the Republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence.{NEWLINE}{NEWLINE}Few make the best decisions in the face of crisis. Desperate plans are brewing. Even children feel a coming storm."
+  STR_INTRO_CAPTION_7: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the Republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence.{NEWLINE}{NEWLINE}Few make the best decisions in the face of crisis. Desperate plans are brewing. Even children feel a coming storm.{NEWLINE}{NEWLINE}The war is over."
+  STR_INTRO_CAPTION_8: "The war is over. It has been over for twenty years. Peace has now officially lasted longer than the Republic's occupation. Yet life in the colonies has not grown easy.{NEWLINE}{NEWLINE}Elerium shortages.{NEWLINE}Interspecies tensions.{NEWLINE}Recalcitrant xenoforming.{NEWLINE}Megacorporate independence.{NEWLINE}{NEWLINE}Few make the best decisions in the face of crisis. Desperate plans are brewing. Even children feel a coming storm.{NEWLINE}{NEWLINE}The war is over.{NEWLINE}{NEWLINE}It waited patiently for twenty years."
 #events
   STR_EVENT_ENDOFUPDATE2: "[END OF BALANCE]"
   STR_EVENT_ENDOFUPDATE2_DESCRIPTION: "[it should now be september, which is where the developer stopped the 0.2a playtest. beyond this point are placeholder values and costs, guesses at what good balance might be. also, not every reward has been implimented so researching things might not do anything. playing past this point is allowed, but expect content to fray until nothing]"
@@ -987,7 +987,7 @@ en-US:
   STR_GCIC_SABOTAGE_3: "GCIC: Trade Secrets"
   STR_GCIC_SABOTAGE_3_: "GCIC: Trade Secrets"
   STR_GCIC_SABOTAGE_3_ALERT_DESCRIPTION: "Our parent has sent us the address of a vault securing rival intellectual property. Breaking in from the ground floor and retrieving it may prove easier than neutralizing all targets in the area.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 hours{NEWLINE}Maximum Gear: Milspec (Inconspicuous Craft)"
-  STR_GCIC_SABOTAGE_3_BRIEFING: "Our parent has sent us the address of a vault securing rival intellectual property. Breaking in from the ground floor and retrieving it may prove easier than neutralizing all targets in the area.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 10 turns before additional security forces arrive and we are forced to abort."
+  STR_GCIC_SABOTAGE_3_BRIEFING: "Our parent has sent us the address of a vault securing rival intellectual property. Breaking in from the ground floor and retrieving it may prove easier than neutralizing all targets in the area.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We have 20 turns before additional security forces arrive and we are forced to abort."
 # medi
   STR_MEDI_ALERT: "MEDI CONTRACT"
   STR_MEDI_MUCK: "MEDI: Capture Muckstar"
@@ -1136,7 +1136,7 @@ en-US:
   STR_PTS_LOCK: "(gcic trade secrets available)"
   STR_PTS_ITEM: "PROJECT: GCIC Trade Secrets"
   STR_GCIC_TRADE_SECRETS_MISSIONS: ">PROJECT: GCIC Trade Secrets<"
-  STR_GCIC_TRADE_SECRETS_MISSIONS_UP: "{NEWLINE}AFFILIATES: Sibling Corporations{NEWLINE}MANDATES: 2.30/MONTH{NEWLINE}{NEWLINE}aaaaaaaa{NEWLINE}{NEWLINE}bbbbbbb{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE" #todo
+  STR_GCIC_TRADE_SECRETS_MISSIONS_UP: "{NEWLINE}AFFILIATES: Sibling Corporations{NEWLINE}MANDATES: 2.26/MONTH{NEWLINE}{NEWLINE}aaaaaaaa{NEWLINE}{NEWLINE}bbbbbbb{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE" #todo
   STR_PIN_LOCK: "(independence available)"
   STR_PROJECT_BUYOUT_MANU: "PROJECT: Purchase Independence"
   STR_PROJECT_INDEPENDENCE_ITEM: "PROJECT: Independence"
@@ -1406,7 +1406,7 @@ en-US:
   STR_AQUAVEST_DRONE_ARMOR: "AQUAVEST"
   STR_AQUAVEST_DRONE_ARMOR_UP: "{NEWLINE}Aqua-plastic vest armor, popular among entry-level security corporations. Reliably stops low-caliber kinetic arms and impacts.{NEWLINE}{NEWLINE}> TU/Stamina: -5{NEWLINE}{NEWLINE}> Armor: 20, 70%; Weight: 6{NEWLINE}> Dodge: +10%, +10% Melee{NEWLINE}{NEWLINE}RADIANT/PLASMA: 90%{NEWLINE}CHEMICAL/INCENDIARY: 120%{NEWLINE}SMOKE: 400%"
   STR_AQUAVEST_DRONE_ARMOR_S: "AQUAVEST (S)"
-  STR_AQUAVEST_DRONE_ARMOR_S_UP: "{NEWLINE}Aqua-plastic vest armor with a lightweight riot shield. Not effective against small arms on its own, but can be a crucial extra barrier before impacting certified PPE.{NEWLINE}{NEWLINE}> Bravery: +10{NEWLINE}> TU/Stamina: -10{NEWLINE}> Reactions: -5{NEWLINE}{NEWLINE}> Armor: 20, 70%; Weight: 12{NEWLINE}> Front Armor: 32{NEWLINE}> Dodge: +10%, +20% Melee{NEWLINE}{NEWLINE}RADIANT/PLASMA: 90%{NEWLINE}CHEMICAL/INCENDIARY: 120%{NEWLINE}SMOKE: 400%"
+  STR_AQUAVEST_DRONE_ARMOR_S_UP: "{NEWLINE}Aqua-plastic vest armor with a lightweight riot shield. Not effective against small arms on its own, but can be a crucial extra barrier before impacting certified PPE.{NEWLINE}{NEWLINE}> Melee/Bravery: +10{NEWLINE}> TU/Stamina: -10{NEWLINE}> Reactions: -5{NEWLINE}{NEWLINE}> Armor: 20, 70%; Weight: 12{NEWLINE}> Front Armor: 32{NEWLINE}> Dodge: +10%, +20% Melee{NEWLINE}{NEWLINE}RADIANT/PLASMA: 90%{NEWLINE}CHEMICAL/INCENDIARY: 120%{NEWLINE}SMOKE: 400%"
 
   STR_PILOT_CORE_ARMOR: "CORE"
   STR_PILOT_CORE_ARMOR_UP: "{NEWLINE}todo{NEWLINE}{NEWLINE}> Armor: 25, 100%{NEWLINE}{NEWLINE}SMOKE/BIOLOGICAL: 0%{NEWLINE}INCENDIARY/BLUNT: 60%{NEWLINE}ELECTRIC: 150%" #todo
@@ -1480,7 +1480,7 @@ en-US:
   STR_CHEM_SMG_AMMO3: "Extinguishing Bottle"
 # hra
   STR_OLD_GAUSS_SNIPER: "HRA Wolf Coilsniper"
-  STR_OLD_GAUSS_SNIPER_UP: "{NEWLINE}{NEWLINE}Penetration: +20%" #todo
+  STR_OLD_GAUSS_SNIPER_UP: "A early and beloved classic, the Wolf was first issued in 2064 at the cusp of the Water Wars. Illustrating beauty in simplicity with time-honored injected-molded RetroPetro plastic furnishings and original 'ready' chirps sung in optronically emulated electronics.{NEWLINE}{NEWLINE}Penetration: +20%"
   STR_OLD_GAUSS_SNIPER_AMMO: "Wolf Coilbearings"
 # ssp
   STR_45_PISTOL_CODED: "SSP 12mm Pistol (¤)"
@@ -1507,7 +1507,7 @@ en-US:
   STR_SSP_LASER_SMG_ELERIUM: "SSP Verdict Laser PDW (E)"
   STR_SSP_LASER_SMG_CODED: "SSP Verdict Laser PDW (¤)"
   STR_SSP_LASER_SMG: "SSP Verdict Laser PDW"
-  STR_SSP_LASER_SMG_UP: "" #todo
+  STR_SSP_LASER_SMG_UP: "Top rated optics preserved by ArcticAir cooling and stabilized with NeoSwiss dovetailing, because no one has to accept compromise. The security platform of choice for operators seeking ergonomic protection in close quarters combat."
   STR_SSP_LASER_SMG_AMMO1: "NB Verdict PDW Cell"
   STR_SSP_LASER_SMG_AMMO2: "SC Verdict PDW Cell"
   STR_SSP_LASER_SMG_AMMO3: "ZY Verdict PDW Cell"
@@ -1515,7 +1515,7 @@ en-US:
   #judgement sniper
   #capitalizer ow?
   STR_VOLTKNOCKER: "SSP Throwing Voltknockers"
-  STR_VOLTKNOCKER_UP: "aaaaaaa{NEWLINE}{NEWLINE}Stun: Full; Lethal: -65%{NEWLINE}Range: 8m; Penetration: -20%" #todo
+  STR_VOLTKNOCKER_UP: "Advanced less-lethal personal defense, simple no-nonsense operation. The rugged knock sticks to almost any surface and delivers professional-grade neuromuscular incapacitation.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -65%{NEWLINE}Range: 8m"
   STR_TASER_PISTOL_CODED: "SSP Taser Pistol (¤)"
   STR_TASER_PISTOL: "SSP Taser Pistol"
   STR_TASER_PISTOL_UP: "The same innovative electroshock deterrent device used by trusted security contractors for centuries. A strong addition to any self-respecting civilian defense plan.{NEWLINE}{NEWLINE}Not effective against chryssalids.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -65%{NEWLINE}Range: 6m"
@@ -1539,7 +1539,7 @@ en-US:
   STR_SKULLJACK_UP: "On-site implant cracking tool, previously capable of penetrating the Republic's psi-networks. Encryption tech has improved since then, but the brutality of the recieving end still leaves a mind scrambled.{NEWLINE}{NEWLINE}One charge per operation.{NEWLINE}{NEWLINE}Penetration: +90%; Lethal -90%{NEWLINE}Morale/Resiliance Damage: +100%"
 # alien
   STR_ALIEN_PLASMA_PISTOL: "Republic Plasma Pistol"
-  STR_ALIEN_PLASMA_PISTOL_UP: "Handheld elerium-powered invasion weapon. Shoots high-density, ultra-high temperature, standing-hyperwave stabilized plasma through most armored targets. As well as anything unfortunate enough to be standing behind them.{NEWLINE}{NEWLINE}Stun: +50%"
+  STR_ALIEN_PLASMA_PISTOL_UP: "Handheld elerium-powered invasion weapon. Shoots high-density, ultra-high temperature, standing-hyperwave stabilized plasma through most armored targets. As well as anything unfortunate enough to be standing behind them."
   STR_ALIEN_PLASMA_PISTOL_CLIP: "E0 Republic Pistol Core"
 # ours
   STR_GCIC_PROTOTYPE_LASER_PISTOL_ELERIUM: "Pilot Laser Pistol (E)"
@@ -1565,17 +1565,17 @@ en-US:
   STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO2: "SC Pilot Assault Cell"
   STR_GCIC_PROTOTYPE_LASER_SNIPER_ELERIUM: "Pilot Laser Lance (E)"
   STR_GCIC_PROTOTYPE_LASER_SNIPER: "Pilot Laser Lance"
-  STR_GCIC_PROTOTYPE_LASER_SNIPER_UP: "Same energy, smaller spot size. Selecting the right focus profile and keeping the sights zeroed requires skill. Our creation dances down the narrow line light.{NEWLINE}{NEWLINE}Rating: Security; Penetration: +20%"
+  STR_GCIC_PROTOTYPE_LASER_SNIPER_UP: "Same frequency, smaller spot size. Selecting the right focus profile and keeping the sights zeroed requires skill. Our creation dances down the narrow line light.{NEWLINE}{NEWLINE}Rating: Security; Penetration: +20%"
   STR_GCIC_PROTOTYPE_LASER_SNIPER_AMMO1: "NB Pilot Lance Cell"
   STR_GCIC_PROTOTYPE_LASER_SNIPER_AMMO2: "SC Pilot Lance Cell"
   STR_GCIC_PROTOTYPE_LASER_MG_ELERIUM: "Pilot Volley Laser (E)"
   STR_GCIC_PROTOTYPE_LASER_MG: "Pilot Volley Laser"
-  STR_GCIC_PROTOTYPE_LASER_MG_UP: "{NEWLINE}{NEWLINE}Rating: Milspec" #todo
+  STR_GCIC_PROTOTYPE_LASER_MG_UP: "Heavy sets of flashtubes in a quadrangle architecture. We sing a song down range to all who might listen.{NEWLINE}{NEWLINE}Rating: Milspec"
   STR_GCIC_PROTOTYPE_LASER_MG_AMMO1: "NB Pilot Volley Cell"
   STR_GCIC_PROTOTYPE_LASER_MG_AMMO2: "SC Pilot Volley Cell"
   STR_GCIC_PROTOTYPE_LASER_CANNON_ELERIUM: "Pilot Laser Cannon (E)"
   STR_GCIC_PROTOTYPE_LASER_CANNON: "Pilot Laser Cannon"
-  STR_GCIC_PROTOTYPE_LASER_CANNON_UP: "{NEWLINE}{NEWLINE}Rating: Milspec; Stun: +50%" #todo
+  STR_GCIC_PROTOTYPE_LASER_CANNON_UP: "An almost lightweight design where capacitors make up most of the bulk. We burst and blight and burn.{NEWLINE}{NEWLINE}Rating: Milspec; Stun: +50%"
   STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO1: "NB Pilot Cannon Cell"
   STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO2: "SC Pilot Cannon Cell"
 # launchers
@@ -1599,7 +1599,7 @@ en-US:
   STR_PHXBOMB: "PHX Bomb"
   STR_PHXBOMB_UP: "{NEWLINE}Unstable high-explosive contained in a fragmenting casing. It sacrifices the armor-piercing capabilities PHX is known for to create a dead simple area-of-effect grenade.{NEWLINE}{NEWLINE}Do not shake before throwing."
   STR_PHXDEMO: "PHX Demolition Charge"
-  STR_PHXDEMO_UP: "{NEWLINE}aaaaa{NEWLINE}{NEWLINE}Terrain: +100%" #todo
+  STR_PHXDEMO_UP: "{NEWLINE}> Radius: 1m{NEWLINE}Reshaped shaped-explosive. Excels at destroying masonry and aquaplastics in equal measure. Marginally less effective against moving targets.{NEWLINE}{NEWLINE}Terrain: +100%"
   STR_ELERIUM_BOMB: "Elerium Bomb"
   STR_ELERIUM_BOMB_UP: "{NEWLINE}The most inefficent use of an elerium core yet discovered. A compromised case with a simple timer circuit snapped onto the side. One click, one sub-critcal explosion.{NEWLINE}{NEWLINE}Without the tools to process raw elerium, these bombs cannot be safely disassembled."
 # sporting
@@ -1828,7 +1828,7 @@ en-US:
   STR_SKIPTRACER_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'I don't think being locked in a box is going make me tell you that.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'You could try being a nicer. Even the elders knew how dangle incentives.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'Really? How about letting me out? If it helps, I can make it worth your while. I've got some cyptochits I'll give you the address for. Completely untracable.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 25 Liquidity"
   STR_WIRETAPPER_PRIVATE: "Netrunner Wiretapper"
   STR_WIRETAPPERS: "Wiretappers"
-  STR_WIRETAPPERS_UP: "Self-proclaimed wizards of organo-machine interfacing, sensation malware, and brute-force psionic intrusion methods. Often hired to retrieve bionically encoded data, whether encrypted in implants or old-fashioned memories.{NEWLINE}{NEWLINE}The most successful specimens end up possessing far more information than they are comfortable with, which makes them more likely to engage in recreational memory deletion.{NEWLINE}{NEWLINE}PROCESSED: Medical Cyberware{NEWLINE}RISK CLASS: Conventional"
+  STR_WIRETAPPERS_UP: "Self-proclaimed wizards of organo-machine interfacing, sensation malware, and brute-force psionic intrusion methods. Often hired to retrieve bionically encoded data, whether encrypted in implants or old-fashioned memories.{NEWLINE}{NEWLINE}The most successful specimens end up possessing far more information than they are comfortable with, which makes them more likely to engage in recreational memory deletion.{NEWLINE}{NEWLINE}PROCESSED: Medical Cyberware, Durathread{NEWLINE}RISK CLASS: Conventional"
   STR_WIRETAPPER_ARMOR: "Wiretapper Analysis"
   STR_WIRETAPPER_INTERVIEW: "INTERVIEW: Netrunner Wiretapper"
   STR_WIRETAPPER_INTERVIEW_T: "I/Wiretapper"
@@ -1893,7 +1893,7 @@ en-US:
   STR_CYFURB_ARMOR_UP: "Attack Damage: 20 Plasma"
   STR_DEFENSE_TURRET_AP: "AP Auto-Turret"
   STR_DEFENSE_TURRET_APS: "AP Auto-Turrets"
-  STR_DEFENSE_TURRET_APS_UP: "aaaa{NEWLINE}{NEWLINE}bbbb{NEWLINE}{NEWLINE}PROCESSED: Aqua-Plastics{NEWLINE}RISK CLASS: Security" #todo
+  STR_DEFENSE_TURRET_APS_UP: "Lethal autonomous area discouragement machine. Slightly cheaper to rent than the wage floor and far less likely to complain. Typically employed in addition to mobile, paycheck earning employees.{NEWLINE}{NEWLINE}Protected by aquaplastic casings. May fail to distinguish whitelisted signatures, or hit anything at all, at ranges greater than 20m.{NEWLINE}{NEWLINE}PROCESSED: Aqua-Plastics, SSP Defender SMG{NEWLINE}RISK CLASS: Security"
   STR_DEFENSE_TURRET_AP_ARMOR: "AP Auto-Turret Analysis"
   STR_DEFENSE_TURRET_AP_ARMOR_UP: "Attack Damage: 25 Kinetic"
 
@@ -1945,7 +1945,7 @@ en-US:
   STR_MORALE_TUTORIAL: "Morale"
   STR_MORALE_TUTORIAL_UP: "The world is not safe. Performing operations causes {ALT}turn-by-turn morale loss{ALT} even when there is no immediate threat. Terminating or stunning targets will increase morale. Being injured or permanently losing the link with a drone's mind will decrease it.{NEWLINE}{NEWLINE}All else being equal, morale trends towards bravery. Any drone with less than {ALT}60 bravery{ALT} will eventually become overwhelemed and panic. This is a reflex action, no amount of will can prevent it."
   STR_RESILIANCE_TUTORIAL: "Resiliance"
-  STR_RESILIANCE_TUTORIAL_UP: "How much a given mind has adapted to their own body. Knowing how strong a hand can grip, or how fast legs can run. All creatures become acclimated to their corporeal existance, whether it's made of flesh or steel. Modifying the shell of that existance means a mind has to relearn its body, temporarily {ALT}decreasing max resiliance{ALT} by up to 50%.{NEWLINE}{NEWLINE}Similarly, modifying the mind means the body has to relearn its brain. Being subjected to {ALT}psionic intrusions{ALT} (or even accessing the psionic network at all) lowers resiliance. However, the body is much faster at learning than the mind, recovering in weeks rather than months.{NEWLINE}{NEWLINE}High resiliance increases {ALT}psionic defense{ALT}, missing resiliance lowers {ALT}TU recovered{ALT} each turn."
+  STR_RESILIANCE_TUTORIAL_UP: "How much a given mind has adapted to their own body. Knowing how strong a hand can grip, or how fast legs can run. All creatures become acclimated to their corporeal existance, whether it's made of flesh or steel. Modifying the shell of that existance means a mind has to relearn its body, temporarily {ALT}decreasing max resiliance{ALT} by up to 75%.{NEWLINE}{NEWLINE}Similarly, modifying the mind means the body has to relearn its brain. Being subjected to {ALT}psionic intrusions{ALT} (or even accessing the psionic network at all) lowers resiliance. However, the body is much faster at learning than the mind, recovering in weeks rather than months.{NEWLINE}{NEWLINE}High resiliance increases {ALT}psionic defense{ALT}, missing resiliance lowers {ALT}TU recovered{ALT} each turn."
   STR_NIGHT_TUTORIAL: "Night"
   STR_NIGHT_TUTORIAL_UP: "{ALT}Darkness{ALT} is an ever present danger, one which our competitors rarely suffer. Even the most basic visual augments can run real-time map differntials to distinguish invaders, provided the implant is sufficently familiar with the area. Xenoforms have been engineered without vision limitations.{NEWLINE}{NEWLINE}{ALT}Day or night{ALT} all potential targets see as far as the best drone. {ALT}35 meters{ALT} versus the {ALT}8 meter{ALT} baseline. As such, there is no reason to embrace the dark.{NEWLINE}{NEWLINE}All drones carry small flashlights, illuminating the areas they venture into. This light is life. Night is safer together."
   STR_ARMOR_TUTORIAL: "Armor"
@@ -1958,6 +1958,8 @@ en-US:
   STR_GUN_TYPES_UP: "Weapon styles vary by design, philosophy, and ease of use. The following is not a comprehensive list, but will cover most equipment.{NEWLINE}{NEWLINE}{ALT}Flat Accuracy{ALT} Pistols +20, SMGs/Shotguns +10, Precision -20{NEWLINE}{NEWLINE}{ALT}Kneeling Accuracy{ALT} Pistols/Bows +10%, SMGs/Shotguns +15%, Assault/Precision/Launchers +20%, Cannons/SPWs/MGs +50%{NEWLINE}{NEWLINE}{ALT}One-Handed Accuracy{ALT} Shotguns/Launchers -25%, Assault/Precision -50%, Cannons/SPWs/MGs -65%{NEWLINE}{NEWLINE}{ALT}Penetration{ALT} Rifles +10%, Bows +15%, Precision +20%{NEWLINE}{NEWLINE}{ALT}Precision{ALT} +25% no-sight accuracy, +50% minimum damage{NEWLINE}{ALT}Cannons/SPWs{ALT} 25% accuracy from strength{NEWLINE}{ALT}MGs{ALT} 50% accuracy from strength"
   STR_MELEE_TYPES: "Melee Modifiers"
   STR_MELEE_TYPES_UP: "Up close and in violation of the non-aggression principal, melee combat is always an option. Assuming a hit can be landed.{NEWLINE}{NEWLINE}{ALT}Dodge{ALT} reduces the chance of being hit in melee. Heavier armor tends to have worse odds. {ALT}Dodge%{ALT} is multiplied by reactions, plus at least 10% of melee stat. Shields increase dodge from melee.{NEWLINE}{NEWLINE}{ALT}Tools{ALT} and other simple to use weapons get a {ALT}+50 flat accuracy{ALT} bonus, but do not scale well with skill.{NEWLINE}{NEWLINE}{ALT}Unarmed{ALT} attacks have a {ALT}100% accuracy{ALT} multiplier, deal full stun damage, and are less lethal for that damage type."
+  STR_RESTRICTION_TUTORIAL: "Equipment Restrictions"
+  STR_RESTRICTION_TUTORIAL_UP: "Most operations only allow specific gear either due to drawing unwanted attention or an underappreciation of excessive force.{NEWLINE}{NEWLINE}{ALT}Unlicensed{ALT} made out of unrestricted parts, can be acquired and used without biocoding.{NEWLINE}{ALT}Security{ALT} capable of penetrating light body armor, only moderately dangerous to bystanders.{NEWLINE}{ALT}Milspec{ALT} heavy weapons and gear with high risk of collateral, cities only allow these during crisis.{NEWLINE}{ALT}Exotic{ALT} uses dwindling elerium supply reserved for the next war or psionic technology with devastating consequences if misused.{NEWLINE}{NEWLINE}{ALT}Covert{ALT} undetected by scanners{NEWLINE}{ALT}Infiltration{ALT} can be hidden from sight{NEWLINE}{ALT}Sport{ALT} legal for hunting and recreation{NEWLINE}{ALT}Tools{ALT} expected at industrial and construction sites{NEWLINE}{ALT}Enviroment Certified{ALT} equipment remains functional"
   #tips
   #lore only researches give score, representing understanding the world a little better
   #things are sold for 1/4 their buying price for tax reasons, locked things sell for 1/10 their buying price since someone else has to crack/scrap it, shares cost 5x their selling price because you might be trying to do a buyout

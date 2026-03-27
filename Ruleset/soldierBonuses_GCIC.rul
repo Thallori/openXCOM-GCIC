@@ -38,7 +38,7 @@ soldierBonuses:
     stats:
       firing: 12
       reactions: 6
-      mana: -5
+      mana: -10
     recovery:
       energy:
         flatOne: -1
@@ -46,7 +46,7 @@ soldierBonuses:
     stats:
       throwing: 12
       stamina: 6
-      mana: -5
+      mana: -10
     recovery:
       energy:
         flatOne: -1
@@ -54,7 +54,7 @@ soldierBonuses:
     stats:
       melee: 12
       tu: 6
-      mana: -5
+      mana: -10
     recovery:
       energy:
         flatOne: -1
@@ -66,7 +66,7 @@ soldierBonuses:
       stamina: 10
       strength: 10
       health: 10
-      mana: -10
+      mana: -15
     recovery:
       energy:
         flatOne: -2
@@ -77,7 +77,7 @@ soldierBonuses:
       stamina: 10
       strength: 15
       health: 15
-      mana: -10
+      mana: -15
     recovery:
       energy:
         flatOne: -2
@@ -95,7 +95,7 @@ soldierBonuses:
       melee: 8
       tu: 6
       reactions: 6
-      mana: -10
+      mana: -15
     recovery:
       energy:
         flatOne: -2
@@ -112,7 +112,7 @@ soldierBonuses:
       melee: 8
       tu: -4
       reactions: -4
-      mana: -10
+      mana: -15
     recovery:
       energy:
         flatOne: -2

@@ -876,7 +876,7 @@ manufacture:
       - STR_45_PISTOL_CODED
       - STR_LOCAL_INTERFACE
       - STR_BIOCODING
-    time: 400
+    time: 250
     refund: true
     requiredItems:
       STR_45_PISTOL_CODED: 1
@@ -890,7 +890,7 @@ manufacture:
       - STR_SSP_SMG_CODED
       - STR_LOCAL_INTERFACE
       - STR_BIOCODING
-    time: 400
+    time: 250
     refund: true
     requiredItems:
       STR_SSP_SMG_CODED: 1
@@ -904,7 +904,7 @@ manufacture:
       - STR_SSP_SHOTGUN_CODED
       - STR_LOCAL_INTERFACE
       - STR_BIOCODING
-    time: 400
+    time: 250
     refund: true
     requiredItems:
       STR_SSP_SHOTGUN_CODED: 1
@@ -918,7 +918,7 @@ manufacture:
       - STR_SINGLESHOT_LASER_PISTOL_CODED
       - STR_LOCAL_INTERFACE
       - STR_BIOCODING
-    time: 400
+    time: 250
     refund: true
     requiredItems:
       STR_SINGLESHOT_LASER_PISTOL_CODED: 1
@@ -932,7 +932,7 @@ manufacture:
       - STR_SSP_LASER_SMG_CODED
       - STR_LOCAL_INTERFACE
       - STR_BIOCODING
-    time: 400
+    time: 250
     refund: true
     requiredItems:
       STR_SSP_LASER_SMG_CODED: 1
@@ -946,7 +946,7 @@ manufacture:
       - STR_TASER_PISTOL_CODED
       - STR_LOCAL_INTERFACE
       - STR_BIOCODING
-    time: 400
+    time: 250
     refund: true
     requiredItems:
       STR_TASER_PISTOL_CODED: 1
@@ -1063,6 +1063,7 @@ manufacture:
     requiredItems:
       STR_WIRETAPPER_PRIVATE: 1
     producedItems:
+      STR_DURATHREAD: 2
       STR_PERSONAL_DATA: 5
       STR_SECRET_DATA: 5
 

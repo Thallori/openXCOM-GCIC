@@ -1921,7 +1921,7 @@ items:
 
   - type: STR_SSP_LASER_SMG_ELERIUM
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
-    ufopediaType: STR_SINGLESHOT_LASER_PISTOL
+    ufopediaType: STR_SSP_LASER_SMG
     requiresBuy:
       - STR_SEC_LICENSE
       - STR_TODO
@@ -1931,9 +1931,9 @@ items:
     transferTime: 72
     costBuy: 222999
     costSell: 205750
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
+    bigSprite: 277
+    floorSprite: 255
+    handSprite: 632
     bulletSprite: 13
     bulletSpeed: 60
     fireSound: 121
@@ -1990,9 +1990,9 @@ items:
       - STR_SSP_CRACK
     size: 0.1
     costSell: 2300
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
+    bigSprite: 276
+    floorSprite: 254
+    handSprite: 624
     bulletSprite: 13
     bulletSpeed: 60
     fireSound: 121
@@ -2038,9 +2038,9 @@ items:
     costBuy: 22999
     costSell: 5750
     transferTime: 4
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
+    bigSprite: 276
+    floorSprite: 254
+    handSprite: 624
     bulletSprite: 13
     bulletSpeed: 60
     fireSound: 121
@@ -2080,8 +2080,8 @@ items:
     size: 0.01
     costSell: 20
     transferTime: 4
-    bigSprite: 160
-    floorSprite: 153
+    bigSprite: 279
+    floorSprite: 256
     hitSound: 19
     hitAnimation: 36
     battleType: 2
@@ -2114,8 +2114,8 @@ items:
     costBuy: 719
     costSell: 72
     transferTime: 4
-    bigSprite: 161
-    floorSprite: 154
+    bigSprite: 278
+    floorSprite: 256
     hitSound: 19
     hitAnimation: 36
     battleType: 2
@@ -2137,106 +2137,6 @@ items:
       vaporParticleAmmo: |
         set particle_lifetime 4;
         return;
-
-  - type: STR_TASER_PISTOL_CODED
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY, STR_LOCKED_CATEGORY]
-    ufopediaType: STR_TASER_PISTOL
-    requires:
-      - STR_SSP_CRACK
-    size: 0.1
-    costSell: 500
-    transferTime: 4
-    bigSprite: 144
-    floorSprite: 140
-    handSprite: 304
-    bulletSprite: 14
-    bulletSpeed: -1
-    fireSound: 108
-    invWidth: 1
-    invHeight: 2
-    battleType: 1
-    weight: 3
-    compatibleAmmo:
-      - STR_TASER_AMMO
-    accuracySnap: 65
-    accuracyMultiplier:
-      reactions: 1.0
-      flatHundred: 0.20
-    tuSnap: 30
-    snapRange: 4
-    maxRange: 6
-    dropoff: 10
-    kneelBonus: 110
-    experienceTrainingMode: 12
-    attraction: 15
-    armor: 30
-  - type: STR_TASER_PISTOL
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
-    requiresBuy:
-      - STR_SEC_LICENSE
-      - STR_VENDOR_SSP
-      - STR_TASER_PISTOL
-    size: 0.1
-    costBuy: 1999
-    costSell: 500
-    transferTime: 4
-    bigSprite: 144
-    floorSprite: 140
-    handSprite: 304
-    bulletSprite: 14
-    bulletSpeed: -1
-    fireSound: 108
-    invWidth: 1
-    invHeight: 2
-    battleType: 1
-    weight: 3
-    compatibleAmmo:
-      - STR_TASER_AMMO
-    accuracySnap: 65
-    accuracyMultiplier:
-      reactions: 1.0
-      flatHundred: 0.20
-    tuSnap: 30
-    snapRange: 4
-    maxRange: 6
-    dropoff: 10
-    kneelBonus: 110
-    experienceTrainingMode: 12
-    attraction: 15
-    armor: 30
-  - type: STR_TASER_AMMO
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
-    requiresBuy:
-      - STR_SEC_LICENSE
-      - STR_VENDOR_SSP
-      - STR_TASER_PISTOL
-    size: 0.01
-    costBuy: 44
-    costSell: 11
-    transferTime: 4
-    bigSprite: 145
-    floorSprite: 141
-    hitSound: 13
-    hitAnimation: 56
-    battleType: 2
-    weight: 2
-    clipSize: 2
-    power: 32
-    damageBonus:
-      reactions: 0.05
-    damageType: 10
-    damageAlter:
-      RandomType: 9
-      ToWound: 0.0
-      RandomWound: false
-      ToHealth: 0.35
-      ToStun: 1.0
-      RandomStun: false
-      IgnoreSelfDestruct: true
-      IgnorePainImmunity: true
-      ToTile: 0.0
-    powerRangeThreshold: 6
-    powerRangeReduction: 999
 # xn
   - type: STR_XN_LASER_PISTOL
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
@@ -2722,7 +2622,7 @@ items:
       - STR_ALIEN_PLASMA_PISTOL
     transferTime: 72
     size: 0.1
-    costbuy: 200000
+    costBuy: 200000
     costSell: 185000
     bigSprite: 34
     floorSprite: 33
@@ -2847,7 +2747,7 @@ items:
     size: 0.01
     costSell: 25
     transferTime: 4
-    bigSprite: 231
+    bigSprite: 266
     floorSprite: 210
     hitSound: 19
     hitAnimation: 36
@@ -3028,7 +2928,7 @@ items:
     size: 0.01
     costSell: 30
     transferTime: 4
-    bigSprite: 234
+    bigSprite: 267
     floorSprite: 212
     hitSound: 19
     hitAnimation: -1
@@ -3200,7 +3100,7 @@ items:
     size: 0.01
     costSell: 30
     transferTime: 4
-    bigSprite: 227
+    bigSprite: 268
     floorSprite: 206
     hitSound: 19
     hitAnimation: 36
@@ -3368,7 +3268,7 @@ items:
     size: 0.01
     costSell: 35
     transferTime: 4
-    bigSprite: 238
+    bigSprite: 269
     floorSprite: 221
     hitSound: 19
     hitAnimation: 36
@@ -3439,9 +3339,9 @@ items:
     costBuy: 232000
     costSell: 224000
     transferTime: 72
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
+    bigSprite: 271
+    floorSprite: 250
+    handSprite: 600
     bulletSprite: 13
     bulletSpeed: 60
     fireSound: 11
@@ -3500,9 +3400,9 @@ items:
     costBuy: 32000
     costSell: 24000
     transferTime: 4
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
+    bigSprite: 270
+    floorSprite: 249
+    handSprite: 592
     bulletSprite: 13
     bulletSpeed: 60
     fireSound: 11
@@ -3542,12 +3442,12 @@ items:
     size: 0.1
     costSell: 3000
     transferTime: 4
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 273
+    floorSprite: 251
     hitSound: 19
     hitAnimation: -1
     invWidth: 2
-    invHeight: 2
+    invHeight: 1
     battleType: 2
     weight: 12
     clipSize: 15
@@ -3574,12 +3474,12 @@ items:
       - STR_GCIC_PROTOTYPE_LASER_MG
     size: 0.1
     transferTime: 4
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 272
+    floorSprite: 251
     hitSound: 19
     hitAnimation: -1
     invWidth: 2
-    invHeight: 2
+    invHeight: 1
     battleType: 2
     weight: 12
     clipSize: 135
@@ -3610,9 +3510,9 @@ items:
     costBuy: 244000
     costSell: 233000
     transferTime: 72
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
+    bigSprite: 281
+    floorSprite: 258
+    handSprite: 648
     bulletSprite: 26
     bulletSpeed: 15
     fireSound: 122
@@ -3669,9 +3569,9 @@ items:
     costBuy: 44000
     costSell: 33000
     transferTime: 4
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
+    bigSprite: 280
+    floorSprite: 257
+    handSprite: 640
     bulletSprite: 26
     bulletSpeed: 15
     fireSound: 122
@@ -3706,8 +3606,8 @@ items:
     size: 0.1
     costSell: 900
     transferTime: 4
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 283
+    floorSprite: 259
     hitSound: 19
     hitAnimation: -1
     invWidth: 2
@@ -3743,8 +3643,8 @@ items:
       - STR_GCIC_PROTOTYPE_LASER_MG
     size: 0.1
     transferTime: 4
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 282
+    floorSprite: 259
     hitSound: 19
     hitAnimation: -1
     invWidth: 2
@@ -4210,9 +4110,9 @@ items:
     costBuy: 2349
     costSell: 590
     transferTime: 12
-    bigSprite: 253
-    floorSprite: 235
-    handSprite: 576
+    bigSprite: 275
+    floorSprite: 253
+    handSprite: 616
     hitAnimation: 0
     invWidth: 2
     invHeight: 1
@@ -4414,7 +4314,7 @@ items:
     invHeight: 2
     battleType: 3
     weight: 4
-    power: 10
+    power: 16
     damageBonus:
       strength: 0.1
       melee: 0.2
@@ -4444,28 +4344,27 @@ items:
     attraction: 15
     armor: 30
   - type: STR_VOLTKNOCKER
-    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_INFILTRATION_CATEGORY, STR_STUN_CATEGORY]
+    categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_STUN_CATEGORY]
     requiresBuy:
-      - STR_SEC_LICENSE
       - STR_VENDOR_SSP
       - STR_VOLTKNOCKER
     size: 0.1
     costBuy: 2199
     costSell: 550
     transferTime: 4
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
+    bigSprite: 274
+    floorSprite: 252
+    handSprite: 608
     bulletSprite: 24 #
     bulletSpeed: -2
     fireSound: 39
-    hitSound: 13
+    hitSound: 105
     hitAnimation: 56
     invWidth: 1
     invHeight: 2
     battleType: 1
     weight: 4
-    power: 15
+    power: 22
     clipSize: 5
     damageBonus:
       reactions: 0.1
@@ -4477,13 +4376,13 @@ items:
       RandomWound: false
       ToHealth: 0.35
       ToStun: 1.0
-      ArmorEffectiveness: 1.2
       RandomStun: false
       IgnoreSelfDestruct: true
       IgnorePainImmunity: true
       ToTile: 0.15
-    powerRangeThreshold: 7
-    powerRangeReduction: 2
+    powerRangeThreshold: 8
+    powerRangeReduction: 50
+    arcingShot: true
     accuracySnap: 55
     accuracyAimed: 90
     accuracyMultiplier:
@@ -4502,58 +4401,159 @@ items:
     kneelBonus: 110
     experienceTrainingMode: 7
     attraction: 10
-
-  - type: STR_DARTROPE
-    categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY]
-    requiresBuy:
-      - STR_VENDOR_PRINTER
-      - STR_DARTROPE
+  - type: STR_TASER_PISTOL_CODED
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY, STR_LOCKED_CATEGORY]
+    ufopediaType: STR_TASER_PISTOL
+    requires:
+      - STR_SSP_CRACK
     size: 0.1
-    costBuy: 12499
-    costSell: 3125
+    costSell: 500
     transferTime: 4
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
-    bulletSprite: 5 #
-    bulletSpeed: 99
-    fireSound: 39
-    hitSound: 101
-    hitAnimation: 26 #
+    bigSprite: 144
+    floorSprite: 140
+    handSprite: 304
+    bulletSprite: 14
+    bulletSpeed: -1
+    fireSound: 108
     invWidth: 1
     invHeight: 2
     battleType: 1
-    weight: 7
-    power: 12
-    damageType: 7
-    damageBonus:
-      strength: 0.1
-      throwing: 0.6
-    damageAlter:
-      ToTime: 2.0
-      IgnoreSelfDestruct: false
-      ToTile: 0.25
-    clipSize: -1
-    accuracySnap: 85
-    accuracyAimed: 110
+    weight: 3
+    compatibleAmmo:
+      - STR_TASER_AMMO
+    accuracySnap: 65
     accuracyMultiplier:
-      throwing: 1.0
-    costSnap:
-      time: 15
-      energy: 6
-    costAimed:
-      time: 20
-      energy: 6
-    flatRate: true
-    maxRange: 4
-    snapRange: 2
-    aimRange: 3
-    dropoff: 20
-    powerRangeThreshold: 4
-    powerRangeReduction: 999
+      reactions: 1.0
+      flatHundred: 0.20
+    tuSnap: 30
+    snapRange: 4
+    maxRange: 6
+    dropoff: 10
     kneelBonus: 110
-    experienceTrainingMode: 7
-    attraction: 5
+    experienceTrainingMode: 12
+    attraction: 15
+    armor: 30
+  - type: STR_TASER_PISTOL
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
+    requiresBuy:
+      - STR_SEC_LICENSE
+      - STR_VENDOR_SSP
+      - STR_TASER_PISTOL
+    size: 0.1
+    costBuy: 1999
+    costSell: 500
+    transferTime: 4
+    bigSprite: 144
+    floorSprite: 140
+    handSprite: 304
+    bulletSprite: 14
+    bulletSpeed: -1
+    fireSound: 108
+    invWidth: 1
+    invHeight: 2
+    battleType: 1
+    weight: 3
+    compatibleAmmo:
+      - STR_TASER_AMMO
+    accuracySnap: 65
+    accuracyMultiplier:
+      reactions: 1.0
+      flatHundred: 0.20
+    tuSnap: 30
+    snapRange: 4
+    maxRange: 6
+    dropoff: 10
+    kneelBonus: 110
+    experienceTrainingMode: 12
+    attraction: 15
+    armor: 30
+  - type: STR_TASER_AMMO
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
+    requiresBuy:
+      - STR_SEC_LICENSE
+      - STR_VENDOR_SSP
+      - STR_TASER_PISTOL
+    size: 0.01
+    costBuy: 44
+    costSell: 11
+    transferTime: 4
+    bigSprite: 145
+    floorSprite: 141
+    hitSound: 105
+    hitAnimation: 56
+    battleType: 2
+    weight: 2
+    clipSize: 2
+    power: 38
+    damageBonus:
+      reactions: 0.05
+    damageType: 10
+    damageAlter:
+      RandomType: 9
+      ToWound: 0.0
+      RandomWound: false
+      ToHealth: 0.35
+      ToStun: 1.0
+      RandomStun: false
+      IgnoreSelfDestruct: true
+      IgnorePainImmunity: true
+      ToTile: 0.0
+    powerRangeThreshold: 6
+    powerRangeReduction: 50
+
+  # - type: STR_DARTROPE
+  #   categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY]
+  #   requiresBuy:
+  #     - STR_VENDOR_PRINTER
+  #     - STR_DARTROPE
+  #   size: 0.1
+  #   costBuy: 12499
+  #   costSell: 3125
+  #   transferTime: 4
+  #   bigSprite: 900
+  #   floorSprite: 900
+  #   handSprite: 900
+  #   bulletSprite: 5 #
+  #   bulletSpeed: 99
+  #   fireSound: 39
+  #   hitSound: 101
+  #   hitAnimation: 26 #
+  #   invWidth: 1
+  #   invHeight: 2
+  #   battleType: 1
+  #   weight: 7
+  #   power: 12
+  #   damageType: 7
+  #   damageBonus:
+  #     strength: 0.1
+  #     throwing: 0.6
+  #   damageAlter:
+  #     ToTime: 2.0
+  #     ArmorEffectiveness: 1.3
+  #     IgnoreSelfDestruct: false
+  #     ToTile: 0.25
+  #   clipSize: -1
+  #   accuracySnap: 75
+  #   accuracyAimed: 145
+  #   accuracyMultiplier:
+  #     throwing: 1.0
+  #     flatHundred: -0.20
+  #   costSnap:
+  #     time: 22
+  #     energy: 8
+  #   costAimed:
+  #     time: 24
+  #     energy: 10
+  #   flatRate: true
+  #   maxRange: 4
+  #   snapRange: 2
+  #   aimRange: 3
+  #   dropoff: 8
+  #   powerRangeThreshold: 4
+  #   powerRangeReduction: 50
+  #   kneelBonus: 110
+  #   experienceTrainingMode: 7
+  #   attraction: 5
   - type: STR_MARSBALL
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_TOOLS_CATEGORY]
     requiresBuy:
@@ -4592,14 +4592,14 @@ items:
       TileDamageMethod: 1
     clipSize: -1
     accuracySnap: 80
-    accuracyAimed: 80
+    accuracyAimed: 75
     accuracyMultiplier:
       throwing: 1.0
     costSnap:
       time: 20
       energy: 8
     costAimed:
-      time: 20
+      time: 22
       energy: 10
     confSnap:
       name: STR_FASTBALL_ACTION
@@ -6235,6 +6235,7 @@ items:
     weight: 22
     recoveryTransformations:
       STR_BIOMASS: [1]
+      STR_DURATHREAD: [1]
       STR_MEDICAL_CYBERNETICS_CODED: [1]
     armor: 30
 # ssp

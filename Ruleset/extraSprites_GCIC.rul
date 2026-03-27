@@ -44,7 +44,7 @@ extraSprites:
       100: Resources/Armors/Pilots/FlyingCore/pilot_core_corpse_bigob.png
       101: Resources/Armors/Pilots/FlyingCore/pilot_core_bigob.png
       102: Resources/Items/Tools/wrench_bigob.png
-      103: Resources/Items/Melee/knife_bigob.png
+      103: Resources/Items/Martial/knife_bigob.png
       104: Resources/Items/Kinetic/busbox_bigob.png
       105: Resources/Items/Kinetic/Ammo/comball_bigob.png
       106: Resources/Items/Kinetic/Ammo/papershot_bigob.png
@@ -90,7 +90,7 @@ extraSprites:
       146: Resources/Items/Materials/interlace_bigob.png
       147: Resources/Factions/Netrunners/freelancer_bigob.png
       148: Resources/Items/Laser/xn_gatling_bigob.png
-      149: Resources/Items/Melee/baton_bigob.png
+      149: Resources/Items/Martial/baton_bigob.png
       150: Resources/Items/Kinetic/12mm_bigob.png
       151: Resources/Items/Kinetic/Ammo/12mm_ammo_bigob.png
       152: Resources/Items/Materials/sjb_bigob.png
@@ -160,8 +160,8 @@ extraSprites:
       216: Resources/Factions/Clients/civilian_greaser2_bigob.png
       217: Resources/Factions/Clients/civilian_hoodie1_bigob.png
       218: Resources/Factions/Clients/civilian_hoodie2_bigob.png
-      219: Resources/Items/Melee/skulljack_bigob.png
-      220: Resources/Items/Multi/marsball_bigob.png
+      219: Resources/Items/Martial/skulljack_bigob.png
+      220: Resources/Items/Martial/marsball_bigob.png
       221: Resources/Factions/Holograms/holomuton_bigob.png
       222: Resources/Factions/Holograms/holoviper_bigob.png
       223: Resources/Items/Builtins/holorifle_bigob.png
@@ -207,13 +207,31 @@ extraSprites:
       263: Resources/Factions/SSP/sspsupervisor_bigob.png
       264: Resources/Items/Kinetic/hra_coilsniper_bigob.png
       265: Resources/Items/Kinetic/Ammo/hra_coilsniper_ammo_bigob.png
+      266: Resources/Items/Laser/Ammo/prototype_pistol_1ammo_bigob.png
+      267: Resources/Items/Laser/Ammo/prototype_smg_1ammo_bigob.png
+      268: Resources/Items/Laser/Ammo/prototype_rifle_1ammo_bigob.png
+      269: Resources/Items/Laser/Ammo/prototype_sniper_1ammo_bigob.png
+      270: Resources/Items/Laser/prototype_volley_bigob.png
+      271: Resources/Items/Laser/prototype_evolley_bigob.png
+      272: Resources/Items/Laser/Ammo/prototype_volley_ammo_bigob.png
+      273: Resources/Items/Laser/Ammo/prototype_volley_1ammo_bigob.png
+      274: Resources/Items/Electric/voltknocker_bigob.png
+      275: Resources/Items/Explosives/phxdemo_bigob.png
+      276: Resources/Items/Laser/ssp_lasersmg_bigob.png
+      277: Resources/Items/Laser/ssp_elasersmg_bigob.png
+      278: Resources/Items/Laser/Ammo/ssp_lasersmg_ammo_bigob.png
+      279: Resources/Items/Laser/Ammo/ssp_lasersmg_1ammo_bigob.png
+      280: Resources/Items/Laser/prototype_cannon_bigob.png
+      281: Resources/Items/Laser/prototype_cannon_bigob.png
+      282: Resources/Items/Laser/Ammo/prototype_cannon_ammo_bigob.png
+      283: Resources/Items/Laser/Ammo/prototype_cannon_1ammo_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
     files:
       100: Resources/Armors/Pilots/FlyingCore/pilot_core_corpse_floorob.png
       102: Resources/Items/Tools/wrench_floorob.png
-      103: Resources/Items/Melee/knife_floorob.png
+      103: Resources/Items/Martial/knife_floorob.png
       104: Resources/Items/Kinetic/busbox_floorob.png
       105: Resources/Items/Kinetic/Ammo/comball_floorob.png
       106: Resources/Items/Kinetic/Ammo/papershot_floorob.png
@@ -255,7 +273,7 @@ extraSprites:
       142: Resources/Items/Materials/interlace_floorob.png
       143: Resources/Factions/Netrunners/freelancer_floorob.png
       144: Resources/Items/Laser/xn_gatling_floorob.png
-      145: Resources/Items/Melee/baton_floorob.png
+      145: Resources/Items/Martial/baton_floorob.png
       146: Resources/Items/Kinetic/12mm_floorob.png
       147: Resources/Items/Kinetic/Ammo/12mm_ammo_floorob.png
       148: Resources/Items/Materials/elerium_floorob.png
@@ -311,8 +329,8 @@ extraSprites:
       198: Resources/Items/Explosives/Ammo/windlass_bomb_floorob.png
       199: Resources/Factions/Clients/civilian_greaser_floorob.png
       200: Resources/Factions/Clients/civilian_hoodie_floorob.png
-      201: Resources/Items/Melee/skulljack_floorob.png
-      202: Resources/Items/Multi/marsball_floorob.png
+      201: Resources/Items/Martial/skulljack_floorob.png
+      202: Resources/Items/Martial/marsball_floorob.png
       203: Resources/Factions/Holograms/holomuton_floorob.png
       204: Resources/Factions/Holograms/holoviper_floorob.png
       205: Resources/Items/Laser/prototype_rifle_floorob.png
@@ -359,6 +377,17 @@ extraSprites:
       246: Resources/Items/Materials/personal_floorob.png
       247: Resources/Items/Kinetic/hra_coilsniper_floorob.png
       248: Resources/Items/Kinetic/Ammo/hra_coilsniper_ammo_floorob.png
+      249: Resources/Items/Laser/prototype_volley_floorob.png
+      250: Resources/Items/Laser/prototype_evolley_floorob.png
+      251: Resources/Items/Laser/Ammo/prototype_volley_ammo_floorob.png
+      252: Resources/Items/Electric/voltknocker_floorob.png
+      253: Resources/Items/Explosives/phxdemo_floorob.png
+      254: Resources/Items/Laser/ssp_lasersmg_floorob.png
+      255: Resources/Items/Laser/ssp_elasersmg_floorob.png
+      256: Resources/Items/Laser/Ammo/ssp_lasersmg_ammo_floorob.png
+      257: Resources/Items/Laser/prototype_cannon_floorob.png
+      258: Resources/Items/Laser/prototype_ecannon_floorob.png
+      259: Resources/Items/Laser/Ammo/prototype_cannon_ammo_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -368,7 +397,7 @@ extraSprites:
     subY: 40
     files:
       128: Resources/Items/Tools/wrench_handob.png
-      136: Resources/Items/Melee/knife_handob.png
+      136: Resources/Items/Martial/knife_handob.png
       144: Resources/Items/Kinetic/busbox_handob.png
       152: Resources/Items/Laser/xn_pistol_handob.png
       160: Resources/Items/Tools/survey_knocker_handob.png
@@ -391,7 +420,7 @@ extraSprites:
       296: Resources/Items/Tools/extinguisher_handob.png
       304: Resources/Items/Electric/taser_handob.png
       312: Resources/Items/Laser/xn_gatling_handob.png
-      320: Resources/Items/Melee/baton_handob.png
+      320: Resources/Items/Martial/baton_handob.png
       328: Resources/Items/Kinetic/12mm_handob.png
       336: Resources/Items/Explosives/eleriumbomb_handob.png
       344: Resources/Items/Laser/ssp_pistol_handob.png
@@ -409,8 +438,8 @@ extraSprites:
       440: Resources/Items/Explosives/molotov_handob.png
       448: Resources/Items/Explosives/flask_handob.png
       456: Resources/Items/Explosives/windlass_handob.png
-      464: Resources/Items/Melee/skulljack_handob.png
-      472: Resources/Items/Multi/marsball_handob.png
+      464: Resources/Items/Martial/skulljack_handob.png
+      472: Resources/Items/Martial/marsball_handob.png
       480: Resources/Items/Builtins/holorifle_handob.png
       488: Resources/Items/Builtins/hololauncher_handob.png
       496: Resources/Items/Laser/prototype_rifle_handob.png
@@ -425,6 +454,14 @@ extraSprites:
       568: Resources/Items/Explosives/barrelmortar_handob.png
       576: Resources/Items/Explosives/phxbomb_handob.png
       584: Resources/Items/Kinetic/hra_coilsniper_handob.png
+      592: Resources/Items/Laser/prototype_volley_handob.png
+      600: Resources/Items/Laser/prototype_evolley_handob.png
+      608: Resources/Items/Electric/voltknocker_handob.png
+      616: Resources/Items/Explosives/phxdemo_handob.png
+      624: Resources/Items/Laser/ssp_lasersmg_handob.png
+      632: Resources/Items/Laser/ssp_elasersmg_handob.png
+      640: Resources/Items/Laser/prototype_cannon_handob.png
+      648: Resources/Items/Laser/prototype_ecannon_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
@@ -461,6 +498,9 @@ extraSprites:
       311: Resources/BaseBits/basebits_gateway.png
       312: Resources/BaseBits/basebits_medi.png
       313: Resources/BaseBits/basebits_scanner.png
+      314: Resources/BaseBits/basebits_remediation.png
+      315: Resources/BaseBits/basebits_backchannels.png
+      316: Resources/BaseBits/basebits_toolworks.png
       433: Resources/Crafts/bicube_basebit.png
       434: Resources/Crafts/crossover_basebit.png
       435: Resources/Crafts/rider_basebit.png
@@ -1231,11 +1271,15 @@ extraSprites:
   - typeSingle: STAPLE_CPAL
     fileSingle: Resources/Pedia/techstaple_CPAL.png
   - typeSingle: MEDICAL_CPAL
-    fileSingle: Resources/Pedia/medical_CPAL.png
+    fileSingle: Resources/Pedia/techmedical_CPAL.png
   - typeSingle: REDOX_CPAL
-    fileSingle: Resources/Pedia/redox_CPAL.png
+    fileSingle: Resources/Pedia/techredox_CPAL.png
   - typeSingle: REDLASER_CPAL
-    fileSingle: Resources/Pedia/redlaser_CPAL.png
+    fileSingle: Resources/Pedia/techredlaser_CPAL.png
+  - typeSingle: GREENPLASMA_CPAL
+    fileSingle: Resources/Pedia/techgreenplasma_CPAL.png
+  - typeSingle: OPTI_CPAL
+    fileSingle: Resources/Pedia/techopti_CPAL.png
 # crafts
   - typeSingle: CRAFT_LIMO_CPAL
     fileSingle: Resources/Pedia/craft_limo_CPAL.png

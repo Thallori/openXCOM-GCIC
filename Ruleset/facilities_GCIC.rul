@@ -102,11 +102,11 @@ facilities:
     requires:
       - STR_REMEDITION_OFFICE_RESEARCH
     spriteShape: 1
-    spriteFacility: 303 #
+    spriteFacility: 314
     buildTime: 14
     buildCost: 140000
     refundValue: 105000
-    monthlyCost: 14000
+    monthlyCost: 16000
     trainingRooms: 6
     mapName: XBASE_07
 
@@ -148,7 +148,7 @@ facilities:
     buildTime: 18
     buildCost: 750000
     refundValue: 500000
-    monthlyCost: 30000
+    monthlyCost: 50000
     labs: 4
     maxAllowedPerBase: 1
     mapName: XBASE_02
@@ -196,7 +196,7 @@ facilities:
       - STR_BACKCHANNELS_RESEARCH
     provideBaseFunc: [STR_SERVICE_BACKCHANNELS]
     spriteShape: 1
-    spriteFacility: 311 #
+    spriteFacility: 315
     buildTime: 19
     buildCost: 800000
     refundValue: 600000
@@ -228,7 +228,7 @@ facilities:
       - STR_TOOLWORKS_RESEARCH
     provideBaseFunc: [STR_SERVICE_MACHINING]
     spriteShape: 1
-    spriteFacility: 310 #
+    spriteFacility: 316
     buildTime: 25
     buildCost: 475000
     refundValue: 350000

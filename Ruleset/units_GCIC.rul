@@ -416,9 +416,9 @@ units:
       health: 50
       bravery: 90
       reactions: 50
-      firing: 55
-      throwing: 55
-      melee: 55
+      firing: 60
+      throwing: 60
+      melee: 60
       strength: 50
       psiStrength: 30
       psiSkill: 0
@@ -522,9 +522,9 @@ units:
       health: 55
       bravery: 90
       reactions: 50
-      firing: 55
-      throwing: 55
-      melee: 55
+      firing: 60
+      throwing: 60
+      melee: 60
       strength: 50
       psiStrength: 30
       psiSkill: 0

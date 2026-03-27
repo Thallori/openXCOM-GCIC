@@ -40,7 +40,7 @@ countries:
     labelLon: 124.839
     labelLat: 52.657
   - type: STR_LIBERATED_MAZ
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 3000
     areas: 
       - [30.3598, 54.85178, 31.49739, 54.45165]
@@ -49,7 +49,7 @@ countries:
     labelLon: 29.518
     labelLat: 49.315
   - type: STR_UCLC
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 4000
     areas: 
       - [223.7334, 284.0001, 39.53333, 61.2]
@@ -60,7 +60,7 @@ countries:
     labelLon: 273.031
     labelLat: 53.486
   - type: STR_REN
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 3000
     areas: 
       - [332.2, 4.567383, 44.27602, 61.2]
@@ -70,7 +70,7 @@ countries:
     labelLon: 345.452
     labelLat: 53.655
   - type: STR_TAELS_THEATER
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 2000
     areas: 
       - [284.0001, 318.4001, 55.53329, 61.2]
@@ -79,14 +79,14 @@ countries:
     labelLon: 297.601
     labelLat: 52.666
   - type: STR_AMBER_TRIUMPH
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 3000
     areas: 
       - [165.726, 223.7334, 32.22545, 61.2]
     labelLon: 195.822
     labelLat: 50.125
   - type: STR_NEW_SOUTHGATE
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 3500
     areas: 
       - [291.785, 316.1407, 35.63479, 48.04445]
@@ -95,7 +95,7 @@ countries:
     labelLon: 309.093
     labelLat: 42.849
   - type: STR_NORTHGATE
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 10000
     areas: 
       - [304.8666, 331.8, -6.451335, 9.666668]
@@ -103,7 +103,7 @@ countries:
     labelLon: 318.143
     labelLat: 5.054
   - type: STR_KENSU_STATE
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 2000
     areas: 
       - [346.9863, 7.466858, -6.451333, 10.19456]
@@ -121,7 +121,7 @@ countries:
     labelLon: 43.034
     labelLat: 5.505
   - type: STR_DAGBURGNUI
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 2500
     areas: 
       - [52.33344, 76.51395, -15.53331, 11.40002]
@@ -131,7 +131,7 @@ countries:
     labelLon: 61.267
     labelLat: -1.614
   - type: STR_NORPONT
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 2000
     areas: 
       - [37.31247, 49.60126, -72.01459, -51.52785]
@@ -141,14 +141,14 @@ countries:
     labelLon: 102.235
     labelLat: -64.525
   - type: STR_MICMI_GULF
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 2500
     areas: 
       - [111.4666, 130.6622, -35.26665, -18.26665]
     labelLon: 126.292
     labelLat: -26.026
   - type: STR_AOUN_RIKA_PAS
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 3000
     areas: 
       - [174.6666, 188.3333, -44.59998, -26.73331]
@@ -160,7 +160,7 @@ countries:
     labelLon: 199.602
     labelLat: -48.621
   - type: STR_KOKSHA_SANG
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 2500
     areas: 
       - [248.7051, 264.9358, -20.87134, -6.068807]
@@ -171,7 +171,7 @@ countries:
     labelLon: 255.727
     labelLat: -9.533
   - type: STR_IRONBLOOM
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 2500
     areas: 
       - [264.9358, 285.9627, -14.35, 2.575754]
@@ -190,7 +190,7 @@ countries:
     labelLon: 322.384
     labelLat: -16.218
   - type: STR_CUL_DE_VEER
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 3000
     areas: 
       - [334.6921, 355.2336, -63.45441, -25.29749]
@@ -198,7 +198,7 @@ countries:
     labelLon: 351.953
     labelLat: -37.494
   - type: STR_SEASTEAD_ARC
-    fundingBase: 5
+    fundingBase: 6
     fundingCap: 3500
     areas: 
       - [275.2736, 316.8516, -43.29213, -28.58295]

@@ -6,11 +6,9 @@ soldierTransformation:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
-      mana: 5
+      mana: 10
     percentGainedStatChange:
-      mana: -25
-    rerollStats:
-      mana: 1
+      mana: -50
     cost: 4999
     requiredItems:
       STR_CONSUMER_CYBERNETICS: 3
@@ -34,11 +32,9 @@ soldierTransformation:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
-      mana: 5
+      mana: 10
     percentGainedStatChange:
-      mana: -25
-    rerollStats:
-      mana: 1
+      mana: -50
     cost: 4999
     requiredItems:
       STR_CONSUMER_CYBERNETICS: 3
@@ -62,11 +58,9 @@ soldierTransformation:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
-      mana: 5
+      mana: 10
     percentGainedStatChange:
-      mana: -25
-    rerollStats:
-      mana: 1
+      mana: -50
     cost: 4999
     requiredItems:
       STR_CONSUMER_CYBERNETICS: 3
@@ -91,11 +85,9 @@ soldierTransformation:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
-      mana: 10
+      mana: 15
     percentGainedStatChange:
-      mana: -25
-    rerollStats:
-      mana: 1
+      mana: -75
     cost: 8999
     requiredItems:
       STR_MEDICAL_CYBERNETICS: 2
@@ -119,11 +111,9 @@ soldierTransformation:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
-      mana: 10
+      mana: 15
     percentGainedStatChange:
-      mana: -25
-    rerollStats:
-      mana: 1
+      mana: -75
     cost: 8999
     requiredItems:
       STR_MEDICAL_CYBERNETICS: 2
@@ -148,11 +138,9 @@ soldierTransformation:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
-      mana: 10
+      mana: 15
     percentGainedStatChange:
-      mana: -25
-    rerollStats:
-      mana: 1
+      mana: -75
     cost: 15999
     requiredItems:
       STR_MILITARY_CYBERNETICS: 2
@@ -177,11 +165,9 @@ soldierTransformation:
       mana: 20
     includeBonusesForMinStats: true
     flatOverallStatChange:
-      mana: 10
+      mana: 15
     percentGainedStatChange:
-      mana: -25
-    rerollStats:
-      mana: 1
+      mana: -75
     cost: 15999
     requiredItems:
       STR_MILITARY_CYBERNETICS: 2

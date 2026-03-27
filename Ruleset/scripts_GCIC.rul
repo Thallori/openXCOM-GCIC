@@ -35,7 +35,7 @@ extended:
             set to_wound randomFactor;
           end;
           return;
-      - offset: 17
+      - offset: 17 #tries to prevent dying from wounds before the beginning of a new turn
         code: |
           var int currentHealth;
           var int currentWounds;
@@ -125,7 +125,9 @@ extended:
           unit.getFatalwoundsTotal totalWounds;
           muldiv totalWounds randomFactor 100;
           add recovery_time totalWounds;
-
+          return;
+      - offset: 9.1 #linear piecewise logarithmic approximation for recovery days 
+        code: |
           if gt recovery_time 30; #if recovery days are more than 30, half the days above 30
             add recovery_time -30;
             div recovery_time 2;
@@ -150,6 +152,13 @@ extended:
             bit_or detection_type temp; # add only HW flag to detection
           end;
           return detection_type detection_chance;
+    newMonthCountry:
+      - offset: 89 #minimum +2000 funding, in order to get to the meaningful 5-20% zone faster
+        code: |
+          if eq fundingChange 1000;
+            set fundingChange 2000;
+          end;
+          return fundingChange satisfaction formPact cancelPact;
 
 ufos:
   - update: STR_HOLOUFO_SMALL

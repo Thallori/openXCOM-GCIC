@@ -345,6 +345,14 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: OPERATIONS3_CPAL
+  - id: STR_GCIC_TRADE_SECRETS_MISSIONS
+    requires:
+      - STR_GCIC_TRADE_SECRETS_MISSIONS
+    text: STR_GCIC_TRADE_SECRETS_MISSIONS_UP
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: OPERATIONS3Z_CPAL
   - id: STR_GCIC_SABOTAGE_3_DATA_DECRYPT
     requires:
       - STR_GCIC_SABOTAGE_3_DATA_DECRYPT
@@ -459,7 +467,7 @@ ufopaedia:
     section: STR_TECHNOLOGIES_UC
     type_id: 7
     text_width: 180
-    image_id: CONSUME_CPAL
+    image_id: OPTI_CPAL
 
   - id: STR_GUNPOWDER
     requires:
@@ -500,7 +508,7 @@ ufopaedia:
     section: STR_TECHNOLOGIES_UC
     type_id: 7
     text_width: 180
-    image_id: REDLASER_CPAL
+    image_id: GREENPLASMA_CPAL
 
   - id: STR_BIOMEDICAL
     requires:
@@ -1185,18 +1193,6 @@ ufopaedia:
       - STR_SSP_LASER_SMG
     section: STR_NOT_AVAILABLE
     type_id: 4
-
-  - id: STR_TASER_PISTOL
-    requires:
-      - STR_TASER_PISTOL
-    text: STR_TASER_PISTOL_UP
-    section: STR_EQUIPMENT_UC
-    type_id: 4
-  - id: STR_TASER_AMMO
-    requires:
-      - STR_TASER_PISTOL
-    section: STR_NOT_AVAILABLE
-    type_id: 4
 # xn
   - id: STR_XN_LASER_PISTOL
     requires:
@@ -1490,16 +1486,27 @@ ufopaedia:
   - id: STR_VOLTKNOCKER
     requires:
       - STR_VOLTKNOCKER
+    text: STR_VOLTKNOCKER_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_TASER_PISTOL
+    requires:
+      - STR_TASER_PISTOL
     text: STR_TASER_PISTOL_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
-
-  - id: STR_DARTROPE
+  - id: STR_TASER_AMMO
     requires:
-      - STR_DARTROPE
-    text: STR_DARTROPE_UP
-    section: STR_EQUIPMENT_UC
+      - STR_TASER_PISTOL
+    section: STR_NOT_AVAILABLE
     type_id: 4
+
+  # - id: STR_DARTROPE
+  #   requires:
+  #     - STR_DARTROPE
+  #   text: STR_DARTROPE_UP
+  #   section: STR_EQUIPMENT_UC
+  #   type_id: 4
   - id: STR_MARSBALL
     requires:
       - STR_MARSBALL
@@ -2391,6 +2398,10 @@ ufopaedia:
     type_id: 8
   - id: STR_MELEE_TYPES
     text: STR_MELEE_TYPES_UP
+    section: STR_MANUALS_UC
+    type_id: 8
+  - id: STR_RESTRICTION_TUTORIAL
+    text: STR_RESTRICTION_TUTORIAL_UP
     section: STR_MANUALS_UC
     type_id: 8
 #accolades
