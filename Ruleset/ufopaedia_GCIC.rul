@@ -2288,6 +2288,11 @@ ufopaedia:
       - STR_SSPOFFICER_ARMOR
     section: STR_COMPETITORS_UC
     type_id: 5
+  - id: STR_SSPSUPERVISOR_ARMOR
+    requires:
+      - STR_SSPSUPERVISOR_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
   - id: STR_CHRYSSALID_ARMOR
     requires:
       - STR_CHRYSSALID_ARMOR

@@ -881,6 +881,8 @@ en-US:
   STR_EVENT_CLAIM_SECURED_DESCRIPTION: "Severance package seeker awarded insurance claim following arbitration. The former employee was said to be owed after a drone-error resulted in false reports of missed quotas.{NEWLINE}{NEWLINE}Although GCIC stockprices have taken a dip with the news, people are celebrating this as a win for the corp and its customers.{NEWLINE}{NEWLINE}[-$20,000]"
   STR_EVENT_HEALTHY_COMPETITION: "CBN Update"
   STR_EVENT_HEALTHY_COMPETITION_DESCRIPTION: "Drone-based rescue services are getting hot this season, with new startups being announced to rival GCIC's latest innovation. A company spokesperson is quoted as saying, 'there's nothing wrong with a little healthy competition.'{NEWLINE}{NEWLINE}For now, new customers interested in this venture only have one option to turn to.{NEWLINE}{NEWLINE}[+150 Liquidity]"
+  STR_EVENT_TECHDEMO: "CBN Update"
+  STR_EVENT_TECHDEMO_DESCRIPTION: "Hours ago, a tech demo was posted which has network commentators riled up with speculation and contention. The multimedia trailer shows two mute drones cooperating and performing simple tasks with only psionic communications between them.{NEWLINE}{NEWLINE}Although this technology is hardly new, people of all species are divided. Some praising the development while others stand loyal to established brands.{NEWLINE}{NEWLINE}[+50 Liquidity]"
 
   STR_DRONES_MONTHLY_P3: "GCIC Performance Dividend"
   STR_DRONES_MONTHLY_P3_DESCRIPTION: "The board toasts to our rising market share and profitable business model. No drones have been delivered and we are expected to pay dividends.{NEWLINE}{NEWLINE}[+100 Liquidity]{NEWLINE}[-$50,000]"
@@ -1136,7 +1138,7 @@ en-US:
   STR_PTS_LOCK: "(gcic trade secrets available)"
   STR_PTS_ITEM: "PROJECT: GCIC Trade Secrets"
   STR_GCIC_TRADE_SECRETS_MISSIONS: ">PROJECT: GCIC Trade Secrets<"
-  STR_GCIC_TRADE_SECRETS_MISSIONS_UP: "{NEWLINE}AFFILIATES: Sibling Corporations{NEWLINE}MANDATES: 2.26/MONTH{NEWLINE}{NEWLINE}aaaaaaaa{NEWLINE}{NEWLINE}bbbbbbb{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE" #todo
+  STR_GCIC_TRADE_SECRETS_MISSIONS_UP: "{NEWLINE}AFFILIATES: Trusted Insiders{NEWLINE}MANDATES: 2.26/MONTH{NEWLINE}{NEWLINE}Our parent is pleased with us. We have confirmed certained suspicions voiced on the GCIC private network using {ALT}public gateway{ALT} surveys. VCM executives are aware of our existance and are attempting to engineer new {ALT}interlaces{ALT}.{NEWLINE}{NEWLINE}Their progress is unknown, but all secrets have a physical access point. Insiders will post a location when possible.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_PIN_LOCK: "(independence available)"
   STR_PROJECT_BUYOUT_MANU: "PROJECT: Purchase Independence"
   STR_PROJECT_INDEPENDENCE_ITEM: "PROJECT: Independence"
@@ -1188,7 +1190,7 @@ en-US:
   STR_LASER_WEAPONS_CONSTRUCTION: "Laser Weapons Printing"
   STR_LASER_WEAPONS_CONSTRUCTION_UP: "{NEWLINE}Following the examples of XN laser weapons, we have started our own pilot program. Where they had the advantage of laboratories worth more than some moons, we can build off years of itteration and innovation. There will still be trade-offs.{NEWLINE}{NEWLINE}Our designs are {ALT}slower{ALT} to fire, yet more {ALT}accurate{ALT} and efficent without compromising on target spot intensity.{NEWLINE}{NEWLINE}The first successful {ALT}prototype{ALT} has been added to storage. Developing smaller, more precise, higher power, or faster firing variants will require more server time."
   STR_PLASMA_AMMO_CONVERSION: "Elerium Plasma Tuning"
-  STR_PLASMA_AMMO_CONVERSION_UP: "{NEWLINE}aaaaaaa{NEWLINE}bbbbbbbb{NEWLINE}cccccc"
+  STR_PLASMA_AMMO_CONVERSION_UP: "{NEWLINE}Plasma condensors are a complex technology using several principles that are generally well known, but with specifics kept secret for the profit and power motives.{NEWLINE}{NEWLINE}Charging a condensor is considerably easier, assuming the presence of either a multi-gigawatt powerplant or an elerium core. Elerium being the eaiser and cheaper option.{NEWLINE}{NEWLINE}{ALT}Machining{ALT} can tune a core's output to a given condensor's expected amperage. {ALT}Recasting{ALT} is required to reverse the operation."
   STR_BIOMEDICAL: "Biologics"
   STR_BIOMEDICAL_UP: "{NEWLINE}Most in-system species have been modified to be compatible with the native enviroment (oxygen, water, sunlight) and so share a few biological mechanisms. This overlap is well documented, but hard data is usually redacted under corporate privacy laws.{NEWLINE}{NEWLINE}With access to {ALT}medical facilities{ALT} we can perform self-tests and sort published theories into proven facts. Reproducing these {ALT}poisons{ALT} and {ALT}medicines{ALT} infringes on copyrights, preventing mass-printing schemes."
   STR_BIOCODING: "Biocoding"
@@ -1704,9 +1706,9 @@ en-US:
   STR_SEC_LICENSE_ITEM_UP: "{NEWLINE}The Invasion Readiness Scheme, with the approval of a Commodities Exchange council, hereby confers the listed GCIC subsidary the {ALT}rights{ALT} to purchase, sell, use, and tax {ALT}security rated{ALT} goods and services.{NEWLINE}{NEWLINE}This certificate in no way constitutes these privileges. Security clearance is already registered and all unprocessed fees from use of these products has been waved.{NEWLINE}{NEWLINE}For display purposes only{NEWLINE}Registration: #336{NEWLINE}[+250 Liquidity]"
 # data
   STR_CRYPTOCHIT1: "eCoin Cryptochit"
-  STR_CRYPTOCHIT1_UP: "{NEWLINE}"
+  STR_CRYPTOCHIT1_UP: "{NEWLINE}Old speculative curreny, given new life in the post-invasion economy. Recent attempts at recreating the gambling addictions present in centuries have past have failed to capture the investor's market.{NEWLINE}{NEWLINE}2055 frozen value: 39,000$"
   STR_CRYPTOCHIT2: "QNTm Cryptochit"
-  STR_CRYPTOCHIT2_UP: "{NEWLINE}"
+  STR_CRYPTOCHIT2_UP: "{NEWLINE}Four-hundred-year-old virtual debt, retains value for value's sake. The overwhelming majority of cryptocurrencies were given a set price and the mining of new chits outlawed after computation finally exceeded 50% of humanity's power usage.{NEWLINE}{NEWLINE}2055 frozen value: 73,000$"
   STR_PERSONAL_DATA: "Personal Data"
   STR_PERSONAL_DATA_UP: "{NEWLINE}A collection of habits, identity information, and unfiltered cache files. Nearly all users in the system use the network in some capacity, leaving traces that can link anyone to everyone.{NEWLINE}{NEWLINE}Cracking these devices requires a passphrase. These are made to be memorized (or even distributed) via speech which makes them vulnerable to guessing. With less than a hundred million words in regular use across all common languages, this search space is relatively small.{NEWLINE}{NEWLINE}Given a {ALT}local interface{ALT} our research servers can {ALT}mine{ALT} this information randomly or spend more cycles searching with specificity."
   STR_DATA_1: "MINE: Personal Data"
@@ -1725,7 +1727,7 @@ en-US:
   STR_GCIC_SABOTAGE_2_DATA_DECRYPT_UP: "{NEWLINE}A list of angel investors and their contributions. Most are executives, board members, or citizens who can afford to gamble on unknown ventures. However, some of these make up an obviously false subset.{NEWLINE}{NEWLINE}None of the GCIC managers on the list have the income to match their contribution. The pattern of names is too random, too clean, too expertly laundered. Without {ALT}additional information{ALT}, it will be very difficult to determine what connections exist between them.{NEWLINE}{NEWLINE}Data like this is {ALT}valuable{ALT}, any further finds could net a tidy sum if auctioned."
   STR_GCIC_SABOTAGE_3_DATA: "Trade Data (¤)"
   STR_GCIC_SABOTAGE_3_DATA_DECRYPT: "Decrypted Trade Data"
-  STR_GCIC_SABOTAGE_3_DATA_DECRYPT_UP: "{NEWLINE}aaaaaaaa{NEWLINE}{NEWLINE}bbbbbbbbbb{NEWLINE}{NEWLINE}ccccccccc" #todo
+  STR_GCIC_SABOTAGE_3_DATA_DECRYPT_UP: "{NEWLINE}Engineering schematics for multiple new {ALT}hyperwave and psionic{ALT} technologies. Even decoded, the data is segmented and cryptic with extensive references to other proprietary devices not present in this collection.{NEWLINE}{NEWLINE}One engineer is cited extensively, a GCIC key talent who has described the {ALT}bionic interlace{ALT} waveforms.{NEWLINE}{NEWLINE}We can {ALT}chase{ALT} this lead, {ALT}build{ALT} off the innovations, and also {ALT}sell{ALT} what we've learned to the highest bidder."
 # trophies
   STR_PERSONAL_DATA_VAULT: "Personal Data Collection"
   STR_SECRET_DATA_VAULT: "Secret Data Collection"
@@ -1851,11 +1853,11 @@ en-US:
   STR_SSPOFFICER_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'Secure Systems and Procurement officer, badge ID 89-B7-MMCQ. Do you have a warrant for this arrest?'{NEWLINE}{NEWLINE}[...]{NEWLINE}'...Did you just climb out of the vat!? They're legal contracts that pay you to you put people in cells, just like this.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'I know a shakedown when I see one. Fine! I'll send you my keys and even throw in the rental. The soup isn't going to be happy, but that's your problem now.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 35 Liquidity"
   STR_SSPSUPERVISOR_PRIVATE: "SSP Supervisor"
   STR_SSPSUPERVISORS: "SSP Supervisors"
-  STR_SSPSUPERVISORS_UP: "aaaa{NEWLINE}{NEWLINE}bbbbb{NEWLINE}{NEWLINE}PROCESSED: Medical Cyberware, Aqua-Plastics{NEWLINE}{NEWLINE}RISK CLASS: Security" #todo
+  STR_SSPSUPERVISORS_UP: "Higher paid counterparts to the officers they manage. Neither especially skilled or knowledgable, their position exists as a matter of public facing. Assuring pluralistic humanity that they hold more control over enforcement than exists in reality.{NEWLINE}{NEWLINE}With increased income, they tend to be happier, have better healthcare, and arrive with more expensive equipment.{NEWLINE}{NEWLINE}PROCESSED: Medical Cyberware, Aqua-Plastics{NEWLINE}{NEWLINE}RISK CLASS: Security"
   STR_SSPSUPERVISOR_ARMOR: "SSP Supervisor Analysis"
   STR_SSPSUPERVISOR_INTERVIEW: "INTERVIEW: SSP Supervisor"
   STR_SSPSUPERVISOR_INTERVIEW_T: "I/SSP Supervisor"
-  STR_SSPSUPERVISOR_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'aaaa'{NEWLINE}{NEWLINE}[...]{NEWLINE}'bbbb'{NEWLINE}{NEWLINE}[...]{NEWLINE}'cccc'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 45 Liquidity" #todo
+  STR_SSPSUPERVISOR_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'I'm the supervisor of division eleven. Is there a problem that couldn't be solved in public?'{NEWLINE}{NEWLINE}[...]{NEWLINE}'Is this a real kidnapping then? Have you taken any drugs? Anything strange at all?'{NEWLINE}{NEWLINE}[...]{NEWLINE}'No, of course, not. You're a drone. You don't know anything. Just tell your master I'm ready to negotiate and I promise no one will come after them.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 45 Liquidity"
 
   STR_ANIMALS: "ANIMALS"
   STR_CHRYSSALID: "Chryssalid"
@@ -1893,7 +1895,7 @@ en-US:
   STR_CYFURB_ARMOR_UP: "Attack Damage: 20 Plasma"
   STR_DEFENSE_TURRET_AP: "AP Auto-Turret"
   STR_DEFENSE_TURRET_APS: "AP Auto-Turrets"
-  STR_DEFENSE_TURRET_APS_UP: "Lethal autonomous area discouragement machine. Slightly cheaper to rent than the wage floor and far less likely to complain. Typically employed in addition to mobile, paycheck earning employees.{NEWLINE}{NEWLINE}Protected by aquaplastic casings. May fail to distinguish whitelisted signatures, or hit anything at all, at ranges greater than 20m.{NEWLINE}{NEWLINE}PROCESSED: Aqua-Plastics, SSP Defender SMG{NEWLINE}RISK CLASS: Security"
+  STR_DEFENSE_TURRET_APS_UP: "Lethal autonomous area discouragement machine. Slightly cheaper to rent than the wage floor and far less likely to complain. Typically employed in addition to mobile, paycheck earning employees.{NEWLINE}{NEWLINE}Protected by aquaplastic casings. May fail to distinguish whitelisted signatures, or hit anything at all, at ranges greater than 20m.{NEWLINE}{NEWLINE}PROCESSED: Aqua-Plastics, Defender SMG{NEWLINE}RISK CLASS: Security"
   STR_DEFENSE_TURRET_AP_ARMOR: "AP Auto-Turret Analysis"
   STR_DEFENSE_TURRET_AP_ARMOR_UP: "Attack Damage: 25 Kinetic"
 

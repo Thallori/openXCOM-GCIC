@@ -118,6 +118,8 @@ manufacture:
       STR_PBI_ITEM: 1
   - name: STR_PTS_ITEM
     category: STR_PROJECTS_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_NETWORK
     requires:
       - STR_PTS_LOCK
     time: 1
@@ -322,6 +324,8 @@ manufacture:
 
   - name: STR_ALIEN_PLASMA_PISTOL_CLIP
     category: STR_AMMO_MANUCAT
+    requiresBaseFunc:
+      - STR_SERVICE_MACHINING
     requires:
       - STR_PLASMA_AMMO_CONVERSION
       - STR_ALIEN_PLASMA_PISTOL
@@ -333,8 +337,6 @@ manufacture:
 
   - name: STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
     category: STR_AMMO_MANUCAT
-    requiresBaseFunc:
-      - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_PISTOL
       - STR_SSPAMMO_MANULOCK
@@ -343,8 +345,6 @@ manufacture:
     refund: true
   - name: STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1
     category: STR_AMMO_MANUCAT
-    requiresBaseFunc:
-      - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_SMG
       - STR_SSPAMMO_MANULOCK
@@ -353,8 +353,6 @@ manufacture:
     refund: true
   - name: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
     category: STR_AMMO_MANUCAT
-    requiresBaseFunc:
-      - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
       - STR_SSPAMMO_MANULOCK
@@ -363,8 +361,6 @@ manufacture:
     refund: true
   - name: STR_GCIC_PROTOTYPE_LASER_SNIPER_AMMO1
     category: STR_AMMO_MANUCAT
-    requiresBaseFunc:
-      - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_SNIPER
       - STR_SSPAMMO_MANULOCK
@@ -373,8 +369,6 @@ manufacture:
     refund: true
   - name: STR_GCIC_PROTOTYPE_LASER_MG_AMMO1
     category: STR_AMMO_MANUCAT
-    requiresBaseFunc:
-      - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_MG
       - STR_SSPAMMO_MANULOCK
@@ -383,8 +377,6 @@ manufacture:
     refund: true
   - name: STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO1
     category: STR_AMMO_MANUCAT
-    requiresBaseFunc:
-      - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_CANNON
       - STR_SSPAMMO_MANULOCK

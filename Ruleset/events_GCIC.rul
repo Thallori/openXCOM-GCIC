@@ -69,7 +69,10 @@ events:
   - name: STR_EVENT_TECHDEMO
     description: STR_EVENT_TECHDEMO_DESCRIPTION
     interruptResearch: STR_DEBUG
-
+    everyItemList:
+      - STR_BRAND_LOYALTY
+      - STR_BRAND_LOYALTY
+    points: 50
 
   - name: STR_EVENT_ENDOFUPDATE2
     description: STR_EVENT_ENDOFUPDATE2_DESCRIPTION
