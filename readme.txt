@@ -97,6 +97,8 @@ X-Com Files/Final Mod Pack		[mod]
   Zombie				[touchup]
   Robosphere Inventory			[touchup]
   Bleed+Burn+Shock Icons		[touchup+recolour]
+  Map Sprites				[none+touchup+recolour]
+   Piano, Havana Walls/Stairs/Floors, Wall Art, Candles, Wood Gate, Pool Table
   SFX					[none]
    Chemogun, Flamer, Hammer, Plasma, Spray, Bolt, Tube, Machinegun
 
@@ -124,7 +126,12 @@ From the Apocalypse			[mod]
   Obs					[none+touchup+recolour] (original)
    Medikit, Motion Sensor, Bite
   Map Sprites				[recolour+remix]	(original+ufo+apoc)
-   Tech, Bathroom, Walls, Floors, Furniture, Holograms, Aircars
+   Tech, Bathroom, Walls, Floors, Furniture, Holograms, Aircars, Signs
+
+X-inc.					[mod]
+ Brain_322				[author]
+  Map Sprites				[none+touchup+recolour]
+   Neon Signs, Solar Panels, Graffiti, Counters, Card Table, Shower, Drinks, Aquarium
 
 Delicious Colors			[mod]
  RSSWizard				[author]
@@ -242,12 +249,16 @@ NuclearWorld
 List of assets and their authors which are completely unique to this mod.
 
 thallori
- bullets
+ animations
   bolt bullet
   flask bullet
   slug bullet
   laserredbig bullet
-  
+  laseryellowbig bullet
+  bomb bullet
+  ball bullet
+  yellow slash
+
  facilities
   datacenter
   depot
@@ -260,8 +271,7 @@ thallori
 
  obs
   taser
-  elerium
-  elerium bomb
+  elerium core+bomb
   pipe bomb
   flask
   molotov
@@ -290,11 +300,21 @@ thallori
   marsball
   windlass bomb launcher
   barrel mortar
+  gcic weapons
+  voltknocker
+  skulljack
+  coilsniper
+  phx bomb+demo+material
+
+ sounds
+  gauss reload
+  coilsniper fire
 
  pedia
   data1+2+3
   operations1+2+3+4
   vendors
+  bash1+2
 
  ui
   commendations decorations+medals
@@ -309,6 +329,8 @@ thallori
   vault ramp into raised block with glowing lines
 
 Esven
+ armor
+  exoskeleton				[redraw]
  map tiles
   flora forest small spikey fern
   xn cannon				[touchup]

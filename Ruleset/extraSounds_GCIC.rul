@@ -6,6 +6,8 @@ musics:
   - type: GMGEO3
   - type: GMGEO4
   - type: GMINTER
+  - type: GMINTER1
+  - type: GMINTER2
   - type: GMDEBGOO
   - type: GMDEBPOR
   - type: HACKER_INTRO
@@ -22,6 +24,9 @@ musics:
   - type: BLOOD2
   - type: SIM_INTRO
   - type: SIM1
+  - type: SSP_INTRO
+  - type: SSP1
+    
 
 extraSounds:
   - type: BATTLE.CAT

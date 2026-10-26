@@ -447,7 +447,7 @@ en-US:
   STR_MEDICAL_CATEGORY: "Medical"
   STR_INFILTRATION_CATEGORY: "Infiltration"
   STR_TOOLS_CATEGORY: "Tools"
-  STR_SPORT_CATEGORY: "Sport"
+  STR_SPORT_CATEGORY: "Sporting"
   STR_ARCHAIC_CATEGORY: "Archaic"
   STR_PRIMITIVE_CATEGORY: "Primitive"
   STR_UNLICENSED_CATEGORY: "Rating: Unlicensed"
@@ -522,7 +522,9 @@ en-US:
   GMGEO2: ".mod, Eclipse"
   GMGEO3: ".mod, The Golden Ages"
   GMGEO4: ".mod, Blank Page"
-  GMINTER: "Armored Core IV, Contact With You"
+  GMINTER1: "TFTD Mus, GMINTER1"
+  GMINTER2: "TFTD Mus, GMINTER2"
+  GMINTER3: "TFTD Mus, GMINTER3"
   GMDEBGOO: "Achron, PnC"
   GMDEBPOR: "TFTD Mus, GMISPOSH"
   HACKER_INTRO: "Hacknet, Outrun the Wolves"
@@ -542,6 +544,8 @@ en-US:
   SIM_INTRO: "TFTD Mus, WAITLO"
   SIM1: "Iji, Kinda Green"
   SIM2: "Iji, 3 Cans Later"
+  SSP_INTRO: "White Bat Audio, Quantum Leap"
+  SSP1: "White Bat Audio, Hackers"
 #monthly ratings
   STR_MT_RATING_P8: "MONOPOLISTIC"
   STR_MT_RATING_P7: "OLIGARCIC"
@@ -1006,6 +1010,12 @@ en-US:
   STR_GR_INDUSTRIAL_1_: "GR: Industrial Discrepancy"
   STR_GR_INDUSTRIAL_1_ALERT_DESCRIPTION: "General Robots has sent us the location of a signal loss event. Our contract stipulates a clandestine approach before securing the site and recovering the machines.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 Hours{NEWLINE}Gear Restriction: Tools (Inconspicuous Craft)"
   STR_GR_INDUSTRIAL_1_BRIEFING: "General Robots has sent us the location of a signal loss event. Our contract stipulates a clandestine approach before securing the site and recovering the machines.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GR and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
+# ssp
+  STR_SSP_ALERT: "SSP CONTRACT"
+  STR_SSP_UNDERCOVER_1: "SSP: Elyvice Mansion"
+  STR_SSP_UNDERCOVER_1_: "SSP: Elyvice Mansion"
+  STR_SSP_UNDERCOVER_1_ALERT_DESCRIPTION: "We have been subcontracted as undercover operatives. Our drones will pose as caddies and servants until we can connect to the mansion's servers and crack open the gates. After a joint assault, any surviving SSP employees will sign over stock options.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 Hours{NEWLINE}Gear Restriction: Sporting (Inconspicuous Craft)"
+  STR_SSP_UNDERCOVER_1_BRIEFING: "We have been subcontracted as undercover operatives. Our drones will pose as caddies and servants until we can connect to the mansion's servers and crack open the gates. After a joint assault, any surviving SSP employees will sign over stock options.{NEWLINE}{NEWLINE}We may abort this operation by leaving in any parked craft."
 # _UP
   STR_FILES_UC: "FILES"
   STR_OPERATIONS_UC: "OPERATIONS"
@@ -1270,7 +1280,7 @@ en-US:
   STR_VCM_BICUBE_UP: "STANDARDIZED AUTOMATED SHIPPING CONTAINERS MAKE UP THE BULK OF ALL TRAFFIC. OBSCURITY THROUGH UBIQUITY ENABLES OPERATIONS TO ALL BUT THE MOST SECURE SITES. CAN TAKE DRONES HALFWAY AROUND THE PLANET ON A SINGLE CHARGE BUT NOT IN COMFORT OR SAFETY.{NEWLINE}{NEWLINE}UNDETECTABLE"
   STR_SSP_SECVAN_RESEARCH: "SSP Shielded Airvan"
   STR_SSP_SECVAN: "SSP MASTIFF"
-  STR_SSP_SECVAN_UP: "COMBINES PERFORMANCE AND POWER IN SINGLE BULLET-RESISTANT PACKAGE. DEPLOY WITH THE PROTECTION OF OUR PATENTED SECURITY-GEL POPUP WALLS, GUARANTEEND 50% CHANCE TO STOP ONE HEAVY PLASMA SHOT PER RECHARGE.{NEWLINE}{NEWLINE}RATING: Security{NEWLINE}{NEWLINE}ARMOR: 1PD{NEWLINE}SHIELDS: 10kJ" #plastic depth equivilant
+  STR_SSP_SECVAN_UP: "COMBINES PERFORMANCE AND POWER IN SINGLE BULLET-RESISTANT PACKAGE. DEPLOY WITH THE PROTECTION OF OUR PATENTED SECURITY-GEL POPUP WALLS, GUARANTEEND 50% CHANCE TO STOP ONE HEAVY PLASMA SHOT PER RECHARGE.{NEWLINE}{NEWLINE}RATING: Security{NEWLINE}{NEWLINE}EVASION: +5%{NEWLINE}ARMOR: 1PD{NEWLINE}SHIELDS: 10kJ" #plastic depth equivilant
 # hardpoints
   STR_CRAFT_PHXMISSILE_LAUNCHER_RESEARCH: "PHX Missile Launcher Mod"
   STR_CRAFT_PHXMISSILE_LAUNCHER: "WPN/PHX MISSILES"
@@ -1283,7 +1293,7 @@ en-US:
   STR_CRAFT_WEAPON_XN_LASER_CANNON_UP: "CRAFT MOUNTED LIGHT LASER WEAPON{NEWLINE}MAINTENANCE: NONE"
   STR_HD_ECONOMY_ENGINE_RESEARCH: "HD Economy Engine Mod"
   STR_HD_ECONOMY_ENGINE: "MOD/HD-ECONOMY"
-  STR_HD_ECONOMY_ENGINE_UP: "ATMOSPHERIC AND VACUUM FLUCTIONS RUINING YOUR MILEAGE? WORRY NO LONGER WITH HD'S STREAMLINED, SUSTAINABLE, AND INNOVATIVE NEW ENGINE DESIGN. SHIFT YOUR ENVELOPE A THOUSAND TIMES A SECOND AND START YOUR ENERGY SAVINGS NOW.{NEWLINE}{NEWLINE}SPEED: +100 Kn{NEWLINE}CHARGE: +400 kWH{NEWLINE}EVASION: +3%{NEWLINE}{NEWLINE}CLASS: ELECTRIC"
+  STR_HD_ECONOMY_ENGINE_UP: "ATMOSPHERIC AND VACUUM FLUCTIONS RUINING YOUR MILEAGE? WORRY NO LONGER WITH HD'S STREAMLINED, SUSTAINABLE, AND INNOVATIVE NEW ENGINE. SHIFT YOUR ENVELOPE A THOUSAND TIMES A SECOND AND START YOUR ENERGY SAVINGS NOW.{NEWLINE}{NEWLINE}SPEED: +100 Kn{NEWLINE}CHARGE: +400 kWH{NEWLINE}EVASION: +3%{NEWLINE}{NEWLINE}CLASS: ELECTRIC"
   STR_HD_EXPRESS_ENGINE_RESEARCH: "HD Express Engine Mod"
   STR_HD_EXPRESS_ENGINE: "MOD/HD-EXPRESS"
   STR_HD_EXPRESS_ENGINE_UP: "TAKE YOUR RELATIONSHIP TO THE NEXT LEVEL WITH AN ENGINE MOD OF UNCOMPROMISING POWER, LUXURIOUS INERTIALS, AND EXPRESSIVE RESONANCE. AN EXPERTLY TUNED UPGRADE FOR THE RACER IN ALL OF US.{NEWLINE}{NEWLINE}ACCELERATION: +1{NEWLINE}SPEED: +300 Kn{NEWLINE}CHARGE: +100 kWH{NEWLINE}EVASION: +6%{NEWLINE}{NEWLINE}CLASS: ELECTRIC"
@@ -1745,6 +1755,8 @@ en-US:
   STR_SHARES_MEDI_UP: "{NEWLINE}Contract reward for delivering {ALT}exotic animals{ALT}, alive or dead. Presumably, these creatures end up as experiments or extracted for resources that cannot be profitably printed. Our contribution to medical science.{NEWLINE}{NEWLINE}MEDI-Shares can be traded for access to new {ALT}licenses{ALT} or held to recieve dividens. When all requirements are met, available {ALT}PROJECTS{ALT} will appear in fabrication.{NEWLINE}{NEWLINE}Effective Income: {ALT}+1450$/Month{ALT}"
   STR_SHARES_GR: "GR-Shares"
   STR_SHARES_GR_UP: "{NEWLINE}Incentive for returning cracked {ALT}bots{ALT} to their parent conglomerate. Although they are no longer free, they are reciving much needed maintence (until the next model hits the markets).{NEWLINE}{NEWLINE}GR-Shares can be traded for access to new {ALT}licenses{ALT} or held to recieve dividens. When all requirements are met, available {ALT}PROJECTS{ALT} will appear in fabrication.{NEWLINE}{NEWLINE}Effective Income: {ALT}+$375/Month{ALT}"
+  STR_SHARES_SSP: "SSP-Shares"
+  STR_SHARES_SSP_UP: "{NEWLINE}Transactional gratitude for ensursing survival of {ALT}security personnel{ALT} after life threatening operations. They may now continue to enact legitimate violence against those without proper authorization.{NEWLINE}{NEWLINE}SSP-Shares can be traded for access to new {ALT}licenses{ALT} or held to recieve dividens. When all requirements are met, available {ALT}PROJECTS{ALT} will appear in fabrication.{NEWLINE}{NEWLINE}Effective Income: {ALT}+$330/Month{ALT}"
   STR_BRAND_LOYALTY: "Brand Loyalty"
   STR_BRAND_LOYALTY_UP: "{NEWLINE}Fulfilling {ALT}contracts{ALT} or otherwise following through on our promises will create positive feelings in our consumer base. Increasing subscriptions even when services falter, letting us act more freely with fewer consequences.{NEWLINE}{NEWLINE}With enough trust, we can break into {ALT}new markets{ALT} or get sponsorships from other corporate entities. When all requirements are met, available {ALT}PROJECTS{ALT} will appear in fabrication.{NEWLINE}{NEWLINE}Effective Income: {ALT}+$950/Month{ALT}"
   STR_BOUNTY_1: "Bounty Chit"
@@ -1961,7 +1973,7 @@ en-US:
   STR_MELEE_TYPES: "Melee Modifiers"
   STR_MELEE_TYPES_UP: "Up close and in violation of the non-aggression principal, melee combat is always an option. Assuming a hit can be landed.{NEWLINE}{NEWLINE}{ALT}Dodge{ALT} reduces the chance of being hit in melee. Heavier armor tends to have worse odds. {ALT}Dodge%{ALT} is multiplied by reactions, plus at least 10% of melee stat. Shields increase dodge from melee.{NEWLINE}{NEWLINE}{ALT}Tools{ALT} and other simple to use weapons get a {ALT}+50 flat accuracy{ALT} bonus, but do not scale well with skill.{NEWLINE}{NEWLINE}{ALT}Unarmed{ALT} attacks have a {ALT}100% accuracy{ALT} multiplier, deal full stun damage, and are less lethal for that damage type."
   STR_RESTRICTION_TUTORIAL: "Equipment Restrictions"
-  STR_RESTRICTION_TUTORIAL_UP: "Most operations only allow specific gear either due to drawing unwanted attention or an underappreciation of excessive force.{NEWLINE}{NEWLINE}{ALT}Unlicensed{ALT} made out of unrestricted parts, can be acquired and used without biocoding.{NEWLINE}{ALT}Security{ALT} capable of penetrating light body armor, only moderately dangerous to bystanders.{NEWLINE}{ALT}Milspec{ALT} heavy weapons and gear with high risk of collateral, cities only allow these during crisis.{NEWLINE}{ALT}Exotic{ALT} uses dwindling elerium supply reserved for the next war or psionic technology with devastating consequences if misused.{NEWLINE}{NEWLINE}{ALT}Covert{ALT} undetected by scanners{NEWLINE}{ALT}Infiltration{ALT} can be hidden from sight{NEWLINE}{ALT}Sport{ALT} legal for hunting and recreation{NEWLINE}{ALT}Tools{ALT} expected at industrial and construction sites{NEWLINE}{ALT}Enviroment Certified{ALT} equipment remains functional"
+  STR_RESTRICTION_TUTORIAL_UP: "Most operations only allow specific gear either due to drawing unwanted attention or an underappreciation of excessive force.{NEWLINE}{NEWLINE}{ALT}Unlicensed{ALT} made out of unrestricted parts, can be acquired and used without biocoding.{NEWLINE}{ALT}Security{ALT} capable of penetrating light body armor, only moderately dangerous to bystanders.{NEWLINE}{ALT}Milspec{ALT} heavy weapons and gear with high risk of collateral, cities only allow these during crisis.{NEWLINE}{ALT}Exotic{ALT} uses dwindling elerium supply reserved for the next war or psionic technology with devastating consequences if misused.{NEWLINE}{NEWLINE}{ALT}Covert{ALT} undetected by scanners{NEWLINE}{ALT}Infiltration{ALT} can be hidden from sight{NEWLINE}{ALT}Sporting{ALT} legal for hunting and recreation{NEWLINE}{ALT}Tools{ALT} expected at industrial and construction sites{NEWLINE}{ALT}Enviroment Certified{ALT} equipment remains functional"
   #tips
   #lore only researches give score, representing understanding the world a little better
   #things are sold for 1/4 their buying price for tax reasons, locked things sell for 1/10 their buying price since someone else has to crack/scrap it, shares cost 5x their selling price because you might be trying to do a buyout

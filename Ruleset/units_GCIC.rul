@@ -649,7 +649,8 @@ units:
     sniper: 20
     canSurrender: true
 #security faction
-  - type: STR_SSPGUARD_PRIVATE
+  - &refSSPGuard
+    type: STR_SSPGUARD_PRIVATE
     race: STR_SSP
     rank: STR_RANK_5
     stats:
@@ -675,7 +676,8 @@ units:
     sniper: 20
     moraleLossWhenKilled: 75
     canSurrender: true
-  - type: STR_SSPOFFICER_PRIVATE
+  - &refSSPOfficer
+    type: STR_SSPOFFICER_PRIVATE
     race: STR_SSP
     rank: STR_RANK_4
     stats:
@@ -701,7 +703,8 @@ units:
     spotter: 1
     sniper: 20
     canSurrender: true
-  - type: STR_SSPSUPERVISOR_PRIVATE
+  - &refSSPSupervisor
+    type: STR_SSPSUPERVISOR_PRIVATE
     race: STR_SSP
     rank: STR_RANK_3
     stats:
@@ -727,6 +730,41 @@ units:
     spotter: 1
     sniper: 20
     canSurrender: true
+
+  - type: STR_SSPGUARD_PUBLIC
+    refNode: *refSSPGuard
+    value: 6
+    civilianRecoveryType: STR_SHARES_SSP
+    builtInWeaponSets:
+          -
+            - STR_BATON
+            - STR_45_PISTOL_CODED
+            - STR_45_AMMO
+            - STR_45_AMMO
+  - type: STR_SSPOFFICER_PUBLIC
+    refNode: *refSSPOfficer
+    value: 12
+    civilianRecoveryType: STR_SHARES_SSP
+    builtInWeaponSets:
+          -
+            - STR_BATON
+            - STR_SINGLESHOT_LASER_PISTOL_CODED
+            - STR_MULTISHOT_LASER_AMMO
+            - STR_MULTISHOT_LASER_AMMO
+          -
+            - STR_SSP_SHOTGUN_CODED
+            - STR_SSP_SHOTGUN_AMMO_SLUG
+            - STR_SSP_SHOTGUN_AMMO_SLUG
+  - type: STR_SSPSUPERVISOR_PUBLIC
+    refNode: *refSSPSupervisor
+    value: 18
+    civilianRecoveryType: STR_SHARES_SSP
+    builtInWeaponSets:
+          -
+            - STR_VOLTKNOCKER
+            - STR_SSP_LASER_SMG_CODED
+            - STR_SSP_LASER_SMG_AMMO2
+            - STR_SSP_LASER_SMG_AMMO2
 #enemy drones
   - type: STR_DRONE_ENEMY_HYBRID
     race: STR_RACE_DRONE
@@ -1201,7 +1239,8 @@ units:
     armor: STR_CLIENT_CRAZY_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 25
+    value: -40
+    valueCaptured: 50
     deathSound: [41, 42, 43]
     intelligence: 2
     aggression: 8

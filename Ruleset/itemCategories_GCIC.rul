@@ -43,7 +43,6 @@
     listOrder: 370
   - type: STR_SPORT_CATEGORY
     listOrder: 380
-    hidden: true
   - type: STR_ARCHAIC_CATEGORY
     listOrder: 385
     hidden: true

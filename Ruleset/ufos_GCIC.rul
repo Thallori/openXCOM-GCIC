@@ -361,6 +361,57 @@ ufos:
               - [7, 5, 1]
               - [7, 9, 2]
 
+  - type: STR_HACIENDA
+    modSprite: interception_jammed
+    battlescapeTerrainData:
+      name: STR_HACIENDA
+      mapDataSets:
+        - BLANKS
+        - FLOOR_TILES
+        - FLOOR_POOL
+        - BITS_FULLSTONE
+        - STRUCTURE_GATED1
+        - STRUCTURE_DRYWALL_LUX
+        - STRUCTURE_TILES1
+        - STRUCTURE_GLASS
+        - FLOOR_PLAIN
+        - STAIRS_PLAIN
+        - FENCE_PLAIN
+        - ENTERTAINMENT
+        - BITS_SOLAR1
+        - BATHROOM
+        - BITS_SHOWER
+        - COMPUTERS1
+        - FURNITURE_BEDS_LUX
+        - FURNITURE_CHAIRS_LUX
+        - FURNITURE_TABLES1
+        - FURNITURE_GAMES1
+        - FURNITURE_LUX1
+        - FURNITURE_BAR_LUX
+        - BITS_BEACHCHAIR
+        - BITS_ART_LUX
+        - HOLOGRAMS
+        - LADDERM
+        - BITS_POTTED_PLANTS
+        - BITS_TECH
+        - SIGNS_TECH2
+        - BITS_CONTRABAND
+        - BITS_CONTRABAND2
+        - FLORA_XENO
+        - ENTRY
+      mapBlocks:
+        - name: HACIENDA0
+          width: 30
+          length: 30
+          craftInventoryTile: [28,28,0]
+          items:
+            STR_CRIMINAL_CONTAINER_1:
+              - [10, 1, 0]
+              - [5, 13, 0]
+              - [4, 5, 1]
+              - [7, 5, 1]
+              - [7, 9, 2]
+
   - type: STR_SABOTAGE_OFFICE
     modSprite: interception_jammed
     battlescapeTerrainData:

@@ -1876,7 +1876,7 @@
     alert: STR_MEDI_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_MEDI_CREATURE_ALERT_DESCRIPTION
-    markerName: STR_MEDI_CREATURE
+    markerName: STR_MEDI_CREATURE_
     duration: [36, 60]
     despawnPenalty: 20
     abortPenalty: 20
@@ -1905,7 +1905,7 @@
     alert: STR_MEDI_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_MEDI_CREATURE_ALERT_DESCRIPTION
-    markerName: STR_MEDI_CREATURE
+    markerName: STR_MEDI_CREATURE_
     duration: [36, 60]
     despawnPenalty: 20
     abortPenalty: 20
@@ -2092,3 +2092,62 @@
             - STR_DISPOSABLE_SMG
             - STR_MULTITOOL
             - STR_BOUNTY_1
+
+  - type: STR_SSP_UNDERCOVER_1
+    width: 60
+    length: 60
+    height: 8
+    script: HACIENDA_SSP_6X6
+    alert: STR_IRONEYES_ALERT
+    # alertBackground: BACK03.SCR
+    alertDescription: STR_SSP_UNDERCOVER_1_ALERT_DESCRIPTION
+    markerName: STR_SSP_UNDERCOVER_1_
+    duration: [72, 120]
+    civiliansByType:
+      STR_SSPGUARD_PUBLIC: 9
+      STR_SSPOFFICER_PUBLIC: 2
+      STR_SSPSUPERVISOR_PUBLIC: 1
+    startingCondition: SPORTS_GEAR_INFILTRATION_CRAFT
+    briefing:
+      showTarget: false
+      title: STR_SSP_UNDERCOVER_1
+      music: SSP_INTRO
+      palette: 2
+    #unlockedResearch: STR_TRG_RI_PREQ
+    customUfo: STR_HACIENDA
+    forcePercentageOutsideUfo: true
+    music:
+      - SSP1
+    data:
+      - alienRank: 2
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 0
+        extraRandomItems: *ironExtra
+        itemSets: *hitterSetPrivate
+      - alienRank: 3
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 2
+        percentageOutsideUfo: 0
+        extraRandomItems: *ironExtra
+        itemSets: *breakerSetPrivate #make slightly better
+      - alienRank: 4
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 0
+        extraRandomItems: *ironExtra
+        itemSets: *ripperSetPrivate #make better
+      - alienRank: 5
+        lowQty: 6
+        medQty: 6
+        highQty: 8
+        dQty: 8
+        percentageOutsideUfo: 0
+        extraRandomItems: *ironExtra
+        itemSets: *boosterSetPrivate #make better
