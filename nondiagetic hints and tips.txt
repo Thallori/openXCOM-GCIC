@@ -1,0 +1,66 @@
+this file exists because the author couldn't think of a way to explain this in-game in a way that wouldn't be extra clunky or make the -pedia bloated. if a game doesn't tell you that it's doing something, it might as well not be doing it, so enjoy.
+
+--------
+
+game difficulty options in vanilla give the enemy %multiplier stat buffs and increased enemy counts. instead, this mod gives flat buffs (or debuffs for the easiest difficulty) in order to look pretty when checking out their stats. this does mean that higher difficult affects the early game more than the late game, but the late game has some extras that should hopefully level this out.
+
+enemy counts are unchanged for all the but the two highest difficulty settings, and even then, they only have a chance to spawn a single additional enemy of each rank. this is because the economy revolves around bodies and their loot. higher enemy counts could, counter-intuitively, make the game easier. instead, enemies are given much higher stats than vanilla difficulty settings as well as additional flat armor. this has the added benefit of making the harder difficulties more true to the cyber-augmentations they supposedly have in lore.
+
+like vanilla, an enemy's aiming chances and armour are halved on the easiest difficultly. unlike vanilla, these stats are lowered by 20% on the second easiest difficulty. this is because the dev balances the game around the middle setting and knows that any given dev is always going to be better than they think, due to all the playtesting. hopefully this extra boost will make blind playthroughs on the default difficulty a good starting ground for anyone who has played enough x-com to mod x-com.
+
+the easiest difficulty should be blind-beatable by someone who has never touched an x-com before, but that's impossible to balance for without a playertester who has never played an x-com before. if you're out there and you're playing this mod as your introduction, you cannot be helped because you probably don't exist.
+
+the highest difficulty has been balanced around the dev being able to complete a mission with expected equipment, above average stats, and without save scumming more than 50% of the time. this might be too harsh, but hey, highest difficulty. if this isn't harsh enough, there's always room to make things harder.
+
+almost all loot can only be sold for 25% of what it costs to buy. this to make the corporatocracy feel oppressive even in the geoscape. the economy has also been balanced around selling big ticket items that you probably want to keep; having the best stuff actually be worth at lot means you should be picking and choosing your favourites and giving the rest up. this will hopefully avoid the situation where you need some cash, sell all your trash, and actually have enough to get what you need. trash is trash, your forgotten pockets only have pennies.
+
+engineers and scientists cannot be bought, but must instead be built out of items you can only get a once a month (or more, the further in the game you are). this makes them precious and gives you a difficult decision between research and manufacturing (though early game, always pick science. there just isn't that much to build at the start). this also lets engineers be rather profitable (with the right techs) without breaking the game. in vanilla, the economy can just be building workshops, staffing them, selling stuff, building more workshops, repeat. breaking this loop means limiting either staff or manufacturing profits. the loop is important to break because it turns the money economy into a factor of time, not a factor of success.
+
+--------
+
+all fixed options are fixed because balancing the game around you changing them would be too difficult or because they would introduce themeatic inconsistencies (like for retain corpses. lorewise, you aren't killing someone after interrogating them). you can still change these settings in the "vars_GCIC.rul" file if you like. some recommended options are strongly recommended, others are just what the mod was built with in mind.
+
+strongly recommend are as follows.
+
+custom base: false
+right now there's no retaliation missions so this won't be a problem, but later, base defense missions feel more fun when they're scuffed and more facilities (vulnerable to intrusion) will be able to spawn enemies to facilitate the jank. this also makes it easier to balance if the mod ever reaches the planned point where you can have multiple bases, since you'll presumably build new bases in a more defensible way. big first base with all the good drones will be balanced by jank, new better bases with less bells and whistles will be balanced by facing the same enemies as the big base.
+
+allow psi-strength improvement: false
+there will be ways to improve psi-strength other than using psi-weapons. also, psi-strength is now psi-sensitivity, which means someone with low psi-sensitivity is actually better defended against psi-attacks than someone with high sensitivity. you'll want to make your noodle brains noodlier and your pasta brains pastaier.
+
+battle instant grenades: false
+there are grenades which are meant to be instant, and grenades which are not. sometimes it feels bad not knowing if a grenade at someone's feet is going to kill them or not, but a wider range of possibilities means the play space is bigger. there's more replay value if more things can happen. and you can always throw more grenades if you need to be sure.
+
+--------
+
+these settings are not accessible in game and must be changed in the aformentioned vars file. not all of them are explained here, just the most important.
+
+max view distance has been set to 35, where most popular mods will set this at 40 and vanilla is 20. this is just to be different (and also decrease the lag if a very large and tall map is ever put in). novelty is good when there's a bunch of stuff out there. also, 30 feels too short when accuracy is affected by distance and line of sight.
+
+unlike vanilla, reloading a weapon factors in the cost of moving the new clip into your hand, so if you don't have enough tus to reload, putting it in your hand can still save time next turn. this also means that ammo in your backpack isn't freely accessible.
+
+damage range remains at 100, meaning all stated damage can do between 0 and 200% damage. a lot of mods or even other x-com games change this to something more consistent, which is both less realistic and makes the play space smaller. you can get knicked by a bullet in such a way that you won't even need a bandaid, and you can be hit in the worst possible place and die in seconds. this being a flat roll (as opposed to a weighted roll, where 100% damage is the most likely) means you have to deal with the widest range of possible outcomes. if all plans have a 1 in 1000 chance of failing, then you have to account for even the most unlikely outcomes. by the other token, it means you can go for plans that only have a 1 in 1000 chance of succeeding if you desperately need to roll those dice. flat probabilities from 0 to 200% are simply the best way to get the most out of luck as mechanic.
+
+sniper rifles have a damage roll of 50%-200%
+
+most mods allow civilians to pick up weapons, this mod does not because there doesn't seem to be a way to stop a civilian from going to your weapons pile and plucking out the biggest, scariest, most exotic and esoteric gun and using it like they were born with it. this also means you can't just bring extra pistols to terror missions and throw them at civilians to give them a fighting chance. sorry about that.
+
+cqc (a common mod feature that lets someone shove a gun out of the way when standing in an adjcent tile) is not used. this is mainly to avoid the situation where a muton could cause your shot to go wild, even when they're not facing you and around a corner. cqc is good because it means you can't go up to someone and be guarenteed to hit the entire full auto burst into the back of their skull, but its bad because its hard to find a good balance. if cqc is too unreliable, then you can't park someone next to the ufo door to act as a safety net for everyone else to approach. if cqc is too reliable, then there's no point in ever trying to shoot someone from point-blank range. instead, all melee attacks do tu damage so if you don't kill them in that shot, you might end up trapped until next turn.
+
+--------
+
+these are special changes performed by scripts
+
+chrysalids (and other creatures that transform someone on death) need to actually kill them to cause the transformation. this allows armor and hp to remain relevant while fighting these enemies, but also means that if someone takes enough wounds to fall unconcious, they won't transform and get to bleed out instead. or be rescued if you're able to. don't worry chryslid lovers, their damage is appropriate and should still lead to many deaths by transformation.
+
+fatal wounds are given a scaling factor randomized between 5 and 15% of damage done to health, after armour. this allows for a wider range of wounds than the vanilla 1 to 3 rolls, and also means you need to lose at least 10hp to get more than 1 wound. this is done to make medkits that heal more wounds an attractive upgrade the further you get in the game with high hp units able to survive damage that could give them 8+ wounds.
+
+when fatally wounded or overstunned, a drone typically won't die at the start of your turn. fire is the exception, as well any other source of damage over time effects. this is due to a script that checks if a drone would take enough damage to die, then reduces that amount so they survive with 1hp. this is done because being shot on the enemy's turn, surviving, then dying immediately at the start of your turn feels useless. better to be given room to struggle out an attempt to save them, or kill them immediately so you don't hold out hope. this mod chooses to let you struggle. fire damage is left out because it randomly does between 5 and 10 damage, modified by armor, which is harder to calcuate.
+
+at the end of the mission, unhealed fatal wounds give a simulated 3 turns worth of damage to the days wounded stat. this will not kill them, but does act as a fake 'worst-case' modifier for how long it might take to reach them and heal their wounds.
+
+the days wounded stat is itself modified by a script that makes it so anyone who would be wounded for more than 30 days gets the days above 30 cut in half, and thirded for any days above 50. this is to make it so that high health units can't end up in the hospital for 3 months but still gives vanilla results for anyone who rolled less than 30 days.
+
+starting tus of enemy units are randomized between 30 and 60% of their max tus. this is to 'simulate' them being active before you touched down, running around, shooting things, thinking about the nature of morality in boxed canyons. things like that. these values are chosen based on ai aggressiveness values, which let enemies reserve a certain percentage of their tus for reaction fire. since this is done universally, some enemies will have more tus than in a real turn, some will have less.
+
+at the end of the month, the minimum positive increase in income is set to +2000% instead of the vanilla +1000$. this is because vanilla's formula makes a region's income increase by 5-20% if they're happy with you, and since this mod starts you off with very little income, almost all funding increases could only be +1000 to 2000$ for a long time. this gets you into a range of meaningful +2000 to +8000$ increases faster than if this wasn't here (which happens at 40,000$ total monthly income from a region).
