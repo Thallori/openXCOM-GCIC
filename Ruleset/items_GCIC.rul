@@ -2083,7 +2083,7 @@ items:
     bigSprite: 279
     floorSprite: 256
     hitSound: 19
-    hitAnimation: 36
+    hitAnimation: -1
     battleType: 2
     weight: 3
     clipSize: 5
@@ -2117,7 +2117,7 @@ items:
     bigSprite: 278
     floorSprite: 256
     hitSound: 19
-    hitAnimation: 36
+    hitAnimation: -1
     battleType: 2
     weight: 3
     clipSize: 18

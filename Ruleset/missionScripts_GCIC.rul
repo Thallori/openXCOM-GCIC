@@ -807,3 +807,39 @@ missionScripts:
     useTable: false
     startDelay: 30
     randomDelay: 43170
+
+  - type: SSP1a
+    researchTriggers:
+      STR_GR_MISSIONS: true
+    missionWeights:
+      0:
+        STR_SSP_UNDERCOVER_1: 100
+    regionWeights: &IslandTerrain
+      0:
+        STR_GLEAMING_SEAS: 40
+        STR_CAYESAND_BASIN: 60
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: SSP1b
+    researchTriggers:
+      STR_GR_MISSIONS: true
+    executionOdds: 9 #todo
+    missionWeights:
+      0:
+        STR_SSP_UNDERCOVER_1: 100
+    regionWeights: *IslandTerrain
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170
+  - type: SSP1c
+    researchTriggers:
+      STR_GR_MISSIONS: true
+    executionOdds: 2 #todo
+    missionWeights:
+      0:
+        STR_SSP_UNDERCOVER_1: 100
+    regionWeights: *IslandTerrain
+    useTable: false
+    startDelay: 30
+    randomDelay: 43170

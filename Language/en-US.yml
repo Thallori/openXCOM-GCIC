@@ -464,7 +464,6 @@ en-US:
   STR_PERKS_CATEGORY: "Perks"
   STR_LIABILITIES_CATEGORY: "Liabilities"
   STR_DRONES_CATEGORY: "Drones"
-  
   STR_SPECIMENS_CATEGORY: "Specimens"
   STR_REMAINS_CATEGORY: "Remains"
   STR_BUILT_INS_CATEGORY: "Built-In"
@@ -500,6 +499,12 @@ en-US:
   MAP_FOREST2: "Coniferous Forest"
   MAP_DESERT2: "Desert Dunes"
   MAP_TAIGA2: "Torpid Taiga"
+  MAP_TROPICAL2: "Tropical Tracts"
+# special
+  MAP_CLUB0: "Dance Club"
+  MAP_CLUB1: "Rave Club"
+  MAP_CLUB2: "Assembly Front"
+  MAP_STUDIO0_FOREST: "Studio UFO"
 # scripted
   MAP_HANGAR_DRONES_SIZE3: "Warehouse District"
   MAP_HANGAR_DRONES_SIZE4: "Warehouse District"
@@ -1849,6 +1854,7 @@ en-US:
   STR_WIRETAPPER_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'I think the last time I knew that was the sixties. Do drones remember the sixties?'{NEWLINE}{NEWLINE}[...]{NEWLINE}'Of course I was a kid, probably even had legs and dreams. Jerkass. Hey, got a calculator back there?'{NEWLINE}{NEWLINE}[...]{NEWLINE}'Listen, I make bad life choices. Sometimes they come back to bite me. Sometimes they save me. I think I can part with five mistakes and still be feared. How's that sound?'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 30 Liquidity"
 
   STR_SSP: "SSP"
+  STR_SSPGUARD_PUBLIC: "SSP Guard"
   STR_SSPGUARD_PRIVATE: "SSP Guard"
   STR_SSPGUARDS: "SSP Guards"
   STR_SSPGUARDS_UP: "Secure Systems and Procurement's zero-hour contract employee. Using only the minimum rented PPE, they are not expected to be more than a body standing in the way. This makes them the first line of defense.{NEWLINE}{NEWLINE}Their primary function is to delay action long enough for backup to arrive.{NEWLINE}{NEWLINE}RISK CLASS: Conventional"
@@ -1856,6 +1862,7 @@ en-US:
   STR_SSPGUARD_INTERVIEW: "INTERVIEW: SSP Guard"
   STR_SSPGUARD_INTERVIEW_T: "I/SSP Guard"
   STR_SSPGUARD_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'I think you'd better tell me who you are first.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'You aren't allowed to refuse ID. I'm SSP.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'You aren't allowed to just lock people up either. You're racking at least $5,000 worth of fines here. $6,000 if you don't let me out right now. $7,000 if you don't want me to report this.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 25 Liquidity"
+  STR_SSPOFFICER_PUBLIC: "SSP Officer"
   STR_SSPOFFICER_PRIVATE: "SSP Officer"
   STR_SSPOFFICERS: "SSP Officers"
   STR_SSPOFFICERS_UP: "Salaried security forces authorized to write fines and make arrests on behalf of corporate interests. Advertised as the barrier between anarchy and order, in practice, they are reponsible for more than half of all violent altercations.{NEWLINE}{NEWLINE}Officers are required to put at least 30% of their income towards equipment rentals, making aqua-plastic vests a popular choice.{NEWLINE}{NEWLINE}PROCESSED: Consumer Cyberware, Aqua-Plastics{NEWLINE}{NEWLINE}RISK CLASS: Security"
@@ -1863,6 +1870,7 @@ en-US:
   STR_SSPOFFICER_INTERVIEW: "INTERVIEW: SSP Officer"
   STR_SSPOFFICER_INTERVIEW_T: "I/SSP Officer"
   STR_SSPOFFICER_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'Secure Systems and Procurement officer, badge ID 89-B7-MMCQ. Do you have a warrant for this arrest?'{NEWLINE}{NEWLINE}[...]{NEWLINE}'...Did you just climb out of the vat!? They're legal contracts that pay you to you put people in cells, just like this.'{NEWLINE}{NEWLINE}[...]{NEWLINE}'I know a shakedown when I see one. Fine! I'll send you my keys and even throw in the rental. The soup isn't going to be happy, but that's your problem now.'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 35 Liquidity"
+  STR_SSPSUPERVISOR_PUBLIC: "SSP Supervisor"
   STR_SSPSUPERVISOR_PRIVATE: "SSP Supervisor"
   STR_SSPSUPERVISORS: "SSP Supervisors"
   STR_SSPSUPERVISORS_UP: "Higher paid counterparts to the officers they manage. Neither especially skilled or knowledgable, their position exists as a matter of public facing. Assuring pluralistic humanity that they hold more control over enforcement than exists in reality.{NEWLINE}{NEWLINE}With increased income, they tend to be happier, have better healthcare, and arrive with more expensive equipment.{NEWLINE}{NEWLINE}PROCESSED: Medical Cyberware, Aqua-Plastics{NEWLINE}{NEWLINE}RISK CLASS: Security"

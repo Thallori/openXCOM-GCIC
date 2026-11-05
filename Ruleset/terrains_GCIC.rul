@@ -170,6 +170,16 @@ terrains:
         width: 10
         length: 40
 
+  - name: FAKE_CRAFT_SECVAN
+    mapDataSets:
+      - BLANKS
+      - HOVERCRAFT_BITS
+      - HOVERCRAFT_BLACK1
+      - HOVERCRAFT_BLACK2
+      - STRUCTURE_SHIELDS
+    mapBlocks:
+      - name: CRAFT_SECVAN
+
   #_SIZEX are just copies with a different map script so alienDeployments doesn't have to have different mapscripts in order to spawn drones
   - name: HANGAR
     script: HANGAR_DEFAULT
@@ -1452,5 +1462,37 @@ terrains:
       - name: TAIGA2_13S
       - name: TAIGA2_14S
       - name: TAIGA2_15
+        width: 20
+        length: 20
+  - name: TROPICAL2
+    mapDataSets:
+      - BLANKS
+      - FLORA_TROPICAL
+      - BITS_ROCKS_TROPICAL
+      - FLORA_TROPICAL_TREE
+      - FLORA_TROPICAL_TREE2
+    mapBlocks:
+      - name: TROPICAL2_00LZ
+        groups: 1
+      - name: TROPICAL2_01LZ
+        groups: 1
+      - name: TROPICAL2_02S
+      - name: TROPICAL2_03S
+      - name: TROPICAL2_04S
+      - name: TROPICAL2_05S
+      - name: TROPICAL2_06S
+      - name: TROPICAL2_07S
+      - name: TROPICAL2_08S
+      - name: TROPICAL2_09
+        width: 20
+        length: 20
+      - name: TROPICAL2_10
+        width: 20
+        length: 20
+      - name: TROPICAL2_11S
+      - name: TROPICAL2_12S
+      - name: TROPICAL2_13S
+      - name: TROPICAL2_14S
+      - name: TROPICAL2_15
         width: 20
         length: 20

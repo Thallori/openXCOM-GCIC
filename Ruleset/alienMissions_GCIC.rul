@@ -402,3 +402,17 @@ alienMissions:
         trajectory: AM_SPAWN
         timer: 1000
         objective: true
+
+  - type: STR_SSP_UNDERCOVER_1
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 1 #rural
+    raceWeights:
+      0:
+          STR_IRONEYES: 100 #todo
+    waves:
+      - ufo: STR_SSP_UNDERCOVER_1
+        count: 1
+        trajectory: AM_SPAWN
+        timer: 1000
+        objective: true

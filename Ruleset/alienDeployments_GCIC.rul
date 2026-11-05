@@ -11,7 +11,7 @@
       - TAIGA2
 
   - type: STR_HOLOUFO_SMALL
-    script: DEFAULT4X4
+    script: GEO_DEFAULT5X5
     width: 40
     length: 40
     height: 8
@@ -53,7 +53,7 @@
           -
             []
   - type: STR_HOLOUFO_FIGHTER
-    script: DEFAULT5X5
+    script: GEO_DEFAULT5X5
     width: 50
     length: 50
     height: 8
@@ -977,7 +977,7 @@
       - alienRank: 6
         lowQty: 16
         medQty: 16
-        highQty: 18
+        highQty: 17
         dQty: 12
         percentageOutsideUfo: 10
         extraRandomItems: *ironExtra
@@ -1016,7 +1016,7 @@
         itemSets: *AnchorEmptyInventory
 
   - type: STR_UFO_AIRCAR_IRON1
-    script: DEFAULT4X4
+    script: GEO_DEFAULT4X4
     width: 40
     length: 40
     height: 8
@@ -1044,7 +1044,7 @@
         extraRandomItems: *ironExtra
         itemSets: *boosterSetPrivate
   - type: STR_UFO_AIRCAR_IRON2
-    script: DEFAULT4X4
+    script: GEO_DEFAULT4X4
     width: 40
     length: 40
     height: 8
@@ -1869,7 +1869,7 @@
         itemSets: *AnchorEmptyInventory
 
   - type: STR_MEDI_MUCK
-    script: DEFAULT
+    script: GEO_DEFAULT
     width: 50
     length: 50
     height: 8
@@ -1897,7 +1897,7 @@
         dQty: 4
         itemSets: *AnchorEmptyInventory
   - type: STR_MEDI_MUCK_CHRYS
-    script: DEFAULT
+    script: GEO_DEFAULT
     isHidden: true
     width: 50
     length: 50
@@ -1932,7 +1932,7 @@
         dQty: 1
         itemSets: *AnchorEmptyInventory
   - type: STR_MEDI_CELA
-    script: DEFAULT
+    script: GEO_DEFAULT
     width: 50
     length: 50
     height: 8
@@ -1960,7 +1960,7 @@
         dQty: 4
         itemSets: *AnchorEmptyInventory
   - type: STR_MEDI_CELA_CHRYS
-    script: DEFAULT
+    script: GEO_DEFAULT
     isHidden: true
     width: 50
     length: 50
@@ -2098,7 +2098,7 @@
     length: 60
     height: 8
     script: HACIENDA_SSP_6X6
-    alert: STR_IRONEYES_ALERT
+    alert: STR_SSP_ALERT
     # alertBackground: BACK03.SCR
     alertDescription: STR_SSP_UNDERCOVER_1_ALERT_DESCRIPTION
     markerName: STR_SSP_UNDERCOVER_1_
@@ -2116,22 +2116,16 @@
     #unlockedResearch: STR_TRG_RI_PREQ
     customUfo: STR_HACIENDA
     forcePercentageOutsideUfo: true
+    terrains:
+      - TROPICAL2
     music:
       - SSP1
     data:
-      - alienRank: 2
-        lowQty: 1
-        medQty: 1
-        highQty: 2
-        dQty: 1
-        percentageOutsideUfo: 0
-        extraRandomItems: *ironExtra
-        itemSets: *hitterSetPrivate
       - alienRank: 3
         lowQty: 1
         medQty: 1
         highQty: 2
-        dQty: 2
+        dQty: 1
         percentageOutsideUfo: 0
         extraRandomItems: *ironExtra
         itemSets: *breakerSetPrivate #make slightly better
@@ -2139,14 +2133,14 @@
         lowQty: 2
         medQty: 2
         highQty: 3
-        dQty: 2
+        dQty: 3
         percentageOutsideUfo: 0
         extraRandomItems: *ironExtra
         itemSets: *ripperSetPrivate #make better
       - alienRank: 5
         lowQty: 6
         medQty: 6
-        highQty: 8
+        highQty: 7
         dQty: 8
         percentageOutsideUfo: 0
         extraRandomItems: *ironExtra

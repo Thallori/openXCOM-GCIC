@@ -76,7 +76,7 @@ globe:
 
     - id: 2 #steppe/med habitation, warm
       terrain:
-        - name: DESERT2
+        - name: TROPICAL2
           weight: 50
 
     - id: 3 #rock mountain/low habitation, temperate
@@ -86,7 +86,7 @@ globe:
 
     - id: 4 #island/med habitation, warm
       terrain:
-          - name: FOREST2
+          - name: TROPICAL2
             weight: 50
 
     - id: 5 #sand desert, hot
@@ -155,7 +155,7 @@ globe:
 
     - id: 17 #rainforest/low habitation, warm
       terrain:
-          - name: FOREST2
+          - name: TROPICAL2
             weight: 25
 
     - id: 18 #deepest desert, scorching

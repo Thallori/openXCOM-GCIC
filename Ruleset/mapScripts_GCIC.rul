@@ -43,6 +43,46 @@
       size: 2
     - type: fillArea
 
+  - type: GEO_DEFAULT
+    commands:
+    - type: addUFO
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addBlock
+      terrain: globeTerrain
+      size: [2, 1]
+    - type: addBlock
+      terrain: globeTerrain
+      size: [1, 2]
+    - type: addBlock
+      terrain: globeTerrain
+      size: 2
+      executions: 2
+    - type: fillArea
+      terrain: globeTerrain
+  - type: GEO_DEFAULT4X4
+    commands:
+    - type: addUFO
+      terrain: globeTerrain
+      rects:
+        - [0, 0, 3, 3]
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addBlock
+      terrain: globeTerrain
+      size: [2, 1]
+      label: 1
+    - type: addBlock
+      terrain: globeTerrain
+      size: [1, 2]
+      conditionals: [-1]
+    - type: addBlock
+      terrain: globeTerrain
+      size: 2
+      executions: 1
+    - type: fillArea
+      terrain: globeTerrain
   - type: GEO_DEFAULT5X5
     commands:
     - type: addUFO
@@ -67,13 +107,18 @@
     commands:
     - type: addUFO
       rects:
-        - [0, 0, 5, 5]
-    - type: addBlock
-      size: [2, 1]
-    - type: addBlock
-      size: [1, 2]
+        - [1, 1, 4, 4]
     - type: addBlock
       size: 2
+      executions: 2
+    - type: addBlock
+      executions: 3
+      verticalLevels:
+        - type: decoration
+          groups: [1]
+        - type: middle
+          terrain: FAKE_CRAFT_SECVAN
+          size: [1, 1, 8]
     - type: fillArea
 
   - type: SINGLE_BLOCK_2X2
