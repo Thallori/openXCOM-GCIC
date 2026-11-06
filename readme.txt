@@ -2,7 +2,7 @@
 This mod is non-commercial and falls under the CC-BY-NC license. This means that you are free to share it (copy and redistribute the material in any medium or format) or adapt (remix, transform, and build upon the material). But you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may not use the material for commercial purposes nor apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 Details here: https://creativecommons.org/licenses/by-nc/4.0/deed.en
 
-All assets made by thallori are free to use without giving credit, though since so many assets in this package are modifications of other assets and some may have even be outright ripped from commercial sources it isn't exactly possible to give blanket permission.
+All assets made by the author are free to use without giving credit, though since so many assets in this package are modifications of other assets and some may have even be outright ripped from commercial sources it isn't exactly possible to give blanket permission.
 
 This mod would not be possible without the documentation on the OpenXCom Wiki, the existance of MapView2/PCKView, and OpenXCom Extended itself.
 
@@ -21,7 +21,7 @@ bohemond			HandOb Maker
 Falko				OXC, Falko's Tools
 
 Assets credits are by source first, listed author may not be the true originator!
-Please contact thallori for corrections.
+Please contact the author for corrections.
 
 Title					[source]
  Name					[contribution]
@@ -218,6 +218,7 @@ Art/Backgrounds
  Unknown
   Nearly all -pedia tech pics are the result of doing a google image search, saving dozens of files, then going back through them later. As such, most of the original sources be they stock images or illustrations have be lost due to the author's incompetence. With apologies.
 
+--------
 
 Inspiration comes from many sources, too many to list. Ranging from decades old fan fiction to scientific journals. However, the ideas taken from the OpenXCom community are listed here.
 
@@ -245,10 +246,11 @@ Xeno Operations
 NuclearWorld
  TU damage instead of CQC to make melee options safer on aggression without making them overpowered on the defensive.
 
+--------
 
 List of assets and their authors which are completely unique to this mod.
 
-thallori
+the author
  animations
   bolt bullet
   flask bullet
@@ -329,9 +331,8 @@ thallori
   vault ramp into raised block with glowing lines
 
 Esven
- armor
-  exoskeleton				[redraw]
+ exoskeleton				[redraw]
+ xn cannon				[touchup]
+ xn volley				[touchup]
  map tiles
   flora forest small spikey fern
-  xn cannon				[touchup]
-  xn volley				[touchup]

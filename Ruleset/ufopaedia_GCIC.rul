@@ -858,6 +858,14 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: DEEP_CPAL
+  - id: STR_DRONE_FLOATER_ITEM
+    requires:
+      - STR_DRONE_FLOATER_ITEM
+    text: STR_DRONE_FLOATER_ITEM_UP
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: FLOATER_CPAL
 # transformations
   - id: STR_DRONE_IMMORTALITY
     requires:
@@ -1501,16 +1509,69 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     type_id: 4
 
-  # - id: STR_DARTROPE
-  #   requires:
-  #     - STR_DARTROPE
-  #   text: STR_DARTROPE_UP
-  #   section: STR_EQUIPMENT_UC
-  #   type_id: 4
+  - id: STR_GOLFWEDGE
+    requires:
+      - STR_GOLFWEDGE
+    text: STR_GOLFWEDGE_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_GOLFDRIVER
+    requires:
+      - STR_GOLFDRIVER
+    text: STR_GOLFDRIVER_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
   - id: STR_MARSBALL
     requires:
       - STR_MARSBALL
     text: STR_MARSBALL_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_AIRSOFT_PISTOL
+    requires:
+      - STR_AIRSOFT_PISTOL
+    text: STR_AIRSOFT_PISTOL_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_AIRSOFT_RIFLE
+    requires:
+      - STR_AIRSOFT_RIFLE
+    text: STR_AIRSOFT_RIFLE_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_AIRSOFT_AMMO
+    requires:
+      - STR_AIRSOFT_AMMO
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+  - id: STR_SPORTBOW
+    requires:
+      - STR_SPORTBOW
+    text: STR_SPORTBOW_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_AUTOBOW
+    requires:
+      - STR_AUTOBOW
+    text: STR_AUTOBOW_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_SPORT_ARROWS1
+    requires:
+      - STR_SPORT_ARROWS1
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+  - id: STR_PSI_DAZZLER
+    requires:
+      - STR_PSI_DAZZLER
+    text: STR_PSI_DAZZLER_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_DARTROPE
+    requires:
+      - STR_DARTROPE
+    text: STR_DARTROPE_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
 # gr

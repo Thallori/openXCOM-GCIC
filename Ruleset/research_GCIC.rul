@@ -689,6 +689,11 @@ research:
     cost: 5
     unlocks:
       - STR_DC_PREQ
+  - name: STR_DRONE_FLOATER_ITEM
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_DC_PREQ
 # transformations
   - name: STR_DRONE_IMMORTALITY
     dependencies:
@@ -1036,12 +1041,59 @@ research:
     dependencies:
       - STR_TASER_PISTOL_CODED
 
-  # - name: STR_DARTROPE
-  #   needItem: true
-  #   cost: 5
-  #   unlocks:
-  #     - STR_V_SPORT_PREQ
+  - name: STR_GOLFWEDGE
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_V_SPORT_PREQ
+  - name: STR_GOLFDRIVER
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_V_SPORT_PREQ
   - name: STR_MARSBALL
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_V_SPORT_PREQ
+  - name: STR_AIRSOFT_PISTOL
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_V_SPORT_PREQ
+      - STR_AIRSOFT_AMMO
+  - name: STR_AIRSOFT_RIFLE
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_V_SPORT_PREQ
+      - STR_AIRSOFT_AMMO
+  - name: STR_AIRSOFT_AMMO
+    dependencies:
+      - STR_AIRSOFT_PISTOL
+      - STR_AIRSOFT_RIFLE
+  - name: STR_PSI_DAZZLER
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_V_SPORT_PREQ
+  - name: STR_SPORTBOW
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_V_SPORT_PREQ
+      - STR_SPORT_ARROWS1
+  - name: STR_AUTOBOW
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_V_SPORT_PREQ
+      - STR_SPORT_ARROWS1
+  - name: STR_SPORT_ARROWS1
+    dependencies:
+      - STR_SPORTBOW
+      - STR_AUTOBOW
+  - name: STR_DARTROPE
     needItem: true
     cost: 5
     unlocks:
@@ -1770,7 +1822,10 @@ research:
   - name: STR_CLIENT_CRAZY_ARMOR
     dependencies:
       - STR_CLIENT_CRAZY
-#flags
+# flags
+  - name: STR_TECH_UNLOCKENGINEERS
+    dependencies:
+      - STR_LOCK
   - name: STR_ALIEN_INTERVIEWED_FLAG
     dependencies:
       - STR_LOCK

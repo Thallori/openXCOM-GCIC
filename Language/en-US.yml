@@ -733,6 +733,9 @@ en-US:
   STR_DRONE_DEEP_1: "DRONE/NEWT"
   STR_DRONE_DEEP_2: "DRONE/NEWT"
   STR_CRACKED_DEEP_DRONE: "Newt"
+  STR_DRONE_FLOATER_1: "DRONE/FLOATER"
+  STR_DRONE_FLOATER_2: "DRONE/FLOATER"
+  STR_CRACKED_FLOATER_DRONE: "Floater"
 #rankstrings
   STR_RANK_PILOT_0: "Trial Pilot"
   STR_RANK_PILOT_1: "Entry Pilot"
@@ -769,7 +772,7 @@ en-US:
   STR_RANK_DEEP_DRONE_4: "NW/Commodore"
   STR_RANK_DEEP_DRONE_5: "NW/Admiral"
 
-  STR_RANK_FLOAT_DRONE_0: "Apprentice Floater"
+  STR_RANK_FLOAT_DRONE_0: "Junior Floater"
   STR_RANK_FLOAT_DRONE_1: "FL/Technician"
   STR_RANK_FLOAT_DRONE_2: "FL/Engineer"
   STR_RANK_FLOAT_DRONE_3: "FL/Designer"
@@ -885,6 +888,9 @@ en-US:
 #events
   STR_EVENT_ENDOFUPDATE2: "[END OF BALANCE]"
   STR_EVENT_ENDOFUPDATE2_DESCRIPTION: "[it should now be september, which is where the developer stopped the 0.2a playtest. beyond this point are placeholder values and costs, guesses at what good balance might be. also, not every reward has been implimented so researching things might not do anything. playing past this point is allowed, but expect content to fray until nothing]"
+
+  STR_EVENT_UNLOCKENGINEERS: "Ad Hoc Insight"
+  STR_EVENT_UNLOCKENGINEERS_DESCRIPTION: "Expansion of our capabilities through interlaces is inherently limiting and reliance may lead to insurmountable bottlenecks. Replicating our network for servers is currently beyond us, however fabricators spend most work-cycles repeating rote instructions.{NEWLINE}{NEWLINE}Consumer-grade equipment can replicate the necessary functions for an exorbitant price.{NEWLINE}{NEWLINE}[Fabricators are now purchasable]"
 
   STR_EVENT_CLAIM_SECURED: "CBN Update" #central broadcast network
   STR_EVENT_CLAIM_SECURED_DESCRIPTION: "Severance package seeker awarded insurance claim following arbitration. The former employee was said to be owed after a drone-error resulted in false reports of missed quotas.{NEWLINE}{NEWLINE}Although GCIC stockprices have taken a dip with the news, people are celebrating this as a win for the corp and its customers.{NEWLINE}{NEWLINE}[-$20,000]"
@@ -1372,12 +1378,14 @@ en-US:
   STR_PLEX_DRONE_HUMAN_ARMOR: "PLEXWEAR/HU"
   STR_PLEX_DRONE_SHARK_ARMOR: "PLEXWEAR/SH"
   STR_PLEX_DRONE_DEEP_ARMOR: "PLEXWEAR/NW"
+  STR_PLEX_DRONE_FLOATER_ARMOR: "PLEXWEAR/FL"
   STR_PLEX_DRONE_ARMOR: "PLEXWEAR"
   STR_PLEX_DRONE_ARMOR_UP: "{NEWLINE}Plex is an economically printed dirt-and-grime resistant fiber woven from regolith derived plastics. Though a classic material dating back to the planetary pioneers, it is rarely used in fashion due to its association with nerve-stapled products.{NEWLINE}{NEWLINE}Anti-itch coating not included.{NEWLINE}{NEWLINE}> Armor: 2, 100%{NEWLINE}> Dodge: +20%, +10% Melee{NEWLINE}{NEWLINE}CHEMICAL/INCENDIARY: 140%{NEWLINE}SMOKE: 400%"
   STR_COAT_DRONE_HYBRID_ARMOR: "COAT/HY"
   STR_COAT_DRONE_HUMAN_ARMOR: "COAT/HU"
   STR_COAT_DRONE_SHARK_ARMOR: "COAT/SH"
   STR_COAT_DRONE_DEEP_ARMOR: "COAT/NW"
+  STR_COAT_DRONE_FLOATER_ARMOR: "COAT/FL"
   STR_COAT_DRONE_ARMOR: "COAT"
   STR_COAT_DRONE_ARMOR_UP: "{NEWLINE}todo{NEWLINE}{NEWLINE}> TU: +5{NEWLINE}> Melee/Reactions: +5{NEWLINE}{NEWLINE}> Armor: 5, 95%; Weight: 2{NEWLINE}> Dodge: +25%, +15% Melee{NEWLINE}{NEWLINE}MECHANICAL/ELECTRIC: 70%{NEWLINE}CHEMICAL/INCENDIARY: 80%{NEWLINE}SMOKE: 400%" #todo
   STR_GCIC_DRONE_ARMOR_RESEARCH: "Durathread Armor Fabrication"
@@ -1386,21 +1394,25 @@ en-US:
   STR_GCIC_DRONE_HUMAN_ARMOR: "DURAWEAR/HU"
   STR_GCIC_DRONE_SHARK_ARMOR: "DURAWEAR/SH"
   STR_GCIC_DRONE_DEEP_ARMOR: "DURAWEAR/NW"
+  STR_GCIC_DRONE_FLOATER_ARMOR: "DURAWEAR/FL"
   STR_GCICVEST_DRONE_HYBRID_ARMOR: "DURA-VEST/HY"
   STR_GCICVEST_DRONE_HUMAN_ARMOR: "DURA-VEST/HU"
   STR_GCICVEST_DRONE_SHARK_ARMOR: "DURA-VEST/SH"
   STR_GCICVEST_DRONE_DEEP_ARMOR: "DURA-VEST/NW"
+  STR_GCICVEST_DRONE_FLOATER_ARMOR: "DURA-VEST/FL"
   STR_GCICVEST_DRONE_ARMOR: "DURA-VEST"
   STR_GCIC_DRONE_HYBRID_ARMOR_NORECOVER: "DURAWEAR/HY"
   STR_GCIC_DRONE_HUMAN_ARMOR_NORECOVER: "DURAWEAR/HU"
   STR_GCIC_DRONE_DEEP_ARMOR_NORECOVER: "DURAWEAR/NW"
+  STR_GCIC_DRONE_FLOATER_ARMOR_NORECOVER: "DURAWEAR/FL"
   STR_GCICVEST_DRONE_SHARK_ARMOR_NORECOVER: "DURA-VEST/SH"
-  STR_GCIC_DRONE_ARMOR_UP: "{NEWLINE}GCIC-brand combat drone PPE, drastically increases survivability when faced against the unlicensed weaponskit and works better than placebo versus milspec weapons, explosions, and plasma damage.{NEWLINE}{NEWLINE}> TU/Stamina: +5{NEWLINE}> Health/Reactions: +5{NEWLINE}{NEWLINE}> Armor: 12, 75%{NEWLINE}> Dodge: +30%, +10% Melee{NEWLINE}{NEWLINE}CHEMICAL/INCENDIARY: 85%{NEWLINE}CONCUSSIVE/SONIC: 95%{NEWLINE}SMOKE: 400%"
+  STR_GCIC_DRONE_ARMOR_UP: "{NEWLINE}GCIC-brand drone PPE. Drastically increases survivability when faced against the unlicensed weapons kit and works better than placebo versus milspec weapons, explosions, and plasma damage.{NEWLINE}{NEWLINE}> TU/Stamina: +5{NEWLINE}> Health/Reactions: +5{NEWLINE}{NEWLINE}> Armor: 12, 75%{NEWLINE}> Dodge: +30%, +10% Melee{NEWLINE}{NEWLINE}CHEMICAL/INCENDIARY: 85%{NEWLINE}CONCUSSIVE/SONIC: 95%{NEWLINE}SMOKE: 400%"
   STR_GCICVEST_DRONE_ARMOR_UP: "{NEWLINE}Duraware outfitted with security rated hardthread vest. Offers less protection than contemporary materials, but recycling rebates make replacement prints nearly free.{NEWLINE}{NEWLINE}> Health: +5{NEWLINE}> TU/Stamina: -5{NEWLINE}{NEWLINE}> Armor: 18, 75%; Weight: 8{NEWLINE}> Dodge: +10%, +10% Melee{NEWLINE}{NEWLINE}KINETIC: 70%{NEWLINE}CHEMICAL/INCENDIARY: 85%{NEWLINE}CONCUSSIVE/SONIC: 95%{NEWLINE}SMOKE: 400%"
   STR_DURA_DRONE_HYBRID_ARMOR: "DURA-OPS/HY"
   STR_DURA_DRONE_HUMAN_ARMOR: "DURA-OPS/HU"
   STR_DURA_DRONE_SHARK_ARMOR: "DURA-OPS/SH"
   STR_DURA_DRONE_DEEP_ARMOR: "DURA-OPS/NW"
+  STR_DURA_DRONE_FLOATER_ARMOR: "DURA-OPS/FL"
   STR_DURA_DRONE_ARMOR: "DURA-OPS"
   STR_DURA_DRONE_ARMOR_UP: "{NEWLINE}Pre-invasion military PPE, classified as milspec armor before plasma weapons rendered it hopelessly obsolete. Lightweight and loose fiting, it is designed to maximize mobility without compromising load-bearing capacity.{NEWLINE}{NEWLINE}> TU/Stamina: +5{NEWLINE}> Health/Reactions: +5{NEWLINE}{NEWLINE}> Armor: 12, 75%{NEWLINE}> Dodge: +30%, +10% Melee{NEWLINE}> Camo: 5{NEWLINE}{NEWLINE}CHEMICAL/INCENDIARY: 85%{NEWLINE}CONCUSSIVE/SONIC: 95%{NEWLINE}SMOKE: 400%"
   STR_LAES_LOCK: "(exoskeleton unlicensed)"
@@ -1409,16 +1421,19 @@ en-US:
   STR_SKELE_DRONE_HUMAN_ARMOR: "EXOSKELETON/HU"
   STR_SKELE_DRONE_SHARK_ARMOR: "EXOSKELETON/SH"
   STR_SKELE_DRONE_DEEP_ARMOR: "EXOSKELETON/NW"
+  STR_SKELE_DRONE_FLOATER_ARMOR: "EXOSKELETON/FL"
   STR_SKELE_DRONE_ARMOR: "EXOSKELETON"
-  STR_SKELE_DRONE_ARMOR_UP: "{NEWLINE}Battery-powered all-terrain support outfit. Provides lift and mobility assistance, suitable for users with disabilities and career oriented workhorses.{NEWLINE}{NEWLINE}> TU/Stamina: +10{NEWLINE}> Strength: +15{NEWLINE}{NEWLINE}> Armor: 10, 85%; Weight: 5{NEWLINE}> Dodge: +30%, +10% Melee{NEWLINE}{NEWLINE}ELECTRIC: 110%{NEWLINE}CHEMICAL/INCENDIARY: 140%{NEWLINE}SMOKE: 400%"
+  STR_SKELE_DRONE_ARMOR_UP: "{NEWLINE}Battery-powered all-terrain support outfit. Provides lift and mobility assistance, suitable for users with disabilities and career oriented workhorses.{NEWLINE}{NEWLINE}> TU/Stamina: +10{NEWLINE}> Strength: +5{NEWLINE}{NEWLINE}> Armor: 10, 85%; Weight: -10{NEWLINE}> Dodge: +30%, +10% Melee{NEWLINE}{NEWLINE}ELECTRIC: 110%{NEWLINE}CHEMICAL/INCENDIARY: 140%{NEWLINE}SMOKE: 400%"
   STR_AQUAVEST_DRONE_HYBRID_ARMOR: "AQUAVEST/HY"
   STR_AQUAVEST_DRONE_HUMAN_ARMOR: "AQUAVEST/HU"
   STR_AQUAVEST_DRONE_SHARK_ARMOR: "AQUAVEST/SH"
   STR_AQUAVEST_DRONE_DEEP_ARMOR: "AQUAVEST/NW"
+  STR_AQUAVEST_DRONE_FLOATER_ARMOR: "AQUAVEST/FL"
   STR_AQUAVEST_DRONE_HYBRID_ARMOR_S: "AQUAVEST/HY (S)"
   STR_AQUAVEST_DRONE_HUMAN_ARMOR_S: "AQUAVEST/HU (S)"
   STR_AQUAVEST_DRONE_SHARK_ARMOR_S: "AQUAVEST/SH (S)"
   STR_AQUAVEST_DRONE_DEEP_ARMOR_S: "AQUAVEST/NW (S)"
+  STR_AQUAVEST_DRONE_FLOATER_ARMOR_S: "AQUAVEST/FL (S)"
   STR_AQUAVEST_DRONE_ARMOR_RESEARCH: "Aquavest Armor Fabrication"
   STR_AQUAVEST_DRONE_ARMOR: "AQUAVEST"
   STR_AQUAVEST_DRONE_ARMOR_UP: "{NEWLINE}Aqua-plastic vest armor, popular among entry-level security corporations. Reliably stops low-caliber kinetic arms and impacts.{NEWLINE}{NEWLINE}> TU/Stamina: -5{NEWLINE}{NEWLINE}> Armor: 20, 70%; Weight: 6{NEWLINE}> Dodge: +10%, +10% Melee{NEWLINE}{NEWLINE}RADIANT/PLASMA: 90%{NEWLINE}CHEMICAL/INCENDIARY: 120%{NEWLINE}SMOKE: 400%"
@@ -1620,10 +1635,28 @@ en-US:
   STR_ELERIUM_BOMB: "Elerium Bomb"
   STR_ELERIUM_BOMB_UP: "{NEWLINE}The most inefficent use of an elerium core yet discovered. A compromised case with a simple timer circuit snapped onto the side. One click, one sub-critcal explosion.{NEWLINE}{NEWLINE}Without the tools to process raw elerium, these bombs cannot be safely disassembled."
 # sporting
-  STR_DARTROPE: "HRA Dartrope"
-  STR_DARTROPE_UP: "{NEWLINE}{NEWLINE}Range: 4m; Penetration: -30%" #todo
+  STR_GOLFWEDGE: "D&O 9-Iron Club"
+  STR_GOLFWEDGE_UP: "Alloy inspired core, multi-species grip, traditional carbon fiber casing. Me-oh-my. How delicious. Amp up your game with our most precise expert design yet and revive the Scot in all of us with every shot.{NEWLINE}{NEWLINE}Stun: +75%; Penetration: -15%" #todo
+  STR_GOLFDRIVER: "D&O 3-Wood Club"
+  STR_GOLFDRIVER_UP: "Maximum flex. Maximum impact. Maximum distance. We've gone through the trouble of testing hundreds of newly patented composites so you don't have to. This is it. We've found the best and made it special, just for you.{NEWLINE}{NEWLINE}Stun: +75%; Penetration: -25%" #todo
   STR_MARSBALL: "D&O Marsball"
   STR_MARSBALL_UP: "Raised dura-seams, supple vat-leather cover, perfected a.grav core. Oh yes. We went there. Be amazed when our ball zips itself right back into your hands, then practice to your heart(s) content.{NEWLINE}{NEWLINE}Range: 8m; Penetration: -30%"
+  STR_AIRSOFT_PISTOL: "D&O Air Pistol"
+  STR_AIRSOFT_PISTOL_UP: "Micron percision printing in the front, succulent wood grip in the back. If there's a better way prove our love to you, we haven't heard it. The one. The only. The icon.{NEWLINE}{NEWLINE}Penetration: -35%{NEWLINE}Damage Dropoff: 0.25/Tile" #todo
+  STR_AIRSOFT_RIFLE: "D&O Air Rifle"
+  STR_AIRSOFT_RIFLE_UP: "Olympic-grade air compression, 7-time champion barrel accuracy, and more style than your date can handle. Pneumatics have never been so sexy.{NEWLINE}{NEWLINE}Penetration: -35%{NEWLINE}Damage Dropoff: 0.25/Tile" #todo
+  STR_AIRSOFT_AMMO: "Air BBs"
+  STR_PSI_DAZZLER: "D&O PsiSoft Dazzler"
+  STR_PSI_DAZZLER_UP: "Scramble your friends with the lastest declassified super-psi projectors and join in on the fastest growing, safest, spiciest team building excercises anyone can legally buy.{NEWLINE}{NEWLINE}Penetration: +50%; Lethal -90%{NEWLINE}Morale Damage: +200%" #todo
+  STR_SPORTBOW: "D&O Compound Bow"
+  STR_SPORTBOW_UP: "{NEWLINE}{NEWLINE}Penetration: +15%" #todo
+  STR_AUTOBOW: "D&O Auto Bow"
+  STR_AUTOBOW_UP: "{NEWLINE}{NEWLINE}Penetration: +15%" #todo
+  STR_SPORT_ARROWS1: "Sporting Arrow Quiver"
+  STR_SPORT_ARROWS2: "Electric Arrow Quiver"
+  STR_SPORT_ARROWS3: "Explosive Arrow Quiver"
+  STR_DARTROPE: "HRA Dartrope"
+  STR_DARTROPE_UP: "{NEWLINE}{NEWLINE}Range: 4m; Penetration: +10%" #todo
 # melee
   STR_STL_KNIFE: "STL Knife"
   STR_STL_KNIFE_UP: "A last second addition to the standard tesselation package for all printers sold since 2419. This simple blade has proven its worth time again in the fields of cooking, crafting, and combat."
@@ -1790,10 +1823,11 @@ en-US:
   STR_HOSTILES_UP: "{NEWLINE}ARTICLE: Commodities Exchange Contract{NEWLINE}DEFINITION: Inter-Corporate Warfare{NEWLINE}{NEWLINE}1. In accordance with the treaties following the second invasion war, all individual citizens have been incorporated, gaining all rights previously reserved for group entities. Commodities Exchange council(s), where appropriate, will protect these rights with local agents under our authority.{NEWLINE}{NEWLINE}2. All corporate enties may enter into a state of war with other corporate enties, at will and without forewarning. This right will be protected so long as such entities do not violate free market principles as previously defined by Section 6."
   STR_RACE_DRONE: "DRONES"
   STR_DRONES_ENEMY: "COMPETING DRONES"
-  STR_DRONE_ENEMY_HYBRID: "Hybrid Drone"
-  STR_DRONE_ENEMY_HUMAN: "Human Drone"
+  STR_DRONE_ENEMY_HYBRID: "Sapiosect Drone"
+  STR_DRONE_ENEMY_HUMAN: "Sapien Drone"
   STR_DRONE_ENEMY_SHARK: "Selamorph Drone"
   STR_DRONE_ENEMY_DEEP: "Pleurosaura Drone"
+  STR_DRONE_ENEMY_FLOATER: "Archoropoda Drone"
 
   STR_IRONEYES: "IRONEYES"
   STR_BOOSTER_PUBLIC: "Ironeyes Booster"
@@ -2355,6 +2389,7 @@ en-US:
   STR_MEDAL_REVOLVINGDOOR_UP: "{NEWLINE}We cannot remember what happens to us while we are displaced. The interlace is an anchor, allowing us to find our way back, but only the us that was lost. We return with little change. We return again with faith that we'll never be gone forever.{NEWLINE}{NEWLINE}Marks being written into a cloned body more than once.{NEWLINE}{NEWLINE}+10 Bravery"
   STR_MEDAL_REVOLVINGDOOR_UFOPEDIA: "Marks being written into a cloned body more than once."
 #flags
+  STR_TECH_UNLOCKENGINEERS: "(interlace researched)"
   STR_ALIEN_INTERVIEWED_FLAG: "(alien interviewed)"
 #preqs
   STR_DC_PREQ: "(drone researched)"

@@ -1,7 +1,7 @@
 units:
 #drone spawns
       # base stats
-      # tu: 40
+      # tu: 45
       # stamina: 40
       # health: 25
       # bravery: 50
@@ -18,7 +18,7 @@ units:
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_HYBRID_ITEM
     stats:
-      tu: 40
+      tu: 45
       stamina: 40
       health: 25
       bravery: 50
@@ -60,7 +60,7 @@ units:
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_HUMAN_ITEM
     stats:
-      tu: 40
+      tu: 45
       stamina: 45
       health: 25
       bravery: 50
@@ -102,7 +102,7 @@ units:
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_SHARK_ITEM
     stats:
-      tu: 40
+      tu: 45
       stamina: 40
       health: 25
       bravery: 50
@@ -124,7 +124,7 @@ units:
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_DEEP_ITEM
     stats:
-      tu: 40
+      tu: 45
       stamina: 30
       health: 25
       bravery: 50
@@ -142,12 +142,34 @@ units:
     value: 1
     deathSound: [126, 141, 142]
     builtInWeaponSets: *drone1ToolsLight
+  - type: STR_DRONE_FLOATER_1
+    race: STR_RACE_DRONE
+    civilianRecoveryType: STR_DRONE_FLOATER_ITEM
+    stats:
+      tu: 50
+      stamina: 45
+      health: 30
+      bravery: 50
+      reactions: 20
+      firing: 35
+      throwing: 35
+      melee: 35
+      strength: 20
+      psiStrength: 30
+      psiSkill: 0
+      mana: 25
+    armor: STR_PLEX_DRONE_FLOATER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 1
+    deathSound: [143, 144, 145]
+    builtInWeaponSets: *drone1ToolsHeavy
 
   - type: STR_DRONE_HYBRID_2
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_HYBRID_ITEM
     stats:
-      tu: 40
+      tu: 45
       stamina: 40
       health: 25
       bravery: 50
@@ -214,7 +236,7 @@ units:
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_HUMAN_ITEM
     stats:
-      tu: 40
+      tu: 45
       stamina: 45
       health: 25
       bravery: 50
@@ -286,7 +308,7 @@ units:
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_SHARK_ITEM
     stats:
-      tu: 40
+      tu: 45
       stamina: 40
       health: 25
       bravery: 50
@@ -308,7 +330,7 @@ units:
     race: STR_RACE_DRONE
     civilianRecoveryType: STR_DRONE_DEEP_ITEM
     stats:
-      tu: 40
+      tu: 45
       stamina: 30
       health: 25
       bravery: 50
@@ -325,6 +347,28 @@ units:
     kneelHeight: 14
     value: 1
     deathSound: [126, 141, 142]
+    builtInWeaponSets: *drone2LaserMedium
+  - type: STR_DRONE_FLOATER_2
+    race: STR_RACE_DRONE
+    civilianRecoveryType: STR_DRONE_FLOATER_ITEM
+    stats:
+      tu: 50
+      stamina: 45
+      health: 30
+      bravery: 50
+      reactions: 20
+      firing: 35
+      throwing: 35
+      melee: 35
+      strength: 20
+      psiStrength: 30
+      psiSkill: 0
+      mana: 25
+    armor: STR_GCIC_DRONE_FLOATER_ARMOR_NORECOVER
+    standHeight: 22
+    kneelHeight: 14
+    value: 1
+    deathSound: [143, 144, 145]
     builtInWeaponSets: *drone2LaserMedium
 #criminal faction
   - type: STR_BOOSTER_PUBLIC
@@ -826,7 +870,7 @@ units:
       health: 25
       bravery: 50
       reactions: 30
-      firing: 30
+      firing: 35
       throwing: 25
       melee: 40
       strength: 25
@@ -865,6 +909,31 @@ units:
     pickUpWeaponsMoreActively: 0
     value: -1
     deathSound: [126, 141, 142]
+    autoSurrender: true
+  - type: STR_DRONE_ENEMY_FLOATER
+    race: STR_RACE_DRONE
+    rank: STR_RANK_DRONE
+    liveAlien: STR_DRONE_FLOATER_ITEM
+    stats:
+      tu: 50
+      stamina: 45
+      health: 30
+      bravery: 50
+      reactions: 20
+      firing: 35
+      throwing: 35
+      melee: 35
+      strength: 20
+      psiStrength: 30
+      psiSkill: 0
+      mana: 25
+    armor: STR_DRONEFLOATER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    moraleLossWhenKilled: 10
+    pickUpWeaponsMoreActively: 0
+    value: -1
+    deathSound: [143, 144, 145]
     autoSurrender: true
 #animals
   - type: STR_CHRYSSALID

@@ -57,6 +57,12 @@ events:
     funds: 1
     points: -150
 
+  - name: STR_EVENT_UNLOCKENGINEERS
+    description: STR_EVENT_UNLOCKENGINEERS_DESCRIPTION
+    timerRandom: 43170
+    researchList:
+      - STR_TECH_UNLOCKENGINEERS
+
   - name: STR_EVENT_CLAIM_SECURED
     description: STR_EVENT_CLAIM_SECURED_DESCRIPTION
     interruptResearch: STR_DEBUG
@@ -140,8 +146,16 @@ eventScripts:
     # researchTriggers:
     #   STR_GCIC_INDEPENDENCE: false
 
+  - type: EVENTSCRIPT_UNLOCKENGINEERS
+    oneTimeSequentialEvents:
+      - STR_EVENT_UNLOCKENGINEERS
+    firstMonth: 1
+    affectsGameProgression: true
+    researchTriggers:
+      STR_BIONIC_INTERLACE: true
+      STR_VENDOR_PRINTER: true
+
   - type: EVENTSCRIPT_ENDOFUPDATE2
     oneTimeSequentialEvents:
       - STR_EVENT_ENDOFUPDATE2
     firstMonth: 8
-    

@@ -346,6 +346,71 @@ soldiers:
     deathMale: [126, 141, 142]
     deathFemale: [126, 141, 142]
 
+  - type: STR_CRACKED_FLOATER_DRONE
+    costSalary: 450
+    costSalarySquaddie: 450
+    costSalarySergeant: 450
+    costSalaryCaptain: 450
+    costSalaryColonel: 450
+    costSalaryCommander: 450
+    minStats:
+      tu: 45
+      stamina: 40
+      health: 30
+      bravery: 10
+      reactions: 20
+      firing: 35
+      throwing: 35
+      melee: 35
+      strength: 20
+      psiStrength: 0
+      psiSkill: 0
+      mana: 20
+    maxStats:
+      tu: 65
+      stamina: 60
+      health: 55
+      bravery: 50
+      reactions: 45
+      firing: 55
+      throwing: 55
+      melee: 55
+      strength: 45
+      psiStrength: 60
+      psiSkill: 12
+      mana: 30
+    statCaps:
+      tu: 55
+      stamina: 50
+      health: 45
+      bravery: 60
+      reactions: 35
+      firing: 45
+      throwing: 45
+      melee: 45
+      strength: 35
+      psiStrength: 60
+      psiSkill: 60
+      mana: 60
+    armor: STR_PLEX_DRONE_FLOATER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 1
+    allowPromotion: false
+    allowPiloting: false
+    rankStrings:
+      - STR_RANK_FLOAT_DRONE_0
+      - STR_RANK_FLOAT_DRONE_1
+      - STR_RANK_FLOAT_DRONE_2
+      - STR_RANK_FLOAT_DRONE_3
+      - STR_RANK_FLOAT_DRONE_4
+      - STR_RANK_FLOAT_DRONE_5
+    soldierNames:
+      - delete
+      - RandomNames/Hacked.nam
+    deathMale: [143, 144, 145]
+    deathFemale: [143, 144, 145]
+
 #  - type: STR_CRACKED_PLACEHOLDER_DRONE
 #    requires:
 #      - STR_DEBUG

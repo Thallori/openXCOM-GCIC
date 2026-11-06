@@ -158,6 +158,27 @@ armors:
       - 1.0 #15 cold
     units:
       - STR_CRACKED_DEEP_DRONE
+  - type: STR_PLEX_DRONE_FLOATER_ARMOR
+    refNode: *refPlexDrone
+    ufopediaType: STR_PLEX_DRONE_ARMOR
+    customArmorPreviewIndex: 400
+    spriteInv: DRONEFLOATER.SPK
+    spriteSheet: WORKSUIT_FLOATER.PCK
+    layersDefaultPrefix: FLOATER
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
+    forcedTorso: 1
+    corpseBattle:
+      - STR_PLEX_DRONE_FLOATER_CORPSE
+    allowsRunning: false
+    movementType: 1
+    moveCost:
+      flyUpPercent: [100, 50]
+      flyDownPercent: [50, 0]
+    visibilityAtDark: 8
+    units:
+      - STR_CRACKED_FLOATER_DRONE
 
   - &refDuraDrone
     ignore: STR_GCIC_DRONE_HYBRID_ARMOR
@@ -304,6 +325,26 @@ armors:
       - 1.0 #15 cold
     units:
       - STR_CRACKED_DEEP_DRONE
+  - type: STR_GCIC_DRONE_FLOATER_ARMOR
+    refNode: *refDuraDrone
+    customArmorPreviewIndex: 405
+    spriteSheet: DURA_FLOATER.PCK
+    layersDefaultPrefix: FLOATER
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
+    forcedTorso: 1
+    corpseBattle:
+      - STR_GCIC_DRONE_FLOATER_CORPSE
+    storeItem: STR_GCIC_DRONE_ARMOR
+    allowsRunning: false
+    movementType: 1
+    moveCost:
+      flyUpPercent: [100, 50]
+      flyDownPercent: [50, 0]
+    visibilityAtDark: 8
+    units:
+      - STR_CRACKED_FLOATER_DRONE
 
   - type: STR_GCICVEST_DRONE_HYBRID_ARMOR
     ufopediaType: STR_GCICVEST_DRONE_ARMOR
@@ -473,6 +514,39 @@ armors:
       energy: *EnergyRecoveryPoor
     units:
       - STR_CRACKED_DEEP_DRONE
+  - type: STR_GCICVEST_DRONE_FLOATER_ARMOR
+    ufopediaType: STR_GCICVEST_DRONE_ARMOR
+    refNode: *refDuraDrone
+    customArmorPreviewIndex: 406
+    spriteSheet: DURAVEST_FLOATER.PCK
+    layersDefaultPrefix: FLOATER
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+    forcedTorso: 1
+    corpseBattle:
+      - STR_GCICVEST_DRONE_FLOATER_CORPSE
+    storeItem: STR_GCIC_DRONE_ARMOR
+    allowsRunning: false
+    movementType: 1
+    moveCost:
+      flyUpPercent: [100, 50]
+      flyDownPercent: [50, 0]
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_BACK_PACK
+    visibilityAtDark: 8
+    stats: *DuravestStats
+    frontArmor: 18
+    sideArmor: 18
+    rearArmor: 18
+    underArmor: 14
+    damageModifier: *OrganicDuravestResists
+    recovery:
+      energy: *EnergyRecoveryPoor
+    units:
+      - STR_CRACKED_FLOATER_DRONE
 
   - type: STR_DURA_DRONE_HYBRID_ARMOR
     ufopediaType: STR_DURA_DRONE_ARMOR
@@ -566,6 +640,29 @@ armors:
     damageModifier: *DeepOneDuraResists
     units:
       - STR_CRACKED_DEEP_DRONE
+  - type: STR_DURA_DRONE_FLOATER_ARMOR
+    ufopediaType: STR_DURA_DRONE_ARMOR
+    refNode: *refDuraDrone
+    customArmorPreviewIndex: 401
+    spriteSheet: JUMPSUIT_FLOATER.PCK
+    layersDefaultPrefix: FLOATER
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+    forcedTorso: 1
+    corpseBattle:
+      - STR_DURA_DRONE_FLOATER_CORPSE
+    allowsRunning: false
+    movementType: 1
+    moveCost:
+      flyUpPercent: [100, 50]
+      flyDownPercent: [50, 0]
+    storeItem: STR_DURA_DRONE_ARMOR
+    visibilityAtDark: 8
+    camouflageAtDay: -5
+    camouflageAtDark: -5
+    units:
+      - STR_CRACKED_FLOATER_DRONE
 
   - &refSkeleDrone
     type: STR_SKELE_DRONE_HYBRID_ARMOR
@@ -588,11 +685,11 @@ armors:
     visibilityAtDark: 11
     personalLight: 13
     heatVision: 20
-    weight: 5
+    weight: -10
     stats: &SkeleStats
-      strength: +15
       stamina: +10
       tu: +10
+      strength: +5
     frontArmor: 10
     sideArmor: 10
     rearArmor: 10
@@ -710,6 +807,25 @@ armors:
       - 1.0 #15 cold
     units:
       - STR_CRACKED_DEEP_DRONE
+  - type: STR_SKELE_DRONE_FLOATER_ARMOR
+    refNode: *refSkeleDrone
+    customArmorPreviewIndex: 404
+    spriteSheet: SKELE_FLOATER.PCK
+    layersDefaultPrefix: FLOATER
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "SKELE", "", "", ""]
+    forcedTorso: 1
+    corpseBattle:
+      - STR_SKELE_DRONE_FLOATER_CORPSE
+    allowsRunning: false
+    movementType: 1
+    moveCost:
+      flyUpPercent: [100, 50]
+      flyDownPercent: [50, 0]
+    visibilityAtDark: 8
+    units:
+      - STR_CRACKED_FLOATER_DRONE
 
   - &refAquavestDrone
     type: STR_AQUAVEST_DRONE_HYBRID_ARMOR
@@ -850,6 +966,25 @@ armors:
       - 1.0 #15 cold
     units:
       - STR_CRACKED_DEEP_DRONE
+  - type: STR_AQUAVEST_DRONE_FLOATER_ARMOR
+    refNode: *refAquavestDrone
+    customArmorPreviewIndex: 402
+    spriteSheet: AQUAVEST_FLOATER.PCK
+    layersDefaultPrefix: FLOATER
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+    forcedTorso: 1
+    corpseBattle:
+      - STR_AQUAVEST_DRONE_FLOATER_CORPSE
+    allowsRunning: false
+    movementType: 1
+    moveCost:
+      flyUpPercent: [100, 50]
+      flyDownPercent: [50, 0]
+    visibilityAtDark: 8
+    units:
+      - STR_CRACKED_FLOATER_DRONE
 
   - &refAquavestSDrone
     type: STR_AQUAVEST_DRONE_HYBRID_ARMOR_S
@@ -966,6 +1101,25 @@ armors:
     damageModifier: *DeepOneAquavestResists
     units:
       - STR_CRACKED_DEEP_DRONE
+  - type: STR_AQUAVEST_DRONE_FLOATER_ARMOR_S
+    refNode: *refAquavestSDrone
+    customArmorPreviewIndex: 403
+    spriteSheet: AQUAVEST_FLOATER.PCK
+    layersDefaultPrefix: FLOATER
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+    forcedTorso: 1
+    corpseBattle:
+      - STR_AQUAVEST_DRONE_FLOATER_CORPSE
+    allowsRunning: false
+    movementType: 1
+    moveCost:
+      flyUpPercent: [100, 50]
+      flyDownPercent: [50, 0]
+    visibilityAtDark: 8
+    units:
+      - STR_CRACKED_FLOATER_DRONE
 
 #pilots
   - type: STR_PILOT_CORE_ARMOR
@@ -1757,6 +1911,14 @@ armors:
       - STR_PLEX_DRONE_DEEP_CORPSE
     visibilityAtDark: 8
     damageModifier: *DeepOneUnarmoredResists
+  - type: STR_DRONEFLOATER_ARMOR
+    refNode: *refEnemyDrone
+    ufopediaType: STR_DRONE_FLOATER_ITEM
+    spriteInv: DRONEFLOATER.SPK
+    spriteSheet: WORKSUIT_FLOATER.PCK
+    corpseBattle:
+      - STR_PLEX_DRONE_FLOATER_CORPSE
+    visibilityAtDark: 8
 
   - type: STR_GCIC_DRONE_HYBRID_ARMOR_NORECOVER
     refNode: *refDuraDrone
@@ -1799,6 +1961,17 @@ armors:
     specialWeapon: STR_ELECTROBOLT
     visibilityAtDark: 8
     damageModifier: *DeepOneDuraResists
+  - type: STR_GCIC_DRONE_FLOATER_ARMOR_NORECOVER
+    refNode: *refDuraDrone
+    spriteSheet: DURA_FLOATER.PCK
+    spriteInv: DRONEFLOATER2.SPK
+    layersDefaultPrefix: FLOATER
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
+    corpseBattle:
+      - STR_GCIC_DRONE_FLOATER_CORPSE_NORECOVER
+    visibilityAtDark: 8
   - type: STR_GCICVEST_DRONE_SHARK_ARMOR_NORECOVER
     ufopediaType: STR_GCICVEST_DRONE_ARMOR
     refNode: *refDuraDrone

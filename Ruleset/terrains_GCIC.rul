@@ -632,11 +632,11 @@ terrains:
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [5, 6, 0]
-          STR_SPAWN_DRONE_DEEP_1:
+          STR_SPAWN_DRONE_FLOATER_1:
           - [6, 3, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
-          STR_SPAWN_DRONE_DEEP_1: [0, 0]
+          STR_SPAWN_DRONE_FLOATER_1: [0, 0]
   - name: COMMERCIAL_DRONES2_SIZE5
     script: COMMERCIAL_DRONES2_5X5
     civilianTypes: *commercialCivilians
@@ -748,11 +748,11 @@ terrains:
         items:
           STR_SPAWN_DRONE_HYBRID_2:
           - [5, 6, 0]
-          STR_SPAWN_DRONE_DEEP_2:
+          STR_SPAWN_DRONE_FLOATER_2:
           - [6, 3, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_2: [0, 0]
-          STR_SPAWN_DRONE_DEEP_2: [0, 0]
+          STR_SPAWN_DRONE_FLOATER_2: [0, 0]
 
   - name: INDUSTRIAL
     script: INDUSTRIAL_DEFAULT
@@ -885,11 +885,11 @@ terrains:
         items:
           STR_SPAWN_DRONE_HYBRID_1:
           - [2, 3, 0]
-          STR_SPAWN_DRONE_DEEP_1:
+          STR_SPAWN_DRONE_FLOATER_1:
           - [1, 8, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_1: [0, 0]
-          STR_SPAWN_DRONE_DEEP_1: [0, 0]
+          STR_SPAWN_DRONE_FLOATER_1: [0, 0]
       - name: INDUSTRIAL_04S
         items:
           STR_SPAWN_DRONE_HYBRID_1:
@@ -989,11 +989,11 @@ terrains:
         items:
           STR_SPAWN_DRONE_HYBRID_2:
           - [2, 3, 0]
-          STR_SPAWN_DRONE_DEEP_2:
+          STR_SPAWN_DRONE_FLOATER_2:
           - [1, 8, 0]
         fuseTimers:
           STR_SPAWN_DRONE_HYBRID_2: [0, 0]
-          STR_SPAWN_DRONE_DEEP_2: [0, 0]
+          STR_SPAWN_DRONE_FLOATER_2: [0, 0]
       - name: INDUSTRIAL_04S
         items:
           STR_SPAWN_DRONE_HYBRID_2:

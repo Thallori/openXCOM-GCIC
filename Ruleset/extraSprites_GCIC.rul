@@ -141,10 +141,10 @@ extraSprites:
       197: Resources/Factions/Holograms/holosectoid_bigob.png
       198: Resources/Items/Materials/thread_bigob.png
       199: Resources/Items/Materials/grav_bigob.png
-      200: Resources/Armors/Anthros/Worksuit/worksuit_corpse_deep_bigob.png
-      201: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_deep_bigob.png
-      202: Resources/Armors/Anthros/Aquavest/aquavest_corpse_deep_bigob.png
-      203: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_deep_bigob.png
+      200: Resources/Armors/Anthros/Worksuit/worksuit_corpse_bigob_deep.png
+      201: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_bigob_deep.png
+      202: Resources/Armors/Anthros/Aquavest/aquavest_corpse_bigob_deep.png
+      203: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_bigob_deep.png
       204: Resources/Items/Tools/riveter_bigob.png
       205: Resources/Items/Tools/Ammo/riveter_ammo_bigob.png
       206: Resources/Items/Utility/sprint_bigob.png
@@ -191,9 +191,9 @@ extraSprites:
       247: Resources/Items/Materials/nanoweave_bigob.png
       248: Resources/Items/Explosives/Ammo/barrelmortar_ammo2_bigob.png
       249: Resources/Armors/Anthros/Duraware/dura_corpse_bigob.png
-      250: Resources/Armors/Anthros/Duraware/dura_corpse_deep_bigob.png
+      250: Resources/Armors/Anthros/Duraware/dura_corpse_bigob_deep.png
       251: Resources/Armors/Anthros/Duraware/duravest_corpse_bigob.png
-      252: Resources/Armors/Anthros/Duraware/duravest_corpse_deep_bigob.png
+      252: Resources/Armors/Anthros/Duraware/duravest_corpse_bigob_deep.png
       253: Resources/Items/Explosives/phxbomb_bigob.png
       254: Resources/Items/Materials/milware_bigob.png
       255: Resources/Factions/Robots/turretap_bigob.png
@@ -225,6 +225,12 @@ extraSprites:
       281: Resources/Items/Laser/prototype_cannon_bigob.png
       282: Resources/Items/Laser/Ammo/prototype_cannon_ammo_bigob.png
       283: Resources/Items/Laser/Ammo/prototype_cannon_1ammo_bigob.png
+      284: Resources/Armors/Anthros/Worksuit/worksuit_corpse_bigob_floater.png
+      285: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_bigob_floater.png
+      286: Resources/Armors/Anthros/Duraware/dura_corpse_bigob_floater.png
+      287: Resources/Armors/Anthros/Duraware/duravest_corpse_bigob_floater.png
+      288: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_bigob_floater.png
+      289: Resources/Armors/Anthros/Aquavest/aquavest_corpse_bigob_floater.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -261,9 +267,9 @@ extraSprites:
       130: Resources/Items/Laser/xn_cannon_floorob.png
       131: Resources/Items/Containers/lockbox_floorob.png
       132: Resources/Armors/Anthros/Worksuit/worksuit_corpse_floorob.png
-      133: Resources/Armors/Anthros/Worksuit/worksuit_corpse_shark_floorob.png
+      133: Resources/Armors/Anthros/Worksuit/worksuit_corpse_floorob_shark.png
       134: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_floorob.png
-      135: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_shark_floorob.png
+      135: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_floorob_shark.png
       136: Resources/Items/Multi/dartpistol_floorob.png
       137: Resources/Items/Multi/Ammo/dart_ammo_floorob.png
       138: Resources/Items/Multi/Ammo/dart_foam_ammo_floorob.png
@@ -294,7 +300,7 @@ extraSprites:
       163: Resources/Items/Kinetic/Ammo/ssp_slug_ammo_floorob.png
       164: Resources/Factions/Netrunners/skiptracer_floorob.png
       165: Resources/Armors/Anthros/Aquavest/aquavest_corpse_floorob.png
-      166: Resources/Armors/Anthros/Aquavest/aquavest_corpse_shark_floorob.png
+      166: Resources/Armors/Anthros/Aquavest/aquavest_corpse_floorob_shark.png
       167: Resources/Items/Tools/probe_floorob.png
       168: Resources/Items/Multi/watergun_floorob.png
       169: Resources/Items/Multi/Ammo/watergun_water_ammo_floorob.png
@@ -308,15 +314,15 @@ extraSprites:
       177: Resources/Items/Kinetic/ssp_smg_floorob.png
       178: Resources/Items/Kinetic/Ammo/ssp_smg_ammo_floorob.png
       179: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_floorob.png
-      180: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_shark_floorob.png
+      180: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_floorob_shark.png
       181: Resources/Items/Utility/jet_floorob.png
       182: Resources/Items/Utility/meditrauma_floorob.png
       183: Resources/Items/Tools/sledgehammer_floorob.png
       184: Resources/Factions/Holograms/holosectoid_floorob.png
-      185: Resources/Armors/Anthros/Worksuit/worksuit_corpse_deep_floorob.png
-      186: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_deep_floorob.png
-      187: Resources/Armors/Anthros/Aquavest/aquavest_corpse_deep_floorob.png
-      188: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_deep_floorob.png
+      185: Resources/Armors/Anthros/Worksuit/worksuit_corpse_floorob_deep.png
+      186: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_floorob_deep.png
+      187: Resources/Armors/Anthros/Aquavest/aquavest_corpse_floorob_deep.png
+      188: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_floorob_deep.png
       189: Resources/Items/Tools/riveter_floorob.png
       190: Resources/Items/Tools/Ammo/riveter_ammo_floorob.png
       191: Resources/Items/Utility/sprint_floorob.png
@@ -358,11 +364,11 @@ extraSprites:
       227: Resources/Factions/Ironeyes/hitter_floorob.png
       228: Resources/Items/Explosives/Ammo/barrelmortar_ammo2_floorob.png
       229: Resources/Armors/Anthros/Duraware/dura_corpse_floorob.png
-      230: Resources/Armors/Anthros/Duraware/dura_corpse_shark_floorob.png
-      231: Resources/Armors/Anthros/Duraware/dura_corpse_deep_floorob.png
+      230: Resources/Armors/Anthros/Duraware/dura_corpse_floorob_shark.png
+      231: Resources/Armors/Anthros/Duraware/dura_corpse_floorob_deep.png
       232: Resources/Armors/Anthros/Duraware/duravest_corpse_floorob.png
-      233: Resources/Armors/Anthros/Duraware/duravest_corpse_shark_floorob.png
-      234: Resources/Armors/Anthros/Duraware/duravest_corpse_deep_floorob.png
+      233: Resources/Armors/Anthros/Duraware/duravest_corpse_floorob_shark.png
+      234: Resources/Armors/Anthros/Duraware/duravest_corpse_floorob_deep.png
       235: Resources/Items/Explosives/phxbomb_floorob.png
       236: Resources/Factions/Robots/turretap_floorob.png
       237: Resources/Items/Materials/vaultelerium_floorob.png
@@ -388,6 +394,12 @@ extraSprites:
       257: Resources/Items/Laser/prototype_cannon_floorob.png
       258: Resources/Items/Laser/prototype_ecannon_floorob.png
       259: Resources/Items/Laser/Ammo/prototype_cannon_ammo_floorob.png
+      260: Resources/Armors/Anthros/Worksuit/worksuit_corpse_floorob_floater.png
+      261: Resources/Armors/Anthros/Jumpsuit/jumpsuit_corpse_floorob_floater.png
+      262: Resources/Armors/Anthros/Duraware/dura_corpse_floorob_floater.png
+      263: Resources/Armors/Anthros/Duraware/duravest_corpse_floorob_floater.png
+      264: Resources/Armors/Anthros/Exoskeleton/exoskeleton_corpse_floorob_floater.png
+      265: Resources/Armors/Anthros/Aquavest/aquavest_corpse_floorob_floater.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -640,10 +652,15 @@ extraSprites:
     fileSingle: Resources/Armors/Bodies/Deep/DEEPHANDS_F0.png
   - typeSingle: DEEP__2__M0_SHELL
     fileSingle: Resources/Armors/Bodies/Deep/DEEPHANDS_F0.png
+# floater
+  - typeSingle: FLOATER__2__F0_SHELL
+    fileSingle: Resources/Armors/Bodies/Floaters/FLOATER_M0.png
+  - typeSingle: FLOATER__2__M0_SHELL
+    fileSingle: Resources/Armors/Bodies/Floaters/FLOATER_M0.png
 #armor
   - type: CustomArmorPreviews
     width: 1200
-    height: 80
+    height: 100
     subX: 12
     subY: 20
     files:
@@ -656,7 +673,9 @@ extraSprites:
   - typeSingle: SHARK__7__WORKSUIT
     fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_inventory.png
   - typeSingle: DEEP__7__WORKSUIT
-    fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_deep_inventory.png
+    fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_inventory_deep.png
+  - typeSingle: FLOATER__7__WORKSUIT
+    fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_inventory_floater.png
   - type: WORKSUIT_HUMAN.PCK
     width: 512
     height: 720
@@ -685,6 +704,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Worksuit/worksuit_sprite_deep.png
+  - type: WORKSUIT_FLOATER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Worksuit/worksuit_sprite_floater.png
 # dura
   - typeSingle: HUMAN__7__DURA
     fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory.png
@@ -693,7 +719,9 @@ extraSprites:
   - typeSingle: SHARK__7__DURA
     fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory.png
   - typeSingle: DEEP__7__DURA
-    fileSingle: Resources/Armors/Anthros/Duraware/dura_deep_inventory.png
+    fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory_deep.png
+  - typeSingle: FLOATER__7__DURA
+    fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory_floater.png
   - type: DURA_HUMAN.PCK
     width: 512
     height: 720
@@ -722,6 +750,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Duraware/dura_sprite_deep.png
+  - type: DURA_FLOATER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Duraware/dura_sprite_floater.png
 # duravest
   - typeSingle: HUMAN__7__DURAVEST
     fileSingle: Resources/Armors/Anthros/Duraware/duravest_inventory.png
@@ -730,7 +765,9 @@ extraSprites:
   - typeSingle: SHARK__7__DURAVEST
     fileSingle: Resources/Armors/Anthros/Duraware/duravest_inventory.png
   - typeSingle: DEEP__7__DURAVEST
-    fileSingle: Resources/Armors/Anthros/Duraware/duravest_deep_inventory.png
+    fileSingle: Resources/Armors/Anthros/Duraware/duravest_inventory_deep.png
+  - typeSingle: FLOATER__7__DURAVEST
+    fileSingle: Resources/Armors/Anthros/Duraware/duravest_inventory_floater.png
   - type: DURAVEST_HUMAN.PCK
     width: 512
     height: 720
@@ -759,6 +796,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Duraware/duravest_sprite_deep.png
+  - type: DURAVEST_FLOATER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Duraware/duravest_sprite_floater.png
 # jumpsuit
   - typeSingle: HUMAN__7__JUMPSUIT
     fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory.png
@@ -767,7 +811,9 @@ extraSprites:
   - typeSingle: SHARK__7__JUMPSUIT
     fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory.png
   - typeSingle: DEEP__7__JUMPSUIT
-    fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_deep_inventory.png
+    fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory_deep.png
+  - typeSingle: FLOATER__7__JUMPSUIT
+    fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory_floater.png
   - type: JUMPSUIT_HUMAN.PCK
     width: 512
     height: 720
@@ -796,6 +842,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Jumpsuit/jumpsuit_sprite_deep.png
+  - type: JUMPSUIT_FLOATER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Jumpsuit/jumpsuit_sprite_floater.png
 # exoskeleton
   - typeSingle: HUMAN__7__SKELE
     fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_inventory.png
@@ -804,7 +857,9 @@ extraSprites:
   - typeSingle: SHARK__7__SKELE
     fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_inventory.png
   - typeSingle: DEEP__7__SKELE
-    fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_deep_inventory.png
+    fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_inventory_deep.png
+  - typeSingle: FLOATER__7__SKELE
+    fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_inventory_floater.png
   - type: SKELE_HUMAN.PCK
     width: 512
     height: 720
@@ -833,6 +888,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Exoskeleton/exoskeleton_sprite_deep.png
+  - type: SKELE_FLOATER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Exoskeleton/exoskeleton_sprite_floater.png
 # aquavest
   - typeSingle: HUMAN__7__AQUAVEST
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory.png
@@ -841,15 +903,19 @@ extraSprites:
   - typeSingle: SHARK__7__AQUAVEST
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory.png
   - typeSingle: DEEP__7__AQUAVEST
-    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_deep_inventory.png
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_deep.png
+  - typeSingle: FLOATER__7__AQUAVEST
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_floater.png
   - typeSingle: HUMAN__7__AQUAVESTSHIELD
-    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_s_inventory.png
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_s.png
   - typeSingle: HYBRID__7__AQUAVESTSHIELD
-    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_s_inventory.png
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_s.png
   - typeSingle: SHARK__7__AQUAVESTSHIELD
-    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_s_inventory.png
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_s.png
   - typeSingle: DEEP__7__AQUAVESTSHIELD
-    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_s_deep_inventory.png
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_s_deep.png
+  - typeSingle: FLOATER__7__AQUAVESTSHIELD
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_s_floater.png
   - type: AQUAVEST_HUMAN.PCK
     width: 512
     height: 720
@@ -878,6 +944,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Aquavest/aquavest_sprite_deep.png
+  - type: AQUAVEST_FLOATER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Aquavest/aquavest_sprite_floater.png
 # pilot
   - typeSingle: PILOT_CORE.SPK
     fileSingle: Resources/Armors/Pilots/FlyingCore/pilot_core_inventory.png
@@ -1029,6 +1102,8 @@ extraSprites:
     fileSingle: Resources/Factions/Drones/droneshark_inventory.png
   - typeSingle: DRONEDEEP.SPK
     fileSingle: Resources/Factions/Drones/dronedeep_inventory.png
+  - typeSingle: DRONEFLOATER.SPK
+    fileSingle: Resources/Factions/Drones/dronefloater_inventory.png
 
   - typeSingle: DRONEHYBRID2.SPK
     fileSingle: Resources/Factions/Drones/dronehybrid2_inventory.png
@@ -1038,6 +1113,8 @@ extraSprites:
     fileSingle: Resources/Factions/Drones/droneshark2_inventory.png
   - typeSingle: DRONEDEEP2.SPK
     fileSingle: Resources/Factions/Drones/dronedeep2_inventory.png
+  - typeSingle: DRONEFLOATER2.SPK
+    fileSingle: Resources/Factions/Drones/dronefloater2_inventory.png
 # animals
   - typeSingle: CHRYSSALID_CPAL
     fileSingle: Resources/Factions/Animals/chryssalid_CPAL.png
@@ -1315,6 +1392,8 @@ extraSprites:
     fileSingle: Resources/Pedia/droneshark_CPAL.png
   - typeSingle: DEEP_CPAL
     fileSingle: Resources/Pedia/dronedeep_CPAL.png
+  - typeSingle: FLOATER_CPAL
+    fileSingle: Resources/Pedia/dronefloater_CPAL.png
 # transformations
   - typeSingle: IMMORTAL_CPAL
     fileSingle: Resources/Pedia/techimmortal_CPAL.png

@@ -64,3 +64,7 @@ the days wounded stat is itself modified by a script that makes it so anyone who
 starting tus of enemy units are randomized between 30 and 60% of their max tus. this is to 'simulate' them being active before you touched down, running around, shooting things, thinking about the nature of morality in boxed canyons. things like that. these values are chosen based on ai aggressiveness values, which let enemies reserve a certain percentage of their tus for reaction fire. since this is done universally, some enemies will have more tus than in a real turn, some will have less.
 
 at the end of the month, the minimum positive increase in income is set to +2000% instead of the vanilla +1000$. this is because vanilla's formula makes a region's income increase by 5-20% if they're happy with you, and since this mod starts you off with very little income, almost all funding increases could only be +1000 to 2000$ for a long time. this gets you into a range of meaningful +2000 to +8000$ increases faster than if this wasn't here (which happens at 40,000$ total monthly income from a region).
+
+--------
+
+shields give both front and side armour which helps mitigate the randomness of shots arriving around the 45 degree mark. otherwise shots which might look like they hit the shield can hit the less armored sides.
