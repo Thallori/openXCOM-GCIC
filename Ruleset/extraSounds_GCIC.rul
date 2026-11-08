@@ -83,6 +83,8 @@ extraSounds:
       149: Resources/Sounds/Fire/coilsniper_fire.wav
       150: Resources/Sounds/Reloads/gauss_reload.wav
       151: Resources/Sounds/Impacts/sniper_hit.wav
+      152: Resources/Sounds/Fire/softpsi_fire.wav
+      153: Resources/Sounds/Impacts/softburn_hit.wav
 
   - type: GEO.CAT
     files:

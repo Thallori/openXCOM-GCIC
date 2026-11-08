@@ -392,11 +392,14 @@ soldiers:
       psiStrength: 60
       psiSkill: 60
       mana: 60
+    trainingStatCaps:
+      psiSkill: 40
+      mana: 25
     armor: STR_PLEX_DRONE_FLOATER_ARMOR
     standHeight: 22
     kneelHeight: 14
     value: 1
-    allowPromotion: false
+    transferTime: 4
     allowPiloting: false
     rankStrings:
       - STR_RANK_FLOAT_DRONE_0

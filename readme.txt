@@ -107,6 +107,7 @@ X-Com Files Resound			[mod]
   Wrench SFX				[none]
   Neonbow SFX				[none]
   Shotgun SFX				[none]
+  Ionizer SFX				[remix]
 
 Awesome Guns				[mod]
  CanadianBeaver				[author]
@@ -183,6 +184,10 @@ Kenny.nl				[site]
 Xenonauts				[game]
  Goldhawk Interactive			[group]
   Shield				[remix]			(original)
+
+SS13					[game]
+ Exadv1					[initiator]
+  Energy Hit 2				[none]
 
 Art/Backgrounds
  Gong Studios				[group]

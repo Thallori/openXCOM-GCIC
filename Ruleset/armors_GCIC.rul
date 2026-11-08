@@ -17,8 +17,8 @@ armors:
     builtInWeapons:
       - STR_NULL_LEFT_SHOULDER
       - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_SMALL_BACKPACK
       - STR_NULL_QD_SLOT
-      - STR_NULL_BACK_PACK
     allowsKneeling: true
     visibilityAtDark: 11
     personalLight: 13
@@ -361,7 +361,7 @@ armors:
     builtInWeapons:
       - STR_NULL_LEFT_SHOULDER
       - STR_NULL_RIGHT_SHOULDER
-      - STR_NULL_BACK_PACK
+      - STR_NULL_SMALL_BACKPACK
     visibilityAtDark: 11
     stats: &DuravestStats
       health: +5
@@ -842,7 +842,7 @@ armors:
     builtInWeapons:
       - STR_NULL_LEFT_SHOULDER
       - STR_NULL_RIGHT_SHOULDER
-      - STR_NULL_BACK_PACK
+      - STR_NULL_SMALL_BACKPACK
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDark: 11
@@ -1002,7 +1002,7 @@ armors:
       - STR_RIOT_SHIELD
       - STR_NULL_LEFT_SHOULDER
       - STR_NULL_RIGHT_SHOULDER
-      - STR_NULL_BACK_PACK
+      - STR_NULL_SMALL_BACKPACK
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDark: 11

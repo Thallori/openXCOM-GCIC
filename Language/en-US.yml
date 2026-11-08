@@ -150,6 +150,7 @@ en-US:
   STR_DEAD_SOLDIERS: "Displaced Drones"
   STR_MEMORIAL: "Displaced"
   STR_SOLDIER_BONUSES_FOR: "DRONE BONUSES FOR{NEWLINE}{0}"
+  STR_SOLDIER_TYPE: "SPECIES"
 
   STR_SCIENTISTS: "Servers"
   STR_SCIENTIST: "Server"
@@ -193,6 +194,40 @@ en-US:
   STR_PSIONIC_SKILL_SHORT: "P.Skill>{ALT}{0}"
   STR_PSIONIC_STRENGTH_ABBREVIATION: "PSN"
   STR_PSIONIC_SKILL_ABBREVIATION: "PSK"
+
+  STR_PSISTRENGTHEVAL: "Psi-Sensitivity Evaluation"
+  STR_PSISTRENGTHEVAL_DESC: "Evaluates the psionic sensitivity of all drones after the appropriate research has been completed."
+  STR_ALLOWPSISTRENGTHIMPROVEMENT: "Allow Psi-Sensitivity Improvement"
+  STR_ALLOWPSISTRENGTHIMPROVEMENT_DESC: "Psionic sensitivity of drones can be improved by experience and training."
+  STR_ALLOWPSIONICCAPTURE: "Allow psi-capture"
+  STR_ALLOWPSIONICCAPTURE_DESC: "Mind-controlling all remaining targets results in victory, and they count as live captures."
+  STR_ANYTIMEPSITRAINING: "Psionic training at any time"
+  STR_ANYTIMEPSITRAINING_DESC: "Allows assigning drones to psionic training at any time of the month. Remember, initial training takes from 30 to 60 days."
+  
+  STR_AGGRESSIVERETALIATION_DESC: "USOs will attempt to detect your bases at all times, regardless of their mission parameters."
+  STR_STORAGELIMITSENFORCED_DESC: "Enforces holding cell and item storage limits for live specimens and assets recovered from missions."
+  STR_CANSELLLIVEALIENS: "Live alien sale"
+  STR_CANSELLLIVEALIENS_DESC: "Allows the sale of live aliens, recommended when using storage limits."
+  STR_BATTLEAUTOEND_DESC: "Battles automatically end when the last living target is neutralized."
+  STR_GLOBESEASONS_DESC: "Uses more realistic projection of sunlight on the Geoscape according to planetary axial tilt."
+  STR_SHOWMORESTATSININVENTORYVIEW_DESC: "Show extra information on the selected drone in the inventory screen."
+  STR_WEAPONSELFDESTRUCTION: "Target weapon self-destruction"
+  STR_WEAPONSELFDESTRUCTION_DESC: "Weapons carried by targets will self-destruct if their owner is displaced, like in XCOM 2012."
+  STR_RETAINCORPSES: "Retain interrogated specimens"
+  STR_RETAINCORPSES_DESC: "After \"researching\" living specimens, their body will be added to the base stores, like in XCOM 2012."
+  STR_DISABLEAUTOEQUIP_DESC: "Disable auto-equipping of new drones before battle."
+  STR_DOGFIGHT_SPEED_DESC: "Changes the speed of interception battles between crafts and USOs. Slower speeds can improve performance on low-end devices."
+  STR_DEATH_NOTIFICATIONS_DESC: "Pop up a notification detailing who was killed whenever a drone becomes displaced."
+  STR_INCLUDE_PRIMESTATE_IN_SAVED_LAYOUT_DESC: "Saves grenades primed during pre-battle inventory in the drone's equipment layout."
+  STR_BATTLEHAIRBLEACH: "Enhanced drone sprites"
+  STR_BATTLEHAIRBLEACH_DESC: "Changes drone Battlescape sprites to match their inventory look."
+  STR_NOALIENPANICMESSAGES: "Suppress panic messages for targets"
+  STR_NOALIENPANICMESSAGES_DESC: "Don't show panic messages for targets unless they are visible to the player."
+  STR_ALIENBLEEDING: "Target bleeding"
+  STR_ALIENBLEEDING_DESC: "Allows fatal wounds to be inflicted on most targets."
+  STR_FIELDPROMOTIONS_DESC: "Only drones that were present at the mission site are eligible for promotion."
+  STR_MEETINGPOINT: "Predict USO trajectory"
+  STR_MEETINGPOINT_DESC: "Crafts fly towards a meeting point with the USO based on its current trajectory."
 
   STR_INTERNATIONAL_RELATIONS: "Market Share"
   STR_COUNTRY: "Market"
@@ -335,7 +370,7 @@ en-US:
   STR_OPENXCOM: "Global Contracts"
   STR_SLACKING_INDICATOR: "Unassigned{NEWLINE}svr:{0} fab:{1}"
   STR_LANDED: "Touched Down"
-  STR_BUG_HUNT_ACTIVATED: "Bug Hunt mode activated: targets are visible on the minimap!"
+  STR_BUG_HUNT_ACTIVATED: "Hunt mode activated: targets are visible on the minimap!"
   STR_QUICK_MODE_ACTIVATED: "Zip mode activated.{NEWLINE}Press Ctrl+S again to deactivate."
   STR_QUICK_MODE_DEACTIVATED: "Zip mode deactivated."
 
@@ -391,6 +426,8 @@ en-US:
   STR_LINKED_SHOT_NAME: "Linked"
   STR_LINKED_SHOT_NAME_SHORT: "Linked"
 
+  STR_SLICE_ACTION: "Slice!"
+  STR_FORE_ACTION: "Fore!"
   STR_FASTBALL_ACTION: "Fastball!"
   STR_CURVEBALL_ACTION: "Curveball!"
 
@@ -1550,7 +1587,7 @@ en-US:
   STR_VOLTKNOCKER_UP: "Advanced less-lethal personal defense, simple no-nonsense operation. The rugged knock sticks to almost any surface and delivers professional-grade neuromuscular incapacitation.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -65%{NEWLINE}Range: 8m"
   STR_TASER_PISTOL_CODED: "SSP Taser Pistol (¤)"
   STR_TASER_PISTOL: "SSP Taser Pistol"
-  STR_TASER_PISTOL_UP: "The same innovative electroshock deterrent device used by trusted security contractors for centuries. A strong addition to any self-respecting civilian defense plan.{NEWLINE}{NEWLINE}Not effective against chryssalids.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -65%{NEWLINE}Range: 6m"
+  STR_TASER_PISTOL_UP: "The same innovative electroshock deterrent device used by trusted security contractors for centuries. A strong addition to any self-respecting civil defense plan.{NEWLINE}{NEWLINE}Not effective against chryssalids.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -65%{NEWLINE}Range: 6m"
   STR_TASER_AMMO: "Taser Clip"
 # xn
   STR_XN_LASER_PISTOL: "XN Laser Pistol" #Xeno-Nautics
@@ -1635,26 +1672,26 @@ en-US:
   STR_ELERIUM_BOMB: "Elerium Bomb"
   STR_ELERIUM_BOMB_UP: "{NEWLINE}The most inefficent use of an elerium core yet discovered. A compromised case with a simple timer circuit snapped onto the side. One click, one sub-critcal explosion.{NEWLINE}{NEWLINE}Without the tools to process raw elerium, these bombs cannot be safely disassembled."
 # sporting
-  STR_GOLFWEDGE: "D&O 9-Iron Club"
-  STR_GOLFWEDGE_UP: "Alloy inspired core, multi-species grip, traditional carbon fiber casing. Me-oh-my. How delicious. Amp up your game with our most precise expert design yet and revive the Scot in all of us with every shot.{NEWLINE}{NEWLINE}Stun: +75%; Penetration: -15%" #todo
+  STR_GOLFWEDGE: "D&O 9-Iron Club" #delecto & occurro
+  STR_GOLFWEDGE_UP: "Alloy inspired core, multi-species grip, traditional carbon fiber casing. Me-oh-my. How delicious. Amp up your game with our most precise expert design yet and revive your inner Scot with every shot.{NEWLINE}{NEWLINE}Stun: +75%; Penetration: -15%" #todo
   STR_GOLFDRIVER: "D&O 3-Wood Club"
   STR_GOLFDRIVER_UP: "Maximum flex. Maximum impact. Maximum distance. We've gone through the trouble of testing hundreds of newly patented composites so you don't have to. This is it. We've found the best and made it special, just for you.{NEWLINE}{NEWLINE}Stun: +75%; Penetration: -25%" #todo
   STR_MARSBALL: "D&O Marsball"
   STR_MARSBALL_UP: "Raised dura-seams, supple vat-leather cover, perfected a.grav core. Oh yes. We went there. Be amazed when our ball zips itself right back into your hands, then practice to your heart(s) content.{NEWLINE}{NEWLINE}Range: 8m; Penetration: -30%"
   STR_AIRSOFT_PISTOL: "D&O Air Pistol"
-  STR_AIRSOFT_PISTOL_UP: "Micron percision printing in the front, succulent wood grip in the back. If there's a better way prove our love to you, we haven't heard it. The one. The only. The icon.{NEWLINE}{NEWLINE}Penetration: -35%{NEWLINE}Damage Dropoff: 0.25/Tile" #todo
+  STR_AIRSOFT_PISTOL_UP: "Micron percision printing in the front, succulent wood grip in the back. If there's a better way prove our love to you, we haven't heard it. The one. The only. The icon.{NEWLINE}{NEWLINE}Penetration: -35%{NEWLINE}Damage Dropoff: 0.25/Tile"
   STR_AIRSOFT_RIFLE: "D&O Air Rifle"
-  STR_AIRSOFT_RIFLE_UP: "Olympic-grade air compression, 7-time champion barrel accuracy, and more style than your date can handle. Pneumatics have never been so sexy.{NEWLINE}{NEWLINE}Penetration: -35%{NEWLINE}Damage Dropoff: 0.25/Tile" #todo
-  STR_AIRSOFT_AMMO: "Air BBs"
+  STR_AIRSOFT_RIFLE_UP: "Olympic-grade air compression, 7-time champion barrel accuracy, and more style than your date can handle. Pneumatics have never been so sexy.{NEWLINE}{NEWLINE}Penetration: -35%{NEWLINE}Damage Dropoff: 0.25/Tile"
+  STR_AIRSOFT_AMMO: "Air Pellets"
   STR_PSI_DAZZLER: "D&O PsiSoft Dazzler"
-  STR_PSI_DAZZLER_UP: "Scramble your friends with the lastest declassified super-psi projectors and join in on the fastest growing, safest, spiciest team building excercises anyone can legally buy.{NEWLINE}{NEWLINE}Penetration: +50%; Lethal -90%{NEWLINE}Morale Damage: +200%" #todo
+  STR_PSI_DAZZLER_UP: "Our suspiciously fierce consumer psi projectors enable all those little fantasies we never share with anyone else. Let's scramble that pretty little mind of yours and call it a new sport.{NEWLINE}{NEWLINE}Penetration: +50%; Lethal -90%{NEWLINE}Morale Damage: +200%" #todo
   STR_SPORTBOW: "D&O Compound Bow"
-  STR_SPORTBOW_UP: "{NEWLINE}{NEWLINE}Penetration: +15%" #todo
+  STR_SPORTBOW_UP: "The smooth draw Alaskan EKO-cam classic. Experience the sport that put humanity in charge of a whole planet and show us your beautifully deadly prowess.{NEWLINE}{NEWLINE}Penetration: +15%" #todo
   STR_AUTOBOW: "D&O Auto Bow"
-  STR_AUTOBOW_UP: "{NEWLINE}{NEWLINE}Penetration: +15%" #todo
-  STR_SPORT_ARROWS1: "Sporting Arrow Quiver"
-  STR_SPORT_ARROWS2: "Electric Arrow Quiver"
-  STR_SPORT_ARROWS3: "Explosive Arrow Quiver"
+  STR_AUTOBOW_UP: "Draw weights got you down? Feeling jealous? We think you're doing great. Sit back, relax, and do some self-care while we take care of the unimportant stuff.{NEWLINE}{NEWLINE}No Energy Cost; Penetration: +15%" #todo
+  STR_SPORT_ARROWS1: "Sporting Quick-Quiver"
+  STR_SPORT_ARROWS2: "Electric Quick-Quiver"
+  STR_SPORT_ARROWS3: "Explosive Quick-Quiver"
   STR_DARTROPE: "HRA Dartrope"
   STR_DARTROPE_UP: "{NEWLINE}{NEWLINE}Range: 4m; Penetration: +10%" #todo
 # melee
@@ -1700,7 +1737,7 @@ en-US:
   STR_STIM_MORNING: "Morning Inhaler"
   STR_STIM_MORNING_UP: "{NEWLINE}> Uses: 2{NEWLINE}> Stims: -2 Resiliance, +5 Morale,{NEWLINE}+25 Stun, +5 Energy{NEWLINE}{NEWLINE}Wake up and enjoy medicine. Many formulas exist, though only a few are delicious. A popular caffeine alternative among the executive-class.{NEWLINE}{NEWLINE}Useable on unconcious targets."
   STR_MEDI_SPRAY: "MEDI-Spray"
-  STR_MEDI_SPRAY_UP: "{NEWLINE}> Uses: 2{NEWLINE}> Heals: 1 HP{NEWLINE}{NEWLINE}Seal cuts and scraps with one easy to use alla-natural medical grade adhesive! Kills 99.9% of bacteria on contact! Even works on burns! Contains no CFCs, GMOs, or optchips.{NEWLINE}{NEWLINE}Not a replacement for medical treatment. Do not use if seal is broken."
+  STR_MEDI_SPRAY_UP: "{NEWLINE}> Uses: 2{NEWLINE}> Heals: 1 HP{NEWLINE}{NEWLINE}Seal cuts and scraps with one easy to use alla-natural medical-grade adhesive! Kills 99.9% of bacteria on contact! Even works on burns! Contains no CFCs, GMOs, or optchips.{NEWLINE}{NEWLINE}Not a replacement for medical treatment. Do not use if seal is broken."
   STR_MEDI_FIRST: "MEDI-First"
   STR_MEDI_FIRST_UP: "{NEWLINE}> Uses: 3{NEWLINE}> Heals: 2 HP{NEWLINE}> Stims: 8 Stun, 5 Energy{NEWLINE}{NEWLINE}Automatically diagnoses, treats, documents, and anonymizes your medical data before MEDI-sharing with our affiliates for improved performance. Each subscription covers unlimited access to resupply and live service updates.{NEWLINE}{NEWLINE}Maintenance: $350/Month"
   STR_LMT_LOCK: "(medi-trauma kit unlicensed)"

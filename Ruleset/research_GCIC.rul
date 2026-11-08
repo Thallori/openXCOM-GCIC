@@ -1093,6 +1093,14 @@ research:
     dependencies:
       - STR_SPORTBOW
       - STR_AUTOBOW
+  - name: STR_SPORT_ARROWS2
+    dependencies:
+      - STR_SPORT_ARROWS1
+      - STR_TODO
+  - name: STR_SPORT_ARROWS3
+    dependencies:
+      - STR_SPORT_ARROWS1
+      - STR_TODO
   - name: STR_DARTROPE
     needItem: true
     cost: 5
