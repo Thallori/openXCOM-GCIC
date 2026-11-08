@@ -373,7 +373,7 @@ manufacture:
       - STR_GCIC_PROTOTYPE_LASER_MG
       - STR_SSPAMMO_MANULOCK
     time: 4
-    cost: 120
+    cost: 3200
     refund: true
   - name: STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO1
     category: STR_AMMO_MANUCAT
@@ -381,7 +381,7 @@ manufacture:
       - STR_GCIC_PROTOTYPE_LASER_CANNON
       - STR_SSPAMMO_MANULOCK
     time: 4
-    cost: 120
+    cost: 1000
     refund: true
 
   - name: STR_BARREL_MOTAR_AMMO
@@ -498,7 +498,7 @@ manufacture:
       - STR_ACIDFLASK
       - STR_REDOX
       - STR_TODO_MANULOCK
-    time: 6
+    time: 12
     cost: 40
     refund: true
     requiredItems:
@@ -512,7 +512,7 @@ manufacture:
       - STR_PIPEBOMB
       - STR_GUNPOWDER
       - STR_IRONEYES_MANULOCK
-    time: 6
+    time: 4
     cost: 40
     refund: true
   - name: STR_PHXBOMB_MANU
@@ -546,7 +546,7 @@ manufacture:
       - STR_ELERIUM_CORE
       - STR_ELERIUM_BOMB
       - STR_TODO_MANULOCK
-    time: 6
+    time: 8
     cost: 150
     refund: true
     requiredItems:

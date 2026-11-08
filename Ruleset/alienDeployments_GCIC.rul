@@ -1347,11 +1347,11 @@
             - STR_DART_PISTOL
             - STR_DART_AMMO2
           -
-            - STR_CHEM_SMG
-            - STR_CHEM_SMG_AMMO1
+            - STR_AUTOBOW
+            - STR_SPORT_ARROWS2
           -
-            - STR_CHEM_SMG
-            - STR_CHEM_SMG_AMMO1
+            - STR_AUTOBOW
+            - STR_SPORT_ARROWS2
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO1
@@ -1365,8 +1365,12 @@
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO2
           - 
+            - STR_AIRSOFT_RIFLE
+            - STR_AIRSOFT_AMMO
             - STR_ACIDFLASK
           - 
+            - STR_AIRSOFT_RIFLE
+            - STR_AIRSOFT_AMMO
             - STR_ACIDFLASK
       - alienRank: 6
         lowQty: 3
@@ -1445,27 +1449,45 @@
         itemSets: &wiretapper
           -
             - STR_PIPEBOMB
-            - STR_SKULLJACK
-          -
+            - STR_PIPEBOMB
+            - STR_PIPEBOMB
             - STR_PIPEBOMB
             - STR_SKULLJACK
           -
             - STR_PIPEBOMB
-            - STR_SKULLJACK
-          -
+            - STR_PIPEBOMB
+            - STR_PIPEBOMB
             - STR_PIPEBOMB
             - STR_SKULLJACK
           -
-            - STR_PIPEBOMB
+            - STR_AIRSOFT_PISTOL
+            - STR_AIRSOFT_AMMO
+            - STR_AIRSOFT_AMMO
+            - STR_AIRSOFT_AMMO
             - STR_SKULLJACK
           -
-            - STR_PIPEBOMB
+            - STR_AIRSOFT_PISTOL
+            - STR_AIRSOFT_AMMO
+            - STR_AIRSOFT_AMMO
+            - STR_AIRSOFT_AMMO
             - STR_SKULLJACK
           -
-            - STR_MARSBALL
+            - STR_AIRSOFT_PISTOL
+            - STR_AIRSOFT_AMMO
+            - STR_AIRSOFT_AMMO
+            - STR_AIRSOFT_AMMO
             - STR_SKULLJACK
           -
-            - STR_MARSBALL
+            - STR_AIRSOFT_PISTOL
+            - STR_AIRSOFT_AMMO
+            - STR_AIRSOFT_AMMO
+            - STR_AIRSOFT_AMMO
+            - STR_SKULLJACK
+          -
+            - STR_GOLFWEDGE
+            - STR_SKULLJACK
+          -
+            - STR_GOLFDRIVER
             - STR_SKULLJACK
           -
             - STR_MARSBALL

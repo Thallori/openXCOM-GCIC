@@ -4557,6 +4557,8 @@ items:
       name: STR_SLICE_ACTION
       shortName: STR_SLICE_ACTION
     flatRate: true
+    twoHanded: true
+    oneHandedPenalty: 75
     experienceTrainingMode: 16
     attraction: 10
     armor: 40
@@ -4607,6 +4609,8 @@ items:
       name: STR_FORE_ACTION
       shortName: STR_FORE_ACTION
     flatRate: true
+    twoHanded: true
+    oneHandedPenalty: 75
     experienceTrainingMode: 16
     attraction: 10
     armor: 40
@@ -4962,17 +4966,17 @@ items:
       - STR_VENDOR_PRINTER
       - STR_PSI_DAZZLER
     size: 0.2
-    costBuy: 1199
-    costSell: 300
+    costBuy: 18999
+    costSell: 4750
     transferTime: 4
     bigSprite: 301
     floorSprite: 271
     handSprite: 688
-    bulletSprite: 20 #
+    bulletSprite: 20 #purplyify
     bulletSpeed: -1
     fireSound: 152
     hitSound: 153
-    hitAnimation: 76 #
+    hitAnimation: 76 #purplyify
     invWidth: 1
     invHeight: 3
     battleType: 1
@@ -4993,7 +4997,7 @@ items:
       ToTile: 0.1
     clipSize: -1
     accuracySnap: 70
-    accuracyAimed: 110
+    accuracyAimed: 120
     accuracyMultiplier:
       firing: 0.8
       psiSkill: 0.2
@@ -5001,20 +5005,20 @@ items:
       time: 30
       mana: 1
     costAimed:
-      time: 65
+      time: 75
       mana: 2
     confAimed:
       shots: 2
       shortName: STR_AIMED_MULTIPLE_SHORT
-    snapRange: 4
-    aimRange: 10
+    snapRange: 6
+    aimRange: 12
     dropoff: 3
     kneelBonus: 120
     twoHanded: true
     oneHandedPenalty: 50
     experienceTrainingMode: 26
     attraction: 10
-    armor: 30
+    armor: 40
 
   - type: STR_DARTROPE
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_SPORT_CATEGORY, STR_INFILTRATION_CATEGORY]

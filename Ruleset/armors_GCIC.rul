@@ -21,7 +21,7 @@ armors:
       - STR_NULL_QD_SLOT
     allowsKneeling: true
     visibilityAtDark: 11
-    personalLight: 13
+    personalLight: 14
     heatVision: 20
     frontArmor: 2
     sideArmor: 2
@@ -194,7 +194,7 @@ armors:
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDark: 11
-    personalLight: 13
+    personalLight: 14
     heatVision: 20
     stats: &DuraStats
       health: +5
@@ -683,7 +683,7 @@ armors:
       - STR_NULL_QD_SLOT
     allowsKneeling: true
     visibilityAtDark: 11
-    personalLight: 13
+    personalLight: 14
     heatVision: 20
     weight: -10
     stats: &SkeleStats
@@ -846,7 +846,7 @@ armors:
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDark: 11
-    personalLight: 13
+    personalLight: 14
     heatVision: 20
     weight: 6
     stats:
@@ -1006,7 +1006,7 @@ armors:
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDark: 11
-    personalLight: 13
+    personalLight: 14
     heatVision: 20
     weight: 6
     stats: &AquavestSStats
@@ -1142,7 +1142,7 @@ armors:
       flyDownPercent: [50, 0]
     moveSound: 40
     visibilityAtDark: 9
-    personalLight: 13
+    personalLight: 14
     heatVision: 40
     frontArmor: 25
     sideArmor: 25

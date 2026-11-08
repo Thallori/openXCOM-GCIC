@@ -1673,11 +1673,11 @@ en-US:
   STR_ELERIUM_BOMB_UP: "{NEWLINE}The most inefficent use of an elerium core yet discovered. A compromised case with a simple timer circuit snapped onto the side. One click, one sub-critcal explosion.{NEWLINE}{NEWLINE}Without the tools to process raw elerium, these bombs cannot be safely disassembled."
 # sporting
   STR_GOLFWEDGE: "D&O 9-Iron Club" #delecto & occurro
-  STR_GOLFWEDGE_UP: "Alloy inspired core, multi-species grip, traditional carbon fiber casing. Me-oh-my. How delicious. Amp up your game with our most precise expert design yet and revive your inner Scot with every shot.{NEWLINE}{NEWLINE}Stun: +75%; Penetration: -15%" #todo
+  STR_GOLFWEDGE_UP: "Alloy inspired core, multi-species grip, traditional carbon fiber casing. Me-oh-my. How delicious. Amp up your game with our most precise design yet and revive your inner Scot with every shot.{NEWLINE}{NEWLINE}Stun: +75%; Penetration: -15%"
   STR_GOLFDRIVER: "D&O 3-Wood Club"
-  STR_GOLFDRIVER_UP: "Maximum flex. Maximum impact. Maximum distance. We've gone through the trouble of testing hundreds of newly patented composites so you don't have to. This is it. We've found the best and made it special, just for you.{NEWLINE}{NEWLINE}Stun: +75%; Penetration: -25%" #todo
+  STR_GOLFDRIVER_UP: "Maximum flex. Maximum impact. Maximum distance. We've gone through the trouble of testing hundreds of newly patented composites so you don't have to. This is it. We've found the best and made it special, just for you.{NEWLINE}{NEWLINE}Stun: +75%; Penetration: -25%"
   STR_MARSBALL: "D&O Marsball"
-  STR_MARSBALL_UP: "Raised dura-seams, supple vat-leather cover, perfected a.grav core. Oh yes. We went there. Be amazed when our ball zips itself right back into your hands, then practice to your heart(s) content.{NEWLINE}{NEWLINE}Range: 8m; Penetration: -30%"
+  STR_MARSBALL_UP: "Raised dura-seams, supple vat-leather cover, perfected a.grav core. Oh yes. We went there. Be amazed when our ball zips back into your arms and then practice to your heart(s) content.{NEWLINE}{NEWLINE}Range: 8m; Penetration: -30%"
   STR_AIRSOFT_PISTOL: "D&O Air Pistol"
   STR_AIRSOFT_PISTOL_UP: "Micron percision printing in the front, succulent wood grip in the back. If there's a better way prove our love to you, we haven't heard it. The one. The only. The icon.{NEWLINE}{NEWLINE}Penetration: -35%{NEWLINE}Damage Dropoff: 0.25/Tile"
   STR_AIRSOFT_RIFLE: "D&O Air Rifle"
