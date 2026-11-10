@@ -4988,6 +4988,7 @@ items:
       psiStrength: 0.4
     damageAlter:
       ToMorale: 2.0
+      ToMana: 0.1
       ToHealth: 0.1
       ToWound: 0.1
       RandomWound: true
@@ -6014,8 +6015,8 @@ items:
     categories: [STR_PERKS_CATEGORY]
     #requiresBuy:
     #  - STR_SHARES_SSP
-    costBuy: 33000
-    costSell: 6600
+    costBuy: 54000
+    costSell: 1100
     monthlySalary: -330
     weight: 1
     armor: 255
@@ -6239,7 +6240,7 @@ items:
     name: STR_CORPSE
     categories: [STR_DEBUG_CATEGORY]
     bigSprite: 284
-    floorSprite: 185 #todo
+    floorSprite: 260
     invWidth: 2
     invHeight: 3
     battleType: 11
@@ -6308,7 +6309,7 @@ items:
     name: STR_CORPSE
     categories: [STR_DEBUG_CATEGORY]
     bigSprite: 286
-    floorSprite: 260
+    floorSprite: 262
     invWidth: 2
     invHeight: 3
     battleType: 11
@@ -6790,12 +6791,65 @@ items:
     bigSprite: 235
     floorSprite: 214
     invWidth: 2
-    invHeight: 3    
+    invHeight: 3
     battleType: 11
     weight: 22
     recoveryTransformations:
       STR_BIOMASS: [1]
       STR_DURATHREAD: [1]
+      STR_MEDICAL_CYBERNETICS_CODED: [1]
+    armor: 30
+# vice
+  - type: STR_VICEFARMER_PRIVATE
+    categories: [STR_SPECIMENS_CATEGORY]
+    liveAlien: true
+  - type: STR_VICEFARMER_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 22
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_CONSUMER_CYBERNETICS_CODED: [1]
+    armor: 30
+
+  - type: STR_VICESMUGGLER_PRIVATE
+    categories: [STR_SPECIMENS_CATEGORY]
+    liveAlien: true
+  - type: STR_VICESMUGGLER_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 22
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_PLASTICS: [1]
+      STR_CONSUMER_CYBERNETICS_CODED: [1]
+    armor: 30
+
+  - type: STR_VICEBOSS_PRIVATE
+    categories: [STR_SPECIMENS_CATEGORY]
+    liveAlien: true
+  - type: STR_VICEBOSS_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 302
+    floorSprite: 274
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 22
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_PLASTICS: [1]
       STR_MEDICAL_CYBERNETICS_CODED: [1]
     armor: 30
 # ssp

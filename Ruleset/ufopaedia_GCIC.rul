@@ -2095,6 +2095,90 @@ ufopaedia:
       width: 149
       height: 200
     image_id: WIRETAPPER_CPAL
+# vice
+  - id: STR_VICEFARMERS
+    requires:
+      - STR_VICEFARMER_PRIVATE
+    text: STR_VICEFARMERS_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: ALIGN_TEST_CPAL #todo
+  - id: STR_VICEFARMER_INTERVIEW
+    title: STR_VICEFARMER_INTERVIEW_T
+    requires:
+      - STR_VICEFARMER_INTERVIEW
+    text: STR_VICEFARMER_INTERVIEW_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: ALIGN_TEST_CPAL #todo
+
+  - id: STR_VICESMUGGLERS
+    requires:
+      - STR_VICESMUGGLER_PRIVATE
+    text: STR_VICESMUGGLERS_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: ALIGN_TEST_CPAL
+  - id: STR_VICESMUGGLER_INTERVIEW
+    title: STR_VICESMUGGLER_INTERVIEW_T
+    requires:
+      - STR_VICESMUGGLER_INTERVIEW
+    text: STR_VICESMUGGLER_INTERVIEW_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: ALIGN_TEST_CPAL #todo
+
+  - id: STR_VICEBOSSES
+    requires:
+      - STR_VICEBOSS_PRIVATE
+    text: STR_VICEBOSSES_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: VICEBOSS_CPAL
+  - id: STR_VICEBOSS_INTERVIEW
+    title: STR_VICEBOSS_INTERVIEW_T
+    requires:
+      - STR_VICEBOSS_INTERVIEW
+    text: STR_VICEBOSS_INTERVIEW_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: ALIGN_TEST_CPAL #todo
 # ssp
   - id: STR_SSPGUARDS
     requires:
@@ -2347,6 +2431,11 @@ ufopaedia:
   - id: STR_WIRETAPPER_ARMOR
     requires:
       - STR_WIRETAPPER_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_VICEBOSS_ARMOR
+    requires:
+      - STR_VICEBOSS_ARMOR
     section: STR_COMPETITORS_UC
     type_id: 5
   - id: STR_SSPGUARD_ARMOR

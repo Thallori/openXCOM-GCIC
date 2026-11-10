@@ -125,7 +125,7 @@
     commands:
     - type: addBlock
       size: 2
-
+#fills in edges with 'studio' blocks, then adds random forest tiles inside
   - type: STUDIO_UFO_FOREST
     commands:
     - type: addUFO

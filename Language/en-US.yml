@@ -1248,7 +1248,7 @@ en-US:
   STR_LASER_WEAPONS_CONSTRUCTION: "Laser Weapons Printing"
   STR_LASER_WEAPONS_CONSTRUCTION_UP: "{NEWLINE}Following the examples of XN laser weapons, we have started our own pilot program. Where they had the advantage of laboratories worth more than some moons, we can build off years of itteration and innovation. There will still be trade-offs.{NEWLINE}{NEWLINE}Our designs are {ALT}slower{ALT} to fire, yet more {ALT}accurate{ALT} and efficent without compromising on target spot intensity.{NEWLINE}{NEWLINE}The first successful {ALT}prototype{ALT} has been added to storage. Developing smaller, more precise, higher power, or faster firing variants will require more server time."
   STR_PLASMA_AMMO_CONVERSION: "Elerium Plasma Tuning"
-  STR_PLASMA_AMMO_CONVERSION_UP: "{NEWLINE}Plasma condensors are a complex technology using several principles that are generally well known, but with specifics kept secret for the profit and power motives.{NEWLINE}{NEWLINE}Charging a condensor is considerably easier, assuming the presence of either a multi-gigawatt powerplant or an elerium core. Elerium being the eaiser and cheaper option.{NEWLINE}{NEWLINE}{ALT}Machining{ALT} can tune a core's output to a given condensor's expected amperage. {ALT}Recasting{ALT} is required to reverse the operation."
+  STR_PLASMA_AMMO_CONVERSION_UP: "{NEWLINE}Plasma condensors are a complex technology using several principles that are generally understood, but specifics are kept secret under the profit and power motives.{NEWLINE}{NEWLINE}Charging a condensor is considerably easier, assuming the presence of either a multi-gigawatt powerplant or an elerium core. Elerium being the eaiser and cheaper option.{NEWLINE}{NEWLINE}{ALT}Machining{ALT} can tune a core's output to a given condensor's expected amperage. {ALT}Recasting{ALT} is required to reverse the operation."
   STR_BIOMEDICAL: "Biologics"
   STR_BIOMEDICAL_UP: "{NEWLINE}Most in-system species have been modified to be compatible with the native enviroment (oxygen, water, sunlight) and so share a few biological mechanisms. This overlap is well documented, but hard data is usually redacted under corporate privacy laws.{NEWLINE}{NEWLINE}With access to {ALT}medical facilities{ALT} we can perform self-tests and sort published theories into proven facts. Reproducing these {ALT}poisons{ALT} and {ALT}medicines{ALT} infringes on copyrights, preventing mass-printing schemes."
   STR_BIOCODING: "Biocoding"
@@ -1375,7 +1375,7 @@ en-US:
   STR_DRONE_DEEP_ITEM: "DRONE/NEWT" #pleurosaura
   STR_DRONE_DEEP_ITEM_UP: "{NEWLINE}Representation: 2.5%{NEWLINE}Stapled: 4.6%{NEWLINE}{NEWLINE}Alien designed chemical and amphibious warfare species, now free to climb other careers. External lungs filter air and water slowly, but effectively. Fine-tuned electroreceptors across their skin allow for direct machine interfacing, or sloughed off as an emergency shock weapon.{NEWLINE}{NEWLINE}Electrical/Chemical/Smoke Resist: 50%{NEWLINE}{NEWLINE}(+) Throwing, Reactions{NEWLINE}(-) Stamina"
   STR_DRONE_FLOATER_ITEM: "DRONE/FLOATER" #archoropoda
-  STR_DRONE_FLOATER_ITEM_UP: "{NEWLINE}Representation: 1.2%{NEWLINE}Stapled: 43.9%{NEWLINE}{NEWLINE}Cybernetically dependent organism and neuroplastic adaptation savants. Born entirely biological, most organs will fail by adolescence. Replacements are celebrated, with leg day holding special significance as the first time they can join their peers in the sky.{NEWLINE}{NEWLINE}Flying, Cannot Run{NEWLINE}{NEWLINE}(+) TU, Health{NEWLINE}(-) Reactions"
+  STR_DRONE_FLOATER_ITEM_UP: "{NEWLINE}Representation: 1.2%{NEWLINE}Stapled: 43.9%{NEWLINE}{NEWLINE}Cybernetically dependent organism and neuroplastic adaptation savants. Born entirely biological, most organs will fail by adolescence. Replacements are celebrated, with leg day holding special significance as the first time they can join their peers in the sky.{NEWLINE}{NEWLINE}Flying, Running Uses More Energy{NEWLINE}{NEWLINE}(+) TU, Health{NEWLINE}(-) Reactions"
 # transformations
   STR_DRONE_IMMORTALITY: "Drone Immortality"
   STR_DRONE_IMMORTALITY_UP: "{NEWLINE}Baseline drones begin as clumsy extensions of our minds and bodies, tools that take time for us to learn how to wield effectively. Because each mind is unique, our total skillset cannot easily be transferred between neural networks. When a drone is {ALT}displaced{ALT}, everything we've learned through them is lost.{NEWLINE}{NEWLINE}If we become reliant on a single drone, we can key them to a {ALT}bionic interlace{ALT}. Allowing us to order a custom clone and overwrite their brain with our backup."
@@ -1500,7 +1500,7 @@ en-US:
   STR_CHRYSSALID_WEAPON: "Implant"
   STR_ZOMBIE_WEAPON: "Tetanicbreak"
   STR_MUCKSTAR_WEAPON: "Electrobolt"
-  STR_CELATID_WEAPON: "EnZYomatic Spray"
+  STR_CELATID_WEAPON: "Enzymatic Spray"
   STR_ROBOSPHERE_WEAPON: "Multitool"
   STR_CYFURB_WEAPON: "Undercharged Plasmabolt"
   STR_HOLOMUTON_WEAPON: "(Sim) Assault Plasma"
@@ -1684,7 +1684,7 @@ en-US:
   STR_AIRSOFT_RIFLE_UP: "Olympic-grade air compression, 7-time champion barrel accuracy, and more style than your date can handle. Pneumatics have never been so sexy.{NEWLINE}{NEWLINE}Penetration: -35%{NEWLINE}Damage Dropoff: 0.25/Tile"
   STR_AIRSOFT_AMMO: "Air Pellets"
   STR_PSI_DAZZLER: "D&O PsiSoft Dazzler"
-  STR_PSI_DAZZLER_UP: "Our suspiciously fierce consumer psi projectors enable all those little fantasies we never share with anyone else. Let's scramble that pretty little mind of yours and call it a new sport.{NEWLINE}{NEWLINE}Penetration: +50%; Lethal -90%{NEWLINE}Morale Damage: +200%" #todo
+  STR_PSI_DAZZLER_UP: "Our suspiciously fierce consumer psi projectors enable all those little fantasies we never share with anyone else. Let's scramble that pretty little mind of yours and call it a new sport.{NEWLINE}{NEWLINE}Penetration: +50%; Lethal -90%{NEWLINE}Morale Damage: +200%; Resiliance Damage: +10%" #todo
   STR_SPORTBOW: "D&O Compound Bow"
   STR_SPORTBOW_UP: "The smooth draw Alaskan EKO-cam classic. Experience the sport that put humanity in charge of a whole planet and show us your beautifully deadly prowess.{NEWLINE}{NEWLINE}Penetration: +15%" #todo
   STR_AUTOBOW: "D&O Auto Bow"
@@ -1924,6 +1924,32 @@ en-US:
   STR_WIRETAPPER_INTERVIEW_T: "I/Wiretapper"
   STR_WIRETAPPER_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}'I think the last time I knew that was the sixties. Do drones remember the sixties?'{NEWLINE}{NEWLINE}[...]{NEWLINE}'Of course I was a kid, probably even had legs and dreams. Jerkass. Hey, got a calculator back there?'{NEWLINE}{NEWLINE}[...]{NEWLINE}'Listen, I make bad life choices. Sometimes they come back to bite me. Sometimes they save me. I think I can part with five mistakes and still be feared. How's that sound?'{NEWLINE}{NEWLINE}EXTORSION PENALTY: 30 Liquidity"
 
+  STR_VICE: "ELYVICE"
+  STR_VICEFARMER_PUBLIC: "Elyvice Cazadora"
+  STR_VICEFARMER_PRIVATE: "Elyvice Cazadora"
+  STR_VICEFARMERS: "Cazadoras"
+  STR_VICEFARMERS_UP: "todo{NEWLINE}{NEWLINE}PROCESSED: Consumer Cyberware{NEWLINE}RISK CLASS: Conventional"
+  STR_VICEFARMER_ARMOR: "Cazadora Analysis"
+  STR_VICEFARMER_INTERVIEW: "INTERVIEW: Elyvice Cazadora"
+  STR_VICEFARMER_INTERVIEW_T: "I/Cazadora"
+  STR_VICEFARMER_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}todo{NEWLINE}{NEWLINE}EXTORSION PENALTY: xx Liquidity"
+  STR_VICESMUGGLER_PUBLIC: "Elyvice Matutera"
+  STR_VICESMUGGLER_PRIVATE: "Elyvice Matutera"
+  STR_VICESMUGGLERS: "Matuteras"
+  STR_VICESMUGGLERS_UP: "todo{NEWLINE}{NEWLINE}PROCESSED: Consumer Cyberware, Durathread{NEWLINE}RISK CLASS: Security"
+  STR_VICESMUGGLER_ARMOR: "Matutera Analysis"
+  STR_VICESMUGGLER_INTERVIEW: "INTERVIEW: Elyvice Matutera"
+  STR_VICESMUGGLER_INTERVIEW_T: "I/Matutera"
+  STR_VICESMUGGLER_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}todo{NEWLINE}{NEWLINE}EXTORSION PENALTY: xx Liquidity"
+  STR_VICEBOSS_PUBLIC: "Elyvice Capodecina"
+  STR_VICEBOSS_PRIVATE: "Elyvice Capodecina"
+  STR_VICEBOSSES: "Capodecina"
+  STR_VICEBOSSES_UP: "todo{NEWLINE}{NEWLINE}PROCESSED: Medical Cyberware, Aqua-Plastics{NEWLINE}RISK CLASS: Security"
+  STR_VICEBOSS_ARMOR: "Capodecina Analysis"
+  STR_VICEBOSS_INTERVIEW: "INTERVIEW: Elyvice Capodecina"
+  STR_VICEBOSS_INTERVIEW_T: "I/Capodecina"
+  STR_VICEBOSS_INTERVIEW_UP: "INTERVIEW EXERPT{NEWLINE}{NEWLINE}[...]{NEWLINE}todo{NEWLINE}{NEWLINE}EXTORSION PENALTY: xx Liquidity"
+
   STR_SSP: "SSP"
   STR_SSPGUARD_PUBLIC: "SSP Guard"
   STR_SSPGUARD_PRIVATE: "SSP Guard"
@@ -1969,7 +1995,7 @@ en-US:
   STR_MUCKSTAR_ARMOR_UP: "Attack Damage: 35 Electrical"
   STR_CELATID: "Celatid"
   STR_CELATIDS: "Celatids"
-  STR_CELATIDS_UP: "Migratory enZYmatic xenofauna. A sponge-like mesh of unspecialized cells, birthed in the garden cores and mature on its journey outward. As a group, they act as the first-response system of the xenobiome immune system. Digesting any invaders and leaving the remains behind for other xenoforms.{NEWLINE}{NEWLINE}The gastric acids it sprays can melt flesh down to bone in less than a minute. 1/4 MEDI corpse exchange chance.{NEWLINE}{NEWLINE}RISK CLASS: Conventional"
+  STR_CELATIDS_UP: "Migratory enzymatic xenofauna. A sponge-like mesh of unspecialized cells, birthed in the garden cores and mature on its journey outward. As a group, they act as the first-response system of the xenobiome immune system. Digesting any invaders and leaving the remains behind for other xenoforms.{NEWLINE}{NEWLINE}The gastric acids it sprays can melt flesh down to bone in less than a minute. 1/4 MEDI corpse exchange chance.{NEWLINE}{NEWLINE}RISK CLASS: Conventional"
   STR_CELATID_ARMOR: "Celatid Analysis"
   STR_CELATID_ARMOR_UP: "Attack Damage: 20 Chemical"
 

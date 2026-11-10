@@ -10,7 +10,7 @@ like vanilla, an enemy's aiming chances and armour are halved on the easiest dif
 
 the easiest difficulty should be blind-beatable by someone who has never touched an x-com before, but that's impossible to balance for without a playertester who has never played an x-com before. if you're out there and you're playing this mod as your introduction, you cannot be helped because you probably don't exist.
 
-the highest difficulty has been balanced around the dev being able to complete a mission with expected equipment, above average stats, and without save scumming more than 50% of the time. this might be too harsh, but hey, highest difficulty. if this isn't harsh enough, there's always room to make things harder.
+the highest difficulty has been balanced around the dev being able to complete a mission with expected equipment, above average stats, and without save scumming more than 50% of the time. this might be too harsh, but hey, highest difficulty. if this isn't harsh enough, there's always room to go harder.
 
 almost all loot can only be sold for 25% of what it costs to buy. this to make the corporatocracy feel oppressive even in the geoscape. the economy has also been balanced around selling big ticket items that you probably want to keep; having the best stuff actually be worth at lot means you should be picking and choosing your favourites and giving the rest up. this will hopefully avoid the situation where you need some cash, sell all your trash, and actually have enough to get what you need. trash is trash, your forgotten pockets only have pennies.
 
@@ -44,6 +44,8 @@ damage range remains at 100, meaning all stated damage can do between 0 and 200%
 sniper rifles have a damage roll of 50%-200%
 
 most mods allow civilians to pick up weapons, this mod does not because there doesn't seem to be a way to stop a civilian from going to your weapons pile and plucking out the biggest, scariest, most exotic and esoteric gun and using it like they were born with it. this also means you can't just bring extra pistols to terror missions and throw them at civilians to give them a fighting chance. sorry about that.
+
+an armour's dodge modifer only affects melee. while other mods decrease this dodge chance depending on if you're attacking someone from behind, that isn't the case here because doing a little dance around the enemy feels kinda silly when (in a realistic scenario) you wouldn't just turn your back on someone coming at you with a sword.
 
 cqc (a common mod feature that lets someone shove a gun out of the way when standing in an adjcent tile) is not used. this is mainly to avoid the situation where a muton could cause your shot to go wild, even when they're not facing you and around a corner. cqc is good because it means you can't go up to someone and be guarenteed to hit the entire full auto burst into the back of their skull, but its bad because its hard to find a good balance. if cqc is too unreliable, then you can't park someone next to the ufo door to act as a safety net for everyone else to approach. if cqc is too reliable, then there's no point in ever trying to shoot someone from point-blank range. instead, all melee attacks do tu damage so if you don't kill them in that shot, you might end up trapped until next turn.
 

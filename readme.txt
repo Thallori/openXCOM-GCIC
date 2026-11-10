@@ -95,6 +95,7 @@ X-Com Files/Final Mod Pack		[mod]
   Armored Vest				[touchup+recolour]	(robin)
   Muckstar				[touchup+animated]
   Zombie				[touchup]
+  Osiron Fixer				[remix]
   Robosphere Inventory			[touchup]
   Bleed+Burn+Shock Icons		[touchup+recolour]
   Map Sprites				[none+touchup+recolour]

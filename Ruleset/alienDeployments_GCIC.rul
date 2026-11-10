@@ -2182,7 +2182,52 @@
         dQty: 1
         percentageOutsideUfo: 0
         extraRandomItems: *ironExtra
-        itemSets: *breakerSetPrivate #make slightly better
+        itemSets:
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_BARREL_MOTAR
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_BARREL_MOTAR
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_BARREL_MOTAR
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_GOLFWEDGE
+            - STR_BOUNTY_1
+          -
+            - STR_GOLFWEDGE
+            - STR_BOUNTY_1
+          -
+            - STR_GOLFDRIVER
+            - STR_BOUNTY_1
+          -
+            - STR_GOLFDRIVER
+            - STR_BOUNTY_1
       - alienRank: 4
         lowQty: 2
         medQty: 2

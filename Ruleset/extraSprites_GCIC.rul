@@ -243,6 +243,7 @@ extraSprites:
       299: Resources/Items/Multi/Ammo/compoundbow_ammo3_bigob.png
       300: Resources/UI/Voids/null_small_backpack.png
       301: Resources/Items/Psi/psi_soft_bigob.png
+      302: Resources/Factions/Vice/viceboss_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -420,6 +421,7 @@ extraSprites:
       271: Resources/Items/Psi/psi_soft_floorob.png
       272: Resources/Items/Martial/golfwedge_floorob.png
       273: Resources/Items/Martial/golfdriver_floorob.png
+      274: Resources/Factions/Vice/viceboss_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -1084,6 +1086,19 @@ extraSprites:
     height: 720
     files:
       0: Resources/Factions/Netrunners/wiretapper_sprite.png
+# vice
+  - typeSingle: VICEBOSS_CPAL
+    fileSingle: Resources/Factions/Vice/viceboss_CPAL.png
+  - typeSingle: VICEBOSS.SPK
+    fileSingle: Resources/Factions/Vice/viceboss_inventory.png
+  - type: VICEBOSS.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Factions/Vice/viceboss_sprite.png
+
 # ssp
   - typeSingle: SSPGUARD_CPAL
     fileSingle: Resources/Factions/SSP/sspguard_CPAL.png

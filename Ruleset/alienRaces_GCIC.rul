@@ -49,6 +49,23 @@
       - STR_WIRETAPPER_PRIVATE #12
     retaliationAggression: -100
 
+  - id: STR_VICE
+    members:
+      - STR_VICEBOSS_PUBLIC #0
+      - STR_VICEBOSS_PUBLIC #1
+      - STR_VICEBOSS_PUBLIC #2
+      - STR_VICEBOSS_PUBLIC #3
+      - STR_VICESMUGGLER_PUBLIC #4
+      - STR_VICEFARMER_PUBLIC #5
+      - STR_VICEFARMER_PRIVATE #6
+      - STR_VICESMUGGLER_PRIVATE #7
+      - STR_VICEBOSS_PRIVATE #8
+      - STR_VICEBOSS_PRIVATE #9
+      - STR_VICEBOSS_PRIVATE #10
+      - STR_VICEBOSS_PRIVATE #11
+      - STR_VICEBOSS_PRIVATE #12
+    retaliationAggression: -100
+
   - id: STR_SSP
     members:
       - STR_SSPSUPERVISOR_PRIVATE #0

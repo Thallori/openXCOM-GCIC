@@ -409,7 +409,7 @@ alienMissions:
     spawnZone: 1 #rural
     raceWeights:
       0:
-          STR_IRONEYES: 100 #todo
+          STR_VICE: 100
     waves:
       - ufo: STR_SSP_UNDERCOVER_1
         count: 1

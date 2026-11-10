@@ -232,6 +232,7 @@ recommendedUserOptions:
   oxceResearchScrollSpeed: 1
   oxceShowETAMode: 2
   oxcePediaSortResistances: 1
+  #oxceShowBurningAsWounded: true
 
 constants:
   # explosionOffset: 8

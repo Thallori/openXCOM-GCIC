@@ -277,6 +277,8 @@ soldiers:
       - RandomNames/Hacked.nam
     deathMale: [113, 114, 115]
     deathFemale: [113, 114, 115]
+    avatarOffsetX: 68
+    avatarOffsetY: 45
 
   - type: STR_CRACKED_DEEP_DRONE
     costSalary: 300
@@ -345,6 +347,7 @@ soldiers:
       - RandomNames/Hacked.nam
     deathMale: [126, 141, 142]
     deathFemale: [126, 141, 142]
+    avatarOffsetY: 57
 
   - type: STR_CRACKED_FLOATER_DRONE
     costSalary: 450
@@ -413,6 +416,8 @@ soldiers:
       - RandomNames/Hacked.nam
     deathMale: [143, 144, 145]
     deathFemale: [143, 144, 145]
+    avatarOffsetX: 68
+    avatarOffsetY: 46
 
 #  - type: STR_CRACKED_PLACEHOLDER_DRONE
 #    requires:

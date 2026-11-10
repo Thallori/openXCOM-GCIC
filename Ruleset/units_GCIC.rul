@@ -370,7 +370,7 @@ units:
     value: 1
     deathSound: [143, 144, 145]
     builtInWeaponSets: *drone2LaserMedium
-#criminal faction
+#augment faction
   - type: STR_BOOSTER_PUBLIC
     race: STR_IRONEYES
     rank: STR_RANK_5
@@ -593,7 +593,7 @@ units:
     liveAlien: STR_BOUNTY_1
     stats:
       tu: 50
-      stamina: 50
+      stamina: 60
       health: 35
       bravery: 70
       reactions: 40
@@ -619,7 +619,7 @@ units:
     rank: STR_RANK_5
     stats:
       tu: 50
-      stamina: 50
+      stamina: 60
       health: 35
       bravery: 70
       reactions: 40
@@ -645,7 +645,7 @@ units:
     rank: STR_RANK_4
     stats:
       tu: 50
-      stamina: 50
+      stamina: 45
       health: 35
       bravery: 70
       reactions: 45
@@ -692,6 +692,99 @@ units:
     aggression: 1
     sniper: 20
     canSurrender: true
+#xenodrug faction
+  - &refViceFarmer
+    type: STR_VICEFARMER_PRIVATE
+    race: STR_VICE
+    rank: STR_RANK_5
+    stats:
+      tu: 45
+      stamina: 40
+      health: 35
+      bravery: 70
+      reactions: 40
+      firing: 35
+      throwing: 45
+      melee: 30
+      strength: 35
+      psiStrength: 20
+      psiSkill: 0
+      mana: 15
+    armor: STR_SKIPTRACER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: -5
+    deathSound: [44, 45, 46]
+    intelligence: 2
+    aggression: 1
+    sniper: 20
+    moraleLossWhenKilled: 50
+    canSurrender: true
+  - &refViceSmuggler
+    type: STR_VICESMUGGLER_PRIVATE
+    race: STR_VICE
+    rank: STR_RANK_4
+    stats:
+      tu: 50
+      stamina: 60
+      health: 40
+      bravery: 70
+      reactions: 40
+      firing: 45
+      throwing: 45
+      melee: 30
+      strength: 30
+      psiStrength: 30
+      psiSkill: 0
+      mana: 15
+    armor: STR_VICESMUGGLER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: -12
+    deathSound: [44, 45, 46]
+    intelligence: 2
+    aggression: 1
+    sniper: 20
+    canSurrender: true
+  - &refViceBoss
+    type: STR_VICEBOSS_PRIVATE
+    race: STR_VICE
+    rank: STR_RANK_3
+    stats:
+      tu: 55
+      stamina: 55
+      health: 50
+      bravery: 90
+      reactions: 35
+      firing: 50
+      throwing: 40
+      melee: 55
+      strength: 55
+      psiStrength: 30
+      psiSkill: 0
+      mana: 15
+    armor: STR_VICEBOSS_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: -20
+    deathSound: [113, 114, 115]
+    intelligence: 2
+    aggression: 2
+    sniper: 20
+    canSurrender: true
+
+  - type: STR_VICEFARMER_PUBLIC
+    refNode: *refViceFarmer
+    liveAlien: STR_BOUNTY_1
+    value: 5
+  - type: STR_VICESMUGGLER_PUBLIC
+    refNode: *refViceSmuggler
+    liveAlien: STR_BOUNTY_1
+    value: 12
+  - type: STR_VICEBOSS_PUBLIC
+    refNode: *refViceBoss
+    liveAlien: STR_BOUNTY_1
+    value: 20
 #security faction
   - &refSSPGuard
     type: STR_SSPGUARD_PRIVATE
