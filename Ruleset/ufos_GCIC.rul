@@ -51,6 +51,7 @@ ufos:
     reload: 75
     breakOffTime: 500
     missionScore: 0
+    splashdownSurvivalChance: 0
     battlescapeTerrainData:
       name: STR_HOLOUFO_SMALL
       mapDataSets:
@@ -73,6 +74,7 @@ ufos:
     reload: 75
     breakOffTime: 300
     missionScore: 0
+    splashdownSurvivalChance: 0
     battlescapeTerrainData:
       name: STR_HOLOUFO_FIGHTER
       mapDataSets:
@@ -95,6 +97,7 @@ ufos:
     reload: 50
     breakOffTime: 500
     missionScore: 0
+    splashdownSurvivalChance: 0
     battlescapeTerrainData:
       name: STR_UFO_HARVESTER
       mapDataSets:
@@ -124,6 +127,7 @@ ufos:
     fireSound: 101
     breakOffTime: 250
     missionScore: 0
+    splashdownSurvivalChance: 0
     battlescapeTerrainData:
       name: STR_UFO_AIRCAR_IRON1
       mapDataSets:
@@ -147,6 +151,7 @@ ufos:
     fireSound: 101
     breakOffTime: 250
     missionScore: 0
+    splashdownSurvivalChance: 0
     battlescapeTerrainData:
       name: STR_UFO_AIRCAR_IRON2
       mapDataSets:
@@ -401,9 +406,8 @@ ufos:
         - ENTRY
       mapBlocks:
         - name: HACIENDA0
-          width: 30
+          width: 40
           length: 30
-          craftInventoryTile: [28,28,0]
           items:
             STR_CRIMINAL_CONTAINER_1:
               - [10, 1, 0]

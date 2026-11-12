@@ -917,6 +917,14 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ARMOR_PLEX_CPAL
+  - id: STR_BELLHOP_DRONE_ARMOR
+    requires:
+      - STR_BELLHOP_DRONE_ARMOR
+    text: STR_BELLHOP_DRONE_ARMOR_UP
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ARMOR_PLEX_CPAL
 
   - id: STR_GCIC_DRONE_ARMOR
     requires:

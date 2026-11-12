@@ -55,7 +55,7 @@
       STR_RIGHT_LEG: 10
       STR_RIGHT_SHOULDER: 12
   - id: STR_RIGHT_LEG
-    listOrder: 20
+    listOrder: 30
     costs:
       STR_QD_SLOT: 10
       STR_BACK_PACK: 14
@@ -67,7 +67,7 @@
       STR_RIGHT_HAND: 4
       STR_RIGHT_SHOULDER: 12
   - id: STR_LEFT_LEG
-    listOrder: 30
+    listOrder: 20
     costs:
       STR_QD_SLOT: 10
       STR_BACK_PACK: 14

@@ -2855,16 +2855,13 @@ items:
       ToTile: 0.70
     accuracySnap: 60
     accuracyAuto: 50
-    accuracyAimed: 85
     accuracyMultiplier:
       firing: 1.0
       flatHundred: 0.20
     tuSnap: 40
     tuAuto: 65
-    tuAimed: 45
     snapRange: 16
     autoRange: 10
-    aimRange: 24
     confSnap:
       shots: 2
       shortName: STR_SNAP_MULTIPLE_SHORT
@@ -2910,16 +2907,13 @@ items:
       - STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1_NORECOVER
     accuracySnap: 60
     accuracyAuto: 50
-    accuracyAimed: 85
     accuracyMultiplier:
       firing: 1.0
       flatHundred: 0.20
     tuSnap: 40
     tuAuto: 65
-    tuAimed: 45
     snapRange: 16
     autoRange: 10
-    aimRange: 24
     confSnap:
       shots: 2
       shortName: STR_SNAP_MULTIPLE_SHORT
@@ -4712,11 +4706,12 @@ items:
     aimRange: 16
     dropoff: 3
     kneelBonus: 110
+    noLOSAccuracyPenalty: 75
     experienceTrainingMode: 17
     attraction: 10
     armor: 30
   - type: STR_AIRSOFT_RIFLE
-    categories: [STR_UNLICENSED_CATEGORY, STR_AQUATIC_CATEGORY, STR_VACUUM_CATEGORY, STR_SPORT_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
+    categories: [STR_UNLICENSED_CATEGORY, STR_AQUATIC_CATEGORY, STR_VACUUM_CATEGORY, STR_SPORT_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
     requiresBuy:
       - STR_VENDOR_PRINTER
       - STR_AIRSOFT_RIFLE
@@ -6016,7 +6011,7 @@ items:
     #requiresBuy:
     #  - STR_SHARES_SSP
     costBuy: 54000
-    costSell: 1100
+    costSell: 11000
     monthlySalary: -330
     weight: 1
     armor: 255
@@ -6806,8 +6801,8 @@ items:
   - type: STR_VICEFARMER_CORPSE
     name: STR_CORPSE
     categories: [STR_DEBUG_CATEGORY]
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 304
+    floorSprite: 276
     invWidth: 2
     invHeight: 3
     battleType: 11
@@ -6823,15 +6818,15 @@ items:
   - type: STR_VICESMUGGLER_CORPSE
     name: STR_CORPSE
     categories: [STR_DEBUG_CATEGORY]
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 303
+    floorSprite: 275
     invWidth: 2
     invHeight: 3
     battleType: 11
     weight: 22
     recoveryTransformations:
       STR_BIOMASS: [1]
-      STR_PLASTICS: [1]
+      STR_DURATHREAD: [1]
       STR_CONSUMER_CYBERNETICS_CODED: [1]
     armor: 30
 

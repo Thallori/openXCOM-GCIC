@@ -244,6 +244,8 @@ extraSprites:
       300: Resources/UI/Voids/null_small_backpack.png
       301: Resources/Items/Psi/psi_soft_bigob.png
       302: Resources/Factions/Vice/viceboss_bigob.png
+      303: Resources/Factions/Vice/vicesmuggler_bigob.png
+      304: Resources/Factions/Vice/vicefarmer_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -422,6 +424,8 @@ extraSprites:
       272: Resources/Items/Martial/golfwedge_floorob.png
       273: Resources/Items/Martial/golfdriver_floorob.png
       274: Resources/Factions/Vice/viceboss_floorob.png
+      275: Resources/Factions/Vice/vicesmuggler_floorob.png
+      276: Resources/Factions/Vice/vicefarmer_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -677,10 +681,14 @@ extraSprites:
   - typeSingle: SHARK__2__M2_SHELL
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_M2.png
 # deep
-  - typeSingle: DEEP__2__F0_SHELL
+  - typeSingle: DEEP__2__F0_HANDS
     fileSingle: Resources/Armors/Bodies/Deep/DEEPHANDS_F0.png
-  - typeSingle: DEEP__2__M0_SHELL
+  - typeSingle: DEEP__2__M0_HANDS
     fileSingle: Resources/Armors/Bodies/Deep/DEEPHANDS_F0.png
+  - typeSingle: DEEP__8__F0_HEAD
+    fileSingle: Resources/Armors/Bodies/Deep/DEEPHEAD_M0.png
+  - typeSingle: DEEP__8__M0_HEAD
+    fileSingle: Resources/Armors/Bodies/Deep/DEEPHEAD_M0.png
 # floater
   - typeSingle: FLOATER__2__F0_SHELL
     fileSingle: Resources/Armors/Bodies/Floaters/FLOATER_M0.png
@@ -702,7 +710,7 @@ extraSprites:
   - typeSingle: SHARK__7__WORKSUIT
     fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_inventory.png
   - typeSingle: DEEP__7__WORKSUIT
-    fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_inventory_deep.png
+    fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_inventory.png
   - typeSingle: FLOATER__7__WORKSUIT
     fileSingle: Resources/Armors/Anthros/Worksuit/worksuit_inventory_floater.png
   - type: WORKSUIT_HUMAN.PCK
@@ -740,16 +748,62 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Worksuit/worksuit_sprite_floater.png
+# bellhop
+  - typeSingle: HUMAN__7__BELLHOP
+    fileSingle: Resources/Armors/Anthros/Bellhop/bellhop_inventory.png
+  - typeSingle: HYBRID__7__BELLHOP
+    fileSingle: Resources/Armors/Anthros/Bellhop/bellhop_inventory.png
+  - typeSingle: SHARK__7__BELLHOP
+    fileSingle: Resources/Armors/Anthros/Bellhop/bellhop_inventory.png
+  - typeSingle: DEEP__7__BELLHOP
+    fileSingle: Resources/Armors/Anthros/Bellhop/bellhop_inventory.png
+  - typeSingle: FLOATER__7__BELLHOP
+    fileSingle: Resources/Armors/Anthros/Bellhop/bellhop_inventory_floater.png
+  - type: BELLHOP_HUMAN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Bellhop/bellhop_sprite_human.png
+  - type: BELLHOP_HYBRID.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Bellhop/bellhop_sprite_hybrid.png
+  - type: BELLHOP_SHARK.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Bellhop/bellhop_sprite_shark.png
+  - type: BELLHOP_DEEP.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Bellhop/bellhop_sprite_deep.png
+  - type: BELLHOP_FLOATER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Bellhop/bellhop_sprite_floater.png
 # dura
-  - typeSingle: HUMAN__7__DURA
+  - typeSingle: HUMAN__6__DURA
     fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory.png
-  - typeSingle: HYBRID__7__DURA
+  - typeSingle: HYBRID__6__DURA
     fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory.png
-  - typeSingle: SHARK__7__DURA
+  - typeSingle: SHARK__6__DURA
     fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory.png
-  - typeSingle: DEEP__7__DURA
-    fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory_deep.png
-  - typeSingle: FLOATER__7__DURA
+  - typeSingle: DEEP__6__DURA
+    fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory.png
+  - typeSingle: FLOATER__6__DURA
     fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory_floater.png
   - type: DURA_HUMAN.PCK
     width: 512
@@ -788,15 +842,15 @@ extraSprites:
       0: Resources/Armors/Anthros/Duraware/dura_sprite_floater.png
 # duravest
   - typeSingle: HUMAN__7__DURAVEST
-    fileSingle: Resources/Armors/Anthros/Duraware/duravest_inventory.png
+    fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory_v.png
   - typeSingle: HYBRID__7__DURAVEST
-    fileSingle: Resources/Armors/Anthros/Duraware/duravest_inventory.png
+    fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory_v.png
   - typeSingle: SHARK__7__DURAVEST
-    fileSingle: Resources/Armors/Anthros/Duraware/duravest_inventory.png
+    fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory_v.png
   - typeSingle: DEEP__7__DURAVEST
-    fileSingle: Resources/Armors/Anthros/Duraware/duravest_inventory_deep.png
+    fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory_v.png
   - typeSingle: FLOATER__7__DURAVEST
-    fileSingle: Resources/Armors/Anthros/Duraware/duravest_inventory_floater.png
+    fileSingle: Resources/Armors/Anthros/Duraware/dura_inventory_v.png
   - type: DURAVEST_HUMAN.PCK
     width: 512
     height: 720
@@ -840,7 +894,7 @@ extraSprites:
   - typeSingle: SHARK__7__JUMPSUIT
     fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory.png
   - typeSingle: DEEP__7__JUMPSUIT
-    fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory_deep.png
+    fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory.png
   - typeSingle: FLOATER__7__JUMPSUIT
     fileSingle: Resources/Armors/Anthros/Jumpsuit/jumpsuit_inventory_floater.png
   - type: JUMPSUIT_HUMAN.PCK
@@ -886,7 +940,7 @@ extraSprites:
   - typeSingle: SHARK__7__SKELE
     fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_inventory.png
   - typeSingle: DEEP__7__SKELE
-    fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_inventory_deep.png
+    fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_inventory.png
   - typeSingle: FLOATER__7__SKELE
     fileSingle: Resources/Armors/Anthros/Exoskeleton/exoskeleton_inventory_floater.png
   - type: SKELE_HUMAN.PCK
@@ -932,19 +986,19 @@ extraSprites:
   - typeSingle: SHARK__7__AQUAVEST
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory.png
   - typeSingle: DEEP__7__AQUAVEST
-    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_deep.png
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory.png
   - typeSingle: FLOATER__7__AQUAVEST
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_floater.png
-  - typeSingle: HUMAN__7__AQUAVESTSHIELD
+  - typeSingle: HUMAN__9__AQUAVESTSHIELD
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_s.png
-  - typeSingle: HYBRID__7__AQUAVESTSHIELD
+  - typeSingle: HYBRID__9__AQUAVESTSHIELD
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_s.png
-  - typeSingle: SHARK__7__AQUAVESTSHIELD
+  - typeSingle: SHARK__9__AQUAVESTSHIELD
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_s.png
-  - typeSingle: DEEP__7__AQUAVESTSHIELD
-    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_s_deep.png
-  - typeSingle: FLOATER__7__AQUAVESTSHIELD
-    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_s_floater.png
+  - typeSingle: DEEP__9__AQUAVESTSHIELD
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_s.png
+  - typeSingle: FLOATER__9__AQUAVESTSHIELD
+    fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory_s.png
   - type: AQUAVEST_HUMAN.PCK
     width: 512
     height: 720
@@ -1087,6 +1141,28 @@ extraSprites:
     files:
       0: Resources/Factions/Netrunners/wiretapper_sprite.png
 # vice
+  - typeSingle: VICEFARMER_CPAL
+    fileSingle: Resources/Factions/Vice/vicefarmer_CPAL.png
+  - typeSingle: VICEFARMER.SPK
+    fileSingle: Resources/Factions/Vice/vicefarmer_inventory.png
+  - type: VICEFARMER.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Factions/Vice/vicefarmer_sprite.png
+  - typeSingle: VICESMUGGLER_CPAL
+    fileSingle: Resources/Factions/Vice/vicesmuggler_CPAL.png
+  - typeSingle: VICESMUGGLER.SPK
+    fileSingle: Resources/Factions/Vice/vicesmuggler_inventory.png
+  - type: VICESMUGGLER.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Factions/Vice/vicesmuggler_sprite.png
   - typeSingle: VICEBOSS_CPAL
     fileSingle: Resources/Factions/Vice/viceboss_CPAL.png
   - typeSingle: VICEBOSS.SPK
@@ -1098,7 +1174,6 @@ extraSprites:
     height: 720
     files:
       0: Resources/Factions/Vice/viceboss_sprite.png
-
 # ssp
   - typeSingle: SSPGUARD_CPAL
     fileSingle: Resources/Factions/SSP/sspguard_CPAL.png

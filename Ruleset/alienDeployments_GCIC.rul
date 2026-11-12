@@ -1076,18 +1076,10 @@
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
-          -
-            - STR_OLD_GAUSS_SNIPER
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
           -
             - STR_OLD_GAUSS_SNIPER
             - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-          -
-            - STR_OLD_GAUSS_SNIPER
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
@@ -1096,18 +1088,10 @@
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
-          -
-            - STR_OLD_GAUSS_SNIPER
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
           -
             - STR_OLD_GAUSS_SNIPER
             - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-          -
-            - STR_OLD_GAUSS_SNIPER
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
@@ -1116,8 +1100,34 @@
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
           -
             - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+          -
+            - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+          -
+            - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+          -
+            - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_OLD_GAUSS_SNIPER_AMMO
+          -
+            - STR_OLD_GAUSS_SNIPER
+            - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
@@ -2158,8 +2168,8 @@
     markerName: STR_SSP_UNDERCOVER_1_
     duration: [72, 120]
     civiliansByType:
-      STR_SSPGUARD_PUBLIC: 9
-      STR_SSPOFFICER_PUBLIC: 2
+      STR_SSPGUARD_PUBLIC: 8
+      STR_SSPOFFICER_PUBLIC: 3
       STR_SSPSUPERVISOR_PUBLIC: 1
     startingCondition: SPORTS_GEAR_INFILTRATION_CRAFT
     briefing:
@@ -2181,66 +2191,161 @@
         highQty: 2
         dQty: 1
         percentageOutsideUfo: 0
-        extraRandomItems: *ironExtra
+        extraRandomItems: &viceExtra
+          - [STR_PERSONAL_DATA, STR_PERSONAL_DATA, STR_MEDI_SPRAY, STR_MEDI_SPRAY, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM]
         itemSets:
           -
             - STR_9MM_MG
             - STR_9MM_MG_AMMO
             - STR_9MM_MG_AMMO
-            - STR_BOUNTY_1
           -
             - STR_9MM_MG
             - STR_9MM_MG_AMMO
             - STR_9MM_MG_AMMO
-            - STR_BOUNTY_1
           -
             - STR_9MM_MG
             - STR_9MM_MG_AMMO
             - STR_9MM_MG_AMMO
-            - STR_BOUNTY_1
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
           -
             - STR_BARREL_MOTAR
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
-            - STR_BOUNTY_1
+            - STR_BARREL_MOTAR_AMMO
           -
             - STR_BARREL_MOTAR
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
-            - STR_BOUNTY_1
+            - STR_BARREL_MOTAR_AMMO
           -
             - STR_BARREL_MOTAR
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
-            - STR_BOUNTY_1
+            - STR_BARREL_MOTAR_AMMO
+          -
+            - STR_BARREL_MOTAR
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
           -
             - STR_GOLFWEDGE
-            - STR_BOUNTY_1
-          -
-            - STR_GOLFWEDGE
-            - STR_BOUNTY_1
           -
             - STR_GOLFDRIVER
-            - STR_BOUNTY_1
-          -
-            - STR_GOLFDRIVER
-            - STR_BOUNTY_1
       - alienRank: 4
         lowQty: 2
         medQty: 2
         highQty: 3
-        dQty: 3
+        dQty: 2
         percentageOutsideUfo: 0
-        extraRandomItems: *ironExtra
-        itemSets: *ripperSetPrivate #make better
+        extraRandomItems: *viceExtra
+        itemSets:
+          -
+            - STR_9MM_PISTOL
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_9MM_PISTOL
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+          -
+            - STR_9MM_RIFLE #todo replace with 9mm sniper
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+          -
+            - STR_9MM_RIFLE #todo replace with 9mm sniper
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+          -
+            - STR_9MM_RIFLE #todo replace with 9mm sniper
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+          -
+            - STR_PSI_DAZZLER
+          -
+            - STR_PSI_DAZZLER
       - alienRank: 5
-        lowQty: 6
-        medQty: 6
-        highQty: 7
-        dQty: 8
+        lowQty: 8
+        medQty: 8
+        highQty: 9
+        dQty: 5
         percentageOutsideUfo: 0
-        extraRandomItems: *ironExtra
-        itemSets: *boosterSetPrivate #make better
+        extraRandomItems: *viceExtra
+        itemSets:
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_STL_KNIFE
+          -
+            - STR_9MM_RIFLE
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+          -
+            - STR_9MM_RIFLE
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+          -
+            - STR_9MM_RIFLE
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+          -
+            - STR_9MM_RIFLE
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+          -
+            - STR_9MM_RIFLE #todo replace with 9mm shotgun
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+          -
+            - STR_9MM_RIFLE #todo replace with 9mm shotgun
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO

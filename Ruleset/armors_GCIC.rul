@@ -127,14 +127,13 @@ armors:
       - STR_CRACKED_SHARK_DRONE
   - type: STR_PLEX_DRONE_DEEP_ARMOR
     refNode: *refPlexDrone
-    ufopediaType: STR_PLEX_DRONE_ARMOR
     customArmorPreviewIndex: 300
     spriteInv: DRONEDEEP.SPK
     spriteSheet: WORKSUIT_DEEP.PCK
     layersDefaultPrefix: DEEP
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
+      F0: ["", "", "F0_HANDS", "", "", "", "", "WORKSUIT", "F0_HEAD", "", ""]
+      M0: ["", "", "M0_HANDS", "", "", "", "", "WORKSUIT", "M0_HEAD", "", ""]
     corpseBattle:
       - STR_PLEX_DRONE_DEEP_CORPSE
     specialWeapon: STR_ELECTROBOLT
@@ -160,7 +159,6 @@ armors:
       - STR_CRACKED_DEEP_DRONE
   - type: STR_PLEX_DRONE_FLOATER_ARMOR
     refNode: *refPlexDrone
-    ufopediaType: STR_PLEX_DRONE_ARMOR
     customArmorPreviewIndex: 400
     spriteInv: DRONEFLOATER.SPK
     spriteSheet: WORKSUIT_FLOATER.PCK
@@ -183,18 +181,24 @@ armors:
     units:
       - STR_CRACKED_FLOATER_DRONE
 
-  - &refDuraDrone
-    ignore: STR_GCIC_DRONE_HYBRID_ARMOR
-    ufopediaType: STR_GCIC_DRONE_ARMOR
-    customArmorPreviewIndex: 5
-    spriteSheet: DURA_HYBRID.PCK
+  - &refBellhopDrone
+    type: STR_BELLHOP_DRONE_HYBRID_ARMOR
+    ufopediaType: STR_BELLHOP_DRONE_ARMOR
+    customArmorPreviewIndex: 0
+    spriteSheet: BELLHOP_HYBRID.PCK
     layersDefaultPrefix: HYBRID
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
     corpseBattle:
-      - STR_GCIC_DRONE_HYBRID_CORPSE
+      - STR_PLEX_DRONE_HYBRID_CORPSE
+    storeItem: STR_NONE
     specialWeapon: STR_UNARMED
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_SMALL_BACKPACK
+      - STR_NULL_QD_SLOT
     allowsKneeling: true
     visibilityAtDark: 11
     personalLight: 14
@@ -204,10 +208,10 @@ armors:
       reactions: +5
       stamina: +5
       tu: +5
-    frontArmor: 12
-    sideArmor: 12
-    rearArmor: 12
-    underArmor: 9
+    frontArmor: 8
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 6
     damageModifier: &OrganicDuraResists
       - 1.0 #0 none
       - 0.75 #1 kinetic
@@ -225,6 +229,142 @@ armors:
       - 1.0 #13 psionic
       - 1.0 #14 heat
       - 1.0 #15 cold
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      time: *TimeRecoveryTypical
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryTypical
+      energy: *EnergyRecoveryTypical
+      morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
+    overKill: 1.5
+    units:
+      - STR_CRACKED_HYBRID_DRONE
+    loftempsSet: [ 3 ]
+  - type: STR_BELLHOP_DRONE_HUMAN_ARMOR
+    refNode: *refBellhopDrone
+    customArmorPreviewIndex: 100
+    spriteSheet: BELLHOP_HUMAN.PCK
+    layersDefaultPrefix: HUMAN
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorHuman
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorHuman
+    corpseBattle:
+      - STR_PLEX_DRONE_HUMAN_CORPSE
+    visibilityAtDark: 8
+    recovery:
+      energy: *EnergyRecoveryHumanTypical
+    units:
+      - STR_CRACKED_HUMAN_DRONE
+  - type: STR_BELLHOP_DRONE_SHARK_ARMOR
+    refNode: *refBellhopDrone
+    customArmorPreviewIndex: 200
+    spriteSheet: BELLHOP_SHARK.PCK
+    layersDefaultPrefix: SHARK
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      F3: ["", "", "F1_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      M3: ["", "", "M1_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+    spriteFaceGroup: 11
+    spriteFaceColor: *SpriteFaceColorShark
+    corpseBattle:
+      - STR_PLEX_DRONE_SHARK_CORPSE
+    specialWeapon: STR_SHARKATTACK
+    visibilityAtDark: 8
+    units:
+      - STR_CRACKED_SHARK_DRONE
+  - type: STR_BELLHOP_DRONE_DEEP_ARMOR
+    refNode: *refBellhopDrone
+    customArmorPreviewIndex: 300
+    spriteSheet: BELLHOP_DEEP.PCK
+    layersDefaultPrefix: DEEP
+    layersDefinition:
+      F0: ["", "", "F0_HANDS", "", "", "", "", "BELLHOP", "F0_HEAD", "", ""]
+      M0: ["", "", "M0_HANDS", "", "", "", "", "BELLHOP", "M0_HEAD", "", ""]
+    corpseBattle:
+      - STR_PLEX_DRONE_DEEP_CORPSE
+    specialWeapon: STR_ELECTROBOLT
+    visibilityAtDark: 8
+    damageModifier: &DeepOneDuraResists
+      - 1.0 #0 none
+      - 0.75 #1 kinetic
+      - 0.85 #2 incendiary
+      - 0.95 #3 concussive
+      - 0.75 #4 radiant
+      - 0.75 #5 plasma
+      - 0.75 #6 blunt
+      - 0.75 #7 mechanical
+      - 0.35 #8 chemical
+      - 0.5 #9 smoke
+      - 0.35 #10 electric
+      - 0.95 #11 sonic
+      - 0.75 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
+    units:
+      - STR_CRACKED_DEEP_DRONE
+  - type: STR_BELLHOP_DRONE_FLOATER_ARMOR
+    refNode: *refBellhopDrone
+    customArmorPreviewIndex: 400
+    spriteSheet: BELLHOP_FLOATER.PCK
+    layersDefaultPrefix: FLOATER
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+    forcedTorso: 1
+    corpseBattle:
+      - STR_PLEX_DRONE_FLOATER_CORPSE
+    movementType: 1
+    moveCost:
+      runPercent: [75, 100]
+      flyRunPercent: [75, 100]
+      flyUpPercent: [100, 50]
+      flyDownPercent: [50, 0]
+      climbDownPercent: [50, 0]
+    moveSound: 15
+    visibilityAtDark: 8
+    units:
+      - STR_CRACKED_FLOATER_DRONE
+
+  - &refDuraDrone
+    ignore: STR_GCIC_DRONE_HYBRID_ARMOR
+    ufopediaType: STR_GCIC_DRONE_ARMOR
+    customArmorPreviewIndex: 5
+    spriteSheet: DURA_HYBRID.PCK
+    layersDefaultPrefix: HYBRID
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "DURA", "", "", "", ""]
+    corpseBattle:
+      - STR_GCIC_DRONE_HYBRID_CORPSE
+    specialWeapon: STR_UNARMED
+    allowsKneeling: true
+    visibilityAtDark: 11
+    personalLight: 14
+    heatVision: 20
+    stats: *DuraStats
+    frontArmor: 12
+    sideArmor: 12
+    rearArmor: 12
+    underArmor: 9
+    damageModifier: *OrganicDuraResists
     meleeDodge: &MeleeDodgeGood
       melee: 0.1
       reactions: 0.3
@@ -251,14 +391,14 @@ armors:
     spriteSheet: DURA_HUMAN.PCK
     layersDefaultPrefix: HUMAN
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
-      F1: ["", "", "F1_SHELL", "", "", "", "", "DURA", "", "", ""]
-      F2: ["", "", "F2_SHELL", "", "", "", "", "DURA", "", "", ""]
-      F3: ["", "", "F3_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M1: ["", "", "M1_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M2: ["", "", "M2_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M3: ["", "", "M3_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "DURA", "", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "DURA", "", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "DURA", "", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "DURA", "", "", "", ""]
     spriteFaceGroup: 6
     spriteFaceColor: *SpriteFaceColorHuman
     spriteHairGroup: 9
@@ -279,14 +419,14 @@ armors:
     spriteSheet: DURA_SHARK.PCK
     layersDefaultPrefix: SHARK
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
-      F1: ["", "", "F1_SHELL", "", "", "", "", "DURA", "", "", ""]
-      F2: ["", "", "F2_SHELL", "", "", "", "", "DURA", "", "", ""]
-      F3: ["", "", "F1_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M1: ["", "", "M1_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M2: ["", "", "M2_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M3: ["", "", "M1_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "DURA", "", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "DURA", "", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "DURA", "", "", "", ""]
+      F3: ["", "", "F1_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M3: ["", "", "M1_SHELL", "", "", "", "DURA", "", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
@@ -302,30 +442,14 @@ armors:
     spriteSheet: DURA_DEEP.PCK
     layersDefaultPrefix: DEEP
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F0: ["", "", "F0_HANDS", "", "", "", "DURA", "", "F0_HEAD", "", ""]
+      M0: ["", "", "M0_HANDS", "", "", "", "DURA", "", "M0_HEAD", "", ""]
     corpseBattle:
       - STR_GCIC_DRONE_DEEP_CORPSE
     specialWeapon: STR_ELECTROBOLT
     storeItem: STR_GCIC_DRONE_ARMOR
     visibilityAtDark: 8
-    damageModifier: &DeepOneDuraResists
-      - 1.0 #0 none
-      - 0.75 #1 kinetic
-      - 0.85 #2 incendiary
-      - 0.95 #3 concussive
-      - 0.75 #4 radiant
-      - 0.75 #5 plasma
-      - 0.75 #6 blunt
-      - 0.75 #7 mechanical
-      - 0.35 #8 chemical
-      - 0.5 #9 smoke
-      - 0.35 #10 electric
-      - 0.95 #11 sonic
-      - 0.75 #12 biological
-      - 1.0 #13 psionic
-      - 1.0 #14 heat
-      - 1.0 #15 cold
+    damageModifier: *DeepOneDuraResists
     units:
       - STR_CRACKED_DEEP_DRONE
   - type: STR_GCIC_DRONE_FLOATER_ARMOR
@@ -334,8 +458,8 @@ armors:
     spriteSheet: DURA_FLOATER.PCK
     layersDefaultPrefix: FLOATER
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "DURA", "", "", "", ""]
     forcedTorso: 1
     corpseBattle:
       - STR_GCIC_DRONE_FLOATER_CORPSE
@@ -359,8 +483,8 @@ armors:
     spriteSheet: DURAVEST_HYBRID.PCK
     layersDefaultPrefix: HYBRID
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
     corpseBattle:
       - STR_GCICVEST_DRONE_HYBRID_CORPSE
     storeItem: STR_GCIC_DRONE_ARMOR
@@ -408,14 +532,14 @@ armors:
     spriteSheet: DURAVEST_HUMAN.PCK
     layersDefaultPrefix: HUMAN
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      F1: ["", "", "F1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      F2: ["", "", "F2_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      F3: ["", "", "F3_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M1: ["", "", "M1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M2: ["", "", "M2_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M3: ["", "", "M3_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
     spriteFaceGroup: 6
     spriteFaceColor: *SpriteFaceColorHuman
     spriteHairGroup: 9
@@ -447,14 +571,14 @@ armors:
     spriteSheet: DURAVEST_SHARK.PCK
     layersDefaultPrefix: SHARK
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      F1: ["", "", "F1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      F2: ["", "", "F2_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      F3: ["", "", "F1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M1: ["", "", "M1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M2: ["", "", "M2_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M3: ["", "", "M1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      F3: ["", "", "F1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M3: ["", "", "M1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
@@ -483,8 +607,8 @@ armors:
     spriteSheet: DURAVEST_DEEP.PCK
     layersDefaultPrefix: DEEP
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F0: ["", "", "F0_HANDS", "", "", "", "DURA", "DURAVEST", "F0_HEAD", "", ""]
+      M0: ["", "", "M0_HANDS", "", "", "", "DURA", "DURAVEST", "M0_HEAD", "", ""]
     corpseBattle:
       - STR_GCICVEST_DRONE_DEEP_CORPSE
     storeItem: STR_GCIC_DRONE_ARMOR
@@ -527,8 +651,8 @@ armors:
     spriteSheet: DURAVEST_FLOATER.PCK
     layersDefaultPrefix: FLOATER
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
     forcedTorso: 1
     corpseBattle:
       - STR_GCICVEST_DRONE_FLOATER_CORPSE
@@ -636,8 +760,8 @@ armors:
     spriteSheet: JUMPSUIT_DEEP.PCK
     layersDefaultPrefix: DEEP
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F0: ["", "", "F0_HANDS", "", "", "", "", "JUMPSUIT", "F0_HEAD", "", ""]
+      M0: ["", "", "M0_HANDS", "", "", "", "", "JUMPSUIT", "M0_HEAD", "", ""]
     corpseBattle:
       - STR_DURA_DRONE_DEEP_CORPSE
     storeItem: STR_DURA_DRONE_ARMOR
@@ -793,8 +917,8 @@ armors:
     spriteSheet: SKELE_DEEP.PCK
     layersDefaultPrefix: DEEP
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "SKELE", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      F0: ["", "", "F0_HANDS", "", "", "", "", "SKELE", "F0_HEAD", "", ""]
+      M0: ["", "", "M0_HANDS", "", "", "", "", "SKELE", "M0_HEAD", "", ""]
     corpseBattle:
       - STR_SKELE_DRONE_DEEP_CORPSE
     specialWeapon: STR_ELECTROBOLT
@@ -955,8 +1079,8 @@ armors:
     spriteSheet: AQUAVEST_DEEP.PCK
     layersDefaultPrefix: DEEP
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F0: ["", "", "F0_HANDS", "", "", "", "", "AQUAVEST", "F0_HEAD", "", ""]
+      M0: ["", "", "M0_HANDS", "", "", "", "", "AQUAVEST", "M0_HEAD", "", ""]
     corpseBattle:
       - STR_AQUAVEST_DRONE_DEEP_CORPSE
     specialWeapon: STR_ELECTROBOLT
@@ -1010,8 +1134,8 @@ armors:
     spriteSheet: AQUAVEST_HYBRID.PCK
     layersDefaultPrefix: HYBRID
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
     corpseBattle:
       - STR_AQUAVEST_DRONE_HYBRID_CORPSE
     storeItem: STR_AQUAVEST_DRONE_ARMOR
@@ -1060,14 +1184,14 @@ armors:
     spriteSheet: AQUAVEST_HUMAN.PCK
     layersDefaultPrefix: HUMAN
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      F2: ["", "", "F2_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      F3: ["", "", "F3_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      M2: ["", "", "M2_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      M3: ["", "", "M3_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
     spriteFaceGroup: 6
     spriteFaceColor: *SpriteFaceColorHuman
     spriteHairGroup: 9
@@ -1087,14 +1211,14 @@ armors:
     spriteSheet: AQUAVEST_SHARK.PCK
     layersDefaultPrefix: SHARK
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      F2: ["", "", "F2_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      F3: ["", "", "F1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      M2: ["", "", "M2_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      M3: ["", "", "M1_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      F3: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M3: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
@@ -1109,8 +1233,8 @@ armors:
     spriteSheet: AQUAVEST_DEEP.PCK
     layersDefaultPrefix: DEEP
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      F0: ["", "", "F0_HANDS", "", "", "", "", "AQUAVEST", "F0_HEAD", "AQUAVESTSHIELD", ""]
+      M0: ["", "", "M0_HANDS", "", "", "", "", "AQUAVEST", "M0_HEAD", "AQUAVESTSHIELD", ""]
     corpseBattle:
       - STR_AQUAVEST_DRONE_DEEP_CORPSE
     specialWeapon: STR_ELECTROBOLT
@@ -1124,8 +1248,8 @@ armors:
     spriteSheet: AQUAVEST_FLOATER.PCK
     layersDefaultPrefix: FLOATER
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVESTSHIELD", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
     forcedTorso: 1
     corpseBattle:
       - STR_AQUAVEST_DRONE_FLOATER_CORPSE
@@ -1418,11 +1542,10 @@ armors:
 # vice
   - type: STR_VICEFARMER_ARMOR
     ufopediaType: STR_VICEFARMER_ARMOR
-    spriteInv: SKIPTRACER.SPK
-    spriteSheet: SKIPTRACER.PCK
+    spriteInv: VICEFARMER.SPK
+    spriteSheet: VICEFARMER.PCK
     # spriteFaceGroup: 6
     # spriteFaceColor: *SpriteFaceColorHuman
-    forcedTorso: 1
     corpseBattle:
       - STR_VICEFARMER_CORPSE
     specialWeapon: STR_ELECTROBOLT
@@ -1445,8 +1568,8 @@ armors:
 
   - type: STR_VICESMUGGLER_ARMOR
     ufopediaType: STR_VICESMUGGLER_ARMOR
-    spriteInv: VICEBOSS.SPK
-    spriteSheet: DURAVEST_HUMAN.PCK
+    spriteInv: VICESMUGGLER.SPK
+    spriteSheet: VICESMUGGLER.PCK
     spriteFaceGroup: 6
     spriteFaceColor: *SpriteFaceColorHuman
     spriteHairGroup: 9
@@ -1456,10 +1579,10 @@ armors:
     allowsKneeling: true
     personalLight: 10
     heatVision: 20
-    frontArmor: 18
-    sideArmor: 18
-    rearArmor: 18
-    underArmor: 14
+    frontArmor: 16
+    sideArmor: 16
+    rearArmor: 16
+    underArmor: 12
     damageModifier: *OrganicDuravestResists
     recovery:
       energy: *EnergyRecoveryHumanPoor
@@ -2036,14 +2159,14 @@ armors:
     spriteInv: DRONEHUMAN2.SPK
     layersDefaultPrefix: HUMAN
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
-      F1: ["", "", "F1_SHELL", "", "", "", "", "DURA", "", "", ""]
-      F2: ["", "", "F2_SHELL", "", "", "", "", "DURA", "", "", ""]
-      F3: ["", "", "F3_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M1: ["", "", "M1_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M2: ["", "", "M2_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M3: ["", "", "M3_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "DURA", "", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "DURA", "", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "DURA", "", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "DURA", "", "", "", ""]
     spriteFaceGroup: 6
     spriteFaceColor: *SpriteFaceColorHuman
     spriteHairGroup: 9
@@ -2059,8 +2182,8 @@ armors:
     spriteInv: DRONEDEEP2.SPK
     layersDefaultPrefix: DEEP
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F0: ["", "", "F0_HANDS", "", "", "", "DURA", "", "F0_HEAD", "", ""]
+      M0: ["", "", "M0_HANDS", "", "", "", "DURA", "", "M0_HEAD", "", ""]
     corpseBattle:
       - STR_GCIC_DRONE_DEEP_CORPSE_NORECOVER
     specialWeapon: STR_ELECTROBOLT
@@ -2072,8 +2195,8 @@ armors:
     spriteInv: DRONEFLOATER2.SPK
     layersDefaultPrefix: FLOATER
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "DURA", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "DURA", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "DURA", "", "", "", ""]
     moveSound: 15
     corpseBattle:
       - STR_GCIC_DRONE_FLOATER_CORPSE_NORECOVER
@@ -2085,14 +2208,14 @@ armors:
     spriteInv: DRONESHARK2.SPK
     layersDefaultPrefix: SHARK
     layersDefinition:
-      F0: ["", "", "F0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      F1: ["", "", "F1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      F2: ["", "", "F2_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      F3: ["", "", "F1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M0: ["", "", "M0_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M1: ["", "", "M1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M2: ["", "", "M2_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
-      M3: ["", "", "M1_SHELL", "", "", "", "", "DURAVEST", "", "", ""]
+      F0: ["", "", "F0_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      F3: ["", "", "F1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M3: ["", "", "M1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:

@@ -84,20 +84,15 @@ X-Com Files/Final Mod Pack		[mod]
   Punch!				[none]			(Brian322)
   Bullet+Hit+Explosion Animations	[none+redraw]
   Flying Drone Chassis 			[cleanup+recolour]	(Xenonauts)
-  Civilians 				[none]
-  Bandit 				[recolour]
-  Police Officer			[recolour]
-  Hybrid				[none]
   Taser Animation+SFX			[none]			(Ryskeliini)
   HitFX	Script				[none]			(Mistar Red)
   Crate Obs				[none+recolour]			
   Fire Extinguisher			[touchup+recolour]
   Armored Vest				[touchup+recolour]	(robin)
-  Muckstar				[touchup+animated]
-  Zombie				[touchup]
-  Osiron Fixer				[remix]
   Robosphere Inventory			[touchup]
   Bleed+Burn+Shock Icons		[touchup+recolour]
+  Units					[none+touchup+remix]
+   Civilians, Bandit, Police Officer, Hybrid, Muckstar, Zombie, Osiron Fixer, Farmer, VAST Master Researcher
   Map Sprites				[none+touchup+recolour]
    Piano, Havana Walls/Stairs/Floors, Wall Art, Candles, Wood Gate, Pool Table
   SFX					[none]

@@ -179,6 +179,7 @@ terrains:
       - STRUCTURE_SHIELDS
     mapBlocks:
       - name: CRAFT_SECVAN
+        craftInventoryTile: [6, 5, 0]
 
   #_SIZEX are just copies with a different map script so alienDeployments doesn't have to have different mapscripts in order to spawn drones
   - name: HANGAR

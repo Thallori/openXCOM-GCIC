@@ -710,11 +710,11 @@ units:
       psiStrength: 20
       psiSkill: 0
       mana: 15
-    armor: STR_SKIPTRACER_ARMOR
+    armor: STR_VICEFARMER_ARMOR
     standHeight: 22
     kneelHeight: 14
     value: -5
-    deathSound: [44, 45, 46]
+    deathSound: [126, 141, 142]
     intelligence: 2
     aggression: 1
     sniper: 20
@@ -730,7 +730,7 @@ units:
       health: 40
       bravery: 70
       reactions: 40
-      firing: 45
+      firing: 50
       throwing: 45
       melee: 30
       strength: 30
@@ -753,7 +753,7 @@ units:
     stats:
       tu: 55
       stamina: 55
-      health: 50
+      health: 45
       bravery: 90
       reactions: 35
       firing: 50
@@ -870,7 +870,7 @@ units:
 
   - type: STR_SSPGUARD_PUBLIC
     refNode: *refSSPGuard
-    value: 6
+    value: 10
     civilianRecoveryType: STR_SHARES_SSP
     builtInWeaponSets:
           -
@@ -880,7 +880,7 @@ units:
             - STR_45_AMMO
   - type: STR_SSPOFFICER_PUBLIC
     refNode: *refSSPOfficer
-    value: 12
+    value: 15
     civilianRecoveryType: STR_SHARES_SSP
     builtInWeaponSets:
           -
@@ -894,7 +894,7 @@ units:
             - STR_SSP_SHOTGUN_AMMO_SLUG
   - type: STR_SSPSUPERVISOR_PUBLIC
     refNode: *refSSPSupervisor
-    value: 18
+    value: 20
     civilianRecoveryType: STR_SHARES_SSP
     builtInWeaponSets:
           -

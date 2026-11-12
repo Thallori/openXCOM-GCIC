@@ -249,6 +249,20 @@ research:
     cost: 10
     disables:
       - STR_PGM_LOCK
+
+  - name: STR_PSSP_LOCK #todo
+    dependencies:
+      - STR_SUBCONTRACTING_OPERATIONS
+      - STR_VENDOR_BUILDER
+  - name: STR_SSP_MISSIONS
+    neededItem: STR_PGM_ITEM
+    needItem: true
+    destroyItem: true
+    cost: 10
+    getOneFree:
+      - STR_BELLHOP_DRONE_ARMOR
+    disables:
+      - STR_PSSP_LOCK
 # licenses
   - name: STR_SEC_LICENSE
     dependencies:
@@ -728,6 +742,9 @@ research:
       - STR_REMEDITION_OFFICE_RESEARCH
 # armor
   - name: STR_PLEX_DRONE_ARMOR
+  - name: STR_BELLHOP_DRONE_ARMOR
+    dependencies:
+      - STR_SSP_MISSIONS
   - name: STR_DURA_DRONE_ARMOR
     needItem: true
     cost: 5
