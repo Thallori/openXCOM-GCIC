@@ -147,8 +147,8 @@ armors:
       - 1.0 #5 plasma
       - 1.0 #6 blunt
       - 1.0 #7 mechanical
-      - 0.5 #8 chemical
-      - 0.5 #9 smoke
+      - 0.7 #8 chemical
+      - 2.0 #9 smoke
       - 0.5 #10 electric
       - 1.0 #11 sonic
       - 1.0 #12 biological
@@ -191,8 +191,8 @@ armors:
       F0: ["", "", "F0_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
     corpseBattle:
-      - STR_PLEX_DRONE_HYBRID_CORPSE
-    storeItem: STR_NONE
+      - STR_BELLHOP_DRONE_HYBRID_CORPSE
+    storeItem: STR_BELLHOP_DRONE_ARMOR
     specialWeapon: STR_UNARMED
     builtInWeapons:
       - STR_NULL_LEFT_SHOULDER
@@ -203,25 +203,23 @@ armors:
     visibilityAtDark: 11
     personalLight: 14
     heatVision: 20
-    stats: &DuraStats
+    stats:
       health: +5
-      reactions: +5
       stamina: +5
-      tu: +5
     frontArmor: 8
     sideArmor: 8
     rearArmor: 8
     underArmor: 6
-    damageModifier: &OrganicDuraResists
+    damageModifier: &OrganicDuraCottonResists
       - 1.0 #0 none
       - 0.75 #1 kinetic
-      - 0.85 #2 incendiary
+      - 1.10 #2 incendiary
       - 0.95 #3 concussive
       - 0.75 #4 radiant
       - 0.75 #5 plasma
       - 0.75 #6 blunt
       - 0.75 #7 mechanical
-      - 0.85 #8 chemical
+      - 1.10 #8 chemical
       - 4.0 #9 smoke
       - 0.75 #10 electric
       - 0.95 #11 sonic
@@ -261,7 +259,7 @@ armors:
     spriteHairGroup: 9
     spriteHairColor: *SpriteHairColorHuman
     corpseBattle:
-      - STR_PLEX_DRONE_HUMAN_CORPSE
+      - STR_BELLHOP_DRONE_HUMAN_CORPSE
     visibilityAtDark: 8
     recovery:
       energy: *EnergyRecoveryHumanTypical
@@ -284,7 +282,7 @@ armors:
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
-      - STR_PLEX_DRONE_SHARK_CORPSE
+      - STR_BELLHOP_DRONE_SHARK_CORPSE
     specialWeapon: STR_SHARKATTACK
     visibilityAtDark: 8
     units:
@@ -298,20 +296,20 @@ armors:
       F0: ["", "", "F0_HANDS", "", "", "", "", "BELLHOP", "F0_HEAD", "", ""]
       M0: ["", "", "M0_HANDS", "", "", "", "", "BELLHOP", "M0_HEAD", "", ""]
     corpseBattle:
-      - STR_PLEX_DRONE_DEEP_CORPSE
+      - STR_BELLHOP_DRONE_DEEP_CORPSE
     specialWeapon: STR_ELECTROBOLT
     visibilityAtDark: 8
-    damageModifier: &DeepOneDuraResists
+    damageModifier: &DeepOneDuraCottonResists
       - 1.0 #0 none
       - 0.75 #1 kinetic
-      - 0.85 #2 incendiary
+      - 1.10 #2 incendiary
       - 0.95 #3 concussive
       - 0.75 #4 radiant
       - 0.75 #5 plasma
       - 0.75 #6 blunt
       - 0.75 #7 mechanical
-      - 0.35 #8 chemical
-      - 0.5 #9 smoke
+      - 0.55 #8 chemical
+      - 2.0 #9 smoke
       - 0.35 #10 electric
       - 0.95 #11 sonic
       - 0.75 #12 biological
@@ -330,7 +328,7 @@ armors:
       M0: ["", "", "M0_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
     forcedTorso: 1
     corpseBattle:
-      - STR_PLEX_DRONE_FLOATER_CORPSE
+      - STR_BELLHOP_DRONE_FLOATER_CORPSE
     movementType: 1
     moveCost:
       runPercent: [75, 100]
@@ -359,12 +357,32 @@ armors:
     visibilityAtDark: 11
     personalLight: 14
     heatVision: 20
-    stats: *DuraStats
+    stats: &DuraStats
+      health: +5
+      reactions: +5
+      stamina: +5
+      tu: +5
     frontArmor: 12
     sideArmor: 12
     rearArmor: 12
     underArmor: 9
-    damageModifier: *OrganicDuraResists
+    damageModifier: &OrganicDuraResists
+      - 1.0 #0 none
+      - 0.75 #1 kinetic
+      - 0.85 #2 incendiary
+      - 0.95 #3 concussive
+      - 0.75 #4 radiant
+      - 0.75 #5 plasma
+      - 0.75 #6 blunt
+      - 0.75 #7 mechanical
+      - 0.85 #8 chemical
+      - 4.0 #9 smoke
+      - 0.75 #10 electric
+      - 0.95 #11 sonic
+      - 0.75 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
     meleeDodge: &MeleeDodgeGood
       melee: 0.1
       reactions: 0.3
@@ -449,7 +467,23 @@ armors:
     specialWeapon: STR_ELECTROBOLT
     storeItem: STR_GCIC_DRONE_ARMOR
     visibilityAtDark: 8
-    damageModifier: *DeepOneDuraResists
+    damageModifier: &DeepOneDuraResists
+      - 1.0 #0 none
+      - 0.75 #1 kinetic
+      - 0.85 #2 incendiary
+      - 0.95 #3 concussive
+      - 0.75 #4 radiant
+      - 0.75 #5 plasma
+      - 0.75 #6 blunt
+      - 0.75 #7 mechanical
+      - 0.40 #8 chemical
+      - 2.0 #9 smoke
+      - 0.35 #10 electric
+      - 0.95 #11 sonic
+      - 0.75 #12 biological
+      - 1.0 #13 psionic
+      - 1.0 #14 heat
+      - 1.0 #15 cold
     units:
       - STR_CRACKED_DEEP_DRONE
   - type: STR_GCIC_DRONE_FLOATER_ARMOR
@@ -632,8 +666,8 @@ armors:
       - 0.75 #5 plasma
       - 0.75 #6 blunt
       - 0.75 #7 mechanical
-      - 0.35 #8 chemical
-      - 0.5 #9 smoke
+      - 0.40 #8 chemical
+      - 2.0 #9 smoke
       - 0.35 #10 electric
       - 0.95 #11 sonic
       - 0.75 #12 biological
@@ -932,8 +966,8 @@ armors:
       - 0.85 #5 plasma
       - 0.85 #6 blunt
       - 0.85 #7 mechanical
-      - 0.5 #8 chemical
-      - 0.5 #9 smoke
+      - 0.7 #8 chemical
+      - 2.0 #9 smoke
       - 0.55 #10 electric
       - 0.85 #11 sonic
       - 0.85 #12 biological
@@ -1094,8 +1128,8 @@ armors:
       - 0.7 #5 plasma
       - 0.7 #6 blunt
       - 0.7 #7 mechanical
-      - 0.35 #8 chemical
-      - 0.5 #9 smoke
+      - 0.6 #8 chemical
+      - 2.0 #9 smoke
       - 0.35 #10 electric
       - 0.7 #11 sonic
       - 0.7 #12 biological

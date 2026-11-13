@@ -68,137 +68,200 @@ manufacture:
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_RRM_LOCK
-    time: 1
+    time: 120
+    refund: true
     requiredItems:
       STR_BRAND_LOYALTY: 6
-    producedItems:
-      STR_RRM_ITEM: 1
+    producedItems: {}
+    events:
+      STR_EVENT_PROJECT_RAPID_RESPONSE_MISSIONS: 100
   - name: STR_FTM_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_FTM_LOCK
-    time: 1
+    time: 240
+    refund: true
     requiredItems:
       STR_BRAND_LOYALTY: 8
-    producedItems:
-      STR_FTM_ITEM: 1
+    producedItems: {}
+    events:
+      STR_EVENT_PROJECT_FREE_TRIAL_MISSIONS: 100
 
   - name: STR_PSLG_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_PSLG_LOCK
-    time: 1
+    time: 120
+    refund: true
     requiredItems:
       STR_IRS_SUBSIDY: 20
-    producedItems:
-      STR_PSLG_ITEM: 1
+    producedItems: {}
+    events:
+      STR_EVENT_PROJECT_SECGAMES_MISSIONS: 100
 
   - name: STR_PD2_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
-      - STR_PROJECT_DRONES2
       - STR_PD2_MANULOCK
-    time: 2000
+    time: 2400
     cost: 250000
+    refund: true
     requiredItems:
       STR_SJB_LICENSE: 1
       STR_BRAND_LOYALTY: 12
     producedItems:
-      STR_PD2_ITEM: 1
+      STR_DRONES2_SHARE: 1
+    events:
+      STR_EVENT_PROJECT_PROJECT_DRONES2: 100
 
   - name: STR_PBI_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_PBI_LOCK
-    time: 1
+    time: 120
     cost: -30000
+    refund: true
     requiredItems:
       STR_SHARES_GCIC: 5
-    producedItems:
-      STR_PBI_ITEM: 1
+    producedItems: {}
+    events:
+      STR_EVENT_PROJECT_GCIC_BACKCHANNEL_MISSIONS: 100
   - name: STR_PTS_ITEM
     category: STR_PROJECTS_MANUCAT
     requiresBaseFunc:
       - STR_SERVICE_NETWORK
     requires:
       - STR_PTS_LOCK
-    time: 1
+    time: 240
     cost: -180000
+    refund: true
     requiredItems:
       STR_SHARES_GCIC: 30
-    producedItems:
-      STR_PTS_ITEM: 1
+    producedItems: {}
+    events:
+      STR_EVENT_PROJECT_GCIC_TRADE_SECRETS_MISSIONS: 100
 
   - name: STR_PROJECT_BUYOUT_MANU
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_PIN_LOCK
-    time: 1
+    time: 2400
     cost: 72000000
+    refund: true
     requiredItems:
       STR_SHARES_GCIC: 1000
     producedItems:
       STR_SHARES_GCIC: 2000
-      STR_PROJECT_INDEPENDENCE_ITEM: 1
+    events:
+      STR_EVENT_PROJECT_GCIC_INDEPENDENCE: 100
 
   - name: STR_PMM_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_PMM_LOCK
-    time: 1
+    time: 120
+    refund: true
     requiredItems:
       STR_BOUNTY_1: 20
+    producedItems: {}
+    events:
+      STR_EVENT_PROJECT_MEDI_MISSIONS: 100
   - name: STR_PGM_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_PGM_LOCK
-    time: 1
+    time: 120
+    refund: true
     requiredItems:
       STR_BOUNTY_1: 20
+    producedItems: {}
+    events:
+      STR_EVENT_PROJECT_GR_MISSIONS: 100
+  - name: STR_PSM_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_PSM_LOCK
+    time: 120
+    refund: true
+    requiredItems:
+      STR_BOUNTY_1: 50
+    producedItems: {}
+    events:
+      STR_EVENT_PROJECT_SSP_MISSIONS: 100
 
   - name: STR_MEDIBAY_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_LMB_LOCK
-    time: 1
+    time: 12
+    refund: true
     requiredItems:
       STR_SHARES_MEDI: 1
+    producedItems: {}
+    events:
+      STR_EVENT_LICENSE_MEDIBAY_ITEM: 100
   - name: STR_MEDI_TRAUMA_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_LMT_LOCK
-    time: 1
+    time: 12
+    refund: true
     requiredItems:
       STR_SHARES_MEDI: 3
+    producedItems:
+      STR_MEDI_TRAUMA: 1
+    events:
+      STR_EVENT_LICENSE_MEDI_TRAUMA_ITEM: 100
   - name: STR_MEDICAL_CYBERNETICS_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_LMC_LOCK
-    time: 1
+    time: 12
+    refund: true
     requiredItems:
       STR_SHARES_MEDI: 3
+    producedItems:
+      STR_MEDICAL_CYBERNETICS: 1
+    events:
+      STR_EVENT_LICENSE_MEDICAL_CYBERNETICS_ITEM: 100
 
   - name: STR_BOLT_CANNON_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_LBC_LOCK
-    time: 1
+    time: 12
+    refund: true
     requiredItems:
       STR_SHARES_GR: 1
+    producedItems:
+      STR_BOLT_CANNON: 1
+      STR_BOLT_CANNON_AMMO: 1
+    events:
+      STR_EVENT_LICENSE_BOLT_CANNON_ITEM: 100
   - name: STR_SKELE_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_LAES_LOCK
-    time: 1
+    time: 12
+    refund: true
     requiredItems:
       STR_SHARES_GR: 3
+    producedItems:
+      STR_SKELE_DRONE_ARMOR: 1
+    events:
+      STR_EVENT_LICENSE_SKELE_ITEM: 100
   - name: STR_LDT_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
       - STR_LDT_LOCK
-    time: 1
+    time: 12
+    refund: true
     requiredItems:
       STR_SHARES_GR: 4
+    producedItems:
+      STR_DURATHREAD: 1
+    events:
+      STR_EVENT_LICENSE_LDT_ITEM: 100
 #hardpoints
   - name: STR_CRAFT_PHXMISSILE_LAUNCHER
     category: STR_APS_MANUCAT

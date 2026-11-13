@@ -1443,6 +1443,8 @@ extraSprites:
     fileSingle: Resources/Pedia/vendor_medi3_CPAL.png
   - typeSingle: VENDOR_BUILDER_CPAL
     fileSingle: Resources/Pedia/vendor_builder_CPAL.png
+  - typeSingle: VENDOR_BUILDERZ_CPAL
+    fileSingle: Resources/Pedia/vendor_builder2_CPAL.png
   - typeSingle: VENDOR_P2P_CPAL
     fileSingle: Resources/Pedia/vendor_p2p_CPAL.png
   - typeSingle: VENDOR_HD_CPAL
@@ -1451,6 +1453,8 @@ extraSprites:
     fileSingle: Resources/Pedia/vendor_vcm_CPAL.png
   - typeSingle: VENDOR_SSP_CPAL
     fileSingle: Resources/Pedia/vendor_ssp_CPAL.png
+  - typeSingle: VENDOR_SSPZ_CPAL
+    fileSingle: Resources/Pedia/vendor_ssp2_CPAL.png
 # technologies
   - typeSingle: RECEIPT_CPAL
     fileSingle: Resources/Pedia/techreceipt_CPAL.png
@@ -1525,6 +1529,8 @@ extraSprites:
 # armors
   - typeSingle: ARMOR_PLEX_CPAL
     fileSingle: Resources/Pedia/armor_plex_CPAL.png
+  - typeSingle: ARMOR_BELLHOP_CPAL
+    fileSingle: Resources/Pedia/armor_bellhop_CPAL.png
   - typeSingle: ARMOR_DURAWARE_CPAL
     fileSingle: Resources/Pedia/armor_duraware_CPAL.png
   - typeSingle: ARMOR_DURAVEST_CPAL

@@ -93,6 +93,8 @@
     alertDescription: STR_SECGAME_ALERT_DESCRIPTION
     markerName: STR_SECGAME
     duration: [288, 336]
+    successEvents:
+      STR_EVENT_SEC_LICENSE: 100
     startingCondition: SECURITY_GEAR
     briefing:
       showTarget: false

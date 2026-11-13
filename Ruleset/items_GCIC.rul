@@ -40,41 +40,6 @@ items:
     costBuy: 399
     costSell: 100
     transferTime: 12
-#projects
-  - type: STR_RRM_ITEM
-    categories: [STR_PERKS_CATEGORY]
-  - type: STR_FTM_ITEM
-    categories: [STR_PERKS_CATEGORY]
-  - type: STR_PSLG_ITEM
-    categories: [STR_PERKS_CATEGORY]
-  - type: STR_PD2_ITEM
-    categories: [STR_PERKS_CATEGORY]
-
-  - type: STR_PBI_ITEM
-    categories: [STR_PERKS_CATEGORY]
-  - type: STR_PTS_ITEM
-    categories: [STR_PERKS_CATEGORY]
-  - type: STR_PROJECT_INDEPENDENCE_ITEM
-    categories: [STR_PERKS_CATEGORY]
-
-  - type: STR_PMM_ITEM
-    categories: [STR_PERKS_CATEGORY]
-  - type: STR_PGM_ITEM
-    categories: [STR_PERKS_CATEGORY]
-#licenses
-  - type: STR_MEDIBAY_ITEM
-    categories: [STR_PERKS_CATEGORY]
-  - type: STR_MEDI_TRAUMA_ITEM
-    categories: [STR_PERKS_CATEGORY]
-  - type: STR_MEDICAL_CYBERNETICS_ITEM
-    categories: [STR_PERKS_CATEGORY]
-
-  - type: STR_BOLT_CANNON_ITEM
-    categories: [STR_PERKS_CATEGORY]
-  - type: STR_SKELE_ITEM
-    categories: [STR_PERKS_CATEGORY]
-  - type: STR_LDT_ITEM
-    categories: [STR_PERKS_CATEGORY]
 #voids
   - type: STR_NULL_LEFT_LEG
     categories: [STR_VOIDS_CATEGORY]
@@ -281,6 +246,7 @@ items:
     invWidth: 2
     invHeight: 2
     battleType: 1
+    weight: 0
     power: 6
     damageType: 10
     damageBonus:
@@ -360,6 +326,7 @@ items:
       strength: 0.6
     damageAlter:
       RandomType: 9
+      ArmorEffectiveness: 1.2
       ToTime: 2.0
       ToWound: 0.2
       RandomWound: true
@@ -4771,7 +4738,7 @@ items:
     damageAlter:
       RandomType: 7
       ArmorEffectiveness: 1.35
-    powerRangeThreshold: 1
+    powerRangeThreshold: 3
     powerRangeReduction: 0.25
 
   - type: STR_SPORTBOW
@@ -6012,7 +5979,7 @@ items:
     #  - STR_SHARES_SSP
     costBuy: 54000
     costSell: 11000
-    monthlySalary: -330
+    monthlySalary: -550
     weight: 1
     armor: 255
 
@@ -6149,8 +6116,16 @@ items:
     costSell: 10000
     monthlySalary: -800
 #armor
-  - type: STR_GCIC_DRONE_ARMOR
+  - type: STR_BELLHOP_DRONE_ARMOR
     categories: [STR_OUTFITS_CATEGORY, STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SPORT_CATEGORY]
+    requiresBuy:
+      - STR_BELLHOP_DRONE_ARMOR
+    size: 0.1
+    costBuy: 6999
+    costSell: 1750
+    transferTime: 4
+  - type: STR_GCIC_DRONE_ARMOR
+    categories: [STR_OUTFITS_CATEGORY, STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY]
     requiresBuy:
       - STR_TODO
     size: 0.1
@@ -6243,6 +6218,77 @@ items:
     recoveryTransformations:
       STR_BIOMASS: [1]
     armor: 25
+
+  - type: STR_BELLHOP_DRONE_HYBRID_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 20
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_BELLHOP_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [1]
+    armor: 35
+  - type: STR_BELLHOP_DRONE_HUMAN_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 22
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_BELLHOP_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [1]
+    armor: 35
+  - type: STR_BELLHOP_DRONE_SHARK_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 28
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_BELLHOP_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [1]
+    armor: 35
+  - type: STR_BELLHOP_DRONE_DEEP_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 22
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_BELLHOP_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [1]
+    armor: 35
+  - type: STR_BELLHOP_DRONE_FLOATER_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 24
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_BELLHOP_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [1]
+    armor: 35
 
   - type: STR_GCIC_DRONE_HYBRID_CORPSE
     name: STR_CORPSE

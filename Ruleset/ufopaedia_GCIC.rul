@@ -435,16 +435,15 @@ ufopaedia:
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
-    image_id: VENDOR_BUILDER_CPAL
-
-  # - id: STR_SSP_MISSIONS
-  #   requires:
-  #     - STR_SSP_MISSIONS
-  #   text: STR_SSP_MISSIONS_UP
-  #   section: STR_OPERATIONS_UC
-  #   type_id: 7
-  #   text_width: 180
-  #   image_id: VENDOR_SSP_CPAL
+    image_id: VENDOR_BUILDERZ_CPAL
+  - id: STR_SSP_MISSIONS
+    requires:
+      - STR_SSP_MISSIONS
+    text: STR_SSP_MISSIONS_UP
+    section: STR_OPERATIONS_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_SSPZ_CPAL
 #technologies
   - id: STR_MONEY_1
     text: STR_MONEY_1_UP
@@ -924,7 +923,7 @@ ufopaedia:
     section: STR_DRONES_UC
     type_id: 7
     text_width: 180
-    image_id: ARMOR_PLEX_CPAL
+    image_id: ARMOR_BELLHOP_CPAL
 
   - id: STR_GCIC_DRONE_ARMOR
     requires:
@@ -1847,7 +1846,7 @@ ufopaedia:
 # abstract
   - id: STR_DRONES2_SHARE
     requires:
-      - STR_DRONES2_SHARE_RESEARCH
+      - STR_PROJECT_DRONES2
     text: STR_DRONES2_SHARE_UP
     section: STR_RESOURCES_UC
     type_id: 8
@@ -1868,6 +1867,12 @@ ufopaedia:
     requires:
       - STR_SHARES_GR
     text: STR_SHARES_GR_UP
+    section: STR_RESOURCES_UC
+    type_id: 8
+  - id: STR_SHARES_SSP
+    requires:
+      - STR_SHARES_SSP
+    text: STR_SHARES_SSP_UP
     section: STR_RESOURCES_UC
     type_id: 8
 
