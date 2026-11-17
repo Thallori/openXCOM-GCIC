@@ -1670,6 +1670,18 @@ ufopaedia:
     text: STR_STIM_INHALER_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
+  - id: STR_STIM_INHALER2
+    requires:
+      - STR_STIM_INHALER2
+    text: STR_STIM_INHALER2_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_STIM_INHALER3
+    requires:
+      - STR_STIM_INHALER3
+    text: STR_STIM_INHALER3_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
   - id: STR_STIM_SPRINT
     requires:
       - STR_STIM_SPRINT
@@ -1697,6 +1709,13 @@ ufopaedia:
     requires:
       - STR_MEDI_TRAUMA
     text: STR_MEDI_TRAUMA_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+
+  - id: STR_CHAMPAGNE
+    requires:
+      - STR_CHAMPAGNE
+    text: STR_CHAMPAGNE_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
 

@@ -130,7 +130,7 @@ missionRatings:
   100: STR_MS_RATING_P3
   50: STR_MS_RATING_P2
   15: STR_MS_RATING_P1
-  -15: STR_MS_RATING_ZREO
+  -15: STR_MS_RATING_ZERO
   -75: STR_MS_RATING_N1
   -200: STR_MS_RATING_N2
   -500: STR_MS_RATING_N3
@@ -139,7 +139,7 @@ missionRatings:
   -999999: STR_MS_RATING_N6 #equal to or greater than
 defeatScore: -9999999
 defeatFunds: -1000000
-maxLookVariant: 8
+maxLookVariant: 0
 turnAIUseGrenade: 1
 turnAIUseBlaster: 1
 surrenderMode: 2

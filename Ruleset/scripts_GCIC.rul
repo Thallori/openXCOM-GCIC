@@ -61,12 +61,11 @@ extended:
               add to_stun currentWounds; #deal the lost damage as stun
 
               if ge currentWounds currentHealth; #if wounds is greater than health, don't
-                sub currentWounds currentHealth;
-                sub currentWounds 1;
-                if lt currentWounds 0; #wounds don't heal wounds
-                  set currentWounds 0;
+                set to_wound currentHealth;
+                sub to_wound 1;
+                if lt to_wound 0; #wounds don't heal wounds
+                  set to_wound 0;
                 end;
-                set to_wound currentWounds;
               end;
 
               unit.getFatalwoundsTotal currentHealth;
@@ -108,7 +107,7 @@ extended:
           end;
 
           unit.getHealth currentHealth;
-          if le to_health currentHealth; #if not dead, don't transform
+          if lt to_health currentHealth; #if not dead, don't transform
             set to_transform 0;
             return;
           end;

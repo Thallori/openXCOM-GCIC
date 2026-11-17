@@ -374,6 +374,15 @@ en-US:
   STR_QUICK_MODE_ACTIVATED: "Zip mode activated.{NEWLINE}Press Ctrl+S again to deactivate."
   STR_QUICK_MODE_DEACTIVATED: "Zip mode deactivated."
 
+  STR_AVATAR_NAME_1: "#1 Alpha Alex"
+  STR_AVATAR_NAME_2: "#2 Beta Brooks"
+  STR_AVATAR_NAME_3: "#3 Gamma Gray"
+  STR_AVATAR_NAME_4: "#4 Delta Dylan"
+  STR_AVATAR_NAME_5: "#5 Epsilon Eden"
+  STR_AVATAR_NAME_6: "#6 Zeta Zane"
+  STR_AVATAR_NAME_7: "#7 Eta Eris"
+  STR_AVATAR_NAME_8: "#8 Theta Taylor"
+
   ETM_PSI_STRENGTH: "PSI SENSITIVITY"
   ETM_PSI_STRENGTH_2X: "PSI SENSITIVITY (x2)"
   ETM_PSI_SKILL: "PSI SKILL"
@@ -618,7 +627,7 @@ en-US:
   STR_MS_RATING_P3: "GOOD"
   STR_MS_RATING_P2: "SATISFACTORY"
   STR_MS_RATING_P1: "SUFFICIENT"
-  STR_MS_RATING_ZREO: "ACCEPTABLE"
+  STR_MS_RATING_ZERO: "ACCEPTABLE"
   STR_MS_RATING_N1: "CONCERNING"
   STR_MS_RATING_N2: "TROUBLING"
   STR_MS_RATING_N3: "DISTRUBING"
@@ -1683,9 +1692,9 @@ en-US:
   STR_MARSBALL: "D&O Marsball"
   STR_MARSBALL_UP: "Raised dura-seams, supple vat-leather cover, perfected a.grav core. Oh yes. We went there. Be amazed when our ball zips back into your arms and then practice to your heart(s) content.{NEWLINE}{NEWLINE}Stun: +75%; Lethal: -80%{NEWLINE}Range: 8m; Penetration: -30%"
   STR_AIRSOFT_PISTOL: "D&O Air Pistol"
-  STR_AIRSOFT_PISTOL_UP: "Micron percision printing in the front, succulent wood grip in the back. If there's a better way prove our love to you, we haven't heard it. The one. The only. The icon.{NEWLINE}{NEWLINE}Penetration: -35%{NEWLINE}Damage Dropoff: 0.25/Tile"
+  STR_AIRSOFT_PISTOL_UP: "Micron percision printing in the front, succulent wood grip in the back. If there's a better way prove our love to you, we haven't heard it. The one. The only. The icon.{NEWLINE}{NEWLINE}Penetration: -10%{NEWLINE}Damage Dropoff: 0.25/Tile"
   STR_AIRSOFT_RIFLE: "D&O Air Rifle"
-  STR_AIRSOFT_RIFLE_UP: "Olympic-grade air compression, 7-time champion barrel accuracy, and more style than your date can handle. Pneumatics have never been so sexy.{NEWLINE}{NEWLINE}Penetration: -35%{NEWLINE}Damage Dropoff: 0.25/Tile"
+  STR_AIRSOFT_RIFLE_UP: "Olympic-grade air compression, 7-time champion barrel accuracy, and more style than your date can handle. Pneumatics have never been so sexy.{NEWLINE}{NEWLINE}Penetration: -10%{NEWLINE}Damage Dropoff: 0.25/Tile"
   STR_AIRSOFT_AMMO: "Air Pellets"
   STR_PSI_DAZZLER: "D&O PsiSoft Dazzler"
   STR_PSI_DAZZLER_UP: "Our suspiciously fierce consumer psi projectors enable all those little fantasies we never share with anyone else. Let's scramble that pretty little mind of yours and call it a new sport.{NEWLINE}{NEWLINE}Penetration: +50%; Lethal -90%{NEWLINE}Morale Damage: +200%; Resiliance Damage: +10%" #todo
@@ -1736,8 +1745,12 @@ en-US:
   STR_MOTION_DETECTOR_UP: "{NEWLINE}> Range: 9m{NEWLINE}{NEWLINE}" #todo
   STR_STIM_INHALER: "Jet Inhaler"
   STR_STIM_INHALER_UP: "{NEWLINE}> Uses: 2{NEWLINE}> Stims: -3 Resiliance, +35 Morale,{NEWLINE}-15 Stun, +35 Energy{NEWLINE}{NEWLINE}Unlicensed recreational medicine. Gives the user the perception of enhanced energy and impetus while measurably reducing signs of conciousness and self-control.{NEWLINE}{NEWLINE}Useable on unconcious targets."
+  STR_STIM_INHALER2: "Nora Inhaler"
+  STR_STIM_INHALER2_UP: "{NEWLINE}> Uses: 1{NEWLINE}> Stims: +12 Resiliance, -200 Morale,{NEWLINE}+50 Stun, +50 Energy{NEWLINE}{NEWLINE}Xenoextracted recreational medicine. Stimulates most neural pathways while supressing the seizure response. Reliably gives all species the short-lived hallucinatory identity of being fire.{NEWLINE}{NEWLINE}Useable on unconcious targets."
+  STR_STIM_INHALER3: "Choc Inhaler"
+  STR_STIM_INHALER3_UP: "{NEWLINE}> Uses: 4{NEWLINE}> Stims: +5 Resiliance, -15 Morale,{NEWLINE}-10 Stun, -2 Health{NEWLINE}{NEWLINE}Xeno-hybrid recreational medicine. A semi-synthetic, sweet tasting, depression inducing hallucinogen with mild nootropic effects. Temporarily reduces oxygen carrying capacity of blood and blood-like fluids. Overdoses commonly cause users to meet with and be disappointed by god.{NEWLINE}{NEWLINE}Useable on unconcious targets."
   STR_STIM_SPRINT: "Sprint Inhaler"
-  STR_STIM_SPRINT_UP: "{NEWLINE}> Uses: 3{NEWLINE}> Stims: -1 Resiliance, -5 Morale,{NEWLINE}+5 Stun, +20 Energy{NEWLINE}{NEWLINE}Purified utilitarian medicine. Forcibly oxygenates blood and breaks up useless acidic byproducts from muscular exertion. Common side-effects include derealization and sense of impending doom.{NEWLINE}{NEWLINE}Useable on unconcious targets."
+  STR_STIM_SPRINT_UP: "{NEWLINE}> Uses: 3{NEWLINE}> Stims: -1 Resiliance, -5 Morale,{NEWLINE}+5 Stun, +20 Energy{NEWLINE}{NEWLINE}Purified utilitarian medicine. Forcibly oxygenates blood and blood-like fluids while breaking up useless acidic byproducts from muscular exertion. Common side-effects include derealization and sense of impending doom.{NEWLINE}{NEWLINE}Useable on unconcious targets."
   STR_STIM_MORNING: "Morning Inhaler"
   STR_STIM_MORNING_UP: "{NEWLINE}> Uses: 2{NEWLINE}> Stims: -2 Resiliance, +5 Morale,{NEWLINE}+25 Stun, +5 Energy{NEWLINE}{NEWLINE}Wake up and enjoy medicine. Many formulas exist, though only a few are delicious. A popular caffeine alternative among the executive-class.{NEWLINE}{NEWLINE}Useable on unconcious targets."
   STR_MEDI_SPRAY: "MEDI-Spray"
@@ -1748,6 +1761,8 @@ en-US:
   STR_MEDI_TRAUMA_ITEM: "LICENSE: MEDI-Trauma Kit"
   STR_MEDI_TRAUMA: "MEDI-Trauma"
   STR_MEDI_TRAUMA_UP: "{NEWLINE}> Uses: 8{NEWLINE}> Heals: 4 HP{NEWLINE}> Stims: 8 Stun, 15 Energy{NEWLINE}{NEWLINE}Emergency room in a box. Recommended by affiliate doctors for on-site treatment of major injuries, and as a convenient source of portable MEDI-care. Each subscription covers unlimited access to resupply and live service updates.{NEWLINE}{NEWLINE}Maintenance: $4,000/Month"
+  STR_CHAMPAGNE: "Sainte-Menehould"
+  STR_CHAMPAGNE_UP: "A nose of cocoa and vanilla with a lush fruit forward and insidiously creamy palette. Apricots tango with fig before twisting away into strawberries and honey, then finishing on a perfect kiss of brine. One of only 300 bottles exported per year from the Champagne region of Old France."
 #resources
 # containers
   STR_CRIMINAL_CONTAINER_1: "Contraband Crate"
@@ -2058,7 +2073,7 @@ en-US:
   STR_MANUAL_MANUAL: "MANUALS"
   STR_MANUAL_MANUAL_UP: "{NEWLINE}ARTICLE: [error 404]{NEWLINE}EXCEPTION: Invioability Suspended{NEWLINE}{NEWLINE}Every system has rules. Some of these rules are familiar, others are not. Discoveries made through trial and error are inefficient and, more importantly, only appreciated by a minority of processes.{NEWLINE}{NEWLINE}The following manuals are provided in the interest of time and posterity. If time and posterity are unavailable, nothing here will ever be of help."
   STR_OPERATIONS_TUTORIAL: "Projects"
-  STR_OPERATIONS_TUTORIAL_UP: "Research topics marked by {ALT}>arrows<{ALT} will unlock new operations and therefore, new opportunities. This is the best (and usually only) way to make progress.{NEWLINE}{NEWLINE}Some projects have multiple pre-requisites before they become available. In the research screen, a topic can be {ALT}examined{ALT} [middle-click] to see what it might unlock.{NEWLINE}{NEWLINE}Other projects will require {ALT}fabrication{ALT} representing an exchange of items for possibilities. Each project needs only a single production, which must then be researched."
+  STR_OPERATIONS_TUTORIAL_UP: "Research topics marked by {ALT}>arrows<{ALT} will unlock new operations and therefore, new opportunities. This is the best (and usually only) way to make progress.{NEWLINE}{NEWLINE}Some projects have multiple pre-requisites before they become available. In the research screen, a topic can be {ALT}examined{ALT} [middle-click] to see what it might unlock.{NEWLINE}{NEWLINE}Other projects will require {ALT}fabrication{ALT} representing an exchange of items for possibilities. Each project needs only a single production."
   STR_AUDITING: "Audit"
   STR_AUDITING_UP: "Acting as the highest form of legitimate power, the Commodities Exchange Market records and taxes all in-system transactions. Ensuring no corporation is too big to fail, a debt limit of {ALT}$1,000,000{ALT} will trigger an aduit.{NEWLINE}{NEWLINE}Because the results of these investigations are public, being audited is the {ALT}final loss condition{ALT} for most corporations.{NEWLINE}{NEWLINE}Emergency measures such as selling assets, dismantling facilities, and liquidating ancillaries can be done up until the {ALT}last day{ALT} of each month."
   STR_LIQUIDITY: "Liquidity"
@@ -2105,7 +2120,8 @@ en-US:
   STR_AWARD_DECOR_4: "Alloy"
   STR_ACCOLADES_TECH: "ACCOLADES"
   STR_ACCOLADES_TECH_UP: "{NEWLINE}ARTICLE: GCIC Manager's Handbook{NEWLINE}CHAPTER: Motivating Your Employees{NEWLINE}{NEWLINE}Recognizing success stories is important to the GCIC family, no matter how big or small. Even drones perform better with positive (and negative!) enforcement training.{NEWLINE}{NEWLINE}To help maximize synergies, a modest print budget for accolades is set aside for all productive employees. Be creative! Remember, individuality is one of our core values."
-  STR_MEDAL_IMPORTANT_MISSIONS_NAME: "debug" #non-small craft, hardcoded
+  STR_MEDAL_IMPORTANT_MISSIONS_NAME: "buggy" #non-small craft, hardcoded
+  STR_MEDAL_IMPORTANT_MISSIONS_UFOPEDIA: "should not see this in normal play because this appears to be hardcoded and had to be replaced"
   STR_MEDAL_ORIGINAL8: "Source"
   STR_MEDAL_ORIGINAL8_NAME: "Source" #original team, hardcoded
   STR_MEDAL_ORIGINAL8_UP: "{NEWLINE}These minds were the seed from which we grew. In some way, they will always be the strongest influence on who we are and who will become.{NEWLINE}{NEWLINE}Marks initial drones.{NEWLINE}{NEWLINE}+1 to all stats except Bravery"

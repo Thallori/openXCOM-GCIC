@@ -16,6 +16,8 @@ almost all loot can only be sold for 25% of what it costs to buy. this to make t
 
 engineers and scientists cannot be bought, but must instead be built out of items you can only get a once a month (or more, the further in the game you are). this makes them precious and gives you a difficult decision between research and manufacturing (though early game, always pick science. there just isn't that much to build at the start). this also lets engineers be rather profitable (with the right techs) without breaking the game. in vanilla, the economy can just be building workshops, staffing them, selling stuff, building more workshops, repeat. breaking this loop means limiting either staff or manufacturing profits. the loop is important to break because it turns the money economy into a factor of time, not a factor of success.
 
+there's no easy smoke. fire and destruction still makes plenty of smoke, but far more slowly than a grenade might. on top of that, all enemies ignore 20% of the vision debuffs, giving the player a disadvantage. this has been done mainly to avoid the dominate strategy of throwing smoke grenades on your first turn in almost every single mission. instead, maps and crafts have been balanced without this kind of turtling in mind.
+
 --------
 
 all fixed options are fixed because balancing the game around you changing them would be too difficult or because they would introduce themeatic inconsistencies (like for retain corpses. lorewise, you aren't killing someone after interrogating them). you can still change these settings in the "vars_GCIC.rul" file if you like. some recommended options are strongly recommended, others are just what the mod was built with in mind.

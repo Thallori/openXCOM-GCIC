@@ -1129,6 +1129,12 @@ research:
   - name: STR_STIM_INHALER
     needItem: true
     cost: 5
+  - name: STR_STIM_INHALER2
+    needItem: true
+    cost: 5
+  - name: STR_STIM_INHALER3
+    needItem: true
+    cost: 5
   - name: STR_STIM_SPRINT
     needItem: true
     cost: 5
@@ -1146,6 +1152,10 @@ research:
     cost: 5
     dependencies:
       - STR_MEDI_TRAUMA_ITEM
+
+  - name: STR_CHAMPAGNE
+    needItem: true
+    cost: 5
 
   - name: STR_EXTINGUISHER
     needItem: true

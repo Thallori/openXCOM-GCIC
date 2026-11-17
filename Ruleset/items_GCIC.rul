@@ -4733,11 +4733,11 @@ items:
     clipSize: 5
     power: 8
     damageBonus:
-      firing: 0.35
+      firing: 0.40
     damageType: 1
     damageAlter:
       RandomType: 7
-      ArmorEffectiveness: 1.35
+      ArmorEffectiveness: 1.1
     powerRangeThreshold: 3
     powerRangeReduction: 0.25
 
@@ -4753,7 +4753,7 @@ items:
     bigSprite: 295
     floorSprite: 269
     handSprite: 672
-    bulletSprite: 12 #
+    bulletSprite: 28
     bulletSpeed: -1
     fireSound: 104 #
     reloadSound: 140 #
@@ -4799,7 +4799,7 @@ items:
     bigSprite: 296
     floorSprite: 270
     handSprite: 680
-    bulletSprite: 12 #
+    bulletSprite: 28
     bulletSpeed: -1
     fireSound: 104 #
     reloadSound: 140 #
@@ -4934,11 +4934,11 @@ items:
     bigSprite: 301
     floorSprite: 271
     handSprite: 688
-    bulletSprite: 20 #purplyify
+    bulletSprite: 21
     bulletSpeed: -1
     fireSound: 152
     hitSound: 153
-    hitAnimation: 76 #purplyify
+    hitAnimation: 86
     invWidth: 1
     invHeight: 3
     battleType: 1
@@ -5471,6 +5471,64 @@ items:
     costUse:
       time: 8
     flatRate: true
+  - type: STR_STIM_INHALER2
+    categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_SPORT_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_P2P
+      - STR_STIM_INHALER2
+    size: 0.01
+    costBuy: 84
+    costSell: 21
+    transferTime: 4
+    hitSound: 103
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 1
+    invHeight: 1
+    battleType: 6
+    medikitActionName: STR_USE_INHALER
+    weight: 2
+    stimulant: 1
+    manaRecovery: 12
+    moraleRecovery: -200
+    stunRecovery: 50
+    energyRecovery: 50
+    medikitTargetMatrix: 31
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 2
+    costUse:
+      time: 8
+    flatRate: true
+  - type: STR_STIM_INHALER3
+    categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_SPORT_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_P2P
+      - STR_STIM_INHALER3
+    size: 0.01
+    costBuy: 84
+    costSell: 21
+    transferTime: 4
+    hitSound: 103
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 1
+    invHeight: 1
+    battleType: 6
+    medikitActionName: STR_USE_INHALER
+    weight: 3
+    stimulant: 4
+    manaRecovery: 5
+    healthRecovery: -2
+    moraleRecovery: -15
+    stunRecovery: -10
+    medikitTargetMatrix: 31
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 2
+    costUse:
+      time: 8
+    flatRate: true
   - type: STR_STIM_SPRINT
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_SPORT_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
     requiresBuy:
@@ -5609,6 +5667,35 @@ items:
       time: 15
     flatRate: true
     armor: 40
+
+  - type: STR_CHAMPAGNE
+    categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_TOOLS_CATEGORY, STR_SPORT_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_CHAMPAGNE
+    size: 0.01
+    costBuy: 91999
+    costSell: 22999
+    transferTime: 72
+    hitSound: 103 #todo
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 1
+    invHeight: 2
+    battleType: 6
+    medikitActionName: STR_USE_INHALER #todo
+    weight: 5
+    stimulant: 8
+    moraleRecovery: 10
+    stunRecovery: -5
+    medikitTargetMatrix: 31
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 2
+    costUse:
+      time: 15
+    flatRate: true
+    ignoreInCraftEquip: true
 
   - type: STR_EXTINGUISHER
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_TOOLS_CATEGORY, STR_SPORT_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY, STR_MELEE_CATEGORY]

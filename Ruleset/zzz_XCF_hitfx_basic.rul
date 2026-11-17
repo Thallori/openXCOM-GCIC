@@ -11,12 +11,12 @@ extended:
   scripts:
     # hitUnit required to find side hit
     # Otherwise we cannot get the armor value delta
-    hitUnit:
-    - offset: 20
-      code: |
-        var int unit_id;
-        unit.getId unit_id;
-        return power part side;
+    # hitUnit:
+    # - offset: 20
+    #   code: |
+    #     var int unit_id;
+    #     unit.getId unit_id;
+    #     return power part side;
     damageUnit:
       - offset: 20
         code: |
@@ -91,10 +91,11 @@ extended:
           var int hitpower;
           
           unit.getTag temp Tag.LAST_HIT_FRAME;
-          unit.getTag hittype Tag.LAST_HIT_TYPE;
-          unit.getTag hitpower Tag.LAST_HIT_POWER;
 
           if neq temp 0;
+            unit.getTag hittype Tag.LAST_HIT_TYPE;
+            unit.getTag hitpower Tag.LAST_HIT_POWER;
+
             sub temp anim_frame;
             if eq hittype 0;
               if gt temp -3; # number of frames to blink

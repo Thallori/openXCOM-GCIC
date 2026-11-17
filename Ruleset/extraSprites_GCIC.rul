@@ -33,12 +33,12 @@ extraSprites:
     subX: 32
     subY: 48
     files:
-      58: Resources/Items/BuiltIns/Licensed/Terror.png
+      58: Resources/Items/Builtins/Licensed/Terror.png
   - type: BIGOBS.PCK
     width: 32
     height: 48
     files:
-      57: Resources/Items/BuiltIns/Licensed/Zombie.png
+      57: Resources/Items/Builtins/Licensed/Zombie.png
   - type: BIGOBS.PCK
     files:
       100: Resources/Armors/Pilots/FlyingCore/pilot_core_corpse_bigob.png
@@ -597,6 +597,7 @@ extraSprites:
       56: Resources/Animations/electric_hit.png
       66: Resources/Animations/redlaser_hit.png
       76: Resources/Animations/sonic_hit.png
+      86: Resources/Animations/sonic_hitpurple.png
   - type: SMOKE.PCK
     height: 40
     width: 32
@@ -643,6 +644,7 @@ extraSprites:
       875: Resources/Animations/Projectiles/bomb_bullet.png
       910: Resources/Animations/Projectiles/laseryellowbig_bullet.png
       945: Resources/Animations/Projectiles/gel_bullet.png
+      980: Resources/Animations/Projectiles/arrow_bullet.png
 #paperdolls
 # human
   - typeSingle: HUMAN__2__F0_SHELL
@@ -674,12 +676,16 @@ extraSprites:
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_F1.png
   - typeSingle: SHARK__2__F2_SHELL
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_F2.png
+  - typeSingle: SHARK__2__F3_SHELL
+    fileSingle: Resources/Armors/Bodies/Sharks/SHARK_F3.png
   - typeSingle: SHARK__2__M0_SHELL
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_M0.png
   - typeSingle: SHARK__2__M1_SHELL
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_M1.png
   - typeSingle: SHARK__2__M2_SHELL
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_M2.png
+  - typeSingle: SHARK__2__M3_SHELL
+    fileSingle: Resources/Armors/Bodies/Sharks/SHARK_M3.png
 # deep
   - typeSingle: DEEP__2__F0_HANDS
     fileSingle: Resources/Armors/Bodies/Deep/DEEPHANDS_F0.png

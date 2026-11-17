@@ -112,13 +112,13 @@ armors:
       F0: ["", "", "F0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
       F2: ["", "", "F2_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
-      F3: ["", "", "F1_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
       M2: ["", "", "M2_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
-      M3: ["", "", "M1_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "WORKSUIT", "", "", ""]
     spriteFaceGroup: 11
-    spriteFaceColor: &SpriteFaceColorShark [176, 224, 80, 112, 176, 224, 80, 112]
+    spriteFaceColor: &SpriteFaceColorShark [176, 230, 80, 114, 131, 208, 196, 241] #M0 F0 M1 F1 M2 F2 M3 F3
     corpseBattle:
       - STR_PLEX_DRONE_SHARK_CORPSE
     specialWeapon: STR_SHARKATTACK
@@ -274,11 +274,11 @@ armors:
       F0: ["", "", "F0_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
       F2: ["", "", "F2_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
-      F3: ["", "", "F1_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
       M2: ["", "", "M2_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
-      M3: ["", "", "M1_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "BELLHOP", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
@@ -440,11 +440,11 @@ armors:
       F0: ["", "", "F0_SHELL", "", "", "", "DURA", "", "", "", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "DURA", "", "", "", ""]
       F2: ["", "", "F2_SHELL", "", "", "", "DURA", "", "", "", ""]
-      F3: ["", "", "F1_SHELL", "", "", "", "DURA", "", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "DURA", "", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "DURA", "", "", "", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "DURA", "", "", "", ""]
       M2: ["", "", "M2_SHELL", "", "", "", "DURA", "", "", "", ""]
-      M3: ["", "", "M1_SHELL", "", "", "", "DURA", "", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "DURA", "", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
@@ -608,11 +608,11 @@ armors:
       F0: ["", "", "F0_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
       F2: ["", "", "F2_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
-      F3: ["", "", "F1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
       M2: ["", "", "M2_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
-      M3: ["", "", "M1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
@@ -771,11 +771,11 @@ armors:
       F0: ["", "", "F0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       F2: ["", "", "F2_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      F3: ["", "", "F1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
       M2: ["", "", "M2_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
-      M3: ["", "", "M1_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "JUMPSUIT", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
@@ -932,11 +932,11 @@ armors:
       F0: ["", "", "F0_SHELL", "", "", "", "", "SKELE", "", "", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "", "SKELE", "", "", ""]
       F2: ["", "", "F2_SHELL", "", "", "", "", "SKELE", "", "", ""]
-      F3: ["", "", "F1_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "SKELE", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "", "SKELE", "", "", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "", "SKELE", "", "", ""]
       M2: ["", "", "M2_SHELL", "", "", "", "", "SKELE", "", "", ""]
-      M3: ["", "", "M1_SHELL", "", "", "", "", "SKELE", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "SKELE", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
@@ -1094,11 +1094,11 @@ armors:
       F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
       F2: ["", "", "F2_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
-      F3: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
       M2: ["", "", "M2_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
-      M3: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
@@ -1248,11 +1248,11 @@ armors:
       F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
       F2: ["", "", "F2_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
-      F3: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
       M2: ["", "", "M2_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
-      M3: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:
@@ -2245,11 +2245,11 @@ armors:
       F0: ["", "", "F0_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
       F1: ["", "", "F1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
       F2: ["", "", "F2_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
-      F3: ["", "", "F1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
       M0: ["", "", "M0_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
       M1: ["", "", "M1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
       M2: ["", "", "M2_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
-      M3: ["", "", "M1_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "DURA", "DURAVEST", "", "", ""]
     spriteFaceGroup: 11
     spriteFaceColor: *SpriteFaceColorShark
     corpseBattle:

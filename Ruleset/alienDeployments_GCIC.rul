@@ -2191,7 +2191,7 @@
         lowQty: 1
         medQty: 1
         highQty: 2
-        dQty: 1
+        dQty: 0
         percentageOutsideUfo: 0
         extraRandomItems: &viceExtra
           - [STR_PERSONAL_DATA, STR_PERSONAL_DATA, STR_MEDI_SPRAY, STR_MEDI_SPRAY, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM]
@@ -2200,51 +2200,61 @@
             - STR_9MM_MG
             - STR_9MM_MG_AMMO
             - STR_9MM_MG_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_MG
             - STR_9MM_MG_AMMO
             - STR_9MM_MG_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_MG
             - STR_9MM_MG_AMMO
             - STR_9MM_MG_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_MG
             - STR_9MM_MG_AMMO
             - STR_9MM_MG_AMMO
+            - STR_BOUNTY_1
           -
             - STR_BARREL_MOTAR
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
+            - STR_BOUNTY_1
           -
             - STR_BARREL_MOTAR
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
+            - STR_BOUNTY_1
           -
             - STR_BARREL_MOTAR
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
+            - STR_BOUNTY_1
           -
             - STR_BARREL_MOTAR
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
+            - STR_BOUNTY_1
           -
             - STR_GOLFWEDGE
+            - STR_BOUNTY_1
           -
             - STR_GOLFDRIVER
+            - STR_BOUNTY_1
       - alienRank: 4
         lowQty: 2
         medQty: 2
         highQty: 3
-        dQty: 2
+        dQty: 1
         percentageOutsideUfo: 0
         extraRandomItems: *viceExtra
         itemSets:
@@ -2253,42 +2263,52 @@
             - STR_9MM_AMMO
             - STR_9MM_AMMO
             - STR_STL_KNIFE
+            - STR_BOUNTY_1
           -
             - STR_9MM_PISTOL
             - STR_9MM_AMMO
             - STR_9MM_AMMO
             - STR_STL_KNIFE
+            - STR_BOUNTY_1
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_SMG
             - STR_9MM_SMG_AMMO
             - STR_9MM_SMG_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_RIFLE #todo replace with 9mm sniper
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_RIFLE #todo replace with 9mm sniper
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_RIFLE #todo replace with 9mm sniper
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
+            - STR_BOUNTY_1
           -
             - STR_PSI_DAZZLER
+            - STR_BOUNTY_1
           -
             - STR_PSI_DAZZLER
+            - STR_BOUNTY_1
       - alienRank: 5
         lowQty: 8
         medQty: 8
@@ -2303,51 +2323,61 @@
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
             - STR_STL_KNIFE
+            - STR_BOUNTY_1
           -
             - STR_BUSBOX_PISTOL
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
             - STR_STL_KNIFE
+            - STR_BOUNTY_1
           -
             - STR_BUSBOX_PISTOL
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
             - STR_STL_KNIFE
+            - STR_BOUNTY_1
           -
             - STR_BUSBOX_PISTOL
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
             - STR_PAPERSHOT_AMMO
             - STR_STL_KNIFE
+            - STR_BOUNTY_1
           -
             - STR_9MM_RIFLE
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_RIFLE
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_RIFLE
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_RIFLE
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_RIFLE #todo replace with 9mm shotgun
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
+            - STR_BOUNTY_1
           -
             - STR_9MM_RIFLE #todo replace with 9mm shotgun
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
             - STR_9MM_RIFLE_AMMO
+            - STR_BOUNTY_1
