@@ -1531,14 +1531,16 @@ en-US:
   STR_9MM_SMG: "3AM Zip SMG"
   STR_9MM_SMG_UP: "Fully automatic firearms are more difficult to come by on the P2P market. Lower print tolerances and more moving parts mean that half suffer from low fire rates while the other half don't work at all."
   STR_9MM_SMG_AMMO: "Zip SMG Clip"
-  STR_ZIP_SHOTGUN: "4PM Zip Shotgun"
-  STR_ZIP_SHOTGUN_UP: "todo{NEWLINE}{NEWLINE}Stun: +25%{NEWLINE}{NEWLINE}Salt: +50% TU Damage; Pepper: +50% Morale Damage" #todo, slamfire
-  STR_ZIP_SHOTGUN_AMMO_BS: "Zip Buckshot Shells"
-  STR_ZIP_SHOTGUN_AMMO_SALT: "Zip Salt Shells" #tu
-  STR_ZIP_SHOTGUN_AMMO_PEPPER: "Zip Pepper Shells" #morale
+  STR_9MM_SHOTGUN: "4PM Zip Shotgun"
+  STR_9MM_SHOTGUN_UP: "todo{NEWLINE}{NEWLINE}Stun: +25%{NEWLINE}Salt: +100% TU/Morale Damage; Lethal: -75%" #todo, slamfire
+  STR_9MM_SHOTGUN_AMMO: "Zip Buckshot Shells"
+  STR_9MM_SHOTGUN_AMMO_SALT: "Zip Salt Shells" #tu
   STR_9MM_RIFLE: "2X Zip Rifle"
   STR_9MM_RIFLE_UP: "Accurate for a zip gun and not overly encumbering. The stock and barrel extension makes it easier to aim, but the added bulk makes this an unpopular kit in cramped and urban enviroments.{NEWLINE}{NEWLINE}Penetration: +10%"
   STR_9MM_RIFLE_AMMO: "Zip Rifle Clip"
+  STR_9MM_SNIPER_RIFLE: "5G Zip Sniper"
+  STR_9MM_SNIPER_RIFLE_UP: "The name is more aspirational than descriptive.{NEWLINE}{NEWLINE}Penetration: +15%"
+  STR_9MM_SNIPER_RIFLE_AMMO: "Zip Sniper Clip"
   STR_9MM_MG: "6BBs Rotary Machine Gun"
   STR_9MM_MG_UP: "Built out of pipes, fired by springs, and spun by a brush motor. These parts must constantly be replaced due to fowling, wear, and general slipshod design. Despite its shortcomings, would be classified as milspec equipment if the makers ever wanted licensing royalities.{NEWLINE}{NEWLINE}Maintenance: $1,400/Month"
   STR_9MM_MG_AMMO: "Rotary Clip"

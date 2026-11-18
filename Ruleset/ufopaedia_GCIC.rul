@@ -1039,6 +1039,23 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     type_id: 4
 
+  - id: STR_9MM_SHOTGUN
+    requires:
+      - STR_9MM_SHOTGUN
+    text: STR_9MM_SHOTGUN_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_9MM_SHOTGUN_AMMO
+    requires:
+      - STR_9MM_SHOTGUN
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+  - id: STR_9MM_SHOTGUN_AMMO_SALT
+    requires:
+      - STR_9MM_SHOTGUN
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
   - id: STR_9MM_RIFLE
     requires:
       - STR_9MM_RIFLE
@@ -1048,6 +1065,18 @@ ufopaedia:
   - id: STR_9MM_RIFLE_AMMO
     requires:
       - STR_9MM_RIFLE
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_9MM_SNIPER_RIFLE
+    requires:
+      - STR_9MM_SNIPER_RIFLE
+    text: STR_9MM_SNIPER_RIFLE_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_9MM_SNIPER_RIFLE_AMMO
+    requires:
+      - STR_9MM_SNIPER_RIFLE
     section: STR_NOT_AVAILABLE
     type_id: 4
 

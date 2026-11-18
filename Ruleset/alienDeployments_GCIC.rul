@@ -9,6 +9,7 @@
       - FOREST2
       - DESERT2
       - TAIGA2
+      - TROPICAL2
 
   - type: STR_HOLOUFO_SMALL
     script: GEO_DEFAULT5X5
@@ -2286,22 +2287,22 @@
             - STR_9MM_SMG_AMMO
             - STR_BOUNTY_1
           -
-            - STR_9MM_RIFLE #todo replace with 9mm sniper
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE_AMMO
             - STR_BOUNTY_1
           -
-            - STR_9MM_RIFLE #todo replace with 9mm sniper
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE_AMMO
             - STR_BOUNTY_1
           -
-            - STR_9MM_RIFLE #todo replace with 9mm sniper
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE_AMMO
             - STR_BOUNTY_1
           -
             - STR_PSI_DAZZLER
@@ -2340,10 +2341,21 @@
             - STR_BOUNTY_1
           -
             - STR_BUSBOX_PISTOL
-            - STR_PAPERSHOT_AMMO
-            - STR_PAPERSHOT_AMMO
-            - STR_PAPERSHOT_AMMO
-            - STR_STL_KNIFE
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
             - STR_BOUNTY_1
           -
             - STR_9MM_RIFLE
@@ -2358,26 +2370,14 @@
             - STR_9MM_RIFLE_AMMO
             - STR_BOUNTY_1
           -
-            - STR_9MM_RIFLE
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE_AMMO
             - STR_BOUNTY_1
           -
-            - STR_9MM_RIFLE
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
-            - STR_BOUNTY_1
-          -
-            - STR_9MM_RIFLE #todo replace with 9mm shotgun
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
-            - STR_BOUNTY_1
-          -
-            - STR_9MM_RIFLE #todo replace with 9mm shotgun
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE_AMMO
             - STR_BOUNTY_1

@@ -865,6 +865,99 @@ items:
       reactions: 0.05
     damageType: 1
 
+  - type: STR_9MM_SHOTGUN
+    categories: [STR_UNLICENSED_CATEGORY, STR_SHOTGUNS_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_P2P
+      - STR_9MM_SHOTGUN
+    size: 0.2
+    costBuy: 309
+    costSell: 78
+    transferTime: 12
+    bigSprite: 900
+    floorSprite: 900
+    handSprite: 900
+    bulletSprite: 3
+    fireSound: 118
+    reloadSound: 120
+    invWidth: 1
+    invHeight: 3
+    battleType: 1
+    weight: 8
+    compatibleAmmo:
+      - STR_9MM_SHOTGUN_AMMO
+      - STR_9MM_SHOTGUN_AMMO_SALT
+    accuracySnap: 65
+    accuracyAimed: 85
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.10
+    tuSnap: 20
+    tuAimed: 28
+    tuLoad: 25
+    snapRange: 6
+    aimRange: 12
+    dropoff: 4
+    kneelBonus: 115
+    flatRate: true
+    twoHanded: true
+    oneHandedPenalty: 75
+    attraction: 15
+    armor: 40
+  - type: STR_9MM_SHOTGUN_AMMO
+    categories: [STR_UNLICENSED_CATEGORY, STR_SHOTGUNS_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_P2P
+      - STR_9MM_SHOTGUN
+    size: 0.01
+    costBuy: 19
+    costSell: 5
+    transferTime: 12
+    bigSprite: 900
+    floorSprite: 900
+    hitSound: 13
+    hitAnimation: 26
+    battleType: 2
+    weight: 3
+    clipSize: 6
+    power: 12
+    shotgunPellets: 8
+    shotgunSpread: 25
+    shotgunBehavior: 1
+    damageType: 1
+    damageBonus:
+      reactions: 0.05
+    damageAlter:
+      ToStun: 0.50
+  - type: STR_9MM_SHOTGUN_AMMO_SALT
+    categories: [STR_UNLICENSED_CATEGORY, STR_SHOTGUNS_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_P2P
+      - STR_9MM_SHOTGUN
+    size: 0.01
+    costBuy: 14
+    costSell: 4
+    transferTime: 12
+    bigSprite: 900
+    floorSprite: 900
+    hitSound: 13
+    hitAnimation: 26
+    battleType: 2
+    weight: 3
+    clipSize: 6
+    power: 15
+    shotgunPellets: 8
+    shotgunSpread: 50
+    shotgunBehavior: 1
+    damageType: 1
+    damageBonus:
+      reactions: 0.05
+    damageAlter:
+      ToHealth: 0.25
+      ToStun: 0.50
+      ToTime: 1.0
+      ToMorale: 1.0
+
   - type: STR_9MM_RIFLE
     categories: [STR_UNLICENSED_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
     requiresBuy:
@@ -892,7 +985,7 @@ items:
     tuSnap: 40
     tuAimed: 65
     snapRange: 16
-    aimRange: 30
+    aimRange: 25
     dropoff: 2
     twoHanded: true
     oneHandedPenalty: 50
@@ -920,6 +1013,65 @@ items:
       firing: 0.10
     damageAlter:
       ArmorEffectiveness: 0.90
+    damageType: 1
+
+  - type: STR_9MM_SNIPER_RIFLE
+    categories: [STR_UNLICENSED_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_P2P
+      - STR_9MM_SNIPER_RIFLE
+    size: 0.2
+    costBuy: 419
+    costSell: 105
+    transferTime: 12
+    bigSprite: 900
+    floorSprite: 900
+    handSprite: 900
+    bulletSprite: 2
+    fireSound: 4
+    invWidth: 1
+    invHeight: 3
+    battleType: 1
+    weight: 10
+    compatibleAmmo:
+      - STR_9MM_SNIPER_RIFLE_AMMO
+    accuracySnap: 90
+    accuracyAimed: 125
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: -0.20
+    tuSnap: 45
+    tuAimed: 75
+    snapRange: 18
+    aimRange: 28
+    dropoff: 2
+    twoHanded: true
+    oneHandedPenalty: 50
+    noLOSAccuracyPenalty: 75
+    kneelBonus: 120
+    attraction: 15
+    armor: 40
+  - type: STR_9MM_SNIPER_RIFLE_AMMO
+    categories: [STR_UNLICENSED_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_P2P
+      - STR_9MM_SNIPER_RIFLE
+    size: 0.01
+    costBuy: 39
+    costSell: 10
+    transferTime: 12
+    bigSprite: 900
+    floorSprite: 900
+    hitSound: 13
+    hitAnimation: 26
+    battleType: 2
+    weight: 3
+    clipSize: 5
+    power: 24
+    damageBonus:
+      firing: 0.15
+    damageAlter:
+      ArmorEffectiveness: 0.85
     damageType: 1
 
   - type: STR_9MM_MG
@@ -1489,9 +1641,9 @@ items:
       shortName: STR_SNAP_MULTIPLE_SHORT
     confAuto:
       shots: 5
+    accuracySnap: 55
     accuracyAimed: 80
-    accuracySnap: 50
-    accuracyAuto: 45
+    accuracyAuto: 50
     accuracyMultiplier:
       firing: 1.0
       flatHundred: 0.10
@@ -1535,9 +1687,9 @@ items:
       shortName: STR_SNAP_MULTIPLE_SHORT
     confAuto:
       shots: 5
-    accuracySnap: 50
+    accuracySnap: 55
     accuracyAimed: 80
-    accuracyAuto: 45
+    accuracyAuto: 50
     accuracyMultiplier:
       firing: 1.0
       flatHundred: 0.10
@@ -4371,6 +4523,7 @@ items:
     kneelBonus: 110
     experienceTrainingMode: 7
     attraction: 10
+    armor: 30
   - type: STR_TASER_PISTOL_CODED
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY, STR_LOCKED_CATEGORY]
     ufopediaType: STR_TASER_PISTOL
@@ -4676,7 +4829,7 @@ items:
     noLOSAccuracyPenalty: 75
     experienceTrainingMode: 17
     attraction: 10
-    armor: 30
+    armor: 40
   - type: STR_AIRSOFT_RIFLE
     categories: [STR_UNLICENSED_CATEGORY, STR_AQUATIC_CATEGORY, STR_VACUUM_CATEGORY, STR_SPORT_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
     requiresBuy:
@@ -4707,7 +4860,7 @@ items:
     tuAimed: 80
     tuLoad: 20
     snapRange: 12
-    aimRange: 25
+    aimRange: 30
     dropoff: 1
     kneelBonus: 120
     noLOSAccuracyPenalty: 75
@@ -4786,7 +4939,7 @@ items:
     blockBothHands: true
     experienceTrainingMode: 7
     attraction: 10
-    armor: 40
+    armor: 30
   - type: STR_AUTOBOW
     categories: [STR_UNLICENSED_CATEGORY, STR_AQUATIC_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_SPORT_CATEGORY]
     requiresBuy:
@@ -4832,7 +4985,7 @@ items:
     blockBothHands: true
     experienceTrainingMode: 7
     attraction: 10
-    armor: 40
+    armor: 30
   - type: STR_SPORT_ARROWS1
     categories: [STR_UNLICENSED_CATEGORY, STR_AQUATIC_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_SPORT_CATEGORY]
     requiresBuy:
@@ -4981,7 +5134,7 @@ items:
     oneHandedPenalty: 50
     experienceTrainingMode: 26
     attraction: 10
-    armor: 40
+    armor: 50
 
   - type: STR_DARTROPE
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_SPORT_CATEGORY, STR_INFILTRATION_CATEGORY]
@@ -5036,6 +5189,7 @@ items:
     kneelBonus: 110
     experienceTrainingMode: 7
     attraction: 5
+    armor: 40
 # gr
   - type: STR_MULTITOOL
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MELEE_CATEGORY]

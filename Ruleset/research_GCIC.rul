@@ -754,7 +754,17 @@ research:
     cost: 5
     unlocks:
       - STR_V_P2P_PREQ
+  - name: STR_9MM_SHOTGUN
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_V_P2P_PREQ
   - name: STR_9MM_RIFLE
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_V_P2P_PREQ
+  - name: STR_9MM_SNIPER_RIFLE
     needItem: true
     cost: 5
     unlocks:
