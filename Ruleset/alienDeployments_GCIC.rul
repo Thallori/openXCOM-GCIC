@@ -2194,7 +2194,7 @@
         dQty: 0
         percentageOutsideUfo: 0
         extraRandomItems: &viceExtra
-          - [STR_PERSONAL_DATA, STR_PERSONAL_DATA, STR_MEDI_SPRAY, STR_MEDI_SPRAY, STR_BLANK_ITEM, STR_BLANK_ITEM, STR_BLANK_ITEM]
+          - [STR_PERSONAL_DATA, STR_PERSONAL_DATA, STR_MEDI_SPRAY, STR_STIM_INHALER2, STR_STIM_INHALER3, STR_STIM_INHALER3, STR_BLANK_ITEM, STR_BLANK_ITEM]
         itemSets:
           -
             - STR_9MM_MG
