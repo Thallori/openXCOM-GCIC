@@ -435,10 +435,15 @@ en-US:
   STR_LINKED_SHOT_NAME: "Linked"
   STR_LINKED_SHOT_NAME_SHORT: "Linked"
 
+  STR_SHOT_TYPE_MELEE: "Hit!"
   STR_SLICE_ACTION: "Slice!"
+  STR_SLICE_ACTION_SHORT: "Slice!"
   STR_FORE_ACTION: "Fore!"
+  STR_FORE_ACTION_SHORT: "Fore!"
   STR_FASTBALL_ACTION: "Fastball!"
+  STR_FASTBALL_ACTION_SHORT: "Fastball!"
   STR_CURVEBALL_ACTION: "Curveball!"
+  STR_CURVEBALL_ACTION_SHORT: "Curveball!"
 
   STR_PRIME_MOLOTOV: "Light"
   STR_PRIME_MOLOTOV_MESS: "Fuse Lit!"
@@ -936,7 +941,7 @@ en-US:
   STR_EVENT_ENDOFUPDATE2_DESCRIPTION: "[it should now be september, which is where the developer stopped the 0.2a playtest. beyond this point are placeholder values and costs, guesses at what good balance might be. also, not every reward has been implimented so researching things might not do anything. playing past this point is allowed, but expect content to fray until nothing]"
 
   STR_EVENT_UNLOCKENGINEERS: "Ad Hoc Insight"
-  STR_EVENT_UNLOCKENGINEERS_DESCRIPTION: "Expansion of our capabilities through interlaces is inherently limiting and reliance may lead to insurmountable bottlenecks. Replicating our network for servers is currently beyond us, however fabricators spend most work-cycles repeating rote instructions.{NEWLINE}{NEWLINE}Consumer-grade equipment can replicate the necessary functions for an exorbitant price.{NEWLINE}{NEWLINE}[Fabricators are now purchasable]"
+  STR_EVENT_UNLOCKENGINEERS_DESCRIPTION: "Expansion of our capabilities through interlaces is inherently limiting and reliance may lead to insurmountable bottlenecks. Replicating the server network is currently beyond us, however fabricators spend most work-cycles repeating rote instructions.{NEWLINE}{NEWLINE}Consumer-grade equipment can replicate the necessary functions for an exorbitant price.{NEWLINE}{NEWLINE}[Fabricators are now purchasable]"
 
   STR_EVENT_CLAIM_SECURED: "CBN Update" #central broadcast network
   STR_EVENT_CLAIM_SECURED_DESCRIPTION: "Severance package seeker awarded insurance claim following arbitration. The former employee was said to be owed after a drone-error resulted in false reports of missed quotas.{NEWLINE}{NEWLINE}Although GCIC stockprices have taken a dip with the news, people are celebrating this as a win for the corp and its customers.{NEWLINE}{NEWLINE}[-$20,000]"
@@ -973,26 +978,26 @@ en-US:
   STR_RESCUE_ALERT: "CLIENTS REQUIRE RESCUE"
   STR_RESCUE_1: "Clients: Early Adopters"
   STR_RESCUE_1_: "Clients: Early Adopters"
-  STR_RESCUE_1_DRONES2: "Clients: Early Adopters [Dura-Drones]"
+  STR_RESCUE_1_DRONES2: "Clients: Early Adopters"
   STR_RESCUE_1_ALERT_DESCRIPTION: "A client's implant signal has failed to respond for over an hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 Hours{NEWLINE}Maximum Gear: Security"
   STR_RESCUE_1_BRIEFING: "A client's implant signal has failed to respond for over an hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
 
   STR_RESCUE_RR: "Clients: Rapid Response"
   STR_RESCUE_RR_: "Clients: Rapid Response"
-  STR_RESCUE_RR_DRONES2: "Clients: Rapid Response [Dura-Drones]"
+  STR_RESCUE_RR_DRONES2: "Clients: Rapid Response"
   STR_RESCUE_RR_ALERT_DESCRIPTION: "An emergency alert has been triggered. We are tracking a client's current vitals and location. Presently, they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Minimum Site Duration: 16 Hours{NEWLINE}Maximum Gear: Security"
   STR_RESCUE_RR_BRIEFING: "An emergency alert has been triggered. We are tracking a client's current vitals and location. Presently, they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
 
   STR_RESCUE_FT: "Clients: Free Trial"
   STR_RESCUE_FT_: "Clients: Free Trial"
-  STR_RESCUE_FT_DRONES2: "Clients: Free Trial [Dura-Drones]"
+  STR_RESCUE_FT_DRONES2: "Clients: Free Trial"
   STR_RESCUE_FT_ALERT: "FREE TRIAL REQUESTED"
   STR_RESCUE_FT_ALERT_DESCRIPTION: "A group of potential clients have requested an emergency trial of our services. Neutralize all hostile targets and we will likely convert the survivors into new customers.{NEWLINE}{NEWLINE}This request may cost less to refuse than to fail.{NEWLINE}{NEWLINE}Minimum Site Duration: 24 Hours{NEWLINE}Maximum Gear: Milspec"
   STR_RESCUE_FT_BRIEFING: "The Ironeyes network is performing a territory expansion operation, putting our potential clients at risk. Neutralize all hostile targets and we will likely convert the survivors into new customers.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
 
   STR_KNOCKOUT_MISSION: "Clients: Cyber-Psychosis"
   STR_KNOCKOUT_MISSION_: "Clients: Cyber-Psychosis"
-  STR_KNOCKOUT_MISSION_DRONES2: "Clients: Cyber-Psychosis [Dura-Drones]"
+  STR_KNOCKOUT_MISSION_DRONES2: "Clients: Cyber-Psychosis"
   STR_KNOCKOUT_MISSION_ALERT_DESCRIPTION: "Telemetry data from multiple clients matches certain cybernetic ailments. Although they are unlikely to pose much danger, we should take care to retrieve them without undue duress.{NEWLINE}{NEWLINE}Use of lethal force risks breaking contract and may result in bad publicity. Less-lethal melee and stun weapons advised.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 Hours{NEWLINE}Maximum Gear: Security"
   STR_KNOCKOUT_MISSION_BRIEFING: "Telemetry data from multiple clients matches certain cybernetic ailments. Although they are unlikely to pose much danger, we should take care to retrieve them without undue duress.{NEWLINE}{NEWLINE}Use of lethal force risks breaking contract and may result in bad publicity. Less-lethal melee and stun weapons advised.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
 # ironeyes
@@ -1004,8 +1009,8 @@ en-US:
 
   STR_IRONEYES_SAFEHOUSE: "Ironeyes: Hideout"
   STR_IRONEYES_SAFEHOUSE_: "Ironeyes: Hideout"
-  STR_IRONEYES_SAFEHOUSE_ALERT_DESCRIPTION: "Several contraband shipments have been decoded to a single address. Entry-level gang members are patrolling the area, middle management is likely inside.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 hours{NEWLINE}Maximum Gear: Milspec (Inconspicuous Craft)"
-  STR_IRONEYES_SAFEHOUSE_BRIEFING: "Several contraband shipments have been decoded to a single address. Entry-level gang members are patrolling the area, middle management is likely inside.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation."
+  STR_IRONEYES_SAFEHOUSE_ALERT_DESCRIPTION: "Several contraband shipments have been decoded and now reside at a single address. Entry-level gang members are patrolling the area, middle management is likely inside.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all mission actions will lower liquidity.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 hours{NEWLINE}Maximum Gear: Milspec (Inconspicuous Craft)"
+  STR_IRONEYES_SAFEHOUSE_BRIEFING: "Several contraband shipments have been decoded and now reside at a single address. Entry-level gang members are patrolling the area, middle management is likely inside.{NEWLINE}{NEWLINE}This operation is unsanctioned, we can perform a full recovery of the site, but all further actions will lower liquidity.{NEWLINE}{NEWLINE}We may abort this operation."
 
   STR_IRONEYES_OUTPOST: "Ironeyes: Armory"
   STR_IRONEYES_OUTPOST_: "Ironeyes: Armory"
@@ -1190,7 +1195,7 @@ en-US:
   STR_PD2_MANULOCK: "(dura drones available)"
   STR_PD2_ITEM: "PROJECT: Dura-Drones Startup"
   STR_PROJECT_DRONES2: "PROJECT: Dura-Drones"
-  STR_PROJECT_DRONES2_UP: "{NEWLINE}PROGRESS: Satisfactory{NEWLINE}OUTLOOK: Optimistic{NEWLINE}{NEWLINE}We have amassed enough knowledge and societal standing to take a major step towards fulfilling our objectives. Recent actions have inspired copycat programs and we are becoming a normal idea in the public conciousness. It would not be unseemly for us to create a new subsidiary, ensuring global distribution of durathread armored and laser carrying drones.{NEWLINE}{NEWLINE}This {ALT}startup{ALT} will require an initial investment of capital and {ALT}fabrication{ALT} cycles to build the first off-site facility."
+  STR_PROJECT_DRONES2_UP: "{NEWLINE}PROGRESS: Satisfactory{NEWLINE}OUTLOOK: Optimistic{NEWLINE}{NEWLINE}We have amassed enough knowledge and societal standing to take a major step towards fulfilling our objectives. Recent actions have inspired copycat programs and we are becoming a normal idea in the public conciousness. The system is ready for our newly created subsidiary, ensuring global distribution of durathread armored and laser carrying drones."
   STR_MD_LOCK: "(medical drones available)"
   STR_MD_ITEM: "PROJECT: Medical Drones"
   STR_DOCTOR_DRONE: "PROJECT: Medical Drones"
@@ -1526,29 +1531,29 @@ en-US:
   STR_COMBALL_AMMO: "Comball"
   STR_PAPERSHOT_AMMO: "Papershot"
   STR_9MM_PISTOL: "8.99 Zip Pistol"
-  STR_9MM_PISTOL_UP: "Assembled from almost 90% public access parts, the 8.99 is typically finished by the end user after they've managed to acquire a working reciver. Though most are scrap prints, its reputation among illict elements occassionally produces a model with more flamboyant materials."
+  STR_9MM_PISTOL_UP: "Assembled from 90% public access parts, the 8.99 is typically finished by the end user after they've managed to acquire a working reciver. Though most are scrap prints, its reputation among illict elements occassionally produces a model with more flamboyant materials."
   STR_9MM_AMMO: "Zip Pistol Clip"
   STR_9MM_SMG: "3AM Zip SMG"
   STR_9MM_SMG_UP: "Fully automatic firearms are more difficult to come by on the P2P market. Lower print tolerances and more moving parts mean that half suffer from low fire rates while the other half don't work at all."
   STR_9MM_SMG_AMMO: "Zip SMG Clip"
   STR_9MM_SHOTGUN: "4PM Zip Shotgun"
-  STR_9MM_SHOTGUN_UP: "todo{NEWLINE}{NEWLINE}Stun: +25%{NEWLINE}Salt: +100% TU/Morale Damage; Lethal: -75%" #todo, slamfire
+  STR_9MM_SHOTGUN_UP: "A blunt weapon composed of two tubes and a handle, arranged for slamming shells into a firing pin. This simple and awkward design enables the user to shot as fast as their arms allow.{NEWLINE}{NEWLINE}Stun: +25%{NEWLINE}Salt: +100% TU/Morale Damage; Lethal: -75%"
   STR_9MM_SHOTGUN_AMMO: "Zip Buckshot Shells"
-  STR_9MM_SHOTGUN_AMMO_SALT: "Zip Salt Shells" #tu
+  STR_9MM_SHOTGUN_AMMO_SALT: "Zip Salt Shells"
   STR_9MM_RIFLE: "2X Zip Rifle"
   STR_9MM_RIFLE_UP: "Accurate for a zip gun and not overly encumbering. The stock and barrel extension makes it easier to aim, but the added bulk makes this an unpopular kit in cramped and urban enviroments.{NEWLINE}{NEWLINE}Penetration: +10%"
   STR_9MM_RIFLE_AMMO: "Zip Rifle Clip"
   STR_9MM_SNIPER_RIFLE: "5G Zip Sniper"
-  STR_9MM_SNIPER_RIFLE_UP: "The name is more aspirational than descriptive.{NEWLINE}{NEWLINE}Penetration: +15%"
+  STR_9MM_SNIPER_RIFLE_UP: "Boasting only the minimum modifications to the zip rifle, precision zips are created through the process of printing and recyling the same file until random deviations produce an acceptable result. The name is more aspirational than descriptive.{NEWLINE}{NEWLINE}Penetration: +15%"
   STR_9MM_SNIPER_RIFLE_AMMO: "Zip Sniper Clip"
   STR_9MM_MG: "6BBs Rotary Machine Gun"
-  STR_9MM_MG_UP: "Built out of pipes, fired by springs, and spun by a brush motor. These parts must constantly be replaced due to fowling, wear, and general slipshod design. Despite its shortcomings, would be classified as milspec equipment if the makers ever wanted licensing royalities.{NEWLINE}{NEWLINE}Maintenance: $1,400/Month"
+  STR_9MM_MG_UP: "Built out of pipes, fired by springs, and spun by a brush motor. Its parts must constantly be replaced due to fowling, wear, and general slipshod design. Despite its shortcomings, would be classified as milspec equipment if the makers could collect licensing royalities.{NEWLINE}{NEWLINE}Maintenance: $1,400/Month"
   STR_9MM_MG_AMMO: "Rotary Clip"
 # ea
   STR_DISPOSABLE_SMG: "EA Single-Use SMG"
   STR_DISPOSABLE_SMG_UP: "A cheap biodegradable weapon patented by the now defunct EcoArms Inc. Considered abandonware by black market apologists, no legal model has been printed in decades. The plastic receiver deforms after a few dozen rounds, which renders reloading irrelevant."
   STR_DISPOSABLE_LASER_CANNON: "EA Non-Rechargable Lazcannon"
-  STR_DISPOSABLE_LASER_CANNON_UP: "todo{NEWLINE}{NEWLINE}" #todo, boom
+  STR_DISPOSABLE_LASER_CANNON_UP: "A once novel solution to the laser cooling problem: allowing every lens, diode, and capcaitor to simply melt in the process of firing. For the sake of nostalgia, most contemporary prints still plaster on the long list of warnings that no user will ever read.{NEWLINE}{NEWLINE}Stun: +50%"
 # nrf
   STR_DART_PISTOL: "NRF Dartblaster" #novelty recreation foundation
   STR_DART_PISTOL_UP: "Marketed as the world's first underwater foam dart launcher, the engineering specs reveal a transparent attempt at circumventing arms regulation. It is easy to overcharge and accepts a wide range of less-than-friendly replacement darts."
@@ -1581,6 +1586,10 @@ en-US:
   STR_SSP_SHOTGUN_AMMO_BS: "Mox Buckshot Shells"
   STR_SSP_SHOTGUN_AMMO_SLUG: "Mox Slug Shells"
   STR_SSP_SHOTGUN_AMMO_STUN: "Mox Baton Shells"
+  STR_SSP_SNIPER_RIFLE_CODED: "SSP Overwatch Sniper Rifle (¤)"
+  STR_SSP_SNIPER_RIFLE: "SSP Overwatch Sniper Rifle"
+  STR_SSP_SNIPER_RIFLE_UP: "Extreme distance bolt-action holo-sighted precision for when a measured response requires going above and beyond the conventional. Ideal for rural containment, counter-sniping defense planning, and high-risk warrant service.{NEWLINE}{NEWLINE}Penetration: +20%"
+  STR_SSP_SNIPER_RIFLE_AMMO: "Overwatch Clip"
   STR_SINGLESHOT_LASER_PISTOL_ELERIUM: "SSP Enforcer Laser Pistol (E)"
   STR_SINGLESHOT_LASER_PISTOL_CODED: "SSP Enforcer Laser Pistol (¤)"
   STR_SINGLESHOT_LASER_PISTOL: "SSP Enforcer Laser Pistol"
@@ -1699,11 +1708,11 @@ en-US:
   STR_AIRSOFT_RIFLE_UP: "Olympic-grade air compression, 7-time champion barrel accuracy, and more style than your date can handle. Pneumatics have never been so sexy.{NEWLINE}{NEWLINE}Penetration: -10%{NEWLINE}Damage Dropoff: 0.25/Tile"
   STR_AIRSOFT_AMMO: "Air Pellets"
   STR_PSI_DAZZLER: "D&O PsiSoft Dazzler"
-  STR_PSI_DAZZLER_UP: "Our suspiciously fierce consumer psi projectors enable all those little fantasies we never share with anyone else. Let's scramble that pretty little mind of yours and call it a new sport.{NEWLINE}{NEWLINE}Penetration: +50%; Lethal -90%{NEWLINE}Morale Damage: +200%; Resiliance Damage: +10%" #todo
+  STR_PSI_DAZZLER_UP: "Our suspiciously fierce consumer psi projectors enable all those little fantasies we never share with anyone else. Let's scramble that pretty little mind of yours and call it a new sport.{NEWLINE}{NEWLINE}Penetration: +50%; Lethal -90%{NEWLINE}Morale Damage: +200%; Resiliance Damage: +10%"
   STR_SPORTBOW: "D&O Compound Bow"
-  STR_SPORTBOW_UP: "The smooth draw Alaskan EKO-cam classic. Experience the sport that put humanity in charge of a whole planet and show us your beautifully deadly prowess.{NEWLINE}{NEWLINE}Penetration: +15%" #todo
+  STR_SPORTBOW_UP: "The smooth draw Alaskan EKO-cam classic. Experience the sport that put humanity in charge of a whole planet and show us your beautifully deadly prowess.{NEWLINE}{NEWLINE}Penetration: +15%"
   STR_AUTOBOW: "D&O Auto Bow"
-  STR_AUTOBOW_UP: "Draw weights got you down? Feeling jealous? We think you're doing great. Sit back, relax, and do some self-care while we take care of the unimportant stuff.{NEWLINE}{NEWLINE}No Energy Cost; Penetration: +15%" #todo
+  STR_AUTOBOW_UP: "Draw weights got you down? Feeling jealous? We think you're doing great. Sit back, relax, and do some self-care while we take care of the unimportant stuff.{NEWLINE}{NEWLINE}No Energy Cost; Penetration: +15%"
   STR_SPORT_ARROWS1: "Sporting Quick-Quiver"
   STR_SPORT_ARROWS2: "Electric Quick-Quiver"
   STR_SPORT_ARROWS3: "Explosive Quick-Quiver"
@@ -1764,7 +1773,7 @@ en-US:
   STR_MEDI_TRAUMA: "MEDI-Trauma"
   STR_MEDI_TRAUMA_UP: "{NEWLINE}> Uses: 8{NEWLINE}> Heals: 4 HP{NEWLINE}> Stims: 8 Stun, 15 Energy{NEWLINE}{NEWLINE}Emergency room in a box. Recommended by affiliate doctors for on-site treatment of major injuries, and as a convenient source of portable MEDI-care. Each subscription covers unlimited access to resupply and live service updates.{NEWLINE}{NEWLINE}Maintenance: $4,000/Month"
   STR_CHAMPAGNE: "Sainte-Menehould"
-  STR_CHAMPAGNE_UP: "A nose of cocoa and vanilla with a lush fruit forward and insidiously creamy palette. Apricots tango with fig before twisting away into strawberries and honey, then finishing on a perfect kiss of brine. One of only 300 bottles exported per year from the Champagne region of Old France."
+  STR_CHAMPAGNE_UP: "{NEWLINE}A nose of cocoa and vanilla with a lush fruit forward and insidiously creamy palette. Apricots tango with fig before twisting away into strawberries and honey, then finishes with the perfect kiss of brine. One of only 300 bottles exported per year from the Champagne region of Old France."
 #resources
 # containers
   STR_CRIMINAL_CONTAINER_1: "Contraband Crate"
@@ -1842,7 +1851,6 @@ en-US:
   STR_PLASMA_PISTOL_VAULT: "Deactivated Plasma Pistol"
   STR_CHRYSSALID_EGG_VAULT: "Trafficked Chryssalid Egg"
 # abstract
-  STR_DRONES2_SHARE_RESEARCH: "LAUNCH: Dura-Drones Startup"
   STR_DRONES2_SHARE: "Dura-Drones Incorporated"
   STR_DRONES2_SHARE_UP: "{NEWLINE}Lawfully enforced controlling interest in our newly launched subsidiary corporation. An initial public offering analysis estimates this to be worth 1,250,000$, although we are not expecting significant growth since we are likely to remain their only regular customer.{NEWLINE}{NEWLINE}As the primary purpose of this business is to globally distribute {ALT}combat drones{ALT}, we may sell this without consequence (beyond the loss in revenue.){NEWLINE}{NEWLINE}Effective Income: {ALT}+$70,000/Month{ALT}"
   STR_SHARES_GCIC: "GCIC-Shares"
@@ -2501,6 +2509,8 @@ en-US:
   STR_TRG_FL_PREQ: "(freelancer neutralized)"
   STR_TRG_ST_PREQ: "(skiptracer neutralized)"
   STR_TRG_WT_PREQ: "(wiretapper neutralized)"
+# vice
+  STR_TRG_3V_PREQ: "(mansion success)"
 # ssp
   STR_TRG_SG_PREQ: "(guard neutralized)"
   STR_TRG_SO_PREQ: "(officer neutralized)"

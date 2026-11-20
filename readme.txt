@@ -91,12 +91,13 @@ X-Com Files/Final Mod Pack		[mod]
   Armored Vest				[touchup+recolour]	(robin)
   Robosphere Inventory			[touchup]
   Bleed+Burn+Shock Icons		[touchup+recolour]
+  Revolver Reload SFX			[truncate]
   Units					[none+touchup+remix]
    Civilians, Bandit, Police Officer, Hybrid, Muckstar, Zombie, Osiron Fixer, Farmer, VAST Master Researcher
   Map Sprites				[none+touchup+recolour]
    Piano, Havana Walls/Stairs/Floors, Wall Art, Candles, Wood Gate, Pool Table
   SFX					[none]
-   Chemogun, Flamer, Hammer, Plasma, Spray, Bolt, Tube, Machinegun
+   Chemogun, Flamer, Hammer, Plasma, Spray, Bolt, Tube, Machinegun, Hunting Rifle, Sniper Rifle
 
 X-Com Files Resound			[mod]
  Ksenni					[author]
@@ -104,6 +105,7 @@ X-Com Files Resound			[mod]
   Neonbow SFX				[none]
   Shotgun SFX				[none]
   Ionizer SFX				[remix]
+  Shotgun SFX				[tempo]
 
 Awesome Guns				[mod]
  CanadianBeaver				[author]
@@ -191,7 +193,7 @@ Art/Backgrounds
   (main background) https://boardgamegeek.com/thread/1373410/art-of-gong-studios
  Dontknowwhattodraw94			[artist]
   The night I saw Them			[recolour]		(original)
-  (hidden movement) https://www.deviantart.com/dontknowwhattodraw94/art/The-night-I-saw-Them-712700535
+  (hidden movement) https://www.deviantart.com/dontknowwhattodraw94/art/The-night-I-saw-Them-
  dgbaumgart				[artist]
   Hangar				[contrast]
   (craft) https://fractalsoftworks.com/2013/02/05/painting-the-hound-and-the-hangar/#more-1683
@@ -207,6 +209,9 @@ Art/Backgrounds
  Adam Baines				[artist]
   Elevators				[contrast]
   (briefing) https://adambaines.blogspot.com/2011/07/elevators.html
+ Masahiro Sawada			[artist]
+  Solar City				[contrast]
+  (land alert) https://masahiro_sawada.artstation.com/projects/ELJrAA
  Warner Bros. Pictures			[group]
   Blade Runner spinner			[contrast]
   (ufo/interception)
@@ -337,3 +342,6 @@ Esven
  xn volley				[touchup]
  map tiles
   flora forest small spikey fern
+
+Irávīyà zha-Éthă Mārat-Tiāmti
+ metal screams				[remix]

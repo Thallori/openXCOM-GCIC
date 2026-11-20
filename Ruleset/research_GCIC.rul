@@ -779,6 +779,11 @@ research:
     cost: 5
     unlocks:
       - STR_V_P2P_PREQ
+  - name: STR_DISPOSABLE_LASER_CANNON
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_V_P2P_PREQ
 # nrf
   - name: STR_DART_PISTOL
     needItem: true
@@ -828,6 +833,18 @@ research:
   - name: STR_SSP_SHOTGUN
     dependencies:
       - STR_SSP_SHOTGUN_CODED
+
+  - name: STR_SSP_SNIPER_RIFLE_CODED
+    lookup: STR_SSP_SNIPER_RIFLE
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_SSP_SNIPER_RIFLE
+      - STR_BC_PREQ
+      - STR_V_SSP_PREQ
+  - name: STR_SSP_SNIPER_RIFLE
+    dependencies:
+      - STR_SSP_SNIPER_RIFLE_CODED
 
   - name: STR_SINGLESHOT_LASER_PISTOL_CODED
     lookup: STR_SINGLESHOT_LASER_PISTOL
@@ -1163,10 +1180,6 @@ research:
     dependencies:
       - STR_MEDI_TRAUMA_ITEM
 
-  - name: STR_CHAMPAGNE
-    needItem: true
-    cost: 5
-
   - name: STR_EXTINGUISHER
     needItem: true
     cost: 5
@@ -1309,6 +1322,10 @@ research:
     needItem: true
     cost: 5
   - name: STR_IRS_SUBSIDY
+    needItem: true
+    cost: 5
+# loot
+  - name: STR_CHAMPAGNE
     needItem: true
     cost: 5
 # tasks
@@ -1958,7 +1975,7 @@ research:
   - name: STR_V_SSP_PREQ #ssp
     dependencies:
       - STR_LOCK
-  - name: STR_V_SPORT_PREQ #dome and outfield
+  - name: STR_V_SPORT_PREQ #delecto & occurro
     dependencies:
       - STR_LOCK
 # factions
@@ -1986,6 +2003,10 @@ research:
     dependencies:
       - STR_LOCK
   - name: STR_TRG_WT_PREQ #wiretappers
+    dependencies:
+      - STR_LOCK
+# vice
+  - name: STR_TRG_3V_PREQ #first 3
     dependencies:
       - STR_LOCK
 # ssp

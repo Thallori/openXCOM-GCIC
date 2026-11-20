@@ -1098,6 +1098,12 @@ ufopaedia:
     text: STR_DISPOSABLE_SMG_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
+  - id: STR_DISPOSABLE_LASER_CANNON
+    requires:
+      - STR_DISPOSABLE_LASER_CANNON
+    text: STR_DISPOSABLE_LASER_CANNON_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
 # nrf
   - id: STR_DART_PISTOL
     requires:
@@ -1201,6 +1207,18 @@ ufopaedia:
   - id: STR_SSP_SHOTGUN_AMMO_SLUG
     requires:
       - STR_SSP_SHOTGUN
+    section: STR_NOT_AVAILABLE
+    type_id: 4
+
+  - id: STR_SSP_SNIPER_RIFLE
+    requires:
+      - STR_SSP_SNIPER_RIFLE
+    text: STR_SSP_SNIPER_RIFLE_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_SSP_SNIPER_RIFLE_AMMO
+    requires:
+      - STR_SSP_SNIPER_RIFLE
     section: STR_NOT_AVAILABLE
     type_id: 4
 
@@ -1741,13 +1759,6 @@ ufopaedia:
     section: STR_EQUIPMENT_UC
     type_id: 4
 
-  - id: STR_CHAMPAGNE
-    requires:
-      - STR_CHAMPAGNE
-    text: STR_CHAMPAGNE_UP
-    section: STR_EQUIPMENT_UC
-    type_id: 4
-
   - id: STR_EXTINGUISHER
     requires:
       - STR_EXTINGUISHER
@@ -1948,7 +1959,14 @@ ufopaedia:
     text: STR_IRS_SUBSIDY_UP
     section: STR_RESOURCES_UC
     type_id: 8
-
+# loot
+  - id: STR_CHAMPAGNE
+    requires:
+      - STR_CHAMPAGNE
+    text: STR_CHAMPAGNE_UP
+    section: STR_RESOURCES_UC
+    type_id: 4
+# tasks
   - id: STR_ARMOR_REPAIR_BILL
     requires:
       - STR_ARMOR_REPAIR_BILL

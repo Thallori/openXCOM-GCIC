@@ -85,6 +85,9 @@ extraSounds:
       151: Resources/Sounds/Impacts/sniper_hit.wav
       152: Resources/Sounds/Fire/softpsi_fire.wav
       153: Resources/Sounds/Impacts/softburn_hit.wav
+      154: Resources/Sounds/Reloads/boltaction_reload.wav
+      155: Resources/Sounds/Reloads/revolver_reload.wav
+      156: Resources/Sounds/Fire/shotgun_fire_low.wav
 
   - type: GEO.CAT
     files:

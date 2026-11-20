@@ -92,9 +92,9 @@ difficultyCoefficientOverrides:
   aliensFacingCraftOdds: [0, 25, 50, 75, 100]
 #flagByKills: [1,5,10,25,50,75,100]
 costEngineer: 25000
-costHireEngineer: 200000
+costHireEngineer: 800000
 costScientist: 40000
-costHireScientist: 450000
+costHireScientist: 800000
 hireEngineersUnlockResearch: STR_TECH_UNLOCKENGINEERS
 hireScientistsUnlockResearch: STR_DEBUG
 shortRadarRange: 2000

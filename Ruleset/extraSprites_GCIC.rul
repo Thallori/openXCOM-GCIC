@@ -246,6 +246,19 @@ extraSprites:
       302: Resources/Factions/Vice/viceboss_bigob.png
       303: Resources/Factions/Vice/vicesmuggler_bigob.png
       304: Resources/Factions/Vice/vicefarmer_bigob.png
+      305: Resources/Armors/Anthros/Bellhop/bellhop_corpse_bigob.png
+      306: Resources/Armors/Anthros/Bellhop/bellhop_corpse_bigob_deep.png
+      307: Resources/Armors/Anthros/Bellhop/bellhop_corpse_bigob_floater.png
+      308: Resources/Items/Kinetic/9mm_sniper_bigob.png
+      309: Resources/Items/Kinetic/Ammo/9mm_sniper_ammo_bigob.png
+      310: Resources/Items/Kinetic/9mm_shotgun_bigob.png
+      311: Resources/Items/Kinetic/Ammo/9mm_bs_ammo_bigob.png
+      312: Resources/Items/Kinetic/Ammo/9mm_salt_ammo_bigob.png
+      313: Resources/Items/Laser/disposable_lasercannon_bigob.png
+      314: Resources/Items/Utility/nora_bigob.png
+      315: Resources/Items/Utility/choc_bigob.png
+      316: Resources/Items/Kinetic/ssp_sniper_bigob.png
+      317: Resources/Items/Kinetic/Ammo/ssp_sniper_ammo_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -426,6 +439,23 @@ extraSprites:
       274: Resources/Factions/Vice/viceboss_floorob.png
       275: Resources/Factions/Vice/vicesmuggler_floorob.png
       276: Resources/Factions/Vice/vicefarmer_floorob.png
+      277: Resources/Armors/Anthros/Bellhop/bellhop_corpse_floorob.png
+      278: Resources/Armors/Anthros/Bellhop/bellhop_corpse_floorob_shark.png
+      279: Resources/Armors/Anthros/Bellhop/bellhop_corpse_floorob_deep.png
+      280: Resources/Armors/Anthros/Bellhop/bellhop_corpse_floorob_floater.png
+      281: Resources/Items/Multi/Ammo/compoundbow_ammo1_floorob.png
+      282: Resources/Items/Multi/Ammo/compoundbow_ammo2_floorob.png
+      283: Resources/Items/Multi/Ammo/compoundbow_ammo3_floorob.png
+      284: Resources/Items/Kinetic/9mm_sniper_floorob.png
+      285: Resources/Items/Kinetic/Ammo/9mm_sniper_ammo_floorob.png
+      286: Resources/Items/Kinetic/9mm_shotgun_floorob.png
+      287: Resources/Items/Kinetic/Ammo/9mm_bs_ammo_floorob.png
+      288: Resources/Items/Kinetic/Ammo/9mm_salt_ammo_floorob.png
+      289: Resources/Items/Laser/disposable_lasercannon_floorob.png
+      290: Resources/Items/Utility/nora_floorob.png
+      291: Resources/Items/Utility/choc_floorob.png
+      292: Resources/Items/Kinetic/ssp_sniper_floorob.png
+      293: Resources/Items/Kinetic/Ammo/ssp_sniper_ammo_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -507,6 +537,10 @@ extraSprites:
       688: Resources/Items/Psi/psi_soft_handob.png
       696: Resources/Items/Martial/golfwedge_handob.png
       704: Resources/Items/Martial/golfdriver_handob.png
+      712: Resources/Items/Kinetic/9mm_sniper_handob.png
+      720: Resources/Items/Kinetic/9mm_shotgun_handob.png
+      728: Resources/Items/Laser/disposable_lasercannon_handob.png
+      736: Resources/Items/Kinetic/ssp_sniper_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
@@ -655,7 +689,6 @@ extraSprites:
     fileSingle: Resources/Armors/Bodies/Humans/HUMAN_F2.png
   - typeSingle: HUMAN__2__F3_SHELL
     fileSingle: Resources/Armors/Bodies/Humans/HUMAN_F3.png
-
   - typeSingle: HUMAN__2__M0_SHELL
     fileSingle: Resources/Armors/Bodies/Humans/HUMAN_M0.png
   - typeSingle: HUMAN__2__M1_SHELL
@@ -667,8 +700,20 @@ extraSprites:
 # hybrid
   - typeSingle: HYBRID__2__F0_SHELL
     fileSingle: Resources/Armors/Bodies/Hybrids/HYBRID_F0.png
+  - typeSingle: HYBRID__2__F1_SHELL
+    fileSingle: Resources/Armors/Bodies/Hybrids/HYBRID_F1.png
+  - typeSingle: HYBRID__2__F2_SHELL
+    fileSingle: Resources/Armors/Bodies/Hybrids/HYBRID_F2.png
+  - typeSingle: HYBRID__2__F3_SHELL
+    fileSingle: Resources/Armors/Bodies/Hybrids/HYBRID_F3.png
   - typeSingle: HYBRID__2__M0_SHELL
     fileSingle: Resources/Armors/Bodies/Hybrids/HYBRID_M0.png
+  - typeSingle: HYBRID__2__M1_SHELL
+    fileSingle: Resources/Armors/Bodies/Hybrids/HYBRID_M1.png
+  - typeSingle: HYBRID__2__M2_SHELL
+    fileSingle: Resources/Armors/Bodies/Hybrids/HYBRID_M2.png
+  - typeSingle: HYBRID__2__M3_SHELL
+    fileSingle: Resources/Armors/Bodies/Hybrids/HYBRID_M3.png
 # shark
   - typeSingle: SHARK__2__F0_SHELL
     fileSingle: Resources/Armors/Bodies/Sharks/SHARK_F0.png
@@ -690,14 +735,14 @@ extraSprites:
   - typeSingle: DEEP__2__F0_HANDS
     fileSingle: Resources/Armors/Bodies/Deep/DEEPHANDS_F0.png
   - typeSingle: DEEP__2__M0_HANDS
-    fileSingle: Resources/Armors/Bodies/Deep/DEEPHANDS_F0.png
+    fileSingle: Resources/Armors/Bodies/Deep/DEEPHANDS_M0.png
   - typeSingle: DEEP__8__F0_HEAD
-    fileSingle: Resources/Armors/Bodies/Deep/DEEPHEAD_M0.png
+    fileSingle: Resources/Armors/Bodies/Deep/DEEPHEAD_F0.png
   - typeSingle: DEEP__8__M0_HEAD
     fileSingle: Resources/Armors/Bodies/Deep/DEEPHEAD_M0.png
 # floater
   - typeSingle: FLOATER__2__F0_SHELL
-    fileSingle: Resources/Armors/Bodies/Floaters/FLOATER_M0.png
+    fileSingle: Resources/Armors/Bodies/Floaters/FLOATER_F0.png
   - typeSingle: FLOATER__2__M0_SHELL
     fileSingle: Resources/Armors/Bodies/Floaters/FLOATER_M0.png
 #armor
@@ -1646,6 +1691,11 @@ extraSprites:
     fileSingle: Resources/Backgrounds/back_destination.png
   - typeSingle: BACK17.SCR #manufacturing
     fileSingle: Resources/Backgrounds/back_factory.png
+
+  - typeSingle: BACKLAND.SCR
+    fileSingle: Resources/Backgrounds/back_land.png
+  - typeSingle: BACKLANDRED.SCR
+    fileSingle: Resources/Backgrounds/back_landred.png
 # ui
   - typeSingle: BACK06.SCR #soldier stats
     fileSingle: Resources/Backgrounds/soldier_info.png

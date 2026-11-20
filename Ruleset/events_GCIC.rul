@@ -74,7 +74,6 @@ events:
     researchList: [STR_SECGAMES_MISSIONS]
   - name: STR_EVENT_SEC_LICENSE
     description: STR_EVENT_SEC_LICENSE_DESCRIPTION
-    points: 250
     researchList: [STR_SEC_LICENSE]
 
   - name: STR_EVENT_PROJECT_PROJECT_DRONES2
@@ -205,14 +204,15 @@ eventScripts:
     # researchTriggers:
     #   STR_GCIC_INDEPENDENCE: false
 
-  - type: EVENTSCRIPT_UNLOCKENGINEERS
-    oneTimeSequentialEvents:
-      - STR_EVENT_UNLOCKENGINEERS
-    firstMonth: 1
-    affectsGameProgression: true
-    researchTriggers:
-      STR_BIONIC_INTERLACE: true
-      STR_VENDOR_PRINTER: true
+  #softlock prevention event
+  # - type: EVENTSCRIPT_UNLOCKENGINEERS
+  #   oneTimeSequentialEvents:
+  #     - STR_EVENT_UNLOCKENGINEERS
+  #   firstMonth: 1
+  #   affectsGameProgression: true
+  #   researchTriggers:
+  #     STR_BIONIC_INTERLACE: true
+  #     STR_VENDOR_PRINTER: true
 
   - type: EVENTSCRIPT_ENDOFUPDATE2
     oneTimeSequentialEvents:

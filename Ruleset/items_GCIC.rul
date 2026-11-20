@@ -680,6 +680,7 @@ items:
     handSprite: 144
     bulletSprite: 19
     fireSound: 4
+    reloadSound: 155
     invWidth: 1
     invHeight: 2
     battleType: 1
@@ -874,9 +875,9 @@ items:
     costBuy: 309
     costSell: 78
     transferTime: 12
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
+    bigSprite: 310
+    floorSprite: 286
+    handSprite: 720
     bulletSprite: 3
     fireSound: 118
     reloadSound: 120
@@ -887,8 +888,8 @@ items:
     compatibleAmmo:
       - STR_9MM_SHOTGUN_AMMO
       - STR_9MM_SHOTGUN_AMMO_SALT
-    accuracySnap: 65
-    accuracyAimed: 85
+    accuracySnap: 55
+    accuracyAimed: 75
     accuracyMultiplier:
       firing: 1.0
       flatHundred: 0.10
@@ -896,7 +897,7 @@ items:
     tuAimed: 28
     tuLoad: 25
     snapRange: 6
-    aimRange: 12
+    aimRange: 16
     dropoff: 4
     kneelBonus: 115
     flatRate: true
@@ -913,8 +914,8 @@ items:
     costBuy: 19
     costSell: 5
     transferTime: 12
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 311
+    floorSprite: 287
     hitSound: 13
     hitAnimation: 26
     battleType: 2
@@ -938,8 +939,8 @@ items:
     costBuy: 14
     costSell: 4
     transferTime: 12
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 312
+    floorSprite: 288
     hitSound: 13
     hitAnimation: 26
     battleType: 2
@@ -1021,26 +1022,27 @@ items:
       - STR_VENDOR_P2P
       - STR_9MM_SNIPER_RIFLE
     size: 0.2
-    costBuy: 419
-    costSell: 105
+    costBuy: 1479
+    costSell: 370
     transferTime: 12
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
-    bulletSprite: 2
-    fireSound: 4
+    bigSprite: 308
+    floorSprite: 284
+    handSprite: 712
+    bulletSprite: 18
+    fireSound: 119
+    reloadSound: 154
     invWidth: 1
     invHeight: 3
     battleType: 1
     weight: 10
     compatibleAmmo:
       - STR_9MM_SNIPER_RIFLE_AMMO
-    accuracySnap: 90
+    accuracySnap: 85
     accuracyAimed: 125
     accuracyMultiplier:
       firing: 1.0
       flatHundred: -0.20
-    tuSnap: 45
+    tuSnap: 40
     tuAimed: 75
     snapRange: 18
     aimRange: 28
@@ -1060,9 +1062,9 @@ items:
     costBuy: 39
     costSell: 10
     transferTime: 12
-    bigSprite: 900
-    floorSprite: 900
-    hitSound: 13
+    bigSprite: 309
+    floorSprite: 285
+    hitSound: 151
     hitAnimation: 26
     battleType: 2
     weight: 3
@@ -1071,6 +1073,7 @@ items:
     damageBonus:
       firing: 0.15
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.85
     damageType: 1
 
@@ -1188,6 +1191,65 @@ items:
     oneHandedPenalty: 85
     experienceTrainingMode: 5
     attraction: 15
+  - type: STR_DISPOSABLE_LASER_CANNON
+    categories: [STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_VACUUM_CATEGORY, STR_CANNONS_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_IRONEYES
+      - STR_DISPOSABLE_LASER_CANNON
+    size: 0.2
+    costBuy: 2699
+    costSell: 675
+    transferTime: 12
+    bigSprite: 313
+    floorSprite: 289
+    handSprite: 728
+    bulletSprite: 15
+    bulletSpeed: 15
+    fireSound: 122
+    hitSound: 19
+    hitAnimation: 0
+    invWidth: 1
+    invHeight: 3
+    battleType: 1
+    weight: 17
+    clipSize: 1
+    power: 38
+    damageBonus:
+      bravery: 0.1
+    damageType: 4
+    damageAlter:
+      RandomType: 9
+      FixRadius: 1
+      ToStun: 0.75
+      ToWound: 0.025
+      RandomWound: false
+      FireThreshold: 18
+      ToItem: 0.25
+      ToTile: 0.75
+      TileDamageMethod: 2
+    accuracySnap: 65
+    accuracyAimed: 90
+    accuracyMultiplier:
+      firing: 0.75
+      strength: 0.25
+      flatHundred: 0.10
+    tuSnap: 30
+    tuAimed: 65
+    snapRange: 8
+    aimRange: 16
+    dropoff: 3
+    kneelBonus: 150
+    twoHanded: true
+    oneHandedPenalty: 35
+    experienceTrainingMode: 5
+    attraction: 20
+    vaporColorSurface: 1
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 8;
+        return;
 # nrf
   - type: STR_DART_PISTOL
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SPORT_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
@@ -1481,7 +1543,7 @@ items:
     bigSprite: 264
     floorSprite: 247
     handSprite: 584
-    bulletSprite: 19
+    bulletSprite: 18
     fireSound: 149
     reloadSound: 150
     invWidth: 1
@@ -1799,7 +1861,7 @@ items:
     tuAimed: 45
     tuLoad: 25
     snapRange: 8
-    aimRange: 14
+    aimRange: 18
     dropoff: 4
     kneelBonus: 115
     twoHanded: true
@@ -1856,6 +1918,104 @@ items:
       reactions: 0.05
     damageAlter:
       ToStun: 0.50
+
+  - type: STR_SSP_SNIPER_RIFLE_CODED
+    categories: [STR_SECURITY_CATEGORY, STR_SNIPER_RIFLES_CATEGORY, STR_LOCKED_CATEGORY]
+    ufopediaType: STR_SSP_SNIPER_RIFLE
+    requires:
+      - STR_SSP_CRACK
+    size: 0.2
+    costSell: 2400
+    bigSprite: 316
+    floorSprite: 292
+    handSprite: 736
+    bulletSprite: 18
+    fireSound: 119
+    reloadSound: 154
+    invWidth: 1
+    invHeight: 3
+    battleType: 1
+    weight: 15
+    compatibleAmmo:
+      - STR_SSP_SNIPER_RIFLE_AMMO
+    accuracySnap: 85
+    accuracyAimed: 135
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: -0.15
+    tuSnap: 45
+    tuAimed: 75
+    snapRange: 25
+    aimRange: 35
+    dropoff: 1
+    twoHanded: true
+    oneHandedPenalty: 50
+    noLOSAccuracyPenalty: 75
+    kneelBonus: 120
+    attraction: 15
+    armor: 40
+  - type: STR_SSP_SNIPER_RIFLE
+    categories: [STR_SECURITY_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
+    requiresBuy:
+      - STR_SEC_LICENSE
+      - STR_VENDOR_SSP
+      - STR_SSP_SNIPER_RIFLE
+    size: 0.2
+    costBuy: 23999
+    costSell: 6000
+    transferTime: 4
+    bigSprite: 316
+    floorSprite: 292
+    handSprite: 736
+    bulletSprite: 18
+    fireSound: 119
+    reloadSound: 154
+    invWidth: 1
+    invHeight: 3
+    battleType: 1
+    weight: 15
+    compatibleAmmo:
+      - STR_SSP_SNIPER_RIFLE_AMMO
+    accuracySnap: 85
+    accuracyAimed: 135
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: -0.15
+    tuSnap: 45
+    tuAimed: 75
+    snapRange: 25
+    aimRange: 35
+    dropoff: 1
+    twoHanded: true
+    oneHandedPenalty: 50
+    noLOSAccuracyPenalty: 75
+    kneelBonus: 120
+    attraction: 15
+    armor: 40
+  - type: STR_SSP_SNIPER_RIFLE_AMMO
+    categories: [STR_UNLICENSED_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
+    requiresBuy:
+      - STR_SEC_LICENSE
+      - STR_VENDOR_SSP
+      - STR_9MM_SNIPER_RIFLE
+    size: 0.01
+    costBuy: 499
+    costSell: 125
+    transferTime: 4
+    bigSprite: 317
+    floorSprite: 293
+    hitSound: 13
+    hitAnimation: 26
+    battleType: 2
+    weight: 3
+    clipSize: 10
+    power: 30
+    damageBonus:
+      firing: 0.25
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 0.80
+    damageType: 1
 
   - type: STR_SINGLESHOT_LASER_PISTOL_ELERIUM
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_PISTOLS_CATEGORY]
@@ -2596,6 +2756,7 @@ items:
     kneelBonus: 150
     twoHanded: true
     oneHandedPenalty: 35
+    experienceTrainingMode: 5
     attraction: 15
     armor: 120
     vaporColorSurface: 1
@@ -4668,7 +4829,7 @@ items:
       time: 11
       energy: 6
     confMelee:
-      name: STR_SLICE_ACTION
+      name: STR_SLICE_ACTION_SHORT
       shortName: STR_SLICE_ACTION
     flatRate: true
     twoHanded: true
@@ -4720,7 +4881,7 @@ items:
       time: 12
       energy: 6
     confMelee:
-      name: STR_FORE_ACTION
+      name: STR_FORE_ACTION_SHORT
       shortName: STR_FORE_ACTION
     flatRate: true
     twoHanded: true
@@ -4776,10 +4937,10 @@ items:
       time: 22
       energy: 10
     confSnap:
-      name: STR_FASTBALL_ACTION
+      name: STR_FASTBALL_ACTION_SHORT
       shortName: STR_FASTBALL_ACTION
     confAimed:
-      name: STR_CURVEBALL_ACTION
+      name: STR_CURVEBALL_ACTION_SHORT
       shortName: STR_CURVEBALL_ACTION
       arcing: true
     flatRate: true
@@ -4996,7 +5157,7 @@ items:
     costSell: 30
     transferTime: 4
     bigSprite: 297
-    floorSprite: 900
+    floorSprite: 281
     hitSound: 110
     hitAnimation: 26
     invWidth: 1
@@ -5023,7 +5184,7 @@ items:
     costSell: 30
     transferTime: 4
     bigSprite: 298
-    floorSprite: 900
+    floorSprite: 282
     hitSound: 105
     hitAnimation: 56
     invWidth: 1
@@ -5054,7 +5215,7 @@ items:
     costSell: 30
     transferTime: 4
     bigSprite: 299
-    floorSprite: 900
+    floorSprite: 283
     hitSound: 110
     hitAnimation: 0
     invWidth: 1
@@ -5635,8 +5796,8 @@ items:
     costSell: 21
     transferTime: 4
     hitSound: 103
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 314
+    floorSprite: 290
     invWidth: 1
     invHeight: 1
     battleType: 6
@@ -5664,8 +5825,8 @@ items:
     costSell: 21
     transferTime: 4
     hitSound: 103
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 315
+    floorSprite: 291
     invWidth: 1
     invHeight: 1
     battleType: 6
@@ -5821,35 +5982,6 @@ items:
       time: 15
     flatRate: true
     armor: 40
-
-  - type: STR_CHAMPAGNE
-    categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_TOOLS_CATEGORY, STR_SPORT_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
-    requiresBuy:
-      - STR_TODO
-      - STR_CHAMPAGNE
-    size: 0.01
-    costBuy: 91999
-    costSell: 22999
-    transferTime: 72
-    hitSound: 103 #todo
-    bigSprite: 900
-    floorSprite: 900
-    invWidth: 1
-    invHeight: 2
-    battleType: 6
-    medikitActionName: STR_USE_INHALER #todo
-    weight: 5
-    stimulant: 8
-    moraleRecovery: 10
-    stunRecovery: -5
-    medikitTargetMatrix: 31
-    medikitTargetSelf: true
-    isConsumable: true
-    medikitType: 2
-    costUse:
-      time: 15
-    flatRate: true
-    ignoreInCraftEquip: true
 
   - type: STR_EXTINGUISHER
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_TOOLS_CATEGORY, STR_SPORT_CATEGORY, STR_INFILTRATION_CATEGORY, STR_UTILITY_CATEGORY, STR_MELEE_CATEGORY]
@@ -6124,7 +6256,7 @@ items:
   - type: STR_SEC_LICENSE_ITEM
     categories: [STR_PERKS_CATEGORY]
     specialType: 195
-    recoveryPoints: 25
+    recoveryPoints: 250
     size: 0.1
     costSell: 0
     bigSprite: 225
@@ -6216,8 +6348,8 @@ items:
     armor: 255
   - type: STR_SHARES_SSP
     categories: [STR_PERKS_CATEGORY]
-    #requiresBuy:
-    #  - STR_SHARES_SSP
+    requiresBuy:
+     - STR_SHARES_SSP
     costBuy: 54000
     costSell: 11000
     monthlySalary: -550
@@ -6248,6 +6380,35 @@ items:
     costSell: 5000
     weight: 1
     armor: 255
+# loot
+  - type: STR_CHAMPAGNE
+    categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_TOOLS_CATEGORY, STR_SPORT_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
+    requiresBuy:
+      - STR_TODO
+      - STR_CHAMPAGNE
+    size: 0.01
+    costBuy: 91999
+    costSell: 22999
+    transferTime: 72
+    hitSound: 103 #todo
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 1
+    invHeight: 2
+    battleType: 6
+    medikitActionName: STR_USE_INHALER #todo
+    weight: 5
+    stimulant: 8
+    moraleRecovery: 10
+    stunRecovery: -5
+    medikitTargetMatrix: 31
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 2
+    costUse:
+      time: 15
+    flatRate: true
+    ignoreInCraftEquip: true
 # tasks
   - type: STR_MONEY_1
     categories: [STR_PERKS_CATEGORY]
@@ -6463,8 +6624,8 @@ items:
   - type: STR_BELLHOP_DRONE_HYBRID_CORPSE
     name: STR_CORPSE
     categories: [STR_DEBUG_CATEGORY]
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 305
+    floorSprite: 277
     invWidth: 2
     invHeight: 3
     battleType: 11
@@ -6477,8 +6638,8 @@ items:
   - type: STR_BELLHOP_DRONE_HUMAN_CORPSE
     name: STR_CORPSE
     categories: [STR_DEBUG_CATEGORY]
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 305
+    floorSprite: 277
     invWidth: 2
     invHeight: 3
     battleType: 11
@@ -6491,8 +6652,8 @@ items:
   - type: STR_BELLHOP_DRONE_SHARK_CORPSE
     name: STR_CORPSE
     categories: [STR_DEBUG_CATEGORY]
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 305
+    floorSprite: 278
     invWidth: 2
     invHeight: 3
     battleType: 11
@@ -6505,8 +6666,8 @@ items:
   - type: STR_BELLHOP_DRONE_DEEP_CORPSE
     name: STR_CORPSE
     categories: [STR_DEBUG_CATEGORY]
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 306
+    floorSprite: 279
     invWidth: 2
     invHeight: 3
     battleType: 11
@@ -6519,8 +6680,8 @@ items:
   - type: STR_BELLHOP_DRONE_FLOATER_CORPSE
     name: STR_CORPSE
     categories: [STR_DEBUG_CATEGORY]
-    bigSprite: 900
-    floorSprite: 900
+    bigSprite: 307
+    floorSprite: 280
     invWidth: 2
     invHeight: 3
     battleType: 11

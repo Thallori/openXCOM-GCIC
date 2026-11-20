@@ -90,7 +90,7 @@
     length: 60
     height: 8
     alert: STR_IRLGAME_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_SECGAME_ALERT_DESCRIPTION
     markerName: STR_SECGAME
     duration: [288, 336]
@@ -103,6 +103,7 @@
       music: SIM_INTRO
       palette: 0
     missionBountyItem: STR_SEC_LICENSE_ITEM
+    unlockedResearch: STR_TRG_HARUFO_PREQ
     customUfo: STR_UFO_HARVESTER
     forcePercentageOutsideUfo: true
     minShade: 15
@@ -139,7 +140,7 @@
     length: 30
     height: 8
     alert: STR_RESCUE_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_RESCUE_1_ALERT_DESCRIPTION
     markerName: STR_RESCUE_1_
     duration: [48, 72]
@@ -227,7 +228,7 @@
     length: 40
     height: 8
     alert: STR_RESCUE_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_RESCUE_RR_ALERT_DESCRIPTION
     markerName: STR_RESCUE_RR_
     duration: [16, 24]
@@ -319,7 +320,7 @@
     length: 50
     height: 8
     alert: STR_RESCUE_FT_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_RESCUE_FT_ALERT_DESCRIPTION
     markerName: STR_RESCUE_FT_
     duration: [24, 48]
@@ -358,8 +359,14 @@
             - STR_PIPEBOMB
             - STR_BOUNTY_1
           -
-            - STR_9MM_MG
-            - STR_9MM_MG_AMMO
+            - STR_9MM_SHOTGUN
+            - STR_9MM_SHOTGUN_AMMO_SALT
+            - STR_9MM_SHOTGUN_AMMO_SALT
+            - STR_PIPEBOMB
+            - STR_BOUNTY_1
+          -
+            - STR_DISPOSABLE_LASER_CANNON
+            - STR_DISPOSABLE_LASER_CANNON
             - STR_PIPEBOMB
             - STR_BOUNTY_1
           -
@@ -398,12 +405,6 @@
             - STR_WINDLASS_LAUNCHER_AMMO
             - STR_WINDLASS_LAUNCHER_AMMO
             - STR_BOUNTY_1
-          -
-            - STR_WINDLASS_LAUNCHER
-            - STR_WINDLASS_LAUNCHER_AMMO
-            - STR_WINDLASS_LAUNCHER_AMMO
-            - STR_WINDLASS_LAUNCHER_AMMO
-            - STR_BOUNTY_1
       - alienRank: 5
         lowQty: 3
         medQty: 3
@@ -425,7 +426,7 @@
     length: 30
     height: 8
     alert: STR_RESCUE_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_KNOCKOUT_MISSION_ALERT_DESCRIPTION
     markerName: STR_KNOCKOUT_MISSION_
     duration: [48, 72]
@@ -461,12 +462,12 @@
             - STR_STIM_INHALER
             - STR_PERSONAL_DATA
           -
-            - STR_STL_KNIFE
+            - STR_GOLFWEDGE
             - STR_STIM_INHALER
             - STR_STIM_INHALER
             - STR_PERSONAL_DATA
           -
-            - STR_WRENCH
+            - STR_GOLFDRIVER
             - STR_STIM_INHALER
             - STR_STIM_INHALER
             - STR_PERSONAL_DATA
@@ -507,7 +508,7 @@
     length: 30
     height: 8
     alert: STR_RESCUE_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_RESCUE_1_ALERT_DESCRIPTION
     markerName: STR_RESCUE_1_
     duration: [48, 72]
@@ -543,7 +544,7 @@
     length: 40
     height: 8
     alert: STR_RESCUE_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_RESCUE_RR_ALERT_DESCRIPTION
     markerName: STR_RESCUE_RR_
     duration: [16, 24]
@@ -587,7 +588,7 @@
     length: 50
     height: 8
     alert: STR_RESCUE_FT_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_RESCUE_FT_ALERT_DESCRIPTION
     markerName: STR_RESCUE_FT_
     duration: [24, 48]
@@ -638,7 +639,7 @@
     length: 30
     height: 8
     alert: STR_RESCUE_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_KNOCKOUT_MISSION_ALERT_DESCRIPTION
     markerName: STR_KNOCKOUT_MISSION_
     duration: [48, 72]
@@ -671,7 +672,7 @@
     height: 8
     script: SLUM_3X3
     alert: STR_IRONEYES_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLANDRED.SCR
     alertDescription: STR_IRONEYES_SHOP_ALERT_DESCRIPTION
     markerName: STR_IRONEYES_SHOP_
     duration: [48, 72]
@@ -700,17 +701,19 @@
           -
             - STR_9MM_MG
             - STR_9MM_MG_AMMO
-            - STR_9MM_MG_AMMO
             - STR_PIPEBOMB
           -
             - STR_9MM_MG
             - STR_9MM_MG_AMMO
-            - STR_9MM_MG_AMMO
             - STR_PIPEBOMB
           -
-            - STR_9MM_MG
-            - STR_9MM_MG_AMMO
-            - STR_9MM_MG_AMMO
+            - STR_9MM_SHOTGUN
+            - STR_9MM_SHOTGUN_AMMO_SALT
+            - STR_9MM_SHOTGUN_AMMO_SALT
+            - STR_PIPEBOMB
+          -
+            - STR_DISPOSABLE_LASER_CANNON
+            - STR_DISPOSABLE_LASER_CANNON
             - STR_PIPEBOMB
           -
             - STR_BARREL_MOTAR
@@ -732,11 +735,6 @@
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
             - STR_BARREL_MOTAR_AMMO
-          -
-            - STR_WINDLASS_LAUNCHER
-            - STR_WINDLASS_LAUNCHER_AMMO
-            - STR_WINDLASS_LAUNCHER_AMMO
-            - STR_WINDLASS_LAUNCHER_AMMO
           -
             - STR_WINDLASS_LAUNCHER
             - STR_WINDLASS_LAUNCHER_AMMO
@@ -815,7 +813,7 @@
     height: 8
     script: SLUM_4X4
     alert: STR_IRONEYES_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLANDRED.SCR
     alertDescription: STR_IRONEYES_SAFEHOUSE_ALERT_DESCRIPTION
     markerName: STR_IRONEYES_SAFEHOUSE_
     duration: [72, 120]
@@ -927,7 +925,7 @@
     height: 8
     script: GEO_DEFAULT5X5
     alert: STR_IRONEYES_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLANDRED.SCR
     alertDescription: STR_IRONEYES_OUTPOST_ALERT_DESCRIPTION
     markerName: STR_IRONEYES_OUTPOST_
     duration: [72, 120]
@@ -1111,29 +1109,19 @@
             - STR_OLD_GAUSS_SNIPER_AMMO
             - STR_OLD_GAUSS_SNIPER_AMMO
           -
-            - STR_OLD_GAUSS_SNIPER
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_SPORTBOW
+            - STR_SPORT_ARROWS3
+            - STR_SPORT_ARROWS3
+            - STR_SPORT_ARROWS3
           -
-            - STR_OLD_GAUSS_SNIPER
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_SPORTBOW
+            - STR_SPORT_ARROWS3
+            - STR_SPORT_ARROWS3
+            - STR_SPORT_ARROWS3
           -
-            - STR_OLD_GAUSS_SNIPER
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_DARTROPE
           -
-            - STR_OLD_GAUSS_SNIPER
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
-            - STR_OLD_GAUSS_SNIPER_AMMO
+            - STR_DARTROPE
       - alienRank: 8
         lowQty: 1
         medQty: 1
@@ -1166,7 +1154,7 @@
     length: 20
     height: 8
     alert: STR_TRADE_MEETING_EARLY_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLANDRED.SCR
     alertDescription: STR_TRADE_MEETING_EARLY_ALERT_DESCRIPTION
     markerName: STR_TRADE_MEETING_EARLY
     duration: [48, 72]
@@ -1197,14 +1185,18 @@
           -
             - STR_DART_PISTOL
             - STR_DART_AMMO1
-          -
-            - STR_DART_PISTOL
             - STR_DART_AMMO1
           -
             - STR_DART_PISTOL
             - STR_DART_AMMO1
+            - STR_DART_AMMO1
           -
             - STR_DART_PISTOL
+            - STR_DART_AMMO1
+            - STR_DART_AMMO1
+          -
+            - STR_DART_PISTOL
+            - STR_DART_AMMO1
             - STR_DART_AMMO1
           -
             - STR_SONIC_PROBE
@@ -1240,7 +1232,7 @@
     length: 20
     height: 8
     alert: STR_TRADE_MEETING_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLANDRED.SCR
     alertDescription: STR_TRADE_MEETING_1_ALERT_DESCRIPTION
     markerName: STR_TRADE_MEETING_1_
     duration: [48, 72]
@@ -1297,7 +1289,7 @@
     length: 20
     height: 8
     alert: STR_TRADE_MEETING_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLANDRED.SCR
     alertDescription: STR_TRADE_MEETING_2_ALERT_DESCRIPTION
     markerName: STR_TRADE_MEETING_2_
     duration: [48, 72]
@@ -1356,33 +1348,43 @@
           -
             - STR_DART_PISTOL
             - STR_DART_AMMO2
+            - STR_DART_AMMO2
           -
             - STR_DART_PISTOL
+            - STR_DART_AMMO2
             - STR_DART_AMMO2
           -
             - STR_AUTOBOW
             - STR_SPORT_ARROWS2
+            - STR_SPORT_ARROWS2
           -
             - STR_AUTOBOW
+            - STR_SPORT_ARROWS2
             - STR_SPORT_ARROWS2
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO1
+            - STR_CHEM_SMG_AMMO1
           -
             - STR_CHEM_SMG
+            - STR_CHEM_SMG_AMMO1
             - STR_CHEM_SMG_AMMO1
           -
             - STR_CHEM_SMG
             - STR_CHEM_SMG_AMMO2
+            - STR_CHEM_SMG_AMMO2
           -
             - STR_CHEM_SMG
+            - STR_CHEM_SMG_AMMO2
             - STR_CHEM_SMG_AMMO2
           - 
             - STR_AIRSOFT_RIFLE
             - STR_AIRSOFT_AMMO
+            - STR_AIRSOFT_AMMO
             - STR_ACIDFLASK
           - 
             - STR_AIRSOFT_RIFLE
+            - STR_AIRSOFT_AMMO
             - STR_AIRSOFT_AMMO
             - STR_ACIDFLASK
       - alienRank: 6
@@ -1431,7 +1433,7 @@
     length: 20
     height: 8
     alert: STR_TRADE_MEETING_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLANDRED.SCR
     alertDescription: STR_TRADE_MEETING_3_ALERT_DESCRIPTION
     markerName: STR_TRADE_MEETING_3_
     duration: [48, 72]
@@ -1579,7 +1581,7 @@
     length: 30
     height: 8
     alert: STR_GCIC_SABOTAGE_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLANDRED.SCR
     alertDescription: STR_GCIC_SABOTAGE_1_ALERT_DESCRIPTION
     markerName: STR_GCIC_SABOTAGE_1_
     duration: [72, 96]
@@ -1663,9 +1665,11 @@
             - STR_BATON
             - STR_TASER_PISTOL_CODED
             - STR_TASER_AMMO
+            - STR_TASER_AMMO
           -
             - STR_BATON
             - STR_TASER_PISTOL_CODED
+            - STR_TASER_AMMO
             - STR_TASER_AMMO
       - alienRank: 6
         lowQty: 1
@@ -1689,7 +1693,7 @@
     length: 40
     height: 8
     alert: STR_GCIC_SABOTAGE_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLANDRED.SCR
     alertDescription: STR_GCIC_SABOTAGE_2_ALERT_DESCRIPTION
     markerName: STR_GCIC_SABOTAGE_2_
     duration: [72, 96]
@@ -1812,7 +1816,7 @@
     length: 40
     height: 8
     alert: STR_GCIC_SABOTAGE_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLANDRED.SCR
     alertDescription: STR_GCIC_SABOTAGE_3_ALERT_DESCRIPTION
     markerName: STR_GCIC_SABOTAGE_3_
     duration: [72, 96]
@@ -1941,7 +1945,7 @@
     length: 50
     height: 8
     alert: STR_MEDI_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_MEDI_CREATURE_ALERT_DESCRIPTION
     markerName: STR_MEDI_CREATURE_
     duration: [36, 60]
@@ -1970,7 +1974,7 @@
     length: 50
     height: 8
     alert: STR_MEDI_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_MEDI_CREATURE_ALERT_DESCRIPTION
     markerName: STR_MEDI_CREATURE_
     duration: [36, 60]
@@ -2004,7 +2008,7 @@
     length: 50
     height: 8
     alert: STR_MEDI_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_MEDI_CREATURE_ALERT_DESCRIPTION
     markerName: STR_MEDI_CREATURE_
     duration: [36, 60]
@@ -2033,7 +2037,7 @@
     length: 50
     height: 8
     alert: STR_MEDI_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_MEDI_CREATURE_ALERT_DESCRIPTION
     markerName: STR_MEDI_CREATURE_
     duration: [36, 60]
@@ -2068,7 +2072,7 @@
     length: 40
     height: 8
     alert: STR_GR_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_GR_INDUSTRIAL_1_ALERT_DESCRIPTION
     markerName: STR_GR_INDUSTRIAL_1_
     duration: [48, 72]
@@ -2166,7 +2170,7 @@
     height: 8
     script: HACIENDA_SSP_6X6
     alert: STR_SSP_ALERT
-    # alertBackground: BACK03.SCR
+    alertBackground: BACKLAND.SCR
     alertDescription: STR_SSP_UNDERCOVER_1_ALERT_DESCRIPTION
     markerName: STR_SSP_UNDERCOVER_1_
     duration: [72, 120]
@@ -2180,7 +2184,7 @@
       title: STR_SSP_UNDERCOVER_1
       music: SSP_INTRO
       palette: 2
-    #unlockedResearch: STR_TRG_RI_PREQ
+    unlockedResearch: STR_TRG_3V_PREQ
     customUfo: STR_HACIENDA
     forcePercentageOutsideUfo: true
     terrains:
@@ -2246,9 +2250,11 @@
             - STR_BARREL_MOTAR_AMMO
             - STR_BOUNTY_1
           -
+            - STR_DISPOSABLE_LASER_CANNON
             - STR_GOLFWEDGE
             - STR_BOUNTY_1
           -
+            - STR_DISPOSABLE_LASER_CANNON
             - STR_GOLFDRIVER
             - STR_BOUNTY_1
       - alienRank: 4
@@ -2260,9 +2266,10 @@
         extraRandomItems: *viceExtra
         itemSets:
           -
-            - STR_9MM_PISTOL
-            - STR_9MM_AMMO
-            - STR_9MM_AMMO
+            - STR_BUSBOX_PISTOL
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
             - STR_STL_KNIFE
             - STR_BOUNTY_1
           -
@@ -2272,9 +2279,10 @@
             - STR_STL_KNIFE
             - STR_BOUNTY_1
           -
-            - STR_9MM_SMG
-            - STR_9MM_SMG_AMMO
-            - STR_9MM_SMG_AMMO
+            - STR_9MM_PISTOL
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+            - STR_STL_KNIFE
             - STR_BOUNTY_1
           -
             - STR_9MM_SMG
@@ -2334,13 +2342,6 @@
             - STR_BOUNTY_1
           -
             - STR_BUSBOX_PISTOL
-            - STR_PAPERSHOT_AMMO
-            - STR_PAPERSHOT_AMMO
-            - STR_PAPERSHOT_AMMO
-            - STR_STL_KNIFE
-            - STR_BOUNTY_1
-          -
-            - STR_BUSBOX_PISTOL
             - STR_COMBALL_AMMO
             - STR_COMBALL_AMMO
             - STR_COMBALL_AMMO
@@ -2352,10 +2353,16 @@
             - STR_COMBALL_AMMO
             - STR_BOUNTY_1
           -
-            - STR_BUSBOX_PISTOL
-            - STR_COMBALL_AMMO
-            - STR_COMBALL_AMMO
-            - STR_COMBALL_AMMO
+            - STR_9MM_SHOTGUN
+            - STR_9MM_SHOTGUN_AMMO
+            - STR_9MM_SHOTGUN_AMMO
+            - STR_9MM_SHOTGUN_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_SHOTGUN
+            - STR_9MM_SHOTGUN_AMMO
+            - STR_9MM_SHOTGUN_AMMO
+            - STR_9MM_SHOTGUN_AMMO
             - STR_BOUNTY_1
           -
             - STR_9MM_RIFLE
