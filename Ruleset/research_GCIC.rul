@@ -110,7 +110,7 @@ research:
       - STR_OLD_DATA
     cost: 5
 
-  - name: STR_PD2_MANULOCK
+  - name: STR_PD2_LOCK
     dependencies:
       - STR_SECONDARY_OPERATIONS
       - STR_SEC_LICENSE_ITEM
@@ -124,6 +124,7 @@ research:
     dependencies:
       - STR_LOCK
     disables:
+      - STR_PD2_LOCK
       - STR_PD2_MANULOCK
 
   - name: STR_FORBIDDEN_OPERATIONS
@@ -236,8 +237,6 @@ research:
   - name: STR_SSP_MISSIONS
     dependencies:
       - STR_LOCK
-    getOneFree:
-      - STR_BELLHOP_DRONE_ARMOR
     disables:
       - STR_PSM_LOCK
 # licenses
@@ -258,6 +257,8 @@ research:
   - name: STR_MEDIBAY_ITEM
     dependencies:
       - STR_LOCK
+    getOneFree:
+      - STR_MEDI_BAY
     disables:
       - STR_LMB_LOCK
 
@@ -315,6 +316,51 @@ research:
       - STR_DURATHREAD
     disables:
       - STR_LDT_LOCK
+
+  - name: STR_LLC_LOCK
+    dependencies:
+      - STR_SHARES_SSP
+  - name: STR_LLC_ITEM
+    dependencies:
+      - STR_LOCK
+    getOneFree:
+      - STR_LASER_AMMO_OUTSOURCING
+    disables:
+      - STR_LLC_LOCK
+      - STR_SSPAMMO_MANULOCK
+
+  - name: STR_LSB_LOCK
+    dependencies:
+      - STR_SHARES_SSP
+  - name: STR_LSB_ITEM
+    dependencies:
+      - STR_LOCK
+    getOneFree:
+      - STR_STUN_BATON
+    disables:
+      - STR_LSB_LOCK
+
+  - name: STR_LSSR_LOCK
+    dependencies:
+      - STR_SHARES_SSP
+  - name: STR_LSSR_ITEM
+    dependencies:
+      - STR_LOCK
+    getOneFree:
+      - STR_SSP_SNIPER_RIFLE
+    disables:
+      - STR_LSSR_LOCK
+
+  - name: STR_LJA_LOCK
+    dependencies:
+      - STR_SHARES_SSP
+  - name: STR_LJA_ITEM
+    dependencies:
+      - STR_LOCK
+    getOneFree:
+      - STR_LJACK_DRONE_ARMOR
+    disables:
+      - STR_LJA_LOCK
 # memories
   - name: STR_DRONE_MEMORY
     requiresBaseFunc:
@@ -379,6 +425,7 @@ research:
   - name: STR_VENDOR_PRINTER
     dependencies:
       - STR_LOCK
+
   - name: STR_VENDOR_P2P
     dependencies:
       - STR_VENDORS
@@ -391,6 +438,21 @@ research:
     cost: 15
     disables:
       - STR_IRONEYES_MANULOCK
+  - name: STR_VENDOR_IRONEYES2
+    dependencies:
+      - STR_VENDOR_IRONEYES
+      - STR_TODO
+    cost: 15
+    disables:
+      - STR_IRONEYES_MANULOCK2
+  - name: STR_VENDOR_VICE
+    dependencies:
+      - STR_VENDOR_P2P
+      - STR_TODO
+    cost: 15
+    disables:
+      - STR_VICE_MANULOCK
+
   - name: STR_VENDOR_MEDI
     dependencies:
       - STR_VENDORS
@@ -458,6 +520,9 @@ research:
     unlocks:
       - STR_SINGLESHOT_LASER_AMMO
       - STR_SSP_LASER_SMG_AMMO1
+  - name: STR_LASER_AMMO_OUTSOURCING
+    dependencies:
+      - STR_LLC_ITEM
   - name: STR_LASER_WEAPONS_CONSTRUCTION
     requiresBaseFunc:
       - STR_SERVICE_PRINTING
@@ -566,6 +631,9 @@ research:
       - STR_MUSCULATURE
       - STR_INTEGUMENTARY
     cost: 30
+  - name: STR_MEDI_BAY
+    dependencies:
+      - STR_MEDIBAY_ITEM
   - name: STR_HOLDING_CELLS_RESEARCH
     dependencies:
       - STR_FORBIDDEN_OPERATIONS
@@ -713,6 +781,7 @@ research:
 # armor
   - name: STR_PLEX_DRONE_ARMOR
   - name: STR_BELLHOP_DRONE_ARMOR
+    cost: 10
     dependencies:
       - STR_SSP_MISSIONS
   - name: STR_DURA_DRONE_ARMOR
@@ -741,6 +810,9 @@ research:
     cost: 15
     getOneFree:
       - STR_AQUAVEST_DRONE_ARMOR
+  - name: STR_LJACK_DRONE_ARMOR
+    needItem: true
+    cost: 5
 #equipment
 # p2p
   - name: STR_BUSBOX_PISTOL
@@ -1038,6 +1110,11 @@ research:
     cost: 5
     unlocks:
       - STR_V_SSP_PREQ
+  - name: STR_STUN_BATON
+    needItem: true
+    cost: 5
+    unlocks:
+      - STR_V_SSP_PREQ
   - name: STR_VOLTKNOCKER
     needItem: true
     cost: 5
@@ -1271,14 +1348,17 @@ research:
   - name: STR_SJB_LICENSE
     needItem: true
     cost: 5
-# data
+# loot
+  - name: STR_CHAMPAGNE
+    needItem: true
+    cost: 5
   - name: STR_CRYPTOCHIT1
     needItem: true
     cost: 2
   - name: STR_CRYPTOCHIT2
     needItem: true
     cost: 2
-
+# data
   - name: STR_PERSONAL_DATA
     needItem: true
     cost: 5
@@ -1322,10 +1402,6 @@ research:
     needItem: true
     cost: 5
   - name: STR_IRS_SUBSIDY
-    needItem: true
-    cost: 5
-# loot
-  - name: STR_CHAMPAGNE
     needItem: true
     cost: 5
 # tasks
@@ -1376,9 +1452,11 @@ research:
       STR_TRG_BRK_PREQ:
         - STR_BREAKER_PRIVATE
         - STR_UFO_AIRCAR_IRON1
+        - STR_9MM_SHOTGUN
         - STR_9MM_MG
         - STR_BARREL_MOTAR
         - STR_WINDLASS_LAUNCHER
+        - STR_DISPOSABLE_LASER_CANNON
       STR_TRG_FL_PREQ:
         - STR_FREELANCER_PRIVATE
         - STR_DART_PISTOL
@@ -1386,6 +1464,8 @@ research:
         - STR_SONIC_PROBE
       STR_TRG_ST_PREQ:
         - STR_SKIPTRACER_PRIVATE
+        - STR_AIRSOFT_RIFLE
+        - STR_AUTOBOW
         - STR_CHEM_SMG
         - STR_ACIDFLASK
         - STR_XN_LASER_PISTOL
@@ -1394,7 +1474,14 @@ research:
       STR_TRG_WT_PREQ:
         - STR_WIRETAPPER_PRIVATE
         - STR_MARSBALL
+        - STR_AIRSOFT_PISTOL
         - STR_SKULLJACK
+      STR_TRG_3V_PREQ:
+        - STR_VICEFARMER_PRIVATE
+        - STR_VICESMUGGLER_PRIVATE
+        - STR_VICEBOSS_PRIVATE
+        - STR_9MM_SNIPER_RIFLE
+        - STR_PSI_DAZZLER
       STR_TRG_SG_PREQ:
         - STR_SSPGUARD_PRIVATE
         - STR_45_PISTOL
@@ -1429,6 +1516,8 @@ research:
         - STR_HOLOVIPER
       STR_TRG_CZ_PREQ:
         - STR_CLIENT_CRAZY
+        - STR_GOLFWEDGE
+        - STR_GOLFDRIVER
 
   - name: STR_DATA_1_IRONEYES
     requiresBaseFunc:
@@ -1441,6 +1530,7 @@ research:
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
+      - STR_IRONEYES_NETWORK
     getOneFreeProtected:
       STR_TRG_BO_PREQ:
         - STR_BOOSTER_PRIVATE
@@ -1459,6 +1549,7 @@ research:
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
+      - STR_NETRUNNERS_NETWORK
     getOneFreeProtected:
       STR_TRG_FL_PREQ:
         - STR_FREELANCER_PRIVATE
@@ -1466,6 +1557,23 @@ research:
         - STR_SKIPTRACER_PRIVATE
       STR_TRG_WT_PREQ:
         - STR_WIRETAPPER_PRIVATE
+  - name: STR_DATA_1_VICE
+    requiresBaseFunc:
+      - STR_SERVICE_PORT
+    neededItem: STR_PERSONAL_DATA
+    needItem: true
+    destroyItem: true
+    repeatable: true
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_LOCAL_INTERFACE
+      - STR_TODO
+    getOneFreeProtected:
+      STR_TRG_3V_PREQ:
+        - STR_VICEFARMER_PRIVATE
+        - STR_VICESMUGGLER_PRIVATE
+        - STR_VICEBOSS_PRIVATE
   - name: STR_DATA_1_SSP
     requiresBaseFunc:
       - STR_SERVICE_PORT
@@ -1477,6 +1585,7 @@ research:
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
+      - STR_VENDOR_SSP
     getOneFreeProtected:
       STR_TRG_SG_PREQ:
         - STR_SSPGUARD_PRIVATE
@@ -1495,6 +1604,7 @@ research:
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
+      - STR_MEDI_MISSIONS
     getOneFreeProtected:
       STR_TRG_CR_PREQ:
         - STR_CHRYSSALID
@@ -1513,6 +1623,7 @@ research:
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
+      - STR_GR_MISSIONS
     getOneFreeProtected:
       STR_TRG_RS_PREQ:
         - STR_ROBOSPHERE
@@ -1527,6 +1638,7 @@ research:
     points: 10
     dependencies:
       - STR_LOCAL_INTERFACE
+      - STR_IRS_SUBSIDY
     getOneFreeProtected:
       STR_TRG_HS_PREQ:
         - STR_HOLOUFO_SMALL
@@ -1562,6 +1674,7 @@ research:
         - STR_HITTER_PRIVATE
         - STR_UFO_AIRCAR_IRON2
         - STR_OLD_GAUSS_SNIPER
+        - STR_DARTROPE
       STR_TRG_CYFURB_PREQ:
         - STR_CYFURB
       STR_MEDI_MISSIONS:
@@ -1581,6 +1694,7 @@ research:
     points: 75
     dependencies:
       - STR_PUBLIC_GATEWAY
+      - STR_IRONEYES_SURVEY
     getOneFreeProtected:
       STR_TRG_HIT_PREQ:
         - STR_HITTER_PRIVATE
@@ -2052,4 +2166,13 @@ research:
   - name: STR_SEC_MANULOCK
   - name: STR_IRONEYES_MANULOCK
   - name: STR_IRONEYES_MANULOCK2
+  - name: STR_VICE_MANULOCK
   - name: STR_SSPAMMO_MANULOCK
+  - name: STR_PD2_MANULOCK
+# fixes
+  - name: FIXTECHS
+    dependencies:
+      - STR_DEBUG
+    disables:
+      - STR_PD2_LOCK
+      - STR_PD2_MANULOCK

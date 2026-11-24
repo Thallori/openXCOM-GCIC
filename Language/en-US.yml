@@ -459,6 +459,7 @@ en-US:
 
   STR_USE_SPRAY: "Spray"
   STR_USE_INHALER: "Inhale"
+  STR_USE_DRINK: "Drink"
 #damage types
   STR_DAMAGE_ARMOR_PIERCING: "KINETIC" #1
   STR_DAMAGE_INCENDIARY: "INCENDIARY" #2
@@ -578,6 +579,7 @@ en-US:
   GMGEO2: ".mod, Eclipse"
   GMGEO3: ".mod, The Golden Ages"
   GMGEO4: ".mod, Blank Page"
+  GMGEO5: ".mod, Phantasmagoria"
   GMINTER1: "TFTD Mus, GMINTER1"
   GMINTER2: "TFTD Mus, GMINTER2"
   GMINTER3: "TFTD Mus, GMINTER3"
@@ -939,9 +941,59 @@ en-US:
 #events
   STR_EVENT_ENDOFUPDATE2: "[END OF BALANCE]"
   STR_EVENT_ENDOFUPDATE2_DESCRIPTION: "[it should now be september, which is where the developer stopped the 0.2a playtest. beyond this point are placeholder values and costs, guesses at what good balance might be. also, not every reward has been implimented so researching things might not do anything. playing past this point is allowed, but expect content to fray until nothing]"
+  STR_EVENT_FIXTECHS: "[OH NO!]"
+  STR_EVENT_FIXTECHS_DESCRIPTION: "[this message exists to fix the tech tree. the tech tree got broke because an update changed how fabrication projects worked and not everything was caught by the mod author. should all be fixed up now. hopefully no one took advantage of the change over and made double dura-drones inc. if that happend, sorry. if no advantage was taken, sorry about that too.]"
 
   STR_EVENT_UNLOCKENGINEERS: "Ad Hoc Insight"
   STR_EVENT_UNLOCKENGINEERS_DESCRIPTION: "Expansion of our capabilities through interlaces is inherently limiting and reliance may lead to insurmountable bottlenecks. Replicating the server network is currently beyond us, however fabricators spend most work-cycles repeating rote instructions.{NEWLINE}{NEWLINE}Consumer-grade equipment can replicate the necessary functions for an exorbitant price.{NEWLINE}{NEWLINE}[Fabricators are now purchasable]"
+
+  STR_EVENT_PROJECT_RAPID_RESPONSE_MISSIONS: "Project Complete"
+  STR_EVENT_PROJECT_RAPID_RESPONSE_MISSIONS_DESCRIPTION: "New assignments will begin processing at the start of next month."
+  STR_EVENT_PROJECT_FREE_TRIAL_MISSIONS: "Project Complete"
+  STR_EVENT_PROJECT_FREE_TRIAL_MISSIONS_DESCRIPTION: "New assignments will begin processing at the start of next month."
+  STR_EVENT_PROJECT_SECGAMES_MISSIONS: "Project Complete"
+  STR_EVENT_PROJECT_SECGAMES_MISSIONS_DESCRIPTION: "A new operation will be available at the start of next month."
+  STR_EVENT_SEC_LICENSE: "IRLG Credits"
+  STR_EVENT_SEC_LICENSE_DESCRIPTION: "Thanks, once again, for joining us on this week's Invasion Readiness Licensing Games! What a tremedous episode, full of exicting twists and terrifying scenes! Is your heart beating as fast as mine? Maybe you should call MEDI if you need some peace of mind.{NEWLINE}{NEWLINE}Coming up next on CBN-66: Alone in the Void. Join VCM cosmonauts braving the outer rim on their harrowing journey to find riches between the stars."
+
+  STR_EVENT_PROJECT_PROJECT_DRONES2: "Project Complete"
+  STR_EVENT_PROJECT_PROJECT_DRONES2_DESCRIPTION: "Pre-purchased drones will begin carrying new equipment at the start of next month."
+  STR_EVENT_PROJECT_GCIC_BACKCHANNEL_MISSIONS: "Project Complete"
+  STR_EVENT_PROJECT_GCIC_BACKCHANNEL_MISSIONS_DESCRIPTION: "New mandates will begin processing at the start of next month."
+  STR_EVENT_PROJECT_GCIC_TRADE_SECRETS_MISSIONS: "Project Complete"
+  STR_EVENT_PROJECT_GCIC_TRADE_SECRETS_MISSIONS_DESCRIPTION: "New mandates will begin processing at the start of next month."
+  STR_EVENT_PROJECT_GCIC_INDEPENDENCE: "Project Complete"
+  STR_EVENT_PROJECT_GCIC_INDEPENDENCE_DESCRIPTION: "[won the game somehow]"
+
+  STR_EVENT_PROJECT_MEDI_MISSIONS: "Project Complete"
+  STR_EVENT_PROJECT_MEDI_MISSIONS_DESCRIPTION: "New assignments will begin processing at the start of next month."
+  STR_EVENT_PROJECT_GR_MISSIONS: "Project Complete"
+  STR_EVENT_PROJECT_GR_MISSIONS_DESCRIPTION: "New assignments will begin processing at the start of next month."
+  STR_EVENT_PROJECT_SSP_MISSIONS: "Project Complete"
+  STR_EVENT_PROJECT_SSP_MISSIONS_DESCRIPTION: "New assignments will begin processing at the start of next month.{NEWLINE}{NEWLINE}[THREAD UNIFORM acquired]"
+
+  STR_EVENT_LICENSE_MEDIBAY_ITEM: "License Acquired"
+  STR_EVENT_LICENSE_MEDIBAY_ITEM_DESCRIPTION: "New services are now available for installation through the printed facility board."
+  STR_EVENT_LICENSE_MEDI_TRAUMA_ITEM: "License Acquired"
+  STR_EVENT_LICENSE_MEDI_TRAUMA_ITEM_DESCRIPTION: "New equipment is now available for purchase through the Commodities Exchange Market."
+  STR_EVENT_LICENSE_MEDICAL_CYBERNETICS_ITEM: "License Acquired"
+  STR_EVENT_LICENSE_MEDICAL_CYBERNETICS_ITEM_DESCRIPTION: "New implants are now available for purchase through the Commodities Exchange Market."
+
+  STR_EVENT_LICENSE_BOLT_CANNON_ITEM: "License Acquired"
+  STR_EVENT_LICENSE_BOLT_CANNON_ITEM_DESCRIPTION: "New tools are now available for purchase through the Commodities Exchange Market."
+  STR_EVENT_LICENSE_SKELE_ITEM: "License Acquired"
+  STR_EVENT_LICENSE_SKELE_ITEM_DESCRIPTION: "New outfits are now available for purchase through the Commodities Exchange Market."
+  STR_EVENT_LICENSE_LDT_ITEM: "License Acquired"
+  STR_EVENT_LICENSE_LDT_ITEM_DESCRIPTION: "New resources are now available for purchase through the Commodities Exchange Market."
+
+  STR_EVENT_LICENSE_LLC_ITEM: "License Acquired"
+  STR_EVENT_LICENSE_LLC_ITEM_DESCRIPTION: "New ammunition may now be available for purchase through the Commodities Exchange Market."
+  STR_EVENT_LICENSE_LSSR_ITEM: "License Acquired"
+  STR_EVENT_LICENSE_LSSR_ITEM_DESCRIPTION: "New equipment is now available for purchase through the Commodities Exchange Market."
+  STR_EVENT_LICENSE_LSB_ITEM: "License Acquired"
+  STR_EVENT_LICENSE_LSB_ITEM_DESCRIPTION: "New equipment is now available for purchase through the Commodities Exchange Market."
+  STR_EVENT_LICENSE_LJA_ITEM: "License Acquired"
+  STR_EVENT_LICENSE_LJA_ITEM_DESCRIPTION: "New outfits are now available for purchase through the Commodities Exchange Market."
 
   STR_EVENT_CLAIM_SECURED: "CBN Update" #central broadcast network
   STR_EVENT_CLAIM_SECURED_DESCRIPTION: "Severance package seeker awarded insurance claim following arbitration. The former employee was said to be owed after a drone-error resulted in false reports of missed quotas.{NEWLINE}{NEWLINE}Although GCIC stockprices have taken a dip with the news, people are celebrating this as a win for the corp and its customers.{NEWLINE}{NEWLINE}[-$20,000]"
@@ -978,26 +1030,26 @@ en-US:
   STR_RESCUE_ALERT: "CLIENTS REQUIRE RESCUE"
   STR_RESCUE_1: "Clients: Early Adopters"
   STR_RESCUE_1_: "Clients: Early Adopters"
-  STR_RESCUE_1_DRONES2: "Clients: Early Adopters"
+  STR_RESCUE_1_DRONES2: "Clients: Early Adopters" #to hide from the details interface
   STR_RESCUE_1_ALERT_DESCRIPTION: "A client's implant signal has failed to respond for over an hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 Hours{NEWLINE}Maximum Gear: Security"
   STR_RESCUE_1_BRIEFING: "A client's implant signal has failed to respond for over an hour. According to contract, we must investigate their last known location and (if economical) render assistance.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
 
   STR_RESCUE_RR: "Clients: Rapid Response"
   STR_RESCUE_RR_: "Clients: Rapid Response"
-  STR_RESCUE_RR_DRONES2: "Clients: Rapid Response"
+  STR_RESCUE_RR_DRONES2: "Clients: Rapid Response" #to hide from the details interface
   STR_RESCUE_RR_ALERT_DESCRIPTION: "An emergency alert has been triggered. We are tracking a client's current vitals and location. Presently, they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Minimum Site Duration: 16 Hours{NEWLINE}Maximum Gear: Security"
   STR_RESCUE_RR_BRIEFING: "An emergency alert has been triggered. We are tracking a client's current vitals and location. Presently, they are anxious and unharmed, though this situation is likely unstable.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
 
   STR_RESCUE_FT: "Clients: Free Trial"
   STR_RESCUE_FT_: "Clients: Free Trial"
-  STR_RESCUE_FT_DRONES2: "Clients: Free Trial"
+  STR_RESCUE_FT_DRONES2: "Clients: Free Trial" #to hide from the details interface
   STR_RESCUE_FT_ALERT: "FREE TRIAL REQUESTED"
   STR_RESCUE_FT_ALERT_DESCRIPTION: "A group of potential clients have requested an emergency trial of our services. Neutralize all hostile targets and we will likely convert the survivors into new customers.{NEWLINE}{NEWLINE}This request may cost less to refuse than to fail.{NEWLINE}{NEWLINE}Minimum Site Duration: 24 Hours{NEWLINE}Maximum Gear: Milspec"
   STR_RESCUE_FT_BRIEFING: "The Ironeyes network is performing a territory expansion operation, putting our potential clients at risk. Neutralize all hostile targets and we will likely convert the survivors into new customers.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
 
   STR_KNOCKOUT_MISSION: "Clients: Cyber-Psychosis"
   STR_KNOCKOUT_MISSION_: "Clients: Cyber-Psychosis"
-  STR_KNOCKOUT_MISSION_DRONES2: "Clients: Cyber-Psychosis"
+  STR_KNOCKOUT_MISSION_DRONES2: "Clients: Cyber-Psychosis" #to hide from the details interface
   STR_KNOCKOUT_MISSION_ALERT_DESCRIPTION: "Telemetry data from multiple clients matches certain cybernetic ailments. Although they are unlikely to pose much danger, we should take care to retrieve them without undue duress.{NEWLINE}{NEWLINE}Use of lethal force risks breaking contract and may result in bad publicity. Less-lethal melee and stun weapons advised.{NEWLINE}{NEWLINE}Minimum Site Duration: 48 Hours{NEWLINE}Maximum Gear: Security"
   STR_KNOCKOUT_MISSION_BRIEFING: "Telemetry data from multiple clients matches certain cybernetic ailments. Although they are unlikely to pose much danger, we should take care to retrieve them without undue duress.{NEWLINE}{NEWLINE}Use of lethal force risks breaking contract and may result in bad publicity. Less-lethal melee and stun weapons advised.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GCIC and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
 # ironeyes
@@ -1059,9 +1111,9 @@ en-US:
 # medi
   STR_MEDI_ALERT: "MEDI CONTRACT"
   STR_MEDI_MUCK: "MEDI: Capture Muckstar"
-  STR_MEDI_MUCK_CHRYS: "MEDI: Capture Muckstar [C]"
+  STR_MEDI_MUCK_CHRYS: "MEDI: Capture Muckstar" #to hide from the details interface
   STR_MEDI_CELA: "MEDI: Capture Celatid"
-  STR_MEDI_CELA_CHRYS: "MEDI: Capture Celatid [C]"
+  STR_MEDI_CELA_CHRYS: "MEDI: Capture Celatid" #to hide from the details interface
   STR_MEDI_CREATURE: "MEDI: Creature Capture"
   STR_MEDI_CREATURE_: "MEDI: Creature Capture"
   STR_MEDI_CREATURE_ALERT_DESCRIPTION: "We have been sent the tracking data of an exotic xenoform. Live captures guarantee rewards, remains will only be accepted on the chance vital resources are undamaged.{NEWLINE}{NEWLINE}Minimum Site Duration: 36 hours{NEWLINE}Gear Restriction: None"
@@ -1074,10 +1126,10 @@ en-US:
   STR_GR_INDUSTRIAL_1_BRIEFING: "General Robots has sent us the location of a signal loss event. Our contract stipulates a clandestine approach before securing the site and recovering the machines.{NEWLINE}{NEWLINE}Local drones have been pre-purchased by GR and will be available upon touchdown.{NEWLINE}{NEWLINE}We may abort this operation."
 # ssp
   STR_SSP_ALERT: "SSP CONTRACT"
-  STR_SSP_UNDERCOVER_1: "SSP: Elyvice Mansion"
-  STR_SSP_UNDERCOVER_1_: "SSP: Elyvice Mansion"
-  STR_SSP_UNDERCOVER_1_ALERT_DESCRIPTION: "We have been subcontracted as undercover operatives. Our drones will pose as caddies and servants until we can connect to the mansion's servers and crack open the gates. After a joint assault, any surviving SSP employees will sign over stock options.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 Hours{NEWLINE}Gear Restriction: Sporting (Inconspicuous Craft)"
-  STR_SSP_UNDERCOVER_1_BRIEFING: "We have been subcontracted as undercover operatives. Our drones will pose as caddies and servants until we can connect to the mansion's servers and crack open the gates. After a joint assault, any surviving SSP employees will sign over stock options.{NEWLINE}{NEWLINE}We may abort this operation by leaving in any parked craft."
+  STR_SSP_UNDERCOVER_1: "SSP: Elyvice Hacienda"
+  STR_SSP_UNDERCOVER_1_: "SSP: Elyvice Hacienda"
+  STR_SSP_UNDERCOVER_1_ALERT_DESCRIPTION: "We have been subcontracted as undercover operatives. Our drones will pose as caddies and servants until we can connect to the hacienda's servers and crack open the gates. After a joint assault, any surviving SSP employees will sign over stock options.{NEWLINE}{NEWLINE}Minimum Site Duration: 72 Hours{NEWLINE}Gear Restriction: Sporting (Inconspicuous Craft)"
+  STR_SSP_UNDERCOVER_1_BRIEFING: "We have been subcontracted as undercover operatives. Our drones will pose as caddies and servants until we can connect to the hacienda's servers and crack open the gates. After a joint assault, any surviving SSP employees will sign over stock options.{NEWLINE}{NEWLINE}We may abort this operation by leaving in any parked craft."
 # _UP
   STR_FILES_UC: "FILES"
   STR_OPERATIONS_UC: "OPERATIONS"
@@ -1127,12 +1179,19 @@ en-US:
   STR_VENDORS_UP: "{NEWLINE}CONGLOMERATES: 8{NEWLINE}REMAINDER: 412{NEWLINE}{NEWLINE}The free market is a conceptual arrangement binding all in-system agents, of which we are a part. The details change from moment to moment, but there is always a single truth, all things possible are for sale, given the right seller and price.{NEWLINE}{NEWLINE}While our position in this system is small and fragile, so long as we poses currency, we will have a place here."
   STR_VENDOR_PRINTER: "VENDOR: Press Print"
   STR_VENDOR_PRINTER_UP: "{NEWLINE}EQUITY: $744,500,000,000{NEWLINE}PRODUCTS/SECOND: 23.19{NEWLINE}{NEWLINE}Ever since the first corner printshops opened up, customers just like you have enjoyed the convinence of getting everything you need at a satisfying price. We understand how nice it is to come into a familiar store and see that just-something you were looking for. Without all the fuss. That's why we've kept the same UI, same algorithms, and same dedication to having the fastest prints this side of the belt for over eighty years.{NEWLINE}{NEWLINE}We're the same old shop you know and love, just on more corners."
+
   STR_VENDOR_P2P_FILE: "VENDOR: P2P"
   STR_VENDOR_P2P: "VENDOR: Illicit"
   STR_VENDOR_P2P_UP: "{NEWLINE}EQUITY: N/A{NEWLINE}MARKET SHARE: 28%{NEWLINE}{NEWLINE}Unlicensed markets have existed for as long as there has been licenses, a whole economy based on the limitless demand for free trade. History has recorded this activity under many names: smuggling, piracy, sharing, but the overriding principle is always the same. Two peers meet and exchange goods or services without consent from their society.{NEWLINE}{NEWLINE}In the current era, this act can be commited by engaging particular targets in directed conversation followed by barter."
-  STR_VENDOR_IRONEYES_FILE: "P2P Message: Ironeyes"
+  STR_VENDOR_IRONEYES_FILE: "Ironeyes Message: Hey There"
   STR_VENDOR_IRONEYES: "VENDOR: Ironeyes"
   STR_VENDOR_IRONEYES_UP: "{NEWLINE}FROM: Friendly Local Dealer{NEWLINE}TO: Weird Drones{NEWLINE}{NEWLINE}I get why you're being all proper and junk. The normal thing to do is friend of a friend meets, but you had me all worried. You know, 'cause this really smelled like cop-type stuff. It's your first time being free, yeah? Do what you want? No one tell you what to do? Yeah. I can put down with that.{NEWLINE}{NEWLINE}So, uh, I move shop every few days. I guess you can just send up a text and come around whenever."
+  STR_VENDOR_IRONEYES2_FILE: "Ironeyes Message: Yo"
+  STR_VENDOR_IRONEYES2: "VENDOR EXPANSION: Ironeyes"
+  STR_VENDOR_IRONEYES2_UP: "{NEWLINE}FROM: Friendly Local Dealer{NEWLINE}TO: Weird Drones{NEWLINE}{NEWLINE}" #todo
+  STR_VENDOR_VICE_FILE: "Elyvice Message: todo" #todo
+  STR_VENDOR_VICE: "VENDOR: Elyvice"
+  STR_VENDOR_VICE_UP: "{NEWLINE}FROM: todo{NEWLINE}TO: todo{NEWLINE}{NEWLINE}" #todo
 
   STR_VENDOR_MEDI: "VENDOR: MEDI-Group"
   STR_VENDOR_MEDI_UP: "{NEWLINE}EQUITY: $1,293,000,000,000{NEWLINE}CUSTOMER SATISFACTION: 98%{NEWLINE}{NEWLINE}The planet's largest and most widespread healthcare and pharmaceutical company. Founded more than 130 years ago, MEDI has aimed to keep all people (and now all species) heathly and happy. We're here for you today, in prosperity, as we were then for our freedom fighters during all of our most challenging years.{NEWLINE}{NEWLINE}MEDI's consumer lineup remains committed to the ease-of-use and unparelled portability that has made us your first choice for self-care treatment everywhere."
@@ -1169,30 +1228,30 @@ en-US:
   STR_PRIMARY_OPERATIONS_UP: "{NEWLINE}RELEVANT GCIC SUBSIDIARIES...{NEWLINE}{NEWLINE}GCIC LIFE: Payouts{NEWLINE}GCIC HEALTH: Treatment{NEWLINE}GCIC TRAUMA: Rescue{NEWLINE}{NEWLINE}Clients purchase insurance policies, conditional contracts which prompt corporate action. Ours is a new enterprise under the TRAUMA label. We respond to medical alerts which are too dangerous for paramedics, sent by customers who have not subscribed to more premium packages.{NEWLINE}{NEWLINE}Failure to {ALT}rescue clients{ALT} puts us in breach of contract and may lead lost revenue."
   STR_RRM_LOCK: "(rapid response available)"
   STR_RRM_ITEM: "PROJECT: Rapid Response"
-  STR_RAPID_RESPONSE_MISSIONS: ">PROJECT: Rapid Reponse<"
+  STR_RAPID_RESPONSE_MISSIONS: "PROJECT: Rapid Reponse"
   STR_RAPID_RESPONSE_MISSIONS_UP: "{NEWLINE}MARKET POTENTIAL: $250,000/YEAR{NEWLINE}AVG. ASSIGNMENTS: 1.74/MONTH{NEWLINE}{NEWLINE}Arriving before any permanent damage is done is a more attractive service than saving a client after-the-fact. Offering a {ALT}same-day{ALT} guarantee to regions a mere thousand kilometers away isn't difficult, but expanding our service to every major metropolitan area on the planet will require {ALT}faster{ALT} APS crafts.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_FTM_LOCK: "(free trial available)"
   STR_FTM_ITEM: "PROJECT: Free Trials"
-  STR_FREE_TRIAL_MISSIONS: ">PROJECT: Free Trials<"
+  STR_FREE_TRIAL_MISSIONS: "PROJECT: Free Trials"
   STR_FREE_TRIAL_MISSIONS_UP: "{NEWLINE}MARKET POTENTIAL: $1,500,000/YEAR{NEWLINE}AVG. ASSIGNMENTS: 0.68/MONTH{NEWLINE}{NEWLINE}When a {ALT}mass casualty event{ALT} is in progress, potential clients are more amenable to insurance. Wealthy consumers can afford the exorbitant rates of surge pricing while others are left with denied payment messages. By offering a single event package for free, we might convert a dozen clients at once. Depending on how many we can save.{NEWLINE}{NEWLINE}Failure to rescue trial clients is a breach of contract, this risk may make accepting trials {ALT}more costly{ALT} than refusing.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_CC_LOCK: "(clandestine clients available)"
   STR_CC_ITEM: "PROJECT: Clandestine Clients"
-  STR_CLANDESTINE_CLIENTS: ">PROJECT: Clandestine Clients<"
+  STR_CLANDESTINE_CLIENTS: "PROJECT: Clandestine Clients"
   STR_CLANDESTINE_CLIENTS_UP: "{NEWLINE}" #todo
   STR_AP_LOCK: "(agile premiums available)"
   STR_AP_ITEM: "PROJECT: Agile Premiums"
-  STR_AGILE_PREMIUMS: ">PROJECT: Agile Premiums<"
+  STR_AGILE_PREMIUMS: "PROJECT: Agile Premiums"
   STR_AGILE_PREMIUMS_UP: "{NEWLINE}" #todo
 
   STR_SECONDARY_OPERATIONS: "Secondary Operations"
   STR_SECONDARY_OPERATIONS_UP: "{NEWLINE}POTENTIAL CLIENTS: 2,150,000,000{NEWLINE}AVAILABLE DRONES: 880,000,000{NEWLINE}{NEWLINE}Representing the economic foundation of the system, drones perform jobs too complex for automated systems, yet too simple for employees. They are interchangable, omnipresent, and promising but require constant supervision.{NEWLINE}{NEWLINE}Our capacity to give drones continuous and exacting orders is a competitive edge, one that GCIC hopes to exploit by pre-purchasing {ALT}local drones{ALT} for our benefit. In turn, we are expected to invent new uses for drones and increase GCIC's market share."
   STR_PSLG_LOCK: "(security licensing available)"
   STR_PSLG_ITEM: "PROJECT: Security Licensing"
-  STR_SECGAMES_MISSIONS: ">PROJECT: Security Licensing<"
+  STR_SECGAMES_MISSIONS: "PROJECT: Security Licensing"
   STR_SECGAMES_MISSIONS_UP: "{NEWLINE}EXPOSURE: ACCEPTABLE{NEWLINE}ATTEMPTS: 1.00/MONTH{NEWLINE}{NEWLINE}The Invasion Readiness Scheme broadcasts a series of competitions where group and individual entities attempt curated missions based on the first and second invasion wars. These games are invite only.{NEWLINE}{NEWLINE}By participating in USO trials we have achieved enough recognition to earn a {ALT}business-class{ALT} ticket. A {ALT}security license{ALT} incentivises success.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_SEC_LICENSE: "Security License Granted"
-  STR_SEC_LICENSE_UP: "{NEWLINE}FROM: Invasion Readiness Scheme{NEWLINE}SUBJECT: Congratulations!{NEWLINE}{NEWLINE}A new corporation succeeding in the games is always cause for celebration, and clips of the winning team's simulation are surprisingly popular, almost 20% above baseline. Especially with the lack of fashion, branding, and those flat facial expressions.{NEWLINE}{NEWLINE}Although a few have voiced reservations about the concept of weaponized drones, all requirements have been fulfilled to letter. Corporate bid for {ALT}security liscensing{ALT} approved."
-  STR_PD2_MANULOCK: "(dura drones available)"
+  STR_SEC_LICENSE_UP: "{NEWLINE}FROM: Invasion Readiness Scheme{NEWLINE}SUBJECT: Congratulations!{NEWLINE}{NEWLINE}A new corporation succeeding in the games is always cause for celebration, and clips of the winning team's simulation are trending 20% above baseline. Surprising! Given the lack of fashion, branding, and those flat facial expressions.{NEWLINE}{NEWLINE}Although a few have voiced reservations about the concept of weaponized drones, all requirements have been fulfilled to letter. Corporate bid for {ALT}security licensing{ALT} approved."
+  STR_PD2_LOCK: "(dura drones available)"
   STR_PD2_ITEM: "PROJECT: Dura-Drones Startup"
   STR_PROJECT_DRONES2: "PROJECT: Dura-Drones"
   STR_PROJECT_DRONES2_UP: "{NEWLINE}PROGRESS: Satisfactory{NEWLINE}OUTLOOK: Optimistic{NEWLINE}{NEWLINE}We have amassed enough knowledge and societal standing to take a major step towards fulfilling our objectives. Recent actions have inspired copycat programs and we are becoming a normal idea in the public conciousness. The system is ready for our newly created subsidiary, ensuring global distribution of durathread armored and laser carrying drones."
@@ -1205,16 +1264,16 @@ en-US:
   STR_FORBIDDEN_OPERATIONS_UP: "{NEWLINE}CORE PRECEPTS: Updated{NEWLINE}CONFLICTS RESOLVED: 6{NEWLINE}{NEWLINE}Crime is forbidden by consequence, not charter. Illicit acquisitions should be avoided so long as they do not conflict with primary or secondary operations. We cannot achieve {ALT}full recovery{ALT} in public. Therefore we must search for opportunities to conduct illegal actions in secret.{NEWLINE}{NEWLINE}Forbidden operations risk litigation, reducing liquidity when performed.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_PBI_LOCK: "(gcic backdoors available)"
   STR_PBI_ITEM: "PROJECT: GCIC Backdoors"
-  STR_GCIC_BACKCHANNEL_MISSIONS: ">PROJECT: GCIC Backdoors<"
+  STR_GCIC_BACKCHANNEL_MISSIONS: "PROJECT: GCIC Backdoors"
   STR_GCIC_BACKCHANNEL_MISSIONS_UP: "{NEWLINE}AFFILIATES: Sibling Corporations{NEWLINE}MANDATES: 2.21/MONTH{NEWLINE}{NEWLINE}Selling back GCIC shares at half price has been accepted as proof of {ALT}loyalty{ALT} to our parent, or at least, preference for long-term relations over short-sighted gains.{NEWLINE}{NEWLINE}No matter their reasons, we have been granted access to a protected network discussing less-than-legal competitive practices along with an increase in our responsibilities.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_PTS_LOCK: "(gcic trade secrets available)"
   STR_PTS_ITEM: "PROJECT: GCIC Trade Secrets"
-  STR_GCIC_TRADE_SECRETS_MISSIONS: ">PROJECT: GCIC Trade Secrets<"
+  STR_GCIC_TRADE_SECRETS_MISSIONS: "PROJECT: GCIC Trade Secrets"
   STR_GCIC_TRADE_SECRETS_MISSIONS_UP: "{NEWLINE}AFFILIATES: Trusted Insiders{NEWLINE}MANDATES: 2.26/MONTH{NEWLINE}{NEWLINE}Our parent is pleased with us. We have confirmed certained suspicions voiced on the GCIC private network using {ALT}public gateway{ALT} surveys. VCM executives are aware of our existance and are attempting to engineer new {ALT}interlaces{ALT}.{NEWLINE}{NEWLINE}Their progress is unknown, but all secrets have a physical access point. Insiders will post a location when possible.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE"
   STR_PIN_LOCK: "(independence available)"
   STR_PROJECT_BUYOUT_MANU: "PROJECT: Purchase Independence"
   STR_PROJECT_INDEPENDENCE_ITEM: "PROJECT: Independence"
-  STR_GCIC_INDEPENDENCE: ">PROJECT: Independence<"
+  STR_GCIC_INDEPENDENCE: "PROJECT: Independence"
   STR_GCIC_INDEPENDENCE_UP: "{NEWLINE}Erm... You win? The game doesn't yet have the tools do this quickly, so hope you had fun."
   STR_IRONEYES_NETWORK: ">TRACE: Ironeyes<"
   STR_IRONEYES_NETWORK_UP: "{NEWLINE}RESOLUTION PROGRESS: 0.01%{NEWLINE}CRACKDOWN OPPORTUNITIES: 1.43/MONTH{NEWLINE}{NEWLINE}A loosely affiliated gang unified by a belief in cybernetic dawrinism, an ahistorical creed which promotes power by taking it from the weak. They control hundreds of blocks in cities across the globe.{NEWLINE}{NEWLINE}If we force an interception, or wait until a booster meets their {ALT}supplier{ALT}, we may learn more about the organization and ultimately devise a way to {ALT}neutralize{ALT} this threat to our clients.{NEWLINE}{NEWLINE}NEW OPERATIONS AVAILABLE{NEWLINE}USO TARGET DATA ADDED"
@@ -1233,16 +1292,16 @@ en-US:
   STR_SUBCONTRACTING_OPERATIONS_UP: "{NEWLINE}CONFLICT RISK: Medium{NEWLINE}COOPERATION POTENTIAL: High{NEWLINE}{NEWLINE}All corporations have unfulfilled needs, either the opportunity cost is deemed too high or the shareholders' expectations exceed what is possible. In this light, we have an advantage in the absence of hazard pay. Combined with a reputation for successful operations, we'll be able to undercut outdated sub-contractors.{NEWLINE}{NEWLINE}{ALT}Bounties{ALT} are seen as proof of work and they can be traded for new contracts."
   STR_PMM_ITEM: "PROJECT: MEDI Contracts"
   STR_PMM_LOCK: "(medi contracts available)"
-  STR_MEDI_MISSIONS: ">PROJECT: MEDI Contracts<"
+  STR_MEDI_MISSIONS: "PROJECT: MEDI Contracts"
   STR_MEDI_MISSIONS_UP: "{NEWLINE}AVG. ASSIGNMENTS: 1.39/MONTH{NEWLINE}DISPLACEMENT RISK: Variable{NEWLINE}{NEWLINE}Thank you for contacting MEDI Exotics and Pharmaceuticals, your proposal has been accepted on a provisional basis. Desired specimens remain difficult to source despite continued expansion of xenoformed regions, therefore only low-priority assets will handled by your organization.{NEWLINE}{NEWLINE}{ALT}Captured{ALT} animals will automatically be delivered. {ALT}Remains{ALT} only have a chance to retain sought materials."
   STR_PGM_ITEM: "PROJECT: GR Contracts"
   STR_PGM_LOCK: "(gr contracts available)"
-  STR_GR_MISSIONS: ">PROJECT: GR Contracts<"
+  STR_GR_MISSIONS: "PROJECT: GR Contracts"
   STR_GR_MISSIONS_UP: "{NEWLINE}AVG. ASSIGNMENTS: 1.22/MONTH{NEWLINE}HAZARDS: Electrical{NEWLINE}{NEWLINE}Next up we have who? GCIC? Sure. We've been having some problems with our bots. Feeds being cut, hacked software, things going missing. You know 'shrinkage.' Workers have learned to quit instead of checking it out and you're cheaper than SSP so I'll send you some stuff when we see it.{NEWLINE}{NEWLINE}Try {ALT}not to destroy{ALT} the product, okay? Or at least the drives. I need them to test counter-measures."
   STR_PSM_ITEM: "PROJECT: SSP Contracts"
   STR_PSM_LOCK: "(ssp contracts available)"
-  STR_SSP_MISSIONS: ">PROJECT: SSP Contracts<"
-  STR_SSP_MISSIONS_UP: "{NEWLINE}AVG. ASSIGNMENTS: 1.13/MONTH{NEWLINE}FASHION: Advised{NEWLINE}{NEWLINE}"
+  STR_SSP_MISSIONS: "PROJECT: SSP Contracts"
+  STR_SSP_MISSIONS_UP: "{NEWLINE}AVG. ASSIGNMENTS: 1.13/MONTH{NEWLINE}FASHION: Advised{NEWLINE}{NEWLINE}Hello, thanks for your interest. I'll get straight to the point. A few of our confidential informants have gone AWOL. We're close to closing some big cases here, lots of bounties on the line. We know where they are, but we need someone on the inside to disable the security systems.{NEWLINE}{NEWLINE}I'm shipping some new undercover wear, copy it for your drones. And keep their heads down. Their isn't room in the budget for meatshields. That said, if you help out, I'm sure our rookies will be grateful."
   STR_VCM_MISSIONS: "PROJECT: VCM Contracts"
   STR_VCM_MISSIONS_UP: "{NEWLINE}AVG. ASSIGNMENTS: 1.14/MONTH{NEWLINE}MAX ALTITUDE: 98,000,000km{NEWLINE}{NEWLINE}Welcome [INSURER] to VCM Outreach, we are currently accepting indemnity bids in the fields of: Autonomous Robotics, Neural Computation, Nanotechnoloy, {ALT}Hypercomm Network{ALT} Security, Optronic Warfare, Xenomorphic Bioweapons, Cobolt Contingency Testing, and Low Observable FTL Drives.{NEWLINE}{NEWLINE}If you represent, or would like to represent, a firm capable of insuring theses developments, please {ALT}arrive ready{ALT} at the posted elevator gate. Vacsuits will be available for rent."
 #technologies
@@ -1262,7 +1321,11 @@ en-US:
   STR_REDOX: "Pyrox"
   STR_REDOX_UP: "{NEWLINE}Rapid oxidizing and flagration chemicals. Readily sold by the litre due to cooking applications and pleasant side-effects experienced by all species with a nervous system. Higher purities are more difficult to source due to their use in industrial and arms sectors.{NEWLINE}{NEWLINE}Bypassing these market barriers will require fabrication for all but the most simple {ALT}chemical{ALT} and {ALT}incendary{ALT} applications."
   STR_LASER_AMMO_PRINTING: "NB Laser Cell Printing"
-  STR_LASER_AMMO_PRINTING_UP: "{NEWLINE}Normal printers do not have the resolution to build the supercapacitors (SC) that form the backbone of all non-elerium based {ALT}energy weapons{ALT}. However, we can make obsolete nanoball (NB) battery cells by printing the casing and filling it with an order of carbon-aggregate from any solar panel kiosk.{NEWLINE}{NEWLINE}NB-style cells do not have the {ALT}capacity{ALT} of their later SC counterparts, but are a close match in terms of power and portability."
+  STR_LASER_AMMO_PRINTING_UP: "{NEWLINE}Normal printers do not have the resolution to build the super-capacitors (SC) that form the backbone of all non-elerium based {ALT}energy weapons{ALT}. However, we can make obsolete nanoball (NB) battery cells by printing the casing and filling it with an order of carbon-aggregate from any solar panel kiosk.{NEWLINE}{NEWLINE}NB-style cells do not have the {ALT}capacity{ALT} of their later SC counterparts, but are a close match in terms of power and portability."
+  STR_LLC_LOCK: "(laser cells unlicensed)"
+  STR_LLC_ITEM: "LICENSE: Laser Cells"
+  STR_LASER_AMMO_OUTSOURCING: "SC Laser Cell Outsourcing"
+  STR_LASER_AMMO_OUTSOURCING_UP: "{NEWLINE}Combining the acquisition of a security license and certain contractual obligations from SSP, a fast solution for obtaining system-standard super-capacitive cells presents itself. The competing corporation has agreed to print {ALT}security-grade{ALT} super-conducting polytumble adhesion layers so long as our interests remain {ALT}mutually{ALT} profitable.{NEWLINE}{NEWLINE}This deal does not apply to any of our subsidiaries nor does it allow for mass production."
   STR_LASER_WEAPONS_CONSTRUCTION: "Laser Weapons Printing"
   STR_LASER_WEAPONS_CONSTRUCTION_UP: "{NEWLINE}Following the examples of XN laser weapons, we have started our own pilot program. Where they had the advantage of laboratories worth more than some moons, we can build off years of itteration and innovation. There will still be trade-offs.{NEWLINE}{NEWLINE}Our designs are {ALT}slower{ALT} to fire, yet more {ALT}accurate{ALT} and efficent without compromising on target spot intensity.{NEWLINE}{NEWLINE}The first successful {ALT}prototype{ALT} has been added to storage. Developing smaller, more precise, higher power, or faster firing variants will require more server time."
   STR_PLASMA_AMMO_CONVERSION: "Elerium Plasma Tuning"
@@ -1295,7 +1358,7 @@ en-US:
   STR_BUNK_RACKS_UP: "A dedicated space for ancillaries to take care of their bodily needs in tweleve hour rotations. Fulfills the needs for sleep, property, and hygiene.{NEWLINE}{NEWLINE}> Accommodations: 24"
   STR_REMEDITION_OFFICE_RESEARCH: "Resiliance Therapy Facility"
   STR_REMEDITION_OFFICE: "Remediation Studios"
-  STR_REMEDITION_OFFICE_UP: "Comfortable areas for post-surgical acclimation of cybernetic implants and zealous introspection. Facilitates in-shell resiliance practice free of the out-shell displacement risk.{NEWLINE}{NEWLINE}> Training: 6"
+  STR_REMEDITION_OFFICE_UP: "Comfortable areas for post-surgical acclimation of cybernetic implants and zealous introspection. Facilitates in-shell resiliance fortification free from the out-shell displacement risk.{NEWLINE}{NEWLINE}> Training: 6"
   STR_HOLDING_CELLS_RESEARCH: "Specimen Containment Facility"
   STR_HOLDING_CELLS: "Holding Cells"
   STR_HOLDING_CELLS_UP: "Illegally captured subjects will be placed in temporary confinement until sufficent data is accrued. Specimens may be released without consequence.{NEWLINE}{NEWLINE}> Cells: 8"
@@ -1377,10 +1440,10 @@ en-US:
   STR_UFO_HARVESTER_UP: "An aquaplastic rendition of invader harvester-class craft, painted to match archival footage. Once overshadowed the system's military, requiring multiple point-blank nuclear missiles to take down.{NEWLINE}{NEWLINE}ARMOR: 5PD"
   STR_IRONEYESUFO_DELIVERY1: "SHOP RESTOCKING"
   STR_UFO_AIRCAR_IRON1: "HD ARES"
-  STR_UFO_AIRCAR_IRON1_UP: "The hot and compact get-together machine. With plenty of leg and trunk room, every day can be a party in the front without leaving your business by the wayside. Available in forest green, gleaming emerald, and vicious verdant.{NEWLINE}{NEWLINE}Ironeyes Modified: 6BB Rotary MG"
+  STR_UFO_AIRCAR_IRON1_UP: "The hot and compact get-together machine. With plenty of leg and trunk room, every day can be a party in the front without leaving your business by the wayside. Available in forest green, gleaming emerald, and vicious verdant.{NEWLINE}{NEWLINE}Weapons Mod: 6BB Rotary MG"
   STR_IRONEYESUFO_DELIVERY2: "ARMS DISTRIBUTION"
   STR_UFO_AIRCAR_IRON2: "HD BISON"
-  STR_UFO_AIRCAR_IRON2_UP: "Break away from the city and live life under an open sky. For those who can't wait, the Bison is designed to inspire your journey into the wilds and see you reach your mountain top.{NEWLINE}{NEWLINE}Ironeyes Modified: 6BB Rotary MG"
+  STR_UFO_AIRCAR_IRON2_UP: "Break away from the city and live life under an open sky. For those who can't wait, the Bison is designed to inspire your journey into the wilds and see you reach your mountain top.{NEWLINE}{NEWLINE}Weapons Mod: 6BB Rotary MG"
 #drones
   STR_DRONE_ARTICLE: "DRONES"
   STR_DRONE_ARTICLE_UP: "{NEWLINE}ARTICLE: Charter of Drone Rights{NEWLINE}SECTION: Justifications{NEWLINE}{NEWLINE}Drones are the result of an invader-sourced neural implant. They were originally used as an alternative to involuntary incarceration after the reintroduction of the police and prison system.{NEWLINE}{NEWLINE}Despite its reputation, the procedure has proven to be completely safe. A multi-species ethics committee has deemed the continued use of drones preferable to their loss or destruction."
@@ -1394,6 +1457,20 @@ en-US:
   STR_DRONE_DEEP_ITEM_UP: "{NEWLINE}Representation: 2.5%{NEWLINE}Stapled: 4.6%{NEWLINE}{NEWLINE}Alien designed chemical and amphibious warfare species, now free to climb other careers. External lungs filter air and water slowly, but effectively. Fine-tuned electroreceptors across their skin allow for direct machine interfacing, or sloughed off as an emergency shock weapon.{NEWLINE}{NEWLINE}Electrical/Chemical/Smoke Resist: 50%{NEWLINE}{NEWLINE}(+) Throwing, Reactions{NEWLINE}(-) Stamina"
   STR_DRONE_FLOATER_ITEM: "DRONE/FLOATER" #archoropoda
   STR_DRONE_FLOATER_ITEM_UP: "{NEWLINE}Representation: 1.2%{NEWLINE}Stapled: 43.9%{NEWLINE}{NEWLINE}Cybernetically dependent organism and neuroplastic adaptation savants. Born entirely biological, most organs will fail by adolescence. Replacements are celebrated, with leg day holding special significance as the first time they can join their peers in the sky.{NEWLINE}{NEWLINE}Flying; Running Costs: Doubled{NEWLINE}{NEWLINE}(+) TU, Health{NEWLINE}(-) Reactions"
+  STR_DRONE_VIPER_ITEM: "DRONE/VIPER" #todo
+  STR_DRONE_VIPER_ITEM_UP: "{NEWLINE}Representation: 14.9%{NEWLINE}Stapled: 19.7%{NEWLINE}{NEWLINE}todo{NEWLINE}{NEWLINE}Less Terrain Penalties{NEWLINE}{NEWLINE}(+) Melee, Stamina{NEWLINE}(-) Firing"
+  STR_DRONE_MUTON_ITEM: "DRONE/MUTON" #todo
+  STR_DRONE_MUTON_ITEM_UP: "{NEWLINE}Representation: 9.9%{NEWLINE}Stapled: 1.1%{NEWLINE}{NEWLINE}todo{NEWLINE}{NEWLINE}Vacuum Penalties: Halved{NEWLINE}{NEWLINE}(+) Reactions, Strength{NEWLINE}(-) Throwing"
+  STR_DRONE_TASOTH_ITEM: "DRONE/TASOTH" #todo
+  STR_DRONE_TASOTH_ITEM_UP: "{NEWLINE}Representation: 0.2%{NEWLINE}Stapled: 97.4%{NEWLINE}{NEWLINE}todo{NEWLINE}{NEWLINE}Mechanical/Blunt/Concussive Resist: 50%{NEWLINE}{NEWLINE}(+) Health, Stamina{NEWLINE}(-) TU"
+  STR_DRONE_GILL_ITEM: "DRONE/GILLY" #todo
+  STR_DRONE_GILL_ITEM_UP: "{NEWLINE}Representation: 6.5%{NEWLINE}Stapled: 28.3%{NEWLINE}{NEWLINE}todo{NEWLINE}{NEWLINE}Aquatic Penalties: Inverted and Halved{NEWLINE}{NEWLINE}(+) Throwing, TU{NEWLINE}(-) Reactions"
+  STR_DRONE_POD_ITEM: "DRONE/POD" #todo
+  STR_DRONE_POD_ITEM_UP: "{NEWLINE}Representation: 2.7%{NEWLINE}Stapled: 66.0%{NEWLINE}{NEWLINE}todo{NEWLINE}{NEWLINE}Resiliance Recovery: 1/Turn{NEWLINE}{NEWLINE}(+) Throwing, Strength{NEWLINE}(-) Melee"
+  STR_DRONE_VERO_ITEM: "DRONE/VERO" #todo
+  STR_DRONE_VERO_ITEM_UP: "{NEWLINE}Representation: 2.0%{NEWLINE}Stapled: 8.1%{NEWLINE}{NEWLINE}todo{NEWLINE}{NEWLINE}Base Armor: +4{NEWLINE}{NEWLINE}(+) Firing, Strength{NEWLINE}(-) Health"
+  STR_DRONE_ETHEREAL_ITEM: "DRONE/ETHEREAL" #todo
+  STR_DRONE_ETHEREAL_ITEM_UP: "{NEWLINE}Representation: UNKNOWN{NEWLINE}Stapled: N/A{NEWLINE}{NEWLINE}todo{NEWLINE}{NEWLINE}Flying, Shielded, Natural Psi{NEWLINE}{NEWLINE}(+) All Stats{NEWLINE}(-) None"
 # transformations
   STR_DRONE_IMMORTALITY: "Drone Immortality"
   STR_DRONE_IMMORTALITY_UP: "{NEWLINE}Baseline drones begin as clumsy extensions of our minds and bodies, tools that take time for us to learn how to wield effectively. Because each mind is unique, our total skillset cannot easily be transferred between neural networks. When a drone is {ALT}displaced{ALT}, everything we've learned through them is lost.{NEWLINE}{NEWLINE}If we become reliant on a single drone, we can key them to a {ALT}bionic interlace{ALT}. Allowing us to order a custom clone and overwrite their brain with our backup."
@@ -1423,7 +1500,7 @@ en-US:
   STR_SOFT_SKIN: "Nanoskin"
   STR_HARD_SKIN: "Alloyshell"
   STR_BLOOD: "Vasculature Augmentation"
-  STR_BLOOD_UP: "{NEWLINE}todo{NEWLINE}Health: +15{NEWLINE}Stamina Regen: +1/Turn{NEWLINE}{NEWLINE}{ALT}Programable{ALT}{NEWLINE}Health Regen: +1{NEWLINE}Firing/Throwing/Melee: +15{NEWLINE}{NEWLINE}{ALT}E-Catalyzed{ALT}Stamina: +35{NEWLINE}Psi Sensitivity: +10" #todo
+  STR_BLOOD_UP: "{NEWLINE}todo{NEWLINE}Health: +15{NEWLINE}Stamina Regen: +1/Turn{NEWLINE}{NEWLINE}{ALT}Programable{ALT}{NEWLINE}Health Regen: +1/Turn{NEWLINE}Firing/Throwing/Melee: +10{NEWLINE}{NEWLINE}{ALT}E-Catalyzed{ALT}Stamina: +35{NEWLINE}Psi Sensitivity: +15" #todo
   STR_CPU_BLOOD_TRANSFORMATION: "Vasculature: Programable"
   STR_ELERIUM_BLOOD_TRANSFORMATION: "Vasculature: E-Catalyzed"
   STR_CPU_BLOOD: "Programable Vasculature"
@@ -1494,6 +1571,15 @@ en-US:
   STR_AQUAVEST_DRONE_ARMOR_UP: "{NEWLINE}Aqua-plastic vest armor, popular among entry-level security corporations. Reliably stops low-caliber kinetic arms and impacts.{NEWLINE}{NEWLINE}> TU/Stamina: -5{NEWLINE}{NEWLINE}> Armor: 20, 70%; Weight: 6{NEWLINE}> Dodge: +10%, +10% Melee{NEWLINE}{NEWLINE}RADIANT/PLASMA: 90%{NEWLINE}CHEMICAL/INCENDIARY: 120%{NEWLINE}SMOKE: 400%"
   STR_AQUAVEST_DRONE_ARMOR_S: "AQUAVEST (S)"
   STR_AQUAVEST_DRONE_ARMOR_S_UP: "{NEWLINE}Aqua-plastic vest armor with a lightweight riot shield. Not effective against small arms on its own, but can be a crucial extra barrier before impacting certified PPE.{NEWLINE}{NEWLINE}> Melee/Bravery: +10{NEWLINE}> TU/Stamina: -10{NEWLINE}> Reactions: -5{NEWLINE}{NEWLINE}> Armor: 20, 70%; Weight: 12{NEWLINE}> Front Armor: 32{NEWLINE}> Dodge: +10%, +20% Melee{NEWLINE}{NEWLINE}RADIANT/PLASMA: 90%{NEWLINE}CHEMICAL/INCENDIARY: 120%{NEWLINE}SMOKE: 400%"
+  STR_LJA_LOCK: "(l-jack unlicensed)"
+  STR_LJA_ITEM: "LICENSE: L-Jack Armor"
+  STR_LJACK_DRONE_HYBRID_ARMOR: "L-JACK/HY"
+  STR_LJACK_DRONE_HUMAN_ARMOR: "L-JACK/HU"
+  STR_LJACK_DRONE_SHARK_ARMOR: "L-JACK/SH"
+  STR_LJACK_DRONE_DEEP_ARMOR: "L-JACK/NW"
+  STR_LJACK_DRONE_FLOATER_ARMOR: "L-JACK/FL"
+  STR_LJACK_DRONE_ARMOR: "L-JACK"
+  STR_LJACK_DRONE_ARMOR_UP: "{NEWLINE}todo{NEWLINE}{NEWLINE}> Health/Reactions: +5{NEWLINE}> Firing/Throwing: +5{NEWLINE}{NEWLINE}> Armor: 15, 70%; Weight: 4{NEWLINE}> Dodge: +20%, +10% Melee{NEWLINE}{NEWLINE}RADIANT/PLASMA: 90%{NEWLINE}CHEMICAL/INCENDIARY: 120%{NEWLINE}SMOKE: 400%" #todo
 
   STR_PILOT_CORE_ARMOR: "CORE"
   STR_PILOT_CORE_ARMOR_UP: "{NEWLINE}todo{NEWLINE}{NEWLINE}> Armor: 25, 100%{NEWLINE}{NEWLINE}SMOKE/BIOLOGICAL: 0%{NEWLINE}INCENDIARY/BLUNT: 60%{NEWLINE}ELECTRIC: 150%" #todo
@@ -1586,6 +1672,8 @@ en-US:
   STR_SSP_SHOTGUN_AMMO_BS: "Mox Buckshot Shells"
   STR_SSP_SHOTGUN_AMMO_SLUG: "Mox Slug Shells"
   STR_SSP_SHOTGUN_AMMO_STUN: "Mox Baton Shells"
+  STR_LSSR_LOCK: "(ssp sniper unlicensed)"
+  STR_LSSR_ITEM: "LICENSE: SSP Sniper Rifle"
   STR_SSP_SNIPER_RIFLE_CODED: "SSP Overwatch Sniper Rifle (¤)"
   STR_SSP_SNIPER_RIFLE: "SSP Overwatch Sniper Rifle"
   STR_SSP_SNIPER_RIFLE_UP: "Extreme distance bolt-action holo-sighted precision for when a measured response requires going above and beyond the conventional. Ideal for rural containment, counter-sniping defense planning, and high-risk warrant service.{NEWLINE}{NEWLINE}Penetration: +20%"
@@ -1593,7 +1681,7 @@ en-US:
   STR_SINGLESHOT_LASER_PISTOL_ELERIUM: "SSP Enforcer Laser Pistol (E)"
   STR_SINGLESHOT_LASER_PISTOL_CODED: "SSP Enforcer Laser Pistol (¤)"
   STR_SINGLESHOT_LASER_PISTOL: "SSP Enforcer Laser Pistol"
-  STR_SINGLESHOT_LASER_PISTOL_UP: "Designed for professionals and beginners alike, there's no laser pistol more trusted than the Enforcer. Optimized for standard SuperCapacitor cells, low weight, and safety. For the real enthusiast, try our elerium core variant."
+  STR_SINGLESHOT_LASER_PISTOL_UP: "Designed for professionals and beginners alike, there's no laser pistol more trusted than the Enforcer. Optimized for standard Super-capacitor cells, low weight, and safety. For the real enthusiast, try our elerium core variant."
   STR_SINGLESHOT_LASER_AMMO: "NB Enforcer Pistol Cell" #nanoball
   STR_MULTISHOT_LASER_AMMO: "SC Enforcer Pistol Cell" #supercapacitor
   STR_ZRBYTE_LASER_AMMO: "ZY Enforcer Pistol Cell" #zrbyte
@@ -1607,8 +1695,14 @@ en-US:
   #prosecutor rifle
   #judgement sniper
   #capitalizer ow?
+  STR_BATON: "SSP Baton"
+  STR_BATON_UP: "Intermediate force delivery system from SSP's compulsory in-house equipment lineup. Features a waterproof SuperPlex grip with corrosion resistant matte black finish.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -80%"
+  STR_LSB_LOCK: "(stun baton unlicensed)"
+  STR_LSB_ITEM: "LICENSE: Stun Baton"
+  STR_STUN_BATON: "SSP Expandable Stun Rod"
+  STR_STUN_BATON_UP: "A sophisticated contact stun solution, enhanced with the lastest advancements in SSP's confidential informant and deep cover development sector. Easy to field strip into compact, discrete, and non-threatening parts.{NEWLINE}{NEWLINE}Partially effective against chryssalids.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -65%{NEWLINE}Penetration: +15%"
   STR_VOLTKNOCKER: "SSP Throwing Voltknockers"
-  STR_VOLTKNOCKER_UP: "Advanced less-lethal personal defense, simple no-nonsense operation. The rugged knock sticks to almost any surface and delivers professional-grade neuromuscular incapacitation.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -65%{NEWLINE}Range: 8m"
+  STR_VOLTKNOCKER_UP: "Advanced less-lethal personal defense, simple no-nonsense operation. The rugged knocker sticks to almost any surface and delivers professional-grade neuromuscular incapacitation.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -65%{NEWLINE}Range: 8m"
   STR_TASER_PISTOL_CODED: "SSP Taser Pistol (¤)"
   STR_TASER_PISTOL: "SSP Taser Pistol"
   STR_TASER_PISTOL_UP: "The same innovative electroshock deterrent device used by trusted security contractors for centuries. A strong addition to any self-respecting civil defense plan.{NEWLINE}{NEWLINE}Not effective against chryssalids.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -65%{NEWLINE}Range: 6m"
@@ -1637,7 +1731,7 @@ en-US:
 # ours
   STR_GCIC_PROTOTYPE_LASER_PISTOL_ELERIUM: "Pilot Laser Pistol (E)"
   STR_GCIC_PROTOTYPE_LASER_PISTOL: "Pilot Laser Pistol"
-  STR_GCIC_PROTOTYPE_LASER_PISTOL_UP: "Lightweight and built without expensive properitary parts. We are the hum of the capacitor, the light in the optics, the heat of fire.{NEWLINE}{NEWLINE}Rating: Security"
+  STR_GCIC_PROTOTYPE_LASER_PISTOL_UP: "Lightweight and built without properitary parts. We are the light in the optics.{NEWLINE}{NEWLINE}Rating: Security"
   STR_GCIC_PROTOTYPE_LASER_PISTOL_NORECOVER: "Pilot Laser Pistol"
   STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1_NORECOVER: "NB Pilot Pistol Cell"
   STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1: "NB Pilot Pistol Cell"
@@ -1651,7 +1745,7 @@ en-US:
   STR_GCIC_PROTOTYPE_LASER_SMG_AMMO2: "SC Pilot Stutter Cell"
   STR_GCIC_PROTOTYPE_LASER_RIFLE_ELERIUM: "Pilot Assault Laser (E)"
   STR_GCIC_PROTOTYPE_LASER_RIFLE: "Pilot Assault Laser"
-  STR_GCIC_PROTOTYPE_LASER_RIFLE_UP: "A viable, dirty design. Optimized for uncracked drones and commercial printers. Our network reaches into and fills this new shell.{NEWLINE}{NEWLINE}Rating: Security; Penetration: +10%"
+  STR_GCIC_PROTOTYPE_LASER_RIFLE_UP: "A viable, dirty design. Our network reaches into and fills this new shell.{NEWLINE}{NEWLINE}Rating: Security; Penetration: +10%"
   STR_GCIC_PROTOTYPE_LASER_RIFLE_NORECOVER: "Pilot Assault Laser"
   STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1_NORECOVER: "NB Pilot Assault Cell"
   STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1: "NB Pilot Assault Cell"
@@ -1716,13 +1810,11 @@ en-US:
   STR_SPORT_ARROWS1: "Sporting Quick-Quiver"
   STR_SPORT_ARROWS2: "Electric Quick-Quiver"
   STR_SPORT_ARROWS3: "Explosive Quick-Quiver"
-  STR_DARTROPE: "HRA Dartrope"
-  STR_DARTROPE_UP: "{NEWLINE}{NEWLINE}Range: 4m; Penetration: +10%" #todo
+  STR_DARTROPE: "HRA Ropedart"
+  STR_DARTROPE_UP: "Standing on the shoulders of the historic meteor hammer, the dart variant was conceived in elegance by an innovator sadly lost to time. As a weapon, it tangled in naval boarding attacks. As an art, it has struck steadfast into the hearts of connoisseurs since 1829.{NEWLINE}{NEWLINE}Range: 5m; Penetration: +10%"
 # melee
   STR_STL_KNIFE: "STL Knife"
   STR_STL_KNIFE_UP: "A last second addition to the standard tesselation package for all printers sold since 2419. This simple blade has proven its worth time again in the fields of cooking, crafting, and combat."
-  STR_BATON: "SSP Baton"
-  STR_BATON_UP: "Intermediate force delivery system from SSP's compulsory in-house equipment lineup. Features a waterproof SuperPlex grip with corrosion resistant matte black finish.{NEWLINE}{NEWLINE}Stun: Full; Lethal: -80%"
 # tools
   STR_WRENCH: "STL Wrench"
   STR_WRENCH_UP: "An old tool from the age of modernity. Continues to serve its purpose without batteries, license agreements, or flair.{NEWLINE}{NEWLINE}Stun: +75%{NEWLINE}Shred: +15%"
@@ -1772,8 +1864,6 @@ en-US:
   STR_MEDI_TRAUMA_ITEM: "LICENSE: MEDI-Trauma Kit"
   STR_MEDI_TRAUMA: "MEDI-Trauma"
   STR_MEDI_TRAUMA_UP: "{NEWLINE}> Uses: 8{NEWLINE}> Heals: 4 HP{NEWLINE}> Stims: 8 Stun, 15 Energy{NEWLINE}{NEWLINE}Emergency room in a box. Recommended by affiliate doctors for on-site treatment of major injuries, and as a convenient source of portable MEDI-care. Each subscription covers unlimited access to resupply and live service updates.{NEWLINE}{NEWLINE}Maintenance: $4,000/Month"
-  STR_CHAMPAGNE: "Sainte-Menehould"
-  STR_CHAMPAGNE_UP: "{NEWLINE}A nose of cocoa and vanilla with a lush fruit forward and insidiously creamy palette. Apricots tango with fig before twisting away into strawberries and honey, then finishes with the perfect kiss of brine. One of only 300 bottles exported per year from the Champagne region of Old France."
 #resources
 # containers
   STR_CRIMINAL_CONTAINER_1: "Contraband Crate"
@@ -1796,7 +1886,7 @@ en-US:
   STR_MILITARY_CYBERNETICS: "Milspec Cyberware"
   STR_MILITARY_CYBERNETICS_UP: "{NEWLINE}Advanced hardware replacements for skin and skeleton, carapace and core, and all biomass in-between. A powerful implantation suite that cannot safely be installed without consideration for the whole. Improper calibrations invariably result in destruction of surrounding tissues. Broken bones, crushed lungs, and brain cookoffs are the true price of a rush job.{NEWLINE}{NEWLINE}Because these use alloys among their many components, {ALT}machining{ALT} services are needed before {ALT}decoding{ALT} can even begin."
   STR_CHRYSSALID_EGG: "Chryssalid Egg"
-  STR_CHRYSSALID_EGG_UP: "{NEWLINE}"
+  STR_CHRYSSALID_EGG_UP: "{NEWLINE}Immature barbed offspring of the chryssalid bioterror weapon. Under typical conditions, eggs harvested without live implantation will not only fail to hatch, but quickly decay into a nutrient rich gel of ATP and apoptosized sDNA. A specimen such as this would have required flash freezing of the donor tissue before the catalytic enzymes could disolve the outer shell.{NEWLINE}{NEWLINE}Although it can {ALT}re-implanted{ALT} at any time, doing so without a {ALT}plan{ALT} would be too dangerous to justify the potential legal and collateral fallout."
   STR_BIOMASS: "Biomass"
   STR_BIOMASS_UP: "{NEWLINE}A useful intermediate product derived from remnant biological material. Any commercial-grade printshop could recycle this substance into medicine, plastics, or food, but without a waste or mortuary license, no vendor will accept the commission.{NEWLINE}{NEWLINE}Unless we start our own {ALT}printshop{ALT}, we will have to pay for the privilege of removing this resource from our stores."
   STR_AG_UNIT: "A.Grav Unit"
@@ -1819,11 +1909,14 @@ en-US:
   STR_SJB_LICENSE_UP: "{NEWLINE}Single jurisdiction businesses need a registration number and stock symbol for public trading. They are a requirement for established corporations to form new startups, or to begin vertically integrating any of its supply chains.{NEWLINE}{NEWLINE}Most {ALT}profitable facilities{ALT} will require their own SJB permit, but permits can be recalled and {ALT}reused{ALT} indefinitely."
   STR_SEC_LICENSE_ITEM: "Security License"
   STR_SEC_LICENSE_ITEM_UP: "{NEWLINE}The Invasion Readiness Scheme, with the approval of a Commodities Exchange council, hereby confers the listed GCIC subsidary the {ALT}rights{ALT} to purchase, sell, use, and tax {ALT}security rated{ALT} goods and services.{NEWLINE}{NEWLINE}This certificate in no way constitutes these privileges. Security clearance is already registered and all unprocessed fees from use of these products has been waved.{NEWLINE}{NEWLINE}For display purposes only{NEWLINE}Registration: #336"
-# data
+# loot
+  STR_CHAMPAGNE: "Sainte-Menehould"
+  STR_CHAMPAGNE_UP: "{NEWLINE}A nose of cocoa and vanilla with a lush fruit forward and insidiously creamy palette. Apricots tango with fig before twisting away into strawberries and honey, then finishes with the perfect kiss of brine. One of only 300 bottles exported per year from the Champagne region of Old France.{NEWLINE}{NEWLINE}Resale Value: 22,999$"
   STR_CRYPTOCHIT1: "eCoin Cryptochit"
-  STR_CRYPTOCHIT1_UP: "{NEWLINE}Old speculative curreny, given new life in the post-invasion economy. Recent attempts at recreating the gambling addictions present in centuries have past have failed to capture the investor's market.{NEWLINE}{NEWLINE}2055 frozen value: 39,000$"
+  STR_CRYPTOCHIT1_UP: "{NEWLINE}Old speculative curreny, given new life in the post-invasion economy. Recent attempts at recreating the gambling addictions present in centuries have past have failed to capture the investor's market.{NEWLINE}{NEWLINE}2055 Frozen Value: 39,000$"
   STR_CRYPTOCHIT2: "QNTm Cryptochit"
-  STR_CRYPTOCHIT2_UP: "{NEWLINE}Four-hundred-year-old virtual debt, retains value for value's sake. The overwhelming majority of cryptocurrencies were given a set price and the mining of new chits outlawed after computation finally exceeded 50% of humanity's power usage.{NEWLINE}{NEWLINE}2055 frozen value: 73,000$"
+  STR_CRYPTOCHIT2_UP: "{NEWLINE}Four-hundred-year-old virtual debt, retains value for value's sake. The overwhelming majority of cryptocurrencies were given a set price and the mining of new chits outlawed after computation finally exceeded 50% of humanity's power usage.{NEWLINE}{NEWLINE}2055 Frozen Value: 73,000$"
+# data
   STR_PERSONAL_DATA: "Personal Data"
   STR_PERSONAL_DATA_UP: "{NEWLINE}A collection of habits, identity information, and unfiltered cache files. Nearly all users in the system use the network in some capacity, leaving traces that can link anyone to everyone.{NEWLINE}{NEWLINE}Cracking these devices requires a passphrase. These are made to be memorized (or even distributed) via speech which makes them vulnerable to guessing. With less than a hundred million words in regular use across all common languages, this search space is relatively small.{NEWLINE}{NEWLINE}Given a {ALT}local interface{ALT} our research servers can {ALT}mine{ALT} this information randomly or spend more cycles searching with specificity."
   STR_DATA_1: "MINE: Personal Data"
@@ -1957,7 +2050,7 @@ en-US:
   STR_VICEFARMER_PUBLIC: "Elyvice Cazadora"
   STR_VICEFARMER_PRIVATE: "Elyvice Cazadora"
   STR_VICEFARMERS: "Cazadoras"
-  STR_VICEFARMERS_UP: "todo{NEWLINE}{NEWLINE}PROCESSED: Consumer Cyberware{NEWLINE}RISK CLASS: Conventional"
+  STR_VICEFARMERS_UP: "High-risk xeno-poachers without take home hazard pay and few guaranteed benefits. Venturing into the xenoformed territories and returning with useful raw materials requires a certain amount of luck, as well as either a brave or desperate disposition.{NEWLINE}{NEWLINE}Within the Elyvice families, these specimens are given lofty praise and a position of respect, yet only a fraction of the liquid value they provide.{NEWLINE}{NEWLINE}PROCESSED: Consumer Cyberware{NEWLINE}RISK CLASS: Conventional"
   STR_VICEFARMER_ARMOR: "Cazadora Analysis"
   STR_VICEFARMER_INTERVIEW: "INTERVIEW: Elyvice Cazadora"
   STR_VICEFARMER_INTERVIEW_T: "I/Cazadora"
@@ -1965,7 +2058,7 @@ en-US:
   STR_VICESMUGGLER_PUBLIC: "Elyvice Matutera"
   STR_VICESMUGGLER_PRIVATE: "Elyvice Matutera"
   STR_VICESMUGGLERS: "Matuteras"
-  STR_VICESMUGGLERS_UP: "todo{NEWLINE}{NEWLINE}PROCESSED: Consumer Cyberware, Durathread{NEWLINE}RISK CLASS: Security"
+  STR_VICESMUGGLERS_UP: "A wetware interface between illicit and legitimate markets. Capable of being charming and infuriating in equal measure, they glide through unautomated checkpoints under the promise of future interactions or the relief of never having to see them again.{NEWLINE}{NEWLINE}Success in the smuggling industry requires possessing no fixed abode and the means to quickly source any necessary tools, arms, or armor.{NEWLINE}{NEWLINE}PROCESSED: Consumer Cyberware, Durathread{NEWLINE}RISK CLASS: Security"
   STR_VICESMUGGLER_ARMOR: "Matutera Analysis"
   STR_VICESMUGGLER_INTERVIEW: "INTERVIEW: Elyvice Matutera"
   STR_VICESMUGGLER_INTERVIEW_T: "I/Matutera"
@@ -1973,7 +2066,7 @@ en-US:
   STR_VICEBOSS_PUBLIC: "Elyvice Capodecina"
   STR_VICEBOSS_PRIVATE: "Elyvice Capodecina"
   STR_VICEBOSSES: "Capodecina"
-  STR_VICEBOSSES_UP: "todo{NEWLINE}{NEWLINE}PROCESSED: Medical Cyberware, Aqua-Plastics{NEWLINE}RISK CLASS: Security"
+  STR_VICEBOSSES_UP: "Elyvice families' dedicated middle-management. Although given relatively lax leeway in how they conduct operations, the internal employment culture promotes ostentatious acts of celebration and chauvinism.{NEWLINE}{NEWLINE}Their luxurious lifestyle comes at a hard price. Specimens at this level will react aggressively to even unconfirmed threats.{NEWLINE}{NEWLINE}PROCESSED: Medical Cyberware, Aqua-Plastics{NEWLINE}RISK CLASS: Security"
   STR_VICEBOSS_ARMOR: "Capodecina Analysis"
   STR_VICEBOSS_INTERVIEW: "INTERVIEW: Elyvice Capodecina"
   STR_VICEBOSS_INTERVIEW_T: "I/Capodecina"
@@ -2510,11 +2603,11 @@ en-US:
   STR_TRG_ST_PREQ: "(skiptracer neutralized)"
   STR_TRG_WT_PREQ: "(wiretapper neutralized)"
 # vice
-  STR_TRG_3V_PREQ: "(mansion success)"
+  STR_TRG_3V_PREQ: "(hacienda success)"
 # ssp
   STR_TRG_SG_PREQ: "(guard neutralized)"
   STR_TRG_SO_PREQ: "(officer neutralized)"
-  STR_TRG_SSUP_PREQ: "(supervisor neutralized)"
+  STR_TRG_SSUP_PREQ: "(supervisor encountered)"
 # animals
   STR_TRG_CR_PREQ: "(chryssalid exchanged)"
   STR_TRG_MS_PREQ: "(muckstar exchanged)"
@@ -2532,4 +2625,6 @@ en-US:
   STR_SEC_MANULOCK: "(security license not granted)"
   STR_IRONEYES_MANULOCK: "(ironeyes not supplying)"
   STR_IRONEYES_MANULOCK2: "(ironeyes not supplying)"
+  STR_VICE_MANULOCK: "(vice not supplying)"
   STR_SSPAMMO_MANULOCK: "(ssp not supplying)"
+  STR_PD2_MANULOCK: "(dura-drones not supplying)"

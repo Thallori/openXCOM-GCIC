@@ -29,7 +29,7 @@ armors:
       - STR_NULL_QD_SLOT
     allowsKneeling: true
     visibilityAtDark: 11
-    personalLight: 14
+    personalLight: 13
     heatVision: 20
     frontArmor: 2
     sideArmor: 2
@@ -221,7 +221,7 @@ armors:
       - STR_NULL_QD_SLOT
     allowsKneeling: true
     visibilityAtDark: 11
-    personalLight: 14
+    personalLight: 13
     heatVision: 20
     stats:
       health: +5
@@ -385,7 +385,7 @@ armors:
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDark: 11
-    personalLight: 14
+    personalLight: 13
     heatVision: 20
     stats: &DuraStats
       health: +5
@@ -571,6 +571,7 @@ armors:
       - STR_NULL_RIGHT_SHOULDER
       - STR_NULL_SMALL_BACKPACK
     visibilityAtDark: 11
+    weight: 8
     stats: &DuravestStats
       health: +5
       stamina: -5
@@ -630,6 +631,7 @@ armors:
       - STR_NULL_RIGHT_SHOULDER
       - STR_NULL_BACK_PACK
     visibilityAtDark: 8
+    weight: 8
     stats: *DuravestStats
     frontArmor: 18
     sideArmor: 18
@@ -668,6 +670,7 @@ armors:
       - STR_NULL_BACK_PACK
     specialWeapon: STR_SHARKATTACK
     visibilityAtDark: 8
+    weight: 8
     stats: *DuravestStats
     frontArmor: 18
     sideArmor: 18
@@ -698,6 +701,7 @@ armors:
       - STR_NULL_BACK_PACK
     specialWeapon: STR_ELECTROBOLT
     visibilityAtDark: 8
+    weight: 8
     stats: *DuravestStats
     frontArmor: 18
     sideArmor: 18
@@ -751,6 +755,7 @@ armors:
       - STR_NULL_RIGHT_SHOULDER
       - STR_NULL_BACK_PACK
     visibilityAtDark: 8
+    weight: 8
     stats: *DuravestStats
     frontArmor: 18
     sideArmor: 18
@@ -920,7 +925,7 @@ armors:
       - STR_NULL_QD_SLOT
     allowsKneeling: true
     visibilityAtDark: 11
-    personalLight: 14
+    personalLight: 13
     heatVision: 20
     weight: -10
     stats: &SkeleStats
@@ -1098,7 +1103,7 @@ armors:
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDark: 11
-    personalLight: 14
+    personalLight: 13
     heatVision: 20
     weight: 6
     stats:
@@ -1273,7 +1278,7 @@ armors:
     specialWeapon: STR_UNARMED
     allowsKneeling: true
     visibilityAtDark: 11
-    personalLight: 14
+    personalLight: 13
     heatVision: 20
     weight: 6
     stats: &AquavestSStats
@@ -1394,6 +1399,148 @@ armors:
     visibilityAtDark: 8
     units:
       - STR_CRACKED_FLOATER_DRONE
+
+  - &refLjackDrone
+    type: STR_LJACK_DRONE_HYBRID_ARMOR
+    ufopediaType: STR_LJACK_DRONE_ARMOR
+    customArmorPreviewIndex: 8
+    spriteSheet: AQUAVEST_HYBRID.PCK
+    layersDefaultPrefix: HYBRID
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "AQUAVEST", "", "AQUAVESTSHIELD", ""]
+    spriteFaceGroup: 5
+    spriteFaceColor: *SpriteFaceColorHybrid
+    corpseBattle:
+      - STR_LJACK_DRONE_HYBRID_CORPSE
+    storeItem: STR_LJACK_DRONE_ARMOR
+    builtInWeapons:
+      - STR_NULL_LEFT_SHOULDER
+      - STR_NULL_RIGHT_SHOULDER
+      - STR_NULL_SMALL_BACKPACK
+    specialWeapon: STR_UNARMED
+    allowsKneeling: true
+    visibilityAtDark: 11
+    personalLight: 13
+    heatVision: 20
+    weight: 4
+    stats:
+      health: 5
+      reactions: 5
+      firing: 5
+      throwing: 5
+    frontArmor: 15
+    sideArmor: 15
+    rearArmor: 15
+    underArmor: 12
+    damageModifier: *OrganicAquavestResists
+    meleeDodge: *MeleeDodgeTypical
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      time: *TimeRecoveryTypical
+      health: *HealthRecoveryTypical
+      stun: *StunRecoveryTypical
+      energy: *EnergyRecoveryTypical
+      morale: *MoraleRecoveryTypical
+      mana: *ManaRecoveryTypical
+    overKill: 1.5
+    units:
+      - STR_CRACKED_HYBRID_DRONE
+    loftempsSet: [ 3 ]
+  - type: STR_LJACK_DRONE_HUMAN_ARMOR
+    refNode: *refLjackDrone
+    customArmorPreviewIndex: 108
+    spriteSheet: AQUAVEST_HUMAN.PCK
+    layersDefaultPrefix: HUMAN
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorHuman
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorHuman
+    corpseBattle:
+      - STR_LJACK_DRONE_HUMAN_CORPSE
+    visibilityAtDark: 8
+    recovery:
+      energy: *EnergyRecoveryHumanPoor
+    units:
+      - STR_CRACKED_HUMAN_DRONE
+  - type: STR_LJACK_DRONE_SHARK_ARMOR
+    refNode: *refAquavestDrone
+    customArmorPreviewIndex: 208
+    spriteSheet: AQUAVEST_SHARK.PCK
+    layersDefaultPrefix: SHARK
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F1: ["", "", "F1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F2: ["", "", "F2_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      F3: ["", "", "F3_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M1: ["", "", "M1_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M2: ["", "", "M2_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M3: ["", "", "M3_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+    spriteFaceGroup: 11
+    spriteFaceColor: *SpriteFaceColorShark
+    corpseBattle:
+      - STR_LJACK_DRONE_SHARK_CORPSE
+    specialWeapon: STR_SHARKATTACK
+    visibilityAtDark: 8
+    units:
+      - STR_CRACKED_SHARK_DRONE
+  - type: STR_LJACK_DRONE_DEEP_ARMOR
+    refNode: *refAquavestDrone
+    customArmorPreviewIndex: 308
+    spriteSheet: AQUAVEST_DEEP.PCK
+    layersDefaultPrefix: DEEP
+    layersDefinition:
+      F0: ["", "", "F0_HANDS", "", "", "", "", "AQUAVEST", "F0_HEAD", "", ""]
+      M0: ["", "", "M0_HANDS", "", "", "", "", "AQUAVEST", "M0_HEAD", "", ""]
+    spriteFaceGroup: 11
+    spriteFaceColor: *SpriteFaceColorDeep
+    corpseBattle:
+      - STR_LJACK_DRONE_DEEP_CORPSE
+    specialWeapon: STR_ELECTROBOLT
+    visibilityAtDark: 8
+    damageModifier: *DeepOneAquavestResists
+    units:
+      - STR_CRACKED_DEEP_DRONE
+  - type: STR_LJACK_DRONE_FLOATER_ARMOR
+    refNode: *refAquavestDrone
+    customArmorPreviewIndex: 408
+    spriteSheet: AQUAVEST_FLOATER.PCK
+    layersDefaultPrefix: FLOATER
+    layersDefinition:
+      F0: ["", "", "F0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+      M0: ["", "", "M0_SHELL", "", "", "", "", "AQUAVEST", "", "", ""]
+    spriteFaceGroup: 11
+    spriteFaceColor: *SpriteFaceColorFloater
+    forcedTorso: 1
+    corpseBattle:
+      - STR_LJACK_DRONE_FLOATER_CORPSE
+    movementType: 1
+    moveCost:
+      runPercent: [75, 100]
+      flyRunPercent: [75, 100]
+      flyUpPercent: [100, 50]
+      flyDownPercent: [50, 0]
+      climbDownPercent: [50, 0]
+    moveSound: 15
+    visibilityAtDark: 8
+    units:
+      - STR_CRACKED_FLOATER_DRONE
 #pilots
   - type: STR_PILOT_CORE_ARMOR
     spriteInv: PILOT_CORE
@@ -1415,7 +1562,7 @@ armors:
       flyDownPercent: [50, 0]
     moveSound: 40
     visibilityAtDark: 9
-    personalLight: 14
+    personalLight: 13
     heatVision: 40
     frontArmor: 25
     sideArmor: 25
@@ -1847,18 +1994,18 @@ armors:
     underArmor: 25
     damageModifier:
       - 1.0 #0 none
-      - 0.7 #1 kinetic
+      - 1.0 #1 kinetic
       - 1.4 #2 incendiary
-      - 0.7 #3 concussive
-      - 0.7 #4 radiant
-      - 0.7 #5 plasma
-      - 0.7 #6 blunt
+      - 1.0 #3 concussive
+      - 1.0 #4 radiant
+      - 1.0 #5 plasma
+      - 1.0 #6 blunt
       - 1.2 #7 mechanical
-      - 0.7 #8 chemical
+      - 1.0 #8 chemical
       - 0.5 #9 smoke
-      - 0.7 #10 electric
-      - 0.7 #11 sonic
-      - 0.7 #12 biological
+      - 1.0 #10 electric
+      - 1.0 #11 sonic
+      - 1.0 #12 biological
       - 1.0 #13 psionic
       - 1.0 #14 heat
       - 1.0 #15 cold
@@ -2368,6 +2515,7 @@ armors:
       - STR_NULL_RIGHT_SHOULDER
       - STR_NULL_BACK_PACK
     visibilityAtDark: 8
+    weight: 8
     stats: *DuravestStats
     frontArmor: 18
     sideArmor: 18

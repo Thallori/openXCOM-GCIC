@@ -102,7 +102,7 @@ manufacture:
   - name: STR_PD2_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
-      - STR_PD2_MANULOCK
+      - STR_PD2_LOCK
     time: 2400
     cost: 250000
     refund: true
@@ -185,7 +185,8 @@ manufacture:
     refund: true
     requiredItems:
       STR_BOUNTY_1: 50
-    producedItems: {}
+    producedItems:
+      STR_BELLHOP_DRONE_ARMOR: 1
     events:
       STR_EVENT_PROJECT_SSP_MISSIONS: 100
 
@@ -262,6 +263,55 @@ manufacture:
       STR_DURATHREAD: 1
     events:
       STR_EVENT_LICENSE_LDT_ITEM: 100
+
+  - name: STR_LSB_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_LSB_LOCK
+    time: 12
+    refund: true
+    requiredItems:
+      STR_SHARES_SSP: 2
+    producedItems:
+      STR_STUN_BATON: 1
+    events:
+      STR_EVENT_LICENSE_LSB_ITEM: 100
+  - name: STR_LLC_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_LLC_LOCK
+    time: 12
+    refund: true
+    requiredItems:
+      STR_SHARES_SSP: 5
+    producedItems: {}
+    events:
+      STR_EVENT_LICENSE_LLC_ITEM: 100
+  - name: STR_LSSR_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_LSSR_LOCK
+    time: 12
+    refund: true
+    requiredItems:
+      STR_SHARES_SSP: 8
+    producedItems:
+      STR_SSP_SNIPER_RIFLE: 1
+    events:
+      STR_EVENT_LICENSE_LSSR_ITEM: 100
+  - name: STR_LJA_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_TODO
+      - STR_LJA_LOCK
+    time: 12
+    refund: true
+    requiredItems:
+      STR_SHARES_SSP: 6
+    producedItems:
+      STR_LJACK_DRONE_ARMOR: 1
+    events:
+      STR_EVENT_LICENSE_LJA_ITEM: 100
 #hardpoints
   - name: STR_CRAFT_PHXMISSILE_LAUNCHER
     category: STR_APS_MANUCAT
@@ -281,7 +331,7 @@ manufacture:
     requires:
       - STR_GUNPOWDER
       - STR_9MM_MG
-      - STR_IRONEYES_MANULOCK
+      - STR_VICE_MANULOCK
     time: 8
     cost: 150
     refund: true
@@ -293,6 +343,7 @@ manufacture:
     requires:
       - STR_BIOMEDICAL
       - STR_DART_PISTOL
+      - STR_VICE_MANULOCK
     time: 12
     cost: 40
     refund: true
@@ -307,6 +358,7 @@ manufacture:
     requires:
       - STR_BIOMEDICAL
       - STR_CHEM_SMG
+      - STR_VICE_MANULOCK
     time: 12
     cost: 40
     refund: true
@@ -319,6 +371,7 @@ manufacture:
     requires:
       - STR_REDOX
       - STR_CHEM_SMG
+      - STR_VICE_MANULOCK
     time: 4
     cost: 40
     refund: true
@@ -327,6 +380,7 @@ manufacture:
     requires:
       - STR_REDOX
       - STR_CHEM_SMG
+      - STR_IRONEYES_MANULOCK
     time: 4
     cost: 40
     refund: true
@@ -472,7 +526,7 @@ manufacture:
       - STR_WINDLASS_LAUNCHER
       - STR_GUNPOWDER
       - STR_PHX_WARHEAD
-      - STR_IRONEYES_MANULOCK2
+      - STR_IRONEYES_MANULOCK
     time: 12
     cost: 400
     refund: true
@@ -487,6 +541,7 @@ manufacture:
       - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_PISTOL
+      - STR_PD2_MANULOCK
     time: 200
     cost: 8000
     refund: true
@@ -496,6 +551,7 @@ manufacture:
       - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_SMG
+      - STR_PD2_MANULOCK
     time: 400
     cost: 12000
     refund: true
@@ -505,6 +561,7 @@ manufacture:
       - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
+      - STR_PD2_MANULOCK
     time: 500
     cost: 15000
     refund: true
@@ -514,6 +571,7 @@ manufacture:
       - STR_SERVICE_PRINTING
     requires:
       - STR_GCIC_PROTOTYPE_LASER_SNIPER
+      - STR_PD2_MANULOCK
     time: 800
     cost: 80000
     refund: true
@@ -560,7 +618,7 @@ manufacture:
     requires:
       - STR_ACIDFLASK
       - STR_REDOX
-      - STR_TODO_MANULOCK
+      - STR_VICE_MANULOCK
     time: 12
     cost: 40
     refund: true
@@ -646,10 +704,20 @@ manufacture:
     producedItems:
       STR_STIM_MORNING: 5
 #armor
+  - name: STR_BELLHOP_DRONE_ARMOR
+    category: STR_ARMORS_MANUCAT
+    requires:
+      - STR_BELLHOP_DRONE_ARMOR
+    time: 175
+    cost: 500
+    refund: true
+    requiredItems:
+      STR_DURATHREAD: 2
   - name: STR_GCIC_DRONE_ARMOR
     category: STR_ARMORS_MANUCAT
     requires:
       - STR_GCIC_DRONE_ARMOR_RESEARCH
+      - STR_PD2_MANULOCK
     time: 150
     cost: 400
     refund: true
@@ -820,7 +888,7 @@ manufacture:
     requires:
       - STR_DRONE_CRACKING
       - STR_DRONE_HYBRID_ITEM
-    transferTimes: [0, 0, 1]
+    transferTimes: [1]
     time: 1
     refund: true
     requiredItems:
@@ -835,7 +903,7 @@ manufacture:
     requires:
       - STR_DRONE_CRACKING
       - STR_DRONE_HUMAN_ITEM
-    transferTimes: [0, 0, 1]
+    transferTimes: [1]
     time: 1
     refund: true
     requiredItems:
@@ -850,7 +918,7 @@ manufacture:
     requires:
       - STR_DRONE_CRACKING
       - STR_DRONE_SHARK_ITEM
-    transferTimes: [0, 0, 1]
+    transferTimes: [1]
     time: 1
     refund: true
     requiredItems:
@@ -865,12 +933,27 @@ manufacture:
     requires:
       - STR_DRONE_CRACKING
       - STR_DRONE_DEEP_ITEM
-    transferTimes: [0, 0, 1]
+    transferTimes: [1]
     time: 1
     refund: true
     requiredItems:
       STR_DRONE_DEEP_ITEM: 1
     spawnedPersonType: STR_CRACKED_DEEP_DRONE
+    randomProducedItems:
+      - [85, {}] #empty
+      - [15, {STR_DRONE_MEMORY: 1}]
+    producedItems: {} #empty
+  - name: STR_CRACKING_FLOATER_DRONE
+    category: STR_CRACKING_MANUCAT
+    requires:
+      - STR_DRONE_CRACKING
+      - STR_DRONE_FLOATER_ITEM
+    transferTimes: [1]
+    time: 1
+    refund: true
+    requiredItems:
+      STR_DRONE_FLOATER_ITEM: 1
+    spawnedPersonType: STR_CRACKED_FLOATER_DRONE
     randomProducedItems:
       - [85, {}] #empty
       - [15, {STR_DRONE_MEMORY: 1}]

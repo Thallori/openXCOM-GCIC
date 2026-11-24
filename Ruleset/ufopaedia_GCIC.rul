@@ -90,6 +90,7 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: VENDOR_PRINT_CPAL
+
   - id: STR_VENDOR_P2P_FILE
     requires:
       - STR_VENDOR_P2P
@@ -105,7 +106,24 @@ ufopaedia:
     section: STR_FILES_UC
     type_id: 7
     text_width: 180
+    image_id: VENDOR_P2PZ_CPAL
+  - id: STR_VENDOR_IRONEYES2_FILE
+    requires:
+      - STR_VENDOR_IRONEYES2
+    text: STR_VENDOR_IRONEYES2_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
     image_id: VENDOR_P2P_CPAL
+  - id: STR_VENDOR_VICE_FILE
+    requires:
+      - STR_TODO
+    text: STR_VENDOR_VICE_UP
+    section: STR_FILES_UC
+    type_id: 7
+    text_width: 180
+    image_id: VENDOR_P2P_CPAL
+
   - id: STR_VENDOR_MEDI
     requires:
       - STR_VENDOR_MEDI
@@ -278,7 +296,7 @@ ufopaedia:
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
-    image_id: OPERATIONS1Z_CPAL
+    image_id: OPERATIONS1_CPAL
   - id: STR_FREE_TRIAL_MISSIONS
     requires:
       - STR_FREE_TRIAL_MISSIONS
@@ -435,7 +453,7 @@ ufopaedia:
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
-    image_id: VENDOR_BUILDERZ_CPAL
+    image_id: VENDOR_BUILDER_CPAL
   - id: STR_SSP_MISSIONS
     requires:
       - STR_SSP_MISSIONS
@@ -443,7 +461,7 @@ ufopaedia:
     section: STR_OPERATIONS_UC
     type_id: 7
     text_width: 180
-    image_id: VENDOR_SSPZ_CPAL
+    image_id: VENDOR_SSP_CPAL
 #technologies
   - id: STR_MONEY_1
     text: STR_MONEY_1_UP
@@ -492,6 +510,14 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: NBCELL_CPAL
+  - id: STR_LASER_AMMO_OUTSOURCING
+    requires:
+      - STR_LASER_AMMO_OUTSOURCING
+    text: STR_LASER_AMMO_OUTSOURCING_UP
+    section: STR_TECHNOLOGIES_UC
+    type_id: 7
+    text_width: 180
+    image_id: SCCELL_CPAL #todo
   - id: STR_LASER_WEAPONS_CONSTRUCTION
     requires:
       - STR_LASER_AMMO_PRINTING
@@ -595,7 +621,7 @@ ufopaedia:
 
   - id: STR_MEDI_BAY
     requires:
-      - STR_MEDIBAY_ITEM
+      - STR_MEDI_BAY
     text: STR_MEDI_BAY_UP
     section: STR_BASE_FACILITIES_UC
     type_id: 6
@@ -976,6 +1002,15 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ARMOR_AQUAVESTSHIELD_CPAL
+
+  - id: STR_LJACK_DRONE_ARMOR
+    requires:
+      - STR_LJACK_DRONE_ARMOR
+    text: STR_LJACK_DRONE_ARMOR_UP
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ARMOR_SKELE_CPAL
 # builtins
   - id: STR_UNARMED
     requires:
@@ -1337,7 +1372,7 @@ ufopaedia:
     type_id: 4
   - id: STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO2
     requires:
-      - STR_TODO #laser cell outsourcing
+      - STR_LLC_ITEM
       - STR_GCIC_PROTOTYPE_LASER_PISTOL
     section: STR_NOT_AVAILABLE
     type_id: 4
@@ -1360,7 +1395,7 @@ ufopaedia:
     type_id: 4
   - id: STR_GCIC_PROTOTYPE_LASER_SMG_AMMO2
     requires:
-      - STR_TODO #laser cell outsourcing
+      - STR_LLC_ITEM
       - STR_GCIC_PROTOTYPE_LASER_SMG
     section: STR_NOT_AVAILABLE
     type_id: 4
@@ -1383,7 +1418,7 @@ ufopaedia:
     type_id: 4
   - id: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO2
     requires:
-      - STR_TODO #laser cell outsourcing
+      - STR_LLC_ITEM
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
     section: STR_NOT_AVAILABLE
     type_id: 4
@@ -1406,7 +1441,7 @@ ufopaedia:
     type_id: 4
   - id: STR_GCIC_PROTOTYPE_LASER_SNIPER_AMMO2
     requires:
-      - STR_TODO #laser cell outsourcing
+      - STR_LLC_ITEM
       - STR_GCIC_PROTOTYPE_LASER_SNIPER
     section: STR_NOT_AVAILABLE
     type_id: 4
@@ -1424,7 +1459,8 @@ ufopaedia:
     type_id: 4
   - id: STR_GCIC_PROTOTYPE_LASER_MG_AMMO2
     requires:
-      - STR_TODO #laser cell outsourcing
+      - STR_TODO #milspec
+      - STR_LLC_ITEM
       - STR_GCIC_PROTOTYPE_LASER_MG
     section: STR_NOT_AVAILABLE
     type_id: 4
@@ -1442,7 +1478,8 @@ ufopaedia:
     type_id: 4
   - id: STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO2
     requires:
-      - STR_TODO #laser cell outsourcing
+      - STR_TODO #milspec
+      - STR_LLC_ITEM
       - STR_GCIC_PROTOTYPE_LASER_CANNON
     section: STR_NOT_AVAILABLE
     type_id: 4
@@ -1543,6 +1580,12 @@ ufopaedia:
     requires:
       - STR_BATON
     text: STR_BATON_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
+  - id: STR_STUN_BATON
+    requires:
+      - STR_STUN_BATON
+    text: STR_STUN_BATON_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
   - id: STR_VOLTKNOCKER
@@ -1876,7 +1919,13 @@ ufopaedia:
     text: STR_SEC_LICENSE_ITEM_UP
     section: STR_RESOURCES_UC
     type_id: 4
-# data
+# loot
+  - id: STR_CHAMPAGNE
+    requires:
+      - STR_CHAMPAGNE
+    text: STR_CHAMPAGNE_UP
+    section: STR_RESOURCES_UC
+    type_id: 4
   - id: STR_CRYPTOCHIT1
     requires:
       - STR_CRYPTOCHIT1
@@ -1889,7 +1938,7 @@ ufopaedia:
     text: STR_CRYPTOCHIT1_UP
     section: STR_RESOURCES_UC
     type_id: 4
-
+# data
   - id: STR_PERSONAL_DATA
     requires:
       - STR_PERSONAL_DATA
@@ -1959,13 +2008,6 @@ ufopaedia:
     text: STR_IRS_SUBSIDY_UP
     section: STR_RESOURCES_UC
     type_id: 8
-# loot
-  - id: STR_CHAMPAGNE
-    requires:
-      - STR_CHAMPAGNE
-    text: STR_CHAMPAGNE_UP
-    section: STR_RESOURCES_UC
-    type_id: 4
 # tasks
   - id: STR_ARMOR_REPAIR_BILL
     requires:
@@ -2187,7 +2229,7 @@ ufopaedia:
       y: 7
       width: 149
       height: 200
-    image_id: ALIGN_TEST_CPAL #todo
+    image_id: VICEFARMER_CPAL
   - id: STR_VICEFARMER_INTERVIEW
     title: STR_VICEFARMER_INTERVIEW_T
     requires:
@@ -2201,7 +2243,7 @@ ufopaedia:
       y: 7
       width: 149
       height: 200
-    image_id: ALIGN_TEST_CPAL #todo
+    image_id: VICEFARMER_CPAL
 
   - id: STR_VICESMUGGLERS
     requires:
@@ -2215,7 +2257,7 @@ ufopaedia:
       y: 7
       width: 149
       height: 200
-    image_id: ALIGN_TEST_CPAL
+    image_id: VICESMUGGLER_CPAL
   - id: STR_VICESMUGGLER_INTERVIEW
     title: STR_VICESMUGGLER_INTERVIEW_T
     requires:
@@ -2229,7 +2271,7 @@ ufopaedia:
       y: 7
       width: 149
       height: 200
-    image_id: ALIGN_TEST_CPAL #todo
+    image_id: VICESMUGGLER_CPAL
 
   - id: STR_VICEBOSSES
     requires:
@@ -2257,7 +2299,7 @@ ufopaedia:
       y: 7
       width: 149
       height: 200
-    image_id: ALIGN_TEST_CPAL #todo
+    image_id: VICEBOSS_CPAL
 # ssp
   - id: STR_SSPGUARDS
     requires:
@@ -2510,6 +2552,16 @@ ufopaedia:
   - id: STR_WIRETAPPER_ARMOR
     requires:
       - STR_WIRETAPPER_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_VICEFARMER_ARMOR
+    requires:
+      - STR_VICEFARMER_ARMOR
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_VICESMUGGLER_ARMOR
+    requires:
+      - STR_VICESMUGGLER_ARMOR
     section: STR_COMPETITORS_UC
     type_id: 5
   - id: STR_VICEBOSS_ARMOR

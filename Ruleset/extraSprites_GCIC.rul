@@ -259,6 +259,9 @@ extraSprites:
       315: Resources/Items/Utility/choc_bigob.png
       316: Resources/Items/Kinetic/ssp_sniper_bigob.png
       317: Resources/Items/Kinetic/Ammo/ssp_sniper_ammo_bigob.png
+      318: Resources/Items/Martial/dartrope_bigob.png
+      319: Resources/Items/Electric/expandablebaton_bigob.png
+      320: Resources/Items/Materials/champagne_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -456,6 +459,9 @@ extraSprites:
       291: Resources/Items/Utility/choc_floorob.png
       292: Resources/Items/Kinetic/ssp_sniper_floorob.png
       293: Resources/Items/Kinetic/Ammo/ssp_sniper_ammo_floorob.png
+      294: Resources/Items/Martial/dartrope_floorob.png
+      295: Resources/Items/Electric/expandablebaton_floorob.png
+      296: Resources/Items/Materials/champagne_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -541,6 +547,9 @@ extraSprites:
       720: Resources/Items/Kinetic/9mm_shotgun_handob.png
       728: Resources/Items/Laser/disposable_lasercannon_handob.png
       736: Resources/Items/Kinetic/ssp_sniper_handob.png
+      744: Resources/Items/Martial/dartrope_handob.png
+      752: Resources/Items/Electric/expandablebaton_handob.png
+      800: Resources/Items/Materials/champagne_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
@@ -1203,6 +1212,7 @@ extraSprites:
     height: 720
     files:
       0: Resources/Factions/Vice/vicefarmer_sprite.png
+
   - typeSingle: VICESMUGGLER_CPAL
     fileSingle: Resources/Factions/Vice/vicesmuggler_CPAL.png
   - typeSingle: VICESMUGGLER.SPK
@@ -1214,6 +1224,7 @@ extraSprites:
     height: 720
     files:
       0: Resources/Factions/Vice/vicesmuggler_sprite.png
+
   - typeSingle: VICEBOSS_CPAL
     fileSingle: Resources/Factions/Vice/viceboss_CPAL.png
   - typeSingle: VICEBOSS.SPK
@@ -1498,6 +1509,8 @@ extraSprites:
     fileSingle: Resources/Pedia/vendor_builder2_CPAL.png
   - typeSingle: VENDOR_P2P_CPAL
     fileSingle: Resources/Pedia/vendor_p2p_CPAL.png
+  - typeSingle: VENDOR_P2PZ_CPAL
+    fileSingle: Resources/Pedia/vendor_p2p2_CPAL.png
   - typeSingle: VENDOR_HD_CPAL
     fileSingle: Resources/Pedia/vendor_hd_CPAL.png
   - typeSingle: VENDOR_VCM_CPAL
@@ -1515,6 +1528,8 @@ extraSprites:
     fileSingle: Resources/Pedia/techgunpowder_CPAL.png
   - typeSingle: NBCELL_CPAL
     fileSingle: Resources/Pedia/technbcell_CPAL.png
+  - typeSingle: SCCELL_CPAL
+    fileSingle: Resources/Pedia/techsccell_CPAL.png
   - typeSingle: BIOCODE_CPAL
     fileSingle: Resources/Pedia/techbiocode_CPAL.png
   - typeSingle: STAPLE_CPAL

@@ -65,7 +65,7 @@ at the end of the month, the minimum positive increase in income is set to +2000
 
 held shields give both front and side armour which helps mitigate the randomness of shots arriving around the 45 degree mark. otherwise shots which might look like they hit the shield can hit the less armored sides.
 
-there's no easy smoke. fire and destruction still makes plenty of smoke, but far more slowly than a grenade might. on top of that, all enemies ignore 20% of the vision debuffs, giving the player a disadvantage. this has been done mainly to avoid the dominate strategy of throwing smoke grenades on your first turn in almost every single mission. instead, maps and crafts have been balanced without this kind of turtling in mind.
+there's no easy smoke. fire and destruction still makes plenty of smoke, but far more slowly than a grenade might. on top of that, everyone ignores 20% of the smoke. this has been done mainly to avoid the dominate strategy of throwing smoke grenades on your first turn in almost every single mission. instead, maps and crafts have been balanced without this kind of turtling in mind.
 
 craft weapons (or any weapons which can be attached to a craft) have a maintence cost instead of needing to reload. mostly to avoid the annoyance of the popup saying that there isn't enough ammo to reload things.
 

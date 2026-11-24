@@ -373,7 +373,6 @@ ufos:
       mapDataSets:
         - BLANKS
         - FLOOR_TILES
-        - FLOOR_POOL
         - BITS_FULLSTONE
         - STRUCTURE_GATED1
         - STRUCTURE_DRYWALL_LUX
@@ -389,6 +388,7 @@ ufos:
         - COMPUTERS1
         - FURNITURE_BEDS_LUX
         - FURNITURE_CHAIRS_LUX
+        - FURNITURE_CHAIRS2
         - FURNITURE_TABLES1
         - FURNITURE_GAMES1
         - FURNITURE_LUX1
@@ -403,18 +403,31 @@ ufos:
         - BITS_CONTRABAND
         - BITS_CONTRABAND2
         - FLORA_XENO
-        - ENTRY
       mapBlocks:
         - name: HACIENDA0
           width: 40
           length: 30
           items:
             STR_CRIMINAL_CONTAINER_1:
-              - [10, 1, 0]
-              - [5, 13, 0]
-              - [4, 5, 1]
-              - [7, 5, 1]
-              - [7, 9, 2]
+              - [6, 24, 2]
+              - [3, 18, 2]
+              - [12, 23, 1]
+              - [4, 24, 1]
+              - [3, 5, 0]
+            STR_CHAMPAGNE:
+              - [13, 22, 0]
+        - name: HACIENDA1
+          width: 40
+          length: 30
+          items:
+            STR_CRIMINAL_CONTAINER_1:
+              - [31, 11, 2]
+              - [16, 11, 1]
+              - [17, 11, 1]
+              - [28, 13, 1]
+              - [14, 10, 0]
+            STR_CHAMPAGNE:
+              - [17, 18, 0]
 
   - type: STR_SABOTAGE_OFFICE
     modSprite: interception_jammed

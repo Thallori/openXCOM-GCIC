@@ -301,11 +301,9 @@
             - STR_BOUNTY_1
           -
             - STR_DISPOSABLE_SMG
-            - STR_STL_KNIFE
             - STR_BOUNTY_1
           -
             - STR_DISPOSABLE_SMG
-            - STR_STL_KNIFE
             - STR_BOUNTY_1
       - alienRank: 5
         lowQty: 3
@@ -1831,6 +1829,7 @@
       music: SHADOW_INTRO
       palette: 2
     unlockedResearch: STR_TRG_SSUP_PREQ
+    unlockedResearchOnFailure: STR_TRG_SSUP_PREQ
     customUfo: STR_SABOTAGE_VAULT
     forcePercentageOutsideUfo: true
     terrains:
@@ -1997,9 +1996,9 @@
         dQty: 1
         itemSets: *AnchorEmptyInventory
       - alienRank: 2
-        lowQty: 1
-        medQty: 1
-        highQty: 2
+        lowQty: 0
+        medQty: 0
+        highQty: 1
         dQty: 1
         itemSets: *AnchorEmptyInventory
   - type: STR_MEDI_CELA
@@ -2060,9 +2059,9 @@
         dQty: 1
         itemSets: *AnchorEmptyInventory
       - alienRank: 3
-        lowQty: 1
-        medQty: 1
-        highQty: 2
+        lowQty: 0
+        medQty: 0
+        highQty: 1
         dQty: 1
         itemSets: *AnchorEmptyInventory
 
@@ -2295,22 +2294,16 @@
             - STR_9MM_SMG_AMMO
             - STR_BOUNTY_1
           -
-            - STR_9MM_SNIPER_RIFLE
-            - STR_9MM_SNIPER_RIFLE_AMMO
-            - STR_9MM_SNIPER_RIFLE_AMMO
-            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_DISPOSABLE_SMG
+            - STR_STL_KNIFE
             - STR_BOUNTY_1
           -
-            - STR_9MM_SNIPER_RIFLE
-            - STR_9MM_SNIPER_RIFLE_AMMO
-            - STR_9MM_SNIPER_RIFLE_AMMO
-            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_DISPOSABLE_SMG
+            - STR_STL_KNIFE
             - STR_BOUNTY_1
           -
-            - STR_9MM_SNIPER_RIFLE
-            - STR_9MM_SNIPER_RIFLE_AMMO
-            - STR_9MM_SNIPER_RIFLE_AMMO
-            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_DISPOSABLE_SMG
+            - STR_STL_KNIFE
             - STR_BOUNTY_1
           -
             - STR_PSI_DAZZLER
@@ -2388,3 +2381,43 @@
             - STR_9MM_SNIPER_RIFLE_AMMO
             - STR_9MM_SNIPER_RIFLE_AMMO
             - STR_BOUNTY_1
+      - alienRank: 6
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_HYBRID
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7
+        lowQty: 1
+        medQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_HUMAN
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 8
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_SHARK
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_DEEP
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 10
+        lowQty: 0
+        medQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 0
+        customUnitType: STR_DRONE_ENEMY_FLOATER
+        itemSets: *AnchorEmptyInventory

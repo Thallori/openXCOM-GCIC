@@ -112,7 +112,7 @@ facilities:
 
   - type: STR_MEDI_BAY
     requires:
-      - STR_MEDIBAY_ITEM
+      - STR_MEDI_BAY
     provideBaseFunc: [STR_SERVICE_MEDICAL]
     spriteShape: 1
     spriteFacility: 312

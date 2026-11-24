@@ -121,6 +121,19 @@ events:
     description: STR_EVENT_LICENSE_LDT_ITEM_DESCRIPTION
     researchList: [STR_LDT_ITEM]
 
+  - name: STR_EVENT_LICENSE_LLC_ITEM
+    description: STR_EVENT_LICENSE_LLC_ITEM_DESCRIPTION
+    researchList: [STR_LLC_ITEM]
+  - name: STR_EVENT_LICENSE_LJA_ITEM
+    description: STR_EVENT_LJA_ITEM_DESCRIPTION
+    researchList: [STR_LJA_ITEM]
+  - name: STR_EVENT_LICENSE_LSSR_ITEM
+    description: STR_EVENT_LSSR_ITEM_DESCRIPTION
+    researchList: [STR_LSSR_ITEM]
+  - name: STR_EVENT_LICENSE_LSB_ITEM
+    description: STR_EVENT_LSB_ITEM_DESCRIPTION
+    researchList: [STR_LSB_ITEM]
+
   - name: STR_EVENT_CLAIM_SECURED
     description: STR_EVENT_CLAIM_SECURED_DESCRIPTION
     interruptResearch: STR_DEBUG
@@ -140,6 +153,9 @@ events:
 
   - name: STR_EVENT_ENDOFUPDATE2
     description: STR_EVENT_ENDOFUPDATE2_DESCRIPTION
+  - name: STR_EVENT_FIXTECHS
+    description: STR_EVENT_FIXTECHS_DESCRIPTION
+    researchList: [FIXTECHS]
 
 eventScripts:
   - type: EVENTSCRIPT_MONTHLY_P3
@@ -218,3 +234,9 @@ eventScripts:
     oneTimeSequentialEvents:
       - STR_EVENT_ENDOFUPDATE2
     firstMonth: 8
+  - type: EVENTSCRIPT_FIXTECHS
+    oneTimeSequentialEvents:
+      - STR_EVENT_FIXTECHS
+    researchTriggers:
+      STR_PROJECT_DRONES2: true
+      STR_PD2_LOCK: true

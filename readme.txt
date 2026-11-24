@@ -340,6 +340,7 @@ Esven
  exoskeleton				[redraw]
  xn cannon				[touchup]
  xn volley				[touchup]
+ dart rope				[none]
  map tiles
   flora forest small spikey fern
 

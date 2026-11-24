@@ -810,7 +810,7 @@ missionScripts:
 
   - type: SSP1a
     researchTriggers:
-      STR_GR_MISSIONS: true
+      STR_SSP_MISSIONS: true
     missionWeights:
       0:
         STR_SSP_UNDERCOVER_1: 100
@@ -823,8 +823,8 @@ missionScripts:
     randomDelay: 43170
   - type: SSP1b
     researchTriggers:
-      STR_GR_MISSIONS: true
-    executionOdds: 10 #todo
+      STR_SSP_MISSIONS: true
+    executionOdds: 10
     missionWeights:
       0:
         STR_SSP_UNDERCOVER_1: 100
@@ -834,8 +834,8 @@ missionScripts:
     randomDelay: 43170
   - type: SSP1c
     researchTriggers:
-      STR_GR_MISSIONS: true
-    executionOdds: 3 #todo
+      STR_SSP_MISSIONS: true
+    executionOdds: 3
     missionWeights:
       0:
         STR_SSP_UNDERCOVER_1: 100

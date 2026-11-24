@@ -1080,8 +1080,7 @@ items:
   - type: STR_9MM_MG
     categories: [STR_UNLICENSED_CATEGORY, STR_MACHINE_GUNS_CATEGORY]
     requiresBuy:
-      - STR_VENDOR_P2P
-      - STR_TODO
+      - STR_VENDOR_VICE
       - STR_9MM_MG
     size: 0.3
     costBuy: 10999
@@ -1125,7 +1124,7 @@ items:
   - type: STR_9MM_MG_AMMO
     categories: [STR_UNLICENSED_CATEGORY, STR_MACHINE_GUNS_CATEGORY]
     requiresBuy:
-      - STR_VENDOR_IRONEYES
+      - STR_VENDOR_VICE
       - STR_9MM_MG
     size: 0.1
     costBuy: 349
@@ -1219,7 +1218,7 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 9
-      FixRadius: 1
+      FixRadius: 2
       ToStun: 0.75
       ToWound: 0.025
       RandomWound: false
@@ -1293,7 +1292,7 @@ items:
   - type: STR_DART_AMMO1
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SPORT_CATEGORY, STR_PISTOLS_CATEGORY, STR_STUN_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_VENDOR_VICE
       - STR_DART_PISTOL
     size: 0.01
     costBuy: 59
@@ -1323,7 +1322,7 @@ items:
   - type: STR_DART_AMMO2
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SPORT_CATEGORY, STR_PISTOLS_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_VENDOR_VICE
       - STR_DART_PISTOL
     size: 0.01
     costBuy: 299
@@ -1445,7 +1444,7 @@ items:
   - type: STR_CHEM_SMG_AMMO1
     categories: [STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SPORT_CATEGORY, STR_SMGS_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_VENDOR_VICE
       - STR_CHEM_SMG
     size: 0.01
     costBuy: 449
@@ -1469,7 +1468,7 @@ items:
   - type: STR_CHEM_SMG_AMMO2
     categories: [STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SPORT_CATEGORY, STR_SMGS_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_VENDOR_IRONEYES
       - STR_CHEM_SMG
     size: 0.01
     costBuy: 224
@@ -1919,44 +1918,10 @@ items:
     damageAlter:
       ToStun: 0.50
 
-  - type: STR_SSP_SNIPER_RIFLE_CODED
-    categories: [STR_SECURITY_CATEGORY, STR_SNIPER_RIFLES_CATEGORY, STR_LOCKED_CATEGORY]
-    ufopediaType: STR_SSP_SNIPER_RIFLE
-    requires:
-      - STR_SSP_CRACK
-    size: 0.2
-    costSell: 2400
-    bigSprite: 316
-    floorSprite: 292
-    handSprite: 736
-    bulletSprite: 18
-    fireSound: 119
-    reloadSound: 154
-    invWidth: 1
-    invHeight: 3
-    battleType: 1
-    weight: 15
-    compatibleAmmo:
-      - STR_SSP_SNIPER_RIFLE_AMMO
-    accuracySnap: 85
-    accuracyAimed: 135
-    accuracyMultiplier:
-      firing: 1.0
-      flatHundred: -0.15
-    tuSnap: 45
-    tuAimed: 75
-    snapRange: 25
-    aimRange: 35
-    dropoff: 1
-    twoHanded: true
-    oneHandedPenalty: 50
-    noLOSAccuracyPenalty: 75
-    kneelBonus: 120
-    attraction: 15
-    armor: 40
   - type: STR_SSP_SNIPER_RIFLE
     categories: [STR_SECURITY_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
     requiresBuy:
+      - STR_LSSR_ITEM
       - STR_SEC_LICENSE
       - STR_VENDOR_SSP
       - STR_SSP_SNIPER_RIFLE
@@ -2395,7 +2360,7 @@ items:
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SMGS_CATEGORY]
     requiresBuy:
       - STR_SEC_LICENSE
-      - STR_TODO
+      - STR_LLC_ITEM
       - STR_VENDOR_SSP
       - STR_SSP_LASER_SMG
     size: 0.01
@@ -2937,6 +2902,7 @@ items:
     ufopediaType: STR_GCIC_PROTOTYPE_LASER_PISTOL
     requiresBuy:
       - STR_TODO
+      - STR_PROJECT_DRONES2
       - STR_GCIC_PROTOTYPE_LASER_PISTOL
     size: 0.1
     costBuy: 205000
@@ -2992,7 +2958,7 @@ items:
     type: STR_GCIC_PROTOTYPE_LASER_PISTOL
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_PISTOLS_CATEGORY, STR_INFILTRATION_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_PROJECT_DRONES2
       - STR_GCIC_PROTOTYPE_LASER_PISTOL
     size: 0.1
     costBuy: 5000
@@ -3033,6 +2999,11 @@ items:
   - &refgciclaserpistolammo
     type: STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_PISTOLS_CATEGORY, STR_INFILTRATION_CATEGORY]
+    requiresBuy:
+      - STR_SEC_LICENSE
+      - STR_LLC_ITEM
+      - STR_VENDOR_SSP
+      - STR_GCIC_PROTOTYPE_LASER_PISTOL
     size: 0.01
     costSell: 25
     transferTime: 4
@@ -3063,7 +3034,8 @@ items:
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_PISTOLS_CATEGORY, STR_INFILTRATION_CATEGORY]
     requiresBuy:
       - STR_SEC_LICENSE
-      - STR_TODO
+      - STR_LLC_ITEM
+      - STR_VENDOR_SSP
       - STR_GCIC_PROTOTYPE_LASER_PISTOL
     size: 0.01
     costBuy: 749
@@ -3094,11 +3066,15 @@ items:
         return;
 
   - type: STR_GCIC_PROTOTYPE_LASER_PISTOL_NORECOVER
-    ufopediaType: STR_GCIC_PROTOTYPE_LASER_PISTOL
     refNode: *refgciclaserpistol
+    ufopediaType: STR_GCIC_PROTOTYPE_LASER_PISTOL
+    requiresBuy:
+      - STR_DEBUG
     recover: false
   - type: STR_GCIC_PROTOTYPE_LASER_PISTOL_AMMO1_NORECOVER
     refNode: *refgciclaserpistolammo
+    requiresBuy:
+      - STR_DEBUG
     recover: false
 
   - type: STR_GCIC_PROTOTYPE_LASER_SMG_ELERIUM
@@ -3106,6 +3082,7 @@ items:
     ufopediaType: STR_GCIC_PROTOTYPE_LASER_SMG
     requiresBuy:
       - STR_TODO
+      - STR_PROJECT_DRONES2
       - STR_GCIC_PROTOTYPE_LASER_SMG
     size: 0.1
     costBuy: 206000
@@ -3164,7 +3141,7 @@ items:
     type: STR_GCIC_PROTOTYPE_LASER_SMG
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_SMGS_CATEGORY, STR_INFILTRATION_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_PROJECT_DRONES2
       - STR_GCIC_PROTOTYPE_LASER_SMG
     size: 0.1
     costBuy: 6000
@@ -3208,6 +3185,11 @@ items:
   - &refgciclasersmgammo
     type: STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_SMGS_CATEGORY, STR_INFILTRATION_CATEGORY]
+    requiresBuy:
+      - STR_SEC_LICENSE
+      - STR_LLC_ITEM
+      - STR_VENDOR_SSP
+      - STR_GCIC_PROTOTYPE_LASER_SMG
     size: 0.01
     costSell: 30
     transferTime: 4
@@ -3238,7 +3220,8 @@ items:
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_SMGS_CATEGORY, STR_INFILTRATION_CATEGORY]
     requiresBuy:
       - STR_SEC_LICENSE
-      - STR_TODO
+      - STR_LLC_ITEM
+      - STR_VENDOR_SSP
       - STR_GCIC_PROTOTYPE_LASER_SMG
     size: 0.01
     costBuy: 799
@@ -3269,11 +3252,15 @@ items:
         return;
 
   - type: STR_GCIC_PROTOTYPE_LASER_SMG_NORECOVER
-    ufopediaType: STR_GCIC_PROTOTYPE_LASER_SMG
     refNode: *refgciclasersmg
+    ufopediaType: STR_GCIC_PROTOTYPE_LASER_SMG
+    requiresBuy:
+      - STR_DEBUG
     recover: false
   - type: STR_GCIC_PROTOTYPE_LASER_SMG_AMMO1_NORECOVER
     refNode: *refgciclasersmgammo
+    requiresBuy:
+      - STR_DEBUG
     recover: false
 
   - type: STR_GCIC_PROTOTYPE_LASER_RIFLE_ELERIUM
@@ -3281,6 +3268,7 @@ items:
     ufopediaType: STR_GCIC_PROTOTYPE_LASER_RIFLE
     requiresBuy:
       - STR_TODO
+      - STR_PROJECT_DRONES2
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
     size: 0.2
     costBuy: 208000
@@ -3338,7 +3326,7 @@ items:
     type: STR_GCIC_PROTOTYPE_LASER_RIFLE
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_PROJECT_DRONES2
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
     size: 0.2
     costBuy: 8000
@@ -3380,6 +3368,11 @@ items:
   - &refgciclaserrifleammo
     type: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
+    requiresBuy:
+      - STR_SEC_LICENSE
+      - STR_LLC_ITEM
+      - STR_VENDOR_SSP
+      - STR_GCIC_PROTOTYPE_LASER_RIFLE
     size: 0.01
     costSell: 30
     transferTime: 4
@@ -3411,7 +3404,8 @@ items:
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_ASSAULT_RIFLES_CATEGORY]
     requiresBuy:
       - STR_SEC_LICENSE
-      - STR_TODO
+      - STR_LLC_ITEM
+      - STR_VENDOR_SSP
       - STR_GCIC_PROTOTYPE_LASER_RIFLE
     size: 0.01
     costBuy: 899
@@ -3443,11 +3437,15 @@ items:
         return;
 
   - type: STR_GCIC_PROTOTYPE_LASER_RIFLE_NORECOVER
-    ufopediaType: STR_GCIC_PROTOTYPE_LASER_RIFLE
     refNode: *refgciclaserrifle
+    ufopediaType: STR_GCIC_PROTOTYPE_LASER_RIFLE
+    requiresBuy:
+      - STR_DEBUG
     recover: false
   - type: STR_GCIC_PROTOTYPE_LASER_RIFLE_AMMO1_NORECOVER
     refNode: *refgciclaserrifleammo
+    requiresBuy:
+      - STR_DEBUG
     recover: false
 
   - type: STR_GCIC_PROTOTYPE_LASER_SNIPER_ELERIUM
@@ -3455,6 +3453,7 @@ items:
     ufopediaType: STR_GCIC_PROTOTYPE_LASER_SNIPER
     requiresBuy:
       - STR_TODO
+      - STR_PROJECT_DRONES2
       - STR_GCIC_PROTOTYPE_LASER_SNIPER
     size: 0.2
     costBuy: 265000
@@ -3510,7 +3509,7 @@ items:
   - type: STR_GCIC_PROTOTYPE_LASER_SNIPER
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_PROJECT_DRONES2
       - STR_GCIC_PROTOTYPE_LASER_SNIPER
     size: 0.2
     costBuy: 65000
@@ -3548,6 +3547,11 @@ items:
     armor: 40
   - type: STR_GCIC_PROTOTYPE_LASER_SNIPER_AMMO1
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
+    requiresBuy:
+      - STR_SEC_LICENSE
+      - STR_LLC_ITEM
+      - STR_VENDOR_SSP
+      - STR_GCIC_PROTOTYPE_LASER_SNIPER
     size: 0.01
     costSell: 35
     transferTime: 4
@@ -3580,7 +3584,8 @@ items:
     categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_SNIPER_RIFLES_CATEGORY]
     requiresBuy:
       - STR_SEC_LICENSE
-      - STR_TODO
+      - STR_LLC_ITEM
+      - STR_VENDOR_SSP
       - STR_GCIC_PROTOTYPE_LASER_SNIPER
     size: 0.01
     costBuy: 959
@@ -3617,6 +3622,7 @@ items:
     ufopediaType: STR_GCIC_PROTOTYPE_LASER_MG
     requiresBuy:
       - STR_TODO
+      - STR_PROJECT_DRONES2
       - STR_GCIC_PROTOTYPE_LASER_MG
     size: 0.3
     costBuy: 232000
@@ -3678,6 +3684,7 @@ items:
     categories: [STR_MILITARY_CATEGORY, STR_VACUUM_CATEGORY, STR_MACHINE_GUNS_CATEGORY]
     requiresBuy:
       - STR_TODO
+      - STR_PROJECT_DRONES2
       - STR_GCIC_PROTOTYPE_LASER_MG
     size: 0.3
     costBuy: 32000
@@ -3722,6 +3729,11 @@ items:
     armor: 40
   - type: STR_GCIC_PROTOTYPE_LASER_MG_AMMO1
     categories: [STR_MILITARY_CATEGORY, STR_VACUUM_CATEGORY, STR_MACHINE_GUNS_CATEGORY]
+    requiresBuy:
+      - STR_TODO #laser cell outsourcing, milspec license
+      - STR_LLC_ITEM
+      - STR_VENDOR_SSP
+      - STR_GCIC_PROTOTYPE_LASER_MG
     size: 0.1
     costSell: 3000
     transferTime: 4
@@ -3753,7 +3765,9 @@ items:
   - type: STR_GCIC_PROTOTYPE_LASER_MG_AMMO2
     categories: [STR_MILITARY_CATEGORY, STR_VACUUM_CATEGORY, STR_MACHINE_GUNS_CATEGORY]
     requiresBuy:
-      - STR_TODO #laser cell outsourcing, milspec license
+      - STR_TODO #milspec license
+      - STR_LLC_ITEM
+      - STR_VENDOR_SSP
       - STR_GCIC_PROTOTYPE_LASER_MG
     size: 0.1
     transferTime: 4
@@ -3788,6 +3802,7 @@ items:
     ufopediaType: STR_GCIC_PROTOTYPE_LASER_CANNON
     requiresBuy:
       - STR_TODO
+      - STR_PROJECT_DRONES2
       - STR_GCIC_PROTOTYPE_LASER_CANNON
     size: 0.3
     costBuy: 244000
@@ -3847,6 +3862,7 @@ items:
     categories: [STR_MILITARY_CATEGORY, STR_VACUUM_CATEGORY, STR_CANNONS_CATEGORY]
     requiresBuy:
       - STR_TODO
+      - STR_PROJECT_DRONES2
       - STR_GCIC_PROTOTYPE_LASER_CANNON
     size: 0.3
     costBuy: 44000
@@ -3886,6 +3902,11 @@ items:
     armor: 40
   - type: STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO1
     categories: [STR_MILITARY_CATEGORY, STR_VACUUM_CATEGORY, STR_CANNONS_CATEGORY]
+    requiresBuy:
+      - STR_TODO #milspec license
+      - STR_LLC_ITEM
+      - STR_VENDOR_SSP
+      - STR_GCIC_PROTOTYPE_LASER_CANNON
     size: 0.1
     costSell: 900
     transferTime: 4
@@ -3922,8 +3943,10 @@ items:
   - type: STR_GCIC_PROTOTYPE_LASER_CANNON_AMMO2
     categories: [STR_MILITARY_CATEGORY, STR_VACUUM_CATEGORY, STR_CANNONS_CATEGORY]
     requiresBuy:
-      - STR_TODO #laser cell outsourcing, milspec license
-      - STR_GCIC_PROTOTYPE_LASER_MG
+      - STR_TODO #milspec license
+      - STR_LLC_ITEM
+      - STR_VENDOR_SSP
+      - STR_GCIC_PROTOTYPE_LASER_CANNON
     size: 0.1
     transferTime: 4
     bigSprite: 282
@@ -4031,7 +4054,7 @@ items:
   - type: STR_BARREL_MOTAR_PHXAMMO
     categories: [STR_UNLICENSED_CATEGORY, STR_LAUNCHERS_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_VENDOR_IRONEYES2
       - STR_BARREL_MOTAR
     size: 0.1
     costBuy: 4999
@@ -4249,7 +4272,7 @@ items:
     ufopediaType: STR_ACIDFLASK_FAKE
     categories: [STR_UNLICENSED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_VENDOR_VICE
       - STR_ACIDFLASK
     size: 0.1
     costBuy: 119
@@ -4289,7 +4312,7 @@ items:
     categories: [STR_DEBUG_CATEGORY, STR_UNLICENSED_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
     requiresBuy:
       - STR_DEBUG
-      - STR_TODO
+      - STR_VENDOR_VICE
       - STR_ACIDFLASK
     size: 0.1
     costBuy: 119
@@ -4354,7 +4377,7 @@ items:
   - type: STR_PHXBOMB
     categories: [STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_VENDOR_IRONEYES2
       - STR_PHXBOMB
     size: 0.1
     costBuy: 1999
@@ -4387,7 +4410,7 @@ items:
   - type: STR_PHXDEMO
     categories: [STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_VENDOR_IRONEYES2
       - STR_PHXDEMO
     size: 0.1
     costBuy: 2349
@@ -4626,6 +4649,53 @@ items:
     experienceTrainingMode: 16
     attraction: 15
     armor: 30
+  - type: STR_STUN_BATON
+    categories: [STR_SECURITY_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SPORT_CATEGORY, STR_MELEE_CATEGORY, STR_STUN_CATEGORY]
+    requiresBuy:
+      - STR_SEC_LICENSE
+      - STR_VENDOR_SSP
+      - STR_LSB_ITEM
+    size: 0.1
+    costBuy: 9999
+    costSell: 2500
+    transferTime: 4
+    bigSprite: 319
+    floorSprite: 295
+    handSprite: 752
+    meleeHitSound: 105 #todo
+    meleeAnimation: 0 #todo
+    invWidth: 1
+    invHeight: 2
+    battleType: 3
+    weight: 6
+    power: 42
+    damageBonus:
+      reactions: 0.2
+      bravery: 0.2
+    damageType: 10
+    damageAlter:
+      RandomType: 9
+      ToTime: 2.0
+      ToWound: 0.0
+      RandomWound: false
+      ToHealth: 0.35
+      ToStun: 1.0
+      RandomStun: false
+      IgnoreSelfDestruct: true
+      IgnorePainImmunity: true
+      ArmorEffectiveness: 0.85
+      ToTile: 0.15
+    clipSize: -1
+    accuracyMelee: 125
+    costMelee:
+      time: 14
+      energy: 4
+    flatRate: true
+    twoHanded: true
+    oneHandedPenalty: 75
+    experienceTrainingMode: 16
+    attraction: 15
+    armor: 30
   - type: STR_VOLTKNOCKER
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_INFILTRATION_CATEGORY, STR_STUN_CATEGORY]
     requiresBuy:
@@ -4638,7 +4708,7 @@ items:
     bigSprite: 274
     floorSprite: 252
     handSprite: 608
-    bulletSprite: 24 #
+    bulletSprite: 24 #todo
     bulletSpeed: -2
     fireSound: 39
     hitSound: 105
@@ -4650,8 +4720,8 @@ items:
     power: 22
     clipSize: 5
     damageBonus:
-      reactions: 0.1
-      throwing: 0.3
+      reactions: 0.2
+      throwing: 0.2
     damageType: 10
     damageAlter:
       RandomType: 9
@@ -4682,7 +4752,7 @@ items:
     aimRange: 7
     dropoff: 8
     kneelBonus: 110
-    experienceTrainingMode: 7
+    experienceTrainingMode: 18
     attraction: 10
     armor: 30
   - type: STR_TASER_PISTOL_CODED
@@ -4834,7 +4904,7 @@ items:
     flatRate: true
     twoHanded: true
     oneHandedPenalty: 75
-    experienceTrainingMode: 16
+    experienceTrainingMode: 1
     attraction: 10
     armor: 40
   - type: STR_GOLFDRIVER
@@ -4886,7 +4956,7 @@ items:
     flatRate: true
     twoHanded: true
     oneHandedPenalty: 75
-    experienceTrainingMode: 16
+    experienceTrainingMode: 1
     attraction: 10
     armor: 40
   - type: STR_MARSBALL
@@ -5177,7 +5247,7 @@ items:
   - type: STR_SPORT_ARROWS2
     categories: [STR_UNLICENSED_CATEGORY, STR_AQUATIC_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_SPORT_CATEGORY]
     requiresBuy:
-      - STR_VENDOR_PRINTER
+      - STR_VENDOR_VICE
       - STR_SPORT_ARROWS2
     size: 0.01
     costBuy: 119
@@ -5208,7 +5278,7 @@ items:
   - type: STR_SPORT_ARROWS3
     categories: [STR_UNLICENSED_CATEGORY, STR_AQUATIC_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_SPORT_CATEGORY]
     requiresBuy:
-      - STR_VENDOR_PRINTER
+      - STR_VENDOR_IRONEYES2
       - STR_SPORT_ARROWS3
     size: 0.01
     costBuy: 119
@@ -5306,19 +5376,19 @@ items:
     costBuy: 12499
     costSell: 3125
     transferTime: 4
-    bigSprite: 900
-    floorSprite: 900
-    handSprite: 900
-    bulletSprite: 5 #
+    bigSprite: 318
+    floorSprite: 294
+    handSprite: 744
+    bulletSprite: 12 #todo?
     bulletSpeed: 99
     fireSound: 39
     hitSound: 101
-    hitAnimation: 26 #
+    hitAnimation: 26
     invWidth: 1
     invHeight: 2
     battleType: 1
-    weight: 7
-    power: 12
+    weight: 6
+    power: 10
     damageType: 7
     damageBonus:
       strength: 0.1
@@ -5339,13 +5409,13 @@ items:
       energy: 8
     costAimed:
       time: 24
-      energy: 10
+      energy: 8
     flatRate: true
-    maxRange: 4
+    maxRange: 5
     snapRange: 2
-    aimRange: 3
+    aimRange: 4
     dropoff: 8
-    powerRangeThreshold: 4
+    powerRangeThreshold: 5
     powerRangeReduction: 50
     kneelBonus: 110
     experienceTrainingMode: 7
@@ -5760,7 +5830,7 @@ items:
   - type: STR_STIM_INHALER
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_SPORT_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
     requiresBuy:
-      - STR_VENDOR_P2P
+      - STR_VENDOR_VICE
       - STR_STIM_INHALER
     size: 0.01
     costBuy: 119
@@ -5789,7 +5859,7 @@ items:
   - type: STR_STIM_INHALER2
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_SPORT_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
     requiresBuy:
-      - STR_VENDOR_P2P
+      - STR_VENDOR_VICE
       - STR_STIM_INHALER2
     size: 0.01
     costBuy: 84
@@ -5818,7 +5888,7 @@ items:
   - type: STR_STIM_INHALER3
     categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_AQUATIC_CATEGORY, STR_TOOLS_CATEGORY, STR_SPORT_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
     requiresBuy:
-      - STR_VENDOR_P2P
+      - STR_VENDOR_VICE
       - STR_STIM_INHALER3
     size: 0.01
     costBuy: 84
@@ -6109,6 +6179,7 @@ items:
   - type: STR_MEDICAL_CYBERNETICS
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
+      - STR_VENDOR_MEDI
       - STR_MEDICAL_CYBERNETICS_ITEM
     size: 0.1
     costBuy: 13999
@@ -6135,7 +6206,7 @@ items:
     weight: 3
 # bio
   - type: STR_CHRYSSALID_EGG
-    categories: [STR_PERKS_CATEGORY]
+    categories: [STR_RESOURCES_CATEGORY]
     size: 0.1
     costSell: 80000
     recoveryPoints: 5
@@ -6186,6 +6257,7 @@ items:
   - type: STR_DURATHREAD
     categories: [STR_RESOURCES_CATEGORY]
     requiresBuy:
+      - STR_VENDOR_BUILDER
       - STR_LDT_ITEM
     size: 0.1
     costBuy: 999
@@ -6261,7 +6333,32 @@ items:
     costSell: 0
     bigSprite: 225
     weight: 2
-# data
+# loot
+  - type: STR_CHAMPAGNE
+    categories: [STR_PERKS_CATEGORY]
+    size: 0.01
+    costSell: 22999
+    hitSound: -1 #todo drinking sfx
+    bigSprite: 320
+    floorSprite: 296
+    handSprite: 800
+    invWidth: 1
+    invHeight: 2
+    battleType: 6
+    medikitActionName: STR_USE_DRINK
+    weight: 5
+    stimulant: 8
+    moraleRecovery: 10
+    stunRecovery: -5
+    manaRecovery: -1
+    medikitTargetMatrix: 3
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 2
+    costUse:
+      time: 15
+    flatRate: true
+    ignoreInCraftEquip: true
   - type: STR_CRYPTOCHIT1
     categories: [STR_PERKS_CATEGORY]
     bigSprite: 260
@@ -6276,7 +6373,7 @@ items:
     costSell: 73000
     recoveryPoints: -5
     weight: 1
-
+# data
   - type: STR_PERSONAL_DATA
     categories: [STR_DATA_CATEGORY]
     costSell: 40
@@ -6380,35 +6477,6 @@ items:
     costSell: 5000
     weight: 1
     armor: 255
-# loot
-  - type: STR_CHAMPAGNE
-    categories: [STR_UNLICENSED_CATEGORY, STR_VACUUM_CATEGORY, STR_TOOLS_CATEGORY, STR_SPORT_CATEGORY, STR_INFILTRATION_CATEGORY, STR_MEDICAL_CATEGORY]
-    requiresBuy:
-      - STR_TODO
-      - STR_CHAMPAGNE
-    size: 0.01
-    costBuy: 91999
-    costSell: 22999
-    transferTime: 72
-    hitSound: 103 #todo
-    bigSprite: 900
-    floorSprite: 900
-    invWidth: 1
-    invHeight: 2
-    battleType: 6
-    medikitActionName: STR_USE_INHALER #todo
-    weight: 5
-    stimulant: 8
-    moraleRecovery: 10
-    stunRecovery: -5
-    medikitTargetMatrix: 31
-    medikitTargetSelf: true
-    isConsumable: true
-    medikitType: 2
-    costUse:
-      time: 15
-    flatRate: true
-    ignoreInCraftEquip: true
 # tasks
   - type: STR_MONEY_1
     categories: [STR_PERKS_CATEGORY]
@@ -6520,16 +6588,13 @@ items:
 #armor
   - type: STR_BELLHOP_DRONE_ARMOR
     categories: [STR_OUTFITS_CATEGORY, STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_SPORT_CATEGORY]
-    requiresBuy:
-      - STR_BELLHOP_DRONE_ARMOR
     size: 0.1
-    costBuy: 6999
     costSell: 1750
     transferTime: 4
   - type: STR_GCIC_DRONE_ARMOR
     categories: [STR_OUTFITS_CATEGORY, STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY]
     requiresBuy:
-      - STR_TODO
+      - STR_PROJECT_DRONES2
     size: 0.1
     costBuy: 5000
     costSell: 3750
@@ -6545,6 +6610,7 @@ items:
   - type: STR_SKELE_DRONE_ARMOR
     categories: [STR_OUTFITS_CATEGORY, STR_UNLICENSED_CATEGORY, STR_TOOLS_CATEGORY]
     requiresBuy:
+      - STR_VENDOR_BUILDER
       - STR_SKELE_ITEM
     size: 0.2
     costBuy: 19999
@@ -6554,10 +6620,21 @@ items:
     categories: [STR_OUTFITS_CATEGORY, STR_SECURITY_CATEGORY]
     requiresBuy:
       - STR_SEC_LICENSE
+      - STR_VENDOR_SSP
       - STR_AQUAVEST_DRONE_ARMOR
     size: 0.2
     costBuy: 11999
     costSell: 3000
+    transferTime: 4
+  - type: STR_LJACK_DRONE_ARMOR
+    categories: [STR_OUTFITS_CATEGORY, STR_SECURITY_CATEGORY]
+    requiresBuy:
+      - STR_SEC_LICENSE
+      - STR_VENDOR_SSP
+      - STR_LJA_ITEM
+    size: 0.2
+    costBuy: 39999
+    costSell: 10000
     transferTime: 4
 #corpses
   - type: STR_PLEX_DRONE_HYBRID_CORPSE
@@ -7105,6 +7182,77 @@ items:
       STR_BIOMASS: [1]
       STR_AQUAVEST_DRONE_ARMOR: [1]
       STR_ARMOR_REPAIR_BILL: [3]
+    armor: 40
+
+  - type: STR_LJACK_DRONE_HYBRID_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 20
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_LJACK_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [10]
+    armor: 40
+  - type: STR_LJACK_DRONE_HUMAN_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 22
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_LJACK_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [10]
+    armor: 40
+  - type: STR_LJACK_DRONE_SHARK_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 28
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_LJACK_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [10]
+    armor: 40
+  - type: STR_LJACK_DRONE_DEEP_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 22
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_LJACK_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [10]
+    armor: 40
+  - type: STR_LJACK_DRONE_FLOATER_CORPSE
+    name: STR_CORPSE
+    categories: [STR_DEBUG_CATEGORY]
+    bigSprite: 900
+    floorSprite: 900
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    weight: 24
+    recoveryTransformations:
+      STR_BIOMASS: [1]
+      STR_LJACK_DRONE_ARMOR: [1]
+      STR_ARMOR_REPAIR_BILL: [10]
     armor: 40
 
   - type: STR_PILOT_CORE_CORPSE

@@ -44,6 +44,7 @@ startingConditions:
       - STR_HD_CROSSOVER
       - STR_HD_HOVERBIKE
       - STR_VCM_BICUBE
+      - STR_HD_LIMO
 
   - type: TOOLS_GEAR_INFILTRATION_CRAFT
     defaultArmor: *plexDefaultArmor
