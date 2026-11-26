@@ -985,6 +985,14 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ARMOR_SKELE_CPAL
+  - id: STR_LJACK_DRONE_ARMOR
+    requires:
+      - STR_LJACK_DRONE_ARMOR
+    text: STR_LJACK_DRONE_ARMOR_UP
+    section: STR_DRONES_UC
+    type_id: 7
+    text_width: 180
+    image_id: ARMOR_LJACK_CPAL
 
   - id: STR_AQUAVEST_DRONE_ARMOR
     requires:
@@ -1002,15 +1010,6 @@ ufopaedia:
     type_id: 7
     text_width: 180
     image_id: ARMOR_AQUAVESTSHIELD_CPAL
-
-  - id: STR_LJACK_DRONE_ARMOR
-    requires:
-      - STR_LJACK_DRONE_ARMOR
-    text: STR_LJACK_DRONE_ARMOR_UP
-    section: STR_DRONES_UC
-    type_id: 7
-    text_width: 180
-    image_id: ARMOR_SKELE_CPAL
 # builtins
   - id: STR_UNARMED
     requires:
@@ -2398,6 +2397,19 @@ ufopaedia:
       width: 149
       height: 200
     image_id: CHRYSSALID_CPAL
+  - id: STR_CHRYSSALID_ELDERS
+    requires:
+      - STR_CHRYSSALID_ELDER
+    text: STR_CHRYSSALID_ELDERS_UP
+    section: STR_COMPETITORS_UC
+    type_id: 7
+    text_width: 160
+    rect_text:
+      x: 166
+      y: 7
+      width: 149
+      height: 200
+    image_id: CHRYSSALID_ELDER_CPAL
   - id: STR_MUCKSTARS
     requires:
       - STR_MUCKSTAR
@@ -2588,6 +2600,12 @@ ufopaedia:
     requires:
       - STR_CHRYSSALID_ARMOR
     text: STR_CHRYSSALID_ARMOR_UP
+    section: STR_COMPETITORS_UC
+    type_id: 5
+  - id: STR_CHRYSSALID_ELDER_ARMOR
+    requires:
+      - STR_CHRYSSALID_ELDER_ARMOR
+    text: STR_CHRYSSALID_ELDER_ARMOR_UP
     section: STR_COMPETITORS_UC
     type_id: 5
   - id: STR_MUCKSTAR_ARMOR

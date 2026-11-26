@@ -41,6 +41,7 @@ extraSprites:
       57: Resources/Items/Builtins/Licensed/Zombie.png
   - type: BIGOBS.PCK
     files:
+      55: Resources/Items/Utility/electroflare_bigob.png
       100: Resources/Armors/Pilots/FlyingCore/pilot_core_corpse_bigob.png
       101: Resources/Armors/Pilots/FlyingCore/pilot_core_bigob.png
       102: Resources/Items/Tools/wrench_bigob.png
@@ -262,6 +263,11 @@ extraSprites:
       318: Resources/Items/Martial/dartrope_bigob.png
       319: Resources/Items/Electric/expandablebaton_bigob.png
       320: Resources/Items/Materials/champagne_bigob.png
+      321: Resources/Items/Builtins/licensed/edited_terror_claw.png
+      322: Resources/Factions/Animals/chryssalid_bigob_elder.png
+      323: Resources/Armors/Anthros/Ljack/ljack_corpse_bigob.png
+      324: Resources/Armors/Anthros/Ljack/ljack_corpse_bigob_deep.png
+      325: Resources/Armors/Anthros/Ljack/ljack_corpse_bigob_floater.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -462,6 +468,11 @@ extraSprites:
       294: Resources/Items/Martial/dartrope_floorob.png
       295: Resources/Items/Electric/expandablebaton_floorob.png
       296: Resources/Items/Materials/champagne_floorob.png
+      297: Resources/Factions/Animals/chryssalid_floorob_elder.png
+      298: Resources/Armors/Anthros/Ljack/ljack_corpse_floorob.png
+      299: Resources/Armors/Anthros/Ljack/ljack_corpse_floorob_shark.png
+      300: Resources/Armors/Anthros/Ljack/ljack_corpse_floorob_deep.png
+      301: Resources/Armors/Anthros/Ljack/ljack_corpse_floorob_floater.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -1038,6 +1049,62 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Anthros/Exoskeleton/exoskeleton_sprite_floater.png
+# ljack
+  - typeSingle: HUMAN__7__LJACK
+    fileSingle: Resources/Armors/Anthros/Ljack/ljack_inventory.png
+  - typeSingle: HYBRID__7__LJACK
+    fileSingle: Resources/Armors/Anthros/Ljack/ljack_inventory.png
+  - typeSingle: SHARK__7__LJACK
+    fileSingle: Resources/Armors/Anthros/Ljack/ljack_inventory.png
+  - typeSingle: DEEP__7__LJACK
+    fileSingle: Resources/Armors/Anthros/Ljack/ljack_inventory.png
+  - typeSingle: FLOATER__7__LJACK
+    fileSingle: Resources/Armors/Anthros/Ljack/ljack_inventory_floater.png
+  - typeSingle: HUMAN__9__LJACKGLASSES
+    fileSingle: Resources/Armors/Anthros/Ljack/ljack_inventory_glasses.png
+  - typeSingle: HYBRID__9__LJACKGLASSES
+    fileSingle: Resources/Armors/Anthros/Ljack/ljack_inventory_glasses.png
+  - typeSingle: SHARK__9__LJACKGLASSES
+    fileSingle: Resources/Armors/Anthros/Ljack/ljack_inventory_glasses_shark.png
+  - typeSingle: DEEP__9__LJACKGLASSES
+    fileSingle: Resources/Armors/Anthros/Ljack/ljack_inventory_glasses_deep.png
+  - typeSingle: FLOATER__9__LJACKGLASSES
+    fileSingle: Resources/Armors/Anthros/Ljack/ljack_inventory_glasses_floater.png
+  - type: LJACK_HUMAN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Ljack/ljack_sprite_human.png
+  - type: LJACK_HYBRID.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Ljack/ljack_sprite_hybrid.png
+  - type: LJACK_SHARK.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Ljack/ljack_sprite_shark.png
+  - type: LJACK_DEEP.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Ljack/ljack_sprite_deep.png
+  - type: LJACK_FLOATER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Anthros/Ljack/ljack_sprite_floater.png
 # aquavest
   - typeSingle: HUMAN__7__AQUAVEST
     fileSingle: Resources/Armors/Anthros/Aquavest/aquavest_inventory.png
@@ -1299,6 +1366,17 @@ extraSprites:
     fileSingle: Resources/Factions/Animals/chryssalid_CPAL.png
   - typeSingle: CHRYSSALID.SPK
     fileSingle: Resources/Factions/Animals/chryssalid_inventory.png
+  - typeSingle: CHRYSSALID_ELDER_CPAL
+    fileSingle: Resources/Factions/Animals/chryssalid_elder_CPAL.png
+  - typeSingle: CHRYSSALID_ELDER.SPK
+    fileSingle: Resources/Factions/Animals/chryssalid_inventory_elder.png
+  - type: CHRYSSALID_ELDER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1160
+    files:
+      0: Resources/Factions/Animals/chryssalid_sprite_elder.png
 
   - typeSingle: ZOMBIE_CPAL
     fileSingle: Resources/Factions/Animals/zombie_CPAL.png
@@ -1595,8 +1673,6 @@ extraSprites:
 # armors
   - typeSingle: ARMOR_PLEX_CPAL
     fileSingle: Resources/Pedia/armor_plex_CPAL.png
-  - typeSingle: ARMOR_BELLHOP_CPAL
-    fileSingle: Resources/Pedia/armor_bellhop_CPAL.png
   - typeSingle: ARMOR_DURAWARE_CPAL
     fileSingle: Resources/Pedia/armor_duraware_CPAL.png
   - typeSingle: ARMOR_DURAVEST_CPAL
@@ -1605,6 +1681,10 @@ extraSprites:
     fileSingle: Resources/Pedia/armor_dura_CPAL.png
   - typeSingle: ARMOR_SKELE_CPAL
     fileSingle: Resources/Pedia/armor_skele_CPAL.png
+  - typeSingle: ARMOR_BELLHOP_CPAL
+    fileSingle: Resources/Pedia/armor_bellhop_CPAL.png
+  - typeSingle: ARMOR_LJACK_CPAL
+    fileSingle: Resources/Pedia/armor_ljack_CPAL.png
   - typeSingle: ARMOR_AQUAVEST_CPAL
     fileSingle: Resources/Pedia/armor_aquavest_CPAL.png
   - typeSingle: ARMOR_AQUAVESTSHIELD_CPAL

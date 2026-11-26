@@ -419,6 +419,241 @@
         percentageOutsideUfo: 100
         customUnitType: STR_CYFURB
         itemSets: *AnchorEmptyInventory
+  - &refRescueVice
+    type: STR_RESCUE_FT_VICE
+    width: 50
+    length: 50
+    height: 8
+    alert: STR_RESCUE_FT_ALERT
+    alertBackground: BACKLAND.SCR
+    alertDescription: STR_RESCUE_FT_ALERT_DESCRIPTION
+    markerName: STR_RESCUE_FT_
+    duration: [24, 48]
+    despawnPenalty: 50
+    civilians: 12
+    startingCondition: MILITARY_GEAR
+    briefing:
+      showTarget: false
+      title: STR_RESCUE_FT
+      desc: STR_RESCUE_FT_BRIEFING
+      music: BREACH_INTRO
+      palette: 0
+    unlockedResearch: STR_TRG_CHRYS_PREQ
+    terrains:
+      - HANGAR_DRONES_SIZE5
+      - COMMERCIAL_DRONES_SIZE5
+      - SLUM_DRONES_SIZE5
+    music:
+      - BREACH2
+    data:
+      - alienRank: 3
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 2
+        percentageOutsideUfo: 50
+        extraRandomItems: &viceExtra
+          - [STR_PERSONAL_DATA, STR_PERSONAL_DATA, STR_MEDI_SPRAY, STR_STIM_INHALER2, STR_STIM_INHALER3, STR_STIM_INHALER3, STR_BLANK_ITEM, STR_BLANK_ITEM]
+        itemSets:
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_MG
+            - STR_9MM_MG_AMMO
+            - STR_9MM_MG_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_BARREL_MOTAR
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_BARREL_MOTAR
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_BARREL_MOTAR
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_BARREL_MOTAR
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_BARREL_MOTAR
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BARREL_MOTAR_AMMO
+            - STR_BOUNTY_1
+      - alienRank: 4
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 50
+        extraRandomItems: *viceExtra
+        itemSets:
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_STL_KNIFE
+            - STR_BOUNTY_1
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_STL_KNIFE
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_PISTOL
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+            - STR_STL_KNIFE
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_PISTOL
+            - STR_9MM_AMMO
+            - STR_9MM_AMMO
+            - STR_STL_KNIFE
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_SMG
+            - STR_9MM_SMG_AMMO
+            - STR_9MM_SMG_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_DISPOSABLE_SMG
+            - STR_STL_KNIFE
+            - STR_BOUNTY_1
+          -
+            - STR_DISPOSABLE_SMG
+            - STR_STL_KNIFE
+            - STR_BOUNTY_1
+          -
+            - STR_DISPOSABLE_SMG
+            - STR_STL_KNIFE
+            - STR_BOUNTY_1
+      - alienRank: 5
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 3
+        percentageOutsideUfo: 50
+        extraRandomItems: *viceExtra
+        itemSets: &viceFamerPublic
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_STL_KNIFE
+            - STR_BOUNTY_1
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_PAPERSHOT_AMMO
+            - STR_STL_KNIFE
+            - STR_BOUNTY_1
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_BUSBOX_PISTOL
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_COMBALL_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_SHOTGUN
+            - STR_9MM_SHOTGUN_AMMO
+            - STR_9MM_SHOTGUN_AMMO
+            - STR_9MM_SHOTGUN_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_SHOTGUN
+            - STR_9MM_SHOTGUN_AMMO
+            - STR_9MM_SHOTGUN_AMMO
+            - STR_9MM_SHOTGUN_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_RIFLE
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_RIFLE
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+            - STR_9MM_RIFLE_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_SNIPER_RIFLE
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_BOUNTY_1
+          -
+            - STR_9MM_SNIPER_RIFLE
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_9MM_SNIPER_RIFLE_AMMO
+            - STR_BOUNTY_1
+      - alienRank: 4
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 100
+        customUnitType: STR_CHRYSSALID_ELDER
+        itemSets: *AnchorEmptyInventory
   - type: STR_KNOCKOUT_MISSION
     width: 30
     length: 30
@@ -631,6 +866,13 @@
         percentageOutsideUfo: 100
         customUnitType: STR_CYFURB
         itemSets: *AnchorEmptyInventory
+  - type: STR_RESCUE_FT_VICE_DRONES2
+    refNode: *refRescueVice
+    isHidden: true
+    terrains:
+      - HANGAR_DRONES2_SIZE5
+      - COMMERCIAL_DRONES2_SIZE5
+      - SLUM_DRONES2_SIZE5
   - type: STR_KNOCKOUT_MISSION_DRONES2
     isHidden: true
     width: 30
@@ -2197,8 +2439,7 @@
         highQty: 2
         dQty: 0
         percentageOutsideUfo: 0
-        extraRandomItems: &viceExtra
-          - [STR_PERSONAL_DATA, STR_PERSONAL_DATA, STR_MEDI_SPRAY, STR_STIM_INHALER2, STR_STIM_INHALER3, STR_STIM_INHALER3, STR_BLANK_ITEM, STR_BLANK_ITEM]
+        extraRandomItems: *viceExtra
         itemSets:
           -
             - STR_9MM_MG
@@ -2318,69 +2559,7 @@
         dQty: 5
         percentageOutsideUfo: 0
         extraRandomItems: *viceExtra
-        itemSets:
-          -
-            - STR_BUSBOX_PISTOL
-            - STR_PAPERSHOT_AMMO
-            - STR_PAPERSHOT_AMMO
-            - STR_PAPERSHOT_AMMO
-            - STR_STL_KNIFE
-            - STR_BOUNTY_1
-          -
-            - STR_BUSBOX_PISTOL
-            - STR_PAPERSHOT_AMMO
-            - STR_PAPERSHOT_AMMO
-            - STR_PAPERSHOT_AMMO
-            - STR_STL_KNIFE
-            - STR_BOUNTY_1
-          -
-            - STR_BUSBOX_PISTOL
-            - STR_COMBALL_AMMO
-            - STR_COMBALL_AMMO
-            - STR_COMBALL_AMMO
-            - STR_BOUNTY_1
-          -
-            - STR_BUSBOX_PISTOL
-            - STR_COMBALL_AMMO
-            - STR_COMBALL_AMMO
-            - STR_COMBALL_AMMO
-            - STR_BOUNTY_1
-          -
-            - STR_9MM_SHOTGUN
-            - STR_9MM_SHOTGUN_AMMO
-            - STR_9MM_SHOTGUN_AMMO
-            - STR_9MM_SHOTGUN_AMMO
-            - STR_BOUNTY_1
-          -
-            - STR_9MM_SHOTGUN
-            - STR_9MM_SHOTGUN_AMMO
-            - STR_9MM_SHOTGUN_AMMO
-            - STR_9MM_SHOTGUN_AMMO
-            - STR_BOUNTY_1
-          -
-            - STR_9MM_RIFLE
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
-            - STR_BOUNTY_1
-          -
-            - STR_9MM_RIFLE
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
-            - STR_9MM_RIFLE_AMMO
-            - STR_BOUNTY_1
-          -
-            - STR_9MM_SNIPER_RIFLE
-            - STR_9MM_SNIPER_RIFLE_AMMO
-            - STR_9MM_SNIPER_RIFLE_AMMO
-            - STR_9MM_SNIPER_RIFLE_AMMO
-            - STR_BOUNTY_1
-          -
-            - STR_9MM_SNIPER_RIFLE
-            - STR_9MM_SNIPER_RIFLE_AMMO
-            - STR_9MM_SNIPER_RIFLE_AMMO
-            - STR_9MM_SNIPER_RIFLE_AMMO
-            - STR_BOUNTY_1
+        itemSets: *viceFamerPublic
       - alienRank: 6
         lowQty: 1
         medQty: 1

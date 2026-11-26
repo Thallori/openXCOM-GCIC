@@ -790,6 +790,9 @@ research:
   - name: STR_SKELE_DRONE_ARMOR
     needItem: true
     cost: 5
+  - name: STR_LJACK_DRONE_ARMOR
+    needItem: true
+    cost: 5
   - name: STR_AQUAVEST_DRONE_ARMOR
     needItem: true
     cost: 5
@@ -810,9 +813,6 @@ research:
     cost: 15
     getOneFree:
       - STR_AQUAVEST_DRONE_ARMOR
-  - name: STR_LJACK_DRONE_ARMOR
-    needItem: true
-    cost: 5
 #equipment
 # p2p
   - name: STR_BUSBOX_PISTOL
@@ -1514,6 +1514,8 @@ research:
       STR_TRG_HARUFO_PREQ:
         - STR_UFO_HARVESTER
         - STR_HOLOVIPER
+      STR_TRG_CHRYS_PREQ:
+        - STR_CHRYSSALID_ELDER
       STR_TRG_CZ_PREQ:
         - STR_CLIENT_CRAZY
         - STR_GOLFWEDGE
@@ -1955,6 +1957,14 @@ research:
   - name: STR_CHRYSSALID_ARMOR
     dependencies:
       - STR_CHRYSSALID
+  - name: STR_CHRYSSALID_ELDER
+    unlocks:
+      - STR_CHRYSSALID_ELDER_ARMOR
+    dependencies:
+      - STR_LOCK
+  - name: STR_CHRYSSALID_ELDER_ARMOR
+    dependencies:
+      - STR_CHRYSSALID_ELDER
 
   - name: STR_MUCKSTAR
     unlocks:
@@ -2120,6 +2130,9 @@ research:
     dependencies:
       - STR_LOCK
 # vice
+  - name: STR_TRG_CHRYS_PREQ #chryssalid
+    dependencies:
+      - STR_LOCK
   - name: STR_TRG_3V_PREQ #first 3
     dependencies:
       - STR_LOCK

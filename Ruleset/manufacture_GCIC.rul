@@ -283,10 +283,22 @@ manufacture:
     time: 12
     refund: true
     requiredItems:
-      STR_SHARES_SSP: 5
+      STR_SHARES_SSP: 4
     producedItems: {}
     events:
       STR_EVENT_LICENSE_LLC_ITEM: 100
+  - name: STR_LJA_ITEM
+    category: STR_PROJECTS_MANUCAT
+    requires:
+      - STR_LJA_LOCK
+    time: 12
+    refund: true
+    requiredItems:
+      STR_SHARES_SSP: 6
+    producedItems:
+      STR_LJACK_DRONE_ARMOR: 1
+    events:
+      STR_EVENT_LICENSE_LJA_ITEM: 100
   - name: STR_LSSR_ITEM
     category: STR_PROJECTS_MANUCAT
     requires:
@@ -299,19 +311,6 @@ manufacture:
       STR_SSP_SNIPER_RIFLE: 1
     events:
       STR_EVENT_LICENSE_LSSR_ITEM: 100
-  - name: STR_LJA_ITEM
-    category: STR_PROJECTS_MANUCAT
-    requires:
-      - STR_TODO
-      - STR_LJA_LOCK
-    time: 12
-    refund: true
-    requiredItems:
-      STR_SHARES_SSP: 6
-    producedItems:
-      STR_LJACK_DRONE_ARMOR: 1
-    events:
-      STR_EVENT_LICENSE_LJA_ITEM: 100
 #hardpoints
   - name: STR_CRAFT_PHXMISSILE_LAUNCHER
     category: STR_APS_MANUCAT

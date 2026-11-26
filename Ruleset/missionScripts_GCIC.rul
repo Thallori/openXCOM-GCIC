@@ -208,7 +208,8 @@ missionScripts:
     maxRuns: 1
     missionWeights:
       0:
-        STR_RESCUE_FT: 100
+        STR_RESCUE_FT: 80
+        STR_RESCUE_FT_VICE: 20
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
@@ -222,7 +223,8 @@ missionScripts:
     executionOdds: 68
     missionWeights:
       0:
-        STR_RESCUE_FT: 100
+        STR_RESCUE_FT: 50
+        STR_RESCUE_FT_VICE: 50
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
@@ -364,7 +366,8 @@ missionScripts:
     maxRuns: 1
     missionWeights:
       0:
-        STR_RESCUE_FT_DRONES2: 100
+        STR_RESCUE_FT_DRONES2: 80
+        STR_RESCUE_FT_VICE_DRONES2: 20
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30
@@ -378,7 +381,8 @@ missionScripts:
     executionOdds: 68
     missionWeights:
       0:
-        STR_RESCUE_FT_DRONES2: 100
+        STR_RESCUE_FT_DRONES2: 50
+        STR_RESCUE_FT_VICE_DRONES2: 50
     regionWeights: *PopDenseNoDesert
     useTable: false
     startDelay: 30

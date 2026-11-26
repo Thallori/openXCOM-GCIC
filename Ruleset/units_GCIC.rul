@@ -1049,7 +1049,7 @@ units:
     armor: STR_CHRYSSALID_ARMOR
     standHeight: 22
     kneelHeight: 22
-    value: 30
+    value: 35
     deathSound: 9
     intelligence: 4
     aggression: 5
@@ -1059,6 +1059,36 @@ units:
     builtInWeaponSets:
       - - STR_CHRYSSALID_WEAPON
         - STR_BOUNTY_CHRYSSALID
+  - type: STR_CHRYSSALID_ELDER
+    race: STR_ANIMALS
+    rank: STR_RANK_ANIMAL
+    liveAlien: STR_BOUNTY_2
+    stats:
+      tu: 95
+      stamina: 100
+      health: 90
+      bravery: 100
+      reactions: 65
+      firing: 0
+      throwing: 0
+      strength: 90
+      psiStrength: 20
+      psiSkill: 0
+      melee: 90
+      mana: 80
+    armor: STR_CHRYSSALID_ELDER_ARMOR
+    standHeight: 22
+    kneelHeight: 22
+    value: 30
+    deathSound: 9
+    intelligence: 4
+    aggression: 5
+    moraleLossWhenKilled: 75
+    livingWeapon: true
+    isLeeroyJenkins: true
+    builtInWeaponSets:
+      - - STR_CHRYSSALID_ELDER_WEAPON
+        - STR_BOUNTY_CHRYSSALID_ELDER
   - type: STR_ZOMBIE
     race: STR_ANIMALS
     rank: STR_RANK_ANIMAL
