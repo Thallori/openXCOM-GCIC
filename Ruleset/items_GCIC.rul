@@ -503,6 +503,40 @@ items:
     flatRate: true
     fixedWeapon: true
     recover: false
+  - type: STR_ROBOTREAD_WEAPON
+    categories: [STR_BUILT_INS_CATEGORY]
+    bigSprite: 328
+    invWidth: 2
+    invHeight: 3
+    battleType: 3
+    bulletSprite: 13
+    bulletSpeed: 30
+    fireSound: 121
+    hitSound: 19
+    hitAnimation: 36
+    power: 25
+    damageType: 4
+    damageAlter:
+      ToWound: 0.025
+      RandomWound: false
+      FireThreshold: 38
+      ToTile: 0.80
+    clipSize: -1
+    accuracySnap: 50
+    accuracyAimed: 100
+    tuSnap: 30
+    tuAimed: 45
+    snapRange: 10
+    aimRange: 20
+    fixedWeapon: true
+    recover: false
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        set particle_lifetime 4;
+        return;
   - type: STR_CYFURB_WEAPON
     categories: [STR_BUILT_INS_CATEGORY]
     bigSprite: 60
@@ -530,6 +564,8 @@ items:
     accuracyAimed: 100
     tuSnap: 30
     tuAimed: 60
+    snapRange: 15
+    aimRange: 30
     clipSize: -1
     fixedWeapon: true
     recover: false
@@ -4403,6 +4439,38 @@ items:
     throwDropoff: 4
     attraction: 20
     armor: 40
+  - type: STR_PHXNECKLACE
+    categories: [STR_UNLICENSED_CATEGORY, STR_SPORT_CATEGORY, STR_TOOLS_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
+    requiresBuy:
+      - STR_VENDOR_IRONEYES2
+      - STR_PHXNECKLACE
+    size: 0.1
+    costBuy: 2999
+    costSell: 725
+    bigSprite: 326
+    floorSprite: 302
+    handSprite: 808
+    hitAnimation: 0
+    battleType: 4
+    weight: 3
+    power: 45
+    damageType: 3
+    damageAlter:
+      FixRadius: 4
+      RandomType: 9
+      ToItem: 0.5
+      ToStun: 0.75
+      IgnoreOverKill: false
+      IgnoreSelfDestruct: false
+    fuseType: 0
+    tuPrime: 30
+    tuUnprime: 10
+    tuThrow: 25
+    underwaterThrowDropoffRange: 8
+    throwDropoffRange: 12
+    throwDropoff: 4
+    attraction: 20
+    armor: 45
   - type: STR_PHXBOMB
     categories: [STR_UNLICENSED_CATEGORY, STR_INFILTRATION_CATEGORY, STR_GRENADES_CATEGORY]
     requiresBuy:
@@ -6655,16 +6723,6 @@ items:
     costBuy: 19999
     costSell: 5000
     transferTime: 4
-  - type: STR_AQUAVEST_DRONE_ARMOR
-    categories: [STR_OUTFITS_CATEGORY, STR_SECURITY_CATEGORY]
-    requiresBuy:
-      - STR_SEC_LICENSE
-      - STR_VENDOR_SSP
-      - STR_AQUAVEST_DRONE_ARMOR
-    size: 0.2
-    costBuy: 11999
-    costSell: 3000
-    transferTime: 4
   - type: STR_LJACK_DRONE_ARMOR
     categories: [STR_OUTFITS_CATEGORY, STR_SECURITY_CATEGORY]
     requiresBuy:
@@ -6674,6 +6732,16 @@ items:
     size: 0.2
     costBuy: 39999
     costSell: 10000
+    transferTime: 4
+  - type: STR_AQUAVEST_DRONE_ARMOR
+    categories: [STR_OUTFITS_CATEGORY, STR_SECURITY_CATEGORY]
+    requiresBuy:
+      - STR_SEC_LICENSE
+      - STR_VENDOR_SSP
+      - STR_AQUAVEST_DRONE_ARMOR
+    size: 0.2
+    costBuy: 11999
+    costSell: 3000
     transferTime: 4
 #corpses
   - type: STR_PLEX_DRONE_HYBRID_CORPSE
@@ -7620,6 +7688,20 @@ items:
     weight: 12
     invWidth: 2
     invHeight: 2
+    battleType: 11
+    armor: 30
+  - type: STR_ROBOTREAD_CORPSE
+    name: STR_WRECK
+    categories: [STR_DEBUG_CATEGORY]
+    recoveryPoints: 3
+    recoveryTransformations:
+      STR_SHARES_GR: [70, 30]
+    ignoreInBaseDefense: true
+    bigSprite: 327
+    floorSprite: 303
+    weight: 20
+    invWidth: 2
+    invHeight: 3
     battleType: 11
     armor: 30
   - type: STR_TURRETAP_CORPSE

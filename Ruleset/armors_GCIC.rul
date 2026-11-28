@@ -2205,6 +2205,33 @@ armors:
     overKill: 1.5
     loftempsSet: [ 2 ]
 
+  - type: STR_ROBOTREAD_ARMOR
+    spriteInv: ROBOTREAD.SPK
+    spriteSheet: ROBOTREAD.PCK
+    corpseBattle:
+      - STR_ROBOTREAD_CORPSE
+    createsMeleeThreat: false
+    bleedImmune: true
+    zombiImmune: true
+    painImmune: true
+    fearImmune: true
+    allowsStrafing: false
+    drawingRoutine: 19
+    personalLight: 10
+    heatVision: 50
+    frontArmor: 15
+    sideArmor: 15
+    rearArmor: 15
+    underArmor: 8
+    damageModifier: *MechanicalUnarmoredResists
+    meleeDodge: *MeleeDodgePoor
+    psiDefence: *PsiDefenseTypical
+    recovery:
+      stun: *StunRecoveryEnemy
+      energy: *EnergyRecoveryGood
+    overKill: 1.5
+    loftempsSet: [ 4 ]
+
   - type: STR_CYFURB_ARMOR
     spriteInv: CYFURB.SPK
     spriteSheet: CYFURB.PCK

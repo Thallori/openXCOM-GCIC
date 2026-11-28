@@ -1210,6 +1210,37 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ROBOSPHERE_WEAPON
+  - type: STR_ROBOTREAD
+    race: STR_ROBOTS
+    rank: STR_RANK_ROBOT
+    liveAlien: STR_SHARES_GR
+    stats:
+      tu: 40
+      stamina: 60
+      health: 40
+      bravery: 100
+      reactions: 50
+      firing: 70
+      throwing: 0
+      strength: 20
+      psiStrength: 20
+      psiSkill: 0
+      melee: 45
+      mana: 80
+    armor: STR_ROBOTREAD_ARMOR
+    standHeight: 10
+    kneelHeight: 10
+    floatHeight: 10
+    value: 5
+    deathSound: 23
+    moveSound: 14
+    intelligence: 3
+    aggression: 2
+    spotter: 1
+    moraleLossWhenKilled: 75
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_ROBOTREAD_WEAPON
   - type: STR_CYFURB
     race: STR_ROBOTS
     rank: STR_RANK_ROBOT

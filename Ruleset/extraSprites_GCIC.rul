@@ -223,7 +223,7 @@ extraSprites:
       278: Resources/Items/Laser/Ammo/ssp_lasersmg_ammo_bigob.png
       279: Resources/Items/Laser/Ammo/ssp_lasersmg_1ammo_bigob.png
       280: Resources/Items/Laser/prototype_cannon_bigob.png
-      281: Resources/Items/Laser/prototype_cannon_bigob.png
+      281: Resources/Items/Laser/prototype_ecannon_bigob.png
       282: Resources/Items/Laser/Ammo/prototype_cannon_ammo_bigob.png
       283: Resources/Items/Laser/Ammo/prototype_cannon_1ammo_bigob.png
       284: Resources/Armors/Anthros/Worksuit/worksuit_corpse_bigob_floater.png
@@ -268,6 +268,9 @@ extraSprites:
       323: Resources/Armors/Anthros/Ljack/ljack_corpse_bigob.png
       324: Resources/Armors/Anthros/Ljack/ljack_corpse_bigob_deep.png
       325: Resources/Armors/Anthros/Ljack/ljack_corpse_bigob_floater.png
+      326: Resources/Items/Explosives/phxnecklace_bigob.png
+      327: Resources/Factions/Robots/robotread_bigob.png
+      328: Resources/Items/Builtins/robolaser_bigob.png
       900: Resources/temp_bigob.png
 
   - type: FLOOROB.PCK
@@ -473,6 +476,8 @@ extraSprites:
       299: Resources/Armors/Anthros/Ljack/ljack_corpse_floorob_shark.png
       300: Resources/Armors/Anthros/Ljack/ljack_corpse_floorob_deep.png
       301: Resources/Armors/Anthros/Ljack/ljack_corpse_floorob_floater.png
+      302: Resources/Items/Explosives/phxnecklace_floorob.png
+      303: Resources/Factions/Robots/robotread_floorob.png
       900: Resources/temp_floorob.png
 
   - type: HANDOB.PCK
@@ -561,6 +566,7 @@ extraSprites:
       744: Resources/Items/Martial/dartrope_handob.png
       752: Resources/Items/Electric/expandablebaton_handob.png
       800: Resources/Items/Materials/champagne_handob.png
+      808: Resources/Items/Explosives/phxnecklace_handob.png
       900: Resources/temp_handob.png
 
   - type: SPICONS.DAT
@@ -1411,6 +1417,17 @@ extraSprites:
     height: 80
     files:
       0: Resources/Factions/Robots/robosphere_sprite.png
+  - typeSingle: ROBOTREAD_CPAL
+    fileSingle: Resources/Factions/Robots/robotread_CPAL.png
+  - typeSingle: ROBOTREAD.SPK
+    fileSingle: Resources/Factions/Robots/robotread_inventory.png
+  - type: ROBOTREAD.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 80
+    files:
+      0: Resources/Factions/Robots/robotread_sprite.png
   - typeSingle: TURRETAP_CPAL
     fileSingle: Resources/Factions/Robots/turretap_CPAL.png
   - typeSingle: TURRETAP.SPK
@@ -1807,14 +1824,25 @@ extraSprites:
 
   - typeSingle: INTERWIN.DAT
     fileSingle: Resources/UI/INTERWIN.png
+  - typeSingle: ICONS.PCK
+    fileSingle: Resources/UI/battle_icons.png
+  - typeSingle: oxceLinks
+    fileSingle: Resources/UI/battle_extended.png
   - typeSingle: AvatarBackground
-    fileSingle: Resources/UI/avatar.png
+    fileSingle: Resources/UI/battle_avatar.png
   - typeSingle: TFTDReserve
-    fileSingle: Resources/UI/reserve.png
+    fileSingle: Resources/UI/battle_reserve.png
+  - type: KneelButton
+    width: 32
+    height: 32
+    subX: 32
+    subY: 16
+    files:
+      0: Resources/UI/battle_kneel.png
   - type: TinyRanks
     width: 42
     height: 7
     subX: 7
     subY: 7
     files:
-      0: Resources/UI/tiny_ranks.png
+      0: Resources/UI/battle_tiny_ranks.png

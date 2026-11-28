@@ -1538,6 +1538,12 @@ ufopaedia:
     text: STR_PIPEBOMB_UP
     section: STR_EQUIPMENT_UC
     type_id: 4
+  - id: STR_PHXNECKLACE
+    requires:
+      - STR_PHXNECKLACE
+    text: STR_PHXNECKLACE_UP
+    section: STR_EQUIPMENT_UC
+    type_id: 4
   - id: STR_PHXBOMB
     requires:
       - STR_PHXBOMB

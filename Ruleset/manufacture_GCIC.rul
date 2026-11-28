@@ -635,10 +635,22 @@ manufacture:
     time: 4
     cost: 40
     refund: true
+  - name: STR_PHXNECKLACE_MANU
+    category: STR_EQUIPMENT_MANUCAT
+    requires:
+      - STR_PHXNECKLACE_MANU_M
+      - STR_IRONEYES_MANULOCK2
+    time: 12
+    cost: 375
+    refund: true
+    requiredItems:
+      STR_PHX_WARHEAD: 1
+    producedItems:
+      STR_PHXNECKLACE: 4
   - name: STR_PHXBOMB_MANU
     category: STR_EQUIPMENT_MANUCAT
     requires:
-      - STR_PHXBOMB
+      - STR_PHXBOMB_MANU_M
       - STR_IRONEYES_MANULOCK2
     time: 12
     cost: 200
@@ -650,7 +662,7 @@ manufacture:
   - name: STR_PHXDEMO_MANU
     category: STR_EQUIPMENT_MANUCAT
     requires:
-      - STR_PHXDEMO
+      - STR_PHXDEMO_MANU_M
       - STR_IRONEYES_MANULOCK2
     time: 12
     cost: 750

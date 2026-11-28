@@ -104,7 +104,7 @@
     members:
       - STR_ROBOSPHERE #0
       - STR_CYFURB #1
-      - STR_ROBOSPHERE #2
+      - STR_ROBOTREAD #2
       - STR_ROBOSPHERE #3
       - STR_ROBOSPHERE #4
       - STR_ROBOSPHERE #5

@@ -18,8 +18,10 @@ interfaces:
     elements:
       - id: textName
         color: 125
-      - id: barTUs
+      - id: numTUs
         color: 65
+      - id: barTUs
+        color: 66
       - id: barEnergy
         color: 17
       - id: barHealth
@@ -100,7 +102,7 @@ interfaces:
       - id: ammoColorDTMelee
         color: 2    #pale: mechanical
       - id: ammoColorDTAcid
-        color: 64    #lime: chemical
+        color: 65    #lime: chemical
       - id: ammoColorDTSmoke
         color: 161    #brown: smoke
       - id: ammoColorDT10

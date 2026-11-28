@@ -589,6 +589,11 @@ research:
     dependencies:
       - STR_GUNPOWDER
     cost: 5
+  - name: STR_PHXNECKLACE_MANU_M
+    lookup: STR_PHXNECKLACE
+    dependencies:
+      - STR_PHXBOMB_MANU_M
+    cost: 10
   - name: STR_PHXBOMB_MANU_M
     lookup: STR_PHXBOMB
     dependencies:
@@ -784,6 +789,13 @@ research:
     cost: 10
     dependencies:
       - STR_SSP_MISSIONS
+  - name: STR_GCIC_DRONE_ARMOR_RESEARCH
+    cost: 15
+    dependencies:
+      - STR_NON_CLIENTS
+      - STR_DURATHREAD
+    getOneFree:
+      - STR_DURA_DRONE_ARMOR
   - name: STR_DURA_DRONE_ARMOR
     needItem: true
     cost: 5
@@ -793,16 +805,6 @@ research:
   - name: STR_LJACK_DRONE_ARMOR
     needItem: true
     cost: 5
-  - name: STR_AQUAVEST_DRONE_ARMOR
-    needItem: true
-    cost: 5
-  - name: STR_GCIC_DRONE_ARMOR_RESEARCH
-    cost: 15
-    dependencies:
-      - STR_NON_CLIENTS
-      - STR_DURATHREAD
-    getOneFree:
-      - STR_DURA_DRONE_ARMOR
   - name: STR_AQUAVEST_DRONE_ARMOR_RESEARCH
     requiresBaseFunc:
       - STR_SERVICE_PRINTING
@@ -813,6 +815,9 @@ research:
     cost: 15
     getOneFree:
       - STR_AQUAVEST_DRONE_ARMOR
+  - name: STR_AQUAVEST_DRONE_ARMOR
+    needItem: true
+    cost: 5
 #equipment
 # p2p
   - name: STR_BUSBOX_PISTOL
@@ -1087,6 +1092,9 @@ research:
     unlocks:
       - STR_RD_PREQ
   - name: STR_PIPEBOMB
+    needItem: true
+    cost: 5
+  - name: STR_PHXNECKLACE
     needItem: true
     cost: 5
   - name: STR_PHXBOMB

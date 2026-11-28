@@ -341,6 +341,9 @@ Esven
  xn cannon				[touchup]
  xn volley				[touchup]
  dart rope				[none]
+ phx					[none]
+ phx bomb				[none]
+ phx necklace				[touchup]
  map tiles
   flora forest small spikey fern
 
